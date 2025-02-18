@@ -54,7 +54,9 @@ ipcRenderer.on('completion-results', (event, completions) => {
 
 // Listen for shell output
 ipcRenderer.on('shell-output', (event, data) => {
-    if (data.includes('clear')) {
+    if (data.includes('<<HR>>')) {
+        output.innerHTML += '<hr class="solid">';
+    } else if (data.includes('clear')) {
         output.innerHTML = '';
     } else {
        

@@ -67,6 +67,8 @@ function startShell() {
     // Capture shell output and send it to renderer
     shell.stdout.on('data', (data) => {
         mainWindow.webContents.send('shell-output', data.toString());
+        mainWindow.webContents.send('shell-output', '<<HR>>');
+
     });
 
     shell.stderr.on('data', (data) => {
