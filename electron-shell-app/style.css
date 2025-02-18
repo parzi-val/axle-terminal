@@ -1,0 +1,58 @@
+/* style.css */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: 'jetBrains Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#terminal-output {
+    flex: 1;
+    padding: 8px;
+    overflow-y: auto;
+    background-color: #000;
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+
+    /* Hide scrollbar for Chrome/Safari/Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE/Edge/Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#command-input {
+    width: 100%;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Optional: Add a subtle border between output and input */
+#command-input {
+    border-top: 1px solid #333;
+}
+
+/* Style for command output lines */
+#terminal-output div {
+    font-family: 'JetBrains Mono', monospace;
+    white-space: pre;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
