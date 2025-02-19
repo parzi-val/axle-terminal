@@ -11,6 +11,7 @@
 - [ ] Implement Block based outputs
 - [ ] Adapters for unified LLM interface
 - [ ] Smart command suggestions
+- [ ] Structured outputs and better prompting
 
 ### Contributing
 
