@@ -1,6 +1,6 @@
 import functools
 from google import genai
-from output_structures.error_correction import CorrectionResponse
+from core.output_structures.error_correction import CorrectionResponse
 from dotenv import load_dotenv
 import os
 
