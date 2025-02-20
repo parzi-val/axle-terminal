@@ -1,6 +1,7 @@
 import functools
 from google import genai
 from core.output_structures.error_correction import CorrectionResponse
+from core.output_structures.general_query import GeneralQueryResponse
 from dotenv import load_dotenv
 import os
 
@@ -16,13 +17,13 @@ class Gemini:
     def complete(func):
         @functools.wraps(func)
         def wrapper(self,*args, **kwargs):
-            context, prompt = func(self,*args, **kwargs)
+            context, prompt, response = func(self,*args, **kwargs)
             response = self.client.models.generate_content(
                 model=self.model,
                 contents = [f"{prompt} \ncontext:{context}"],
                     config={
                     'response_mime_type': 'application/json',
-                    'response_schema': CorrectionResponse,
+                    'response_schema': response,
                 }
             )
             return response
@@ -32,11 +33,13 @@ class Gemini:
     def error_correction(self, prompt, context):
         prompt = f"Correct the error in this command {prompt}, If the correction is very obvious just return the correct command else return the top 3 plausible commands. No explanation needed."
         context = context if context else "No previous commands."
-        return context, prompt
+        response = CorrectionResponse
+        return context, prompt, response
     
     @complete
     def general_query(self, prompt, context):
-        return context, prompt
+        response = GeneralQueryResponse
+        return context, prompt, response
     
 
 if __name__ == "__main__":
@@ -54,3 +57,5 @@ if __name__ == "__main__":
 
     response = base.error_correction(prompt=text, context="")
     print(response.parsed.corrections)
+    response = base.general_query(prompt="How to install a package in linux", context="")
+    print(response.parsed.response)
