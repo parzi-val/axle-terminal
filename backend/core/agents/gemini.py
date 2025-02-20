@@ -1,7 +1,9 @@
 import functools
 from google import genai
+from output_structures.error_correction import CorrectionResponse
 from dotenv import load_dotenv
 import os
+
 load_dotenv()
 GENAI_API = os.getenv("GENAI_API")
 
@@ -17,7 +19,11 @@ class Gemini:
             context, prompt = func(self,*args, **kwargs)
             response = self.client.models.generate_content(
                 model=self.model,
-                contents = [f"{prompt} \ncontext:{context}"]
+                contents = [f"{prompt} \ncontext:{context}"],
+                    config={
+                    'response_mime_type': 'application/json',
+                    'response_schema': CorrectionResponse,
+                }
             )
             return response
         return wrapper
@@ -47,4 +53,4 @@ if __name__ == "__main__":
     """
 
     response = base.error_correction(prompt=text, context="")
-    print(response.text)
+    print(response.parsed.corrections)
