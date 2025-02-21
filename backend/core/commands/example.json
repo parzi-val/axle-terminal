@@ -1,0 +1,20 @@
+{
+    "ls": {
+        "flags": {
+            "-a": "Show all files, including hidden ones",
+            "--color": "Enable colored output"
+        }
+    },
+    "grep": {
+        "flags": {
+            "-i": "Ignore case when matching",
+            "--color": "Highlight matched text"
+        }
+    },
+    "docker": {
+        "flags": {
+            "run": "Run a command in a new container",
+            "-it": "Interactive mode with a TTY"
+        }
+    }
+}

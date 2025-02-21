@@ -21,7 +21,7 @@ class Gemini:
             response = self.client.models.generate_content(
                 model=self.model,
                 contents = [f"{prompt} \ncontext:{context}"],
-                    config={
+                config={
                     'response_mime_type': 'application/json',
                     'response_schema': response,
                 }
