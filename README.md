@@ -12,7 +12,7 @@
 - [ ] Adapters for unified LLM interface
 - [ ] Smart command suggestions
 - [ ] Structured outputs and better prompting
-- [ ] Finding the attributes for commands
+- [ ] Efficient parsing of markdown files for lookup table
 
 ### Contributing
 
