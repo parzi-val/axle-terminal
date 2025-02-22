@@ -20,6 +20,6 @@ Feel free to fork the repository, make changes, and create a pull request if you
 
 ### Acknowledgments
 
-This project is inspired by and uses information from [TLDR Pages](https://tldr.sh), a fantastic community-driven project that provides simplified and community-curated command-line documentation.
+This project uses information from [TLDR Pages](https://tldr.sh), a fantastic community-driven project that provides simplified and community-curated command-line documentation.
 
 Special thanks to the TLDR community for maintaining an excellent resource for command-line users.
