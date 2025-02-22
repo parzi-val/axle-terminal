@@ -18,7 +18,7 @@
 
 Feel free to fork the repository, make changes, and create a pull request if you have improvements or bug fixes.
 
-## Acknowledgments
+### Acknowledgments
 
 This project is inspired by and uses information from [TLDR Pages](https://tldr.sh), a fantastic community-driven project that provides simplified and community-curated command-line documentation.
 
