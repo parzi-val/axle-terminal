@@ -1,6 +1,7 @@
+import json
+
 import mistune
 from dotwiz import DotWiz
-import json
 
 with open("commands/pages/windows/cd.md", "r") as f:
     text = f.read()

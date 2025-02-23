@@ -1,9 +1,10 @@
 import functools
-from google import genai
+import os
+
 from core.output_structures.error_correction import CorrectionResponse
 from core.output_structures.general_query import GeneralQueryResponse
 from dotenv import load_dotenv
-import os
+from google import genai
 
 load_dotenv()
 GENAI_API = os.getenv("GENAI_API")

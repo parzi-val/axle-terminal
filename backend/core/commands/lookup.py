@@ -1,5 +1,7 @@
 import json
-from rapidfuzz import process, fuzz
+
+from rapidfuzz import fuzz, process
+
 
 def load_lookup_table(file_path="backend\core\commands\example.json"):
     with open(file_path, "r", encoding="utf-8") as f:

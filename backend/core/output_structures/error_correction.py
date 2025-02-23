@@ -1,5 +1,7 @@
-from pydantic import BaseModel, Field
 from typing import List
+
+from pydantic import BaseModel, Field
+
 
 class Correction(BaseModel):
     command: str = Field(..., description="The corrected command")
