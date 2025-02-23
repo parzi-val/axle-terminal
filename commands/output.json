@@ -1,108 +1,251 @@
-{"content": [
-    {"type": "heading", 
-    "attrs": {"level": 1}, 
-    "style": "axt", 
-    "children": [
-        {"type": "text", 
-        "raw": "cd"}]
-    }, 
-    {"type": "block_quote", 
-        "children": [
-            {"type": "paragraph", 
+{
+    "content": [
+        {
+            "type": "heading",
+            "attrs": {
+                "level": 1
+            },
+            "style": "axt",
             "children": [
-                {"type": "text", 
-                "raw": "Display the current working directory or move to a different directory."}, 
-                {"type": "softbreak"}, 
-                {"type": "text", 
-                "raw": "In PowerShell, this command is an alias of "}, 
-                {"type": "codespan", 
-                "raw": "Set-Location"}, 
-                {"type": "text", 
-                "raw": ". This documentation is based on the Command Prompt ("}, 
-                {"type": "codespan", 
-                "raw": "cmd"}, 
-                {"type": "text", 
-                "raw": ") version of "}, 
-                {"type": "codespan", "raw": "cd"}, 
-                {"type": "text", "raw": "."}, 
-                {"type": "softbreak"}, 
-                {"type": "text", 
-                "raw": "More information: "}, 
-                {"type": "link", 
+                {
+                    "type": "text",
+                    "raw": "cd"
+                }
+            ]
+        },
+        {
+            "type": "block_quote",
+            "children": [
+                {
+                    "type": "paragraph",
                     "children": [
-                        {"type": "text", 
-                        "raw": "https://learn.microsoft.com/windows-server/administration/windows-commands/cd"}], 
-                        "attrs": {"url": "https://learn.microsoft.com/windows-server/administration/windows-commands/cd"}}, 
-                {"type": "text", "raw": "."}]}]}, 
-    {"type": "list", 
-        "children": [
-            {"type": "list_item", 
+                        {
+                            "type": "text",
+                            "raw": "Display the current working directory or move to a different directory."
+                        },
+                        {
+                            "type": "softbreak"
+                        },
+                        {
+                            "type": "text",
+                            "raw": "In PowerShell, this command is an alias of "
+                        },
+                        {
+                            "type": "codespan",
+                            "raw": "Set-Location"
+                        },
+                        {
+                            "type": "text",
+                            "raw": ". This documentation is based on the Command Prompt ("
+                        },
+                        {
+                            "type": "codespan",
+                            "raw": "cmd"
+                        },
+                        {
+                            "type": "text",
+                            "raw": ") version of "
+                        },
+                        {
+                            "type": "codespan",
+                            "raw": "cd"
+                        },
+                        {
+                            "type": "text",
+                            "raw": "."
+                        },
+                        {
+                            "type": "softbreak"
+                        },
+                        {
+                            "type": "text",
+                            "raw": "More information: "
+                        },
+                        {
+                            "type": "link",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "https://learn.microsoft.com/windows-server/administration/windows-commands/cd"
+                                }
+                            ],
+                            "attrs": {
+                                "url": "https://learn.microsoft.com/windows-server/administration/windows-commands/cd"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "raw": "."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
             "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "View documentation of the equivalent PowerShell command:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", 
-                    "raw": "tldr set-location"}]}]}, 
-            {"type": "list_item", 
-            "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "Display the path of the current directory:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", "raw": "cd"}]}]}, 
-            {"type": "list_item", 
-            "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "Go to a specific directory in the same drive:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", 
-                    "raw": "cd {{path\\to\\directory}}"}]}]}, 
-            {"type": "list_item", 
-            "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "Go to a specific directory in a different "}, 
-                    {"type": "text", 
-                    "raw": "["}, 
-                    {"type": "text", "raw": "d]rive:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", 
-                    "raw": "cd /d {{C}}:{{path\\to\\directory}}"}]}]}, 
-            {"type": "list_item", 
-            "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "Go up to the parent of the current directory:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", 
-                    "raw": "cd .."}]}]}, 
-            {"type": "list_item", 
-            "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "Go to the home directory of the current user:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", "raw": "cd %userprofile%"}]}]}, 
-            {"type": "list_item", 
-            "children": [
-                {"type": "block_text", 
-                "children": [
-                    {"type": "text", 
-                    "raw": "Go to root of current drive:"}, 
-                    {"type": "softbreak"}, 
-                    {"type": "codespan", 
-                    "raw": "cd \\"}]}]}], 
-        "tight": true, 
-        "bullet": "-", 
-        "attrs": {"depth": 0, "ordered": false}
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "View documentation of the equivalent PowerShell command:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "tldr set-location"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "Display the path of the current directory:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "cd"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "Go to a specific directory in the same drive:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "cd {{path\\to\\directory}}"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "Go to a specific directory in a different "
+                                },
+                                {
+                                    "type": "text",
+                                    "raw": "["
+                                },
+                                {
+                                    "type": "text",
+                                    "raw": "d]rive:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "cd /d {{C}}:{{path\\to\\directory}}"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "Go up to the parent of the current directory:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "cd .."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "Go to the home directory of the current user:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "cd %userprofile%"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "list_item",
+                    "children": [
+                        {
+                            "type": "block_text",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "raw": "Go to root of current drive:"
+                                },
+                                {
+                                    "type": "softbreak"
+                                },
+                                {
+                                    "type": "codespan",
+                                    "raw": "cd \\"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tight": true,
+            "bullet": "-",
+            "attrs": {
+                "depth": 0,
+                "ordered": false
+            }
         }
     ]
 }
