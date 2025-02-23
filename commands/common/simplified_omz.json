@@ -1,0 +1,34 @@
+{
+  "command": "omz",
+  "description": "Oh My Zsh command-line tool. More information: https://github.com/ohmyzsh/ohmyzsh.",
+  "useCases": [
+    {
+      "description": "Update Oh My Zsh:",
+      "syntax": "omz update"
+    },
+    {
+      "description": "Print the changes from the latest update of Oh My Zsh:",
+      "syntax": "omz changelog"
+    },
+    {
+      "description": "Restart the current Zsh session and Oh My Zsh:",
+      "syntax": "omz reload"
+    },
+    {
+      "description": "List all available plugins:",
+      "syntax": "omz plugin list"
+    },
+    {
+      "description": "Enable/Disable an Oh My Zsh plugin:",
+      "syntax": "omz plugin {{enable|disable}} {{plugin}}"
+    },
+    {
+      "description": "List all available themes:",
+      "syntax": "omz theme list"
+    },
+    {
+      "description": "Set an Oh My Zsh theme in ~/.zshrc:",
+      "syntax": "omz theme set {{theme}}"
+    }
+  ]
+}

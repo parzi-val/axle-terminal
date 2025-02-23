@@ -1,0 +1,14 @@
+{
+  "command": "toolbox help",
+  "description": "Display help information about toolbox. More information: https://manned.org/toolbox-help.1.",
+  "useCases": [
+    {
+      "description": "Display the toolbox manual:",
+      "syntax": "toolbox help"
+    },
+    {
+      "description": "Display the toolbox manual for a specific subcommand:",
+      "syntax": "toolbox help {{subcommand}}"
+    }
+  ]
+}

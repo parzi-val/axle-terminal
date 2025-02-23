@@ -1,0 +1,14 @@
+{
+  "command": "inkview",
+  "description": "Inkscape graphical SVG previewer. Also functions as a slideshow viewer. More information: https://wiki.inkscape.org/wiki/index.php/Inkview.",
+  "useCases": [
+    {
+      "description": "Preview an SVG:",
+      "syntax": "inkview {{path/to/file.svg}}"
+    },
+    {
+      "description": "Preview multiple SVGs (use arrow keys to navigate):",
+      "syntax": "inkview {{path/to/file1.svg path/to/file2.svg ...}}"
+    }
+  ]
+}

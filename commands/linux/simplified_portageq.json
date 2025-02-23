@@ -1,0 +1,22 @@
+{
+  "command": "portageq",
+  "description": "Query for information about Portage, the Gentoo Linux package manager. Queryable Portage-specific environment variables are listed in /var/db/repos/gentoo/profiles/info_vars. More information: https://wiki.gentoo.org/wiki/Portageq.",
+  "useCases": [
+    {
+      "description": "Display the value of a Portage-specific environment variable:",
+      "syntax": "portageq envvar {{variable}}"
+    },
+    {
+      "description": "Display a detailed list of repositories configured with Portage:",
+      "syntax": "portageq repos_config /"
+    },
+    {
+      "description": "Display a list of repositories sorted by priority (highest first):",
+      "syntax": "portageq get_repos /"
+    },
+    {
+      "description": "Display a specific piece of metadata about an atom (i.e. package name including the version):",
+      "syntax": "portageq metadata / {{ebuild|porttree|binary|...}} {{category}}/{{package}} {{BDEPEND|DEFINED_PHASES|DEPEND|...}}"
+    }
+  ]
+}

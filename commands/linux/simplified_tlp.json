@@ -1,0 +1,18 @@
+{
+  "command": "tlp",
+  "description": "Advanced power management for Linux. See also tlp-stat. More information: https://linrunner.de/tlp/.",
+  "useCases": [
+    {
+      "description": "Apply settings (according to the actual power source):",
+      "syntax": "sudo tlp start"
+    },
+    {
+      "description": "Apply battery settings (ignoring the actual power source):",
+      "syntax": "sudo tlp bat"
+    },
+    {
+      "description": "Apply AC settings (ignoring the actual power source):",
+      "syntax": "sudo tlp ac"
+    }
+  ]
+}

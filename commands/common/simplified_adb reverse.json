@@ -1,0 +1,22 @@
+{
+  "command": "adb reverse",
+  "description": "Reverse socket connections from a connected Android device or emulator. More information: https://developer.android.com/tools/adb.",
+  "useCases": [
+    {
+      "description": "List all reverse socket connections from emulators and devices:",
+      "syntax": "adb reverse --list"
+    },
+    {
+      "description": "Reverse a TCP port from an emulator or device to localhost:",
+      "syntax": "adb reverse tcp:{{remote_port}} tcp:{{local_port}}"
+    },
+    {
+      "description": "Remove a reverse socket connections from an emulator or device:",
+      "syntax": "adb reverse --remove tcp:{{remote_port}}"
+    },
+    {
+      "description": "Remove all reverse socket connections from all emulators and devices:",
+      "syntax": "adb reverse --remove-all"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "hub browse",
+  "description": "Open a GitHub repository in the browser or print the URL. More information: https://hub.github.com/hub-browse.1.html.",
+  "useCases": [
+    {
+      "description": "Open the homepage of the current repository in the default web browser:",
+      "syntax": "hub browse"
+    },
+    {
+      "description": "Open the homepage of a specific repository in the default web browser:",
+      "syntax": "hub browse {{owner}}/{{repository}}"
+    },
+    {
+      "description": "Open the subpage of a specific repository in the default web browser, subpage can be \"wiki\", \"commits\", \"issues\", or other (default: \"tree\"):",
+      "syntax": "hub browse {{owner}}/{{repository}} {{subpage}}"
+    }
+  ]
+}

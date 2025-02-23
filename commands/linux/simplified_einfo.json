@@ -1,0 +1,22 @@
+{
+  "command": "einfo",
+  "description": "Provides the number of records indexed in each database field, the last update date of the database, and the available links from the database to other Entrez databases. More information: https://www.ncbi.nlm.nih.gov/books/NBK179288/.",
+  "useCases": [
+    {
+      "description": "Print all database names:",
+      "syntax": "einfo -dbs"
+    },
+    {
+      "description": "Print all information of the protein database in XML format:",
+      "syntax": "einfo -db {{protein}}"
+    },
+    {
+      "description": "Print all fields of the nuccore database:",
+      "syntax": "einfo -db {{nuccore}} -fields"
+    },
+    {
+      "description": "Print all links of the protein database:",
+      "syntax": "einfo -db {{protein}} -links"
+    }
+  ]
+}

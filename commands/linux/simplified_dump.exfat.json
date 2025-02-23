@@ -1,0 +1,10 @@
+{
+  "command": "dump.exfat",
+  "description": "Show on-disk information of an exFAT filesystem. More information: https://manned.org/dump.exfat.",
+  "useCases": [
+    {
+      "description": "Print on-disk information for a given filesystem:",
+      "syntax": "dump.exfat {{/dev/sdXY}}"
+    }
+  ]
+}

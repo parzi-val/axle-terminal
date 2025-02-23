@@ -1,0 +1,18 @@
+{
+  "command": "dolt blame",
+  "description": "Display commit information for each row of a Dolt table. More information: https://docs.dolthub.com/cli-reference/cli#dolt-blame.",
+  "useCases": [
+    {
+      "description": "Display the latest commit for each row of a table:",
+      "syntax": "dolt blame {{table}}"
+    },
+    {
+      "description": "Display the latest commits for each row of a table when the specified commit was made:",
+      "syntax": "dolt blame {{commit}} {{table}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dolt blame --help"
+    }
+  ]
+}

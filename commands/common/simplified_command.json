@@ -1,0 +1,14 @@
+{
+  "command": "command",
+  "description": "Command forces the shell to execute the program and ignore any functions, builtins and aliases with the same name. More information: https://manned.org/command.",
+  "useCases": [
+    {
+      "description": "Execute the ls program literally, even if an ls alias exists:",
+      "syntax": "command {{ls}}"
+    },
+    {
+      "description": "Display the path to the executable or the alias definition of a specific command:",
+      "syntax": "command -v {{command_name}}"
+    }
+  ]
+}

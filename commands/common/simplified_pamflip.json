@@ -1,0 +1,22 @@
+{
+  "command": "pamflip",
+  "description": "Flip or rotate a PAM or PNM image. More information: https://netpbm.sourceforge.net/doc/pamflip.html.",
+  "useCases": [
+    {
+      "description": "Rotate the input image counter-clockwise for a specific degree:",
+      "syntax": "pamflip -rotate{{90|180|270}} {{path/to/input.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Flip left for right:",
+      "syntax": "pamflip -leftright {{path/to/input.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Flip top for bottom:",
+      "syntax": "pamflip -topbottom {{path/to/input.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Flip the input image on the main diagonal:",
+      "syntax": "pamflip -transpose {{path/to/input.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

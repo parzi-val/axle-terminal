@@ -1,0 +1,38 @@
+{
+  "command": "pio lib",
+  "description": "Manage PlatformIO libraries. More information: https://docs.platformio.org/en/latest/core/userguide/lib/.",
+  "useCases": [
+    {
+      "description": "List installed libraries:",
+      "syntax": "pio lib list"
+    },
+    {
+      "description": "List built-in libraries based on installed development platforms and their frameworks:",
+      "syntax": "pio lib builtin"
+    },
+    {
+      "description": "Search for existing libraries:",
+      "syntax": "pio lib search {{keyword}}"
+    },
+    {
+      "description": "Show details about a library:",
+      "syntax": "pio lib show {{library}}"
+    },
+    {
+      "description": "Install a library:",
+      "syntax": "pio lib install {{library}}"
+    },
+    {
+      "description": "Update installed libraries:",
+      "syntax": "pio lib update"
+    },
+    {
+      "description": "Uninstall a library:",
+      "syntax": "pio lib uninstall {{library}}"
+    },
+    {
+      "description": "Show PlatformIO library registry statistics:",
+      "syntax": "pio lib stats"
+    }
+  ]
+}

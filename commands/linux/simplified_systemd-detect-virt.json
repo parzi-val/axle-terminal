@@ -1,0 +1,26 @@
+{
+  "command": "systemd-detect-virt",
+  "description": "Detect execution in a virtualized environment. More information: https://www.freedesktop.org/software/systemd/man/systemd-detect-virt.html.",
+  "useCases": [
+    {
+      "description": "List detectable virtualization technologies:",
+      "syntax": "systemd-detect-virt --list"
+    },
+    {
+      "description": "Detect virtualization, print the result and return a zero status code when running in a VM or a container, and a non-zero code otherwise:",
+      "syntax": "systemd-detect-virt"
+    },
+    {
+      "description": "Silently check without printing anything:",
+      "syntax": "systemd-detect-virt --quiet"
+    },
+    {
+      "description": "Only detect container virtualization:",
+      "syntax": "systemd-detect-virt --container"
+    },
+    {
+      "description": "Only detect hardware virtualization:",
+      "syntax": "systemd-detect-virt --vm"
+    }
+  ]
+}

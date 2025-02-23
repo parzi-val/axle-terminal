@@ -1,0 +1,38 @@
+{
+  "command": "git bulk",
+  "description": "Execute operations on multiple Git repositories. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-bulk.",
+  "useCases": [
+    {
+      "description": "Register the current directory as a workspace:",
+      "syntax": "git bulk --addcurrent {{workspace_name}}"
+    },
+    {
+      "description": "Register a workspace for bulk operations:",
+      "syntax": "git bulk --addworkspace {{workspace_name}} {{/absolute/path/to/repository}}"
+    },
+    {
+      "description": "Clone a repository inside a specific directory, then register the repository as a workspace:",
+      "syntax": "git bulk --addworkspace {{workspace_name}} {{/absolute/path/to/parent_directory}} --from {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone repositories from a newline-separated list of remote locations, then register them as workspaces:",
+      "syntax": "git bulk --addworkspace {{workspace_name}} {{/path/to/root/directory}} --from {{/path/to/file}}"
+    },
+    {
+      "description": "List all registered workspaces:",
+      "syntax": "git bulk --listall"
+    },
+    {
+      "description": "Run a Git command on the repositories of the current workspace:",
+      "syntax": "git bulk {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Remove a specific workspace:",
+      "syntax": "git bulk --removeworkspace {{workspace_name}}"
+    },
+    {
+      "description": "Remove all workspaces:",
+      "syntax": "git bulk --purge"
+    }
+  ]
+}

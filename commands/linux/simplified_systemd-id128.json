@@ -1,0 +1,26 @@
+{
+  "command": "systemd-id128",
+  "description": "Generate and print sd-128 identifiers. More information: https://www.freedesktop.org/software/systemd/man/systemd-id128.html.",
+  "useCases": [
+    {
+      "description": "Generate a new random identifier:",
+      "syntax": "systemd-id128 new"
+    },
+    {
+      "description": "Print the identifier of the current machine:",
+      "syntax": "systemd-id128 machine-id"
+    },
+    {
+      "description": "Print the identifier of the current boot:",
+      "syntax": "systemd-id128 boot-id"
+    },
+    {
+      "description": "Print the identifier of the current service invocation (this is available in systemd services):",
+      "syntax": "systemd-id128 invocation-id"
+    },
+    {
+      "description": "Generate a new random identifier and print it as a UUID (five groups of digits separated by hyphens):",
+      "syntax": "systemd-id128 new --uuid"
+    }
+  ]
+}

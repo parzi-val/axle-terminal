@@ -1,0 +1,22 @@
+{
+  "command": "pnmpad",
+  "description": "Add borders to a PNM image. See also: pnmmargin, pamcut, pamcomp. More information: https://netpbm.sourceforge.net/doc/pnmpad.html.",
+  "useCases": [
+    {
+      "description": "Add borders of the specified sizes to the image:",
+      "syntax": "pnmpad -left {{100}} -right {{150}} -top {{123}} -bottom {{456}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Pad the image to the specified size:",
+      "syntax": "pnmpad -width {{1000}} -height {{500}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Pad the width of the image to the specified size, controlling the ratio between right and left padding:",
+      "syntax": "pnmpad -width {{1000}} -halign {{0.7}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Pad the width of the image using the specified color:",
+      "syntax": "pnmpad -width {{1000}} -color {{red}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

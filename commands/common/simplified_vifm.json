@@ -1,0 +1,14 @@
+{
+  "command": "vifm",
+  "description": "VI File Manager is a TUI file manager. See also: clifm, vifm, mc, caja. More information: https://github.com/vifm/vifm.",
+  "useCases": [
+    {
+      "description": "Open the current directory:",
+      "syntax": "vifm ."
+    },
+    {
+      "description": "Open specified directories on left or right plane:",
+      "syntax": "vifm {{path/to/directory1 path/to/directory2 ...}}"
+    }
+  ]
+}

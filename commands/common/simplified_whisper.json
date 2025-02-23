@@ -1,0 +1,30 @@
+{
+  "command": "whisper",
+  "description": "Convert audio files to txt, vtt, srt, tsv and json. More information: https://github.com/openai/whisper.",
+  "useCases": [
+    {
+      "description": "Convert a specific audio file to all of the given file formats:",
+      "syntax": "whisper {{path/to/audio.mp3}}"
+    },
+    {
+      "description": "Convert an audio file specifying the output format of the converted file:",
+      "syntax": "whisper {{path/to/audio.mp3}} --output_format {{txt}}"
+    },
+    {
+      "description": "Convert an audio file using a specific model for conversion:",
+      "syntax": "whisper {{path/to/audio.mp3}} --model {{tiny.en,tiny,base.en,base,small.en,small,medium.en,medium,large-v1,large-v2,large}}"
+    },
+    {
+      "description": "Convert an audio file specifying which language the audio file is in to reduce conversion time:",
+      "syntax": "whisper {{path/to/audio.mp3}} --language {{english}}"
+    },
+    {
+      "description": "Convert an audio file and save it to a specific location:",
+      "syntax": "whisper {{path/to/audio.mp3}} --output_dir &quot;{{path/to/output}}&quot;"
+    },
+    {
+      "description": "Convert an audio file in quiet mode:",
+      "syntax": "whisper {{path/to/audio.mp3}} --verbose {{False}}"
+    }
+  ]
+}

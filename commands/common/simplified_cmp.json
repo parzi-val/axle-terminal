@@ -1,0 +1,22 @@
+{
+  "command": "cmp",
+  "description": "Compare two files byte by byte. More information: https://www.gnu.org/software/diffutils/manual/html_node/Invoking-cmp.html.",
+  "useCases": [
+    {
+      "description": "Output char and line number of the first difference between two files:",
+      "syntax": "cmp {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Output info of the first difference: char, line number, bytes, and values:",
+      "syntax": "cmp --print-bytes {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Output the byte numbers and values of every difference:",
+      "syntax": "cmp --verbose {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Compare files but output nothing, yield only the exit status:",
+      "syntax": "cmp --quiet {{path/to/file1}} {{path/to/file2}}"
+    }
+  ]
+}

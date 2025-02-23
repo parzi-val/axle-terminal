@@ -1,0 +1,26 @@
+{
+  "command": "u3d",
+  "description": "A set of tools to interact with Unity. More information: https://github.com/DragonBox/u3d.",
+  "useCases": [
+    {
+      "description": "Open the project in the current directory using the correct Unity version:",
+      "syntax": "u3d"
+    },
+    {
+      "description": "List installed versions of Unity:",
+      "syntax": "u3d list"
+    },
+    {
+      "description": "List available versions of Unity that can be downloaded:",
+      "syntax": "u3d available"
+    },
+    {
+      "description": "Download and install latest stable Unity version:",
+      "syntax": "u3d install latest_stable"
+    },
+    {
+      "description": "Download and install Unity version and editor [p]ackages:",
+      "syntax": "u3d install {{2021.2.0f1}} -p {{Unity,iOS,Android}}"
+    }
+  ]
+}

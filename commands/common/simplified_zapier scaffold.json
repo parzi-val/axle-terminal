@@ -1,0 +1,26 @@
+{
+  "command": "zapier scaffold",
+  "description": "Add a starting trigger, create, search, or resource to an integration. More information: https://platform.zapier.com/reference/cli#scaffold.",
+  "useCases": [
+    {
+      "description": "Scaffold a new trigger, create, search, or resource:",
+      "syntax": "zapier scaffold {{trigger|search|create|resource}} {{noun}}"
+    },
+    {
+      "description": "Specify a custom destination directory for the scaffolded files:",
+      "syntax": "zapier scaffold {{trigger|search|create|resource}} {{noun}} {{-d|--dest}}={{path/to/directory}}"
+    },
+    {
+      "description": "Overwrite existing files when scaffolding:",
+      "syntax": "zapier scaffold {{trigger|search|create|resource}} {{noun}} {{-f|--force}}"
+    },
+    {
+      "description": "Exclude comments from the scaffolded files:",
+      "syntax": "zapier scaffold {{trigger|search|create|resource}} {{noun}} --no-help"
+    },
+    {
+      "description": "Show extra debugging output:",
+      "syntax": "zapier scaffold {{-d|--debug}}"
+    }
+  ]
+}

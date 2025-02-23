@@ -1,0 +1,26 @@
+{
+  "command": "rawtoppm",
+  "description": "Convert a raw RGB stream to a PPM image. More information: https://netpbm.sourceforge.net/doc/rawtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a raw RGB stream to a PPM image:",
+      "syntax": "rawtoppm {{width}} {{height}} {{path/to/image.raw}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Convert a raw RGB stream in which the pixels come bottom-first instead of top-first to a PPM image:",
+      "syntax": "rawtoppm {{width}} {{height}} {{path/to/image.raw}} | pamflip -tb &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Ignore the first n bytes of the specified file:",
+      "syntax": "rawtoppm {{width}} {{height}} -headerskip {{n}} {{path/to/image.raw}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Ignore the last m bytes of each row in the specified file:",
+      "syntax": "rawtoppm {{width}} {{height}} -rowskip {{m}} {{path/to/image.raw}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Specify the order of color components for each pixel:",
+      "syntax": "rawtoppm {{width}} {{height}} -{{rgb|rbg|grb|gbr|brg|bgr}} {{path/to/image.raw}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

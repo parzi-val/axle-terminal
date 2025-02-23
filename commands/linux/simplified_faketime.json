@@ -1,0 +1,18 @@
+{
+  "command": "faketime",
+  "description": "Fake the system time for a command. More information: https://manned.org/faketime.",
+  "useCases": [
+    {
+      "description": "Fake the time to this evening, before printing the result of date:",
+      "syntax": "faketime '{{today 23:30}}' {{date}}"
+    },
+    {
+      "description": "Open a new Bash shell, which uses yesterday as the current date:",
+      "syntax": "faketime '{{yesterday}}' {{bash}}"
+    },
+    {
+      "description": "Simulate how a program would act next Friday night:",
+      "syntax": "faketime '{{next Friday 1 am}}' {{path/to/program}}"
+    }
+  ]
+}

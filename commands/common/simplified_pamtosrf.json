@@ -1,0 +1,10 @@
+{
+  "command": "pamtosrf",
+  "description": "Convert Netpbm images to SRF format. See also: srftopam. More information: https://netpbm.sourceforge.net/doc/pamtosrf.html.",
+  "useCases": [
+    {
+      "description": "Convert a Netpbm image or a stream of Netpbm images to SRF format:",
+      "syntax": "pamtosrf {{path/to/file.pam}} &gt; {{path/to/output.srf}}"
+    }
+  ]
+}

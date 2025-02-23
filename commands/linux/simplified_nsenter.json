@@ -1,0 +1,22 @@
+{
+  "command": "nsenter",
+  "description": "Run a new command in a running process' namespace. Particularly useful for Docker images or chroot jails. More information: https://manned.org/nsenter.",
+  "useCases": [
+    {
+      "description": "Run a specific command using the same namespaces as an existing process:",
+      "syntax": "nsenter --target {{pid}} --all {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Run a specific command in an existing process's mount|UTS|IPC|network|PID|user|cgroup|time namespace:",
+      "syntax": "nsenter --target {{pid}} --{{mount|uts|ipc|net|pid|user|cgroup}} {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Run a specific command in an existing process's UTS, time, and IPC namespaces:",
+      "syntax": "nsenter --target {{pid}} --uts --time --ipc -- {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Run a specific command in an existing process's namespace by referencing procfs:",
+      "syntax": "nsenter --pid=/proc/{{pid}}/pid/net -- {{command}} {{command_arguments}}"
+    }
+  ]
+}

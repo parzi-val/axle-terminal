@@ -1,0 +1,10 @@
+{
+  "command": "hping",
+  "description": "This command is an alias of hping3.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr hping3"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "drill",
+  "description": "Perform various DNS queries. More information: https://manned.org/drill.",
+  "useCases": [
+    {
+      "description": "Lookup the IP(s) associated with a hostname (A records):",
+      "syntax": "drill {{example.com}}"
+    },
+    {
+      "description": "Lookup the mail server(s) associated with a given domain name (MX record):",
+      "syntax": "drill mx {{example.com}}"
+    },
+    {
+      "description": "Get all types of records for a given domain name:",
+      "syntax": "drill any {{example.com}}"
+    },
+    {
+      "description": "Specify an alternate DNS server to query:",
+      "syntax": "drill {{example.com}} @{{8.8.8.8}}"
+    },
+    {
+      "description": "Perform a reverse DNS lookup on an IP address (PTR record):",
+      "syntax": "drill -x {{8.8.8.8}}"
+    },
+    {
+      "description": "Perform DNSSEC trace from root servers down to a domain name:",
+      "syntax": "drill -TD {{example.com}}"
+    },
+    {
+      "description": "Show DNSKEY record(s) for a domain name:",
+      "syntax": "drill -s dnskey {{example.com}}"
+    }
+  ]
+}

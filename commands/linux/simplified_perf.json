@@ -1,0 +1,26 @@
+{
+  "command": "perf",
+  "description": "Framework for Linux performance counter measurements. More information: https://perf.wiki.kernel.org.",
+  "useCases": [
+    {
+      "description": "Display basic performance counter stats for a command:",
+      "syntax": "perf stat {{gcc hello.c}}"
+    },
+    {
+      "description": "Display system-wide real-time performance counter profile:",
+      "syntax": "sudo perf top"
+    },
+    {
+      "description": "Run a command and record its profile into perf.data:",
+      "syntax": "sudo perf record {{command}}"
+    },
+    {
+      "description": "Record the profile of an existing process into perf.data:",
+      "syntax": "sudo perf record -p {{pid}}"
+    },
+    {
+      "description": "Read perf.data (created by perf record) and display the profile:",
+      "syntax": "sudo perf report"
+    }
+  ]
+}

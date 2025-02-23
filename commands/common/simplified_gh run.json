@@ -1,0 +1,38 @@
+{
+  "command": "gh run",
+  "description": "View, run and watch recent GitHub Actions workflow runs. More information: https://cli.github.com/manual/gh_run.",
+  "useCases": [
+    {
+      "description": "Interactively select a run to see information about the jobs:",
+      "syntax": "gh run view"
+    },
+    {
+      "description": "Display information about a specific run:",
+      "syntax": "gh run view {{workflow_run_number}}"
+    },
+    {
+      "description": "Display information about the steps of a job:",
+      "syntax": "gh run view --job={{job_number}}"
+    },
+    {
+      "description": "Display the log of a job:",
+      "syntax": "gh run view --job={{job_number}} --log"
+    },
+    {
+      "description": "Check a specific workflow and exit with a non-zero status if the run failed:",
+      "syntax": "gh run view {{workflow_run_number}} --exit-status &amp;&amp; {{echo &quot;run pending or passed&quot;}}"
+    },
+    {
+      "description": "Interactively select an active run and wait until it's done:",
+      "syntax": "gh run watch"
+    },
+    {
+      "description": "Display the jobs for a run and wait until it's done:",
+      "syntax": "gh run watch {{workflow_run_number}}"
+    },
+    {
+      "description": "Re-run a specific workflow:",
+      "syntax": "gh run rerun {{workflow_run_number}}"
+    }
+  ]
+}

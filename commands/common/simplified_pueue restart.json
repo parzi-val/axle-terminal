@@ -1,0 +1,30 @@
+{
+  "command": "pueue restart",
+  "description": "Restart tasks. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Restart a specific task:",
+      "syntax": "pueue restart {{task_id}}"
+    },
+    {
+      "description": "Restart multiple tasks at once, and start them immediately (do not enqueue):",
+      "syntax": "pueue restart --start-immediately {{task_id}} {{task_id}}"
+    },
+    {
+      "description": "Restart a specific task from a different path:",
+      "syntax": "pueue restart --edit-path {{task_id}}"
+    },
+    {
+      "description": "Edit a command before restarting:",
+      "syntax": "pueue restart --edit {{task_id}}"
+    },
+    {
+      "description": "Restart a task in-place (without enqueuing as a separate task):",
+      "syntax": "pueue restart --in-place {{task_id}}"
+    },
+    {
+      "description": "Restart all failed tasks and stash them:",
+      "syntax": "pueue restart --all-failed --stashed"
+    }
+  ]
+}

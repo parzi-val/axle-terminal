@@ -1,0 +1,30 @@
+{
+  "command": "pw-dump",
+  "description": "Dump PipeWire's current state as JSON, including the information on nodes, devices, modules, ports, and other objects. See also: pw-mon. More information: https://docs.pipewire.org/page_man_pw-dump_1.html.",
+  "useCases": [
+    {
+      "description": "Print a JSON representation of the default PipeWire instance's current state:",
+      "syntax": "pw-dump"
+    },
+    {
+      "description": "Print a JSON representation of an object:",
+      "syntax": "pw-dump {{object_id}}"
+    },
+    {
+      "description": "Dump the current state [m]onitoring changes, printing it again:",
+      "syntax": "pw-dump --monitor"
+    },
+    {
+      "description": "Dump the current state of a [r]emote instance to a file:",
+      "syntax": "pw-dump --remote {{remote_name}} &gt; {{path/to/dump_file.json}}"
+    },
+    {
+      "description": "Set a [C]olor configuration:",
+      "syntax": "pw-dump --color {{never|always|auto}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pw-dump --help"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "xwininfo",
+  "description": "Display information about windows. See also: xprop, xkill. More information: https://www.x.org/releases/current/doc/man/man1/xwininfo.1.xhtml.",
+  "useCases": [
+    {
+      "description": "Display a cursor to select a window to display its attributes (id, name, size, position, ...):",
+      "syntax": "xwininfo"
+    },
+    {
+      "description": "Display the tree of all windows:",
+      "syntax": "xwininfo -tree -root"
+    },
+    {
+      "description": "Display the attributes of a window with a specific ID:",
+      "syntax": "xwininfo -id {{id}}"
+    },
+    {
+      "description": "Display the attributes of a window with a specific name:",
+      "syntax": "xwininfo -name {{name}}"
+    },
+    {
+      "description": "Display the ID of a window searching by name:",
+      "syntax": "xwininfo -tree -root | grep {{keyword}} | head -1 | perl -ne 'print $1 if /(0x[\\da-f]+)/ig;'"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "xdg-settings",
+  "description": "Manage settings of XDG-compatible desktop environments. More information: https://portland.freedesktop.org/doc/xdg-settings.html.",
+  "useCases": [
+    {
+      "description": "Print the default web browser:",
+      "syntax": "xdg-settings get {{default-web-browser}}"
+    },
+    {
+      "description": "Set the default web browser to Firefox:",
+      "syntax": "xdg-settings set {{default-web-browser}} {{firefox.desktop}}"
+    },
+    {
+      "description": "Set the default mail URL scheme handler to Evolution:",
+      "syntax": "xdg-settings set {{default-url-scheme-handler}} {{mailto}} {{evolution.desktop}}"
+    },
+    {
+      "description": "Set the default PDF document viewer:",
+      "syntax": "xdg-settings set {{pdf-viewer.desktop}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xdg-settings --help"
+    }
+  ]
+}

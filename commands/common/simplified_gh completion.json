@@ -1,0 +1,22 @@
+{
+  "command": "gh completion",
+  "description": "Generate shell completion scripts for GitHub CLI commands. More information: https://cli.github.com/manual/gh_completion.",
+  "useCases": [
+    {
+      "description": "Print a completion script:",
+      "syntax": "gh completion --shell {{bash|zsh|fish|powershell}}"
+    },
+    {
+      "description": "Append the gh completion script to ~/.bashrc:",
+      "syntax": "gh completion --shell {{bash}} &gt;&gt; {{~/.bashrc}}"
+    },
+    {
+      "description": "Append the gh completion script to ~/.zshrc:",
+      "syntax": "gh completion --shell {{zsh}} &gt;&gt; {{~/.zshrc}}"
+    },
+    {
+      "description": "Display the subcommand help:",
+      "syntax": "gh completion"
+    }
+  ]
+}

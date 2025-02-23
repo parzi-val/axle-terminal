@@ -1,0 +1,22 @@
+{
+  "command": "dos2unix",
+  "description": "Change DOS-style line endings to Unix-style. Replaces CRLF with LF. See also unix2dos, unix2mac, and mac2unix. More information: https://manned.org/dos2unix.",
+  "useCases": [
+    {
+      "description": "Change the line endings of a file:",
+      "syntax": "dos2unix {{path/to/file}}"
+    },
+    {
+      "description": "Create a copy with Unix-style line endings:",
+      "syntax": "dos2unix {{-n|--newfile}} {{path/to/file}} {{path/to/new_file}}"
+    },
+    {
+      "description": "Display file information:",
+      "syntax": "dos2unix {{-i|--info}} {{path/to/file}}"
+    },
+    {
+      "description": "Keep/add/remove Byte Order Mark:",
+      "syntax": "dos2unix --{{keep-bom|add-bom|remove-bom}} {{path/to/file}}"
+    }
+  ]
+}

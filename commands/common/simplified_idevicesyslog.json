@@ -1,0 +1,14 @@
+{
+  "command": "idevicesyslog",
+  "description": "Relay syslog messages from a connected iOS device. More information: https://manned.org/idevicesyslog.",
+  "useCases": [
+    {
+      "description": "Relay syslog messages from the connected device:",
+      "syntax": "idevicesyslog"
+    },
+    {
+      "description": "Suppress kernel messages and print everything else:",
+      "syntax": "idevicesyslog --no-kernel"
+    }
+  ]
+}

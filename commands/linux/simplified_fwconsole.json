@@ -1,0 +1,34 @@
+{
+  "command": "fwconsole",
+  "description": "Manage and configure your FreePBX system (PBX server). More information: https://sangomakb.atlassian.net/wiki/spaces/PG/pages/41779247/fwconsole+commands+13.",
+  "useCases": [
+    {
+      "description": "Reload FreePBX configurations:",
+      "syntax": "fwconsole reload"
+    },
+    {
+      "description": "Start Asterisk and other commands needed by FreePBX:",
+      "syntax": "fwconsole start"
+    },
+    {
+      "description": "Stop Asterisk and other commands needed by FreePBX:",
+      "syntax": "fwconsole stop"
+    },
+    {
+      "description": "View and update settings:",
+      "syntax": "fwconsole setting {{keyword}} {{new_value}}"
+    },
+    {
+      "description": "List available backups:",
+      "syntax": "fwconsole backup --list"
+    },
+    {
+      "description": "List available FreePBX commands:",
+      "syntax": "fwconsole list"
+    },
+    {
+      "description": "Change ownership of all files and directories that FreePBX needs to be owned by the apache user:",
+      "syntax": "fwconsole chown"
+    }
+  ]
+}

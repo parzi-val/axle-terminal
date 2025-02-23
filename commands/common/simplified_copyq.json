@@ -1,0 +1,34 @@
+{
+  "command": "copyq",
+  "description": "Clipboard manager with advanced features. More information: https://copyq.readthedocs.io/en/latest/command-line.html.",
+  "useCases": [
+    {
+      "description": "Launch CopyQ to store clipboard history:",
+      "syntax": "copyq"
+    },
+    {
+      "description": "Show current clipboard content:",
+      "syntax": "copyq clipboard"
+    },
+    {
+      "description": "Insert raw text into the clipboard history:",
+      "syntax": "copyq add -- {{text1}} {{text2}} {{text3}}"
+    },
+    {
+      "description": "Insert text containing escape sequences ('\\n', '\\t') into the clipboard history:",
+      "syntax": "copyq add {{firstline\\nsecondline}}"
+    },
+    {
+      "description": "Print the content of the first 3 items in the clipboard history:",
+      "syntax": "copyq read 0 1 2"
+    },
+    {
+      "description": "Copy a file's contents into the clipboard:",
+      "syntax": "copyq copy &lt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Copy a JPEG image into the clipboard:",
+      "syntax": "copyq copy image/jpeg &lt; {{path/to/image.jpg}}"
+    }
+  ]
+}

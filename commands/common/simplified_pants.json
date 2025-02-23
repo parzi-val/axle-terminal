@@ -1,0 +1,34 @@
+{
+  "command": "pants",
+  "description": "Fast, scalable, user-friendly, open-source build and developer workflow tool. More information: https://www.pantsbuild.org/2.20/docs/using-pants/command-line-help.",
+  "useCases": [
+    {
+      "description": "List all targets:",
+      "syntax": "pants list ::"
+    },
+    {
+      "description": "Run all tests:",
+      "syntax": "pants test ::"
+    },
+    {
+      "description": "Fix, format, and lint only uncommitted files:",
+      "syntax": "pants --changed-since=HEAD fix fmt lint"
+    },
+    {
+      "description": "Typecheck only uncommitted files and their dependents:",
+      "syntax": "pants --changed-since=HEAD --changed-dependents=transitive check"
+    },
+    {
+      "description": "Create a distributable package for the specified target:",
+      "syntax": "pants package {{path/to/directory:target-name}}"
+    },
+    {
+      "description": "Auto-generate BUILD file targets for new source files:",
+      "syntax": "pants tailor ::"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pants help"
+    }
+  ]
+}

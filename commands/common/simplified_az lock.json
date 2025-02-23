@@ -1,0 +1,30 @@
+{
+  "command": "az lock",
+  "description": "Manage Azure locks. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/lock.",
+  "useCases": [
+    {
+      "description": "Create a read-only subscription level lock:",
+      "syntax": "az lock create --name {{lock_name}} --lock-type ReadOnly"
+    },
+    {
+      "description": "Create a read-only resource group level lock:",
+      "syntax": "az lock create --name {{lock_name}} --resource-group {{group_name}} --lock-type ReadOnly"
+    },
+    {
+      "description": "Delete a subscription level lock:",
+      "syntax": "az lock delete --name {{lock_name}}"
+    },
+    {
+      "description": "Delete a resource group level lock:",
+      "syntax": "az lock delete --name {{lock_name}} --resource-group {{group_name}}"
+    },
+    {
+      "description": "List out all locks on the subscription level:",
+      "syntax": "az lock list"
+    },
+    {
+      "description": "Show a subscription level lock with a specific [n]ame:",
+      "syntax": "az lock show -n {{lock_name}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "bmptopnm",
+  "description": "Convert a BMP file into a PBM, PGM, or PNM image. More information: https://netpbm.sourceforge.net/doc/bmptopnm.html.",
+  "useCases": [
+    {
+      "description": "Generate the PBM, PGM, or PNM image as output, for Windows or OS/2 BMP file as input:",
+      "syntax": "bmptopnm {{path/to/file.bmp}}"
+    },
+    {
+      "description": "Report contents of the BMP header to stderr:",
+      "syntax": "bmptopnm -verbose {{path/to/file.bmp}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "bmptopnm -version"
+    }
+  ]
+}

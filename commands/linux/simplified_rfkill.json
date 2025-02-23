@@ -1,0 +1,26 @@
+{
+  "command": "rfkill",
+  "description": "Enable and disable wireless devices. More information: https://manned.org/rfkill.",
+  "useCases": [
+    {
+      "description": "List devices:",
+      "syntax": "rfkill"
+    },
+    {
+      "description": "Filter by columns:",
+      "syntax": "rfkill -o {{ID,TYPE,DEVICE}}"
+    },
+    {
+      "description": "Block devices by type (e.g. bluetooth, wlan):",
+      "syntax": "rfkill block {{bluetooth}}"
+    },
+    {
+      "description": "Unblock devices by type (e.g. bluetooth, wlan):",
+      "syntax": "rfkill unblock {{wlan}}"
+    },
+    {
+      "description": "Output in JSON format:",
+      "syntax": "rfkill -J"
+    }
+  ]
+}

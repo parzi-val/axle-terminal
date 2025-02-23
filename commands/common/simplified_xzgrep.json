@@ -1,0 +1,34 @@
+{
+  "command": "xzgrep",
+  "description": "Search files possibly compressed with xz, lzma, gzip, bzip2, lzop, or zstd using regular expressions. See also: grep. More information: https://manned.org/xzgrep.",
+  "useCases": [
+    {
+      "description": "Search for a pattern within a file:",
+      "syntax": "xzgrep &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for an exact string (disables regular expressions):",
+      "syntax": "xzgrep --fixed-strings &quot;{{exact_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for a pattern in all files showing line numbers of matches:",
+      "syntax": "xzgrep --line-number &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Use extended regular expressions (supports ?, +, {}, () and |), in case-insensitive mode:",
+      "syntax": "xzgrep --extended-regexp --ignore-case &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print 3 lines of context around, before, or after each match:",
+      "syntax": "xzgrep --{{context|before-context|after-context}}={{3}} &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print file name and line number for each match with color output:",
+      "syntax": "xzgrep --with-filename --line-number --color=always &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines matching a pattern, printing only the matched text:",
+      "syntax": "xzgrep --only-matching &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    }
+  ]
+}

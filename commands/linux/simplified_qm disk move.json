@@ -1,0 +1,14 @@
+{
+  "command": "qm disk move",
+  "description": "Move a virtual disk from one storage to another within the same Proxmox cluster. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Move a virtual disk:",
+      "syntax": "qm disk move {{vm_id}} {{destination}} {{index}}"
+    },
+    {
+      "description": "Delete the previous copy of the virtual disk:",
+      "syntax": "qm disk move -delete {{vm_id}} {{destination}} {{index}}"
+    }
+  ]
+}

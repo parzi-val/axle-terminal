@@ -1,0 +1,18 @@
+{
+  "command": "id3tag",
+  "description": "Read, write, and manipulate ID3v1 and ID3v2 tags of MP3 files. More information: https://manned.org/id3tag.",
+  "useCases": [
+    {
+      "description": "Set artist and song title tag of an MP3 file:",
+      "syntax": "id3tag --artist {{artist}} --song {{song_title}} {{path/to/file.mp3}}"
+    },
+    {
+      "description": "Set album title of all MP3 files in the current directory:",
+      "syntax": "id3tag --album {{album}} {{*.mp3}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "id3tag --help"
+    }
+  ]
+}

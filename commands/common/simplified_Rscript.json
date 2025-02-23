@@ -1,0 +1,22 @@
+{
+  "command": "Rscript",
+  "description": "Run a script with the R programming language. More information: https://www.r-project.org.",
+  "useCases": [
+    {
+      "description": "Run a script:",
+      "syntax": "Rscript {{path/to/file.R}}"
+    },
+    {
+      "description": "Run a script in vanilla mode (i.e. a blank session that doesn't save the workspace at the end):",
+      "syntax": "Rscript --vanilla {{path/to/file.R}}"
+    },
+    {
+      "description": "Execute one or more R expressions:",
+      "syntax": "Rscript -e {{expression1}} -e {{expression2}}"
+    },
+    {
+      "description": "Display R version:",
+      "syntax": "Rscript --version"
+    }
+  ]
+}

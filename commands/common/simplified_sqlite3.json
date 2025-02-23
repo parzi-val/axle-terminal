@@ -1,0 +1,18 @@
+{
+  "command": "sqlite3",
+  "description": "The command-line interface to SQLite 3, which is a self-contained file-based embedded SQL engine. More information: https://sqlite.org.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell with a new database:",
+      "syntax": "sqlite3"
+    },
+    {
+      "description": "Open an interactive shell against an existing database:",
+      "syntax": "sqlite3 {{path/to/database.sqlite3}}"
+    },
+    {
+      "description": "Execute an SQL statement against a database and then exit:",
+      "syntax": "sqlite3 {{path/to/database.sqlite3}} '{{SELECT * FROM some_table;}}'"
+    }
+  ]
+}

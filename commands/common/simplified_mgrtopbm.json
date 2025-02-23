@@ -1,0 +1,10 @@
+{
+  "command": "mgrtopbm",
+  "description": "Convert a MGR bitmap into a PBM file. See also: pbmtomgr. More information: https://netpbm.sourceforge.net/doc/mgrtopbm.html.",
+  "useCases": [
+    {
+      "description": "Convert a MGR bitmap into a PBM file:",
+      "syntax": "mgrtopbm {{path/to/image.mgr}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

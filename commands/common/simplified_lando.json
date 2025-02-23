@@ -1,0 +1,38 @@
+{
+  "command": "lando",
+  "description": "Local development environment and DevOps tool built on Docker. More information: https://docs.lando.dev/cli/.",
+  "useCases": [
+    {
+      "description": "Initialize code for use with lando:",
+      "syntax": "lando init"
+    },
+    {
+      "description": "Print information about your app:",
+      "syntax": "lando info"
+    },
+    {
+      "description": "Start your app:",
+      "syntax": "lando start"
+    },
+    {
+      "description": "Stop your app:",
+      "syntax": "lando stop"
+    },
+    {
+      "description": "Restart your app:",
+      "syntax": "lando restart"
+    },
+    {
+      "description": "Rebuild your app from scratch, preserving data:",
+      "syntax": "lando rebuild"
+    },
+    {
+      "description": "Display logs for your app:",
+      "syntax": "lando logs"
+    },
+    {
+      "description": "Destroy your app:",
+      "syntax": "lando destroy"
+    }
+  ]
+}

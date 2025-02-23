@@ -1,0 +1,10 @@
+{
+  "command": "xbmtopbm",
+  "description": "Convert an X11 or X10 bitmap to a PBM image. More information: https://netpbm.sourceforge.net/doc/xbmtopbm.html.",
+  "useCases": [
+    {
+      "description": "Convert an XBM image to a PPM image:",
+      "syntax": "xbmtopbm {{path/to/input_file.xbm}} &gt; {{path/to/output_file.pbm}}"
+    }
+  ]
+}

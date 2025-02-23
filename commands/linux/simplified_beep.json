@@ -1,0 +1,26 @@
+{
+  "command": "beep",
+  "description": "A utility to beep the PC speaker. More information: https://github.com/spkr-beep/beep.",
+  "useCases": [
+    {
+      "description": "Play a beep:",
+      "syntax": "beep"
+    },
+    {
+      "description": "Play a beep that repeats:",
+      "syntax": "beep -r {{repetitions}}"
+    },
+    {
+      "description": "Play a beep at a specified frequency (Hz) and duration (milliseconds):",
+      "syntax": "beep -f {{frequency}} -l {{duration}}"
+    },
+    {
+      "description": "Play each new frequency and duration as a distinct beep:",
+      "syntax": "beep -f {{frequency}} -l {{duration}} -n -f {{frequency}} -l {{duration}}"
+    },
+    {
+      "description": "Play the C major scale:",
+      "syntax": "beep -f {{262}} -n -f {{294}} -n -f {{330}} -n -f {{349}} -n -f {{392}} -n -f {{440}} -n -f {{494}} -n -f {{523}}"
+    }
+  ]
+}

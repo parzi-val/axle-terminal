@@ -1,0 +1,34 @@
+{
+  "command": "pip3",
+  "description": "Python package manager. More information: https://pip.pypa.io.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "pip3 install {{package}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "pip3 install {{package}}=={{version}}"
+    },
+    {
+      "description": "Upgrade a package:",
+      "syntax": "pip3 install --upgrade {{package}}"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "pip3 uninstall {{package}}"
+    },
+    {
+      "description": "Save the list of installed packages to a file:",
+      "syntax": "pip3 freeze &gt; {{requirements.txt}}"
+    },
+    {
+      "description": "Install packages from a file:",
+      "syntax": "pip3 install --requirement {{requirements.txt}}"
+    },
+    {
+      "description": "Show installed package info:",
+      "syntax": "pip3 show {{package}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "tcpdump",
+  "description": "Dump traffic on a network. More information: https://www.tcpdump.org.",
+  "useCases": [
+    {
+      "description": "List available network interfaces:",
+      "syntax": "tcpdump -D"
+    },
+    {
+      "description": "Capture the traffic of a specific interface:",
+      "syntax": "tcpdump -i {{eth0}}"
+    },
+    {
+      "description": "Capture all TCP traffic showing contents (ASCII) in console:",
+      "syntax": "tcpdump -A tcp"
+    },
+    {
+      "description": "Capture the traffic from or to a host:",
+      "syntax": "tcpdump host {{www.example.com}}"
+    },
+    {
+      "description": "Capture the traffic from a specific interface, source, destination and destination port:",
+      "syntax": "tcpdump -i {{eth0}} src {{192.168.1.1}} and dst {{192.168.1.2}} and dst port {{80}}"
+    },
+    {
+      "description": "Capture the traffic of a network:",
+      "syntax": "tcpdump net {{192.168.1.0/24}}"
+    },
+    {
+      "description": "Capture all traffic except traffic over port 22 and save to a dump file:",
+      "syntax": "tcpdump -w {{dumpfile.pcap}} port not {{22}}"
+    },
+    {
+      "description": "Read from a given dump file:",
+      "syntax": "tcpdump -r {{dumpfile.pcap}}"
+    }
+  ]
+}

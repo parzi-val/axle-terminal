@@ -1,0 +1,38 @@
+{
+  "command": "Get-Help",
+  "description": "Display help information and documentation for PowerShell commands (aliases, cmdlets, and functions). This command can only be run through PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/get-help.",
+  "useCases": [
+    {
+      "description": "Display general help information for a specific PowerShell command:",
+      "syntax": "Get-Help {{command}}"
+    },
+    {
+      "description": "Display a more detailed documentation for a specific PowerShell command:",
+      "syntax": "Get-Help {{command}} -Detailed"
+    },
+    {
+      "description": "Display the full technical documentation for a specific PowerShell command:",
+      "syntax": "Get-Help {{command}} -Full"
+    },
+    {
+      "description": "Print only the documentation for a specific parameter of the PowerShell command (use * to show all parameters), if available:",
+      "syntax": "Get-Help {{command}} -Parameter {{parameter}}"
+    },
+    {
+      "description": "Print only the examples of the cmdlet, if available:",
+      "syntax": "Get-Help {{command}} -Examples"
+    },
+    {
+      "description": "List all available cmdlet help pages:",
+      "syntax": "Get-Help *"
+    },
+    {
+      "description": "Update the current help and documentation knowledge base using Update-Help:",
+      "syntax": "Update-Help"
+    },
+    {
+      "description": "View an online version of PowerShell command documentation in the default web browser:",
+      "syntax": "Get-Help {{command}} -Online"
+    }
+  ]
+}

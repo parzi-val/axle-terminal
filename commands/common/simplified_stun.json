@@ -1,0 +1,14 @@
+{
+  "command": "stun",
+  "description": "Classic STUN client. More information: https://manned.org/stun.1.",
+  "useCases": [
+    {
+      "description": "Make a STUN request:",
+      "syntax": "stun {{stun.1und1.de}}"
+    },
+    {
+      "description": "Make a STUN request and specify the source port:",
+      "syntax": "stun {{stun.1und1.de}} -p {{4302}}"
+    }
+  ]
+}

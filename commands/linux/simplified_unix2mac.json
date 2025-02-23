@@ -1,0 +1,22 @@
+{
+  "command": "unix2mac",
+  "description": "Change Unix-style line endings to macOS-style. Replaces LF with CR. See also unix2dos, dos2unix, and mac2unix. More information: https://manned.org/unix2mac.",
+  "useCases": [
+    {
+      "description": "Change the line endings of a file:",
+      "syntax": "unix2mac {{path/to/file}}"
+    },
+    {
+      "description": "Create a copy with macOS-style line endings:",
+      "syntax": "unix2mac {{-n|--newfile}} {{path/to/file}} {{path/to/new_file}}"
+    },
+    {
+      "description": "Display file information:",
+      "syntax": "unix2mac {{-i|--info}} {{path/to/file}}"
+    },
+    {
+      "description": "Keep/add/remove Byte Order Mark:",
+      "syntax": "unix2mac --{{keep-bom|add-bom|remove-bom}} {{path/to/file}}"
+    }
+  ]
+}

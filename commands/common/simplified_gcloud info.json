@@ -1,0 +1,18 @@
+{
+  "command": "gcloud info",
+  "description": "Display information about the current gcloud environment. More information: https://cloud.google.com/sdk/gcloud/reference/info.",
+  "useCases": [
+    {
+      "description": "Display gcloud environment information:",
+      "syntax": "gcloud info"
+    },
+    {
+      "description": "Check network connectivity and hidden properties:",
+      "syntax": "gcloud info --run-diagnostics"
+    },
+    {
+      "description": "Print the contents of the most recent log file:",
+      "syntax": "gcloud info --show-log"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "gcrane completion",
+  "description": "Generate the autocompletion script for gcrane for the specified shell. The available shells are bash, fish, powershell, and zsh. More information: https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.md.",
+  "useCases": [
+    {
+      "description": "Generate the autocompletion script for your shell:",
+      "syntax": "gcrane completion {{shell_name}}"
+    },
+    {
+      "description": "Disable completion descriptions:",
+      "syntax": "gcrane completion {{shell_name}} --no-descriptions"
+    },
+    {
+      "description": "Load completions in your current shell session (bash/zsh):",
+      "syntax": "source &lt;(gcrane completion bash/zsh)&gt;"
+    },
+    {
+      "description": "Load completions in your current shell session (fish):",
+      "syntax": "gcrane completion fish | source"
+    },
+    {
+      "description": "Load completions for every new session (bash):",
+      "syntax": "gcrane completion bash &gt; /etc/bash_completion.d/gcrane"
+    },
+    {
+      "description": "Load completions for every new session (zsh):",
+      "syntax": "gcrane completion zsh &gt; &quot;${fpath[1]}/_gcrane&quot;"
+    },
+    {
+      "description": "Load completions for every new session (fish):",
+      "syntax": "gcrane completion fish &gt; ~/.config/fish/completions/gcrane.fish"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gcrane completion {{shell_name}} {{-h|--help}}"
+    }
+  ]
+}

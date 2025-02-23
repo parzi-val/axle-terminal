@@ -1,0 +1,26 @@
+{
+  "command": "apt-clone",
+  "description": "Clone/backup/restore the package state of a Debian-based system. More information: https://github.com/mvo5/apt-clone.",
+  "useCases": [
+    {
+      "description": "Clone the package state of the current system into a specified directory:",
+      "syntax": "apt-clone clone {{path/to/directory}}"
+    },
+    {
+      "description": "Create a clone file (tar.gz) for backup purposes:",
+      "syntax": "apt-clone clone --destination {{path/to/backup.tar.gz}}"
+    },
+    {
+      "description": "Restore the package state from a clone file:",
+      "syntax": "apt-clone restore {{path/to/backup.tar.gz}}"
+    },
+    {
+      "description": "Show information about a clone file (e.g., the release, architecture):",
+      "syntax": "apt-clone info {{path/to/backup.tar.gz}}"
+    },
+    {
+      "description": "Check if the clone file can be restored on the current system:",
+      "syntax": "apt-clone restore {{path/to/backup.tar.gz}} --destination {{path/to/restore}}"
+    }
+  ]
+}

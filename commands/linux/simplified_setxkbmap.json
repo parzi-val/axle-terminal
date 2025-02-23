@@ -1,0 +1,30 @@
+{
+  "command": "setxkbmap",
+  "description": "Set the keyboard using the X Keyboard Extension. More information: https://manned.org/setxkbmap.",
+  "useCases": [
+    {
+      "description": "Set the keyboard in French AZERTY:",
+      "syntax": "setxkbmap {{fr}}"
+    },
+    {
+      "description": "Set multiple keyboard layouts, their variants and switching option:",
+      "syntax": "setxkbmap -layout {{us,de}} -variant {{,qwerty}} -option {{'grp:alt_caps_toggle'}}"
+    },
+    {
+      "description": "Get help:",
+      "syntax": "setxkbmap -help"
+    },
+    {
+      "description": "List all layouts:",
+      "syntax": "localectl list-x11-keymap-layouts"
+    },
+    {
+      "description": "List variants for the layout:",
+      "syntax": "localectl list-x11-keymap-variants {{de}}"
+    },
+    {
+      "description": "List available switching options:",
+      "syntax": "localectl list-x11-keymap-options | grep grp:"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "obabel",
+  "description": "Translate chemistry-related data. More information: https://open-babel.readthedocs.io/en/latest/Command-line_tools/babel.html.",
+  "useCases": [
+    {
+      "description": "Convert a .mol file to XYZ coordinates:",
+      "syntax": "obabel {{path/to/file.mol}} -O {{path/to/output_file.xyz}}"
+    },
+    {
+      "description": "Convert a SMILES string to a 500x500 picture:",
+      "syntax": "obabel -:&quot;{{SMILES}}&quot; -O {{path/to/output_file.png}} -xp 500"
+    },
+    {
+      "description": "Convert a file of SMILES string to separate 3D .mol files:",
+      "syntax": "obabel {{path/to/file.smi}} -O {{path/to/output_file.mol}} --gen3D -m"
+    },
+    {
+      "description": "Render multiple inputs into one picture:",
+      "syntax": "obabel {{path/to/file1 path/to/file2 ...}} -O {{path/to/output_file.png}}"
+    }
+  ]
+}

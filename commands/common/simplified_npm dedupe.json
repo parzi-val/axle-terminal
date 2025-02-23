@@ -1,0 +1,30 @@
+{
+  "command": "npm dedupe",
+  "description": "Reduce duplication in the node_modules directory. More information: https://docs.npmjs.com/cli/commands/npm-dedupe.",
+  "useCases": [
+    {
+      "description": "Deduplicate packages in node_modules:",
+      "syntax": "npm dedupe"
+    },
+    {
+      "description": "Follow package-lock.json or npm-shrinkwrap.json during deduplication:",
+      "syntax": "npm dedupe --lock"
+    },
+    {
+      "description": "Run deduplication in strict mode:",
+      "syntax": "npm dedupe --strict"
+    },
+    {
+      "description": "Skip optional/peer dependencies during deduplication:",
+      "syntax": "npm dedupe --omit={{optional|peer}}"
+    },
+    {
+      "description": "Enable detailed logging for troubleshooting:",
+      "syntax": "npm dedupe --loglevel=verbose"
+    },
+    {
+      "description": "Limit deduplication to a specific package:",
+      "syntax": "npm dedupe {{package_name}}"
+    }
+  ]
+}

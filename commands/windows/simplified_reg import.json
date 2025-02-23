@@ -1,0 +1,10 @@
+{
+  "command": "reg import",
+  "description": "Import all available keys, subkeys, and values from a .reg file. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-import.",
+  "useCases": [
+    {
+      "description": "Import all keys, subkeys and values from a file:",
+      "syntax": "reg import {{path\\to\\file.reg}}"
+    }
+  ]
+}

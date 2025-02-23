@@ -1,0 +1,26 @@
+{
+  "command": "gfortran",
+  "description": "Preprocess and compile Fortran source files, then assemble and link them together. More information: https://gcc.gnu.org/wiki/GFortran.",
+  "useCases": [
+    {
+      "description": "Compile multiple source files into an executable:",
+      "syntax": "gfortran {{path/to/source1.f90 path/to/source2.f90 ...}} -o {{path/to/output_executable}}"
+    },
+    {
+      "description": "Show common warnings, debug symbols in output, and optimize without affecting debugging:",
+      "syntax": "gfortran {{path/to/source.f90}} -Wall -g -Og -o {{path/to/output_executable}}"
+    },
+    {
+      "description": "Include libraries from a different path:",
+      "syntax": "gfortran {{path/to/source.f90}} -o {{path/to/output_executable}} -I{{path/to/mod_and_include}} -L{{path/to/library}} -l{{library_name}}"
+    },
+    {
+      "description": "Compile source code into Assembler instructions:",
+      "syntax": "gfortran -S {{path/to/source.f90}}"
+    },
+    {
+      "description": "Compile source code into an object file without linking:",
+      "syntax": "gfortran -c {{path/to/source.f90}}"
+    }
+  ]
+}

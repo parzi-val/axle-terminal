@@ -1,0 +1,30 @@
+{
+  "command": "influx",
+  "description": "InfluxDB command-line client. More information: https://docs.influxdata.com/influxdb/v1.7/tools/shell/.",
+  "useCases": [
+    {
+      "description": "Connect to an InfluxDB running on localhost with no credentials:",
+      "syntax": "influx"
+    },
+    {
+      "description": "Connect with a specific username (will prompt for a password):",
+      "syntax": "influx -username {{username}} -password &quot;&quot;"
+    },
+    {
+      "description": "Connect to a specific host:",
+      "syntax": "influx -host {{hostname}}"
+    },
+    {
+      "description": "Use a specific database:",
+      "syntax": "influx -database {{database_name}}"
+    },
+    {
+      "description": "Execute a given command:",
+      "syntax": "influx -execute &quot;{{influxql_command}}&quot;"
+    },
+    {
+      "description": "Return output in a specific format:",
+      "syntax": "influx -execute &quot;{{influxql_command}}&quot; -format {{json|csv|column}}"
+    }
+  ]
+}

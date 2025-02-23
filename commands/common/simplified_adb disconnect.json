@@ -1,0 +1,10 @@
+{
+  "command": "adb disconnect",
+  "description": "This command has been moved to adb connect.",
+  "useCases": [
+    {
+      "description": "View documentation for adb disconnect:",
+      "syntax": "tldr adb connect"
+    }
+  ]
+}

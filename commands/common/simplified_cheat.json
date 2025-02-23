@@ -1,0 +1,26 @@
+{
+  "command": "cheat",
+  "description": "Create and view interactive cheat sheets. More information: https://github.com/cheat/cheat.",
+  "useCases": [
+    {
+      "description": "Show example usage of a command:",
+      "syntax": "cheat {{command}}"
+    },
+    {
+      "description": "Edit the cheat sheet for a command:",
+      "syntax": "cheat -e {{command}}"
+    },
+    {
+      "description": "List the available cheat sheets:",
+      "syntax": "cheat -l"
+    },
+    {
+      "description": "Search available the cheat sheets for a specified command name:",
+      "syntax": "cheat -s {{command}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "cheat -v"
+    }
+  ]
+}

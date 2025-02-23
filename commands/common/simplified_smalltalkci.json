@@ -1,0 +1,30 @@
+{
+  "command": "smalltalkci",
+  "description": "Framework for testing Smalltalk projects with GitHub Actions, Travis CI, AppVeyor, GitLab CI, and others. More information: https://github.com/hpi-swa/smalltalkCI.",
+  "useCases": [
+    {
+      "description": "Run tests for a configuration file:",
+      "syntax": "smalltalkci {{path/to/.smalltalk.ston}}"
+    },
+    {
+      "description": "Run tests for the .smalltalk.ston configuration in the current directory:",
+      "syntax": "smalltalkci"
+    },
+    {
+      "description": "Debug tests in headful mode (show VM window):",
+      "syntax": "smalltalkci --headful"
+    },
+    {
+      "description": "Download and prepare a well-known smalltalk image for the tests:",
+      "syntax": "smalltalkci --smalltalk {{Squeak64-Trunk}}"
+    },
+    {
+      "description": "Specify a custom Smalltalk image and VM:",
+      "syntax": "smalltalkci --image {{path/to/Smalltalk.image}} --vm {{path/to/vm}}"
+    },
+    {
+      "description": "Clean up caches and delete builds:",
+      "syntax": "smalltalkci --clean"
+    }
+  ]
+}

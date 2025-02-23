@@ -1,0 +1,34 @@
+{
+  "command": "yadm",
+  "description": "A dotfiles manager that works by using git. Some subcommands such as init, clone, push, and pull have their own usage documentation. More information: https://yadm.io/docs/overview.",
+  "useCases": [
+    {
+      "description": "Override the yadm directory. yadm stores its configurations relative to this directory:",
+      "syntax": "yadm --yadm-dir"
+    },
+    {
+      "description": "Override the yadm data directory: yadm stores its data relative to this directory:",
+      "syntax": "yadm --yadm-data"
+    },
+    {
+      "description": "Override the location of the yadm repository:",
+      "syntax": "yadm --yadm-repo"
+    },
+    {
+      "description": "Override the location of the yadm configuration file:",
+      "syntax": "yadm --yadm-config"
+    },
+    {
+      "description": "Override the location of the yadm encryption configuration:",
+      "syntax": "yadm --yadm-encrypt"
+    },
+    {
+      "description": "Override the location of the yadm encrypted files archive:",
+      "syntax": "yadm --yadm-archive"
+    },
+    {
+      "description": "Override the location of the yadm bootstrap program:",
+      "syntax": "yadm --yadm-bootstrap"
+    }
+  ]
+}

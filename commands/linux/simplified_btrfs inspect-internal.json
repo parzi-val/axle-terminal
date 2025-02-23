@@ -1,0 +1,30 @@
+{
+  "command": "btrfs inspect-internal",
+  "description": "Query internal information of a btrfs filesystem. More information: https://btrfs.readthedocs.io/en/latest/btrfs-inspect-internal.html.",
+  "useCases": [
+    {
+      "description": "Print superblock's information:",
+      "syntax": "sudo btrfs inspect-internal dump-super {{path/to/partition}}"
+    },
+    {
+      "description": "Print superblock's and all of its copies' information:",
+      "syntax": "sudo btrfs inspect-internal dump-super --all {{path/to/partition}}"
+    },
+    {
+      "description": "Print filesystem's metadata information:",
+      "syntax": "sudo btrfs inspect-internal dump-tree {{path/to/partition}}"
+    },
+    {
+      "description": "Print list of files in inode n-th:",
+      "syntax": "sudo btrfs inspect-internal inode-resolve {{n}} {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Print list of files at a given logical address:",
+      "syntax": "sudo btrfs inspect-internal logical-resolve {{logical_address}} {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Print stats of root, extent, csum and fs trees:",
+      "syntax": "sudo btrfs inspect-internal tree-stats {{path/to/partition}}"
+    }
+  ]
+}

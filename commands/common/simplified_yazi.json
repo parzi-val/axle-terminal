@@ -1,0 +1,22 @@
+{
+  "command": "yazi",
+  "description": "Blazing fast terminal file manager written in Rust. Efficient, user-friendly, and customizable file management experience. More information: https://github.com/sxyazi/yazi.",
+  "useCases": [
+    {
+      "description": "Launch Yazi from the current directory:",
+      "syntax": "yazi"
+    },
+    {
+      "description": "Print debug information:",
+      "syntax": "yazi --debug"
+    },
+    {
+      "description": "Write the current working directory on exit to the file:",
+      "syntax": "yazi --cwd-file {{path/to/cwd_file}}"
+    },
+    {
+      "description": "Clear the cache directory:",
+      "syntax": "yazi --clear-cache"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "xml validate",
+  "description": "Validate XML documents. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Validate one or more XML documents for well-formedness only:",
+      "syntax": "xml validate {{path/to/input1.xml|URI}} {{input2.xml ...}}"
+    },
+    {
+      "description": "Validate one or more XML documents against a Document Type Definition (DTD):",
+      "syntax": "xml validate --dtd {{path/to/schema.dtd}} {{path/to/input1.xml|URI}} {{input2.xml ...}}"
+    },
+    {
+      "description": "Validate one or more XML documents against an XML Schema Definition (XSD):",
+      "syntax": "xml validate --xsd {{path/to/schema.xsd}} {{path/to/input1.xml|URI}} {{input2.xml ...}}"
+    },
+    {
+      "description": "Validate one or more XML documents against a Relax NG schema (RNG):",
+      "syntax": "xml validate --relaxng {{path/to/schema.rng}} {{path/to/input1.xml|URI}} {{input2.xml ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml validate --help"
+    }
+  ]
+}

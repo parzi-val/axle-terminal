@@ -1,0 +1,30 @@
+{
+  "command": "textql",
+  "description": "Execute SQL against structured text like CSV or TSV files. More information: https://github.com/dinedal/textql.",
+  "useCases": [
+    {
+      "description": "Print the lines in the specified CSV file that match an SQL query to stdout:",
+      "syntax": "textql -sql &quot;{{SELECT * FROM filename}}&quot; {{path/to/filename.csv}}"
+    },
+    {
+      "description": "Query a TSV file:",
+      "syntax": "textql -dlm=tab -sql &quot;{{SELECT * FROM filename}}&quot; {{path/to/filename.tsv}}"
+    },
+    {
+      "description": "Query file with header row:",
+      "syntax": "textql -dlm={{delimiter}} -header -sql &quot;{{SELECT * FROM filename}}&quot; {{path/to/filename.csv}}"
+    },
+    {
+      "description": "Read data from stdin:",
+      "syntax": "cat {{path/to/file}} | textql -sql &quot;{{SELECT * FROM stdin}}&quot;"
+    },
+    {
+      "description": "Join two files on a specified common column:",
+      "syntax": "textql -header -sql &quot;SELECT * FROM {{path/to/file1}} JOIN {{file2}} ON {{path/to/file1}}.{{c1}} = {{file2}}.{{c1}} LIMIT {{10}}&quot; -output-header {{path/to/file1.csv}} {{path/to/file2.csv}}"
+    },
+    {
+      "description": "Format output using an output delimiter with an output header line:",
+      "syntax": "textql -output-dlm={{delimiter}} -output-header -sql &quot;SELECT {{column}} AS {{alias}} FROM {{filename}}&quot; {{path/to/filename.csv}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "cockpit-ws",
+  "description": "Communicate between the browser application and various configuration tools and services like cockpit-bridge. More information: https://cockpit-project.org/guide/latest/cockpit-ws.8.html.",
+  "useCases": [
+    {
+      "description": "Start with authentication via SSH at 127.0.0.1 with port 22 enabled:",
+      "syntax": "cockpit-ws --local-ssh"
+    },
+    {
+      "description": "Start an HTTP server on a specific port:",
+      "syntax": "cockpit-ws --port {{port}}"
+    },
+    {
+      "description": "Start and bind to a specific IP address (defaults to 0.0.0.0):",
+      "syntax": "cockpit-ws --address {{ip_address}}"
+    },
+    {
+      "description": "Start without TLS:",
+      "syntax": "cockpit-ws --no-tls"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cockpit-ws --help"
+    }
+  ]
+}

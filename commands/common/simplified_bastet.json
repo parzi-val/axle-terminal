@@ -1,0 +1,34 @@
+{
+  "command": "bastet",
+  "description": "Clone of the game Tetris in the terminal. More information: https://fph.altervista.org/prog/bastet.html.",
+  "useCases": [
+    {
+      "description": "Start a Tetris game:",
+      "syntax": "bastet"
+    },
+    {
+      "description": "Navigate the piece horizontally:",
+      "syntax": "{{Left|Right arrow key}}"
+    },
+    {
+      "description": "Rotate the piece clockwise or counterclockwise:",
+      "syntax": "{{Spacebar|Up arrow key}}"
+    },
+    {
+      "description": "Soft drop the piece:",
+      "syntax": "&lt;Down arrow key&gt;"
+    },
+    {
+      "description": "Hard drop the piece:",
+      "syntax": "&lt;Enter&gt;"
+    },
+    {
+      "description": "Pause the game:",
+      "syntax": "p"
+    },
+    {
+      "description": "Quit the game:",
+      "syntax": "&lt;Ctrl&gt; + C"
+    }
+  ]
+}

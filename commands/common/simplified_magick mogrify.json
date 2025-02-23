@@ -1,0 +1,30 @@
+{
+  "command": "magick mogrify",
+  "description": "Perform operations on multiple images, such as resizing, cropping, flipping, and adding effects. Changes are applied directly to the original file. See also: magick. More information: https://imagemagick.org/script/mogrify.php.",
+  "useCases": [
+    {
+      "description": "Resize all JPEG images in the directory to 50% of their initial size:",
+      "syntax": "magick mogrify -resize {{50%}} {{*.jpg}}"
+    },
+    {
+      "description": "Resize all images starting with DSC to 800x600:",
+      "syntax": "magick mogrify -resize {{800x600}} {{DSC*}}"
+    },
+    {
+      "description": "Convert all PNGs in the directory to JPEG:",
+      "syntax": "magick mogrify -format {{jpg}} {{*.png}}"
+    },
+    {
+      "description": "Halve the saturation of all image files in the current directory:",
+      "syntax": "magick mogrify -modulate {{100,50}} {{*}}"
+    },
+    {
+      "description": "Double the brightness of all image files in the current directory:",
+      "syntax": "magick mogrify -modulate {{200}} {{*}}"
+    },
+    {
+      "description": "Reduce file sizes of all GIF images in the current directory by reducing quality:",
+      "syntax": "magick mogrify -layers 'optimize' -fuzz {{7%}} {{*.gif}}"
+    }
+  ]
+}

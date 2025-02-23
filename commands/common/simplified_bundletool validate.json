@@ -1,0 +1,10 @@
+{
+  "command": "bundletool validate",
+  "description": "Manipulate Android Application Bundles. More information: https://developer.android.com/tools/bundletool.",
+  "useCases": [
+    {
+      "description": "Verify a bundle and display detailed information about it:",
+      "syntax": "bundletool validate --bundle {{path/to/bundle.aab}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "cordova",
+  "description": "Mobile apps with HTML, CSS & JS. More information: https://cordova.apache.org/docs/en/latest/guide/cli/.",
+  "useCases": [
+    {
+      "description": "Create a Cordova project:",
+      "syntax": "cordova create {{path/to/directory}} {{package}} {{project_name}}"
+    },
+    {
+      "description": "Display the current workspace status:",
+      "syntax": "cordova info"
+    },
+    {
+      "description": "Add a Cordova platform:",
+      "syntax": "cordova platform add {{platform}}"
+    },
+    {
+      "description": "Remove a Cordova platform:",
+      "syntax": "cordova platform remove {{platform}}"
+    },
+    {
+      "description": "Add a Cordova plugin:",
+      "syntax": "cordova plugin add {{pluginid}}"
+    },
+    {
+      "description": "Remove a Cordova plugin:",
+      "syntax": "cordova plugin remove {{pluginid}}"
+    }
+  ]
+}

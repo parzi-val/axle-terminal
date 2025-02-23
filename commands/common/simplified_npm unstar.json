@@ -1,0 +1,30 @@
+{
+  "command": "npm unstar",
+  "description": "Remove the favorite/star mark from a package. More information: https://docs.npmjs.com/cli/commands/npm-unstar.",
+  "useCases": [
+    {
+      "description": "Unstar a public package from the default registry:",
+      "syntax": "npm unstar {{package_name}}"
+    },
+    {
+      "description": "Unstar a package within a specific scope:",
+      "syntax": "npm unstar @{{scope}}/{{package_name}}"
+    },
+    {
+      "description": "Unstar a package from a specific registry:",
+      "syntax": "npm unstar {{package_name}} --registry={{registry_url}}"
+    },
+    {
+      "description": "Unstar a private package that requires authentication:",
+      "syntax": "npm unstar {{package_name}} --auth-type={{legacy|oauth|web|saml}}"
+    },
+    {
+      "description": "Unstar a package by providing an OTP for two-factor authentication:",
+      "syntax": "npm unstar {{package_name}} --otp={{otp}}"
+    },
+    {
+      "description": "Unstar a package with a specific logging level:",
+      "syntax": "npm unstar {{package_name}} --loglevel={{silent|error|warn|notice|http|timing|info|verbose|silly}}"
+    }
+  ]
+}

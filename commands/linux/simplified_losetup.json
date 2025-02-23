@@ -1,0 +1,30 @@
+{
+  "command": "losetup",
+  "description": "Set up and control loop devices. More information: https://manned.org/losetup.",
+  "useCases": [
+    {
+      "description": "List loop devices with detailed info:",
+      "syntax": "losetup -a"
+    },
+    {
+      "description": "Attach a file to a given loop device:",
+      "syntax": "sudo losetup {{/dev/loop}} /{{path/to/file}}"
+    },
+    {
+      "description": "Attach a file to a new free loop device and scan the device for partitions:",
+      "syntax": "sudo losetup --show --partscan -f /{{path/to/file}}"
+    },
+    {
+      "description": "Attach a file to a read-only loop device:",
+      "syntax": "sudo losetup --read-only {{/dev/loop}} /{{path/to/file}}"
+    },
+    {
+      "description": "Detach all loop devices:",
+      "syntax": "sudo losetup -D"
+    },
+    {
+      "description": "Detach a given loop device:",
+      "syntax": "sudo losetup -d {{/dev/loop}}"
+    }
+  ]
+}

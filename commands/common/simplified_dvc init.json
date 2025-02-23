@@ -1,0 +1,18 @@
+{
+  "command": "dvc init",
+  "description": "Initialize a new local DVC repository. More information: https://dvc.org/doc/command-reference/init.",
+  "useCases": [
+    {
+      "description": "Initialize a new local repository:",
+      "syntax": "dvc init"
+    },
+    {
+      "description": "Initialize DVC without Git:",
+      "syntax": "dvc init --no-scm"
+    },
+    {
+      "description": "Initialize DVC in a subdirectory:",
+      "syntax": "cd {{path/to/subdir}} &amp;&amp; dvc init --sudir"
+    }
+  ]
+}

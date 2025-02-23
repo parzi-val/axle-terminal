@@ -1,0 +1,30 @@
+{
+  "command": "az logicapp",
+  "description": "Manage Logic Apps in Azure Cloud Services. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/logicapp.",
+  "useCases": [
+    {
+      "description": "Create a logic app:",
+      "syntax": "az logicapp create --name {{name}} --resource-group {{resource_group}} --storage-account {{storage_account}}"
+    },
+    {
+      "description": "Delete a logic app:",
+      "syntax": "az logicapp delete --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "List logic apps:",
+      "syntax": "az logicapp list --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Restart a logic app:",
+      "syntax": "az logicapp restart --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Start a logic app:",
+      "syntax": "az logicapp start --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Stop a logic app:",
+      "syntax": "az logicapp stop --name {{name}} --resource-group {{resource_group}}"
+    }
+  ]
+}

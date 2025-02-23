@@ -1,0 +1,22 @@
+{
+  "command": "az repos",
+  "description": "Manage Azure DevOps repos. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/repos.",
+  "useCases": [
+    {
+      "description": "List all repos in a specific project:",
+      "syntax": "az repos list --project {{project_name}}"
+    },
+    {
+      "description": "Add policy on a specific branch of a specific repository to restrict basic merge:",
+      "syntax": "az repos policy merge-strategy create --repository-id {{repository_id_in_repos_list}} --branch {{branch_name}} --blocking --enabled --allow-no-fast-forward false --allow-rebase true --allow-rebase-merge true --allow-squash true"
+    },
+    {
+      "description": "Add build validation on a specific repository, using an existing build pipeline, to be triggered automatically on source update:",
+      "syntax": "az repos policy build create --repository-id {{repository_id}} --build-definition-id {{build_pipeline_id}} --branch main --blocking --enabled --queue-on-source-update-only true --display-name {{name}} --valid-duration {{minutes}}"
+    },
+    {
+      "description": "List all active Pull Requests on a specific repository within a specific project:",
+      "syntax": "az repos pr list --project {{project_name}} --repository {{repository_name}} --status active"
+    }
+  ]
+}

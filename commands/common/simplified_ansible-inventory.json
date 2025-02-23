@@ -1,0 +1,22 @@
+{
+  "command": "ansible-inventory",
+  "description": "Display or dump an Ansible inventory. See also: ansible. More information: https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html.",
+  "useCases": [
+    {
+      "description": "Display the default inventory:",
+      "syntax": "ansible-inventory --list"
+    },
+    {
+      "description": "Display a custom inventory:",
+      "syntax": "ansible-inventory --list --inventory {{path/to/file_or_script_or_directory}}"
+    },
+    {
+      "description": "Display the default inventory in YAML:",
+      "syntax": "ansible-inventory --list --yaml"
+    },
+    {
+      "description": "Dump the default inventory to a file:",
+      "syntax": "ansible-inventory --list --output {{path/to/file}}"
+    }
+  ]
+}

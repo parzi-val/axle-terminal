@@ -1,0 +1,30 @@
+{
+  "command": "gdalinfo",
+  "description": "List various information about a GDAL supported raster dataset. More information: https://gdal.org/programs/gdalinfo.html.",
+  "useCases": [
+    {
+      "description": "List all supported raster formats:",
+      "syntax": "gdalinfo --formats"
+    },
+    {
+      "description": "List information about a specific raster dataset:",
+      "syntax": "gdalinfo {{path/to/input.tif}}"
+    },
+    {
+      "description": "List information about a specific raster dataset in JSON format:",
+      "syntax": "gdalinfo -json {{path/to/input.tif}}"
+    },
+    {
+      "description": "Show histogram values of a specific raster dataset:",
+      "syntax": "gdalinfo -hist {{path/to/input.tif}}"
+    },
+    {
+      "description": "List information about a Web Map Service (WMS):",
+      "syntax": "gdalinfo WMS:{{https://services.meggsimum.de/geoserver/ows}}"
+    },
+    {
+      "description": "List information about a specific dataset of a Web Map Service (WMS):",
+      "syntax": "gdalinfo WMS:{{https://services.meggsimum.de/geoserver/ows}} -sd {{4}}"
+    }
+  ]
+}

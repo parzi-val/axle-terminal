@@ -1,0 +1,22 @@
+{
+  "command": "drupal",
+  "description": "Generate boilerplate code, interact with and debug Drupal projects. Some subcommands such as check have their own usage documentation. More information: https://drupalconsole.com/.",
+  "useCases": [
+    {
+      "description": "Install a module:",
+      "syntax": "drupal module:install {{module_name}}"
+    },
+    {
+      "description": "Uninstall a module:",
+      "syntax": "drupal module:uninstall {{module_name}}"
+    },
+    {
+      "description": "Clear all caches:",
+      "syntax": "drupal cache:rebuild"
+    },
+    {
+      "description": "View current Drupal installation status:",
+      "syntax": "drupal site:status"
+    }
+  ]
+}

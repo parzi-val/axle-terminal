@@ -1,0 +1,10 @@
+{
+  "command": "caffeinate",
+  "description": "Prevent desktop from sleeping. More information: https://manned.org/caffeinate.",
+  "useCases": [
+    {
+      "description": "Prevent desktop from sleeping (use Ctrl + C to exit):",
+      "syntax": "caffeinate"
+    }
+  ]
+}

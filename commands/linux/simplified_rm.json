@@ -1,0 +1,30 @@
+{
+  "command": "rm",
+  "description": "Remove files or directories. See also: rmdir. More information: https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html.",
+  "useCases": [
+    {
+      "description": "Remove specific files:",
+      "syntax": "rm {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Remove specific files ignoring nonexistent ones:",
+      "syntax": "rm --force {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Remove specific files interactively prompting before each removal:",
+      "syntax": "rm --interactive {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Remove specific files printing info about each removal:",
+      "syntax": "rm --verbose {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Remove specific files and directories recursively:",
+      "syntax": "rm --recursive {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Remove empty directories (this is considered the safe method):",
+      "syntax": "rm --dir {{path/to/directory}}"
+    }
+  ]
+}

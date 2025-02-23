@@ -1,0 +1,22 @@
+{
+  "command": "mcookie",
+  "description": "Generates random 128-bit hexadecimal numbers. More information: https://manned.org/mcookie.",
+  "useCases": [
+    {
+      "description": "Generate a random number:",
+      "syntax": "mcookie"
+    },
+    {
+      "description": "Generate a random number, using the contents of a file as a seed for the randomness:",
+      "syntax": "mcookie --file {{path/to/file}}"
+    },
+    {
+      "description": "Generate a random number, using a specific number of bytes from a file as a seed for the randomness:",
+      "syntax": "mcookie --file {{path/to/file}} --max-size {{number_of_bytes}}"
+    },
+    {
+      "description": "Print the details of the randomness used, such as the origin and seed for each source:",
+      "syntax": "mcookie --verbose"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "azure-cli",
+  "description": "This command is an alias of az.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr az"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "fossil rm",
+  "description": "Remove files or directories from Fossil version control. See also: fossil forget. More information: https://fossil-scm.org/home/help/rm.",
+  "useCases": [
+    {
+      "description": "Remove a file or directory from Fossil version control:",
+      "syntax": "fossil rm {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Remove a file or directory from Fossil version control, and also delete it from the disk:",
+      "syntax": "fossil rm --hard {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Re-add all previously removed and uncommitted files to Fossil version control:",
+      "syntax": "fossil rm --reset"
+    }
+  ]
+}

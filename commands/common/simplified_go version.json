@@ -1,0 +1,14 @@
+{
+  "command": "go version",
+  "description": "Display Go version. More information: https://golang.org/cmd/go/#hdr-Print_Go_version.",
+  "useCases": [
+    {
+      "description": "Display version:",
+      "syntax": "go version"
+    },
+    {
+      "description": "Display the Go version used to build a specific executable file:",
+      "syntax": "go version {{path/to/executable}}"
+    }
+  ]
+}

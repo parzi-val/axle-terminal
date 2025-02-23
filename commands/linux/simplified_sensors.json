@@ -1,0 +1,14 @@
+{
+  "command": "sensors",
+  "description": "Report sensors information. More information: https://manned.org/sensors.",
+  "useCases": [
+    {
+      "description": "Show the current readings of all sensor chips:",
+      "syntax": "sensors"
+    },
+    {
+      "description": "Show temperatures in degrees Fahrenheit:",
+      "syntax": "sensors --fahrenheit"
+    }
+  ]
+}

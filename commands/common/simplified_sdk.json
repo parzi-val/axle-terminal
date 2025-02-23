@@ -1,0 +1,38 @@
+{
+  "command": "sdk",
+  "description": "Manage parallel versions of multiple Software Development Kits. Supports Java, Groovy, Scala, Kotlin, Gradle, Maven, Vert.x and many others. More information: https://sdkman.io/usage.",
+  "useCases": [
+    {
+      "description": "Install an SDK version:",
+      "syntax": "sdk install {{sdk_name}} {{sdk_version}}"
+    },
+    {
+      "description": "Use a specific SDK version for the current terminal session:",
+      "syntax": "sdk use {{sdk_name}} {{sdk_version}}"
+    },
+    {
+      "description": "Show the stable version of any available SDK:",
+      "syntax": "sdk current {{sdk_name}}"
+    },
+    {
+      "description": "Show the stable versions of all installed SDKs:",
+      "syntax": "sdk current"
+    },
+    {
+      "description": "List all available SDKs:",
+      "syntax": "sdk list"
+    },
+    {
+      "description": "List all versions of an SDK:",
+      "syntax": "sdk list {{sdk_name}}"
+    },
+    {
+      "description": "Upgrade an SDK to the latest stable version:",
+      "syntax": "sdk upgrade {{sdk_name}}"
+    },
+    {
+      "description": "Uninstall a specific SDK version:",
+      "syntax": "sdk rm {{sdk_name}} {{sdk_version}}"
+    }
+  ]
+}

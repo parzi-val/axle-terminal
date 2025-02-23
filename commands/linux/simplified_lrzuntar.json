@@ -1,0 +1,26 @@
+{
+  "command": "lrzuntar",
+  "description": "A wrapper for lrunzip to simplify decompression of directories. See also: lrztar, lrzip. More information: https://manned.org/lrzuntar.",
+  "useCases": [
+    {
+      "description": "Decompress from a file to the current directory:",
+      "syntax": "lrzuntar {{path/to/archive.tar.lrz}}"
+    },
+    {
+      "description": "Decompress from a file to the current directory using a specific number of processor threads:",
+      "syntax": "lrzuntar -p {{8}} {{path/to/archive.tar.lrz}}"
+    },
+    {
+      "description": "Decompress from a file to the current directory and silently overwrite items that already exist:",
+      "syntax": "lrzuntar -f {{archive.tar.lrz}}"
+    },
+    {
+      "description": "Specify the output path:",
+      "syntax": "lrzuntar -O {{path/to/directory}} {{archive.tar.lrz}}"
+    },
+    {
+      "description": "Delete the compressed file after decompression:",
+      "syntax": "lrzuntar -D {{path/to/archive.tar.lrz}}"
+    }
+  ]
+}

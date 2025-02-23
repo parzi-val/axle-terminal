@@ -1,0 +1,18 @@
+{
+  "command": "ruff format",
+  "description": "An extremely fast Python code formatter. If no files or directories are specified, the current working directory is used by default. More information: https://docs.astral.sh/ruff/formatter.",
+  "useCases": [
+    {
+      "description": "Format given files or directories in-place:",
+      "syntax": "ruff format {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Print which files would have been modified and return a non-zero exit code if there are files to reformat, and zero otherwise:",
+      "syntax": "ruff format --check"
+    },
+    {
+      "description": "Print what changes would be made without modifying the files:",
+      "syntax": "ruff format --diff"
+    }
+  ]
+}

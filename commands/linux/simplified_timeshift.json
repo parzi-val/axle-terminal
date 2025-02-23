@@ -1,0 +1,30 @@
+{
+  "command": "timeshift",
+  "description": "System restore utility. More information: https://github.com/teejee2008/timeshift.",
+  "useCases": [
+    {
+      "description": "List snapshots:",
+      "syntax": "sudo timeshift --list"
+    },
+    {
+      "description": "Create a new snapshot (if scheduled):",
+      "syntax": "sudo timeshift --check"
+    },
+    {
+      "description": "Create a new snapshot (even if not scheduled):",
+      "syntax": "sudo timeshift --create"
+    },
+    {
+      "description": "Restore a snapshot (selecting which snapshot to restore interactively):",
+      "syntax": "sudo timeshift --restore"
+    },
+    {
+      "description": "Restore a specific snapshot:",
+      "syntax": "sudo timeshift --restore --snapshot '{{snapshot}}'"
+    },
+    {
+      "description": "Delete a specific snapshot:",
+      "syntax": "sudo timeshift --delete --snapshot '{{snapshot}}'"
+    }
+  ]
+}

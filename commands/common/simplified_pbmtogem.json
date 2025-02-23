@@ -1,0 +1,18 @@
+{
+  "command": "pbmtogem",
+  "description": "Read a PBM image as input and produce a compressed GEM .img file as output. pbmtogem cannot compress repeated lines. More information: https://netpbm.sourceforge.net/doc/pbmtogem.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image into a GEM .img file:",
+      "syntax": "pbmtogem {{path/to/file.pbm}} &gt; {{path/to/file.img}}"
+    },
+    {
+      "description": "Suppress all informational messages:",
+      "syntax": "pbmtogem -quiet"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pbmtogem -version"
+    }
+  ]
+}

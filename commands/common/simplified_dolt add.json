@@ -1,0 +1,14 @@
+{
+  "command": "dolt add",
+  "description": "Add the contents of a table to the list of Dolt staged tables. More information: https://docs.dolthub.com/cli-reference/cli#dolt-add.",
+  "useCases": [
+    {
+      "description": "Add a table to the list of staged tables (stage a table):",
+      "syntax": "dolt add {{table}}"
+    },
+    {
+      "description": "Stage all tables:",
+      "syntax": "dolt add --all"
+    }
+  ]
+}

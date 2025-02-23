@@ -1,0 +1,14 @@
+{
+  "command": "pbmtoppa",
+  "description": "Convert a PBM image to HP Printer Performance Architecture format. More information: https://netpbm.sourceforge.net/doc/pbmtoppa.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image into a PPA file:",
+      "syntax": "pbmtoppa {{path/to/image.pbm}} &gt; {{path/to/output.ppa}}"
+    },
+    {
+      "description": "Specify the desired dots-per-inch and paper size:",
+      "syntax": "pbmtoppa -d {{300}} -s {{a4}} {{path/to/image.pbm}} &gt; {{path/to/output.ppa}}"
+    }
+  ]
+}

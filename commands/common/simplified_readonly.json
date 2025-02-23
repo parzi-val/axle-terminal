@@ -1,0 +1,18 @@
+{
+  "command": "readonly",
+  "description": "Set read-only shell variables. More information: https://manned.org/readonly.1posix.",
+  "useCases": [
+    {
+      "description": "Set a read-only variable:",
+      "syntax": "readonly {{variable_name}}={{value}}"
+    },
+    {
+      "description": "Mark a variable as read-only:",
+      "syntax": "readonly {{existing_variable}}"
+    },
+    {
+      "description": "[p]rint the names and values of all read-only variables to stdout:",
+      "syntax": "readonly -p"
+    }
+  ]
+}

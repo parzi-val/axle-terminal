@@ -1,0 +1,18 @@
+{
+  "command": "tlmgr dump-tlpdb",
+  "description": "Dump the TeX Live package database. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Dump the local package database:",
+      "syntax": "tlmgr dump-tlpdb --local"
+    },
+    {
+      "description": "Dump the remote package database:",
+      "syntax": "tlmgr dump-tlpdb --remote"
+    },
+    {
+      "description": "Dump the local package database as JSON:",
+      "syntax": "tlmgr dump-tlpdb --local --json"
+    }
+  ]
+}

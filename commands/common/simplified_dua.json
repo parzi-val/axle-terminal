@@ -1,0 +1,34 @@
+{
+  "command": "dua",
+  "description": "Dua (Disk Usage Analyzer): get the disk space usage of a directory. More information: https://github.com/Byron/dua-cli.",
+  "useCases": [
+    {
+      "description": "Analyze specific directory:",
+      "syntax": "dua {{path/to/directory}}"
+    },
+    {
+      "description": "Display apparent size instead of disk usage:",
+      "syntax": "dua --apparent-size"
+    },
+    {
+      "description": "Count hard-linked files each time they are seen:",
+      "syntax": "dua --count-hard-links"
+    },
+    {
+      "description": "Aggregate the consumed space of one or more directories or files:",
+      "syntax": "dua aggregate"
+    },
+    {
+      "description": "Launch the terminal user interface:",
+      "syntax": "dua interactive"
+    },
+    {
+      "description": "Format printing byte counts:",
+      "syntax": "dua --format {{metric|binary|bytes|GB|GiB|MB|MiB}}"
+    },
+    {
+      "description": "Use a specific number of threads (defaults to the process number of threads):",
+      "syntax": "dua --threads {{count}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "rdpsign",
+  "description": "A tool for signing Remote Desktop Protocol (RDP) files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/rdpsign.",
+  "useCases": [
+    {
+      "description": "Sign an RDP file:",
+      "syntax": "rdpsign {{path\\to\\file.rdp}}"
+    },
+    {
+      "description": "Sign an RDP file using a specific sha256 hash:",
+      "syntax": "rdpsign {{path\\to\\file.rdp}} /sha265 {{hash}}"
+    },
+    {
+      "description": "Enable quiet output:",
+      "syntax": "rdpsign {{path\\to\\file.rdp}} /q"
+    },
+    {
+      "description": "Display verbose warnings, messages and statuses:",
+      "syntax": "rdpsign {{path\\to\\file.rdp}} /v"
+    },
+    {
+      "description": "Test the signing by displaying the output to stdout without updating the file:",
+      "syntax": "rdpsign {{path\\to\\file.rdp}} /l"
+    }
+  ]
+}

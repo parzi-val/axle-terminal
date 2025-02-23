@@ -1,0 +1,26 @@
+{
+  "command": "crane registry",
+  "description": "This command serves a registry implementation on an automatically chosen port (:0), $PORT or --address. The command blocks while the server accepts pushes and pulls and contents are can be stored in memory, and disk. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_registry_serve.md.",
+  "useCases": [
+    {
+      "description": "Serve a registry implementation:",
+      "syntax": "crane registry serve"
+    },
+    {
+      "description": "Address to listen on:",
+      "syntax": "crane registry serve --address {{address_name}}"
+    },
+    {
+      "description": "Path to a directory where blobs will be stored:",
+      "syntax": "crane registry serve --disk {{path/to/store_dir}}"
+    },
+    {
+      "description": "Display help for crane registry:",
+      "syntax": "crane registry {{-h|--help}}"
+    },
+    {
+      "description": "Display help for crane registry serve:",
+      "syntax": "crane registry serve {{-h|--help}}"
+    }
+  ]
+}

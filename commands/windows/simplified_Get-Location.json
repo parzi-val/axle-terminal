@@ -1,0 +1,10 @@
+{
+  "command": "Get-Location",
+  "description": "Print name of current/working directory. This command can only be run through PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-location.",
+  "useCases": [
+    {
+      "description": "Print the current directory:",
+      "syntax": "Get-Location"
+    }
+  ]
+}

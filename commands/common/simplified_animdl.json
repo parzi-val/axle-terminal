@@ -1,0 +1,38 @@
+{
+  "command": "animdl",
+  "description": "A highly efficient, powerful and fast anime scraper. See also: ani-cli. More information: https://github.com/justfoolingaround/animdl.",
+  "useCases": [
+    {
+      "description": "Download a specific anime:",
+      "syntax": "animdl download {{anime_title}}"
+    },
+    {
+      "description": "Download a specific anime by specifying an episode range:",
+      "syntax": "animdl download {{anime_title}} {{-r|--range}} {{start_episode}}-{{end_episode}}"
+    },
+    {
+      "description": "Download a specific anime by specifying a download directory:",
+      "syntax": "animdl download {{anime_title}} {{-d|--download-dir}} {{path/to/download_directory}}"
+    },
+    {
+      "description": "Grab the stream URL for a specific anime:",
+      "syntax": "animdl grab {{anime_title}}"
+    },
+    {
+      "description": "Display the upcoming anime schedule for the next week:",
+      "syntax": "animdl schedule"
+    },
+    {
+      "description": "Search a specific anime:",
+      "syntax": "animdl search {{anime_title}}"
+    },
+    {
+      "description": "Stream a specific anime:",
+      "syntax": "animdl stream {{anime_title}}"
+    },
+    {
+      "description": "Stream the latest episode of a specific anime:",
+      "syntax": "animdl stream {{anime_title}} {{-s|--special}} latest"
+    }
+  ]
+}

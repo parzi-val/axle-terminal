@@ -1,0 +1,38 @@
+{
+  "command": "crontab",
+  "description": "Schedule cron jobs to run on a time interval for the current user. More information: https://crontab.guru/.",
+  "useCases": [
+    {
+      "description": "Edit the crontab file for the current user:",
+      "syntax": "crontab -e"
+    },
+    {
+      "description": "Edit the crontab file for a specific user:",
+      "syntax": "sudo crontab -e -u {{user}}"
+    },
+    {
+      "description": "Replace the current crontab with the contents of the given file:",
+      "syntax": "crontab {{path/to/file}}"
+    },
+    {
+      "description": "View a list of existing cron jobs for current user:",
+      "syntax": "crontab -l"
+    },
+    {
+      "description": "Remove all cron jobs for the current user:",
+      "syntax": "crontab -r"
+    },
+    {
+      "description": "Sample job which runs at 10:00 every day (* means any value):",
+      "syntax": "0 10 * * * {{command_to_execute}}"
+    },
+    {
+      "description": "Sample crontab entry, which runs a command every 10 minutes:",
+      "syntax": "*/10 * * * * {{command_to_execute}}"
+    },
+    {
+      "description": "Sample crontab entry, which runs a certain script at 02:30 every Friday:",
+      "syntax": "30 2 * * Fri {{/absolute/path/to/script.sh}}"
+    }
+  ]
+}

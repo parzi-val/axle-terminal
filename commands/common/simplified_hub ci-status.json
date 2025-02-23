@@ -1,0 +1,14 @@
+{
+  "command": "hub ci-status",
+  "description": "Display status of GitHub checks. More information: https://hub.github.com/hub-ci-status.1.html.",
+  "useCases": [
+    {
+      "description": "Check the CI status for this branch:",
+      "syntax": "hub ci-status --verbose"
+    },
+    {
+      "description": "Display status of GitHub checks for a commit:",
+      "syntax": "hub ci-status --verbose {{commit_SHA}}"
+    }
+  ]
+}

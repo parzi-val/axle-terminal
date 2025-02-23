@@ -1,0 +1,22 @@
+{
+  "command": "mons",
+  "description": "Quickly manage two displays. More information: https://github.com/Ventto/mons.",
+  "useCases": [
+    {
+      "description": "Enable only the primary monitor:",
+      "syntax": "mons -o"
+    },
+    {
+      "description": "Enable only the secondary monitor:",
+      "syntax": "mons -s"
+    },
+    {
+      "description": "Duplicate the primary monitor onto the secondary monitor, using the resolution of the primary monitor:",
+      "syntax": "mons -d"
+    },
+    {
+      "description": "Mirror the primary monitor onto the secondary monitor, using the resolution of the secondary monitor:",
+      "syntax": "mons -m"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "ppmmake",
+  "description": "Create a PPM image of a specified color and dimensions. More information: https://netpbm.sourceforge.net/doc/ppmmake.html.",
+  "useCases": [
+    {
+      "description": "Create a PPM image of the specified color and dimensions:",
+      "syntax": "ppmmake {{color}} {{width}} {{height}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

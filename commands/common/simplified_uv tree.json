@@ -1,0 +1,30 @@
+{
+  "command": "uv tree",
+  "description": "Display project dependencies in a tree format. More information: https://docs.astral.sh/uv/reference/cli/#uv-tree.",
+  "useCases": [
+    {
+      "description": "Show dependency tree for current environment:",
+      "syntax": "uv tree"
+    },
+    {
+      "description": "Show dependency tree for all environments:",
+      "syntax": "uv tree --universal"
+    },
+    {
+      "description": "Show dependency tree up to a certain depth:",
+      "syntax": "uv tree {{-d|--depth}} {{n}}"
+    },
+    {
+      "description": "Show the latest available version for all outdated packages:",
+      "syntax": "uv tree --outdated"
+    },
+    {
+      "description": "Exclude dependencies from the dev group:",
+      "syntax": "uv tree --no-dev"
+    },
+    {
+      "description": "Show the inverted tree, so children are dependents instead of dependencies:",
+      "syntax": "uv tree --invert"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "ghdl",
+  "description": "Open-source simulator for the VHDL language. More information: https://ghdl.github.io/ghdl/.",
+  "useCases": [
+    {
+      "description": "Analyze a VHDL source file and produce an object file:",
+      "syntax": "ghdl -a {{filename.vhdl}}"
+    },
+    {
+      "description": "Elaborate a design (where design is the name of a configuration unit, entity unit or architecture unit):",
+      "syntax": "ghdl -e {{design}}"
+    },
+    {
+      "description": "Run an elaborated design:",
+      "syntax": "ghdl -r {{design}}"
+    },
+    {
+      "description": "Run an elaborated design and dump output to a waveform file:",
+      "syntax": "ghdl -r {{design}} --wave={{output.ghw}}"
+    },
+    {
+      "description": "Check the syntax of a VHDL source file:",
+      "syntax": "ghdl -s {{filename.vhdl}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ghdl --help"
+    }
+  ]
+}

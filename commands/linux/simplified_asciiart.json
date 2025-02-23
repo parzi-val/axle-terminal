@@ -1,0 +1,30 @@
+{
+  "command": "asciiart",
+  "description": "Convert images to ASCII. More information: https://github.com/nodanaonlyzuul/asciiart.",
+  "useCases": [
+    {
+      "description": "Read an image from a file and print in ASCII:",
+      "syntax": "asciiart {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Read an image from a URL and print in ASCII:",
+      "syntax": "asciiart {{www.example.com/image.jpg}}"
+    },
+    {
+      "description": "Choose the output width (default is 100):",
+      "syntax": "asciiart --width {{50}} {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Colorize the ASCII output:",
+      "syntax": "asciiart --color {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Choose the output format (default format is text):",
+      "syntax": "asciiart --format {{text|html}} {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Invert the character map:",
+      "syntax": "asciiart --invert-chars {{path/to/image.jpg}}"
+    }
+  ]
+}

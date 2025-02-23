@@ -1,0 +1,22 @@
+{
+  "command": "loc",
+  "description": "Count lines of code. Written in Rust. More information: https://github.com/cgag/loc.",
+  "useCases": [
+    {
+      "description": "Print lines of code in the current directory:",
+      "syntax": "loc"
+    },
+    {
+      "description": "Print lines of code in the target directory:",
+      "syntax": "loc {{path/to/directory}}"
+    },
+    {
+      "description": "Print lines of code with stats for individual files:",
+      "syntax": "loc --files"
+    },
+    {
+      "description": "Print lines of code without .gitignore (etc.) files (e.g. two -u flags will additionally count hidden files and dirs):",
+      "syntax": "loc -u"
+    }
+  ]
+}

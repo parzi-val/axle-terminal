@@ -1,0 +1,26 @@
+{
+  "command": "runlim",
+  "description": "Sample and limit time and memory usage of a program and its child processes using the proc file system on Linux. More information: https://fmv.jku.at/runlim.",
+  "useCases": [
+    {
+      "description": "Print the time and memory usage of a command:",
+      "syntax": "runlim {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Log statistics to a file instead of stdout:",
+      "syntax": "runlim --output-file={{path/to/file}} {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Limit time to an upper bound (in seconds):",
+      "syntax": "runlim --time-limit={{number}} {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Limit real-time to an upper bound (in seconds):",
+      "syntax": "runlim --real-time-limit={{number}} {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Limit space to an upper bound (in MB):",
+      "syntax": "runlim --space-limit={{number}} {{command}} {{command_arguments}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "zipalign",
+  "description": "Zip archive alignment tool. Part of the Android SDK build tools. More information: https://developer.android.com/tools/zipalign.",
+  "useCases": [
+    {
+      "description": "Align the data of a Zip file on 4-byte boundaries:",
+      "syntax": "zipalign {{4}} {{path/to/input.zip}} {{path/to/output.zip}}"
+    },
+    {
+      "description": "Check that a Zip file is correctly aligned on 4-byte boundaries and display the results in a verbose manner:",
+      "syntax": "zipalign -v -c {{4}} {{path/to/input.zip}}"
+    }
+  ]
+}

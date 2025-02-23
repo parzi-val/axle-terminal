@@ -1,0 +1,38 @@
+{
+  "command": "aws ses",
+  "description": "CLI for AWS Simple Email Service. High-scale inbound and outbound cloud email service. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ses/index.html.",
+  "useCases": [
+    {
+      "description": "Create a new receipt rule set:",
+      "syntax": "aws ses create-receipt-rule-set --rule-set-name {{rule_set_name}} --generate-cli-skeleton"
+    },
+    {
+      "description": "Describe the active receipt rule set:",
+      "syntax": "aws ses describe-active-receipt-rule-set --generate-cli-skeletion"
+    },
+    {
+      "description": "Describe a specific receipt rule:",
+      "syntax": "aws ses describe-receipt-rule --rule-set-name {{rule_set_name}} --rule-name {{rule_name}} --generate-cli-skeleton"
+    },
+    {
+      "description": "List all receipt rule sets:",
+      "syntax": "aws ses list-receipt-rule-sets --starting-token {{token_string}} --max-items {{integer}} --generate-cli-skeleton"
+    },
+    {
+      "description": "Delete a specific receipt rule set (the currently active rule set cannot be deleted):",
+      "syntax": "aws ses delete-receipt-rule-set --rule-set-name {{rule_set_name}} --generate-cli-skeleton"
+    },
+    {
+      "description": "Delete a specific receipt rule:",
+      "syntax": "aws ses delete-receipt-rule --rule-set-name {{rule_set_name}} --rule-name {{rule_name}} --generate-cli-skeleton"
+    },
+    {
+      "description": "Send an email:",
+      "syntax": "aws ses send-email --from {{from_address}} --destination &quot;ToAddresses={{addresses}}&quot; --message &quot;Subject={Data={{subject_text}},Charset=utf8},Body={Text={Data={{body_text}},Charset=utf8},Html={Data={{message_body_containing_html}},Charset=utf8}}&quot;"
+    },
+    {
+      "description": "Display help for a specific SES subcommand:",
+      "syntax": "aws ses {{subcommand}} help"
+    }
+  ]
+}

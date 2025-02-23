@@ -1,0 +1,22 @@
+{
+  "command": "dkms",
+  "description": "A framework that allows for dynamic building of kernel modules. More information: https://github.com/dell/dkms.",
+  "useCases": [
+    {
+      "description": "List currently installed modules:",
+      "syntax": "dkms status"
+    },
+    {
+      "description": "Rebuild all modules for the currently running kernel:",
+      "syntax": "dkms autoinstall"
+    },
+    {
+      "description": "Install version 1.2.1 of the acpi_call module for the currently running kernel:",
+      "syntax": "dkms install -m {{acpi_call}} -v {{1.2.1}}"
+    },
+    {
+      "description": "Remove version 1.2.1 of the acpi_call module from all kernels:",
+      "syntax": "dkms remove -m {{acpi_call}} -v {{1.2.1}} --all"
+    }
+  ]
+}

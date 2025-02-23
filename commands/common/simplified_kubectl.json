@@ -1,0 +1,38 @@
+{
+  "command": "kubectl",
+  "description": "Command-line interface for running commands against Kubernetes clusters. Some subcommands such as run have their own usage documentation. More information: https://kubernetes.io/docs/reference/kubectl/.",
+  "useCases": [
+    {
+      "description": "List information about a resource with more details:",
+      "syntax": "kubectl get {{pod|service|deployment|ingress|...}} -o wide"
+    },
+    {
+      "description": "Update specified pod with the label 'unhealthy' and the value 'true':",
+      "syntax": "kubectl label pods {{name}} unhealthy=true"
+    },
+    {
+      "description": "List all resources with different types:",
+      "syntax": "kubectl get all"
+    },
+    {
+      "description": "Display resource (CPU/Memory/Storage) usage of nodes or pods:",
+      "syntax": "kubectl top {{pod|node}}"
+    },
+    {
+      "description": "Print the address of the master and cluster services:",
+      "syntax": "kubectl cluster-info"
+    },
+    {
+      "description": "Display an explanation of a specific field:",
+      "syntax": "kubectl explain {{pods.spec.containers}}"
+    },
+    {
+      "description": "Print the logs for a container in a pod or specified resource:",
+      "syntax": "kubectl logs {{pod_name}}"
+    },
+    {
+      "description": "Run command in an existing pod:",
+      "syntax": "kubectl exec {{pod_name}} -- {{ls /}}"
+    }
+  ]
+}

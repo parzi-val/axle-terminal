@@ -1,0 +1,14 @@
+{
+  "command": "sleep",
+  "description": "Delay for a specified amount of time. More information: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/sleep.html.",
+  "useCases": [
+    {
+      "description": "Delay in seconds:",
+      "syntax": "sleep {{seconds}}"
+    },
+    {
+      "description": "Execute a specific command after 20 seconds delay:",
+      "syntax": "sleep 20 &amp;&amp; {{command}}"
+    }
+  ]
+}

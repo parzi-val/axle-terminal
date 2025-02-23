@@ -1,0 +1,10 @@
+{
+  "command": "piodebuggdb",
+  "description": "This command is an alias of pio debug --interface=gdb.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr pio debug"
+    }
+  ]
+}

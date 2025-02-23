@@ -1,0 +1,34 @@
+{
+  "command": "scrot",
+  "description": "Screen capture utility. More information: https://github.com/resurrecting-open-source-projects/scrot.",
+  "useCases": [
+    {
+      "description": "Capture a screenshot and save it to the current directory with the current date as the filename:",
+      "syntax": "scrot"
+    },
+    {
+      "description": "Capture a screenshot and save it as capture.png:",
+      "syntax": "scrot {{capture.png}}"
+    },
+    {
+      "description": "Capture a screenshot interactively:",
+      "syntax": "scrot --select"
+    },
+    {
+      "description": "Capture a screenshot interactively without exiting on keyboard input, press ESC to exit:",
+      "syntax": "scrot --select --ignorekeyboard"
+    },
+    {
+      "description": "Capture a screenshot interactively delimiting the region with a colored line:",
+      "syntax": "scrot --select --line color={{x11_color|rgb_color}}"
+    },
+    {
+      "description": "Capture a screenshot from the currently focused window:",
+      "syntax": "scrot --focused"
+    },
+    {
+      "description": "Display a countdown of 10 seconds before taking a screenshot:",
+      "syntax": "scrot --count --delay {{10}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "namcap",
+  "description": "Check binary packages and source PKGBUILDs for common packaging mistakes. More information: https://manned.org/namcap.1.",
+  "useCases": [
+    {
+      "description": "Check a specific PKGBUILD file:",
+      "syntax": "namcap {{path/to/pkgbuild}}"
+    },
+    {
+      "description": "Check a specific package file:",
+      "syntax": "namcap {{path/to/package.pkg.tar.zst}}"
+    },
+    {
+      "description": "Check a file, printing extra [i]nformational messages:",
+      "syntax": "namcap -i {{path/to/file}}"
+    }
+  ]
+}

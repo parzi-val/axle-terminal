@@ -1,0 +1,26 @@
+{
+  "command": "odps inst",
+  "description": "Manage instances in ODPS (Open Data Processing Service). See also odps. More information: https://www.alibabacloud.com/help/doc-detail/27971.htm.",
+  "useCases": [
+    {
+      "description": "Show instances created by current user:",
+      "syntax": "show instances;"
+    },
+    {
+      "description": "Describe the details of an instance:",
+      "syntax": "desc instance {{instance_id}};"
+    },
+    {
+      "description": "Check the status of an instance:",
+      "syntax": "status {{instance_id}};"
+    },
+    {
+      "description": "Wait on the termination of an instance, printing log and progress information until then:",
+      "syntax": "wait {{instance_id}};"
+    },
+    {
+      "description": "Kill an instance:",
+      "syntax": "kill {{instance_id}};"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "esa snap",
+  "description": "Sentinel Application Platform (SNAP) for processing satellite data from the European Space Agency (ESA). More information: https://step.esa.int/main/download/snap-download/.",
+  "useCases": [
+    {
+      "description": "Display all updates:",
+      "syntax": "snap --nosplash --nogui --modules --list --refresh"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "snap --help"
+    }
+  ]
+}

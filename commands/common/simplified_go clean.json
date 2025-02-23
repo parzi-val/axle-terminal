@@ -1,0 +1,22 @@
+{
+  "command": "go clean",
+  "description": "Remove object files and cached files. More information: https://golang.org/cmd/go/#hdr-Remove_object_files_and_cached_files.",
+  "useCases": [
+    {
+      "description": "Print the remove commands instead of actually removing anything:",
+      "syntax": "go clean -n"
+    },
+    {
+      "description": "Delete the build cache:",
+      "syntax": "go clean -cache"
+    },
+    {
+      "description": "Delete all cached test results:",
+      "syntax": "go clean -testcache"
+    },
+    {
+      "description": "Delete the module cache:",
+      "syntax": "go clean -modcache"
+    }
+  ]
+}

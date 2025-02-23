@@ -1,0 +1,34 @@
+{
+  "command": "dep",
+  "description": "Deploy PHP applications. Note: The Go command dep with the same name is deprecated and archived. More information: https://deployer.org.",
+  "useCases": [
+    {
+      "description": "Interactively initialize deployer in the local path (use a framework template with --template=template):",
+      "syntax": "dep init"
+    },
+    {
+      "description": "Deploy an application to a remote host:",
+      "syntax": "dep deploy {{hostname}}"
+    },
+    {
+      "description": "Rollback to the previous working release:",
+      "syntax": "dep rollback"
+    },
+    {
+      "description": "Connect to a remote host via SSH:",
+      "syntax": "dep ssh {{hostname}}"
+    },
+    {
+      "description": "List commands:",
+      "syntax": "dep list"
+    },
+    {
+      "description": "Run any arbitrary command on the remote hosts:",
+      "syntax": "dep run &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Display help for a command:",
+      "syntax": "dep help {{command}}"
+    }
+  ]
+}

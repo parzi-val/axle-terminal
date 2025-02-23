@@ -1,0 +1,38 @@
+{
+  "command": "googler",
+  "description": "Search Google from command-line. More information: https://github.com/jarun/googler.",
+  "useCases": [
+    {
+      "description": "Search Google for a keyword:",
+      "syntax": "googler {{keyword}}"
+    },
+    {
+      "description": "Search Google and open the first result in web browser:",
+      "syntax": "googler -j {{keyword}}"
+    },
+    {
+      "description": "Show N search results (default 10):",
+      "syntax": "googler -n {{N}} {{keyword}}"
+    },
+    {
+      "description": "Disable automatic spelling correction:",
+      "syntax": "googler -x {{keyword}}"
+    },
+    {
+      "description": "Search one site for a keyword:",
+      "syntax": "googler -w {{site}} {{keyword}}"
+    },
+    {
+      "description": "Show Google search result in JSON format:",
+      "syntax": "googler --json {{keyword}}"
+    },
+    {
+      "description": "Perform in-place self-upgrade:",
+      "syntax": "googler -u"
+    },
+    {
+      "description": "Display help in interactive mode:",
+      "syntax": "?"
+    }
+  ]
+}

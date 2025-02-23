@@ -1,0 +1,14 @@
+{
+  "command": "gnatprep",
+  "description": "Preprocessor for Ada source code files (part of the GNAT toolchain). More information: https://gcc.gnu.org/onlinedocs/gnat_ugn/Preprocessing-with-gnatprep.html.",
+  "useCases": [
+    {
+      "description": "Use symbol definitions from a file:",
+      "syntax": "gnatprep {{source_file}} {{target_file}} {{definitions_file}}"
+    },
+    {
+      "description": "Specify symbol values in the command-line:",
+      "syntax": "gnatprep -D{{name}}={{value}} {{source_file}} {{target_file}}"
+    }
+  ]
+}

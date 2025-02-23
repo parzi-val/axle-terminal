@@ -1,0 +1,34 @@
+{
+  "command": "virtualenvwrapper",
+  "description": "Group of simple wrapper commands for Python's virtualenv tool. More information: https://virtualenvwrapper.readthedocs.org.",
+  "useCases": [
+    {
+      "description": "Create a new Python virtualenv in $WORKON_HOME:",
+      "syntax": "mkvirtualenv {{virtualenv_name}}"
+    },
+    {
+      "description": "Create a virtualenv for a specific Python version:",
+      "syntax": "mkvirtualenv --python {{/usr/local/bin/python3.8}} {{virtualenv_name}}"
+    },
+    {
+      "description": "Activate or use a different virtualenv:",
+      "syntax": "workon {{virtualenv_name}}"
+    },
+    {
+      "description": "Stop the virtualenv:",
+      "syntax": "deactivate"
+    },
+    {
+      "description": "List all virtual environments:",
+      "syntax": "lsvirtualenv"
+    },
+    {
+      "description": "Remove a virtualenv:",
+      "syntax": "rmvirtualenv {{virtualenv_name}}"
+    },
+    {
+      "description": "Get summary of all virtualenvwrapper commands:",
+      "syntax": "virtualenvwrapper"
+    }
+  ]
+}

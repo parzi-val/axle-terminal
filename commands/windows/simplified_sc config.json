@@ -1,0 +1,10 @@
+{
+  "command": "sc config",
+  "description": "This command is an alias of sc.exe config.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr sc"
+    }
+  ]
+}

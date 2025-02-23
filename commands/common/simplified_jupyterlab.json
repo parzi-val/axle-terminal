@@ -1,0 +1,10 @@
+{
+  "command": "jupyterlab",
+  "description": "This command is an alias of jupyter lab.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr jupyter lab"
+    }
+  ]
+}

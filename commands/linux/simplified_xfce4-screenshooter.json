@@ -1,0 +1,34 @@
+{
+  "command": "xfce4-screenshooter",
+  "description": "The XFCE4 screenshot tool. More information: https://docs.xfce.org/apps/xfce4-screenshooter/start.",
+  "useCases": [
+    {
+      "description": "Launch the screenshooter GUI:",
+      "syntax": "xfce4-screenshooter"
+    },
+    {
+      "description": "Take a screenshot of the entire screen and launch the GUI to ask how to proceed:",
+      "syntax": "xfce4-screenshooter --fullscreen"
+    },
+    {
+      "description": "Take a screenshot of the entire screen and save it in the specified directory:",
+      "syntax": "xfce4-screenshooter --fullscreen --save {{path/to/directory}}"
+    },
+    {
+      "description": "Wait some time before taking the screenshot:",
+      "syntax": "xfce4-screenshooter --delay {{seconds}}"
+    },
+    {
+      "description": "Take a screenshot of a region of the screen (select using the mouse):",
+      "syntax": "xfce4-screenshooter --region"
+    },
+    {
+      "description": "Take a screenshot of the active window, and copy it to the clipboard:",
+      "syntax": "xfce4-screenshooter --window --clipboard"
+    },
+    {
+      "description": "Take a screenshot of the active window, and open it with a chosen program:",
+      "syntax": "xfce4-screenshooter --window --open {{gimp}}"
+    }
+  ]
+}

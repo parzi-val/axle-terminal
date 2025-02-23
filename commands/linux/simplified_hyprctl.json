@@ -1,0 +1,34 @@
+{
+  "command": "hyprctl",
+  "description": "Control parts of the Hyprland Wayland compositor. More information: https://wiki.hyprland.org/Configuring/Using-hyprctl.",
+  "useCases": [
+    {
+      "description": "Reload Hyprland configuration:",
+      "syntax": "hyprctl reload"
+    },
+    {
+      "description": "Return the active window name:",
+      "syntax": "hyprctl activewindow"
+    },
+    {
+      "description": "List all connected input devices:",
+      "syntax": "hyprctl devices"
+    },
+    {
+      "description": "List all outputs with respective properties:",
+      "syntax": "hyprctl workspaces"
+    },
+    {
+      "description": "Call a dispatcher:",
+      "syntax": "hyprctl dispatch {{dispatcher}}"
+    },
+    {
+      "description": "Set a configuration keyword dynamically:",
+      "syntax": "hyprctl keyword {{keyword}} {{value}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "hyprctl version"
+    }
+  ]
+}

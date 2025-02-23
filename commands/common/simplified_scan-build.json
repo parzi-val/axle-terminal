@@ -1,0 +1,18 @@
+{
+  "command": "scan-build",
+  "description": "Command-line utility to run a static analyzer over a codebase as part of performing a regular build. More information: https://clang-analyzer.llvm.org/scan-build.html.",
+  "useCases": [
+    {
+      "description": "Build and analyze the project in the current directory:",
+      "syntax": "scan-build {{make}}"
+    },
+    {
+      "description": "Run a command and pass all subsequent options to it:",
+      "syntax": "scan-build {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "scan-build"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "doppler projects",
+  "description": "Manage Doppler Projects. More information: https://docs.doppler.com/docs/cli.",
+  "useCases": [
+    {
+      "description": "Get all projects:",
+      "syntax": "doppler projects"
+    },
+    {
+      "description": "Get info for a project:",
+      "syntax": "doppler projects get {{name|project_id}}"
+    },
+    {
+      "description": "Create a project:",
+      "syntax": "doppler projects create {{name}}"
+    },
+    {
+      "description": "Update a project's name and description:",
+      "syntax": "doppler projects update {{name|project_id}} --name &quot;{{new_name}}&quot; --description &quot;{{new_description}}&quot;"
+    },
+    {
+      "description": "Delete a project:",
+      "syntax": "doppler projects delete {{name|project_id}}"
+    }
+  ]
+}

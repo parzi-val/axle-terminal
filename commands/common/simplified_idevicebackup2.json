@@ -1,0 +1,22 @@
+{
+  "command": "idevicebackup2",
+  "description": "Create or restore backups for devices running iOS 4 or later. More information: https://manned.org/idevicebackup2.",
+  "useCases": [
+    {
+      "description": "Create a backup of the device in the specified directory:",
+      "syntax": "idevicebackup2 backup {{path/to/directory}}"
+    },
+    {
+      "description": "Restore a backup from the specified directory:",
+      "syntax": "idevicebackup2 restore {{path/to/directory}}"
+    },
+    {
+      "description": "Enable encryption for backups:",
+      "syntax": "idevicebackup2 encryption on {{password}}"
+    },
+    {
+      "description": "List the files in the last completed backup:",
+      "syntax": "idevicebackup2 list"
+    }
+  ]
+}

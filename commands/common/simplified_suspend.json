@@ -1,0 +1,18 @@
+{
+  "command": "suspend",
+  "description": "Suspend the execution of the current shell. More information: https://www.gnu.org/software/bash/manual/bash.html#index-suspend.",
+  "useCases": [
+    {
+      "description": "Suspend the current shell (useful for when you are in nested shells like su):",
+      "syntax": "{{bash}} &lt;Enter&gt; suspend"
+    },
+    {
+      "description": "Run in a separate terminal to continue from suspension if suspend was used in a non-nested shell:",
+      "syntax": "pkill -CONT bash"
+    },
+    {
+      "description": "Force suspension even if this would lock you out of the system:",
+      "syntax": "suspend -f"
+    }
+  ]
+}

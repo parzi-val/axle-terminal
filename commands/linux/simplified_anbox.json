@@ -1,0 +1,10 @@
+{
+  "command": "anbox",
+  "description": "Run Android applications on any Linux operating system. More information: https://manned.org/anbox.",
+  "useCases": [
+    {
+      "description": "Launch Anbox into the app manager:",
+      "syntax": "anbox launch --package={{org.anbox.appmgr}} --component={{org.anbox.appmgr.AppViewActivity}}"
+    }
+  ]
+}

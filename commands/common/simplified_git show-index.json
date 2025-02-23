@@ -1,0 +1,14 @@
+{
+  "command": "git show-index",
+  "description": "Show the packed archive index of a Git repository. More information: https://git-scm.com/docs/git-show-index.",
+  "useCases": [
+    {
+      "description": "Read an IDX file for a Git packfile and dump its contents to stdout:",
+      "syntax": "git show-index {{path/to/file.idx}}"
+    },
+    {
+      "description": "Specify the hash algorithm for the index file (experimental):",
+      "syntax": "git show-index --object-format={{sha1|sha256}} {{path/to/file}}"
+    }
+  ]
+}

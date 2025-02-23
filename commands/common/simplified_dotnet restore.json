@@ -1,0 +1,30 @@
+{
+  "command": "dotnet restore",
+  "description": "Restores the dependencies and tools of a .NET project. More information: https://learn.microsoft.com/dotnet/core/tools/dotnet-restore.",
+  "useCases": [
+    {
+      "description": "Restore dependencies for a .NET project or solution in the current directory:",
+      "syntax": "dotnet restore"
+    },
+    {
+      "description": "Restore dependencies for a .NET project or solution in a specific location:",
+      "syntax": "dotnet restore {{path/to/project_or_solution}}"
+    },
+    {
+      "description": "Restore dependencies without caching the HTTP requests:",
+      "syntax": "dotnet restore --no-cache"
+    },
+    {
+      "description": "Force all dependencies to be resolved even if the last restore was successful:",
+      "syntax": "dotnet restore --force"
+    },
+    {
+      "description": "Restore dependencies using package source failures as warnings:",
+      "syntax": "dotnet restore --ignore-failed-sources"
+    },
+    {
+      "description": "Restore dependencies with a specific verbosity level:",
+      "syntax": "dotnet restore --verbosity {{quiet|minimal|normal|detailed|diagnostic}}"
+    }
+  ]
+}

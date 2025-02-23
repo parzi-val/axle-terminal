@@ -1,0 +1,30 @@
+{
+  "command": "xh",
+  "description": "Friendly and fast tool for sending HTTP requests. Note: xh, written in rust, serves as an effective drop-in replacement for http. See also: http, curl. More information: https://github.com/ducaale/xh.",
+  "useCases": [
+    {
+      "description": "Send a GET request:",
+      "syntax": "xh {{httpbin.org/get}}"
+    },
+    {
+      "description": "Send a POST request with a JSON body (key-value pairs are added to a top-level JSON object - e.g. {&quot;name&quot;: &quot;john&quot;, &quot;age&quot;: 25}):",
+      "syntax": "xh post {{httpbin.org/post}} {{name=john}} {{age:=25}}"
+    },
+    {
+      "description": "Send a GET request with query parameters (e.g. first_param=5&amp;second_param=true):",
+      "syntax": "xh get {{httpbin.org/get}} {{first_param==5}} {{second_param==true}}"
+    },
+    {
+      "description": "Send a GET request with a custom header:",
+      "syntax": "xh get {{httpbin.org/get}} {{header-name:header-value}}"
+    },
+    {
+      "description": "Make a GET request and save the response body to a file:",
+      "syntax": "xh --download {{httpbin.org/json}} --output {{path/to/file}}"
+    },
+    {
+      "description": "Show equivalent curl command (this will not send any request):",
+      "syntax": "xh --{{curl|curl-long}} {{--follow --verbose get http://example.com user-agent:curl}}"
+    }
+  ]
+}

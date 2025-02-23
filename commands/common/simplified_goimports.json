@@ -1,0 +1,22 @@
+{
+  "command": "goimports",
+  "description": "Updates Go import lines, adding missing ones and removing unreferenced ones. More information: https://godoc.org/golang.org/x/tools/cmd/goimports.",
+  "useCases": [
+    {
+      "description": "Display the completed import source file:",
+      "syntax": "goimports {{path/to/file.go}}"
+    },
+    {
+      "description": "Write the result back to the source file instead of stdout:",
+      "syntax": "goimports -w {{path/to/file.go}}"
+    },
+    {
+      "description": "Display diffs and write the result back to the source file:",
+      "syntax": "goimports -w -d {{path/to/file.go}}"
+    },
+    {
+      "description": "Set the import prefix string after 3rd-party packages (comma-separated list):",
+      "syntax": "goimports -local {{path/to/package1,path/to/package2,...}} {{path/to/file.go}}"
+    }
+  ]
+}

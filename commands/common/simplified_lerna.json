@@ -1,0 +1,26 @@
+{
+  "command": "lerna",
+  "description": "Manage JavaScript projects with multiple packages. More information: https://lerna.js.org.",
+  "useCases": [
+    {
+      "description": "Initialize project files (lerna.json, package.json, .git, etc.):",
+      "syntax": "lerna init"
+    },
+    {
+      "description": "Install all external dependencies of each package and symlink together local dependencies:",
+      "syntax": "lerna bootstrap"
+    },
+    {
+      "description": "Run a specific script for every package that contains it in its package.json:",
+      "syntax": "lerna run {{script}}"
+    },
+    {
+      "description": "Execute an arbitrary shell command in every package:",
+      "syntax": "lerna exec -- {{ls}}"
+    },
+    {
+      "description": "Publish all packages that have changed since the last release:",
+      "syntax": "lerna publish"
+    }
+  ]
+}

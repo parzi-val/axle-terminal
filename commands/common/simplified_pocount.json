@@ -1,0 +1,18 @@
+{
+  "command": "pocount",
+  "description": "Translate Toolkit utility to get translation progress from file, supporting several formats. More information: https://docs.translatehouse.org/projects/translate-toolkit/en/latest/commands/pocount.html.",
+  "useCases": [
+    {
+      "description": "Print a colorful table with the translation progress of a file:",
+      "syntax": "pocount {{path/to/file/file.po}}"
+    },
+    {
+      "description": "Print translation progress of various files, one line per file:",
+      "syntax": "pocount --short {{translation_*.ts}}"
+    },
+    {
+      "description": "Generate a CSV file with the translation progress of various files:",
+      "syntax": "pocount --csv {{translation_*.ts}} &gt; {{path/to/translation_progress.csv}}"
+    }
+  ]
+}

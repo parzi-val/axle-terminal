@@ -1,0 +1,22 @@
+{
+  "command": "ykman openpgp",
+  "description": "Manage the OpenPGP YubiKey application. Note: you need to use gpg --card-edit for some settings. More information: https://docs.yubico.com/software/yubikey/tools/ykman/OpenPGP_Commands.html.",
+  "useCases": [
+    {
+      "description": "Display general information about the OpenPGP application:",
+      "syntax": "ykman openpgp info"
+    },
+    {
+      "description": "Set the number of retry attempts for the User PIN, Reset Code, and Admin PIN, respectively:",
+      "syntax": "ykman openpgp access set-retries {{3}} {{3}} {{3}}"
+    },
+    {
+      "description": "Change the User PIN, Reset Code or Admin PIN:",
+      "syntax": "ykman openpgp access change-{{pin|reset-code|admin-pin}}"
+    },
+    {
+      "description": "Factory reset the OpenPGP application (you have to do this after exceeding the number of Admin PIN retry attempts):",
+      "syntax": "ykman openpgp reset"
+    }
+  ]
+}

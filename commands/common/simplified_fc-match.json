@@ -1,0 +1,10 @@
+{
+  "command": "fc-match",
+  "description": "Match available fonts. More information: https://manned.org/fc-match.",
+  "useCases": [
+    {
+      "description": "Return a sorted list of best matching fonts:",
+      "syntax": "fc-match -s '{{DejaVu Serif}}'"
+    }
+  ]
+}

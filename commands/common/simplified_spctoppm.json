@@ -1,0 +1,10 @@
+{
+  "command": "spctoppm",
+  "description": "Convert an Atari compressed Spectrum image to a PPM image. More information: https://netpbm.sourceforge.net/doc/spctoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an SPC file to a PPM image:",
+      "syntax": "spctoppm {{path/to/input.spc}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

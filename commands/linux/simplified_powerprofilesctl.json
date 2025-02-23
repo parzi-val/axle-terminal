@@ -1,0 +1,14 @@
+{
+  "command": "powerprofilesctl",
+  "description": "Make power profiles handling available over D-Bus. More information: https://gitlab.freedesktop.org/hadess/power-profiles-daemon/.",
+  "useCases": [
+    {
+      "description": "List available power profiles:",
+      "syntax": "powerprofilesctl list"
+    },
+    {
+      "description": "Set a specific power profile:",
+      "syntax": "powerprofilesctl set {{profile_name}}"
+    }
+  ]
+}

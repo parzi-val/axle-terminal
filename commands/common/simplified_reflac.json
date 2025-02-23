@@ -1,0 +1,26 @@
+{
+  "command": "reflac",
+  "description": "Recompress FLAC files in-place while preserving metadata. More information: https://github.com/chungy/reflac.",
+  "useCases": [
+    {
+      "description": "Recompress a directory of FLAC files:",
+      "syntax": "reflac {{path/to/directory}}"
+    },
+    {
+      "description": "Enable maximum compression (very slow):",
+      "syntax": "reflac --best {{path/to/directory}}"
+    },
+    {
+      "description": "Display filenames as they are processed:",
+      "syntax": "reflac --verbose {{path/to/directory}}"
+    },
+    {
+      "description": "Recurse into subdirectories:",
+      "syntax": "reflac --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Preserve file modification times:",
+      "syntax": "reflac --preserve {{path/to/directory}}"
+    }
+  ]
+}

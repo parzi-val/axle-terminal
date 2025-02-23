@@ -1,0 +1,30 @@
+{
+  "command": "speedtest-rs",
+  "description": "An unofficial Rust-based tool for testing network speeds using speedtest.net, limited to HTTP Legacy Fallback. More information: https://github.com/nelsonjchen/speedtest-rs.",
+  "useCases": [
+    {
+      "description": "Run a full speed test (download and upload):",
+      "syntax": "speedtest-rs"
+    },
+    {
+      "description": "Display a list of speedtest.net servers sorted by distance:",
+      "syntax": "speedtest-rs --list"
+    },
+    {
+      "description": "Run a download test only:",
+      "syntax": "speedtest-rs --no-upload"
+    },
+    {
+      "description": "Run an upload test only:",
+      "syntax": "speedtest-rs --no-download"
+    },
+    {
+      "description": "Generate a shareable link to the test results image:",
+      "syntax": "speedtest-rs --share"
+    },
+    {
+      "description": "Display basic output information only:",
+      "syntax": "speedtest-rs --simple"
+    }
+  ]
+}

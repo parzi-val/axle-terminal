@@ -1,0 +1,22 @@
+{
+  "command": "s",
+  "description": "Web search from the terminal. More information: https://github.com/zquestz/s.",
+  "useCases": [
+    {
+      "description": "Search for a query on Google (default provider):",
+      "syntax": "s {{query}}"
+    },
+    {
+      "description": "List all providers:",
+      "syntax": "s --list-providers"
+    },
+    {
+      "description": "Search for a query with a given provider:",
+      "syntax": "s --provider {{provider}} {{query}}"
+    },
+    {
+      "description": "Use a specified binary to perform the search query:",
+      "syntax": "s --binary &quot;{{binary}} {{arguments}}&quot; {{query}}"
+    }
+  ]
+}

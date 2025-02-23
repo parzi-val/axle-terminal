@@ -1,0 +1,18 @@
+{
+  "command": "gnatmake",
+  "description": "A low-level build tool for Ada programs (part of the GNAT toolchain). More information: https://gcc.gnu.org/onlinedocs/gnat_ugn/Building-with-gnatmake.html.",
+  "useCases": [
+    {
+      "description": "Compile an executable:",
+      "syntax": "gnatmake {{source_file1.adb source_file2.adb ...}}"
+    },
+    {
+      "description": "Set a custom executable name:",
+      "syntax": "gnatmake -o {{executable_name}} {{source_file.adb}}"
+    },
+    {
+      "description": "[f]orce recompilation:",
+      "syntax": "gnatmake -f {{source_file.adb}}"
+    }
+  ]
+}

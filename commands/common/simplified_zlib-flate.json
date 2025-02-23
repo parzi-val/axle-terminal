@@ -1,0 +1,18 @@
+{
+  "command": "zlib-flate",
+  "description": "Raw zlib compression and decompression program. Part of qpdf. More information: https://manned.org/zlib-flate.",
+  "useCases": [
+    {
+      "description": "Compress a file:",
+      "syntax": "zlib-flate -compress &lt; {{path/to/input_file}} &gt; {{path/to/compressed.zlib}}"
+    },
+    {
+      "description": "Uncompress a file:",
+      "syntax": "zlib-flate -uncompress &lt; {{path/to/compressed.zlib}} &gt; {{path/to/output_file}}"
+    },
+    {
+      "description": "Compress a file with a specified compression level. 0=Fastest (Worst), 9=Slowest (Best):",
+      "syntax": "zlib-flate -compress={{compression_level}} &lt; {{path/to/input_file}} &gt; {{path/to/compressed.zlib}}"
+    }
+  ]
+}

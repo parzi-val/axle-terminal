@@ -1,0 +1,18 @@
+{
+  "command": "wofi",
+  "description": "An application launcher for wlroots-based Wayland compositors, similar to rofi and dmenu. More information: https://hg.sr.ht/~scoopta/wofi.",
+  "useCases": [
+    {
+      "description": "Show the list of apps:",
+      "syntax": "wofi --show drun"
+    },
+    {
+      "description": "Show the list of all commands:",
+      "syntax": "wofi --show run"
+    },
+    {
+      "description": "Pipe a list of items to stdin and print the selected item to stdout:",
+      "syntax": "printf &quot;{{Choice1\\nChoice2\\nChoice3}}&quot; | wofi --dmenu"
+    }
+  ]
+}

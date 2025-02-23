@@ -1,0 +1,18 @@
+{
+  "command": "lldb",
+  "description": "The LLVM Low-Level Debugger. More information: https://lldb.llvm.org.",
+  "useCases": [
+    {
+      "description": "Debug an executable:",
+      "syntax": "lldb {{executable}}"
+    },
+    {
+      "description": "Attach lldb to a running process with a given PID:",
+      "syntax": "lldb -p {{pid}}"
+    },
+    {
+      "description": "Wait for a new process to launch with a given name, and attach to it:",
+      "syntax": "lldb -w -n {{process_name}}"
+    }
+  ]
+}

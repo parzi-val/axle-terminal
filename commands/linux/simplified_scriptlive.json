@@ -1,0 +1,22 @@
+{
+  "command": "scriptlive",
+  "description": "Execute a typescript created by the script command in real-time. See also: script. More information: https://manned.org/scriptlive.",
+  "useCases": [
+    {
+      "description": "Execute a typescript in real-time:",
+      "syntax": "scriptlive {{path/to/timing_file}} {{path/to/typescript}}"
+    },
+    {
+      "description": "Execute a typescript at double the original speed:",
+      "syntax": "scriptlive {{path/to/timing_file}} {{path/to/typescript}} --divisor 2"
+    },
+    {
+      "description": "Execute a typescript created using --log-in option of script:",
+      "syntax": "scriptlive --log-in {{path/to/stdin_log_file}} {{path/to/typescript}}"
+    },
+    {
+      "description": "Execute a typescript waiting at most 2 seconds between each command:",
+      "syntax": "scriptlive {{path/to/timing_file}} {{path/to/typescript}} --maxdelay 2"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "ifmetric",
+  "description": "An IPv4 route metrics manipulation tool. More information: https://0pointer.de/lennart/projects/ifmetric/.",
+  "useCases": [
+    {
+      "description": "Set the priority of the specified network interface (a higher number indicates lower priority):",
+      "syntax": "sudo ifmetric {{interface}} {{value}}"
+    },
+    {
+      "description": "Reset the priority of the specified network interface:",
+      "syntax": "sudo ifmetric {{interface}} {{0}}"
+    }
+  ]
+}

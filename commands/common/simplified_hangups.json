@@ -1,0 +1,18 @@
+{
+  "command": "hangups",
+  "description": "Third party command-line client for Google Hangouts. More information: https://github.com/tdryer/hangups.",
+  "useCases": [
+    {
+      "description": "Start hangups:",
+      "syntax": "hangups"
+    },
+    {
+      "description": "Display troubleshooting information and help:",
+      "syntax": "hangups -h"
+    },
+    {
+      "description": "Set a refresh token for hangups:",
+      "syntax": "hangups --token-path {{path/to/token}}"
+    }
+  ]
+}

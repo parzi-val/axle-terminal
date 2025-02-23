@@ -1,0 +1,30 @@
+{
+  "command": "node",
+  "description": "Server-side JavaScript platform (Node.js). More information: https://nodejs.org.",
+  "useCases": [
+    {
+      "description": "Run a JavaScript file:",
+      "syntax": "node {{path/to/file}}"
+    },
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "node"
+    },
+    {
+      "description": "Execute the specified file restarting the process when an imported file is changed (requires Node.js version 18.11+):",
+      "syntax": "node --watch {{path/to/file}}"
+    },
+    {
+      "description": "Evaluate JavaScript code by passing it as an argument:",
+      "syntax": "node -e &quot;{{code}}&quot;"
+    },
+    {
+      "description": "Evaluate and print the result, useful to print node's dependencies versions:",
+      "syntax": "node -p &quot;process.versions&quot;"
+    },
+    {
+      "description": "Activate inspector, pausing execution until a debugger is connected once source code is fully parsed:",
+      "syntax": "node --no-lazy --inspect-brk {{path/to/file}}"
+    }
+  ]
+}

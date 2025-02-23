@@ -1,0 +1,26 @@
+{
+  "command": "systemd-escape",
+  "description": "Escape strings for usage in systemd unit names. More information: https://www.freedesktop.org/software/systemd/man/systemd-escape.html.",
+  "useCases": [
+    {
+      "description": "Escape the given text:",
+      "syntax": "systemd-escape {{text}}"
+    },
+    {
+      "description": "Reverse the escaping process:",
+      "syntax": "systemd-escape --unescape {{text}}"
+    },
+    {
+      "description": "Treat the given text as a path:",
+      "syntax": "systemd-escape --path {{text}}"
+    },
+    {
+      "description": "Append the given suffix to the escaped text:",
+      "syntax": "systemd-escape --suffix {{suffix}} {{text}}"
+    },
+    {
+      "description": "Use a template and inject the escaped text:",
+      "syntax": "systemd-escape --template {{template}} {{text}}"
+    }
+  ]
+}

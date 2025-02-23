@@ -1,0 +1,30 @@
+{
+  "command": "bzfgrep",
+  "description": "Find any fixed strings separated by new lines in bzip2 compressed files using fgrep. More information: https://manned.org/bzfgrep.",
+  "useCases": [
+    {
+      "description": "Search for lines matching the list of search strings separated by new lines in a compressed file (case-sensitive):",
+      "syntax": "bzfgrep &quot;{{search_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines matching the list of search strings separated by new lines in a compressed file (case-insensitive):",
+      "syntax": "bzfgrep --ignore-case &quot;{{search_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines that do not match the list of search strings separated by new lines in a compressed file:",
+      "syntax": "bzfgrep --invert-match &quot;{{search_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print file name and line number for each match:",
+      "syntax": "bzfgrep --with-filename --line-number &quot;{{search_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines matching a pattern, printing only the matched text:",
+      "syntax": "bzfgrep --only-matching &quot;{{search_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Recursively search files in a bzip2 compressed tar archive for the given list of strings:",
+      "syntax": "bzfgrep --recursive &quot;{{search_string}}&quot; {{path/to/file}}"
+    }
+  ]
+}

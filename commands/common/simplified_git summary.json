@@ -1,0 +1,22 @@
+{
+  "command": "git summary",
+  "description": "Display information about a Git repository. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-summary.",
+  "useCases": [
+    {
+      "description": "Display data about a Git repository:",
+      "syntax": "git summary"
+    },
+    {
+      "description": "Display data about a Git repository since a commit-ish:",
+      "syntax": "git summary {{commit|branch_name|tag_name}}"
+    },
+    {
+      "description": "Display data about a Git repository, merging committers using different emails into 1 statistic for each author:",
+      "syntax": "git summary --dedup-by-email"
+    },
+    {
+      "description": "Display data about a Git repository, showing the number of lines modified by each contributor:",
+      "syntax": "git summary --line"
+    }
+  ]
+}

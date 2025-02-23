@@ -1,0 +1,26 @@
+{
+  "command": "vnstat",
+  "description": "A console-based network traffic monitor. More information: https://manned.org/vnstat.",
+  "useCases": [
+    {
+      "description": "Display traffic summary for all interfaces:",
+      "syntax": "vnstat"
+    },
+    {
+      "description": "Display traffic summary for a specific network interface:",
+      "syntax": "vnstat -i {{network_interface}}"
+    },
+    {
+      "description": "Display live stats for a specific network interface:",
+      "syntax": "vnstat -l -i {{network_interface}}"
+    },
+    {
+      "description": "Show traffic statistics on an hourly basis for the last 24 hours using a bar graph:",
+      "syntax": "vnstat -hg"
+    },
+    {
+      "description": "Measure and show average traffic for 30 seconds:",
+      "syntax": "vnstat -tr {{30}}"
+    }
+  ]
+}

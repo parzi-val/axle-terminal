@@ -1,0 +1,34 @@
+{
+  "command": "az bicep",
+  "description": "Bicep CLI command group. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/bicep.",
+  "useCases": [
+    {
+      "description": "Install Bicep CLI:",
+      "syntax": "az bicep install"
+    },
+    {
+      "description": "Build a Bicep file:",
+      "syntax": "az bicep build --file {{path/to/file.bicep}}"
+    },
+    {
+      "description": "Attempt to decompile an ARM template file to a Bicep file:",
+      "syntax": "az bicep decompile --file {{path/to/template_file.json}}"
+    },
+    {
+      "description": "Upgrade Bicep CLI to the latest version:",
+      "syntax": "az bicep upgrade"
+    },
+    {
+      "description": "Display the installed version of Bicep CLI:",
+      "syntax": "az bicep version"
+    },
+    {
+      "description": "List all available versions of Bicep CLI:",
+      "syntax": "az bicep list-versions"
+    },
+    {
+      "description": "Uninstall Bicep CLI:",
+      "syntax": "az bicep uninstall"
+    }
+  ]
+}

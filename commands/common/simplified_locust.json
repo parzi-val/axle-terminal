@@ -1,0 +1,30 @@
+{
+  "command": "locust",
+  "description": "Load-testing tool to determine number of concurrent users a system can handle. More information: https://locust.io.",
+  "useCases": [
+    {
+      "description": "Load-test \"example.com\" with web interface using locustfile.py:",
+      "syntax": "locust --host={{http://example.com}}"
+    },
+    {
+      "description": "Use a different test file:",
+      "syntax": "locust --locustfile={{test_file.py}} --host={{http://example.com}}"
+    },
+    {
+      "description": "Run test without web interface, spawning 1 user a second until there are 100 users:",
+      "syntax": "locust --no-web --clients={{100}} --hatch-rate={{1}} --host={{http://example.com}}"
+    },
+    {
+      "description": "Start Locust in master mode:",
+      "syntax": "locust --master --host={{http://example.com}}"
+    },
+    {
+      "description": "Connect Locust slave to master:",
+      "syntax": "locust --slave --host={{http://example.com}}"
+    },
+    {
+      "description": "Connect Locust slave to master on a different machine:",
+      "syntax": "locust --slave --master-host={{master_hostname}} --host={{http://example.com}}"
+    }
+  ]
+}

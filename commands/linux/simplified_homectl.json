@@ -1,0 +1,38 @@
+{
+  "command": "homectl",
+  "description": "Create, remove, change or inspect home directories using the systemd-homed service. More information: https://manned.org/homectl.",
+  "useCases": [
+    {
+      "description": "List user accounts and their associated home directories:",
+      "syntax": "homectl list"
+    },
+    {
+      "description": "Create a user account and their associated home directory:",
+      "syntax": "sudo homectl create {{username}}"
+    },
+    {
+      "description": "Remove a specific user and the associated home directory:",
+      "syntax": "sudo homectl remove {{username}}"
+    },
+    {
+      "description": "Change the password for a specific user:",
+      "syntax": "sudo homectl passwd {{username}}"
+    },
+    {
+      "description": "Run a shell or a command with access to a specific home directory:",
+      "syntax": "sudo homectl with {{username}} -- {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Lock or unlock a specific home directory:",
+      "syntax": "sudo homectl {{lock|unlock}} {{username}}"
+    },
+    {
+      "description": "Change the disk space assigned to a specific home directory to 100 GiB:",
+      "syntax": "sudo homectl resize {{username}} {{100G}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "homectl --help"
+    }
+  ]
+}

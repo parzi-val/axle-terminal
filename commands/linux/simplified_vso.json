@@ -1,0 +1,38 @@
+{
+  "command": "vso",
+  "description": "Package manager, system updater and a task automator for Vanilla OS. More information: https://github.com/Vanilla-OS/vanilla-system-operator.",
+  "useCases": [
+    {
+      "description": "Check for system updates to the host system:",
+      "syntax": "vso sys-upgrade check"
+    },
+    {
+      "description": "Upgrade the host system now:",
+      "syntax": "vso sys-upgrade upgrade --now"
+    },
+    {
+      "description": "Initialize the Pico subsystem (used for package management):",
+      "syntax": "vso pico-init"
+    },
+    {
+      "description": "Install applications inside the subsystem:",
+      "syntax": "vso install {{package1 package2 ...}}"
+    },
+    {
+      "description": "Remove applications from the subsystem:",
+      "syntax": "vso remove {{package1 package2 ...}}"
+    },
+    {
+      "description": "Enter the subsystem's shell:",
+      "syntax": "vso shell"
+    },
+    {
+      "description": "Run an application from the subsystem:",
+      "syntax": "vso run {{package}}"
+    },
+    {
+      "description": "Display VSO configuration:",
+      "syntax": "vso config show"
+    }
+  ]
+}

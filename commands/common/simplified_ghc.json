@@ -1,0 +1,30 @@
+{
+  "command": "ghc",
+  "description": "The Glasgow Haskell Compiler. Compiles and links Haskell source files. More information: https://www.haskell.org/ghc.",
+  "useCases": [
+    {
+      "description": "Find and compile all modules in the current directory:",
+      "syntax": "ghc Main"
+    },
+    {
+      "description": "Compile a single file:",
+      "syntax": "ghc {{path/to/file.hs}}"
+    },
+    {
+      "description": "Compile using extra optimization:",
+      "syntax": "ghc -O {{path/to/file.hs}}"
+    },
+    {
+      "description": "Stop compilation after generating object files (.o):",
+      "syntax": "ghc -c {{path/to/file.hs}}"
+    },
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "ghci"
+    },
+    {
+      "description": "Evaluate a single expression:",
+      "syntax": "ghc -e {{expression}}"
+    }
+  ]
+}

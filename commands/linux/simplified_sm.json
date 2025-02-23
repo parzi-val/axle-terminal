@@ -1,0 +1,30 @@
+{
+  "command": "sm",
+  "description": "Display a short message fullscreen. More information: https://github.com/nomeata/screen-message.",
+  "useCases": [
+    {
+      "description": "Display a message in full-screen:",
+      "syntax": "sm &quot;{{Hello World!}}&quot;"
+    },
+    {
+      "description": "Display a message with inverted colors:",
+      "syntax": "sm -i &quot;{{Hello World!}}&quot;"
+    },
+    {
+      "description": "Display a message with a custom foreground color:",
+      "syntax": "sm -f {{blue}} &quot;{{Hello World!}}&quot;"
+    },
+    {
+      "description": "Display a message with a custom background color:",
+      "syntax": "sm -b {{#008888}} &quot;{{Hello World!}}&quot;"
+    },
+    {
+      "description": "Display a message rotated 3 times (in steps of 90 degrees, counterclockwise):",
+      "syntax": "sm -r {{3}} &quot;{{Hello World!}}&quot;"
+    },
+    {
+      "description": "Display a message using the output from another command:",
+      "syntax": "{{echo &quot;Hello World!&quot;}} | sm -"
+    }
+  ]
+}

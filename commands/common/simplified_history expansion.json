@@ -1,0 +1,38 @@
+{
+  "command": "history expansion",
+  "description": "Reuse and expand the shell history in sh, Bash, Zsh, rbash and ksh. More information: https://www.gnu.org/software/bash/manual/html_node/History-Interaction.",
+  "useCases": [
+    {
+      "description": "Run the previous command as root (!! is replaced by the previous command):",
+      "syntax": "sudo !!"
+    },
+    {
+      "description": "Run a command with the last argument of the previous command:",
+      "syntax": "{{command}} !$"
+    },
+    {
+      "description": "Run a command with the first argument of the previous command:",
+      "syntax": "{{command}} !^"
+    },
+    {
+      "description": "Run the Nth command of the history:",
+      "syntax": "!{{n}}"
+    },
+    {
+      "description": "Run the command n lines back in the history:",
+      "syntax": "!-{{n}}"
+    },
+    {
+      "description": "Run the most recent command containing string:",
+      "syntax": "!?{{string}}?"
+    },
+    {
+      "description": "Run the previous command, replacing string1 with string2:",
+      "syntax": "^{{string1}}^{{string2}}^"
+    },
+    {
+      "description": "Perform a history expansion, but print the command that would be run instead of actually running it:",
+      "syntax": "{{!-n}}:p"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "delta",
+  "description": "A viewer for Git and diff output. More information: https://github.com/dandavison/delta.",
+  "useCases": [
+    {
+      "description": "Compare files or directories:",
+      "syntax": "delta {{path/to/old_file_or_directory}} {{path/to/new_file_or_directory}}"
+    },
+    {
+      "description": "Compare files or directories, showing the line numbers:",
+      "syntax": "delta --line-numbers {{path/to/old_file_or_directory}} {{path/to/new_file_or_directory}}"
+    },
+    {
+      "description": "Compare files or directories, showing the differences side by side:",
+      "syntax": "delta --side-by-side {{path/to/old_file_or_directory}} {{path/to/new_file_or_directory}}"
+    },
+    {
+      "description": "Compare files or directories, ignoring any Git configuration settings:",
+      "syntax": "delta --no-gitconfig {{path/to/old_file_or_directory}} {{path/to/new_file_or_directory}}"
+    },
+    {
+      "description": "Compare, rendering commit hashes, file names, and line numbers as hyperlinks, according to the hyperlink spec for terminal emulators:",
+      "syntax": "delta --hyperlinks {{path/to/old_file_or_directory}} {{path/to/new_file_or_directory}}"
+    },
+    {
+      "description": "Display the current settings:",
+      "syntax": "delta --show-config"
+    },
+    {
+      "description": "Display supported languages and associated file extensions:",
+      "syntax": "delta --list-languages"
+    }
+  ]
+}

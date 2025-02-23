@@ -1,0 +1,26 @@
+{
+  "command": "efibootmgr",
+  "description": "Manipulate the UEFI Boot Manager. More information: https://manned.org/efibootmgr.",
+  "useCases": [
+    {
+      "description": "List all boot options with their numbers:",
+      "syntax": "efibootmgr {{-u|--unicode}}"
+    },
+    {
+      "description": "Add UEFI Shell v2 as a boot option:",
+      "syntax": "sudo efibootmgr -c -d {{/dev/sda}} -p {{1}} -l &quot;{{\\path\\to\\shell.efi}}&quot; -L &quot;{{UEFI Shell}}&quot;"
+    },
+    {
+      "description": "Add Linux as a boot option:",
+      "syntax": "sudo efibootmgr --create --disk {{/dev/sda}} --part {{1}} --loader &quot;{{\\vmlinuz}}&quot; --unicode &quot;{{kernel_cmdline}}&quot; --label &quot;{{Linux}}&quot;"
+    },
+    {
+      "description": "Change the current boot order:",
+      "syntax": "sudo efibootmgr {{-o|--bootorder}} {{0002,0008,0001,0005}}"
+    },
+    {
+      "description": "Delete a boot option:",
+      "syntax": "sudo efibootmgr {{-b|--bootnum}} {{0008}} {{-B|--delete-bootnum}}"
+    }
+  ]
+}

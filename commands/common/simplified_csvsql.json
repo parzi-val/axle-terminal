@@ -1,0 +1,18 @@
+{
+  "command": "csvsql",
+  "description": "Generate SQL statements for a CSV file or execute those statements directly on a database. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/csvsql.html.",
+  "useCases": [
+    {
+      "description": "Generate a CREATE TABLE SQL statement for a CSV file:",
+      "syntax": "csvsql {{path/to/data.csv}}"
+    },
+    {
+      "description": "Import a CSV file into an SQL database:",
+      "syntax": "csvsql --insert --db &quot;{{mysql://user:password@host/database}}&quot; {{data.csv}}"
+    },
+    {
+      "description": "Run an SQL query on a CSV file:",
+      "syntax": "csvsql --query &quot;{{select * from 'data'}}&quot; {{data.csv}}"
+    }
+  ]
+}

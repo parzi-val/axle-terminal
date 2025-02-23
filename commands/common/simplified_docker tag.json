@@ -1,0 +1,18 @@
+{
+  "command": "docker tag",
+  "description": "Assign tags to existing Docker images. More information: https://docs.docker.com/reference/cli/docker/image/tag/.",
+  "useCases": [
+    {
+      "description": "Assign a name and tag to a specific image ID:",
+      "syntax": "docker tag {{id}} {{name}}:{{tag}}"
+    },
+    {
+      "description": "Assign a tag to a specific image:",
+      "syntax": "docker tag {{image}}:{{current_tag}} {{image}}:{{new_tag}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "docker tag"
+    }
+  ]
+}

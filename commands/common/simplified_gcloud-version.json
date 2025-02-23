@@ -1,0 +1,14 @@
+{
+  "command": "gcloud-version",
+  "description": "Print version information for Google Cloud CLI components. More information: https://cloud.google.com/sdk/gcloud/reference/version.",
+  "useCases": [
+    {
+      "description": "Display version information for all installed components, along with available updates to them:",
+      "syntax": "gcloud version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gcloud version --help"
+    }
+  ]
+}

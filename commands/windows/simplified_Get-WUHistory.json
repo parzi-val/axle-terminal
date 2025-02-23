@@ -1,0 +1,26 @@
+{
+  "command": "Get-WUHistory",
+  "description": "Get the history of installed updates from Windows Update. Part of external PSWindowsUpdate module. This command can only be run under PowerShell. More information: https://github.com/mgajda83/PSWindowsUpdate.",
+  "useCases": [
+    {
+      "description": "Get list of update history:",
+      "syntax": "Get-WUHistory"
+    },
+    {
+      "description": "List the last 10 installed updates:",
+      "syntax": "Get-WUHistory -Last {{10}}"
+    },
+    {
+      "description": "List all updates installed from a specific date to today:",
+      "syntax": "Get-WUHistory -MaxDate {{date}}"
+    },
+    {
+      "description": "List all updates installed in the past 24 hours:",
+      "syntax": "Get-WUHistory -MaxDate (Get-Date).AddDays(-1)"
+    },
+    {
+      "description": "Send the results via email (SMTP):",
+      "syntax": "Get-WUHistory -SendReport -PSWUSettings @{SmtpServer=&quot;{{smtp_server}}&quot;; Port={{smtp_port}} From=&quot;{{sender_email}}&quot; To=&quot;{{receiver_email}}&quot;}"
+    }
+  ]
+}

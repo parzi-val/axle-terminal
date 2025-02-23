@@ -1,0 +1,30 @@
+{
+  "command": "nx",
+  "description": "Manage nx workspaces. More information: https://nx.dev/l/r/getting-started/nx-cli.",
+  "useCases": [
+    {
+      "description": "Build a specific project:",
+      "syntax": "nx build {{project}}"
+    },
+    {
+      "description": "Test a specific project:",
+      "syntax": "nx test {{project}}"
+    },
+    {
+      "description": "Execute a target on a specific project:",
+      "syntax": "nx run {{project}}:{{target}}"
+    },
+    {
+      "description": "Execute a target on multiple projects:",
+      "syntax": "nx run-many --target {{target}} --projects {{project1}},{{project2}}"
+    },
+    {
+      "description": "Execute a target on all projects in the workspace:",
+      "syntax": "nx run-many --target {{target}} --all"
+    },
+    {
+      "description": "Execute a target only on projects that have been changed:",
+      "syntax": "nx affected --target {{target}}"
+    }
+  ]
+}

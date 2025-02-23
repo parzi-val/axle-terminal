@@ -1,0 +1,22 @@
+{
+  "command": "pnmindex",
+  "description": "Build a visual index of multiple PNM images. See also: pamundice. More information: https://netpbm.sourceforge.net/doc/pnmindex.html.",
+  "useCases": [
+    {
+      "description": "Produce an image containing thumbnails of the specified images in a grid:",
+      "syntax": "pnmindex {{path/to/input1.pnm path/to/input2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the size of the (quadratic) thumbnails:",
+      "syntax": "pnmindex -size {{50}} {{path/to/input1.pnm path/to/input2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the number of thumbnails per row:",
+      "syntax": "pnmindex -across {{10}} {{path/to/input1.pnm path/to/input2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the maximum number of colors in the output:",
+      "syntax": "pnmindex -colors {{512}} {{path/to/input1.pnm path/to/input2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

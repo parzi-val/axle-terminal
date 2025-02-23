@@ -1,0 +1,38 @@
+{
+  "command": "trufflehog",
+  "description": "Find and verify credentials in files, Git repositories, S3 buckets, and Docker images. More information: https://github.com/trufflesecurity/trufflehog.",
+  "useCases": [
+    {
+      "description": "Scan a Git repository for verified secrets:",
+      "syntax": "trufflehog git {{https://github.com/trufflesecurity/test_keys}} --only-verified"
+    },
+    {
+      "description": "Scan a GitHub organization for verified secrets:",
+      "syntax": "trufflehog github --org={{trufflesecurity}} --only-verified"
+    },
+    {
+      "description": "Scan a GitHub repository for verified keys and get JSON output:",
+      "syntax": "trufflehog git {{https://github.com/trufflesecurity/test_keys}} --only-verified --json"
+    },
+    {
+      "description": "Scan a GitHub repository along with its Issues and Pull Requests:",
+      "syntax": "trufflehog github --repo={{https://github.com/trufflesecurity/test_keys}} --issue-comments --pr-comments"
+    },
+    {
+      "description": "Scan an S3 bucket for verified keys:",
+      "syntax": "trufflehog s3 --bucket={{bucket name}} --only-verified"
+    },
+    {
+      "description": "Scan S3 buckets using IAM Roles:",
+      "syntax": "trufflehog s3 --role-arn={{iam-role-arn}}"
+    },
+    {
+      "description": "Scan individual files or directories:",
+      "syntax": "trufflehog filesystem {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Scan a Docker image for verified secrets:",
+      "syntax": "trufflehog docker --image {{trufflesecurity/secrets}} --only-verified"
+    }
+  ]
+}

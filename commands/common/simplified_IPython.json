@@ -1,0 +1,26 @@
+{
+  "command": "IPython",
+  "description": "A Python shell with automatic history, dynamic object introspection, easier configuration, command completion, access to the system shell and more. More information: https://ipython.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "ipython"
+    },
+    {
+      "description": "Enter an interactive IPython session after running a Python script:",
+      "syntax": "ipython -i {{script.py}}"
+    },
+    {
+      "description": "Create default IPython profile:",
+      "syntax": "ipython profile create"
+    },
+    {
+      "description": "Print the path to the directory for the default IPython profile:",
+      "syntax": "ipython locate profile"
+    },
+    {
+      "description": "Clear the IPython history database, deleting all entries:",
+      "syntax": "ipython history clear"
+    }
+  ]
+}

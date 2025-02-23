@@ -1,0 +1,26 @@
+{
+  "command": "cargo tree",
+  "description": "Display a tree visualization of a dependency graph. Note: in the tree, dependencies of packages marked with (*) have already been shown elsewhere in the graph, and so are not repeated. More information: https://doc.rust-lang.org/cargo/commands/cargo-tree.html.",
+  "useCases": [
+    {
+      "description": "Show a dependency tree of the current project:",
+      "syntax": "cargo tree"
+    },
+    {
+      "description": "Only show dependencies up to the specified depth (e.g. when n is 1, display only direct dependencies):",
+      "syntax": "cargo tree --depth {{n}}"
+    },
+    {
+      "description": "Do not display the given package (and its dependencies) in the tree:",
+      "syntax": "cargo tree --prune {{package_spec}}"
+    },
+    {
+      "description": "Show all occurrences of repeated dependencies:",
+      "syntax": "cargo tree --no-dedupe"
+    },
+    {
+      "description": "Only show normal/build/development dependencies:",
+      "syntax": "cargo tree --edges {{normal|build|dev}}"
+    }
+  ]
+}

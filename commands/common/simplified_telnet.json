@@ -1,0 +1,30 @@
+{
+  "command": "telnet",
+  "description": "Connect to a specified port of a host using the telnet protocol. More information: https://manned.org/telnet.",
+  "useCases": [
+    {
+      "description": "Telnet to the default port of a host:",
+      "syntax": "telnet {{host}}"
+    },
+    {
+      "description": "Telnet to a specific port of a host:",
+      "syntax": "telnet {{ip_address}} {{port}}"
+    },
+    {
+      "description": "Exit a telnet session:",
+      "syntax": "quit"
+    },
+    {
+      "description": "Emit the default escape character combination for terminating the session:",
+      "syntax": "&lt;Ctrl&gt; + ]"
+    },
+    {
+      "description": "Start telnet with \"x\" as the session termination character:",
+      "syntax": "telnet -e {{x}} {{ip_address}} {{port}}"
+    },
+    {
+      "description": "Telnet to Star Wars animation:",
+      "syntax": "telnet {{towel.blinkenlights.nl}}"
+    }
+  ]
+}

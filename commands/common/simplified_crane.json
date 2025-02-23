@@ -1,0 +1,30 @@
+{
+  "command": "crane",
+  "description": "Container images managing tool. Some subcommands such as pull, push, copy, etc. have their own usage documentation. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane.md/.",
+  "useCases": [
+    {
+      "description": "Execute a crane subcommand:",
+      "syntax": "crane {{subcommand}}"
+    },
+    {
+      "description": "Allow pushing non-distributable (foreign) layers:",
+      "syntax": "crane --allow-nondistributable-artifacts {{subcommand}}"
+    },
+    {
+      "description": "Allow image references to be fetched without TLS:",
+      "syntax": "crane --insecure {{subcommand}}"
+    },
+    {
+      "description": "Specify the platform in the form os/arch{{/variant}}{{:osversion}} (e.g. linux/amd64). (default all):",
+      "syntax": "crane --platform {{platform}} {{subcommand}}"
+    },
+    {
+      "description": "Enable debug logs for a subcommand:",
+      "syntax": "crane {{-v|--verbose}} {{subcommand}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "crane {{-h|--help}} {{subcommand}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "npm access",
+  "description": "Set access level on published packages. More information: https://docs.npmjs.com/cli/npm-access.",
+  "useCases": [
+    {
+      "description": "List packages for a user or scope:",
+      "syntax": "npm access list packages {{user|scope|scope:team}} {{package_name}}"
+    },
+    {
+      "description": "List collaborators on a package:",
+      "syntax": "npm access list collaborators {{package_name}} {{username}}"
+    },
+    {
+      "description": "Get status of a package:",
+      "syntax": "npm access get status {{package_name}}"
+    },
+    {
+      "description": "Set package status (public or private):",
+      "syntax": "npm access set status={{public|private}} {{package_name}}"
+    },
+    {
+      "description": "Grant access to a package:",
+      "syntax": "npm access grant {{read-only|read-write}} {{scope:team}} {{package_name}}"
+    },
+    {
+      "description": "Revoke access to a package:",
+      "syntax": "npm access revoke {{scope:team}} {{package_name}}"
+    },
+    {
+      "description": "Configure two-factor authentication requirement:",
+      "syntax": "npm access set mfa={{none|publish|automation}} {{package_name}}"
+    }
+  ]
+}

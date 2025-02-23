@@ -1,0 +1,30 @@
+{
+  "command": "systemd-dissect",
+  "description": "Introspect and interact with file system OS disk images, specifically Discoverable Disk Images (DDIs). More information: https://www.freedesktop.org/software/systemd/man/latest/systemd-dissect.html.",
+  "useCases": [
+    {
+      "description": "Show general image information about the OS image:",
+      "syntax": "systemd-dissect {{path/to/image.raw}}"
+    },
+    {
+      "description": "Mount an OS image:",
+      "syntax": "systemd-dissect --mount {{path/to/image.raw}} {{/mnt/image}}"
+    },
+    {
+      "description": "Unmount an OS image:",
+      "syntax": "systemd-dissect --umount {{/mnt/image}}"
+    },
+    {
+      "description": "List files in an image:",
+      "syntax": "systemd-dissect --list {{path/to/image.raw}}"
+    },
+    {
+      "description": "Attach an OS image to an automatically allocated loopback block device and print its path:",
+      "syntax": "systemd-dissect --attach {{path/to/image.raw}}"
+    },
+    {
+      "description": "Detach an OS image from a loopback block device:",
+      "syntax": "systemd-dissect --detach {{path/to/device}}"
+    }
+  ]
+}

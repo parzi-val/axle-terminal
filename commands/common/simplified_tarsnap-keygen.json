@@ -1,0 +1,14 @@
+{
+  "command": "tarsnap-keygen",
+  "description": "Generate a key file for use with Tarsnap, an online backup service. More information: https://www.tarsnap.com/man-tarsnap-keygen.1.html.",
+  "useCases": [
+    {
+      "description": "Register a machine with the Tarsnap server:",
+      "syntax": "sudo tarsnap-keygen --keyfile {{path/to/file.key}} --user {{user_email}} --machine {{machine_name}}"
+    },
+    {
+      "description": "Encrypt the key file (a passphrase will be requested twice):",
+      "syntax": "sudo tarsnap-keygen --keyfile {{path/to/file.key}} --user {{user_email}} --machine {{machine_name}} --passphrased"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "rustup self",
+  "description": "Modify the rustup installation. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Update rustup:",
+      "syntax": "rustup self update"
+    },
+    {
+      "description": "Uninstall rustup:",
+      "syntax": "rustup self uninstall"
+    }
+  ]
+}

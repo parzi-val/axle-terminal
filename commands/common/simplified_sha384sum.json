@@ -1,0 +1,34 @@
+{
+  "command": "sha384sum",
+  "description": "Calculate SHA384 cryptographic checksums. More information: https://www.gnu.org/software/coreutils/manual/html_node/sha2-utilities.html.",
+  "useCases": [
+    {
+      "description": "Calculate the SHA384 checksum for one or more files:",
+      "syntax": "sha384sum {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Calculate and save the list of SHA384 checksums to a file:",
+      "syntax": "sha384sum {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/file.sha384}}"
+    },
+    {
+      "description": "Calculate a SHA384 checksum from stdin:",
+      "syntax": "{{command}} | sha384sum"
+    },
+    {
+      "description": "Read a file of SHA384 checksums and filenames and verify all files have matching checksums:",
+      "syntax": "sha384sum --check {{path/to/file.sha384}}"
+    },
+    {
+      "description": "Only show a message for missing files or when verification fails:",
+      "syntax": "sha384sum --check --quiet {{path/to/file.sha384}}"
+    },
+    {
+      "description": "Only show a message when verification fails, ignoring missing files:",
+      "syntax": "sha384sum --ignore-missing --check --quiet {{path/to/file.sha384}}"
+    },
+    {
+      "description": "Check a known SHA384 checksum of a file:",
+      "syntax": "echo {{known_sha384_checksum_of_the_file}} {{path/to/file}} | sha384sum --check"
+    }
+  ]
+}

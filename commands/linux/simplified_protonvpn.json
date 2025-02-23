@@ -1,0 +1,34 @@
+{
+  "command": "protonvpn",
+  "description": "Unofficial third-party ProtonVPN client. See also: protonvpn-connect. More information: https://github.com/Rafficer/linux-cli-community.",
+  "useCases": [
+    {
+      "description": "Initialize ProtonVPN profile:",
+      "syntax": "protonvpn init"
+    },
+    {
+      "description": "Connect to ProtonVPN interactively:",
+      "syntax": "protonvpn {{c|connect}}"
+    },
+    {
+      "description": "Display connection status:",
+      "syntax": "protonvpn {{s|status}}"
+    },
+    {
+      "description": "Disconnect from ProtonVPN:",
+      "syntax": "protonvpn {{d|disconnect}}"
+    },
+    {
+      "description": "Reconnect or connect to the last server used:",
+      "syntax": "protonvpn {{r|reconnect}}"
+    },
+    {
+      "description": "Refresh OpenVPN configuration and server data:",
+      "syntax": "protonvpn refresh"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "protonvpn {{subcommand}} --help"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "Xephyr",
+  "description": "A nested X server that runs as an X application. More information: https://manned.org/xserver-xephyr.",
+  "useCases": [
+    {
+      "description": "Create a black window with display ID \":2\":",
+      "syntax": "Xephyr -br -ac -noreset -screen {{800x600}} {{:2}}"
+    },
+    {
+      "description": "Start an X application on the new screen:",
+      "syntax": "DISPLAY=:2 {{command_name}}"
+    }
+  ]
+}

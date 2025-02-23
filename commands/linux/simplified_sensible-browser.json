@@ -1,0 +1,14 @@
+{
+  "command": "sensible-browser",
+  "description": "Open the default browser. More information: https://manned.org/sensible-browser.",
+  "useCases": [
+    {
+      "description": "Open a new window of the default browser:",
+      "syntax": "sensible-browser"
+    },
+    {
+      "description": "Open a URL in the default browser:",
+      "syntax": "sensible-browser {{url}}"
+    }
+  ]
+}

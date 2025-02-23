@@ -1,0 +1,22 @@
+{
+  "command": "srm",
+  "description": "Securely remove files or directories. Overwrites the existing data one or multiple times. Drop in replacement for rm. More information: https://srm.sourceforge.net/srm.html.",
+  "useCases": [
+    {
+      "description": "Remove a file after a single-pass overwriting with random data:",
+      "syntax": "srm -s {{path/to/file}}"
+    },
+    {
+      "description": "Remove a file after seven passes of overwriting with random data:",
+      "syntax": "srm -m {{path/to/file}}"
+    },
+    {
+      "description": "Recursively remove a directory and its contents overwriting each file with a single-pass of random data:",
+      "syntax": "srm -r -s {{path/to/directory}}"
+    },
+    {
+      "description": "Prompt before every removal:",
+      "syntax": "srm -i {{\\*}}"
+    }
+  ]
+}

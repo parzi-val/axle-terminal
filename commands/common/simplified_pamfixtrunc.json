@@ -1,0 +1,10 @@
+{
+  "command": "pamfixtrunc",
+  "description": "This command has been superseded by pamfix -truncate. More information: https://netpbm.sourceforge.net/doc/pamfixtrunc.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamfix"
+    }
+  ]
+}

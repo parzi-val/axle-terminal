@@ -1,0 +1,30 @@
+{
+  "command": "singularity",
+  "description": "Manage Singularity containers and images. More information: https://singularity-docs.readthedocs.io/en/latest/#commands.",
+  "useCases": [
+    {
+      "description": "Download a remote image from Sylabs Cloud:",
+      "syntax": "singularity pull --name {{image.sif}} {{library://godlovedc/funny/lolcow:latest}}"
+    },
+    {
+      "description": "Rebuild a remote image using the latest Singularity image format:",
+      "syntax": "singularity build {{image.sif}} {{docker://godlovedc/lolcow}}"
+    },
+    {
+      "description": "Start a container from an image and get a shell inside it:",
+      "syntax": "singularity shell {{image.sif}}"
+    },
+    {
+      "description": "Start a container from an image and run a command:",
+      "syntax": "singularity exec {{image.sif}} {{command}}"
+    },
+    {
+      "description": "Start a container from an image and execute the internal runscript:",
+      "syntax": "singularity run {{image.sif}}"
+    },
+    {
+      "description": "Build a singularity image from a recipe file:",
+      "syntax": "sudo singularity build {{image.sif}} {{recipe}}"
+    }
+  ]
+}

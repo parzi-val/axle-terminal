@@ -1,0 +1,26 @@
+{
+  "command": "pw-link",
+  "description": "Manage links between ports in PipeWire. More information: https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Virtual-Devices.",
+  "useCases": [
+    {
+      "description": "List all audio output and input ports with their IDs:",
+      "syntax": "pw-link --output --input --ids"
+    },
+    {
+      "description": "Create a link between an output and an input port:",
+      "syntax": "pw-link {{output_port_name}} {{input_port_name}}"
+    },
+    {
+      "description": "Disconnect two ports:",
+      "syntax": "pw-link --disconnect {{output_port_name}} {{input_port_name}}"
+    },
+    {
+      "description": "List all links with their IDs:",
+      "syntax": "pw-link --links --ids"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pw-link -h"
+    }
+  ]
+}

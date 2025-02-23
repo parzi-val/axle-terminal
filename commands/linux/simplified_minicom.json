@@ -1,0 +1,18 @@
+{
+  "command": "minicom",
+  "description": "Communicate with the serial interface of a device. More information: https://manned.org/minicom.",
+  "useCases": [
+    {
+      "description": "Open a given serial port:",
+      "syntax": "sudo minicom --device {{/dev/ttyUSB0}}"
+    },
+    {
+      "description": "Open a given serial port with a given baud rate:",
+      "syntax": "sudo minicom --device {{/dev/ttyUSB0}} --baudrate {{115200}}"
+    },
+    {
+      "description": "Enter the configuration menu before communicating with a given serial port:",
+      "syntax": "sudo minicom --device {{/dev/ttyUSB0}} --setup"
+    }
+  ]
+}

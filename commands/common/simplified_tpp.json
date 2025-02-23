@@ -1,0 +1,14 @@
+{
+  "command": "tpp",
+  "description": "Command-Line based presentation tool. More information: https://github.com/cbbrowne/tpp.",
+  "useCases": [
+    {
+      "description": "View a presentation:",
+      "syntax": "tpp {{path/to/file}}"
+    },
+    {
+      "description": "Output a presentation:",
+      "syntax": "tpp -t {{type}} -o {{path/to/output}} {{path/to/file}}"
+    }
+  ]
+}

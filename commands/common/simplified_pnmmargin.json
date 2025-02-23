@@ -1,0 +1,14 @@
+{
+  "command": "pnmmargin",
+  "description": "Add a border to a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmmargin.html.",
+  "useCases": [
+    {
+      "description": "Add a border of the specified size to a PNM image:",
+      "syntax": "pnmmargin {{size}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the color of the border:",
+      "syntax": "pnmmargin -color {{color}} {{size}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

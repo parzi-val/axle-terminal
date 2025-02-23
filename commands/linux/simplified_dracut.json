@@ -1,0 +1,22 @@
+{
+  "command": "dracut",
+  "description": "Generate initramfs images to boot the Linux kernel. Dracut uses options from configuration files in /etc/dracut.conf, /etc/dracut.conf.d/*.conf and /usr/lib/dracut/dracut.conf.d/*.conf by default. More information: https://github.com/dracutdevs/dracut/wiki.",
+  "useCases": [
+    {
+      "description": "Generate an initramfs image for the current kernel without overriding any options:",
+      "syntax": "dracut"
+    },
+    {
+      "description": "Generate an initramfs image for the current kernel and overwrite the existing one:",
+      "syntax": "dracut --force"
+    },
+    {
+      "description": "Generate an initramfs image for a specific kernel:",
+      "syntax": "dracut --kver {{kernel_version}}"
+    },
+    {
+      "description": "List available modules:",
+      "syntax": "dracut --list-modules"
+    }
+  ]
+}

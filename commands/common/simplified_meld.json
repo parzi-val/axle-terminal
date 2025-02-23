@@ -1,0 +1,30 @@
+{
+  "command": "meld",
+  "description": "Graphical diffing and merging tool. More information: https://meldmerge.org/.",
+  "useCases": [
+    {
+      "description": "Start meld:",
+      "syntax": "meld"
+    },
+    {
+      "description": "Compare 2 files:",
+      "syntax": "meld {{path/to/file_1}} {{path/to/file_2}}"
+    },
+    {
+      "description": "Compare 2 directories:",
+      "syntax": "meld {{path/to/directory_1}} {{path/to/directory_2}}"
+    },
+    {
+      "description": "Compare 3 files:",
+      "syntax": "meld {{path/to/file_1}} {{path/to/file_2}} {{path/to/file_3}}"
+    },
+    {
+      "description": "Open a comparison as a new tab in a pre-existing meld instance:",
+      "syntax": "meld --newtab {{path/to/file_1}} {{path/to/file_2}}"
+    },
+    {
+      "description": "Compare multiple sets of files:",
+      "syntax": "meld --diff {{path/to/file_1}} {{path/to/file_2}} --diff {{path/to/file_3}} {{path/to/file_4}}"
+    }
+  ]
+}

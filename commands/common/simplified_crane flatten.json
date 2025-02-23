@@ -1,0 +1,18 @@
+{
+  "command": "crane flatten",
+  "description": "Flatten an image's layers into a single layer. Pushes digest to original image repository if no tags are specified. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_digest.md.",
+  "useCases": [
+    {
+      "description": "Flatten an image:",
+      "syntax": "crane flatten"
+    },
+    {
+      "description": "Apply new tag to flattened image:",
+      "syntax": "crane flatten {{-t|--tag}} {{tag_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane flatten {{-h|--help}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "mkfs.exfat",
+  "description": "Create an exfat filesystem inside a partition. More information: https://manned.org/mkfs.exfat.",
+  "useCases": [
+    {
+      "description": "Create an exfat filesystem inside partition 1 on device b (sdb1):",
+      "syntax": "mkfs.exfat {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create filesystem with a volume-name:",
+      "syntax": "mkfs.exfat -n {{volume_name}} {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create filesystem with a volume-id:",
+      "syntax": "mkfs.exfat -i {{volume_id}} {{/dev/sdb1}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "mdp",
+  "description": "A command-line based tool to make presentations from Markdown files. More information: https://github.com/visit1985/mdp.",
+  "useCases": [
+    {
+      "description": "Launch a presentation in the terminal from a Markdown file:",
+      "syntax": "mdp {{presentation.md}}"
+    },
+    {
+      "description": "Disable fading transitions:",
+      "syntax": "mdp --nofade {{presentation.md}}"
+    },
+    {
+      "description": "Invert font colors to use in terminals with light background:",
+      "syntax": "mdp --invert {{presentation.md}}"
+    },
+    {
+      "description": "Disable transparency in transparent terminals:",
+      "syntax": "mdp --notrans {{presentation.md}}"
+    }
+  ]
+}

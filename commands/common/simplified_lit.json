@@ -1,0 +1,22 @@
+{
+  "command": "lit",
+  "description": "LLVM integrated tester for executing LLVM and Clang style test suites, summarizing results. Part of LLVM. More information: https://www.llvm.org/docs/CommandGuide/lit.html.",
+  "useCases": [
+    {
+      "description": "Run a specified test case:",
+      "syntax": "lit {{path/to/test_file.test}}"
+    },
+    {
+      "description": "Run all test cases in a specified directory:",
+      "syntax": "lit {{path/to/test_suite}}"
+    },
+    {
+      "description": "Run all test cases and check the wall time for each cases, then report to summary output:",
+      "syntax": "lit {{path/to/test_suite}} --time-tests"
+    },
+    {
+      "description": "Run individual tests with Valgrind (memory check and memory leak test):",
+      "syntax": "lit {{path/to/test_file.test}} --vg --vg-leak --vg-args={{args_to_valgrind}}"
+    }
+  ]
+}

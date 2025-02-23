@@ -1,0 +1,14 @@
+{
+  "command": "mkisofs",
+  "description": "Create ISO files from directories. Also aliased as genisoimage. More information: https://manned.org/mkisofs.",
+  "useCases": [
+    {
+      "description": "Create an ISO from a directory:",
+      "syntax": "mkisofs -o {{filename.iso}} {{path/to/source_directory}}"
+    },
+    {
+      "description": "Set the disc label when creating an ISO:",
+      "syntax": "mkisofs -o {{filename.iso}} -V &quot;{{label_name}}&quot; {{path/to/source_directory}}"
+    }
+  ]
+}

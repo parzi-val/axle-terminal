@@ -1,0 +1,34 @@
+{
+  "command": "man",
+  "description": "Format and display manual pages. More information: https://manned.org/man.",
+  "useCases": [
+    {
+      "description": "Display the man page for a command:",
+      "syntax": "man {{command}}"
+    },
+    {
+      "description": "Display the man page for a command from section 7:",
+      "syntax": "man {{7}} {{command}}"
+    },
+    {
+      "description": "List all available sections for a command:",
+      "syntax": "man -f {{command}}"
+    },
+    {
+      "description": "Display the path searched for manpages:",
+      "syntax": "man --path"
+    },
+    {
+      "description": "Display the location of a manpage rather than the manpage itself:",
+      "syntax": "man -w {{command}}"
+    },
+    {
+      "description": "Display the man page using a specific locale:",
+      "syntax": "man {{command}} --locale={{locale}}"
+    },
+    {
+      "description": "Search for manpages containing a search string:",
+      "syntax": "man -k &quot;{{search_string}}&quot;"
+    }
+  ]
+}

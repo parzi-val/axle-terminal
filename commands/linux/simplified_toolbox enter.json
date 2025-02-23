@@ -1,0 +1,18 @@
+{
+  "command": "toolbox enter",
+  "description": "Enter a toolbox container for interactive use. See also: toolbox run. More information: https://manned.org/toolbox-enter.1.",
+  "useCases": [
+    {
+      "description": "Enter a toolbox container using the default image of a specific distribution:",
+      "syntax": "toolbox enter --distro {{distribution}}"
+    },
+    {
+      "description": "Enter a toolbox container using the default image of a specific release of the current distribution:",
+      "syntax": "toolbox enter --release {{release}}"
+    },
+    {
+      "description": "Enter a toolbox container using the default image for Fedora 39:",
+      "syntax": "toolbox enter --distro {{fedora}} --release {{f39}}"
+    }
+  ]
+}

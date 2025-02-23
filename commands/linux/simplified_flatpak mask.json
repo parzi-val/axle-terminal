@@ -1,0 +1,18 @@
+{
+  "command": "flatpak mask",
+  "description": "Mask out updates and automatic installation. More information: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-mask.",
+  "useCases": [
+    {
+      "description": "Ignore updates for a specific flatpak:",
+      "syntax": "flatpak mask {{com.example.app}}"
+    },
+    {
+      "description": "Undo ignore updates:",
+      "syntax": "flatpak mask --remove {{com.example.app}}"
+    },
+    {
+      "description": "List all currently masked patterns:",
+      "syntax": "flatpak mask {{--system|--user}}"
+    }
+  ]
+}

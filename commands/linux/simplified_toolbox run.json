@@ -1,0 +1,18 @@
+{
+  "command": "toolbox run",
+  "description": "Run a command in an existing toolbox container. See also: toolbox enter. More information: https://manned.org/toolbox-run.",
+  "useCases": [
+    {
+      "description": "Run a command inside a specific toolbox container:",
+      "syntax": "toolbox run --container {{container_name}} {{command}}"
+    },
+    {
+      "description": "Run a command inside a toolbox container for a specific release of a distribution:",
+      "syntax": "toolbox run --distro {{distribution}} --release {{release}} {{command}}"
+    },
+    {
+      "description": "Run emacs inside a toolbox container using the default image for Fedora 39:",
+      "syntax": "toolbox run --distro {{fedora}} --release {{f39}} {{emacs}}"
+    }
+  ]
+}

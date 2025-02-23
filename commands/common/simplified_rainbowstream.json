@@ -1,0 +1,34 @@
+{
+  "command": "rainbowstream",
+  "description": "Terminal-based Twitter client supporting realtime tweetstream, trends, sending, search, favorites and user management. Online help with h, up and down arrows for history, tab to auto-complete and 2-tab for suggestion. More information: https://github.com/orakaro/rainbowstream.",
+  "useCases": [
+    {
+      "description": "Open RainbowStream:",
+      "syntax": "rainbowstream"
+    },
+    {
+      "description": "Show your timeline (optional number of tweets to display, default is 5):",
+      "syntax": "home [{{num_of_last_tweets}}]"
+    },
+    {
+      "description": "Show profile of a given user:",
+      "syntax": "whois @{{user}}"
+    },
+    {
+      "description": "Tweet the message as-is:",
+      "syntax": "t {{message}}"
+    },
+    {
+      "description": "Retweet the tweet with given ID (ID is beside the time):",
+      "syntax": "rt {{tweet_id}}"
+    },
+    {
+      "description": "Favorite the tweet with given ID:",
+      "syntax": "fav {{tweet_id}}"
+    },
+    {
+      "description": "Perform a search for a given word (with or without hashtag):",
+      "syntax": "s {{word}}"
+    }
+  ]
+}

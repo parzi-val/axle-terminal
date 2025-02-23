@@ -1,0 +1,18 @@
+{
+  "command": "register_new_matrix_user",
+  "description": "Register new users in a home server when registration has been disabled. More information: https://manned.org/register_new_matrix_user.",
+  "useCases": [
+    {
+      "description": "Create a user interactively:",
+      "syntax": "register_new_matrix_user --config {{path/to/homeserver.yaml}}"
+    },
+    {
+      "description": "Create an admin user interactively:",
+      "syntax": "register_new_matrix_user --config {{path/to/homeserver.yaml}} --admin"
+    },
+    {
+      "description": "Create an admin user non-interactively (not recommended):",
+      "syntax": "register_new_matrix_user --config {{path/to/homeserver.yaml}} --user {{username}} --password {{password}} --admin"
+    }
+  ]
+}

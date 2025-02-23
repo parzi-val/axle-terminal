@@ -1,0 +1,38 @@
+{
+  "command": "aurman",
+  "description": "An Arch Linux utility to build and install packages from the Arch User Repository. See also pacman. More information: https://github.com/polygamma/aurman.",
+  "useCases": [
+    {
+      "description": "Synchronize and update all packages:",
+      "syntax": "aurman --sync --refresh --sysupgrade"
+    },
+    {
+      "description": "Synchronize and update all packages without show changes of PKGBUILD files:",
+      "syntax": "aurman --sync --refresh --sysupgrade --noedit"
+    },
+    {
+      "description": "Install a new package:",
+      "syntax": "aurman --sync {{package}}"
+    },
+    {
+      "description": "Install a new package without show changes of PKGBUILD files:",
+      "syntax": "aurman --sync --noedit {{package}}"
+    },
+    {
+      "description": "Install a new package without prompting:",
+      "syntax": "aurman --sync --noedit --noconfirm {{package}}"
+    },
+    {
+      "description": "Search the package database for a keyword from the official repositories and AUR:",
+      "syntax": "aurman --sync --search {{keyword}}"
+    },
+    {
+      "description": "Remove a package and its dependencies:",
+      "syntax": "aurman --remove --recursive --nosave {{package}}"
+    },
+    {
+      "description": "Clear the package cache (use two --clean flags to clean all packages):",
+      "syntax": "aurman --sync --clean"
+    }
+  ]
+}

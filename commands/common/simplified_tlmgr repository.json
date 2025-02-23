@@ -1,0 +1,30 @@
+{
+  "command": "tlmgr repository",
+  "description": "Manage repositories of a TeX Live installation. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "List all configured repositories and their tags (if set):",
+      "syntax": "tlmgr repository list"
+    },
+    {
+      "description": "List all packages available in a specific repository:",
+      "syntax": "tlmgr repository list {{path|url|tag}}"
+    },
+    {
+      "description": "Add a new repository with a specific tag (the tag is not required):",
+      "syntax": "sudo tlmgr repository add {{path|url}} {{tag}}"
+    },
+    {
+      "description": "Remove a specific repository:",
+      "syntax": "sudo tlmgr repository remove {{path|url|tag}}"
+    },
+    {
+      "description": "Set a new list of repositories, overwriting the previous list:",
+      "syntax": "sudo tlmgr repository set {{path|url|tag}}#{{tag}} {{path|url|tag}}#{{tag}} {{...}}"
+    },
+    {
+      "description": "Show the verification status of all configured repositories:",
+      "syntax": "tlmgr repository status"
+    }
+  ]
+}

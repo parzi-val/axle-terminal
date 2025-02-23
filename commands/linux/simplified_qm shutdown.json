@@ -1,0 +1,26 @@
+{
+  "command": "qm shutdown",
+  "description": "Shutdown a virtual machine on QEMU/KVM Virtual Machine Manager. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Shutdown a virtual machine:",
+      "syntax": "qm shutdown {{VM_ID}}"
+    },
+    {
+      "description": "Shutdown a virtual machine after wait for at most 10 seconds:",
+      "syntax": "qm shutdown --timeout {{10}} {{VM_ID}}"
+    },
+    {
+      "description": "Shutdown a virtual machine and do not deactivate storage volumes:",
+      "syntax": "qm shutdown --keepActive {{true}} {{VM_ID}}"
+    },
+    {
+      "description": "Shutdown a virtual machine and skip lock (only root can use this option):",
+      "syntax": "qm shutdown --skiplock {{true}} {{VM_ID}}"
+    },
+    {
+      "description": "Stop and shutdown a virtual machine:",
+      "syntax": "qm shutdown --forceStop {{true}} {{VM_ID}}"
+    }
+  ]
+}

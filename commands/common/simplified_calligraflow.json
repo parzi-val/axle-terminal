@@ -1,0 +1,18 @@
+{
+  "command": "calligraflow",
+  "description": "Calligra's flowchart and diagram application. See also: calligrastage, calligrawords, calligrasheets. More information: https://manned.org/calligraflow.",
+  "useCases": [
+    {
+      "description": "Launch the flowchart and diagram application:",
+      "syntax": "calligraflow"
+    },
+    {
+      "description": "Open a specific file:",
+      "syntax": "calligraflow {{path/to/file}}"
+    },
+    {
+      "description": "Display help or version:",
+      "syntax": "calligraflow --{{help|version}}"
+    }
+  ]
+}

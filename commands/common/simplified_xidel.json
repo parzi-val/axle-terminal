@@ -1,0 +1,38 @@
+{
+  "command": "xidel",
+  "description": "Download and extract data from HTML/XML pages as well as JSON APIs. More information: https://www.videlibri.de/xidel.html.",
+  "useCases": [
+    {
+      "description": "Print all URLs found by a Google search:",
+      "syntax": "xidel {{https://www.google.com/search?q=test}} --extract &quot;//a/extract(@href, 'url[?]q=([^&amp;]+)&amp;', 1)[. != '']&quot;"
+    },
+    {
+      "description": "Print the title of all pages found by a Google search and download them:",
+      "syntax": "xidel {{https://www.google.com/search?q=test}} --follow &quot;{{//a/extract(@href, 'url[?]q=([^&amp;]+)&amp;', 1)[. != '']}}&quot; --extract {{//title}} --download {{'{$host}/'}}"
+    },
+    {
+      "description": "Follow all links on a page and print the titles, with XPath:",
+      "syntax": "xidel {{https://example.org}} --follow {{//a}} --extract {{//title}}"
+    },
+    {
+      "description": "Follow all links on a page and print the titles, with CSS selectors:",
+      "syntax": "xidel {{https://example.org}} --follow &quot;{{css('a')}}&quot; --css {{title}}"
+    },
+    {
+      "description": "Follow all links on a page and print the titles, with pattern matching:",
+      "syntax": "xidel {{https://example.org}} --follow &quot;{{&lt;a&gt;{.}&lt;/a&gt;*}}&quot; --extract &quot;{{&lt;title&gt;{.}&lt;/title&gt;}}&quot;"
+    },
+    {
+      "description": "Read the pattern from example.xml (which will also check if the element containing \"ood\" is there, and fail otherwise):",
+      "syntax": "xidel {{path/to/example.xml}} --extract &quot;{{&lt;x&gt;&lt;foo&gt;ood&lt;/foo&gt;&lt;bar&gt;{.}&lt;/bar&gt;&lt;/x&gt;}}&quot;"
+    },
+    {
+      "description": "Print all newest Stack Overflow questions with title and URL using pattern matching on their RSS feed:",
+      "syntax": "xidel {{http://stackoverflow.com/feeds}} --extract &quot;{{&lt;entry&gt;&lt;title&gt;{title:=.}&lt;/title&gt;&lt;link&gt;{uri:=@href}&lt;/link&gt;&lt;/entry&gt;+}}&quot;"
+    },
+    {
+      "description": "Check for unread Reddit mail, Webscraping, combining CSS, XPath, JSONiq, and automatically form evaluation:",
+      "syntax": "xidel {{https://reddit.com}} --follow &quot;{{form(css('form.login-form')[1], {'user': '$your_username', 'passwd': '$your_password'})}}&quot; --extract &quot;{{css('#mail')/@title}}&quot;"
+    }
+  ]
+}

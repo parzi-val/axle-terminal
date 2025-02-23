@@ -1,0 +1,18 @@
+{
+  "command": "golangci-lint",
+  "description": "Parallelized, smart and fast Go linters runner that integrates with all major IDEs and supports YAML configuration. More information: https://golangci-lint.run/welcome/quick-start/.",
+  "useCases": [
+    {
+      "description": "Run linters in the current folder:",
+      "syntax": "golangci-lint run"
+    },
+    {
+      "description": "List enabled and disabled linters (Note: disabled linters are shown last, do not mistake them for enabled ones):",
+      "syntax": "golangci-lint linters"
+    },
+    {
+      "description": "[E]nable a specific linter for this run:",
+      "syntax": "golangci-lint run --enable {{linter}}"
+    }
+  ]
+}

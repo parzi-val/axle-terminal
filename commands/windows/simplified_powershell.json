@@ -1,0 +1,38 @@
+{
+  "command": "powershell",
+  "description": "Command-line shell and scripting language designed especially for system administration. This command refers to PowerShell version 5.1 and below (also known as the legacy Windows PowerShell). To use the newer, cross-platform version of PowerShell (also known as PowerShell Core), use pwsh instead of powershell. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/powershell.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "powershell"
+    },
+    {
+      "description": "Start an interactive shell session without loading startup configs:",
+      "syntax": "powershell -NoProfile"
+    },
+    {
+      "description": "Execute specific commands:",
+      "syntax": "powershell -Command &quot;{{echo 'powershell is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "powershell -File {{path/to/script.ps1}}"
+    },
+    {
+      "description": "Start a session with a specific version of PowerShell:",
+      "syntax": "powershell -Version {{version}}"
+    },
+    {
+      "description": "Prevent a shell from exit after running startup commands:",
+      "syntax": "powershell -NoExit"
+    },
+    {
+      "description": "Describe the format of data sent to PowerShell:",
+      "syntax": "powershell -InputFormat {{Text|XML}}"
+    },
+    {
+      "description": "Determine how an output from PowerShell is formatted:",
+      "syntax": "powershell -OutputFormat {{Text|XML}}"
+    }
+  ]
+}

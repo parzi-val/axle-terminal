@@ -1,0 +1,18 @@
+{
+  "command": "zapier init",
+  "description": "Initialize a new Zapier integration. More information: https://platform.zapier.com/reference/cli#init.",
+  "useCases": [
+    {
+      "description": "Initialize a new Zapier integration:",
+      "syntax": "zapier init {{path/to/directory}}"
+    },
+    {
+      "description": "Initialize a new Zapier integration with a specific template:",
+      "syntax": "zapier init {{path/to/directory}} {{-t|--template}} {{basic-auth|callback|custom-auth|digest-auth|dynamic-dropdown|files|minimal|oauth1-trello|oauth2|search-or-create|session-auth|typescript}}"
+    },
+    {
+      "description": "Show extra debugging output:",
+      "syntax": "zapier init {{-d|--debug}}"
+    }
+  ]
+}

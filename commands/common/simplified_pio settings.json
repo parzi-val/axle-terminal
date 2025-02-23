@@ -1,0 +1,22 @@
+{
+  "command": "pio settings",
+  "description": "View and modify PlatformIO settings. More information: https://docs.platformio.org/en/latest/core/userguide/cmd_settings.html.",
+  "useCases": [
+    {
+      "description": "Display the names, values and descriptions of all PlatformIO settings:",
+      "syntax": "pio settings get"
+    },
+    {
+      "description": "Display the name, value and description of a specific PlatformIO setting:",
+      "syntax": "pio settings get {{setting}}"
+    },
+    {
+      "description": "Set a specific setting value:",
+      "syntax": "pio settings set {{setting}} {{value}}"
+    },
+    {
+      "description": "Reset the values of all modified settings to their factory defaults:",
+      "syntax": "pio settings reset"
+    }
+  ]
+}

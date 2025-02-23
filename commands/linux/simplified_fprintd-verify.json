@@ -1,0 +1,30 @@
+{
+  "command": "fprintd-verify",
+  "description": "Verify fingerprints against the database. More information: https://manned.org/fprintd-verify.",
+  "useCases": [
+    {
+      "description": "Verify all stored fingerprints for the current user:",
+      "syntax": "fprintd-verify"
+    },
+    {
+      "description": "Verify a specific fingerprint for the current user:",
+      "syntax": "fprintd-verify --finger {{left-thumb|left-index-finger|left-middle-finger|left-ring-finger|left-little-finger|right-thumb|right-index-finger|right-middle-finger|right-ring-finger|right-little-finger}}"
+    },
+    {
+      "description": "Verify fingerprints for a specific user:",
+      "syntax": "fprint-verify {{username}}"
+    },
+    {
+      "description": "Verify a specific fingerprint for a specific user:",
+      "syntax": "fprintd-verify --finger {{finger_name}} {{username}}"
+    },
+    {
+      "description": "Fail the process if a fingerprint doesn't match with ones stored in the database for the current user:",
+      "syntax": "fprint-verify --g-fatal-warnings"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "fprintd-verify --help"
+    }
+  ]
+}

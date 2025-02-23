@@ -1,0 +1,30 @@
+{
+  "command": "watch",
+  "description": "Execute a program periodically and monitor the output in full-screen mode. More information: https://manned.org/watch.",
+  "useCases": [
+    {
+      "description": "Repeatedly run a command and show the result:",
+      "syntax": "watch {{command}}"
+    },
+    {
+      "description": "Re-run a command every 60 seconds:",
+      "syntax": "watch --interval {{60}} {{command}}"
+    },
+    {
+      "description": "Monitor disk space, highlighting differences as they appear:",
+      "syntax": "watch --differences {{df}}"
+    },
+    {
+      "description": "Repeatedly run a pipeline and show the result:",
+      "syntax": "watch &quot;{{command_1}} | {{command_2}} | {{command_3}}&quot;"
+    },
+    {
+      "description": "Exit watch if the visible output changes:",
+      "syntax": "watch --chgexit {{lsblk}}"
+    },
+    {
+      "description": "Interpret terminal control characters:",
+      "syntax": "watch --color {{ls --color=always}}"
+    }
+  ]
+}

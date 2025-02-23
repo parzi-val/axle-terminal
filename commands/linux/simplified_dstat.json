@@ -1,0 +1,30 @@
+{
+  "command": "dstat",
+  "description": "Versatile tool for generating system resource statistics. More information: http://dag.wieers.com/home-made/dstat.",
+  "useCases": [
+    {
+      "description": "Display CPU, disk, net, paging and system statistics:",
+      "syntax": "dstat"
+    },
+    {
+      "description": "Display statistics every 5 seconds and 4 updates only:",
+      "syntax": "dstat {{5}} {{4}}"
+    },
+    {
+      "description": "Display CPU and memory statistics only:",
+      "syntax": "dstat --cpu --mem"
+    },
+    {
+      "description": "List all available dstat plugins:",
+      "syntax": "dstat --list"
+    },
+    {
+      "description": "Display the process using the most memory and most CPU:",
+      "syntax": "dstat --top-mem --top-cpu"
+    },
+    {
+      "description": "Display battery percentage and remaining battery time:",
+      "syntax": "dstat --battery --battery-remain"
+    }
+  ]
+}

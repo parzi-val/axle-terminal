@@ -1,0 +1,26 @@
+{
+  "command": "scrontab",
+  "description": "Manage Slurm crontab files. More information: https://slurm.schedmd.com/scrontab.html.",
+  "useCases": [
+    {
+      "description": "Install a new crontab from the specified file:",
+      "syntax": "scrontab {{path/to/file}}"
+    },
+    {
+      "description": "[e]dit the crontab of the current user:",
+      "syntax": "scrontab -e"
+    },
+    {
+      "description": "[e]dit the crontab of the specified user:",
+      "syntax": "scrontab --user={{user_id}} -e"
+    },
+    {
+      "description": "[r]emove the current crontab:",
+      "syntax": "scrontab -r"
+    },
+    {
+      "description": "Print the crontab of the current user to stdout:",
+      "syntax": "scrontab -l"
+    }
+  ]
+}

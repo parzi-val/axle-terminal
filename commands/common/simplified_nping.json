@@ -1,0 +1,38 @@
+{
+  "command": "nping",
+  "description": "Network packet generation tool/ping utility. More information: https://nmap.org/nping/.",
+  "useCases": [
+    {
+      "description": "Ping a specified host using ICMP if the user is allowed to, otherwise using TCP:",
+      "syntax": "nping {{example.com}}"
+    },
+    {
+      "description": "Ping a specified host using ICMP assuming that the user is allowed to do so:",
+      "syntax": "nping --icmp --privileged {{example.com}}"
+    },
+    {
+      "description": "Ping a specified host using UDP:",
+      "syntax": "nping --udp {{example.com}}"
+    },
+    {
+      "description": "Ping a specified host on a given port using TCP:",
+      "syntax": "nping --tcp --dest-port {{443}} {{example.com}}"
+    },
+    {
+      "description": "Ping a certain number of times:",
+      "syntax": "nping --count {{10}} {{example.com}}"
+    },
+    {
+      "description": "Wait a certain amount of time between each ping:",
+      "syntax": "nping --delay {{5s}} {{example.com}}"
+    },
+    {
+      "description": "Send the request over a specified interface:",
+      "syntax": "nping --interface {{eth0}} {{example.com}}"
+    },
+    {
+      "description": "Ping an IP range:",
+      "syntax": "nping {{10.0.0.1-10}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "smbcacls",
+  "description": "View and manipulate Windows ACLs on SMB shares. Part of the Samba suite. More information: https://www.samba.org/samba/docs/current/man-html/smbcacls.1.html.",
+  "useCases": [
+    {
+      "description": "Display the ACLs for a file or directory on a remote SMB share:",
+      "syntax": "smbcacls //{{server}}/{{share}} {{path/to/file_or_directory}} --user {{domain\\\\username}}%{{password}}"
+    },
+    {
+      "description": "Set a new ACL for a file on a remote SMB share (replace &quot;ACL:...&quot; with a valid Windows ACL specification):",
+      "syntax": "smbcacls //{{server}}/{{share}} {{path/to/file}} --user {{domain\\\\username}}%{{password}} &quot;ACL:{{DACL}}&quot;"
+    },
+    {
+      "description": "Remove all existing ACL entries and set a new ACL:",
+      "syntax": "smbcacls //{{server}}/{{share}} {{path/to/file}} --user {{domain\\\\username}}%{{password}} &quot;RESET&quot; &quot;ACL:{{DACL}}&quot;"
+    },
+    {
+      "description": "Specify an alternative workgroup (or domain) and have the program prompt for a password interactively:",
+      "syntax": "smbcacls //{{server}}/{{share}} {{path/to/file}} --user {{username}} --workgroup {{workgroup}}"
+    }
+  ]
+}

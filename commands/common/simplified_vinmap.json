@@ -1,0 +1,26 @@
+{
+  "command": "vinmap",
+  "description": "A multithreaded Nmap scanner that splits IP ranges into chunks, performs parallel scans, and merges XML or JSON results. More information: https://pypi.org/project/vinmap.",
+  "useCases": [
+    {
+      "description": "Perform a basic scan of a subnet:",
+      "syntax": "vinmap -ip {{192.168.1.0/24}}"
+    },
+    {
+      "description": "Scan a domain with version and OS detection, saving results to a specific file:",
+      "syntax": "vinmap -ip {{example.com}} -s &quot;-sV -O&quot; -o {{path/to/scan_results.xml}}"
+    },
+    {
+      "description": "Scan an IP range using 10 chunks and 20 concurrent threads, uses half of the system's CPU cores if not specified:",
+      "syntax": "vinmap -ip {{10.0.0.1-10.0.0.255}} -n 10 -t 20"
+    },
+    {
+      "description": "Output scan results in JSON format:",
+      "syntax": "vinmap -ip {{192.168.1.1-192.168.1.100}} -f json"
+    },
+    {
+      "description": "Scan multiple IPs with default settings and save merged XML output:",
+      "syntax": "vinmap -ip {{192.168.1.1,192.168.1.2,...}}"
+    }
+  ]
+}

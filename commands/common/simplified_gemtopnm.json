@@ -1,0 +1,18 @@
+{
+  "command": "gemtopnm",
+  "description": "Convert a GEM image file into a PNM image. More information: https://netpbm.sourceforge.net/doc/gemtopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a GEM image file to a PNM image:",
+      "syntax": "gemtopnm {{path/to/file.img}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Describe the contents of the specified GEM image:",
+      "syntax": "gemtopnm -d {{path/to/file.img}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "gemtopnm -version"
+    }
+  ]
+}

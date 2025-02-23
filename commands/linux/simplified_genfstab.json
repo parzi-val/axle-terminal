@@ -1,0 +1,22 @@
+{
+  "command": "genfstab",
+  "description": "Arch Linux install script to generate output suitable for addition to an fstab file. More information: https://manned.org/genfstab.8.",
+  "useCases": [
+    {
+      "description": "Display an fstab compatible output based on a volume label:",
+      "syntax": "genfstab -L {{path/to/mount_point}}"
+    },
+    {
+      "description": "Display an fstab compatible output based on a volume UUID:",
+      "syntax": "genfstab -U {{path/to/mount_point}}"
+    },
+    {
+      "description": "A usual way to generate an fstab file, requires root permissions:",
+      "syntax": "genfstab -U {{/mnt}} &gt;&gt; {{/mnt/etc/fstab}}"
+    },
+    {
+      "description": "Append a volume into an fstab file to mount it automatically:",
+      "syntax": "genfstab -U {{path/to/mount_point}} | sudo tee -a /etc/fstab"
+    }
+  ]
+}

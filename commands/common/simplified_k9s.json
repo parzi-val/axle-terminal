@@ -1,0 +1,22 @@
+{
+  "command": "k9s",
+  "description": "View and manage Kubernetes clusters. More information: https://k9scli.io/topics/commands/.",
+  "useCases": [
+    {
+      "description": "Manage a cluster using a kubeconfig context:",
+      "syntax": "k9s --context {{kubeconfig_context_name}}"
+    },
+    {
+      "description": "Manage a cluster in read-only mode (disabling all commands that may cause modifications):",
+      "syntax": "k9s --readonly --cluster {{cluster_name}}"
+    },
+    {
+      "description": "Manage a cluster using a given kubernetes namespace:",
+      "syntax": "k9s --namespace {{kubernetes_namespace}} --cluster {{cluster_name}}"
+    },
+    {
+      "description": "Manage a cluster launching k9s in the pod view and enable debug logging:",
+      "syntax": "k9s --command {{pod}} --logLevel debug --cluster {{cluster_name}}"
+    }
+  ]
+}

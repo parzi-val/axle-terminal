@@ -1,0 +1,30 @@
+{
+  "command": "cs fetch",
+  "description": "Fetch fetches the JARs of dependencies. More information: https://get-coursier.io/docs/cli-fetch.",
+  "useCases": [
+    {
+      "description": "Fetch a specific version of a jar:",
+      "syntax": "cs fetch {{group_id}}:{{artifact_id}}:{{artifact_version}}"
+    },
+    {
+      "description": "Fetch a package and evaluate the classpath corresponding to the selected package in an env var:",
+      "syntax": "CP=&quot;$(cs fetch --classpath org.scalameta::scalafmt-cli:latest.release)&quot;"
+    },
+    {
+      "description": "Fetch a source of a specific jar:",
+      "syntax": "cs fetch --sources {{group_id}}:{{artifact_id}}:{{artifact_version}}"
+    },
+    {
+      "description": "Fetch the javadoc jars:",
+      "syntax": "cs fetch --javadoc {{group_id}}:{{artifact_id}}:{{artifact_version}}"
+    },
+    {
+      "description": "Fetch dependency with javadoc jars and source jars:",
+      "syntax": "cs fetch --default={{true}} --sources --javadoc {{group_id}}:{{artifact_id}}:{{artifact_version}}"
+    },
+    {
+      "description": "Fetch jars coming from dependency files:",
+      "syntax": "cs fetch {{--dependency-file path/to/file1 --dependency-file path/to/file2 ...}}"
+    }
+  ]
+}

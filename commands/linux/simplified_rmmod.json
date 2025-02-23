@@ -1,0 +1,26 @@
+{
+  "command": "rmmod",
+  "description": "Remove modules from the Linux kernel. See also: kmod, for other module management commands. More information: https://manned.org/rmmod.",
+  "useCases": [
+    {
+      "description": "Remove a module from the kernel:",
+      "syntax": "sudo rmmod {{module_name}}"
+    },
+    {
+      "description": "Remove a module from the kernel and display verbose information:",
+      "syntax": "sudo rmmod --verbose {{module_name}}"
+    },
+    {
+      "description": "Remove a module from the kernel and send errors to syslog instead of stderr:",
+      "syntax": "sudo rmmod --syslog {{module_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rmmod --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "rmmod --version"
+    }
+  ]
+}

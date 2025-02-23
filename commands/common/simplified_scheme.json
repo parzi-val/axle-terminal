@@ -1,0 +1,26 @@
+{
+  "command": "scheme",
+  "description": "MIT Scheme language interpreter and REPL (interactive shell). More information: https://www.gnu.org/software/mit-scheme.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "scheme"
+    },
+    {
+      "description": "Run a scheme program (with no REPL output):",
+      "syntax": "scheme --quiet &lt; {{script.scm}}"
+    },
+    {
+      "description": "Load a scheme program into the REPL:",
+      "syntax": "scheme --load {{script.scm}}"
+    },
+    {
+      "description": "Load scheme expressions into the REPL:",
+      "syntax": "scheme --eval &quot;{{(define foo 'x)}}&quot;"
+    },
+    {
+      "description": "Open the REPL in quiet mode:",
+      "syntax": "scheme --quiet"
+    }
+  ]
+}

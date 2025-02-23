@@ -1,0 +1,22 @@
+{
+  "command": "enca",
+  "description": "Detect and convert the encoding of text files. More information: https://github.com/nijel/enca.",
+  "useCases": [
+    {
+      "description": "Detect file(s) encoding according to the system's locale:",
+      "syntax": "enca {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Detect file(s) encoding specifying a language in the POSIX/C locale format (e.g. zh_CN, en_US):",
+      "syntax": "enca -L {{language}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Convert file(s) to a specific encoding:",
+      "syntax": "enca -L {{language}} -x {{to_encoding}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Create a copy of an existing file using a different encoding:",
+      "syntax": "enca -L {{language}} -x {{to_encoding}} &lt; {{original_file}} &gt; {{new_file}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "pio platform",
+  "description": "Manage PlatformIO development platforms. More information: https://docs.platformio.org/en/latest/core/userguide/platforms/.",
+  "useCases": [
+    {
+      "description": "List all installed development platforms:",
+      "syntax": "pio platform list"
+    },
+    {
+      "description": "Search for existing development platforms:",
+      "syntax": "pio platform search {{platform}}"
+    },
+    {
+      "description": "Show details about a development platform:",
+      "syntax": "pio platform show {{platform}}"
+    },
+    {
+      "description": "Install a development platform:",
+      "syntax": "pio platform install {{platform}}"
+    },
+    {
+      "description": "Update installed development platforms:",
+      "syntax": "pio platform update"
+    },
+    {
+      "description": "Uninstall a development platform:",
+      "syntax": "pio platform uninstall {{platform}}"
+    },
+    {
+      "description": "List all supported frameworks:",
+      "syntax": "pio platform frameworks"
+    }
+  ]
+}

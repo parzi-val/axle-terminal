@@ -1,0 +1,14 @@
+{
+  "command": "newgrp",
+  "description": "Switch primary group membership. More information: https://manned.org/newgrp.",
+  "useCases": [
+    {
+      "description": "Change user's primary group membership:",
+      "syntax": "newgrp {{group_name}}"
+    },
+    {
+      "description": "Reset primary group membership to user's default group in /etc/passwd:",
+      "syntax": "newgrp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "gcloud auth",
+  "description": "Grant and revoke authorization to gcloud and manage credentials. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/auth.",
+  "useCases": [
+    {
+      "description": "Authorize Google Cloud access for the gcloud CLI with Google Cloud user credentials and set the current account as active:",
+      "syntax": "gcloud auth login"
+    },
+    {
+      "description": "Authorize Google Cloud access similar to gcloud auth login but with service account credentials:",
+      "syntax": "gcloud auth activate-service-account"
+    },
+    {
+      "description": "Manage Application Default Credentials (ADC) for Cloud Client Libraries:",
+      "syntax": "gcloud auth application-default"
+    },
+    {
+      "description": "Display a list of Google Cloud accounts currently authenticated on your system:",
+      "syntax": "gcloud auth list"
+    },
+    {
+      "description": "Display the current account's access token:",
+      "syntax": "gcloud auth print-access-token"
+    },
+    {
+      "description": "Remove access credentials for an account:",
+      "syntax": "gcloud auth revoke"
+    }
+  ]
+}

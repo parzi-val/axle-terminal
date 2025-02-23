@@ -1,0 +1,26 @@
+{
+  "command": "unar",
+  "description": "Extract contents from archive files. More information: https://manned.org/unar.",
+  "useCases": [
+    {
+      "description": "Extract an archive to the current directory:",
+      "syntax": "unar {{path/to/archive}}"
+    },
+    {
+      "description": "Extract an archive to the specified directory:",
+      "syntax": "unar -o {{path/to/directory}} {{path/to/archive}}"
+    },
+    {
+      "description": "Force overwrite if files to be unpacked already exist:",
+      "syntax": "unar -f {{path/to/archive}}"
+    },
+    {
+      "description": "Force rename if files to be unpacked already exist:",
+      "syntax": "unar -r {{path/to/archive}}"
+    },
+    {
+      "description": "Force skip if files to be unpacked already exist:",
+      "syntax": "unar -s {{path/to/archive}}"
+    }
+  ]
+}

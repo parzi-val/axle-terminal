@@ -1,0 +1,38 @@
+{
+  "command": "gh pr",
+  "description": "Manage GitHub pull requests. Some subcommands such as create have their own usage documentation. More information: https://cli.github.com/manual/gh_pr.",
+  "useCases": [
+    {
+      "description": "Create a pull request:",
+      "syntax": "gh pr create"
+    },
+    {
+      "description": "Check out a specific pull request locally:",
+      "syntax": "gh pr checkout {{pr_number}}"
+    },
+    {
+      "description": "View the changes made in the pull request for the current branch:",
+      "syntax": "gh pr diff"
+    },
+    {
+      "description": "Approve the pull request for the current branch:",
+      "syntax": "gh pr review --approve"
+    },
+    {
+      "description": "Merge the pull request associated with the current branch interactively:",
+      "syntax": "gh pr merge"
+    },
+    {
+      "description": "Edit a pull request interactively:",
+      "syntax": "gh pr edit"
+    },
+    {
+      "description": "Edit the base branch of a pull request:",
+      "syntax": "gh pr edit --base {{branch_name}}"
+    },
+    {
+      "description": "Check the status of the current repository's pull requests:",
+      "syntax": "gh pr status"
+    }
+  ]
+}

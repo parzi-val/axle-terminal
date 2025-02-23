@@ -1,0 +1,30 @@
+{
+  "command": "coproc",
+  "description": "Bash builtin for creating interactive asynchronous subshells. More information: https://www.gnu.org/software/bash/manual/bash.html#Coprocesses.",
+  "useCases": [
+    {
+      "description": "Run a subshell asynchronously:",
+      "syntax": "coproc { {{command1; command2; ...}}; }"
+    },
+    {
+      "description": "Create a coprocess with a specific name:",
+      "syntax": "coproc {{name}} { {{command1; command2; ...}}; }"
+    },
+    {
+      "description": "Write to a specific coprocess stdin:",
+      "syntax": "echo &quot;{{input}}&quot; &gt;&amp;&quot;${{{name}}[1]}&quot;"
+    },
+    {
+      "description": "Read from a specific coprocess stdout:",
+      "syntax": "read {{variable}} &lt;&amp;&quot;${{{name}}[0]}&quot;"
+    },
+    {
+      "description": "Create a coprocess which repeatedly reads stdin and runs some commands on the input:",
+      "syntax": "coproc {{name}} { while read line; do {{command1; command2; ...}}; done }"
+    },
+    {
+      "description": "Create and use a coprocess running bc:",
+      "syntax": "coproc BC { bc --mathlib; }; echo &quot;1/3&quot; &gt;&amp;&quot;${BC[1]}&quot;; read output &lt;&amp;&quot;${BC[0]}&quot;; echo &quot;$output&quot;"
+    }
+  ]
+}

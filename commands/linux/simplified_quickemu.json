@@ -1,0 +1,34 @@
+{
+  "command": "quickemu",
+  "description": "Build and manage highly optimised desktop virtual machines quickly. See also: quickget, for preparing VM configurations. More information: https://github.com/quickemu-project/quickemu.",
+  "useCases": [
+    {
+      "description": "Create and run a virtual machine from a configuration file:",
+      "syntax": "quickemu --vm {{path/to/file.conf}}"
+    },
+    {
+      "description": "Do not commit any changes to disk/snapshot but write any changes to temporary files:",
+      "syntax": "quickemu --status-quo --vm {{path/to/file.conf}}"
+    },
+    {
+      "description": "Start the virtual machine in full-screen mode ( +  + f to exit) and select the display backend (sdl by default):",
+      "syntax": "quickemu --fullscreen --display {{sdl|gtk|spice|spice-app|none}} --vm {{path/to/file.conf}}"
+    },
+    {
+      "description": "Select a virtual audio device to emulate and create a desktop shortcut:",
+      "syntax": "quickemu --sound-card {{intel-hda|ac97|es1370|sb16|none}} --shortcut --vm {{path/to/file.conf}}"
+    },
+    {
+      "description": "Create a snapshot:",
+      "syntax": "quickemu --snapshot create {{tag}} --vm {{path/to/file.conf}}"
+    },
+    {
+      "description": "Restore a snapshot:",
+      "syntax": "quickemu --snapshot apply {{tag}} --vm {{path/to/file.conf}}"
+    },
+    {
+      "description": "Delete a snapshot:",
+      "syntax": "quickemu --snapshot delete {{tag}} --vm {{path/to/file.conf}}"
+    }
+  ]
+}

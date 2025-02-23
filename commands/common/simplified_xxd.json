@@ -1,0 +1,34 @@
+{
+  "command": "xxd",
+  "description": "Create a hexadecimal representation (hexdump) from a binary file, or vice-versa. More information: https://manned.org/xxd.",
+  "useCases": [
+    {
+      "description": "Generate a hexdump from a binary file and display the output:",
+      "syntax": "xxd {{input_file}}"
+    },
+    {
+      "description": "Generate a hexdump from a binary file and save it as a text file:",
+      "syntax": "xxd {{input_file}} {{output_file}}"
+    },
+    {
+      "description": "Display a more compact output, replacing consecutive zeros (if any) with a star:",
+      "syntax": "xxd -a {{input_file}}"
+    },
+    {
+      "description": "Display the output with 10 columns of one octet (byte) each:",
+      "syntax": "xxd -c {{10}} {{input_file}}"
+    },
+    {
+      "description": "Display output only up to a length of 32 bytes:",
+      "syntax": "xxd -l {{32}} {{input_file}}"
+    },
+    {
+      "description": "Display the output in plain mode, without any gaps between the columns:",
+      "syntax": "xxd -p {{input_file}}"
+    },
+    {
+      "description": "Revert a plaintext hexdump back into binary, and save it as a binary file:",
+      "syntax": "xxd -r -p {{input_file}} {{output_file}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "packwiz",
+  "description": "Create, edit and manage Minecraft modpacks. More information: https://packwiz.infra.link/reference/commands/packwiz/.",
+  "useCases": [
+    {
+      "description": "Interactively create a new modpack in the current directory:",
+      "syntax": "packwiz init"
+    },
+    {
+      "description": "Add a mod from Modrinth or Curseforge:",
+      "syntax": "packwiz {{modrinth|curseforge}} add {{url|slug|search_term}}"
+    },
+    {
+      "description": "List all mods in the modpack:",
+      "syntax": "packwiz list"
+    },
+    {
+      "description": "Update index.toml after manually editing files:",
+      "syntax": "packwiz refresh"
+    },
+    {
+      "description": "Export as a Modrinth (.mrpack) or Curseforge (Zip) file:",
+      "syntax": "packwiz {{modrinth|curseforge}} export"
+    }
+  ]
+}

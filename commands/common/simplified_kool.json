@@ -1,0 +1,30 @@
+{
+  "command": "kool",
+  "description": "Build software development environments. More information: https://kool.dev/docs/.",
+  "useCases": [
+    {
+      "description": "Create a project using a specific preset:",
+      "syntax": "kool create {{preset}} {{project_name}}"
+    },
+    {
+      "description": "Run a specific script defined in the kool.yml file in the current directory:",
+      "syntax": "kool run {{script}}"
+    },
+    {
+      "description": "Start/stop services in the current directory:",
+      "syntax": "kool {{start|stop}}"
+    },
+    {
+      "description": "Display status of the services in the current directory:",
+      "syntax": "kool status"
+    },
+    {
+      "description": "Update to the latest version:",
+      "syntax": "kool self-update"
+    },
+    {
+      "description": "Print the completion script for the specified shell:",
+      "syntax": "kool completion {{bash|fish|powershell|zsh}}"
+    }
+  ]
+}

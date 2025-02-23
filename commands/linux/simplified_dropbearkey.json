@@ -1,0 +1,22 @@
+{
+  "command": "dropbearkey",
+  "description": "Generate SSH keys in Dropbear format. More information: https://manned.org/dropbearkey.1.",
+  "useCases": [
+    {
+      "description": "Generate an SSH key of [t]ype ed25519 and write it to key [f]ile:",
+      "syntax": "dropbearkey -t {{ed25519}} -f {{path/to/key_file}}"
+    },
+    {
+      "description": "Generate an SSH key of [t]ype ecdsa and write it to key [f]ile:",
+      "syntax": "dropbearkey -t {{ecdsa}} -f {{path/to/key_file}}"
+    },
+    {
+      "description": "Generate an SSH key of [t]ype RSA with 4096-bit key [s]ize and write it to key [f]ile:",
+      "syntax": "dropbearkey -t {{rsa}} -s {{4096}} -f {{path/to/key_file}}"
+    },
+    {
+      "description": "Print the private key fingerprint and public key in key [f]ile:",
+      "syntax": "dropbearkey -y -f {{path/to/key_file}}"
+    }
+  ]
+}

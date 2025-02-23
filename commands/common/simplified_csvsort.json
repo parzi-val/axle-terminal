@@ -1,0 +1,22 @@
+{
+  "command": "csvsort",
+  "description": "Sort CSV files. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/csvsort.html.",
+  "useCases": [
+    {
+      "description": "Sort a CSV file by column 9:",
+      "syntax": "csvsort -c {{9}} {{data.csv}}"
+    },
+    {
+      "description": "Sort a CSV file by the \"name\" column in descending order:",
+      "syntax": "csvsort -r -c {{name}} {{data.csv}}"
+    },
+    {
+      "description": "Sort a CSV file by column 2, then by column 4:",
+      "syntax": "csvsort -c {{2,4}} {{data.csv}}"
+    },
+    {
+      "description": "Sort a CSV file without inferring data types:",
+      "syntax": "csvsort --no-inference -c {{columns}} {{data.csv}}"
+    }
+  ]
+}

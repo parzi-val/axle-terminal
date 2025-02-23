@@ -1,0 +1,30 @@
+{
+  "command": "reg compare",
+  "description": "Compare keys and their values in the registry. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-compare.",
+  "useCases": [
+    {
+      "description": "Compare all values under a specific key with another key:",
+      "syntax": "reg compare {{key_name1}} {{key_name2}}"
+    },
+    {
+      "description": "Compare a specific [v]alue under two keys:",
+      "syntax": "reg compare {{key_name1}} {{key_name2}} /v {{value}}"
+    },
+    {
+      "description": "Compare all [s]ubkeys and values for two keys:",
+      "syntax": "reg compare {{key_name1}} {{key_name2}} /s"
+    },
+    {
+      "description": "Only [o]utput the matches ([s]ame) between the specified keys:",
+      "syntax": "reg compare {{key_name1}} {{key_name2}} /os"
+    },
+    {
+      "description": "[o]utput the differences and matches ([a]ll) between the specified keys:",
+      "syntax": "reg compare {{key_name1}} {{key_name2}} /oa"
+    },
+    {
+      "description": "Compare two keys, [o]utputting [n]othing:",
+      "syntax": "reg compare {{key_name1}} {{key_name2}} /on"
+    }
+  ]
+}

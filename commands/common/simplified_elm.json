@@ -1,0 +1,30 @@
+{
+  "command": "elm",
+  "description": "Compile and run Elm source files. More information: https://elm-lang.org.",
+  "useCases": [
+    {
+      "description": "Initialize an Elm project, generates an elm.json file:",
+      "syntax": "elm init"
+    },
+    {
+      "description": "Start interactive Elm shell:",
+      "syntax": "elm repl"
+    },
+    {
+      "description": "Compile an Elm file, output the result to an index.html file:",
+      "syntax": "elm make {{source}}"
+    },
+    {
+      "description": "Compile an Elm file, output the result to a JavaScript file:",
+      "syntax": "elm make {{source}} --output={{destination}}.js"
+    },
+    {
+      "description": "Start local web server that compiles Elm files on page load:",
+      "syntax": "elm reactor"
+    },
+    {
+      "description": "Install Elm package from https://package.elm-lang.org:",
+      "syntax": "elm install {{author}}/{{package}}"
+    }
+  ]
+}

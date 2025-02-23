@@ -1,0 +1,38 @@
+{
+  "command": "colima",
+  "description": "Container runtimes for macOS and Linux with minimal setup. More information: https://github.com/abiosoft/colima.",
+  "useCases": [
+    {
+      "description": "Start the daemon in the background:",
+      "syntax": "colima start"
+    },
+    {
+      "description": "Create a configuration file and use it:",
+      "syntax": "colima start --edit"
+    },
+    {
+      "description": "Start and setup containerd (install nerdctl to use containerd via nerdctl):",
+      "syntax": "colima start --runtime containerd"
+    },
+    {
+      "description": "Start with Kubernetes (kubectl is required):",
+      "syntax": "colima start --kubernetes"
+    },
+    {
+      "description": "Customize CPU count, RAM memory and disk space (in GiB):",
+      "syntax": "colima start --cpu {{number}} --memory {{memory}} --disk {{storage_space}}"
+    },
+    {
+      "description": "Use Docker via Colima (Docker is required):",
+      "syntax": "colima start"
+    },
+    {
+      "description": "List containers with their information and status:",
+      "syntax": "colima list"
+    },
+    {
+      "description": "Show runtime status:",
+      "syntax": "colima status"
+    }
+  ]
+}

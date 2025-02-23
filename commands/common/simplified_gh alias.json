@@ -1,0 +1,26 @@
+{
+  "command": "gh alias",
+  "description": "Manage GitHub CLI command aliases. More information: https://cli.github.com/manual/gh_alias.",
+  "useCases": [
+    {
+      "description": "List all the aliases gh is configured to use:",
+      "syntax": "gh alias list"
+    },
+    {
+      "description": "Create a gh subcommand alias:",
+      "syntax": "gh alias set {{pv}} '{{pr view}}'"
+    },
+    {
+      "description": "Set a shell command as a gh subcommand:",
+      "syntax": "gh alias set --shell {{alias_name}} {{command}}"
+    },
+    {
+      "description": "Delete a command shortcut:",
+      "syntax": "gh alias delete {{alias_name}}"
+    },
+    {
+      "description": "Display the subcommand help:",
+      "syntax": "gh alias"
+    }
+  ]
+}

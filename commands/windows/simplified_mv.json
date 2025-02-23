@@ -1,0 +1,14 @@
+{
+  "command": "mv",
+  "description": "In PowerShell, this command is an alias of Move-Item. However, this command is not available on the Command Prompt (cmd). Use move instead for similar functionality.",
+  "useCases": [
+    {
+      "description": "View documentation for the equivalent Command Prompt command:",
+      "syntax": "tldr move"
+    },
+    {
+      "description": "View documentation for the original PowerShell command:",
+      "syntax": "tldr move-item"
+    }
+  ]
+}

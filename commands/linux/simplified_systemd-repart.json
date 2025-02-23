@@ -1,0 +1,18 @@
+{
+  "command": "systemd-repart",
+  "description": "Automatically grow and add partitions. Grows and adds partitions based on the configuration files described in repart.d. Does not automatically resize file system on partition. See systemd-growfs to extend file system. More information: https://www.freedesktop.org/software/systemd/man/systemd-repart.html.",
+  "useCases": [
+    {
+      "description": "Grow the root partition (/) to all available disk space:",
+      "syntax": "systemd-repart"
+    },
+    {
+      "description": "View changes without applying:",
+      "syntax": "systemd-repart --dry-run=yes"
+    },
+    {
+      "description": "Grow root partition size to 10 gigabytes:",
+      "syntax": "systemd-repart --size=10G --root /"
+    }
+  ]
+}

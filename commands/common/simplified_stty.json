@@ -1,0 +1,30 @@
+{
+  "command": "stty",
+  "description": "Set options for a terminal device interface. More information: https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display all settings for the current terminal:",
+      "syntax": "stty --all"
+    },
+    {
+      "description": "Set the number of rows or columns:",
+      "syntax": "stty {{rows|cols}} {{count}}"
+    },
+    {
+      "description": "Get the actual transfer speed of a device:",
+      "syntax": "stty --file {{path/to/device_file}} speed"
+    },
+    {
+      "description": "Reset all modes to reasonable values for the current terminal:",
+      "syntax": "stty sane"
+    },
+    {
+      "description": "Switch between raw and normal mode:",
+      "syntax": "stty {{raw|cooked}}"
+    },
+    {
+      "description": "Turn character echoing off or on:",
+      "syntax": "stty {{-echo|echo}}"
+    }
+  ]
+}

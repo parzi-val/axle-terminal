@@ -1,0 +1,14 @@
+{
+  "command": "modinfo",
+  "description": "Extract information about a Linux kernel module. See also: kmod, for other module management commands. More information: https://manned.org/modinfo.",
+  "useCases": [
+    {
+      "description": "List all attributes of a kernel module:",
+      "syntax": "modinfo {{kernel_module}}"
+    },
+    {
+      "description": "List the specified attribute only:",
+      "syntax": "modinfo -F {{author|description|license|parm|filename}} {{kernel_module}}"
+    }
+  ]
+}

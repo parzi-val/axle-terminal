@@ -1,0 +1,14 @@
+{
+  "command": "sponge",
+  "description": "Soak up the input before writing the output file. More information: https://manned.org/sponge.",
+  "useCases": [
+    {
+      "description": "Append file content to the source file:",
+      "syntax": "cat {{path/to/file}} | sponge -a {{path/to/file}}"
+    },
+    {
+      "description": "Remove all lines starting with # in a file:",
+      "syntax": "grep -v '^{{#}}' {{path/to/file}} | sponge {{path/to/file}}"
+    }
+  ]
+}

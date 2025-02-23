@@ -1,0 +1,26 @@
+{
+  "command": "npm ls",
+  "description": "Print installed packages to stdout. More information: https://docs.npmjs.com/cli/commands/npm-ls.",
+  "useCases": [
+    {
+      "description": "Print all versions of direct dependencies to stdout:",
+      "syntax": "npm ls"
+    },
+    {
+      "description": "Print all installed packages including peer dependencies:",
+      "syntax": "npm ls --all"
+    },
+    {
+      "description": "Print dependencies with extended information:",
+      "syntax": "npm ls --long"
+    },
+    {
+      "description": "Print dependencies in parseable format:",
+      "syntax": "npm ls --parseable"
+    },
+    {
+      "description": "Print dependencies in JSON format:",
+      "syntax": "npm ls --json"
+    }
+  ]
+}

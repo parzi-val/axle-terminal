@@ -1,0 +1,38 @@
+{
+  "command": "rbenv",
+  "description": "Easily install Ruby versions and manage application environments. See also: asdf. More information: https://github.com/rbenv/rbenv.",
+  "useCases": [
+    {
+      "description": "Install a Ruby version:",
+      "syntax": "rbenv install {{version}}"
+    },
+    {
+      "description": "Display a list of the latest stable versions for each Ruby:",
+      "syntax": "rbenv install --list"
+    },
+    {
+      "description": "Display a list of installed Ruby versions:",
+      "syntax": "rbenv versions"
+    },
+    {
+      "description": "Use a specific Ruby version across the whole system:",
+      "syntax": "rbenv global {{version}}"
+    },
+    {
+      "description": "Use a specific Ruby version for an application/project directory:",
+      "syntax": "rbenv local {{version}}"
+    },
+    {
+      "description": "Display the currently selected Ruby version:",
+      "syntax": "rbenv version"
+    },
+    {
+      "description": "Uninstall a Ruby version:",
+      "syntax": "rbenv uninstall {{version}}"
+    },
+    {
+      "description": "Display all Ruby versions that contain the specified executable:",
+      "syntax": "rbenv whence {{executable}}"
+    }
+  ]
+}

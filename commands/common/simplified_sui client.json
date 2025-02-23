@@ -1,0 +1,38 @@
+{
+  "command": "sui client",
+  "description": "Publish smart contracts, get object information, execute transactions, and more. More information: https://docs.sui.io/references/cli/client.",
+  "useCases": [
+    {
+      "description": "Create a new address with the ED25519 scheme:",
+      "syntax": "sui client new-address ed25519 {{address-alias}}"
+    },
+    {
+      "description": "Create a new testnet environment with an RPC URL and alias:",
+      "syntax": "sui client new-env --rpc https://fullnode.testnet.sui.io:443 --alias testnet"
+    },
+    {
+      "description": "Switch to the address of your choice (accepts also an alias):",
+      "syntax": "sui client switch --address {{address-alias}}"
+    },
+    {
+      "description": "Switch to the given environment:",
+      "syntax": "sui client switch --env {{env-alias}}"
+    },
+    {
+      "description": "Publish a smart contract:",
+      "syntax": "sui client publish {{package-path}}"
+    },
+    {
+      "description": "Interact with the Sui faucet:",
+      "syntax": "sui client faucet {{subcommand}}"
+    },
+    {
+      "description": "List the gas coins for the given address (accepts also an alias):",
+      "syntax": "sui client gas {{address}}"
+    },
+    {
+      "description": "Create, sign, and execute programmable transaction blocks:",
+      "syntax": "sui client ptb {{options}} {{subcommand}}"
+    }
+  ]
+}

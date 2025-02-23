@@ -1,0 +1,38 @@
+{
+  "command": "mypy",
+  "description": "Type check Python code. More information: https://mypy.readthedocs.io/en/stable/running_mypy.html.",
+  "useCases": [
+    {
+      "description": "Type check a specific file:",
+      "syntax": "mypy {{path/to/file.py}}"
+    },
+    {
+      "description": "Type check a specific [m]odule:",
+      "syntax": "mypy -m {{module_name}}"
+    },
+    {
+      "description": "Type check a specific [p]ackage:",
+      "syntax": "mypy -p {{package_name}}"
+    },
+    {
+      "description": "Type check a string of code:",
+      "syntax": "mypy -c &quot;{{code}}&quot;"
+    },
+    {
+      "description": "Ignore missing imports:",
+      "syntax": "mypy --ignore-missing-imports {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Show detailed error messages:",
+      "syntax": "mypy --show-traceback {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Specify a custom configuration file:",
+      "syntax": "mypy --config-file {{path/to/config_file}}"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "mypy -h"
+    }
+  ]
+}

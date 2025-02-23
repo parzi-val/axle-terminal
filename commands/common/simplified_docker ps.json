@@ -1,0 +1,38 @@
+{
+  "command": "docker ps",
+  "description": "List Docker containers. More information: https://docs.docker.com/reference/cli/docker/container/ls/.",
+  "useCases": [
+    {
+      "description": "List currently running Docker containers:",
+      "syntax": "docker ps"
+    },
+    {
+      "description": "List all Docker containers (running and stopped):",
+      "syntax": "docker ps --all"
+    },
+    {
+      "description": "Show the latest created container (includes all states):",
+      "syntax": "docker ps --latest"
+    },
+    {
+      "description": "Filter containers that contain a substring in their name:",
+      "syntax": "docker ps --filter &quot;name={{name}}&quot;"
+    },
+    {
+      "description": "Filter containers that share a given image as an ancestor:",
+      "syntax": "docker ps --filter &quot;ancestor={{image}}:{{tag}}&quot;"
+    },
+    {
+      "description": "Filter containers by exit status code:",
+      "syntax": "docker ps --all --filter &quot;exited={{code}}&quot;"
+    },
+    {
+      "description": "Filter containers by status (created, running, removing, paused, exited and dead):",
+      "syntax": "docker ps --filter &quot;status={{status}}&quot;"
+    },
+    {
+      "description": "Filter containers that mount a specific volume or have a volume mounted in a specific path:",
+      "syntax": "docker ps --filter &quot;volume={{path/to/directory}}&quot; --format &quot;table {{.ID}}\\t{{.Image}}\\t{{.Names}}\\t{{.Mounts}}&quot;"
+    }
+  ]
+}

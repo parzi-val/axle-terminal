@@ -1,0 +1,30 @@
+{
+  "command": "pup",
+  "description": "Command-line HTML parsing tool. More information: https://github.com/ericchiang/pup.",
+  "useCases": [
+    {
+      "description": "Transform a raw HTML file into a cleaned, indented, and colored format:",
+      "syntax": "cat {{index.html}} | pup --color"
+    },
+    {
+      "description": "Filter HTML by element tag name:",
+      "syntax": "cat {{index.html}} | pup '{{tag}}'"
+    },
+    {
+      "description": "Filter HTML by ID:",
+      "syntax": "cat {{index.html}} | pup '{{div#id}}'"
+    },
+    {
+      "description": "Filter HTML by attribute value:",
+      "syntax": "cat {{index.html}} | pup '{{input[type=&quot;text&quot;]}}'"
+    },
+    {
+      "description": "Print all text from the filtered HTML elements and their children:",
+      "syntax": "cat {{index.html}} | pup '{{div}} text{}'"
+    },
+    {
+      "description": "Print HTML as JSON:",
+      "syntax": "cat {{index.html}} | pup '{{div}} json{}'"
+    }
+  ]
+}

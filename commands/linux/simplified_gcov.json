@@ -1,0 +1,30 @@
+{
+  "command": "gcov",
+  "description": "Code coverage analysis and profiling tool that discovers untested parts of a program. Also displays a copy of source code annotated with execution frequencies of code segments. More information: https://gcc.gnu.org/onlinedocs/gcc/Invoking-Gcov.html.",
+  "useCases": [
+    {
+      "description": "Generate a coverage report named file.cpp.gcov:",
+      "syntax": "gcov {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Write individual execution counts for every basic block:",
+      "syntax": "gcov --all-blocks {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Write branch frequencies to the output file and print summary information to stdout as a percentage:",
+      "syntax": "gcov --branch-probabilities {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Write branch frequencies as the number of branches taken, rather than the percentage:",
+      "syntax": "gcov --branch-counts {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Do not create a gcov output file:",
+      "syntax": "gcov --no-output {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Write file level as well as function level summaries:",
+      "syntax": "gcov --function-summaries {{path/to/file.cpp}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "gnmic",
+  "description": "A gNMI command-line client. Manage gNMI network device configuration and view operational data. More information: https://gnmic.kmrd.dev.",
+  "useCases": [
+    {
+      "description": "Request device capabilities:",
+      "syntax": "gnmic --address {{ip:port}} capabilities"
+    },
+    {
+      "description": "Provide a username and password to fetch device capabilities:",
+      "syntax": "gnmic --address {{ip:port}} --username {{username}} --password {{password}} capabilities"
+    },
+    {
+      "description": "Get a snapshot of the device state at a specific path:",
+      "syntax": "gnmic -a {{ip:port}} get --path {{path}}"
+    },
+    {
+      "description": "Update device state at a specific path:",
+      "syntax": "gnmic -a {{ip:port}} set --update-path {{path}} --update-value {{value}}"
+    },
+    {
+      "description": "Subscribe to target state updates under the subtree at a specific path:",
+      "syntax": "gnmic -a {{ip:port}} subscribe --path {{path}}"
+    }
+  ]
+}

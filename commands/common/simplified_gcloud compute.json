@@ -1,0 +1,38 @@
+{
+  "command": "gcloud compute",
+  "description": "Create, run, and manage VMs on Google Cloud infrastructure. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/compute.",
+  "useCases": [
+    {
+      "description": "List Compute Engine zones:",
+      "syntax": "gcloud compute zones list"
+    },
+    {
+      "description": "Create a VM instance:",
+      "syntax": "gcloud compute instances create {{instance_name}}"
+    },
+    {
+      "description": "Display a VM instance's details:",
+      "syntax": "gcloud compute instances describe {{instance_name}}"
+    },
+    {
+      "description": "List all VM instances in a project:",
+      "syntax": "gcloud compute instances list"
+    },
+    {
+      "description": "Create a snapshot of a persistent disk:",
+      "syntax": "gcloud compute disks snapshot {{disk_name}} --snapshot-names {{snapshot_name}}"
+    },
+    {
+      "description": "Display a snapshot's details:",
+      "syntax": "gcloud compute snapshots describe {{snapshot_name}}"
+    },
+    {
+      "description": "Delete a snapshot:",
+      "syntax": "gcloud compute snapshots delete {{snapshot_name}}"
+    },
+    {
+      "description": "Connect to a VM instance using SSH:",
+      "syntax": "gcloud compute ssh {{instance_name}}"
+    }
+  ]
+}

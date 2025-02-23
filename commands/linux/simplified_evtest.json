@@ -1,0 +1,22 @@
+{
+  "command": "evtest",
+  "description": "Display information from input device drivers. More information: https://manned.org/evtest.",
+  "useCases": [
+    {
+      "description": "List all detected input devices:",
+      "syntax": "sudo evtest"
+    },
+    {
+      "description": "Display events from a specific input device:",
+      "syntax": "sudo evtest /dev/input/event{{number}}"
+    },
+    {
+      "description": "Grab the device exclusively, preventing other clients from receiving events:",
+      "syntax": "sudo evtest --grab /dev/input/event{{number}}"
+    },
+    {
+      "description": "Query the state of a specific key or button on an input device:",
+      "syntax": "sudo evtest --query /dev/input/event{{number}} {{event_type}} {{event_code}}"
+    }
+  ]
+}

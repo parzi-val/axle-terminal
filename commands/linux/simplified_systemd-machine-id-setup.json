@@ -1,0 +1,22 @@
+{
+  "command": "systemd-machine-id-setup",
+  "description": "Initialize the machine ID stored in /etc/machine-id at install time with a provisioned or randomly generated ID. Note: Always use sudo to execute these commands as they require elevated privileges. More information: https://www.freedesktop.org/software/systemd/man/systemd-machine-id-setup.html.",
+  "useCases": [
+    {
+      "description": "Print the generated or committed machine ID:",
+      "syntax": "systemd-machine-id-setup --print"
+    },
+    {
+      "description": "Specify an image policy:",
+      "syntax": "systemd-machine-id-setup --image-policy={{your_policy}}"
+    },
+    {
+      "description": "Display the output as JSON:",
+      "syntax": "sudo systemd-machine-id-setup --json=pretty"
+    },
+    {
+      "description": "Operate on a disk image instead of a directory tree:",
+      "syntax": "systemd-machine-id-setup --image={{/path/to/image}}"
+    }
+  ]
+}

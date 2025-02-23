@@ -1,0 +1,10 @@
+{
+  "command": "systemd-umount",
+  "description": "This command is an alias of systemd-mount --umount.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr systemd-mount"
+    }
+  ]
+}

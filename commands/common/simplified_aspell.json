@@ -1,0 +1,26 @@
+{
+  "command": "aspell",
+  "description": "Interactive spell checker. More information: http://aspell.net/.",
+  "useCases": [
+    {
+      "description": "Spell check a single file:",
+      "syntax": "aspell check {{path/to/file}}"
+    },
+    {
+      "description": "List misspelled words from stdin:",
+      "syntax": "cat {{path/to/file}} | aspell list"
+    },
+    {
+      "description": "Show available dictionary languages:",
+      "syntax": "aspell dicts"
+    },
+    {
+      "description": "Run aspell with a different language (takes two-letter ISO 639 language code):",
+      "syntax": "aspell --lang={{cs}}"
+    },
+    {
+      "description": "List misspelled words from stdin and ignore words from personal word list:",
+      "syntax": "cat {{path/to/file}} | aspell --personal={{personal-word-list.pws}} list"
+    }
+  ]
+}

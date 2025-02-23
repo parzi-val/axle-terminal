@@ -1,0 +1,18 @@
+{
+  "command": "kompose",
+  "description": "Convert docker-compose applications to Kubernetes. More information: https://github.com/kubernetes/kompose.",
+  "useCases": [
+    {
+      "description": "Deploy a dockerized application to Kubernetes:",
+      "syntax": "kompose up -f {{docker-compose.yml}}"
+    },
+    {
+      "description": "Delete instantiated services/deployments from Kubernetes:",
+      "syntax": "kompose down -f {{docker-compose.yml}}"
+    },
+    {
+      "description": "Convert a docker-compose file into Kubernetes resources file:",
+      "syntax": "kompose convert -f {{docker-compose.yml}}"
+    }
+  ]
+}

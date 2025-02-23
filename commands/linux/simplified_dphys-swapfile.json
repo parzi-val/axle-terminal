@@ -1,0 +1,18 @@
+{
+  "command": "dphys-swapfile",
+  "description": "Manage the swap file on Debian-based Linux systems. More information: https://manned.org/dphys-swapfile.",
+  "useCases": [
+    {
+      "description": "Disable the swap file:",
+      "syntax": "dphys-swapfile swapoff"
+    },
+    {
+      "description": "Enable the swap file:",
+      "syntax": "dphys-swapfile swapon"
+    },
+    {
+      "description": "Create a new swap file:",
+      "syntax": "dphys-swapfile setup"
+    }
+  ]
+}

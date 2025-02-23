@@ -1,0 +1,14 @@
+{
+  "command": "git rscp",
+  "description": "Reverse git scp - copy files from the working directory of a remote repository to the current working tree. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-scp.",
+  "useCases": [
+    {
+      "description": "Copy specific files from a remote:",
+      "syntax": "git rscp {{remote_name}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Copy a specific directory from a remote:",
+      "syntax": "git rscp {{remote_name}} {{path/to/directory}}"
+    }
+  ]
+}

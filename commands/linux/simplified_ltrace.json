@@ -1,0 +1,22 @@
+{
+  "command": "ltrace",
+  "description": "Display dynamic library calls of a process. More information: https://manned.org/ltrace.",
+  "useCases": [
+    {
+      "description": "Print (trace) library calls of a program binary:",
+      "syntax": "ltrace ./{{program}}"
+    },
+    {
+      "description": "Count library calls. Print a handy summary at the bottom:",
+      "syntax": "ltrace -c {{path/to/program}}"
+    },
+    {
+      "description": "Trace calls to malloc and free, omit those done by libc:",
+      "syntax": "ltrace -e malloc+free-@libc.so* {{path/to/program}}"
+    },
+    {
+      "description": "Write to file instead of terminal:",
+      "syntax": "ltrace -o {{file}} {{path/to/program}}"
+    }
+  ]
+}

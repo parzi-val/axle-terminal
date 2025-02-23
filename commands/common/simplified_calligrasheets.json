@@ -1,0 +1,18 @@
+{
+  "command": "calligrasheets",
+  "description": "Calligra's spreadsheet application. See also: calligraflow, calligrastage, calligrawords. More information: https://manned.org/calligrasheets.",
+  "useCases": [
+    {
+      "description": "Launch the spreadsheet application:",
+      "syntax": "calligrasheets"
+    },
+    {
+      "description": "Open a specific spreadsheet:",
+      "syntax": "calligrasheets {{path/to/spreadsheet}}"
+    },
+    {
+      "description": "Display help or version:",
+      "syntax": "calligrasheets --{{help|version}}"
+    }
+  ]
+}

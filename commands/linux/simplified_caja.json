@@ -1,0 +1,26 @@
+{
+  "command": "caja",
+  "description": "Manage files and directories in the MATE desktop environment. See also: nautilus, dolphin, thunar, ranger. More information: https://manned.org/caja.",
+  "useCases": [
+    {
+      "description": "Open the current user home directory:",
+      "syntax": "caja"
+    },
+    {
+      "description": "Open specific directories in separate windows:",
+      "syntax": "caja {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Open specific directories in tabs:",
+      "syntax": "caja --tabs {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Open a directory with a specific window size:",
+      "syntax": "caja --geometry={{600}}x{{400}} {{path/to/directory}}"
+    },
+    {
+      "description": "Close all windows:",
+      "syntax": "caja --quit"
+    }
+  ]
+}

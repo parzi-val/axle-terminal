@@ -1,0 +1,14 @@
+{
+  "command": "pueue status",
+  "description": "Display the current status of all tasks. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Show the status of all tasks:",
+      "syntax": "pueue status"
+    },
+    {
+      "description": "Show the status of a specific group:",
+      "syntax": "pueue status --group {{group_name}}"
+    }
+  ]
+}

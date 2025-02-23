@@ -1,0 +1,22 @@
+{
+  "command": "knock",
+  "description": "Port knocking client to open specific ports on firewall. More information: https://manned.org/knock.",
+  "useCases": [
+    {
+      "description": "Knock on ports using different protocols:",
+      "syntax": "knock {{hostname}} {{portnumber}}:{{protocol}}"
+    },
+    {
+      "description": "Knock on port using UDP:",
+      "syntax": "knock -u {{hostname}} {{portnumber}}"
+    },
+    {
+      "description": "Force usage of IPv4/IPv6:",
+      "syntax": "knock {{-4|-6}} {{hostname}} {{portnumber}}"
+    },
+    {
+      "description": "Display errors and details of connection:",
+      "syntax": "knock -v {{hostname}} {{portnumber}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "i7z",
+  "description": "An Intel CPU (only i3, i5 and i7) realtime reporting tool. More information: https://manned.org/i7z.",
+  "useCases": [
+    {
+      "description": "Start i7z (needs to be run in superuser mode):",
+      "syntax": "sudo i7z"
+    }
+  ]
+}

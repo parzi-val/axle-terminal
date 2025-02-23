@@ -1,0 +1,22 @@
+{
+  "command": "ipcmk",
+  "description": "Create IPC (Inter-process Communication) resources. More information: https://manned.org/ipcmk.",
+  "useCases": [
+    {
+      "description": "Create a shared memory segment:",
+      "syntax": "ipcmk --shmem {{segment_size_in_bytes}}"
+    },
+    {
+      "description": "Create a semaphore:",
+      "syntax": "ipcmk --semaphore {{element_size}}"
+    },
+    {
+      "description": "Create a message queue:",
+      "syntax": "ipcmk --queue"
+    },
+    {
+      "description": "Create a shared memory segment with specific permissions (default is 0644):",
+      "syntax": "ipcmk --shmem {{segment_size_in_bytes}} {{octal_permissions}}"
+    }
+  ]
+}

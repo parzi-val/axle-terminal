@@ -1,0 +1,10 @@
+{
+  "command": "pbmpscale",
+  "description": "Enlarge a PBM image with edge smoothing. See also: pamenlarge. More information: https://netpbm.sourceforge.net/doc/pbmpscale.html.",
+  "useCases": [
+    {
+      "description": "Enlarge a PBM image by the specified factor with edge smoothing:",
+      "syntax": "pbmpscale {{N}} {{path/to/image.pbm}} &gt; {{path/to/file.pbm}}"
+    }
+  ]
+}

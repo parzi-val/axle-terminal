@@ -1,0 +1,22 @@
+{
+  "command": "picom-trans",
+  "description": "Set the window opacity for the picom window compositor. More information: https://github.com/yshui/picom.",
+  "useCases": [
+    {
+      "description": "Set the currently focused window opacity to a specific percentage:",
+      "syntax": "picom-trans --current --opacity {{90}}"
+    },
+    {
+      "description": "Set the opacity of a window with a specific name:",
+      "syntax": "picom-trans --name {{Firefox}} --opacity {{90}}"
+    },
+    {
+      "description": "Set the opacity of a specific window selected via mouse cursor:",
+      "syntax": "picom-trans --select --opacity {{90}}"
+    },
+    {
+      "description": "Toggle the opacity of a specific window:",
+      "syntax": "picom-trans --name {{Firefox}} --toggle"
+    }
+  ]
+}

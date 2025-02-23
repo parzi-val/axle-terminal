@@ -1,0 +1,34 @@
+{
+  "command": "gsutil",
+  "description": "Access Google Cloud Storage. You can use gsutil to do a wide range of bucket and object management tasks. More information: https://cloud.google.com/storage/docs/gsutil.",
+  "useCases": [
+    {
+      "description": "List all buckets in a project you are logged into:",
+      "syntax": "gsutil ls"
+    },
+    {
+      "description": "List the objects in a bucket:",
+      "syntax": "gsutil ls -r 'gs://{{bucket_name}}/{{prefix}}**'"
+    },
+    {
+      "description": "Download an object from a bucket:",
+      "syntax": "gsutil cp gs://{{bucket_name}}/{{object_name}} {{path/to/save_location}}"
+    },
+    {
+      "description": "Upload an object to a bucket:",
+      "syntax": "gsutil cp {{object_location}} gs://{{destination_bucket_name}}/"
+    },
+    {
+      "description": "Rename or move objects in a bucket:",
+      "syntax": "gsutil mv gs://{{bucket_name}}/{{old_object_name}} gs://{{bucket_name}}/{{new_object_name}}"
+    },
+    {
+      "description": "Create a new bucket in the project you are logged into:",
+      "syntax": "gsutil mb gs://{{bucket_name}}"
+    },
+    {
+      "description": "Delete a bucket and remove all the objects in it:",
+      "syntax": "gsutil rm -r gs://{{bucket_name}}"
+    }
+  ]
+}

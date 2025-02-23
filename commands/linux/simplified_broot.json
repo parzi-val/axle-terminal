@@ -1,0 +1,10 @@
+{
+  "command": "broot",
+  "description": "Navigate directory trees interactively. See also: br. More information: https://github.com/Canop/broot.",
+  "useCases": [
+    {
+      "description": "Install or reinstall the br shell function:",
+      "syntax": "broot --install"
+    }
+  ]
+}

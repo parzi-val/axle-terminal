@@ -1,0 +1,26 @@
+{
+  "command": "lxterminal",
+  "description": "Terminal emulator for LXDE. More information: https://github.com/lxde/lxterminal.",
+  "useCases": [
+    {
+      "description": "Open an LXTerminal window:",
+      "syntax": "lxterminal"
+    },
+    {
+      "description": "Open an LXTerminal window, run a command, and then exit:",
+      "syntax": "lxterminal -e &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Open an LXTerminal window with multiple tabs:",
+      "syntax": "lxterminal --tabs={{tab_name1,tab_name2,...}}"
+    },
+    {
+      "description": "Open an LXTerminal window with a specific title:",
+      "syntax": "lxterminal --title={{title_name}}"
+    },
+    {
+      "description": "Open an LXTerminal window with a specific working directory:",
+      "syntax": "lxterminal --working-directory={{path/to/directory}}"
+    }
+  ]
+}

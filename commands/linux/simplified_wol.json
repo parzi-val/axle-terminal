@@ -1,0 +1,30 @@
+{
+  "command": "wol",
+  "description": "Client for sending Wake-on-LAN magic packets. More information: https://sourceforge.net/projects/wake-on-lan/.",
+  "useCases": [
+    {
+      "description": "Send a WoL packet to a device:",
+      "syntax": "wol {{mac_address}}"
+    },
+    {
+      "description": "Send a WoL packet to a device in another subnet based on its IP:",
+      "syntax": "wol --ipaddr={{ip_address}} {{mac_address}}"
+    },
+    {
+      "description": "Send a WoL packet to a device in another subnet based on its hostname:",
+      "syntax": "wol --host={{hostname}} {{mac_address}}"
+    },
+    {
+      "description": "Send a WoL packet to a specific port on a host:",
+      "syntax": "wol --port={{port_number}} {{mac_address}}"
+    },
+    {
+      "description": "Read hardware addresses, IP addresses/hostnames, optional ports and SecureON passwords from a file:",
+      "syntax": "wol --file={{path/to/file}}"
+    },
+    {
+      "description": "Turn on verbose output:",
+      "syntax": "wol --verbose {{mac_address}}"
+    }
+  ]
+}

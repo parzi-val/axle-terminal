@@ -1,0 +1,10 @@
+{
+  "command": "pamtoqoi",
+  "description": "Convert a Netpbm image to a QOI image (Quite OK Image format). More information: https://netpbm.sourceforge.net/doc/pamtoqoi.html.",
+  "useCases": [
+    {
+      "description": "Convert a Netpbm image to the QOI format:",
+      "syntax": "pamtoqoi {{path/to/image.pnm}} &gt; {{path/to/output.qoi}}"
+    }
+  ]
+}

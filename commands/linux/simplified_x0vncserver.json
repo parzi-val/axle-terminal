@@ -1,0 +1,14 @@
+{
+  "command": "x0vncserver",
+  "description": "TigerVNC Server for X displays. More information: https://tigervnc.org/doc/x0vncserver.html.",
+  "useCases": [
+    {
+      "description": "Start a VNC server using a passwordfile:",
+      "syntax": "x0vncserver -display {{:0}} -passwordfile {{path/to/file}}"
+    },
+    {
+      "description": "Start a VNC server using a specific port:",
+      "syntax": "x0vncserver -display {{:0}} -rfbport {{port}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "nix search",
+  "description": "Search for packages in a Nix flake. See also: nix3 flake for information about flakes. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-search.html.",
+  "useCases": [
+    {
+      "description": "Search nixpkgs for a package based on its name or description:",
+      "syntax": "nix search {{nixpkgs}} {{search_term...}}"
+    },
+    {
+      "description": "Show description of a package from nixpkgs:",
+      "syntax": "nix search {{nixpkgs#pkg}}"
+    },
+    {
+      "description": "Show all packages available from a flake on github:",
+      "syntax": "nix search {{github:owner/repo}}"
+    }
+  ]
+}

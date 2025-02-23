@@ -1,0 +1,14 @@
+{
+  "command": "see",
+  "description": "Alias to run-mailcap's view. An alias to a run-mailcap's action print. More information: https://manned.org/see.",
+  "useCases": [
+    {
+      "description": "See action can be used to view any file (usually image) on default mailcap explorer:",
+      "syntax": "see {{filename}}"
+    },
+    {
+      "description": "Using with run-mailcap:",
+      "syntax": "run-mailcap --action=view {{filename}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "distrobox-export",
+  "description": "Export app/service/binary from container to host OS. See also: tldr distrobox. More information: https://distrobox.it/usage/distrobox-export.",
+  "useCases": [
+    {
+      "description": "Export an app from the container to the host (the desktop entry/icon will show up in your host system's application list):",
+      "syntax": "distrobox-export --app {{package}} --extra-flags &quot;--foreground&quot;"
+    },
+    {
+      "description": "Export a binary from the container to the host:",
+      "syntax": "distrobox-export --bin {{path/to/binary}} --export-path {{path/to/binary_on_host}}"
+    },
+    {
+      "description": "Export a binary from the container to the host (i.e.$HOME/.local/bin) :",
+      "syntax": "distrobox-export --bin {{path/to/binary}} --export-path {{path/to/export}}"
+    },
+    {
+      "description": "Export a service from the container to the host (--sudo will run the service as root inside the container):",
+      "syntax": "distrobox-export --service {{package}} --extra-flags &quot;--allow-newer-config&quot; --sudo"
+    },
+    {
+      "description": "Unexport/delete an exported application:",
+      "syntax": "distrobox-export --app {{package}} --delete"
+    }
+  ]
+}

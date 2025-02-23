@@ -1,0 +1,26 @@
+{
+  "command": "bind",
+  "description": "Bash builtin to manage bash hotkeys and variables. More information: https://www.gnu.org/software/bash/manual/bash.html#Bash-Builtins.",
+  "useCases": [
+    {
+      "description": "List all bound commands and their hotkeys:",
+      "syntax": "bind {{-p|-P}}"
+    },
+    {
+      "description": "Query a command for its hotkey:",
+      "syntax": "bind -q {{command}}"
+    },
+    {
+      "description": "Bind a key:",
+      "syntax": "bind -x '&quot;{{key_sequence}}&quot;:{{command}}'"
+    },
+    {
+      "description": "List user defined bindings:",
+      "syntax": "bind -X"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "help bind"
+    }
+  ]
+}

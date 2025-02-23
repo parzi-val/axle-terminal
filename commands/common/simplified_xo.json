@@ -1,0 +1,26 @@
+{
+  "command": "xo",
+  "description": "A pluggable, zero-configuration linting utility for JavaScript. More information: https://github.com/xojs/xo.",
+  "useCases": [
+    {
+      "description": "Lint files in the \"src\" directory:",
+      "syntax": "xo"
+    },
+    {
+      "description": "Lint a given set of files:",
+      "syntax": "xo {{path/to/file1.js path/to/file2.js ...}}"
+    },
+    {
+      "description": "Automatically fix any lint issues found:",
+      "syntax": "xo --fix"
+    },
+    {
+      "description": "Lint using spaces as indentation instead of tabs:",
+      "syntax": "xo --space"
+    },
+    {
+      "description": "Lint using the \"prettier\" code style:",
+      "syntax": "xo --prettier"
+    }
+  ]
+}

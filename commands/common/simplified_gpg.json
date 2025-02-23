@@ -1,0 +1,38 @@
+{
+  "command": "gpg",
+  "description": "GNU Privacy Guard. See gpg2 for GNU Privacy Guard 2. Most operating systems symlink gpg to gpg2. More information: https://gnupg.org.",
+  "useCases": [
+    {
+      "description": "Create a GPG public and private key interactively:",
+      "syntax": "gpg --full-generate-key"
+    },
+    {
+      "description": "Sign doc.txt without encryption (writes output to doc.txt.asc):",
+      "syntax": "gpg --clearsign {{doc.txt}}"
+    },
+    {
+      "description": "Encrypt and sign doc.txt for alice@example.com and bob@example.com (output to doc.txt.gpg):",
+      "syntax": "gpg --encrypt --sign --recipient {{alice@example.com}} --recipient {{bob@example.com}} {{doc.txt}}"
+    },
+    {
+      "description": "Encrypt doc.txt with only a passphrase (output to doc.txt.gpg):",
+      "syntax": "gpg --symmetric {{doc.txt}}"
+    },
+    {
+      "description": "Decrypt doc.txt.gpg (output to stdout):",
+      "syntax": "gpg --decrypt {{doc.txt.gpg}}"
+    },
+    {
+      "description": "Import a public key:",
+      "syntax": "gpg --import {{public.gpg}}"
+    },
+    {
+      "description": "Export public key for alice@example.com (output to stdout):",
+      "syntax": "gpg --export --armor {{alice@example.com}}"
+    },
+    {
+      "description": "Export private key for alice@example.com (output to stdout):",
+      "syntax": "gpg --export-secret-keys --armor {{alice@example.com}}"
+    }
+  ]
+}

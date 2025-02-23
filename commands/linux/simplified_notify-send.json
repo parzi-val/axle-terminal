@@ -1,0 +1,22 @@
+{
+  "command": "notify-send",
+  "description": "Uses the current desktop environment's notification system to create a notification. More information: https://manned.org/notify-send.",
+  "useCases": [
+    {
+      "description": "Show a notification with the title \"Test\" and the content \"This is a test\":",
+      "syntax": "notify-send &quot;{{Test}}&quot; &quot;{{This is a test}}&quot;"
+    },
+    {
+      "description": "Show a notification with a custom icon:",
+      "syntax": "notify-send -i {{icon.png}} &quot;{{Test}}&quot; &quot;{{This is a test}}&quot;"
+    },
+    {
+      "description": "Show a notification for 5 seconds:",
+      "syntax": "notify-send -t 5000 &quot;{{Test}}&quot; &quot;{{This is a test}}&quot;"
+    },
+    {
+      "description": "Show a notification with an app's icon and name:",
+      "syntax": "notify-send &quot;{{Test}}&quot; --icon={{google-chrome}} --app-name=&quot;{{Google Chrome}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "cipher",
+  "description": "Display or alter the encryption of directories and files on NTFS volumes. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/cipher.",
+  "useCases": [
+    {
+      "description": "Display information about a specific encrypted file or directory:",
+      "syntax": "cipher /c:{{path\\to\\file_or_directory}}"
+    },
+    {
+      "description": "[e]ncrypt a file or directory (files added later to the directory are also encrypted as the directory is marked):",
+      "syntax": "cipher /e:{{path\\to\\file_or_directory}}"
+    },
+    {
+      "description": "[d]ecrypt a file or directory:",
+      "syntax": "cipher /d:{{path\\to\\file_or_directory}}"
+    },
+    {
+      "description": "Securely remove a file or directory:",
+      "syntax": "cipher /w:{{path\\to\\file_or_directory}}"
+    }
+  ]
+}

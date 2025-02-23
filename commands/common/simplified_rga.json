@@ -1,0 +1,26 @@
+{
+  "command": "rga",
+  "description": "Ripgrep wrapper with rich file type searching capabilities. More information: https://github.com/phiresky/ripgrep-all.",
+  "useCases": [
+    {
+      "description": "Search recursively for a pattern in all files in the current directory:",
+      "syntax": "rga {{regular_expression}}"
+    },
+    {
+      "description": "List available adapters:",
+      "syntax": "rga --rga-list-adapters"
+    },
+    {
+      "description": "Change which adapters to use (e.g. ffmpeg, pandoc, poppler etc.):",
+      "syntax": "rga --rga-adapters={{adapter1,adapter2}} {{regular_expression}}"
+    },
+    {
+      "description": "Search for a pattern using the mime type instead of the file extension (slower):",
+      "syntax": "rga --rga-accurate {{regular_expression}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rga --help"
+    }
+  ]
+}

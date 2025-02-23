@@ -1,0 +1,38 @@
+{
+  "command": "audacious",
+  "description": "An open-source audio player. Indirectly based on XMMS. See also: audtool, clementine, mpc, ncmpcpp. More information: https://audacious-media-player.org.",
+  "useCases": [
+    {
+      "description": "Launch the GUI:",
+      "syntax": "audacious"
+    },
+    {
+      "description": "Start a new instance and play an audio:",
+      "syntax": "audacious --new-instance {{path/to/audio}}"
+    },
+    {
+      "description": "Enqueue a specific directory of audio files:",
+      "syntax": "audacious --enqueue {{path/to/directory}}"
+    },
+    {
+      "description": "Start or stop playback:",
+      "syntax": "audacious --play-pause"
+    },
+    {
+      "description": "Skip forwards ([fwd]) or backwards ([rew]) in the playlist:",
+      "syntax": "audacious --{{fwd|rew}}"
+    },
+    {
+      "description": "Stop playback:",
+      "syntax": "audacious --stop"
+    },
+    {
+      "description": "Start in CLI mode (headless):",
+      "syntax": "audacious --headless"
+    },
+    {
+      "description": "Exit as soon as playback stops or there is nothing to playback:",
+      "syntax": "audacious --quit-after-play"
+    }
+  ]
+}

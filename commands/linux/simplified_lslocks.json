@@ -1,0 +1,26 @@
+{
+  "command": "lslocks",
+  "description": "List local system locks. More information: https://manned.org/lslocks.",
+  "useCases": [
+    {
+      "description": "List all local system locks:",
+      "syntax": "lslocks"
+    },
+    {
+      "description": "List locks with defined column headers:",
+      "syntax": "lslocks --output {{PID}},{{COMMAND}},{{PATH}}"
+    },
+    {
+      "description": "List locks producing a raw output (no columns), and without column headers:",
+      "syntax": "lslocks --raw --noheadings"
+    },
+    {
+      "description": "List locks by PID input:",
+      "syntax": "lslocks --pid {{PID}}"
+    },
+    {
+      "description": "List locks with JSON output to stdout:",
+      "syntax": "lslocks --json"
+    }
+  ]
+}

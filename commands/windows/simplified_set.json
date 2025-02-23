@@ -1,0 +1,22 @@
+{
+  "command": "set",
+  "description": "Display or set environment variables for the current instance of CMD. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/set.",
+  "useCases": [
+    {
+      "description": "List all current environment variables:",
+      "syntax": "set"
+    },
+    {
+      "description": "Set an environment variable to a specific value:",
+      "syntax": "set {{name}}={{value}}"
+    },
+    {
+      "description": "List environment variables starting with the specified string:",
+      "syntax": "set {{name}}"
+    },
+    {
+      "description": "Prompt the user for a value for the specified variable:",
+      "syntax": "set /p {{name}}={{prompt_string}}"
+    }
+  ]
+}

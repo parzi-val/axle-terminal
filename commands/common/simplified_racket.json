@@ -1,0 +1,26 @@
+{
+  "command": "racket",
+  "description": "Racket language interpreter. More information: https://racket-lang.org.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "racket"
+    },
+    {
+      "description": "Execute a Racket script:",
+      "syntax": "racket {{path/to/script.rkt}}"
+    },
+    {
+      "description": "Execute a Racket expression:",
+      "syntax": "racket --eval &quot;{{expression}}&quot;"
+    },
+    {
+      "description": "Run module as a script (terminates option list):",
+      "syntax": "racket --lib {{module_name}} --main {{arguments}}"
+    },
+    {
+      "description": "Start a REPL (interactive shell) for the typed/racket hashlang:",
+      "syntax": "racket -I typed/racket"
+    }
+  ]
+}

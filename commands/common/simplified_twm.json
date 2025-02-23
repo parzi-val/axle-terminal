@@ -1,0 +1,26 @@
+{
+  "command": "twm",
+  "description": "A window manager for the X Window system. More information: https://gitlab.freedesktop.org/xorg/app/twm.",
+  "useCases": [
+    {
+      "description": "Connect to the default X server:",
+      "syntax": "twm"
+    },
+    {
+      "description": "Connect to a specific X server:",
+      "syntax": "twm -display {{display}}"
+    },
+    {
+      "description": "Only manage the default screen:",
+      "syntax": "twm -s"
+    },
+    {
+      "description": "Use a specific startup file:",
+      "syntax": "twm -f {{path/to/file}}"
+    },
+    {
+      "description": "Enable verbose mode and print unexpected errors in X:",
+      "syntax": "twm -v"
+    }
+  ]
+}

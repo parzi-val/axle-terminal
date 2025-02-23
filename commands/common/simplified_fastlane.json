@@ -1,0 +1,22 @@
+{
+  "command": "fastlane",
+  "description": "Build and release mobile applications. More information: https://docs.fastlane.tools/actions/.",
+  "useCases": [
+    {
+      "description": "Build and sign the iOS application in the current directory:",
+      "syntax": "fastlane run build_app"
+    },
+    {
+      "description": "Run pod install for the project in the current directory:",
+      "syntax": "fastlane run cocoapods"
+    },
+    {
+      "description": "Delete the derived data from Xcode:",
+      "syntax": "fastlane run clear_derived_data"
+    },
+    {
+      "description": "Remove the cache for pods:",
+      "syntax": "fastlane run clean_cocoapods_cache"
+    }
+  ]
+}

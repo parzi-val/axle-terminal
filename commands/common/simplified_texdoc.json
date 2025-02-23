@@ -1,0 +1,18 @@
+{
+  "command": "texdoc",
+  "description": "Search for appropriate documentation for (La)TeX commands or packages. More information: https://texdoc.org/index.html.",
+  "useCases": [
+    {
+      "description": "Open the first search result in the default PDF viewer:",
+      "syntax": "texdoc {{search}}"
+    },
+    {
+      "description": "List the best search results:",
+      "syntax": "texdoc --list {{search}}"
+    },
+    {
+      "description": "Open full documentation of texdoc:",
+      "syntax": "texdoc {{texdoc}}"
+    }
+  ]
+}

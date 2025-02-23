@@ -1,0 +1,30 @@
+{
+  "command": "pulumi destroy",
+  "description": "Destroy all existing resources in a stack. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_destroy/.",
+  "useCases": [
+    {
+      "description": "Destroy all resources in the current stack:",
+      "syntax": "pulumi destroy"
+    },
+    {
+      "description": "Destroy all resources in a specific stack:",
+      "syntax": "pulumi destroy --stack {{stack}}"
+    },
+    {
+      "description": "Automatically approve and destroy resources after previewing:",
+      "syntax": "pulumi destroy --yes"
+    },
+    {
+      "description": "Exclude protected resources from being destroyed:",
+      "syntax": "pulumi destroy --exclude-protected"
+    },
+    {
+      "description": "Remove the stack and its configuration file after all resources in the stack are deleted:",
+      "syntax": "pulumi destroy --remove"
+    },
+    {
+      "description": "Continue destroying the resources, even if an error is encountered:",
+      "syntax": "pulumi destroy --continue-on-error"
+    }
+  ]
+}

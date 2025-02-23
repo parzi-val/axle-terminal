@@ -1,0 +1,22 @@
+{
+  "command": "doctl databases firewalls",
+  "description": "Manage firewalls for database clusters. More information: https://docs.digitalocean.com/reference/doctl/reference/databases/firewalls.",
+  "useCases": [
+    {
+      "description": "Run a doctl databases firewalls command with an access token:",
+      "syntax": "doctl databases firewalls {{command}} --access-token {{access_token}}"
+    },
+    {
+      "description": "Retrieve a list of firewall rules for a given database:",
+      "syntax": "doctl databases firewalls list"
+    },
+    {
+      "description": "Add a database firewall rule to a given database:",
+      "syntax": "doctl databases firewalls append {{database_id}} --rule {{droplet|k8s|ip_addr|tag|app}}:{{value}}"
+    },
+    {
+      "description": "Remove a firewall rule for a given database:",
+      "syntax": "doctl databases firewalls remove {{database_id}} {{rule_uuid}}"
+    }
+  ]
+}

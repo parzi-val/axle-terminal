@@ -1,0 +1,10 @@
+{
+  "command": "tcpflow",
+  "description": "Capture TCP traffic for debugging and analysis. More information: https://manned.org/tcpflow.",
+  "useCases": [
+    {
+      "description": "Show all data on the given interface and port:",
+      "syntax": "tcpflow -c -i {{eth0}} port {{80}}"
+    }
+  ]
+}

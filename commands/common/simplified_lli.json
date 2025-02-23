@@ -1,0 +1,22 @@
+{
+  "command": "lli",
+  "description": "Directly execute programs from LLVM bitcode. More information: https://www.llvm.org/docs/CommandGuide/lli.html.",
+  "useCases": [
+    {
+      "description": "Execute a bitcode or IR file:",
+      "syntax": "lli {{path/to/file.ll}}"
+    },
+    {
+      "description": "Execute with command-line arguments:",
+      "syntax": "lli {{path/to/file.ll}} {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Enable all optimizations:",
+      "syntax": "lli -O3 {{path/to/file.ll}}"
+    },
+    {
+      "description": "Load a dynamic library before linking:",
+      "syntax": "lli --dlopen={{path/to/library.dll}} {{path/to/file.ll}}"
+    }
+  ]
+}

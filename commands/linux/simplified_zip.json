@@ -1,0 +1,34 @@
+{
+  "command": "zip",
+  "description": "Package and compress (archive) files into a Zip archive. See also: unzip. More information: https://manned.org/zip.",
+  "useCases": [
+    {
+      "description": "Add files/directories to a specific archive:",
+      "syntax": "zip -r {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Remove files/directories from a specific archive:",
+      "syntax": "zip --delete {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Archive files/directories e[x]cluding specified ones:",
+      "syntax": "zip {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} --exclude {{path/to/excluded_files_or_directories}}"
+    },
+    {
+      "description": "Archive files/directories with a specific compression level (0 - the lowest, 9 - the highest):",
+      "syntax": "zip -r -{{0..9}} {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Create an encrypted archive with a specific password:",
+      "syntax": "zip -r --encrypt {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Archive files/directories to a multi-part [s]plit Zip archive (e.g. 3 GB parts):",
+      "syntax": "zip -r -s {{3g}} {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Print a specific archive contents:",
+      "syntax": "zip -sf {{path/to/compressed.zip}}"
+    }
+  ]
+}

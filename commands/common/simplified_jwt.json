@@ -1,0 +1,22 @@
+{
+  "command": "jwt",
+  "description": "Work with JSON Web Tokens (JWTs). Encryption algorithms available are HS256, HS384, HS512, RS256, RS384, RS512, ES256, ES384. More information: https://github.com/mike-engel/jwt-cli.",
+  "useCases": [
+    {
+      "description": "Decode a JWT:",
+      "syntax": "jwt decode {{jwt_string}}"
+    },
+    {
+      "description": "Decode a JWT as a JSON string:",
+      "syntax": "jwt decode -j {{jwt_string}}"
+    },
+    {
+      "description": "Encode a JSON string to a JWT:",
+      "syntax": "jwt encode --alg {{HS256}} --secret {{1234567890}} '{{json_string}}'"
+    },
+    {
+      "description": "Encode key pair payload to JWT:",
+      "syntax": "jwt encode --alg {{HS256}} --secret {{1234567890}} -P {{key=value}}"
+    }
+  ]
+}

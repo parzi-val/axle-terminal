@@ -1,0 +1,26 @@
+{
+  "command": "userdbctl",
+  "description": "Inspect users, groups and group memberships on the system. More information: https://www.freedesktop.org/software/systemd/man/userdbctl.html.",
+  "useCases": [
+    {
+      "description": "List all known user records:",
+      "syntax": "userdbctl user"
+    },
+    {
+      "description": "Show details of a specific user:",
+      "syntax": "userdbctl user {{username}}"
+    },
+    {
+      "description": "List all known groups:",
+      "syntax": "userdbctl group"
+    },
+    {
+      "description": "Show details of a specific group:",
+      "syntax": "userdbctl group {{groupname}}"
+    },
+    {
+      "description": "List all services currently providing user/group definitions to the system:",
+      "syntax": "userdbctl services"
+    }
+  ]
+}

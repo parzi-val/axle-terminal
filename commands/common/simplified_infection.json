@@ -1,0 +1,38 @@
+{
+  "command": "infection",
+  "description": "A mutation testing framework for PHP. More information: https://infection.github.io.",
+  "useCases": [
+    {
+      "description": "Analyze code using the configuration file (or create one if it does not exist):",
+      "syntax": "infection"
+    },
+    {
+      "description": "Use a specific number of threads:",
+      "syntax": "infection --threads {{number_of_threads}}"
+    },
+    {
+      "description": "Specify a minimum Mutation Score Indicator (MSI):",
+      "syntax": "infection --min-msi {{percentage}}"
+    },
+    {
+      "description": "Specify a minimum covered code MSI:",
+      "syntax": "infection --min-covered-msi {{percentage}}"
+    },
+    {
+      "description": "Use a specific test framework (defaults to PHPUnit):",
+      "syntax": "infection --test-framework {{phpunit|phpspec}}"
+    },
+    {
+      "description": "Only mutate lines of code that are covered by tests:",
+      "syntax": "infection --only-covered"
+    },
+    {
+      "description": "Display the mutation code that has been applied:",
+      "syntax": "infection --show-mutations"
+    },
+    {
+      "description": "Specify the log verbosity:",
+      "syntax": "infection --log-verbosity {{default|all|none}}"
+    }
+  ]
+}

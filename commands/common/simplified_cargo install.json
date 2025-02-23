@@ -1,0 +1,22 @@
+{
+  "command": "cargo install",
+  "description": "Build and install a Rust binary. More information: https://doc.rust-lang.org/cargo/commands/cargo-install.html.",
+  "useCases": [
+    {
+      "description": "Install a package from https://crates.io (the version is optional - latest by default):",
+      "syntax": "cargo install {{package}}@{{version}}"
+    },
+    {
+      "description": "Install a package from the specified Git repository:",
+      "syntax": "cargo install --git {{repo_url}}"
+    },
+    {
+      "description": "Build from the specified branch/tag/commit when installing from a Git repository:",
+      "syntax": "cargo install --git {{repo_url}} --{{branch|tag|rev}} {{branch_name|tag|commit_hash}}"
+    },
+    {
+      "description": "List all installed packages and their versions:",
+      "syntax": "cargo install --list"
+    }
+  ]
+}

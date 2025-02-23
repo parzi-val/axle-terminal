@@ -1,0 +1,22 @@
+{
+  "command": "xdg-desktop-menu",
+  "description": "Command-line tool for installing or uninstalling desktop menu items. More information: https://manned.org/xdg-desktop-menu.",
+  "useCases": [
+    {
+      "description": "Install an application to the desktop menu system:",
+      "syntax": "xdg-desktop-menu install {{path/to/file.desktop}}"
+    },
+    {
+      "description": "Install an application to the desktop menu system with the vendor prefix check disabled:",
+      "syntax": "xdg-desktop-menu install --novendor {{path/to/file.desktop}}"
+    },
+    {
+      "description": "Uninstall an application from the desktop menu system:",
+      "syntax": "xdg-desktop-menu uninstall {{path/to/file.desktop}}"
+    },
+    {
+      "description": "Force an update of the desktop menu system:",
+      "syntax": "xdg-desktop-menu forceupdate --mode {{user|system}}"
+    }
+  ]
+}

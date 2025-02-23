@@ -1,0 +1,22 @@
+{
+  "command": "openfortivpn",
+  "description": "A VPN client, for Fortinet's proprietary PPP+SSL VPN solution. More information: https://github.com/adrienverge/openfortivpn.",
+  "useCases": [
+    {
+      "description": "Connect to a VPN with a username and password:",
+      "syntax": "openfortivpn --username={{username}} --password={{password}}"
+    },
+    {
+      "description": "Connect to a VPN using a specific configuration file (defaults to /etc/openfortivpn/config):",
+      "syntax": "sudo openfortivpn --config={{path/to/config}}"
+    },
+    {
+      "description": "Connect to a VPN by specifying the host and port:",
+      "syntax": "openfortivpn {{host}}:{{port}}"
+    },
+    {
+      "description": "Trust a given gateway by passing in its certificate's sha256 sum:",
+      "syntax": "openfortivpn --trusted-cert={{sha256_sum}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "ranger",
+  "description": "Console file manager with VI key bindings. See also: clifm, vifm, mc, dolphin. More information: https://github.com/ranger/ranger.",
+  "useCases": [
+    {
+      "description": "Launch ranger:",
+      "syntax": "ranger"
+    },
+    {
+      "description": "Show only directories:",
+      "syntax": "ranger --show-only-dirs"
+    },
+    {
+      "description": "Change the configuration directory:",
+      "syntax": "ranger --confdir={{path/to/directory}}"
+    },
+    {
+      "description": "Change the data directory:",
+      "syntax": "ranger --datadir={{path/to/directory}}"
+    },
+    {
+      "description": "Print CPU usage statistics on exit:",
+      "syntax": "ranger --profile"
+    }
+  ]
+}

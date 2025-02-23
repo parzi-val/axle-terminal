@@ -1,0 +1,26 @@
+{
+  "command": "pabcnetcclear",
+  "description": "Preprocess and compile PascalABC.NET source files. More information: https://pascalabc.net.",
+  "useCases": [
+    {
+      "description": "Compile the specified source file into an executable with the same name:",
+      "syntax": "pabcnetcclear {{path\\to\\source_file.pas}}"
+    },
+    {
+      "description": "Compile the specified source file into an executable with the specified name:",
+      "syntax": "pabcnetcclear /Output:{{path\\to\\_file.exe}} {{path\\to\\source_file.pas}}"
+    },
+    {
+      "description": "Compile the specified source file into an executable with the same name along with/without debug information:",
+      "syntax": "pabcnetcclear /Debug:{{0|1}} {{path\\to\\source_file.pas}}"
+    },
+    {
+      "description": "Allow units to be searched in the specified path while compiling the source file into an executable with the same name:",
+      "syntax": "pabcnetcclear /SearchDir:{{path\\to\\directory}} {{path\\to\\source_file.pas}}"
+    },
+    {
+      "description": "Compile the specified source file into an executable, defining a symbol:",
+      "syntax": "pabcnetcclear /Define:{{symbol}} {{path\\to\\source_file.pas}}"
+    }
+  ]
+}

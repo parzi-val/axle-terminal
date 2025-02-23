@@ -1,0 +1,10 @@
+{
+  "command": "bleachbit",
+  "description": "This command is an alias of bleachbit_console.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr bleachbit_console"
+    }
+  ]
+}

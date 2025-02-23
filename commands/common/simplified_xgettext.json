@@ -1,0 +1,22 @@
+{
+  "command": "xgettext",
+  "description": "Extract gettext strings from code files. More information: https://www.gnu.org/software/gettext/manual/html_node/xgettext-Invocation.html.",
+  "useCases": [
+    {
+      "description": "Scan file and output strings to messages.po:",
+      "syntax": "xgettext {{path/to/input_file}}"
+    },
+    {
+      "description": "Use a different output filename:",
+      "syntax": "xgettext --output {{path/to/output_file}} {{path/to/input_file}}"
+    },
+    {
+      "description": "Append new strings to an existing file:",
+      "syntax": "xgettext --join-existing --output {{path/to/output_file}} {{path/to/input_file}}"
+    },
+    {
+      "description": "Don't add a header containing metadata to the output file:",
+      "syntax": "xgettext --omit-header {{path/to/input_file}}"
+    }
+  ]
+}

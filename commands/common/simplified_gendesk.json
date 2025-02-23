@@ -1,0 +1,18 @@
+{
+  "command": "gendesk",
+  "description": "Specifies the command to generate a .desktop file and a download icon with minimal information. More information: https://gendesk.roboticoverlords.org.",
+  "useCases": [
+    {
+      "description": "Create a .desktop file named app:",
+      "syntax": "gendesk -n --name &quot;{{app}}&quot; --exec &quot;{{/path/to/app}}&quot; --icon &quot;{{/path/to/icon.png}}&quot; --comment &quot;{{This is application}}&quot;"
+    },
+    {
+      "description": "Create a .desktop file named app, do not display any output, and overwrite it if it exists:",
+      "syntax": "gendesk -q -f -n --name &quot;{{app}}&quot; --exec &quot;{{/path/to/app}}&quot; --icon &quot;{{/path/to/icon.png}}&quot; --comment &quot;{{This is application}}&quot;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gendesk -h"
+    }
+  ]
+}

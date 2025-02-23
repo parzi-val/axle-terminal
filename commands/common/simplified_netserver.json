@@ -1,0 +1,22 @@
+{
+  "command": "netserver",
+  "description": "Server-side command for netperf, the benchmarking application that measures network throughput. See also: netperf, for the client-side command. More information: https://manned.org/netserver.1.",
+  "useCases": [
+    {
+      "description": "Start a server on the default port (12865) and fork to background:",
+      "syntax": "netserver"
+    },
+    {
+      "description": "Start server in foreground and do not fork:",
+      "syntax": "netserver -D"
+    },
+    {
+      "description": "Specify [p]ort:",
+      "syntax": "netserver -p {{port}}"
+    },
+    {
+      "description": "Force IPv[4] or IPv[6]:",
+      "syntax": "netserver -{{4|6}}"
+    }
+  ]
+}

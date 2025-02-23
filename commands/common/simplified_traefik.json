@@ -1,0 +1,22 @@
+{
+  "command": "traefik",
+  "description": "An HTTP reverse proxy and load balancer. More information: https://traefik.io.",
+  "useCases": [
+    {
+      "description": "Start the server with the default configuration:",
+      "syntax": "traefik"
+    },
+    {
+      "description": "Start the server with a custom configuration file:",
+      "syntax": "traefik --ConfigFile {{config_file.toml}}"
+    },
+    {
+      "description": "Start the server with cluster mode enabled:",
+      "syntax": "traefik --cluster"
+    },
+    {
+      "description": "Start server with web UI enabled:",
+      "syntax": "traefik --web"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "pw-mon",
+  "description": "Monitor objects on the PipeWire instance. More information: https://docs.pipewire.org/page_man_pw-mon_1.html.",
+  "useCases": [
+    {
+      "description": "Monitor the default PipeWire instance:",
+      "syntax": "pw-mon"
+    },
+    {
+      "description": "Monitor a specific remote instance:",
+      "syntax": "pw-mon --remote={{remote_name}}"
+    },
+    {
+      "description": "Monitor the default instance specifying a color configuration:",
+      "syntax": "pw-mon --color={{never|always|auto}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pw-mon --help"
+    }
+  ]
+}

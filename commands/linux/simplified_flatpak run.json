@@ -1,0 +1,26 @@
+{
+  "command": "flatpak run",
+  "description": "Run flatpak applications and runtimes. More information: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-run.",
+  "useCases": [
+    {
+      "description": "Run an installed application:",
+      "syntax": "flatpak run {{com.example.app}}"
+    },
+    {
+      "description": "Run an installed application from a specific branch e.g. stable, beta, master:",
+      "syntax": "flatpak run --branch={{stable|beta|master|...}} {{com.example.app}}"
+    },
+    {
+      "description": "Run an interactive shell inside a flatpak:",
+      "syntax": "flatpak run --command={{sh}} {{com.example.app}}"
+    },
+    {
+      "description": "Run an installed application with a specific runtime version:",
+      "syntax": "flatpak run --runtime-version={{24.08|master|stable|...}} {{com.example.app}}"
+    },
+    {
+      "description": "Run an installed application with a different runtime (but same version number):",
+      "syntax": "flatpak run --runtime={{org.freedesktop.Sdk}} {{com.example.app}}"
+    }
+  ]
+}

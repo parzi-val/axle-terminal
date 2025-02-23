@@ -1,0 +1,22 @@
+{
+  "command": "mysqldump",
+  "description": "Backups MySQL databases. See also mysql for restoring databases. More information: https://dev.mysql.com/doc/refman/en/mysqldump.html.",
+  "useCases": [
+    {
+      "description": "Create a backup (user will be prompted for a password):",
+      "syntax": "mysqldump --user {{user}} --password {{database_name}} --result-file={{path/to/file.sql}}"
+    },
+    {
+      "description": "Backup a specific table redirecting the output to a file (user will be prompted for a password):",
+      "syntax": "mysqldump --user {{user}} --password {{database_name}} {{table_name}} &gt; {{path/to/file.sql}}"
+    },
+    {
+      "description": "Backup all databases redirecting the output to a file (user will be prompted for a password):",
+      "syntax": "mysqldump --user {{user}} --password --all-databases &gt; {{path/to/file.sql}}"
+    },
+    {
+      "description": "Backup all databases from a remote host, redirecting the output to a file (user will be prompted for a password):",
+      "syntax": "mysqldump --host={{ip_or_hostname}} --user {{user}} --password --all-databases &gt; {{path/to/file.sql}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "git cherry-pick",
+  "description": "Apply the changes introduced by existing commits to the current branch. To apply changes to another branch, first use git checkout to switch to the desired branch. More information: https://git-scm.com/docs/git-cherry-pick.",
+  "useCases": [
+    {
+      "description": "Apply a commit to the current branch:",
+      "syntax": "git cherry-pick {{commit}}"
+    },
+    {
+      "description": "Apply a range of commits to the current branch (see also git rebase --onto):",
+      "syntax": "git cherry-pick {{start_commit}}~..{{end_commit}}"
+    },
+    {
+      "description": "Apply multiple (non-sequential) commits to the current branch:",
+      "syntax": "git cherry-pick {{commit1 commit2 ...}}"
+    },
+    {
+      "description": "Add the changes of a commit to the working directory, without creating a commit:",
+      "syntax": "git cherry-pick --no-commit {{commit}}"
+    }
+  ]
+}

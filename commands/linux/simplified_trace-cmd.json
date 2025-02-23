@@ -1,0 +1,34 @@
+{
+  "command": "trace-cmd",
+  "description": "Utility to interact with the Ftrace Linux kernel internal tracer. This utility only runs as root. More information: https://manned.org/trace-cmd.",
+  "useCases": [
+    {
+      "description": "Display the status of tracing system:",
+      "syntax": "trace-cmd stat"
+    },
+    {
+      "description": "List available tracers:",
+      "syntax": "trace-cmd list -t"
+    },
+    {
+      "description": "Start tracing with a specific plugin:",
+      "syntax": "trace-cmd start -p {{timerlat|osnoise|hwlat|blk|mmiotrace|function_graph|wakeup_dl|wakeup_rt|wakeup|function|nop}}"
+    },
+    {
+      "description": "View the trace output:",
+      "syntax": "trace-cmd show"
+    },
+    {
+      "description": "Stop the tracing but retain the buffers:",
+      "syntax": "trace-cmd stop"
+    },
+    {
+      "description": "Clear the trace buffers:",
+      "syntax": "trace-cmd clear"
+    },
+    {
+      "description": "Clear the trace buffers and stop tracing:",
+      "syntax": "trace-cmd reset"
+    }
+  ]
+}

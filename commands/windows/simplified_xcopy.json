@@ -1,0 +1,38 @@
+{
+  "command": "xcopy",
+  "description": "Copy files and directory trees. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/xcopy.",
+  "useCases": [
+    {
+      "description": "Copy the file(s) to the specified destination:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}}"
+    },
+    {
+      "description": "List files that will be copied before copying:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /p"
+    },
+    {
+      "description": "Copy the directory structure only, excluding files:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /t"
+    },
+    {
+      "description": "Include empty directories when copying:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /e"
+    },
+    {
+      "description": "Keep the source ACL in the destination:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /o"
+    },
+    {
+      "description": "Allow resuming when network connection is lost:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /z"
+    },
+    {
+      "description": "Disable the prompt when the file exists in the destination:",
+      "syntax": "xcopy {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /y"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xcopy /?"
+    }
+  ]
+}

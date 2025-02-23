@@ -1,0 +1,10 @@
+{
+  "command": "docker container diff",
+  "description": "This command is an alias of docker diff.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr docker diff"
+    }
+  ]
+}

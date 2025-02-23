@@ -1,0 +1,26 @@
+{
+  "command": "waitpid",
+  "description": "Wait for the termination of arbitrary processes. See also: wait. More information: https://manned.org/waitpid.1.",
+  "useCases": [
+    {
+      "description": "Sleep until all processes whose PIDs have been specified have exited:",
+      "syntax": "waitpid {{pid1 pid2 ...}}"
+    },
+    {
+      "description": "Sleep for at most n seconds:",
+      "syntax": "waitpid --timeout {{n}} {{pid1 pid2 ...}}"
+    },
+    {
+      "description": "Do not error if specified PIDs have already exited:",
+      "syntax": "waitpid --exited {{pid1 pid2 ...}}"
+    },
+    {
+      "description": "Sleep until n of the specified processes have exited:",
+      "syntax": "waitpid --count {{n}} {{pid1 pid2 ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "waitpid -h"
+    }
+  ]
+}

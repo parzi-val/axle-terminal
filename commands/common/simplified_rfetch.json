@@ -1,0 +1,34 @@
+{
+  "command": "rfetch",
+  "description": "A configurable fetch program to output system information. More information: https://github.com/kamui-fin/rfetch.",
+  "useCases": [
+    {
+      "description": "Display system information:",
+      "syntax": "rfetch"
+    },
+    {
+      "description": "Display system [a]rchitecture:",
+      "syntax": "rfetch -a"
+    },
+    {
+      "description": "Display system up[t]ime:",
+      "syntax": "rfetch -t"
+    },
+    {
+      "description": "Display system [k]ernel:",
+      "syntax": "rfetch -k"
+    },
+    {
+      "description": "Display system [c]PU:",
+      "syntax": "rfetch -c"
+    },
+    {
+      "description": "Display Linux [D]istro:",
+      "syntax": "rfetch -D"
+    },
+    {
+      "description": "View [d]esktop environment:",
+      "syntax": "rfetch -d"
+    }
+  ]
+}

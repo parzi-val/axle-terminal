@@ -1,0 +1,34 @@
+{
+  "command": "gpg2",
+  "description": "GNU Privacy Guard 2. See gpg for GNU Privacy Guard 1. More information: https://docs.releng.linuxfoundation.org/en/latest/gpg.html.",
+  "useCases": [
+    {
+      "description": "List imported keys:",
+      "syntax": "gpg2 --list-keys"
+    },
+    {
+      "description": "Encrypt a specified file for a specified recipient, writing the output to a new file with .gpg appended:",
+      "syntax": "gpg2 --encrypt --recipient {{alice@example.com}} {{path/to/doc.txt}}"
+    },
+    {
+      "description": "Encrypt a specified file with only a passphrase, writing the output to a new file with .gpg appended:",
+      "syntax": "gpg2 --symmetric {{path/to/doc.txt}}"
+    },
+    {
+      "description": "Decrypt a specified file, writing the result to stdout:",
+      "syntax": "gpg2 --decrypt {{path/to/doc.txt.gpg}}"
+    },
+    {
+      "description": "Import a public key:",
+      "syntax": "gpg2 --import {{path/to/public_key.gpg}}"
+    },
+    {
+      "description": "Export the public key of a specified email address to stdout:",
+      "syntax": "gpg2 --export --armor {{alice@example.com}}"
+    },
+    {
+      "description": "Export the private key with a specified email address to stdout:",
+      "syntax": "gpg2 --export-secret-keys --armor {{alice@example.com}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "tqdm",
+  "description": "Create a progress bar. More information: https://tqdm.github.io/.",
+  "useCases": [
+    {
+      "description": "Create a progress bar:",
+      "syntax": "seq 10000000 | tqdm --total 10000000 --null"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "mate-dictionary",
+  "description": "Look up words on dictionaries. More information: https://manned.org/mate-dictionary.",
+  "useCases": [
+    {
+      "description": "Print a specific word definition:",
+      "syntax": "mate-dictionary --no-window --look-up '{{word}}'"
+    },
+    {
+      "description": "Show similar words for a specific one in a new window:",
+      "syntax": "mate-dictionary --match '{{word}}'"
+    }
+  ]
+}

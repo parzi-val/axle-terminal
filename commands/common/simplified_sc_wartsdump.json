@@ -1,0 +1,10 @@
+{
+  "command": "sc_wartsdump",
+  "description": "Verbose dump of information contained in a warts file. More information: https://www.caida.org/catalog/software/scamper/.",
+  "useCases": [
+    {
+      "description": "Output the content of warts files verbose:",
+      "syntax": "sc_wartsdump {{path/to/file1.warts path/to/file2.warts ...}}"
+    }
+  ]
+}

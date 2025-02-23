@@ -1,0 +1,26 @@
+{
+  "command": "gibo",
+  "description": "Fetch gitignore boilerplates. More information: https://github.com/simonwhitaker/gibo.",
+  "useCases": [
+    {
+      "description": "List available boilerplates:",
+      "syntax": "gibo list"
+    },
+    {
+      "description": "Write a boilerplate to stdout:",
+      "syntax": "gibo dump {{boilerplate}}"
+    },
+    {
+      "description": "Write a boilerplate to .gitignore:",
+      "syntax": "gibo dump {{boilerplate}} &gt;&gt;{{.gitignore}}"
+    },
+    {
+      "description": "Search for boilerplates containing a given string:",
+      "syntax": "gibo search {{string}}"
+    },
+    {
+      "description": "Update available local boilerplates:",
+      "syntax": "gibo update"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "polybar",
+  "description": "A fast and easy-to-use status bar. More information: https://github.com/polybar/polybar/wiki.",
+  "useCases": [
+    {
+      "description": "Start Polybar (the bar name is optional if only one bar is defined in the config):",
+      "syntax": "polybar {{bar_name}}"
+    },
+    {
+      "description": "Start Polybar with the specified config:",
+      "syntax": "polybar --config={{path/to/config.ini}} {{bar_name}}"
+    },
+    {
+      "description": "Start Polybar and reload the bar when the configuration file is modified:",
+      "syntax": "polybar --reload {{bar_name}}"
+    }
+  ]
+}

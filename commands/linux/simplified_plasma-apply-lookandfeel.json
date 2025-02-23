@@ -1,0 +1,22 @@
+{
+  "command": "plasma-apply-lookandfeel",
+  "description": "Switch Plasma global themes. More information: https://userbase.kde.org/System_Settings/Look_And_Feel.",
+  "useCases": [
+    {
+      "description": "List available global themes:",
+      "syntax": "plasma-apply-lookandfeel --list"
+    },
+    {
+      "description": "Apply a global theme:",
+      "syntax": "plasma-apply-lookandfeel --apply {{org.example.theme.desktop}}"
+    },
+    {
+      "description": "Operate plasma-apply-lookandfeel without a display server:",
+      "syntax": "plasma-apply-lookandfeel --platform offscreen"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plasma-apply-lookandfeel --help"
+    }
+  ]
+}

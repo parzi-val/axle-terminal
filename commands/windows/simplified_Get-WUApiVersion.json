@@ -1,0 +1,14 @@
+{
+  "command": "Get-WUApiVersion",
+  "description": "Get the Windows Update Agent version. Part of external PSWindowsUpdate module. This command can only be run under PowerShell. More information: https://github.com/mgajda83/PSWindowsUpdate.",
+  "useCases": [
+    {
+      "description": "Get the currently-installed Windows Update Agent version:",
+      "syntax": "Get-WUApiVersion"
+    },
+    {
+      "description": "Send the current configuration data via email (SMTP):",
+      "syntax": "Get-WUApiVersion -SendReport -PSWUSettings @{SmtpServer=&quot;{{smtp_server}}&quot;; Port={{smtp_port}} From=&quot;{{sender_email}}&quot; To=&quot;{{receiver_email}}&quot;}"
+    }
+  ]
+}

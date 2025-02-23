@@ -1,0 +1,22 @@
+{
+  "command": "az storage queue",
+  "description": "Manage storage queues in Azure. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/storage/queue.",
+  "useCases": [
+    {
+      "description": "Create a queue:",
+      "syntax": "az storage queue create --account-name {{storage_account_name}} --name {{queue_name}} --metadata {{queue_metadata}}"
+    },
+    {
+      "description": "Generate a shared access signature for the queue:",
+      "syntax": "az storage queue generate-sas --account-name {{storage_account_name}} --name {{queue_name}} --permissions {{queue_permissions}} --expiry {{expiry_date}} --https-only"
+    },
+    {
+      "description": "List queues in a storage account:",
+      "syntax": "az storage queue list --prefix {{filter_prefix}} --account-name {{storage_account_name}}"
+    },
+    {
+      "description": "Delete the specified queue and any messages it contains:",
+      "syntax": "az storage queue delete --account-name {{storage_account_name}} --name {{queue_name}} --fail-not-exist"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "var-dump-server",
+  "description": "Symfony dump server. Collects data dumped by the Symfony VarDumper component. More information: https://symfony.com/doc/current/components/var_dumper.html#the-dump-server.",
+  "useCases": [
+    {
+      "description": "Start the server:",
+      "syntax": "var-dump-server"
+    },
+    {
+      "description": "Dump the data in an HTML file:",
+      "syntax": "var-dump-server --format=html &gt; {{path/to/file.html}}"
+    },
+    {
+      "description": "Make the server listen on a specific address and port:",
+      "syntax": "var-dump-server --host {{127.0.0.1:9912}}"
+    }
+  ]
+}

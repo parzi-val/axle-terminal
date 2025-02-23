@@ -1,0 +1,26 @@
+{
+  "command": "crane rebase",
+  "description": "Rebase an image onto a new base image. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_rebase.md.",
+  "useCases": [
+    {
+      "description": "Rebase image:",
+      "syntax": "crane rebase"
+    },
+    {
+      "description": "New base image to insert:",
+      "syntax": "crane rebase --new_base {{image_name}}"
+    },
+    {
+      "description": "Old base image to remove:",
+      "syntax": "crane rebase --old_base {{image_name}}"
+    },
+    {
+      "description": "Tag to apply to rebased image:",
+      "syntax": "crane rebase {{-t|--tag}} {{tag_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane rebase {{-h|--help}}"
+    }
+  ]
+}

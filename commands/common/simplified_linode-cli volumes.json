@@ -1,0 +1,30 @@
+{
+  "command": "linode-cli volumes",
+  "description": "Manage Linode Volumes. See also: linode-cli. More information: https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-block-storage-volumes.",
+  "useCases": [
+    {
+      "description": "List current Volumes:",
+      "syntax": "linode-cli volumes list"
+    },
+    {
+      "description": "Create a new Volume and attach it to a specific Linode:",
+      "syntax": "linode-cli volumes create --label {{volume_label}} --size {{size_in_GB}} --linode-id {{linode_id}}"
+    },
+    {
+      "description": "Attach a Volume to a specific Linode:",
+      "syntax": "linode-cli volumes attach {{volume_id}} --linode-id {{linode_id}}"
+    },
+    {
+      "description": "Detach a Volume from a Linode:",
+      "syntax": "linode-cli volumes detach {{volume_id}}"
+    },
+    {
+      "description": "Resize a Volume (Note: size can only be increased):",
+      "syntax": "linode-cli volumes resize {{volume_id}} --size {{new_size_in_GB}}"
+    },
+    {
+      "description": "Delete a Volume:",
+      "syntax": "linode-cli volumes delete {{volume_id}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "rpmconf",
+  "description": "Handle RPMNEW, RPMSAVE and RPMORIG files left over by package upgrades. See also: rpm. More information: https://github.com/xsuchy/rpmconf.",
+  "useCases": [
+    {
+      "description": "List leftover files and interactively choose what to do with each of them:",
+      "syntax": "sudo rpmconf --all"
+    },
+    {
+      "description": "Delete orphaned RPMNEW and RPMSAVE files:",
+      "syntax": "sudo rpmconf --all --clean"
+    }
+  ]
+}

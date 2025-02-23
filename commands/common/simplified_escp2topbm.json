@@ -1,0 +1,10 @@
+{
+  "command": "escp2topbm",
+  "description": "Convert a PBM image to a ESC/P2 printer file. See also: pbmtoescp2. More information: https://netpbm.sourceforge.net/doc/escp2topbm.html.",
+  "useCases": [
+    {
+      "description": "Convert a ESC/P2 printer file to a PBM image:",
+      "syntax": "escp2topbm {{path/to/image.escp2}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

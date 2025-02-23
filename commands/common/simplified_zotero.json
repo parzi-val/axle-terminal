@@ -1,0 +1,22 @@
+{
+  "command": "zotero",
+  "description": "Manage your bibliographies. More information: https://www.zotero.org/support.",
+  "useCases": [
+    {
+      "description": "Run with the GUI:",
+      "syntax": "zotero"
+    },
+    {
+      "description": "Run in headless mode:",
+      "syntax": "zotero --headless"
+    },
+    {
+      "description": "Run with a specific profile:",
+      "syntax": "zotero -P {{profile}}"
+    },
+    {
+      "description": "Run the Migration Assistant:",
+      "syntax": "zotero --migration"
+    }
+  ]
+}

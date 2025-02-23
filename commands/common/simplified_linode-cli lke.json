@@ -1,0 +1,26 @@
+{
+  "command": "linode-cli lke",
+  "description": "Manage Linode Kubernetes Engine (LKE) clusters. See also: linode-cli. More information: https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-lke.",
+  "useCases": [
+    {
+      "description": "List all LKE clusters:",
+      "syntax": "linode-cli lke clusters list"
+    },
+    {
+      "description": "Create a new LKE cluster:",
+      "syntax": "linode-cli lke clusters create --region {{region}} --type {{type}} --node-type {{node_type}} --nodes-count {{count}}"
+    },
+    {
+      "description": "View details of a specific LKE cluster:",
+      "syntax": "linode-cli lke clusters view {{cluster_id}}"
+    },
+    {
+      "description": "Update an existing LKE cluster:",
+      "syntax": "linode-cli lke clusters update {{cluster_id}} --node-type {{new_node_type}}"
+    },
+    {
+      "description": "Delete an LKE cluster:",
+      "syntax": "linode-cli lke clusters delete {{cluster_id}}"
+    }
+  ]
+}

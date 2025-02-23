@@ -1,0 +1,30 @@
+{
+  "command": "readpe",
+  "description": "Display information about PE files. More information: https://manned.org/readpe.",
+  "useCases": [
+    {
+      "description": "Display all information about a PE file:",
+      "syntax": "readpe {{path/to/executable}}"
+    },
+    {
+      "description": "Display all the headers present in a PE file:",
+      "syntax": "readpe --all-headers {{path/to/executable}}"
+    },
+    {
+      "description": "Display all the sections present in a PE file:",
+      "syntax": "readpe --all-sections {{path/to/executable}}"
+    },
+    {
+      "description": "Display a specific header from a PE file:",
+      "syntax": "readpe --header {{dos|coff|optional}} {{path/to/executable}}"
+    },
+    {
+      "description": "List all imported functions:",
+      "syntax": "readpe --imports {{path/to/executable}}"
+    },
+    {
+      "description": "List all exported functions:",
+      "syntax": "readpe --exports {{path/to/executable}}"
+    }
+  ]
+}

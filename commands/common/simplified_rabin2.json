@@ -1,0 +1,26 @@
+{
+  "command": "rabin2",
+  "description": "Get information about binary files (ELF, PE, Java CLASS, Mach-O) - symbols, sections, linked libraries, etc. Comes bundled with radare2. More information: https://manned.org/rabin2.",
+  "useCases": [
+    {
+      "description": "Display general information about a binary (architecture, type, endianness):",
+      "syntax": "rabin2 -I {{path/to/binary}}"
+    },
+    {
+      "description": "Display linked libraries:",
+      "syntax": "rabin2 -l {{path/to/binary}}"
+    },
+    {
+      "description": "Display symbols imported from libraries:",
+      "syntax": "rabin2 -i {{path/to/binary}}"
+    },
+    {
+      "description": "Display strings contained in the binary:",
+      "syntax": "rabin2 -z {{path/to/binary}}"
+    },
+    {
+      "description": "Display the output in JSON:",
+      "syntax": "rabin2 -j -I {{path/to/binary}}"
+    }
+  ]
+}

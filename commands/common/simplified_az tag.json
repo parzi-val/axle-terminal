@@ -1,0 +1,26 @@
+{
+  "command": "az tag",
+  "description": "Manage tags on a resource. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/tag.",
+  "useCases": [
+    {
+      "description": "Create a tag value:",
+      "syntax": "az tag add-value --name {{tag_name}} --value {{tag_value}}"
+    },
+    {
+      "description": "Create a tag in the subscription:",
+      "syntax": "az tag create --name {{tag_name}}"
+    },
+    {
+      "description": "Delete a tag from the subscription:",
+      "syntax": "az tag delete --name {{tag_name}}"
+    },
+    {
+      "description": "List all tags on a subscription:",
+      "syntax": "az tag list --resource-id /subscriptions/{{subscription_id}}"
+    },
+    {
+      "description": "Delete a tag value for a specific tag name:",
+      "syntax": "az tag remove-value --name {{tag_name}} --value {{tag_value}}"
+    }
+  ]
+}

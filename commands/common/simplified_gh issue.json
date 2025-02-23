@@ -1,0 +1,34 @@
+{
+  "command": "gh issue",
+  "description": "Manage GitHub issues. More information: https://cli.github.com/manual/gh_issue.",
+  "useCases": [
+    {
+      "description": "Display a specific issue:",
+      "syntax": "gh issue view {{issue_number}}"
+    },
+    {
+      "description": "Display a specific issue in the default web browser:",
+      "syntax": "gh issue view {{issue_number}} --web"
+    },
+    {
+      "description": "Create a new issue in the default web browser:",
+      "syntax": "gh issue create --web"
+    },
+    {
+      "description": "List the last 10 issues with the bug label:",
+      "syntax": "gh issue list --limit {{10}} --label &quot;{{bug}}&quot;"
+    },
+    {
+      "description": "List closed issues made by a specific user:",
+      "syntax": "gh issue list --state closed --author {{username}}"
+    },
+    {
+      "description": "Display the status of issues relevant to the user, in a specific repository:",
+      "syntax": "gh issue status --repo {{owner}}/{{repository}}"
+    },
+    {
+      "description": "Reopen a specific issue:",
+      "syntax": "gh issue reopen {{issue_number}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "hexo",
+  "description": "A fast, simple & powerful blog framework. More information: https://hexo.io/.",
+  "useCases": [
+    {
+      "description": "Initialize a website:",
+      "syntax": "hexo init {{path/to/directory}}"
+    },
+    {
+      "description": "Create a new article:",
+      "syntax": "hexo new {{layout}} {{title}}"
+    },
+    {
+      "description": "Generate static files:",
+      "syntax": "hexo generate"
+    },
+    {
+      "description": "Start a local server:",
+      "syntax": "hexo server"
+    },
+    {
+      "description": "Deploy the website:",
+      "syntax": "hexo deploy"
+    },
+    {
+      "description": "Clean the cache file (db.json) and generated files (public/):",
+      "syntax": "hexo clean"
+    }
+  ]
+}

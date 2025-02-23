@@ -1,0 +1,22 @@
+{
+  "command": "ppmforge",
+  "description": "Generate fractals resembling clouds, planets and starry skies. More information: https://netpbm.sourceforge.net/doc/ppmforge.html.",
+  "useCases": [
+    {
+      "description": "Generate an image of a planet:",
+      "syntax": "ppmforge &gt; {{path/to/image.ppm}}"
+    },
+    {
+      "description": "Generate an image of clouds or the night sky:",
+      "syntax": "ppmforge -{{night|clouds}} &gt; {{path/to/image.ppm}}"
+    },
+    {
+      "description": "Use a custom mesh size and dimension for fractal generation and specify the dimensions of the output:",
+      "syntax": "ppmforge -mesh {{512}} -dimension {{2.5}} -xsize {{1000}} -ysize {{1000}} &gt; {{path/to/image.ppm}}"
+    },
+    {
+      "description": "Control the tilt and the angle from which the generated planet is illuminated:",
+      "syntax": "ppmforge -tilt {{-15}} -hour {{12}} &gt; {{path/to/image.ppm}}"
+    }
+  ]
+}

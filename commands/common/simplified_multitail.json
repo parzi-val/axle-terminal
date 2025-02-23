@@ -1,0 +1,22 @@
+{
+  "command": "multitail",
+  "description": "Extension of tail. More information: https://manned.org/multitail.",
+  "useCases": [
+    {
+      "description": "Tail all files matching a pattern in a single stream:",
+      "syntax": "multitail -Q 1 '{{pattern}}'"
+    },
+    {
+      "description": "Tail all files in a directory in a single stream:",
+      "syntax": "multitail -Q 1 '{{path/to/directory}}/*'"
+    },
+    {
+      "description": "Automatically add new files to a window:",
+      "syntax": "multitail -Q {{pattern}}"
+    },
+    {
+      "description": "Show 5 logfiles while merging 2 and put them in 2 columns with only one in the left column:",
+      "syntax": "multitail -s 2 -sn 1,3 {{path/to/mergefile}} -I {{path/to/file1}} {{path/to/file2}} {{path/to/file3}} {{path/to/file4}}"
+    }
+  ]
+}

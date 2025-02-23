@@ -1,0 +1,26 @@
+{
+  "command": "mksquashfs",
+  "description": "Create or append files and directories to squashfs filesystems. More information: https://manned.org/mksquashfs.",
+  "useCases": [
+    {
+      "description": "Create or append files and directories to a squashfs filesystem (compressed using gzip by default):",
+      "syntax": "mksquashfs {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} {{filesystem.squashfs}}"
+    },
+    {
+      "description": "Create or append files and directories to a squashfs filesystem, using a specific [comp]ression algorithm:",
+      "syntax": "mksquashfs {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} {{filesystem.squashfs}} -comp {{gzip|lzo|lz4|xz|zstd|lzma}}"
+    },
+    {
+      "description": "Create or append files and directories to a squashfs filesystem, [e]xcluding some of them:",
+      "syntax": "mksquashfs {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} {{filesystem.squashfs}} -e {{file|directory1 file|directory2 ...}}"
+    },
+    {
+      "description": "Create or append files and directories to a squashfs filesystem, [e]xcluding those ending with gzip:",
+      "syntax": "mksquashfs {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} {{filesystem.squashfs}} -wildcards -e &quot;{{*.gz}}&quot;"
+    },
+    {
+      "description": "Create or append files and directories to a squashfs filesystem, [e]xcluding those matching a regular expression:",
+      "syntax": "mksquashfs {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} {{filesystem.squashfs}} -regex -e &quot;{{regular_expression}}&quot;"
+    }
+  ]
+}

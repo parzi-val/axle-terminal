@@ -1,0 +1,22 @@
+{
+  "command": "csh",
+  "description": "The shell (command interpreter) with C-like syntax. See also: tcsh. More information: https://www.mkssoftware.com/docs/man1/csh.1.asp.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "csh"
+    },
+    {
+      "description": "Start an interactive shell session without loading startup configs:",
+      "syntax": "csh -f"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "csh -c &quot;{{echo 'csh is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "csh {{path/to/script.csh}}"
+    }
+  ]
+}

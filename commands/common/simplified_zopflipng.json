@@ -1,0 +1,14 @@
+{
+  "command": "zopflipng",
+  "description": "PNG compression utility. More information: https://github.com/google/zopfli.",
+  "useCases": [
+    {
+      "description": "Optimize a PNG:",
+      "syntax": "zopflipng {{input.png}} {{output.png}}"
+    },
+    {
+      "description": "Optimize several PNGs and save with given prefix:",
+      "syntax": "zopflipng --prefix={{prefix}} {{image1.png}} {{image2.png}} {{image3.png}}"
+    }
+  ]
+}

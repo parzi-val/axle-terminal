@@ -1,0 +1,22 @@
+{
+  "command": "Remove-NodeVersion",
+  "description": "Uninstall Node.js runtime versions for ps-nvm. This command is part of ps-nvm and can only be run under PowerShell. More information: https://github.com/aaronpowell/ps-nvm.",
+  "useCases": [
+    {
+      "description": "Uninstall a given Node.js version:",
+      "syntax": "Remove-NodeVersion {{node_version}}"
+    },
+    {
+      "description": "Uninstall multiple Node.js versions:",
+      "syntax": "Remove-NodeVersion {{node_version1 , node_version2 , ...}}"
+    },
+    {
+      "description": "Uninstall all currently-installed versions of Node.js 20.x:",
+      "syntax": "Get-NodeVersions -Filter &quot;&gt;=20.0.0 &lt;21.0.0&quot; | Remove-NodeVersion"
+    },
+    {
+      "description": "Uninstall all currently-installed versions of Node.js:",
+      "syntax": "Get-NodeVersions | Remove-NodeVersion"
+    }
+  ]
+}

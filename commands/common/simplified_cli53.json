@@ -1,0 +1,38 @@
+{
+  "command": "cli53",
+  "description": "Command line tool for Amazon Route 53. More information: https://github.com/barnybug/cli53.",
+  "useCases": [
+    {
+      "description": "List domains:",
+      "syntax": "cli53 list"
+    },
+    {
+      "description": "Create a domain:",
+      "syntax": "cli53 create {{mydomain.com}} --comment &quot;{{comment}}&quot;"
+    },
+    {
+      "description": "Export a bind zone file to stdout:",
+      "syntax": "cli53 export {{mydomain.com}}"
+    },
+    {
+      "description": "Create a www subdomain pointing to a relative record in the same zone:",
+      "syntax": "cli53 {{rc|rrcreate}} {{mydomain.com}} {{'www 300 CNAME lb'}}"
+    },
+    {
+      "description": "Create a www subdomain pointing to an external address (must end with a dot):",
+      "syntax": "cli53 {{rc|rrcreate}} {{mydomain.com}} {{'www 300 CNAME lb.externalhost.com.'}}"
+    },
+    {
+      "description": "Create a www subdomain pointing to an IP address:",
+      "syntax": "cli53 {{rc|rrcreate}} {{mydomain.com}} {{'www 300 A 150.130.110.1'}}"
+    },
+    {
+      "description": "Replace a www subdomain pointing to a different IP:",
+      "syntax": "cli53 {{rc|rrcreate}} --replace {{'www 300 A 150.130.110.2'}}"
+    },
+    {
+      "description": "Delete a record A:",
+      "syntax": "cli53 {{rd|rrdelete}} {{mydomain.com}} {{www}} {{A}}"
+    }
+  ]
+}

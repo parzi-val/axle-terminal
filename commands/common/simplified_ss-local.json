@@ -1,0 +1,22 @@
+{
+  "command": "ss-local",
+  "description": "Run a Shadowsocks client as a SOCKS5 proxy. More information: https://github.com/shadowsocks/shadowsocks-libev/blob/master/doc/ss-local.asciidoc.",
+  "useCases": [
+    {
+      "description": "Run a Shadowsocks proxy by specifying the host, server port, local port, password, and encryption method:",
+      "syntax": "ss-local -s {{host}} -p {{server_port}} -l {{local port}} -k {{password}} -m {{encrypt_method}}"
+    },
+    {
+      "description": "Run a Shadowsocks proxy by specifying the configuration file:",
+      "syntax": "ss-local -c {{path/to/config/file.json}}"
+    },
+    {
+      "description": "Use a plugin to run the proxy client:",
+      "syntax": "ss-local --plugin {{plugin_name}} --plugin-opts {{plugin_options}}"
+    },
+    {
+      "description": "Enable TCP fast open:",
+      "syntax": "ss-local --fast-open"
+    }
+  ]
+}

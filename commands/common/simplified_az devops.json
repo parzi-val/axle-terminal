@@ -1,0 +1,26 @@
+{
+  "command": "az devops",
+  "description": "Manage Azure DevOps organizations. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/devops.",
+  "useCases": [
+    {
+      "description": "Set the Personal Access Token (PAT) to login to a particular organization:",
+      "syntax": "az devops login --organization {{organization_url}}"
+    },
+    {
+      "description": "Open a project in the browser:",
+      "syntax": "az devops project show --project {{project_name}} --open"
+    },
+    {
+      "description": "List members of a specific team working on a particular project:",
+      "syntax": "az devops team list-member --project {{project_name}} --team {{team_name}}"
+    },
+    {
+      "description": "Check the Azure DevOps CLI current configuration:",
+      "syntax": "az devops configure --list"
+    },
+    {
+      "description": "Configure the Azure DevOps CLI behavior by setting a default project and a default organization:",
+      "syntax": "az devops configure --defaults project={{project_name}} organization={{organization_url}}"
+    }
+  ]
+}

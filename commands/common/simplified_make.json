@@ -1,0 +1,38 @@
+{
+  "command": "make",
+  "description": "Task runner for targets described in Makefile. Mostly used to control the compilation of an executable from source code. More information: https://www.gnu.org/software/make/manual/make.html.",
+  "useCases": [
+    {
+      "description": "Call the first target specified in the Makefile (usually named \"all\"):",
+      "syntax": "make"
+    },
+    {
+      "description": "Call a specific target:",
+      "syntax": "make {{target}}"
+    },
+    {
+      "description": "Call a specific target, executing 4 jobs at a time in parallel:",
+      "syntax": "make -j{{4}} {{target}}"
+    },
+    {
+      "description": "Use a specific Makefile:",
+      "syntax": "make --file {{path/to/file}}"
+    },
+    {
+      "description": "Execute make from another directory:",
+      "syntax": "make --directory {{path/to/directory}}"
+    },
+    {
+      "description": "Force making of a target, even if source files are unchanged:",
+      "syntax": "make --always-make {{target}}"
+    },
+    {
+      "description": "Override a variable defined in the Makefile:",
+      "syntax": "make {{target}} {{variable}}={{new_value}}"
+    },
+    {
+      "description": "Override variables defined in the Makefile by the environment:",
+      "syntax": "make --environment-overrides {{target}}"
+    }
+  ]
+}

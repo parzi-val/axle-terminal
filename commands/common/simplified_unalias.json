@@ -1,0 +1,14 @@
+{
+  "command": "unalias",
+  "description": "Remove aliases. More information: https://manned.org/unalias.",
+  "useCases": [
+    {
+      "description": "Remove an alias:",
+      "syntax": "unalias {{alias_name}}"
+    },
+    {
+      "description": "Remove all aliases:",
+      "syntax": "unalias -a"
+    }
+  ]
+}

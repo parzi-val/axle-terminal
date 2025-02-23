@@ -1,0 +1,22 @@
+{
+  "command": "sacctmgr",
+  "description": "View, setup, and manage Slurm accounts. More information: https://slurm.schedmd.com/sacctmgr.html.",
+  "useCases": [
+    {
+      "description": "Show current configuration:",
+      "syntax": "sacctmgr show configuration"
+    },
+    {
+      "description": "Add a cluster to the slurm database:",
+      "syntax": "sacctmgr add cluster {{cluster_name}}"
+    },
+    {
+      "description": "Add an account to the slurm database:",
+      "syntax": "sacctmgr add account {{account_name}} cluster={{cluster_of_account}}"
+    },
+    {
+      "description": "Show details of user/association/cluster/account using a specific format:",
+      "syntax": "sacctmgr show {{user|association|cluster|account}} format=&quot;Account%10&quot; format=&quot;GrpTRES%30&quot;"
+    }
+  ]
+}

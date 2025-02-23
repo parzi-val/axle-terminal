@@ -1,0 +1,10 @@
+{
+  "command": "pacman -R",
+  "description": "This command is an alias of pacman --remove.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr pacman remove"
+    }
+  ]
+}

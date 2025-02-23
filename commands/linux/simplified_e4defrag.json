@@ -1,0 +1,18 @@
+{
+  "command": "e4defrag",
+  "description": "Defragment an ext4 filesystem. More information: https://manned.org/e4defrag.",
+  "useCases": [
+    {
+      "description": "Defragment the filesystem:",
+      "syntax": "e4defrag {{/dev/sdXN}}"
+    },
+    {
+      "description": "See how fragmented a filesystem is:",
+      "syntax": "e4defrag -c {{/dev/sdXN}}"
+    },
+    {
+      "description": "Print errors and the fragmentation count before and after each file:",
+      "syntax": "e4defrag -v {{/dev/sdXN}}"
+    }
+  ]
+}

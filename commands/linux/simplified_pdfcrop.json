@@ -1,0 +1,30 @@
+{
+  "command": "pdfcrop",
+  "description": "Detect and remove margins in each page in a PDF file. More information: https://github.com/ho-tex/pdfcrop.",
+  "useCases": [
+    {
+      "description": "Automatically detect and remove the margin for each page in a PDF file:",
+      "syntax": "pdfcrop {{path/to/input_file.pdf}} {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Set the margins of each page to a specific value:",
+      "syntax": "pdfcrop {{path/to/input_file.pdf}} --margins '{{left}} {{top}} {{right}} {{bottom}}' {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Set the margins of each page to a specific value, using the same value for left, top, right and bottom:",
+      "syntax": "pdfcrop {{path/to/input_file.pdf}} --margins {{300}} {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Use a user-defined bounding box for cropping instead of automatically detecting it:",
+      "syntax": "pdfcrop {{path/to/input_file.pdf}} --bbox '{{left}} {{top}} {{right}} {{bottom}}' {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Use different user-defined bounding boxes for odd and even pages:",
+      "syntax": "pdfcrop {{path/to/input_file.pdf}} --bbox-odd '{{left}} {{top}} {{right}} {{bottom}}' --bbox-even '{{left}} {{top}} {{right}} {{bottom}}' {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Automatically detect margins using a lower resolution for improved performance:",
+      "syntax": "pdfcrop {{path/to/input_file.pdf}} --resolution {{72}} {{path/to/output_file.pdf}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "feedreader",
+  "description": "A GUI desktop RSS client. Note: FeedReader is no longer being maintained. More information: https://github.com/jangernert/FeedReader.",
+  "useCases": [
+    {
+      "description": "Print the count of unread articles:",
+      "syntax": "feedreader --unreadCount"
+    },
+    {
+      "description": "Add a URL for a feed to follow:",
+      "syntax": "feedreader --addFeed={{feed_url}}"
+    },
+    {
+      "description": "Grab a specific article using its URL:",
+      "syntax": "feedreader --grabArticle={{article_url}}"
+    },
+    {
+      "description": "Download all images from a specific article:",
+      "syntax": "feedreader --url={{feed_url}} --grabImages={{article_path}}"
+    },
+    {
+      "description": "Play media from a URL:",
+      "syntax": "feedreader --playMedia={{article_url}}"
+    }
+  ]
+}

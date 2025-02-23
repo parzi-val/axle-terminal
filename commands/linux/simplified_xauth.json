@@ -1,0 +1,38 @@
+{
+  "command": "xauth",
+  "description": "Edit and display the authorization information used in connecting to the X server. More information: https://manned.org/xauth.",
+  "useCases": [
+    {
+      "description": "Start interactive mode with a specific authority file (defaults to ~/.Xauthority):",
+      "syntax": "xauth -f {{path/to/file}}"
+    },
+    {
+      "description": "Display information about the authority file:",
+      "syntax": "xauth info"
+    },
+    {
+      "description": "Display authorization entries for all the displays:",
+      "syntax": "xauth list"
+    },
+    {
+      "description": "Add an authorization for a specific display:",
+      "syntax": "xauth add {{display_name}} {{protocol_name}} {{key}}"
+    },
+    {
+      "description": "Remove the authorization for a specific display:",
+      "syntax": "xauth remove {{display_name}}"
+    },
+    {
+      "description": "Print the authorization entry for the current display to stdout:",
+      "syntax": "xauth extract - $DISPLAY"
+    },
+    {
+      "description": "Merge the authorization entries from a specific file into the authorization database:",
+      "syntax": "cat {{path/to/file}} | xauth merge -"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xauth --help"
+    }
+  ]
+}

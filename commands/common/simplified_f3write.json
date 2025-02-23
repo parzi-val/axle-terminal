@@ -1,0 +1,14 @@
+{
+  "command": "f3write",
+  "description": "Fill a drive out with .h2w files to test its real capacity. See also: f3read, f3probe, f3fix. More information: https://oss.digirati.com.br/f3/.",
+  "useCases": [
+    {
+      "description": "Write test files to a given directory, filling the drive:",
+      "syntax": "f3write {{path/to/mount_point}}"
+    },
+    {
+      "description": "Limit the write speed:",
+      "syntax": "f3write --max-write-rate={{kb_per_second}} {{path/to/mount_point}}"
+    }
+  ]
+}

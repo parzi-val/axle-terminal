@@ -1,0 +1,30 @@
+{
+  "command": "guix package",
+  "description": "Install, upgrade and remove Guix packages, or rollback to previous configurations. More information: https://guix.gnu.org/manual/html_node/Invoking-guix-package.html.",
+  "useCases": [
+    {
+      "description": "Install a new package:",
+      "syntax": "guix package -i {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "guix package -r {{package}}"
+    },
+    {
+      "description": "Search the package database for a regular expression:",
+      "syntax": "guix package -s &quot;{{search_pattern}}&quot;"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "guix package -I"
+    },
+    {
+      "description": "List generations:",
+      "syntax": "guix package -l"
+    },
+    {
+      "description": "Roll back to the previous generation:",
+      "syntax": "guix package --roll-back"
+    }
+  ]
+}

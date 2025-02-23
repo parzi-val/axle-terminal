@@ -1,0 +1,38 @@
+{
+  "command": "crystal",
+  "description": "Manage Crystal source code. More information: https://crystal-lang.org/reference/using_the_compiler.",
+  "useCases": [
+    {
+      "description": "Run a Crystal file:",
+      "syntax": "crystal {{path/to/file.cr}}"
+    },
+    {
+      "description": "Compile a file and all dependencies to a single executable:",
+      "syntax": "crystal build {{path/to/file.cr}}"
+    },
+    {
+      "description": "Read Crystal source code from the command-line or stdin, and execute it:",
+      "syntax": "crystal eval '{{code}}'"
+    },
+    {
+      "description": "Generate API documentation from inline docstrings in Crystal files:",
+      "syntax": "crystal docs"
+    },
+    {
+      "description": "Compile and run a Crystal specification suite:",
+      "syntax": "crystal spec"
+    },
+    {
+      "description": "Start a local interactive server for testing the language:",
+      "syntax": "crystal play"
+    },
+    {
+      "description": "Create a project directory for a Crystal application:",
+      "syntax": "crystal init app {{application_name}}"
+    },
+    {
+      "description": "Display all help options:",
+      "syntax": "crystal help"
+    }
+  ]
+}

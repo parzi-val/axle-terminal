@@ -1,0 +1,30 @@
+{
+  "command": "asdf",
+  "description": "Command-line interface for managing versions of different packages. More information: https://asdf-vm.com.",
+  "useCases": [
+    {
+      "description": "List all available plugins:",
+      "syntax": "asdf plugin list all"
+    },
+    {
+      "description": "Install a plugin:",
+      "syntax": "asdf plugin add {{name}}"
+    },
+    {
+      "description": "List all available versions for a package:",
+      "syntax": "asdf list all {{name}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "asdf install {{name}} {{version}}"
+    },
+    {
+      "description": "Set global version for a package:",
+      "syntax": "asdf global {{name}} {{version}}"
+    },
+    {
+      "description": "Set local version for a package:",
+      "syntax": "asdf local {{name}} {{version}}"
+    }
+  ]
+}

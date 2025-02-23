@@ -1,0 +1,22 @@
+{
+  "command": "ppmtosixel",
+  "description": "Convert a PPM image to DEC sixel format. More information: https://netpbm.sourceforge.net/doc/ppmtosixel.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to DEC sixel format:",
+      "syntax": "ppmtosixel {{path/to/file.ppm}} &gt; {{path/to/file.sixel}}"
+    },
+    {
+      "description": "Produce an uncompressed SIXEL file that is much slower to print:",
+      "syntax": "ppmtosixel -raw {{path/to/file.ppm}} &gt; {{path/to/file.sixel}}"
+    },
+    {
+      "description": "Add a left margin of 1.5 inches:",
+      "syntax": "ppmtosixel -margin {{path/to/file.ppm}} &gt; {{path/to/file.sixel}}"
+    },
+    {
+      "description": "Encode control codes in a more portable (although less space-efficient) way:",
+      "syntax": "ppmtosixel -7bit {{path/to/file.ppm}} &gt; {{path/to/file.sixel}}"
+    }
+  ]
+}

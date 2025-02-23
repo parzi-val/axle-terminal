@@ -1,0 +1,22 @@
+{
+  "command": "dvc gc",
+  "description": "Remove unused files and directories from the cache or remote storage. More information: https://dvc.org/doc/command-reference/gc.",
+  "useCases": [
+    {
+      "description": "Garbage collect from the cache, keeping only versions referenced by the current workspace:",
+      "syntax": "dvc gc --workspace"
+    },
+    {
+      "description": "Garbage collect from the cache, keeping only versions referenced by branch, tags, and commits:",
+      "syntax": "dvc gc --all-branches --all-tags --all-commits"
+    },
+    {
+      "description": "Garbage collect from the cache, including the default cloud remote storage (if set):",
+      "syntax": "dvc gc --all-commits --cloud"
+    },
+    {
+      "description": "Garbage collect from the cache, including a specific cloud remote storage:",
+      "syntax": "dvc gc --all-commits --cloud --remote {{remote_name}}"
+    }
+  ]
+}

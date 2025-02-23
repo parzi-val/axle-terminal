@@ -1,0 +1,22 @@
+{
+  "command": "betterlockscreen",
+  "description": "Simple, minimal lock screen. More information: https://github.com/betterlockscreen/betterlockscreen.",
+  "useCases": [
+    {
+      "description": "Lock the screen:",
+      "syntax": "betterlockscreen --lock"
+    },
+    {
+      "description": "Change the lock screen background:",
+      "syntax": "betterlockscreen -u {{path/to/image.png}}"
+    },
+    {
+      "description": "Lock the screen, showing some custom text:",
+      "syntax": "betterlockscreen -l pixel -t &quot;{{custom lock screen text}}&quot;"
+    },
+    {
+      "description": "Lock the screen, with a custom monitor off timeout in seconds:",
+      "syntax": "betterlockscreen --off {{5}} -l"
+    }
+  ]
+}

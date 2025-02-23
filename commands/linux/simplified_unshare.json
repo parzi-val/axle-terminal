@@ -1,0 +1,14 @@
+{
+  "command": "unshare",
+  "description": "Execute a command in new user-defined namespaces. More information: https://www.kernel.org/doc/html/latest/userspace-api/unshare.html.",
+  "useCases": [
+    {
+      "description": "Execute a command without sharing access to connected networks:",
+      "syntax": "unshare --net {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Execute a command as a child process without sharing mounts, processes, or networks:",
+      "syntax": "unshare --mount --pid --net --fork {{command}} {{command_arguments}}"
+    }
+  ]
+}

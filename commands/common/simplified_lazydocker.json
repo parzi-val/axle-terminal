@@ -1,0 +1,30 @@
+{
+  "command": "lazydocker",
+  "description": "A terminal UI for managing Docker containers, images, volumes, and more. More information: https://github.com/jesseduffield/lazydocker.",
+  "useCases": [
+    {
+      "description": "Open Lazydocker:",
+      "syntax": "lazydocker"
+    },
+    {
+      "description": "Display the current default configuration:",
+      "syntax": "lazydocker --config"
+    },
+    {
+      "description": "Run Lazydocker in debug mode:",
+      "syntax": "lazydocker --debug"
+    },
+    {
+      "description": "Specify an alternate Docker Compose file:",
+      "syntax": "lazydocker --file {{path/to/docker-compose.yml}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "lazydocker --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "lazydocker --version"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "mkcert",
+  "description": "Make locally-trusted development certificates. More information: https://github.com/FiloSottile/mkcert.",
+  "useCases": [
+    {
+      "description": "Install the local CA in the system trust store:",
+      "syntax": "mkcert -install"
+    },
+    {
+      "description": "Generate certificate and private key for a given domain:",
+      "syntax": "mkcert {{example.org}}"
+    },
+    {
+      "description": "Generate certificate and private key for multiple domains:",
+      "syntax": "mkcert {{example.org}} {{myapp.dev}} {{127.0.0.1}}"
+    },
+    {
+      "description": "Generate wildcard certificate and private key for a given domain and its subdomains:",
+      "syntax": "mkcert &quot;{{*.example.it}}&quot;"
+    },
+    {
+      "description": "Uninstall the local CA:",
+      "syntax": "mkcert -uninstall"
+    }
+  ]
+}

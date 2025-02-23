@@ -1,0 +1,10 @@
+{
+  "command": "fluidsynth",
+  "description": "Synthesize audio from MIDI files. More information: https://github.com/FluidSynth/fluidsynth/wiki/UserManual.",
+  "useCases": [
+    {
+      "description": "Play a MIDI file:",
+      "syntax": "fluidsynth --audio-driver={{pipewire|pulseaudio}} {{path/to/soundfont.sf2}} {{path/to/file.midi}}"
+    }
+  ]
+}

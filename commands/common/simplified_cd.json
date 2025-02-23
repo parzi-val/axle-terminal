@@ -1,0 +1,30 @@
+{
+  "command": "cd",
+  "description": "Change the current working directory. More information: https://manned.org/cd.",
+  "useCases": [
+    {
+      "description": "Go to the specified directory:",
+      "syntax": "cd {{path/to/directory}}"
+    },
+    {
+      "description": "Go up to the parent of the current directory:",
+      "syntax": "cd .."
+    },
+    {
+      "description": "Go to the home directory of the current user:",
+      "syntax": "cd"
+    },
+    {
+      "description": "Go to the home directory of the specified user:",
+      "syntax": "cd ~{{username}}"
+    },
+    {
+      "description": "Go to the previously chosen directory:",
+      "syntax": "cd -"
+    },
+    {
+      "description": "Go to the root directory:",
+      "syntax": "cd /"
+    }
+  ]
+}

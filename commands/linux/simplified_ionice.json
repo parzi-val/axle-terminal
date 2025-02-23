@@ -1,0 +1,30 @@
+{
+  "command": "ionice",
+  "description": "Get or set program I/O scheduling class and priority. Scheduling classes: 1 (realtime), 2 (best-effort), 3 (idle). Priority levels: 0 (the highest) - 7 (the lowest). More information: https://manned.org/ionice.",
+  "useCases": [
+    {
+      "description": "Run a command with the given scheduling class and priority:",
+      "syntax": "ionice -c {{scheduling_class}} -n {{priority}} {{command}}"
+    },
+    {
+      "description": "Set I/O scheduling [c]lass of a running process with a specific [p]id, [P]gid or [u]id:",
+      "syntax": "ionice -c {{scheduling_class}} -{{p|P|u}} {{id}}"
+    },
+    {
+      "description": "Run a command with custom I/O scheduling [c]lass and priority:",
+      "syntax": "ionice -c {{scheduling_class}} -n {{priority}} {{command}}"
+    },
+    {
+      "description": "Ignore failure to set the requested priority:",
+      "syntax": "ionice -t -n {{priority}} -p {{pid}}"
+    },
+    {
+      "description": "Run the command even in case it was not possible to set the desired priority (this can happen due to insufficient privileges or an old kernel version):",
+      "syntax": "ionice -t -n {{priority}} -p {{pid}}"
+    },
+    {
+      "description": "Print the I/O scheduling class and priority of a running process:",
+      "syntax": "ionice -p {{pid}}"
+    }
+  ]
+}

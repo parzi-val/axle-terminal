@@ -1,0 +1,26 @@
+{
+  "command": "hg clone",
+  "description": "Create a copy of an existing repository in a new directory. More information: https://www.mercurial-scm.org/doc/hg.1.html#clone.",
+  "useCases": [
+    {
+      "description": "Clone a repository to a specified directory:",
+      "syntax": "hg clone {{remote_repository_source}} {{destination_path}}"
+    },
+    {
+      "description": "Clone a repository to the head of a specific branch, ignoring later commits:",
+      "syntax": "hg clone --branch {{branch}} {{remote_repository_source}}"
+    },
+    {
+      "description": "Clone a repository with only the .hg directory, without checking out files:",
+      "syntax": "hg clone --noupdate {{remote_repository_source}}"
+    },
+    {
+      "description": "Clone a repository to a specific revision, tag or branch, keeping the entire history:",
+      "syntax": "hg clone --updaterev {{revision}} {{remote_repository_source}}"
+    },
+    {
+      "description": "Clone a repository up to a specific revision without any newer history:",
+      "syntax": "hg clone --rev {{revision}} {{remote_repository_source}}"
+    }
+  ]
+}

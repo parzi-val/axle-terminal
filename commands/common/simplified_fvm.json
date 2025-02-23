@@ -1,0 +1,34 @@
+{
+  "command": "fvm",
+  "description": "Flutter version manager. More information: https://fvm.app/documentation/guides/basic-commands.",
+  "useCases": [
+    {
+      "description": "Install a version of the Flutter SDK. Use without version for project settings:",
+      "syntax": "fvm install {{version}}"
+    },
+    {
+      "description": "Set a specific version of Flutter SDK in a project:",
+      "syntax": "fvm use {{version}} {{options}}"
+    },
+    {
+      "description": "Set a global version of the Flutter SDK:",
+      "syntax": "fvm global {{version}}"
+    },
+    {
+      "description": "Delete the FVM cache:",
+      "syntax": "fvm destroy"
+    },
+    {
+      "description": "Remove a specific version of the Flutter SDK:",
+      "syntax": "fvm remove {{version}}"
+    },
+    {
+      "description": "List all installed versions of the Flutter SDK:",
+      "syntax": "fvm list"
+    },
+    {
+      "description": "List all releases of the Flutter SDK:",
+      "syntax": "fvm releases"
+    }
+  ]
+}

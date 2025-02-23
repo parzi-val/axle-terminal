@@ -1,0 +1,22 @@
+{
+  "command": "zmv",
+  "description": "Move or rename files matching a specified extended glob pattern. See also zcp and zln. More information: https://zsh.sourceforge.net/Doc/Release/User-Contributions.html.",
+  "useCases": [
+    {
+      "description": "Move files using a regular expression-like pattern:",
+      "syntax": "zmv '{{(*).log}}' '{{$1.txt}}'"
+    },
+    {
+      "description": "Preview the result of a move, without making any actual changes:",
+      "syntax": "zmv -n '{{(*).log}}' '{{$1.txt}}'"
+    },
+    {
+      "description": "Interactively move files, with a prompt before every change:",
+      "syntax": "zmv -i '{{(*).log}}' '{{$1.txt}}'"
+    },
+    {
+      "description": "Verbosely print each action as it's being executed:",
+      "syntax": "zmv -v '{{(*).log}}' '{{$1.txt}}'"
+    }
+  ]
+}

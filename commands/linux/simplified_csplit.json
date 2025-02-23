@@ -1,0 +1,26 @@
+{
+  "command": "csplit",
+  "description": "Split a file into pieces. This generates files named \"xx00\", \"xx01\", and so on. More information: https://www.gnu.org/software/coreutils/manual/html_node/csplit-invocation.html.",
+  "useCases": [
+    {
+      "description": "Split a file at lines 5 and 23:",
+      "syntax": "csplit {{path/to/file}} 5 23"
+    },
+    {
+      "description": "Split a file every 5 lines (this will fail if the total number of lines is not divisible by 5):",
+      "syntax": "csplit {{path/to/file}} 5 {*}"
+    },
+    {
+      "description": "Split a file every 5 lines, ignoring exact-division error:",
+      "syntax": "csplit -k {{path/to/file}} 5 {*}"
+    },
+    {
+      "description": "Split a file at line 5 and use a custom prefix for the output files:",
+      "syntax": "csplit {{path/to/file}} 5 -f {{prefix}}"
+    },
+    {
+      "description": "Split a file at a line matching a regular expression:",
+      "syntax": "csplit {{path/to/file}} /{{regular_expression}}/"
+    }
+  ]
+}

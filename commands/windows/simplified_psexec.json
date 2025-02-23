@@ -1,0 +1,26 @@
+{
+  "command": "psexec",
+  "description": "Execute a command-line process on a remote machine. This is an advanced command and it might potentially be dangerous. More information: https://learn.microsoft.com/sysinternals/downloads/psexec.",
+  "useCases": [
+    {
+      "description": "Execute a command using cmd in a remote shell:",
+      "syntax": "psexec \\\\{{remote_host}} cmd"
+    },
+    {
+      "description": "Execute a command on a remote host (pre-authenticated):",
+      "syntax": "psexec \\\\{{remote_host}} -u {{user_name}} -p {{password}}"
+    },
+    {
+      "description": "Execute a command remotely and output the result to a file:",
+      "syntax": "psexec \\\\{{remote_host}} cmd /c {{command}} -an ^&gt;{{path\\to\\file.txt}}"
+    },
+    {
+      "description": "Execute a program to interact with users:",
+      "syntax": "psexec \\\\{{remote_host}} -d -i {{program_name}}"
+    },
+    {
+      "description": "Display the IP configuration of the remote host:",
+      "syntax": "psexec \\\\{{remote_host}} ipconfig /all"
+    }
+  ]
+}

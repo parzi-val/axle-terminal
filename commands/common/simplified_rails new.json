@@ -1,0 +1,26 @@
+{
+  "command": "rails new",
+  "description": "Create a new Rails application. More information: https://guides.rubyonrails.org/command_line.html#rails-new.",
+  "useCases": [
+    {
+      "description": "Create a Rails app named blog in the current directory:",
+      "syntax": "rails new blog"
+    },
+    {
+      "description": "Create a Rails app with API-only configuration:",
+      "syntax": "rails new {{app_name}} --api"
+    },
+    {
+      "description": "Create a Rails app with postgresql as the database:",
+      "syntax": "rails new {{app_name}} --database postgresql"
+    },
+    {
+      "description": "Create a Rails app without generating JavaScript files:",
+      "syntax": "rails new {{app_name}} --skip-javascript"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rails new --help"
+    }
+  ]
+}

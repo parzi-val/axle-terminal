@@ -1,0 +1,30 @@
+{
+  "command": "b3sum",
+  "description": "Calculate BLAKE3 cryptographic checksums. More information: https://github.com/BLAKE3-team/BLAKE3/tree/master/b3sum.",
+  "useCases": [
+    {
+      "description": "Calculate the BLAKE3 checksum for one or more files:",
+      "syntax": "b3sum {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Calculate and save the list of BLAKE3 checksums to a file:",
+      "syntax": "b3sum {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/file.b3}}"
+    },
+    {
+      "description": "Calculate a BLAKE3 checksum from stdin:",
+      "syntax": "{{command}} | b3sum"
+    },
+    {
+      "description": "Read a file of BLAKE3 checksums and filenames and verify all files have matching checksums:",
+      "syntax": "b3sum --check {{path/to/file.b3}}"
+    },
+    {
+      "description": "Only show a message for missing files or when verification fails:",
+      "syntax": "b3sum --check --quiet {{path/to/file.b3}}"
+    },
+    {
+      "description": "Check a known BLAKE3 checksum of a file:",
+      "syntax": "echo {{known_blake3_checksum_of_the_file}} {{path/to/file}} | b3sum --check"
+    }
+  ]
+}

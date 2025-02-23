@@ -1,0 +1,30 @@
+{
+  "command": "pkcon",
+  "description": "Command line client for PackageKit console program used by Discover and Gnome software and alternative to 'apt'. More information: https://manned.org/pkcon.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "pkcon install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "pkcon remove {{package}}"
+    },
+    {
+      "description": "Refresh the package cache:",
+      "syntax": "pkcon refresh"
+    },
+    {
+      "description": "Update packages:",
+      "syntax": "pkcon update"
+    },
+    {
+      "description": "Search for a specific package:",
+      "syntax": "pkcon search {{package}}"
+    },
+    {
+      "description": "List all available packages:",
+      "syntax": "pkcon get-packages"
+    }
+  ]
+}

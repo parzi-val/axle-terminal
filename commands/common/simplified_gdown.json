@@ -1,0 +1,26 @@
+{
+  "command": "gdown",
+  "description": "Download files from Google Drive and other URLs. More information: https://github.com/wkentaro/gdown.",
+  "useCases": [
+    {
+      "description": "Download a file from a URL:",
+      "syntax": "gdown {{url}}"
+    },
+    {
+      "description": "Download using a file ID:",
+      "syntax": "gdown {{file_id}}"
+    },
+    {
+      "description": "Download with fuzzy file ID extraction (also works with https://docs.google.com links):",
+      "syntax": "gdown --fuzzy {{url}}"
+    },
+    {
+      "description": "Download a folder using its ID or the full URL:",
+      "syntax": "gdown {{folder_id|url}} -O {{path/to/output_directory}} --folder"
+    },
+    {
+      "description": "Download a tar archive, write it to stdout and extract it:",
+      "syntax": "gdown {{tar_url}} -O - --quiet | tar xvf -"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "mitmproxy",
+  "description": "An interactive man-in-the-middle HTTP proxy. See also: mitmweb and mitmdump. More information: https://docs.mitmproxy.org/stable/.",
+  "useCases": [
+    {
+      "description": "Start mitmproxy with default settings (will listen on port 8080):",
+      "syntax": "mitmproxy"
+    },
+    {
+      "description": "Start mitmproxy bound to a custom address and port:",
+      "syntax": "mitmproxy --listen-host {{ip_address}} {{-p|--listen-port}} {{port}}"
+    },
+    {
+      "description": "Start mitmproxy using a script to process traffic:",
+      "syntax": "mitmproxy {{-s|--scripts}} {{path/to/script.py}}"
+    },
+    {
+      "description": "Export the logs with SSL/TLS master keys to external programs (wireshark, etc.):",
+      "syntax": "SSLKEYLOGFILE=&quot;{{path/to/file}}&quot; mitmproxy"
+    },
+    {
+      "description": "Specify mode of operation of the proxy server (regular is the default):",
+      "syntax": "mitmproxy {{-m|--mode}} {{regular|transparent|socks5|...}}"
+    },
+    {
+      "description": "Set the console layout:",
+      "syntax": "mitmproxy --console-layout {{horizontal|single|vertical}}"
+    }
+  ]
+}

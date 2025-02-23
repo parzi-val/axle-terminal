@@ -1,0 +1,26 @@
+{
+  "command": "azurite",
+  "description": "Azure Storage API compatible server (emulator) in local environment. More information: https://www.npmjs.com/package/azurite.",
+  "useCases": [
+    {
+      "description": "Use an existing location as workspace path:",
+      "syntax": "azurite {{-l|--location}} {{path/to/directory}}"
+    },
+    {
+      "description": "Disable access log displayed in console:",
+      "syntax": "azurite {{-s|--silent}}"
+    },
+    {
+      "description": "Enable debug log by providing a file path as log destination:",
+      "syntax": "azurite {{-d|--debug}} {{path/to/debug.log}}"
+    },
+    {
+      "description": "Customize the listening address of Blob/Queue/Table service:",
+      "syntax": "azurite {{--blobHost|--queueHost|--tableHost}} {{0.0.0.0}}"
+    },
+    {
+      "description": "Customize the listening port of Blob/Queue/Table service:",
+      "syntax": "azurite {{--blobPort|--queuePort|--tablePort}} {{8888}}"
+    }
+  ]
+}

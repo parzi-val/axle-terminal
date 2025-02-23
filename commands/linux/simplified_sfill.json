@@ -1,0 +1,26 @@
+{
+  "command": "sfill",
+  "description": "Securely overwrite the free space and inodes of the partition where the specified directory resides. More information: https://manned.org/sfill.",
+  "useCases": [
+    {
+      "description": "Overwrite free space and inodes of a disk with 38 writes (slow but secure):",
+      "syntax": "sfill {{/path/to/mounted_disk_directory}}"
+    },
+    {
+      "description": "Overwrite free space and inodes of a disk with 6 writes (fast but less secure) and show status:",
+      "syntax": "sfill -l -v {{/path/to/mounted_disk_directory}}"
+    },
+    {
+      "description": "Overwrite free space and inodes of a disk with 1 write (very fast but insecure) and show status:",
+      "syntax": "sfill -ll -v {{/path/to/mounted_disk_directory}}"
+    },
+    {
+      "description": "Overwrite only free space of a disk:",
+      "syntax": "sfill -I {{/path/to/mounted_disk_directory}}"
+    },
+    {
+      "description": "Overwrite only free inodes of a disk:",
+      "syntax": "sfill -i {{/path/to/mounted_disk_directory}}"
+    }
+  ]
+}

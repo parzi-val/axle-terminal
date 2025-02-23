@@ -1,0 +1,22 @@
+{
+  "command": "hg",
+  "description": "Mercurial - a distributed source control management system. Some subcommands such as commit have their own usage documentation. More information: https://www.mercurial-scm.org.",
+  "useCases": [
+    {
+      "description": "Execute a Mercurial command:",
+      "syntax": "hg {{command}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "hg help"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "hg help {{command}}"
+    },
+    {
+      "description": "Check the Mercurial version:",
+      "syntax": "hg --version"
+    }
+  ]
+}

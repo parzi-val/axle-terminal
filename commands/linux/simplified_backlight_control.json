@@ -1,0 +1,18 @@
+{
+  "command": "backlight_control",
+  "description": "Control a linux machine's backlight using percentage values. More information: https://github.com/Hendrikto/backlight_control.",
+  "useCases": [
+    {
+      "description": "Increase/decrease the backlight by a specific percent count:",
+      "syntax": "backlight_control {{+|-}}{{5}}"
+    },
+    {
+      "description": "Set the backlight strength to a specific percent count:",
+      "syntax": "backlight_control {{90}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "backlight_control"
+    }
+  ]
+}

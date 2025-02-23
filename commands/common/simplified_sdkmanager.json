@@ -1,0 +1,22 @@
+{
+  "command": "sdkmanager",
+  "description": "Install packages for the Android SDK. More information: https://developer.android.com/tools/sdkmanager.",
+  "useCases": [
+    {
+      "description": "List available packages:",
+      "syntax": "sdkmanager --list"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "sdkmanager {{package}}"
+    },
+    {
+      "description": "Update every installed package:",
+      "syntax": "sdkmanager --update"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "sdkmanager --uninstall {{package}}"
+    }
+  ]
+}

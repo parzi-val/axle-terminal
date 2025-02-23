@@ -1,0 +1,14 @@
+{
+  "command": "git repack",
+  "description": "Pack unpacked objects in a Git repository. More information: https://git-scm.com/docs/git-repack.",
+  "useCases": [
+    {
+      "description": "Pack unpacked objects in the current directory:",
+      "syntax": "git repack"
+    },
+    {
+      "description": "Also remove redundant objects after packing:",
+      "syntax": "git repack -d"
+    }
+  ]
+}

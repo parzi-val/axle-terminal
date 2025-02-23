@@ -1,0 +1,30 @@
+{
+  "command": "virt-xml",
+  "description": "Edit libvirt Domain XML files with explicit command-line options. Note: 'domain' refers to the name, UUID or ID for the existing VMs (See: tldr virsh). More information: https://github.com/virt-manager/virt-manager/blob/main/man/virt-xml.rst.",
+  "useCases": [
+    {
+      "description": "List all the suboptions for a specific option:",
+      "syntax": "virt-xml --{{option}}=?"
+    },
+    {
+      "description": "List all the suboptions for disk, network, and boot:",
+      "syntax": "virt-xml --disk=? --network=? --boot=?"
+    },
+    {
+      "description": "Edit a value for a specific domain:",
+      "syntax": "virt-xml {{domain}} --edit --{{option}} {{suboption}}={{new_value}}"
+    },
+    {
+      "description": "Change the description for a specific domain:",
+      "syntax": "virt-xml {{domain}} --edit --metadata description=&quot;{{new_description}}&quot;"
+    },
+    {
+      "description": "Enable/Disable the boot device menu for a specific domain:",
+      "syntax": "virt-xml {{domain}} --edit --boot bootmenu={{on|off}}"
+    },
+    {
+      "description": "Attach host USB hub to a running VM (See: tldr lsusb):",
+      "syntax": "virt-xml {{domain}} --update --add-device --hostdev {{bus}}.{{device}}"
+    }
+  ]
+}

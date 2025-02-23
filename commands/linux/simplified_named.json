@@ -1,0 +1,26 @@
+{
+  "command": "named",
+  "description": "Execute the DNS (Dynamic Name Service) server daemon that converts host names to IP addresses and vice versa. More information: https://manned.org/named.",
+  "useCases": [
+    {
+      "description": "Read the default configuration file /etc/named.conf, read any initial data and listen for queries:",
+      "syntax": "named"
+    },
+    {
+      "description": "Read a custom configuration file:",
+      "syntax": "named -c {{path/to/named.conf}}"
+    },
+    {
+      "description": "Use IPv4 or IPv6 only, even if the host machine is capable of utilising other protocols:",
+      "syntax": "named {{-4|-6}}"
+    },
+    {
+      "description": "Listen for queries on a specific port instead of the default port 53:",
+      "syntax": "named -p {{port}}"
+    },
+    {
+      "description": "Run the server in the foreground and do not daemonize:",
+      "syntax": "named -f"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "vboxmanage-createvm",
+  "description": "Create a new virtual machine. More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-createvm.",
+  "useCases": [
+    {
+      "description": "Create a new VM with default settings:",
+      "syntax": "VBoxManage createvm --name {{vm_name}}"
+    },
+    {
+      "description": "Set the base folder where the VM configuration will be stored:",
+      "syntax": "VBoxManage createvm --name {{vm_name}} --basefolder {{path/to/directory}}"
+    },
+    {
+      "description": "Set the guest OS type (one of VBoxManage list ostypes) for the imported VM:",
+      "syntax": "VBoxManage createvm --name {{vm_name}} --ostype {{ostype}}"
+    },
+    {
+      "description": "Register the created VM in VirtualBox:",
+      "syntax": "VBoxManage createvm --name {{vm_name}} --register"
+    },
+    {
+      "description": "Set the VM to the specified groups:",
+      "syntax": "VBoxManage createvm --name {{vm_name}} --group {{group1,group2,...}}"
+    },
+    {
+      "description": "Set the Universally Unique Identifier (UUID) of the VM:",
+      "syntax": "VBoxManage createvm --name {{vm_name}} --uuid {{uuid}}"
+    },
+    {
+      "description": "Set the cipher to use for encryption:",
+      "syntax": "VBoxManage createvm --name {{vm_name}} --cipher {{AES-128|AES-256}}"
+    }
+  ]
+}

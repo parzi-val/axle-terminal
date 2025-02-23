@@ -1,0 +1,34 @@
+{
+  "command": "picotool",
+  "description": "Manage Raspberry Pi Pico boards. More information: https://github.com/raspberrypi/picotool.",
+  "useCases": [
+    {
+      "description": "Display information about the currently loaded program on a Pico:",
+      "syntax": "picotool info"
+    },
+    {
+      "description": "Load a binary onto a Pico:",
+      "syntax": "picotool load {{path/to/binary}}"
+    },
+    {
+      "description": "Convert an ELF or BIN file to UF2:",
+      "syntax": "picotool uf2 convert {{path/to/elf_or_bin}} {{path/to/output}}"
+    },
+    {
+      "description": "Reboot a Pico:",
+      "syntax": "picotool reboot"
+    },
+    {
+      "description": "List all known registers:",
+      "syntax": "picotool otp list"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "picotool version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "picotool help"
+    }
+  ]
+}

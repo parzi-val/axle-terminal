@@ -1,0 +1,10 @@
+{
+  "command": "line",
+  "description": "Read a single line of input. More information: https://manned.org/line.1.",
+  "useCases": [
+    {
+      "description": "Read input:",
+      "syntax": "line"
+    }
+  ]
+}

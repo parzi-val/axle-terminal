@@ -1,0 +1,38 @@
+{
+  "command": "ani-cli",
+  "description": "A cli to browse and watch anime. More information: https://github.com/pystardust/ani-cli.",
+  "useCases": [
+    {
+      "description": "Search anime by name:",
+      "syntax": "ani-cli &quot;{{anime_name}}&quot;"
+    },
+    {
+      "description": "[d]ownload episode:",
+      "syntax": "ani-cli -d &quot;{{anime_name}}&quot;"
+    },
+    {
+      "description": "[d]ownload a [r]ange of episodes:",
+      "syntax": "ani-cli -d -r &quot;{{1 6}}&quot; &quot;{{anime_name}}&quot;"
+    },
+    {
+      "description": "[d]ownload the entire series (a range of all episodes):",
+      "syntax": "ani-cli -d -r &quot;1 -1&quot; &quot;{{anime_name}}&quot;"
+    },
+    {
+      "description": "Use [v]LC as the media player:",
+      "syntax": "ani-cli -v &quot;{{anime_name}}&quot;"
+    },
+    {
+      "description": "Watch a specific [e]pisode:",
+      "syntax": "ani-cli -e {{episode_number}} &quot;{{anime_name}}&quot;"
+    },
+    {
+      "description": "[c]ontinue watching anime from history:",
+      "syntax": "ani-cli -c"
+    },
+    {
+      "description": "[U]pdate ani-cli:",
+      "syntax": "ani-cli -U"
+    }
+  ]
+}

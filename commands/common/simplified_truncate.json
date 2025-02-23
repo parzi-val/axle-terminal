@@ -1,0 +1,26 @@
+{
+  "command": "truncate",
+  "description": "Shrink or extend the size of a file to the specified size. More information: https://www.gnu.org/software/coreutils/manual/html_node/truncate-invocation.html.",
+  "useCases": [
+    {
+      "description": "Set a size of 10 GB to an existing file, or create a new file with the specified size:",
+      "syntax": "truncate --size 10G {{path/to/file}}"
+    },
+    {
+      "description": "Extend the file size by 50 MiB, fill with holes (which reads as zero bytes):",
+      "syntax": "truncate --size +50M {{path/to/file}}"
+    },
+    {
+      "description": "Shrink the file by 2 GiB, by removing data from the end of file:",
+      "syntax": "truncate --size -2G {{path/to/file}}"
+    },
+    {
+      "description": "Empty the file's content:",
+      "syntax": "truncate --size 0 {{path/to/file}}"
+    },
+    {
+      "description": "Empty the file's content, but do not create the file if it does not exist:",
+      "syntax": "truncate --no-create --size 0 {{path/to/file}}"
+    }
+  ]
+}

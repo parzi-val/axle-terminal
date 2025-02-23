@@ -1,0 +1,18 @@
+{
+  "command": "cargo yank",
+  "description": "Remove a pushed crate from the index. This should only be used when you accidentally release a significantly broken crate. Note: this does not remove any data. The crate is still present after a yank - this just prevents new projects from using it. More information: https://doc.rust-lang.org/cargo/commands/cargo-yank.html.",
+  "useCases": [
+    {
+      "description": "Yank the specified version of a crate:",
+      "syntax": "cargo yank {{crate}}@{{version}}"
+    },
+    {
+      "description": "Undo a yank (i.e. allow downloading it again):",
+      "syntax": "cargo yank --undo {{crate}}@{{version}}"
+    },
+    {
+      "description": "Use the specified registry (registry names can be defined in the configuration - the default is https://crates.io):",
+      "syntax": "cargo yank --registry {{name}} {{crate}}@{{version}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "rev",
+  "description": "Reverse a line of text or a file. More information: https://manned.org/rev.",
+  "useCases": [
+    {
+      "description": "Reverse text typed into terminal:",
+      "syntax": "rev"
+    },
+    {
+      "description": "Reverse the text string \"hello\":",
+      "syntax": "echo &quot;hello&quot; | rev"
+    },
+    {
+      "description": "Reverse an entire file and print to stdout:",
+      "syntax": "rev {{path/to/file}}"
+    },
+    {
+      "description": "Use '\\0' as a line separator (zero termination):",
+      "syntax": "rev -0 {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rev -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "rev -V"
+    }
+  ]
+}

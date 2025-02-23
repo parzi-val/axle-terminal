@@ -1,0 +1,34 @@
+{
+  "command": "git remote",
+  "description": "Manage set of tracked repositories (\"remotes\"). More information: https://git-scm.com/docs/git-remote.",
+  "useCases": [
+    {
+      "description": "List existing remotes with their names and URLs:",
+      "syntax": "git remote {{-v|--verbose}}"
+    },
+    {
+      "description": "Show information about a remote:",
+      "syntax": "git remote show {{remote_name}}"
+    },
+    {
+      "description": "Add a remote:",
+      "syntax": "git remote add {{remote_name}} {{remote_url}}"
+    },
+    {
+      "description": "Change the URL of a remote (use --add to keep the existing URL):",
+      "syntax": "git remote set-url {{remote_name}} {{new_url}}"
+    },
+    {
+      "description": "Show the URL of a remote:",
+      "syntax": "git remote get-url {{remote_name}}"
+    },
+    {
+      "description": "Remove a remote:",
+      "syntax": "git remote remove {{remote_name}}"
+    },
+    {
+      "description": "Rename a remote:",
+      "syntax": "git remote rename {{old_name}} {{new_name}}"
+    }
+  ]
+}

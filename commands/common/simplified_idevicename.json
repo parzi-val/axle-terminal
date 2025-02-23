@@ -1,0 +1,14 @@
+{
+  "command": "idevicename",
+  "description": "Display the device name or set it to a new name. More information: https://manned.org/idevicename.",
+  "useCases": [
+    {
+      "description": "Display the current device name:",
+      "syntax": "idevicename"
+    },
+    {
+      "description": "Set a new device name:",
+      "syntax": "idevicename {{new_name}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "vncserver",
+  "description": "Launch a VNC (Virtual Network Computing) desktop. More information: https://manned.org/vncserver.1x.",
+  "useCases": [
+    {
+      "description": "Launch a VNC Server on next available display:",
+      "syntax": "vncserver"
+    },
+    {
+      "description": "Launch a VNC Server with specific screen geometry:",
+      "syntax": "vncserver --geometry {{width}}x{{height}}"
+    },
+    {
+      "description": "Kill an instance of VNC Server running on a specific display:",
+      "syntax": "vncserver --kill :{{display_number}}"
+    }
+  ]
+}

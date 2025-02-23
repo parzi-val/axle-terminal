@@ -1,0 +1,30 @@
+{
+  "command": "telinit",
+  "description": "Change SysV runlevel. Since the concept SysV runlevels is obsolete the runlevel requests will be transparently translated into systemd unit activation requests. More information: https://manned.org/telinit.",
+  "useCases": [
+    {
+      "description": "Power off the machine:",
+      "syntax": "telinit 0"
+    },
+    {
+      "description": "Reboot the machine:",
+      "syntax": "telinit 6"
+    },
+    {
+      "description": "Change SysV run level:",
+      "syntax": "telinit {{2|3|4|5}}"
+    },
+    {
+      "description": "Change to rescue mode:",
+      "syntax": "telinit 1"
+    },
+    {
+      "description": "Reload daemon configuration:",
+      "syntax": "telinit q"
+    },
+    {
+      "description": "Do not send a wall message before reboot/power-off (6/0):",
+      "syntax": "telinit --no-wall {{value}}"
+    }
+  ]
+}

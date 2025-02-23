@@ -1,0 +1,38 @@
+{
+  "command": "virt-manager",
+  "description": "A desktop user interface for managing KVM and Xen virtual machines and LXC containers. More information: https://manned.org/virt-manager.1.",
+  "useCases": [
+    {
+      "description": "Launch the GUI:",
+      "syntax": "virt-manager"
+    },
+    {
+      "description": "Connect to a hypervisor:",
+      "syntax": "virt-manager --connect {{hypervisor_uri}}"
+    },
+    {
+      "description": "Don't fork virt-manager process into background on startup:",
+      "syntax": "virt-manager --no-fork"
+    },
+    {
+      "description": "Print debug output:",
+      "syntax": "virt-manager --debug"
+    },
+    {
+      "description": "Open the \"New VM\" wizard:",
+      "syntax": "virt-manager --show-domain-creator"
+    },
+    {
+      "description": "Show domain details window for a specific virtual machine/container:",
+      "syntax": "virt-manager --show-domain-editor {{name|id|uuid}}"
+    },
+    {
+      "description": "Show domain performance window for a specific virtual machine/container:",
+      "syntax": "virt-manager --show-domain-performance {{name|id|uuid}}"
+    },
+    {
+      "description": "Show connection details window:",
+      "syntax": "virt-manager --show-host-summary"
+    }
+  ]
+}

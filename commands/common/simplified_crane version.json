@@ -1,0 +1,14 @@
+{
+  "command": "crane version",
+  "description": "Print the version of a binary. The version string is completely dependent on how the binary was built, so you should not depend on the version format. It may change without notice. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_version.md.",
+  "useCases": [
+    {
+      "description": "Display version:",
+      "syntax": "crane version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane version {{-h|--help}}"
+    }
+  ]
+}

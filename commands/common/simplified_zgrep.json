@@ -1,0 +1,34 @@
+{
+  "command": "zgrep",
+  "description": "Grep text patterns from files within compressed file (equivalent to grep -Z). More information: https://manned.org/zgrep.",
+  "useCases": [
+    {
+      "description": "Grep a pattern in a compressed file (case-sensitive):",
+      "syntax": "zgrep {{pattern}} {{path/to/compressed/file}}"
+    },
+    {
+      "description": "Grep a pattern in a compressed file (case-insensitive):",
+      "syntax": "zgrep -i {{pattern}} {{path/to/compressed/file}}"
+    },
+    {
+      "description": "Output count of lines containing matched pattern in a compressed file:",
+      "syntax": "zgrep -c {{pattern}} {{path/to/compressed/file}}"
+    },
+    {
+      "description": "Display the lines which don’t have the pattern present (Invert the search function):",
+      "syntax": "zgrep -v {{pattern}} {{path/to/compressed/file}}"
+    },
+    {
+      "description": "Grep a compressed file for multiple patterns:",
+      "syntax": "zgrep -e &quot;{{pattern_1}}&quot; -e &quot;{{pattern_2}}&quot; {{path/to/compressed/file}}"
+    },
+    {
+      "description": "Use extended regular expressions (supporting ?, +, {}, () and |):",
+      "syntax": "zgrep -E {{regular_expression}} {{path/to/file}}"
+    },
+    {
+      "description": "Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match:",
+      "syntax": "zgrep -{{C|B|A}} {{3}} {{pattern}} {{path/to/compressed/file}}"
+    }
+  ]
+}

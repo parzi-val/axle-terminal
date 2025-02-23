@@ -1,0 +1,18 @@
+{
+  "command": "npm ci",
+  "description": "Clean install of npm project dependencies for automated environments. Installs packages based on package-lock.json or npm-shrinkwrap.json. More information: https://docs.npmjs.com/cli/commands/npm-ci.",
+  "useCases": [
+    {
+      "description": "Install project dependencies from package-lock.json or npm-shrinkwrap.json:",
+      "syntax": "npm ci"
+    },
+    {
+      "description": "Install project dependencies but skip the specified dependency type:",
+      "syntax": "npm ci --omit={{dev|optional|peer}}"
+    },
+    {
+      "description": "Install project dependencies without running any pre-/post-scripts defined in package.json:",
+      "syntax": "npm ci --ignore-scripts"
+    }
+  ]
+}

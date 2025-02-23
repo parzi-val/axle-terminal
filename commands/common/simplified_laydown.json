@@ -1,0 +1,26 @@
+{
+  "command": "laydown",
+  "description": "Command line application to prepare for Daily Standup. More information: https://github.com/badjr13/laydown.",
+  "useCases": [
+    {
+      "description": "Add an item to DID section:",
+      "syntax": "laydown did {{item}}"
+    },
+    {
+      "description": "Add an item to DOING section:",
+      "syntax": "laydown doing {{item}}"
+    },
+    {
+      "description": "Clear all items:",
+      "syntax": "laydown clear"
+    },
+    {
+      "description": "Use an editor to edit current data:",
+      "syntax": "laydown edit"
+    },
+    {
+      "description": "Archive and clear current data:",
+      "syntax": "laydown archive"
+    }
+  ]
+}

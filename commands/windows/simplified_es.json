@@ -1,0 +1,38 @@
+{
+  "command": "es",
+  "description": "Command-line interface for Everything, a fast file and folder search tool for Windows. Requires Everything to be installed and running in the background. More information: https://www.voidtools.com/support/everything/command_line_interface/.",
+  "useCases": [
+    {
+      "description": "Search for a file or folder by name:",
+      "syntax": "es {{search_term}}"
+    },
+    {
+      "description": "Search using a regular expression:",
+      "syntax": "es -r {{regex_pattern}}"
+    },
+    {
+      "description": "Match whole words:",
+      "syntax": "es -w {{search_term}}"
+    },
+    {
+      "description": "Limit the number of results shown:",
+      "syntax": "es -n {{10}} {{search_term}}"
+    },
+    {
+      "description": "Search within a specific folder:",
+      "syntax": "es -path {{folder_path}} {{search_term}}"
+    },
+    {
+      "description": "List folders only:",
+      "syntax": "es /ad"
+    },
+    {
+      "description": "List files only:",
+      "syntax": "es /a-d"
+    },
+    {
+      "description": "Sort results (e.g., by name):",
+      "syntax": "es -sort {{name-ascending}}"
+    }
+  ]
+}

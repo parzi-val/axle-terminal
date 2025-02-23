@@ -1,0 +1,10 @@
+{
+  "command": "ppmnorm",
+  "description": "This command has been superseded by pnmnorm. More information: https://netpbm.sourceforge.net/doc/ppmnorm.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pnmnorm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "apktool",
+  "description": "Reverse engineer APK files. More information: https://ibotpeaches.github.io/Apktool/.",
+  "useCases": [
+    {
+      "description": "Decode an APK file:",
+      "syntax": "apktool d {{path/to/file.apk}}"
+    },
+    {
+      "description": "Build an APK file from a directory:",
+      "syntax": "apktool b {{path/to/directory}}"
+    },
+    {
+      "description": "Install and store a framework:",
+      "syntax": "apktool if {{path/to/framework.apk}}"
+    }
+  ]
+}

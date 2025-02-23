@@ -1,0 +1,38 @@
+{
+  "command": "ls",
+  "description": "List directory contents. More information: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html.",
+  "useCases": [
+    {
+      "description": "List files one per line:",
+      "syntax": "ls -1"
+    },
+    {
+      "description": "List [a]ll files, including hidden files:",
+      "syntax": "ls -a"
+    },
+    {
+      "description": "List files with a trailing symbol to indicate file type (directory/, symbolic_link@, executable*, ...):",
+      "syntax": "ls -F"
+    },
+    {
+      "description": "List [a]ll files in [l]ong format (permissions, ownership, size, and modification date):",
+      "syntax": "ls -la"
+    },
+    {
+      "description": "List files in [l]ong format with size displayed using [h]uman-readable units (KiB, MiB, GiB):",
+      "syntax": "ls -lh"
+    },
+    {
+      "description": "List files in [l]ong format, sorted by [S]ize (descending) [R]ecursively:",
+      "syntax": "ls -lSR"
+    },
+    {
+      "description": "List files in [l]ong format, sorted by [t]ime the file was modified and in [r]everse order (oldest first):",
+      "syntax": "ls -ltr"
+    },
+    {
+      "description": "Only list [d]irectories:",
+      "syntax": "ls -d */"
+    }
+  ]
+}

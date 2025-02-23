@@ -1,0 +1,30 @@
+{
+  "command": "glab issue",
+  "description": "Manage GitLab issues. More information: https://glab.readthedocs.io/en/latest/issue.",
+  "useCases": [
+    {
+      "description": "Display a specific issue:",
+      "syntax": "glab issue view {{issue_number}}"
+    },
+    {
+      "description": "Display a specific issue in the default web browser:",
+      "syntax": "glab issue view {{issue_number}} --web"
+    },
+    {
+      "description": "Create a new issue in the default web browser:",
+      "syntax": "glab issue create --web"
+    },
+    {
+      "description": "List the last 10 issues with the bug label:",
+      "syntax": "glab issue list --per-page {{10}} --label &quot;{{bug}}&quot;"
+    },
+    {
+      "description": "List closed issues made by a specific user:",
+      "syntax": "glab issue list --closed --author {{username}}"
+    },
+    {
+      "description": "Reopen a specific issue:",
+      "syntax": "glab issue reopen {{issue_number}}"
+    }
+  ]
+}

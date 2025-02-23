@@ -1,0 +1,30 @@
+{
+  "command": "whoami",
+  "description": "Display details about the current user. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/whoami.",
+  "useCases": [
+    {
+      "description": "Display the username of the current user:",
+      "syntax": "whoami"
+    },
+    {
+      "description": "Display the groups that the current user is a member of:",
+      "syntax": "whoami /groups"
+    },
+    {
+      "description": "Display the privileges of the current user:",
+      "syntax": "whoami /priv"
+    },
+    {
+      "description": "Display the user principal name (UPN) of the current user:",
+      "syntax": "whoami /upn"
+    },
+    {
+      "description": "Display the logon ID of the current user:",
+      "syntax": "whoami /logonid"
+    },
+    {
+      "description": "Display all information for the current user:",
+      "syntax": "whoami /all"
+    }
+  ]
+}

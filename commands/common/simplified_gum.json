@@ -1,0 +1,30 @@
+{
+  "command": "gum",
+  "description": "Make glamorous shell scripts. More information: https://github.com/charmbracelet/gum.",
+  "useCases": [
+    {
+      "description": "Interactively pick a specific option to print to stdout:",
+      "syntax": "gum choose &quot;{{option_1}}&quot; &quot;{{option_2}}&quot; &quot;{{option_3}}&quot;"
+    },
+    {
+      "description": "Open an interactive prompt for the user to input a string with a specific placeholder:",
+      "syntax": "gum input --placeholder &quot;{{value}}&quot;"
+    },
+    {
+      "description": "Open an interactive confirmation prompt and exit with either 0 or 1:",
+      "syntax": "gum confirm &quot;{{Continue?}}&quot; --default=false --affirmative &quot;{{Yes}}&quot; --negative &quot;{{No}}&quot; {{&amp;&amp; echo &quot;Yes selected&quot; || echo &quot;No selected&quot;}}"
+    },
+    {
+      "description": "Show a spinner while a command is taking place with text alongside:",
+      "syntax": "gum spin --spinner {{dot|line|minidot|jump|pulse|points|globe|moon|monkey|meter|hamburger}} --title &quot;{{loading...}}&quot; -- {{command}}"
+    },
+    {
+      "description": "Format text to include emojis:",
+      "syntax": "gum format -t {{emoji}} &quot;{{:smile: :heart: hello}}&quot;"
+    },
+    {
+      "description": "Interactively prompt for multi-line text (CTRL + D to save) and write to data.txt:",
+      "syntax": "gum write &gt; {{data.txt}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "mesg",
+  "description": "Check or set a terminal's ability to receive messages from other users, usually from the write command. See also write, talk. More information: https://manned.org/mesg.1p.",
+  "useCases": [
+    {
+      "description": "Check terminal's openness to write messages:",
+      "syntax": "mesg"
+    },
+    {
+      "description": "Disallow receiving messages from the write command:",
+      "syntax": "mesg n"
+    },
+    {
+      "description": "Allow receiving messages from the write command:",
+      "syntax": "mesg y"
+    }
+  ]
+}

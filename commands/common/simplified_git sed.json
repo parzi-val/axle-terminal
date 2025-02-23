@@ -1,0 +1,22 @@
+{
+  "command": "git sed",
+  "description": "Replace patterns in git-controlled files using sed. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-sed.",
+  "useCases": [
+    {
+      "description": "Replace the specified text in the current repository:",
+      "syntax": "git sed '{{find_text}}' '{{replace_text}}'"
+    },
+    {
+      "description": "Replace the specified text and then commit the resulting changes with a standard commit message:",
+      "syntax": "git sed -c '{{find_text}}' '{{replace_text}}'"
+    },
+    {
+      "description": "Replace the specified text, using regular expressions:",
+      "syntax": "git sed -f g '{{find_text}}' '{{replace_text}}'"
+    },
+    {
+      "description": "Replace a specific text in all files under a given directory:",
+      "syntax": "git sed '{{find_text}}' '{{replace_text}}' -- {{path/to/directory}}"
+    }
+  ]
+}

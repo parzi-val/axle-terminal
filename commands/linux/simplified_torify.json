@@ -1,0 +1,34 @@
+{
+  "command": "torify",
+  "description": "Route network traffic through the Tor network. Note: This command has been deprecated, and is now a backwards-compatible wrapper of torsocks. More information: https://manned.org/torify.",
+  "useCases": [
+    {
+      "description": "Route traffic via Tor:",
+      "syntax": "torify {{command}}"
+    },
+    {
+      "description": "Toggle Tor in shell:",
+      "syntax": "torify {{on|off}}"
+    },
+    {
+      "description": "Spawn a Tor-enabled shell:",
+      "syntax": "torify --shell"
+    },
+    {
+      "description": "Check for a Tor-enabled shell:",
+      "syntax": "torify show"
+    },
+    {
+      "description": "Specify Tor configuration file:",
+      "syntax": "torify -c {{config-file}} {{command}}"
+    },
+    {
+      "description": "Use a specific Tor SOCKS proxy:",
+      "syntax": "torify -P {{proxy}} {{command}}"
+    },
+    {
+      "description": "Redirect output to a file:",
+      "syntax": "torify {{command}} &gt; {{path/to/output}}"
+    }
+  ]
+}

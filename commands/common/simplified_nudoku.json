@@ -1,0 +1,38 @@
+{
+  "command": "nudoku",
+  "description": "Sudoku game in terminal. More information: https://jubalh.github.io/nudoku/.",
+  "useCases": [
+    {
+      "description": "Start a sudoku game:",
+      "syntax": "nudoku"
+    },
+    {
+      "description": "Choose the difficulty of the game:",
+      "syntax": "nudoku -d {{easy|normal|hard}}"
+    },
+    {
+      "description": "Navigate the board:",
+      "syntax": "{{h|j|k|l}} OR {{Left|Down|Up|Right arrow key}}"
+    },
+    {
+      "description": "Delete a number:",
+      "syntax": "{{Backspace|x}}"
+    },
+    {
+      "description": "Get a hint:",
+      "syntax": "H"
+    },
+    {
+      "description": "See the complete solution:",
+      "syntax": "S"
+    },
+    {
+      "description": "Create a new puzzle:",
+      "syntax": "N"
+    },
+    {
+      "description": "Quit the game:",
+      "syntax": "Q"
+    }
+  ]
+}

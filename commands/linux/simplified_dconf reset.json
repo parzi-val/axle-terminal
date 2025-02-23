@@ -1,0 +1,14 @@
+{
+  "command": "dconf reset",
+  "description": "Reset key values in dconf databases. See also: dconf. More information: https://manned.org/dconf.",
+  "useCases": [
+    {
+      "description": "Reset a specific key value:",
+      "syntax": "dconf reset {{/path/to/key}}"
+    },
+    {
+      "description": "Reset a specific directory:",
+      "syntax": "dconf reset -f {{/path/to/directory/}}"
+    }
+  ]
+}

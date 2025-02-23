@@ -1,0 +1,14 @@
+{
+  "command": "crane tag",
+  "description": "Efficiently tag a remote image without downloading it, which differs from the copy command. It skips the layer existence checks because we know the manifest already exists making it slightly faster. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_tag.md.",
+  "useCases": [
+    {
+      "description": "Tag remote image:",
+      "syntax": "crane tag {{image_name}} {{tag_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane tag {{-h|--help}}"
+    }
+  ]
+}

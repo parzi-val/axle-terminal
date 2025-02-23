@@ -1,0 +1,14 @@
+{
+  "command": "git rename-branch",
+  "description": "Rename a Git branch. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-rename-branch.",
+  "useCases": [
+    {
+      "description": "Rename the branch you are currently on:",
+      "syntax": "git rename-branch {{new_branch_name}}"
+    },
+    {
+      "description": "Rename a specific branch:",
+      "syntax": "git rename-branch {{old_branch_name}} {{new_branch_name}}"
+    }
+  ]
+}

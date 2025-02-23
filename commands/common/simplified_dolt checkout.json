@@ -1,0 +1,22 @@
+{
+  "command": "dolt checkout",
+  "description": "Checkout the work tree or tables to a branch or commit. More information: https://docs.dolthub.com/cli-reference/cli#dolt-checkout.",
+  "useCases": [
+    {
+      "description": "Switch to a branch:",
+      "syntax": "dolt checkout {{branch_name}}"
+    },
+    {
+      "description": "Revert unstaged changes to a table:",
+      "syntax": "dolt checkout {{table}}"
+    },
+    {
+      "description": "Create new branch and switch to it:",
+      "syntax": "dolt checkout -b {{branch_name}}"
+    },
+    {
+      "description": "Create new branch based on a specified commit and switch to it:",
+      "syntax": "dolt checkout -b {{branch_name}} {{commit}}"
+    }
+  ]
+}

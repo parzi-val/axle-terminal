@@ -1,0 +1,22 @@
+{
+  "command": "gitlab",
+  "description": "Ruby wrapper for the GitLab API. Some subcommands such as ctl have their own usage documentation. More information: https://narkoz.github.io/gitlab/.",
+  "useCases": [
+    {
+      "description": "Create a new project:",
+      "syntax": "gitlab create_project {{project_name}}"
+    },
+    {
+      "description": "Get info about a specific commit:",
+      "syntax": "gitlab commit {{project_name}} {{commit_hash}}"
+    },
+    {
+      "description": "Get info about jobs in a CI pipeline:",
+      "syntax": "gitlab pipeline_jobs {{project_name}} {{pipeline_id}}"
+    },
+    {
+      "description": "Start a specific CI job:",
+      "syntax": "gitlab job_play {{project_name}} {{job_id}}"
+    }
+  ]
+}

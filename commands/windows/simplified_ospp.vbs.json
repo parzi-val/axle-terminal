@@ -1,0 +1,30 @@
+{
+  "command": "ospp.vbs",
+  "description": "Install, activate, and manage volume licensed versions of Microsoft Office products. Note: this command may override, deactivate, and/or remove your current volume of licensed Office product versions, so please proceed cautiously. More information: https://learn.microsoft.com/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office.",
+  "useCases": [
+    {
+      "description": "Install a product key (Note: it replaces the existing key):",
+      "syntax": "cscript ospp.vbs /inpkey:{{product_key}}"
+    },
+    {
+      "description": "Uninstall an installed product key with the last five digits of the product key:",
+      "syntax": "cscript ospp.vbs /unpkey:{{product_key_digits}}"
+    },
+    {
+      "description": "Set a KMS host name:",
+      "syntax": "cscript ospp.vbs /sethst:{{ip|hostname}}"
+    },
+    {
+      "description": "Set a KMS port:",
+      "syntax": "cscript ospp.vbs /setprt:{{port}}"
+    },
+    {
+      "description": "Activate installed Office product keys:",
+      "syntax": "cscript ospp.vbs /act"
+    },
+    {
+      "description": "Display license information for installed product keys:",
+      "syntax": "cscript ospp.vbs /dstatus"
+    }
+  ]
+}

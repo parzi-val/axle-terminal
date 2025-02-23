@@ -1,0 +1,22 @@
+{
+  "command": "javac",
+  "description": "Java application compiler. More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/javac.html.",
+  "useCases": [
+    {
+      "description": "Compile a .java file:",
+      "syntax": "javac {{path/to/file.java}}"
+    },
+    {
+      "description": "Compile several .java files:",
+      "syntax": "javac {{path/to/file1.java path/to/file2.java ...}}"
+    },
+    {
+      "description": "Compile all .java files in current directory:",
+      "syntax": "javac {{*.java}}"
+    },
+    {
+      "description": "Compile a .java file and place the resulting class file in a specific directory:",
+      "syntax": "javac -d {{path/to/directory}} {{path/to/file.java}}"
+    }
+  ]
+}

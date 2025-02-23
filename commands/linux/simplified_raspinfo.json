@@ -1,0 +1,10 @@
+{
+  "command": "raspinfo",
+  "description": "Display Raspberry Pi system information. More information: https://github.com/raspberrypi/utils/tree/master/raspinfo.",
+  "useCases": [
+    {
+      "description": "Display system information:",
+      "syntax": "raspinfo"
+    }
+  ]
+}

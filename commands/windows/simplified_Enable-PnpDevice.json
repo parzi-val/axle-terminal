@@ -1,0 +1,22 @@
+{
+  "command": "Enable-PnpDevice",
+  "description": "The Enable-PnpDevice cmdlet enables a Plug and Play (PnP) device. You must use an Administrator account to enable a device. Note: This command can only be used through PowerShell. More information: https://learn.microsoft.com/powershell/module/pnpdevice/enable-pnpdevice.",
+  "useCases": [
+    {
+      "description": "Enable a device:",
+      "syntax": "Enable-PnpDevice -InstanceId 'RETRIEVED USING Get-PnpDevice COMMAND'"
+    },
+    {
+      "description": "Enable all disabled PnP devices:",
+      "syntax": "Get-PnpDevice | Where-Object {$_.Problem -eq 22} | Enable-PnpDevice"
+    },
+    {
+      "description": "Enable a device without confirmation:",
+      "syntax": "Enable-PnpDevice -InstanceId 'RETRIEVED USING Get-PnpDevice COMMAND' -Confirm:$False"
+    },
+    {
+      "description": "Dry run of what would happen if the cmdlet runs:",
+      "syntax": "Enable-PnpDevice -InstanceId 'USB\\VID_5986&amp;;PID_0266&amp;;MI_00\\7&amp;;1E5D3568&amp;;0&amp;;0000' -WhatIf:$True"
+    }
+  ]
+}

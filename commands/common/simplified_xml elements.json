@@ -1,0 +1,30 @@
+{
+  "command": "xml elements",
+  "description": "Extract elements and display the structure of an XML document. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Extract elements from an XML document (producing XPATH expressions):",
+      "syntax": "xml elements {{path/to/input.xml|URI}} &gt; {{path/to/elements.xpath}}"
+    },
+    {
+      "description": "Extract elements and their attributes from an XML document:",
+      "syntax": "xml elements -a {{path/to/input.xml|URI}} &gt; {{path/to/elements.xpath}}"
+    },
+    {
+      "description": "Extract elements and their attributes and values from an XML document:",
+      "syntax": "xml elements -v {{path/to/input.xml|URI}} &gt; {{path/to/elements.xpath}}"
+    },
+    {
+      "description": "Print sorted unique elements from an XML document to see its structure:",
+      "syntax": "xml elements -u {{path/to/input.xml|URI}}"
+    },
+    {
+      "description": "Print sorted unique elements from an XML document up to a depth of 3:",
+      "syntax": "xml elements -d{{3}} {{path/to/input.xml|URI}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml elements --help"
+    }
+  ]
+}

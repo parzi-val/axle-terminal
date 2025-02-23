@@ -1,0 +1,34 @@
+{
+  "command": "odps auth",
+  "description": "User authorities in ODPS (Open Data Processing Service). See also odps. More information: https://www.alibabacloud.com/help/doc-detail/27971.htm.",
+  "useCases": [
+    {
+      "description": "Add a user to the current project:",
+      "syntax": "add user {{username}};"
+    },
+    {
+      "description": "Grant a set of authorities to a user:",
+      "syntax": "grant {{action_list}} on {{object_type}} {{object_name}} to user {{username}};"
+    },
+    {
+      "description": "Show authorities of a user:",
+      "syntax": "show grants for {{username}};"
+    },
+    {
+      "description": "Create a user role:",
+      "syntax": "create role {{role_name}};"
+    },
+    {
+      "description": "Grant a set of authorities to a role:",
+      "syntax": "grant {{action_list}} on {{object_type}} {{object_name}} to role {{role_name}};"
+    },
+    {
+      "description": "Describe authorities of a role:",
+      "syntax": "desc role {{role_name}};"
+    },
+    {
+      "description": "Grant a role to a user:",
+      "syntax": "grant {{role_name}} to {{username}};"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "yarn",
+  "description": "JavaScript and Node.js package manager alternative. More information: https://yarnpkg.com.",
+  "useCases": [
+    {
+      "description": "Install a module globally:",
+      "syntax": "yarn global add {{module_name}}"
+    },
+    {
+      "description": "Install all dependencies referenced in the package.json file (the install is optional):",
+      "syntax": "yarn install"
+    },
+    {
+      "description": "Install a module and save it as a dependency to the package.json file (add --dev to save as a dev dependency):",
+      "syntax": "yarn add {{module_name}}@{{version}}"
+    },
+    {
+      "description": "Uninstall a module and remove it from the package.json file:",
+      "syntax": "yarn remove {{module_name}}"
+    },
+    {
+      "description": "Interactively create a package.json file:",
+      "syntax": "yarn init"
+    },
+    {
+      "description": "Identify whether a module is a dependency and list other modules that depend upon it:",
+      "syntax": "yarn why {{module_name}}"
+    }
+  ]
+}

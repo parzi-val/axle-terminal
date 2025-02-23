@@ -1,0 +1,14 @@
+{
+  "command": "aws history",
+  "description": "Print the command-line history for AWS CLI commands (the record of history of AWS CLI commands must be enabled). More information: https://docs.aws.amazon.com/cli/latest/reference/history/.",
+  "useCases": [
+    {
+      "description": "List commands history with command IDs:",
+      "syntax": "aws history list"
+    },
+    {
+      "description": "Display events related to a specific command given a command ID:",
+      "syntax": "aws history show {{command_id}}"
+    }
+  ]
+}

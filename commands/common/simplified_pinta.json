@@ -1,0 +1,14 @@
+{
+  "command": "pinta",
+  "description": "A free, open source program for drawing and image editing. More information: https://www.pinta-project.com/.",
+  "useCases": [
+    {
+      "description": "Start Pinta:",
+      "syntax": "pinta"
+    },
+    {
+      "description": "Open specific files:",
+      "syntax": "pinta {{path/to/image1 path/to/image2 ...}}"
+    }
+  ]
+}

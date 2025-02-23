@@ -1,0 +1,26 @@
+{
+  "command": "qtchooser",
+  "description": "A wrapper used to select between Qt development binary versions. More information: https://manned.org/qtchooser.",
+  "useCases": [
+    {
+      "description": "List available Qt versions from the configuration files:",
+      "syntax": "qtchooser --list-versions"
+    },
+    {
+      "description": "Print environment information:",
+      "syntax": "qtchooser --print-env"
+    },
+    {
+      "description": "Run the specified tool using the specified Qt version:",
+      "syntax": "qtchooser --run-tool={{tool}} --qt={{version_name}}"
+    },
+    {
+      "description": "Add a Qt version entry to be able to choose from:",
+      "syntax": "qtchooser --install {{version_name}} {{path/to/qmake}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "qtchooser --help"
+    }
+  ]
+}

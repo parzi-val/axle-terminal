@@ -1,0 +1,26 @@
+{
+  "command": "xe",
+  "description": "Execute a command once for each line piped from another command or file. More information: https://github.com/leahneukirchen/xe.",
+  "useCases": [
+    {
+      "description": "Run a command once for each line of input data as arguments:",
+      "syntax": "{{arguments_source}} | xe {{command}}"
+    },
+    {
+      "description": "Execute the commands, replacing any occurrence of the placeholder (marked as {}) with the input line:",
+      "syntax": "{{arguments_source}} | xe {{command}} {} {{optional_extra_arguments}}"
+    },
+    {
+      "description": "Execute a shellscript, joining every N lines into a single call:",
+      "syntax": "echo -e 'a\\nb' | xe -N{{2}} -s 'echo $2 $1'"
+    },
+    {
+      "description": "Delete all files with a .backup extension:",
+      "syntax": "find . -name {{'*.backup'}} | xe rm -v"
+    },
+    {
+      "description": "Run up to max-jobs processes in parallel; the default is 1. If max-jobs is 0, xe will run as many processes as cpu cores:",
+      "syntax": "{{arguments_source}} | xe -j {{max-jobs}} {{command}}"
+    }
+  ]
+}

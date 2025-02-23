@@ -1,0 +1,22 @@
+{
+  "command": "dumpcap",
+  "description": "A network traffic dump tool. More information: https://www.wireshark.org/docs/man-pages/dumpcap.html.",
+  "useCases": [
+    {
+      "description": "Display available interfaces:",
+      "syntax": "dumpcap --list-interfaces"
+    },
+    {
+      "description": "Capture packets on a specific interface:",
+      "syntax": "dumpcap --interface {{1}}"
+    },
+    {
+      "description": "Capture packets to a specific location:",
+      "syntax": "dumpcap --interface {{1}} -w {{path/to/output_file.pcapng}}"
+    },
+    {
+      "description": "Write to a ring buffer with a specific max file limit of a specific size:",
+      "syntax": "dumpcap --interface {{1}} -w {{path/to/output_file.pcapng}} --ring-buffer filesize:{{500000}} --ring-buffer files:{{10}}"
+    }
+  ]
+}

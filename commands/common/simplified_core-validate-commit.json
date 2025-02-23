@@ -1,0 +1,34 @@
+{
+  "command": "core-validate-commit",
+  "description": "Validate commit messages for Node.js core. More information: https://github.com/nodejs/core-validate-commit.",
+  "useCases": [
+    {
+      "description": "Validate the current commit:",
+      "syntax": "core-validate-commit"
+    },
+    {
+      "description": "Validate a specific commit:",
+      "syntax": "core-validate-commit {{commit_hash}}"
+    },
+    {
+      "description": "Validate a range of commits:",
+      "syntax": "git rev-list {{commit_hash}}..HEAD | xargs core-validate-commit"
+    },
+    {
+      "description": "List all validation rules:",
+      "syntax": "core-validate-commit --list"
+    },
+    {
+      "description": "List all valid Node.js subsystems:",
+      "syntax": "core-validate-commit --list-subsystem"
+    },
+    {
+      "description": "Validate the current commit formatting the output in tap format:",
+      "syntax": "core-validate-commit --tap"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "core-validate-commit --help"
+    }
+  ]
+}

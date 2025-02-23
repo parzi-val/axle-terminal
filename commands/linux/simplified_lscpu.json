@@ -1,0 +1,18 @@
+{
+  "command": "lscpu",
+  "description": "Display information about the CPU architecture. More information: https://manned.org/lscpu.",
+  "useCases": [
+    {
+      "description": "Display information about all CPUs:",
+      "syntax": "lscpu"
+    },
+    {
+      "description": "Display information in a table:",
+      "syntax": "lscpu --extended"
+    },
+    {
+      "description": "Display only information about offline CPUs in a table:",
+      "syntax": "lscpu --extended --offline"
+    }
+  ]
+}

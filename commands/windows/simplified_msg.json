@@ -1,0 +1,26 @@
+{
+  "command": "msg",
+  "description": "Send a message to a user or session. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/msg.",
+  "useCases": [
+    {
+      "description": "Send a message to a specified user or session:",
+      "syntax": "msg {{username|session_name|session_id}} {{message}}"
+    },
+    {
+      "description": "Send a message from stdin:",
+      "syntax": "echo &quot;{{message}}&quot; | msg {{username|session_name|session_id}}"
+    },
+    {
+      "description": "Send a message to a specific server:",
+      "syntax": "msg /server:{{server_name}} {{username|session_name|session_id}}"
+    },
+    {
+      "description": "Send a message to all users of the current machine:",
+      "syntax": "msg *"
+    },
+    {
+      "description": "Set a delay in seconds for a message:",
+      "syntax": "msg /time:{{10}}"
+    }
+  ]
+}

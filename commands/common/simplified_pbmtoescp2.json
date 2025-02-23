@@ -1,0 +1,22 @@
+{
+  "command": "pbmtoescp2",
+  "description": "Convert a PBM image to a ESC/P2 printer file. See also: pbmtoepson, escp2topbm. More information: https://netpbm.sourceforge.net/doc/pbmtoescp2.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to a ESC/P2 printer file:",
+      "syntax": "pbmtoescp2 {{path/to/image.pbm}} &gt; {{path/to/output.escp2}}"
+    },
+    {
+      "description": "Specify the compression of the output:",
+      "syntax": "pbmtoescp2 -compression {{0|1}} {{path/to/image.pbm}} &gt; {{path/to/output.escp2}}"
+    },
+    {
+      "description": "Specify the horizontal and vertical resolution of the output in dots per inch:",
+      "syntax": "pbmtoescp2 -resolution {{180|360|720}} {{path/to/image.pbm}} &gt; {{path/to/output.escp2}}"
+    },
+    {
+      "description": "Place a formfeed command at the end of the output:",
+      "syntax": "pbmtoescp2 -formfeed {{path/to/image.pbm}} &gt; {{path/to/output.escp2}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "lsblk",
+  "description": "Lists information about devices. More information: https://manned.org/lsblk.",
+  "useCases": [
+    {
+      "description": "List all storage devices in a tree-like format:",
+      "syntax": "lsblk"
+    },
+    {
+      "description": "Also list empty devices:",
+      "syntax": "lsblk -a"
+    },
+    {
+      "description": "Print the SIZE column in bytes rather than in a human-readable format:",
+      "syntax": "lsblk -b"
+    },
+    {
+      "description": "Output info about filesystems:",
+      "syntax": "lsblk -f"
+    },
+    {
+      "description": "Use ASCII characters for tree formatting:",
+      "syntax": "lsblk -i"
+    },
+    {
+      "description": "Output info about block-device topology:",
+      "syntax": "lsblk -t"
+    },
+    {
+      "description": "Exclude the devices specified by the comma-separated list of major device numbers:",
+      "syntax": "lsblk -e {{1,7,...}}"
+    },
+    {
+      "description": "Display a customized summary using a comma-separated list of columns:",
+      "syntax": "lsblk --output {{NAME,SERIAL,MODEL,TRAN,TYPE,SIZE,FSTYPE,MOUNTPOINT,...}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "gcloud app",
+  "description": "Build scalable applications on a managed serverless platform. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/app.",
+  "useCases": [
+    {
+      "description": "Deploy an app's code and configuration to the App Engine server:",
+      "syntax": "gcloud app deploy {{deployables}}"
+    },
+    {
+      "description": "List all versions of all services deployed to the App Engine server:",
+      "syntax": "gcloud app versions list"
+    },
+    {
+      "description": "Open the current app in a web browser:",
+      "syntax": "gcloud app browse"
+    },
+    {
+      "description": "Create an App Engine app within the current project:",
+      "syntax": "gcloud app create"
+    },
+    {
+      "description": "Display the latest App Engine app logs:",
+      "syntax": "gcloud app logs read"
+    }
+  ]
+}

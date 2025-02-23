@@ -1,0 +1,30 @@
+{
+  "command": "watson",
+  "description": "A wonderful CLI to track your time. More information: https://github.com/TailorDev/Watson.",
+  "useCases": [
+    {
+      "description": "Start monitoring time in project:",
+      "syntax": "watson start {{project}}"
+    },
+    {
+      "description": "Start monitoring time in project with tags:",
+      "syntax": "watson start {{project}} +{{tag}}"
+    },
+    {
+      "description": "Stop monitoring time for the current project:",
+      "syntax": "watson stop"
+    },
+    {
+      "description": "Display the latest working sessions:",
+      "syntax": "watson log"
+    },
+    {
+      "description": "Edit most recent frame:",
+      "syntax": "watson edit"
+    },
+    {
+      "description": "Remove most recent frame:",
+      "syntax": "watson remove"
+    }
+  ]
+}

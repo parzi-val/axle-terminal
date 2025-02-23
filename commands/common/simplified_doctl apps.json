@@ -1,0 +1,38 @@
+{
+  "command": "doctl apps",
+  "description": "Manage DigitalOcean apps. More information: https://docs.digitalocean.com/reference/doctl/reference/apps.",
+  "useCases": [
+    {
+      "description": "Create an app:",
+      "syntax": "doctl apps create"
+    },
+    {
+      "description": "Create a deployment for a specific app:",
+      "syntax": "doctl apps create-deployment {{app_id}}"
+    },
+    {
+      "description": "Delete an app interactively:",
+      "syntax": "doctl apps delete {{app_id}}"
+    },
+    {
+      "description": "Get an app:",
+      "syntax": "doctl apps get"
+    },
+    {
+      "description": "List all apps:",
+      "syntax": "doctl apps list"
+    },
+    {
+      "description": "List all deployments from a specific app:",
+      "syntax": "doctl apps list-deployments {{app_id}}"
+    },
+    {
+      "description": "Get logs from a specific app:",
+      "syntax": "doctl apps logs {{app_id}}"
+    },
+    {
+      "description": "Update a specific app with a given app spec:",
+      "syntax": "doctl apps update {{app_id}} --spec {{path/to/spec.yml}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "cupsd",
+  "description": "Server daemon for the CUPS print server. More information: https://openprinting.github.io/cups/doc/man-cupsd.html.",
+  "useCases": [
+    {
+      "description": "Start cupsd in the background, aka. as a daemon:",
+      "syntax": "cupsd"
+    },
+    {
+      "description": "Start cupsd on the [f]oreground:",
+      "syntax": "cupsd -f"
+    },
+    {
+      "description": "[l]aunch cupsd on-demand (commonly used by launchd or systemd):",
+      "syntax": "cupsd -l"
+    },
+    {
+      "description": "Start cupsd using the specified [c]upsd.conf configuration file:",
+      "syntax": "cupsd -c {{path/to/cupsd.conf}}"
+    },
+    {
+      "description": "Start cupsd using the specified cups-file[s].conf configuration file:",
+      "syntax": "cupsd -s {{path/to/cups-files.conf}}"
+    },
+    {
+      "description": "[t]est the [c]upsd.conf configuration file for errors:",
+      "syntax": "cupsd -t -c {{path/to/cupsd.conf}}"
+    },
+    {
+      "description": "[t]est the cups-file[s].conf configuration file for errors:",
+      "syntax": "cupsd -t -s {{path/to/cups-files.conf}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cupsd -h"
+    }
+  ]
+}

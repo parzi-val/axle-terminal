@@ -1,0 +1,18 @@
+{
+  "command": "plasma-apply-colorscheme",
+  "description": "Switch Plasma color scheme. More information: https://invent.kde.org/plasma/plasma-workspace.",
+  "useCases": [
+    {
+      "description": "List available color schemes:",
+      "syntax": "plasma-apply-colorscheme --list-schemes"
+    },
+    {
+      "description": "Apply a color scheme:",
+      "syntax": "plasma-apply-colorscheme {{BreezeLight}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plasma-apply-colorscheme --help"
+    }
+  ]
+}

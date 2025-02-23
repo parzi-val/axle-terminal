@@ -1,0 +1,18 @@
+{
+  "command": "po4a-updatepo",
+  "description": "Update the translation (in PO format) of a documentation. More information: https://po4a.org/man/man1/po4a-updatepo.1.php.",
+  "useCases": [
+    {
+      "description": "Update a PO file according to the modification of its origin file:",
+      "syntax": "po4a-updatepo --format {{text}} --master {{path/to/master.txt}} --po {{path/to/result.po}}"
+    },
+    {
+      "description": "List available formats:",
+      "syntax": "po4a-updatepo --help-format"
+    },
+    {
+      "description": "Update several PO files according to the modification of their origin file:",
+      "syntax": "po4a-updatepo --format {{text}} --master {{path/to/master.txt}} --po {{path/to/po1.po}} --po {{path/to/po2.po}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "navi",
+  "description": "An interactive cheatsheet tool for the command-line and application launchers. More information: https://github.com/denisidoro/navi.",
+  "useCases": [
+    {
+      "description": "Browse through all available cheatsheets:",
+      "syntax": "navi"
+    },
+    {
+      "description": "Browse the cheatsheet for navi itself:",
+      "syntax": "navi fn welcome"
+    },
+    {
+      "description": "Print a command from the cheatsheet without executing it:",
+      "syntax": "navi --print"
+    },
+    {
+      "description": "Output shell widget source code (It automatically detects your shell if possible, but can also be specified manually):",
+      "syntax": "navi widget {{shell}}"
+    },
+    {
+      "description": "Autoselect and execute the snippet that best matches a query:",
+      "syntax": "navi --query '{{query}}' --best-match"
+    }
+  ]
+}

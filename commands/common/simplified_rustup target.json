@@ -1,0 +1,22 @@
+{
+  "command": "rustup target",
+  "description": "Modify a toolchain's supported targets. Without the --toolchain option rustup will use the default toolchain. See rustup help toolchain for more information about toolchains. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Add a target to a toolchain:",
+      "syntax": "rustup target add --toolchain {{toolchain}} {{target}}"
+    },
+    {
+      "description": "Remove a target from a toolchain:",
+      "syntax": "rustup target remove --toolchain {{toolchain}} {{target}}"
+    },
+    {
+      "description": "List available and installed targets for a toolchain:",
+      "syntax": "rustup target list --toolchain {{toolchain}}"
+    },
+    {
+      "description": "List installed targets for a toolchain:",
+      "syntax": "rustup target list --toolchain {{toolchain}} --installed"
+    }
+  ]
+}

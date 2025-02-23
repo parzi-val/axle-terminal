@@ -1,0 +1,22 @@
+{
+  "command": "gixy",
+  "description": "Analyze nginx configuration files. More information: https://github.com/yandex/gixy.",
+  "useCases": [
+    {
+      "description": "Analyze nginx configuration (default path: /etc/nginx/nginx.conf):",
+      "syntax": "gixy"
+    },
+    {
+      "description": "Analyze nginx configuration but skip specific tests:",
+      "syntax": "gixy --skips {{http_splitting}}"
+    },
+    {
+      "description": "Analyze nginx configuration with the specific severity level:",
+      "syntax": "gixy {{-l|-ll|-lll}}"
+    },
+    {
+      "description": "Analyze nginx configuration files on the specific path:",
+      "syntax": "gixy {{path/to/configuration_file_1}} {{path/to/configuration_file_2}}"
+    }
+  ]
+}

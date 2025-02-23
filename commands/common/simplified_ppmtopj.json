@@ -1,0 +1,18 @@
+{
+  "command": "ppmtopj",
+  "description": "Convert a PPM file to an HP PaintJet file. More information: https://netpbm.sourceforge.net/doc/ppmtopj.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM file to an HP PaintJet file:",
+      "syntax": "ppmtopj {{path/to/input.ppm}} &gt; {{path/to/output.pj}}"
+    },
+    {
+      "description": "Move the image in the x and y direction:",
+      "syntax": "ppmtopj -xpos {{dx}} -ypos {{dy}} {{path/to/input.ppm}} &gt; {{path/to/output.pj}}"
+    },
+    {
+      "description": "Explicitly specify a gamma value:",
+      "syntax": "ppmtopj -gamma {{gamma}} {{path/to/input.ppm}} &gt; {{path/to/output.pj}}"
+    }
+  ]
+}

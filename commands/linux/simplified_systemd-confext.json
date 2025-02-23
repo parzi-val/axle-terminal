@@ -1,0 +1,10 @@
+{
+  "command": "systemd-confext",
+  "description": "This command is an alias of systemd-sysext. It follows the same principle as systemd-sysext, but instead of working on /usr and /opt, confext will extend only /etc.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr systemd-sysext"
+    }
+  ]
+}

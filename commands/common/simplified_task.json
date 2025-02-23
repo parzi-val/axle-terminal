@@ -1,0 +1,38 @@
+{
+  "command": "task",
+  "description": "Command-line to-do list manager. More information: https://taskwarrior.org/docs/.",
+  "useCases": [
+    {
+      "description": "Add a new task which is due tomorrow:",
+      "syntax": "task add {{description}} due:{{tomorrow}}"
+    },
+    {
+      "description": "Update a task's priority:",
+      "syntax": "task {{task_id}} modify priority:{{H|M|L}}"
+    },
+    {
+      "description": "Complete a task:",
+      "syntax": "task {{task_id}} done"
+    },
+    {
+      "description": "Delete a task:",
+      "syntax": "task {{task_id}} delete"
+    },
+    {
+      "description": "List all open tasks:",
+      "syntax": "task list"
+    },
+    {
+      "description": "List open tasks due before the end of the week:",
+      "syntax": "task list due.before:{{eow}}"
+    },
+    {
+      "description": "Show a graphical burndown chart, by day:",
+      "syntax": "task burndown.daily"
+    },
+    {
+      "description": "List all reports:",
+      "syntax": "task reports"
+    }
+  ]
+}

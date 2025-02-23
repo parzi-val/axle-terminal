@@ -1,0 +1,30 @@
+{
+  "command": "qm clone",
+  "description": "Create a copy of virtual machine on QEMU/KVM Virtual Machine Manager. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Copy a virtual machine:",
+      "syntax": "qm copy {{vm_id}} {{new_vm_id}}"
+    },
+    {
+      "description": "Copy a virtual machine using a specific name:",
+      "syntax": "qm copy {{vm_id}} {{new_vm_id}} --name {{name}}"
+    },
+    {
+      "description": "Copy a virtual machine using a specific descriptionn:",
+      "syntax": "qm copy {{vm_id}} {{new_vm_id}} --description {{description}}"
+    },
+    {
+      "description": "Copy a virtual machine creating a full copy of all disks:",
+      "syntax": "qm copy {{vm_id}} {{new_vm_id}} --full"
+    },
+    {
+      "description": "Copy a virtual machine using a specific format for file storage (requires --full):",
+      "syntax": "qm copy {{vm_id}} {{new_vm_id}} --full --format {{qcow2|raw|vmdk}}"
+    },
+    {
+      "description": "Copy a virtual machine then add it to a specific pool:",
+      "syntax": "qm copy {{vm_id}} {{new_vm_id}} --pool {{pool_name}}"
+    }
+  ]
+}

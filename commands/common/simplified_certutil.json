@@ -1,0 +1,26 @@
+{
+  "command": "certutil",
+  "description": "Manage keys and certificates in both NSS databases and other NSS tokens. More information: https://manned.org/certutil.",
+  "useCases": [
+    {
+      "description": "Create a [N]ew certificate database in the current [d]irectory:",
+      "syntax": "certutil -N -d ."
+    },
+    {
+      "description": "List all certificates in a database:",
+      "syntax": "certutil -L -d ."
+    },
+    {
+      "description": "List all private [K]eys in a database specifying the password [f]ile:",
+      "syntax": "certutil -K -d . -f {{path/to/password_file.txt}}"
+    },
+    {
+      "description": "[A]dd the signed certificate to the requesters database specifying a [n]ickname, [t]rust attributes and an [i]nput CRT file:",
+      "syntax": "certutil -A -n &quot;{{server_certificate}}&quot; -t &quot;,,&quot; -i {{path/to/file.crt}} -d ."
+    },
+    {
+      "description": "Add subject alternative names to a given [c]ertificate with a specific key size ([g]):",
+      "syntax": "certutil -S -f {{path/to/password_file.txt}} -d . -t &quot;,,&quot; -c &quot;{{server_certificate}}&quot; -n &quot;{{server_name}}&quot; -g {{2048}} -s &quot;CN={{common_name}},O={{organization}}&quot;"
+    }
+  ]
+}

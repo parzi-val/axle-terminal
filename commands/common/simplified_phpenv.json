@@ -1,0 +1,34 @@
+{
+  "command": "phpenv",
+  "description": "A PHP version manager for development purposes. More information: https://github.com/phpenv/phpenv.",
+  "useCases": [
+    {
+      "description": "Install a PHP version globally:",
+      "syntax": "phpenv install {{version}}"
+    },
+    {
+      "description": "Refresh shim files for all PHP binaries known to phpenv:",
+      "syntax": "phpenv rehash"
+    },
+    {
+      "description": "List all installed PHP versions:",
+      "syntax": "phpenv versions"
+    },
+    {
+      "description": "Display the currently active PHP version:",
+      "syntax": "phpenv version"
+    },
+    {
+      "description": "Set the global PHP version:",
+      "syntax": "phpenv global {{version}}"
+    },
+    {
+      "description": "Set the local PHP version, which overrides the global version:",
+      "syntax": "phpenv local {{version}}"
+    },
+    {
+      "description": "Unset the local PHP version:",
+      "syntax": "phpenv local --unset"
+    }
+  ]
+}

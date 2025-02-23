@@ -1,0 +1,18 @@
+{
+  "command": "cadaver",
+  "description": "WebDAV client for Unix. More information: https://manned.org/cadaver.",
+  "useCases": [
+    {
+      "description": "Connect to the server <dav.example.com>, open the root collection:",
+      "syntax": "cadaver {{http://dav.example.com/}}"
+    },
+    {
+      "description": "Connect to a server using a specific port and open the collection /foo/bar/:",
+      "syntax": "cadaver {{http://dav.example.com:8022/foo/bar/}}"
+    },
+    {
+      "description": "Connect to a server using SSL:",
+      "syntax": "cadaver {{https://davs.example.com/}}"
+    }
+  ]
+}

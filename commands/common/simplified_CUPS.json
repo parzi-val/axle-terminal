@@ -1,0 +1,26 @@
+{
+  "command": "CUPS",
+  "description": "Open source printing system. CUPS isn't a single command, but a set of commands. More information: https://www.cups.org/index.html.",
+  "useCases": [
+    {
+      "description": "View documentation for running the CUPS daemon:",
+      "syntax": "tldr cupsd"
+    },
+    {
+      "description": "View documentation for managing printers:",
+      "syntax": "tldr lpadmin"
+    },
+    {
+      "description": "View documentation for printing files:",
+      "syntax": "tldr lp"
+    },
+    {
+      "description": "View documentation for checking status information about the current classes, jobs, and printers:",
+      "syntax": "tldr lpstat"
+    },
+    {
+      "description": "View documentation for cancelling print jobs:",
+      "syntax": "tldr lprm"
+    }
+  ]
+}

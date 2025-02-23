@@ -1,0 +1,38 @@
+{
+  "command": "aws ecr",
+  "description": "Push, pull, and manage container images. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/index.html.",
+  "useCases": [
+    {
+      "description": "Authenticate Docker with the default registry (username is AWS):",
+      "syntax": "aws ecr get-login-password --region {{region}} | {{docker login}} --username AWS --password-stdin {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com"
+    },
+    {
+      "description": "Create a repository:",
+      "syntax": "aws ecr create-repository --repository-name {{repository}} --image-scanning-configuration scanOnPush={{true|false}} --region {{region}}"
+    },
+    {
+      "description": "Tag a local image for ECR:",
+      "syntax": "docker tag {{container_name}}:{{tag}} {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com/{{container_name}}:{{tag}}"
+    },
+    {
+      "description": "Push an image to a repository:",
+      "syntax": "docker push {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com/{{container_name}}:{{tag}}"
+    },
+    {
+      "description": "Pull an image from a repository:",
+      "syntax": "docker pull {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com/{{container_name}}:{{tag}}"
+    },
+    {
+      "description": "Delete an image from a repository:",
+      "syntax": "aws ecr batch-delete-image --repository-name {{repository}} --image-ids imageTag={{latest}}"
+    },
+    {
+      "description": "Delete a repository:",
+      "syntax": "aws ecr delete-repository --repository-name {{repository}} --force"
+    },
+    {
+      "description": "List images within a repository:",
+      "syntax": "aws ecr list-images --repository-name {{repository}}"
+    }
+  ]
+}

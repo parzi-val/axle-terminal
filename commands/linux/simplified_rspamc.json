@@ -1,0 +1,22 @@
+{
+  "command": "rspamc",
+  "description": "Command-line client for rspamd servers. More information: https://manned.org/rspamc.",
+  "useCases": [
+    {
+      "description": "Train the bayesian filter to recognise an email as spam:",
+      "syntax": "rspamc learn_spam {{path/to/email_file}}"
+    },
+    {
+      "description": "Train the bayesian filter to recognise an email as ham:",
+      "syntax": "rspamc learn_ham {{path/to/email_file}}"
+    },
+    {
+      "description": "Generate a manual report on an email:",
+      "syntax": "rspamc symbols {{path/to/email_file}}"
+    },
+    {
+      "description": "Show server statistics:",
+      "syntax": "rspamc stat"
+    }
+  ]
+}

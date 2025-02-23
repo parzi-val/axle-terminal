@@ -1,0 +1,18 @@
+{
+  "command": "pnmscalefixed",
+  "description": "Scale a PNM file quickly with possibly reduced quality. See also: pamscale. More information: https://netpbm.sourceforge.net/doc/pnmscalefixed.html.",
+  "useCases": [
+    {
+      "description": "Scale an image such that the result has the specified dimensions:",
+      "syntax": "pnmscalefixed -width {{width}} -height {{height}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Scale an image such that the result has the specified width, keeping the aspect ratio:",
+      "syntax": "pnmscalefixed -width {{width}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Scale an image such that its width and height is changed by the specified factors:",
+      "syntax": "pnmscalefixed -xscale {{x_factor}} -yscale {{y_factor}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

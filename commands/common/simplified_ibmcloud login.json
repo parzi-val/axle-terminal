@@ -1,0 +1,30 @@
+{
+  "command": "ibmcloud login",
+  "description": "Log in to the IBM Cloud. More information: https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login.",
+  "useCases": [
+    {
+      "description": "Log in by using an interactive prompt:",
+      "syntax": "ibmcloud login"
+    },
+    {
+      "description": "Log in to a specific API endpoint (default is cloud.ibm.com):",
+      "syntax": "ibmcloud login -a {{api_endpoint}}"
+    },
+    {
+      "description": "Log in by providing username, password and the targeted region as parameters:",
+      "syntax": "ibmcloud login -u {{username}} -p {{password}} -r {{us-south}}"
+    },
+    {
+      "description": "Log in with an API key, passing it as an argument:",
+      "syntax": "ibmcloud login --apikey {{api_key_string}}"
+    },
+    {
+      "description": "Log in with an API key, passing it as a file:",
+      "syntax": "ibmcloud login --apikey @{{path/to/api_key_file}}"
+    },
+    {
+      "description": "Log in with a federated ID (single sign-on):",
+      "syntax": "ibmcloud login --sso"
+    }
+  ]
+}

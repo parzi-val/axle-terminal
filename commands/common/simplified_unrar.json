@@ -1,0 +1,26 @@
+{
+  "command": "unrar",
+  "description": "Extract RAR archives. More information: https://manned.org/unrar.",
+  "useCases": [
+    {
+      "description": "Extract files with original directory structure:",
+      "syntax": "unrar x {{compressed.rar}}"
+    },
+    {
+      "description": "Extract files to a specified path with the original directory structure:",
+      "syntax": "unrar x {{compressed.rar}} {{path/to/extract}}"
+    },
+    {
+      "description": "Extract files into current directory, losing directory structure in the archive:",
+      "syntax": "unrar e {{compressed.rar}}"
+    },
+    {
+      "description": "Test integrity of each file inside the archive file:",
+      "syntax": "unrar t {{compressed.rar}}"
+    },
+    {
+      "description": "List files inside the archive file without decompressing it:",
+      "syntax": "unrar l {{compressed.rar}}"
+    }
+  ]
+}

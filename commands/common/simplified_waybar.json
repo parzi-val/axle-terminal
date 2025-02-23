@@ -1,0 +1,22 @@
+{
+  "command": "waybar",
+  "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors. More information: https://github.com/Alexays/Waybar.",
+  "useCases": [
+    {
+      "description": "Start waybar with the default configuration and stylesheet:",
+      "syntax": "waybar"
+    },
+    {
+      "description": "Use a different configuration file:",
+      "syntax": "waybar {{-c|--config}} {{path/to/config.jsonc}}"
+    },
+    {
+      "description": "Use a different stylesheet file:",
+      "syntax": "waybar {{-s|--style}} {{path/to/stylesheet.css}}"
+    },
+    {
+      "description": "Set the logging level:",
+      "syntax": "waybar {{-l|--log-level}} {{trace|debug|info|warning|error|critical|off}}"
+    }
+  ]
+}

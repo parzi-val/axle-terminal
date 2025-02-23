@@ -1,0 +1,10 @@
+{
+  "command": "todoman",
+  "description": "A simple, standards-based, cli todo manager. todoman is a common name for the command todo, but not a command itself. More information: https://todoman.readthedocs.io/.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr todo"
+    }
+  ]
+}

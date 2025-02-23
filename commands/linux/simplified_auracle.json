@@ -1,0 +1,22 @@
+{
+  "command": "auracle",
+  "description": "Command-line tool used to interact with Arch Linux's User Repository, commonly referred to as the AUR. More information: https://github.com/falconindy/auracle.",
+  "useCases": [
+    {
+      "description": "Display AUR packages that match a regular expression:",
+      "syntax": "auracle search '{{regular_expression}}'"
+    },
+    {
+      "description": "Display information about one or more AUR packages:",
+      "syntax": "auracle info {{package1 package2 ...}}"
+    },
+    {
+      "description": "Display the PKGBUILD file (build information) of one or more AUR packages:",
+      "syntax": "auracle show {{package1 package2 ...}}"
+    },
+    {
+      "description": "Display updates for installed AUR packages:",
+      "syntax": "auracle outdated"
+    }
+  ]
+}

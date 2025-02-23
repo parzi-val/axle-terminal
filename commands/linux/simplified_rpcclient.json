@@ -1,0 +1,38 @@
+{
+  "command": "rpcclient",
+  "description": "MS-RPC client tool (part of the samba suite). More information: https://www.samba.org/samba/docs/current/man-html/rpcclient.1.html.",
+  "useCases": [
+    {
+      "description": "Connect to a remote host:",
+      "syntax": "rpcclient --user {{domain}}\\{{username}}%{{password}} {{ip}}"
+    },
+    {
+      "description": "Connect to a remote host on a domain without a password:",
+      "syntax": "rpcclient --user {{username}} --workgroup {{domain}} --no-pass {{ip}}"
+    },
+    {
+      "description": "Connect to a remote host, passing the password hash:",
+      "syntax": "rpcclient --user {{domain}}\\{{username}} --pw-nt-hash {{ip}}"
+    },
+    {
+      "description": "Execute shell commands on a remote host:",
+      "syntax": "rpcclient --user {{domain}}\\{{username}}%{{password}} --command {{semicolon_separated_commands}} {{ip}}"
+    },
+    {
+      "description": "Display domain users:",
+      "syntax": "rpcclient $&gt; enumdomusers"
+    },
+    {
+      "description": "Display privileges:",
+      "syntax": "rpcclient $&gt; enumprivs"
+    },
+    {
+      "description": "Display information about a specific user:",
+      "syntax": "rpcclient $&gt; queryuser {{username|rid}}"
+    },
+    {
+      "description": "Create a new user in the domain:",
+      "syntax": "rpcclient $&gt; createdomuser {{username}}"
+    }
+  ]
+}

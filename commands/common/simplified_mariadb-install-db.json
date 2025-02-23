@@ -1,0 +1,10 @@
+{
+  "command": "mariadb-install-db",
+  "description": "Initialize a MariaDB database. More information: https://manned.org/mariadb-install-db.",
+  "useCases": [
+    {
+      "description": "Initialize a database:",
+      "syntax": "mariadb-install-db --user={{user}}} --basedir={{/usr}} --datadir={{/var/lib/mysql}}"
+    }
+  ]
+}

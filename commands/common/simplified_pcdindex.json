@@ -1,0 +1,10 @@
+{
+  "command": "pcdindex",
+  "description": "This command has been renamed to pcdovtoppm. More information: https://netpbm.sourceforge.net/doc/pcdindex.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the command under its current name:",
+      "syntax": "tldr pcdovtoppm"
+    }
+  ]
+}

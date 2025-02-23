@@ -1,0 +1,22 @@
+{
+  "command": "service",
+  "description": "Manage services by running init scripts. The full script path should be omitted (/etc/init.d/ is assumed). More information: https://manned.org/service.",
+  "useCases": [
+    {
+      "description": "List the name and status of all services:",
+      "syntax": "service --status-all"
+    },
+    {
+      "description": "Start/Stop/Restart/Reload service (start/stop should always be available):",
+      "syntax": "service {{service_name}} {{start|stop|restart|reload}}"
+    },
+    {
+      "description": "Do a full restart (runs script twice with start and stop):",
+      "syntax": "service {{service_name}} --full-restart"
+    },
+    {
+      "description": "Show the current status of a service:",
+      "syntax": "service {{service_name}} status"
+    }
+  ]
+}

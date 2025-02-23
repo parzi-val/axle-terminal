@@ -1,0 +1,30 @@
+{
+  "command": "xonsh",
+  "description": "Python-powered, cross-platform, Unix-gazing shell. Write and mix sh/Python code in Xonsh (pronounced conch). More information: https://xon.sh.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "xonsh"
+    },
+    {
+      "description": "Execute a single command and then exit:",
+      "syntax": "xonsh -c &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Run commands from a script file and then exit:",
+      "syntax": "xonsh {{path/to/script_file.xonsh}}"
+    },
+    {
+      "description": "Define environment variables for the shell process:",
+      "syntax": "xonsh -D{{name1}}={{value1}} -D{{name2}}={{value2}}"
+    },
+    {
+      "description": "Load the specified .xonsh or .json configuration files:",
+      "syntax": "xonsh --rc {{path/to/file1.xonsh}} {{path/to/file2.json}}"
+    },
+    {
+      "description": "Skip loading the .xonshrc configuration file:",
+      "syntax": "xonsh --no-rc"
+    }
+  ]
+}

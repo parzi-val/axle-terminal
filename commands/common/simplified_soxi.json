@@ -1,0 +1,10 @@
+{
+  "command": "soxi",
+  "description": "SoXI - Sound eXchange Information, display sound file metadata. More information: https://manned.org/soxi.1.",
+  "useCases": [
+    {
+      "description": "Display the sound file metadata:",
+      "syntax": "soxi {{path/to/file.wav}}"
+    }
+  ]
+}

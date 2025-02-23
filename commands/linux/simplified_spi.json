@@ -1,0 +1,30 @@
+{
+  "command": "spi",
+  "description": "A meta package manager that handles both packages and slackbuilds. More information: https://github.com/gapan/spi.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages and slackbuilds:",
+      "syntax": "spi --update"
+    },
+    {
+      "description": "Install a package or slackbuild:",
+      "syntax": "spi --install {{package/slackbuild_name}}"
+    },
+    {
+      "description": "Upgrade all installed packages to the latest versions available:",
+      "syntax": "spi --upgrade"
+    },
+    {
+      "description": "Locate packages or slackbuilds by package name or description:",
+      "syntax": "spi {{search_terms}}"
+    },
+    {
+      "description": "Display information about a package or slackbuild:",
+      "syntax": "spi --show {{package/slackbuild_name}}"
+    },
+    {
+      "description": "Purge the local package and slackbuild caches:",
+      "syntax": "spi --clean"
+    }
+  ]
+}

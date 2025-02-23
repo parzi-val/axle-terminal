@@ -1,0 +1,22 @@
+{
+  "command": "promtool",
+  "description": "Tooling for the Prometheus monitoring system. More information: https://prometheus.io/docs/prometheus/latest/getting_started/.",
+  "useCases": [
+    {
+      "description": "Check if the configuration files are valid or not (if present report errors):",
+      "syntax": "promtool check config {{config_file.yml}}"
+    },
+    {
+      "description": "Check if the rule files are valid or not (if present report errors):",
+      "syntax": "promtool check rules {{rules_file.yml}}"
+    },
+    {
+      "description": "Pass Prometheus metrics over stdin to check them for consistency and correctness:",
+      "syntax": "curl --silent {{http://example.com:9090/metrics/}} | promtool check metrics"
+    },
+    {
+      "description": "Unit tests for rules config:",
+      "syntax": "promtool test rules {{test_file.yml}}"
+    }
+  ]
+}

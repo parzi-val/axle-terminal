@@ -1,0 +1,30 @@
+{
+  "command": "caddy",
+  "description": "An enterprise-ready open source web server with automatic HTTPS, written in Go. More information: https://caddyserver.com.",
+  "useCases": [
+    {
+      "description": "Start Caddy in the foreground:",
+      "syntax": "caddy run"
+    },
+    {
+      "description": "Start Caddy with the specified Caddyfile:",
+      "syntax": "caddy run --config {{path/to/Caddyfile}}"
+    },
+    {
+      "description": "Start Caddy in the background:",
+      "syntax": "caddy start"
+    },
+    {
+      "description": "Stop a background Caddy process:",
+      "syntax": "caddy stop"
+    },
+    {
+      "description": "Run a simple file server on the specified port with a browsable interface:",
+      "syntax": "caddy file-server --listen :{{8000}} --browse"
+    },
+    {
+      "description": "Run a reverse proxy server:",
+      "syntax": "caddy reverse-proxy --from :{{80}} --to localhost:{{8000}}"
+    }
+  ]
+}

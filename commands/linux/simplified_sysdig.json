@@ -1,0 +1,34 @@
+{
+  "command": "sysdig",
+  "description": "System troubleshooting, analysis and exploration. Capture, filter and store systemcalls. More information: https://github.com/draios/sysdig/wiki.",
+  "useCases": [
+    {
+      "description": "Capture all the events from the live system and print them to screen:",
+      "syntax": "sysdig"
+    },
+    {
+      "description": "Capture all the events from the live system and save them to disk:",
+      "syntax": "sysdig -w {{path/to/file}}.scap"
+    },
+    {
+      "description": "Read events from a file and print them to screen:",
+      "syntax": "sysdig -r {{path/to/file}}.scap"
+    },
+    {
+      "description": "Filter and Print all the open system calls invoked by cat:",
+      "syntax": "sysdig proc.name=cat and evt.type=open"
+    },
+    {
+      "description": "Register any found plugin and use dummy as input source passing to it open params:",
+      "syntax": "sysdig -I dummy:'{{parameter}}'"
+    },
+    {
+      "description": "List the available chisels:",
+      "syntax": "sysdig -cl"
+    },
+    {
+      "description": "Use the spy_ip chisel to look at the data exchanged with ip address:",
+      "syntax": "sysdig -c spy_ip {{ip_address}}"
+    }
+  ]
+}

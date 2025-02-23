@@ -1,0 +1,22 @@
+{
+  "command": "showmount",
+  "description": "Display information about NFS filesystems on Windows Server. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/showmount.",
+  "useCases": [
+    {
+      "description": "Display all exported filesystems:",
+      "syntax": "showmount -e"
+    },
+    {
+      "description": "Display all NFS clients and their mounted directories:",
+      "syntax": "showmount -a"
+    },
+    {
+      "description": "Display all NFS mounted directories:",
+      "syntax": "showmount -d"
+    },
+    {
+      "description": "Display all exported filesystems for a remote server:",
+      "syntax": "showmount -e {{server_address}}"
+    }
+  ]
+}

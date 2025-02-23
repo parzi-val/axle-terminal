@@ -1,0 +1,26 @@
+{
+  "command": "sysctl",
+  "description": "List and change kernel runtime variables. More information: https://manned.org/sysctl.8.",
+  "useCases": [
+    {
+      "description": "Show all available variables and their values:",
+      "syntax": "sysctl -a"
+    },
+    {
+      "description": "Set a changeable kernel state variable:",
+      "syntax": "sysctl -w {{section.tunable}}={{value}}"
+    },
+    {
+      "description": "Get currently open file handlers:",
+      "syntax": "sysctl fs.file-nr"
+    },
+    {
+      "description": "Get limit for simultaneous open files:",
+      "syntax": "sysctl fs.file-max"
+    },
+    {
+      "description": "Apply changes from /etc/sysctl.conf:",
+      "syntax": "sysctl -p"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "cargo add",
+  "description": "Add dependencies to a Rust project's Cargo.toml manifest. More information: https://doc.rust-lang.org/cargo/commands/cargo-add.html.",
+  "useCases": [
+    {
+      "description": "Add the latest version of a dependency to the current project:",
+      "syntax": "cargo add {{dependency}}"
+    },
+    {
+      "description": "Add a specific version of a dependency:",
+      "syntax": "cargo add {{dependency}}@{{version}}"
+    },
+    {
+      "description": "Add a dependency and enable one or more specific features:",
+      "syntax": "cargo add {{dependency}} --features {{feature_1}},{{feature_2}}"
+    },
+    {
+      "description": "Add an optional dependency, which then gets exposed as a feature of the crate:",
+      "syntax": "cargo add {{dependency}} --optional"
+    },
+    {
+      "description": "Add a local crate as a dependency:",
+      "syntax": "cargo add --path {{path/to/crate_directory}}"
+    },
+    {
+      "description": "Add a development or build dependency:",
+      "syntax": "cargo add {{dependency}} --{{dev|build}}"
+    },
+    {
+      "description": "Add a dependency with all default features disabled:",
+      "syntax": "cargo add {{dependency}} --no-default-features"
+    }
+  ]
+}

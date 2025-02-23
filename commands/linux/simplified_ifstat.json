@@ -1,0 +1,18 @@
+{
+  "command": "ifstat",
+  "description": "View network interface statistics. More information: https://manned.org/ifstat.",
+  "useCases": [
+    {
+      "description": "View network interface statistics since last query:",
+      "syntax": "ifstat"
+    },
+    {
+      "description": "View network interface statistics since last boot:",
+      "syntax": "ifstat {{-a|--ignore}}"
+    },
+    {
+      "description": "View error rate:",
+      "syntax": "ifstat {{-e|--errors}}"
+    }
+  ]
+}

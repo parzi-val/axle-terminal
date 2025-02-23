@@ -1,0 +1,26 @@
+{
+  "command": "prqlc",
+  "description": "PRQL compiler. PRQL is a modern language for transforming data - a simple, powerful, pipelined SQL replacement. More information: https://prql-lang.org.",
+  "useCases": [
+    {
+      "description": "Run the compiler interactively:",
+      "syntax": "prqlc compile"
+    },
+    {
+      "description": "Compile a specific .prql file to stdout:",
+      "syntax": "prqlc compile {{path/to/file.prql}}"
+    },
+    {
+      "description": "Compile a .prql file to a .sql file:",
+      "syntax": "prqlc compile {{path/to/source.prql}} {{path/to/target.sql}}"
+    },
+    {
+      "description": "Compile a query:",
+      "syntax": "echo &quot;{{from employees | filter has_dog | select salary}}&quot; | prqlc compile"
+    },
+    {
+      "description": "Watch a directory and compile on file modification:",
+      "syntax": "prqlc watch {{path/to/directory}}"
+    }
+  ]
+}

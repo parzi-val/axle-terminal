@@ -1,0 +1,34 @@
+{
+  "command": "swupd",
+  "description": "Package management utility for Clear Linux. More information: https://www.clearlinux.org/clear-linux-documentation/guides/clear/swupd.html.",
+  "useCases": [
+    {
+      "description": "Update to the latest version:",
+      "syntax": "sudo swupd update"
+    },
+    {
+      "description": "Show current version, and check whether a newer one exists:",
+      "syntax": "swupd check-update"
+    },
+    {
+      "description": "List installed bundles:",
+      "syntax": "swupd bundle-list"
+    },
+    {
+      "description": "Locate the bundle where a wanted package exists:",
+      "syntax": "swupd search -b {{package}}"
+    },
+    {
+      "description": "Install a new bundle:",
+      "syntax": "sudo swupd bundle-add {{bundle}}"
+    },
+    {
+      "description": "Remove a bundle:",
+      "syntax": "sudo swupd bundle-remove {{bundle}}"
+    },
+    {
+      "description": "Correct broken or missing files:",
+      "syntax": "sudo swupd verify"
+    }
+  ]
+}

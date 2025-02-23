@@ -1,0 +1,26 @@
+{
+  "command": "hg remove",
+  "description": "Remove specified files from the staging area. More information: https://www.mercurial-scm.org/doc/hg.1.html#remove.",
+  "useCases": [
+    {
+      "description": "Remove files or directories from the staging area:",
+      "syntax": "hg remove {{path/to/file}}"
+    },
+    {
+      "description": "Remove all staged files matching a specified pattern:",
+      "syntax": "hg remove --include {{pattern}}"
+    },
+    {
+      "description": "Remove all staged files, excluding those that match a specified pattern:",
+      "syntax": "hg remove --exclude {{pattern}}"
+    },
+    {
+      "description": "Recursively remove sub-repositories:",
+      "syntax": "hg remove --subrepos"
+    },
+    {
+      "description": "Remove files from the repository that have been physically removed:",
+      "syntax": "hg remove --after"
+    }
+  ]
+}

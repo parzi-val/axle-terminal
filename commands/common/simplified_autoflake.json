@@ -1,0 +1,22 @@
+{
+  "command": "autoflake",
+  "description": "Remove unused imports and variables from Python code. More information: https://github.com/myint/autoflake.",
+  "useCases": [
+    {
+      "description": "Remove unused variables from a single file and display the diff:",
+      "syntax": "autoflake --remove-unused-variables {{path/to/file.py}}"
+    },
+    {
+      "description": "Remove unused imports from multiple files and display the diffs:",
+      "syntax": "autoflake --remove-all-unused-imports {{path/to/file1.py path/to/file2.py ...}}"
+    },
+    {
+      "description": "Remove unused variables from a file, overwriting the file:",
+      "syntax": "autoflake --remove-unused-variables --in-place {{path/to/file.py}}"
+    },
+    {
+      "description": "Remove unused variables recursively from all files in a directory, overwriting each file:",
+      "syntax": "autoflake --remove-unused-variables --in-place --recursive {{path/to/directory}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "multipass",
+  "description": "Manage Ubuntu virtual machines using native hypervisors. More information: https://multipass.run/.",
+  "useCases": [
+    {
+      "description": "List the aliases that can be used to launch an instance:",
+      "syntax": "multipass find"
+    },
+    {
+      "description": "Launch a new instance, set its name and use a cloud-init configuration file:",
+      "syntax": "multipass launch -n {{instance_name}} --cloud-init {{configuration_file}}"
+    },
+    {
+      "description": "List all the created instances and some of their properties:",
+      "syntax": "multipass list"
+    },
+    {
+      "description": "Start a specific instance by name:",
+      "syntax": "multipass start {{instance_name}}"
+    },
+    {
+      "description": "Show the properties of an instance:",
+      "syntax": "multipass info {{instance_name}}"
+    },
+    {
+      "description": "Open a shell prompt on a specific instance by name:",
+      "syntax": "multipass shell {{instance_name}}"
+    },
+    {
+      "description": "Delete an instance by name:",
+      "syntax": "multipass delete {{instance_name}}"
+    },
+    {
+      "description": "Mount a directory into a specific instance:",
+      "syntax": "multipass mount {{path/to/local/directory}} {{instance_name}}:{{path/to/target/directory}}"
+    }
+  ]
+}

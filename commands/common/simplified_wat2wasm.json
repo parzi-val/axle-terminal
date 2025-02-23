@@ -1,0 +1,18 @@
+{
+  "command": "wat2wasm",
+  "description": "Convert a file from the WebAssembly text format to the binary format. More information: https://github.com/WebAssembly/wabt.",
+  "useCases": [
+    {
+      "description": "Parse and check a file for errors:",
+      "syntax": "wat2wasm {{file.wat}}"
+    },
+    {
+      "description": "Write the output binary to a given file:",
+      "syntax": "wat2wasm {{file.wat}} -o {{file.wasm}}"
+    },
+    {
+      "description": "Display simplified representation of every byte:",
+      "syntax": "wat2wasm -v {{file.wat}}"
+    }
+  ]
+}

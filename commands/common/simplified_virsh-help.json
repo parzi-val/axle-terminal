@@ -1,0 +1,22 @@
+{
+  "command": "virsh-help",
+  "description": "Display information about virsh commands or command groups. See also: virsh. More information: https://manned.org/virsh.",
+  "useCases": [
+    {
+      "description": "List the virsh commands grouped into related categories:",
+      "syntax": "virsh help"
+    },
+    {
+      "description": "List the command categories:",
+      "syntax": "virsh help | grep &quot;keyword&quot;"
+    },
+    {
+      "description": "List the commands in a category:",
+      "syntax": "virsh help {{category_keyword}}"
+    },
+    {
+      "description": "Display help for a command:",
+      "syntax": "virsh help {{command}}"
+    }
+  ]
+}

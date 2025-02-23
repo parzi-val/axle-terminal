@@ -1,0 +1,26 @@
+{
+  "command": "wipefs",
+  "description": "Wipe filesystem, raid, or partition-table signatures from a device. More information: https://manned.org/wipefs.",
+  "useCases": [
+    {
+      "description": "Display signatures for specified device:",
+      "syntax": "sudo wipefs {{/dev/sdX}}"
+    },
+    {
+      "description": "Wipe all available signature types for a specific device with no recursion into partitions:",
+      "syntax": "sudo wipefs --all {{/dev/sdX}}"
+    },
+    {
+      "description": "Wipe all available signature types for the device and partitions using a glob pattern:",
+      "syntax": "sudo wipefs --all {{/dev/sdX}}*"
+    },
+    {
+      "description": "Perform dry run:",
+      "syntax": "sudo wipefs --all --no-act {{/dev/sdX}}"
+    },
+    {
+      "description": "Force wipe, even if the filesystem is mounted:",
+      "syntax": "sudo wipefs --all --force {{/dev/sdX}}"
+    }
+  ]
+}

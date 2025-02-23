@@ -1,0 +1,30 @@
+{
+  "command": "xml format",
+  "description": "Format an XML document. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Format an XML document, indenting with tabs:",
+      "syntax": "xml format --indent-tab {{path/to/input.xml|URI}} &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Format an HTML document, indenting with 4 spaces:",
+      "syntax": "xml format --html --indent-spaces {{4}} {{path/to/input.html|URI}} &gt; {{path/to/output.html}}"
+    },
+    {
+      "description": "Recover parsable parts of a malformed XML document, without indenting:",
+      "syntax": "xml format --recover --noindent {{path/to/malformed.xml|URI}} &gt; {{path/to/recovered.xml}}"
+    },
+    {
+      "description": "Format an XML document from stdin, removing the DOCTYPE declaration:",
+      "syntax": "cat {{path\\to\\input.xml}} | xml format --dropdtd &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Format an XML document, omitting the XML declaration:",
+      "syntax": "xml format --omit-decl {{path\\to\\input.xml|URI}} &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml format --help"
+    }
+  ]
+}

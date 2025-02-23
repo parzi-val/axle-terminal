@@ -1,0 +1,38 @@
+{
+  "command": "sbt",
+  "description": "Build tool for Scala and Java projects. More information: https://www.scala-sbt.org/1.x/docs/.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "sbt"
+    },
+    {
+      "description": "Create a new Scala project from an existing Giter8 template hosted on GitHub:",
+      "syntax": "sbt new {{scala/hello-world.g8}}"
+    },
+    {
+      "description": "Compile and run all tests:",
+      "syntax": "sbt test"
+    },
+    {
+      "description": "Delete all generated files in the target directory:",
+      "syntax": "sbt clean"
+    },
+    {
+      "description": "Compile the main sources in src/main/scala and src/main/java directories:",
+      "syntax": "sbt compile"
+    },
+    {
+      "description": "Use the specified version of sbt:",
+      "syntax": "sbt -sbt-version {{version}}"
+    },
+    {
+      "description": "Use a specific jar file as the sbt launcher:",
+      "syntax": "sbt -sbt-jar {{path}}"
+    },
+    {
+      "description": "List all sbt options:",
+      "syntax": "sbt -h"
+    }
+  ]
+}

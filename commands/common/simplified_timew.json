@@ -1,0 +1,34 @@
+{
+  "command": "timew",
+  "description": "A time tracking tool used to measure the duration of activities. More information: https://timewarrior.net/docs.",
+  "useCases": [
+    {
+      "description": "Start tracking an activity:",
+      "syntax": "timew start"
+    },
+    {
+      "description": "Tag the current activity:",
+      "syntax": "timew tag {{activity_tag}}"
+    },
+    {
+      "description": "Start tracking and tag a new activity:",
+      "syntax": "timew start {{activity_tag}}"
+    },
+    {
+      "description": "Stop the current activity:",
+      "syntax": "timew stop"
+    },
+    {
+      "description": "Track an activity in the past:",
+      "syntax": "timew track {{start_time} - {{end_time}} {{activity_tag}}"
+    },
+    {
+      "description": "View tracked items of the day:",
+      "syntax": "timew summary"
+    },
+    {
+      "description": "View report for the last day, week, current month, etc.:",
+      "syntax": "timew summary :{{today|yesterday|week|lastweek|month|lastmonth|year|lastyear}}"
+    }
+  ]
+}

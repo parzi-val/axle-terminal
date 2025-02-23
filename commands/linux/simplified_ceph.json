@@ -1,0 +1,34 @@
+{
+  "command": "ceph",
+  "description": "A unified storage system. More information: https://ceph.io/en.",
+  "useCases": [
+    {
+      "description": "Check cluster health status:",
+      "syntax": "ceph status"
+    },
+    {
+      "description": "Check cluster usage stats:",
+      "syntax": "ceph df"
+    },
+    {
+      "description": "Get the statistics for the placement groups in a cluster:",
+      "syntax": "ceph pg dump --format {{plain}}"
+    },
+    {
+      "description": "Create a storage pool:",
+      "syntax": "ceph osd pool create {{pool_name}} {{page_number}}"
+    },
+    {
+      "description": "Delete a storage pool:",
+      "syntax": "ceph osd pool delete {{pool_name}}"
+    },
+    {
+      "description": "Rename a storage pool:",
+      "syntax": "ceph osd pool rename {{current_name}} {{new_name}}"
+    },
+    {
+      "description": "Self-repair pool storage:",
+      "syntax": "ceph pg repair {{pool_name}}"
+    }
+  ]
+}

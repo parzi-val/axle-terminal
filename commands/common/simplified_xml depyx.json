@@ -1,0 +1,18 @@
+{
+  "command": "xml depyx",
+  "description": "Convert a PYX (ESIS - ISO 8879) document to XML format. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Convert a PYX (ESIS - ISO 8879) document to XML format:",
+      "syntax": "xml depyx {{path/to/input.pyx|URI}} &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Convert a PYX document from stdin to XML format:",
+      "syntax": "cat {{path/to/input.pyx}} | xml depyx &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml depyx --help"
+    }
+  ]
+}

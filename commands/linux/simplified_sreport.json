@@ -1,0 +1,18 @@
+{
+  "command": "sreport",
+  "description": "Generate reports on jobs, users, and clusters from accounting data. More information: https://slurm.schedmd.com/sreport.html.",
+  "useCases": [
+    {
+      "description": "Show pipe delimited cluster utilization data:",
+      "syntax": "sreport --parsable cluster utilization"
+    },
+    {
+      "description": "Show number of jobs run:",
+      "syntax": "sreport job sizes printjobcount"
+    },
+    {
+      "description": "Show users with the highest CPU time use:",
+      "syntax": "sreport user topuser"
+    }
+  ]
+}

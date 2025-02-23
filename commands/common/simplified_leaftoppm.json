@@ -1,0 +1,14 @@
+{
+  "command": "leaftoppm",
+  "description": "Convert an Interleaf image to a PPM image. More information: https://netpbm.sourceforge.net/doc/leaftoppm.html.",
+  "useCases": [
+    {
+      "description": "Generate a PPM image file as output for an Interleaf image file as input:",
+      "syntax": "leaftoppm {{path/to/file.pl}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "leaftoppm -version"
+    }
+  ]
+}

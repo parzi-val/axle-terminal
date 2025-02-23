@@ -1,0 +1,38 @@
+{
+  "command": "xxh",
+  "description": "Bring your shell with all of your customizations through SSH sessions. Note: xxh does not install anything into system directories on the target machine; removing ~/.xxh will clear all traces of xxh on the target machine. More information: https://github.com/xxh/xxh.",
+  "useCases": [
+    {
+      "description": "Connect to a host and run the current shell:",
+      "syntax": "xxh &quot;{{host}}&quot;"
+    },
+    {
+      "description": "Install the current shell into the target machine without prompting:",
+      "syntax": "xxh &quot;{{host}}&quot; ++install"
+    },
+    {
+      "description": "Run the specified shell on the target machine:",
+      "syntax": "xxh &quot;{{host}}&quot; ++shell {{xonsh|zsh|fish|bash|osquery}}"
+    },
+    {
+      "description": "Use a specific xxh configuration directory on the target machine:",
+      "syntax": "xxh &quot;{{host}}&quot; ++host-xxh-home {{~/.xxh}}"
+    },
+    {
+      "description": "Use the specified configuration file on the host machine:",
+      "syntax": "xxh &quot;{{host}}&quot; ++xxh-config {{~/.config/xxh/config.xxhc}}"
+    },
+    {
+      "description": "Specify a password to use for the SSH connection:",
+      "syntax": "xxh &quot;{{host}}&quot; ++password &quot;{{password}}&quot;"
+    },
+    {
+      "description": "Install an xxh package on the target machine:",
+      "syntax": "xxh &quot;{{host}}&quot; ++install-xxh-packages {{package}}"
+    },
+    {
+      "description": "Set an environment variable for the shell process on the target machine:",
+      "syntax": "xxh &quot;{{host}}&quot; ++env {{name}}={{value}}"
+    }
+  ]
+}

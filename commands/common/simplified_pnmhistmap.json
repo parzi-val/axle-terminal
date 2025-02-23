@@ -1,0 +1,18 @@
+{
+  "command": "pnmhistmap",
+  "description": "Draw a histogram of a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmhistmap.html.",
+  "useCases": [
+    {
+      "description": "Draw a histogram of a PNM image:",
+      "syntax": "pnmhistmap {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Draw the histogram as dots instead of bars:",
+      "syntax": "pnmhistmap -dots {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the range of intensity values to include:",
+      "syntax": "pnmhistmap -lval {{minval}} -rval {{maxval}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

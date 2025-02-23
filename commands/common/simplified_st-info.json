@@ -1,0 +1,18 @@
+{
+  "command": "st-info",
+  "description": "Get information about connected STLink and STM32 devices. More information: https://github.com/texane/stlink.",
+  "useCases": [
+    {
+      "description": "Display amount of program memory available:",
+      "syntax": "st-info --flash"
+    },
+    {
+      "description": "Display amount of SRAM memory available:",
+      "syntax": "st-info --sram"
+    },
+    {
+      "description": "Display summarized information of the device:",
+      "syntax": "st-info --probe"
+    }
+  ]
+}

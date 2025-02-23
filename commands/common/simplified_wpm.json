@@ -1,0 +1,30 @@
+{
+  "command": "wpm",
+  "description": "Typeracer-like console app for measuring your WPM. More information: https://github.com/cslarsen/wpm.",
+  "useCases": [
+    {
+      "description": "Start wpm:",
+      "syntax": "wpm"
+    },
+    {
+      "description": "Start wpm with short texts:",
+      "syntax": "wpm --short"
+    },
+    {
+      "description": "Start wpm using a specific text file:",
+      "syntax": "wpm --load {{path/to/file.txt}}"
+    },
+    {
+      "description": "Tag your race scores:",
+      "syntax": "wpm --tag {{tag_name}}"
+    },
+    {
+      "description": "Show score statistics grouped by tags:",
+      "syntax": "wpm --stats"
+    },
+    {
+      "description": "Start wpm with monochrome colors:",
+      "syntax": "wpm --monochrome"
+    }
+  ]
+}

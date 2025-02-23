@@ -1,0 +1,18 @@
+{
+  "command": "crane catalog",
+  "description": "List the repositories in a registry. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_catalog.md.",
+  "useCases": [
+    {
+      "description": "List the repositories in a registry:",
+      "syntax": "crane catalog {{registry_address}}"
+    },
+    {
+      "description": "Print the full image reference:",
+      "syntax": "crane catalog {{registry_address}} --full-ref"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane catalog {{-h|--help}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "sshd",
+  "description": "Secure Shell Daemon - allows remote machines to securely log in to the current machine. Remote machines can execute commands as it is executed at this machine. More information: https://man.openbsd.org/sshd.",
+  "useCases": [
+    {
+      "description": "Start daemon in the background:",
+      "syntax": "sshd"
+    },
+    {
+      "description": "Run sshd in the foreground:",
+      "syntax": "sshd -D"
+    },
+    {
+      "description": "Run with verbose output (for debugging):",
+      "syntax": "sshd -D -d"
+    },
+    {
+      "description": "Run on a specific port:",
+      "syntax": "sshd -p {{port}}"
+    }
+  ]
+}

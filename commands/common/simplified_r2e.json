@@ -1,0 +1,26 @@
+{
+  "command": "r2e",
+  "description": "Forwards RSS feeds to an email address. Requires a configured sendmail or smtp setup. More information: https://github.com/rss2email/rss2email.",
+  "useCases": [
+    {
+      "description": "Create a new feed database that sends email to an email address:",
+      "syntax": "r2e new {{email_address}}"
+    },
+    {
+      "description": "Subscribe to a feed:",
+      "syntax": "r2e add {{feed_name}} {{feed_URI}}"
+    },
+    {
+      "description": "Send new stories to an email address:",
+      "syntax": "r2e run"
+    },
+    {
+      "description": "List all feeds:",
+      "syntax": "r2e list"
+    },
+    {
+      "description": "Delete a feed at a specified index:",
+      "syntax": "r2e delete {{index}}"
+    }
+  ]
+}

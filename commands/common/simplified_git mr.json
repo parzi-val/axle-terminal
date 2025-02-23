@@ -1,0 +1,22 @@
+{
+  "command": "git mr",
+  "description": "Check out GitLab merge requests locally. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-mr.",
+  "useCases": [
+    {
+      "description": "Check out a specific merge request:",
+      "syntax": "git mr {{mr_number}}"
+    },
+    {
+      "description": "Check out a merge request from a specific remote:",
+      "syntax": "git mr {{mr_number}} {{remote}}"
+    },
+    {
+      "description": "Checkout a merge request from its URL:",
+      "syntax": "git mr {{url}}"
+    },
+    {
+      "description": "Clean up old merge request branches:",
+      "syntax": "git mr clean"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "clear",
+  "description": "In PowerShell, this command is an alias of Clear-Host.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr clear-host"
+    }
+  ]
+}

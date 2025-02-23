@@ -1,0 +1,26 @@
+{
+  "command": "uniq",
+  "description": "Output the unique lines from a input or file. Since it does not detect repeated lines unless they are adjacent, we need to sort them first. More information: https://www.gnu.org/software/coreutils/manual/html_node/uniq-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display each line once:",
+      "syntax": "sort {{path/to/file}} | uniq"
+    },
+    {
+      "description": "Display only unique lines:",
+      "syntax": "sort {{path/to/file}} | uniq -u"
+    },
+    {
+      "description": "Display only duplicate lines:",
+      "syntax": "sort {{path/to/file}} | uniq -d"
+    },
+    {
+      "description": "Display number of occurrences of each line along with that line:",
+      "syntax": "sort {{path/to/file}} | uniq -c"
+    },
+    {
+      "description": "Display number of occurrences of each line, sorted by the most frequent:",
+      "syntax": "sort {{path/to/file}} | uniq -c | sort -nr"
+    }
+  ]
+}

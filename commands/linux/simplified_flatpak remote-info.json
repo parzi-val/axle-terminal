@@ -1,0 +1,18 @@
+{
+  "command": "flatpak remote-info",
+  "description": "Show information about an application or runtime in a remote. More information: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-remote-info.",
+  "useCases": [
+    {
+      "description": "Show information about a flatpak:",
+      "syntax": "flatpak remote-info {{remote_name}} {{com.example.app}}"
+    },
+    {
+      "description": "Show a log of previous versions in a remote:",
+      "syntax": "flatpak remote-info --log {{remote_name}} {{com.example.app}}"
+    },
+    {
+      "description": "Show information about the specific commit, rather than the latest version:",
+      "syntax": "flatpak remote-info --commit={{COMMIT}} {{remote_name}} {{com.example.app}}"
+    }
+  ]
+}

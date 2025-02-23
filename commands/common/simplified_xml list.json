@@ -1,0 +1,18 @@
+{
+  "command": "xml list",
+  "description": "List a directory's contents (like ls) in XML format. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Write the current directory's listing to an XML document:",
+      "syntax": "xml list &gt; {{path/to/dir_list.xml}}"
+    },
+    {
+      "description": "Write the specified directory's listing to an XML document:",
+      "syntax": "xml list {{path/to/directory}} &gt; {{path/to/dir_list.xml}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml list --help"
+    }
+  ]
+}

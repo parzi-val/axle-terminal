@@ -1,0 +1,26 @@
+{
+  "command": "svn changelist",
+  "description": "Associate a changelist with a set of files. More information: https://svnbook.red-bean.com/en/1.7/svn.advanced.changelists.html.",
+  "useCases": [
+    {
+      "description": "Add files to a changelist, creating the changelist if it does not exist:",
+      "syntax": "svn changelist {{changelist_name}} {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Remove files from a changelist:",
+      "syntax": "svn changelist --remove {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Remove the whole changelist at once:",
+      "syntax": "svn changelist --remove --recursive --changelist {{changelist_name}} ."
+    },
+    {
+      "description": "Add the contents of a space-separated list of directories to a changelist:",
+      "syntax": "svn changelist --recursive {{changelist_name}} {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Commit a changelist:",
+      "syntax": "svn commit --changelist {{changelist_name}}"
+    }
+  ]
+}

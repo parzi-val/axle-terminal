@@ -1,0 +1,14 @@
+{
+  "command": "dhcpwn",
+  "description": "Test DHCP IP exhaustion attacks and sniff local DHCP traffic. More information: https://github.com/mschwager/dhcpwn.",
+  "useCases": [
+    {
+      "description": "Flood the network with IP requests:",
+      "syntax": "dhcpwn --interface {{network_interface}} flood --count {{number_of_requests}}"
+    },
+    {
+      "description": "Sniff local DHCP traffic:",
+      "syntax": "dhcpwn --interface {{network_interface}} sniff"
+    }
+  ]
+}

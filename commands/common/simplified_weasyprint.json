@@ -1,0 +1,26 @@
+{
+  "command": "weasyprint",
+  "description": "Render HTML to PDF or PNG. More information: https://weasyprint.org/.",
+  "useCases": [
+    {
+      "description": "Render an HTML file to PDF:",
+      "syntax": "weasyprint {{path/to/input.html}} {{path/to/output.pdf}}"
+    },
+    {
+      "description": "Render an HTML file to PNG, including an additional user stylesheet:",
+      "syntax": "weasyprint {{path/to/input.html}} {{path/to/output.png}} --stylesheet {{path/to/stylesheet.css}}"
+    },
+    {
+      "description": "Output additional debugging information when rendering:",
+      "syntax": "weasyprint {{path/to/input.html}} {{path/to/output.pdf}} --verbose"
+    },
+    {
+      "description": "Specify a custom resolution when outputting to PNG:",
+      "syntax": "weasyprint {{path/to/input.html}} {{path/to/output.png}} --resolution {{300}}"
+    },
+    {
+      "description": "Specify a base URL for relative URLs in the input HTML file:",
+      "syntax": "weasyprint {{path/to/input.html}} {{path/to/output.png}} --base-url {{url_or_filename}}"
+    }
+  ]
+}

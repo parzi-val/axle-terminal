@@ -1,0 +1,22 @@
+{
+  "command": "encfs",
+  "description": "Mount or create encrypted virtual filesystems. See also fusermount, which can unmount filesystems mounted by this command. More information: https://github.com/vgough/encfs.",
+  "useCases": [
+    {
+      "description": "Initialize or mount an encrypted filesystem:",
+      "syntax": "encfs {{/path/to/cipher_dir}} {{/path/to/mount_point}}"
+    },
+    {
+      "description": "Initialize an encrypted filesystem with standard settings:",
+      "syntax": "encfs --standard {{/path/to/cipher_dir}} {{/path/to/mount_point}}"
+    },
+    {
+      "description": "Run encfs in the foreground instead of spawning a daemon:",
+      "syntax": "encfs -f {{/path/to/cipher_dir}} {{/path/to/mount_point}}"
+    },
+    {
+      "description": "Mount an encrypted snapshot of a plain directory:",
+      "syntax": "encfs --reverse {{path/to/plain_dir}} {{path/to/cipher_dir}}"
+    }
+  ]
+}

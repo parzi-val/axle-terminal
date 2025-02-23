@@ -1,0 +1,26 @@
+{
+  "command": "yadm-transcrypt",
+  "description": "If transcrypt is installed, this command allows you to pass options directly to transcrypt. With the environment configured to use the yadm repository. Transcrypt enables transparent encryption and decryption of files in a Git repository. More information: https://github.com/elasticdog/transcrypt.",
+  "useCases": [
+    {
+      "description": "Set the symmetric cipher to utilize for encryption:",
+      "syntax": "yadm transcrypt --cipher={{cipher}}"
+    },
+    {
+      "description": "Pass the password to derive the key from:",
+      "syntax": "yadm transcrypt --password={{password}}"
+    },
+    {
+      "description": "Assume yes and accept defaults for non-specified options:",
+      "syntax": "yadm transcrypt --yes"
+    },
+    {
+      "description": "Display the current repository's cipher and password:",
+      "syntax": "yadm transcrypt --display"
+    },
+    {
+      "description": "Re -encrypt all encrypted files using new credentials:",
+      "syntax": "yadm transcrypt --rekey"
+    }
+  ]
+}

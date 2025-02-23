@@ -1,0 +1,22 @@
+{
+  "command": "latte-dock",
+  "description": "Replacement dock for Plasma desktop. More information: https://github.com/KDE/latte-dock.",
+  "useCases": [
+    {
+      "description": "Clear QML cache:",
+      "syntax": "latte-dock --clear-cache"
+    },
+    {
+      "description": "Import and load default layout on startup:",
+      "syntax": "latte-dock --default-layout"
+    },
+    {
+      "description": "Load a specific layout on startup:",
+      "syntax": "latte-dock --layout {{layout_name}}"
+    },
+    {
+      "description": "Import and load a specific layout:",
+      "syntax": "latte-dock --import-layout {{path/to/file}}"
+    }
+  ]
+}

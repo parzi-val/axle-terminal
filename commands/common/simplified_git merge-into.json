@@ -1,0 +1,14 @@
+{
+  "command": "git merge-into",
+  "description": "Merge one branch into another branch. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-merge-into.",
+  "useCases": [
+    {
+      "description": "Merge a source branch into a specific destination branch:",
+      "syntax": "git merge-into {{source_branch}} {{destination_branch}}"
+    },
+    {
+      "description": "Merge current branch into a specific destination branch:",
+      "syntax": "git merge-into {{destination_branch}}"
+    }
+  ]
+}

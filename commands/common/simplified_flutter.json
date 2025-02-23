@@ -1,0 +1,34 @@
+{
+  "command": "flutter",
+  "description": "Google's free, open source, and cross-platform mobile app SDK. Some subcommands such as pub have their own usage documentation. More information: https://github.com/flutter/flutter/wiki/The-flutter-tool.",
+  "useCases": [
+    {
+      "description": "Initialize a new Flutter project in a directory of the same name:",
+      "syntax": "flutter create {{project_name}}"
+    },
+    {
+      "description": "Check if all external tools are correctly installed:",
+      "syntax": "flutter doctor"
+    },
+    {
+      "description": "List or change Flutter channel:",
+      "syntax": "flutter channel {{stable|beta|dev|master}}"
+    },
+    {
+      "description": "Run Flutter on all started emulators and connected devices:",
+      "syntax": "flutter run -d all"
+    },
+    {
+      "description": "Run tests in a terminal from the root of the project:",
+      "syntax": "flutter test {{test/example_test.dart}}"
+    },
+    {
+      "description": "Build a release APK targeting most modern smartphones:",
+      "syntax": "flutter build apk --target-platform {{android-arm}},{{android-arm64}}"
+    },
+    {
+      "description": "Display help about a specific command:",
+      "syntax": "flutter help {{command}}"
+    }
+  ]
+}

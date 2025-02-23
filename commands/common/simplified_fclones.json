@@ -1,0 +1,34 @@
+{
+  "command": "fclones",
+  "description": "Efficient duplicate file finder and remover. More information: https://github.com/pkolaczk/fclones.",
+  "useCases": [
+    {
+      "description": "Search for duplicate files in the current directory:",
+      "syntax": "fclones group ."
+    },
+    {
+      "description": "Search multiple directories for duplicate files and cache the results:",
+      "syntax": "fclones group --cache {{path/to/directory1 path/to/directory2}}"
+    },
+    {
+      "description": "Search only the specified directory for duplicate files, skipping subdirectories and save the results into a file:",
+      "syntax": "fclones group {{path/to/directory}} --depth 1 &gt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Move the duplicate files in a TXT file to a different directory:",
+      "syntax": "fclones move {{path/to/target_directory}} &lt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Perform a dry run for soft links in a TXT file without actually linking:",
+      "syntax": "fclones link --soft &lt; {{path/to/file.txt}} --dry-run 2 &gt; /dev/null"
+    },
+    {
+      "description": "Delete the newest duplicates from the current directory without storing them in a file:",
+      "syntax": "fclones group . | fclones remove --priority newest"
+    },
+    {
+      "description": "Preprocess JPEG files in the current directory by using an external command to strip their EXIF data before matching for duplicates:",
+      "syntax": "fclones group . --name '*.jpg' -i --transform 'exiv2 -d a $IN' --in-place"
+    }
+  ]
+}

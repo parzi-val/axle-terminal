@@ -1,0 +1,18 @@
+{
+  "command": "subst",
+  "description": "Associates a path with a virtual drive letter. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/subst.",
+  "useCases": [
+    {
+      "description": "List active associations:",
+      "syntax": "subst"
+    },
+    {
+      "description": "Add an association:",
+      "syntax": "subst {{Z:}} {{C:\\Python2.7}}"
+    },
+    {
+      "description": "Remove an association:",
+      "syntax": "subst {{Z:}} /d"
+    }
+  ]
+}

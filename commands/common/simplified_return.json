@@ -1,0 +1,14 @@
+{
+  "command": "return",
+  "description": "Exit a function or a script if run with source. More information: https://www.gnu.org/software/bash/manual/bash.html#index-return.",
+  "useCases": [
+    {
+      "description": "Exit a function prematurely:",
+      "syntax": "{{func_name}}() { {{echo &quot;This is reached&quot;}}; return; {{echo &quot;This is not&quot;}}; }"
+    },
+    {
+      "description": "Specify the function's return value:",
+      "syntax": "{{func_name}}() { return {{N}}; }"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "brotli",
+  "description": "Compress/uncompress files with Brotli compression. More information: https://github.com/google/brotli.",
+  "useCases": [
+    {
+      "description": "Compress a file, creating a compressed version next to the file:",
+      "syntax": "brotli {{path/to/file}}"
+    },
+    {
+      "description": "[d]ecompress a file, creating an uncompressed version next to the file:",
+      "syntax": "brotli -d {{path/to/file.br}}"
+    },
+    {
+      "description": "Compress a file specifying the [o]utput filename:",
+      "syntax": "brotli {{path/to/file}} -o {{path/to/compressed_output_file.br}}"
+    },
+    {
+      "description": "[d]ecompress a Brotli file specifying the [o]utput filename:",
+      "syntax": "brotli -d {{path/to/compressed_file.br}} -o {{path/to/output_file}}"
+    },
+    {
+      "description": "Specify the compression quality (1=fastest (worst), 11=slowest (best)):",
+      "syntax": "brotli -q {{11}} {{path/to/file}} -o {{path/to/compressed_output_file.br}}"
+    }
+  ]
+}

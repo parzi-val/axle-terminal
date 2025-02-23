@@ -1,0 +1,34 @@
+{
+  "command": "mysql",
+  "description": "The MySQL command-line tool. More information: https://www.mysql.com/.",
+  "useCases": [
+    {
+      "description": "Connect to a database:",
+      "syntax": "mysql {{database_name}}"
+    },
+    {
+      "description": "Connect to a database, user will be prompted for a password:",
+      "syntax": "mysql -u {{user}} --password {{database_name}}"
+    },
+    {
+      "description": "Connect to a database on another host:",
+      "syntax": "mysql -h {{database_host}} {{database_name}}"
+    },
+    {
+      "description": "Connect to a database through a Unix socket:",
+      "syntax": "mysql --socket {{path/to/socket.sock}}"
+    },
+    {
+      "description": "Execute SQL statements in a script file (batch file):",
+      "syntax": "mysql -e &quot;source {{filename.sql}}&quot; {{database_name}}"
+    },
+    {
+      "description": "Restore a database from a backup created with mysqldump (user will be prompted for a password):",
+      "syntax": "mysql --user {{user}} --password {{database_name}} &lt; {{path/to/backup.sql}}"
+    },
+    {
+      "description": "Restore all databases from a backup (user will be prompted for a password):",
+      "syntax": "mysql --user {{user}} --password &lt; {{path/to/backup.sql}}"
+    }
+  ]
+}

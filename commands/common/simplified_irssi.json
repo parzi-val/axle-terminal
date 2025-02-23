@@ -1,0 +1,30 @@
+{
+  "command": "irssi",
+  "description": "Text based IRC client. More information: https://irssi.org.",
+  "useCases": [
+    {
+      "description": "Open Irssi and connect to a server with a nickname:",
+      "syntax": "irssi -n {{nickname}} -c {{irc.example.com}}"
+    },
+    {
+      "description": "Open Irssi and connect with a specific server on a given port:",
+      "syntax": "irssi -c {{irc.example.com}} -p {{port}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "irssi --help"
+    },
+    {
+      "description": "Join a channel:",
+      "syntax": "/join {{#channelname}}"
+    },
+    {
+      "description": "Change active window (starts at 1):",
+      "syntax": "/win {{window_number}}"
+    },
+    {
+      "description": "Exit the application cleanly and quitting any server(s):",
+      "syntax": "/quit"
+    }
+  ]
+}

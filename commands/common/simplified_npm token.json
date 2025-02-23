@@ -1,0 +1,34 @@
+{
+  "command": "npm token",
+  "description": "Manage and generate authentication tokens for the npm registry. More information: https://docs.npmjs.com/cli/commands/npm-token.",
+  "useCases": [
+    {
+      "description": "Create a new authentication token:",
+      "syntax": "npm token create"
+    },
+    {
+      "description": "List all tokens associated with an account:",
+      "syntax": "npm token list"
+    },
+    {
+      "description": "Delete a specific token using its token ID:",
+      "syntax": "npm token revoke {{token_id}}"
+    },
+    {
+      "description": "Create a token with read-only access:",
+      "syntax": "npm token create --read-only"
+    },
+    {
+      "description": "Create a token with publish access:",
+      "syntax": "npm token create --publish"
+    },
+    {
+      "description": "Automatically configure an npm token in your global .npmrc file when you log in:",
+      "syntax": "npm login"
+    },
+    {
+      "description": "Remove a token from the global configuration:",
+      "syntax": "npm token revoke {{token_id}}"
+    }
+  ]
+}

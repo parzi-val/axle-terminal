@@ -1,0 +1,18 @@
+{
+  "command": "bioradtopgm",
+  "description": "Convert a Biorad confocal file into a PGM file. More information: https://netpbm.sourceforge.net/doc/bioradtopgm.html.",
+  "useCases": [
+    {
+      "description": "Read a Biorad confocal file and store the n'th image contained in it to as a PGM file:",
+      "syntax": "bioradtopgm -{{n}} {{path/to/file.pic}} &gt; {{path/to/file.pgm}}"
+    },
+    {
+      "description": "Read a Biorad confocal file and print the number of images it contains:",
+      "syntax": "bioradtopgm {{path/to/file.pic}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "bioradtopgm -version"
+    }
+  ]
+}

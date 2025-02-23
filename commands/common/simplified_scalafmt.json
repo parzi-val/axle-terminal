@@ -1,0 +1,26 @@
+{
+  "command": "scalafmt",
+  "description": "Code formatter for Scala. Configurations are stored in the .scalafmt.conf file. More information: https://scalameta.org/scalafmt.",
+  "useCases": [
+    {
+      "description": "Reformat all .scala files in the current directory recursively:",
+      "syntax": "scalafmt"
+    },
+    {
+      "description": "Reformat specific files or directories with a custom formatting configuration:",
+      "syntax": "scalafmt --config {{path/to/.scalafmt.conf}} {{path/to/file_or_directory}} {{path/to/file_or_directory}} {{...}}"
+    },
+    {
+      "description": "Check if files are correctly formatted, returning 0 if all files respect the formatting style:",
+      "syntax": "scalafmt --config {{path/to/.scalafmt.conf}} --test"
+    },
+    {
+      "description": "Exclude files or directories:",
+      "syntax": "scalafmt --exclude {{path/to/file_or_directory}} {{...}}"
+    },
+    {
+      "description": "Format only files that were edited against the current Git branch:",
+      "syntax": "scalafmt --config {{path/to/.scalafmt.conf}} --mode diff"
+    }
+  ]
+}

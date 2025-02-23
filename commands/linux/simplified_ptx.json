@@ -1,0 +1,26 @@
+{
+  "command": "ptx",
+  "description": "Generate a permuted index of words from text files. More information: https://www.gnu.org/software/coreutils/manual/html_node/ptx-invocation.html.",
+  "useCases": [
+    {
+      "description": "Generate a permuted index where the first field of each line is an index reference:",
+      "syntax": "ptx --references {{path/to/file}}"
+    },
+    {
+      "description": "Generate a permuted index with automatically generated index references:",
+      "syntax": "ptx --auto-reference {{path/to/file}}"
+    },
+    {
+      "description": "Generate a permuted index with a fixed width:",
+      "syntax": "ptx --width={{width_in_columns}} {{path/to/file}}"
+    },
+    {
+      "description": "Generate a permuted index with a list of filtered words:",
+      "syntax": "ptx --only-file={{path/to/filter}} {{path/to/file}}"
+    },
+    {
+      "description": "Generate a permuted index with SYSV-style behaviors:",
+      "syntax": "ptx --traditional {{path/to/file}}"
+    }
+  ]
+}

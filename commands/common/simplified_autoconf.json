@@ -1,0 +1,18 @@
+{
+  "command": "autoconf",
+  "description": "Generate configuration scripts to automatically configure software source code packages. More information: https://www.gnu.org/software/autoconf.",
+  "useCases": [
+    {
+      "description": "Generate a configuration script from configure.ac (if present) or configure.in and save this script to configure:",
+      "syntax": "autoconf"
+    },
+    {
+      "description": "Generate a configuration script from the specified template; output to stdout:",
+      "syntax": "autoconf {{template-file}}"
+    },
+    {
+      "description": "Generate a configuration script from the specified template (even if the input file has not changed) and write the output to a file:",
+      "syntax": "autoconf --force --output {{outfile}} {{template-file}}"
+    }
+  ]
+}

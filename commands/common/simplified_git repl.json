@@ -1,0 +1,22 @@
+{
+  "command": "git repl",
+  "description": "Git REPL (read-evaluate-print-loop) - an interactive Git shell. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-repl.",
+  "useCases": [
+    {
+      "description": "Start an interactive Git shell:",
+      "syntax": "git repl"
+    },
+    {
+      "description": "Run a Git command while in the interactive Git shell:",
+      "syntax": "{{git_subcommand}} {{command_arguments}}"
+    },
+    {
+      "description": "Run an external (non-Git) command while in the interactive Git shell:",
+      "syntax": "!{{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Exit the interactive Git shell (or press Ctrl + D):",
+      "syntax": "exit"
+    }
+  ]
+}

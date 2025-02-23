@@ -1,0 +1,22 @@
+{
+  "command": "fswatch",
+  "description": "A cross-platform file change monitor. More information: https://emcrisostomo.github.io/fswatch.",
+  "useCases": [
+    {
+      "description": "Run a Bash command on file creation, update or deletion:",
+      "syntax": "fswatch {{path/to/file}} | xargs -n 1 {{bash_command}}"
+    },
+    {
+      "description": "Watch one or more files and/or directories:",
+      "syntax": "fswatch {{path/to/file}} {{path/to/directory}} {{path/to/another_directory/**/*.js}} | xargs -n 1 {{bash_command}}"
+    },
+    {
+      "description": "Print the absolute paths of the changed files:",
+      "syntax": "fswatch {{path/to/directory}} | xargs -n 1 -I {} echo {}"
+    },
+    {
+      "description": "Filter by event type:",
+      "syntax": "fswatch --event {{Updated|Removed|Created|...}} {{path/to/directory}} | xargs -n 1 {{bash_command}}"
+    }
+  ]
+}

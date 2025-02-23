@@ -1,0 +1,38 @@
+{
+  "command": "turbo",
+  "description": "High-performance build system for JavaScript and TypeScript codebases. See also: nx. More information: https://turborepo.org/docs/reference/command-line-reference.",
+  "useCases": [
+    {
+      "description": "Log in using the default web browser with a Vercel account:",
+      "syntax": "turbo login"
+    },
+    {
+      "description": "Link the current directory to a Vercel organization and enable remote caching:",
+      "syntax": "turbo link"
+    },
+    {
+      "description": "Build the current project:",
+      "syntax": "turbo run build"
+    },
+    {
+      "description": "Run a task without concurrency:",
+      "syntax": "turbo run {{task_name}} --concurrency={{1}}"
+    },
+    {
+      "description": "Run a task ignoring cached artifacts and forcibly re-execute all tasks:",
+      "syntax": "turbo run {{task_name}} --force"
+    },
+    {
+      "description": "Run a task in parallel across packages:",
+      "syntax": "turbo run {{task_name}} --parallel --no-cache"
+    },
+    {
+      "description": "Unlink the current directory from your Vercel organization and disable Remote Caching:",
+      "syntax": "turbo unlink"
+    },
+    {
+      "description": "Generate a Dot graph of a specific task execution (the output file format can be controlled with the filename):",
+      "syntax": "turbo run {{task_name}} --graph={{path/to/file.html|jpg|json|pdf|png|svg}}"
+    }
+  ]
+}

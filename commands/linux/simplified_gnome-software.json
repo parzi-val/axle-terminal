@@ -1,0 +1,22 @@
+{
+  "command": "gnome-software",
+  "description": "Add and remove applications and update your system. More information: https://apps.gnome.org/app/org.gnome.Software/.",
+  "useCases": [
+    {
+      "description": "Launch the GNOME Software GUI if it's not already running:",
+      "syntax": "gnome-software"
+    },
+    {
+      "description": "Launch the GNOME Software GUI if it's not open, and navigate to the specified page:",
+      "syntax": "gnome-software --mode {{updates|updated|installed|overview}}"
+    },
+    {
+      "description": "Launch the GNOME Software GUI if it's not open and view the details of the specified package:",
+      "syntax": "gnome-software --details {{package}}"
+    },
+    {
+      "description": "Display the version:",
+      "syntax": "gnome-software --version"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "mid3v2",
+  "description": "Edit audio tags. See also: id3v2. More information: https://mutagen.readthedocs.io/en/latest/man/mid3v2.html.",
+  "useCases": [
+    {
+      "description": "List all supported ID3v2.3 or ID3v2.4 frames and their meanings:",
+      "syntax": "id3v2 --list-frames {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "List all supported ID3v1 numeric genres:",
+      "syntax": "id3v2 --list-genres {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "List all tags in specific files:",
+      "syntax": "id3v2 --list {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "Set specific artist, album, or song information:",
+      "syntax": "id3v2 {{--artist|--album|--song}}={{string}} {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "Set specific picture information:",
+      "syntax": "id3v2 --picture={{filename:description:image_type:mime_type}} {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "Set specific year information:",
+      "syntax": "id3v2 --year={{YYYY}} {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "Set specific date information:",
+      "syntax": "id3v2 --date={{YYYY-MM-DD}} {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    }
+  ]
+}

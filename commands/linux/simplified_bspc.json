@@ -1,0 +1,30 @@
+{
+  "command": "bspc",
+  "description": "Configure and control bspwm, managing nodes, desktops, monitors, and more. See also: bspwm. More information: https://github.com/baskerville/bspwm.",
+  "useCases": [
+    {
+      "description": "Define two virtual desktops:",
+      "syntax": "bspc monitor --reset-desktops {{desktop_name1}} {{desktop_name2}}"
+    },
+    {
+      "description": "Focus the given desktop:",
+      "syntax": "bspc desktop --focus {{number}}"
+    },
+    {
+      "description": "Close the windows rooted at the selected node:",
+      "syntax": "bspc node --close"
+    },
+    {
+      "description": "Send the selected node to the given desktop:",
+      "syntax": "bspc node --to-desktop {{number}}"
+    },
+    {
+      "description": "Toggle full screen mode for the selected node:",
+      "syntax": "bspc node --state ~fullscreen"
+    },
+    {
+      "description": "Set the value of a specific setting:",
+      "syntax": "bspc config {{setting_name}} {{value}}"
+    }
+  ]
+}

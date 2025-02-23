@@ -1,0 +1,38 @@
+{
+  "command": "skate",
+  "description": "Simple and powerful key-value store. More information: https://github.com/charmbracelet/skate.",
+  "useCases": [
+    {
+      "description": "Store a key and a value on the default database:",
+      "syntax": "skate set &quot;{{key}}&quot; &quot;{{value}}&quot;"
+    },
+    {
+      "description": "Show your keys saved on the default database:",
+      "syntax": "skate list"
+    },
+    {
+      "description": "Delete key and value from the default database:",
+      "syntax": "skate delete &quot;{{key}}&quot;"
+    },
+    {
+      "description": "Create a new key and value in a new database:",
+      "syntax": "skate set &quot;{{key}}&quot;@&quot;{{database_name}}&quot; &quot;{{value}}&quot;"
+    },
+    {
+      "description": "Show your keys saved in a non default database:",
+      "syntax": "skate list @&quot;{{database_name}}&quot;"
+    },
+    {
+      "description": "Delete key and value from a specific database:",
+      "syntax": "skate delete &quot;{{key}}&quot;@&quot;{{database_name}}&quot;"
+    },
+    {
+      "description": "Show the databases available:",
+      "syntax": "skate list-dbs"
+    },
+    {
+      "description": "Delete local db and pull down fresh copy from Charm Cloud:",
+      "syntax": "skate reset @&quot;{{database_name}}&quot;"
+    }
+  ]
+}

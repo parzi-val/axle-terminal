@@ -1,0 +1,38 @@
+{
+  "command": "phar",
+  "description": "Create, update or extract PHP archives (PHAR). More information: https://manned.org/phar.",
+  "useCases": [
+    {
+      "description": "Add one or more files or directories to a Phar file:",
+      "syntax": "phar add -f {{path/to/phar_file}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Display the contents of a Phar file:",
+      "syntax": "phar list -f {{path/to/phar_file}}"
+    },
+    {
+      "description": "Delete the specified file or directory from a Phar file:",
+      "syntax": "phar delete -f {{path/to/phar_file}} -e {{file_or_directory}}"
+    },
+    {
+      "description": "Compress or uncompress files and directories in a Phar file:",
+      "syntax": "phar compress -f {{path/to/phar_file}} -c {{algorithm}}"
+    },
+    {
+      "description": "Get information about a Phar file:",
+      "syntax": "phar info -f {{path/to/phar_file}}"
+    },
+    {
+      "description": "Sign a Phar file with a specific hash algorithm:",
+      "syntax": "phar sign -f {{path/to/phar_file}} -h {{algorithm}}"
+    },
+    {
+      "description": "Sign a Phar file with an OpenSSL private key:",
+      "syntax": "phar sign -f {{path/to/phar_file}} -h openssl -y {{path/to/private_key}}"
+    },
+    {
+      "description": "Display help and available hashing/compression algorithms:",
+      "syntax": "phar help"
+    }
+  ]
+}

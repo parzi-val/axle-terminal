@@ -1,0 +1,26 @@
+{
+  "command": "solo",
+  "description": "Interact with Solo hardware security keys. More information: https://github.com/solokeys/solo-python.",
+  "useCases": [
+    {
+      "description": "List connected Solos:",
+      "syntax": "solo ls"
+    },
+    {
+      "description": "Update the currently connected Solo's firmware to the latest version:",
+      "syntax": "solo key update"
+    },
+    {
+      "description": "Blink the LED of a specific Solo:",
+      "syntax": "solo key wink --serial {{serial_number}}"
+    },
+    {
+      "description": "Generate random bytes using the currently connected Solo's secure random number generator:",
+      "syntax": "solo key rng raw"
+    },
+    {
+      "description": "Monitor the serial output of a Solo:",
+      "syntax": "solo monitor {{path/to/serial_port}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "az appconfig",
+  "description": "Manage App configurations on Azure. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/appconfig.",
+  "useCases": [
+    {
+      "description": "Create an App Configuration:",
+      "syntax": "az appconfig create --name {{name}} --resource-group {{group_name}} --location {{location}}"
+    },
+    {
+      "description": "Delete a specific App Configuration:",
+      "syntax": "az appconfig delete --resource-group {{rg_name}} --name {{appconfig_name}}"
+    },
+    {
+      "description": "List all App Configurations under the current subscription:",
+      "syntax": "az appconfig list"
+    },
+    {
+      "description": "List all App Configurations under a specific resource group:",
+      "syntax": "az appconfig list --resource-group {{rg_name}}"
+    },
+    {
+      "description": "Show properties of an App Configuration:",
+      "syntax": "az appconfig show --name {{appconfig_name}}"
+    },
+    {
+      "description": "Update a specific App Configuration:",
+      "syntax": "az appconfig update --resource-group {{rg_name}} --name {{appconfig_name}}"
+    }
+  ]
+}

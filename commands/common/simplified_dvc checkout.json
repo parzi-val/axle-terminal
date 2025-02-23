@@ -1,0 +1,18 @@
+{
+  "command": "dvc checkout",
+  "description": "Checkout data files and directories from cache. More information: https://dvc.org/doc/command-reference/checkout.",
+  "useCases": [
+    {
+      "description": "Checkout the latest version of all target files and directories:",
+      "syntax": "dvc checkout"
+    },
+    {
+      "description": "Checkout the latest version of a specified target:",
+      "syntax": "dvc checkout {{target}}"
+    },
+    {
+      "description": "Checkout a specific version of a target from a different Git commit/tag/branch:",
+      "syntax": "git checkout {{commit_hash|tag|branch}} {{target}} &amp;&amp; dvc checkout {{target}}"
+    }
+  ]
+}

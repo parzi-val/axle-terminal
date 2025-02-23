@@ -1,0 +1,18 @@
+{
+  "command": "aapt",
+  "description": "Android Asset Packaging Tool: compile and package an Android app's resources. More information: https://manned.org/aapt.",
+  "useCases": [
+    {
+      "description": "List files contained in an APK archive:",
+      "syntax": "aapt list {{path/to/app.apk}}"
+    },
+    {
+      "description": "Display an app's metadata (version, permissions, etc.):",
+      "syntax": "aapt dump badging {{path/to/app.apk}}"
+    },
+    {
+      "description": "Create a new APK archive with files from the specified directory:",
+      "syntax": "aapt package -F {{path/to/app.apk}} {{path/to/directory}}"
+    }
+  ]
+}

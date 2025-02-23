@@ -1,0 +1,22 @@
+{
+  "command": "virsh-list",
+  "description": "List the ID, name, and state of virtual machines. See also: virsh. More information: https://manned.org/virsh.",
+  "useCases": [
+    {
+      "description": "List information about running virtual machines:",
+      "syntax": "virsh list"
+    },
+    {
+      "description": "List information about virtual machines regardless of state:",
+      "syntax": "virsh list --all"
+    },
+    {
+      "description": "List information about virtual machines with autostart either enabled or disabled:",
+      "syntax": "virsh list --all --{{autostart|no-autostart}}"
+    },
+    {
+      "description": "List information about virtual machines either with or without snapshots:",
+      "syntax": "virsh list --all --{{with-snapshot|without-snapshot}}"
+    }
+  ]
+}

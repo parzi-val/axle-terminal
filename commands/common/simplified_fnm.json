@@ -1,0 +1,26 @@
+{
+  "command": "fnm",
+  "description": "Fast Node.js version manager. Install, uninstall or switch between Node.js versions. More information: https://github.com/Schniz/fnm.",
+  "useCases": [
+    {
+      "description": "Install a specific version of Node.js:",
+      "syntax": "fnm install {{node_version}}"
+    },
+    {
+      "description": "List all available Node.js versions and highlight the default one:",
+      "syntax": "fnm list"
+    },
+    {
+      "description": "Use a specific version of Node.js in the current shell:",
+      "syntax": "fnm use {{node_version}}"
+    },
+    {
+      "description": "Set the default Node.js version:",
+      "syntax": "fnm default {{node_version}}"
+    },
+    {
+      "description": "Uninstall a given Node.js version:",
+      "syntax": "fnm uninstall {{node_version}}"
+    }
+  ]
+}

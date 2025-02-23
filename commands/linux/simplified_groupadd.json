@@ -1,0 +1,18 @@
+{
+  "command": "groupadd",
+  "description": "Add user groups to the system. See also: groups, groupdel, groupmod. More information: https://manned.org/groupadd.",
+  "useCases": [
+    {
+      "description": "Create a new group:",
+      "syntax": "sudo groupadd {{group_name}}"
+    },
+    {
+      "description": "Create a new system group:",
+      "syntax": "sudo groupadd --system {{group_name}}"
+    },
+    {
+      "description": "Create a new group with the specific groupid:",
+      "syntax": "sudo groupadd --gid {{id}} {{group_name}}"
+    }
+  ]
+}

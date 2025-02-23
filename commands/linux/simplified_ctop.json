@@ -1,0 +1,22 @@
+{
+  "command": "ctop",
+  "description": "Instantly visualize container performance and health with real-time metrics on CPU, memory, and block IO usage. More information: https://github.com/bcicen/ctop.",
+  "useCases": [
+    {
+      "description": "Show only [a]ctive containers:",
+      "syntax": "ctop -a"
+    },
+    {
+      "description": "[r]everse the container sort order:",
+      "syntax": "ctop -r"
+    },
+    {
+      "description": "[i]nvert the default colors:",
+      "syntax": "ctop -i"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "ctop -h"
+    }
+  ]
+}

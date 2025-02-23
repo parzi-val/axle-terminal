@@ -1,0 +1,26 @@
+{
+  "command": "paste",
+  "description": "Merge lines of files. More information: https://www.gnu.org/software/coreutils/manual/html_node/paste-invocation.html.",
+  "useCases": [
+    {
+      "description": "Join all the lines into a single line, using TAB as delimiter:",
+      "syntax": "paste -s {{path/to/file}}"
+    },
+    {
+      "description": "Join all the lines into a single line, using the specified delimiter:",
+      "syntax": "paste -s -d {{delimiter}} {{path/to/file}}"
+    },
+    {
+      "description": "Merge two files side by side, each in its column, using TAB as delimiter:",
+      "syntax": "paste {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Merge two files side by side, each in its column, using the specified delimiter:",
+      "syntax": "paste -d {{delimiter}} {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Merge two files, with lines added alternatively:",
+      "syntax": "paste -d '\\n' {{path/to/file1}} {{path/to/file2}}"
+    }
+  ]
+}

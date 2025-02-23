@@ -1,0 +1,34 @@
+{
+  "command": "zathura",
+  "description": "A vim-like modal document viewer, with an integrated command-line. Make sure a backend is installed (poppler, PostScript, or DjVu). More information: https://pwmt.org/projects/zathura/.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "zathura {{path/to/file}}"
+    },
+    {
+      "description": "Navigate left/up/down/right:",
+      "syntax": "{{H|J|K|L|arrow keys}}"
+    },
+    {
+      "description": "Rotate:",
+      "syntax": "r"
+    },
+    {
+      "description": "Invert Colors:",
+      "syntax": "&lt;Ctrl&gt; + R"
+    },
+    {
+      "description": "Search for text by a given string:",
+      "syntax": "/{{string}}"
+    },
+    {
+      "description": "Create/delete bookmarks:",
+      "syntax": ":{{bmark|bdelete}} {{bookmark_name}}"
+    },
+    {
+      "description": "List bookmarks:",
+      "syntax": ":blist"
+    }
+  ]
+}

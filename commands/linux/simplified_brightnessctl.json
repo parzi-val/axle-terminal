@@ -1,0 +1,26 @@
+{
+  "command": "brightnessctl",
+  "description": "Utility for reading and controlling device brightness for Linux operating systems. More information: https://github.com/Hummer12007/brightnessctl.",
+  "useCases": [
+    {
+      "description": "List devices with changeable brightness:",
+      "syntax": "brightnessctl --list"
+    },
+    {
+      "description": "Print the current brightness of the display backlight:",
+      "syntax": "brightnessctl get"
+    },
+    {
+      "description": "Set the brightness of the display backlight to a specified percentage within range:",
+      "syntax": "brightnessctl set {{50%}}"
+    },
+    {
+      "description": "Increase brightness by a specified increment:",
+      "syntax": "brightnessctl set {{+10%}}"
+    },
+    {
+      "description": "Decrease brightness by a specified decrement:",
+      "syntax": "brightnessctl set {{10%-}}"
+    }
+  ]
+}

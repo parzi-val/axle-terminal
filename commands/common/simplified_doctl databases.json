@@ -1,0 +1,26 @@
+{
+  "command": "doctl databases",
+  "description": "Manage your MySQL, Redis, PostgreSQL, and MongoDB database services. More information: https://docs.digitalocean.com/reference/doctl/reference/databases.",
+  "useCases": [
+    {
+      "description": "Run a doctl databases command with an access token:",
+      "syntax": "doctl databases {{command}} --access-token {{access_token}}"
+    },
+    {
+      "description": "Get details for a database cluster:",
+      "syntax": "doctl databases get"
+    },
+    {
+      "description": "List your database clusters:",
+      "syntax": "doctl databases list"
+    },
+    {
+      "description": "Create a database cluster:",
+      "syntax": "doctl databases create {{database_name}}"
+    },
+    {
+      "description": "Delete a cluster:",
+      "syntax": "doctl databases delete {{database_id}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "utmpdump",
+  "description": "Dump and load btmp, utmp and wtmp accounting files. More information: https://manned.org/utmpdump.",
+  "useCases": [
+    {
+      "description": "Dump the /var/log/wtmp file to stdout as plain text:",
+      "syntax": "utmpdump {{/var/log/wtmp}}"
+    },
+    {
+      "description": "Load a previously dumped file into /var/log/wtmp:",
+      "syntax": "utmpdump -r {{dumpfile}} &gt; {{/var/log/wtmp}}"
+    }
+  ]
+}

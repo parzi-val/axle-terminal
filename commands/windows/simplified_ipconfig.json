@@ -1,0 +1,30 @@
+{
+  "command": "ipconfig",
+  "description": "Display and manage the network configuration of Windows. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/ipconfig.",
+  "useCases": [
+    {
+      "description": "List all network adapters:",
+      "syntax": "ipconfig"
+    },
+    {
+      "description": "Show a detailed list of network adapters:",
+      "syntax": "ipconfig /all"
+    },
+    {
+      "description": "Renew the IP addresses for a network adapter:",
+      "syntax": "ipconfig /renew {{adapter}}"
+    },
+    {
+      "description": "Free up the IP addresses for a network adapter:",
+      "syntax": "ipconfig /release {{adapter}}"
+    },
+    {
+      "description": "Show the local DNS cache:",
+      "syntax": "ipconfig /displaydns"
+    },
+    {
+      "description": "Remove all data from the local DNS cache:",
+      "syntax": "ipconfig /flushdns"
+    }
+  ]
+}

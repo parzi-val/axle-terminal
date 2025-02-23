@@ -1,0 +1,18 @@
+{
+  "command": "plasma-apply-desktoptheme",
+  "description": "Switch Plasma desktop theme. More information: https://invent.kde.org/plasma/plasma-workspace.",
+  "useCases": [
+    {
+      "description": "List available desktop themes:",
+      "syntax": "plasma-apply-desktoptheme --list-themes"
+    },
+    {
+      "description": "Apply a desktop theme:",
+      "syntax": "plasma-apply-desktoptheme {{default}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plasma-apply-desktoptheme --help"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "siege",
+  "description": "HTTP loadtesting and benchmarking tool. More information: https://www.joedog.org/siege-manual/.",
+  "useCases": [
+    {
+      "description": "Test a URL with default settings:",
+      "syntax": "siege {{https://example.com}}"
+    },
+    {
+      "description": "Test a list of URLs:",
+      "syntax": "siege --file {{path/to/url_list.txt}}"
+    },
+    {
+      "description": "Test list of URLs in a random order (Simulates internet traffic):",
+      "syntax": "siege --internet --file {{path/to/url_list.txt}}"
+    },
+    {
+      "description": "Benchmark a list of URLs (without waiting between requests):",
+      "syntax": "siege --benchmark --file {{path/to/url_list.txt}}"
+    },
+    {
+      "description": "Set the amount of concurrent connections:",
+      "syntax": "siege --concurrent={{50}} --file {{path/to/url_list.txt}}"
+    },
+    {
+      "description": "Set how long for the siege to run for:",
+      "syntax": "siege --time={{30s}} --file {{path/to/url_list.txt}}"
+    }
+  ]
+}

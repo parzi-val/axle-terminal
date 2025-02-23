@@ -1,0 +1,38 @@
+{
+  "command": "fabric",
+  "description": "An open-source framework for augmenting humans using AI. Provides a modular framework for solving specific problems using a crowdsourced set of AI prompts. More information: https://github.com/danielmiessler/fabric.",
+  "useCases": [
+    {
+      "description": "Run the setup to configure fabric:",
+      "syntax": "fabric --setup"
+    },
+    {
+      "description": "List all available patterns:",
+      "syntax": "fabric --listpatterns"
+    },
+    {
+      "description": "Run a pattern with input from a file:",
+      "syntax": "fabric --pattern {{pattern_name}} &lt; {{path/to/input_file}}"
+    },
+    {
+      "description": "Run a pattern on a YouTube video URL:",
+      "syntax": "fabric --youtube &quot;{{https://www.youtube.com/watch?v=video_id}}&quot; --pattern {{pattern_name}}"
+    },
+    {
+      "description": "Chain patterns together by piping output from one to another:",
+      "syntax": "fabric --pattern {{pattern1}} | fabric --pattern {{pattern2}}"
+    },
+    {
+      "description": "Run a custom user-defined pattern:",
+      "syntax": "fabric --pattern {{custom_pattern_name}}"
+    },
+    {
+      "description": "Run a pattern and save the output to a file:",
+      "syntax": "fabric --pattern {{pattern_name}} --output {{path/to/output_file}}"
+    },
+    {
+      "description": "Run a pattern with the specified variables:",
+      "syntax": "fabric --pattern {{pattern_name}} --variable &quot;{{variable_name}}:{{value}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "nomad",
+  "description": "Distributed, highly available, datacenter-aware scheduler. More information: https://www.nomadproject.io/docs/commands/.",
+  "useCases": [
+    {
+      "description": "Show the status of nodes in the cluster:",
+      "syntax": "nomad node status"
+    },
+    {
+      "description": "Validate a job file:",
+      "syntax": "nomad job validate {{path/to/file.nomad}}"
+    },
+    {
+      "description": "Plan a job for execution on the cluster:",
+      "syntax": "nomad job plan {{path/to/file.nomad}}"
+    },
+    {
+      "description": "Run a job on the cluster:",
+      "syntax": "nomad job run {{path/to/file.nomad}}"
+    },
+    {
+      "description": "Show the status of jobs currently running on the cluster:",
+      "syntax": "nomad job status"
+    },
+    {
+      "description": "Show the detailed status information about a specific job:",
+      "syntax": "nomad job status {{job_name}}"
+    },
+    {
+      "description": "Follow the logs of a specific allocation:",
+      "syntax": "nomad alloc logs {{alloc_id}}"
+    },
+    {
+      "description": "Show the status of storage volumes:",
+      "syntax": "nomad volume status"
+    }
+  ]
+}

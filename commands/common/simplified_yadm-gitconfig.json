@@ -1,0 +1,22 @@
+{
+  "command": "yadm-gitconfig",
+  "description": "Pass options to git config. Change the .gitconfig of the repository managed by yadm. See also: git config. More information: https://github.com/TheLocehiliosan/yadm/blob/master/yadm.md#commands.",
+  "useCases": [
+    {
+      "description": "Update or set a Git configuration value:",
+      "syntax": "yadm gitconfig {{key.inner-key}} {{value}}"
+    },
+    {
+      "description": "Get a value from yadm's Git configuration:",
+      "syntax": "yadm gitconfig --get {{key}}"
+    },
+    {
+      "description": "Unset a value in yadm's Git configuration:",
+      "syntax": "yadm gitconfig --unset {{key}}"
+    },
+    {
+      "description": "List all values in yadm's Git configuration:",
+      "syntax": "yadm gitconfig --list"
+    }
+  ]
+}

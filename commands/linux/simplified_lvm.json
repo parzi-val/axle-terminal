@@ -1,0 +1,38 @@
+{
+  "command": "lvm",
+  "description": "Manage physical volumes, volume groups, and logical volumes using the Logical Volume Manager (LVM) interactive shell. More information: https://manned.org/lvm.",
+  "useCases": [
+    {
+      "description": "Start the Logical Volume Manager interactive shell:",
+      "syntax": "sudo lvm"
+    },
+    {
+      "description": "Initialize a drive or partition to be used as a physical volume:",
+      "syntax": "sudo lvm pvcreate {{/dev/sdXY}}"
+    },
+    {
+      "description": "Display information about physical volumes:",
+      "syntax": "sudo lvm pvdisplay"
+    },
+    {
+      "description": "Create a volume group called vg1 from the physical volume on /dev/sdXY:",
+      "syntax": "sudo lvm vgcreate {{vg1}} {{/dev/sdXY}}"
+    },
+    {
+      "description": "Display information about volume groups:",
+      "syntax": "sudo lvm vgdisplay"
+    },
+    {
+      "description": "Create a logical volume with size 10G from volume group vg1:",
+      "syntax": "sudo lvm lvcreate -L {{10G}} {{vg1}}"
+    },
+    {
+      "description": "Display information about logical volumes:",
+      "syntax": "sudo lvm lvdisplay"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "lvm help {{command}}"
+    }
+  ]
+}

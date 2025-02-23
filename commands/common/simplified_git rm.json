@@ -1,0 +1,18 @@
+{
+  "command": "git rm",
+  "description": "Remove files from repository index and local filesystem. More information: https://git-scm.com/docs/git-rm.",
+  "useCases": [
+    {
+      "description": "Remove file from repository index and filesystem:",
+      "syntax": "git rm {{path/to/file}}"
+    },
+    {
+      "description": "Remove directory:",
+      "syntax": "git rm -r {{path/to/directory}}"
+    },
+    {
+      "description": "Remove file from repository index but keep it untouched locally:",
+      "syntax": "git rm --cached {{path/to/file}}"
+    }
+  ]
+}

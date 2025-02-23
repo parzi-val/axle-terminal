@@ -1,0 +1,38 @@
+{
+  "command": "keepassxc-cli",
+  "description": "Command-line interface for KeepassXC. More information: https://manned.org/keepassxc-cli.",
+  "useCases": [
+    {
+      "description": "Search entries:",
+      "syntax": "keepassxc-cli search {{path/to/database_file}} {{name}}"
+    },
+    {
+      "description": "List the contents of a folder:",
+      "syntax": "keepassxc-cli ls {{path/to/database_file}} {{/path/to/directory}}"
+    },
+    {
+      "description": "Add an entry with an auto-generated password:",
+      "syntax": "keepassxc-cli add --generate {{path/to/database_file}} {{entry_name}}"
+    },
+    {
+      "description": "Delete an entry:",
+      "syntax": "keepassxc-cli rm {{path/to/database_file}} {{entry_name}}"
+    },
+    {
+      "description": "Copy an entry's password to the clipboard:",
+      "syntax": "keepassxc-cli clip {{path/to/database_file}} {{entry_name}}"
+    },
+    {
+      "description": "Copy a TOTP code to the clipboard:",
+      "syntax": "keepassxc-cli clip --totp {{path/to/database_file}} {{entry_name}}"
+    },
+    {
+      "description": "Generate a passphrase with 7 words:",
+      "syntax": "keepassxc-cli diceware --words {{7}}"
+    },
+    {
+      "description": "Generate a password with 16 printable ASCII characters:",
+      "syntax": "keepassxc-cli generate --lower --upper --numeric --special --length {{16}}"
+    }
+  ]
+}

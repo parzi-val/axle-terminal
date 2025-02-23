@@ -1,0 +1,34 @@
+{
+  "command": "lftp",
+  "description": "Sophisticated file transfer program. More information: https://lftp.yar.ru/lftp-man.html.",
+  "useCases": [
+    {
+      "description": "Connect to an FTP server:",
+      "syntax": "lftp --user {{username}} {{ftp.example.com}}"
+    },
+    {
+      "description": "Download multiple files (glob expression):",
+      "syntax": "mget {{path/to/*.png}}"
+    },
+    {
+      "description": "Upload multiple files (glob expression):",
+      "syntax": "mput {{path/to/*.zip}}"
+    },
+    {
+      "description": "Delete multiple files on the remote server:",
+      "syntax": "mrm {{path/to/*.txt}}"
+    },
+    {
+      "description": "Rename a file on the remote server:",
+      "syntax": "mv {{original_filename}} {{new_filename}}"
+    },
+    {
+      "description": "Download or update an entire directory:",
+      "syntax": "mirror {{path/to/remote_dir}} {{path/to/local_output_dir}}"
+    },
+    {
+      "description": "Upload or update an entire directory:",
+      "syntax": "mirror -R {{path/to/local_dir}} {{path/to/remote_output_dir}}"
+    }
+  ]
+}

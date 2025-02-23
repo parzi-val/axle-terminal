@@ -1,0 +1,10 @@
+{
+  "command": "groupdel",
+  "description": "Delete existing user groups from the system. See also: groups, groupadd, groupmod. More information: https://manned.org/groupdel.",
+  "useCases": [
+    {
+      "description": "Delete an existing group:",
+      "syntax": "sudo groupdel {{group_name}}"
+    }
+  ]
+}

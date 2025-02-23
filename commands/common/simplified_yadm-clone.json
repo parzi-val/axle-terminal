@@ -1,0 +1,30 @@
+{
+  "command": "yadm-clone",
+  "description": "Works just like git clone. In addition you can pass extra flags to configure your repository. If there is a bootstrap file in the repository, you will be prompted to execute it. See also: git clone. More information: https://yadm.io/docs/common_commands.",
+  "useCases": [
+    {
+      "description": "Clone an existing repository:",
+      "syntax": "yadm clone {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone an existing repository, then execute the bootstrap file:",
+      "syntax": "yadm clone {{remote_repository_location}} --bootstrap"
+    },
+    {
+      "description": "Clone an existing repository and after cloning, do not execute the bootstrap file:",
+      "syntax": "yadm clone {{remote_repository_location}} --no-bootstrap"
+    },
+    {
+      "description": "Change the worktree that yadm will use during cloning:",
+      "syntax": "yadm clone {{remote_repository_location}} --w {{worktree_file}}"
+    },
+    {
+      "description": "Change the branch that yadm gets files from:",
+      "syntax": "yadm clone {{remote_repository_location}} -b {{branch}}"
+    },
+    {
+      "description": "Override an existing repository local branch:",
+      "syntax": "yadm clone {{remote_repository_location}} -f"
+    }
+  ]
+}

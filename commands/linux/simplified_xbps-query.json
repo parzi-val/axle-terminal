@@ -1,0 +1,26 @@
+{
+  "command": "xbps-query",
+  "description": "XBPS utility to query for package and repository information. See also: xbps. More information: https://manned.org/xbps-query.1.",
+  "useCases": [
+    {
+      "description": "Search for a package in remote repositories using a regular expression or a keyword (if --regex is omitted):",
+      "syntax": "xbps-query --search {{regular_expression|keyword}} --repository --regex"
+    },
+    {
+      "description": "Show information about an installed package:",
+      "syntax": "xbps-query --show {{package}}"
+    },
+    {
+      "description": "Show information about a package in remote repositories:",
+      "syntax": "xbps-query --show {{package}} --repository"
+    },
+    {
+      "description": "List packages registered in the package database:",
+      "syntax": "xbps-query --list-pkgs"
+    },
+    {
+      "description": "List explicitly installed packages (i.e. not automatically installed as dependencies):",
+      "syntax": "xbps-query --list-manual-pkgs"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "iperf3",
+  "description": "Traffic generator for testing network bandwidth. More information: https://iperf.fr.",
+  "useCases": [
+    {
+      "description": "Run iperf3 as a server:",
+      "syntax": "iperf3 -s"
+    },
+    {
+      "description": "Run an iperf3 server on a specific port:",
+      "syntax": "iperf3 -s -p {{port}}"
+    },
+    {
+      "description": "Start bandwidth test:",
+      "syntax": "iperf3 -c {{server}}"
+    },
+    {
+      "description": "Run iperf3 in multiple parallel streams:",
+      "syntax": "iperf3 -c {{server}} -P {{streams}}"
+    },
+    {
+      "description": "Reverse direction of the test. Server sends data to the client:",
+      "syntax": "iperf3 -c {{server}} -R"
+    }
+  ]
+}

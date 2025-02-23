@@ -1,0 +1,10 @@
+{
+  "command": "cpush",
+  "description": "This command is an alias of choco push.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr choco push"
+    }
+  ]
+}

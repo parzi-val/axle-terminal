@@ -1,0 +1,30 @@
+{
+  "command": "steghide",
+  "description": "Steganography tool for JPEG, BMP, WAV and AU file formats. More information: https://github.com/StefanoDeVuono/steghide.",
+  "useCases": [
+    {
+      "description": "Embed data in a PNG, prompting for a passphrase:",
+      "syntax": "steghide embed --coverfile {{path/to/image.png}} --embedfile {{path/to/data.txt}}"
+    },
+    {
+      "description": "Extract data from a WAV audio file:",
+      "syntax": "steghide extract --stegofile {{path/to/sound.wav}}"
+    },
+    {
+      "description": "Display file information, trying to detect an embedded file:",
+      "syntax": "steghide info {{path/to/file.jpg}}"
+    },
+    {
+      "description": "Embed data in a JPEG image, using maximum compression:",
+      "syntax": "steghide embed --coverfile {{path/to/image.jpg}} --embedfile {{path/to/data.txt}} --compress {{9}}"
+    },
+    {
+      "description": "Get the list of supported encryption algorithms and modes:",
+      "syntax": "steghide encinfo"
+    },
+    {
+      "description": "Embed encrypted data in a JPEG image, e.g. with Blowfish in CBC mode:",
+      "syntax": "steghide embed --coverfile {{path/to/image.jpg}} --embedfile {{path/to/data.txt}} --encryption {{blowfish|...}} {{cbc|...}}"
+    }
+  ]
+}

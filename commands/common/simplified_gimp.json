@@ -1,0 +1,30 @@
+{
+  "command": "gimp",
+  "description": "GNU image manipulation program. See also: krita. More information: https://docs.gimp.org/en/gimp-fire-up.html#gimp-concepts-running-command-line.",
+  "useCases": [
+    {
+      "description": "Start GIMP:",
+      "syntax": "gimp"
+    },
+    {
+      "description": "Open specific files:",
+      "syntax": "gimp {{path/to/image1 path/to/image2 ...}}"
+    },
+    {
+      "description": "Open specific files in a new window:",
+      "syntax": "gimp --new-instance {{path/to/image1 path/to/image2 ...}}"
+    },
+    {
+      "description": "Start without a splash screen:",
+      "syntax": "gimp --no-splash"
+    },
+    {
+      "description": "Print errors and warnings to the console instead of showing them in a dialog box:",
+      "syntax": "gimp --console-messages"
+    },
+    {
+      "description": "Enable debugging signal handlers:",
+      "syntax": "gimp --debug-handlers"
+    }
+  ]
+}

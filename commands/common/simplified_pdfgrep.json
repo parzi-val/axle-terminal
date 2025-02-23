@@ -1,0 +1,26 @@
+{
+  "command": "pdfgrep",
+  "description": "Search text in PDF files. More information: https://pdfgrep.org.",
+  "useCases": [
+    {
+      "description": "Find lines that match pattern in a PDF:",
+      "syntax": "pdfgrep {{pattern}} {{file.pdf}}"
+    },
+    {
+      "description": "Include file name and page number for each matched line:",
+      "syntax": "pdfgrep --with-filename --page-number {{pattern}} {{file.pdf}}"
+    },
+    {
+      "description": "Do a case-insensitive search for lines that begin with \"foo\" and return the first 3 matches:",
+      "syntax": "pdfgrep --max-count {{3}} --ignore-case {{'^foo'}} {{file.pdf}}"
+    },
+    {
+      "description": "Find pattern in files with a .pdf extension in the current directory recursively:",
+      "syntax": "pdfgrep --recursive {{pattern}}"
+    },
+    {
+      "description": "Find pattern on files that match a specific glob in the current directory recursively:",
+      "syntax": "pdfgrep --recursive --include {{'*book.pdf'}} {{pattern}}"
+    }
+  ]
+}

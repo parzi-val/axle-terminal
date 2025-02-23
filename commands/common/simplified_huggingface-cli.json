@@ -1,0 +1,38 @@
+{
+  "command": "huggingface-cli",
+  "description": "Interact with Hugging Face Hub. Login, manage local cache, download or upload files. More information: https://huggingface.co/docs/huggingface_hub/guides/cli.",
+  "useCases": [
+    {
+      "description": "Login to Hugging Face Hub:",
+      "syntax": "huggingface-cli login"
+    },
+    {
+      "description": "Display the name of the logged in user:",
+      "syntax": "huggingface-cli whoami"
+    },
+    {
+      "description": "Log out:",
+      "syntax": "huggingface-cli logout"
+    },
+    {
+      "description": "Print information about the environment:",
+      "syntax": "huggingface-cli env"
+    },
+    {
+      "description": "Download files from an repository and print out the path (omit filenames to download entire repository):",
+      "syntax": "huggingface-cli download --repo-type {{repo_type}} {{repo_id}} {{filename1 filename2 ...}}"
+    },
+    {
+      "description": "Upload an entire folder or a file to Hugging Face:",
+      "syntax": "huggingface-cli upload --repo-type {{repo_type}} {{repo_id}} {{path/to/local_file_or_directory}} {{path/to/repo_file_or_directory}}"
+    },
+    {
+      "description": "Scan cache to see downloaded repositories and their disk usage:",
+      "syntax": "huggingface-cli scan-cache"
+    },
+    {
+      "description": "Delete the cache interactively:",
+      "syntax": "huggingface-cli delete-cache"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "kubectl config",
+  "description": "Manage Kubernetes configuration (kubeconfig) files for accessing clusters via kubectl or the Kubernetes API. By default, the Kubernetes will get its configuration from ${HOME}/.kube/config. See also: kubectx, kubens. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#config.",
+  "useCases": [
+    {
+      "description": "Get all contexts in the default kubeconfig file:",
+      "syntax": "kubectl config get-contexts"
+    },
+    {
+      "description": "Get all clusters/contexts/users in a custom kubeconfig file:",
+      "syntax": "kubectl config {{get-clusters|get-contexts|get-users}} --kubeconfig {{path/to/kubeconfig.yaml}}"
+    },
+    {
+      "description": "Get the current context:",
+      "syntax": "kubectl config current-context"
+    },
+    {
+      "description": "Switch to another context:",
+      "syntax": "kubectl config {{use|use-context}} {{context_name}}"
+    },
+    {
+      "description": "Delete clusters/contexts/users:",
+      "syntax": "kubectl config {{delete-cluster|delete-context|delete-user}} {{cluster|context|user}}"
+    },
+    {
+      "description": "Permanently add custom kubeconfig files:",
+      "syntax": "export KUBECONFIG=&quot;{{$HOME.kube/config:path/to/custom/kubeconfig.yaml}}&quot; kubectl config get-contexts"
+    }
+  ]
+}

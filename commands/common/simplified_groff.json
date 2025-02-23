@@ -1,0 +1,26 @@
+{
+  "command": "groff",
+  "description": "GNU replacement for the troff and nroff typesetting utilities. More information: https://www.gnu.org/software/groff.",
+  "useCases": [
+    {
+      "description": "Format output for a PostScript printer, saving the output to a file:",
+      "syntax": "groff {{path/to/input.roff}} &gt; {{path/to/output.ps}}"
+    },
+    {
+      "description": "Render a man page using the ASCII output device, and display it using a pager:",
+      "syntax": "groff -man -T ascii {{path/to/manpage.1}} | less --RAW-CONTROL-CHARS"
+    },
+    {
+      "description": "Render a man page into an HTML file:",
+      "syntax": "groff -man -T html {{path/to/manpage.1}} &gt; {{path/to/manpage.html}}"
+    },
+    {
+      "description": "Typeset a roff file containing [t]ables and [p]ictures, using the [me] macro set, to PDF, saving the output:",
+      "syntax": "groff {{-t}} {{-p}} -{{me}} -T {{pdf}} {{path/to/input.me}} &gt; {{path/to/output.pdf}}"
+    },
+    {
+      "description": "Run a groff command with preprocessor and macro options guessed by the grog utility:",
+      "syntax": "eval &quot;$(grog -T utf8 {{path/to/input.me}})&quot;"
+    }
+  ]
+}

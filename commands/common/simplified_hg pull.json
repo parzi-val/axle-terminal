@@ -1,0 +1,34 @@
+{
+  "command": "hg pull",
+  "description": "Pull changes from a specified repository to the local repository. More information: https://www.mercurial-scm.org/doc/hg.1.html#pull.",
+  "useCases": [
+    {
+      "description": "Pull from the \"default\" source path:",
+      "syntax": "hg pull"
+    },
+    {
+      "description": "Pull from a specified source repository:",
+      "syntax": "hg pull {{path/to/source_repository}}"
+    },
+    {
+      "description": "Update the local repository to the head of the remote:",
+      "syntax": "hg pull --update"
+    },
+    {
+      "description": "Pull changes even when the remote repository is unrelated:",
+      "syntax": "hg pull --force"
+    },
+    {
+      "description": "Specify a specific revision changeset to pull up to:",
+      "syntax": "hg pull --rev {{revision}}"
+    },
+    {
+      "description": "Specify a specific branch to pull:",
+      "syntax": "hg pull --branch {{branch}}"
+    },
+    {
+      "description": "Specify a specific bookmark to pull:",
+      "syntax": "hg pull --bookmark {{bookmark}}"
+    }
+  ]
+}

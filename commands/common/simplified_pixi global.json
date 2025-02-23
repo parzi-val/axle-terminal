@@ -1,0 +1,26 @@
+{
+  "command": "pixi global",
+  "description": "Manage global packages. More information: https://pixi.sh/latest/reference/cli/#global.",
+  "useCases": [
+    {
+      "description": "Install a package globally and add to path:",
+      "syntax": "pixi global install {{package1 package2 ...}}"
+    },
+    {
+      "description": "Uninstall a package globally:",
+      "syntax": "pixi global remove {{package1 package2 ...}}"
+    },
+    {
+      "description": "List all globally installed packages:",
+      "syntax": "pixi global list"
+    },
+    {
+      "description": "Update a globally installed package:",
+      "syntax": "pixi global upgrade {{package}}"
+    },
+    {
+      "description": "Update all globally installed packages:",
+      "syntax": "pixi global upgrade-all"
+    }
+  ]
+}

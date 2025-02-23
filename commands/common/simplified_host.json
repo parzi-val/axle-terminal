@@ -1,0 +1,22 @@
+{
+  "command": "host",
+  "description": "Lookup Domain Name Server. More information: https://manned.org/host.",
+  "useCases": [
+    {
+      "description": "Lookup A, AAAA, and MX records of a domain:",
+      "syntax": "host {{domain}}"
+    },
+    {
+      "description": "Lookup a field (CNAME, TXT,...) of a domain:",
+      "syntax": "host -t {{field}} {{domain}}"
+    },
+    {
+      "description": "Reverse lookup an IP:",
+      "syntax": "host {{ip_address}}"
+    },
+    {
+      "description": "Specify an alternate DNS server to query:",
+      "syntax": "host {{domain}} {{8.8.8.8}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "aws help",
+  "description": "Display help information about the AWS CLI. More information: https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-help.html.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "aws help"
+    },
+    {
+      "description": "List all available topics:",
+      "syntax": "aws help topics"
+    },
+    {
+      "description": "Display help about a specific topic:",
+      "syntax": "aws help {{topic_name}}"
+    }
+  ]
+}

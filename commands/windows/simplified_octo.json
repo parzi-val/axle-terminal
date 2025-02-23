@@ -1,0 +1,22 @@
+{
+  "command": "octo",
+  "description": "Command-line tools for Octopus Deploy. More information: https://octopus.com/docs/octopus-rest-api/octo.exe-command-line.",
+  "useCases": [
+    {
+      "description": "Create a package:",
+      "syntax": "octo pack --id={{package}}"
+    },
+    {
+      "description": "Push a package to a repository on the Octopus server:",
+      "syntax": "octo push --package={{package}}"
+    },
+    {
+      "description": "Create a release:",
+      "syntax": "octo create-release --project={{project_name}} --packageversion={{version}}"
+    },
+    {
+      "description": "Deploy a release:",
+      "syntax": "octo deploy-release --project={{project_name}} --packageversion={{version}} --deployto={{environment_name}} --tenant={{deployment_target}}"
+    }
+  ]
+}

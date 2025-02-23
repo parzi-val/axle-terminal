@@ -1,0 +1,34 @@
+{
+  "command": "dillo",
+  "description": "A lightweight web browser intended for slow computers. More information: https://www.dillo.org/.",
+  "useCases": [
+    {
+      "description": "Launch Dillo:",
+      "syntax": "dillo"
+    },
+    {
+      "description": "Launch Dillo with a specific window size and screen location:",
+      "syntax": "dillo --geometry {{width}}x{{height}}+{{x_position}}+{{y_position}}"
+    },
+    {
+      "description": "Launch Dillo and open a specific URL:",
+      "syntax": "dillo {{duckduckgo.com}}"
+    },
+    {
+      "description": "Launch Dillo and open a file or directory:",
+      "syntax": "dillo {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Launch Dillo in full-screen mode:",
+      "syntax": "dillo --fullwindow"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "dillo --version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dillo --help"
+    }
+  ]
+}

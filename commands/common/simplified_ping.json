@@ -1,0 +1,34 @@
+{
+  "command": "ping",
+  "description": "Send ICMP ECHO_REQUEST packets to network hosts. More information: https://manned.org/ping.",
+  "useCases": [
+    {
+      "description": "Ping host:",
+      "syntax": "ping {{host}}"
+    },
+    {
+      "description": "Ping a host only a specific number of times:",
+      "syntax": "ping -c {{count}} {{host}}"
+    },
+    {
+      "description": "Ping host, specifying the interval in seconds between requests (default is 1 second):",
+      "syntax": "ping -i {{seconds}} {{host}}"
+    },
+    {
+      "description": "Ping host without trying to lookup symbolic names for addresses:",
+      "syntax": "ping -n {{host}}"
+    },
+    {
+      "description": "Ping host and ring the bell when a packet is received (if your terminal supports it):",
+      "syntax": "ping -a {{host}}"
+    },
+    {
+      "description": "Also display a message if no response was received:",
+      "syntax": "ping -O {{host}}"
+    },
+    {
+      "description": "Ping a host with specific number of pings, per-packet response timeout (-W), and total time limit (-w) of the entire ping run:",
+      "syntax": "ping -c {{count}} -W {{seconds}} -w {{seconds}} {{host}}"
+    }
+  ]
+}

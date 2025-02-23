@@ -1,0 +1,30 @@
+{
+  "command": "aws kendra",
+  "description": "CLI for AWS Kendra. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kendra/index.html.",
+  "useCases": [
+    {
+      "description": "Create an index:",
+      "syntax": "aws kendra create-index --name {{name}} --role-arn {{role_arn}}"
+    },
+    {
+      "description": "List indexes:",
+      "syntax": "aws kendra list-indexes"
+    },
+    {
+      "description": "Describe an index:",
+      "syntax": "aws kendra describe-index --id {{index_id}}"
+    },
+    {
+      "description": "List data sources:",
+      "syntax": "aws kendra list-data-sources"
+    },
+    {
+      "description": "Describe a data source:",
+      "syntax": "aws kendra describe-data-source --id {{data_source_id}}"
+    },
+    {
+      "description": "List search queries:",
+      "syntax": "aws kendra list-query-suggestions --index-id {{index_id}} --query-text {{query_text}}"
+    }
+  ]
+}

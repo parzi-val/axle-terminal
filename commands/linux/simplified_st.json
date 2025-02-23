@@ -1,0 +1,26 @@
+{
+  "command": "st",
+  "description": "A simple terminal emulator for the X Window System. More information: https://st.suckless.org.",
+  "useCases": [
+    {
+      "description": "Open a terminal:",
+      "syntax": "st"
+    },
+    {
+      "description": "Open a terminal with a specific title:",
+      "syntax": "st -T {{title}}"
+    },
+    {
+      "description": "Open a terminal, execute a given command, and write the output to a file:",
+      "syntax": "st -o {{path/to/file}} -e {{command argument1 argument2}}"
+    },
+    {
+      "description": "Increase/decrease the font size:",
+      "syntax": "&lt;Ctrl&gt; + &lt;Shift&gt; + {{Page Up|Page Down}}"
+    },
+    {
+      "description": "Copy/paste from the clipboard:",
+      "syntax": "&lt;Ctrl&gt; + &lt;Shift&gt; + {{C|V}}"
+    }
+  ]
+}

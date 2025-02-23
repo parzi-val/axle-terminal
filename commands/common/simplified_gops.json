@@ -1,0 +1,26 @@
+{
+  "command": "gops",
+  "description": "List and diagnose Go processes currently running on your system. More information: https://github.com/google/gops.",
+  "useCases": [
+    {
+      "description": "Print all go processes running locally:",
+      "syntax": "gops"
+    },
+    {
+      "description": "Print more information about a process:",
+      "syntax": "gops {{pid}}"
+    },
+    {
+      "description": "Display a process tree:",
+      "syntax": "gops tree"
+    },
+    {
+      "description": "Print the current stack trace from a target program:",
+      "syntax": "gops stack {{pid|addr}}"
+    },
+    {
+      "description": "Print the current runtime memory statistics:",
+      "syntax": "gops memstats {{pid|addr}}"
+    }
+  ]
+}

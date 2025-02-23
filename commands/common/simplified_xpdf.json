@@ -1,0 +1,30 @@
+{
+  "command": "xpdf",
+  "description": "Portable Document Format (PDF) file viewer. More information: https://www.xpdfreader.com/xpdf-man.html.",
+  "useCases": [
+    {
+      "description": "Open a PDF file:",
+      "syntax": "xpdf {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Open a specific page in a PDF file:",
+      "syntax": "xpdf {{path/to/file.pdf}} :{{page_number}}"
+    },
+    {
+      "description": "Open a compressed PDF file:",
+      "syntax": "xpdf {{path/to/file.pdf.tar}}"
+    },
+    {
+      "description": "Open a PDF file in fullscreen mode:",
+      "syntax": "xpdf -fullscreen {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Specify the initial zoom:",
+      "syntax": "xpdf -z {{75}}% {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Specify the initial zoom at page width or full page:",
+      "syntax": "xpdf -z {{page|width}} {{path/to/file.pdf}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "calligrawords",
+  "description": "Calligra's word processor application. See also: calligraflow, calligrastage, calligrasheets. More information: https://manned.org/calligrawords.",
+  "useCases": [
+    {
+      "description": "Launch the word processor application:",
+      "syntax": "calligrawords"
+    },
+    {
+      "description": "Open a specific document:",
+      "syntax": "calligrawords {{path/to/document}}"
+    },
+    {
+      "description": "Display help or version:",
+      "syntax": "calligrawords --{{help|version}}"
+    }
+  ]
+}

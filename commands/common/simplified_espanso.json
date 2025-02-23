@@ -1,0 +1,22 @@
+{
+  "command": "espanso",
+  "description": "Cross-platform Text Expander written in Rust. More information: https://espanso.org.",
+  "useCases": [
+    {
+      "description": "Check status:",
+      "syntax": "espanso status"
+    },
+    {
+      "description": "Edit the configuration:",
+      "syntax": "espanso edit config"
+    },
+    {
+      "description": "Install a package from the hub store (https://hub.espanso.org/):",
+      "syntax": "espanso install {{package}}"
+    },
+    {
+      "description": "Restart (required after installing a package, useful in case of failure):",
+      "syntax": "espanso restart"
+    }
+  ]
+}

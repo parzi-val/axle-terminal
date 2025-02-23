@@ -1,0 +1,22 @@
+{
+  "command": "tlmgr pinning",
+  "description": "The pinning action manages the pinning file. More information: https://www.tug.org/texlive/doc/tlmgr.html#pinning.",
+  "useCases": [
+    {
+      "description": "Show the current pinning data:",
+      "syntax": "tlmgr pinning show"
+    },
+    {
+      "description": "Pin the matching the packages to the given repository:",
+      "syntax": "tlmgr pinning add {{repository}} {{package1 package2 ...}}"
+    },
+    {
+      "description": "Remove any packages recorded in the pinning file matching the packages for the given repository:",
+      "syntax": "tlmgr pinning remove {{repository}} {{package1 package2 ...}}"
+    },
+    {
+      "description": "Remove all pinning data for the given repository:",
+      "syntax": "tlmgr pinning remove {{repository}} --all"
+    }
+  ]
+}

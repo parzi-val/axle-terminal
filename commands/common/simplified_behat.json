@@ -1,0 +1,30 @@
+{
+  "command": "behat",
+  "description": "A PHP framework for Behaviour-Driven Development. More information: https://behat.org.",
+  "useCases": [
+    {
+      "description": "Initialize a new Behat project:",
+      "syntax": "behat --init"
+    },
+    {
+      "description": "Run all tests:",
+      "syntax": "behat"
+    },
+    {
+      "description": "Run all tests from the specified suite:",
+      "syntax": "behat --suite {{suite_name}}"
+    },
+    {
+      "description": "Run tests with a specific output formatter:",
+      "syntax": "behat --format {{pretty|progress}}"
+    },
+    {
+      "description": "Run tests and output results to a file:",
+      "syntax": "behat --out {{path/to/file}}"
+    },
+    {
+      "description": "List the definitions in your test suites:",
+      "syntax": "behat --definitions"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "gh extension",
+  "description": "Manage extensions for the GitHub CLI. More information: https://cli.github.com/manual/gh_extension.",
+  "useCases": [
+    {
+      "description": "Initialize a new GitHub CLI extension project in a directory of the same name:",
+      "syntax": "gh extension create {{extension_name}}"
+    },
+    {
+      "description": "Install an extension from a GitHub repository:",
+      "syntax": "gh extension install {{owner}}/{{repository}}"
+    },
+    {
+      "description": "List installed extensions:",
+      "syntax": "gh extension list"
+    },
+    {
+      "description": "Upgrade a specific extension:",
+      "syntax": "gh extension upgrade {{extension_name}}"
+    },
+    {
+      "description": "Upgrade all extensions:",
+      "syntax": "gh extension upgrade --all"
+    },
+    {
+      "description": "List installed extensions:",
+      "syntax": "gh extension list"
+    },
+    {
+      "description": "Remove an extension:",
+      "syntax": "gh extension remove {{extension_name}}"
+    },
+    {
+      "description": "Display help about a subcommand:",
+      "syntax": "gh extension {{subcommand}} --help"
+    }
+  ]
+}

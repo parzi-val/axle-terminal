@@ -1,0 +1,10 @@
+{
+  "command": "qrttoppm",
+  "description": "Convert a QRT ray tracer file to a PPM image. More information: https://netpbm.sourceforge.net/doc/qrttoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a QRT file to a PPM image:",
+      "syntax": "qrttoppm {{path/to/file.qrt}} &gt; {{path/to/image.ppm}}"
+    }
+  ]
+}

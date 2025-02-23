@@ -1,0 +1,26 @@
+{
+  "command": "blight",
+  "description": "Utility for changing the display brightness. More information: https://github.com/gutjuri/blight.",
+  "useCases": [
+    {
+      "description": "Set display brightness to 50%:",
+      "syntax": "blight set {{50}} -r"
+    },
+    {
+      "description": "Show current display brightness:",
+      "syntax": "blight show"
+    },
+    {
+      "description": "Print maximum display brightness:",
+      "syntax": "blight max"
+    },
+    {
+      "description": "Increase display brightness in %:",
+      "syntax": "blight inc {{number}} -r"
+    },
+    {
+      "description": "Decrease display brightness with internal units:",
+      "syntax": "blight dec {{number}}"
+    }
+  ]
+}

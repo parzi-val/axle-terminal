@@ -1,0 +1,38 @@
+{
+  "command": "eza",
+  "description": "Modern, maintained replacement for ls, built on exa. More information: https://github.com/eza-community/eza.",
+  "useCases": [
+    {
+      "description": "List files one per line:",
+      "syntax": "eza --oneline"
+    },
+    {
+      "description": "List all files, including hidden files:",
+      "syntax": "eza --all"
+    },
+    {
+      "description": "Long format list (permissions, ownership, size and modification date) of all files:",
+      "syntax": "eza --long --all"
+    },
+    {
+      "description": "List files with the largest at the top:",
+      "syntax": "eza --reverse --sort={{size}}"
+    },
+    {
+      "description": "Display a tree of files, three levels deep:",
+      "syntax": "eza --long --tree --level={{3}}"
+    },
+    {
+      "description": "List files sorted by modification date (oldest first):",
+      "syntax": "eza --long --sort={{modified}}"
+    },
+    {
+      "description": "List files with their headers, icons, and Git statuses:",
+      "syntax": "eza --long --header --icons --git"
+    },
+    {
+      "description": "Don't list files mentioned in .gitignore:",
+      "syntax": "eza --git-ignore"
+    }
+  ]
+}

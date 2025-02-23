@@ -1,0 +1,10 @@
+{
+  "command": "delpart",
+  "description": "Ask the Linux kernel to forget about a partition. More information: https://manned.org/delpart.",
+  "useCases": [
+    {
+      "description": "Tell the kernel to forget about the first partition of /dev/sda:",
+      "syntax": "sudo delpart {{/dev/sda}} {{1}}"
+    }
+  ]
+}

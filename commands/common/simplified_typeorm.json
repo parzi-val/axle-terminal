@@ -1,0 +1,38 @@
+{
+  "command": "typeorm",
+  "description": "A JavaScript ORM that can run on Node.js, browser, Cordova, Ionic, React Native, NativeScript, and Electron platforms. More information: https://typeorm.io/.",
+  "useCases": [
+    {
+      "description": "Generate a new initial TypeORM project structure:",
+      "syntax": "typeorm init"
+    },
+    {
+      "description": "Create an empty migration file:",
+      "syntax": "typeorm migration:create --name {{migration_name}}"
+    },
+    {
+      "description": "Create a migration file with the SQL statements to update the schema:",
+      "syntax": "typeorm migration:generate --name {{migration_name}}"
+    },
+    {
+      "description": "Run all pending migrations:",
+      "syntax": "typeorm migration:run"
+    },
+    {
+      "description": "Create a new entity file in a specific directory:",
+      "syntax": "typeorm entity:create --name {{entity}} --dir {{path/to/directory}}"
+    },
+    {
+      "description": "Display the SQL statements to be executed by typeorm schema:sync on the default connection:",
+      "syntax": "typeorm schema:log"
+    },
+    {
+      "description": "Execute a specific SQL statement on the default connection:",
+      "syntax": "typeorm query {{sql_sentence}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "typeorm {{subcommand}} --help"
+    }
+  ]
+}

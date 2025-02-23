@@ -1,0 +1,22 @@
+{
+  "command": "ppmtopjxl",
+  "description": "Convert a PPM image into an HP PaintJet XL PCL file. More information: https://netpbm.sourceforge.net/doc/ppmtopjxl.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image into an PJXL file:",
+      "syntax": "ppmtopjxl {{path/to/image.ppm}} &gt; {{path/to/output.pjxl}}"
+    },
+    {
+      "description": "Resize the input image:",
+      "syntax": "ppmtopjxl -xsize {{10cm}} -ysize {{5cm}} {{path/to/image.ppm}} &gt; {{path/to/output.pjxl}}"
+    },
+    {
+      "description": "Shift the input image:",
+      "syntax": "ppmtopjxl -xshift {{10pt}} -yshift {{5pt}} {{path/to/image.ppm}} &gt; {{path/to/output.pjxl}}"
+    },
+    {
+      "description": "Do not use the normal TIFF 4.0 compression method:",
+      "syntax": "ppmtopjxl -nopack {{path/to/image.ppm}} &gt; {{path/to/output.pjxl}}"
+    }
+  ]
+}

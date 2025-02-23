@@ -1,0 +1,34 @@
+{
+  "command": "docker swarm",
+  "description": "A container orchestration tool. More information: https://docs.docker.com/engine/swarm/.",
+  "useCases": [
+    {
+      "description": "Initialize a swarm cluster:",
+      "syntax": "docker swarm init"
+    },
+    {
+      "description": "Display the token to join a manager or a worker:",
+      "syntax": "docker swarm join-token {{worker|manager}}"
+    },
+    {
+      "description": "Join a new node to the cluster:",
+      "syntax": "docker swarm join --token {{token}} {{manager_node_url:2377}}"
+    },
+    {
+      "description": "Remove a worker from the swarm (run inside the worker node):",
+      "syntax": "docker swarm leave"
+    },
+    {
+      "description": "Display the current CA certificate in PEM format:",
+      "syntax": "docker swarm ca"
+    },
+    {
+      "description": "Rotate the current CA certificate and display the new certificate:",
+      "syntax": "docker swarm ca --rotate"
+    },
+    {
+      "description": "Change the valid period for node certificates:",
+      "syntax": "docker swarm update --cert-expiry {{hours}}h{{minutes}}m{{seconds}}s"
+    }
+  ]
+}

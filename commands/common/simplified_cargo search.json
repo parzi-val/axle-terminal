@@ -1,0 +1,14 @@
+{
+  "command": "cargo search",
+  "description": "Search for packages on https://crates.io. The crates are displayed along with descriptions in TOML format suitable for copying into Cargo.toml. More information: https://doc.rust-lang.org/cargo/commands/cargo-search.html.",
+  "useCases": [
+    {
+      "description": "Search for packages:",
+      "syntax": "cargo search {{query}}"
+    },
+    {
+      "description": "Show n results (default: 10, max: 100):",
+      "syntax": "cargo search --limit {{n}} {{query}}"
+    }
+  ]
+}

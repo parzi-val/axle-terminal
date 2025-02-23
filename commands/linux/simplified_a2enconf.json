@@ -1,0 +1,14 @@
+{
+  "command": "a2enconf",
+  "description": "Enable an Apache configuration file on Debian-based OSes. More information: https://manned.org/a2enconf.8.",
+  "useCases": [
+    {
+      "description": "Enable a configuration file:",
+      "syntax": "sudo a2enconf {{configuration_file}}"
+    },
+    {
+      "description": "Don't show informative messages:",
+      "syntax": "sudo a2enconf --quiet {{configuration_file}}"
+    }
+  ]
+}

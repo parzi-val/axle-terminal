@@ -1,0 +1,22 @@
+{
+  "command": "nvcc",
+  "description": "The NVIDIA CUDA Compiler Driver. More information: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc.",
+  "useCases": [
+    {
+      "description": "Compile a CUDA program:",
+      "syntax": "nvcc {{path/to/source.cu}} -o {{path/to/executable}}"
+    },
+    {
+      "description": "Generate debu[g] information:",
+      "syntax": "nvcc {{path/to/source.cu}} -o {{path/to/executable}} --debug --device-debug"
+    },
+    {
+      "description": "Include libraries from a different path:",
+      "syntax": "nvcc {{path/to/source.cu}} -o {{path/to/executable}} -I{{path/to/includes}} -L{{path/to/library}} -l{{library_name}}"
+    },
+    {
+      "description": "Specify the compute capability for a specific GPU architecture:",
+      "syntax": "nvcc {{path/to/source.cu}} -o {{path/to/executable}} --generate-code arch={{arch_name}},code={{gpu_code_name}}"
+    }
+  ]
+}

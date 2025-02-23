@@ -1,0 +1,38 @@
+{
+  "command": "swaylock",
+  "description": "Screen locking utility for Wayland compositors. More information: https://manned.org/swaylock.",
+  "useCases": [
+    {
+      "description": "Lock the screen showing a white background:",
+      "syntax": "swaylock"
+    },
+    {
+      "description": "Lock the screen with a simple color background (rrggbb format):",
+      "syntax": "swaylock --color {{0000ff}}"
+    },
+    {
+      "description": "Lock the screen to a PNG background:",
+      "syntax": "swaylock --image {{path/to/file.png}}"
+    },
+    {
+      "description": "Lock the screen and disable the unlock indicator (removes feedback on keypress):",
+      "syntax": "swaylock --no-unlock-indicator"
+    },
+    {
+      "description": "Lock the screen and don't hide the mouse pointer:",
+      "syntax": "swaylock --pointer {{default}}"
+    },
+    {
+      "description": "Lock the screen to a PNG background tiled over all monitors:",
+      "syntax": "swaylock --image {{path/to/file.png}} --tiling"
+    },
+    {
+      "description": "Lock the screen and show the number of failed login attempts:",
+      "syntax": "swaylock --show-failed-attempts"
+    },
+    {
+      "description": "Load configuration from a file:",
+      "syntax": "swaylock --config {{path/to/config}}"
+    }
+  ]
+}

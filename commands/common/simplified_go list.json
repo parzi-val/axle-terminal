@@ -1,0 +1,22 @@
+{
+  "command": "go list",
+  "description": "List packages or modules. More information: https://golang.org/cmd/go/#hdr-List_packages_or_modules.",
+  "useCases": [
+    {
+      "description": "List packages:",
+      "syntax": "go list ./..."
+    },
+    {
+      "description": "List standard packages:",
+      "syntax": "go list std"
+    },
+    {
+      "description": "List packages in JSON format:",
+      "syntax": "go list -json time net/http"
+    },
+    {
+      "description": "List module dependencies and available updates:",
+      "syntax": "go list -m -u all"
+    }
+  ]
+}

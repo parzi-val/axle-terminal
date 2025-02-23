@@ -1,0 +1,34 @@
+{
+  "command": "zapier",
+  "description": "Create, automate, and manage zapier integrations. Some subcommands such as build, init, scaffold, push, test, etc. have their own usage documentation. More information: https://platform.zapier.com/reference/cli.",
+  "useCases": [
+    {
+      "description": "Connect to a Zapier account:",
+      "syntax": "zapier login"
+    },
+    {
+      "description": "Initialize a new Zapier integration with a project template:",
+      "syntax": "zapier init {{path/to/directory}}"
+    },
+    {
+      "description": "Add a starting trigger, create, search, or resource to your integration:",
+      "syntax": "zapier scaffold {{trigger|create|search|resource}} {{name}}"
+    },
+    {
+      "description": "Test an integration:",
+      "syntax": "zapier test"
+    },
+    {
+      "description": "Build and upload an integration to Zapier:",
+      "syntax": "zapier push"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "zapier help"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "zapier help {{command}}"
+    }
+  ]
+}

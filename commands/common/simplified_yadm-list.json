@@ -1,0 +1,14 @@
+{
+  "command": "yadm-list",
+  "description": "Print a list of files managed by yadm. More information: https://github.com/TheLocehiliosan/yadm/blob/master/yadm.md#commands.",
+  "useCases": [
+    {
+      "description": "Print a list of files managed by yadm in the current directory:",
+      "syntax": "yadm list"
+    },
+    {
+      "description": "List all files managed by yadm completely:",
+      "syntax": "yadm list -a"
+    }
+  ]
+}

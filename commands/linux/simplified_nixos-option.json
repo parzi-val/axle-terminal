@@ -1,0 +1,30 @@
+{
+  "command": "nixos-option",
+  "description": "Inspect a NixOS configuration. More information: https://nixos.org/manual/nixos/stable/index.html#sec-modularity.",
+  "useCases": [
+    {
+      "description": "List all subkeys of a given option key:",
+      "syntax": "nixos-option {{option_key}}"
+    },
+    {
+      "description": "List current boot kernel modules:",
+      "syntax": "nixos-option boot.kernelModules"
+    },
+    {
+      "description": "List authorized keys for a specific user:",
+      "syntax": "nixos-option users.users.{{username}}.openssh.authorizedKeys.{{keyFiles|keys}}"
+    },
+    {
+      "description": "List all remote builders:",
+      "syntax": "nixos-option nix.buildMachines"
+    },
+    {
+      "description": "List all subkeys of a given key on another NixOS configuration:",
+      "syntax": "NIXOS_CONFIG={{path_to_configuration.nix}} nixos-option {{option_key}}"
+    },
+    {
+      "description": "Show recursively all values of a user:",
+      "syntax": "nixos-option -r users.users.{{user}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "xml escape",
+  "description": "Escape special XML characters, e.g. &lt;a1&gt; → &amp;lt;a1&amp;gt;. More information: https://xmlstar.sourceforge.net/doc/xmlstarlet.pdf.",
+  "useCases": [
+    {
+      "description": "Escape special XML characters in a string:",
+      "syntax": "xml escape &quot;{{&lt;a1&gt;}}&quot;"
+    },
+    {
+      "description": "Escape special XML characters from stdin:",
+      "syntax": "echo &quot;{{&lt;a1&gt;}}&quot; | xml escape"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml escape --help"
+    }
+  ]
+}

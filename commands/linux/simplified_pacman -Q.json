@@ -1,0 +1,10 @@
+{
+  "command": "pacman -Q",
+  "description": "This command is an alias of pacman --query.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr pacman query"
+    }
+  ]
+}

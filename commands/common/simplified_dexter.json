@@ -1,0 +1,14 @@
+{
+  "command": "dexter",
+  "description": "Authenticate the kubectl users with OpenId Connect. More information: https://github.com/gini/dexter.",
+  "useCases": [
+    {
+      "description": "Create and authenticate a user with Google OIDC:",
+      "syntax": "dexter auth -i {{client_id}} -s {{client_secret}}"
+    },
+    {
+      "description": "Override the default kube configuration file location:",
+      "syntax": "dexter auth -i {{client_id}} -s {{client_secret}} --kube-config {{sample/config}}"
+    }
+  ]
+}

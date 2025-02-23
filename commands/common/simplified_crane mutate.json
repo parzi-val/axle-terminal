@@ -1,0 +1,38 @@
+{
+  "command": "crane mutate",
+  "description": "Modify image labels and annotations. The container must be pushed to a registry, and the manifest is updated there. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_mutate.md.",
+  "useCases": [
+    {
+      "description": "New annotations to set (default []):",
+      "syntax": "crane mutate {{-a|--annotation}}/{{-l|--label}} {{annotation/label}}"
+    },
+    {
+      "description": "Path to tarball/command/entrypoint/environment variable/exposed-ports to append to image:",
+      "syntax": "crane mutate {{--append}}/{{--cmd}}/{{--entrypoint}}/{{-e|--env}}/{{--exposed-ports}} {{var1 var2 ...}}"
+    },
+    {
+      "description": "Path to new tarball of resulting image:",
+      "syntax": "crane mutate {{-o|--output}} {{path/to/tarball}}"
+    },
+    {
+      "description": "Repository in the form os/arch{{/variant}}{{:osversion}}{{,}} to push mutated image:",
+      "syntax": "crane mutate --set-platform {{platform_name}}"
+    },
+    {
+      "description": "New tag reference to apply to mutated image:",
+      "syntax": "crane mutate {{-t|--tag}} {{tag_name}}"
+    },
+    {
+      "description": "New user to set:",
+      "syntax": "crane mutate {{-u|--user}} {{username}}"
+    },
+    {
+      "description": "New working dir to set:",
+      "syntax": "crane mutate {{-w|--workdir}} {{path/to/workdir}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane mutate {{-h|--help}}"
+    }
+  ]
+}

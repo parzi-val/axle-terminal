@@ -1,0 +1,26 @@
+{
+  "command": "sshfs",
+  "description": "Filesystem client based on SSH. More information: https://github.com/libfuse/sshfs.",
+  "useCases": [
+    {
+      "description": "Mount remote directory:",
+      "syntax": "sshfs {{username}}@{{remote_host}}:{{remote_directory}} {{mountpoint}}"
+    },
+    {
+      "description": "Unmount remote directory:",
+      "syntax": "umount {{mountpoint}}"
+    },
+    {
+      "description": "Mount remote directory from server with specific port:",
+      "syntax": "sshfs {{username}}@{{remote_host}}:{{remote_directory}} -p {{2222}}"
+    },
+    {
+      "description": "Use compression:",
+      "syntax": "sshfs {{username}}@{{remote_host}}:{{remote_directory}} -C"
+    },
+    {
+      "description": "Follow symbolic links:",
+      "syntax": "sshfs -o follow_symlinks {{username}}@{{remote_host}}:{{remote_directory}} {{mountpoint}}"
+    }
+  ]
+}

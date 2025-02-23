@@ -1,0 +1,22 @@
+{
+  "command": "cradle deploy",
+  "description": "Manage Cradle deployments. More information: https://cradlephp.github.io/docs/3.B.-Reference-Command-Line-Tools.html#deploy.",
+  "useCases": [
+    {
+      "description": "Deploy Cradle to a server:",
+      "syntax": "cradle deploy production"
+    },
+    {
+      "description": "Deploy static assets to Amazon S3:",
+      "syntax": "cradle deploy s3"
+    },
+    {
+      "description": "Deploy static assets including the Yarn \"components\" directory:",
+      "syntax": "cradle deploy s3 --include-yarn"
+    },
+    {
+      "description": "Deploy static assets including the \"upload\" directory:",
+      "syntax": "cradle deploy s3 --include-upload"
+    }
+  ]
+}

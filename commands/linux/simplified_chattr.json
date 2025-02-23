@@ -1,0 +1,18 @@
+{
+  "command": "chattr",
+  "description": "Change attributes of files or directories. More information: https://manned.org/chattr.",
+  "useCases": [
+    {
+      "description": "Make a file or directory immutable to changes and deletion, even by superuser:",
+      "syntax": "chattr +i {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Make a file or directory mutable:",
+      "syntax": "chattr -i {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Recursively make an entire directory and contents immutable:",
+      "syntax": "chattr -R +i {{path/to/directory}}"
+    }
+  ]
+}

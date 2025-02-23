@@ -1,0 +1,18 @@
+{
+  "command": "protector",
+  "description": "Protect or unprotect branches on GitHub repositories. More information: https://github.com/jcgay/protector.",
+  "useCases": [
+    {
+      "description": "Protect branches of a GitHub repository (create branch protection rules):",
+      "syntax": "protector {{branches_regex}} -repos {{organization/repository}}"
+    },
+    {
+      "description": "Use the dry run to see what would be protected (can also be used for freeing):",
+      "syntax": "protector -dry-run {{branches_regex}} -repos {{organization/repository}}"
+    },
+    {
+      "description": "Free branches of a GitHub repository (delete branch protection rules):",
+      "syntax": "protector -free {{branches_regex}} -repos {{organization/repository}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "swayidle",
+  "description": "Idle management daemon for Wayland. Note: the configuration options are documented in its man page. More information: https://github.com/swaywm/swayidle/blob/master/swayidle.1.scd.",
+  "useCases": [
+    {
+      "description": "Listen for idle activity using the configuration in $XDG_CONFIG_HOME/swayidle/config or $HOME/swayidle/config:",
+      "syntax": "swayidle"
+    },
+    {
+      "description": "Specify an alternative path to the configuration file:",
+      "syntax": "swayidle -C {{path/to/file}}"
+    }
+  ]
+}

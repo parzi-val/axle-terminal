@@ -1,0 +1,22 @@
+{
+  "command": "diskonaut",
+  "description": "Terminal disk space navigator, written in Rust. More information: https://github.com/imsnif/diskonaut.",
+  "useCases": [
+    {
+      "description": "Start diskonaut in the current directory:",
+      "syntax": "diskonaut"
+    },
+    {
+      "description": "Start diskonaut in a specific directory:",
+      "syntax": "diskonaut {{path/to/directory}}"
+    },
+    {
+      "description": "Show file sizes rather than their block usage on the disk:",
+      "syntax": "diskonaut --apparent-size {{path/to/directory}}"
+    },
+    {
+      "description": "Disable deletion confirmation:",
+      "syntax": "diskonaut --disable-delete-confirmation"
+    }
+  ]
+}

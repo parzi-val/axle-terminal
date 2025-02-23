@@ -1,0 +1,38 @@
+{
+  "command": "parquet-tools",
+  "description": "Show, inspect and manipulate Parquet file. More information: https://github.com/apache/parquet-mr.",
+  "useCases": [
+    {
+      "description": "Display the content of a Parquet file:",
+      "syntax": "parquet-tools cat {{path/to/parquet}}"
+    },
+    {
+      "description": "Display the first few lines of a Parquet file:",
+      "syntax": "parquet-tools head {{path/to/parquet}}"
+    },
+    {
+      "description": "Print the schema of a Parquet file:",
+      "syntax": "parquet-tools schema {{path/to/parquet}}"
+    },
+    {
+      "description": "Print the metadata of a Parquet file:",
+      "syntax": "parquet-tools meta {{path/to/parquet}}"
+    },
+    {
+      "description": "Print the content and metadata of a Parquet file:",
+      "syntax": "parquet-tools dump {{path/to/parquet}}"
+    },
+    {
+      "description": "Concatenate several Parquet files into the target one:",
+      "syntax": "parquet-tools merge {{path/to/parquet1}} {{path/to/parquet2}} {{path/to/target_parquet}}"
+    },
+    {
+      "description": "Print the count of rows in a Parquet file:",
+      "syntax": "parquet-tools rowcount {{path/to/parquet}}"
+    },
+    {
+      "description": "Print the column and offset indexes of a Parquet file:",
+      "syntax": "parquet-tools column-index {{path/to/parquet}}"
+    }
+  ]
+}

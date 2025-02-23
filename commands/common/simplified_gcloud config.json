@@ -1,0 +1,30 @@
+{
+  "command": "gcloud config",
+  "description": "Manage different configurations of gcloud. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/config.",
+  "useCases": [
+    {
+      "description": "Define a property (like compute/zone) for the current configuration:",
+      "syntax": "gcloud config set {{property}} {{value}}"
+    },
+    {
+      "description": "Fetch the value of a gcloud property:",
+      "syntax": "gcloud config get {{property}}"
+    },
+    {
+      "description": "Display all the properties for the current configuration:",
+      "syntax": "gcloud config list"
+    },
+    {
+      "description": "Create a new configuration with a given name:",
+      "syntax": "gcloud config configurations create {{configuration_name}}"
+    },
+    {
+      "description": "Display a list of all available configurations:",
+      "syntax": "gcloud config configurations list"
+    },
+    {
+      "description": "Switch to an existing configuration with a given name:",
+      "syntax": "gcloud config configurations activate {{configuration_name}}"
+    }
+  ]
+}

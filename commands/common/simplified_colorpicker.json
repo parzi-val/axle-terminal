@@ -1,0 +1,26 @@
+{
+  "command": "colorpicker",
+  "description": "A minimalist X11 colorpicker. Any mouse gesture except left click will exit the program. More information: https://github.com/ym1234/colorpicker.",
+  "useCases": [
+    {
+      "description": "Launch colorpicker and print the hexadecimal and RGB value of each clicked pixel to stdout:",
+      "syntax": "colorpicker"
+    },
+    {
+      "description": "Only print the color of one clicked pixel and then exit:",
+      "syntax": "colorpicker --one-shot"
+    },
+    {
+      "description": "Print the color of each clicked pixel and quit when a key is pressed:",
+      "syntax": "colorpicker --quit-on-keypress"
+    },
+    {
+      "description": "Only print the RGB value:",
+      "syntax": "colorpicker --rgb"
+    },
+    {
+      "description": "Only print the hexadecimal value:",
+      "syntax": "colorpicker --hex"
+    }
+  ]
+}

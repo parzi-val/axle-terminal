@@ -1,0 +1,18 @@
+{
+  "command": "mkdir",
+  "description": "Create directories and set their permissions. More information: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html.",
+  "useCases": [
+    {
+      "description": "Create specific directories:",
+      "syntax": "mkdir {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Create specific directories and their parents if needed:",
+      "syntax": "mkdir {{-p|--parents}} {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Create directories with specific permissions:",
+      "syntax": "mkdir {{-m|--mode}} {{rwxrw-r--}} {{path/to/directory1 path/to/directory2 ...}}"
+    }
+  ]
+}

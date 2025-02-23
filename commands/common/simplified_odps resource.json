@@ -1,0 +1,30 @@
+{
+  "command": "odps resource",
+  "description": "Manage resources in ODPS (Open Data Processing Service). See also odps. More information: https://www.alibabacloud.com/help/doc-detail/27971.htm.",
+  "useCases": [
+    {
+      "description": "Show resources in the current project:",
+      "syntax": "list resources;"
+    },
+    {
+      "description": "Add file resource:",
+      "syntax": "add file {{filename}} as {{alias}};"
+    },
+    {
+      "description": "Add archive resource:",
+      "syntax": "add archive {{archive.tar.gz}} as {{alias}};"
+    },
+    {
+      "description": "Add .jar resource:",
+      "syntax": "add jar {{package.jar}};"
+    },
+    {
+      "description": "Add .py resource:",
+      "syntax": "add py {{script.py}};"
+    },
+    {
+      "description": "Delete resource:",
+      "syntax": "drop resource {{resource_name}};"
+    }
+  ]
+}

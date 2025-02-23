@@ -1,0 +1,22 @@
+{
+  "command": "calendar",
+  "description": "Display upcoming events from a calendar file. More information: https://manned.org/calendar.",
+  "useCases": [
+    {
+      "description": "Show events for today and tomorrow (or the weekend on Friday) from the default calendar:",
+      "syntax": "calendar"
+    },
+    {
+      "description": "Look [A]head, showing events for the next 30 days:",
+      "syntax": "calendar -A {{30}}"
+    },
+    {
+      "description": "Look [B]ack, showing events for the previous 7 days:",
+      "syntax": "calendar -B {{7}}"
+    },
+    {
+      "description": "Show events from a custom calendar [f]ile:",
+      "syntax": "calendar -f {{path/to/file}}"
+    }
+  ]
+}

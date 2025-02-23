@@ -1,0 +1,10 @@
+{
+  "command": "ppmtopuzz",
+  "description": "Convert a PPM image to an X11 puzzle file. More information: https://netpbm.sourceforge.net/doc/ppmtopuzz.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to an X11 puzzle file:",
+      "syntax": "ppmtopuzz {{path/to/file.ppm}} &gt; {{path/to/file.puzz}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "rubocop",
+  "description": "Lint Ruby files. More information: https://docs.rubocop.org/rubocop/usage/basic_usage.html.",
+  "useCases": [
+    {
+      "description": "Check all files in the current directory (including subdirectories):",
+      "syntax": "rubocop"
+    },
+    {
+      "description": "Check one or more specific files or directories:",
+      "syntax": "rubocop {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Write output to file:",
+      "syntax": "rubocop --out {{path/to/file}}"
+    },
+    {
+      "description": "View list of cops (linter rules):",
+      "syntax": "rubocop --show-cops"
+    },
+    {
+      "description": "Exclude a cop:",
+      "syntax": "rubocop --except {{cop1 cop2 ...}}"
+    },
+    {
+      "description": "Run only specified cops:",
+      "syntax": "rubocop --only {{cop1 cop2 ...}}"
+    },
+    {
+      "description": "Auto-correct files (experimental):",
+      "syntax": "rubocop --auto-correct"
+    }
+  ]
+}

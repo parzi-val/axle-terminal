@@ -1,0 +1,30 @@
+{
+  "command": "brew bundle",
+  "description": "Bundler for Homebrew, Homebrew Cask and the Mac App Store. More information: https://github.com/Homebrew/homebrew-bundle.",
+  "useCases": [
+    {
+      "description": "Install packages from a Brewfile at the current path:",
+      "syntax": "brew bundle"
+    },
+    {
+      "description": "Install packages from a specific Brewfile at a specific path:",
+      "syntax": "brew bundle --file {{path/to/file}}"
+    },
+    {
+      "description": "Create a Brewfile from all installed packages:",
+      "syntax": "brew bundle dump"
+    },
+    {
+      "description": "Uninstall all formulae not listed in the Brewfile:",
+      "syntax": "brew bundle cleanup --force"
+    },
+    {
+      "description": "Check if there is anything to install or upgrade in the Brewfile:",
+      "syntax": "brew bundle check"
+    },
+    {
+      "description": "List all entries in the Brewfile:",
+      "syntax": "brew bundle list --all"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "mate-calc",
+  "description": "Calculate mathematic expressions in MATE desktop environment. More information: https://manned.org/mate-calc.",
+  "useCases": [
+    {
+      "description": "Start the calculator:",
+      "syntax": "mate-calc"
+    },
+    {
+      "description": "Calculate a specific mathematic expression:",
+      "syntax": "mate-calc --solve {{2 + 5}}"
+    }
+  ]
+}

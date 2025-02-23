@@ -1,0 +1,18 @@
+{
+  "command": "texliveonfly",
+  "description": "Downloads missing TeX Live packages while compiling .tex files. More information: https://ctan.org/pkg/texliveonfly.",
+  "useCases": [
+    {
+      "description": "Download missing packages while compiling:",
+      "syntax": "texliveonfly {{source.tex}}"
+    },
+    {
+      "description": "Use a specific compiler (defaults to pdflatex):",
+      "syntax": "texliveonfly --compiler={{compiler}} {{source.tex}}"
+    },
+    {
+      "description": "Use a custom TeX Live bin folder:",
+      "syntax": "texliveonfly --texlive_bin={{path/to/texlive_bin}} {{source.tex}}"
+    }
+  ]
+}

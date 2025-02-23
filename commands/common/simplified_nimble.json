@@ -1,0 +1,30 @@
+{
+  "command": "nimble",
+  "description": "Package manager for the Nim programming language. Manage Nim projects and their dependencies. More information: https://github.com/nim-lang/nimble.",
+  "useCases": [
+    {
+      "description": "Search for packages:",
+      "syntax": "nimble search {{search_string}}"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "nimble install {{package}}"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "nimble list -i"
+    },
+    {
+      "description": "Create a new Nimble package in the current directory:",
+      "syntax": "nimble init"
+    },
+    {
+      "description": "Build a Nimble package:",
+      "syntax": "nimble build"
+    },
+    {
+      "description": "Install a Nimble package:",
+      "syntax": "nimble install"
+    }
+  ]
+}

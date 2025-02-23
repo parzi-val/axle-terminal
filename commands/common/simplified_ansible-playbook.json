@@ -1,0 +1,34 @@
+{
+  "command": "ansible-playbook",
+  "description": "Execute tasks defined in playbook on remote machines over SSH. More information: https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html.",
+  "useCases": [
+    {
+      "description": "Run tasks in playbook:",
+      "syntax": "ansible-playbook {{playbook}}"
+    },
+    {
+      "description": "Run tasks in playbook with custom host [i]nventory:",
+      "syntax": "ansible-playbook {{playbook}} -i {{inventory_file}}"
+    },
+    {
+      "description": "Run tasks in playbook with [e]xtra variables defined via the command-line:",
+      "syntax": "ansible-playbook {{playbook}} -e &quot;{{variable1}}={{value1}} {{variable2}}={{value2}}&quot;"
+    },
+    {
+      "description": "Run tasks in playbook with [e]xtra variables defined in a JSON file:",
+      "syntax": "ansible-playbook {{playbook}} -e &quot;@{{variables.json}}&quot;"
+    },
+    {
+      "description": "Run tasks in playbook for the given tags:",
+      "syntax": "ansible-playbook {{playbook}} --tags {{tag1,tag2}}"
+    },
+    {
+      "description": "Run tasks in a playbook starting at a specific task:",
+      "syntax": "ansible-playbook {{playbook}} --start-at {{task_name}}"
+    },
+    {
+      "description": "Run tasks in a playbook without making any changes (dry-run):",
+      "syntax": "ansible-playbook {{playbook}} --check --diff"
+    }
+  ]
+}

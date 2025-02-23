@@ -1,0 +1,10 @@
+{
+  "command": "aireplay-ng",
+  "description": "Inject packets into a wireless network. Part of aircrack-ng. More information: https://www.aircrack-ng.org/doku.php?id=aireplay-ng.",
+  "useCases": [
+    {
+      "description": "Send a specific number of disassociate packets given an access point's MAC address, a client's MAC address and an interface:",
+      "syntax": "sudo aireplay-ng --deauth {{count}} --bssid {{ap_mac}} --dmac {{client_mac}} {{interface}}"
+    }
+  ]
+}

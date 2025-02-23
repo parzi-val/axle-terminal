@@ -1,0 +1,38 @@
+{
+  "command": "podman ps",
+  "description": "List Podman containers. More information: https://docs.podman.io/en/latest/markdown/podman-ps.1.html.",
+  "useCases": [
+    {
+      "description": "List currently running Podman containers:",
+      "syntax": "podman ps"
+    },
+    {
+      "description": "List all Podman containers (running and stopped):",
+      "syntax": "podman ps --all"
+    },
+    {
+      "description": "Show the latest created container (includes all states):",
+      "syntax": "podman ps --latest"
+    },
+    {
+      "description": "Filter containers that contain a substring in their name:",
+      "syntax": "podman ps --filter &quot;name={{name}}&quot;"
+    },
+    {
+      "description": "Filter containers that share a given image as an ancestor:",
+      "syntax": "podman ps --filter &quot;ancestor={{image}}:{{tag}}&quot;"
+    },
+    {
+      "description": "Filter containers by exit status code:",
+      "syntax": "podman ps --all --filter &quot;exited={{code}}&quot;"
+    },
+    {
+      "description": "Filter containers by status (created, running, removing, paused, exited and dead):",
+      "syntax": "podman ps --filter &quot;status={{status}}&quot;"
+    },
+    {
+      "description": "Filter containers that mount a specific volume or have a volume mounted in a specific path:",
+      "syntax": "podman ps --filter &quot;volume={{path/to/directory}}&quot; --format &quot;table {{.ID}}\\t{{.Image}}\\t{{.Names}}\\t{{.Mounts}}&quot;"
+    }
+  ]
+}

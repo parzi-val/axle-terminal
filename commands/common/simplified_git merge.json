@@ -1,0 +1,26 @@
+{
+  "command": "git merge",
+  "description": "Merge branches. More information: https://git-scm.com/docs/git-merge.",
+  "useCases": [
+    {
+      "description": "Merge a branch into your current branch:",
+      "syntax": "git merge {{branch_name}}"
+    },
+    {
+      "description": "Edit the merge message:",
+      "syntax": "git merge --edit {{branch_name}}"
+    },
+    {
+      "description": "Merge a branch and create a merge commit:",
+      "syntax": "git merge --no-ff {{branch_name}}"
+    },
+    {
+      "description": "Abort a merge in case of conflicts:",
+      "syntax": "git merge --abort"
+    },
+    {
+      "description": "Merge using a specific strategy:",
+      "syntax": "git merge --strategy {{strategy}} --strategy-option {{strategy_option}} {{branch_name}}"
+    }
+  ]
+}

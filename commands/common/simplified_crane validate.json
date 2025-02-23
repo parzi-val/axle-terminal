@@ -1,0 +1,26 @@
+{
+  "command": "crane validate",
+  "description": "Validate that an image is well-formed. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_validate.md.",
+  "useCases": [
+    {
+      "description": "Validate an image:",
+      "syntax": "crane validate"
+    },
+    {
+      "description": "Skip downloading/digesting layers:",
+      "syntax": "crane validate --fast"
+    },
+    {
+      "description": "Name of remote image to validate:",
+      "syntax": "crane validate --remote {{image_name}}"
+    },
+    {
+      "description": "Path to tarball to validate:",
+      "syntax": "crane validate --tarball {{path/to/tarball}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane validate {{-h|--help}}"
+    }
+  ]
+}

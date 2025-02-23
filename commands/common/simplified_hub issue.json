@@ -1,0 +1,18 @@
+{
+  "command": "hub issue",
+  "description": "Manage Github issues. More information: https://hub.github.com/hub-issue.1.html.",
+  "useCases": [
+    {
+      "description": "List the last 10 issues with the bug label:",
+      "syntax": "hub issue list --limit {{10}} --labels &quot;{{bug}}&quot;"
+    },
+    {
+      "description": "Display a specific issue:",
+      "syntax": "hub issue show {{issue_number}}"
+    },
+    {
+      "description": "List 10 closed issues assigneed to a specific user:",
+      "syntax": "hub issue --state {{closed}} --assignee {{username}} --limit {{10}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "bmaptool",
+  "description": "Create or copy block maps intelligently (designed to be faster than cp or dd). More information: https://source.tizen.org/documentation/reference/bmaptool.",
+  "useCases": [
+    {
+      "description": "[o]utput a blockmap file from image file:",
+      "syntax": "bmaptool create -o {{blockmap.bmap}} {{source.img}}"
+    },
+    {
+      "description": "Copy an image file into sdb:",
+      "syntax": "bmaptool copy --bmap {{blockmap.bmap}} {{source.img}} {{/dev/sdb}}"
+    },
+    {
+      "description": "Copy a compressed image file into sdb:",
+      "syntax": "bmaptool copy --bmap {{blockmap.bmap}} {{source.img.gz}} {{/dev/sdb}}"
+    },
+    {
+      "description": "Copy an image file into sdb without using a blockmap:",
+      "syntax": "bmaptool copy --nobmap {{source.img}} {{/dev/sdb}}"
+    }
+  ]
+}

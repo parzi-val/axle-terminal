@@ -1,0 +1,34 @@
+{
+  "command": "top",
+  "description": "Display dynamic real-time information about running processes. More information: https://manned.org/top.",
+  "useCases": [
+    {
+      "description": "Start top:",
+      "syntax": "top"
+    },
+    {
+      "description": "Do not show any idle or zombie processes:",
+      "syntax": "top -i"
+    },
+    {
+      "description": "Show only processes owned by given user:",
+      "syntax": "top -u {{username}}"
+    },
+    {
+      "description": "Sort processes by a field:",
+      "syntax": "top -o {{field_name}}"
+    },
+    {
+      "description": "Show the individual threads of a given process:",
+      "syntax": "top -Hp {{process_id}}"
+    },
+    {
+      "description": "Show only the processes with the given PID(s), passed as a comma-separated list. (Normally you wouldn't know PIDs off hand. This example picks the PIDs from the process name):",
+      "syntax": "top -p $(pgrep -d ',' {{process_name}})"
+    },
+    {
+      "description": "Display help about interactive commands:",
+      "syntax": "?"
+    }
+  ]
+}

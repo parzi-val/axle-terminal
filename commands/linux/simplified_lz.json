@@ -1,0 +1,10 @@
+{
+  "command": "lz",
+  "description": "List all files inside a '.tar.gz' compressed archive. More information: https://manned.org/lz.1.",
+  "useCases": [
+    {
+      "description": "List all files inside a compressed archive:",
+      "syntax": "lz {{path/to/file.tar.gz}}"
+    }
+  ]
+}

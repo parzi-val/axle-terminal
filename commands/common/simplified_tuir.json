@@ -1,0 +1,26 @@
+{
+  "command": "tuir",
+  "description": "A text user-interface (TUI) to view and interact with Reddit from your terminal. Navigate with the Vim keys. More information: https://gitlab.com/ajak/tuir.",
+  "useCases": [
+    {
+      "description": "Launch tuir:",
+      "syntax": "tuir"
+    },
+    {
+      "description": "Open a subreddit:",
+      "syntax": "/{{subreddit_name}}"
+    },
+    {
+      "description": "Open a link:",
+      "syntax": "o"
+    },
+    {
+      "description": "Open a specific subreddit on launch:",
+      "syntax": "tuir -s {{subreddit_name}}"
+    },
+    {
+      "description": "Open external links using programs defined in the mailcap config:",
+      "syntax": "tuir --enable-media"
+    }
+  ]
+}

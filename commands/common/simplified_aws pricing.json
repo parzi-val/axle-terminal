@@ -1,0 +1,26 @@
+{
+  "command": "aws pricing",
+  "description": "Query services, products, and pricing information from Amazon Web Services. More information: https://docs.aws.amazon.com/cli/latest/reference/pricing/.",
+  "useCases": [
+    {
+      "description": "List service codes of a specific region:",
+      "syntax": "aws pricing describe-services --region {{us-east-1}}"
+    },
+    {
+      "description": "List attributes for a given service code in a specific region:",
+      "syntax": "aws pricing describe-services --service-code {{AmazonEC2}} --region {{us-east-1}}"
+    },
+    {
+      "description": "Print pricing information for a service code in a specific region:",
+      "syntax": "aws pricing get-products --service-code {{AmazonEC2}} --region {{us-east-1}}"
+    },
+    {
+      "description": "List values for a specific attribute for a service code in a specific region:",
+      "syntax": "aws pricing get-attribute-values --service-code {{AmazonEC2}} --attribute-name {{instanceType}} --region {{us-east-1}}"
+    },
+    {
+      "description": "Print pricing information for a service code using filters for instance type and location:",
+      "syntax": "aws pricing get-products --service-code {{AmazonEC2}} --filters &quot;{{Type=TERM_MATCH,Field=instanceType,Value=m5.xlarge}}&quot; &quot;{{Type=TERM_MATCH,Field=location,Value=US East (N. Virginia)}}&quot; --region {{us-east-1}}"
+    }
+  ]
+}

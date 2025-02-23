@@ -1,0 +1,38 @@
+{
+  "command": "hardhat",
+  "description": "A development environment for Ethereum software. More information: https://hardhat.org.",
+  "useCases": [
+    {
+      "description": "List available subcommands (or create a new project if no configuration exists):",
+      "syntax": "hardhat"
+    },
+    {
+      "description": "Compile the current project and build all artifacts:",
+      "syntax": "hardhat compile"
+    },
+    {
+      "description": "Run a user-defined script after compiling the project:",
+      "syntax": "hardhat run {{path/to/script.js}}"
+    },
+    {
+      "description": "Run Mocha tests:",
+      "syntax": "hardhat test"
+    },
+    {
+      "description": "Run all given test files:",
+      "syntax": "hardhat test {{path/to/file1.js}} {{path/to/file2.js}}"
+    },
+    {
+      "description": "Start a local Ethereum JSON-RPC node for development:",
+      "syntax": "hardhat node"
+    },
+    {
+      "description": "Start a local Ethereum JSON-RPC node with a specific hostname and port:",
+      "syntax": "hardhat node --hostname {{hostname}} --port {{port}}"
+    },
+    {
+      "description": "Clean the cache and all artifacts:",
+      "syntax": "hardhat clean"
+    }
+  ]
+}

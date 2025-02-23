@@ -1,0 +1,26 @@
+{
+  "command": "logrotate",
+  "description": "Rotates, compresses, and mails system logs. More information: https://manned.org/logrotate.",
+  "useCases": [
+    {
+      "description": "Trigger a run manually:",
+      "syntax": "logrotate {{path/to/logrotate.conf}} --force"
+    },
+    {
+      "description": "Run using a specific command to mail reports:",
+      "syntax": "logrotate {{path/to/logrotate.conf}} --mail {{/usr/bin/mail_command}}"
+    },
+    {
+      "description": "Run without using a state (lock) file:",
+      "syntax": "logrotate {{path/to/logrotate.conf}} --state /dev/null"
+    },
+    {
+      "description": "Run and skip the state (lock) file check:",
+      "syntax": "logrotate {{path/to/logrotate.conf}} --skip-state-lock"
+    },
+    {
+      "description": "Tell logrotate to log verbose output into the log file:",
+      "syntax": "logrotate {{path/to/logrotate.conf}} --log {{path/to/log_file}}"
+    }
+  ]
+}

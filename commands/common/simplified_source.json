@@ -1,0 +1,14 @@
+{
+  "command": "source",
+  "description": "Execute commands from a file in the current shell. More information: https://manned.org/source.",
+  "useCases": [
+    {
+      "description": "Evaluate contents of a given file:",
+      "syntax": "source {{path/to/file}}"
+    },
+    {
+      "description": "Evaluate contents of a given file (alternatively replacing source with .):",
+      "syntax": ". {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "nbtscan",
+  "description": "Scan networks for NetBIOS name information. More information: https://github.com/resurrecting-open-source-projects/nbtscan.",
+  "useCases": [
+    {
+      "description": "Scan a network for NetBIOS names:",
+      "syntax": "nbtscan {{192.168.0.1/24}}"
+    },
+    {
+      "description": "Scan a single IP address:",
+      "syntax": "nbtscan {{192.168.0.1}}"
+    },
+    {
+      "description": "Display verbose output:",
+      "syntax": "nbtscan -v {{192.168.0.1/24}}"
+    },
+    {
+      "description": "Display output in /etc/hosts format:",
+      "syntax": "nbtscan -e {{192.168.0.1/24}}"
+    },
+    {
+      "description": "Read IP addresses/networks to scan from a file:",
+      "syntax": "nbtscan -f {{path/to/file.txt}}"
+    }
+  ]
+}

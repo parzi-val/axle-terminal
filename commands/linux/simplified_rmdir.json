@@ -1,0 +1,14 @@
+{
+  "command": "rmdir",
+  "description": "Remove directories without files. See also: rm. More information: https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html.",
+  "useCases": [
+    {
+      "description": "Remove specific directories:",
+      "syntax": "rmdir {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Remove specific nested directories recursively:",
+      "syntax": "rmdir --parents {{path/to/directory1 path/to/directory2 ...}}"
+    }
+  ]
+}

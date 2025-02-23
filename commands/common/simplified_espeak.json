@@ -1,0 +1,22 @@
+{
+  "command": "espeak",
+  "description": "Uses text-to-speech to speak through the default sound device. More information: https://espeak.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Speak a phrase aloud:",
+      "syntax": "espeak &quot;I like to ride my bike.&quot;"
+    },
+    {
+      "description": "Speak a file aloud:",
+      "syntax": "espeak -f {{path/to/file}}"
+    },
+    {
+      "description": "Save output to a WAV audio file, rather than speaking it directly:",
+      "syntax": "espeak -w {{filename.wav}} &quot;It's GNU plus Linux&quot;"
+    },
+    {
+      "description": "Use a different voice:",
+      "syntax": "espeak -v {{voice}}"
+    }
+  ]
+}

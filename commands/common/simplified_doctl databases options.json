@@ -1,0 +1,26 @@
+{
+  "command": "doctl databases options",
+  "description": "Enable the navigation of available options under each database engine. More information: https://docs.digitalocean.com/reference/doctl/reference/databases/options.",
+  "useCases": [
+    {
+      "description": "Run a doctl databases options command with an access token:",
+      "syntax": "doctl databases options {{command}} --access-token {{access_token}}"
+    },
+    {
+      "description": "Retrieve a list of the available database engines:",
+      "syntax": "doctl databases options engines"
+    },
+    {
+      "description": "Retrieve a list of the available regions for a given database engine:",
+      "syntax": "doctl databases options regions --engine {{pg|mysql|redis|mongodb}}"
+    },
+    {
+      "description": "Retrieve a list of the available slugs for a given database engine:",
+      "syntax": "doctl databases options slugs --engine {{pg|mysql|redis|mongodb}}"
+    },
+    {
+      "description": "Retrieve a list of the available versions for a given database engine:",
+      "syntax": "doctl databases options versions --engine {{pg|mysql|redis|mongodb}}"
+    }
+  ]
+}

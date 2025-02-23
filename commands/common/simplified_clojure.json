@@ -1,0 +1,10 @@
+{
+  "command": "clojure",
+  "description": "This command is an alias of clj.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr clj"
+    }
+  ]
+}

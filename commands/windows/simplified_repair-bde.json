@@ -1,0 +1,38 @@
+{
+  "command": "repair-bde",
+  "description": "Attempt to repair or decrypt a damaged BitLocker-encrypted volume. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/repair-bde.",
+  "useCases": [
+    {
+      "description": "Attempt to repair a specified volume:",
+      "syntax": "repair-bde {{C:}}"
+    },
+    {
+      "description": "Attempt to repair a specified volume and output to another volume:",
+      "syntax": "repair-bde {{C:}} {{D:}}"
+    },
+    {
+      "description": "Attempt to repair a specified volume using the provided recovery key file:",
+      "syntax": "repair-bde {{C:}} -RecoveryKey {{path\\to\\file.bek}}"
+    },
+    {
+      "description": "Attempt to repair a specified volume using the provided numerical recovery password:",
+      "syntax": "repair-bde {{C:}} -RecoveryPassword {{password}}"
+    },
+    {
+      "description": "Attempt to repair a specified volume using the provided password:",
+      "syntax": "repair-bde {{C:}} -Password {{password}}"
+    },
+    {
+      "description": "Attempt to repair a specified volume using the provided key package:",
+      "syntax": "repair-bde {{C:}} -KeyPackage {{path\\to\\directory}}"
+    },
+    {
+      "description": "Log all output to a specific file:",
+      "syntax": "repair-bde {{C:}} -LogFile {{path\\to\\file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "repair-bde /?"
+    }
+  ]
+}

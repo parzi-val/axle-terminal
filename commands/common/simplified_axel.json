@@ -1,0 +1,26 @@
+{
+  "command": "axel",
+  "description": "Download accelerator. Supports HTTP, HTTPS, and FTP. More information: https://github.com/axel-download-accelerator/axel.",
+  "useCases": [
+    {
+      "description": "Download a URL to a file:",
+      "syntax": "axel {{url}}"
+    },
+    {
+      "description": "Download and specify an [o]utput file:",
+      "syntax": "axel {{url}} -o {{path/to/file}}"
+    },
+    {
+      "description": "Download with a specific [n]umber connections:",
+      "syntax": "axel -n {{connections_num}} {{url}}"
+    },
+    {
+      "description": "[S]earch for mirrors:",
+      "syntax": "axel -S {{mirrors_num}} {{url}}"
+    },
+    {
+      "description": "Limit download [s]peed (bytes per second):",
+      "syntax": "axel -s {{speed}} {{url}}"
+    }
+  ]
+}

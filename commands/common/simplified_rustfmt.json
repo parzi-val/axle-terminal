@@ -1,0 +1,18 @@
+{
+  "command": "rustfmt",
+  "description": "Format Rust source code. More information: https://github.com/rust-lang/rustfmt.",
+  "useCases": [
+    {
+      "description": "Format a file, overwriting the original file in-place:",
+      "syntax": "rustfmt {{path/to/source.rs}}"
+    },
+    {
+      "description": "Check a file for formatting and display any changes on the console:",
+      "syntax": "rustfmt --check {{path/to/source.rs}}"
+    },
+    {
+      "description": "Backup any modified files before formatting (the original file is renamed with a .bk extension):",
+      "syntax": "rustfmt --backup {{path/to/source.rs}}"
+    }
+  ]
+}

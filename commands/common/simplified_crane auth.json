@@ -1,0 +1,30 @@
+{
+  "command": "crane auth",
+  "description": "Log in or access credentials. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_auth.md.",
+  "useCases": [
+    {
+      "description": "Execute crane auth subcommand:",
+      "syntax": "crane auth {{subcommand}}"
+    },
+    {
+      "description": "Implement credential helper:",
+      "syntax": "crane auth get {{registry_address}} {{-h|--help}}"
+    },
+    {
+      "description": "Log in to a registry:",
+      "syntax": "crane auth login {{registry_address}} {{-h|--help}} {{-p|--password}} {{password}} {{-password-stdin}} {{-u|--username}} {{username}}"
+    },
+    {
+      "description": "Log out of a registry:",
+      "syntax": "crane auth logout {{registry_address}} {{-h|--help}}"
+    },
+    {
+      "description": "Retrieve a token for a remote repository:",
+      "syntax": "crane auth token {{registry_address}} {{-H|--header}} {{-h|--help}} {{-m|--mount}} {{scope1 scope2 ...}} --push"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane auth {{-h|--help}}"
+    }
+  ]
+}

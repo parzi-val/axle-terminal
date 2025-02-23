@@ -1,0 +1,26 @@
+{
+  "command": "br",
+  "description": "Navigate directory trees interactively. See also: broot. More information: https://github.com/Canop/broot.",
+  "useCases": [
+    {
+      "description": "Start and navigate the current directory tree interactively:",
+      "syntax": "br"
+    },
+    {
+      "description": "Start displaying the size of files and directories:",
+      "syntax": "br --sizes"
+    },
+    {
+      "description": "Start displaying permissions:",
+      "syntax": "br --permissions"
+    },
+    {
+      "description": "Start displaying directories only:",
+      "syntax": "br --only-folders"
+    },
+    {
+      "description": "Start displaying hidden files and directories:",
+      "syntax": "br --hidden"
+    }
+  ]
+}

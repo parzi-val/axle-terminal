@@ -1,0 +1,22 @@
+{
+  "command": "nm",
+  "description": "List symbol names in object files. More information: https://manned.org/nm.",
+  "useCases": [
+    {
+      "description": "List global (extern) functions in a file (prefixed with T):",
+      "syntax": "nm -g {{path/to/file.o}}"
+    },
+    {
+      "description": "List only undefined symbols in a file:",
+      "syntax": "nm -u {{path/to/file.o}}"
+    },
+    {
+      "description": "List all symbols, even debugging symbols:",
+      "syntax": "nm -a {{path/to/file.o}}"
+    },
+    {
+      "description": "Demangle C++ symbols (make them readable):",
+      "syntax": "nm --demangle {{path/to/file.o}}"
+    }
+  ]
+}

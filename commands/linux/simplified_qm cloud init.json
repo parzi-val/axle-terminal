@@ -1,0 +1,26 @@
+{
+  "command": "qm cloud init",
+  "description": "Configure cloudinit settings for virtual machines managed by Proxmox Virtual Environment (PVE). More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Configure cloudinit settings for a specific user and set password for the user:",
+      "syntax": "qm cloud-init {{vm_id}} -user={{user}} -password={{password}}"
+    },
+    {
+      "description": "Configure cloudinit settings for a specific user and set password for the user with a specific SSH key:",
+      "syntax": "qm cloud-init {{vm_id}} -user={{user}} -password={{password}} -sshkey={{ssh_key}}"
+    },
+    {
+      "description": "Set the hostname for a specific virtual machine:",
+      "syntax": "qm cloud-init {{vm_id}} -hostname={{hostname}}"
+    },
+    {
+      "description": "Configure the network interface settings for a specific virtual machine:",
+      "syntax": "qm cloud-init {{vm_id}} -ipconfig {{ipconfig}}"
+    },
+    {
+      "description": "Configure a shell script to execute before cloud-ini is run on a virtual machine:",
+      "syntax": "qm cloud-init {{vm_id}} -pre {{script}}"
+    }
+  ]
+}

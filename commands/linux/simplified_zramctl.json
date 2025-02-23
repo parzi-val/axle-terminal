@@ -1,0 +1,26 @@
+{
+  "command": "zramctl",
+  "description": "Setup and control zram devices. Use mkfs or mkswap to format zram devices to partitions. More information: https://manned.org/zramctl.",
+  "useCases": [
+    {
+      "description": "Check if zram is enabled:",
+      "syntax": "lsmod | grep -i zram"
+    },
+    {
+      "description": "Enable zram with a dynamic number of devices (use zramctl to configure devices further):",
+      "syntax": "sudo modprobe zram"
+    },
+    {
+      "description": "Enable zram with exactly 2 devices:",
+      "syntax": "sudo modprobe zram num_devices={{2}}"
+    },
+    {
+      "description": "Find and initialize the next free zram device to a 2 GB virtual drive using LZ4 compression:",
+      "syntax": "sudo zramctl --find --size {{2GB}} --algorithm {{lz4}}"
+    },
+    {
+      "description": "List currently initialized devices:",
+      "syntax": "sudo zramctl"
+    }
+  ]
+}

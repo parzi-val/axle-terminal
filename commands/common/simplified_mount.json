@@ -1,0 +1,38 @@
+{
+  "command": "mount",
+  "description": "Get access to an entire filesystem in one directory. More information: https://manned.org/mount.8.",
+  "useCases": [
+    {
+      "description": "Show all mounted filesystems:",
+      "syntax": "mount"
+    },
+    {
+      "description": "Mount a device to a directory:",
+      "syntax": "mount -t {{filesystem_type}} {{path/to/device_file}} {{path/to/target_directory}}"
+    },
+    {
+      "description": "Create a specific directory if it does not exist and mount a device to it:",
+      "syntax": "mount --mkdir {{path/to/device_file}} {{path/to/target_directory}}"
+    },
+    {
+      "description": "Mount a device to a directory for a specific user:",
+      "syntax": "mount -o uid={{user_id}},gid={{group_id}} {{path/to/device_file}} {{path/to/target_directory}}"
+    },
+    {
+      "description": "Mount a CD-ROM device (with the filetype ISO9660) to /cdrom (readonly):",
+      "syntax": "mount -t {{iso9660}} -o ro {{/dev/cdrom}} {{/cdrom}}"
+    },
+    {
+      "description": "Mount all the filesystem defined in /etc/fstab:",
+      "syntax": "mount -a"
+    },
+    {
+      "description": "Mount a specific filesystem described in /etc/fstab (e.g. /dev/sda1 /my_drive ext2 defaults 0 2):",
+      "syntax": "mount {{/my_drive}}"
+    },
+    {
+      "description": "Mount a directory to another directory:",
+      "syntax": "mount --bind {{path/to/old_dir}} {{path/to/new_dir}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "ddev",
+  "description": "Container based local development tool for PHP environments. More information: https://ddev.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Start up a project:",
+      "syntax": "ddev start"
+    },
+    {
+      "description": "Configure a project's type and docroot:",
+      "syntax": "ddev config"
+    },
+    {
+      "description": "[f]ollow the log trail:",
+      "syntax": "ddev logs -f"
+    },
+    {
+      "description": "Run composer within the container:",
+      "syntax": "ddev composer"
+    },
+    {
+      "description": "Install a specific Node.js version:",
+      "syntax": "ddev nvm install {{version}}"
+    },
+    {
+      "description": "Export a database:",
+      "syntax": "ddev export-db --file={{/tmp/db.sql.gz}}"
+    },
+    {
+      "description": "Run a specific command within a container:",
+      "syntax": "ddev exec {{echo 1}}"
+    }
+  ]
+}

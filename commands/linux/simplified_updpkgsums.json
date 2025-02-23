@@ -1,0 +1,18 @@
+{
+  "command": "updpkgsums",
+  "description": "Update the checksums of the sources in a PKGBUILD. Unless a preexisting hashing algorithm is used, SHA256 will be used. More information: https://manned.org/updpkgsums.",
+  "useCases": [
+    {
+      "description": "Update the checksums in a PKGBUILD:",
+      "syntax": "updpkgsums"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "updpkgsums -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "updpkgsums -v"
+    }
+  ]
+}

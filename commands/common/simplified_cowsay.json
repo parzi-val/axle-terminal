@@ -1,0 +1,30 @@
+{
+  "command": "cowsay",
+  "description": "Print ASCII art (by default a cow) saying or thinking something. More information: https://github.com/tnalpgge/rank-amateur-cowsay.",
+  "useCases": [
+    {
+      "description": "Print an ASCII cow saying \"hello, world\":",
+      "syntax": "cowsay &quot;{{hello, world}}&quot;"
+    },
+    {
+      "description": "Print an ASCII cow saying text from stdin:",
+      "syntax": "echo &quot;{{hello, world}}&quot; | cowsay"
+    },
+    {
+      "description": "List all available art types:",
+      "syntax": "cowsay -l"
+    },
+    {
+      "description": "Print the specified ASCII art saying \"hello, world\":",
+      "syntax": "cowsay -f {{art}} &quot;{{hello, world}}&quot;"
+    },
+    {
+      "description": "Print a dead thinking ASCII cow:",
+      "syntax": "cowthink -d &quot;{{I'm just a cow, not a great thinker...}}&quot;"
+    },
+    {
+      "description": "Print an ASCII cow with custom eyes saying \"hello, world\":",
+      "syntax": "cowsay -e {{characters}} &quot;{{hello, world}}&quot;"
+    }
+  ]
+}

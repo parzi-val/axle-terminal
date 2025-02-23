@@ -1,0 +1,38 @@
+{
+  "command": "nala",
+  "description": "Package management utility with better formatting. Front-end for the python-apt API. More information: https://gitlab.com/volian/nala.",
+  "useCases": [
+    {
+      "description": "Install a package, or update it to the latest available version:",
+      "syntax": "sudo nala install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "sudo nala remove {{package}}"
+    },
+    {
+      "description": "Remove a package and its configuration files:",
+      "syntax": "nala purge {{package}}"
+    },
+    {
+      "description": "Search package names and descriptions using a word, regex (default) or glob:",
+      "syntax": "nala search &quot;{{pattern}}&quot;"
+    },
+    {
+      "description": "Update the list of available packages and upgrade the system:",
+      "syntax": "sudo nala upgrade"
+    },
+    {
+      "description": "Remove all unused packages and dependencies from your system:",
+      "syntax": "sudo nala autoremove"
+    },
+    {
+      "description": "Fetch fast mirrors to improve download speeds:",
+      "syntax": "sudo nala fetch"
+    },
+    {
+      "description": "Display the history of all transactions:",
+      "syntax": "nala history"
+    }
+  ]
+}

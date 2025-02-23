@@ -1,0 +1,34 @@
+{
+  "command": "tlmgr update",
+  "description": "Update TeX Live packages. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Update all TeX Live packages:",
+      "syntax": "sudo tlmgr update --all"
+    },
+    {
+      "description": "Update tlmgr itself:",
+      "syntax": "sudo tlmgr update --self"
+    },
+    {
+      "description": "Update a specific package:",
+      "syntax": "sudo tlmgr update {{package}}"
+    },
+    {
+      "description": "Update all except a specific package:",
+      "syntax": "sudo tlmgr update --all --exclude {{package}}"
+    },
+    {
+      "description": "Update all packages, making a backup of the current packages:",
+      "syntax": "sudo tlmgr update --all --backup"
+    },
+    {
+      "description": "Update a specific package without updating its dependencies:",
+      "syntax": "sudo tlmgr update --no-depends {{package}}"
+    },
+    {
+      "description": "Simulate updating all packages without making any changes:",
+      "syntax": "sudo tlmgr update --all --dry-run"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "dpigs",
+  "description": "Show which installed packages occupy the most space on apt based systems. More information: https://manned.org/dpigs.",
+  "useCases": [
+    {
+      "description": "Display the N largest packages on the system:",
+      "syntax": "dpigs --lines={{N}}"
+    },
+    {
+      "description": "Use the specified file instead of the default dpkg [s]tatus file:",
+      "syntax": "dpigs --status={{path/to/file}}"
+    },
+    {
+      "description": "Display the largest [S]ource packages of binary packages installed on the system:",
+      "syntax": "dpigs --source"
+    },
+    {
+      "description": "Display package sizes in [H]uman-readable format:",
+      "syntax": "dpigs --human-readable"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dpigs --help"
+    }
+  ]
+}

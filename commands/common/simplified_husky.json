@@ -1,0 +1,30 @@
+{
+  "command": "husky",
+  "description": "Native Git hooks made easy. More information: https://typicode.github.io/husky.",
+  "useCases": [
+    {
+      "description": "Install Husky in the current directory:",
+      "syntax": "husky install"
+    },
+    {
+      "description": "Install Husky into a specific directory:",
+      "syntax": "husky install {{path/to/directory}}"
+    },
+    {
+      "description": "Set a specific command as a pre-push hook for Git:",
+      "syntax": "husky set {{.husky/pre-push}} &quot;{{command}} {{command_arguments}}&quot;"
+    },
+    {
+      "description": "Add a specific command to the current pre-commit hook:",
+      "syntax": "husky add {{.husky/pre-commit}} &quot;{{command}} {{command_arguments}}&quot;"
+    },
+    {
+      "description": "Uninstall Husky hooks from the current directory:",
+      "syntax": "husky uninstall"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "husky"
+    }
+  ]
+}

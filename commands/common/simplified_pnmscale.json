@@ -1,0 +1,10 @@
+{
+  "command": "pnmscale",
+  "description": "This command has been replaced by pamscale. More information: https://netpbm.sourceforge.net/doc/pnmscale.html.",
+  "useCases": [
+    {
+      "description": "View documentation for pamscale:",
+      "syntax": "tldr pamscale"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "topydo",
+  "description": "A to-do list application that uses the todo.txt format. More information: https://github.com/topydo/topydo.",
+  "useCases": [
+    {
+      "description": "Add a to-do to a specific project with a given context:",
+      "syntax": "topydo add &quot;{{todo_message}} +{{project_name}} @{{context_name}}&quot;"
+    },
+    {
+      "description": "Add a to-do with a due date of tomorrow with a priority of A:",
+      "syntax": "topydo add &quot;(A) {{todo _message}} due:{{1d}}&quot;"
+    },
+    {
+      "description": "Add a to-do with a due date of Friday:",
+      "syntax": "topydo add &quot;{{todo_message}} due:{{fri}}&quot;"
+    },
+    {
+      "description": "Add a non-strict repeating to-do (next due = now + rec):",
+      "syntax": "topydo add &quot;water flowers due:{{mon}} rec:{{1w}}&quot;"
+    },
+    {
+      "description": "Add a strict repeating to-do (next due = current due + rec):",
+      "syntax": "topydo add &quot;{{todo_message}} due:{{2020-01-01}} rec:{{+1m}}&quot;"
+    },
+    {
+      "description": "Revert the last topydo command executed:",
+      "syntax": "topydo revert"
+    }
+  ]
+}

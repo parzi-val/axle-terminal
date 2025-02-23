@@ -1,0 +1,22 @@
+{
+  "command": "gyb",
+  "description": "Locally back up Gmail messages using Gmail's API over HTTPS. More information: https://github.com/GAM-team/got-your-back.",
+  "useCases": [
+    {
+      "description": "Estimate the number and the size of all emails on your Gmail account:",
+      "syntax": "gyb --email {{email@gmail.com}} --action estimate"
+    },
+    {
+      "description": "Backup a Gmail account to a specific directory:",
+      "syntax": "gyb --email {{email@gmail.com}} --action backup --local-folder {{path/to/directory}}"
+    },
+    {
+      "description": "Backup only important or starred emails from a Gmail account to the default local folder:",
+      "syntax": "gyb --email {{email@gmail.com}} --search &quot;{{is:important OR is:starred}}&quot;"
+    },
+    {
+      "description": "Restore from a local folder to a Gmail account:",
+      "syntax": "gyb --email {{email@gmail.com}} --action restore --local-folder {{path/to/directory}}"
+    }
+  ]
+}

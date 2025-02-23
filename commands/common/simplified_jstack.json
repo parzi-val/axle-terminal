@@ -1,0 +1,18 @@
+{
+  "command": "jstack",
+  "description": "Java stack trace tool. More information: https://manned.org/jstack.",
+  "useCases": [
+    {
+      "description": "Print Java stack traces for all threads in a Java process:",
+      "syntax": "jstack {{java_pid}}"
+    },
+    {
+      "description": "Print mixed mode (Java/C++) stack traces for all threads in a Java process:",
+      "syntax": "jstack -m {{java_pid}}"
+    },
+    {
+      "description": "Print stack traces from Java core dump:",
+      "syntax": "jstack {{/usr/bin/java}} {{file.core}}"
+    }
+  ]
+}

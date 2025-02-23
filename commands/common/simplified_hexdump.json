@@ -1,0 +1,22 @@
+{
+  "command": "hexdump",
+  "description": "An ASCII, decimal, hexadecimal, octal dump. More information: https://manned.org/hexdump.",
+  "useCases": [
+    {
+      "description": "Print the hexadecimal representation of a file, replacing duplicate lines by '*':",
+      "syntax": "hexdump {{path/to/file}}"
+    },
+    {
+      "description": "Display the input offset in hexadecimal and its ASCII representation in two columns:",
+      "syntax": "hexdump -C {{path/to/file}}"
+    },
+    {
+      "description": "Display the hexadecimal representation of a file, but interpret only n bytes of the input:",
+      "syntax": "hexdump -C -n{{number_of_bytes}} {{path/to/file}}"
+    },
+    {
+      "description": "Don't replace duplicate lines with '*':",
+      "syntax": "hexdump --no-squeezing {{path/to/file}}"
+    }
+  ]
+}

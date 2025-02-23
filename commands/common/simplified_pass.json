@@ -1,0 +1,38 @@
+{
+  "command": "pass",
+  "description": "Store and read passwords or other sensitive data. All data is GPG-encrypted, and managed with a Git repository. More information: https://www.passwordstore.org.",
+  "useCases": [
+    {
+      "description": "Initialize (or re-encrypt) the storage using one or more GPG IDs:",
+      "syntax": "pass init {{gpg_id_1}} {{gpg_id_2}}"
+    },
+    {
+      "description": "Save a new password and additional information (press Ctrl + D on a new line to complete):",
+      "syntax": "pass insert --multiline {{path/to/data}}"
+    },
+    {
+      "description": "Edit an entry:",
+      "syntax": "pass edit {{path/to/data}}"
+    },
+    {
+      "description": "Copy a password (first line of the data file) to the clipboard:",
+      "syntax": "pass -c {{path/to/data}}"
+    },
+    {
+      "description": "List the whole store tree:",
+      "syntax": "pass"
+    },
+    {
+      "description": "Generate a new random password with a given length, and copy it to the clipboard:",
+      "syntax": "pass generate -c {{path/to/data}} {{num}}"
+    },
+    {
+      "description": "Initialize a new Git repository (any changes done by pass will be committed automatically):",
+      "syntax": "pass git init"
+    },
+    {
+      "description": "Run a Git command on behalf of the password storage:",
+      "syntax": "pass git {{command}}"
+    }
+  ]
+}

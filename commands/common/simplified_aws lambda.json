@@ -1,0 +1,34 @@
+{
+  "command": "aws lambda",
+  "description": "Use AWS Lambda, a compute service for running code without provisioning or managing servers. More information: https://docs.aws.amazon.com/cli/latest/reference/lambda/.",
+  "useCases": [
+    {
+      "description": "Run a function:",
+      "syntax": "aws lambda invoke --function-name {{name}} {{path/to/response.json}}"
+    },
+    {
+      "description": "Run a function with an input payload in JSON format:",
+      "syntax": "aws lambda invoke --function-name {{name}} --payload {{json}} {{path/to/response.json}}"
+    },
+    {
+      "description": "List functions:",
+      "syntax": "aws lambda list-functions"
+    },
+    {
+      "description": "Display the configuration of a function:",
+      "syntax": "aws lambda get-function-configuration --function-name {{name}}"
+    },
+    {
+      "description": "List function aliases:",
+      "syntax": "aws lambda list-aliases --function-name {{name}}"
+    },
+    {
+      "description": "Display the reserved concurrency configuration for a function:",
+      "syntax": "aws lambda get-function-concurrency --function-name {{name}}"
+    },
+    {
+      "description": "List which AWS services can invoke the function:",
+      "syntax": "aws lambda get-policy --function-name {{name}}"
+    }
+  ]
+}

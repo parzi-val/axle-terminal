@@ -1,0 +1,38 @@
+{
+  "command": "transmission-cli",
+  "description": "A lightweight, command-line BitTorrent client. This tool has been deprecated, please see transmission-remote. More information: https://transmissionbt.com.",
+  "useCases": [
+    {
+      "description": "Download a specific torrent:",
+      "syntax": "transmission-cli {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Download a torrent to a specific directory:",
+      "syntax": "transmission-cli --download-dir {{path/to/download_directory}} {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Create a torrent file from a specific file or directory:",
+      "syntax": "transmission-cli --new {{path/to/source_file_or_directory}}"
+    },
+    {
+      "description": "Specify the download speed limit (in KB/s):",
+      "syntax": "transmission-cli --downlimit {{50}} {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Specify the upload speed limit (in KB/s):",
+      "syntax": "transmission-cli --uplimit {{50}} {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Use a specific port for connections:",
+      "syntax": "transmission-cli --port {{port_number}} {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Force encryption for peer connections:",
+      "syntax": "transmission-cli --encryption-required {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Use a Bluetack-formatted peer blocklist:",
+      "syntax": "transmission-cli --blocklist {{blocklist_url|path/to/blocklist}} {{url|magnet|path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "packer",
+  "description": "Build automated machine images. More information: https://www.packer.io/.",
+  "useCases": [
+    {
+      "description": "Build an image:",
+      "syntax": "packer build {{path/to/config.json}}"
+    },
+    {
+      "description": "Check the syntax of a Packer image config:",
+      "syntax": "packer validate {{path/to/config.json}}"
+    },
+    {
+      "description": "Format a Packer image config:",
+      "syntax": "packer fmt {{path/to/config.pkr.hcl}}"
+    }
+  ]
+}

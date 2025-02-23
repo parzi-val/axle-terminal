@@ -1,0 +1,26 @@
+{
+  "command": "tlmgr search",
+  "description": "Search for TeX Live packages using (Perl) regular expressions. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Search for a package name and descriptions of all locally installed packages from a specific regular expression:",
+      "syntax": "tlmgr search &quot;{{regular_expression}}&quot;"
+    },
+    {
+      "description": "Search for all file names of all locally installed packages from a regular expression:",
+      "syntax": "tlmgr search --file &quot;{{regular_expression}}&quot;"
+    },
+    {
+      "description": "Search for all file names, package names, and descriptions of all locally installed packages from a regular expression:",
+      "syntax": "tlmgr search --all &quot;{{regular_expression}}&quot;"
+    },
+    {
+      "description": "Search the TeX Live database, instead of the local installation:",
+      "syntax": "tlmgr search --global &quot;{{regular_expression}}&quot;"
+    },
+    {
+      "description": "Restrict the matches for package names and descriptions (but not for file names) to whole words:",
+      "syntax": "tlmgr search --all --word &quot;{{regular_expression}}&quot;"
+    }
+  ]
+}

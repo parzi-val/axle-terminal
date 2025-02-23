@@ -1,0 +1,30 @@
+{
+  "command": "parallel-lint",
+  "description": "Check the syntax of PHP files in parallel. More information: https://github.com/JakubOnderka/PHP-Parallel-Lint.",
+  "useCases": [
+    {
+      "description": "Lint a specific directory:",
+      "syntax": "parallel-lint {{path/to/directory}}"
+    },
+    {
+      "description": "Lint a directory using the specified number of parallel processes:",
+      "syntax": "parallel-lint -j {{processes}} {{path/to/directory}}"
+    },
+    {
+      "description": "Lint a directory, excluding the specified directory:",
+      "syntax": "parallel-lint --exclude {{path/to/excluded_directory}} {{path/to/directory}}"
+    },
+    {
+      "description": "Lint a directory of files using a comma-separated list of extension(s):",
+      "syntax": "parallel-lint -e {{php,html,phpt}} {{path/to/directory}}"
+    },
+    {
+      "description": "Lint a directory and output the results as JSON:",
+      "syntax": "parallel-lint --json {{path/to/directory}}"
+    },
+    {
+      "description": "Lint a directory and show Git Blame results for rows containing errors:",
+      "syntax": "parallel-lint --blame {{path/to/directory}}"
+    }
+  ]
+}

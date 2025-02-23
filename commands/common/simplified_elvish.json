@@ -1,0 +1,18 @@
+{
+  "command": "elvish",
+  "description": "Expressive programming language and a versatile interactive shell. See also: nu. More information: https://elv.sh.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "elvish"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "elvish -c &quot;{{echo 'elvish is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "elvish {{path/to/script.elv}}"
+    }
+  ]
+}

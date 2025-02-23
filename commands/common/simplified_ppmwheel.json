@@ -1,0 +1,18 @@
+{
+  "command": "ppmwheel",
+  "description": "Generate a PPM image of a color wheel. More information: https://netpbm.sourceforge.net/doc/ppmwheel.html.",
+  "useCases": [
+    {
+      "description": "Generate a color wheel of type Ppmcirc:",
+      "syntax": "ppmwheel {{diameter}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Generate a color wheel of type Hue-value:",
+      "syntax": "ppmwheel -huevalue {{diameter}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Generate a color wheel of type Hue-saturation:",
+      "syntax": "ppmwheel -huesaturation {{diameter}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

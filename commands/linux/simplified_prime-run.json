@@ -1,0 +1,14 @@
+{
+  "command": "prime-run",
+  "description": "Run a program using an alternative Nvidia graphics card. More information: https://wiki.archlinux.org/title/PRIME#PRIME_render_offload.",
+  "useCases": [
+    {
+      "description": "Run a program using a dedicated Nvidia GPU:",
+      "syntax": "prime-run {{command}}"
+    },
+    {
+      "description": "Validate whether the Nvidia card is being used:",
+      "syntax": "prime-run glxinfo | grep &quot;OpenGL renderer&quot;"
+    }
+  ]
+}

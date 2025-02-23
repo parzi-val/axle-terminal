@@ -1,0 +1,34 @@
+{
+  "command": "clip-view",
+  "description": "Command Line Interface Pages render. Render for a TlDr-like project with much a more extensive syntax and several render modes. More information: https://github.com/command-line-interface-pages/v2-tooling/tree/main/clip-view.",
+  "useCases": [
+    {
+      "description": "Render specific local pages:",
+      "syntax": "clip-view {{path/to/page1.clip path/to/page2.clip ...}}"
+    },
+    {
+      "description": "Render specific remote pages:",
+      "syntax": "clip-view {{page_name1 page_name2 ...}}"
+    },
+    {
+      "description": "Render pages by a specific render:",
+      "syntax": "clip-view --render {{tldr|tldr-colorful|docopt|docopt-colorful}} {{page_name1 page_name2 ...}}"
+    },
+    {
+      "description": "Render pages with a specific color theme:",
+      "syntax": "clip-view --theme {{path/to/local_theme.yaml|remote_theme_name}} {{page_name1 page_name2 ...}}"
+    },
+    {
+      "description": "Clear a page or theme cache:",
+      "syntax": "clip-view --clear-{{page|theme}}-cache"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "clip-view --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "clip-view --version"
+    }
+  ]
+}

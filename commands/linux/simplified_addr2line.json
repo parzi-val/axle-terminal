@@ -1,0 +1,18 @@
+{
+  "command": "addr2line",
+  "description": "Convert addresses of a binary into file names and line numbers. More information: https://manned.org/addr2line.",
+  "useCases": [
+    {
+      "description": "Display the filename and line number of the source code from an instruction address of an executable:",
+      "syntax": "addr2line --exe={{path/to/executable}} {{address}}"
+    },
+    {
+      "description": "Display the function name, filename and line number:",
+      "syntax": "addr2line --exe={{path/to/executable}} --functions {{address}}"
+    },
+    {
+      "description": "Demangle the function name for C++ code:",
+      "syntax": "addr2line --exe={{path/to/executable}} --functions --demangle {{address}}"
+    }
+  ]
+}

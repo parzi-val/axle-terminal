@@ -1,0 +1,18 @@
+{
+  "command": "dvc dag",
+  "description": "Visualize the pipeline(s) defined in dvc.yaml. More information: https://dvc.org/doc/command-reference/dag.",
+  "useCases": [
+    {
+      "description": "Visualize the entire pipeline:",
+      "syntax": "dvc dag"
+    },
+    {
+      "description": "Visualize the pipeline stages up to a specified target stage:",
+      "syntax": "dvc dag {{target}}"
+    },
+    {
+      "description": "Export the pipeline in the dot format:",
+      "syntax": "dvc dag --dot &gt; {{path/to/pipeline.dot}}"
+    }
+  ]
+}

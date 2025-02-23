@@ -1,0 +1,14 @@
+{
+  "command": "pueue send",
+  "description": "Send input to a task. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Send input to a running command:",
+      "syntax": "pueue send {{task_id}} &quot;{{input}}&quot;"
+    },
+    {
+      "description": "Send confirmation to a task expecting y/N (e.g. APT, cp):",
+      "syntax": "pueue send {{task_id}} {{y}}"
+    }
+  ]
+}

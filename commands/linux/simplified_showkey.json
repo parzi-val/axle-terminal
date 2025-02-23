@@ -1,0 +1,26 @@
+{
+  "command": "showkey",
+  "description": "Display the keycode of pressed keys on the keyboard, helpful for debugging keyboard-related issues and key remapping. More information: https://manned.org/showkey.",
+  "useCases": [
+    {
+      "description": "View keycodes in decimal:",
+      "syntax": "sudo showkey"
+    },
+    {
+      "description": "Display scancodes in hexadecimal:",
+      "syntax": "sudo showkey {{-s|--scancodes}}"
+    },
+    {
+      "description": "Display keycodes in decimal (default):",
+      "syntax": "sudo showkey {{-k|--keycodes}}"
+    },
+    {
+      "description": "Display keycodes in ASCII, decimal, and hexadecimal:",
+      "syntax": "sudo showkey {{-a|--ascii}}"
+    },
+    {
+      "description": "Exit the program:",
+      "syntax": "Ctrl + d"
+    }
+  ]
+}

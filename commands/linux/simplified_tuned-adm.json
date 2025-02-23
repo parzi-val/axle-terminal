@@ -1,0 +1,26 @@
+{
+  "command": "tuned-adm",
+  "description": "Manage and optimize system performance tuning profiles on Linux. More information: https://tuned-project.org.",
+  "useCases": [
+    {
+      "description": "List available profiles:",
+      "syntax": "tuned-adm list"
+    },
+    {
+      "description": "Show the currently active profile:",
+      "syntax": "tuned-adm active"
+    },
+    {
+      "description": "Set a specific tuning profile:",
+      "syntax": "tuned-adm profile {{profile_name}}"
+    },
+    {
+      "description": "Recommend a suitable profile based on the current system:",
+      "syntax": "tuned-adm recommend"
+    },
+    {
+      "description": "Disable tuning:",
+      "syntax": "tuned-adm off"
+    }
+  ]
+}

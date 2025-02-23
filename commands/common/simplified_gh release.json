@@ -1,0 +1,30 @@
+{
+  "command": "gh release",
+  "description": "Manage GitHub releases. More information: https://cli.github.com/manual/gh_release.",
+  "useCases": [
+    {
+      "description": "List releases in a GitHub repository, limited to 30 items:",
+      "syntax": "gh release list"
+    },
+    {
+      "description": "Display information about a specific release:",
+      "syntax": "gh release view {{tag}}"
+    },
+    {
+      "description": "Create a new release:",
+      "syntax": "gh release create {{tag}}"
+    },
+    {
+      "description": "Delete a specific release:",
+      "syntax": "gh release delete {{tag}}"
+    },
+    {
+      "description": "Download assets from a specific release:",
+      "syntax": "gh release download {{tag}}"
+    },
+    {
+      "description": "Upload assets to a specific release:",
+      "syntax": "gh release upload {{tag}} {{path/to/file1 path/to/file2 ...}}"
+    }
+  ]
+}

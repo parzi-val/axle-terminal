@@ -1,0 +1,30 @@
+{
+  "command": "mplayer",
+  "description": "Cross-platform multimedia player. More information: https://mplayerhq.hu/DOCS/HTML/en/commandline.html.",
+  "useCases": [
+    {
+      "description": "Play the specified file or URL:",
+      "syntax": "mplayer {{path/to/file|url}}"
+    },
+    {
+      "description": "Play multiple files:",
+      "syntax": "mplayer {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Play a specific file repeatedly:",
+      "syntax": "mplayer -loop {{0}} {{path/to/file}}"
+    },
+    {
+      "description": "Pause playback:",
+      "syntax": "&lt;Space&gt;"
+    },
+    {
+      "description": "Quit mplayer:",
+      "syntax": "&lt;Esc&gt;"
+    },
+    {
+      "description": "Seek backward or forward 10 seconds:",
+      "syntax": "{{Left|Right}}"
+    }
+  ]
+}

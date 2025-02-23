@@ -1,0 +1,22 @@
+{
+  "command": "xcv",
+  "description": "Cut, copy, and paste in the command-line. More information: https://github.com/busterc/xcv.",
+  "useCases": [
+    {
+      "description": "Cut a file:",
+      "syntax": "xcv x {{input_file}}"
+    },
+    {
+      "description": "Copy a file:",
+      "syntax": "xcv c {{input_file}}"
+    },
+    {
+      "description": "Paste a file:",
+      "syntax": "xcv v {{output_file}}"
+    },
+    {
+      "description": "List files available for pasting:",
+      "syntax": "xcv l"
+    }
+  ]
+}

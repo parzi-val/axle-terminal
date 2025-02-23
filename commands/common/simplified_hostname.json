@@ -1,0 +1,26 @@
+{
+  "command": "hostname",
+  "description": "Show or set the system's host name. More information: https://manned.org/hostname.",
+  "useCases": [
+    {
+      "description": "Show current host name:",
+      "syntax": "hostname"
+    },
+    {
+      "description": "Show the network address of the host name:",
+      "syntax": "hostname -i"
+    },
+    {
+      "description": "Show all network addresses of the host:",
+      "syntax": "hostname -I"
+    },
+    {
+      "description": "Show the FQDN (Fully Qualified Domain Name):",
+      "syntax": "hostname --fqdn"
+    },
+    {
+      "description": "Set current host name:",
+      "syntax": "hostname {{new_hostname}}"
+    }
+  ]
+}

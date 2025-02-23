@@ -1,0 +1,34 @@
+{
+  "command": "i3",
+  "description": "A dynamic tiling window manager. More information: https://i3wm.org/docs/userguide.html.",
+  "useCases": [
+    {
+      "description": "Start i3 (Note that a pre-existing window manager must not be open when this command is run):",
+      "syntax": "i3"
+    },
+    {
+      "description": "Open a new terminal window:",
+      "syntax": "&lt;Super&gt; + &lt;Return&gt;"
+    },
+    {
+      "description": "Create a new workspace:",
+      "syntax": "&lt;Super&gt; + &lt;Shift&gt; + {{number}}"
+    },
+    {
+      "description": "Switch to workspace number n:",
+      "syntax": "&lt;Super&gt; + {{n}}"
+    },
+    {
+      "description": "Open new window horizontally:",
+      "syntax": "&lt;Super&gt; + h"
+    },
+    {
+      "description": "Open new window vertically:",
+      "syntax": "&lt;Super&gt; + v"
+    },
+    {
+      "description": "Open application (type out application name after executing command):",
+      "syntax": "&lt;Super&gt; + D"
+    }
+  ]
+}

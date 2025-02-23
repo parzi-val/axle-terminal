@@ -1,0 +1,18 @@
+{
+  "command": "reportbug",
+  "description": "Bug report tool of Debian distribution. More information: https://manned.org/reportbug.",
+  "useCases": [
+    {
+      "description": "Generate a bug report about a specific package, then send it by e-mail:",
+      "syntax": "reportbug {{package}}"
+    },
+    {
+      "description": "Report a bug that is not about a specific package (general problem, infrastructure, etc.):",
+      "syntax": "reportbug other"
+    },
+    {
+      "description": "Write the bug report to a file instead of sending it by e-mail:",
+      "syntax": "reportbug -o {{filename}} {{package}}"
+    }
+  ]
+}

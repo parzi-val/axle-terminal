@@ -1,0 +1,18 @@
+{
+  "command": "ppmdither",
+  "description": "Reduce the number of colors in an image by applying dithering. More information: https://netpbm.sourceforge.net/doc/ppmdither.html.",
+  "useCases": [
+    {
+      "description": "Read a PPM image, apply dithering and save it to a file:",
+      "syntax": "ppmdither {{path/to/image.ppm}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Specify the desired number of shades for each primary color:",
+      "syntax": "ppmdither -red {{2}} -green {{3}} -blue {{2}} {{path/to/image.ppm}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Specify the dimensions of the dithering matrix:",
+      "syntax": "ppmdither -dim {{2}} {{path/to/image.ppm}} &gt; {{path/to/file.ppm}}"
+    }
+  ]
+}

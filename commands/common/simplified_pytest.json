@@ -1,0 +1,30 @@
+{
+  "command": "pytest",
+  "description": "Run Python tests. More information: https://docs.pytest.org/.",
+  "useCases": [
+    {
+      "description": "Run tests from specific files:",
+      "syntax": "pytest {{path/to/test_file1.py path/to/test_file2.py ...}}"
+    },
+    {
+      "description": "Run tests with names matching a specific [k]eyword expression:",
+      "syntax": "pytest -k {{expression}}"
+    },
+    {
+      "description": "Exit as soon as a test fails or encounters an error:",
+      "syntax": "pytest --exitfirst"
+    },
+    {
+      "description": "Run tests matching or excluding markers:",
+      "syntax": "pytest -m {{marker_name1 and not marker_name2}}"
+    },
+    {
+      "description": "Run until a test failure, continuing from the last failing test:",
+      "syntax": "pytest --stepwise"
+    },
+    {
+      "description": "Run tests without capturing output:",
+      "syntax": "pytest --capture=no"
+    }
+  ]
+}

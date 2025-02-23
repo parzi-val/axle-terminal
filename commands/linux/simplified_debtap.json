@@ -1,0 +1,22 @@
+{
+  "command": "debtap",
+  "description": "Convert Debian packages into Arch Linux packages. See also: pacman-upgrade. More information: https://github.com/helixarch/debtap.",
+  "useCases": [
+    {
+      "description": "Update debtap database (before the first run):",
+      "syntax": "sudo debtap --update"
+    },
+    {
+      "description": "Convert the specified package:",
+      "syntax": "debtap {{path/to/package.deb}}"
+    },
+    {
+      "description": "Convert the specified package bypassing all questions, except for editing metadata files:",
+      "syntax": "debtap --quiet {{path/to/package.deb}}"
+    },
+    {
+      "description": "Generate a PKGBUILD file:",
+      "syntax": "debtap --pkgbuild {{path/to/package.deb}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "grip",
+  "description": "Preview GitHub-flavoured Markdown files locally. More information: https://github.com/joeyespo/grip.",
+  "useCases": [
+    {
+      "description": "Start the server and serve the rendered README file of a current directory:",
+      "syntax": "grip"
+    },
+    {
+      "description": "Start the server and serve a specific Markdown file:",
+      "syntax": "grip {{path/to/file.md}}"
+    },
+    {
+      "description": "Start the server and open the README file of the current directory in the browser:",
+      "syntax": "grip --browser"
+    },
+    {
+      "description": "Start the server in the specified port and serve the rendered README file of the current directory:",
+      "syntax": "grip {{port}}"
+    }
+  ]
+}

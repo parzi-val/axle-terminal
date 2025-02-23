@@ -1,0 +1,22 @@
+{
+  "command": "slackcat",
+  "description": "Utility for passing files and command output to Slack. More information: https://github.com/bcicen/slackcat.",
+  "useCases": [
+    {
+      "description": "Post a file to Slack:",
+      "syntax": "slackcat --channel {{channel_name}} {{path/to/file}}"
+    },
+    {
+      "description": "Post a file to Slack with a custom filename:",
+      "syntax": "slackcat --channel {{channel_name}} --filename={{filename}} {{path/to/file}}"
+    },
+    {
+      "description": "Pipe command output to Slack as a text snippet:",
+      "syntax": "{{command}} | slackcat --channel {{channel_name}} --filename={{snippet_name}}"
+    },
+    {
+      "description": "Stream command output to Slack continuously:",
+      "syntax": "{{command}} | slackcat --channel {{channel_name}} --stream"
+    }
+  ]
+}

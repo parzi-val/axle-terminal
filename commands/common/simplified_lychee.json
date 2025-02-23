@@ -1,0 +1,26 @@
+{
+  "command": "lychee",
+  "description": "Find broken URLs. More information: https://lychee.cli.rs/usage/cli/.",
+  "useCases": [
+    {
+      "description": "Scan a website for broken links:",
+      "syntax": "lychee {{https://example.com}}"
+    },
+    {
+      "description": "Display a breakdown of error types:",
+      "syntax": "lychee --format detailed {{https://example.com}}"
+    },
+    {
+      "description": "Limit the amount of connections to prevent DDOS protection:",
+      "syntax": "lychee --max-concurrency {{5}} {{links.txt}}"
+    },
+    {
+      "description": "Check files in a directory structure for any broken URLs:",
+      "syntax": "grep -r &quot;{{pattern}}&quot; | lychee -"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "lychee --help"
+    }
+  ]
+}

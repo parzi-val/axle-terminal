@@ -1,0 +1,30 @@
+{
+  "command": "mpc",
+  "description": "Music Player Client: control the Music Player Daemon (MPD). See also: mpd, ncmpcpp, cmus. More information: https://www.musicpd.org/doc/mpc/html.",
+  "useCases": [
+    {
+      "description": "Toggle play/pause:",
+      "syntax": "mpc toggle"
+    },
+    {
+      "description": "Stop playing:",
+      "syntax": "mpc stop"
+    },
+    {
+      "description": "Show information about the currently playing song:",
+      "syntax": "mpc status"
+    },
+    {
+      "description": "Play the next song:",
+      "syntax": "mpc next"
+    },
+    {
+      "description": "Play the previous song:",
+      "syntax": "mpc prev"
+    },
+    {
+      "description": "Seek n seconds forward (+) or backward (-):",
+      "syntax": "mpc {{+n|-n}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "rustup",
+  "description": "Install, manage, and update Rust toolchains. Some subcommands, such as toolchain, target, update, etc. have their own usage documentation. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Install the nightly toolchain for your system:",
+      "syntax": "rustup install nightly"
+    },
+    {
+      "description": "Switch the default toolchain to nightly so that the cargo and rustc commands will use it:",
+      "syntax": "rustup default nightly"
+    },
+    {
+      "description": "Use the nightly toolchain when inside the current project but leave global settings unchanged:",
+      "syntax": "rustup override set nightly"
+    },
+    {
+      "description": "Update all toolchains:",
+      "syntax": "rustup update"
+    },
+    {
+      "description": "List installed toolchains:",
+      "syntax": "rustup show"
+    },
+    {
+      "description": "Run cargo build with a certain toolchain:",
+      "syntax": "rustup run {{toolchain}} cargo build"
+    },
+    {
+      "description": "Open the local Rust documentation in the default web browser:",
+      "syntax": "rustup doc"
+    }
+  ]
+}

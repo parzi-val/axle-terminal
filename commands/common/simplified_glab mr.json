@@ -1,0 +1,34 @@
+{
+  "command": "glab mr",
+  "description": "Manage GitLab merge requests. Some subcommands such as create have their own usage documentation. More information: https://glab.readthedocs.io/en/latest/mr.",
+  "useCases": [
+    {
+      "description": "Create a merge request:",
+      "syntax": "glab mr create"
+    },
+    {
+      "description": "Check out a specific merge request locally:",
+      "syntax": "glab mr checkout {{mr_number}}"
+    },
+    {
+      "description": "View the changes made in the merge request:",
+      "syntax": "glab mr diff"
+    },
+    {
+      "description": "Approve the merge request for the current branch:",
+      "syntax": "glab mr approve"
+    },
+    {
+      "description": "Merge the merge request associated with the current branch interactively:",
+      "syntax": "glab mr merge"
+    },
+    {
+      "description": "Edit a merge request interactively:",
+      "syntax": "glab mr update"
+    },
+    {
+      "description": "Edit the target branch of a merge request:",
+      "syntax": "glab mr update --target-branch {{branch_name}}"
+    }
+  ]
+}

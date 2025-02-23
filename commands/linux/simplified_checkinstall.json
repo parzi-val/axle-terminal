@@ -1,0 +1,26 @@
+{
+  "command": "checkinstall",
+  "description": "Track the local installation of a software package, and produce a binary package which can be used with a system's native package manager. More information: https://checkinstall.izto.org.",
+  "useCases": [
+    {
+      "description": "Create and install a package with default settings:",
+      "syntax": "sudo checkinstall --default"
+    },
+    {
+      "description": "Create a package but don't install it:",
+      "syntax": "sudo checkinstall --install={{no}}"
+    },
+    {
+      "description": "Create a package without documentation:",
+      "syntax": "sudo checkinstall --nodoc"
+    },
+    {
+      "description": "Create a package and set the name:",
+      "syntax": "sudo checkinstall --pkgname {{package}}"
+    },
+    {
+      "description": "Create a package and specify where to save it:",
+      "syntax": "sudo checkinstall --pakdir {{path/to/directory}}"
+    }
+  ]
+}

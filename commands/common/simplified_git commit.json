@@ -1,0 +1,34 @@
+{
+  "command": "git commit",
+  "description": "Commit files to the repository. More information: https://git-scm.com/docs/git-commit.",
+  "useCases": [
+    {
+      "description": "Commit staged files to the repository with a message:",
+      "syntax": "git commit --message &quot;{{message}}&quot;"
+    },
+    {
+      "description": "Commit staged files with a message read from a file:",
+      "syntax": "git commit --file {{path/to/commit_message_file}}"
+    },
+    {
+      "description": "Auto stage all modified and deleted files and commit with a message:",
+      "syntax": "git commit --all --message &quot;{{message}}&quot;"
+    },
+    {
+      "description": "Commit staged files and sign them with the specified GPG key (or the one defined in the configuration file if no argument is specified):",
+      "syntax": "git commit --gpg-sign {{key_id}} --message &quot;{{message}}&quot;"
+    },
+    {
+      "description": "Update the last commit by adding the currently staged changes, changing the commit's hash:",
+      "syntax": "git commit --amend"
+    },
+    {
+      "description": "Commit only specific (already staged) files:",
+      "syntax": "git commit {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Create a commit, even if there are no staged files:",
+      "syntax": "git commit --message &quot;{{message}}&quot; --allow-empty"
+    }
+  ]
+}

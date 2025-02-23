@@ -1,0 +1,30 @@
+{
+  "command": "whiptail",
+  "description": "Display text-based dialog boxes from shell scripts. More information: https://manned.org/whiptail.",
+  "useCases": [
+    {
+      "description": "Display a simple message:",
+      "syntax": "whiptail --title &quot;{{title}}&quot; --msgbox &quot;{{message}}&quot; {{height_in_chars}} {{width_in_chars}}"
+    },
+    {
+      "description": "Display a boolean choice, returning the result through the exit code:",
+      "syntax": "whiptail --title &quot;{{title}}&quot; --yesno &quot;{{message}}&quot; {{height_in_chars}} {{width_in_chars}}"
+    },
+    {
+      "description": "Customise the text on the yes/no buttons:",
+      "syntax": "whiptail --title &quot;{{title}}&quot; --yes-button &quot;{{text}}&quot; --no-button &quot;{{text}}&quot; --yesno &quot;{{message}}&quot; {{height_in_chars}} {{width_in_chars}}"
+    },
+    {
+      "description": "Display a text input box:",
+      "syntax": "{{result_variable_name}}=&quot;$(whiptail --title &quot;{{title}}&quot; --inputbox &quot;{{message}}&quot; {{height_in_chars}} {{width_in_chars}} {{default_text}} 3&gt;&amp;1 1&gt;&amp;2 2&gt;&amp;3)&quot;"
+    },
+    {
+      "description": "Display a password input box:",
+      "syntax": "{{result_variable_name}}=&quot;$(whiptail --title &quot;{{title}}&quot; --passwordbox &quot;{{message}}&quot; {{height_in_chars}} {{width_in_chars}} 3&gt;&amp;1 1&gt;&amp;2 2&gt;&amp;3)&quot;"
+    },
+    {
+      "description": "Display a multiple-choice menu:",
+      "syntax": "{{result_variable_name}}=$(whiptail --title &quot;{{title}}&quot; --menu &quot;{{message}}&quot; {{height_in_chars}} {{width_in_chars}} {{menu_display_height}} &quot;{{value_1}}&quot; &quot;{{display_text_1}}&quot; &quot;{{value_n}}&quot; &quot;{{display_text_n}}&quot; ..... 3&gt;&amp;1 1&gt;&amp;2 2&gt;&amp;3)"
+    }
+  ]
+}

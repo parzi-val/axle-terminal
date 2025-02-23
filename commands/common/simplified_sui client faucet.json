@@ -1,0 +1,18 @@
+{
+  "command": "sui client faucet",
+  "description": "Interact with the Sui faucet. More information: https://docs.sui.io/references/cli/client#request-a-sui-coin-from-faucet.",
+  "useCases": [
+    {
+      "description": "Get a SUI coin from the faucet associated with the active network:",
+      "syntax": "sui client faucet"
+    },
+    {
+      "description": "Get a SUI coin for the address (accepts also an alias):",
+      "syntax": "sui client faucet --address {{address}}"
+    },
+    {
+      "description": "Get a SUI coin from custom faucet:",
+      "syntax": "sui client faucet --url {{custom-faucet-url}}"
+    }
+  ]
+}

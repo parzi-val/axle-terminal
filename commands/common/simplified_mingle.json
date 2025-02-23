@@ -1,0 +1,18 @@
+{
+  "command": "mingle",
+  "description": "Bundle the edges of a graph layout. Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten. More information: https://www.graphviz.org/pdf/mingle.1.pdf.",
+  "useCases": [
+    {
+      "description": "Bundle the edges of one or more graph layouts (that already have layout information):",
+      "syntax": "mingle {{path/to/layout1.gv}} {{path/to/layout2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Perform layout, bundling, and output to a picture with one command:",
+      "syntax": "dot {{path/to/input.gv}} | mingle | dot -T {{png}} &gt; {{path/to/output.png}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mingle -?"
+    }
+  ]
+}

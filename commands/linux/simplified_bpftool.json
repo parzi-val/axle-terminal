@@ -1,0 +1,38 @@
+{
+  "command": "bpftool",
+  "description": "Inspect and manipulate eBPF programs and maps in a simple way. Some subcommands such as prog have their own usage documentation. More information: https://manned.org/bpftool.",
+  "useCases": [
+    {
+      "description": "List information about loaded eBPF programs:",
+      "syntax": "bpftool prog list"
+    },
+    {
+      "description": "List eBPF program attachments in the kernel networking subsystem:",
+      "syntax": "bpftool net list"
+    },
+    {
+      "description": "List all active links:",
+      "syntax": "bpftool link list"
+    },
+    {
+      "description": "List all raw_tracepoint, tracepoint, kprobe attachments in the system:",
+      "syntax": "bpftool perf list"
+    },
+    {
+      "description": "List BPF Type Format (BTF) data:",
+      "syntax": "bpftool btf list"
+    },
+    {
+      "description": "List information about loaded maps:",
+      "syntax": "bpftool map list"
+    },
+    {
+      "description": "Probe a network device \"eth0\" for supported eBPF features:",
+      "syntax": "bpftool feature probe dev {{eth0}}"
+    },
+    {
+      "description": "Run commands in batch mode from a file:",
+      "syntax": "bpftool batch file {{myfile}}"
+    }
+  ]
+}

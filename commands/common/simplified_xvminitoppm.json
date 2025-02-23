@@ -1,0 +1,10 @@
+{
+  "command": "xvminitoppm",
+  "description": "Convert an XV thumbnail picture to PPM. More information: https://netpbm.sourceforge.net/doc/xvminitoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an XV thumbnail image file to PPM:",
+      "syntax": "xvminitoppm {{path/to/input_file}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

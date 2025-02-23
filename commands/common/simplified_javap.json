@@ -1,0 +1,22 @@
+{
+  "command": "javap",
+  "description": "Disassemble class files and list them. More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/javap.html.",
+  "useCases": [
+    {
+      "description": "Disassemble and list one or more .class files:",
+      "syntax": "javap {{path/to/file1.class path/to/file2.class ...}}"
+    },
+    {
+      "description": "Disassemble and list a built-in class file:",
+      "syntax": "javap java.{{package}}.{{class}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "javap -help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "javap -version"
+    }
+  ]
+}

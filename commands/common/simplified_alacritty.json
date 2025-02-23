@@ -1,0 +1,34 @@
+{
+  "command": "alacritty",
+  "description": "Cross-platform, GPU-accelerated terminal emulator. More information: https://github.com/alacritty/alacritty.",
+  "useCases": [
+    {
+      "description": "Start a new Alacritty process and create a window:",
+      "syntax": "alacritty"
+    },
+    {
+      "description": "Start the Alacritty daemon (without creating a window):",
+      "syntax": "alacritty --daemon"
+    },
+    {
+      "description": "Create a new window using the already running Alacritty process:",
+      "syntax": "alacritty msg create-window"
+    },
+    {
+      "description": "Start the shell in a specific directory (also works with alacritty msg create-window):",
+      "syntax": "alacritty --working-directory {{path/to/directory}}"
+    },
+    {
+      "description": "[e]xecute a command in a new Alacritty window (also works with alacritty msg create-window):",
+      "syntax": "alacritty -e {{command}}"
+    },
+    {
+      "description": "Use an alternative configuration file (defaults to $XDG_CONFIG_HOME/alacritty/alacritty.toml):",
+      "syntax": "alacritty --config-file {{path/to/config.toml}}"
+    },
+    {
+      "description": "Run with live configuration reload enabled (can also be enabled by default in alacritty.toml):",
+      "syntax": "alacritty --live-config-reload --config-file {{path/to/config.toml}}"
+    }
+  ]
+}

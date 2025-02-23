@@ -1,0 +1,18 @@
+{
+  "command": "pgmcrater",
+  "description": "This command has been superseded by pamcrater, pamshadedrelief, and pamtopnm. More information: https://netpbm.sourceforge.net/doc/pgmcrater.html.",
+  "useCases": [
+    {
+      "description": "View documentation for pamcrater:",
+      "syntax": "tldr pamcrater"
+    },
+    {
+      "description": "View documentation for pamshadedrelief:",
+      "syntax": "tldr pamshadedrelief"
+    },
+    {
+      "description": "View documentation for pamtopnm:",
+      "syntax": "tldr pamtopnm"
+    }
+  ]
+}

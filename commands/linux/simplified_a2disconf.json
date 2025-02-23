@@ -1,0 +1,14 @@
+{
+  "command": "a2disconf",
+  "description": "Disable an Apache configuration file on Debian-based OSes. More information: https://manned.org/a2disconf.8.",
+  "useCases": [
+    {
+      "description": "Disable a configuration file:",
+      "syntax": "sudo a2disconf {{configuration_file}}"
+    },
+    {
+      "description": "Don't show informative messages:",
+      "syntax": "sudo a2disconf --quiet {{configuration_file}}"
+    }
+  ]
+}

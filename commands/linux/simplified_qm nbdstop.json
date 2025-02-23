@@ -1,0 +1,10 @@
+{
+  "command": "qm nbdstop",
+  "description": "Stop embedded nbd server. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Stop embedded nbd server:",
+      "syntax": "qm nbdstop {{VM_ID}}"
+    }
+  ]
+}

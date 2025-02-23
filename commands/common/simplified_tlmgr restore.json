@@ -1,0 +1,30 @@
+{
+  "command": "tlmgr restore",
+  "description": "Restore package backups created with tlmgr backup. The default backup directory is specified by the backupdir option, and can be obtained with tlmgr option. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "List all available backup revisions for all packages:",
+      "syntax": "tlmgr restore"
+    },
+    {
+      "description": "List all available backup revisions for a specific package:",
+      "syntax": "tlmgr restore {{package}}"
+    },
+    {
+      "description": "Restore a specific revision of a specific package:",
+      "syntax": "tlmgr restore {{package}} {{revision}}"
+    },
+    {
+      "description": "Restore the latest revision of all backed-up packages:",
+      "syntax": "tlmgr restore --all"
+    },
+    {
+      "description": "Restore a package from a custom backup directory:",
+      "syntax": "tlmgr restore {{package}} {{revision}} --backupdir {{path/to/backup_directory}}"
+    },
+    {
+      "description": "Perform a dry-run and print all taken actions without making them:",
+      "syntax": "tlmgr restore --dry-run {{package}} {{revision}}"
+    }
+  ]
+}

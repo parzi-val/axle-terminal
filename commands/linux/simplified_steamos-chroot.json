@@ -1,0 +1,18 @@
+{
+  "command": "steamos-chroot",
+  "description": "Switch root directory in a SteamOS environment. More information: https://gitlab.com/users/evlaV/projects.",
+  "useCases": [
+    {
+      "description": "Switch to the other A/B partition:",
+      "syntax": "steamos-chroot --partset other"
+    },
+    {
+      "description": "Switch to a partition on another drive:",
+      "syntax": "steamos-chroot --disk {{/dev/sdX}} --partset {{A|B}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "steamos-chroot --help"
+    }
+  ]
+}

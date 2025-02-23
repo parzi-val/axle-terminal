@@ -1,0 +1,22 @@
+{
+  "command": "byzanz-record",
+  "description": "Record the screen. More information: https://manned.org/byzanz-record.",
+  "useCases": [
+    {
+      "description": "Record the screen and write the recording to a file (by default, byzanz-record will only record for 10 seconds):",
+      "syntax": "byzanz-record {{path/to/file.[byzanz|flv|gif|ogg|ogv|webm]}}"
+    },
+    {
+      "description": "Show information while and after recording:",
+      "syntax": "byzanz-record --verbose {{path/to/file.[byzanz|flv|gif|ogg|ogv|webm]}}"
+    },
+    {
+      "description": "Record the screen for a minute:",
+      "syntax": "byzanz-record --duration 60 {{path/to/file.[byzanz|flv|gif|ogg|ogv|webm]}}"
+    },
+    {
+      "description": "Delay recording for 10 seconds:",
+      "syntax": "byzanz-record --delay 10 {{path/to/file.[byzanz|flv|gif|ogg|ogv|webm]}}"
+    }
+  ]
+}

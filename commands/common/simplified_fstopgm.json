@@ -1,0 +1,10 @@
+{
+  "command": "fstopgm",
+  "description": "Convert a Usenix FaceSaver file into a PGM image. See also: pgmtofs. More information: https://netpbm.sourceforge.net/doc/fstopgm.html.",
+  "useCases": [
+    {
+      "description": "Convert the specified Usenix FaceSaver file into a PGM image:",
+      "syntax": "fstopgm {{path/to/input.fs}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

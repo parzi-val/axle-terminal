@@ -1,0 +1,30 @@
+{
+  "command": "ibmcloud",
+  "description": "A command-line tool for managing IBM Cloud apps and services. More information: https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_cli.",
+  "useCases": [
+    {
+      "description": "Update ibmcloud to the latest version:",
+      "syntax": "ibmcloud update"
+    },
+    {
+      "description": "Install the Cloud Foundry module for accessing Cloud Foundry services:",
+      "syntax": "ibmcloud cf install"
+    },
+    {
+      "description": "List all available IBM Cloud regions:",
+      "syntax": "ibmcloud regions"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ibmcloud help"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "ibmcloud help {{subcommand}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ibmcloud version"
+    }
+  ]
+}

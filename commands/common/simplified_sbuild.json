@@ -1,0 +1,34 @@
+{
+  "command": "sbuild",
+  "description": "Build a Debian binary package in a clean chroot environment. More information: https://wiki.debian.org/sbuild.",
+  "useCases": [
+    {
+      "description": "Build the package in the current directory:",
+      "syntax": "sbuild"
+    },
+    {
+      "description": "Build the given package:",
+      "syntax": "sbuild {{package}}"
+    },
+    {
+      "description": "Build for a certain distribution:",
+      "syntax": "sbuild --dist {{distribution}}"
+    },
+    {
+      "description": "Build using custom dependencies (if a directory is passed, all files ending with .deb are used):",
+      "syntax": "sbuild --extra-package {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Run a shell in case of build failure to further investigate:",
+      "syntax": "sbuild --build-failed-commands=%SBUILD_SHELL"
+    },
+    {
+      "description": "Cross build for a certain architecture:",
+      "syntax": "sbuild --host {{architecture}}"
+    },
+    {
+      "description": "Build for the given native architecture:",
+      "syntax": "sbuild --arch {{architecture}}"
+    }
+  ]
+}

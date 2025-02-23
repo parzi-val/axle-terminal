@@ -1,0 +1,26 @@
+{
+  "command": "f5fpc",
+  "description": "A proprietary commercial SSL VPN client by BIG-IP Edge. More information: https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-11-4-0/4.html.",
+  "useCases": [
+    {
+      "description": "Open a new VPN connection:",
+      "syntax": "sudo f5fpc --start"
+    },
+    {
+      "description": "Open a new VPN connection to a specific host:",
+      "syntax": "sudo f5fpc --start --host {{host.example.com}}"
+    },
+    {
+      "description": "Specify a username (user will be prompted for a password):",
+      "syntax": "sudo f5fpc --start --host {{host.example.com}} --username {{user}}"
+    },
+    {
+      "description": "Show the current VPN status:",
+      "syntax": "sudo f5fpc --info"
+    },
+    {
+      "description": "Shutdown the VPN connection:",
+      "syntax": "sudo f5fpc --stop"
+    }
+  ]
+}

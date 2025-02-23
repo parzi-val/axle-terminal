@@ -1,0 +1,34 @@
+{
+  "command": "cargo rustdoc",
+  "description": "Build the documentation of Rust packages. Similar to cargo doc, but you can pass options to rustdoc. See rustdoc --help for all available options. More information: https://doc.rust-lang.org/cargo/commands/cargo-rustdoc.html.",
+  "useCases": [
+    {
+      "description": "Pass options to rustdoc:",
+      "syntax": "cargo rustdoc -- {{rustdoc_options}}"
+    },
+    {
+      "description": "Warn about a documentation lint:",
+      "syntax": "cargo rustdoc -- --warn rustdoc::{{lint_name}}"
+    },
+    {
+      "description": "Ignore a documentation lint:",
+      "syntax": "cargo rustdoc -- --allow rustdoc::{{lint_name}}"
+    },
+    {
+      "description": "Document the package's library:",
+      "syntax": "cargo rustdoc --lib"
+    },
+    {
+      "description": "Document the specified binary:",
+      "syntax": "cargo rustdoc --bin {{name}}"
+    },
+    {
+      "description": "Document the specified example:",
+      "syntax": "cargo rustdoc --example {{name}}"
+    },
+    {
+      "description": "Document the specified integration test:",
+      "syntax": "cargo rustdoc --test {{name}}"
+    }
+  ]
+}

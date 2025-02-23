@@ -1,0 +1,14 @@
+{
+  "command": "cargo login",
+  "description": "Save an API token from the registry locally. The token is used to authenticate to a package registry. You can remove it using cargo logout. More information: https://doc.rust-lang.org/cargo/commands/cargo-login.html.",
+  "useCases": [
+    {
+      "description": "Add an API token to the local credential storage (located in $CARGO_HOME/credentials.toml):",
+      "syntax": "cargo login"
+    },
+    {
+      "description": "Use the specified registry (registry names can be defined in the configuration - the default is https://crates.io):",
+      "syntax": "cargo login --registry {{name}}"
+    }
+  ]
+}

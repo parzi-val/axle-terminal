@@ -1,0 +1,26 @@
+{
+  "command": "pre-commit",
+  "description": "Create Git hooks that get run before a commit. More information: https://pre-commit.com.",
+  "useCases": [
+    {
+      "description": "Install pre-commit into your Git hooks:",
+      "syntax": "pre-commit install"
+    },
+    {
+      "description": "Run pre-commit hooks on all staged files:",
+      "syntax": "pre-commit run"
+    },
+    {
+      "description": "Run pre-commit hooks on all files, staged or unstaged:",
+      "syntax": "pre-commit run --all-files"
+    },
+    {
+      "description": "Clean pre-commit cache:",
+      "syntax": "pre-commit clean"
+    },
+    {
+      "description": "Update pre-commit config file to the latest repos' versions:",
+      "syntax": "pre-commit autoupdate"
+    }
+  ]
+}

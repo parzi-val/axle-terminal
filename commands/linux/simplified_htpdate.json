@@ -1,0 +1,22 @@
+{
+  "command": "htpdate",
+  "description": "Synchronize local date and time via HTTP headers from web servers. More information: https://www.vervest.org/htp/.",
+  "useCases": [
+    {
+      "description": "Synchronize date and time:",
+      "syntax": "sudo htpdate {{host}}"
+    },
+    {
+      "description": "Perform simulation of synchronization, without any action:",
+      "syntax": "htpdate -q {{host}}"
+    },
+    {
+      "description": "Compensate the systematic clock drift:",
+      "syntax": "sudo htpdate -x {{host}}"
+    },
+    {
+      "description": "Set time immediate after the synchronization:",
+      "syntax": "sudo htpdate -s {{host}}"
+    }
+  ]
+}

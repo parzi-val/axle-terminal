@@ -1,0 +1,38 @@
+{
+  "command": "fly",
+  "description": "Command-line tool for concourse-ci. More information: https://concourse-ci.org/fly.html.",
+  "useCases": [
+    {
+      "description": "Authenticate with and save concourse target:",
+      "syntax": "fly --target {{target_name}} login --team-name {{team_name}} -c {{https://ci.example.com}}"
+    },
+    {
+      "description": "List targets:",
+      "syntax": "fly targets"
+    },
+    {
+      "description": "List pipelines:",
+      "syntax": "fly -t {{target_name}} pipelines"
+    },
+    {
+      "description": "Upload or update a pipeline:",
+      "syntax": "fly -t {{target_name}} set-pipeline --config {{pipeline.yml}} --pipeline {{pipeline_name}}"
+    },
+    {
+      "description": "Unpause pipeline:",
+      "syntax": "fly -t {{target_name}} unpause-pipeline --pipeline {{pipeline_name}}"
+    },
+    {
+      "description": "Show pipeline configuration:",
+      "syntax": "fly -t {{target_name}} get-pipeline --pipeline {{pipeline_name}}"
+    },
+    {
+      "description": "Update local copy of fly:",
+      "syntax": "fly -t {{target_name}} sync"
+    },
+    {
+      "description": "Destroy pipeline:",
+      "syntax": "fly -t {{target_name}} destroy-pipeline --pipeline {{pipeline_name}}"
+    }
+  ]
+}

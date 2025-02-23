@@ -1,0 +1,30 @@
+{
+  "command": "molecule",
+  "description": "Molecule helps testing Ansible roles. More information: https://molecule.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Create a new Ansible role:",
+      "syntax": "molecule init role --role-name {{role_name}}"
+    },
+    {
+      "description": "Run tests:",
+      "syntax": "molecule test"
+    },
+    {
+      "description": "Start the instance:",
+      "syntax": "molecule create"
+    },
+    {
+      "description": "Configure the instance:",
+      "syntax": "molecule converge"
+    },
+    {
+      "description": "List scenarios of the instance:",
+      "syntax": "molecule matrix converge"
+    },
+    {
+      "description": "Log in into the instance:",
+      "syntax": "molecule login"
+    }
+  ]
+}

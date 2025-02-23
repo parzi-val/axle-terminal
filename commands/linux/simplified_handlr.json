@@ -1,0 +1,30 @@
+{
+  "command": "handlr",
+  "description": "Manage your default applications. More information: https://github.com/chmln/handlr.",
+  "useCases": [
+    {
+      "description": "Open a URL in the default application:",
+      "syntax": "handlr open {{https://example.com}}"
+    },
+    {
+      "description": "Open a PDF in the default PDF viewer:",
+      "syntax": "handlr open {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Set imv as the default application for PNG files:",
+      "syntax": "handlr set {{.png}} {{imv.desktop}}"
+    },
+    {
+      "description": "Set MPV as the default application for all audio files:",
+      "syntax": "handlr set {{'audio/*'}} {{mpv.desktop}}"
+    },
+    {
+      "description": "List all default apps:",
+      "syntax": "handlr list"
+    },
+    {
+      "description": "Print the default application for PNG files:",
+      "syntax": "handlr get {{.png}}"
+    }
+  ]
+}

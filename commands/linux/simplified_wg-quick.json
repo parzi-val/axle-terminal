@@ -1,0 +1,14 @@
+{
+  "command": "wg-quick",
+  "description": "Quickly set up WireGuard tunnels based on config files. More information: https://www.wireguard.com/quickstart/.",
+  "useCases": [
+    {
+      "description": "Set up a VPN tunnel:",
+      "syntax": "wg-quick up {{interface_name}}"
+    },
+    {
+      "description": "Delete a VPN tunnel:",
+      "syntax": "wg-quick down {{interface_name}}"
+    }
+  ]
+}

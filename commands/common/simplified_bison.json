@@ -1,0 +1,22 @@
+{
+  "command": "bison",
+  "description": "GNU parser generator. More information: https://www.gnu.org/software/bison/.",
+  "useCases": [
+    {
+      "description": "Compile a bison definition file:",
+      "syntax": "bison {{path/to/file.y}}"
+    },
+    {
+      "description": "Compile in debug mode, which causes the resulting parser to write additional information to stdout:",
+      "syntax": "bison --debug {{path/to/file.y}}"
+    },
+    {
+      "description": "Specify the output filename:",
+      "syntax": "bison --output {{path/to/output.c}} {{path/to/file.y}}"
+    },
+    {
+      "description": "Be verbose when compiling:",
+      "syntax": "bison --verbose"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "idevicebackup",
+  "description": "Create or restore backups for iOS devices. Note: This tool is outdated. Please see idevicebackup2. More information: https://manned.org/idevicebackup.",
+  "useCases": [
+    {
+      "description": "Create a backup of the device in the specified directory:",
+      "syntax": "idevicebackup backup {{path/to/directory}}"
+    },
+    {
+      "description": "Restore a backup from the specified directory:",
+      "syntax": "idevicebackup restore {{path/to/directory}}"
+    }
+  ]
+}

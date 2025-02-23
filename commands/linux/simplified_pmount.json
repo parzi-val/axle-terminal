@@ -1,0 +1,26 @@
+{
+  "command": "pmount",
+  "description": "Mount arbitrary hotpluggable devices as a normal user. More information: https://manned.org/pmount.",
+  "useCases": [
+    {
+      "description": "Mount a device below /media/ (using device as mount point):",
+      "syntax": "pmount {{/dev/to/block/device}}"
+    },
+    {
+      "description": "Mount a device with a specific filesystem type to /media/label:",
+      "syntax": "pmount --type {{filesystem}} {{/dev/to/block/device}} {{label}}"
+    },
+    {
+      "description": "Mount a CD-ROM (filesystem type ISO9660) in read-only mode:",
+      "syntax": "pmount --type {{iso9660}} --read-only {{/dev/cdrom}}"
+    },
+    {
+      "description": "Mount an NTFS-formatted disk, forcing read-write access:",
+      "syntax": "pmount --type {{ntfs}} --read-write {{/dev/sdX}}"
+    },
+    {
+      "description": "Display all mounted removable devices:",
+      "syntax": "pmount"
+    }
+  ]
+}

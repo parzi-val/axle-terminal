@@ -1,0 +1,30 @@
+{
+  "command": "ethtool",
+  "description": "Display and modify Network Interface Controller (NIC) parameters. More information: https://manned.org/ethtool.",
+  "useCases": [
+    {
+      "description": "Display the current settings for an interface:",
+      "syntax": "ethtool {{eth0}}"
+    },
+    {
+      "description": "Display the driver information for an interface:",
+      "syntax": "ethtool --driver {{eth0}}"
+    },
+    {
+      "description": "Display all supported features for an interface:",
+      "syntax": "ethtool --show-features {{eth0}}"
+    },
+    {
+      "description": "Display the network usage statistics for an interface:",
+      "syntax": "ethtool --statistics {{eth0}}"
+    },
+    {
+      "description": "Blink one or more LEDs on an interface for 10 seconds:",
+      "syntax": "ethtool --identify {{eth0}} {{10}}"
+    },
+    {
+      "description": "Set the link speed, duplex mode, and parameter auto-negotiation for a given interface:",
+      "syntax": "ethtool -s {{eth0}} speed {{10|100|1000}} duplex {{half|full}} autoneg {{on|off}}"
+    }
+  ]
+}

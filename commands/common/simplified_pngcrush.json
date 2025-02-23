@@ -1,0 +1,18 @@
+{
+  "command": "pngcrush",
+  "description": "PNG compression utility. More information: https://pmt.sourceforge.io/pngcrush.",
+  "useCases": [
+    {
+      "description": "Compress a PNG file:",
+      "syntax": "pngcrush {{in.png}} {{out.png}}"
+    },
+    {
+      "description": "Compress all PNGs and output them to the specified directory:",
+      "syntax": "pngcrush -d {{path/to/output}} *.png"
+    },
+    {
+      "description": "Compress PNG file with all 114 available algorithms and pick the best result:",
+      "syntax": "pngcrush -rem allb -brute -reduce {{in.png}} {{out.png}}"
+    }
+  ]
+}

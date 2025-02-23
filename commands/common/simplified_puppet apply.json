@@ -1,0 +1,18 @@
+{
+  "command": "puppet apply",
+  "description": "Apply Puppet manifests locally. More information: https://puppet.com/docs/puppet/7/man/apply.html.",
+  "useCases": [
+    {
+      "description": "Apply a manifest:",
+      "syntax": "puppet apply {{path/to/manifest}}"
+    },
+    {
+      "description": "Execute puppet code:",
+      "syntax": "puppet apply --execute {{code}}"
+    },
+    {
+      "description": "Use a specific module and hiera configuration file:",
+      "syntax": "puppet apply --modulepath {{path/to/directory}} --hiera_config {{path/to/file}} {{path/to/manifest}}"
+    }
+  ]
+}

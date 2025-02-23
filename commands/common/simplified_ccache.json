@@ -1,0 +1,22 @@
+{
+  "command": "ccache",
+  "description": "C/C++ compiler cache. Note: packages usually provide symlinks for compilers in /usr/lib/ccache/bin. Prepend this directory to $PATH to automatically use ccache for them. More information: https://ccache.dev/manual/latest.html.",
+  "useCases": [
+    {
+      "description": "Show current cache [s]tatistics:",
+      "syntax": "ccache --show-stats"
+    },
+    {
+      "description": "[C]lear all cache:",
+      "syntax": "ccache --clear"
+    },
+    {
+      "description": "Reset ([z]ero) statistics (but not cache itself):",
+      "syntax": "ccache --zero-stats"
+    },
+    {
+      "description": "Compile C code and cache compiled output (to use ccache on all gcc invocations, see the note above):",
+      "syntax": "ccache gcc {{path/to/file.c}}"
+    }
+  ]
+}

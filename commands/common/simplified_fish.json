@@ -1,0 +1,38 @@
+{
+  "command": "fish",
+  "description": "The Friendly Interactive SHell, a command-line interpreter designed to be user friendly. More information: https://fishshell.com.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "fish"
+    },
+    {
+      "description": "Start an interactive shell session without loading startup configs:",
+      "syntax": "fish --no-config"
+    },
+    {
+      "description": "Execute specific commands:",
+      "syntax": "fish --command &quot;{{echo 'fish is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "fish {{path/to/script.fish}}"
+    },
+    {
+      "description": "Check a specific script for syntax errors:",
+      "syntax": "fish --no-execute {{path/to/script.fish}}"
+    },
+    {
+      "description": "Execute specific commands from stdin:",
+      "syntax": "{{echo &quot;echo 'fish is executed'&quot;}} | fish"
+    },
+    {
+      "description": "Start an interactive shell session in private mode, where the shell does not access old history or save new history:",
+      "syntax": "fish --private"
+    },
+    {
+      "description": "Define and export an environmental variable that persists across shell restarts (builtin):",
+      "syntax": "set --universal --export {{variable_name}} {{variable_value}}"
+    }
+  ]
+}

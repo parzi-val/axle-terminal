@@ -1,0 +1,30 @@
+{
+  "command": "lrzip",
+  "description": "A large file compression program. See also: lrunzip, lrztar, lrzuntar. More information: https://manned.org/lrzip.",
+  "useCases": [
+    {
+      "description": "Compress a file with LZMA - slow compression, fast decompression:",
+      "syntax": "lrzip {{path/to/file}}"
+    },
+    {
+      "description": "Compress a file with BZIP2 - good middle ground for compression/speed:",
+      "syntax": "lrzip -b {{path/to/file}}"
+    },
+    {
+      "description": "Compress with ZPAQ - extreme compression, but very slow:",
+      "syntax": "lrzip -z {{path/to/file}}"
+    },
+    {
+      "description": "Compress with LZO - light compression, extremely fast decompression:",
+      "syntax": "lrzip -l {{path/to/file}}"
+    },
+    {
+      "description": "Compress a file and password protect/encrypt it:",
+      "syntax": "lrzip -e {{path/to/file}}"
+    },
+    {
+      "description": "Override the number of processor threads to use:",
+      "syntax": "lrzip -p {{8}} {{path/to/file}}"
+    }
+  ]
+}

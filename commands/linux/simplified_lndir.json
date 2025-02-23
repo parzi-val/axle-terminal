@@ -1,0 +1,10 @@
+{
+  "command": "lndir",
+  "description": "Create a shadow directory of symbolic links to another directory tree. More information: https://manned.org/lndir.",
+  "useCases": [
+    {
+      "description": "Create a shadow directory in the current directory:",
+      "syntax": "lndir {{path/to/directory}}"
+    }
+  ]
+}

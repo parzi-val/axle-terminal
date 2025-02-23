@@ -1,0 +1,22 @@
+{
+  "command": "openssl ts",
+  "description": "OpenSSL command to generate and verify timestamps. More information: https://www.openssl.org/docs/manmaster/man1/openssl-ts.html.",
+  "useCases": [
+    {
+      "description": "Generate a SHA-512 timestamp request of a specific file and output to file.tsq:",
+      "syntax": "openssl ts -query -data {{path/to/file}} -sha512 -out {{path/to/file.tsq}}"
+    },
+    {
+      "description": "Check the date and metadata of a specific timestamp response file:",
+      "syntax": "openssl ts -reply -in {{path/to/file.tsr}} -text"
+    },
+    {
+      "description": "Verify a timestamp request file and a timestamp response file from the server with an SSL certificate file:",
+      "syntax": "openssl ts -verify -in {{path/to/file.tsr}} -queryfile {{path/to/file.tsq}} -partial_chain -CAfile {{path/to/cert.pem}}"
+    },
+    {
+      "description": "Create a timestamp response for request using key and signing certificate and output it to file.tsr:",
+      "syntax": "openssl ts -reply -queryfile {{path/to/file.tsq}} -inkey {{path/to/tsakey.pem}} -signer tsacert.pem -out {{path/to/file.tsr}}"
+    }
+  ]
+}

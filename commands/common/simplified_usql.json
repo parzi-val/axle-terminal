@@ -1,0 +1,34 @@
+{
+  "command": "usql",
+  "description": "Universal CLI interface for SQL databases. More information: https://github.com/xo/usql.",
+  "useCases": [
+    {
+      "description": "Connect to a specific database:",
+      "syntax": "usql {{sqlserver|mysql|postgres|sqlite3|...}}://{{username}}:{{password}}@{{host}}:{{port}}/{{database_name}}"
+    },
+    {
+      "description": "Execute commands from a file:",
+      "syntax": "usql --file={{path/to/query.sql}}"
+    },
+    {
+      "description": "Execute a specific SQL command:",
+      "syntax": "usql --command=&quot;{{sql_command}}&quot;"
+    },
+    {
+      "description": "Run an SQL command in the usql prompt:",
+      "syntax": "{{prompt}}=&gt; {{command}}"
+    },
+    {
+      "description": "Display the database schema:",
+      "syntax": "{{prompt}}=&gt; \\d"
+    },
+    {
+      "description": "Export query results to a specific file:",
+      "syntax": "{{prompt}}=&gt; \\g {{path/to/file_with_results}}"
+    },
+    {
+      "description": "Import data from a CSV file into a specific table:",
+      "syntax": "{{prompt}}=&gt; \\copy {{path/to/data.csv}} {{table_name}}"
+    }
+  ]
+}

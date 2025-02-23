@@ -1,0 +1,18 @@
+{
+  "command": "waypipe",
+  "description": "Remotely run graphical applications under a Wayland compositor. More information: https://gitlab.freedesktop.org/mstoeckl/waypipe.",
+  "useCases": [
+    {
+      "description": "Run a graphical program remotely and display it locally:",
+      "syntax": "waypipe ssh {{user}}@{{server}} {{program}}"
+    },
+    {
+      "description": "Open an SSH tunnel to run any program remotely and display it locally:",
+      "syntax": "waypipe ssh {{user}}@{{server}}"
+    },
+    {
+      "description": "Skip testing for Vulkan support:",
+      "syntax": "waypipe --test-skip-vulkan ssh {{user}}@{{server}} {{program}}"
+    }
+  ]
+}

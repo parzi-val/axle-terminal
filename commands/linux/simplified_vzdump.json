@@ -1,0 +1,30 @@
+{
+  "command": "vzdump",
+  "description": "Backup Utility for virtual machines and containers. More information: https://pve.proxmox.com/pve-docs/vzdump.1.html.",
+  "useCases": [
+    {
+      "description": "Dump a guest virtual machine into the default dump directory (usually /var/lib/vz/dump/), excluding snapshots:",
+      "syntax": "vzdump {{vm_id}}"
+    },
+    {
+      "description": "Back up the guest virtual machines with the IDs 101, 102, and 103:",
+      "syntax": "vzdump {{101 102 103}}"
+    },
+    {
+      "description": "Dump a guest virtual machine using a specific mode:",
+      "syntax": "vzdump {{vm_id}} --mode {{suspend|snapshot}}"
+    },
+    {
+      "description": "Back up all guest systems and send an notification email to the root and admin users:",
+      "syntax": "vzdump --all --mode {{suspend}} --mailto {{root}} --mailto {{admin}}"
+    },
+    {
+      "description": "Use snapshot mode (no downtime required) and a non-default dump directory:",
+      "syntax": "vzdump {{vm_id}} --dumpdir {{path/to/directory}} --mode {{snapshot}}"
+    },
+    {
+      "description": "Back up all guest virtual machines excluding the IDs 101 and 102:",
+      "syntax": "vzdump --mode {{suspend}} --exclude {{101, 102}}"
+    }
+  ]
+}

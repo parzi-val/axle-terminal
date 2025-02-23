@@ -1,0 +1,38 @@
+{
+  "command": "mozillavpn",
+  "description": "A Virtual Private Network from the makers of Firefox. See also: fastd, ivpn, mullvad, warp-cli. More information: https://github.com/mozilla-mobile/mozilla-vpn-client/wiki/Command-line-interface.",
+  "useCases": [
+    {
+      "description": "Log in with an interactive prompt:",
+      "syntax": "mozillavpn login"
+    },
+    {
+      "description": "Connect to Mozilla VPN:",
+      "syntax": "mozillavpn activate"
+    },
+    {
+      "description": "Display the connection status:",
+      "syntax": "mozillavpn status"
+    },
+    {
+      "description": "List available servers:",
+      "syntax": "mozillavpn servers"
+    },
+    {
+      "description": "Select a specific server:",
+      "syntax": "mozillavpn select {{server_name}}"
+    },
+    {
+      "description": "Disconnect from Mozilla VPN:",
+      "syntax": "mozillavpn deactivate"
+    },
+    {
+      "description": "Log out:",
+      "syntax": "mozillavpn logout"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "mozillavpn {{subcommand}} --help"
+    }
+  ]
+}

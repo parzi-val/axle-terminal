@@ -1,0 +1,30 @@
+{
+  "command": "cupsctl",
+  "description": "Update or query a server's cupsd.conf. More information: https://openprinting.github.io/cups/doc/man-cupsctl.html.",
+  "useCases": [
+    {
+      "description": "Display the current configuration values:",
+      "syntax": "cupsctl"
+    },
+    {
+      "description": "Display the configuration values of a specific server:",
+      "syntax": "cupsctl -h {{server[:port]}}"
+    },
+    {
+      "description": "Enable encryption on the connection to the scheduler:",
+      "syntax": "cupsctl -E"
+    },
+    {
+      "description": "Enable or disable debug logging to the error_log file:",
+      "syntax": "cupsctl {{--debug-logging|--no-debug-logging}}"
+    },
+    {
+      "description": "Enable or disable remote administration:",
+      "syntax": "cupsctl {{--remote-admin|--no-remote-admin}}"
+    },
+    {
+      "description": "Parse the current debug logging state:",
+      "syntax": "cupsctl | grep '^_debug_logging' | awk -F= '{print $2}'"
+    }
+  ]
+}

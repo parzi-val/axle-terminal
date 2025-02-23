@@ -1,0 +1,26 @@
+{
+  "command": "dbclient",
+  "description": "Lightweight Dropbear Secure Shell client. More information: https://manned.org/dbclient.1.",
+  "useCases": [
+    {
+      "description": "Connect to a remote host:",
+      "syntax": "dbclient {{user}}@{{host}}"
+    },
+    {
+      "description": "Connect to a remote host on [p]ort 2222:",
+      "syntax": "dbclient {{user}}@{{host}} -p 2222"
+    },
+    {
+      "description": "Connect to a remote host using a specific [i]dentity key in dropbear format:",
+      "syntax": "dbclient -i {{path/to/key_file}} {{user}}@{{host}}"
+    },
+    {
+      "description": "Run a command on the remote host with a [t]ty allocation allowing interaction with the remote command:",
+      "syntax": "dbclient {{user}}@{{host}} -t {{command}} {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Connect and forward [A]gent connections to remote host:",
+      "syntax": "dbclient -A {{user}}@{{host}}"
+    }
+  ]
+}

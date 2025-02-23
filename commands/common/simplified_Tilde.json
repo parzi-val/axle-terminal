@@ -1,0 +1,18 @@
+{
+  "command": "Tilde",
+  "description": "Expand to a directory. More information: https://gnu.org/software/bash/manual/bash.html#Tilde-Expansion.",
+  "useCases": [
+    {
+      "description": "List the current user's home directory contents:",
+      "syntax": "ls ~"
+    },
+    {
+      "description": "List the home directory contents of another user:",
+      "syntax": "ls ~{{username}}"
+    },
+    {
+      "description": "List the contents of the previous directory you were in:",
+      "syntax": "ls ~-"
+    }
+  ]
+}

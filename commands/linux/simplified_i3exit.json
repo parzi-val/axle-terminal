@@ -1,0 +1,34 @@
+{
+  "command": "i3exit",
+  "description": "Exit the i3 window manager. More information: https://gitlab.manjaro.org/packages/community/i3/i3exit.",
+  "useCases": [
+    {
+      "description": "Log out of i3:",
+      "syntax": "i3exit logout"
+    },
+    {
+      "description": "Lock i3:",
+      "syntax": "i3exit lock"
+    },
+    {
+      "description": "Shut down the system:",
+      "syntax": "i3exit shutdown"
+    },
+    {
+      "description": "Suspend the system:",
+      "syntax": "i3exit suspend"
+    },
+    {
+      "description": "Switch to the login screen to log in as a different user:",
+      "syntax": "i3exit switch_user"
+    },
+    {
+      "description": "Hibernate the system:",
+      "syntax": "i3exit hibernate"
+    },
+    {
+      "description": "Reboot the system:",
+      "syntax": "i3exit reboot"
+    }
+  ]
+}

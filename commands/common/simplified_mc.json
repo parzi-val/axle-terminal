@@ -1,0 +1,14 @@
+{
+  "command": "mc",
+  "description": "Midnight Commander, a TUI file manager. Navigate the directory structure using the arrow keys, the mouse or by typing the commands into the terminal. See also: ranger, clifm, vifm, nautilus. More information: https://midnight-commander.org.",
+  "useCases": [
+    {
+      "description": "Start Midnight Commander:",
+      "syntax": "mc"
+    },
+    {
+      "description": "Start Midnight Commander in black and white:",
+      "syntax": "mc -b"
+    }
+  ]
+}

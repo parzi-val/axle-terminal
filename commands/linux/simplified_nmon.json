@@ -1,0 +1,18 @@
+{
+  "command": "nmon",
+  "description": "A system administrator, tuner, and benchmark tool. More information: https://manned.org/nmon.",
+  "useCases": [
+    {
+      "description": "Start nmon:",
+      "syntax": "nmon"
+    },
+    {
+      "description": "Save records to file (\"-s 300 -c 288\" by default):",
+      "syntax": "nmon -f"
+    },
+    {
+      "description": "Save records to file with a total of 240 measurements, by taking 30 seconds between each measurement:",
+      "syntax": "nmon -f -s {{30}} -c {{240}}"
+    }
+  ]
+}

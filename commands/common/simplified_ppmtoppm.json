@@ -1,0 +1,14 @@
+{
+  "command": "ppmtoppm",
+  "description": "Copy a PPM image. More information: https://netpbm.sourceforge.net/doc/ppmtoppm.html.",
+  "useCases": [
+    {
+      "description": "Copy a PPM image (i.e. a PBM, PGM or PPM image) from stdin to stdout:",
+      "syntax": "ppmtoppm &lt; {{path/to/image.ppm}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ppmtoppm -version"
+    }
+  ]
+}

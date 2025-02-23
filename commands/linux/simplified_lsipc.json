@@ -1,0 +1,30 @@
+{
+  "command": "lsipc",
+  "description": "Show information on System V IPC facilities currently employed in the system. See also: ipcs for the older tool. More information: https://manned.org/lsipc.",
+  "useCases": [
+    {
+      "description": "Show information about all active IPC facilities:",
+      "syntax": "lsipc"
+    },
+    {
+      "description": "Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets:",
+      "syntax": "lsipc {{--shmems|--queues|--semaphores}}"
+    },
+    {
+      "description": "Show full details on the resource with a specific [i]D:",
+      "syntax": "lsipc {{--shmems|--queues|--semaphores}} --id {{resource_id}}"
+    },
+    {
+      "description": "Print the given [o]utput columns (see all supported columns with --help):",
+      "syntax": "lsipc --output {{KEY,ID,PERMS,SEND,STATUS,NSEMS,RESOURCE,...}}"
+    },
+    {
+      "description": "Use [r]aw, [J]SON, [l]ist or [e]xport (key=\"value\") format:",
+      "syntax": "lsipc {{--raw|--json|--list|--export}}"
+    },
+    {
+      "description": "Don't truncate the output:",
+      "syntax": "lsipc --notruncate"
+    }
+  ]
+}

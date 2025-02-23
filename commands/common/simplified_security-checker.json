@@ -1,0 +1,18 @@
+{
+  "command": "security-checker",
+  "description": "Check if a PHP application uses dependencies with known security vulnerabilities. More information: https://github.com/sensiolabs/security-checker.",
+  "useCases": [
+    {
+      "description": "Look for security issues in the project dependencies (based on the composer.lock file in the current directory):",
+      "syntax": "security-checker security:check"
+    },
+    {
+      "description": "Use a specific composer.lock file:",
+      "syntax": "security-checker security:check {{path/to/composer.lock}}"
+    },
+    {
+      "description": "Return results as a JSON object:",
+      "syntax": "security-checker security:check --format=json"
+    }
+  ]
+}

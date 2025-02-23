@@ -1,0 +1,18 @@
+{
+  "command": "gtop",
+  "description": "System monitoring dashboard for the terminal. More information: https://github.com/aksakalli/gtop.",
+  "useCases": [
+    {
+      "description": "Show the system stats dashboard:",
+      "syntax": "gtop"
+    },
+    {
+      "description": "Sort by CPU usage:",
+      "syntax": "c"
+    },
+    {
+      "description": "Sort by memory usage:",
+      "syntax": "m"
+    }
+  ]
+}

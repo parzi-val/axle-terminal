@@ -1,0 +1,30 @@
+{
+  "command": "stat",
+  "description": "Display file and filesystem information. More information: https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display properties about a specific file such as size, permissions, creation and access dates among others:",
+      "syntax": "stat {{path/to/file}}"
+    },
+    {
+      "description": "Display properties about a specific file such as size, permissions, creation and access dates among others without labels:",
+      "syntax": "stat --terse {{path/to/file}}"
+    },
+    {
+      "description": "Display information about the filesystem where a specific file is located:",
+      "syntax": "stat --file-system {{path/to/file}}"
+    },
+    {
+      "description": "Show only octal file permissions:",
+      "syntax": "stat --format=&quot;%a %n&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Show the owner and group of a specific file:",
+      "syntax": "stat --format=&quot;%U %G&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Show the size of a specific file in bytes:",
+      "syntax": "stat --format=&quot;%s %n&quot; {{path/to/file}}"
+    }
+  ]
+}

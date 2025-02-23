@@ -1,0 +1,18 @@
+{
+  "command": "npm init",
+  "description": "Create a package.json file. More information: https://docs.npmjs.com/cli/commands/npm-init.",
+  "useCases": [
+    {
+      "description": "Initialize a new package with prompts:",
+      "syntax": "npm init"
+    },
+    {
+      "description": "Initialize a new package with default values:",
+      "syntax": "npm init -y"
+    },
+    {
+      "description": "Initialize a new package using a specific initializer:",
+      "syntax": "npm init {{create-react-app}} {{my-app}}"
+    }
+  ]
+}

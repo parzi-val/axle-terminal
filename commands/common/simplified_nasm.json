@@ -1,0 +1,26 @@
+{
+  "command": "nasm",
+  "description": "The Netwide Assembler, a portable 80x86 assembler. More information: https://nasm.us.",
+  "useCases": [
+    {
+      "description": "Assemble source.asm into a binary file source, in the (default) raw binary format:",
+      "syntax": "nasm {{source.asm}}"
+    },
+    {
+      "description": "Assemble source.asm into a binary file output_file, in the specified format:",
+      "syntax": "nasm -f {{format}} {{source.asm}} -o {{output_file}}"
+    },
+    {
+      "description": "List valid output formats (along with basic nasm help):",
+      "syntax": "nasm -hf"
+    },
+    {
+      "description": "Assemble and generate an assembly listing file:",
+      "syntax": "nasm -l {{list_file}} {{source.asm}}"
+    },
+    {
+      "description": "Add a directory (must be written with trailing slash) to the include file search path before assembling:",
+      "syntax": "nasm -i {{path/to/include_dir/}} {{source.asm}}"
+    }
+  ]
+}

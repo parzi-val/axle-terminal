@@ -1,0 +1,18 @@
+{
+  "command": "wait",
+  "description": "Wait for a process to complete before proceeding. More information: https://manned.org/wait.",
+  "useCases": [
+    {
+      "description": "Wait for a process to finish given its process ID (PID) and return its exit status:",
+      "syntax": "wait {{pid}}"
+    },
+    {
+      "description": "Wait for all processes known to the invoking shell to finish:",
+      "syntax": "wait"
+    },
+    {
+      "description": "Wait for a job to finish:",
+      "syntax": "wait %{{N}}"
+    }
+  ]
+}

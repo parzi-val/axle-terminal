@@ -1,0 +1,22 @@
+{
+  "command": "xmlto",
+  "description": "Apply an XSL stylesheet to an XML document. More information: https://pagure.io/xmlto.",
+  "useCases": [
+    {
+      "description": "Convert a DocBook XML document to PDF format:",
+      "syntax": "xmlto {{pdf}} {{document.xml}}"
+    },
+    {
+      "description": "Convert a DocBook XML document to HTML format and store the resulting files in a separate directory:",
+      "syntax": "xmlto -o {{path/to/html_files}} {{html}} {{document.xml}}"
+    },
+    {
+      "description": "Convert a DocBook XML document to a single HTML file:",
+      "syntax": "xmlto {{html-nochunks}} {{document.xml}}"
+    },
+    {
+      "description": "Specify a stylesheet to use while converting a DocBook XML document:",
+      "syntax": "xmlto -x {{stylesheet.xsl}} {{output_format}} {{document.xml}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "rustup toolchain",
+  "description": "Manage Rust toolchains. See rustup help toolchain for more information about toolchains. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Install or update a given toolchain:",
+      "syntax": "rustup install {{toolchain}}"
+    },
+    {
+      "description": "Uninstall a toolchain:",
+      "syntax": "rustup uninstall {{toolchain}}"
+    },
+    {
+      "description": "List installed toolchains:",
+      "syntax": "rustup list"
+    },
+    {
+      "description": "Create a custom toolchain by symlinking to a directory:",
+      "syntax": "rustup link {{custom_toolchain_name}} {{path/to/directory}}"
+    }
+  ]
+}

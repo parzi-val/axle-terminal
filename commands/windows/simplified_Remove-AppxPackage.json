@@ -1,0 +1,22 @@
+{
+  "command": "Remove-AppxPackage",
+  "description": "A PowerShell utility to remove an app package from user accounts. More information: https://learn.microsoft.com/powershell/module/appx/Remove-AppxPackage.",
+  "useCases": [
+    {
+      "description": "Remove an app package:",
+      "syntax": "Remove-AppxPackage {{package}}"
+    },
+    {
+      "description": "Remove an app package for a specific user:",
+      "syntax": "Remove-AppxPackage {{package}} -User {{username}}"
+    },
+    {
+      "description": "Remove an app package for all users:",
+      "syntax": "Remove-AppxPackage {{package}} -AllUsers"
+    },
+    {
+      "description": "Remove an app package but preserve it's app data:",
+      "syntax": "Remove-AppxPackage {{package}} -PreserveApplicationData"
+    }
+  ]
+}

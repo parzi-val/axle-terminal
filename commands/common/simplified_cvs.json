@@ -1,0 +1,34 @@
+{
+  "command": "cvs",
+  "description": "Concurrent Versions System, a revision control system. More information: https://cvs.nongnu.org.",
+  "useCases": [
+    {
+      "description": "Create a new repository (requires the CVSROOT environment variable to be set externally):",
+      "syntax": "cvs -d {{path/to/repository}} init"
+    },
+    {
+      "description": "Add a project to the repository:",
+      "syntax": "cvs import -m &quot;{{message}}&quot; {{project_name}} {{version}} {{vendor}}"
+    },
+    {
+      "description": "Checkout a project:",
+      "syntax": "cvs checkout {{project_name}}"
+    },
+    {
+      "description": "Show changes made to files:",
+      "syntax": "cvs diff {{path/to/file}}"
+    },
+    {
+      "description": "Add a file:",
+      "syntax": "cvs add {{path/to/file}}"
+    },
+    {
+      "description": "Commit a file:",
+      "syntax": "cvs commit -m &quot;{{message}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Update the working directory from the remote repository:",
+      "syntax": "cvs update"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "nix develop",
+  "description": "Run a Bash shell that provides the build environment of a derivation. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-develop.html.",
+  "useCases": [
+    {
+      "description": "Start a shell with all dependencies of a package from nixpkgs available:",
+      "syntax": "nix develop {{nixpkgs#pkg}}"
+    },
+    {
+      "description": "Start a development shell for the default package in a flake in the current directory:",
+      "syntax": "nix develop"
+    },
+    {
+      "description": "In that shell, configure and build the sources:",
+      "syntax": "configurePhase; buildPhase"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "wpexec",
+  "description": "Run WirePlumber Lua scripts. See also: wpctl, wireplumber. More information: https://pipewire.pages.freedesktop.org/wireplumber/scripting/lua_api/lua_introduction.html.",
+  "useCases": [
+    {
+      "description": "Run a WirePlumber script:",
+      "syntax": "wpexec {{path/to/file.lua}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "wpexec --help"
+    }
+  ]
+}

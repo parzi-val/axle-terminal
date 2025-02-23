@@ -1,0 +1,14 @@
+{
+  "command": "ppmtopgm",
+  "description": "Convert a PPM image to a PGM image. More information: https://netpbm.sourceforge.net/doc/ppmtopgm.html.",
+  "useCases": [
+    {
+      "description": "Convert PPM image to PGM image:",
+      "syntax": "ppmtopgm {{path/to/file.ppm}} &gt; {{path/to/file.pgm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ppmtopgm -version"
+    }
+  ]
+}

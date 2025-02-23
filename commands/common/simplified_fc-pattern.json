@@ -1,0 +1,14 @@
+{
+  "command": "fc-pattern",
+  "description": "Shows information about a font matching a pattern. More information: https://manned.org/fc-pattern.",
+  "useCases": [
+    {
+      "description": "Display default information about a font:",
+      "syntax": "fc-pattern --default '{{DejaVu Serif}}'"
+    },
+    {
+      "description": "Display configuration information about a font:",
+      "syntax": "fc-pattern --config '{{DejaVu Serif}}'"
+    }
+  ]
+}

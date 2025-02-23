@@ -1,0 +1,18 @@
+{
+  "command": "strip",
+  "description": "Discard symbols from executables or object files. More information: https://manned.org/strip.",
+  "useCases": [
+    {
+      "description": "Replace the input file with its stripped version:",
+      "syntax": "strip {{path/to/file}}"
+    },
+    {
+      "description": "Strip symbols from a file, saving the output to a specific file:",
+      "syntax": "strip {{path/to/input_file}} -o {{path/to/output_file}}"
+    },
+    {
+      "description": "Strip debug symbols only:",
+      "syntax": "strip --strip-debug {{path/to/file.o}}"
+    }
+  ]
+}

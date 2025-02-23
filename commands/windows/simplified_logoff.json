@@ -1,0 +1,18 @@
+{
+  "command": "logoff",
+  "description": "Terminate a login session. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/logoff.",
+  "useCases": [
+    {
+      "description": "Terminate the current session:",
+      "syntax": "logoff"
+    },
+    {
+      "description": "Terminate a session by its name or ID:",
+      "syntax": "logoff {{session_name|session_id}}"
+    },
+    {
+      "description": "Terminate a session on a specific server connected through RDP:",
+      "syntax": "logoff {{session_name|session_id}} /server:{{servername}}"
+    }
+  ]
+}

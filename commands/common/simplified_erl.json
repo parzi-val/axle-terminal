@@ -1,0 +1,18 @@
+{
+  "command": "erl",
+  "description": "Run and manage programs in the Erlang programming language. More information: https://www.erlang.org.",
+  "useCases": [
+    {
+      "description": "Compile and run sequential Erlang program as a common script and then exit:",
+      "syntax": "erlc {{path/to/file1 path/to/file2 ...}} &amp;&amp; erl -noshell '{{mymodule:myfunction(arguments)}}, init:stop().'"
+    },
+    {
+      "description": "Connect to a running Erlang node:",
+      "syntax": "erl -remsh {{nodename}}@{{hostname}} -sname {{custom_shortname}} -hidden -setcookie {{cookie_of_remote_node}}"
+    },
+    {
+      "description": "Tell the Erlang shell to load modules from a directory:",
+      "syntax": "erl -pa {{path/to/directory_with_beam_files}}"
+    }
+  ]
+}

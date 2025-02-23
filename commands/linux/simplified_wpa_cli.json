@@ -1,0 +1,30 @@
+{
+  "command": "wpa_cli",
+  "description": "Add and configure wlan interfaces. More information: https://manned.org/wpa_cli.",
+  "useCases": [
+    {
+      "description": "Scan for available networks:",
+      "syntax": "wpa_cli scan"
+    },
+    {
+      "description": "Show scan results:",
+      "syntax": "wpa_cli scan_results"
+    },
+    {
+      "description": "Add a network:",
+      "syntax": "wpa_cli add_network {{number}}"
+    },
+    {
+      "description": "Set a network's SSID:",
+      "syntax": "wpa_cli set_network {{number}} ssid &quot;{{SSID}}&quot;"
+    },
+    {
+      "description": "Enable network:",
+      "syntax": "wpa_cli enable_network {{number}}"
+    },
+    {
+      "description": "Save config:",
+      "syntax": "wpa_cli save_config"
+    }
+  ]
+}

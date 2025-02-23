@@ -1,0 +1,34 @@
+{
+  "command": "latexmk",
+  "description": "Compile LaTeX source files into finished documents. Automatically does multiple runs when needed. More information: https://mg.readthedocs.io/latexmk.html.",
+  "useCases": [
+    {
+      "description": "Compile a DVI (Device Independent file) document from every source:",
+      "syntax": "latexmk"
+    },
+    {
+      "description": "Compile a DVI document from a specific source file:",
+      "syntax": "latexmk {{path/to/source.tex}}"
+    },
+    {
+      "description": "Compile a PDF document:",
+      "syntax": "latexmk -pdf {{path/to/source.tex}}"
+    },
+    {
+      "description": "Open the document in a viewer and continuously update it whenever source files change:",
+      "syntax": "latexmk -pvc {{path/to/source.tex}}"
+    },
+    {
+      "description": "Force the generation of a document even if there are errors:",
+      "syntax": "latexmk -f {{path/to/source.tex}}"
+    },
+    {
+      "description": "Clean up temporary TEX files created for a specific TEX file:",
+      "syntax": "latexmk -c {{path/to/source.tex}}"
+    },
+    {
+      "description": "Clean up all temporary TEX files in the current directory:",
+      "syntax": "latexmk -c"
+    }
+  ]
+}

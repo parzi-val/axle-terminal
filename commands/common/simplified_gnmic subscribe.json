@@ -1,0 +1,26 @@
+{
+  "command": "gnmic subscribe",
+  "description": "Subscribe to a gnmic network device state updates. More information: https://gnmic.kmrd.dev/cmd/subscribe.",
+  "useCases": [
+    {
+      "description": "Subscribe to target state updates under the subtree of a specific path:",
+      "syntax": "gnmic --address {{ip:port}} subscribe --path {{path}}"
+    },
+    {
+      "description": "Subscribe to a target with a sample interval of 30s (default is 10s):",
+      "syntax": "gnmic -a {{ip:port}} subscribe --path {{path}} --sample-interval 30s"
+    },
+    {
+      "description": "Subscribe to a target with sample interval and updates only on change:",
+      "syntax": "gnmic -a {{ip:port}} subscribe --path {{path}} --stream-mode on-change --heartbeat-interval 1m"
+    },
+    {
+      "description": "Subscribe to a target for only one update:",
+      "syntax": "gnmic -a {{ip:port}} subscribe --path {{path}} --mode once"
+    },
+    {
+      "description": "Subscribe to a target and specify response encoding (json_ietf):",
+      "syntax": "gnmic -a {{ip:port}} subscribe --path {{path}} --encoding json_ietf"
+    }
+  ]
+}

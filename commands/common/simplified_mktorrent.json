@@ -1,0 +1,26 @@
+{
+  "command": "mktorrent",
+  "description": "Create BitTorrent metainfo files. More information: https://github.com/Rudde/mktorrent.",
+  "useCases": [
+    {
+      "description": "Create a torrent with 2^21 KB as the piece size:",
+      "syntax": "mktorrent -a {{tracker_announce_url}} -l {{21}} -o {{path/to/example.torrent}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a private torrent with a 2^21 KB piece size:",
+      "syntax": "mktorrent -p -a {{tracker_announce_url}} -l {{21}} -o {{path/to/example.torrent}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a torrent with a comment:",
+      "syntax": "mktorrent -c &quot;{{comment}}&quot; -a {{tracker_announce_url}} -l {{21}} -o {{path/to/example.torrent}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a torrent with multiple trackers:",
+      "syntax": "mktorrent -a {{tracker_announce_url,tracker_announce_url_2}} -l {{21}} -o {{path/to/example.torrent}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a torrent with web seed URLs:",
+      "syntax": "mktorrent -a {{tracker_announce_url}} -w {{web_seed_url}} -l {{21}} -o {{path/to/example.torrent}} {{path/to/file_or_directory}}"
+    }
+  ]
+}

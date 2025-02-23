@@ -1,0 +1,38 @@
+{
+  "command": "nvim",
+  "description": "Neovim, a programmer's text editor based on Vim, provides several modes for different kinds of text manipulation. Pressing i in normal mode enters insert mode. &lt;Esc&gt; goes back to normal mode, which doesn't allow regular text insertion. See also: vim, vimtutor, vimdiff. More information: https://neovim.io.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "nvim {{path/to/file}}"
+    },
+    {
+      "description": "Enter text editing mode (insert mode):",
+      "syntax": "&lt;Esc&gt;i"
+    },
+    {
+      "description": "Copy (\"yank\") or cut (\"delete\") the current line (paste it with P):",
+      "syntax": "&lt;Esc&gt;{{yy|dd}}"
+    },
+    {
+      "description": "Enter normal mode and undo the last operation:",
+      "syntax": "&lt;Esc&gt;u"
+    },
+    {
+      "description": "Search for a pattern in the file (press n/N to go to next/previous match):",
+      "syntax": "&lt;Esc&gt;/{{search_pattern}}&lt;Enter&gt;"
+    },
+    {
+      "description": "Perform a regular expression substitution in the whole file:",
+      "syntax": "&lt;Esc&gt;:%s/{{regular_expression}}/{{replacement}}/g&lt;Enter&gt;"
+    },
+    {
+      "description": "Enter normal mode and save (write) the file, and quit:",
+      "syntax": "{{&lt;Esc&gt;ZZ|&lt;Esc&gt;:x&lt;Enter&gt;|&lt;Esc&gt;:wq&lt;Enter&gt;}}"
+    },
+    {
+      "description": "Quit without saving:",
+      "syntax": "&lt;Esc&gt;:q!&lt;Enter&gt;"
+    }
+  ]
+}

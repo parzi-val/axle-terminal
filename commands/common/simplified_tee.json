@@ -1,0 +1,22 @@
+{
+  "command": "tee",
+  "description": "Read from stdin and write to stdout and files (or commands). More information: https://www.gnu.org/software/coreutils/manual/html_node/tee-invocation.html.",
+  "useCases": [
+    {
+      "description": "Copy stdin to each file, and also to stdout:",
+      "syntax": "echo &quot;example&quot; | tee {{path/to/file}}"
+    },
+    {
+      "description": "Append to the given files, do not overwrite:",
+      "syntax": "echo &quot;example&quot; | tee -a {{path/to/file}}"
+    },
+    {
+      "description": "Print stdin to the terminal, and also pipe it into another program for further processing:",
+      "syntax": "echo &quot;example&quot; | tee {{/dev/tty}} | {{xargs printf &quot;[%s]&quot;}}"
+    },
+    {
+      "description": "Create a directory called \"example\", count the number of characters in \"example\" and write \"example\" to the terminal:",
+      "syntax": "echo &quot;example&quot; | tee &gt;(xargs mkdir) &gt;(wc -c)"
+    }
+  ]
+}

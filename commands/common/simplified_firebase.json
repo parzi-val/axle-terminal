@@ -1,0 +1,30 @@
+{
+  "command": "firebase",
+  "description": "Test, manage, and deploy Firebase projects. More information: https://github.com/firebase/firebase-tools.",
+  "useCases": [
+    {
+      "description": "Log in to https://console.firebase.google.com:",
+      "syntax": "firebase login"
+    },
+    {
+      "description": "List existing Firebase projects:",
+      "syntax": "firebase projects:list"
+    },
+    {
+      "description": "Start an interactive wizard to create a Firebase project in the current directory:",
+      "syntax": "firebase init"
+    },
+    {
+      "description": "Deploy code and assets to the current Firebase project:",
+      "syntax": "firebase deploy"
+    },
+    {
+      "description": "Start a local server to statically host the current Firebase project's assets:",
+      "syntax": "firebase serve"
+    },
+    {
+      "description": "Start an interactive wizard to open one of many links of the current Firebase project in the default web browser:",
+      "syntax": "firebase open"
+    }
+  ]
+}

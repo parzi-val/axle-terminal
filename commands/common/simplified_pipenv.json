@@ -1,0 +1,38 @@
+{
+  "command": "pipenv",
+  "description": "Simple and unified Python development workflow. Manage packages and the virtual environment for a project. More information: https://pypi.org/project/pipenv.",
+  "useCases": [
+    {
+      "description": "Create a new project:",
+      "syntax": "pipenv"
+    },
+    {
+      "description": "Create a new project using Python 3:",
+      "syntax": "pipenv --three"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "pipenv install {{package}}"
+    },
+    {
+      "description": "Install all the dependencies for a project:",
+      "syntax": "pipenv install"
+    },
+    {
+      "description": "Install all the dependencies for a project (including dev packages):",
+      "syntax": "pipenv install --dev"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "pipenv uninstall {{package}}"
+    },
+    {
+      "description": "Start a shell within the created virtual environment:",
+      "syntax": "pipenv shell"
+    },
+    {
+      "description": "Generate a requirements.txt (list of dependencies) for a project:",
+      "syntax": "pipenv lock --requirements"
+    }
+  ]
+}

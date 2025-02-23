@@ -1,0 +1,14 @@
+{
+  "command": "cupsaccept",
+  "description": "Accept jobs sent to destinations. Note: destination is referred as a printer or a class of printers. See also: cupsreject, cupsenable, cupsdisable, lpstat. More information: https://www.cups.org/doc/man-cupsaccept.html.",
+  "useCases": [
+    {
+      "description": "Accept print jobs to the specified destinations:",
+      "syntax": "cupsaccept {{destination1 destination2 ...}}"
+    },
+    {
+      "description": "Specify a different server:",
+      "syntax": "cupsaccept -h {{server}} {{destination1 destination2 ...}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "git pr",
+  "description": "Check out GitHub pull requests locally. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-pr.",
+  "useCases": [
+    {
+      "description": "Check out a specific pull request:",
+      "syntax": "git pr {{pr_number}}"
+    },
+    {
+      "description": "Check out a pull request from a specific remote:",
+      "syntax": "git pr {{pr_number}} {{remote}}"
+    },
+    {
+      "description": "Check out a pull request from its URL:",
+      "syntax": "git pr {{url}}"
+    },
+    {
+      "description": "Clean up old pull request branches:",
+      "syntax": "git pr clean"
+    }
+  ]
+}

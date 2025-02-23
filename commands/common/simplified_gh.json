@@ -1,0 +1,38 @@
+{
+  "command": "gh",
+  "description": "Work seamlessly with GitHub. Some subcommands such as config have their own usage documentation. More information: https://cli.github.com/.",
+  "useCases": [
+    {
+      "description": "Clone a GitHub repository locally:",
+      "syntax": "gh repo clone {{owner}}/{{repository}}"
+    },
+    {
+      "description": "Create a new issue:",
+      "syntax": "gh issue create"
+    },
+    {
+      "description": "View and filter the open issues of the current repository:",
+      "syntax": "gh issue list"
+    },
+    {
+      "description": "View an issue in the default web browser:",
+      "syntax": "gh issue view --web {{issue_number}}"
+    },
+    {
+      "description": "Create a pull request:",
+      "syntax": "gh pr create"
+    },
+    {
+      "description": "View a pull request in the default web browser:",
+      "syntax": "gh pr view --web {{pr_number}}"
+    },
+    {
+      "description": "Check out a specific pull request locally:",
+      "syntax": "gh pr checkout {{pr_number}}"
+    },
+    {
+      "description": "Check the status of a repository's pull requests:",
+      "syntax": "gh pr status"
+    }
+  ]
+}

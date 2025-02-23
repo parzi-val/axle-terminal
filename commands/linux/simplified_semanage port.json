@@ -1,0 +1,26 @@
+{
+  "command": "semanage port",
+  "description": "Manage persistent SELinux port definitions. See also: semanage. More information: https://manned.org/semanage-port.",
+  "useCases": [
+    {
+      "description": "List all port labeling rules:",
+      "syntax": "sudo semanage port {{-l|--list}}"
+    },
+    {
+      "description": "List all user-defined port labeling rules without headings:",
+      "syntax": "sudo semanage port {{-l|--list}} {{-C|--locallist}} {{-n|--noheading}}"
+    },
+    {
+      "description": "Add a user-defined rule that assigns a label to a protocol-port pair:",
+      "syntax": "sudo semanage port {{-a|--add}} {{-t|--type}} {{ssh_port_t}} {{-p|--proto}} {{tcp}} {{22000}}"
+    },
+    {
+      "description": "Add a user-defined rule that assigns a label to a protocol-port-range pair:",
+      "syntax": "sudo semanage port {{-a|--add}} {{-t|--type}} {{http_port_t}} {{-p|--proto}} {{tcp}} {{80-88}}"
+    },
+    {
+      "description": "Delete a user-defined rule using its protocol-port pair:",
+      "syntax": "sudo semanage port {{-d|--delete}} {{-p|--proto}} {{udp}} {{11940}}"
+    }
+  ]
+}

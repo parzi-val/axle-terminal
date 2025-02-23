@@ -1,0 +1,10 @@
+{
+  "command": "ntfsfix",
+  "description": "Fix common problems on an NTFS partition. More information: https://manned.org/ntfsfix.",
+  "useCases": [
+    {
+      "description": "Fix a given NTFS partition:",
+      "syntax": "sudo ntfsfix {{/dev/sdXN}}"
+    }
+  ]
+}

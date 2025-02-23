@@ -1,0 +1,14 @@
+{
+  "command": "zic",
+  "description": "Compile timezones into binary files. More information: https://manned.org/zic.",
+  "useCases": [
+    {
+      "description": "Compile a timezone file from a directory:",
+      "syntax": "zic -d {{path/to/directory}}"
+    },
+    {
+      "description": "Report warnings during compilation of a specific file:",
+      "syntax": "zic -v {{path/to/file}}.infile"
+    }
+  ]
+}

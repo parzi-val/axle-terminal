@@ -1,0 +1,22 @@
+{
+  "command": "timetrap",
+  "description": "Simple command-line time tracker written in Ruby. More information: https://github.com/samg/timetrap.",
+  "useCases": [
+    {
+      "description": "Create a new timesheet:",
+      "syntax": "timetrap sheet {{timesheet}}"
+    },
+    {
+      "description": "Check in an entry started 5 minutes ago:",
+      "syntax": "timetrap in --at &quot;{{5 minutes ago}}&quot; {{entry_notes}}"
+    },
+    {
+      "description": "Display the current timesheet:",
+      "syntax": "timetrap display"
+    },
+    {
+      "description": "Edit the last entry's end time:",
+      "syntax": "timetrap edit --end {{time}}"
+    }
+  ]
+}

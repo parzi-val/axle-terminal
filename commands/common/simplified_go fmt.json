@@ -1,0 +1,26 @@
+{
+  "command": "go fmt",
+  "description": "Format Go source files, printing the changed filenames. More information: https://pkg.go.dev/cmd/go#hdr-Gofmt__reformat__package_sources.",
+  "useCases": [
+    {
+      "description": "Format Go source files in the current directory:",
+      "syntax": "go fmt"
+    },
+    {
+      "description": "Format a specific Go package in your import path ($GOPATH/src):",
+      "syntax": "go fmt {{path/to/package}}"
+    },
+    {
+      "description": "Format the package in the current directory and all subdirectories (note the ...):",
+      "syntax": "go fmt {{./...}}"
+    },
+    {
+      "description": "Print what format commands would've been run, without modifying anything:",
+      "syntax": "go fmt -n"
+    },
+    {
+      "description": "Print which format commands are run as they are run:",
+      "syntax": "go fmt -x"
+    }
+  ]
+}

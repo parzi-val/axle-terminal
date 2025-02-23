@@ -1,0 +1,14 @@
+{
+  "command": "rustic",
+  "description": "Create fast, encrypted, deduplicated backups powered by Rust. More information: https://github.com/rustic-rs/rustic.",
+  "useCases": [
+    {
+      "description": "Initialize a new repository:",
+      "syntax": "rustic init --repository {{/srv/rustic-repo}}"
+    },
+    {
+      "description": "Create a new backup of a file/directory to a repository:",
+      "syntax": "rustic backup --repository {{/srv/rustic-repo}} {{path/to/file_or_directory}}"
+    }
+  ]
+}

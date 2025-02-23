@@ -1,0 +1,18 @@
+{
+  "command": "apkleaks",
+  "description": "Expose URIs, endpoints, and secrets from APK files. Note: APKLeaks utilizes the jadx disassembler to decompile APK files. More information: https://github.com/dwisiswant0/apkleaks.",
+  "useCases": [
+    {
+      "description": "Scan an APK [f]ile for URIs, endpoints, and secrets:",
+      "syntax": "apkleaks --file {{path/to/file.apk}}"
+    },
+    {
+      "description": "Scan and save the [o]utput to a specific file:",
+      "syntax": "apkleaks --file {{path/to/file.apk}} --output {{path/to/output.txt}}"
+    },
+    {
+      "description": "Pass jadx disassembler [a]rguments:",
+      "syntax": "apkleaks --file {{path/to/file.apk}} --args &quot;{{--threads-count 5 --deobf}}&quot;"
+    }
+  ]
+}

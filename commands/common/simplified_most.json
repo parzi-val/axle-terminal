@@ -1,0 +1,38 @@
+{
+  "command": "most",
+  "description": "Open one or several files for interactive reading, allowing scrolling and search. More information: https://manned.org/most.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "most {{path/to/file}}"
+    },
+    {
+      "description": "Open several files:",
+      "syntax": "most {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open a file at the first occurrence of \"string\":",
+      "syntax": "most {{path/to/file}} +/{{string}}"
+    },
+    {
+      "description": "Move through opened files:",
+      "syntax": ":O n"
+    },
+    {
+      "description": "Jump to the 100th line:",
+      "syntax": "{{100}}j"
+    },
+    {
+      "description": "Edit current file:",
+      "syntax": "e"
+    },
+    {
+      "description": "Split the current window in half:",
+      "syntax": "&lt;CTRL-x&gt; o"
+    },
+    {
+      "description": "Exit:",
+      "syntax": "Q"
+    }
+  ]
+}

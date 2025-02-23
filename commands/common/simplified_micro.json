@@ -1,0 +1,34 @@
+{
+  "command": "micro",
+  "description": "A modern and intuitive terminal-based text editor. You can use your keyboard, but also your mouse to navigate and/or select text. More information: https://micro-editor.github.io.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "micro {{path/to/file}}"
+    },
+    {
+      "description": "Save a file:",
+      "syntax": "&lt;Ctrl&gt; + S"
+    },
+    {
+      "description": "Cut the entire line:",
+      "syntax": "&lt;Ctrl&gt; + K"
+    },
+    {
+      "description": "Search for a pattern in the file (press Ctrl + N/Ctrl + P to go to next/previous match):",
+      "syntax": "&lt;Ctrl&gt; + F &quot;{{pattern}}&quot; &lt;Enter&gt;"
+    },
+    {
+      "description": "Execute a command:",
+      "syntax": "&lt;Ctrl&gt; + E {{command}} &lt;Enter&gt;"
+    },
+    {
+      "description": "Perform a substitution in the whole file:",
+      "syntax": "&lt;Ctrl&gt; + E replaceall &quot;{{pattern}}&quot; &quot;{{replacement}}&quot; &lt;Enter&gt;"
+    },
+    {
+      "description": "Quit:",
+      "syntax": "&lt;Ctrl&gt; + Q"
+    }
+  ]
+}

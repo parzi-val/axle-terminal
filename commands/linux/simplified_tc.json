@@ -1,0 +1,34 @@
+{
+  "command": "tc",
+  "description": "Show/manipulate traffic control settings. More information: https://manned.org/tc.",
+  "useCases": [
+    {
+      "description": "Add constant network delay to outbound packages:",
+      "syntax": "tc qdisc add dev {{eth0}} root netem delay {{delay_in_milliseconds}}ms"
+    },
+    {
+      "description": "Add normal distributed network delay to outbound packages:",
+      "syntax": "tc qdisc add dev {{eth0}} root netem delay {{mean_delay_ms}}ms {{delay_std_ms}}ms"
+    },
+    {
+      "description": "Add package corruption/loss/duplication to a portion of packages:",
+      "syntax": "tc qdisc add dev {{eth0}} root netem {{corruption|loss|duplication}} {{effect_percentage}}%"
+    },
+    {
+      "description": "Limit bandwidth, burst rate and max latency:",
+      "syntax": "tc qdisc add dev eth0 root tbf rate {{max_bandwidth_mb}}mbit burst {{max_burst_rate_kb}}kbit latency {{max_latency_before_drop_ms}}ms"
+    },
+    {
+      "description": "Show active traffic control policies:",
+      "syntax": "tc qdisc show dev {{eth0}}"
+    },
+    {
+      "description": "Delete all traffic control rules:",
+      "syntax": "tc qdisc del dev {{eth0}}"
+    },
+    {
+      "description": "Change traffic control rule:",
+      "syntax": "tc qdisc change dev {{eth0}} root netem {{policy}} {{policy_parameters}}"
+    }
+  ]
+}

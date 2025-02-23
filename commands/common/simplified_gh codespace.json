@@ -1,0 +1,38 @@
+{
+  "command": "gh codespace",
+  "description": "Connect and manage your codespaces in GitHub. More information: https://cli.github.com/manual/gh_codespace.",
+  "useCases": [
+    {
+      "description": "Create a codespace in GitHub interactively:",
+      "syntax": "gh codespace create"
+    },
+    {
+      "description": "List all available codespaces:",
+      "syntax": "gh codespace list"
+    },
+    {
+      "description": "Connect to a codespace via SSH interactively:",
+      "syntax": "gh codespace ssh"
+    },
+    {
+      "description": "Transfer a specific file to a codespace interactively:",
+      "syntax": "gh codespace cp {{path/to/source_file}} remote:{{path/to/remote_file}}"
+    },
+    {
+      "description": "List the ports of a codespace interactively:",
+      "syntax": "gh codespace ports"
+    },
+    {
+      "description": "Display the logs from a codespace interactively:",
+      "syntax": "gh codespace logs"
+    },
+    {
+      "description": "Delete a codespace interactively:",
+      "syntax": "gh codespace delete"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "gh codespace {{code|cp|create|delete|edit|...}} --help"
+    }
+  ]
+}

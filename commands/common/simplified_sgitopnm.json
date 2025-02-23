@@ -1,0 +1,18 @@
+{
+  "command": "sgitopnm",
+  "description": "Convert an SGI file to a PNM file. More information: https://netpbm.sourceforge.net/doc/sgitopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert an SGI image to a PNM file:",
+      "syntax": "sgitopnm {{path/to/input.sgi}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Display information about the SGI file:",
+      "syntax": "sgitopnm -verbose {{path/to/input.sgi}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Extract channel n of the SGI file:",
+      "syntax": "sgitopnm -channel {{n}} {{path/to/input.sgi}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "crane copy",
+  "description": "Efficiently copy a remote image from source to target while retaining the digest value. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_copy.md.",
+  "useCases": [
+    {
+      "description": "Copy an image from source to target:",
+      "syntax": "crane copy {{source}} {{target}}"
+    },
+    {
+      "description": "Copy all tags:",
+      "syntax": "crane copy {{source}} {{target}} {{-a|--all-tags}}"
+    },
+    {
+      "description": "Set the maximum number of concurrent copies, defaults to GOMAXPROCS:",
+      "syntax": "crane copy {{source}} {{target}} {{-j|--jobs}} {{int}}"
+    },
+    {
+      "description": "Avoid overwriting existing tags in target:",
+      "syntax": "crane copy {{source}} {{target}} {{-n|--no-clobber}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane copy {{-h|--help}}"
+    }
+  ]
+}

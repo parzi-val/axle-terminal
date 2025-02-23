@@ -1,0 +1,38 @@
+{
+  "command": "pacman",
+  "description": "Arch Linux package manager utility. See also: pacman-sync, pacman-remove, pacman-query, pacman-upgrade, pacman-files, pacman-database, pacman-deptest, pacman-key, pacman-mirrors. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://manned.org/pacman.8.",
+  "useCases": [
+    {
+      "description": "[S]ynchronize and update all packages:",
+      "syntax": "sudo pacman -Syu"
+    },
+    {
+      "description": "Install a new package:",
+      "syntax": "sudo pacman -S {{package}}"
+    },
+    {
+      "description": "[R]emove a package and its dependencies:",
+      "syntax": "sudo pacman -Rs {{package}}"
+    },
+    {
+      "description": "Search ([s]) the package database for a regular expression or keyword:",
+      "syntax": "pacman -Ss &quot;{{search_pattern}}&quot;"
+    },
+    {
+      "description": "Search the database for packages containing a specific [F]ile:",
+      "syntax": "pacman -F &quot;{{file_name}}&quot;"
+    },
+    {
+      "description": "List only the [e]xplicitly installed packages and versions:",
+      "syntax": "pacman -Qe"
+    },
+    {
+      "description": "List orphan packages (installed as [d]ependencies but not actually required by any package):",
+      "syntax": "pacman -Qtdq"
+    },
+    {
+      "description": "Empty the entire pacman cache:",
+      "syntax": "sudo pacman -Scc"
+    }
+  ]
+}

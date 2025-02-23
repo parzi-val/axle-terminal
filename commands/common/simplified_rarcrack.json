@@ -1,0 +1,18 @@
+{
+  "command": "rarcrack",
+  "description": "Password cracker for RAR, Zip and 7z archives.",
+  "useCases": [
+    {
+      "description": "Brute force the password for an archive (tries to guess the archive type):",
+      "syntax": "rarcrack {{path/to/file.zip}}"
+    },
+    {
+      "description": "Specify the archive type:",
+      "syntax": "rarcrack --type {{rar|zip|7z}} {{path/to/file.zip}}"
+    },
+    {
+      "description": "Use multiple threads:",
+      "syntax": "rarcrack --threads {{6}} {{path/to/file.zip}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "apt-mark",
+  "description": "Utility to change the status of installed packages. More information: https://manned.org/apt-mark.8.",
+  "useCases": [
+    {
+      "description": "Mark a package as automatically installed:",
+      "syntax": "sudo apt-mark auto {{package}}"
+    },
+    {
+      "description": "Hold a package at its current version and prevent updates to it:",
+      "syntax": "sudo apt-mark hold {{package}}"
+    },
+    {
+      "description": "Allow a package to be updated again:",
+      "syntax": "sudo apt-mark unhold {{package}}"
+    },
+    {
+      "description": "Show manually installed packages:",
+      "syntax": "apt-mark showmanual"
+    },
+    {
+      "description": "Show held packages that aren't being updated:",
+      "syntax": "apt-mark showhold"
+    }
+  ]
+}

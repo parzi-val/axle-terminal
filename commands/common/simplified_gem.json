@@ -1,0 +1,38 @@
+{
+  "command": "gem",
+  "description": "A package manager for the Ruby programming language. More information: https://guides.rubygems.org.",
+  "useCases": [
+    {
+      "description": "Search for remote gem(s) and show all available versions:",
+      "syntax": "gem search {{regular_expression}} --all"
+    },
+    {
+      "description": "Install the latest version of a gem:",
+      "syntax": "gem install {{gem_name}}"
+    },
+    {
+      "description": "Install a specific version of a gem:",
+      "syntax": "gem install {{gem_name}} --version {{1.0.0}}"
+    },
+    {
+      "description": "Install the latest matching (SemVer) version of a gem:",
+      "syntax": "gem install {{gem_name}} --version '~&gt; {{1.0}}'"
+    },
+    {
+      "description": "Update a gem:",
+      "syntax": "gem update {{gem_name}}"
+    },
+    {
+      "description": "List all local gems:",
+      "syntax": "gem list"
+    },
+    {
+      "description": "Uninstall a gem:",
+      "syntax": "gem uninstall {{gem_name}}"
+    },
+    {
+      "description": "Uninstall a specific version of a gem:",
+      "syntax": "gem uninstall {{gem_name}} --version {{1.0.0}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "ionic",
+  "description": "A framework to build hybrid mobile apps. More information: https://ionicframework.com/docs/cli.",
+  "useCases": [
+    {
+      "description": "Create a new project:",
+      "syntax": "ionic start"
+    },
+    {
+      "description": "Start a local dev server for app dev/testing:",
+      "syntax": "ionic serve"
+    },
+    {
+      "description": "Generate new app component, directive, page, pipe, provider or tabs:",
+      "syntax": "ionic g {{page}}"
+    },
+    {
+      "description": "Run app on an Android/iOS device:",
+      "syntax": "ionic cordova run {{android|ios}} --device"
+    },
+    {
+      "description": "Check the health of an Ionic app:",
+      "syntax": "ionic doctor {{check}}"
+    },
+    {
+      "description": "Display versions of Ionic, Cordova, environment, etc.:",
+      "syntax": "ionic info"
+    }
+  ]
+}

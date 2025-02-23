@@ -1,0 +1,34 @@
+{
+  "command": "phploc",
+  "description": "Quickly measure the size and analyzing the structure of a PHP project. More information: https://github.com/sebastianbergmann/phploc.",
+  "useCases": [
+    {
+      "description": "Analyze a directory and print the result:",
+      "syntax": "phploc {{path/to/directory}}"
+    },
+    {
+      "description": "Include only specific files from a comma-separated list (globs are allowed):",
+      "syntax": "phploc {{path/to/directory}} --names '{{path/to/file1,path/to/file2,...}}'"
+    },
+    {
+      "description": "Exclude specific files from a comma-separated list (globs are allowed):",
+      "syntax": "phploc {{path/to/directory}} --names-exclude '{{path/to/file1,path/to/file2,...}}'"
+    },
+    {
+      "description": "Exclude a specific directory from analysis:",
+      "syntax": "phploc {{path/to/directory}} --exclude {{path/to/exclude_directory}}"
+    },
+    {
+      "description": "Log the results to a specific CSV file:",
+      "syntax": "phploc {{path/to/directory}} --log-csv {{path/to/file}}"
+    },
+    {
+      "description": "Log the results to a specific XML file:",
+      "syntax": "phploc {{path/to/directory}} --log-xml {{path/to/file}}"
+    },
+    {
+      "description": "Count PHPUnit test case classes and test methods:",
+      "syntax": "phploc {{path/to/directory}} --count-tests"
+    }
+  ]
+}

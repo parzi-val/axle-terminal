@@ -1,0 +1,34 @@
+{
+  "command": "nano",
+  "description": "Command-line text editor. An enhanced Pico clone. More information: https://nano-editor.org.",
+  "useCases": [
+    {
+      "description": "Start the editor:",
+      "syntax": "nano"
+    },
+    {
+      "description": "Start the editor without using configuration files:",
+      "syntax": "nano --ignorercfiles"
+    },
+    {
+      "description": "Open specific files, moving to the next file when closing the previous one:",
+      "syntax": "nano {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open a file and position the cursor at a specific line and column:",
+      "syntax": "nano +{{line}},{{column}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a file and enable soft wrapping:",
+      "syntax": "nano --softwrap {{path/to/file}}"
+    },
+    {
+      "description": "Open a file and indent new lines to the previous line's indentation:",
+      "syntax": "nano --autoindent {{path/to/file}}"
+    },
+    {
+      "description": "Open a file and create a backup file (path/to/file~) on save:",
+      "syntax": "nano --backup {{path/to/file}}"
+    }
+  ]
+}

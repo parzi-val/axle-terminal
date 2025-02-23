@@ -1,0 +1,22 @@
+{
+  "command": "w",
+  "description": "Display who is logged in and their processes. More information: https://www.geeksforgeeks.org/w-command-in-linux-with-examples/.",
+  "useCases": [
+    {
+      "description": "Display information about all users who are currently logged in:",
+      "syntax": "w"
+    },
+    {
+      "description": "Display information about a specific user:",
+      "syntax": "w {{username}}"
+    },
+    {
+      "description": "Display information without including the header:",
+      "syntax": "w --no-header"
+    },
+    {
+      "description": "Display information without including the login, JCPU and PCPU columns:",
+      "syntax": "w --short"
+    }
+  ]
+}

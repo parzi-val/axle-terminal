@@ -1,0 +1,22 @@
+{
+  "command": "audit2allow",
+  "description": "Create an SELinux local policy module to allow rules based on denied operations found in logs. Note: Use audit2allow with caution. Always review the generated policy before applying it, as it may allow excessive access. More information: https://manned.org/audit2allow.",
+  "useCases": [
+    {
+      "description": "Generate a local policy to allow access for all denied services:",
+      "syntax": "sudo audit2allow --all -M {{local_policy_name}}"
+    },
+    {
+      "description": "Generate a local policy module to grant access to a specific process/service/command from the audit logs:",
+      "syntax": "sudo grep {{apache2}} /var/log/audit/audit.log | sudo audit2allow -M {{local_policy_name}}"
+    },
+    {
+      "description": "Inspect and review the Type Enforcement (.te) file for a local policy:",
+      "syntax": "vim {{local_policy_name}}.te"
+    },
+    {
+      "description": "Install a local policy module:",
+      "syntax": "sudo semodule -i {{local_policy_name}}.pp"
+    }
+  ]
+}

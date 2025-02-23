@@ -1,0 +1,30 @@
+{
+  "command": "acpi",
+  "description": "Shows battery status or thermal information. More information: https://sourceforge.net/projects/acpiclient/files/acpiclient/.",
+  "useCases": [
+    {
+      "description": "Show battery information:",
+      "syntax": "acpi"
+    },
+    {
+      "description": "Show thermal information:",
+      "syntax": "acpi -t"
+    },
+    {
+      "description": "Show cooling device information:",
+      "syntax": "acpi -c"
+    },
+    {
+      "description": "Show thermal information in Fahrenheit:",
+      "syntax": "acpi -tf"
+    },
+    {
+      "description": "Show all information:",
+      "syntax": "acpi -V"
+    },
+    {
+      "description": "Extract information from /proc instead of /sys:",
+      "syntax": "acpi -p"
+    }
+  ]
+}

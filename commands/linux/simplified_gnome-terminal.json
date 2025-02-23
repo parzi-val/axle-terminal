@@ -1,0 +1,22 @@
+{
+  "command": "gnome-terminal",
+  "description": "The GNOME Terminal emulator. More information: https://help.gnome.org/users/gnome-terminal/stable/.",
+  "useCases": [
+    {
+      "description": "Open a new GNOME terminal window:",
+      "syntax": "gnome-terminal"
+    },
+    {
+      "description": "Run a specific command in a new terminal window:",
+      "syntax": "gnome-terminal -- {{command}}"
+    },
+    {
+      "description": "Open a new tab in the last opened window instead:",
+      "syntax": "gnome-terminal --tab"
+    },
+    {
+      "description": "Set the title of the new tab:",
+      "syntax": "gnome-terminal --tab --title &quot;{{title}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "lumen",
+  "description": "A command-line installer for the Lumen micro-framework. More information: https://lumen.laravel.com.",
+  "useCases": [
+    {
+      "description": "Create a new Lumen application:",
+      "syntax": "lumen new {{application_name}}"
+    },
+    {
+      "description": "List the available installer commands:",
+      "syntax": "lumen list"
+    }
+  ]
+}

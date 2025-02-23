@@ -1,0 +1,34 @@
+{
+  "command": "particle",
+  "description": "Interact with Particle devices. More information: https://docs.particle.io/tutorials/developer-tools/cli.",
+  "useCases": [
+    {
+      "description": "Log in or create an account for the Particle CLI:",
+      "syntax": "particle setup"
+    },
+    {
+      "description": "Display a list of devices:",
+      "syntax": "particle list"
+    },
+    {
+      "description": "Create a new Particle project interactively:",
+      "syntax": "particle project create"
+    },
+    {
+      "description": "Compile a Particle project:",
+      "syntax": "particle compile {{device_type}} {{path/to/source_code.ino}}"
+    },
+    {
+      "description": "Update a device to use a specific app remotely:",
+      "syntax": "particle flash {{device_name}} {{path/to/program.bin}}"
+    },
+    {
+      "description": "Update a device to use the latest firmware via serial:",
+      "syntax": "particle flash --serial {{path/to/firmware.bin}}"
+    },
+    {
+      "description": "Execute a function on a device:",
+      "syntax": "particle call {{device_name}} {{function_name}} {{function_arguments}}"
+    }
+  ]
+}

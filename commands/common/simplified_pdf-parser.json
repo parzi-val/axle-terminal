@@ -1,0 +1,18 @@
+{
+  "command": "pdf-parser",
+  "description": "Identify fundamental elements of a PDF file without rendering it. More information: https://blog.didierstevens.com/programs/pdf-tools.",
+  "useCases": [
+    {
+      "description": "Display statistics for a PDF file:",
+      "syntax": "pdf-parser --stats {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Display objects of type /Font in a PDF file:",
+      "syntax": "pdf-parser --type={{/Font}} {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Search for strings in indirect objects:",
+      "syntax": "pdf-parser --search={{search_string}} {{path/to/file.pdf}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "doppler",
+  "description": "Manage environment variables across different environments using Doppler. Some subcommands such as run and secrets have their own usage documentation. More information: https://docs.doppler.com/docs/cli.",
+  "useCases": [
+    {
+      "description": "Setup Doppler CLI in the current directory:",
+      "syntax": "doppler setup"
+    },
+    {
+      "description": "Setup Doppler project and config in current directory:",
+      "syntax": "doppler setup"
+    },
+    {
+      "description": "Run a command with secrets injected into the environment:",
+      "syntax": "doppler run --command {{command}}"
+    },
+    {
+      "description": "View your project list:",
+      "syntax": "doppler projects"
+    },
+    {
+      "description": "View your secrets for current project:",
+      "syntax": "doppler secrets"
+    },
+    {
+      "description": "Open Doppler dashboard in browser:",
+      "syntax": "doppler open"
+    }
+  ]
+}

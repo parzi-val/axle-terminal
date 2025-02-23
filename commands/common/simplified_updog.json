@@ -1,0 +1,26 @@
+{
+  "command": "updog",
+  "description": "A replacement for Python's SimpleHTTPServer. It allows uploading and downloading via HTTP/S, can set ad hoc SSL certificates and use HTTP basic auth. More information: https://github.com/sc0tfree/updog.",
+  "useCases": [
+    {
+      "description": "Start a HTTP server for the current directory:",
+      "syntax": "updog"
+    },
+    {
+      "description": "Start a HTTP server for a specified directory:",
+      "syntax": "updog --directory {{/path/to/directory}}"
+    },
+    {
+      "description": "Start a HTTP server on a specified port:",
+      "syntax": "updog --port {{port}}"
+    },
+    {
+      "description": "Start a HTTP server with a password (To log in, leave the username blank and enter the password in the password field):",
+      "syntax": "updog --password {{password}}"
+    },
+    {
+      "description": "Enable transport encryption via SSL:",
+      "syntax": "updog --ssl"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "hg status",
+  "description": "Show files that have changed in the working directory. More information: https://www.mercurial-scm.org/doc/hg.1.html#status.",
+  "useCases": [
+    {
+      "description": "Display the status of changed files:",
+      "syntax": "hg status"
+    },
+    {
+      "description": "Display only modified files:",
+      "syntax": "hg status --modified"
+    },
+    {
+      "description": "Display only added files:",
+      "syntax": "hg status --added"
+    },
+    {
+      "description": "Display only removed files:",
+      "syntax": "hg status --removed"
+    },
+    {
+      "description": "Display only deleted (but tracked) files:",
+      "syntax": "hg status --deleted"
+    },
+    {
+      "description": "Display changes in the working directory compared to a specified changeset:",
+      "syntax": "hg status --rev {{revision}}"
+    },
+    {
+      "description": "Display only files matching a specified glob pattern:",
+      "syntax": "hg status --include {{pattern}}"
+    },
+    {
+      "description": "Display files, excluding those that match a specified glob pattern:",
+      "syntax": "hg status --exclude {{pattern}}"
+    }
+  ]
+}

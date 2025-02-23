@@ -1,0 +1,34 @@
+{
+  "command": "kwriteconfig5",
+  "description": "Write KConfig entries for KDE Plasma. More information: https://userbase.kde.org/KDE_System_Administration/Configuration_Files.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "kwriteconfig5 --help"
+    },
+    {
+      "description": "Set a global configuration key:",
+      "syntax": "kwriteconfig5 --group {{group_name}} --key {{key}} {{value}}"
+    },
+    {
+      "description": "Set a key in a specific configuration file:",
+      "syntax": "kwriteconfig5 --file {{path/to/file}} --group {{group_name}} --key {{key}} {{value}}"
+    },
+    {
+      "description": "Delete a key:",
+      "syntax": "kwriteconfig5 --group {{group_name}} --key {{key}} --delete"
+    },
+    {
+      "description": "Use systemd to start the Plasma session when available:",
+      "syntax": "kwriteconfig5 --file {{startkderc}} --group {{General}} --key {{systemdBoot}} {{true}}"
+    },
+    {
+      "description": "Hide the title bar when a window is maximized (like Ubuntu):",
+      "syntax": "kwriteconfig5 --file {{~/.config/kwinrc}} --group {{Windows}} --key {{BorderlessMaximizedWindows}} {{true}}"
+    },
+    {
+      "description": "Configure KRunner to open with the Meta (Command/Windows) global hotkey:",
+      "syntax": "kwriteconfig5 --file {{~/.config/kwinrc}} --group {{ModifierOnlyShortcuts}} --key {{Meta}} &quot;{{org.kde.kglobalaccel,/component/krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch}}&quot;"
+    }
+  ]
+}

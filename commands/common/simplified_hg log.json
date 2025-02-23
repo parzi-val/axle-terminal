@@ -1,0 +1,38 @@
+{
+  "command": "hg log",
+  "description": "Display the revision history of the repository. More information: https://www.mercurial-scm.org/doc/hg.1.html#log.",
+  "useCases": [
+    {
+      "description": "Display the entire revision history of the repository:",
+      "syntax": "hg log"
+    },
+    {
+      "description": "Display the revision history with an ASCII graph:",
+      "syntax": "hg log --graph"
+    },
+    {
+      "description": "Display the revision history with file names matching a specified pattern:",
+      "syntax": "hg log --include {{pattern}}"
+    },
+    {
+      "description": "Display the revision history, excluding file names that match a specified pattern:",
+      "syntax": "hg log --exclude {{pattern}}"
+    },
+    {
+      "description": "Display the log information for a specific revision:",
+      "syntax": "hg log --rev {{revision}}"
+    },
+    {
+      "description": "Display the revision history for a specific branch:",
+      "syntax": "hg log --branch {{branch}}"
+    },
+    {
+      "description": "Display the revision history for a specific date:",
+      "syntax": "hg log --date {{date}}"
+    },
+    {
+      "description": "Display revisions committed by a specific user:",
+      "syntax": "hg log --user {{user}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "gcloud components update",
+  "description": "Update all your installed Google Cloud CLI components to the latest version. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/components/update.",
+  "useCases": [
+    {
+      "description": "Update all components to the latest version:",
+      "syntax": "gcloud components update"
+    },
+    {
+      "description": "Update all components to a specific version:",
+      "syntax": "gcloud components update --version={{1.2.3}}"
+    },
+    {
+      "description": "Update components without confirmation (useful for automation scripts):",
+      "syntax": "gcloud components update --quiet"
+    }
+  ]
+}

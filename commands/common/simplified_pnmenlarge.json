@@ -1,0 +1,10 @@
+{
+  "command": "pnmenlarge",
+  "description": "This command has been superseded by pamenlarge. More information: https://netpbm.sourceforge.net/doc/pnmenlarge.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamenlarge"
+    }
+  ]
+}

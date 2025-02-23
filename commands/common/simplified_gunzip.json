@@ -1,0 +1,26 @@
+{
+  "command": "gunzip",
+  "description": "Extract files from a gzip (.gz) archive. More information: https://manned.org/gunzip.",
+  "useCases": [
+    {
+      "description": "Extract a file from an archive, replacing the original file if it exists:",
+      "syntax": "gunzip {{archive.tar.gz}}"
+    },
+    {
+      "description": "Extract a file to a target destination:",
+      "syntax": "gunzip --stdout {{archive.tar.gz}} &gt; {{archive.tar}}"
+    },
+    {
+      "description": "Extract a file and keep the archive file:",
+      "syntax": "gunzip --keep {{archive.tar.gz}}"
+    },
+    {
+      "description": "List the contents of a compressed file:",
+      "syntax": "gunzip --list {{file.txt.gz}}"
+    },
+    {
+      "description": "Decompress an archive from stdin:",
+      "syntax": "cat {{path/to/archive.gz}} | gunzip"
+    }
+  ]
+}

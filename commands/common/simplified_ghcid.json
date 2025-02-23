@@ -1,0 +1,30 @@
+{
+  "command": "ghcid",
+  "description": "Simple and efficient CLI IDE for Haskell that reloads code on file changes. Continuously displays compile errors, warnings, and test results. More information: https://github.com/ndmitchell/ghcid.",
+  "useCases": [
+    {
+      "description": "Start ghcid and monitor a Haskell file for changes:",
+      "syntax": "ghcid {{path/to/Main.hs}}"
+    },
+    {
+      "description": "Start ghcid with a specific command, such as loading a Stack or Cabal project:",
+      "syntax": "ghcid --command &quot;{{stack ghci Main.hs}}&quot;"
+    },
+    {
+      "description": "Run an action (default main) on each file save:",
+      "syntax": "ghcid --run={{action}} {{path/to/Main.hs}}"
+    },
+    {
+      "description": "Set maximum height and width (default to console height and width):",
+      "syntax": "ghcid --height={{height}} --width={{width}} {{path/to/Main.hs}}"
+    },
+    {
+      "description": "Write full GHC compiler output to a file:",
+      "syntax": "ghcid --outputfile={{path/to/output_file.txt}} {{path/to/Main.hs}}"
+    },
+    {
+      "description": "Execute REPL commands (eg. -- $&gt; 1+1) on each file save:",
+      "syntax": "ghcid --allow-eval {{path/to/Main.hs}}"
+    }
+  ]
+}

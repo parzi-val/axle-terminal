@@ -1,0 +1,26 @@
+{
+  "command": "highlight",
+  "description": "Outputs syntax-highlighted source code to a variety of formats. More information: http://www.andre-simon.de/doku/highlight/highlight.php.",
+  "useCases": [
+    {
+      "description": "Produce a complete HTML document from a source code file:",
+      "syntax": "highlight --out-format={{html}} --style {{theme_name}} --syntax {{language}} {{path/to/source_code}}"
+    },
+    {
+      "description": "Produce an HTML fragment, suitable for inclusion in a larger document:",
+      "syntax": "highlight --out-format={{html}} --fragment --syntax {{language}} {{source_file}}"
+    },
+    {
+      "description": "Inline the CSS styling in every tag:",
+      "syntax": "highlight --out-format={{html}} --inline-css --syntax {{language}} {{source_file}}"
+    },
+    {
+      "description": "List all supported languages, themes, or plugins:",
+      "syntax": "highlight --list-scripts {{langs|themes|plugins}}"
+    },
+    {
+      "description": "Print a CSS stylesheet for a theme:",
+      "syntax": "highlight --out-format={{html}} --print-style --style {{theme_name}} --syntax {{language}}] --stdout"
+    }
+  ]
+}

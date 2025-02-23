@@ -1,0 +1,38 @@
+{
+  "command": "python",
+  "description": "Python language interpreter. More information: https://www.python.org.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "python"
+    },
+    {
+      "description": "Execute a specific Python file:",
+      "syntax": "python {{path/to/file.py}}"
+    },
+    {
+      "description": "Execute a specific Python file and start a REPL:",
+      "syntax": "python -i {{path/to/file.py}}"
+    },
+    {
+      "description": "Execute a Python expression:",
+      "syntax": "python -c &quot;{{expression}}&quot;"
+    },
+    {
+      "description": "Run the script of the specified library module:",
+      "syntax": "python -m {{module}} {{arguments}}"
+    },
+    {
+      "description": "Install a package using pip:",
+      "syntax": "python -m pip install {{package}}"
+    },
+    {
+      "description": "Interactively debug a Python script:",
+      "syntax": "python -m pdb {{path/to/file.py}}"
+    },
+    {
+      "description": "Start the built-in HTTP server on port 8000 in the current directory:",
+      "syntax": "python -m http.server"
+    }
+  ]
+}

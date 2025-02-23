@@ -1,0 +1,38 @@
+{
+  "command": "tldr",
+  "description": "Display simple help pages for command-line tools from the tldr-pages project. Note: the --language and --list options are not required by the client specification, but most clients implement them. More information: https://github.com/tldr-pages/tldr/blob/main/CLIENT-SPECIFICATION.md#command-line-interface.",
+  "useCases": [
+    {
+      "description": "Print the tldr page for a specific command (hint: this is how you got here!):",
+      "syntax": "tldr {{command}}"
+    },
+    {
+      "description": "Print the tldr page for a specific subcommand:",
+      "syntax": "tldr {{command}} {{subcommand}}"
+    },
+    {
+      "description": "Print the tldr page for a command in the given [L]anguage (if available, otherwise fall back to English):",
+      "syntax": "tldr --language {{language_code}} {{command}}"
+    },
+    {
+      "description": "Print the tldr page for a command from a specific [p]latform:",
+      "syntax": "tldr --platform {{android|common|freebsd|linux|osx|netbsd|openbsd|sunos|windows}} {{command}}"
+    },
+    {
+      "description": "[u]pdate the local cache of tldr pages:",
+      "syntax": "tldr --update"
+    },
+    {
+      "description": "[l]ist all pages for the current platform and common:",
+      "syntax": "tldr --list"
+    },
+    {
+      "description": "[l]ist all available subcommand pages for a command:",
+      "syntax": "tldr --list | grep {{command}} | column"
+    },
+    {
+      "description": "Print the tldr page for a random command:",
+      "syntax": "tldr --list | shuf -n1 | xargs tldr"
+    }
+  ]
+}

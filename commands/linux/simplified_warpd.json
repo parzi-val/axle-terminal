@@ -1,0 +1,34 @@
+{
+  "command": "warpd",
+  "description": "A modal keyboard driven pointer manipulation program. More information: https://github.com/rvaiya/warpd/blob/master/warpd.1.md.",
+  "useCases": [
+    {
+      "description": "Run warpd in normal mode:",
+      "syntax": "warpd --normal"
+    },
+    {
+      "description": "Run warpd in hint mode:",
+      "syntax": "warpd --hint"
+    },
+    {
+      "description": "Move cursor left:",
+      "syntax": "h"
+    },
+    {
+      "description": "Move cursor down:",
+      "syntax": "j"
+    },
+    {
+      "description": "Move cursor up:",
+      "syntax": "k"
+    },
+    {
+      "description": "Move cursor right:",
+      "syntax": "l"
+    },
+    {
+      "description": "Emulate left click:",
+      "syntax": "m"
+    }
+  ]
+}

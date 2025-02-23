@@ -1,0 +1,34 @@
+{
+  "command": "polybar-msg",
+  "description": "Control polybar using inter-process-messaging (IPC). Note: IPC is disabled by default and can be enabled by setting enable-ipc = true in the Polybar config. More information: https://polybar.rtfd.io/en/stable/user/ipc.html.",
+  "useCases": [
+    {
+      "description": "Quit the bar:",
+      "syntax": "polybar-msg cmd quit"
+    },
+    {
+      "description": "Restart the bar in-place:",
+      "syntax": "polybar-msg cmd restart"
+    },
+    {
+      "description": "Hide the bar (does nothing if the bar is already hidden):",
+      "syntax": "polybar-msg cmd hide"
+    },
+    {
+      "description": "Show the bar again (does nothing if the bar is not hidden):",
+      "syntax": "polybar-msg cmd show"
+    },
+    {
+      "description": "Toggle between hidden/visible:",
+      "syntax": "polybar-msg cmd toggle"
+    },
+    {
+      "description": "Execute a module action (the data string is optional):",
+      "syntax": "polybar-msg action &quot;#{{module_name}}.{{action_name}}.{{data_string}}&quot;"
+    },
+    {
+      "description": "Only send messages to a specific Polybar instance (all instances by default):",
+      "syntax": "polybar-msg -p {{pid}} {{cmd|action}} {{payload}}"
+    }
+  ]
+}

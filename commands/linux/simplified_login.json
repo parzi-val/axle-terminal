@@ -1,0 +1,22 @@
+{
+  "command": "login",
+  "description": "Initiates a session for a user. More information: https://manned.org/login.",
+  "useCases": [
+    {
+      "description": "Log in as a user:",
+      "syntax": "login {{user}}"
+    },
+    {
+      "description": "Log in as user without authentication if user is preauthenticated:",
+      "syntax": "login -f {{user}}"
+    },
+    {
+      "description": "Log in as user and preserve environment:",
+      "syntax": "login -p {{user}}"
+    },
+    {
+      "description": "Log in as a user on a remote host:",
+      "syntax": "login -h {{host}} {{user}}"
+    }
+  ]
+}

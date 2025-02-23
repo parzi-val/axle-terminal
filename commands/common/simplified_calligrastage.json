@@ -1,0 +1,18 @@
+{
+  "command": "calligrastage",
+  "description": "Calligra's presentation application. See also: calligraflow, calligrawords, calligrasheets. More information: https://manned.org/calligrastage.",
+  "useCases": [
+    {
+      "description": "Launch the presentation application:",
+      "syntax": "calligrastage"
+    },
+    {
+      "description": "Open a specific presentation:",
+      "syntax": "calligrastage {{path/to/presentation}}"
+    },
+    {
+      "description": "Display help or version:",
+      "syntax": "calligrastage --{{help|version}}"
+    }
+  ]
+}

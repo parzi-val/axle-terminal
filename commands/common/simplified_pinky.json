@@ -1,0 +1,30 @@
+{
+  "command": "pinky",
+  "description": "Print user information using the finger protocol. More information: https://manned.org/pinky.",
+  "useCases": [
+    {
+      "description": "Display details about the current user:",
+      "syntax": "pinky"
+    },
+    {
+      "description": "Display details for a specific user:",
+      "syntax": "pinky {{user}}"
+    },
+    {
+      "description": "Display details in the long format:",
+      "syntax": "pinky {{user}} -l"
+    },
+    {
+      "description": "Omit the user's home directory and shell in long format:",
+      "syntax": "pinky {{user}} -lb"
+    },
+    {
+      "description": "Omit the user's project file in long format:",
+      "syntax": "pinky {{user}} -lh"
+    },
+    {
+      "description": "Omit the column headings in short format:",
+      "syntax": "pinky {{user}} -f"
+    }
+  ]
+}

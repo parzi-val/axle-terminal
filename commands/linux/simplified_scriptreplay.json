@@ -1,0 +1,18 @@
+{
+  "command": "scriptreplay",
+  "description": "Replay a typescript created by the script command to stdout. More information: https://manned.org/scriptreplay.",
+  "useCases": [
+    {
+      "description": "Replay a typescript at the speed it was recorded:",
+      "syntax": "scriptreplay {{path/to/timing_file}} {{path/to/typescript}}"
+    },
+    {
+      "description": "Replay a typescript at double the original speed:",
+      "syntax": "scriptreplay {{path/to/timingfile}} {{path/to/typescript}} 2"
+    },
+    {
+      "description": "Replay a typescript at half the original speed:",
+      "syntax": "scriptreplay {{path/to/timingfile}} {{path/to/typescript}} 0.5"
+    }
+  ]
+}

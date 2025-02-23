@@ -1,0 +1,26 @@
+{
+  "command": "usermod",
+  "description": "Modify a user account. See also: users, useradd, userdel. More information: https://manned.org/usermod.",
+  "useCases": [
+    {
+      "description": "Change a username:",
+      "syntax": "sudo usermod {{-l|--login}} {{new_username}} {{username}}"
+    },
+    {
+      "description": "Change a user ID:",
+      "syntax": "sudo usermod {{-u|--uid}} {{id}} {{username}}"
+    },
+    {
+      "description": "Change a user shell:",
+      "syntax": "sudo usermod {{-s|--shell}} {{path/to/shell}} {{username}}"
+    },
+    {
+      "description": "Add a user to supplementary groups (mind the lack of whitespace):",
+      "syntax": "sudo usermod {{-a|--append}} {{-G|--groups}} {{group1,group2,...}} {{username}}"
+    },
+    {
+      "description": "Change a user home directory:",
+      "syntax": "sudo usermod {{-m|--move-home}} {{-d|--home}} {{path/to/new_home}} {{username}}"
+    }
+  ]
+}

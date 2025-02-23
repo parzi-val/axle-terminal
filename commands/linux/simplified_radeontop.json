@@ -1,0 +1,22 @@
+{
+  "command": "radeontop",
+  "description": "Show utilization of AMD GPUs. May require root privileges depending on your system. More information: https://github.com/clbr/radeontop.",
+  "useCases": [
+    {
+      "description": "Show the utilization of the default AMD GPU:",
+      "syntax": "radeontop"
+    },
+    {
+      "description": "Enable colored output:",
+      "syntax": "radeontop --color"
+    },
+    {
+      "description": "Select a specific GPU (the bus number is the first number in the output of lspci):",
+      "syntax": "radeontop --bus {{bus_number}}"
+    },
+    {
+      "description": "Specify the display refresh rate (higher means more GPU overhead):",
+      "syntax": "radeontop --ticks {{samples_per_second}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "wordgrinder",
+  "description": "Command-line word processor. More information: https://cowlark.com/wordgrinder.",
+  "useCases": [
+    {
+      "description": "Start WordGrinder (loads a blank document by default):",
+      "syntax": "wordgrinder"
+    },
+    {
+      "description": "Open a given file:",
+      "syntax": "wordgrinder {{path/to/file}}"
+    },
+    {
+      "description": "Show the menu:",
+      "syntax": "&lt;Alt&gt; + M"
+    }
+  ]
+}

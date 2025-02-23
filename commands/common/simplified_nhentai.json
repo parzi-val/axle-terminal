@@ -1,0 +1,22 @@
+{
+  "command": "nhentai",
+  "description": "Download doujinshis from nhentai. More information: https://github.com/RicterZ/nhentai.",
+  "useCases": [
+    {
+      "description": "Set cookies:",
+      "syntax": "nhentai --cookie &quot;csrftoken={{TOKEN}}; sessionid={{ID}}&quot;"
+    },
+    {
+      "description": "Download a specific doujin:",
+      "syntax": "nhentai --id {{number}}"
+    },
+    {
+      "description": "Download the first page of your favorites:",
+      "syntax": "nhentai --favorites --download --delay 1"
+    },
+    {
+      "description": "Download specific pages of your favorites:",
+      "syntax": "nhentai --favorites --pages {{start_page}}-{{end_page}} --download --delay 1"
+    }
+  ]
+}

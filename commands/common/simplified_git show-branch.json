@@ -1,0 +1,38 @@
+{
+  "command": "git show-branch",
+  "description": "Show branches and their commits. More information: https://git-scm.com/docs/git-show-branch.",
+  "useCases": [
+    {
+      "description": "Show a summary of the latest commit on a branch:",
+      "syntax": "git show-branch {{branch_name|ref|commit}}"
+    },
+    {
+      "description": "Compare commits in the history of multiple commits or branches:",
+      "syntax": "git show-branch {{branch_name1|ref1|commit1 branch_name2|ref2|commit2 ...}}"
+    },
+    {
+      "description": "Compare all remote tracking branches:",
+      "syntax": "git show-branch --remotes"
+    },
+    {
+      "description": "Compare both local and remote tracking branches:",
+      "syntax": "git show-branch --all"
+    },
+    {
+      "description": "List the latest commits in all branches:",
+      "syntax": "git show-branch --all --list"
+    },
+    {
+      "description": "Compare a given branch with the current branch:",
+      "syntax": "git show-branch --current {{commit|branch_name|ref}}"
+    },
+    {
+      "description": "Display the commit name instead of the relative name:",
+      "syntax": "git show-branch --sha1-name --current {{current|branch_name|ref}}"
+    },
+    {
+      "description": "Keep going a given number of commits past the common ancestor:",
+      "syntax": "git show-branch --more {{5}} {{commit|branch_name|ref}} {{commit|branch_name|ref}} {{...}}"
+    }
+  ]
+}

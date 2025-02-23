@@ -1,0 +1,22 @@
+{
+  "command": "basenc",
+  "description": "Encode or decode file or stdin using a specified encoding, to stdout. More information: https://www.gnu.org/software/coreutils/manual/html_node/basenc-invocation.html.",
+  "useCases": [
+    {
+      "description": "Encode a file with base64 encoding:",
+      "syntax": "basenc --base64 {{path/to/file}}"
+    },
+    {
+      "description": "Decode a file with base64 encoding:",
+      "syntax": "basenc --decode --base64 {{path/to/file}}"
+    },
+    {
+      "description": "Encode from stdin with base32 encoding with 42 columns:",
+      "syntax": "{{command}} | basenc --base32 -w42"
+    },
+    {
+      "description": "Encode from stdin with base32 encoding:",
+      "syntax": "{{command}} | basenc --base32"
+    }
+  ]
+}

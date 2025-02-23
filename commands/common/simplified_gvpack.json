@@ -1,0 +1,26 @@
+{
+  "command": "gvpack",
+  "description": "Combine several graph layouts (that already have layout information). Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten. More information: https://graphviz.org/pdf/gvpack.1.pdf.",
+  "useCases": [
+    {
+      "description": "Combine several graph layouts (that already have layout information):",
+      "syntax": "gvpack {{path/to/layout1.gv}} {{path/to/layout2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Combine several graph layouts at the graph level, keeping graphs separate:",
+      "syntax": "gvpack -g {{path/to/layout1.gv}} {{path/to/layout2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Combine several graph layouts at the node level, ignoring clusters:",
+      "syntax": "gvpack -n {{path/to/layout1.gv}} {{path/to/layout2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Combine several graph layouts without packing:",
+      "syntax": "gvpack -u {{path/to/layout1.gv}} {{path/to/layout2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gvpack -?"
+    }
+  ]
+}

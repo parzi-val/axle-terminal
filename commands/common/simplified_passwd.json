@@ -1,0 +1,22 @@
+{
+  "command": "passwd",
+  "description": "Change a user's password. More information: https://manned.org/passwd.",
+  "useCases": [
+    {
+      "description": "Change the password of the current user interactively:",
+      "syntax": "passwd"
+    },
+    {
+      "description": "Change the password of a specific user:",
+      "syntax": "passwd {{username}}"
+    },
+    {
+      "description": "Get the current status of the user:",
+      "syntax": "passwd {{-S|--status}}"
+    },
+    {
+      "description": "Make the password of the account blank (it will set the named account passwordless):",
+      "syntax": "passwd {{-d|--delete}}"
+    }
+  ]
+}

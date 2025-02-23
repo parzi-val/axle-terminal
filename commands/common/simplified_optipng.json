@@ -1,0 +1,30 @@
+{
+  "command": "optipng",
+  "description": "PNG file optimization utility. More information: https://optipng.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Compress a PNG with default settings:",
+      "syntax": "optipng {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a PNG with the best compression:",
+      "syntax": "optipng -o{{7}} {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a PNG with the fastest compression:",
+      "syntax": "optipng -o{{0}} {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a PNG and add interlacing:",
+      "syntax": "optipng -i {{1}} {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a PNG and preserve all metadata (including file timestamps):",
+      "syntax": "optipng -preserve {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a PNG and remove all metadata:",
+      "syntax": "optipng -strip all {{path/to/file.png}}"
+    }
+  ]
+}

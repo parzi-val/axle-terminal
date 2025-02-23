@@ -1,0 +1,30 @@
+{
+  "command": "ytfzf",
+  "description": "Find and download videos and music. Written in POSIX shell. See also: youtube-dl, yt-dlp, instaloader. More information: https://github.com/pystardust/ytfzf.",
+  "useCases": [
+    {
+      "description": "Search for videos on YouTube with thumbnail previews:",
+      "syntax": "ytfzf --show-thumbnails {{search_pattern}}"
+    },
+    {
+      "description": "Play only the audio of the first item in a loop:",
+      "syntax": "ytfzf --audio-only --auto-select --loop {{search_pattern}}"
+    },
+    {
+      "description": "Download a video from the history:",
+      "syntax": "ytfzf --download --choose-from-history"
+    },
+    {
+      "description": "Play all the music found in a search:",
+      "syntax": "ytfzf --audio-only --select-all {{search_pattern}}"
+    },
+    {
+      "description": "See the trending videos in an external menu:",
+      "syntax": "ytfzf --trending --ext-menu {{search_pattern}}"
+    },
+    {
+      "description": "Search on PeerTube instead of YouTube:",
+      "syntax": "ytfzf --peertube {{search_pattern}}"
+    }
+  ]
+}

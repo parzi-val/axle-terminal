@@ -1,0 +1,26 @@
+{
+  "command": "pdftoppm",
+  "description": "Convert PDF document pages to portable Pixmap (image formats). More information: https://manned.org/pdftoppm.",
+  "useCases": [
+    {
+      "description": "Specify the range of pages to convert (N-first page, M-last page):",
+      "syntax": "pdftoppm -f {{N}} -l {{M}} {{path/to/file.pdf}} {{image_name_prefix}}"
+    },
+    {
+      "description": "Convert only the first page of a PDF:",
+      "syntax": "pdftoppm -singlefile {{path/to/file.pdf}} {{image_name_prefix}}"
+    },
+    {
+      "description": "Generate a monochrome PBM file (instead of a color PPM file):",
+      "syntax": "pdftoppm -mono {{path/to/file.pdf}} {{image_name_prefix}}"
+    },
+    {
+      "description": "Generate a grayscale PGM file (instead of a color PPM file):",
+      "syntax": "pdftoppm -gray {{path/to/file.pdf}} {{image_name_prefix}}"
+    },
+    {
+      "description": "Generate a PNG file instead a PPM file:",
+      "syntax": "pdftoppm -png {{path/to/file.pdf}} {{image_name_prefix}}"
+    }
+  ]
+}

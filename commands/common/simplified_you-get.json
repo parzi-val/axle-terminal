@@ -1,0 +1,26 @@
+{
+  "command": "you-get",
+  "description": "Download media contents (videos, audios, images) from the Web. See also: yt-dlp, youtube-viewer, instaloader. More information: https://you-get.org.",
+  "useCases": [
+    {
+      "description": "Print media information about a specific media on the web:",
+      "syntax": "you-get --info {{https://example.com/video?id=value}}"
+    },
+    {
+      "description": "Download a media from a specific URL:",
+      "syntax": "you-get {{https://example.com/video?id=value}}"
+    },
+    {
+      "description": "Search on Google Videos and download:",
+      "syntax": "you-get {{keywords}}"
+    },
+    {
+      "description": "Download a media to a specific location:",
+      "syntax": "you-get --output-dir {{path/to/directory}} --output-filename {{filename}} {{https://example.com/watch?v=value}}"
+    },
+    {
+      "description": "Download a media using a proxy:",
+      "syntax": "you-get --http-proxy {{proxy_server}} {{https://example.com/watch?v=value}}"
+    }
+  ]
+}

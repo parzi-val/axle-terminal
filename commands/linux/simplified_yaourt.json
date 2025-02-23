@@ -1,0 +1,26 @@
+{
+  "command": "yaourt",
+  "description": "Arch Linux utility for building packages from the Arch User Repository. More information: https://linuxcommandlibrary.com/man/yaourt.",
+  "useCases": [
+    {
+      "description": "Synchronize and update all packages (including AUR):",
+      "syntax": "yaourt -Syua"
+    },
+    {
+      "description": "Install a new package (includes AUR):",
+      "syntax": "yaourt -S {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies (includes AUR packages):",
+      "syntax": "yaourt -Rs {{package}}"
+    },
+    {
+      "description": "Search the package database for a keyword (including AUR):",
+      "syntax": "yaourt -Ss {{query}}"
+    },
+    {
+      "description": "List installed packages, versions, and repositories (AUR packages will be listed under the repository name 'local'):",
+      "syntax": "yaourt -Q"
+    }
+  ]
+}

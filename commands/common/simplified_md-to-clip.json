@@ -1,0 +1,30 @@
+{
+  "command": "md-to-clip",
+  "description": "Convert tldr-pages to Command Line Interface Pages. See also: clip-view. More information: https://github.com/command-line-interface-pages/v2-tooling/tree/main/md-to-clip.",
+  "useCases": [
+    {
+      "description": "Convert tldr-pages files and save into the same directories:",
+      "syntax": "md-to-clip {{path/to/page1.md path/to/page2.md ...}}"
+    },
+    {
+      "description": "Convert tldr-pages files and save into a specific directory:",
+      "syntax": "md-to-clip --output-directory {{path/to/directory}} {{path/to/page1.md path/to/page2.md ...}}"
+    },
+    {
+      "description": "Convert a tldr-page file to stdout:",
+      "syntax": "md-to-clip --no-file-save &lt;(echo '{{page-content}}')"
+    },
+    {
+      "description": "Convert tldr-pages files while recognizing additional placeholders from a specific config:",
+      "syntax": "md-to-clip --special-placeholder-config {{path/to/config.yaml}} {{path/to/page1.md path/to/page2.md ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "md-to-clip --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "md-to-clip --version"
+    }
+  ]
+}

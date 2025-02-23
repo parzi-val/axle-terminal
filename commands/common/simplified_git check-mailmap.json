@@ -1,0 +1,10 @@
+{
+  "command": "git check-mailmap",
+  "description": "Show canonical names and email addresses of contacts. More information: https://git-scm.com/docs/git-check-mailmap.",
+  "useCases": [
+    {
+      "description": "Look up the canonical name associated with an email address:",
+      "syntax": "git check-mailmap &quot;&lt;{{email@example.com}}&gt;&quot;"
+    }
+  ]
+}

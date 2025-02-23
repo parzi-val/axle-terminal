@@ -1,0 +1,18 @@
+{
+  "command": "checkupdates-aur",
+  "description": "Check pending updates from the Arch User Repository (AUR). More information: https://metacpan.org/dist/OS-CheckUpdates-AUR.",
+  "useCases": [
+    {
+      "description": "List pending updates for AUR packages:",
+      "syntax": "checkupdates-aur"
+    },
+    {
+      "description": "List pending updates for AUR packages in debug mode:",
+      "syntax": "CHECKUPDATES_DEBUG=1 checkupdates-aur"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "checkupdates-aur --help"
+    }
+  ]
+}

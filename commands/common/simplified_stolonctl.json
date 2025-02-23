@@ -1,0 +1,22 @@
+{
+  "command": "stolonctl",
+  "description": "CLI for Stolon, a cloud native PostgreSQL manager for PostgreSQL high availability. More information: https://github.com/sorintlab/stolon.",
+  "useCases": [
+    {
+      "description": "Get cluster status:",
+      "syntax": "stolonctl --cluster-name {{cluster_name}} --store-backend {{store_backend}} --store-endpoints {{store_endpoints}} status"
+    },
+    {
+      "description": "Get cluster data:",
+      "syntax": "stolonctl --cluster-name {{cluster_name}} --store-backend {{store_backend}} --store-endpoints {{store_endpoints}} clusterdata"
+    },
+    {
+      "description": "Get cluster specification:",
+      "syntax": "stolonctl --cluster-name {{cluster_name}} --store-backend {{store_backend}} --store-endpoints {{store_endpoints}} spec"
+    },
+    {
+      "description": "Update cluster specification with a patch in JSON format:",
+      "syntax": "stolonctl --cluster-name {{cluster_name}} --store-backend {{store_backend}} --store-endpoints {{store_endpoints}} update --patch '{{cluster_spec}}'"
+    }
+  ]
+}

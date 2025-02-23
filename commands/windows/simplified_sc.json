@@ -1,0 +1,22 @@
+{
+  "command": "sc",
+  "description": "Communicate with the Service Control Manager and services. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/sc-query.",
+  "useCases": [
+    {
+      "description": "Show the status of a service (no service name will list all services):",
+      "syntax": "sc.exe query {{service_name}}"
+    },
+    {
+      "description": "Start a service asynchronously:",
+      "syntax": "sc.exe create {{service_name}} binpath= {{path\\to\\service_binary_file}}"
+    },
+    {
+      "description": "Stop a service asynchronously:",
+      "syntax": "sc.exe delete {{service_name}}"
+    },
+    {
+      "description": "Set the type of a service:",
+      "syntax": "sc.exe config {{service_name}} type= {{service_type}}"
+    }
+  ]
+}

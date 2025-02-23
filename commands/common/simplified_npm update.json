@@ -1,0 +1,22 @@
+{
+  "command": "npm update",
+  "description": "Update packages in the current project. More information: https://docs.npmjs.com/cli/commands/npm-update.",
+  "useCases": [
+    {
+      "description": "Update all packages in the current project:",
+      "syntax": "npm update"
+    },
+    {
+      "description": "Update a specific package in the current project:",
+      "syntax": "npm update {{package}}"
+    },
+    {
+      "description": "Update a package globally:",
+      "syntax": "npm update -g {{package}}"
+    },
+    {
+      "description": "Update multiple packages at once:",
+      "syntax": "npm update {{package1 package2 ...}}"
+    }
+  ]
+}

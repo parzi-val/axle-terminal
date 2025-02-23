@@ -1,0 +1,22 @@
+{
+  "command": "starship init",
+  "description": "Print shell integration code for starship. More information: https://starship.rs.",
+  "useCases": [
+    {
+      "description": "Print the starship integration code for the specified shell:",
+      "syntax": "starship init {{bash|elvish|fish|ion|powershell|tcsh|zsh}}"
+    },
+    {
+      "description": "Append the starship integration code to ~/.bashrc:",
+      "syntax": "starship init {{bash}} &gt;&gt; {{~/.bashrc}}"
+    },
+    {
+      "description": "Append the starship integration code to ~/.zshrc:",
+      "syntax": "starship init {{zsh}} &gt;&gt; {{~/.zshrc}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "starship init --help"
+    }
+  ]
+}

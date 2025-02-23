@@ -1,0 +1,22 @@
+{
+  "command": "systemd-stdio-bridge",
+  "description": "Implement a proxy between stdin/stdout and a D-Bus. Note: It expects to receive an open connection via stdin/stdout when started, and will create a new connection to the specified bus. More information: https://www.freedesktop.org/software/systemd/man/latest/systemd-stdio-bridge.html.",
+  "useCases": [
+    {
+      "description": "Forward stdin/stdout to the local system bus:",
+      "syntax": "systemd-stdio-bridge"
+    },
+    {
+      "description": "Forward stdin/stdout to a specific user's D-Bus:",
+      "syntax": "systemd-stdio-bridge --{{user}}"
+    },
+    {
+      "description": "Forward stdin/stdout to the local system bus within a specific container:",
+      "syntax": "systemd-stdio-bridge --machine={{mycontainer}}"
+    },
+    {
+      "description": "Forward stdin/stdout to a custom D-Bus address:",
+      "syntax": "systemd-stdio-bridge --bus-path=unix:path={{/custom/dbus/socket}}"
+    }
+  ]
+}

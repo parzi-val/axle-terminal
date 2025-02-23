@@ -1,0 +1,34 @@
+{
+  "command": "terraform plan",
+  "description": "Generate and show Terraform execution plans. More information: https://developer.hashicorp.com/terraform/cli/commands/plan.",
+  "useCases": [
+    {
+      "description": "Generate and show the execution plan in the currently directory:",
+      "syntax": "terraform plan"
+    },
+    {
+      "description": "Show a plan to destroy all remote objects that currently exist:",
+      "syntax": "terraform plan -destroy"
+    },
+    {
+      "description": "Show a plan to update the Terraform state and output values:",
+      "syntax": "terraform plan -refresh-only"
+    },
+    {
+      "description": "Specify values for input variables:",
+      "syntax": "terraform plan -var '{{name1}}={{value1}}' -var '{{name2}}={{value2}}'"
+    },
+    {
+      "description": "Focus Terraform's attention on only a subset of resources:",
+      "syntax": "terraform plan -target {{resource_type.resource_name[instance index]}}"
+    },
+    {
+      "description": "Output a plan as JSON:",
+      "syntax": "terraform plan -json"
+    },
+    {
+      "description": "Write a plan to a specific file:",
+      "syntax": "terraform plan -no-color &gt; {{path/to/file}}"
+    }
+  ]
+}

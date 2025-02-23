@@ -1,0 +1,30 @@
+{
+  "command": "railway",
+  "description": "Connect code to a Railway project. More information: https://railway.app/.",
+  "useCases": [
+    {
+      "description": "Login to a Railway account:",
+      "syntax": "railway login"
+    },
+    {
+      "description": "Link to an existing Project under a Railway account or team:",
+      "syntax": "railway link {{projectId}}"
+    },
+    {
+      "description": "Create a new project:",
+      "syntax": "railway init"
+    },
+    {
+      "description": "Run a local command using variables from the active environment:",
+      "syntax": "railway run {{cmd}}"
+    },
+    {
+      "description": "Deploy the linked project directory (if running from a subdirectory, the project root is still deployed):",
+      "syntax": "railway up"
+    },
+    {
+      "description": "Open an interactive shell to a database:",
+      "syntax": "railway connect"
+    }
+  ]
+}

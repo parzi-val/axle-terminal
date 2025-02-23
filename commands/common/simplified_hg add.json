@@ -1,0 +1,26 @@
+{
+  "command": "hg add",
+  "description": "Adds specified files to the staging area for the next commit in Mercurial. More information: https://www.mercurial-scm.org/doc/hg.1.html#add.",
+  "useCases": [
+    {
+      "description": "Add files or directories to the staging area:",
+      "syntax": "hg add {{path/to/file}}"
+    },
+    {
+      "description": "Add all unstaged files matching a specified pattern:",
+      "syntax": "hg add --include {{pattern}}"
+    },
+    {
+      "description": "Add all unstaged files, excluding those that match a specified pattern:",
+      "syntax": "hg add --exclude {{pattern}}"
+    },
+    {
+      "description": "Recursively add sub-repositories:",
+      "syntax": "hg add --subrepos"
+    },
+    {
+      "description": "Perform a test-run without performing any actions:",
+      "syntax": "hg add --dry-run"
+    }
+  ]
+}

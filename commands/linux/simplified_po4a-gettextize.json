@@ -1,0 +1,18 @@
+{
+  "command": "po4a-gettextize",
+  "description": "Convert a file to a PO file. More information: https://po4a.org/man/man1/po4a-gettextize.1.php.",
+  "useCases": [
+    {
+      "description": "Convert a text file to PO file:",
+      "syntax": "po4a-gettextize --format {{text}} --master {{path/to/master.txt}} --po {{path/to/result.po}}"
+    },
+    {
+      "description": "List all available formats:",
+      "syntax": "po4a-gettextize --help-format"
+    },
+    {
+      "description": "Convert a text file along with a translated document to a PO file (-l option can be provided multiple times):",
+      "syntax": "po4a-gettextize --format {{text}} --master {{path/to/master.txt}} --localized {{path/to/translated.txt}} --po {{path/to/result.po}}"
+    }
+  ]
+}

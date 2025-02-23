@@ -1,0 +1,22 @@
+{
+  "command": "paccache",
+  "description": "A pacman cache cleaning utility. More information: https://manned.org/paccache.",
+  "useCases": [
+    {
+      "description": "Remove all but the 3 most recent package versions from the pacman cache:",
+      "syntax": "paccache -r"
+    },
+    {
+      "description": "Set the number of package versions to keep:",
+      "syntax": "paccache -rk {{num_versions}}"
+    },
+    {
+      "description": "Perform a dry-run and show the number of candidate packages for deletion:",
+      "syntax": "paccache -d"
+    },
+    {
+      "description": "Move candidate packages to a directory instead of deleting them:",
+      "syntax": "paccache -m {{path/to/directory}}"
+    }
+  ]
+}

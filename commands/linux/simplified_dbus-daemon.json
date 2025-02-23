@@ -1,0 +1,30 @@
+{
+  "command": "dbus-daemon",
+  "description": "The D-Bus message daemon, allowing multiple programs to exchange messages. More information: https://www.freedesktop.org/wiki/Software/dbus/.",
+  "useCases": [
+    {
+      "description": "Run the daemon with a configuration file:",
+      "syntax": "dbus-daemon --config-file {{path/to/file}}"
+    },
+    {
+      "description": "Run the daemon with the standard per-login-session message bus configuration:",
+      "syntax": "dbus-daemon --session"
+    },
+    {
+      "description": "Run the daemon with the standard systemwide message bus configuration:",
+      "syntax": "dbus-daemon --system"
+    },
+    {
+      "description": "Set the address to listen on and override the configuration value for it:",
+      "syntax": "dbus-daemon --address {{address}}"
+    },
+    {
+      "description": "Output the process ID to stdout:",
+      "syntax": "dbus-daemon --print-pid"
+    },
+    {
+      "description": "Force the message bus to write to the system log for messages:",
+      "syntax": "dbus-daemon --syslog"
+    }
+  ]
+}

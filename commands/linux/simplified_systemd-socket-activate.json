@@ -1,0 +1,26 @@
+{
+  "command": "systemd-socket-activate",
+  "description": "Socket activation for systemd services. More information: https://www.freedesktop.org/software/systemd/man/latest/systemd-socket-activate.html.",
+  "useCases": [
+    {
+      "description": "Activate a service when a specific socket is connected:",
+      "syntax": "systemd-socket-activate {{path/to/socket.service}}"
+    },
+    {
+      "description": "Activate multiple sockets for a service:",
+      "syntax": "systemd-socket-activate {{path/to/socket1.service}} {{path/to/socket2.service}}"
+    },
+    {
+      "description": "Pass environment variables to the service being activated:",
+      "syntax": "{{SYSTEMD_SOCKET_ACTIVATION=1}} systemd-socket-activate {{path/to/socket.service}}"
+    },
+    {
+      "description": "Activate a service along with a notification socket:",
+      "syntax": "systemd-socket-activate {{path/to/socket.socket}} {{path/to/service.service}}"
+    },
+    {
+      "description": "Activate a service with a specified port:",
+      "syntax": "systemd-socket-activate {{path/to/socket.service}} -l {{8080}}"
+    }
+  ]
+}

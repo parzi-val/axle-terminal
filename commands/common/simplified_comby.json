@@ -1,0 +1,22 @@
+{
+  "command": "comby",
+  "description": "Tool for structural code search and replace that supports many languages. More information: https://github.com/comby-tools/comby.",
+  "useCases": [
+    {
+      "description": "Match and rewrite templates, and print changes:",
+      "syntax": "comby '{{assert_eq!(:[a], :[b])}}' '{{assert_eq!(:[b], :[a])}}' {{.rs}}"
+    },
+    {
+      "description": "Match and rewrite with rewrite properties:",
+      "syntax": "comby '{{assert_eq!(:[a], :[b])}}' '{{assert_eq!(:[b].Capitalize, :[a])}}' {{.rs}}"
+    },
+    {
+      "description": "Match and rewrite in-place:",
+      "syntax": "comby -in-place '{{match_pattern}}' '{{rewrite_pattern}}'"
+    },
+    {
+      "description": "Only perform matching and print matches:",
+      "syntax": "comby -match-only '{{match_pattern}}' &quot;&quot;"
+    }
+  ]
+}

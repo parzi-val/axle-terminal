@@ -1,0 +1,22 @@
+{
+  "command": "ignite",
+  "description": "A CLI for React Native boilerplates, plugins, generators, and more. More information: https://infinite.red/ignite.",
+  "useCases": [
+    {
+      "description": "Create a new React Native project:",
+      "syntax": "ignite new {{project_name}}"
+    },
+    {
+      "description": "Generate file from a plugin:",
+      "syntax": "ignite generate {{plugin_name}} {{path/to/file}}"
+    },
+    {
+      "description": "Add an Ignite plugin to the project:",
+      "syntax": "ignite add {{plugin_name}}"
+    },
+    {
+      "description": "Remove an Ignite plugin from the project:",
+      "syntax": "ignite remove {{plugin_name}}"
+    }
+  ]
+}

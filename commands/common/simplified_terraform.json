@@ -1,0 +1,30 @@
+{
+  "command": "terraform",
+  "description": "Create and deploy infrastructure as code to cloud providers. More information: https://www.terraform.io/.",
+  "useCases": [
+    {
+      "description": "Initialize a new or existing Terraform configuration:",
+      "syntax": "terraform init"
+    },
+    {
+      "description": "Verify that the configuration files are syntactically valid:",
+      "syntax": "terraform validate"
+    },
+    {
+      "description": "Format configuration according to Terraform language style conventions:",
+      "syntax": "terraform fmt"
+    },
+    {
+      "description": "Generate and show an execution plan:",
+      "syntax": "terraform plan"
+    },
+    {
+      "description": "Build or change infrastructure:",
+      "syntax": "terraform apply"
+    },
+    {
+      "description": "Destroy Terraform-managed infrastructure:",
+      "syntax": "terraform destroy"
+    }
+  ]
+}

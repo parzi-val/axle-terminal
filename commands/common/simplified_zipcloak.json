@@ -1,0 +1,18 @@
+{
+  "command": "zipcloak",
+  "description": "Encrypt the contents within a Zip archive. More information: https://manned.org/zipcloak.",
+  "useCases": [
+    {
+      "description": "Encrypt the contents of a Zip archive:",
+      "syntax": "zipcloak {{path/to/archive.zip}}"
+    },
+    {
+      "description": "[d]ecrypt the contents of a Zip archive:",
+      "syntax": "zipcloak -d {{path/to/archive.zip}}"
+    },
+    {
+      "description": "[O]utput the encrypted contents into a new Zip archive:",
+      "syntax": "zipcloak {{path/to/archive.zip}} -O {{path/to/encrypted.zip}}"
+    }
+  ]
+}

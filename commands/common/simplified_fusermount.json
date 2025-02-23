@@ -1,0 +1,18 @@
+{
+  "command": "fusermount",
+  "description": "Mount and unmount FUSE filesystems. More information: https://manned.org/fusermount.",
+  "useCases": [
+    {
+      "description": "Unmount a FUSE filesystem:",
+      "syntax": "fusermount -u {{path/to/mount_point}}"
+    },
+    {
+      "description": "Unmount a FUSE filesystem as soon as it becomes unused:",
+      "syntax": "fusermount -z {{path/to/mount_point}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "fusermount --version"
+    }
+  ]
+}

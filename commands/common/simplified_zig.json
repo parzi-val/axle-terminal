@@ -1,0 +1,38 @@
+{
+  "command": "zig",
+  "description": "The Zig compiler and toolchain. More information: https://ziglang.org.",
+  "useCases": [
+    {
+      "description": "Compile the project in the current directory:",
+      "syntax": "zig build"
+    },
+    {
+      "description": "Compile and run the project in the current directory:",
+      "syntax": "zig build run"
+    },
+    {
+      "description": "Initialize a zig build project with library and executable:",
+      "syntax": "zig init"
+    },
+    {
+      "description": "Create and run a test build:",
+      "syntax": "zig test {{path/to/file.zig}}"
+    },
+    {
+      "description": "Cross compile, build and run a project for x86_64 architecture and windows operating system:",
+      "syntax": "zig build run -fwine -Dtarget=x86_64-windows"
+    },
+    {
+      "description": "Reformat Zig source into canonical form:",
+      "syntax": "zig fmt {{path/to/file.zig}}"
+    },
+    {
+      "description": "Translate a C file to zig:",
+      "syntax": "zig translate-c -lc {{path/to/file.c}}"
+    },
+    {
+      "description": "Use Zig as a drop-in C++ compiler:",
+      "syntax": "zig c++ {{path/to/file.cpp}}"
+    }
+  ]
+}

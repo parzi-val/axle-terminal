@@ -1,0 +1,34 @@
+{
+  "command": "svgr",
+  "description": "Transform SVGs into React components. More information: https://react-svgr.com.",
+  "useCases": [
+    {
+      "description": "Transform a SVG file into a React component to stdout:",
+      "syntax": "svgr -- {{path/to/file.svg}}"
+    },
+    {
+      "description": "Transform a SVG file into a React component using TypeScript to stdout:",
+      "syntax": "svgr --typescript -- {{path/to/file.svg}}"
+    },
+    {
+      "description": "Transform a SVG file into a React component using JSX transform to stdout:",
+      "syntax": "svgr --jsx-runtime automatic -- {{path/to/file.svg}}"
+    },
+    {
+      "description": "Transform all SVG files from a directory to React components into a specific directory:",
+      "syntax": "svgr --out-dir {{path/to/output_directory}} {{path/to/input_directory}}"
+    },
+    {
+      "description": "Transform all SVG files from a directory to React components into a specific directory skipping already transformed files:",
+      "syntax": "svgr --out-dir {{path/to/output_directory}} --ignore-existing {{path/to/input_directory}}"
+    },
+    {
+      "description": "Transform all SVG files from a directory to React components into a specific directory using a specific case for filenames:",
+      "syntax": "svgr --out-dir {{path/to/output_directory}} --filename-case {{camel|kebab|pascal}} {{path/to/input_directory}}"
+    },
+    {
+      "description": "Transform all SVG files from a directory to React components into a specific directory without generating an index file:",
+      "syntax": "svgr --out-dir {{path/to/output_directory}} --no-index {{path/to/input_directory}}"
+    }
+  ]
+}

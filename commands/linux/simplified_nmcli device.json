@@ -1,0 +1,22 @@
+{
+  "command": "nmcli device",
+  "description": "Manage network interfaces and establish new Wi-Fi connections using NetworkManager. This subcommand can also be called with nmcli d. More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmcli.html.",
+  "useCases": [
+    {
+      "description": "Print the statuses of all network interfaces:",
+      "syntax": "nmcli device status"
+    },
+    {
+      "description": "Print the available Wi-Fi access points:",
+      "syntax": "nmcli device wifi"
+    },
+    {
+      "description": "Connect to a Wi-Fi network with the specified SSID (you will be prompted for a password):",
+      "syntax": "nmcli --ask device wifi connect {{ssid}}"
+    },
+    {
+      "description": "Print the password and QR code for the current Wi-Fi network:",
+      "syntax": "nmcli device wifi show-password"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "termdown",
+  "description": "Countdown timer and stopwatch for the command-line. More information: https://github.com/trehn/termdown.",
+  "useCases": [
+    {
+      "description": "Start a stopwatch:",
+      "syntax": "termdown"
+    },
+    {
+      "description": "Start a 1 minute and 30 seconds countdown:",
+      "syntax": "termdown {{1m30s}}"
+    },
+    {
+      "description": "Start a 1 minute 30 seconds countdown with blinking the terminal at the end:",
+      "syntax": "termdown {{1m30s}} --blink"
+    },
+    {
+      "description": "Show a title above countdown:",
+      "syntax": "termdown {{1m30s}} --title &quot;{{Interesting title}}&quot;"
+    },
+    {
+      "description": "Display current time:",
+      "syntax": "termdown --time"
+    }
+  ]
+}

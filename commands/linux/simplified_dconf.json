@@ -1,0 +1,30 @@
+{
+  "command": "dconf",
+  "description": "Manage dconf databases. See also: dconf-read, dconf-reset, dconf-write, gsettings. More information: https://manned.org/dconf.",
+  "useCases": [
+    {
+      "description": "Print a specific key value:",
+      "syntax": "dconf read {{/path/to/key}}"
+    },
+    {
+      "description": "Print a specific path sub-directories and sub-keys:",
+      "syntax": "dconf list {{/path/to/directory/}}"
+    },
+    {
+      "description": "Write a specific key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;{{value}}&quot;"
+    },
+    {
+      "description": "Reset a specific key value:",
+      "syntax": "dconf reset {{/path/to/key}}"
+    },
+    {
+      "description": "Watch a specific key/directory for changes:",
+      "syntax": "dconf watch {{/path/to/key|/path/to/directory/}}"
+    },
+    {
+      "description": "Dump a specific directory in INI file format:",
+      "syntax": "dconf dump {{/path/to/directory/}}"
+    }
+  ]
+}

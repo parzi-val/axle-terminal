@@ -1,0 +1,34 @@
+{
+  "command": "R",
+  "description": "R language interpreter. More information: https://www.r-project.org.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "R"
+    },
+    {
+      "description": "Start R in vanilla mode (i.e. a blank session that doesn't save the workspace at the end):",
+      "syntax": "R --vanilla"
+    },
+    {
+      "description": "Execute a file:",
+      "syntax": "R -f {{path/to/file.R}}"
+    },
+    {
+      "description": "Execute an R expression and then exit:",
+      "syntax": "R -e {{expr}}"
+    },
+    {
+      "description": "Run R with a debugger:",
+      "syntax": "R -d {{debugger}}"
+    },
+    {
+      "description": "Check R packages from package sources:",
+      "syntax": "R CMD check {{path/to/package_source}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "R --version"
+    }
+  ]
+}

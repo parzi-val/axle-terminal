@@ -1,0 +1,30 @@
+{
+  "command": "ykman",
+  "description": "YubiKey Manager - configure YubiKeys. If there are multiple YubiKeys connected, you have to add --device serial_number before a subcommand. More information: https://docs.yubico.com/software/yubikey/tools/ykman/index.html.",
+  "useCases": [
+    {
+      "description": "Display general information about a YubiKey (serial number, firmware version, capabilities, etc.):",
+      "syntax": "ykman info"
+    },
+    {
+      "description": "List connected YubiKeys with short, one-line descriptions (including the serial number):",
+      "syntax": "ykman list"
+    },
+    {
+      "description": "View documentation for enabling and disabling applications:",
+      "syntax": "tldr ykman config"
+    },
+    {
+      "description": "View documentation for managing the FIDO applications:",
+      "syntax": "tldr ykman fido"
+    },
+    {
+      "description": "View documentation for managing the OATH application:",
+      "syntax": "tldr ykman oath"
+    },
+    {
+      "description": "View documentation for managing the OpenPGP application:",
+      "syntax": "tldr ykman openpgp"
+    }
+  ]
+}

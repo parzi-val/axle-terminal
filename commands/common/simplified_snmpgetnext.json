@@ -1,0 +1,14 @@
+{
+  "command": "snmpgetnext",
+  "description": "Query the next value in the MIB tree. More information: https://manned.org/snmpgetnext.",
+  "useCases": [
+    {
+      "description": "Request the next value from the SNMP agent:",
+      "syntax": "snmpget -v {{version}} -c {{community}} {{ip}} {{oid}}"
+    },
+    {
+      "description": "Display the full Object Identifier (OID) path:",
+      "syntax": "snmpget -v {{version}} -c {{community}} -O f {{ip}} {{oid}}"
+    }
+  ]
+}

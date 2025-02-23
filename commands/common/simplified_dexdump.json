@@ -1,0 +1,22 @@
+{
+  "command": "dexdump",
+  "description": "Display information about Android DEX files. More information: https://manned.org/dexdump.",
+  "useCases": [
+    {
+      "description": "Extract classes and methods from an APK file:",
+      "syntax": "dexdump {{path/to/file.apk}}"
+    },
+    {
+      "description": "Display header information of DEX files contained in an APK file:",
+      "syntax": "dexdump -f {{path/to/file.apk}}"
+    },
+    {
+      "description": "Display the dis-assembled output of executable sections:",
+      "syntax": "dexdump -d {{path/to/file.apk}}"
+    },
+    {
+      "description": "Output results to a file:",
+      "syntax": "dexdump -o {{path/to/file}} {{path/to/file.apk}}"
+    }
+  ]
+}

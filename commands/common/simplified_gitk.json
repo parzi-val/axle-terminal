@@ -1,0 +1,26 @@
+{
+  "command": "gitk",
+  "description": "Browse Git repositories graphically. See also: git-gui, git-cola, tig. More information: https://git-scm.com/docs/gitk.",
+  "useCases": [
+    {
+      "description": "Show the repository browser for the current Git repository:",
+      "syntax": "gitk"
+    },
+    {
+      "description": "Show repository browser for a specific file or directory:",
+      "syntax": "gitk {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Show commits made since 1 week ago:",
+      "syntax": "gitk --since=&quot;{{1 week ago}}&quot;"
+    },
+    {
+      "description": "Show commits older than 1/1/2016:",
+      "syntax": "gitk --until=&quot;{{1/1/2015}}&quot;"
+    },
+    {
+      "description": "Show at most 100 changes in all branches:",
+      "syntax": "gitk --max-count=100 --all"
+    }
+  ]
+}

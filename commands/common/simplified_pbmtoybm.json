@@ -1,0 +1,10 @@
+{
+  "command": "pbmtoybm",
+  "description": "Convert a PBM file to a Bennet Yee \"face\" file. More information: https://netpbm.sourceforge.net/doc/pbmtoybm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image file to YBM:",
+      "syntax": "pbmtoybm {{path/to/input_file.pbm}} &gt; {{path/to/output_file.ybm}}"
+    }
+  ]
+}

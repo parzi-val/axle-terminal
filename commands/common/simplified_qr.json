@@ -1,0 +1,14 @@
+{
+  "command": "qr",
+  "description": "Generate QR codes in the terminal with ANSI VT-100 escape codes. More information: https://github.com/lincolnloop/python-qrcode/.",
+  "useCases": [
+    {
+      "description": "Generate a QR code:",
+      "syntax": "echo &quot;{{data}}&quot; | qr"
+    },
+    {
+      "description": "Specify the error correction level (defaults to M):",
+      "syntax": "echo &quot;{{data}}&quot; | qr --error-correction={{L|M|Q|H}}"
+    }
+  ]
+}

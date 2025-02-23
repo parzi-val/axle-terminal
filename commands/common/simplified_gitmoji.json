@@ -1,0 +1,34 @@
+{
+  "command": "gitmoji",
+  "description": "Interactively insert emojis on commits. More information: https://github.com/carloscuesta/gitmoji-cli.",
+  "useCases": [
+    {
+      "description": "Start the commit wizard:",
+      "syntax": "gitmoji --commit"
+    },
+    {
+      "description": "Initialize the Git hook (so gitmoji will be run every time git commit is run):",
+      "syntax": "gitmoji --init"
+    },
+    {
+      "description": "Remove the Git hook:",
+      "syntax": "gitmoji --remove"
+    },
+    {
+      "description": "List all available emojis and their descriptions:",
+      "syntax": "gitmoji --list"
+    },
+    {
+      "description": "Search emoji list for a list of keywords:",
+      "syntax": "gitmoji --search {{keyword1}} {{keyword2}}"
+    },
+    {
+      "description": "Update cached list of emojis from main repository:",
+      "syntax": "gitmoji --update"
+    },
+    {
+      "description": "Configure global preferences:",
+      "syntax": "gitmoji --config"
+    }
+  ]
+}

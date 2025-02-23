@@ -1,0 +1,22 @@
+{
+  "command": "lualatex",
+  "description": "An extended version of TeX using Lua to compile. More information: https://manned.org/lualatex.1.",
+  "useCases": [
+    {
+      "description": "Start texlua to act as a Lua interpreter:",
+      "syntax": "lualatex"
+    },
+    {
+      "description": "Compile a Tex file to PDF:",
+      "syntax": "lualatex {{path/to/file.tex}}"
+    },
+    {
+      "description": "Compile a Tex file without error interruption:",
+      "syntax": "lualatex -interaction nonstopmode {{path/to/file.tex}}"
+    },
+    {
+      "description": "Compile a Tex file with a specific output file name:",
+      "syntax": "lualatex -jobname={{filename}} {{path/to/file.tex}}"
+    }
+  ]
+}

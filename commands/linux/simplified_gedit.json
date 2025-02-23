@@ -1,0 +1,22 @@
+{
+  "command": "gedit",
+  "description": "Text editor of the GNOME Desktop project. More information: https://help.gnome.org/users/gedit/stable/.",
+  "useCases": [
+    {
+      "description": "Open a text file:",
+      "syntax": "gedit {{path/to/file}}"
+    },
+    {
+      "description": "Open multiple text files:",
+      "syntax": "gedit {{file1 file2 ...}}"
+    },
+    {
+      "description": "Open a text file with a specific encoding:",
+      "syntax": "gedit --encoding {{UTF-8}} {{path/to/file}}"
+    },
+    {
+      "description": "Display a list of supported encodings:",
+      "syntax": "gedit --list-encodings"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "az account",
+  "description": "Manage Azure subscription information. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/account.",
+  "useCases": [
+    {
+      "description": "List all subscriptions for the logged in account:",
+      "syntax": "az account list"
+    },
+    {
+      "description": "Set a subscription to be the currently active subscription:",
+      "syntax": "az account set --subscription {{subscription_id}}"
+    },
+    {
+      "description": "List supported regions for the currently active subscription:",
+      "syntax": "az account list-locations"
+    },
+    {
+      "description": "Print an access token to be used with MS Graph API:",
+      "syntax": "az account get-access-token --resource-type {{ms-graph}}"
+    },
+    {
+      "description": "Print details of the currently active subscription in a specific format:",
+      "syntax": "az account show --output {{json|tsv|table|yaml}}"
+    }
+  ]
+}

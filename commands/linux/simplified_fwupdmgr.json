@@ -1,0 +1,22 @@
+{
+  "command": "fwupdmgr",
+  "description": "Update device firmware, including UEFI, using fwupd. More information: https://fwupd.org/.",
+  "useCases": [
+    {
+      "description": "Display all devices detected by fwupd:",
+      "syntax": "fwupdmgr get-devices"
+    },
+    {
+      "description": "Download the latest firmware metadata from LVFS:",
+      "syntax": "fwupdmgr refresh"
+    },
+    {
+      "description": "List the updates available for devices on your system:",
+      "syntax": "fwupdmgr get-updates"
+    },
+    {
+      "description": "Install firmware updates:",
+      "syntax": "fwupdmgr update"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "bmptoppm",
+  "description": "This command has been superseded by bmptopnm. More information: https://netpbm.sourceforge.net/doc/bmptoppm.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr bmptopnm"
+    }
+  ]
+}

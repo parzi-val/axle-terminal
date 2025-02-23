@@ -1,0 +1,14 @@
+{
+  "command": "gst-inspect-1.0",
+  "description": "Print information on GStreamer plugins. More information: https://gstreamer.freedesktop.org/documentation/tools/gst-inspect.html?gi-language=c.",
+  "useCases": [
+    {
+      "description": "Print information on a plugin:",
+      "syntax": "gst-inspect-1.0 {{plugin}}"
+    },
+    {
+      "description": "List hardware transcoding capabilities of your device:",
+      "syntax": "gst-inspect-1.0 {{vaapi|nvcodec}}"
+    }
+  ]
+}

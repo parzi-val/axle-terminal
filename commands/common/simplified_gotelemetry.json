@@ -1,0 +1,26 @@
+{
+  "command": "gotelemetry",
+  "description": "Manage Go telemetry data and settings. More information: https://telemetry.go.dev/privacy#collection.",
+  "useCases": [
+    {
+      "description": "Enable telemetry uploading:",
+      "syntax": "gotelemetry on"
+    },
+    {
+      "description": "Disable telemetry uploading:",
+      "syntax": "gotelemetry off"
+    },
+    {
+      "description": "Run a Web Viewer for local telemetry data:",
+      "syntax": "gotelemetry view"
+    },
+    {
+      "description": "Print the current telemetry environment:",
+      "syntax": "gotelemetry env"
+    },
+    {
+      "description": "Display help for a specific subcommand:",
+      "syntax": "gotelemetry help {{subcommand}}"
+    }
+  ]
+}

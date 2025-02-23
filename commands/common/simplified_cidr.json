@@ -1,0 +1,26 @@
+{
+  "command": "cidr",
+  "description": "Simplifies IPv4/IPv6 CIDR network prefix management with counting, overlap checking, explanation, and subdivision. More information: https://github.com/bschaatsbergen/cidr.",
+  "useCases": [
+    {
+      "description": "Explain a CIDR range:",
+      "syntax": "cidr explain {{10.0.0.0/16}}"
+    },
+    {
+      "description": "Check whether an address belongs to a CIDR range:",
+      "syntax": "cidr contains {{10.0.0.0/16}} {{10.0.14.5}}"
+    },
+    {
+      "description": "Get a count of all addresses in a CIDR range:",
+      "syntax": "cidr count {{10.0.0.0/16}}"
+    },
+    {
+      "description": "Check whether two CIDR ranges overlap:",
+      "syntax": "cidr overlaps {{10.0.0.0/16}} {{10.0.14.0/22}}"
+    },
+    {
+      "description": "Divide a CIDR range into a specific number of networks:",
+      "syntax": "cidr divide {{10.0.0.0/16}} {{9}}"
+    }
+  ]
+}

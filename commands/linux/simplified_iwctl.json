@@ -1,0 +1,30 @@
+{
+  "command": "iwctl",
+  "description": "Control the iwd network supplicant. More information: https://archive.kernel.org/oldwiki/iwd.wiki.kernel.org/gettingstarted.html.",
+  "useCases": [
+    {
+      "description": "Start the interactive mode, in this mode you can enter the commands directly, with autocompletion:",
+      "syntax": "iwctl"
+    },
+    {
+      "description": "Call general help:",
+      "syntax": "iwctl --help"
+    },
+    {
+      "description": "Display your Wi-Fi stations:",
+      "syntax": "iwctl station list"
+    },
+    {
+      "description": "Start looking for networks with a station:",
+      "syntax": "iwctl station {{station}} scan"
+    },
+    {
+      "description": "Display the networks found by a station:",
+      "syntax": "iwctl station {{station}} get-networks"
+    },
+    {
+      "description": "Connect to a network with a station, if credentials are needed they will be asked:",
+      "syntax": "iwctl station {{station}} connect {{network_name}}"
+    }
+  ]
+}

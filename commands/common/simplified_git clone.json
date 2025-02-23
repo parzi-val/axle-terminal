@@ -1,0 +1,38 @@
+{
+  "command": "git clone",
+  "description": "Clone an existing repository. More information: https://git-scm.com/docs/git-clone.",
+  "useCases": [
+    {
+      "description": "Clone an existing repository into a new directory (the default directory is the repository name):",
+      "syntax": "git clone {{remote_repository_location}} {{path/to/directory}}"
+    },
+    {
+      "description": "Clone an existing repository and its submodules:",
+      "syntax": "git clone --recursive {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone only the .git directory of an existing repository:",
+      "syntax": "git clone --no-checkout {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone a local repository:",
+      "syntax": "git clone --local {{path/to/local/repository}}"
+    },
+    {
+      "description": "Clone quietly:",
+      "syntax": "git clone --quiet {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone an existing repository only fetching the 10 most recent commits on the default branch (useful to save time):",
+      "syntax": "git clone --depth {{10}} {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone an existing repository only fetching a specific branch:",
+      "syntax": "git clone --branch {{name}} --single-branch {{remote_repository_location}}"
+    },
+    {
+      "description": "Clone an existing repository using a specific SSH command:",
+      "syntax": "git clone --config core.sshCommand=&quot;{{ssh -i path/to/private_ssh_key}}&quot; {{remote_repository_location}}"
+    }
+  ]
+}

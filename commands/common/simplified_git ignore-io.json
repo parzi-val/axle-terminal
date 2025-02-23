@@ -1,0 +1,14 @@
+{
+  "command": "git ignore-io",
+  "description": "Generate .gitignore files from predefined templates. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-ignore-io.",
+  "useCases": [
+    {
+      "description": "List available templates:",
+      "syntax": "git ignore-io list"
+    },
+    {
+      "description": "Generate a .gitignore template:",
+      "syntax": "git ignore-io {{item_a,item_b,item_n}}"
+    }
+  ]
+}

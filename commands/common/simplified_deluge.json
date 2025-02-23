@@ -1,0 +1,22 @@
+{
+  "command": "deluge",
+  "description": "A command-line BitTorrent client. More information: https://deluge-torrent.org.",
+  "useCases": [
+    {
+      "description": "Download a torrent:",
+      "syntax": "deluge {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Download a torrent using a specific configuration file:",
+      "syntax": "deluge -c {{path/to/configuration_file}} {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Download a torrent and launch the specified user interface:",
+      "syntax": "deluge -u {{gtk|web|console}} {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Download a torrent and output the log to a file:",
+      "syntax": "deluge -l {{path/to/log_file}} {{url|magnet|path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "ng",
+  "description": "Create and manage Angular applications. More information: https://angular.io/cli.",
+  "useCases": [
+    {
+      "description": "Create a new Angular application inside a directory:",
+      "syntax": "ng new {{project_name}}"
+    },
+    {
+      "description": "Add a new component to one's application:",
+      "syntax": "ng generate component {{component_name}}"
+    },
+    {
+      "description": "Add a new class to one's application:",
+      "syntax": "ng generate class {{class_name}}"
+    },
+    {
+      "description": "Add a new directive to one's application:",
+      "syntax": "ng generate directive {{directive_name}}"
+    },
+    {
+      "description": "Run the application with the following command in its root directory:",
+      "syntax": "ng serve"
+    },
+    {
+      "description": "Build the application:",
+      "syntax": "ng build"
+    },
+    {
+      "description": "Run unit tests:",
+      "syntax": "ng test"
+    },
+    {
+      "description": "Display the version of your current Angular installation:",
+      "syntax": "ng version"
+    }
+  ]
+}

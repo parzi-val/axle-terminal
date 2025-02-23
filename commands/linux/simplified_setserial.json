@@ -1,0 +1,22 @@
+{
+  "command": "setserial",
+  "description": "Read and modify serial port information. More information: https://manned.org/setserial.",
+  "useCases": [
+    {
+      "description": "Print all information about a specific serial device:",
+      "syntax": "setserial -a {{/dev/cuaN}}"
+    },
+    {
+      "description": "Print the configuration summary of a specific serial device (useful for printing during bootup process):",
+      "syntax": "setserial -b {{device}}"
+    },
+    {
+      "description": "Set a specific configuration parameter to a device:",
+      "syntax": "sudo setserial {{device}} {{parameter}}"
+    },
+    {
+      "description": "Print the configuration of a list of devices:",
+      "syntax": "setserial -g {{device1 device2 ...}}"
+    }
+  ]
+}

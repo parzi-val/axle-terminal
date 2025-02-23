@@ -1,0 +1,30 @@
+{
+  "command": "sam",
+  "description": "AWS Serverless Application Model (SAM) CLI. More information: https://github.com/awslabs/aws-sam-cli.",
+  "useCases": [
+    {
+      "description": "Initialize a serverless application:",
+      "syntax": "sam init"
+    },
+    {
+      "description": "Initialize a serverless application with a specific runtime:",
+      "syntax": "sam init --runtime {{python3.7}}"
+    },
+    {
+      "description": "Package a SAM application:",
+      "syntax": "sam package"
+    },
+    {
+      "description": "Build your Lambda function code:",
+      "syntax": "sam build"
+    },
+    {
+      "description": "Run your serverless application locally:",
+      "syntax": "sam local start-api"
+    },
+    {
+      "description": "Deploy an AWS SAM application:",
+      "syntax": "sam deploy"
+    }
+  ]
+}

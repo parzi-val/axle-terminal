@@ -1,0 +1,14 @@
+{
+  "command": "kotlin",
+  "description": "Kotlin application launcher. More information: https://kotlinlang.org.",
+  "useCases": [
+    {
+      "description": "Run a jar file:",
+      "syntax": "kotlin {{filename.jar}}"
+    },
+    {
+      "description": "Display Kotlin and JVM version:",
+      "syntax": "kotlin -version"
+    }
+  ]
+}

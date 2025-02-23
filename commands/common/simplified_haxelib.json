@@ -1,0 +1,34 @@
+{
+  "command": "haxelib",
+  "description": "Haxe Library Manager. More information: https://lib.haxe.org/.",
+  "useCases": [
+    {
+      "description": "Search for a Haxe library:",
+      "syntax": "haxelib search {{keyword}}"
+    },
+    {
+      "description": "Install a Haxe library:",
+      "syntax": "haxelib install {{libname}}"
+    },
+    {
+      "description": "Install a specific version of a Haxe library:",
+      "syntax": "haxelib install {{libname}} {{version}}"
+    },
+    {
+      "description": "Upgrade all installed Haxe libraries:",
+      "syntax": "haxelib upgrade"
+    },
+    {
+      "description": "Install the development version of a library from a Git repository:",
+      "syntax": "haxelib git {{libname}} {{git_url}}"
+    },
+    {
+      "description": "Uninstall a Haxe library:",
+      "syntax": "haxelib remove {{libname}}"
+    },
+    {
+      "description": "Print a tree of locally installed Haxe libraries:",
+      "syntax": "haxelib list"
+    }
+  ]
+}

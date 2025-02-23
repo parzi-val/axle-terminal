@@ -1,0 +1,26 @@
+{
+  "command": "sqfstar",
+  "description": "Create a squashfs filesystem from a tar archive. More information: https://manned.org/sqfstar.",
+  "useCases": [
+    {
+      "description": "Create a squashfs filesystem (compressed using gzip by default) from an uncompressed tar archive:",
+      "syntax": "sqfstar {{filesystem.squashfs}} &lt; {{archive.tar}}"
+    },
+    {
+      "description": "Create a squashfs filesystem from a tar archive compressed with gzip, and [comp]ress the filesystem using a specific algorithm:",
+      "syntax": "zcat {{archive.tar.gz}} | sqfstar -comp {{gzip|lzo|lz4|xz|zstd|lzma}} {{filesystem.squashfs}}"
+    },
+    {
+      "description": "Create a squashfs filesystem from a tar archive compressed with xz, excluding some of the files:",
+      "syntax": "xzcat {{archive.tar.xz}} | sqfstar {{filesystem.squashfs}} {{file1 file2 ...}}"
+    },
+    {
+      "description": "Create a squashfs filesystem from a tar archive compressed with zstd, excluding files ending with .gz:",
+      "syntax": "zstdcat {{archive.tar.zst}} | sqfstar {{filesystem.squashfs}} &quot;{{*.gz}}&quot;"
+    },
+    {
+      "description": "Create a squashfs filesystem from a tar archive compressed with lz4, excluding files matching a regular expression:",
+      "syntax": "lz4cat {{archive.tar.lz4}} | sqfstar {{filesystem.squashfs}} -regex &quot;{{regular_expression}}&quot;"
+    }
+  ]
+}

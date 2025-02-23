@@ -1,0 +1,26 @@
+{
+  "command": "middleman",
+  "description": "Static site generator written in Ruby. More information: https://middlemanapp.com/.",
+  "useCases": [
+    {
+      "description": "Create a new Middleman project:",
+      "syntax": "middleman init &quot;{{project_name}}&quot;"
+    },
+    {
+      "description": "Start local server for current project on port 4567:",
+      "syntax": "middleman server"
+    },
+    {
+      "description": "Start local server for current project on a specified port:",
+      "syntax": "middleman server -p &quot;{{port}}&quot;"
+    },
+    {
+      "description": "Build the project in the current directory to prepare for deployment:",
+      "syntax": "bundle exec middleman build"
+    },
+    {
+      "description": "Deploy the Middleman project in the current directory:",
+      "syntax": "middleman deploy"
+    }
+  ]
+}

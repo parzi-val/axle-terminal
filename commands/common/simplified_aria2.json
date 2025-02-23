@@ -1,0 +1,10 @@
+{
+  "command": "aria2",
+  "description": "This command is an alias of aria2c.",
+  "useCases": [
+    {
+      "description": "View documentation for the updated command:",
+      "syntax": "tldr aria2c"
+    }
+  ]
+}

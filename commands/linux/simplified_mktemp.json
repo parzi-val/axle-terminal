@@ -1,0 +1,30 @@
+{
+  "command": "mktemp",
+  "description": "Create a temporary file or directory. More information: https://www.gnu.org/software/coreutils/manual/html_node/mktemp-invocation.html.",
+  "useCases": [
+    {
+      "description": "Create an empty temporary file and print its absolute path:",
+      "syntax": "mktemp"
+    },
+    {
+      "description": "Use a custom directory (defaults to $TMPDIR, or /tmp):",
+      "syntax": "mktemp --tmpdir={{/path/to/tempdir}}"
+    },
+    {
+      "description": "Use a custom path template (Xs are replaced with random alphanumeric characters):",
+      "syntax": "mktemp {{/tmp/example.XXXXXXXX}}"
+    },
+    {
+      "description": "Use a custom file name template:",
+      "syntax": "mktemp -t {{example.XXXXXXXX}}"
+    },
+    {
+      "description": "Create an empty temporary file with the given suffix and print its absolute path:",
+      "syntax": "mktemp --suffix {{.ext}}"
+    },
+    {
+      "description": "Create an empty temporary directory and print its absolute path:",
+      "syntax": "mktemp --directory"
+    }
+  ]
+}

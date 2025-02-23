@@ -1,0 +1,10 @@
+{
+  "command": "ppmtoapplevol",
+  "description": "Convert a PPM image into an Apple volume label image. More information: https://netpbm.sourceforge.net/doc/ppmtoapplevol.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image into an Apple volume label image:",
+      "syntax": "ppmtoapplevol {{path/to/image.ppm}} &gt; {{path/to/output}}"
+    }
+  ]
+}

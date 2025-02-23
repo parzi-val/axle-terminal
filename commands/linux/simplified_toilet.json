@@ -1,0 +1,22 @@
+{
+  "command": "toilet",
+  "description": "Display ASCII-art fonts. More information: http://caca.zoy.org/wiki/toilet.",
+  "useCases": [
+    {
+      "description": "Generate ASCII art for a given text:",
+      "syntax": "toilet {{input_text}}"
+    },
+    {
+      "description": "Generate ASCII art using a custom font file:",
+      "syntax": "toilet {{input_text}} -f {{font_filename}}"
+    },
+    {
+      "description": "Generate ASCII art using a filter:",
+      "syntax": "toilet {{input_text}} --filter {{filter_name}}"
+    },
+    {
+      "description": "Show available toilet filters:",
+      "syntax": "toilet --filter list"
+    }
+  ]
+}

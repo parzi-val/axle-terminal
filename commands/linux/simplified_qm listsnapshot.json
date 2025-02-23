@@ -1,0 +1,10 @@
+{
+  "command": "qm listsnapshot",
+  "description": "List snapshots of virtual machines. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "List all snapshots of a specific virtual machine:",
+      "syntax": "qm listsnapshot {{vm_id}}"
+    }
+  ]
+}

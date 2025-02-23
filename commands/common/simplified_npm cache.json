@@ -1,0 +1,38 @@
+{
+  "command": "npm cache",
+  "description": "Manage the npm package cache. More information: https://docs.npmjs.com/cli/commands/npm-cache.",
+  "useCases": [
+    {
+      "description": "Add a specific package to the cache:",
+      "syntax": "npm cache add {{package_name}}"
+    },
+    {
+      "description": "Remove a specific package from the cache:",
+      "syntax": "npm cache remove {{package_name}}"
+    },
+    {
+      "description": "Clear a specific cached item by key:",
+      "syntax": "npm cache clean {{key}}"
+    },
+    {
+      "description": "Clear the entire npm cache:",
+      "syntax": "npm cache clean --force"
+    },
+    {
+      "description": "List the contents of the npm cache:",
+      "syntax": "npm cache ls"
+    },
+    {
+      "description": "Verify the integrity of the npm cache:",
+      "syntax": "npm cache verify"
+    },
+    {
+      "description": "Show the cache path:",
+      "syntax": "npm config get cache"
+    },
+    {
+      "description": "Change the cache path:",
+      "syntax": "npm config set cache {{path/to/directory}}"
+    }
+  ]
+}

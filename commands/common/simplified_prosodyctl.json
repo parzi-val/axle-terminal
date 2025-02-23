@@ -1,0 +1,26 @@
+{
+  "command": "prosodyctl",
+  "description": "The control tool for the Prosody XMPP server. Note: process management through prosodyctl is discouraged. Instead, use the tools provided by your system (e.g. systemctl). More information: https://prosody.im/doc/prosodyctl.",
+  "useCases": [
+    {
+      "description": "Show the status of the Prosody server:",
+      "syntax": "sudo prosodyctl status"
+    },
+    {
+      "description": "Reload the server's configuration files:",
+      "syntax": "sudo prosodyctl reload"
+    },
+    {
+      "description": "Add a user to the Prosody XMPP server:",
+      "syntax": "sudo prosodyctl adduser {{user@example.com}}"
+    },
+    {
+      "description": "Set a user's password:",
+      "syntax": "sudo prosodyctl passwd {{user@example.com}}"
+    },
+    {
+      "description": "Permanently delete a user:",
+      "syntax": "sudo prosodyctl deluser {{user@example.com}}"
+    }
+  ]
+}

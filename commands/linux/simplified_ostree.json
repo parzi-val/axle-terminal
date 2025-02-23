@@ -1,0 +1,34 @@
+{
+  "command": "ostree",
+  "description": "Version control for binary files similar to git but optimized for operating system root filesystems. OSTree is the foundation for immutable image-based operating systems such as Fedora Silverblue, Fedora IoT or Fedora CoreOS. More information: https://ostreedev.github.io/ostree.",
+  "useCases": [
+    {
+      "description": "Initialize a repository of the files in $PWD with metadata in $PWD/path/to/repo:",
+      "syntax": "ostree init --repo {{path/to/repo}}"
+    },
+    {
+      "description": "Create a commit (snapshot) of the files:",
+      "syntax": "ostree commit --repo {{path/to/repo}} --branch {{branch_name}}"
+    },
+    {
+      "description": "Show files in commit:",
+      "syntax": "ostree ls --repo {{path/to/repo}} {{commit_id}}"
+    },
+    {
+      "description": "Show metadata of commit:",
+      "syntax": "ostree show --repo {{path/to/repo}} {{commit_id}}"
+    },
+    {
+      "description": "Show list of commits:",
+      "syntax": "ostree log --repo {{path/to/repo}} {{branch_name}}"
+    },
+    {
+      "description": "Show repo summary:",
+      "syntax": "ostree summary --repo {{path/to/repo}} --view"
+    },
+    {
+      "description": "Show available refs (branches):",
+      "syntax": "ostree refs --repo {{path/to/repo}}"
+    }
+  ]
+}

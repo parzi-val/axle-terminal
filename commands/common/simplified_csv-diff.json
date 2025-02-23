@@ -1,0 +1,18 @@
+{
+  "command": "csv-diff",
+  "description": "View differences between two CSV, TSV or JSON files. More information: https://github.com/simonw/csv-diff.",
+  "useCases": [
+    {
+      "description": "Display a human-readable summary of differences between files using a specific column as a unique identifier:",
+      "syntax": "csv-diff {{path/to/file1.csv}} {{path/to/file2.csv}} --key {{column_name}}"
+    },
+    {
+      "description": "Display a human-readable summary of differences between files that includes unchanged values in rows with at least one change:",
+      "syntax": "csv-diff {{path/to/file1.csv}} {{path/to/file2.csv}} --key {{column_name}} --show-unchanged"
+    },
+    {
+      "description": "Display a summary of differences between files in JSON format using a specific column as a unique identifier:",
+      "syntax": "csv-diff {{path/to/file1.csv}} {{path/to/file2.csv}} --key {{column_name}} --json"
+    }
+  ]
+}

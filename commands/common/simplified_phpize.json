@@ -1,0 +1,14 @@
+{
+  "command": "phpize",
+  "description": "Prepare a PHP extension for compiling. More information: https://www.php.net/manual/install.pecl.phpize.",
+  "useCases": [
+    {
+      "description": "Prepare the PHP extension in the current directory for compiling:",
+      "syntax": "phpize"
+    },
+    {
+      "description": "Delete files previously created by phpize:",
+      "syntax": "phpize --clean"
+    }
+  ]
+}

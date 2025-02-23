@@ -1,0 +1,18 @@
+{
+  "command": "httpie",
+  "description": "Management interface for HTTPie. See also: http, the tool itself. More information: https://httpie.io/docs/cli/plugin-manager.",
+  "useCases": [
+    {
+      "description": "Check updates for http:",
+      "syntax": "httpie cli check-updates"
+    },
+    {
+      "description": "List installed http plugins:",
+      "syntax": "httpie cli plugins list"
+    },
+    {
+      "description": "Install/upgrade/uninstall plugins:",
+      "syntax": "httpie cli plugins {{install|upgrade|uninstall}} {{plugin_name}}"
+    }
+  ]
+}

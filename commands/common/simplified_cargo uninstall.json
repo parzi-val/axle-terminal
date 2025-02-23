@@ -1,0 +1,10 @@
+{
+  "command": "cargo uninstall",
+  "description": "Remove a Rust binary installed using cargo install. More information: https://doc.rust-lang.org/cargo/commands/cargo-uninstall.html.",
+  "useCases": [
+    {
+      "description": "Remove an installed binary:",
+      "syntax": "cargo remove {{package_spec}}"
+    }
+  ]
+}

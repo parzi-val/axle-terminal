@@ -1,0 +1,30 @@
+{
+  "command": "now",
+  "description": "Cloud platform for serverless deployment. This command is deprecated. See vercel, the updated version of this tool. More information: https://zeit.co/now.",
+  "useCases": [
+    {
+      "description": "Deploy the current directory:",
+      "syntax": "now"
+    },
+    {
+      "description": "Display a list of deployments:",
+      "syntax": "now list"
+    },
+    {
+      "description": "Display information related to a deployment:",
+      "syntax": "now inspect {{deployment_url}}"
+    },
+    {
+      "description": "Remove a deployment:",
+      "syntax": "now remove {{deployment_id}}"
+    },
+    {
+      "description": "Log in into an account or create a new one:",
+      "syntax": "now login"
+    },
+    {
+      "description": "Initialize an example project (a new directory will be created):",
+      "syntax": "now init"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "npm root",
+  "description": "Display path to node_modules directory. More information: https://docs.npmjs.com/cli/commands/npm-root.",
+  "useCases": [
+    {
+      "description": "Display path to the local node_modules directory:",
+      "syntax": "npm root"
+    },
+    {
+      "description": "Display path to the global node_modules directory:",
+      "syntax": "npm root --global"
+    }
+  ]
+}

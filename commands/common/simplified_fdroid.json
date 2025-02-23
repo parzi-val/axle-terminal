@@ -1,0 +1,30 @@
+{
+  "command": "fdroid",
+  "description": "F-Droid build tool. F-Droid is an installable catalog of FOSS (Free and Open Source Software) applications for the Android platform. More information: https://f-droid.org/.",
+  "useCases": [
+    {
+      "description": "Build a specific app:",
+      "syntax": "fdroid build {{app_id}}"
+    },
+    {
+      "description": "Build a specific app in a build server VM:",
+      "syntax": "fdroid build {{app_id}} --server"
+    },
+    {
+      "description": "Publish the app to the local repository:",
+      "syntax": "fdroid publish {{app_id}}"
+    },
+    {
+      "description": "Install the app on every connected device:",
+      "syntax": "fdroid install {{app_id}}"
+    },
+    {
+      "description": "Check if the metadata is formatted correctly:",
+      "syntax": "fdroid lint --format {{app_id}}"
+    },
+    {
+      "description": "Fix the formatting automatically (if possible):",
+      "syntax": "fdroid rewritemeta {{app_id}}"
+    }
+  ]
+}

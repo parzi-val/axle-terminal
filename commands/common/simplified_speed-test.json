@@ -1,0 +1,22 @@
+{
+  "command": "speed-test",
+  "description": "Test your internet connection speed and ping using https://speedtest.net. More information: https://github.com/sindresorhus/speed-test.",
+  "useCases": [
+    {
+      "description": "Test your internet connection and ping speed:",
+      "syntax": "speed-test"
+    },
+    {
+      "description": "Print the results as JSON:",
+      "syntax": "speed-test --json"
+    },
+    {
+      "description": "Print the results in megabytes per second (MBps):",
+      "syntax": "speed-test --bytes"
+    },
+    {
+      "description": "Print more detailed information:",
+      "syntax": "speed-test --verbose"
+    }
+  ]
+}

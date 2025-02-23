@@ -1,0 +1,34 @@
+{
+  "command": "trashy",
+  "description": "An alternative to rm and trash-cli written in Rust. More information: https://github.com/oberblastmeister/trashy.",
+  "useCases": [
+    {
+      "description": "Move a specific file to the trash:",
+      "syntax": "trash {{path/to/file}}"
+    },
+    {
+      "description": "Move specific files to the trash:",
+      "syntax": "trash {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "List items in the trash:",
+      "syntax": "trash list"
+    },
+    {
+      "description": "Restore a specific file from the trash:",
+      "syntax": "trash restore {{file}}"
+    },
+    {
+      "description": "Remove a specific file from the trash:",
+      "syntax": "trash empty {{file}}"
+    },
+    {
+      "description": "Restore all files from the trash:",
+      "syntax": "trash restore --all"
+    },
+    {
+      "description": "Remove all files from the trash:",
+      "syntax": "trash empty --all"
+    }
+  ]
+}

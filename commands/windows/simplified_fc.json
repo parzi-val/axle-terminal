@@ -1,0 +1,34 @@
+{
+  "command": "fc",
+  "description": "Compare the differences between two files or sets of files. Use wildcards (*) to compare sets of files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/fc.",
+  "useCases": [
+    {
+      "description": "Compare 2 specified files:",
+      "syntax": "fc {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Perform a case-insensitive comparison:",
+      "syntax": "fc /c {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compare files as Unicode text:",
+      "syntax": "fc /u {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compare files as ASCII text:",
+      "syntax": "fc /l {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compare files as binary:",
+      "syntax": "fc /b {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Disable tab-to-space expansion:",
+      "syntax": "fc /t {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compress whitespace (tabs and spaces) for comparisons:",
+      "syntax": "fc /w {{path\\to\\file1}} {{path\\to\\file2}}"
+    }
+  ]
+}

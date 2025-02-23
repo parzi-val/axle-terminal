@@ -1,0 +1,34 @@
+{
+  "command": "chcon",
+  "description": "Change SELinux security context of a file or files/directories. See also: secon, restorecon, semanage-fcontext. More information: https://www.gnu.org/software/coreutils/manual/html_node/chcon-invocation.html.",
+  "useCases": [
+    {
+      "description": "View security context of a file:",
+      "syntax": "ls -lZ {{path/to/file}}"
+    },
+    {
+      "description": "Change the security context of a target file, using a reference file:",
+      "syntax": "chcon --reference={{reference_file}} {{target_file}}"
+    },
+    {
+      "description": "Change the full SELinux security context of a file:",
+      "syntax": "chcon {{user}}:{{role}}:{{type}}:{{range/level}} {{filename}}"
+    },
+    {
+      "description": "Change only the user part of SELinux security context:",
+      "syntax": "chcon -u {{user}} {{filename}}"
+    },
+    {
+      "description": "Change only the role part of SELinux security context:",
+      "syntax": "chcon -r {{role}} {{filename}}"
+    },
+    {
+      "description": "Change only the type part of SELinux security context:",
+      "syntax": "chcon -t {{type}} {{filename}}"
+    },
+    {
+      "description": "Change only the range/level part of SELinux security context:",
+      "syntax": "chcon -l {{range/level}} {{filename}}"
+    }
+  ]
+}

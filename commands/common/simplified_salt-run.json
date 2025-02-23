@@ -1,0 +1,14 @@
+{
+  "command": "salt-run",
+  "description": "Frontend for executing salt-runners on minions. More information: https://docs.saltproject.io/en/latest/ref/cli/salt-run.html.",
+  "useCases": [
+    {
+      "description": "Show status of all minions:",
+      "syntax": "salt-run manage.status"
+    },
+    {
+      "description": "Show all minions which are disconnected:",
+      "syntax": "salt-run manage.up"
+    }
+  ]
+}

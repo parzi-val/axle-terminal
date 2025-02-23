@@ -1,0 +1,10 @@
+{
+  "command": "ptpython3",
+  "description": "This command is an alias of ptpython.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr ptpython"
+    }
+  ]
+}

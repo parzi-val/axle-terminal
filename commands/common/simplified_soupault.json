@@ -1,0 +1,26 @@
+{
+  "command": "soupault",
+  "description": "A static website generator based on HTML element tree rewriting. It can also be used as an HTML post-processor or metadata extractor. More information: https://soupault.app.",
+  "useCases": [
+    {
+      "description": "Initialize a minimal website project in the current working directory:",
+      "syntax": "soupault --init"
+    },
+    {
+      "description": "Build a website:",
+      "syntax": "soupault"
+    },
+    {
+      "description": "Override default configuration file and directory locations:",
+      "syntax": "soupault --config {{config_path}} --site-dir {{input_dir}} --build-dir {{output_dir}}"
+    },
+    {
+      "description": "Extract metadata into a JSON file without generating pages:",
+      "syntax": "soupault --index-only --dump-index-json {{path/to/file.json}}"
+    },
+    {
+      "description": "Show the effective configuration (values from soupault.toml plus defaults):",
+      "syntax": "soupault --show-effective-config"
+    }
+  ]
+}

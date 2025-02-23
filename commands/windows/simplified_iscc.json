@@ -1,0 +1,18 @@
+{
+  "command": "iscc",
+  "description": "Compiler for Inno Setup installers. It compiles an Inno Setup scripts into an Windows installer executable. More information: https://jrsoftware.org/isinfo.php.",
+  "useCases": [
+    {
+      "description": "Compile an Inno Setup script:",
+      "syntax": "iscc {{path\\to\\file.iss}}"
+    },
+    {
+      "description": "Quietly compile an Inno Setup installer:",
+      "syntax": "iscc /Q {{path\\to\\file.iss}}"
+    },
+    {
+      "description": "Compile a signed Inno Setup installer:",
+      "syntax": "iscc /S={{name}}={{command}} {{path\\to\\file.iss}}"
+    }
+  ]
+}

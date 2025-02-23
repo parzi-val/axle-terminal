@@ -1,0 +1,10 @@
+{
+  "command": "git cvsexportcommit",
+  "description": "Export a single Git commit to a CVS checkout. More information: https://git-scm.com/docs/git-cvsexportcommit.",
+  "useCases": [
+    {
+      "description": "Merge a specific patch into CVS:",
+      "syntax": "git cvsexportcommit -v -c -w {{path/to/project_cvs_checkout}} {{commit_sha1}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "ac",
+  "description": "Print statistics on how long users have been connected. More information: https://www.gnu.org/software/acct/manual/accounting.html#ac.",
+  "useCases": [
+    {
+      "description": "Print how long the current user has been connected in hours:",
+      "syntax": "ac"
+    },
+    {
+      "description": "Print how long users have been connected in hours:",
+      "syntax": "ac --individual-totals"
+    },
+    {
+      "description": "Print how long a particular user has been connected in hours:",
+      "syntax": "ac --individual-totals {{username}}"
+    },
+    {
+      "description": "Print how long a particular user has been connected in hours per day (with total):",
+      "syntax": "ac --daily-totals --individual-totals {{username}}"
+    },
+    {
+      "description": "Also display additional details:",
+      "syntax": "ac --compatibility"
+    }
+  ]
+}

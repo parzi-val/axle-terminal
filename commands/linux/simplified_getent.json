@@ -1,0 +1,26 @@
+{
+  "command": "getent",
+  "description": "Get entries from Name Service Switch libraries. More information: https://manned.org/getent.",
+  "useCases": [
+    {
+      "description": "Get list of all groups:",
+      "syntax": "getent group"
+    },
+    {
+      "description": "See the members of a group:",
+      "syntax": "getent group {{group_name}}"
+    },
+    {
+      "description": "Get list of all services:",
+      "syntax": "getent services"
+    },
+    {
+      "description": "Find a username by UID:",
+      "syntax": "getent passwd 1000"
+    },
+    {
+      "description": "Perform a reverse DNS lookup:",
+      "syntax": "getent hosts {{host}}"
+    }
+  ]
+}

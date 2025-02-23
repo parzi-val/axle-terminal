@@ -1,0 +1,26 @@
+{
+  "command": "pueue pause",
+  "description": "Pause running tasks or groups. See also: pueue start. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Pause all tasks in the default group:",
+      "syntax": "pueue pause"
+    },
+    {
+      "description": "Pause a running task:",
+      "syntax": "pueue pause {{task_id}}"
+    },
+    {
+      "description": "Pause a running task and stop all its direct children:",
+      "syntax": "pueue pause --children {{task_id}}"
+    },
+    {
+      "description": "Pause all tasks in a group and prevent it from starting new tasks:",
+      "syntax": "pueue pause --group {{group_name}}"
+    },
+    {
+      "description": "Pause all tasks and prevent all groups from starting new tasks:",
+      "syntax": "pueue pause --all"
+    }
+  ]
+}

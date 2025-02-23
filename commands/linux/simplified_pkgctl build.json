@@ -1,0 +1,14 @@
+{
+  "command": "pkgctl build",
+  "description": "Build packages inside a clean chroot. More information: https://manned.org/pkgctl-build.1.",
+  "useCases": [
+    {
+      "description": "Automatically choose the right build script to build packages in a clean chroot:",
+      "syntax": "pkgctl build"
+    },
+    {
+      "description": "Manually build packages in a clean chroot:",
+      "syntax": "pkgctl build --arch {{architecture}} --repo {{repository}} --clean"
+    }
+  ]
+}

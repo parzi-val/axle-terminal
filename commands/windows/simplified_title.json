@@ -1,0 +1,10 @@
+{
+  "command": "title",
+  "description": "Set the title of the command prompt window. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/title.",
+  "useCases": [
+    {
+      "description": "Set the title of the current command prompt window:",
+      "syntax": "title {{new_title}}"
+    }
+  ]
+}

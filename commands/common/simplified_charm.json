@@ -1,0 +1,34 @@
+{
+  "command": "charm",
+  "description": "Set of tools that makes adding a backend to your terminal-based applications, without worrying about user accounts, data storage and encryption. More information: https://github.com/charmbracelet/charm.",
+  "useCases": [
+    {
+      "description": "Backup your Charm account keys:",
+      "syntax": "charm backup-keys"
+    },
+    {
+      "description": "Backup Charm account keys to a specific location:",
+      "syntax": "charm backup-keys -o {{path/to/output_file.tar}}"
+    },
+    {
+      "description": "Import previously backed up Charm account keys:",
+      "syntax": "charm import-keys &quot;{{charm-keys-backup.tar}}&quot;"
+    },
+    {
+      "description": "Find where your cloud.charm.sh folder resides on your machine:",
+      "syntax": "charm where"
+    },
+    {
+      "description": "Start your Charm server:",
+      "syntax": "charm serve"
+    },
+    {
+      "description": "Print linked SSH keys:",
+      "syntax": "charm keys"
+    },
+    {
+      "description": "Print your Charm ID:",
+      "syntax": "charm id"
+    }
+  ]
+}

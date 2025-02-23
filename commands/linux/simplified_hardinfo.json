@@ -1,0 +1,18 @@
+{
+  "command": "hardinfo",
+  "description": "Show hardware information in GUI window. More information: https://github.com/lpereira/hardinfo.",
+  "useCases": [
+    {
+      "description": "Start hardinfo:",
+      "syntax": "hardinfo"
+    },
+    {
+      "description": "Print report to stdout:",
+      "syntax": "hardinfo -r"
+    },
+    {
+      "description": "Save report to HTML file:",
+      "syntax": "hardinfo -r -f html &gt; hardinfo.html"
+    }
+  ]
+}

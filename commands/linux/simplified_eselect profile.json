@@ -1,0 +1,18 @@
+{
+  "command": "eselect profile",
+  "description": "An eselect module for managing the /etc/portage/make.profile symlink, which sets the system profile. More information: https://wiki.gentoo.org/wiki/Eselect#Profile.",
+  "useCases": [
+    {
+      "description": "List available profile symlink targets with their numbers:",
+      "syntax": "eselect profile list"
+    },
+    {
+      "description": "Set the /etc/portage/make.profile symlink by name or number from the list command:",
+      "syntax": "eselect profile set {{name|number}}"
+    },
+    {
+      "description": "Show the current system profile:",
+      "syntax": "eselect profile show"
+    }
+  ]
+}

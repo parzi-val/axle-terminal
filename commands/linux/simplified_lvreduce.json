@@ -1,0 +1,14 @@
+{
+  "command": "lvreduce",
+  "description": "Reduce the size of a logical volume. See also: lvm. More information: https://manned.org/lvreduce.",
+  "useCases": [
+    {
+      "description": "Reduce a volume's size to 120 GB:",
+      "syntax": "lvreduce --size {{120G}} {{logical_volume}}"
+    },
+    {
+      "description": "Reduce a volume's size by 40 GB as well as the underlying filesystem:",
+      "syntax": "lvreduce --size -{{40G}} -r {{logical_volume}}"
+    }
+  ]
+}

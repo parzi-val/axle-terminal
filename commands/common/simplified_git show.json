@@ -1,0 +1,38 @@
+{
+  "command": "git show",
+  "description": "Show various types of Git objects (commits, tags, etc.). More information: https://git-scm.com/docs/git-show.",
+  "useCases": [
+    {
+      "description": "Show information about the latest commit (hash, message, changes, and other metadata):",
+      "syntax": "git show"
+    },
+    {
+      "description": "Show information about a given commit:",
+      "syntax": "git show {{commit}}"
+    },
+    {
+      "description": "Show information about the commit associated with a given tag:",
+      "syntax": "git show {{tag}}"
+    },
+    {
+      "description": "Show information about the 3rd commit from the HEAD of a branch:",
+      "syntax": "git show {{branch}}~{{3}}"
+    },
+    {
+      "description": "Show a commit's message in a single line, suppressing the diff output:",
+      "syntax": "git show --oneline -s {{commit}}"
+    },
+    {
+      "description": "Show only statistics (added/removed characters) about the changed files:",
+      "syntax": "git show --stat {{commit}}"
+    },
+    {
+      "description": "Show only the list of added, renamed or deleted files:",
+      "syntax": "git show --summary {{commit}}"
+    },
+    {
+      "description": "Show the contents of a file as it was at a given revision (e.g. branch, tag or commit):",
+      "syntax": "git show {{revision}}:{{path/to/file}}"
+    }
+  ]
+}

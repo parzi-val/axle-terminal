@@ -1,0 +1,18 @@
+{
+  "command": "route",
+  "description": "Use route cmd to set the route table. More information: https://manned.org/route.",
+  "useCases": [
+    {
+      "description": "Display the information of route table:",
+      "syntax": "route -n"
+    },
+    {
+      "description": "Add route rule:",
+      "syntax": "sudo route add -net {{ip_address}} netmask {{netmask_address}} gw {{gw_address}}"
+    },
+    {
+      "description": "Delete route rule:",
+      "syntax": "sudo route del -net {{ip_address}} netmask {{netmask_address}} dev {{gw_address}}"
+    }
+  ]
+}

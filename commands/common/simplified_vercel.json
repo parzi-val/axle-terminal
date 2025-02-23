@@ -1,0 +1,38 @@
+{
+  "command": "vercel",
+  "description": "Deploy and manage your Vercel deployments. More information: https://vercel.com/docs/cli.",
+  "useCases": [
+    {
+      "description": "Deploy the current directory:",
+      "syntax": "vercel"
+    },
+    {
+      "description": "Deploy the current directory to production:",
+      "syntax": "vercel --prod"
+    },
+    {
+      "description": "Deploy a directory:",
+      "syntax": "vercel {{path/to/project}}"
+    },
+    {
+      "description": "Initialize an example project:",
+      "syntax": "vercel init"
+    },
+    {
+      "description": "Deploy with Environment Variables:",
+      "syntax": "vercel --env {{ENV}}={{var}}"
+    },
+    {
+      "description": "Build with Environment Variables:",
+      "syntax": "vercel --build-env {{ENV}}={{var}}"
+    },
+    {
+      "description": "Set default regions to enable the deployment on:",
+      "syntax": "vercel --regions {{region_id}}"
+    },
+    {
+      "description": "Remove a deployment:",
+      "syntax": "vercel remove {{project_name}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "do-release-upgrade",
+  "description": "The Ubuntu release upgrader. More information: https://manned.org/do-release-upgrade.8.",
+  "useCases": [
+    {
+      "description": "Upgrade to the latest release:",
+      "syntax": "sudo do-release-upgrade"
+    },
+    {
+      "description": "Upgrade to the latest development release:",
+      "syntax": "sudo do-release-upgrade --devel-release"
+    },
+    {
+      "description": "Upgrade to the latest proposed release:",
+      "syntax": "sudo do-release-upgrade --proposed"
+    }
+  ]
+}

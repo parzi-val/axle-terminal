@@ -1,0 +1,26 @@
+{
+  "command": "nokogiri",
+  "description": "An HTML, XML, SAX and Reader parser. More information: https://nokogiri.org.",
+  "useCases": [
+    {
+      "description": "Parse the contents of a URL or file:",
+      "syntax": "nokogiri {{url|path/to/file}}"
+    },
+    {
+      "description": "Parse as a specific type:",
+      "syntax": "nokogiri {{url|path/to/file}} --type {{xml|html}}"
+    },
+    {
+      "description": "Load a specific initialization file before parsing:",
+      "syntax": "nokogiri {{url|path/to/file}} -C {{path/to/config_file}}"
+    },
+    {
+      "description": "Parse using a specific encoding:",
+      "syntax": "nokogiri {{url|path/to/file}} --encoding {{encoding}}"
+    },
+    {
+      "description": "Validate using a RELAX NG file:",
+      "syntax": "nokogiri {{url|path/to/file}} --rng {{url|path/to/file}}"
+    }
+  ]
+}

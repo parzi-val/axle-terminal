@@ -1,0 +1,34 @@
+{
+  "command": "nix run",
+  "description": "Run an application from a Nix flake. See also: nix3 flake for information about flakes. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-run.html.",
+  "useCases": [
+    {
+      "description": "Run the default application in the flake in the current directory:",
+      "syntax": "nix run"
+    },
+    {
+      "description": "Run a command whose name matches the package name from nixpkgs (if you want a different command from that package, see tldr nix3 shell):",
+      "syntax": "nix run nixpkgs#{{pkg}}"
+    },
+    {
+      "description": "Run a command with provided arguments:",
+      "syntax": "nix run nixpkgs#{{vim}} -- {{path/to/file}}"
+    },
+    {
+      "description": "Run from a remote repository:",
+      "syntax": "nix run {{remote_name}}:{{owner}}/{{repo}}"
+    },
+    {
+      "description": "Run from a remote repository using a specific tag, revision or branch:",
+      "syntax": "nix run {{remote_name}}:{{owner}}/{{repo}}/{{reference}}"
+    },
+    {
+      "description": "Run from a remote repository specifying a subdirectory and a program:",
+      "syntax": "nix run &quot;{{remote_name}}:{{owner}}/{{repo}}?dir={{dir_name}}#{{app}}&quot;"
+    },
+    {
+      "description": "Run the flake of a GitHub pull request:",
+      "syntax": "nix run github:{{owner}}/{{repo}}/pull/{{number}}/head"
+    }
+  ]
+}

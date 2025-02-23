@@ -1,0 +1,30 @@
+{
+  "command": "fcrackzip",
+  "description": "ZIP archive password cracking utility. More information: https://manned.org/fcrackzip.",
+  "useCases": [
+    {
+      "description": "Brute-force a password with a length of 4 to 8 characters, and contains only alphanumeric characters (order matters):",
+      "syntax": "fcrackzip --brute-force --length 4-8 --charset aA1 {{archive}}"
+    },
+    {
+      "description": "Brute-force a password in verbose mode with a length of 3 characters that only contains lowercase characters, $ and %:",
+      "syntax": "fcrackzip -v --brute-force --length 3 --charset a:$% {{archive}}"
+    },
+    {
+      "description": "Brute-force a password that contains only lowercase and special characters:",
+      "syntax": "fcrackzip --brute-force --length 4 --charset a! {{archive}}"
+    },
+    {
+      "description": "Brute-force a password containing only digits, starting from the password 12345:",
+      "syntax": "fcrackzip --brute-force --length 5 --charset 1 --init-password 12345 {{archive}}"
+    },
+    {
+      "description": "Crack a password using a wordlist:",
+      "syntax": "fcrackzip --use-unzip --dictionary --init-password {{wordlist}} {{archive}}"
+    },
+    {
+      "description": "Benchmark cracking performance:",
+      "syntax": "fcrackzip --benchmark"
+    }
+  ]
+}

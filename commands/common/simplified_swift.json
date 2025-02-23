@@ -1,0 +1,30 @@
+{
+  "command": "swift",
+  "description": "Create, run and build Swift projects. More information: https://swift.org.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "swift repl"
+    },
+    {
+      "description": "Execute a program:",
+      "syntax": "swift {{file.swift}}"
+    },
+    {
+      "description": "Start a new project with the package manager:",
+      "syntax": "swift package init"
+    },
+    {
+      "description": "Generate an Xcode project file:",
+      "syntax": "swift package generate-xcodeproj"
+    },
+    {
+      "description": "Update dependencies:",
+      "syntax": "swift package update"
+    },
+    {
+      "description": "Compile project for release:",
+      "syntax": "swift build -c release"
+    }
+  ]
+}

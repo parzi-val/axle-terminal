@@ -1,0 +1,14 @@
+{
+  "command": "mkdir",
+  "description": "Create a directory. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/mkdir.",
+  "useCases": [
+    {
+      "description": "Create a directory:",
+      "syntax": "mkdir {{path\\to\\directory}}"
+    },
+    {
+      "description": "Create a nested directory tree recursively:",
+      "syntax": "mkdir {{path\\to\\sub_directory}}"
+    }
+  ]
+}

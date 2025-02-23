@@ -1,0 +1,26 @@
+{
+  "command": "etckeeper",
+  "description": "Track system configuration files in Git. More information: https://etckeeper.branchable.com/.",
+  "useCases": [
+    {
+      "description": "Set up a Git repo and perform various setup tasks (run from /etc):",
+      "syntax": "sudo etckeeper init"
+    },
+    {
+      "description": "Commit all changes in /etc:",
+      "syntax": "sudo etckeeper commit {{message}}"
+    },
+    {
+      "description": "Run arbitrary Git commands:",
+      "syntax": "sudo etckeeper vcs {{status}}"
+    },
+    {
+      "description": "Check if there are uncommitted changes (only returns an exit code):",
+      "syntax": "sudo etckeeper unclean"
+    },
+    {
+      "description": "Destroy existing repo and stop tracking changes:",
+      "syntax": "sudo etckeeper uninit"
+    }
+  ]
+}

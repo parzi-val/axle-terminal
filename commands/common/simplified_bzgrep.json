@@ -1,0 +1,34 @@
+{
+  "command": "bzgrep",
+  "description": "Find patterns in bzip2 compressed files using grep. More information: https://manned.org/bzgrep.",
+  "useCases": [
+    {
+      "description": "Search for a pattern within a compressed file:",
+      "syntax": "bzgrep &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Use extended regular expressions (supports ?, +, {}, () and |), in case-insensitive mode:",
+      "syntax": "bzgrep --extended-regexp --ignore-case &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print 3 lines of context around, before, or after each match:",
+      "syntax": "bzgrep --{{context|before-context|after-context}}={{3}} &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print file name and line number for each match:",
+      "syntax": "bzgrep --with-filename --line-number &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines matching a pattern, printing only the matched text:",
+      "syntax": "bzgrep --only-matching &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Recursively search files in a bzip2 compressed tar archive for a pattern:",
+      "syntax": "bzgrep --recursive &quot;{{search_pattern}}&quot; {{path/to/tar/file}}"
+    },
+    {
+      "description": "Search stdin for lines that do not match a pattern:",
+      "syntax": "cat {{/path/to/bz/compressed/file}} | bzgrep --invert-match &quot;{{search_pattern}}&quot;"
+    }
+  ]
+}

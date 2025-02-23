@@ -1,0 +1,14 @@
+{
+  "command": "dconf read",
+  "description": "Read key values from dconf databases. See also: dconf. More information: https://manned.org/dconf.",
+  "useCases": [
+    {
+      "description": "Print a specific key value:",
+      "syntax": "dconf read {{/path/to/key}}"
+    },
+    {
+      "description": "Print a specific key [d]efault value:",
+      "syntax": "dconf read -d {{/path/to/key}}"
+    }
+  ]
+}

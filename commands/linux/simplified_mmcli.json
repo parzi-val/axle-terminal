@@ -1,0 +1,26 @@
+{
+  "command": "mmcli",
+  "description": "Control and monitor the ModemManager. More information: https://www.freedesktop.org/software/ModemManager/man/latest/mmcli.1.html.",
+  "useCases": [
+    {
+      "description": "List available modems:",
+      "syntax": "mmcli --list-modems"
+    },
+    {
+      "description": "Print information about a modem:",
+      "syntax": "mmcli --modem={{modem}}"
+    },
+    {
+      "description": "Enable a modem:",
+      "syntax": "mmcli --modem={{modem}} --enable"
+    },
+    {
+      "description": "List SMS messages available on the modem:",
+      "syntax": "sudo mmcli --modem={{modem}} --messaging-list-sms"
+    },
+    {
+      "description": "Delete a message from the modem, specifying its path:",
+      "syntax": "sudo mmcli --modem={{modem}} --messaging-delete-sms={{path/to/message_file}}"
+    }
+  ]
+}

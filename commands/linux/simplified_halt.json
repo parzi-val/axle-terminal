@@ -1,0 +1,26 @@
+{
+  "command": "halt",
+  "description": "Halt the system. More information: https://manned.org/halt.8.",
+  "useCases": [
+    {
+      "description": "Halt the system:",
+      "syntax": "halt"
+    },
+    {
+      "description": "Power off the system (same as poweroff):",
+      "syntax": "halt --poweroff"
+    },
+    {
+      "description": "Reboot the system (same as reboot):",
+      "syntax": "halt --reboot"
+    },
+    {
+      "description": "Halt immediately without contacting the system manager:",
+      "syntax": "halt --force"
+    },
+    {
+      "description": "Write the wtmp shutdown entry without halting the system:",
+      "syntax": "halt --wtmp-only"
+    }
+  ]
+}

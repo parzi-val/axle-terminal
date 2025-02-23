@@ -1,0 +1,38 @@
+{
+  "command": "plantuml",
+  "description": "Create UML diagrams from a plain text language and render them in different formats. More information: https://plantuml.com/en/command-line.",
+  "useCases": [
+    {
+      "description": "Render diagrams to default format (PNG):",
+      "syntax": "plantuml {{diagram1.puml}} {{diagram2.puml}}"
+    },
+    {
+      "description": "Render a diagram in given format (e.g. png, pdf, svg, txt):",
+      "syntax": "plantuml -t {{format}} {{diagram.puml}}"
+    },
+    {
+      "description": "Render all diagrams of a directory:",
+      "syntax": "plantuml {{path/to/diagrams}}"
+    },
+    {
+      "description": "Render a diagram to the output directory:",
+      "syntax": "plantuml -o {{path/to/output}} {{diagram.puml}}"
+    },
+    {
+      "description": "Render a diagram without storing the diagram's source code (Note: It's stored by default when the -nometadata option isn't specified):",
+      "syntax": "plantuml -nometadata {{diagram.png}} &gt; {{diagram.puml}}"
+    },
+    {
+      "description": "Retrieve source from a plantuml diagram's metadata:",
+      "syntax": "plantuml -metadata {{diagram.png}} &gt; {{diagram.puml}}"
+    },
+    {
+      "description": "Render a diagram with the configuration file:",
+      "syntax": "plantuml -config {{config.cfg}} {{diagram.puml}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plantuml -help"
+    }
+  ]
+}

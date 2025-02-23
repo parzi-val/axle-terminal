@@ -1,0 +1,10 @@
+{
+  "command": "tty",
+  "description": "Returns terminal name. More information: https://www.gnu.org/software/coreutils/manual/html_node/tty-invocation.html.",
+  "useCases": [
+    {
+      "description": "Print the file name of this terminal:",
+      "syntax": "tty"
+    }
+  ]
+}

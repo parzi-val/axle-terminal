@@ -1,0 +1,30 @@
+{
+  "command": "btrfs scrub",
+  "description": "Scrub btrfs filesystems to verify data integrity. It is recommended to run a scrub once a month. More information: https://btrfs.readthedocs.io/en/latest/btrfs-scrub.html.",
+  "useCases": [
+    {
+      "description": "Start a scrub:",
+      "syntax": "sudo btrfs scrub start {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Show the status of an ongoing or last completed scrub:",
+      "syntax": "sudo btrfs scrub status {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Cancel an ongoing scrub:",
+      "syntax": "sudo btrfs scrub cancel {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Resume a previously cancelled scrub:",
+      "syntax": "sudo btrfs scrub resume {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Start a scrub, but wait until the scrub finishes before exiting:",
+      "syntax": "sudo btrfs scrub start -B {{path/to/btrfs_mount}}"
+    },
+    {
+      "description": "Start a scrub in quiet mode (does not print errors or statistics):",
+      "syntax": "sudo btrfs scrub start -q {{path/to/btrfs_mount}}"
+    }
+  ]
+}

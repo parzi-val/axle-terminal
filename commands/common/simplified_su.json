@@ -1,0 +1,22 @@
+{
+  "command": "su",
+  "description": "Switch shell to another user. More information: https://manned.org/su.",
+  "useCases": [
+    {
+      "description": "Switch to superuser (requires the root password):",
+      "syntax": "su"
+    },
+    {
+      "description": "Switch to a given user (requires the user's password):",
+      "syntax": "su {{username}}"
+    },
+    {
+      "description": "Switch to a given user and simulate a full login shell:",
+      "syntax": "su - {{username}}"
+    },
+    {
+      "description": "Execute a command as another user:",
+      "syntax": "su - {{username}} -c &quot;{{command}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "qrcp",
+  "description": "A file transfer tool. More information: https://github.com/claudiodangelis/qrcp.",
+  "useCases": [
+    {
+      "description": "Send a file or directories:",
+      "syntax": "qrcp send {{path/to/file_or_directory path/to/file_directory ...}}"
+    },
+    {
+      "description": "Receive files:",
+      "syntax": "qrcp receive"
+    },
+    {
+      "description": "Compress content before transferring:",
+      "syntax": "qrcp send --zip {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Use a specific [p]ort:",
+      "syntax": "qrcp {{send|receive}} --port {{port_number}}"
+    },
+    {
+      "description": "Use a specific network [i]nterface:",
+      "syntax": "qrcp {{send|receive}} --interface {{interface}}"
+    },
+    {
+      "description": "Keep the server alive:",
+      "syntax": "qrcp {{send|receive}} --keep-alive"
+    }
+  ]
+}

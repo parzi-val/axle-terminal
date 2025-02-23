@@ -1,0 +1,26 @@
+{
+  "command": "gcal",
+  "description": "Display calendar. More information: https://www.gnu.org/software/gcal.",
+  "useCases": [
+    {
+      "description": "Display calendar for the current month:",
+      "syntax": "gcal"
+    },
+    {
+      "description": "Display calendar for the month of February of the year 2010:",
+      "syntax": "gcal 2 2010"
+    },
+    {
+      "description": "Provide calendar sheet with week numbers:",
+      "syntax": "gcal --with-week-number"
+    },
+    {
+      "description": "Change starting day of week to 1st day of the week (Monday):",
+      "syntax": "gcal --starting-day=1"
+    },
+    {
+      "description": "Display the previous, current and next month surrounding today:",
+      "syntax": "gcal ."
+    }
+  ]
+}

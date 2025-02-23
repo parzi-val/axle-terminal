@@ -1,0 +1,14 @@
+{
+  "command": "pamstretch",
+  "description": "Scale up a PAM image by interpolating between pixels. See also: pamstretch-gen, pamenlarge, pamscale. More information: https://netpbm.sourceforge.net/doc/pamstretch.html.",
+  "useCases": [
+    {
+      "description": "Scale up a PAM image by an integer factor:",
+      "syntax": "pamstretch {{N}} {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Scale up a PAM image by the specified factors in the horizontal and vertical directions:",
+      "syntax": "pamstretch -xscale {{XN}} -yscale {{YN}} {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

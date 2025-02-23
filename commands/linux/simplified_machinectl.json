@@ -1,0 +1,22 @@
+{
+  "command": "machinectl",
+  "description": "Control the systemd machine manager. Execute operations on virtual machines, containers and images. More information: https://www.freedesktop.org/software/systemd/man/machinectl.html.",
+  "useCases": [
+    {
+      "description": "Start a machine as a service using systemd-nspawn:",
+      "syntax": "sudo machinectl start {{machine_name}}"
+    },
+    {
+      "description": "Stop a running machine:",
+      "syntax": "sudo machinectl stop {{machine_name}}"
+    },
+    {
+      "description": "Display a list of running machines:",
+      "syntax": "machinectl list"
+    },
+    {
+      "description": "Open an interactive shell inside the machine:",
+      "syntax": "sudo machinectl shell {{machine_name}}"
+    }
+  ]
+}

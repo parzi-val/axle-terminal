@@ -1,0 +1,22 @@
+{
+  "command": "zbarcam",
+  "description": "Scan and decode barcodes (and QR codes) from a video device. More information: https://manned.org/zbarcam.",
+  "useCases": [
+    {
+      "description": "Continuously read barcodes and print them to stdout:",
+      "syntax": "zbarcam"
+    },
+    {
+      "description": "Disable output video window while scanning:",
+      "syntax": "zbarcam --nodisplay"
+    },
+    {
+      "description": "Print barcodes without type information:",
+      "syntax": "zbarcam --raw"
+    },
+    {
+      "description": "Define capture device:",
+      "syntax": "zbarcam {{/dev/video_device}}"
+    }
+  ]
+}

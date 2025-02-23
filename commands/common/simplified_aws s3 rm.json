@@ -1,0 +1,26 @@
+{
+  "command": "aws s3 rm",
+  "description": "Delete S3 objects. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/rm.html.",
+  "useCases": [
+    {
+      "description": "Delete a specific S3 object:",
+      "syntax": "aws s3 rm s3://{{bucket_name}}/{{path/to/file}}"
+    },
+    {
+      "description": "Preview the deletion of a specific S3 object without deleting it (dry-run):",
+      "syntax": "aws s3 rm s3://{{bucket_name}}/{{path/to/file}} --dryrun"
+    },
+    {
+      "description": "Delete an object from a specific S3 access point:",
+      "syntax": "aws s3 rm s3://arn:aws:s3:{{region}}:{{account_id}}:{{access_point}}/{{access_point_name}}/{{object_key}}"
+    },
+    {
+      "description": "Remove all objects from a bucket (empty the bucket):",
+      "syntax": "aws s3 rm s3://{{bucket_name}} --recursive"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aws s3 rm help"
+    }
+  ]
+}

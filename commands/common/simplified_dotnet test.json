@@ -1,0 +1,18 @@
+{
+  "command": "dotnet test",
+  "description": "Execute tests for a .NET application. Note: View https://learn.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests for supported filter expressions. More information: https://learn.microsoft.com/dotnet/core/tools/dotnet-test.",
+  "useCases": [
+    {
+      "description": "Execute tests for a .NET project/solution in the current directory:",
+      "syntax": "dotnet test"
+    },
+    {
+      "description": "Execute tests for a .NET project/solution in a specific location:",
+      "syntax": "dotnet test {{path/to/project_or_solution}}"
+    },
+    {
+      "description": "Execute tests matching the given filter expression:",
+      "syntax": "dotnet test --filter {{Name~TestMethod1}}"
+    }
+  ]
+}

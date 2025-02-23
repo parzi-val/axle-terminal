@@ -1,0 +1,10 @@
+{
+  "command": "pasuspender",
+  "description": "Temporarily suspends pulseaudio while another command is running to allow access to alsa. More information: https://manned.org/pasuspender.",
+  "useCases": [
+    {
+      "description": "Suspend PulseAudio while running jackd:",
+      "syntax": "pasuspender -- {{jackd -d alsa --device hw:0}}"
+    }
+  ]
+}

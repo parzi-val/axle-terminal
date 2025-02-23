@@ -1,0 +1,22 @@
+{
+  "command": "terraform output",
+  "description": "Export structured data about your Terraform resources. More information: https://developer.hashicorp.com/terraform/cli/commands/output.",
+  "useCases": [
+    {
+      "description": "With no additional arguments, output will display all outputs for the root module:",
+      "syntax": "terraform output"
+    },
+    {
+      "description": "Output only a value with specific name:",
+      "syntax": "terraform output {{name}}"
+    },
+    {
+      "description": "Convert the output value to a raw string (useful for shell scripts):",
+      "syntax": "terraform output -raw"
+    },
+    {
+      "description": "Format the outputs as a JSON object, with a key per output (useful with jq):",
+      "syntax": "terraform output -json"
+    }
+  ]
+}

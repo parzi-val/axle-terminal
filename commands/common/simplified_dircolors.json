@@ -1,0 +1,30 @@
+{
+  "command": "dircolors",
+  "description": "Output commands to set the LS_COLOR environment variable and style ls, dir, etc. More information: https://www.gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html.",
+  "useCases": [
+    {
+      "description": "Output commands to set LS_COLOR using default colors:",
+      "syntax": "dircolors"
+    },
+    {
+      "description": "Display each filetype with the color they would appear in ls:",
+      "syntax": "dircolors --print-ls-colors"
+    },
+    {
+      "description": "Output commands to set LS_COLOR using colors from a file:",
+      "syntax": "dircolors {{path/to/file}}"
+    },
+    {
+      "description": "Output commands for Bourne shell:",
+      "syntax": "dircolors --bourne-shell"
+    },
+    {
+      "description": "Output commands for C shell:",
+      "syntax": "dircolors --c-shell"
+    },
+    {
+      "description": "View the default colors for file types and extensions:",
+      "syntax": "dircolors --print-data"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "shfmt",
+  "description": "Shell parser, formatter and interpreter. More information: https://pkg.go.dev/mvdan.cc/sh.",
+  "useCases": [
+    {
+      "description": "Print a formatted version of a shell script:",
+      "syntax": "shfmt {{path/to/file}}"
+    },
+    {
+      "description": "List unformatted files:",
+      "syntax": "shfmt --list {{path/to/directory}}"
+    },
+    {
+      "description": "Write the result to the file instead of printing it to the terminal:",
+      "syntax": "shfmt --write {{path/to/file}}"
+    },
+    {
+      "description": "Simplify the code, removing redundant pieces of syntax (i.e. removing \"$\" from vars in expressions):",
+      "syntax": "shfmt --simplify {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "yetris",
+  "description": "Clone of the game Tetris in the terminal. More information: https://github.com/alexdantas/yetris.",
+  "useCases": [
+    {
+      "description": "Start a Tetris game:",
+      "syntax": "yetris"
+    },
+    {
+      "description": "Navigate the piece horizontally:",
+      "syntax": "{{Left|Right arrow key}}"
+    },
+    {
+      "description": "Rotate the piece clockwise or counterclockwise:",
+      "syntax": "{{x|z}}"
+    },
+    {
+      "description": "Hold a piece (only one allowed at a time):",
+      "syntax": "c"
+    },
+    {
+      "description": "Soft drop the piece:",
+      "syntax": "&lt;Down arrow key&gt;"
+    },
+    {
+      "description": "Hard drop the piece:",
+      "syntax": "&lt;Spacebar&gt;"
+    },
+    {
+      "description": "Pause/unpause the game:",
+      "syntax": "p"
+    },
+    {
+      "description": "Quit the game:",
+      "syntax": "q"
+    }
+  ]
+}

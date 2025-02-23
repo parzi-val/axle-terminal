@@ -1,0 +1,30 @@
+{
+  "command": "pio system",
+  "description": "Miscellaneous system commands for PlatformIO. More information: https://docs.platformio.org/en/latest/core/userguide/system/.",
+  "useCases": [
+    {
+      "description": "Install shell completion for the current shell (supports Bash, fish, Zsh and PowerShell):",
+      "syntax": "pio system completion install"
+    },
+    {
+      "description": "Uninstall shell completion for the current shell:",
+      "syntax": "pio system completion uninstall"
+    },
+    {
+      "description": "Display system-wide PlatformIO information:",
+      "syntax": "pio system info"
+    },
+    {
+      "description": "Remove unused PlatformIO data:",
+      "syntax": "pio system prune"
+    },
+    {
+      "description": "Remove only cached data:",
+      "syntax": "pio system prune --cache"
+    },
+    {
+      "description": "List unused PlatformIO data that would be removed but do not actually remove it:",
+      "syntax": "pio system prune --dry-run"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "rustup default",
+  "description": "Set the default Rust toolchain. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Switch the default Rust toolchain (see rustup help toolchain for more information):",
+      "syntax": "rustup default {{toolchain}}"
+    }
+  ]
+}

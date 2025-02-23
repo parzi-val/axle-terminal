@@ -1,0 +1,26 @@
+{
+  "command": "git cliff",
+  "description": "A highly customizable changelog generator. More information: https://git-cliff.org/docs/usage/args.",
+  "useCases": [
+    {
+      "description": "Generate a changelog from all commits in a Git repository and save it to CHANGELOG.md:",
+      "syntax": "git cliff &gt; {{CHANGELOG.md}}"
+    },
+    {
+      "description": "Generate a changelog from commits starting from the latest tag and print it to stdout:",
+      "syntax": "git cliff {{-l|--latest}}"
+    },
+    {
+      "description": "Generate a changelog from commits that belong to the current tag (use git checkout on a tag before this):",
+      "syntax": "git cliff --current"
+    },
+    {
+      "description": "Generate a changelog from commits that do not belong to a tag:",
+      "syntax": "git cliff {{-u|--unreleased}}"
+    },
+    {
+      "description": "Write the default config file to cliff.toml in the current directory:",
+      "syntax": "git cliff {{-i|--init}}"
+    }
+  ]
+}

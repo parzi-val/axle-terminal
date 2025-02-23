@@ -1,0 +1,14 @@
+{
+  "command": "pvdisplay",
+  "description": "Display information about Logical Volume Manager (LVM) physical volumes. See also: lvm. More information: https://manned.org/pvdisplay.",
+  "useCases": [
+    {
+      "description": "Display information about all physical volumes:",
+      "syntax": "sudo pvdisplay"
+    },
+    {
+      "description": "Display information about the physical volume on drive /dev/sdXY:",
+      "syntax": "sudo pvdisplay {{/dev/sdXY}}"
+    }
+  ]
+}

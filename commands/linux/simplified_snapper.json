@@ -1,0 +1,30 @@
+{
+  "command": "snapper",
+  "description": "Filesystem snapshot management tool. More information: http://snapper.io/manpages/snapper.html.",
+  "useCases": [
+    {
+      "description": "List snapshot configs:",
+      "syntax": "snapper list-configs"
+    },
+    {
+      "description": "Create snapper config:",
+      "syntax": "snapper -c {{config}} create-config {{path/to/directory}}"
+    },
+    {
+      "description": "Create a snapshot with a description:",
+      "syntax": "snapper -c {{config}} create -d &quot;{{snapshot_description}}&quot;"
+    },
+    {
+      "description": "List snapshots for a config:",
+      "syntax": "snapper -c {{config}} list"
+    },
+    {
+      "description": "Delete a snapshot:",
+      "syntax": "snapper -c {{config}} delete {{snapshot_number}}"
+    },
+    {
+      "description": "Delete a range of snapshots:",
+      "syntax": "snapper -c {{config}} delete {{snapshot1}}-{{snapshot2}}"
+    }
+  ]
+}

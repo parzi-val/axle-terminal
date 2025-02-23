@@ -1,0 +1,22 @@
+{
+  "command": "gnmic get",
+  "description": "Get a snapshot of a gnmi network device operation data. More information: https://gnmic.kmrd.dev/cmd/get.",
+  "useCases": [
+    {
+      "description": "Get a snapshot of the device state at a specific path:",
+      "syntax": "gnmic --address {{ip:port}} get --path {{path}}"
+    },
+    {
+      "description": "Query the device state at multiple paths:",
+      "syntax": "gnmic -a {{ip:port}} get --path {{path/to/file_or_directory1}} --path {{path/to/file_or_directory2}}"
+    },
+    {
+      "description": "Query the device state at multiple paths with a common prefix:",
+      "syntax": "gnmic -a {{ip:port}} get --prefix {{prefix}} --path {{path/to/file_or_directory1}} --path {{path/to/file_or_directory2}}"
+    },
+    {
+      "description": "Query the device state and specify response encoding (json_ietf):",
+      "syntax": "gnmic -a {{ip:port}} get --path {{path}} --encoding json_ietf"
+    }
+  ]
+}

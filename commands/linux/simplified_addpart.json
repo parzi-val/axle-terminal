@@ -1,0 +1,10 @@
+{
+  "command": "addpart",
+  "description": "Tell the Linux kernel about the existence of the specified partition. A simple wrapper around the add partition ioctl. More information: https://manned.org/addpart.",
+  "useCases": [
+    {
+      "description": "Tell the kernel about the existence of the specified partition:",
+      "syntax": "addpart {{device}} {{partition}} {{start}} {{length}}"
+    }
+  ]
+}

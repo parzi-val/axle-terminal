@@ -1,0 +1,22 @@
+{
+  "command": "parted",
+  "description": "A partition manipulation program. See also: parted-interactive, partprobe. More information: https://www.gnu.org/software/parted/parted.html.",
+  "useCases": [
+    {
+      "description": "List partitions on all block devices:",
+      "syntax": "sudo parted --list"
+    },
+    {
+      "description": "Create a new partition table of the specified label-type:",
+      "syntax": "sudo parted {{/dev/sdX}} --script mklabel {{aix|amiga|bsd|dvh|gpt|loop|mac|msdos|pc98|sun}}"
+    },
+    {
+      "description": "Create a new gpt partition table with a 500MiB boot partition and give the rest for the system partition:",
+      "syntax": "sudo parted {{/dev/sdX}} --script mklabel gpt mkpart primary 0% 500MiB mkpart primary 500MiB 100%"
+    },
+    {
+      "description": "Start interactive mode with the specified disk selected:",
+      "syntax": "sudo parted {{/dev/sdX}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "monop",
+  "description": "Finds and displays signatures of Types and methods inside .NET assemblies. More information: https://manned.org/monop.",
+  "useCases": [
+    {
+      "description": "Show the structure of a Type built-in of the .NET Framework:",
+      "syntax": "monop {{System.String}}"
+    },
+    {
+      "description": "List the types in an assembly:",
+      "syntax": "monop -r:{{path/to/assembly.exe}}"
+    },
+    {
+      "description": "Show the structure of a Type in a specific assembly:",
+      "syntax": "monop -r:{{path/to/assembly.dll}} {{Namespace.Path.To.Type}}"
+    },
+    {
+      "description": "Only show members defined in the specified Type:",
+      "syntax": "monop -r:{{path/to/assembly.dll}} --only-declared {{Namespace.Path.To.Type}}"
+    },
+    {
+      "description": "Show private members:",
+      "syntax": "monop -r:{{path/to/assembly.dll}} --private {{Namespace.Path.To.Type}}"
+    },
+    {
+      "description": "Hide obsolete members:",
+      "syntax": "monop -r:{{path/to/assembly.dll}} --filter-obsolete {{Namespace.Path.To.Type}}"
+    },
+    {
+      "description": "List the other assemblies that a specified assembly references:",
+      "syntax": "monop -r:{{path/to/assembly.dll}} --refs"
+    }
+  ]
+}

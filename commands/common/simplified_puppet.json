@@ -1,0 +1,22 @@
+{
+  "command": "puppet",
+  "description": "Help to manage and automate the configuration of servers. Some subcommands such as agent have their own usage documentation. More information: https://puppet.com/.",
+  "useCases": [
+    {
+      "description": "Execute a Puppet subcommand:",
+      "syntax": "puppet {{subcommand}}"
+    },
+    {
+      "description": "Check the Puppet version:",
+      "syntax": "puppet --version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "puppet --help"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "puppet help {{subcommand}}"
+    }
+  ]
+}

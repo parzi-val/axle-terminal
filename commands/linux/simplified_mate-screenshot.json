@@ -1,0 +1,34 @@
+{
+  "command": "mate-screenshot",
+  "description": "Make screenshots in MATE desktop environment. More information: https://manned.org/mate-screenshot.",
+  "useCases": [
+    {
+      "description": "Create a fullscreen screenshot:",
+      "syntax": "mate-screenshot"
+    },
+    {
+      "description": "Create an active window screenshot:",
+      "syntax": "mate-screenshot --window"
+    },
+    {
+      "description": "Create a specific area screenshot:",
+      "syntax": "mate-screenshot --area"
+    },
+    {
+      "description": "Create a screenshot interactively:",
+      "syntax": "mate-screenshot --interactive"
+    },
+    {
+      "description": "Create a screenshot without borders:",
+      "syntax": "mate-screenshot --window --remove-border"
+    },
+    {
+      "description": "Create a screenshot with a specific effect:",
+      "syntax": "mate-screenshot --effect={{shadow|border|none}}"
+    },
+    {
+      "description": "Create a screenshot with a specific delay in seconds:",
+      "syntax": "mate-screenshot --delay={{5}}"
+    }
+  ]
+}

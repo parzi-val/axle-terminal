@@ -1,0 +1,34 @@
+{
+  "command": "mongoexport",
+  "description": "Produce exports of data stored in a MongoDB instance formatted as JSON or CSV. More information: https://docs.mongodb.com/database-tools/mongoexport/.",
+  "useCases": [
+    {
+      "description": "Export a collection to stdout, formatted as JSON:",
+      "syntax": "mongoexport --uri={{connection_string}} --collection={{collection_name}}"
+    },
+    {
+      "description": "Export the documents in the specified collection that match a query to a JSON file:",
+      "syntax": "mongoexport --db={{database_name}} --collection={{collection_name}} --query=&quot;{{query_object}}&quot; --out={{path/to/file.json}}"
+    },
+    {
+      "description": "Export documents as a JSON array instead of one object per line:",
+      "syntax": "mongoexport --collection={{collection_name}} --jsonArray"
+    },
+    {
+      "description": "Export documents to a CSV file:",
+      "syntax": "mongoexport --collection={{collection_name}} --type={{csv}} --fields=&quot;{{field1,field2,...}}&quot; --out={{path/to/file.csv}}"
+    },
+    {
+      "description": "Export documents that match the query in the specified file to a CSV file, omitting the list of field names on the first line:",
+      "syntax": "mongoexport --collection={{collection_name}} --type={{csv}} --fields=&quot;{{field1,field2,...}}&quot; --queryFile={{path/to/file}} --noHeaderLine --out={{path/to/file.csv}}"
+    },
+    {
+      "description": "Export documents to stdout, formatted as human-readable JSON:",
+      "syntax": "mongoexport --uri={{mongodb_uri}} --collection={{collection_name}} --pretty"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mongoexport --help"
+    }
+  ]
+}

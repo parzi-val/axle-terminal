@@ -1,0 +1,22 @@
+{
+  "command": "curlie",
+  "description": "A frontend to curl that adds the ease of use of httpie. More information: https://github.com/rs/curlie.",
+  "useCases": [
+    {
+      "description": "Send a GET request:",
+      "syntax": "curlie {{httpbin.org/get}}"
+    },
+    {
+      "description": "Send a POST request:",
+      "syntax": "curlie post {{httpbin.org/post}} {{name=john}} {{age:=25}}"
+    },
+    {
+      "description": "Send a GET request with query parameters (e.g. first_param=5&amp;second_param=true):",
+      "syntax": "curlie get {{httpbin.org/get}} {{first_param==5}} {{second_param==true}}"
+    },
+    {
+      "description": "Send a GET request with a custom header:",
+      "syntax": "curlie get {{httpbin.org/get}} {{header-name:header-value}}"
+    }
+  ]
+}

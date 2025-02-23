@@ -1,0 +1,18 @@
+{
+  "command": "pdfseparate",
+  "description": "Portable Document Format (PDF) file page extractor. More information: https://manpages.debian.org/latest/poppler-utils/pdfseparate.1.en.html.",
+  "useCases": [
+    {
+      "description": "Extract pages from PDF file and make a separate PDF file for each page:",
+      "syntax": "pdfseparate {{path/to/source_filename.pdf}} {{path/to/destination_filename-%d.pdf}}"
+    },
+    {
+      "description": "Specify the first/start page for extraction:",
+      "syntax": "pdfseparate -f {{3}} {{path/to/source_filename.pdf}} {{path/to/destination_filename-%d.pdf}}"
+    },
+    {
+      "description": "Specify the last page for extraction:",
+      "syntax": "pdfseparate -l {{10}} {{path/to/source_filename.pdf}} {{path/to/destination_filename-%d.pdf}}"
+    }
+  ]
+}

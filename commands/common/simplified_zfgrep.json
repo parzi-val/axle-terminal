@@ -1,0 +1,26 @@
+{
+  "command": "zfgrep",
+  "description": "Matches fixed strings in possibly compressed files. Equivalent to grep -F with input decompressed first if necessary. More information: https://manned.org/zfgrep.",
+  "useCases": [
+    {
+      "description": "Search for an exact string in a file:",
+      "syntax": "zfgrep {{search_string}} {{path/to/file}}"
+    },
+    {
+      "description": "Count the number of lines that match the given string in a file:",
+      "syntax": "zfgrep --count {{search_string}} {{path/to/file}}"
+    },
+    {
+      "description": "Show the line number in the file along with the matching lines:",
+      "syntax": "zfgrep --line-number {{search_string}} {{path/to/file}}"
+    },
+    {
+      "description": "Display all lines except those that contain the search string:",
+      "syntax": "zfgrep --invert-match {{search_string}} {{path/to/file}}"
+    },
+    {
+      "description": "List only filenames whose content matches the search string at least once:",
+      "syntax": "zfgrep --files-with-matches {{search_string}} {{path/to/file1 path/to/file2 ...}}"
+    }
+  ]
+}

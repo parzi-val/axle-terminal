@@ -1,0 +1,22 @@
+{
+  "command": "dunstctl",
+  "description": "Control command for dunst. More information: https://manned.org/dunstctl.",
+  "useCases": [
+    {
+      "description": "Pause notifications:",
+      "syntax": "dunstctl set-paused true"
+    },
+    {
+      "description": "Un-pause notifications:",
+      "syntax": "dunstctl set-paused false"
+    },
+    {
+      "description": "Close all notifications:",
+      "syntax": "dunstctl close-all"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dunstctl --help"
+    }
+  ]
+}

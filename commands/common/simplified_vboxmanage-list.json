@@ -1,0 +1,38 @@
+{
+  "command": "vboxmanage-list",
+  "description": "List information about the Oracle VM VirtualBox software and associated service. More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-list.",
+  "useCases": [
+    {
+      "description": "List all VirtualBox virtual machines:",
+      "syntax": "VBoxManage list vms"
+    },
+    {
+      "description": "Show DHCP servers available on the host system:",
+      "syntax": "VBoxManage list dhcpservers"
+    },
+    {
+      "description": "Show Oracle VM VirtualBox extension packs currently installed:",
+      "syntax": "VBoxManage list extpacks"
+    },
+    {
+      "description": "Show all virtual machine groups:",
+      "syntax": "VBoxManage list groups"
+    },
+    {
+      "description": "Show virtual disk settings that are currently in use by VirtualBox:",
+      "syntax": "VBoxManage list hdds"
+    },
+    {
+      "description": "Show host-only network interfaces available on host system:",
+      "syntax": "VBoxManage list hostonlyifs"
+    },
+    {
+      "description": "Show the list of currently running virtual machines:",
+      "syntax": "VBoxManage list runningvms"
+    },
+    {
+      "description": "Show host system information:",
+      "syntax": "VBoxManage list hostinfo"
+    }
+  ]
+}

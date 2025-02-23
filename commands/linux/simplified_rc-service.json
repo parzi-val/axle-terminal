@@ -1,0 +1,34 @@
+{
+  "command": "rc-service",
+  "description": "Locate and run OpenRC services with arguments. See also openrc. More information: https://manned.org/rc-service.",
+  "useCases": [
+    {
+      "description": "Show a service's status:",
+      "syntax": "rc-service {{service_name}} status"
+    },
+    {
+      "description": "Start a service:",
+      "syntax": "sudo rc-service {{service_name}} start"
+    },
+    {
+      "description": "Stop a service:",
+      "syntax": "sudo rc-service {{service_name}} stop"
+    },
+    {
+      "description": "Restart a service:",
+      "syntax": "sudo rc-service {{service_name}} restart"
+    },
+    {
+      "description": "Simulate running a service's custom command:",
+      "syntax": "sudo rc-service --dry-run {{service_name}} {{command_name}}"
+    },
+    {
+      "description": "Actually run a service's custom command:",
+      "syntax": "sudo rc-service {{service_name}} {{command_name}}"
+    },
+    {
+      "description": "Resolve the location of a service definition on disk:",
+      "syntax": "sudo rc-service --resolve {{service_name}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "bq",
+  "description": "A Python-based tool for BigQuery, Google Cloud's fully managed and completely serverless enterprise data warehouse. More information: https://cloud.google.com/bigquery/docs/reference/bq-cli-reference.",
+  "useCases": [
+    {
+      "description": "Run query against a BigQuery table using standard SQL, add --dry_run flag to estimate the number of bytes read by the query:",
+      "syntax": "bq query --nouse_legacy_sql 'SELECT COUNT(*) FROM {{DATASET_NAME}}.{{TABLE_NAME}}'"
+    },
+    {
+      "description": "Run a parameterized query:",
+      "syntax": "bq query --use_legacy_sql=false --parameter='ts_value:TIMESTAMP:2016-12-07 08:00:00' 'SELECT TIMESTAMP_ADD(@ts_value, INTERVAL 1 HOUR)'"
+    },
+    {
+      "description": "Create a new dataset or table in the US location:",
+      "syntax": "bq mk --location=US {{dataset_name}}.{{table_name}}"
+    },
+    {
+      "description": "List all datasets in a project:",
+      "syntax": "bq ls --filter labels.{{key}}:{{value}} --max_results {{integer}} --format=prettyjson --project_id {{project_id}}"
+    },
+    {
+      "description": "Batch load data from a specific file in formats such as CSV, JSON, Parquet, and Avro to a table:",
+      "syntax": "bq load --location {{location}} --source_format {{CSV|JSON|PARQUET|AVRO}} {{dataset}}.{{table}} {{path_to_source}}"
+    },
+    {
+      "description": "Copy one table to another:",
+      "syntax": "bq cp {{dataset}}.{{OLD_TABLE}} {{dataset}}.{{new_table}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "bq help"
+    }
+  ]
+}

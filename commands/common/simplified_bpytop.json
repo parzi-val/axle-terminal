@@ -1,0 +1,30 @@
+{
+  "command": "bpytop",
+  "description": "A resource monitor that shows information about the CPU, memory, disks, network and processes. A Python version of bashtop. More information: https://github.com/aristocratos/bpytop.",
+  "useCases": [
+    {
+      "description": "Start bpytop:",
+      "syntax": "bpytop"
+    },
+    {
+      "description": "Start in minimal mode without memory and networking boxes:",
+      "syntax": "bpytop -m"
+    },
+    {
+      "description": "Toggle minimal mode:",
+      "syntax": "m"
+    },
+    {
+      "description": "Search for running programs or processes:",
+      "syntax": "f"
+    },
+    {
+      "description": "Change settings:",
+      "syntax": "M"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "bpytop -v"
+    }
+  ]
+}

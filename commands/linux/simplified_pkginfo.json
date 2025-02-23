@@ -1,0 +1,22 @@
+{
+  "command": "pkginfo",
+  "description": "Query the package database on a CRUX system. More information: https://crux.nu/Main/Handbook3-6#ntoc19.",
+  "useCases": [
+    {
+      "description": "List installed packages and their versions:",
+      "syntax": "pkginfo -i"
+    },
+    {
+      "description": "List files owned by a package:",
+      "syntax": "pkginfo -l {{package}}"
+    },
+    {
+      "description": "List the owner(s) of files matching a pattern:",
+      "syntax": "pkginfo -o {{pattern}}"
+    },
+    {
+      "description": "Print the footprint of a file:",
+      "syntax": "pkginfo -f {{path/to/file}}"
+    }
+  ]
+}

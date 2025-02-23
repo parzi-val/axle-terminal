@@ -1,0 +1,30 @@
+{
+  "command": "mutagen",
+  "description": "Real-time file synchronization and network forwarding tool. More information: https://mutagen.io.",
+  "useCases": [
+    {
+      "description": "Start a synchronization session between a local directory and a remote host:",
+      "syntax": "mutagen sync create --name={{session_name}} {{/path/to/local/directory/}} {{user}}@{{host}}:{{/path/to/remote/directory/}}"
+    },
+    {
+      "description": "Start a synchronization session between a local directory and a Docker container:",
+      "syntax": "mutagen sync create --name={{session_name}} {{/path/to/local/directory/}} docker://{{user}}@{{container_name}}{{/path/to/remote/directory/}}"
+    },
+    {
+      "description": "Stop a running session:",
+      "syntax": "mutagen sync terminate {{session_name}}"
+    },
+    {
+      "description": "Start a project:",
+      "syntax": "mutagen project start"
+    },
+    {
+      "description": "Stop a project:",
+      "syntax": "mutagen project terminate"
+    },
+    {
+      "description": "List running sessions for the current project:",
+      "syntax": "mutagen project list"
+    }
+  ]
+}

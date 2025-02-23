@@ -1,0 +1,22 @@
+{
+  "command": "uptime",
+  "description": "Tell how long the system has been running and other information. More information: https://www.gnu.org/software/coreutils/manual/html_node/uptime-invocation.html.",
+  "useCases": [
+    {
+      "description": "Print current time, uptime, number of logged-in users and other information:",
+      "syntax": "uptime"
+    },
+    {
+      "description": "Show only the amount of time the system has been booted for:",
+      "syntax": "uptime --pretty"
+    },
+    {
+      "description": "Print the date and time the system booted up at:",
+      "syntax": "uptime --since"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "uptime --version"
+    }
+  ]
+}

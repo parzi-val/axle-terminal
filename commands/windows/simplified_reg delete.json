@@ -1,0 +1,22 @@
+{
+  "command": "reg delete",
+  "description": "Delete keys or their values from the registry. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-delete.",
+  "useCases": [
+    {
+      "description": "Delete a specific registry key:",
+      "syntax": "reg delete {{key_name}}"
+    },
+    {
+      "description": "Delete a [v]alue under a specific key:",
+      "syntax": "reg delete {{key_name}} /v {{value}}"
+    },
+    {
+      "description": "Delete [a]ll [v]alues recursively under the specified key:",
+      "syntax": "reg delete {{key_name}} /va"
+    },
+    {
+      "description": "[f]orcefully (without a prompt) delete [a]ll [v]alues recursively under a key:",
+      "syntax": "reg delete {{key_name}} /f /va"
+    }
+  ]
+}

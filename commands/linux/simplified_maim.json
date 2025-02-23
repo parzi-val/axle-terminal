@@ -1,0 +1,22 @@
+{
+  "command": "maim",
+  "description": "Screenshot utility. More information: https://github.com/naelstrof/maim.",
+  "useCases": [
+    {
+      "description": "Capture a screenshot and save it to the given path:",
+      "syntax": "maim {{path/to/screenshot.png}}"
+    },
+    {
+      "description": "Capture a screenshot of the selected region:",
+      "syntax": "maim --select {{path/to/screenshot.png}}"
+    },
+    {
+      "description": "Capture a screenshot of the selected region and save it in the clipboard (requires xclip):",
+      "syntax": "maim --select | xclip -selection clipboard -target image/png"
+    },
+    {
+      "description": "Capture a screenshot of the current active window (requires xdotool):",
+      "syntax": "maim --window $(xdotool getactivewindow) {{path/to/screenshot.png}}"
+    }
+  ]
+}

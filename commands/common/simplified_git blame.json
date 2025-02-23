@@ -1,0 +1,30 @@
+{
+  "command": "git blame",
+  "description": "Show commit hash and last author on each line of a file. More information: https://git-scm.com/docs/git-blame.",
+  "useCases": [
+    {
+      "description": "Print file with author name and commit hash on each line:",
+      "syntax": "git blame {{path/to/file}}"
+    },
+    {
+      "description": "Print file with author email and commit hash on each line:",
+      "syntax": "git blame {{-e|--show-email}} {{path/to/file}}"
+    },
+    {
+      "description": "Print file with author name and commit hash on each line at a specific commit:",
+      "syntax": "git blame {{commit}} {{path/to/file}}"
+    },
+    {
+      "description": "Print file with author name and commit hash on each line before a specific commit:",
+      "syntax": "git blame {{commit}}~ {{path/to/file}}"
+    },
+    {
+      "description": "Print author name and commit hash information for a specific line range:",
+      "syntax": "git blame -L {{start_line}},{{end_line}} {{path/to/file}}"
+    },
+    {
+      "description": "Ignore whitespaces and line moves:",
+      "syntax": "git blame -w -C -C -C {{path/to/file}}"
+    }
+  ]
+}

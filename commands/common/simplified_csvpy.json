@@ -1,0 +1,14 @@
+{
+  "command": "csvpy",
+  "description": "Load a CSV file into a Python shell. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/csvpy.html.",
+  "useCases": [
+    {
+      "description": "Load a CSV file into a CSVKitReader object:",
+      "syntax": "csvpy {{data.csv}}"
+    },
+    {
+      "description": "Load a CSV file into a CSVKitDictReader object:",
+      "syntax": "csvpy --dict {{data.csv}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "arc",
+  "description": "Arcanist: a CLI for Phabricator. More information: https://secure.phabricator.com/book/phabricator/article/arcanist/.",
+  "useCases": [
+    {
+      "description": "Send the changes to Differential for review:",
+      "syntax": "arc diff"
+    },
+    {
+      "description": "Show pending revision information:",
+      "syntax": "arc list"
+    },
+    {
+      "description": "Update Git commit messages after review:",
+      "syntax": "arc amend"
+    },
+    {
+      "description": "Push Git changes:",
+      "syntax": "arc land"
+    }
+  ]
+}

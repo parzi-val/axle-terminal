@@ -1,0 +1,38 @@
+{
+  "command": "systemctl",
+  "description": "Control the systemd system and service manager. More information: https://www.freedesktop.org/software/systemd/man/systemctl.html.",
+  "useCases": [
+    {
+      "description": "Show all running services:",
+      "syntax": "systemctl status"
+    },
+    {
+      "description": "List failed units:",
+      "syntax": "systemctl --failed"
+    },
+    {
+      "description": "Start/Stop/Restart/Reload/Show the status a service:",
+      "syntax": "systemctl {{start|stop|restart|reload|status}} {{unit}}"
+    },
+    {
+      "description": "Enable/Disable a unit to be started on bootup:",
+      "syntax": "systemctl {{enable|disable}} {{unit}}"
+    },
+    {
+      "description": "Reload systemd, scan for new or changed units:",
+      "syntax": "systemctl daemon-reload"
+    },
+    {
+      "description": "Check if a unit is active/enabled/failed:",
+      "syntax": "systemctl {{is-active|is-enabled|is-failed}} {{unit}}"
+    },
+    {
+      "description": "List all service/socket/automount units filtering by running/failed state:",
+      "syntax": "systemctl list-units --type={{service|socket|automount}} --state={{failed|running}}"
+    },
+    {
+      "description": "Show the contents & absolute path of a unit file:",
+      "syntax": "systemctl cat {{unit}}"
+    }
+  ]
+}

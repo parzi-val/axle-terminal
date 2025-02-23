@@ -1,0 +1,38 @@
+{
+  "command": "opam",
+  "description": "OCaml Package Manager. Manage OCaml compilers, tools and libraries. More information: https://opam.ocaml.org/.",
+  "useCases": [
+    {
+      "description": "Initialize opam for first use:",
+      "syntax": "opam init"
+    },
+    {
+      "description": "Search for packages:",
+      "syntax": "opam search {{query}}"
+    },
+    {
+      "description": "Install a package and all of its dependencies:",
+      "syntax": "opam install {{package}}"
+    },
+    {
+      "description": "Display detailed information about a package:",
+      "syntax": "opam show {{package}}"
+    },
+    {
+      "description": "List all installed packages:",
+      "syntax": "opam list"
+    },
+    {
+      "description": "Update the local package database:",
+      "syntax": "opam update"
+    },
+    {
+      "description": "Upgrade all installed packages:",
+      "syntax": "opam upgrade"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "opam help"
+    }
+  ]
+}

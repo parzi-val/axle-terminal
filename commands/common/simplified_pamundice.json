@@ -1,0 +1,18 @@
+{
+  "command": "pamundice",
+  "description": "Combine a grid of Netpbm images into one. See also: pamdice. More information: https://netpbm.sourceforge.net/doc/pamundice.html.",
+  "useCases": [
+    {
+      "description": "Combine the images whose names match the printf-style filename expression. Assume a grid with a specific size:",
+      "syntax": "pamundice {{filename_%1d_%1a.ppm}} -across {{grid_width}} -down {{grid_height}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Assume that the tiles overlap horizontally and vertically by the specified amount:",
+      "syntax": "pamundice {{filename_%1d_%1a.ppm}} -across {{x_value}} -down {{y_value}} -hoverlap {{value}} -voverlap {{value}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Specify the images to be combined through a text file containing one filename per line:",
+      "syntax": "pamundice -listfile {{path/to/file.txt}} -across {{x_value}} -down {{y_value}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

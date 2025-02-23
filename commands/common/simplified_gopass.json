@@ -1,0 +1,38 @@
+{
+  "command": "gopass",
+  "description": "Standard Unix Password Manager for Teams. Written in Go. More information: https://www.gopass.pw.",
+  "useCases": [
+    {
+      "description": "Initialize the configuration settings:",
+      "syntax": "gopass init"
+    },
+    {
+      "description": "Create a new entry:",
+      "syntax": "gopass new"
+    },
+    {
+      "description": "Show all stores:",
+      "syntax": "gopass mounts"
+    },
+    {
+      "description": "Mount a shared Git store:",
+      "syntax": "gopass mounts add {{store_name}} {{git_repo_url}}"
+    },
+    {
+      "description": "Search interactively using a keyword:",
+      "syntax": "gopass show {{keyword}}"
+    },
+    {
+      "description": "Search using a keyword:",
+      "syntax": "gopass find {{keyword}}"
+    },
+    {
+      "description": "Sync all mounted stores:",
+      "syntax": "gopass sync"
+    },
+    {
+      "description": "Show a particular password entry:",
+      "syntax": "gopass {{store_name|path/to/directory|email@email.com}}"
+    }
+  ]
+}

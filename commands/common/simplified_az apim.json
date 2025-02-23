@@ -1,0 +1,26 @@
+{
+  "command": "az apim",
+  "description": "Manage Azure API Management services. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/apim.",
+  "useCases": [
+    {
+      "description": "List API Management services within a resource group:",
+      "syntax": "az apim list --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Create an API Management service instance:",
+      "syntax": "az apim create --name {{name}} --resource-group {{resource_group}} --publisher-email {{email}} --publisher-name {{name}}"
+    },
+    {
+      "description": "Delete an API Management service:",
+      "syntax": "az apim delete --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Show details of an API Management service instance:",
+      "syntax": "az apim show --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Update an API Management service instance:",
+      "syntax": "az apim update --name {{name}} --resource-group {{resource_group}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "udevadm",
+  "description": "Linux udev management tool. More information: https://www.freedesktop.org/software/systemd/man/udevadm.",
+  "useCases": [
+    {
+      "description": "Monitor all device events:",
+      "syntax": "sudo udevadm monitor"
+    },
+    {
+      "description": "Print uevents sent out by the kernel:",
+      "syntax": "sudo udevadm monitor --kernel"
+    },
+    {
+      "description": "Print device events after being processed by udev:",
+      "syntax": "sudo udevadm monitor --udev"
+    },
+    {
+      "description": "List attributes of device /dev/sda:",
+      "syntax": "sudo udevadm info --attribute-walk {{/dev/sda}}"
+    },
+    {
+      "description": "Reload all udev rules:",
+      "syntax": "sudo udevadm control --reload"
+    },
+    {
+      "description": "Trigger all udev rules to run:",
+      "syntax": "sudo udevadm trigger"
+    },
+    {
+      "description": "Test an event run by simulating loading of /dev/sda:",
+      "syntax": "sudo udevadm test {{/dev/sda}}"
+    }
+  ]
+}

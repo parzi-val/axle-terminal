@@ -1,0 +1,10 @@
+{
+  "command": "sc_wartscat",
+  "description": "Concatenate warts files. More information: https://www.caida.org/catalog/software/scamper/.",
+  "useCases": [
+    {
+      "description": "Concatenate warts files into one:",
+      "syntax": "sc_wartscat -o {{path/to/output.warts}} {{path/to/file1.warts path/to/file2.warts ...}}"
+    }
+  ]
+}

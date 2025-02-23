@@ -1,0 +1,26 @@
+{
+  "command": "cradle install",
+  "description": "Install the Cradle PHP framework components. More information: https://cradlephp.github.io/docs/3.B.-Reference-Command-Line-Tools.html#install.",
+  "useCases": [
+    {
+      "description": "Install Cradle's components (User will be prompted for further details):",
+      "syntax": "cradle install"
+    },
+    {
+      "description": "Forcefully overwrite files:",
+      "syntax": "cradle install --force"
+    },
+    {
+      "description": "Skip running SQL migrations:",
+      "syntax": "cradle install --skip-sql"
+    },
+    {
+      "description": "Skip running package updates:",
+      "syntax": "cradle install --skip-versioning"
+    },
+    {
+      "description": "Use specific database details:",
+      "syntax": "cradle install -h {{hostname}} -u {{username}} -p {{password}}"
+    }
+  ]
+}

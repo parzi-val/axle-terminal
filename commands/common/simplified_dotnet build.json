@@ -1,0 +1,34 @@
+{
+  "command": "dotnet build",
+  "description": "Builds a .NET application and its dependencies. More information: https://learn.microsoft.com/dotnet/core/tools/dotnet-build.",
+  "useCases": [
+    {
+      "description": "Compile the project or solution in the current directory:",
+      "syntax": "dotnet build"
+    },
+    {
+      "description": "Compile a .NET project or solution in debug mode:",
+      "syntax": "dotnet build {{path/to/project_or_solution}}"
+    },
+    {
+      "description": "Compile in release mode:",
+      "syntax": "dotnet build --configuration {{Release}}"
+    },
+    {
+      "description": "Compile without restoring dependencies:",
+      "syntax": "dotnet build --no-restore"
+    },
+    {
+      "description": "Compile with a specific verbosity level:",
+      "syntax": "dotnet build --verbosity {{quiet|minimal|normal|detailed|diagnostic}}"
+    },
+    {
+      "description": "Compile for a specific runtime:",
+      "syntax": "dotnet build --runtime {{runtime_identifier}}"
+    },
+    {
+      "description": "Specify the output directory:",
+      "syntax": "dotnet build --output {{path/to/directory}}"
+    }
+  ]
+}

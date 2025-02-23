@@ -1,0 +1,38 @@
+{
+  "command": "cargo bench",
+  "description": "Compile and execute benchmarks. More information: https://doc.rust-lang.org/cargo/commands/cargo-bench.html.",
+  "useCases": [
+    {
+      "description": "Execute all benchmarks of a package:",
+      "syntax": "cargo bench"
+    },
+    {
+      "description": "Don't stop when a benchmark fails:",
+      "syntax": "cargo bench --no-fail-fast"
+    },
+    {
+      "description": "Compile, but don’t run benchmarks:",
+      "syntax": "cargo bench --no-run"
+    },
+    {
+      "description": "Benchmark the specified benchmark:",
+      "syntax": "cargo bench --bench {{benchmark}}"
+    },
+    {
+      "description": "Benchmark with the given profile (default: bench):",
+      "syntax": "cargo bench --profile {{profile}}"
+    },
+    {
+      "description": "Benchmark all example targets:",
+      "syntax": "cargo bench --examples"
+    },
+    {
+      "description": "Benchmark all binary targets:",
+      "syntax": "cargo bench --bins"
+    },
+    {
+      "description": "Benchmark the package’s library:",
+      "syntax": "cargo bench --lib"
+    }
+  ]
+}

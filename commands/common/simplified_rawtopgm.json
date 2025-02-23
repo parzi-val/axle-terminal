@@ -1,0 +1,34 @@
+{
+  "command": "rawtopgm",
+  "description": "Convert a raw greyscale image to a PGM image. More information: https://netpbm.sourceforge.net/doc/rawtopgm.html.",
+  "useCases": [
+    {
+      "description": "Convert a raw greyscale image to a PGM image:",
+      "syntax": "rawtopgm {{width}} {{height}} {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Convert a raw greyscale image to a PGM image, assume the image to be a square:",
+      "syntax": "rawtopgm {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Convert a raw greyscale image in which the pixels come bottom-first instead of top-first to a PGM image:",
+      "syntax": "rawtopgm {{width}} {{height}} -bottomfirst {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Ignore the first n bytes of the specified file:",
+      "syntax": "rawtopgm {{width}} {{height}} -headerskip {{n}} {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Ignore the last m bytes of each row in the specified file:",
+      "syntax": "rawtopgm {{width}} {{height}} -rowskip {{m}} {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Specify the maxval for the grey values in the input to be equal to N:",
+      "syntax": "rawtopgm {{width}} {{height}} -maxval {{N}} {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Specify the number of bytes that represent each sample in the input and that the byte-sequence is to be interpreted as little-endian:",
+      "syntax": "rawtopgm {{width}} {{height}} -bpp {{1|2}} -littleendian {{path/to/image.raw}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "fdroidcl",
+  "description": "Manage F-Droid apps of devices connected via ADB. More information: https://github.com/mvdan/fdroidcl.",
+  "useCases": [
+    {
+      "description": "Fetch the F-Droid index:",
+      "syntax": "fdroidcl update"
+    },
+    {
+      "description": "Display information about an app:",
+      "syntax": "fdroidcl show {{app_id}}"
+    },
+    {
+      "description": "Download the APK file of an app:",
+      "syntax": "fdroidcl download {{app_id}}"
+    },
+    {
+      "description": "Search for an app in the index:",
+      "syntax": "fdroidcl search {{search_pattern}}"
+    },
+    {
+      "description": "Install an app on a connected device:",
+      "syntax": "fdroidcl install {{app_id}}"
+    },
+    {
+      "description": "Add a repository:",
+      "syntax": "fdroidcl repo add {{repo_name}} {{url}}"
+    },
+    {
+      "description": "Remove, enable or disable a repository:",
+      "syntax": "fdroidcl repo {{remove|enable|disable}} {{repo_name}}"
+    }
+  ]
+}

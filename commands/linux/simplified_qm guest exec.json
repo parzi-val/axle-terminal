@@ -1,0 +1,22 @@
+{
+  "command": "qm guest exec",
+  "description": "Execute a specific command via a guest agent. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Execute a specific command via a guest agent:",
+      "syntax": "qm guest exec {{vm_id}} {{command}} {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Execute a specific command via a guest agent asynchronously:",
+      "syntax": "qm guest exec {{vm_id}} {{argument1 argument2 ...}} --synchronous 0"
+    },
+    {
+      "description": "Execute a specific command via a guest agent with a specified timeout of 10 seconds:",
+      "syntax": "qm guest exec {{vm_id}} {{argument1 argument2...}} --timeout {{10}}"
+    },
+    {
+      "description": "Execute a specific command via a guest agent and forward input from stdin until EOF to the guest agent:",
+      "syntax": "qm guest exec {{vm_id}} {{argument1 argument2 ...}} --pass-stdin 1"
+    }
+  ]
+}

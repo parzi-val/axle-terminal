@@ -1,0 +1,22 @@
+{
+  "command": "ufraw-batch",
+  "description": "Convert RAW files from cameras into standard image files. More information: https://manned.org/ufraw-batch.",
+  "useCases": [
+    {
+      "description": "Simply convert RAW files to JPEG:",
+      "syntax": "ufraw-batch --out-type=jpg {{input_file(s)}}"
+    },
+    {
+      "description": "Simply convert RAW files to PNG:",
+      "syntax": "ufraw-batch --out-type=png {{input_file(s)}}"
+    },
+    {
+      "description": "Extract the preview image from the raw file:",
+      "syntax": "ufraw-batch --embedded-image {{input_file(s)}}"
+    },
+    {
+      "description": "Save the file with size up to the given maximums MAX1 and MAX2:",
+      "syntax": "ufraw-batch --size=MAX1,MAX2 {{input_file(s)}}"
+    }
+  ]
+}

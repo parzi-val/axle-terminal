@@ -1,0 +1,14 @@
+{
+  "command": "pnmsmooth",
+  "description": "Smooth out a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmsmooth.html.",
+  "useCases": [
+    {
+      "description": "Smooth out a PNM image using a convolution matrix of size 3x3:",
+      "syntax": "pnmsmooth {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Smooth out a PNM image using a convolution matrix of size width times height:",
+      "syntax": "pnmsmooth -width {{width}} -height {{height}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

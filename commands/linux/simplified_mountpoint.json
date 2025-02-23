@@ -1,0 +1,18 @@
+{
+  "command": "mountpoint",
+  "description": "Test if a directory is a filesystem mountpoint. More information: https://manned.org/mountpoint.",
+  "useCases": [
+    {
+      "description": "Check if a directory is a mountpoint:",
+      "syntax": "mountpoint {{path/to/directory}}"
+    },
+    {
+      "description": "Check if a directory is a mountpoint without showing any output:",
+      "syntax": "mountpoint -q {{path/to/directory}}"
+    },
+    {
+      "description": "Show major/minor numbers of a mountpoint's filesystem:",
+      "syntax": "mountpoint --fs-devno {{path/to/directory}}"
+    }
+  ]
+}

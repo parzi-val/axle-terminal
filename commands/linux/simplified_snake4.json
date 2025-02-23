@@ -1,0 +1,30 @@
+{
+  "command": "snake4",
+  "description": "Snake game in the terminal. More information: https://manned.org/snake4.6.",
+  "useCases": [
+    {
+      "description": "Start a snake game:",
+      "syntax": "snake4"
+    },
+    {
+      "description": "Choose level:",
+      "syntax": "{{1|2|3|4|5}}"
+    },
+    {
+      "description": "Navigate the snake:",
+      "syntax": "{{Up|Down|Left|Right arrow key}}"
+    },
+    {
+      "description": "Pause game:",
+      "syntax": "&lt;Spacebar&gt;"
+    },
+    {
+      "description": "Quit game:",
+      "syntax": "q"
+    },
+    {
+      "description": "Show the high scores:",
+      "syntax": "snake4 --highscores"
+    }
+  ]
+}

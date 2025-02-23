@@ -1,0 +1,22 @@
+{
+  "command": "warp-diag",
+  "description": "Diagnostic and feedback tool for Cloudflare's WARP service. See also: warp-cli. More information: https://developers.cloudflare.com/warp-client/.",
+  "useCases": [
+    {
+      "description": "Generate a Zip file with information about the system configuration and the WARP connection:",
+      "syntax": "warp-diag"
+    },
+    {
+      "description": "Generate a Zip file with debug information including a timestamp to the output filename:",
+      "syntax": "warp-diag --add-ts"
+    },
+    {
+      "description": "Save the output file under a specific directory:",
+      "syntax": "warp-diag --output {{path/to/directory}}"
+    },
+    {
+      "description": "Submit a new feedback to Cloudflare's WARP interactively:",
+      "syntax": "warp-diag feedback"
+    }
+  ]
+}

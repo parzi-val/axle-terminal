@@ -1,0 +1,14 @@
+{
+  "command": "break",
+  "description": "Break out of a for, while, until or select loop. More information: https://www.gnu.org/software/bash/manual/bash.html#index-break.",
+  "useCases": [
+    {
+      "description": "Break out of a single loop:",
+      "syntax": "while :; do break; done"
+    },
+    {
+      "description": "Break out of nested loops:",
+      "syntax": "while :; do while :; do break 2; done; done"
+    }
+  ]
+}

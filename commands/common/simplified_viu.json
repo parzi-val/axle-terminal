@@ -1,0 +1,26 @@
+{
+  "command": "viu",
+  "description": "View images on the terminal. More information: https://github.com/atanunq/viu.",
+  "useCases": [
+    {
+      "description": "Render an image or animated GIF:",
+      "syntax": "viu {{path/to/file}}"
+    },
+    {
+      "description": "Render an image or GIF from the internet using curl:",
+      "syntax": "curl -s {{https://example.com/image.png}} | viu -"
+    },
+    {
+      "description": "Render an image with a transparent background:",
+      "syntax": "viu -t {{path/to/file}}"
+    },
+    {
+      "description": "Render an image with a specific width and height in pixels:",
+      "syntax": "viu -w {{width}} -h {{height}} {{path/to/file}}"
+    },
+    {
+      "description": "Render an image or GIF and display its file name:",
+      "syntax": "viu -n {{path/to/file}}"
+    }
+  ]
+}

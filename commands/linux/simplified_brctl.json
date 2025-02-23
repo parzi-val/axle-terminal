@@ -1,0 +1,26 @@
+{
+  "command": "brctl",
+  "description": "Ethernet bridge administration. More information: https://manned.org/brctl.",
+  "useCases": [
+    {
+      "description": "Show a list with information about currently existing Ethernet bridges:",
+      "syntax": "sudo brctl show"
+    },
+    {
+      "description": "Create a new Ethernet bridge interface:",
+      "syntax": "sudo brctl add {{bridge_name}}"
+    },
+    {
+      "description": "Delete an existing Ethernet bridge interface:",
+      "syntax": "sudo brctl del {{bridge_name}}"
+    },
+    {
+      "description": "Add an interface to an existing bridge:",
+      "syntax": "sudo brctl addif {{bridge_name}} {{interface_name}}"
+    },
+    {
+      "description": "Remove an interface from an existing bridge:",
+      "syntax": "sudo brctl delif {{bridge_name}} {{interface_name}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "qm create",
+  "description": "Create or restore a virtual machine on QEMU/KVM Virtual Machine Manager. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Create a virtual machine:",
+      "syntax": "qm create {{100}}"
+    },
+    {
+      "description": "Automatically start the machine after creation:",
+      "syntax": "qm create {{100}} --start 1"
+    },
+    {
+      "description": "Specify the type of operating system on the machine:",
+      "syntax": "qm create {{100}} --ostype {{win10}}"
+    },
+    {
+      "description": "Replace an existing machine (requires archiving it):",
+      "syntax": "qm create {{100}} --archive {{path/to/backup_file.tar}} --force 1"
+    },
+    {
+      "description": "Specify a script that is executed automatically depending on the state of the virtual machine:",
+      "syntax": "qm create {{100}} --hookscript {{path/to/script.pl}}"
+    }
+  ]
+}

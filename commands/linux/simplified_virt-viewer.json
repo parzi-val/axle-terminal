@@ -1,0 +1,26 @@
+{
+  "command": "virt-viewer",
+  "description": "Minimal graphical interface for a virtual machine (VM). Note: 'domain' refers to the name, UUID or ID for the existing VMs (See: tldr virsh). More information: https://manned.org/virt-viewer.",
+  "useCases": [
+    {
+      "description": "Launch virt-viewer with a prompt to select running virtual machines:",
+      "syntax": "virt-viewer"
+    },
+    {
+      "description": "Launch virt-viewer for a specific virtual machine by ID, UUID or name:",
+      "syntax": "virt-viewer &quot;{{domain}}&quot;"
+    },
+    {
+      "description": "Wait for a virtual machine to start and automatically reconnect if it shutdown and restarts:",
+      "syntax": "virt-viewer --reconnect --wait &quot;{{domain}}&quot;"
+    },
+    {
+      "description": "Connect to a specific remote virtual machine over TLS:",
+      "syntax": "virt-viewer --connect &quot;xen//{{url}}&quot; &quot;{{domain}}&quot;"
+    },
+    {
+      "description": "Connect to a specific remote virtual machine over SSH:",
+      "syntax": "virt-viewer --connect &quot;qemu+ssh//{{username}}@{{url}}/system&quot; &quot;{{domain}}&quot;"
+    }
+  ]
+}

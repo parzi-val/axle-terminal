@@ -1,0 +1,30 @@
+{
+  "command": "dub",
+  "description": "Package manager for D packages. More information: https://dub.pm/commandline.",
+  "useCases": [
+    {
+      "description": "Interactively create a new D project:",
+      "syntax": "dub init {{project_name}}"
+    },
+    {
+      "description": "Non-interactively create a new D project:",
+      "syntax": "dub init {{project_name}} -n"
+    },
+    {
+      "description": "Build and run a D project:",
+      "syntax": "dub"
+    },
+    {
+      "description": "Install dependencies specified in a D project's dub.json or dub.sdl file:",
+      "syntax": "dub fetch"
+    },
+    {
+      "description": "Update the dependencies in a D project:",
+      "syntax": "dub upgrade"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dub --help"
+    }
+  ]
+}

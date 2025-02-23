@@ -1,0 +1,18 @@
+{
+  "command": "pstree",
+  "description": "A convenient tool to show running processes as a tree. More information: https://manned.org/pstree.",
+  "useCases": [
+    {
+      "description": "Display a tree of processes:",
+      "syntax": "pstree"
+    },
+    {
+      "description": "Display a tree of processes with PIDs:",
+      "syntax": "pstree -p"
+    },
+    {
+      "description": "Display all process trees rooted at processes owned by specified user:",
+      "syntax": "pstree {{user}}"
+    }
+  ]
+}

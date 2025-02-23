@@ -1,0 +1,18 @@
+{
+  "command": "p10k",
+  "description": "Manage configurations for powerlevel10k. More information: https://github.com/romkatv/powerlevel10k.",
+  "useCases": [
+    {
+      "description": "Configure powerlevel10k interactively:",
+      "syntax": "p10k configure"
+    },
+    {
+      "description": "Reload powerlevel10k:",
+      "syntax": "p10k reload"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "p10k help"
+    }
+  ]
+}

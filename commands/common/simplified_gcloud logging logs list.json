@@ -1,0 +1,38 @@
+{
+  "command": "gcloud logging logs list",
+  "description": "List logs in a Google Cloud project. Useful for identifying available logs for monitoring and analysis. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/logging/logs/list.",
+  "useCases": [
+    {
+      "description": "List all logs in the current project:",
+      "syntax": "gcloud logging logs list"
+    },
+    {
+      "description": "List all logs for a specific log bucket and location:",
+      "syntax": "gcloud logging logs list --bucket={{bucket_id}} --location={{location}}"
+    },
+    {
+      "description": "List all logs for a specific view in a log bucket:",
+      "syntax": "gcloud logging logs list --bucket={{bucket_id}} --location={{location}} --view={{view_id}}"
+    },
+    {
+      "description": "List logs with a filter expression:",
+      "syntax": "gcloud logging logs list --filter=&quot;{{expression}}&quot;"
+    },
+    {
+      "description": "List a specified number of logs:",
+      "syntax": "gcloud logging logs list --limit={{number}}"
+    },
+    {
+      "description": "List logs sorted by a specific field in ascending or descending order (~ for descending):",
+      "syntax": "gcloud logging logs list --sort-by=&quot;{{field_name}}&quot;"
+    },
+    {
+      "description": "List logs sorted by multiple fields:",
+      "syntax": "gcloud logging logs list --sort-by=&quot;{{field1}},~{{field2}}&quot;"
+    },
+    {
+      "description": "List logs with verbose output, showing additional details:",
+      "syntax": "gcloud logging logs list --verbosity=debug"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "choco",
+  "description": "The Chocolatey package manager. Some subcommands such as install have their own usage documentation. More information: https://chocolatey.org.",
+  "useCases": [
+    {
+      "description": "Execute a Chocolatey command:",
+      "syntax": "choco {{command}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "choco -?"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "choco {{command}} -?"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "choco --version"
+    }
+  ]
+}

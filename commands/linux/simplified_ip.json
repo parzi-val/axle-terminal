@@ -1,0 +1,38 @@
+{
+  "command": "ip",
+  "description": "Show/manipulate routing, devices, policy routing and tunnels. Some subcommands such as address have their own usage documentation. More information: https://www.manned.org/ip.8.",
+  "useCases": [
+    {
+      "description": "List interfaces with detailed info:",
+      "syntax": "ip address"
+    },
+    {
+      "description": "List interfaces with brief network layer info:",
+      "syntax": "ip -brief address"
+    },
+    {
+      "description": "List interfaces with brief link layer info:",
+      "syntax": "ip -brief link"
+    },
+    {
+      "description": "Display the routing table:",
+      "syntax": "ip route"
+    },
+    {
+      "description": "Show neighbors (ARP table):",
+      "syntax": "ip neighbour"
+    },
+    {
+      "description": "Make an interface up/down:",
+      "syntax": "ip link set {{interface}} {{up|down}}"
+    },
+    {
+      "description": "Add/Delete an IP address to an interface:",
+      "syntax": "ip addr add/del {{ip}}/{{mask}} dev {{interface}}"
+    },
+    {
+      "description": "Add a default route:",
+      "syntax": "ip route add default via {{ip}} dev {{interface}}"
+    }
+  ]
+}

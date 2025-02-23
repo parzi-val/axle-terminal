@@ -1,0 +1,18 @@
+{
+  "command": "thunderbird",
+  "description": "Email client and RSS reader. More information: https://thunderbird.net.",
+  "useCases": [
+    {
+      "description": "Open thunderbird:",
+      "syntax": "thunderbird"
+    },
+    {
+      "description": "Use a specific user profile:",
+      "syntax": "thunderbird -P {{profile_name}}"
+    },
+    {
+      "description": "Use a specific user profile directory:",
+      "syntax": "thunderbird --profile {{path/to/profile/directory}}"
+    }
+  ]
+}

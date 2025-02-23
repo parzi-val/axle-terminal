@@ -1,0 +1,26 @@
+{
+  "command": "qm migrate",
+  "description": "Migrate a virtual machine. Used to create a new migration task. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Migrate a specific virtual machine:",
+      "syntax": "qm migrate {{vm_id}} {{target}}"
+    },
+    {
+      "description": "Override the current I/O bandwidth limit with 10 KiB/s:",
+      "syntax": "qm migrate {{vm_id}} {{target}} --bwlimit 10"
+    },
+    {
+      "description": "Allow migration of virtual machines using local devices (root only):",
+      "syntax": "qm migrate {{vm_id}} {{target}} --force true"
+    },
+    {
+      "description": "Use online/live migration if a virtual machine is running:",
+      "syntax": "qm migrate {{vm_id}} {{target}} --online true"
+    },
+    {
+      "description": "Enable live storage migration for local disks:",
+      "syntax": "qm migrate {{vm_id}} {{target}} --with-local-disks true"
+    }
+  ]
+}

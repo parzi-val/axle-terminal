@@ -1,0 +1,30 @@
+{
+  "command": "udisksctl",
+  "description": "Interact with udisksd to query and manipulate storage devices. More information: https://storaged.org/doc/udisks2-api/latest/udisksctl.1.html.",
+  "useCases": [
+    {
+      "description": "Show high-level information about disk drives and block devices:",
+      "syntax": "udisksctl status"
+    },
+    {
+      "description": "Show detailed information about a device:",
+      "syntax": "udisksctl info --block-device {{/dev/sdX}}"
+    },
+    {
+      "description": "Show detailed information about a device partition:",
+      "syntax": "udisksctl info --block-device {{/dev/sdXN}}"
+    },
+    {
+      "description": "Mount a device partition and prints the mount point:",
+      "syntax": "udisksctl mount --block-device {{/dev/sdXN}}"
+    },
+    {
+      "description": "Unmount a device partition:",
+      "syntax": "udisksctl unmount --block-device {{/dev/sdXN}}"
+    },
+    {
+      "description": "Monitor the daemon for events:",
+      "syntax": "udisksctl monitor"
+    }
+  ]
+}

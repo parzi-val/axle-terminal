@@ -1,0 +1,34 @@
+{
+  "command": "cdk",
+  "description": "A CLI for AWS Cloud Development Kit (CDK). More information: https://docs.aws.amazon.com/cdk/latest/guide/cli.html.",
+  "useCases": [
+    {
+      "description": "List the stacks in the app:",
+      "syntax": "cdk ls"
+    },
+    {
+      "description": "Synthesize and print the CloudFormation template for the specified stack(s):",
+      "syntax": "cdk synth {{stack_name}}"
+    },
+    {
+      "description": "Deploy one or more stacks:",
+      "syntax": "cdk deploy {{stack_name1 stack_name2 ...}}"
+    },
+    {
+      "description": "Destroy one or more stacks:",
+      "syntax": "cdk destroy {{stack_name1 stack_name2 ...}}"
+    },
+    {
+      "description": "Compare the specified stack with the deployed stack or a local CloudFormation template:",
+      "syntax": "cdk diff {{stack_name}}"
+    },
+    {
+      "description": "Create a new CDK project in the current directory for a specified [l]anguage:",
+      "syntax": "cdk init -l {{language}}"
+    },
+    {
+      "description": "Open the CDK API reference in your browser:",
+      "syntax": "cdk docs"
+    }
+  ]
+}

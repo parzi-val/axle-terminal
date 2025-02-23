@@ -1,0 +1,22 @@
+{
+  "command": "chfn",
+  "description": "Update finger info for a user. More information: https://manned.org/chfn.",
+  "useCases": [
+    {
+      "description": "Update a user's \"Name\" field in the output of finger:",
+      "syntax": "chfn -f {{new_display_name}} {{username}}"
+    },
+    {
+      "description": "Update a user's \"Office Room Number\" field for the output of finger:",
+      "syntax": "chfn -o {{new_office_room_number}} {{username}}"
+    },
+    {
+      "description": "Update a user's \"Office Phone Number\" field for the output of finger:",
+      "syntax": "chfn -p {{new_office_telephone_number}} {{username}}"
+    },
+    {
+      "description": "Update a user's \"Home Phone Number\" field for the output of finger:",
+      "syntax": "chfn -h {{new_home_telephone_number}} {{username}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "firejail",
+  "description": "Securely sandboxes processes to containers using built-in Linux capabilities. More information: https://manned.org/firejail.",
+  "useCases": [
+    {
+      "description": "Integrate firejail with your desktop environment:",
+      "syntax": "sudo firecfg"
+    },
+    {
+      "description": "Open a restricted Mozilla Firefox:",
+      "syntax": "firejail {{firefox}}"
+    },
+    {
+      "description": "Start a restricted Apache server on a known interface and address:",
+      "syntax": "firejail --net={{eth0}} --ip={{192.168.1.244}} {{/etc/init.d/apache2}} {{start}}"
+    },
+    {
+      "description": "List running sandboxes:",
+      "syntax": "firejail --list"
+    },
+    {
+      "description": "List network activity from running sandboxes:",
+      "syntax": "firejail --netstats"
+    },
+    {
+      "description": "Shutdown a running sandbox:",
+      "syntax": "firejail --shutdown={{7777}}"
+    },
+    {
+      "description": "Run a restricted Firefox session to browse the internet:",
+      "syntax": "firejail --seccomp --private --private-dev --private-tmp --protocol=inet firefox --new-instance --no-remote --safe-mode --private-window"
+    },
+    {
+      "description": "Use custom hosts file (overriding /etc/hosts file):",
+      "syntax": "firejail --hosts-file={{~/myhosts}} {{curl http://mysite.arpa}}"
+    }
+  ]
+}

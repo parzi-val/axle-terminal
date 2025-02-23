@@ -1,0 +1,22 @@
+{
+  "command": "symfony",
+  "description": "The console component for the Symfony framework. More information: https://symfony.com.",
+  "useCases": [
+    {
+      "description": "Create a new Symfony project:",
+      "syntax": "symfony new {{name}}"
+    },
+    {
+      "description": "Run a local web server:",
+      "syntax": "symfony serve"
+    },
+    {
+      "description": "Stop the local web server:",
+      "syntax": "symfony server:stop"
+    },
+    {
+      "description": "Check for security issues in the project's dependencies:",
+      "syntax": "symfony security:check"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "sindresorhus",
+  "description": "Sindre Sorhus's personal CLI. More information: https://github.com/sindresorhus/sindresorhus-cli.",
+  "useCases": [
+    {
+      "description": "Start Sindre's interactive CLI:",
+      "syntax": "sindresorhus"
+    }
+  ]
+}

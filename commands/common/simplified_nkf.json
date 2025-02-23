@@ -1,0 +1,30 @@
+{
+  "command": "nkf",
+  "description": "Network kanji filter: convert kanji code from one encoding to another. More information: https://manned.org/nkf.",
+  "useCases": [
+    {
+      "description": "Convert to UTF-8 encoding:",
+      "syntax": "nkf -w {{path/to/file.txt}}"
+    },
+    {
+      "description": "Convert to SHIFT_JIS encoding:",
+      "syntax": "nkf -s {{path/to/file.txt}}"
+    },
+    {
+      "description": "Convert to UTF-8 encoding and overwrite the file:",
+      "syntax": "nkf -w --overwrite {{path/to/file.txt}}"
+    },
+    {
+      "description": "Use LF as the new line code and overwrite (UNIX type):",
+      "syntax": "nkf -d --overwrite {{path/to/file.txt}}"
+    },
+    {
+      "description": "Use CRLF as the new line code and overwrite (windows type):",
+      "syntax": "nkf -c --overwrite {{path/to/file.txt}}"
+    },
+    {
+      "description": "Decrypt mime file and overwrite:",
+      "syntax": "nkf -m --overwrite {{path/to/file.txt}}"
+    }
+  ]
+}

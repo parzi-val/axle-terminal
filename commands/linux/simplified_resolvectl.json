@@ -1,0 +1,34 @@
+{
+  "command": "resolvectl",
+  "description": "Resolve domain names, IPv4 and IPv6 addresses, DNS resource records, and services. Introspect and reconfigure the DNS resolver. More information: https://www.freedesktop.org/software/systemd/man/resolvectl.html.",
+  "useCases": [
+    {
+      "description": "Show DNS settings:",
+      "syntax": "resolvectl status"
+    },
+    {
+      "description": "Resolve the IPv4 and IPv6 addresses for one or more domains:",
+      "syntax": "resolvectl query {{domain1 domain2 ...}}"
+    },
+    {
+      "description": "Retrieve the domain of a specified IP address:",
+      "syntax": "resolvectl query {{ip_address}}"
+    },
+    {
+      "description": "Flush all local DNS caches:",
+      "syntax": "resolvectl flush-caches"
+    },
+    {
+      "description": "Display DNS statistics (transactions, cache, and DNSSEC verdicts):",
+      "syntax": "resolvectl statistics"
+    },
+    {
+      "description": "Retrieve an MX record of a domain:",
+      "syntax": "resolvectl --legend={{no}} --type={{MX}} query {{domain}}"
+    },
+    {
+      "description": "Retrieve a TLS key:",
+      "syntax": "resolvectl tlsa tcp {{domain}}:443"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "aa-disable",
+  "description": "Disable AppArmor security policies. See also: aa-complain, aa-enforce, aa-status. More information: https://gitlab.com/apparmor/apparmor/-/wikis/manpage_aa-disable.8.",
+  "useCases": [
+    {
+      "description": "Disable profile:",
+      "syntax": "sudo aa-disable {{path/to/profile1 path/to/profile2 ...}}"
+    },
+    {
+      "description": "Disable profiles in a directory (defaults to /etc/apparmor.d):",
+      "syntax": "sudo aa-disable --dir {{path/to/profiles}}"
+    }
+  ]
+}

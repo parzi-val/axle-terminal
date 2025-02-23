@@ -1,0 +1,22 @@
+{
+  "command": "nu",
+  "description": "Nushell (\"a new type of shell\") takes a modern, structured approach to your command-line. See also: elvish. More information: https://www.nushell.sh.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "nu"
+    },
+    {
+      "description": "Execute specific commands:",
+      "syntax": "nu --commands &quot;{{echo 'nu is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "nu {{path/to/script.nu}}"
+    },
+    {
+      "description": "Execute a specific script with logging:",
+      "syntax": "nu --log-level {{error|warn|info|debug|trace}} {{path/to/script.nu}}"
+    }
+  ]
+}

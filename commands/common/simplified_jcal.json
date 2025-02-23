@@ -1,0 +1,22 @@
+{
+  "command": "jcal",
+  "description": "Display calendar information in the Jalali format, with the current day highlighted. More information: https://www.nongnu.org/jcal/.",
+  "useCases": [
+    {
+      "description": "Display a calendar for the current month:",
+      "syntax": "jcal"
+    },
+    {
+      "description": "Display the previous, current, and next months:",
+      "syntax": "jcal -3"
+    },
+    {
+      "description": "Display a calendar for a specific year (4 digits):",
+      "syntax": "jcal {{year}}"
+    },
+    {
+      "description": "Display a calendar for a specific month and year:",
+      "syntax": "jcal {{year}} {{month}}"
+    }
+  ]
+}

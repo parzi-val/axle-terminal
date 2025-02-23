@@ -1,0 +1,18 @@
+{
+  "command": "steamcmd",
+  "description": "A command-line version of the Steam client. More information: https://manned.org/steamcmd.",
+  "useCases": [
+    {
+      "description": "Install or update an application anonymously:",
+      "syntax": "steamcmd +login {{anonymous}} +app_update {{appid}} +quit"
+    },
+    {
+      "description": "Install or update an application using the specified credentials:",
+      "syntax": "steamcmd +login {{username}} +app_update {{appid}} +quit"
+    },
+    {
+      "description": "Install an application for a specific platform:",
+      "syntax": "steamcmd +@sSteamCmdForcePlatformType {{windows}} +login {{anonymous}} +app_update {{appid}} validate +quit"
+    }
+  ]
+}

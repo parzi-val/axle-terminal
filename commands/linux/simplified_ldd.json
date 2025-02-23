@@ -1,0 +1,26 @@
+{
+  "command": "ldd",
+  "description": "Display shared library dependencies of a binary. Do not use on an untrusted binary, use objdump for that instead. More information: https://manned.org/ldd.",
+  "useCases": [
+    {
+      "description": "Display shared library dependencies of a binary:",
+      "syntax": "ldd {{path/to/binary}}"
+    },
+    {
+      "description": "Display all information about dependencies:",
+      "syntax": "ldd --verbose {{path/to/binary}}"
+    },
+    {
+      "description": "Display unused direct dependencies:",
+      "syntax": "ldd --unused {{path/to/binary}}"
+    },
+    {
+      "description": "Report missing data objects and perform data relocations:",
+      "syntax": "ldd --data-relocs {{path/to/binary}}"
+    },
+    {
+      "description": "Report missing data objects and functions, and perform relocations for both:",
+      "syntax": "ldd --function-relocs {{path/to/binary}}"
+    }
+  ]
+}

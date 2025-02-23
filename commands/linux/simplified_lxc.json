@@ -1,0 +1,38 @@
+{
+  "command": "lxc",
+  "description": "Manage Linux containers using the lxd REST API. Any container names or patterns can be prefixed with the name of a remote server. More information: https://manned.org/lxc.",
+  "useCases": [
+    {
+      "description": "List local containers matching a string. Omit the string to list all local containers:",
+      "syntax": "lxc list {{match_string}}"
+    },
+    {
+      "description": "List images matching a string. Omit the string to list all images:",
+      "syntax": "lxc image list [{{remote}}:]{{match_string}}"
+    },
+    {
+      "description": "Create a new container from an image:",
+      "syntax": "lxc init [{{remote}}:]{{image}} {{container}}"
+    },
+    {
+      "description": "Start a container:",
+      "syntax": "lxc start [{{remote}}:]{{container}}"
+    },
+    {
+      "description": "Stop a container:",
+      "syntax": "lxc stop [{{remote}}:]{{container}}"
+    },
+    {
+      "description": "Show detailed info about a container:",
+      "syntax": "lxc info [{{remote}}:]{{container}}"
+    },
+    {
+      "description": "Take a snapshot of a container:",
+      "syntax": "lxc snapshot [{{remote}}:]{{container}} {{snapshot}}"
+    },
+    {
+      "description": "Execute a specific command inside a container:",
+      "syntax": "lxc exec [{{remote}}:]{{container}} {{command}}"
+    }
+  ]
+}

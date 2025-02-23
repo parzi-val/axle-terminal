@@ -1,0 +1,14 @@
+{
+  "command": "sbcl",
+  "description": "High performance Common Lisp compiler. More information: https://www.sbcl.org/.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "sbcl"
+    },
+    {
+      "description": "Execute a Lisp script:",
+      "syntax": "sbcl --script {{path/to/script.lisp}}"
+    }
+  ]
+}

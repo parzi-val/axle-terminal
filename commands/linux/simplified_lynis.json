@@ -1,0 +1,18 @@
+{
+  "command": "lynis",
+  "description": "System and security auditing tool. More information: https://cisofy.com/documentation/lynis/.",
+  "useCases": [
+    {
+      "description": "Check that Lynis is up-to-date:",
+      "syntax": "sudo lynis update info"
+    },
+    {
+      "description": "Run a security audit of the system:",
+      "syntax": "sudo lynis audit system"
+    },
+    {
+      "description": "Run a security audit of a Dockerfile:",
+      "syntax": "sudo lynis audit dockerfile {{path/to/dockerfile}}"
+    }
+  ]
+}

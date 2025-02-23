@@ -1,0 +1,22 @@
+{
+  "command": "zipsplit",
+  "description": "Split a Zip archive into smaller Zip archives. More information: https://manned.org/zipsplit.",
+  "useCases": [
+    {
+      "description": "Split Zip archive into parts that are no larger than 36000 bytes (36 MB):",
+      "syntax": "zipsplit {{path/to/archive.zip}}"
+    },
+    {
+      "description": "Use a given [n]umber of bytes as the part limit:",
+      "syntax": "zipsplit -n {{size}} {{path/to/archive.zip}}"
+    },
+    {
+      "description": "[p]ause between the creation of each part:",
+      "syntax": "zipsplit -p -n {{size}} {{path/to/archive.zip}}"
+    },
+    {
+      "description": "Output the smaller Zip archives into a given directory:",
+      "syntax": "zipsplit -b {{path/to/output_directory}} -n {{size}} {{path/to/archive.zip}}"
+    }
+  ]
+}

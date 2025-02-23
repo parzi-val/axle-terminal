@@ -1,0 +1,34 @@
+{
+  "command": "git instaweb",
+  "description": "Helper to launch a GitWeb server. More information: https://git-scm.com/docs/git-instaweb.",
+  "useCases": [
+    {
+      "description": "Launch a GitWeb server for the current Git repository:",
+      "syntax": "git instaweb --start"
+    },
+    {
+      "description": "Listen only on localhost:",
+      "syntax": "git instaweb --start --local"
+    },
+    {
+      "description": "Listen on a specific port:",
+      "syntax": "git instaweb --start --port {{1234}}"
+    },
+    {
+      "description": "Use a specified HTTP daemon:",
+      "syntax": "git instaweb --start --httpd {{lighttpd|apache2|mongoose|plackup|webrick}}"
+    },
+    {
+      "description": "Also auto-launch a web browser:",
+      "syntax": "git instaweb --start --browser"
+    },
+    {
+      "description": "Stop the currently running GitWeb server:",
+      "syntax": "git instaweb --stop"
+    },
+    {
+      "description": "Restart the currently running GitWeb server:",
+      "syntax": "git instaweb --restart"
+    }
+  ]
+}

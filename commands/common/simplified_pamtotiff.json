@@ -1,0 +1,18 @@
+{
+  "command": "pamtotiff",
+  "description": "Convert a PAM image to a TIFF file. More information: https://netpbm.sourceforge.net/doc/pamtotiff.html.",
+  "useCases": [
+    {
+      "description": "Convert a PAM image to a TIFF image:",
+      "syntax": "pamtotiff {{path/to/input_file.pam}} &gt; {{path/to/output_file.tiff}}"
+    },
+    {
+      "description": "Explicitly specify a compression method for the output file:",
+      "syntax": "pamtotiff -{{none|packbits|lzw|g3|g4|flate|adobeflate}} {{path/to/input_file.pam}} &gt; {{path/to/output_file.tiff}}"
+    },
+    {
+      "description": "Always produce a color TIFF image, even if the input image is greyscale:",
+      "syntax": "pamtotiff -color {{path/to/input_file.pam}} &gt; {{path/to/output_file.tiff}}"
+    }
+  ]
+}

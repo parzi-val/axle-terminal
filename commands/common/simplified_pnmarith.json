@@ -1,0 +1,10 @@
+{
+  "command": "pnmarith",
+  "description": "This command has been superseded by pamarith. More information: https://netpbm.sourceforge.net/doc/pnmarith.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamarith"
+    }
+  ]
+}

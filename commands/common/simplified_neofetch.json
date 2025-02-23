@@ -1,0 +1,22 @@
+{
+  "command": "neofetch",
+  "description": "Display information about your operating system, software and hardware. More information: https://github.com/dylanaraps/neofetch.",
+  "useCases": [
+    {
+      "description": "Return the default config, and create it if it's the first time the program runs:",
+      "syntax": "neofetch"
+    },
+    {
+      "description": "Trigger an info line from appearing in the output, where 'infoname' is the function name in the configuration file, e.g. memory:",
+      "syntax": "neofetch --{{enable|disable}} {{infoname}}"
+    },
+    {
+      "description": "Hide/Show OS architecture:",
+      "syntax": "neofetch --os_arch {{on|off}}"
+    },
+    {
+      "description": "Enable/Disable CPU brand in output:",
+      "syntax": "neofetch --cpu_brand {{on|off}}"
+    }
+  ]
+}

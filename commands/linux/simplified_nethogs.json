@@ -1,0 +1,22 @@
+{
+  "command": "nethogs",
+  "description": "Monitor bandwidth usage per process. More information: https://github.com/raboof/nethogs.",
+  "useCases": [
+    {
+      "description": "Start NetHogs as root (default device is eth0):",
+      "syntax": "sudo nethogs"
+    },
+    {
+      "description": "Monitor bandwidth on specific device:",
+      "syntax": "sudo nethogs {{device}}"
+    },
+    {
+      "description": "Monitor bandwidth on multiple devices:",
+      "syntax": "sudo nethogs {{device1}} {{device2}}"
+    },
+    {
+      "description": "Specify refresh rate:",
+      "syntax": "sudo nethogs -t {{seconds}}"
+    }
+  ]
+}

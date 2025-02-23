@@ -1,0 +1,14 @@
+{
+  "command": "mkfs.bcachefs",
+  "description": "Create a bcachefs filesystem inside a partition. More information: https://bcachefs-docs.readthedocs.io/en/latest/mgmt-formatting.html.",
+  "useCases": [
+    {
+      "description": "Create a bcachefs filesystem inside partition 1 on a device (X):",
+      "syntax": "sudo mkfs.bcachefs {{/dev/sdX1}}"
+    },
+    {
+      "description": "Create a bcachefs filesystem with a volume label:",
+      "syntax": "sudo mkfs.bcachefs {{-L|--fs_label}} {{volume_label}} {{/dev/sdX1}}"
+    }
+  ]
+}

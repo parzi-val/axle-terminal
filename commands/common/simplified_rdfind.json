@@ -1,0 +1,22 @@
+{
+  "command": "rdfind",
+  "description": "Find files with duplicate content and get rid of them. More information: https://rdfind.pauldreik.se.",
+  "useCases": [
+    {
+      "description": "Identify all duplicates in a given directory and output a summary:",
+      "syntax": "rdfind -dryrun true {{path/to/directory}}"
+    },
+    {
+      "description": "Replace all duplicates with hardlinks:",
+      "syntax": "rdfind -makehardlinks true {{path/to/directory}}"
+    },
+    {
+      "description": "Replace all duplicates with symlinks/soft links:",
+      "syntax": "rdfind -makesymlinks true {{path/to/directory}}"
+    },
+    {
+      "description": "Delete all duplicates and do not ignore empty files:",
+      "syntax": "rdfind -deleteduplicates true -ignoreempty false {{path/to/directory}}"
+    }
+  ]
+}

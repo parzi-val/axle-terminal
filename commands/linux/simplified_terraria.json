@@ -1,0 +1,14 @@
+{
+  "command": "terraria",
+  "description": "Create and start a headless Terraria server. More information: https://terraria.wiki.gg/wiki/Server.",
+  "useCases": [
+    {
+      "description": "Start an interactive server setup:",
+      "syntax": "{{path/to/TerrariaServer}}"
+    },
+    {
+      "description": "Start a Terraria server:",
+      "syntax": "{{path/to/TerrariaServer}} -world {{path/to/world.wld}}"
+    }
+  ]
+}

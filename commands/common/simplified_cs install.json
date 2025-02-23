@@ -1,0 +1,38 @@
+{
+  "command": "cs install",
+  "description": "Install an application in the installation directory onfigured when installing cs (to enable the binary to be loaded add to your .bash_profile the $ eval &quot;$(cs install --env)&quot; command). More information: https://get-coursier.io/docs/cli-install.",
+  "useCases": [
+    {
+      "description": "Install a specific application:",
+      "syntax": "cs install {{application_name}}"
+    },
+    {
+      "description": "Install a specific version of an application:",
+      "syntax": "cs install {{application_name}}:{{application_version}}"
+    },
+    {
+      "description": "Search an application by a specific name:",
+      "syntax": "cs search {{application_partial_name}}"
+    },
+    {
+      "description": "Update a specific application if available:",
+      "syntax": "cs update {{application_name}}"
+    },
+    {
+      "description": "Update all the installed applications:",
+      "syntax": "cs update"
+    },
+    {
+      "description": "Uninstall a specific application:",
+      "syntax": "cs uninstall {{application_name}}"
+    },
+    {
+      "description": "List all installed applications:",
+      "syntax": "cs list"
+    },
+    {
+      "description": "Pass specific Java options to an installed application:",
+      "syntax": "{{application_name}} {{-Jjava_option_name1=value1 -Jjava_option_name2=value2 ...}}"
+    }
+  ]
+}

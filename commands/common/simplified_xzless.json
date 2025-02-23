@@ -1,0 +1,18 @@
+{
+  "command": "xzless",
+  "description": "Display text from xz and lzma compressed files. See also: less. More information: https://manned.org/xzless.",
+  "useCases": [
+    {
+      "description": "View a compressed file:",
+      "syntax": "xzless {{path/to/file}}"
+    },
+    {
+      "description": "View a compressed file and display line numbers:",
+      "syntax": "xzless --LINE-NUMBERS {{path/to/file}}"
+    },
+    {
+      "description": "View a compressed file and quit if the entire file can be displayed on the first screen:",
+      "syntax": "xzless --quit-if-one-screen {{path/to/file}}"
+    }
+  ]
+}

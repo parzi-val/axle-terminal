@@ -1,0 +1,26 @@
+{
+  "command": "cargo init",
+  "description": "Create a new Cargo package. Equivalent of cargo new, but specifying a directory is optional. More information: https://doc.rust-lang.org/cargo/commands/cargo-init.html.",
+  "useCases": [
+    {
+      "description": "Initialize a Rust project with a binary target in the current directory:",
+      "syntax": "cargo init"
+    },
+    {
+      "description": "Initialize a Rust project with a binary target in the specified directory:",
+      "syntax": "cargo init {{path/to/directory}}"
+    },
+    {
+      "description": "Initialize a Rust project with a library target in the current directory:",
+      "syntax": "cargo init --lib"
+    },
+    {
+      "description": "Initialize a version control system repository in the project directory (default: git):",
+      "syntax": "cargo init --vcs {{git|hg|pijul|fossil|none}}"
+    },
+    {
+      "description": "Set the package name (default: directory name):",
+      "syntax": "cargo init --name {{name}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "az",
+  "description": "The official CLI tool for Microsoft Azure. Some subcommands such as login have their own usage documentation. More information: https://learn.microsoft.com/cli/azure/reference-index.",
+  "useCases": [
+    {
+      "description": "Log in to Azure:",
+      "syntax": "az login"
+    },
+    {
+      "description": "Manage azure subscription information:",
+      "syntax": "az account"
+    },
+    {
+      "description": "List all Azure Managed Disks:",
+      "syntax": "az disk list"
+    },
+    {
+      "description": "List all Azure virtual machines:",
+      "syntax": "az vm list"
+    },
+    {
+      "description": "Manage Azure Kubernetes Services:",
+      "syntax": "az aks"
+    },
+    {
+      "description": "Manage Azure Network resources:",
+      "syntax": "az network"
+    },
+    {
+      "description": "Start in interactive mode:",
+      "syntax": "az interactive"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "az --help"
+    }
+  ]
+}

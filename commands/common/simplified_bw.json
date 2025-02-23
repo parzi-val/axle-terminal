@@ -1,0 +1,26 @@
+{
+  "command": "bw",
+  "description": "Access and manage a Bitwarden vault. More information: https://help.bitwarden.com/article/cli/.",
+  "useCases": [
+    {
+      "description": "Log in to a Bitwarden user account:",
+      "syntax": "bw login"
+    },
+    {
+      "description": "Log out of a Bitwarden user account:",
+      "syntax": "bw logout"
+    },
+    {
+      "description": "Search and display items from Bitwarden vault:",
+      "syntax": "bw list items --search {{github}}"
+    },
+    {
+      "description": "Display a particular item from Bitwarden vault:",
+      "syntax": "bw get item {{github}}"
+    },
+    {
+      "description": "Create a folder in Bitwarden vault:",
+      "syntax": "{{echo -n '{&quot;name&quot;:&quot;My Folder1&quot;}' | base64}} | bw create folder"
+    }
+  ]
+}

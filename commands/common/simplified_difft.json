@@ -1,0 +1,34 @@
+{
+  "command": "difft",
+  "description": "Compare files or directories based on the syntax of the programming language. See also: delta, diff. More information: https://difftastic.wilfred.me.uk/introduction.html.",
+  "useCases": [
+    {
+      "description": "Compare two files or directories:",
+      "syntax": "difft {{path/to/file_or_directory1}} {{path/to/file_or_directory2}}"
+    },
+    {
+      "description": "Only report the presence of differences between the files:",
+      "syntax": "difft --check-only {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Specify the display mode (default is side-by-side):",
+      "syntax": "difft --display {{side-by-side|side-by-side-show-both|inline|json}} {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Ignore comments when comparing:",
+      "syntax": "difft --ignore-comments {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Enable/Disable syntax highlighting of source code (default is on):",
+      "syntax": "difft --syntax-highlight {{on|off}} {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Do not output anything at all if there are no differences between files:",
+      "syntax": "difft --skip-unchanged {{path/to/file_or_directory1}} {{path/to/file_or_directory2}}"
+    },
+    {
+      "description": "Print all programming languages supported by the tool, along with their extensions:",
+      "syntax": "difft --list-languages"
+    }
+  ]
+}

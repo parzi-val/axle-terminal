@@ -1,0 +1,14 @@
+{
+  "command": "gitstats",
+  "description": "Git repository statistics generator. More information: https://gitstats.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Generate statistics for a local repository:",
+      "syntax": "gitstats {{path/to/git_repo/.git}} {{path/to/output_folder}}"
+    },
+    {
+      "description": "View generated statistics in a web browser on Windows (PowerShell)/macOS/Linux:",
+      "syntax": "{{Invoke-Item|open|xdg-open}} {{path/to/output_folder/index.html}}"
+    }
+  ]
+}

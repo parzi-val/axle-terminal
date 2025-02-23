@@ -1,0 +1,18 @@
+{
+  "command": "transcode",
+  "description": "Transcode video and audio codecs, and convert between media formats. More information: https://manned.org/transcode.",
+  "useCases": [
+    {
+      "description": "Create stabilization file to be able to remove camera shakes:",
+      "syntax": "transcode -J stabilize -i {{input_file}}"
+    },
+    {
+      "description": "Remove camera shakes after creating stabilization file, transform video using XviD:",
+      "syntax": "transcode -J transform -i {{input_file}} -y xvid -o {{output_file}}"
+    },
+    {
+      "description": "Resize the video to 640x480 pixels and convert to MPEG4 codec using XviD:",
+      "syntax": "transcode -Z 640x480 -i {{input_file}} -y xvid -o {{output_file}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "enum4linux",
+  "description": "Enumerate Windows and Samba information from remote systems. More information: https://labs.portcullis.co.uk/tools/enum4linux/.",
+  "useCases": [
+    {
+      "description": "Try to enumerate using all methods:",
+      "syntax": "enum4linux -a {{remote_host}}"
+    },
+    {
+      "description": "Enumerate using given login credentials:",
+      "syntax": "enum4linux -u {{user_name}} -p {{password}} {{remote_host}}"
+    },
+    {
+      "description": "List usernames from a given host:",
+      "syntax": "enum4linux -U {{remote_host}}"
+    },
+    {
+      "description": "List shares:",
+      "syntax": "enum4linux -S {{remote_host}}"
+    },
+    {
+      "description": "Get OS information:",
+      "syntax": "enum4linux -o {{remote_host}}"
+    }
+  ]
+}

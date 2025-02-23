@@ -1,0 +1,10 @@
+{
+  "command": "git show-unmerged-branches",
+  "description": "Print all branches which are not merged into the current HEAD. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-show-unmerged-branches.",
+  "useCases": [
+    {
+      "description": "Print all branches which are not merged into the current HEAD:",
+      "syntax": "git show-unmerged-branches"
+    }
+  ]
+}

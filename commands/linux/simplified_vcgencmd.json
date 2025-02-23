@@ -1,0 +1,30 @@
+{
+  "command": "vcgencmd",
+  "description": "Print system information for a Raspberry Pi. More information: https://www.raspberrypi.com/documentation/computers/os.html#vcgencmd.",
+  "useCases": [
+    {
+      "description": "List all available commands:",
+      "syntax": "vcgencmd commands"
+    },
+    {
+      "description": "Print the current CPU temperature:",
+      "syntax": "vcgencmd measure_temp"
+    },
+    {
+      "description": "Print the current voltage:",
+      "syntax": "vcgencmd measure_volts"
+    },
+    {
+      "description": "Print the throttled state of the system as a bit pattern:",
+      "syntax": "vcgencmd get_throttled"
+    },
+    {
+      "description": "Print the bootloader configuration (only available on Raspberry Pi 4 models):",
+      "syntax": "vcgencmd bootloader_config"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "vcgencmd --help"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "qm resume",
+  "description": "Resume a virtual machine. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Resume a specific virtual machine:",
+      "syntax": "qm resume {{vm_id}}"
+    },
+    {
+      "description": "Resume a specific virtual machine ignoring locks (requires root):",
+      "syntax": "sudo qm resume {{vm_id}} --skiplock true"
+    }
+  ]
+}

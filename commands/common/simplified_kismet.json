@@ -1,0 +1,38 @@
+{
+  "command": "kismet",
+  "description": "A wireless network and device detector, sniffer, wardriving tool, and WIDS (wireless intrusion detection) framework. More information: https://www.kismetwireless.net/.",
+  "useCases": [
+    {
+      "description": "Capture packets from a specific wireless interface:",
+      "syntax": "sudo kismet -c {{wlan0}}"
+    },
+    {
+      "description": "Monitor multiple channels on a wireless interface:",
+      "syntax": "sudo kismet -c {{wlan0,wlan1}} -m"
+    },
+    {
+      "description": "Capture packets and save them to a specific directory:",
+      "syntax": "sudo kismet -c {{wlan0}} -d {{path/to/output}}"
+    },
+    {
+      "description": "Start Kismet with a specific configuration file:",
+      "syntax": "sudo kismet -c {{wlan0}} -f {{path/to/config.conf}}"
+    },
+    {
+      "description": "Monitor and log data to an SQLite database:",
+      "syntax": "sudo kismet -c {{wlan0}} --log-to-db"
+    },
+    {
+      "description": "Monitor using a specific data source:",
+      "syntax": "sudo kismet -c {{wlan0}} --data-source={{rtl433}}"
+    },
+    {
+      "description": "Enable alerts for specific events:",
+      "syntax": "sudo kismet -c {{wlan0}} --enable-alert={{new_ap}}"
+    },
+    {
+      "description": "Display detailed information about a specific AP's packets:",
+      "syntax": "sudo kismet -c {{wlan0}} --info {{BSSID}}"
+    }
+  ]
+}

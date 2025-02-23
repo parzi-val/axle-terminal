@@ -1,0 +1,26 @@
+{
+  "command": "git symbolic-ref",
+  "description": "Read, change, or delete files that store references. More information: https://git-scm.com/docs/git-symbolic-ref.",
+  "useCases": [
+    {
+      "description": "Store a reference by a name:",
+      "syntax": "git symbolic-ref refs/{{name}} {{ref}}"
+    },
+    {
+      "description": "Store a reference by name, including a message with a reason for the update:",
+      "syntax": "git symbolic-ref -m &quot;{{message}}&quot; refs/{{name}} refs/heads/{{branch_name}}"
+    },
+    {
+      "description": "Read a reference by name:",
+      "syntax": "git symbolic-ref refs/{{name}}"
+    },
+    {
+      "description": "Delete a reference by name:",
+      "syntax": "git symbolic-ref --delete refs/{{name}}"
+    },
+    {
+      "description": "For scripting, hide errors with --quiet and use --short to simplify (\"refs/heads/X\" prints as \"X\"):",
+      "syntax": "git symbolic-ref --quiet --short refs/{{name}}"
+    }
+  ]
+}

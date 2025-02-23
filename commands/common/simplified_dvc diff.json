@@ -1,0 +1,26 @@
+{
+  "command": "dvc diff",
+  "description": "Show changes in DVC tracked file and directories. More information: https://dvc.org/doc/command-reference/diff.",
+  "useCases": [
+    {
+      "description": "Compare DVC tracked files from different Git commits, tags, and branches w.r.t the current workspace:",
+      "syntax": "dvc diff {{commit_hash/tag/branch}}"
+    },
+    {
+      "description": "Compare the changes in DVC tracked files from 1 Git commit to another:",
+      "syntax": "dvc diff {{revision1}} {{revision2}}"
+    },
+    {
+      "description": "Compare DVC tracked files, along with their latest hash:",
+      "syntax": "dvc diff --show-hash {{commit}}"
+    },
+    {
+      "description": "Compare DVC tracked files, displaying the output as JSON:",
+      "syntax": "dvc diff --show-json --show-hash {{commit}}"
+    },
+    {
+      "description": "Compare DVC tracked files, displaying the output as Markdown:",
+      "syntax": "dvc diff --show-md --show-hash {{commit}}"
+    }
+  ]
+}

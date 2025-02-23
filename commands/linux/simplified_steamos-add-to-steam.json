@@ -1,0 +1,10 @@
+{
+  "command": "steamos-add-to-steam",
+  "description": "Add a program to Steam library. More information: https://gitlab.com/users/evlaV/projects.",
+  "useCases": [
+    {
+      "description": "Add a program to Steam library:",
+      "syntax": "steamos-add-to-steam {{path/to/file}}"
+    }
+  ]
+}

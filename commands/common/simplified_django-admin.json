@@ -1,0 +1,22 @@
+{
+  "command": "django-admin",
+  "description": "Django’s utility for administrative tasks. More information: https://docs.djangoproject.com/en/4.2/ref/django-admin/.",
+  "useCases": [
+    {
+      "description": "Create a new Django project:",
+      "syntax": "django-admin startproject {{project_name}}"
+    },
+    {
+      "description": "Create a new app for the current project:",
+      "syntax": "django-admin startapp {{app_name}}"
+    },
+    {
+      "description": "Check the current version of Django:",
+      "syntax": "django-admin --version"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "django-admin help {{command}}"
+    }
+  ]
+}

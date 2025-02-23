@@ -1,0 +1,18 @@
+{
+  "command": "yard",
+  "description": "Documentation tool for Ruby. More information: https://yardoc.org/.",
+  "useCases": [
+    {
+      "description": "Create the documentation:",
+      "syntax": "yard"
+    },
+    {
+      "description": "Create the documentation and save it to one file:",
+      "syntax": "yard --one-file"
+    },
+    {
+      "description": "List all undocumented objects:",
+      "syntax": "yard stats --list-undoc"
+    }
+  ]
+}

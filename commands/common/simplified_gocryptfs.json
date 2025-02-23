@@ -1,0 +1,26 @@
+{
+  "command": "gocryptfs",
+  "description": "Encrypted overlay filesystem written in Go. More information: https://github.com/rfjakob/gocryptfs.",
+  "useCases": [
+    {
+      "description": "Initialize an encrypted filesystem:",
+      "syntax": "gocryptfs -init {{path/to/cipher_dir}}"
+    },
+    {
+      "description": "Mount an encrypted filesystem:",
+      "syntax": "gocryptfs {{path/to/cipher_dir}} {{path/to/mount_point}}"
+    },
+    {
+      "description": "Mount with the explicit master key instead of password:",
+      "syntax": "gocryptfs --masterkey {{path/to/cipher_dir}} {{path/to/mount_point}}"
+    },
+    {
+      "description": "Change the password:",
+      "syntax": "gocryptfs --passwd {{path/to/cipher_dir}}"
+    },
+    {
+      "description": "Make an encrypted snapshot of a plain directory:",
+      "syntax": "gocryptfs --reverse {{path/to/plain_dir}} {{path/to/cipher_dir}}"
+    }
+  ]
+}

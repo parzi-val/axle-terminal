@@ -1,0 +1,14 @@
+{
+  "command": "openrc",
+  "description": "The OpenRC service manager. See also: rc-status, rc-update, and rc-service. More information: https://wiki.gentoo.org/wiki/OpenRC.",
+  "useCases": [
+    {
+      "description": "Change to a specific runlevel:",
+      "syntax": "sudo openrc {{runlevel_name}}"
+    },
+    {
+      "description": "Change to a specific runlevel, but don't stop any existing services:",
+      "syntax": "sudo openrc --no-stop {{runlevel_name}}"
+    }
+  ]
+}

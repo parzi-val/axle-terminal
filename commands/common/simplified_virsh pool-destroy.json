@@ -1,0 +1,10 @@
+{
+  "command": "virsh pool-destroy",
+  "description": "Stop an active virtual machine storage pool. See also: virsh, virsh-pool-delete. More information: https://manned.org/virsh.",
+  "useCases": [
+    {
+      "description": "Stop a storage pool specified by name or UUID (determine using virsh pool-list):",
+      "syntax": "virsh pool-destroy --pool {{name|uuid}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "zdb",
+  "description": "ZFS debugger. More information: https://manned.org/zdb.",
+  "useCases": [
+    {
+      "description": "Show detailed configuration of all mounted ZFS zpools:",
+      "syntax": "zdb"
+    },
+    {
+      "description": "Show detailed configuration for a specific ZFS pool:",
+      "syntax": "zdb -C {{poolname}}"
+    },
+    {
+      "description": "Show statistics about number, size and deduplication of blocks:",
+      "syntax": "zdb -b {{poolname}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "sic",
+  "description": "Simple IRC client. Part of the suckless tools. More information: https://tools.suckless.org/sic/.",
+  "useCases": [
+    {
+      "description": "Connect to the default host (irc.ofct.net) with the nickname set in the $USER environment variable:",
+      "syntax": "sic"
+    },
+    {
+      "description": "Connect to a given host, using a given nickname:",
+      "syntax": "sic -h {{host}} -n {{nickname}}"
+    },
+    {
+      "description": "Connect to a given host, using a given nickname and password:",
+      "syntax": "sic -h {{host}} -n {{nickname}} -k {{password}}"
+    },
+    {
+      "description": "Join a channel:",
+      "syntax": ":j #{{channel}}&lt;Enter&gt;"
+    },
+    {
+      "description": "Send a message to a channel or user:",
+      "syntax": ":m #{{channel|user}}&lt;Enter&gt;"
+    },
+    {
+      "description": "Set default channel or user:",
+      "syntax": ":s #{{channel|user}}&lt;Enter&gt;"
+    }
+  ]
+}

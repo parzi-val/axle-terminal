@@ -1,0 +1,26 @@
+{
+  "command": "gow",
+  "description": "Watches Go files and restarts the app on changes. More information: https://github.com/mitranim/gow.",
+  "useCases": [
+    {
+      "description": "Start and watch the current directory:",
+      "syntax": "gow run ."
+    },
+    {
+      "description": "Start the application with the specified arguments:",
+      "syntax": "gow run . {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Watch subdirectories in verbose mode:",
+      "syntax": "gow -v -w={{path/to/directory1,path/to/directory2,...}} run ."
+    },
+    {
+      "description": "Watch the specified file extensions:",
+      "syntax": "gow -e={{go,html}} run ."
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gow -h"
+    }
+  ]
+}

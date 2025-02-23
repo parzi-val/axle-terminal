@@ -1,0 +1,18 @@
+{
+  "command": "ppmtomitsu",
+  "description": "Convert a PPM image to a Mitsubishi S340-10 file. More information: https://netpbm.sourceforge.net/doc/ppmtomitsu.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a MITSU file:",
+      "syntax": "ppmtomitsu {{path/to/file.ppm}} &gt; {{path/to/file.mitsu}}"
+    },
+    {
+      "description": "Enlarge the image by the specified factor, use the specified sharpness and produce n copies:",
+      "syntax": "ppmtomitsu -enlarge {{1|2|3}} -sharpness {{1|2|3|4}} -copy {{n}} {{path/to/file.ppm}} &gt; {{path/to/file.mitsu}}"
+    },
+    {
+      "description": "Use the given medium for the printing process:",
+      "syntax": "ppmtomitsu -media {{A|A4|AS|A4S}} {{path/to/file.ppm}} &gt; {{path/to/file.mitsu}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "unison",
+  "description": "Bidirectional file synchronisation tool. More information: https://github.com/bcpierce00/unison.",
+  "useCases": [
+    {
+      "description": "Sync two directories (creates log first time these two directories are synchronized):",
+      "syntax": "unison {{path/to/directory_1}} {{path/to/directory_2}}"
+    },
+    {
+      "description": "Automatically accept the (non-conflicting) defaults:",
+      "syntax": "unison {{path/to/directory_1}} {{path/to/directory_2}} -auto"
+    },
+    {
+      "description": "Ignore some files using a pattern:",
+      "syntax": "unison {{path/to/directory_1}} {{path/to/directory_2}} -ignore {{pattern}}"
+    },
+    {
+      "description": "View documentation:",
+      "syntax": "unison -doc {{topics}}"
+    }
+  ]
+}

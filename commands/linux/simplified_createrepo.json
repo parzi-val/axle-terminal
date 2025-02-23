@@ -1,0 +1,18 @@
+{
+  "command": "createrepo",
+  "description": "Initializes an RPM repository in a directory, including all XML and SQLite files. More information: https://manned.org/createrepo.",
+  "useCases": [
+    {
+      "description": "Initialize a basic repository in a directory:",
+      "syntax": "createrepo {{path/to/directory}}"
+    },
+    {
+      "description": "Initialize a repository, exclude test RPMs and display verbose logs:",
+      "syntax": "createrepo -v -x {{test_*.rpm}} {{path/to/directory}}"
+    },
+    {
+      "description": "Initialize a repository, using SHA1 as the checksum algorithm, and ignoring symbolic links:",
+      "syntax": "createrepo -S -s {{sha1}} {{path/to/directory}}"
+    }
+  ]
+}

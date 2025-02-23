@@ -1,0 +1,22 @@
+{
+  "command": "findfs",
+  "description": "Finds a filesystem by label or UUID. More information: https://mirrors.edge.kernel.org/pub/linux/utils/util-linux.",
+  "useCases": [
+    {
+      "description": "Search block devices by filesystem label:",
+      "syntax": "findfs LABEL={{label}}"
+    },
+    {
+      "description": "Search by filesystem UUID:",
+      "syntax": "findfs UUID={{uuid}}"
+    },
+    {
+      "description": "Search by partition label (GPT or MAC partition table):",
+      "syntax": "findfs PARTLABEL={{partition_label}}"
+    },
+    {
+      "description": "Search by partition UUID (GPT partition table only):",
+      "syntax": "findfs PARTUUID={{partition_uuid}}"
+    }
+  ]
+}

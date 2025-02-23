@@ -1,0 +1,26 @@
+{
+  "command": "exif",
+  "description": "Show and change EXIF information in JPEG files. More information: https://github.com/libexif/exif/.",
+  "useCases": [
+    {
+      "description": "Show all recognized EXIF information in an image:",
+      "syntax": "exif {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Show a table listing known EXIF tags and whether each one exists in an image:",
+      "syntax": "exif --list-tags --no-fixup {{image.jpg}}"
+    },
+    {
+      "description": "Extract the image thumbnail into the file thumbnail.jpg:",
+      "syntax": "exif --extract-thumbnail --output={{thumbnail.jpg}} {{image.jpg}}"
+    },
+    {
+      "description": "Show the raw contents of the \"Model\" tag in the given image:",
+      "syntax": "exif --ifd={{0}} --tag={{Model}} --machine-readable {{image.jpg}}"
+    },
+    {
+      "description": "Change the value of the \"Artist\" tag to John Smith and save to new.jpg:",
+      "syntax": "exif --output={{new.jpg}} --ifd={{0}} --tag=&quot;{{Artist}}&quot; --set-value=&quot;{{John Smith}}&quot; --no-fixup {{image.jpg}}"
+    }
+  ]
+}

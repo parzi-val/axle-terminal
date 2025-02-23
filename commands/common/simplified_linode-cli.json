@@ -1,0 +1,38 @@
+{
+  "command": "linode-cli",
+  "description": "Manage Linode cloud services. Some subcommands such as events have their own usage documentation. More information: https://techdocs.akamai.com/cloud-computing/docs/getting-started-with-the-linode-cli.",
+  "useCases": [
+    {
+      "description": "List all Linodes:",
+      "syntax": "linode-cli linodes list"
+    },
+    {
+      "description": "View documentation for managing Linode accounts:",
+      "syntax": "tldr linode-cli account"
+    },
+    {
+      "description": "View documentation for managing Linodes:",
+      "syntax": "tldr linode-cli linodes"
+    },
+    {
+      "description": "View documentation for managing Linode Kubernetes Engine (LKE) clusters:",
+      "syntax": "tldr linode-cli lke"
+    },
+    {
+      "description": "View documentation for managing NodeBalancers:",
+      "syntax": "tldr linode-cli nodebalancers"
+    },
+    {
+      "description": "View documentation for managing Object Storage:",
+      "syntax": "tldr linode-cli object-storage"
+    },
+    {
+      "description": "View documentation for managing domains and DNS configuration:",
+      "syntax": "tldr linode-cli domains"
+    },
+    {
+      "description": "View documentation for managing Linode Volumes:",
+      "syntax": "tldr linode-cli volumes"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "git release",
+  "description": "Create a Git tag for a release. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-release.",
+  "useCases": [
+    {
+      "description": "Create and push a release:",
+      "syntax": "git release {{tag_name}}"
+    },
+    {
+      "description": "Create and push a signed release:",
+      "syntax": "git release {{tag_name}} -s"
+    },
+    {
+      "description": "Create and push a release with a message:",
+      "syntax": "git release {{tag_name}} -m &quot;{{message}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "salloc",
+  "description": "Start an interactive shell session or execute a command by allocating one or more nodes in a cluster. More information: https://slurm.schedmd.com/salloc.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session on a node in the cluster:",
+      "syntax": "salloc"
+    },
+    {
+      "description": "Execute the specified command synchronously on a node in the cluster:",
+      "syntax": "salloc {{ls -a}}"
+    },
+    {
+      "description": "Only allocate nodes fulfilling the specified constraints:",
+      "syntax": "salloc --constraint={{(amd|intel)&amp;gpu}}"
+    }
+  ]
+}

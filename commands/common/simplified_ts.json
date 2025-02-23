@@ -1,0 +1,22 @@
+{
+  "command": "ts",
+  "description": "Add timestamps to every line from stdin. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Add a timestamp to the beginning of each line:",
+      "syntax": "{{command}} | ts"
+    },
+    {
+      "description": "Add timestamps with microsecond precision:",
+      "syntax": "{{command}} | ts &quot;{{%b %d %H:%M:%.S}}&quot;"
+    },
+    {
+      "description": "Add [i]ncremental timestamps with microsecond precision, starting from zero:",
+      "syntax": "{{command}} | ts -i &quot;{{%H:%M:%.S}}&quot;"
+    },
+    {
+      "description": "Convert existing timestamps in a text file (eg. a log file) into [r]elative format:",
+      "syntax": "cat {{path/to/file}} | ts -r"
+    }
+  ]
+}

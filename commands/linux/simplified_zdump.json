@@ -1,0 +1,14 @@
+{
+  "command": "zdump",
+  "description": "Print timezone information. More information: https://manned.org/zdump.",
+  "useCases": [
+    {
+      "description": "Print the current time in a timezone:",
+      "syntax": "zdump {{timezone}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "zdump --help"
+    }
+  ]
+}

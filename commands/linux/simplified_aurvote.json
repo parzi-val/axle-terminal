@@ -1,0 +1,26 @@
+{
+  "command": "aurvote",
+  "description": "Vote for packages in the Arch User Repository. To be able to vote, the file ~/.config/aurvote must exist and contain your AUR credentials. More information: https://github.com/archlinuxfr/aurvote.",
+  "useCases": [
+    {
+      "description": "Interactively create the file ~/.config/aurvote containing your AUR username and password:",
+      "syntax": "aurvote --configure"
+    },
+    {
+      "description": "Vote for one or more AUR packages:",
+      "syntax": "aurvote {{package1 package2 ...}}"
+    },
+    {
+      "description": "Unvote one or more AUR packages:",
+      "syntax": "aurvote --unvote {{package1 package2 ...}}"
+    },
+    {
+      "description": "Check if one or more AUR packages have already been voted:",
+      "syntax": "aurvote --check {{package1 package2 ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aurvote --help"
+    }
+  ]
+}

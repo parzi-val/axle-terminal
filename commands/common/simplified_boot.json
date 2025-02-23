@@ -1,0 +1,30 @@
+{
+  "command": "boot",
+  "description": "Build tooling for the Clojure programming language. More information: https://github.com/boot-clj/boot.",
+  "useCases": [
+    {
+      "description": "Start a REPL session either with the project or standalone:",
+      "syntax": "boot repl"
+    },
+    {
+      "description": "Build a single uberjar:",
+      "syntax": "boot jar"
+    },
+    {
+      "description": "Generate scaffolding for a new project based on a template:",
+      "syntax": "boot --dependencies boot/new new --template {{template_name}} --name {{project_name}}"
+    },
+    {
+      "description": "Build for development (if using the boot/new template):",
+      "syntax": "boot dev"
+    },
+    {
+      "description": "Build for production (if using the boot/new template):",
+      "syntax": "boot prod"
+    },
+    {
+      "description": "Display help for a specific task:",
+      "syntax": "boot {{task}} --help"
+    }
+  ]
+}

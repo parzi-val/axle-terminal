@@ -1,0 +1,30 @@
+{
+  "command": "zypper",
+  "description": "SUSE & openSUSE package management utility. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://en.opensuse.org/SDB:Zypper_manual.",
+  "useCases": [
+    {
+      "description": "Synchronize list of packages and versions available:",
+      "syntax": "zypper refresh"
+    },
+    {
+      "description": "Install a new package:",
+      "syntax": "zypper install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "zypper remove {{package}}"
+    },
+    {
+      "description": "Upgrade installed packages to the newest available versions:",
+      "syntax": "zypper update"
+    },
+    {
+      "description": "Search package via keyword:",
+      "syntax": "zypper search {{keyword}}"
+    },
+    {
+      "description": "Show information related to configured repositories:",
+      "syntax": "zypper repos --sort-by-priority"
+    }
+  ]
+}

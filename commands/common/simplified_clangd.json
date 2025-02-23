@@ -1,0 +1,18 @@
+{
+  "command": "clangd",
+  "description": "Language server that provides IDE-like features to editors. It should be used via an editor plugin rather than invoked directly. More information: https://clangd.llvm.org/.",
+  "useCases": [
+    {
+      "description": "Display available options:",
+      "syntax": "clangd --help"
+    },
+    {
+      "description": "List of available options:",
+      "syntax": "clangd --help-list"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "clangd --version"
+    }
+  ]
+}

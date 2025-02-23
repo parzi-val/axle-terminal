@@ -1,0 +1,38 @@
+{
+  "command": "kdeconnect-cli",
+  "description": "Use KDE Connect for sharing files or text to a device, ringing it, unlocking it, and much more. More information: https://kdeconnect.kde.org.",
+  "useCases": [
+    {
+      "description": "List all devices:",
+      "syntax": "kdeconnect-cli --list-devices"
+    },
+    {
+      "description": "List available (paired and reachable) devices:",
+      "syntax": "kdeconnect-cli --list-available"
+    },
+    {
+      "description": "Request pairing with a specific device, specifying its ID:",
+      "syntax": "kdeconnect-cli --pair --device {{device_id}}"
+    },
+    {
+      "description": "Ring a device, specifying its name:",
+      "syntax": "kdeconnect-cli --ring --name &quot;{{device_name}}&quot;"
+    },
+    {
+      "description": "Share an URL or file with a paired device, specifying its ID:",
+      "syntax": "kdeconnect-cli --share {{url|path/to/file}} --device {{device_id}}"
+    },
+    {
+      "description": "Send an SMS with an optional attachment to a specific number:",
+      "syntax": "kdeconnect-cli --name &quot;{{device_name}}&quot; --send-sms &quot;{{message}}&quot; --destination {{phone_number}} --attachment {{path/to/file}}"
+    },
+    {
+      "description": "Unlock a specific device:",
+      "syntax": "kdeconnect-cli --name &quot;{{device_name}}&quot; --unlock"
+    },
+    {
+      "description": "Simulate a key press on a specific device:",
+      "syntax": "kdeconnect-cli --name &quot;{{device_name}}&quot; --send-keys {{key}}"
+    }
+  ]
+}

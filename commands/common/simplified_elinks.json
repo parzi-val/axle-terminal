@@ -1,0 +1,18 @@
+{
+  "command": "elinks",
+  "description": "A text based browser similar to lynx. More information: https://github.com/rkd77/elinks.",
+  "useCases": [
+    {
+      "description": "Start ELinks:",
+      "syntax": "elinks"
+    },
+    {
+      "description": "Quit elinks:",
+      "syntax": "&lt;Ctrl&gt; + C"
+    },
+    {
+      "description": "Dump output of webpage to console, colorizing the text with ANSI control codes:",
+      "syntax": "elinks -dump -dump-color-mode {{1}} {{url}}"
+    }
+  ]
+}

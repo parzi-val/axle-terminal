@@ -1,0 +1,22 @@
+{
+  "command": "sk",
+  "description": "Fuzzy finder written in Rust. Similar to fzf. More information: https://github.com/lotabout/skim.",
+  "useCases": [
+    {
+      "description": "Start skim on all files in the specified directory:",
+      "syntax": "find {{path/to/directory}} -type f | sk"
+    },
+    {
+      "description": "Start skim for running processes:",
+      "syntax": "ps aux | sk"
+    },
+    {
+      "description": "Start skim with a specified query:",
+      "syntax": "sk --query &quot;{{query}}&quot;"
+    },
+    {
+      "description": "Select multiple files with Shift + Tab and write to a file:",
+      "syntax": "find {{path/to/directory}} -type f | sk --multi &gt; {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "docker pull",
+  "description": "Download Docker images from a registry. More information: https://docs.docker.com/reference/cli/docker/image/pull/.",
+  "useCases": [
+    {
+      "description": "Download a specific Docker image:",
+      "syntax": "docker pull {{image}}:{{tag}}"
+    },
+    {
+      "description": "Download a specific Docker image in quiet mode:",
+      "syntax": "docker pull --quiet {{image}}:{{tag}}"
+    },
+    {
+      "description": "Download all tags of a specific Docker image:",
+      "syntax": "docker pull --all-tags {{image}}"
+    },
+    {
+      "description": "Download a Docker images for a specific platform, e.g. linux/amd64:",
+      "syntax": "docker pull --platform {{linux/amd64}} {{image}}:{{tag}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "docker pull --help"
+    }
+  ]
+}

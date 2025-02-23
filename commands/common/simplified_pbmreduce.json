@@ -1,0 +1,18 @@
+{
+  "command": "pbmreduce",
+  "description": "Proportionally reduce a PBM image. See also: pamenlarge, pamditherbw. More information: https://netpbm.sourceforge.net/doc/pbmreduce.html.",
+  "useCases": [
+    {
+      "description": "Reduce the specified image by the specified factor:",
+      "syntax": "pbmreduce {{N}} {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Use simple thresholding when reducing:",
+      "syntax": "pbmreduce -threshold {{N}} {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Use the specified threshold for all quantizations:",
+      "syntax": "pbmreduce -value {{0.6}} {{N}} {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

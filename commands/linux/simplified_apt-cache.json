@@ -1,0 +1,26 @@
+{
+  "command": "apt-cache",
+  "description": "Debian and Ubuntu package query tool. More information: https://manned.org/apt-cache.8.",
+  "useCases": [
+    {
+      "description": "Search for a package in your current sources:",
+      "syntax": "apt-cache search {{query}}"
+    },
+    {
+      "description": "Show information about a package:",
+      "syntax": "apt-cache show {{package}}"
+    },
+    {
+      "description": "Show whether a package is installed and up to date:",
+      "syntax": "apt-cache policy {{package}}"
+    },
+    {
+      "description": "Show dependencies for a package:",
+      "syntax": "apt-cache depends {{package}}"
+    },
+    {
+      "description": "Show packages that depend on a particular package:",
+      "syntax": "apt-cache rdepends {{package}}"
+    }
+  ]
+}

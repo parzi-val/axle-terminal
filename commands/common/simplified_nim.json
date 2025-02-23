@@ -1,0 +1,30 @@
+{
+  "command": "nim",
+  "description": "The Nim compiler. Processes, compiles and links Nim language source files. More information: https://nim-lang.org/docs/nimc.html.",
+  "useCases": [
+    {
+      "description": "Compile a source file:",
+      "syntax": "nim compile {{path/to/file.nim}}"
+    },
+    {
+      "description": "Compile and run a source file:",
+      "syntax": "nim compile -r {{path/to/file.nim}}"
+    },
+    {
+      "description": "Compile a source file with release optimizations enabled:",
+      "syntax": "nim compile -d:release {{path/to/file.nim}}"
+    },
+    {
+      "description": "Build a release binary optimized for low file size:",
+      "syntax": "nim compile -d:release --opt:size {{path/to/file.nim}}"
+    },
+    {
+      "description": "Generate HTML documentation for a module (output will be placed in the current directory):",
+      "syntax": "nim doc {{path/to/file.nim}}"
+    },
+    {
+      "description": "Check a file for syntax and semantics:",
+      "syntax": "nim check {{path/to/file.nim}}"
+    }
+  ]
+}

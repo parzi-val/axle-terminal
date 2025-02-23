@@ -1,0 +1,34 @@
+{
+  "command": "svgo",
+  "description": "SVG Optimizer: optimizing Scalable Vector Graphics files. Based in Node.js. It applies a series of transformation rules (plugins), which can be toggled individually. More information: https://github.com/svg/svgo.",
+  "useCases": [
+    {
+      "description": "Optimize a file using the default plugins (overwrites the original file):",
+      "syntax": "svgo {{test.svg}}"
+    },
+    {
+      "description": "Optimize a file and save the result to another file:",
+      "syntax": "svgo {{test.svg}} -o {{test.min.svg}}"
+    },
+    {
+      "description": "Optimize all SVG files within a directory (overwrites the original files):",
+      "syntax": "svgo -f {{path/to/directory/with/svg/files}}"
+    },
+    {
+      "description": "Optimize all SVG files within a directory and save the resulting files to another directory:",
+      "syntax": "svgo -f {{path/to/input/directory}} -o {{path/to/output/directory}}"
+    },
+    {
+      "description": "Optimize SVG content passed from another command, and save the result to a file:",
+      "syntax": "{{cat test.svg}} | svgo -i - -o {{test.min.svg}}"
+    },
+    {
+      "description": "Optimize a file and print out the result:",
+      "syntax": "svgo {{test.svg}} -o -"
+    },
+    {
+      "description": "Show available plugins:",
+      "syntax": "svgo --show-plugins"
+    }
+  ]
+}

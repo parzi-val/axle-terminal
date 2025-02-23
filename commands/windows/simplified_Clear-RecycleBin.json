@@ -1,0 +1,18 @@
+{
+  "command": "Clear-RecycleBin",
+  "description": "Clear items from the Recycle Bin. This command can only be used through PowerShell versions 5.1 and below, or 7.1 and above. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/clear-recyclebin.",
+  "useCases": [
+    {
+      "description": "Clear and delete all items inside the Recycle Bin:",
+      "syntax": "Clear-RecycleBin"
+    },
+    {
+      "description": "Clear the Recycle Bin for a specific drive:",
+      "syntax": "Clear-RecycleBin -DriveLetter {{C}}"
+    },
+    {
+      "description": "Clear the Recycle Bin without further confirmation:",
+      "syntax": "Clear-RecycleBin -Force"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "lci",
+  "description": "LOLCODE interpreter written in C. More information: https://github.com/justinmeza/lci.",
+  "useCases": [
+    {
+      "description": "Run a LOLCODE file:",
+      "syntax": "lci {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "lci -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "lci -v"
+    }
+  ]
+}

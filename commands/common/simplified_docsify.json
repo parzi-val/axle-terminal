@@ -1,0 +1,26 @@
+{
+  "command": "docsify",
+  "description": "Initialize and serve markdown documentation. More information: https://cli.docsifyjs.org.",
+  "useCases": [
+    {
+      "description": "Initialize a new documentation in the current directory:",
+      "syntax": "docsify init"
+    },
+    {
+      "description": "Initialize a new documentation in the specified directory:",
+      "syntax": "docsify init {{path/to/directory}}"
+    },
+    {
+      "description": "Serve local documentation on localhost:3000 with live reload:",
+      "syntax": "docsify serve {{path/to/directory}}"
+    },
+    {
+      "description": "Serve local documentation on localhost at the specified port:",
+      "syntax": "docsify serve --port {{80}} {{path/to/directory}}"
+    },
+    {
+      "description": "Generate a sidebar markdown file in the specified directory:",
+      "syntax": "docsify generate {{path/to/directory}}"
+    }
+  ]
+}

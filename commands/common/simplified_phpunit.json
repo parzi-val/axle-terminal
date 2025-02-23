@@ -1,0 +1,22 @@
+{
+  "command": "phpunit",
+  "description": "PHPUnit command-line test runner. More information: https://phpunit.de.",
+  "useCases": [
+    {
+      "description": "Run tests in the current directory. Note: Expects you to have a 'phpunit.xml':",
+      "syntax": "phpunit"
+    },
+    {
+      "description": "Run tests in a specific file:",
+      "syntax": "phpunit {{path/to/TestFile.php}}"
+    },
+    {
+      "description": "Run tests annotated with the given group:",
+      "syntax": "phpunit --group {{name}}"
+    },
+    {
+      "description": "Run tests and generate a coverage report in HTML:",
+      "syntax": "phpunit --coverage-html {{path/to/directory}}"
+    }
+  ]
+}

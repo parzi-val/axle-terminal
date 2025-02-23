@@ -1,0 +1,14 @@
+{
+  "command": "cargo package",
+  "description": "Assemble a local package into a distributable tarball (a .crate file). Similar to cargo publish --dry-run, but has more options. More information: https://doc.rust-lang.org/cargo/commands/cargo-package.html.",
+  "useCases": [
+    {
+      "description": "Perform checks and create a .crate file (equivalent of cargo publish --dry-run):",
+      "syntax": "cargo package"
+    },
+    {
+      "description": "Display what files would be included in the tarball without actually creating it:",
+      "syntax": "cargo package --list"
+    }
+  ]
+}

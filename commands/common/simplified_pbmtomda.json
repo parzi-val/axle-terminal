@@ -1,0 +1,18 @@
+{
+  "command": "pbmtomda",
+  "description": "Convert a PBM image to a Microdesign MDA file. See also: mdatopbm. More information: https://netpbm.sourceforge.net/doc/pbmtomda.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to a MDA file:",
+      "syntax": "pbmtomda {{path/to/image.pbm}} &gt; {{path/to/output.mda}}"
+    },
+    {
+      "description": "Invert the colors in the input image:",
+      "syntax": "pbmtomda -i {{path/to/image.pbm}} &gt; {{path/to/output.mda}}"
+    },
+    {
+      "description": "Halve the input image's height:",
+      "syntax": "pbmtomda -d {{path/to/image.pbm}} &gt; {{path/to/output.mda}}"
+    }
+  ]
+}

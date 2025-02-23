@@ -1,0 +1,22 @@
+{
+  "command": "gnmic set",
+  "description": "Modify gnmi network device configuration. More information: https://gnmic.kmrd.dev/cmd/set.",
+  "useCases": [
+    {
+      "description": "Update the value of a path:",
+      "syntax": "gnmic --address {{ip:port}} set --update-path {{path}} --update-value {{value}}"
+    },
+    {
+      "description": "Update the value of a path to match the contents of a JSON file:",
+      "syntax": "gnmic -a {{ip:port}} set --update-path {{path}} --update-file {{filepath}}"
+    },
+    {
+      "description": "Replace the value of a path to match the contents of a JSON file:",
+      "syntax": "gnmic -a {{ip:port}} set --replace-path {{path}} --replace-file {{filepath}}"
+    },
+    {
+      "description": "Delete the node at a given path:",
+      "syntax": "gnmic -a {{ip:port}} set --delete {{path}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "shutdown",
+  "description": "A tool for shutting down, restarting or logging off a machine. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/shutdown.",
+  "useCases": [
+    {
+      "description": "Shutdown the current machine:",
+      "syntax": "shutdown /s"
+    },
+    {
+      "description": "Shutdown the current machine force-closing all apps:",
+      "syntax": "shutdown /s /f"
+    },
+    {
+      "description": "Restart the current machine immediately:",
+      "syntax": "shutdown /r /t 0"
+    },
+    {
+      "description": "Hibernate the current machine:",
+      "syntax": "shutdown /h"
+    },
+    {
+      "description": "Log off the current machine:",
+      "syntax": "shutdown /l"
+    },
+    {
+      "description": "Specify a timeout in seconds to wait before shutting down:",
+      "syntax": "shutdown /s /t {{8}}"
+    },
+    {
+      "description": "Abort a shutdown sequence whose timeout is yet to expire:",
+      "syntax": "shutdown /a"
+    },
+    {
+      "description": "Shutdown a remote machine:",
+      "syntax": "shutdown /m {{\\\\hostname}}"
+    }
+  ]
+}

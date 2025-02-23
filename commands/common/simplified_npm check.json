@@ -1,0 +1,22 @@
+{
+  "command": "npm check",
+  "description": "Check for outdated, incorrect, and unused npm package dependencies. More information: https://github.com/dylang/npm-check.",
+  "useCases": [
+    {
+      "description": "Display a report of outdated, incorrect, and unused dependencies:",
+      "syntax": "npm-check"
+    },
+    {
+      "description": "Interactively update out-of-date packages:",
+      "syntax": "npm-check --update"
+    },
+    {
+      "description": "Update everything without prompting:",
+      "syntax": "npm-check --update-all"
+    },
+    {
+      "description": "Don't check for unused packages:",
+      "syntax": "npm-check --skip-unused"
+    }
+  ]
+}

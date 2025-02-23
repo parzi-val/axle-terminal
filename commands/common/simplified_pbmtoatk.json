@@ -1,0 +1,10 @@
+{
+  "command": "pbmtoatk",
+  "description": "Convert a PBM image to an Andrew Toolkit raster object. See also: atktopbm. More information: https://netpbm.sourceforge.net/doc/pbmtoatk.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to an Andrew Toolkit raster object:",
+      "syntax": "pbmtoatk {{path/to/image.pbm}} &gt; {{path/to/output.atk}}"
+    }
+  ]
+}

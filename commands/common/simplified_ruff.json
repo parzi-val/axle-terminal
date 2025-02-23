@@ -1,0 +1,14 @@
+{
+  "command": "ruff",
+  "description": "An extremely fast Python linter and code formatter, written in Rust. More information: https://docs.astral.sh/ruff/tutorial.",
+  "useCases": [
+    {
+      "description": "View documentation for the Ruff linter:",
+      "syntax": "tldr ruff check"
+    },
+    {
+      "description": "View documentation for the Ruff code formatter:",
+      "syntax": "tldr ruff format"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "salt",
+  "description": "Execute commands and assert state on remote salt minions. More information: https://docs.saltproject.io/en/latest/ref/cli/index.html.",
+  "useCases": [
+    {
+      "description": "List connected minions:",
+      "syntax": "salt '*' test.ping"
+    },
+    {
+      "description": "Execute a highstate on all connected minions:",
+      "syntax": "salt '*' state.highstate"
+    },
+    {
+      "description": "Upgrade packages using the OS package manager (apt, yum, brew) on a subset of minions:",
+      "syntax": "salt '*.example.com' pkg.upgrade"
+    },
+    {
+      "description": "Execute an arbitrary command on a particular minion:",
+      "syntax": "salt '{{minion_id}}' cmd.run &quot;ls &quot;"
+    }
+  ]
+}

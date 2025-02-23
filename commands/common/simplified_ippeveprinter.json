@@ -1,0 +1,30 @@
+{
+  "command": "ippeveprinter",
+  "description": "A simple IPP Everywhere printer server. See also: ippeveps, ippevepcl. More information: https://openprinting.github.io/cups/doc/man-ippeveprinter.html.",
+  "useCases": [
+    {
+      "description": "Run the server with a specific service name:",
+      "syntax": "ippeveprinter &quot;{{service_name}}&quot;"
+    },
+    {
+      "description": "Load printer attributes from a PPD file:",
+      "syntax": "ippeveprinter -P {{path/to/file.ppd}} &quot;{{service_name}}&quot;"
+    },
+    {
+      "description": "Run the file command whenever a job is sent to the server:",
+      "syntax": "ippeveprinter -c {{/usr/bin/file}} &quot;{{service_name}}&quot;"
+    },
+    {
+      "description": "Specify the directory that will hold the print files (by default, a directory under the user's temporary directory):",
+      "syntax": "ippeveprinter -d {{spool_directory}} &quot;{{service_name}}&quot;"
+    },
+    {
+      "description": "Keep the print documents in the spool directory rather than deleting them:",
+      "syntax": "ippeveprinter -k &quot;{{service_name}}&quot;"
+    },
+    {
+      "description": "Specify the printer speed in pages/minute unit (10 by default):",
+      "syntax": "ippeveprinter -s {{speed}} &quot;{{service_name}}&quot;"
+    }
+  ]
+}

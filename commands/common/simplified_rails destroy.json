@@ -1,0 +1,26 @@
+{
+  "command": "rails destroy",
+  "description": "Destroy Rails resources. More information: https://guides.rubyonrails.org/command_line.html#bin-rails-destroy.",
+  "useCases": [
+    {
+      "description": "List all available generators to destroy:",
+      "syntax": "rails destroy"
+    },
+    {
+      "description": "Destroy a model named Post:",
+      "syntax": "rails destroy model {{Post}}"
+    },
+    {
+      "description": "Destroy a controller named Posts:",
+      "syntax": "rails destroy controller {{Posts}}"
+    },
+    {
+      "description": "Destroy a migration that creates Posts:",
+      "syntax": "rails destroy migration {{CreatePosts}}"
+    },
+    {
+      "description": "Destroy a scaffold for a model named Post:",
+      "syntax": "rails destroy scaffold {{Post}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "esearch",
+  "description": "Perform a new Entrez search using terms in indexed fields. It is part of the edirect package. More information: https://www.ncbi.nlm.nih.gov/books/NBK179288/.",
+  "useCases": [
+    {
+      "description": "Search the pubmed database for selective serotonin reuptake inhibitor:",
+      "syntax": "esearch -db pubmed -query &quot;{{selective serotonin reuptake inhibitor}}&quot;"
+    },
+    {
+      "description": "Search the protein database using a query and regexp:",
+      "syntax": "esearch -db {{protein}} -query {{'Escherichia*'}}"
+    },
+    {
+      "description": "Search the nucleotide database for sequences whose metadata contain insulin and rodents:",
+      "syntax": "esearch -db nuccore -query &quot;{{insulin [PROT] AND rodents [ORGN]}}&quot;"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "esearch -h"
+    }
+  ]
+}

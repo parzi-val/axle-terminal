@@ -1,0 +1,18 @@
+{
+  "command": "kde-inhibit",
+  "description": "Inhibit various desktop functions while a command runs. More information: https://invent.kde.org/plasma/kde-cli-tools/-/blob/master/kdeinhibit/main.cpp.",
+  "useCases": [
+    {
+      "description": "Inhibit power management:",
+      "syntax": "kde-inhibit --power {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Inhibit screen saver:",
+      "syntax": "kde-inhibit --screenSaver {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Launch VLC, and inhibit color correction (night mode) while it's running:",
+      "syntax": "kde-inhibit --colorCorrect {{vlc}}"
+    }
+  ]
+}

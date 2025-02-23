@@ -1,0 +1,22 @@
+{
+  "command": "ioping",
+  "description": "Monitor I/O latency in real time. More information: https://github.com/koct9i/ioping.",
+  "useCases": [
+    {
+      "description": "Show disk I/O latency using the default values and the current directory:",
+      "syntax": "ioping ."
+    },
+    {
+      "description": "Measure latency on /tmp using 10 requests of 1 megabyte each:",
+      "syntax": "ioping -c 10 -s 1M /tmp"
+    },
+    {
+      "description": "Measure disk seek rate on /dev/sdX:",
+      "syntax": "ioping -R {{/dev/sdX}}"
+    },
+    {
+      "description": "Measure disk sequential speed on /dev/sdX:",
+      "syntax": "ioping -RL {{/dev/sdX}}"
+    }
+  ]
+}

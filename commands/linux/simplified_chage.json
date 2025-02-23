@@ -1,0 +1,26 @@
+{
+  "command": "chage",
+  "description": "Change user account and password expiry information. More information: https://manned.org/chage.",
+  "useCases": [
+    {
+      "description": "List password information for the user:",
+      "syntax": "chage --list {{username}}"
+    },
+    {
+      "description": "Enable password expiration in 10 days:",
+      "syntax": "sudo chage --maxdays {{10}} {{username}}"
+    },
+    {
+      "description": "Disable password expiration:",
+      "syntax": "sudo chage --maxdays {{-1}} {{username}}"
+    },
+    {
+      "description": "Set account expiration date:",
+      "syntax": "sudo chage --expiredate {{YYYY-MM-DD}} {{username}}"
+    },
+    {
+      "description": "Force user to change password on next log in:",
+      "syntax": "sudo chage --lastday {{0}} {{username}}"
+    }
+  ]
+}

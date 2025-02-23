@@ -1,0 +1,26 @@
+{
+  "command": "htmlq",
+  "description": "Use CSS selectors to extract content from HTML files. More information: https://github.com/mgdm/htmlq.",
+  "useCases": [
+    {
+      "description": "Return all elements of class card:",
+      "syntax": "cat {{path/to/file.html}} | htmlq '.card'"
+    },
+    {
+      "description": "Get the text content of the first paragraph:",
+      "syntax": "cat {{path/to/file.html}} | htmlq --text 'p:first-of-type'"
+    },
+    {
+      "description": "Find all the links in a page:",
+      "syntax": "cat {{path/to/file.html}} | htmlq --attribute href 'a'"
+    },
+    {
+      "description": "Remove all images and SVGs from a page:",
+      "syntax": "cat {{path/to/file.html}} | htmlq --remove-nodes 'img' --remove-nodes 'svg'"
+    },
+    {
+      "description": "Pretty print and write the output to a file:",
+      "syntax": "htmlq --pretty --filename {{path/to/input.html}} --output {{path/to/output.html}}"
+    }
+  ]
+}

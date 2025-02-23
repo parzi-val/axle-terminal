@@ -1,0 +1,18 @@
+{
+  "command": "retry",
+  "description": "Repeat command until it succeeds or a criterion is met. More information: https://github.com/minfrin/retry.",
+  "useCases": [
+    {
+      "description": "Retry a command until it succeeds:",
+      "syntax": "retry {{command}}"
+    },
+    {
+      "description": "Retry a command every n seconds until it succeeds:",
+      "syntax": "retry --delay={{n}} {{command}}"
+    },
+    {
+      "description": "Give up after n attempts:",
+      "syntax": "retry --times={{n}} {{command}}"
+    }
+  ]
+}

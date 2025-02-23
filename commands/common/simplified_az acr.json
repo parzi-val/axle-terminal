@@ -1,0 +1,38 @@
+{
+  "command": "az acr",
+  "description": "Manage private registries with Azure Container Registries. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/acr.",
+  "useCases": [
+    {
+      "description": "Create a managed container registry:",
+      "syntax": "az acr create --name {{registry_name}} --resource-group {{resource_group}} --sku {{sku}}"
+    },
+    {
+      "description": "Login to a registry:",
+      "syntax": "az acr login --name {{registry_name}}"
+    },
+    {
+      "description": "Tag a local image for ACR:",
+      "syntax": "docker tag {{image_name}} {{registry_name}}.azurecr.io/{{image_name}}:{{tag}}"
+    },
+    {
+      "description": "Push an image to a registry:",
+      "syntax": "docker push {{registry_name}}.azurecr.io/{{image_name}}:{{tag}}"
+    },
+    {
+      "description": "Pull an image from a registry:",
+      "syntax": "docker pull {{registry_name}}.azurecr.io/{{image_name}}:{{tag}}"
+    },
+    {
+      "description": "Delete an image from a registry:",
+      "syntax": "az acr repository delete --name {{registry_name}} --repository {{image_name}}:{{tag}}"
+    },
+    {
+      "description": "Delete a managed container registry:",
+      "syntax": "az acr delete --name {{registry_name}} --resource-group {{resource_group}} --yes"
+    },
+    {
+      "description": "List images within a registry:",
+      "syntax": "az acr repository list --name {{registry_name}} --output table"
+    }
+  ]
+}

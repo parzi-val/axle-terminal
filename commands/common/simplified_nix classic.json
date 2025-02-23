@@ -1,0 +1,30 @@
+{
+  "command": "nix classic",
+  "description": "A classic, stable interface to a powerful package manager that makes package management reliable, reproducible, and declarative. Some Nix commands such as nix-build, nix-shell, nix-env, and nix-store have their own pages. See also: tldr nix. More information: https://nixos.org.",
+  "useCases": [
+    {
+      "description": "Search for a package in nixpkgs via its name:",
+      "syntax": "nix-env -qaP {{search_term_regexp}}"
+    },
+    {
+      "description": "Start a shell with the specified packages available:",
+      "syntax": "nix-shell -p {{pkg1 pkg2 pkg3...}}"
+    },
+    {
+      "description": "Install some packages permanently:",
+      "syntax": "nix-env -iA {{nixpkgs.pkg1 nixpkgs.pkg2...}}"
+    },
+    {
+      "description": "Show all dependencies of a store path (package), in a tree format:",
+      "syntax": "nix-store --query --tree {{/nix/store/...}}"
+    },
+    {
+      "description": "Update the channels (repositories):",
+      "syntax": "nix-channel --update"
+    },
+    {
+      "description": "Remove unused paths from Nix store:",
+      "syntax": "nix-collect-garbage"
+    }
+  ]
+}

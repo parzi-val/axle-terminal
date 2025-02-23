@@ -1,0 +1,22 @@
+{
+  "command": "tokei",
+  "description": "Display statistics about code. More information: https://github.com/XAMPPRocky/tokei.",
+  "useCases": [
+    {
+      "description": "Display a report for the code in a directory and all subdirectories:",
+      "syntax": "tokei {{path/to/directory}}"
+    },
+    {
+      "description": "Display a report for a directory excluding .min.js files:",
+      "syntax": "tokei {{path/to/directory}} -e {{*.min.js}}"
+    },
+    {
+      "description": "Display statistics for individual files in a directory:",
+      "syntax": "tokei {{path/to/directory}} --files"
+    },
+    {
+      "description": "Display a report for all files of type Rust and Markdown:",
+      "syntax": "tokei {{path/to/directory}} -t={{Rust}},{{Markdown}}"
+    }
+  ]
+}

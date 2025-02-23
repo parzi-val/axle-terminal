@@ -1,0 +1,18 @@
+{
+  "command": "runsvdir",
+  "description": "Run an entire directory of services. More information: https://manned.org/runsvdir.8.",
+  "useCases": [
+    {
+      "description": "Start and manage all services in a directory as the current user:",
+      "syntax": "runsvdir {{path/to/services}}"
+    },
+    {
+      "description": "Start and manage all services in a directory as root:",
+      "syntax": "sudo runsvdir {{path/to/services}}"
+    },
+    {
+      "description": "Start services in separate sessions:",
+      "syntax": "runsvdir -P {{path/to/services}}"
+    }
+  ]
+}

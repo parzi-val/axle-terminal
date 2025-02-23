@@ -1,0 +1,22 @@
+{
+  "command": "add-apt-repository",
+  "description": "Manage apt repository definitions. More information: https://manned.org/apt-add-repository.",
+  "useCases": [
+    {
+      "description": "Add a new apt repository:",
+      "syntax": "add-apt-repository {{repository_spec}}"
+    },
+    {
+      "description": "Remove an apt repository:",
+      "syntax": "add-apt-repository --remove {{repository_spec}}"
+    },
+    {
+      "description": "Update the package cache after adding a repository:",
+      "syntax": "add-apt-repository --update {{repository_spec}}"
+    },
+    {
+      "description": "Allow source packages to be downloaded from the repository:",
+      "syntax": "add-apt-repository --enable-source {{repository_spec}}"
+    }
+  ]
+}

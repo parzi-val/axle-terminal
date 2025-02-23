@@ -1,0 +1,18 @@
+{
+  "command": "pw-cli",
+  "description": "Manage a PipeWire instance's modules, objects, nodes, devices, links and much more. More information: https://docs.pipewire.org/page_man_pw-cli_1.html.",
+  "useCases": [
+    {
+      "description": "Print all nodes (sinks and sources) along with their IDs:",
+      "syntax": "pw-cli list-objects Node"
+    },
+    {
+      "description": "Print information about an object with a specific ID:",
+      "syntax": "pw-cli info {{4}}"
+    },
+    {
+      "description": "Print all objects' information:",
+      "syntax": "pw-cli info all"
+    }
+  ]
+}

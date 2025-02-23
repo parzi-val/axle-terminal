@@ -1,0 +1,22 @@
+{
+  "command": "gox",
+  "description": "Cross-compile Go programs. More information: https://github.com/mitchellh/gox.",
+  "useCases": [
+    {
+      "description": "Compile Go program in the current directory for all operating systems and architecture combinations:",
+      "syntax": "gox"
+    },
+    {
+      "description": "Download and compile a Go program from a remote URL:",
+      "syntax": "gox {{url_1}} {{url_2}}"
+    },
+    {
+      "description": "Compile current directory for a particular operating system:",
+      "syntax": "gox -os=&quot;{{os}}&quot;"
+    },
+    {
+      "description": "Compile current directory for a single operating system and architecture combination:",
+      "syntax": "gox -osarch=&quot;{{os}}/{{arch}}&quot;"
+    }
+  ]
+}

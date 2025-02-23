@@ -1,0 +1,14 @@
+{
+  "command": "scanimage",
+  "description": "Scan images with the Scanner Access Now Easy API. More information: http://sane-project.org/man/scanimage.1.html.",
+  "useCases": [
+    {
+      "description": "List available scanners to ensure the target device is connected and recognized:",
+      "syntax": "scanimage -L"
+    },
+    {
+      "description": "Scan an image and save it to a file:",
+      "syntax": "scanimage --format={{pnm|tiff|png|jpeg}} &gt; {{path/to/new_image}}"
+    }
+  ]
+}

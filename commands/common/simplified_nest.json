@@ -1,0 +1,26 @@
+{
+  "command": "nest",
+  "description": "Initialize, develop, and maintain Nest applications. More information: https://docs.nestjs.com/cli/overview.",
+  "useCases": [
+    {
+      "description": "Display information about installed nest version:",
+      "syntax": "nest info"
+    },
+    {
+      "description": "Create a new NestJS project in a directory of the same name:",
+      "syntax": "nest new {{project_name}}"
+    },
+    {
+      "description": "Build a specific NestJS project:",
+      "syntax": "nest build {{project_name}}"
+    },
+    {
+      "description": "Run a specific NestJS project:",
+      "syntax": "nest start {{project_name}}"
+    },
+    {
+      "description": "Import a library into the current NestJS project:",
+      "syntax": "nest add {{library_name}}"
+    }
+  ]
+}

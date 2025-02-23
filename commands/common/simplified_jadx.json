@@ -1,0 +1,14 @@
+{
+  "command": "jadx",
+  "description": "Dex to Java decompiler. Produces Java source code from Android Dex and APK files. More information: https://github.com/skylot/jadx.",
+  "useCases": [
+    {
+      "description": "Decompile a Dex file into a directory:",
+      "syntax": "jadx {{path/to/file}}"
+    },
+    {
+      "description": "Decompile a Dex file into a specific directory:",
+      "syntax": "jadx --output-dir {{path/to/directory}} {{path/to/file}}"
+    }
+  ]
+}

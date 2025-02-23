@@ -1,0 +1,30 @@
+{
+  "command": "forfiles",
+  "description": "Select files to execute a specified command on. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/forfiles.",
+  "useCases": [
+    {
+      "description": "Search for files in the current directory:",
+      "syntax": "forfiles"
+    },
+    {
+      "description": "Search for files in a specific directory:",
+      "syntax": "forfiles /p {{path\\to\\directory}}"
+    },
+    {
+      "description": "Run the specified command for each file:",
+      "syntax": "forfiles /c &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Search for files using a specific glob mask:",
+      "syntax": "forfiles /m {{glob_pattern}}"
+    },
+    {
+      "description": "Search for files recursively:",
+      "syntax": "forfiles /s"
+    },
+    {
+      "description": "Search for files older than 5 days:",
+      "syntax": "forfiles /d +{{5}}"
+    }
+  ]
+}

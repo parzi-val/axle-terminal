@@ -1,0 +1,30 @@
+{
+  "command": "kinit",
+  "description": "Authenticate a principal with a Kerberos server to gain and cache a ticket. Note: A Kerberos principal can be either a user, service, or application. More information: https://web.mit.edu/kerberos/krb5-1.12/doc/user/user_commands/kinit.html.",
+  "useCases": [
+    {
+      "description": "Authenticate a user and obtain a ticket-granting ticket:",
+      "syntax": "kinit {{username}}"
+    },
+    {
+      "description": "Renew a ticket-granting ticket:",
+      "syntax": "kinit -R"
+    },
+    {
+      "description": "Specify a lifetime for the ticket:",
+      "syntax": "kinit -l {{5h}}"
+    },
+    {
+      "description": "Specify a total renewable lifetime for the ticket:",
+      "syntax": "kinit -r {{1w}}"
+    },
+    {
+      "description": "Specify a different principal name to authenticate as:",
+      "syntax": "kinit -p {{principal@REALM}}"
+    },
+    {
+      "description": "Specify a different keytab file to authenticate with:",
+      "syntax": "kinit -t {{path/to/keytab}}"
+    }
+  ]
+}

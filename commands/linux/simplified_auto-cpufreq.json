@@ -1,0 +1,10 @@
+{
+  "command": "auto-cpufreq",
+  "description": "Automatic CPU speed & power optimizer. More information: https://github.com/AdnanHodzic/auto-cpufreq.",
+  "useCases": [
+    {
+      "description": "Run auto-cpufreq in a specific mode:",
+      "syntax": "sudo auto-cpufreq --{{monitor|live|update|remove|stats|force=governor}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "sc_warts2json",
+  "description": "JSON dump of information contained in a warts file. More information: https://www.caida.org/catalog/software/scamper/.",
+  "useCases": [
+    {
+      "description": "Convert warts files to JSON and output the result:",
+      "syntax": "sc_warts2json {{path/to/file1.warts path/to/file2.warts ...}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "http-prompt",
+  "description": "An interactive command-line HTTP client featuring autocomplete and syntax highlighting. More information: https://github.com/httpie/http-prompt.",
+  "useCases": [
+    {
+      "description": "Launch a session targeting the default URL of http://localhost:8000 or the previous session:",
+      "syntax": "http-prompt"
+    },
+    {
+      "description": "Launch a session with a given URL:",
+      "syntax": "http-prompt {{http://example.com}}"
+    },
+    {
+      "description": "Launch a session with some initial options:",
+      "syntax": "http-prompt {{localhost:8000/api}} --auth {{username:password}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "slurmstepd",
+  "description": "Slurm daemon for managing and monitoring individual job steps within a multi-step job. It should not be invoked manually. More information: https://slurm.schedmd.com/slurmstepd.html.",
+  "useCases": [
+    {
+      "description": "Start the daemon:",
+      "syntax": "slurmstepd"
+    }
+  ]
+}

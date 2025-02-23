@@ -1,0 +1,30 @@
+{
+  "command": "mosh",
+  "description": "Mobile Shell (mosh) is a robust and responsive replacement for SSH. mosh persists connections to remote servers while roaming between networks. More information: https://mosh.org.",
+  "useCases": [
+    {
+      "description": "Connect to a remote server:",
+      "syntax": "mosh {{username}}@{{remote_host}}"
+    },
+    {
+      "description": "Connect to a remote server with a specific identity (private key):",
+      "syntax": "mosh --ssh=&quot;ssh -i {{path/to/key_file}}&quot; {{username}}@{{remote_host}}"
+    },
+    {
+      "description": "Connect to a remote server using a specific port:",
+      "syntax": "mosh --ssh=&quot;ssh -p {{2222}}&quot; {{username}}@{{remote_host}}"
+    },
+    {
+      "description": "Run a command on a remote server:",
+      "syntax": "mosh {{remote_host}} -- {{command -with -flags}}"
+    },
+    {
+      "description": "Select Mosh UDP port (useful when remote_host is behind a NAT):",
+      "syntax": "mosh -p {{124}} {{username}}@{{remote_host}}"
+    },
+    {
+      "description": "Usage when mosh-server binary is outside standard path:",
+      "syntax": "mosh --server={{path/to/bin/}}mosh-server {{remote_host}}"
+    }
+  ]
+}

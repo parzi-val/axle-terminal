@@ -1,0 +1,22 @@
+{
+  "command": "troff",
+  "description": "Typesetting processor for the groff (GNU Troff) document formatting system. See also groff. More information: https://manned.org/troff.",
+  "useCases": [
+    {
+      "description": "Format output for a PostScript printer, saving the output to a file:",
+      "syntax": "troff {{path/to/input.roff}} | grops &gt; {{path/to/output.ps}}"
+    },
+    {
+      "description": "Format output for a PostScript printer using the [me] macro package, saving the output to a file:",
+      "syntax": "troff -{{me}} {{path/to/input.roff}} | grops &gt; {{path/to/output.ps}}"
+    },
+    {
+      "description": "Format output as [a]SCII text using the [man] macro package:",
+      "syntax": "troff -T {{ascii}} -{{man}} {{path/to/input.roff}} | grotty"
+    },
+    {
+      "description": "Format output as a [pdf] file, saving the output to a file:",
+      "syntax": "troff -T {{pdf}} {{path/to/input.roff}} | gropdf &gt; {{path/to/output.pdf}}"
+    }
+  ]
+}

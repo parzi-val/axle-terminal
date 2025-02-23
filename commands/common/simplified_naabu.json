@@ -1,0 +1,34 @@
+{
+  "command": "naabu",
+  "description": "A fast port scanner written in Go with a focus on reliability and simplicity. Note: Some features are only activated when naabu is run with root privileges such as SYN scan. More information: https://github.com/projectdiscovery/naabu.",
+  "useCases": [
+    {
+      "description": "Run a SYN scan against default (top 100) ports of remote host:",
+      "syntax": "sudo naabu -host {{host}}"
+    },
+    {
+      "description": "Display available network interfaces and public IP address of the local host:",
+      "syntax": "naabu -interface-list"
+    },
+    {
+      "description": "Scan all ports of the remote host (CONNECT scan without sudo):",
+      "syntax": "naabu -p - -host {{host}}"
+    },
+    {
+      "description": "Scan the top 1000 ports of the remote host:",
+      "syntax": "naabu -top-ports 1000 -host {{host}}"
+    },
+    {
+      "description": "Scan TCP ports 80, 443 and UDP port 53 of the remote host:",
+      "syntax": "naabu -p 80,443,u:53 -host {{host}}"
+    },
+    {
+      "description": "Show CDN type the remote host is using, if any:",
+      "syntax": "naabu -p 80,443 -cdn -host {{host}}"
+    },
+    {
+      "description": "Run nmap from naabu for additional functionalities (nmap must be installed):",
+      "syntax": "sudo naabu -v -host {{host}} -nmap-cli 'nmap {{-v -T5 -sC}}'"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "cs resolve",
+  "description": "Resolve lists the transitive dependencies of other dependencies. More information: https://get-coursier.io/docs/cli-resolve.",
+  "useCases": [
+    {
+      "description": "Resolve lists of transitive dependencies of two dependencies:",
+      "syntax": "cs resolve {{group_id1}}:{{artifact_id1}}:{{artifact_version1}} {{group_id2}}:{{artifact_id2}}:{{artifact_version2}}"
+    },
+    {
+      "description": "Resolve lists of transitive dependencies of a package by the dependency tree:",
+      "syntax": "cs resolve --tree {{group_id}}:{{artifact_id}}:{{artifact_version}}"
+    },
+    {
+      "description": "Resolve dependency tree in a reverse order (from a dependency to its dependencies):",
+      "syntax": "cs resolve --reverse-tree {{group_id}}:{{artifact_id}}:{{artifact_version}}"
+    },
+    {
+      "description": "Print all the libraries that depends on a specific library:",
+      "syntax": "cs resolve {{group_id}}:{{artifact_id}}:{{artifact_version}} --what-depends-on {{searched_group_id}}:{{searched_artifact_id}}"
+    },
+    {
+      "description": "Print all the libraries that depends on a specific library version:",
+      "syntax": "cs resolve {{group_id}}:{{artifact_id}}:{{artifact_version}} --what-depends-on {{searched_group_id}}:{{searched_artifact_id}}{{searched_artifact_version}}"
+    },
+    {
+      "description": "Print eventual conflicts between a set of packages:",
+      "syntax": "cs resolve --conflicts {{group_id1:artifact_id1:artifact_version1 group_id2:artifact_id2:artifact_version2 ...}}"
+    }
+  ]
+}

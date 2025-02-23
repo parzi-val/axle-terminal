@@ -1,0 +1,38 @@
+{
+  "command": "lbu",
+  "description": "Manage apk overlay files on a diskless Alpine Linux system. Note: subcommands like include write to /etc, which is stored in RAM. You need to run lbu commit to save the changes. More information: https://wiki.alpinelinux.org/wiki/Alpine_local_backup.",
+  "useCases": [
+    {
+      "description": "Commit changes to persistent storage (only files in /etc by default):",
+      "syntax": "lbu {{ci|commit}}"
+    },
+    {
+      "description": "List files that would be saved using commit:",
+      "syntax": "lbu {{st|status}}"
+    },
+    {
+      "description": "Display changes in tracked files that would be saved using commit:",
+      "syntax": "lbu diff"
+    },
+    {
+      "description": "Include a specific file or directory in the apk overlay:",
+      "syntax": "lbu {{add|inc|include}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Exclude a specific file or directory in /etc from the apk overlay:",
+      "syntax": "lbu {{ex|exclude|delete}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Display the list of manually included/excluded files:",
+      "syntax": "lbu {{inc|include|ex|exclude}} -l"
+    },
+    {
+      "description": "List backups (previously created overlays):",
+      "syntax": "lbu {{lb|list-backup}}"
+    },
+    {
+      "description": "Revert to a backup overlay:",
+      "syntax": "lbu revert {{overlay_filename.tar.gz}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "viewnior",
+  "description": "Simple and elegant image viewer. More information: https://manned.org/viewnior.",
+  "useCases": [
+    {
+      "description": "View an image:",
+      "syntax": "viewnior {{path/to/image.ext}}"
+    },
+    {
+      "description": "View in fullscreen mode:",
+      "syntax": "viewnior --fullscreen {{path/to/image.ext}}"
+    },
+    {
+      "description": "View fullscreen in slideshow mode:",
+      "syntax": "viewnior --slideshow {{path/to/image.ext}}"
+    }
+  ]
+}

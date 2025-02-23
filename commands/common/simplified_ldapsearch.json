@@ -1,0 +1,38 @@
+{
+  "command": "ldapsearch",
+  "description": "Query an LDAP directory. More information: https://docs.ldap.com/ldap-sdk/docs/tool-usages/ldapsearch.html.",
+  "useCases": [
+    {
+      "description": "Query an LDAP server for all items that are a member of the given group and return the object's displayName value:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} -b {{base_ou}} '{{memberOf=group1}}' displayName"
+    },
+    {
+      "description": "Query an LDAP server with a no-newline password file for all items that are a member of the given group and return the object's displayName value:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -y '{{password_file}}' -h {{ldap_host}} -b {{base_ou}} '{{memberOf=group1}}' displayName"
+    },
+    {
+      "description": "Return 5 items that match the given filter:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} -b {{base_ou}} '{{memberOf=group1}}' -z 5 displayName"
+    },
+    {
+      "description": "Wait up to 7 seconds for a response:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} -b {{base_ou}} '{{memberOf=group1}}' -l 7 displayName"
+    },
+    {
+      "description": "Invert the filter:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} -b {{base_ou}} '(!(memberOf={{group1}}))' displayName"
+    },
+    {
+      "description": "Return all items that are part of multiple groups, returning the display name for each item:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} '(&amp;({{memberOf=group1}})({{memberOf=group2}})({{memberOf=group3}}))' &quot;displayName&quot;"
+    },
+    {
+      "description": "Return all items that are members of at least 1 of the specified groups:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} '(|({{memberOf=group1}})({{memberOf=group1}})({{memberOf=group3}}))' displayName"
+    },
+    {
+      "description": "Combine multiple boolean logic filters:",
+      "syntax": "ldapsearch -D '{{admin_DN}}' -w '{{password}}' -h {{ldap_host}} '(&amp;({{memberOf=group1}})({{memberOf=group2}})(!({{memberOf=group3}})))' displayName"
+    }
+  ]
+}

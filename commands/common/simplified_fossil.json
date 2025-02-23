@@ -1,0 +1,22 @@
+{
+  "command": "fossil",
+  "description": "Distributed version control system. Some subcommands such as commit have their own usage documentation. More information: https://fossil-scm.org/.",
+  "useCases": [
+    {
+      "description": "Execute a Fossil subcommand:",
+      "syntax": "fossil {{subcommand}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "fossil help"
+    },
+    {
+      "description": "Display help for a specific subcommand (like add, commit, etc.):",
+      "syntax": "fossil help {{subcommand}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "fossil version"
+    }
+  ]
+}

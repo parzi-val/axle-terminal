@@ -1,0 +1,30 @@
+{
+  "command": "ip link",
+  "description": "Manage network interfaces. More information: https://manned.org/ip-link.",
+  "useCases": [
+    {
+      "description": "Show information about all network interfaces:",
+      "syntax": "ip link"
+    },
+    {
+      "description": "Show information about a specific network interface:",
+      "syntax": "ip link show {{ethN}}"
+    },
+    {
+      "description": "Bring a network interface up or down:",
+      "syntax": "ip link set {{ethN}} {{up|down}}"
+    },
+    {
+      "description": "Give a meaningful name to a network interface:",
+      "syntax": "ip link set {{ethN}} alias &quot;{{LAN Interface}}&quot;"
+    },
+    {
+      "description": "Change the MAC address of a network interface:",
+      "syntax": "ip link set {{ethN}} address {{ff:ff:ff:ff:ff:ff}}"
+    },
+    {
+      "description": "Change the MTU size for a network interface to use jumbo frames:",
+      "syntax": "ip link set {{ethN}} mtu {{9000}}"
+    }
+  ]
+}

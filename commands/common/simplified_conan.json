@@ -1,0 +1,30 @@
+{
+  "command": "conan",
+  "description": "The open source, decentralized and cross-platform package manager to create and share all your native binaries. Some subcommands such as frogarian have their own usage documentation. More information: https://conan.io/.",
+  "useCases": [
+    {
+      "description": "Install packages based on conanfile.txt:",
+      "syntax": "conan install {{.}}"
+    },
+    {
+      "description": "Install packages and create configuration files for a specific generator:",
+      "syntax": "conan install -g {{generator}}"
+    },
+    {
+      "description": "Install packages, building from source:",
+      "syntax": "conan install {{.}} --build"
+    },
+    {
+      "description": "Search for locally installed packages:",
+      "syntax": "conan search {{package}}"
+    },
+    {
+      "description": "Search for remote packages:",
+      "syntax": "conan search {{package}} -r {{remote}}"
+    },
+    {
+      "description": "List remotes:",
+      "syntax": "conan remote list"
+    }
+  ]
+}

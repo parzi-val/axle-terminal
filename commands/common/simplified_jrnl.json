@@ -1,0 +1,26 @@
+{
+  "command": "jrnl",
+  "description": "A simple journal application for your command-line. More information: https://jrnl.sh.",
+  "useCases": [
+    {
+      "description": "Insert a new entry with your editor:",
+      "syntax": "jrnl"
+    },
+    {
+      "description": "Quickly insert a new entry:",
+      "syntax": "jrnl {{today at 3am}}: {{title}}. {{content}}"
+    },
+    {
+      "description": "View the last ten entries:",
+      "syntax": "jrnl -n {{10}}"
+    },
+    {
+      "description": "View everything that happened from the start of last year to the start of last march:",
+      "syntax": "jrnl -from &quot;{{last year}}&quot; -until {{march}}"
+    },
+    {
+      "description": "Edit all entries tagged with \"texas\" and \"history\":",
+      "syntax": "jrnl {{@texas}} -and {{@history}} --edit"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "icontopbm",
+  "description": "This command has been superseded by sunicontopnm. More information: https://netpbm.sourceforge.net/doc/icontopbm.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr sunicontopnm"
+    }
+  ]
+}

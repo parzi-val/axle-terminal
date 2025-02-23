@@ -1,0 +1,18 @@
+{
+  "command": "tcc",
+  "description": "A tiny C compiler that can run C source files as scripts and otherwise has command-line options similar to gcc. More information: https://bellard.org/tcc/tcc-doc.html.",
+  "useCases": [
+    {
+      "description": "Compile and link 2 source files to generate an executable:",
+      "syntax": "tcc -o {{executable_name}} {{path/to/file1.c}} {{path/to/file2.c}}"
+    },
+    {
+      "description": "Directly run an input file like a script and pass arguments to it:",
+      "syntax": "tcc -run {{path/to/source_file.c}} {{arguments}}"
+    },
+    {
+      "description": "Interpret C source files with a shebang inside the file:",
+      "syntax": "#!{{/full/path/to/tcc}} -run"
+    }
+  ]
+}

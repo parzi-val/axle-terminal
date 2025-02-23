@@ -1,0 +1,26 @@
+{
+  "command": "semanage fcontext",
+  "description": "Manage persistent SELinux security context rules on files/directories. See also: semanage, matchpathcon, secon, chcon, restorecon. More information: https://manned.org/semanage-fcontext.",
+  "useCases": [
+    {
+      "description": "List all file labelling rules:",
+      "syntax": "sudo semanage fcontext --list"
+    },
+    {
+      "description": "List all user-defined file labelling rules without headings:",
+      "syntax": "sudo semanage fcontext --list --locallist --noheading"
+    },
+    {
+      "description": "Add a user-defined rule that labels any path which matches a PCRE regex:",
+      "syntax": "sudo semanage fcontext --add --type {{samba_share_t}} {{'/mnt/share(/.*)?'}}"
+    },
+    {
+      "description": "Delete a user-defined rule using its PCRE regex:",
+      "syntax": "sudo semanage fcontext --delete {{'/mnt/share(/.*)?'}}"
+    },
+    {
+      "description": "Relabel a directory recursively by applying the new rules:",
+      "syntax": "restorecon -R -v {{path/to/directory}}"
+    }
+  ]
+}

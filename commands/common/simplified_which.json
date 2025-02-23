@@ -1,0 +1,14 @@
+{
+  "command": "which",
+  "description": "Locate a program in the user's path. More information: https://manned.org/which.",
+  "useCases": [
+    {
+      "description": "Search the PATH environment variable and display the location of any matching executables:",
+      "syntax": "which {{executable}}"
+    },
+    {
+      "description": "If there are multiple executables which match, display all:",
+      "syntax": "which -a {{executable}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "nproc",
+  "description": "Print the number of processing units (normally CPUs) available. More information: https://www.gnu.org/software/coreutils/manual/html_node/nproc-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display the number of available processing units:",
+      "syntax": "nproc"
+    },
+    {
+      "description": "Display the number of installed processing units, including any inactive ones:",
+      "syntax": "nproc --all"
+    },
+    {
+      "description": "If possible, subtract a given number of units from the returned value:",
+      "syntax": "nproc --ignore {{count}}"
+    }
+  ]
+}

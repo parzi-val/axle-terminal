@@ -1,0 +1,26 @@
+{
+  "command": "bob",
+  "description": "Manage and switch between Neovim versions. More information: https://github.com/MordechaiHadad/bob.",
+  "useCases": [
+    {
+      "description": "Install and switch to the specified version of Neovim:",
+      "syntax": "bob use {{nightly|stable|latest|version_string|commit_hash}}"
+    },
+    {
+      "description": "List installed and currently used versions of Neovim:",
+      "syntax": "bob list"
+    },
+    {
+      "description": "Uninstall the specified version of Neovim:",
+      "syntax": "bob uninstall {{nightly|stable|latest|version_string|commit_hash}}"
+    },
+    {
+      "description": "Uninstall Neovim and erase any changes bob has made:",
+      "syntax": "bob erase"
+    },
+    {
+      "description": "Roll back to a previous nightly version:",
+      "syntax": "bob rollback"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "git create-branch",
+  "description": "Create a Git branch in a repository. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-create-branch.",
+  "useCases": [
+    {
+      "description": "Create a local branch:",
+      "syntax": "git create-branch {{branch_name}}"
+    },
+    {
+      "description": "Create a branch locally and on origin:",
+      "syntax": "git create-branch --remote {{branch_name}}"
+    },
+    {
+      "description": "Create a branch locally and on upstream (through forks):",
+      "syntax": "git create-branch --remote upstream {{branch_name}}"
+    }
+  ]
+}

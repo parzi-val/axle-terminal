@@ -1,0 +1,10 @@
+{
+  "command": "lzfgrep",
+  "description": "This command is an alias of xzgrep --fixed-strings. See also: fgrep.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr xzgrep"
+    }
+  ]
+}

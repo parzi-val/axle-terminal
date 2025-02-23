@@ -1,0 +1,18 @@
+{
+  "command": "pnmshear",
+  "description": "Shear a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmshear.html.",
+  "useCases": [
+    {
+      "description": "Shear a PNM image by the specified angle:",
+      "syntax": "pnmshear {{angle}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the color of the background in the sheared image:",
+      "syntax": "pnmshear -background {{blue}} {{angle}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Do not perform anti-aliasing:",
+      "syntax": "pnmshear -noantialias {{angle}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

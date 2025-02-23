@@ -1,0 +1,26 @@
+{
+  "command": "ghci",
+  "description": "The Glasgow Haskell Compiler's interactive environment. More information: https://downloads.haskell.org/ghc/latest/docs/html/users_guide/ghci.html.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "ghci"
+    },
+    {
+      "description": "Start a REPL and load the specified Haskell source file:",
+      "syntax": "ghci {{source_file.hs}}"
+    },
+    {
+      "description": "Start a REPL and enable a language option:",
+      "syntax": "ghci -X{{language_option}}"
+    },
+    {
+      "description": "Start a REPL and enable some level of compiler warnings (e.g. all or compact):",
+      "syntax": "ghci -W{{warning_level}}"
+    },
+    {
+      "description": "Start a REPL with a colon-separated list of directories for finding source files:",
+      "syntax": "ghci -i{{path/to/directory1:path/to/directory2:...}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "initdb",
+  "description": "Create a PostgreSQL database on disk. More information: https://www.postgresql.org/docs/9.5/app-initdb.html.",
+  "useCases": [
+    {
+      "description": "Create a database at /usr/local/var/postgres:",
+      "syntax": "initdb -D /usr/local/var/postgres"
+    }
+  ]
+}

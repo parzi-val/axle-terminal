@@ -1,0 +1,30 @@
+{
+  "command": "atom",
+  "description": "A cross-platform pluggable text editor. Plugins are managed by apm. Note: Atom has been sunsetted and is no longer actively maintained. More information: https://atom.io/.",
+  "useCases": [
+    {
+      "description": "Open a file or directory:",
+      "syntax": "atom {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Open a file or directory in a [n]ew window:",
+      "syntax": "atom -n {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Open a file or directory in an existing window:",
+      "syntax": "atom --add {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Open Atom in safe mode (does not load any additional packages):",
+      "syntax": "atom --safe"
+    },
+    {
+      "description": "Prevent Atom from forking into the background, keeping Atom attached to the terminal:",
+      "syntax": "atom --foreground"
+    },
+    {
+      "description": "Wait for Atom window to close before returning (useful for Git commit editor):",
+      "syntax": "atom --wait"
+    }
+  ]
+}

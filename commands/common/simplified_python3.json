@@ -1,0 +1,10 @@
+{
+  "command": "python3",
+  "description": "This command is an alias of python.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr python"
+    }
+  ]
+}

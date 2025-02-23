@@ -1,0 +1,14 @@
+{
+  "command": "pambrighten",
+  "description": "Change a PAM image's saturation and value. More information: https://netpbm.sourceforge.net/doc/pambrighten.html.",
+  "useCases": [
+    {
+      "description": "Increase the saturation of each pixel by the specified percentage:",
+      "syntax": "pambrighten -saturation {{value_percent}} {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Increase the value (from the HSV color space) of each pixel by the specified percentage:",
+      "syntax": "pambrighten -value {{value_percent}} {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "beanstalkd",
+  "description": "A simple and generic work-queue server. More information: https://beanstalkd.github.io/.",
+  "useCases": [
+    {
+      "description": "Start the server, listening on port 11300:",
+      "syntax": "beanstalkd"
+    },
+    {
+      "description": "Listen on a specific [p]ort and address:",
+      "syntax": "beanstalkd -l {{ip_address}} -p {{port_number}}"
+    },
+    {
+      "description": "Persist work queues by saving them to disk:",
+      "syntax": "beanstalkd -b {{path/to/persistence_directory}}"
+    },
+    {
+      "description": "Sync to the persistence directory every 500 milliseconds:",
+      "syntax": "beanstalkd -b {{path/to/persistence_directory}} -f {{500}}"
+    }
+  ]
+}

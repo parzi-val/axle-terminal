@@ -1,0 +1,38 @@
+{
+  "command": "nextflow",
+  "description": "Run computational pipelines. Mostly used for bioinformatics workflows. More information: https://www.nextflow.io.",
+  "useCases": [
+    {
+      "description": "Run a pipeline, use cached results from previous runs:",
+      "syntax": "nextflow run {{main.nf}} -resume"
+    },
+    {
+      "description": "Run a specific release of a remote workflow from GitHub:",
+      "syntax": "nextflow run {{user/repo}} -revision {{release_tag}}"
+    },
+    {
+      "description": "Run with a given work directory for intermediate files, save execution report:",
+      "syntax": "nextflow run {{workflow}} -work-dir {{path/to/directory}} -with-report {{report.html}}"
+    },
+    {
+      "description": "Show details of previous runs in current directory:",
+      "syntax": "nextflow log"
+    },
+    {
+      "description": "Remove cache and intermediate files for a specific run:",
+      "syntax": "nextflow clean -force {{run_name}}"
+    },
+    {
+      "description": "List all downloaded projects:",
+      "syntax": "nextflow list"
+    },
+    {
+      "description": "Pull the latest version of a remote workflow from Bitbucket:",
+      "syntax": "nextflow pull {{user/repo}} -hub bitbucket"
+    },
+    {
+      "description": "Update Nextflow:",
+      "syntax": "nextflow self-update"
+    }
+  ]
+}

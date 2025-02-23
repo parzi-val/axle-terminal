@@ -1,0 +1,18 @@
+{
+  "command": "funzip",
+  "description": "Print the content of the first (non-directory) member in an archive without extraction. More information: https://manned.org/funzip.",
+  "useCases": [
+    {
+      "description": "Print the content of the first member in a Zip archive:",
+      "syntax": "funzip {{path/to/archive.zip}}"
+    },
+    {
+      "description": "Print the content in a gzip archive:",
+      "syntax": "funzip {{path/to/archive.gz}}"
+    },
+    {
+      "description": "Decrypt a Zip or gzip archive and print the content:",
+      "syntax": "funzip -password {{password}} {{path/to/archive}}"
+    }
+  ]
+}

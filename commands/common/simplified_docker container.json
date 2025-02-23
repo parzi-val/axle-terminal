@@ -1,0 +1,38 @@
+{
+  "command": "docker container",
+  "description": "Manage Docker containers. More information: https://docs.docker.com/reference/cli/docker/container/.",
+  "useCases": [
+    {
+      "description": "List currently running Docker containers:",
+      "syntax": "docker container ls"
+    },
+    {
+      "description": "Start one or more stopped containers:",
+      "syntax": "docker container start {{container1_name}} {{container2_name}}"
+    },
+    {
+      "description": "Kill one or more running containers:",
+      "syntax": "docker container kill {{container_name}}"
+    },
+    {
+      "description": "Stop one or more running containers:",
+      "syntax": "docker container stop {{container_name}}"
+    },
+    {
+      "description": "Pause all processes within one or more containers:",
+      "syntax": "docker container pause {{container_name}}"
+    },
+    {
+      "description": "Display detailed information on one or more containers:",
+      "syntax": "docker container inspect {{container_name}}"
+    },
+    {
+      "description": "Export a container's filesystem as a tar archive:",
+      "syntax": "docker container export {{container_name}}"
+    },
+    {
+      "description": "Create a new image from a container's changes:",
+      "syntax": "docker container commit {{container_name}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "zenity",
+  "description": "Display dialogs from the command-line/shell scripts. Return user-inserted values or 1 if error. More information: https://manned.org/zenity.",
+  "useCases": [
+    {
+      "description": "Display the default question dialog:",
+      "syntax": "zenity --question"
+    },
+    {
+      "description": "Display an info dialog displaying the text \"Hello!\":",
+      "syntax": "zenity --info --text=&quot;{{Hello!}}&quot;"
+    },
+    {
+      "description": "Display a name/password form and output the data separated by \";\":",
+      "syntax": "zenity --forms --add-entry=&quot;{{Name}}&quot; --add-password=&quot;{{Password}}&quot; --separator=&quot;{{;}}&quot;"
+    },
+    {
+      "description": "Display a file selection form in which the user can only select directories:",
+      "syntax": "zenity --file-selection --directory"
+    },
+    {
+      "description": "Display a progress bar which updates its message every second and show a progress percent:",
+      "syntax": "{{(echo &quot;#1&quot;; sleep 1; echo &quot;50&quot;; echo &quot;#2&quot;; sleep 1; echo &quot;100&quot;)}} | zenity --progress"
+    }
+  ]
+}

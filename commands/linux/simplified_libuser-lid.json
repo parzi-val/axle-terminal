@@ -1,0 +1,14 @@
+{
+  "command": "libuser-lid",
+  "description": "Display a user's groups or a group's users. On Fedora and Arch Linux, this program is installed as lid. More information: https://manned.org/lid.8.",
+  "useCases": [
+    {
+      "description": "List primary and secondary groups of a specific user:",
+      "syntax": "sudo lid {{username}}"
+    },
+    {
+      "description": "List users of a specific group:",
+      "syntax": "sudo lid --group {{name}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "battop",
+  "description": "An interactive viewer for the batteries installed in your notebook. More information: https://github.com/svartalf/rust-battop.",
+  "useCases": [
+    {
+      "description": "Display battery information:",
+      "syntax": "battop"
+    },
+    {
+      "description": "Change battery information measurement [u]nit (default: human):",
+      "syntax": "battop -u {{human|si}}"
+    }
+  ]
+}

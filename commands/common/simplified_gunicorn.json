@@ -1,0 +1,30 @@
+{
+  "command": "gunicorn",
+  "description": "Python WSGI HTTP Server. More information: https://gunicorn.org/.",
+  "useCases": [
+    {
+      "description": "Run Python web app:",
+      "syntax": "gunicorn {{import.path:app_object}}"
+    },
+    {
+      "description": "Listen on port 8080 on localhost:",
+      "syntax": "gunicorn --bind {{localhost}}:{{8080}} {{import.path:app_object}}"
+    },
+    {
+      "description": "Turn on live reload:",
+      "syntax": "gunicorn --reload {{import.path:app_object}}"
+    },
+    {
+      "description": "Use 4 worker processes for handling requests:",
+      "syntax": "gunicorn --workers {{4}} {{import.path:app_object}}"
+    },
+    {
+      "description": "Use 4 worker threads for handling requests:",
+      "syntax": "gunicorn --threads {{4}} {{import.path:app_object}}"
+    },
+    {
+      "description": "Run app over HTTPS:",
+      "syntax": "gunicorn --certfile {{cert.pem}} --keyfile {{key.pem}} {{import.path:app_object}}"
+    }
+  ]
+}

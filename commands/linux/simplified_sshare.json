@@ -1,0 +1,22 @@
+{
+  "command": "sshare",
+  "description": "List the shares of associations to a cluster. More information: https://slurm.schedmd.com/sshare.html.",
+  "useCases": [
+    {
+      "description": "List Slurm share information:",
+      "syntax": "sshare"
+    },
+    {
+      "description": "Control the output format:",
+      "syntax": "sshare --{{parsable|parsable2|json|yaml}}"
+    },
+    {
+      "description": "Control the fields to display:",
+      "syntax": "sshare --format={{format_string}}"
+    },
+    {
+      "description": "Display information for the specified users only:",
+      "syntax": "sshare --users={{user_id_1,user_id_2,...}}"
+    }
+  ]
+}

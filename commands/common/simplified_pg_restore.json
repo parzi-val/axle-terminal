@@ -1,0 +1,30 @@
+{
+  "command": "pg_restore",
+  "description": "Restore a PostgreSQL database from an archive file created by pg_dump. More information: https://www.postgresql.org/docs/current/app-pgrestore.html.",
+  "useCases": [
+    {
+      "description": "Restore an archive into an existing database:",
+      "syntax": "pg_restore -d {{db_name}} {{archive_file.dump}}"
+    },
+    {
+      "description": "Same as above, customize username:",
+      "syntax": "pg_restore -U {{username}} -d {{db_name}} {{archive_file.dump}}"
+    },
+    {
+      "description": "Same as above, customize host and port:",
+      "syntax": "pg_restore -h {{host}} -p {{port}} -d {{db_name}} {{archive_file.dump}}"
+    },
+    {
+      "description": "List database objects included in the archive:",
+      "syntax": "pg_restore --list {{archive_file.dump}}"
+    },
+    {
+      "description": "Clean database objects before creating them:",
+      "syntax": "pg_restore --clean -d {{db_name}} {{archive_file.dump}}"
+    },
+    {
+      "description": "Use multiple jobs to do the restoring:",
+      "syntax": "pg_restore -j {{2}} -d {{db_name}} {{archive_file.dump}}"
+    }
+  ]
+}

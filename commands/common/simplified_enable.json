@@ -1,0 +1,14 @@
+{
+  "command": "enable",
+  "description": "Enable and disable shell builtins. More information: https://www.gnu.org/software/bash/manual/bash.html#index-enable.",
+  "useCases": [
+    {
+      "description": "Print the list of builtins:",
+      "syntax": "enable"
+    },
+    {
+      "description": "Disable a builtin (works in bash only):",
+      "syntax": "enable -n {{command}}"
+    }
+  ]
+}

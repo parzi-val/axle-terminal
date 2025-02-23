@@ -1,0 +1,14 @@
+{
+  "command": "m4b-tool",
+  "description": "Merge, split, and manipulate audiobook files with chapters. More information: https://github.com/sandreas/m4b-tool.",
+  "useCases": [
+    {
+      "description": "Create an audiobook with the audio files in the input directory:",
+      "syntax": "m4b-tool merge {{path/to/input_directory}} --output-file={{path/to/merged.m4b}}"
+    },
+    {
+      "description": "Make chapters using the input files' names:",
+      "syntax": "m4b-tool merge {{path/to/input_directory}} --output-file={{path/to/merged.m4b}} --use-filenames-as-chapters"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "unimatrix",
+  "description": "Simulate the Matrix look with Unicode characters. See also: cmatrix. More information: https://github.com/will8211/unimatrix.",
+  "useCases": [
+    {
+      "description": "Mimic the default output of cmatrix (no unicode, works in a TTY):",
+      "syntax": "unimatrix --no-bold --speed {{96}} --character-list {{o}}"
+    },
+    {
+      "description": "No bold characters, slowly, with emojis, numbers, and a few symbols:",
+      "syntax": "unimatrix --no-bold --speed {{50}} --character-list {{ens}}"
+    },
+    {
+      "description": "Change the color of characters:",
+      "syntax": "unimatrix --color {{red|green|blue|white|...}}"
+    },
+    {
+      "description": "Select character set(s) using letter codes (see unimatrix --help for available character sets):",
+      "syntax": "unimatrix --character-list {{character_sets}}"
+    },
+    {
+      "description": "Change the scrolling speed:",
+      "syntax": "unimatrix --speed {{number}}"
+    }
+  ]
+}

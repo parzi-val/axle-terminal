@@ -1,0 +1,38 @@
+{
+  "command": "ascii",
+  "description": "Show ASCII character aliases. More information: http://www.catb.org/~esr/ascii/.",
+  "useCases": [
+    {
+      "description": "Show ASCII aliases of a character:",
+      "syntax": "ascii {{a}}"
+    },
+    {
+      "description": "Show ASCII aliases in short, script-friendly mode:",
+      "syntax": "ascii -t {{a}}"
+    },
+    {
+      "description": "Show ASCII aliases of multiple characters:",
+      "syntax": "ascii -s {{tldr}}"
+    },
+    {
+      "description": "Show ASCII table in decimal:",
+      "syntax": "ascii -d"
+    },
+    {
+      "description": "Show ASCII table in hexadecimal:",
+      "syntax": "ascii -x"
+    },
+    {
+      "description": "Show ASCII table in octal:",
+      "syntax": "ascii -o"
+    },
+    {
+      "description": "Show ASCII table in binary:",
+      "syntax": "ascii -b"
+    },
+    {
+      "description": "Show options summary and complete ASCII table:",
+      "syntax": "ascii"
+    }
+  ]
+}

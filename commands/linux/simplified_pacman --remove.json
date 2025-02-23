@@ -1,0 +1,34 @@
+{
+  "command": "pacman --remove",
+  "description": "Arch Linux package manager utility. See also: pacman. More information: https://manned.org/pacman.8.",
+  "useCases": [
+    {
+      "description": "[R]emove a package and its dependencies recur[s]ively:",
+      "syntax": "sudo pacman -Rs {{package}}"
+    },
+    {
+      "description": "[R]emove a package and its dependencies. Also do [n]ot save backups of configuration files:",
+      "syntax": "sudo pacman -Rsn {{package}}"
+    },
+    {
+      "description": "[R]emove a package without prompting:",
+      "syntax": "sudo pacman -R --noconfirm {{package}}"
+    },
+    {
+      "description": "[R]emove orphan packages (installed as [d]ependencies but no[t] required by any package):",
+      "syntax": "sudo pacman -Rsn $(pacman -Qdtq)"
+    },
+    {
+      "description": "[R]emove a package and [c]ascade that to all packages that depend on it:",
+      "syntax": "sudo pacman -Rc {{package}}"
+    },
+    {
+      "description": "List and [p]rint packages that would be affected (does not [R]emove any packages):",
+      "syntax": "pacman -Rp {{package}}"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "pacman -Rh"
+    }
+  ]
+}

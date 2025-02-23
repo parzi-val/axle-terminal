@@ -1,0 +1,14 @@
+{
+  "command": "git fork",
+  "description": "Fork a GitHub repo. Like git clone but forks first. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-fork.",
+  "useCases": [
+    {
+      "description": "Fork and clone a GitHub repository by its URL:",
+      "syntax": "git fork {{https://github.com/tldr-pages/tldr}}"
+    },
+    {
+      "description": "Fork and clone a GitHub repository by its slug:",
+      "syntax": "git fork {{tldr-pages/tldr}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "gdaldem",
+  "description": "Analyze and visualize digital elevation models (DEM). More information: https://gdal.org/programs/gdaldem.html.",
+  "useCases": [
+    {
+      "description": "Compute the hillshade of a DEM:",
+      "syntax": "gdaldem hillshade {{path/to/input.tif}} {{path/to/output.tif}}"
+    },
+    {
+      "description": "Compute the slope of a DEM:",
+      "syntax": "gdaldem slope {{path/to/input.tif}} {{path/to/output.tif}}"
+    },
+    {
+      "description": "Compute the aspect of a DEM:",
+      "syntax": "gdaldem aspect {{path/to/input.tif}} {{path/to/output.tif}}"
+    }
+  ]
+}

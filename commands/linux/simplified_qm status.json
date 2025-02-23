@@ -1,0 +1,14 @@
+{
+  "command": "qm status",
+  "description": "Show virtual machine status. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Display the status of a specific virtual machine:",
+      "syntax": "qm status {{vm_id}}"
+    },
+    {
+      "description": "Display detailed status of a specific virtual machine:",
+      "syntax": "qm status --verbose {{true}} {{vm_id}}"
+    }
+  ]
+}

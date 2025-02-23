@@ -1,0 +1,14 @@
+{
+  "command": "pangolin",
+  "description": "Implements the dynamic nomenclature of SARS-CoV-2 lineages (Pango nomenclature). More information: https://cov-lineages.org/resources/pangolin/usage.html.",
+  "useCases": [
+    {
+      "description": "Run pangolin on the specified FASTA file:",
+      "syntax": "pangolin {{path/to/file.fa}}"
+    },
+    {
+      "description": "Use the specified analysis engine:",
+      "syntax": "pangolin --analysis-mode {{accurate|fast|pangolearn|usher}}"
+    }
+  ]
+}

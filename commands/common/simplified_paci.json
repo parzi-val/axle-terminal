@@ -1,0 +1,26 @@
+{
+  "command": "paci",
+  "description": "A package manager for Bash scripts. More information: https://github.com/tradebyte/paci.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages and versions (it's recommended to run this before other paci commands):",
+      "syntax": "paci refresh"
+    },
+    {
+      "description": "Configure its behaviour:",
+      "syntax": "paci configure"
+    },
+    {
+      "description": "Search for a given package:",
+      "syntax": "paci search {{package}}"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "paci install {{package}}"
+    },
+    {
+      "description": "Update a package:",
+      "syntax": "paci update {{package}}"
+    }
+  ]
+}

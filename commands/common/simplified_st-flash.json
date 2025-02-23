@@ -1,0 +1,18 @@
+{
+  "command": "st-flash",
+  "description": "Flash binary files to STM32 ARM Cortex microcontrollers. More information: https://github.com/texane/stlink.",
+  "useCases": [
+    {
+      "description": "Read 4096 bytes from the device starting from 0x8000000:",
+      "syntax": "st-flash read {{firmware}}.bin {{0x8000000}} {{4096}}"
+    },
+    {
+      "description": "Write firmware to device starting from 0x8000000:",
+      "syntax": "st-flash write {{firmware}}.bin {{0x8000000}}"
+    },
+    {
+      "description": "Erase firmware from device:",
+      "syntax": "st-flash erase"
+    }
+  ]
+}

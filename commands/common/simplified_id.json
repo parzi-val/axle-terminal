@@ -1,0 +1,30 @@
+{
+  "command": "id",
+  "description": "Display current user and group identity. More information: https://www.gnu.org/software/coreutils/manual/html_node/id-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display current user's ID (UID), group ID (GID) and groups to which they belong:",
+      "syntax": "id"
+    },
+    {
+      "description": "Display the current user identity:",
+      "syntax": "id -un"
+    },
+    {
+      "description": "Display the current user identity as a number:",
+      "syntax": "id -u"
+    },
+    {
+      "description": "Display the current primary group identity:",
+      "syntax": "id -gn"
+    },
+    {
+      "description": "Display the current primary group identity as a number:",
+      "syntax": "id -g"
+    },
+    {
+      "description": "Display an arbitrary user's ID (UID), group ID (GID) and groups to which they belong:",
+      "syntax": "id {{username}}"
+    }
+  ]
+}

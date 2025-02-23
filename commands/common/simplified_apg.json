@@ -1,0 +1,26 @@
+{
+  "command": "apg",
+  "description": "Create arbitrarily complex random passwords. More information: https://manned.org/apg.",
+  "useCases": [
+    {
+      "description": "Create random passwords (default password length is 8):",
+      "syntax": "apg"
+    },
+    {
+      "description": "Create a password with at least 1 symbol (S), 1 number (N), 1 uppercase (C), 1 lowercase (L):",
+      "syntax": "apg -M SNCL"
+    },
+    {
+      "description": "Create a password with 16 characters:",
+      "syntax": "apg -m {{16}}"
+    },
+    {
+      "description": "Create a password with maximum length of 16:",
+      "syntax": "apg -x {{16}}"
+    },
+    {
+      "description": "Create a password that doesn't appear in a dictionary (the dictionary file has to be provided):",
+      "syntax": "apg -r {{path/to/dictionary_file}}"
+    }
+  ]
+}

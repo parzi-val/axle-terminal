@@ -1,0 +1,38 @@
+{
+  "command": "dig",
+  "description": "DNS lookup utility. More information: https://manned.org/dig.",
+  "useCases": [
+    {
+      "description": "Lookup the IP(s) associated with a hostname (A records):",
+      "syntax": "dig +short {{example.com}}"
+    },
+    {
+      "description": "Get a detailed answer for a given domain (A records):",
+      "syntax": "dig +noall +answer {{example.com}}"
+    },
+    {
+      "description": "Query a specific DNS record type associated with a given domain name:",
+      "syntax": "dig +short {{example.com}} {{A|MX|TXT|CNAME|NS}}"
+    },
+    {
+      "description": "Specify an alternate DNS server to query and optionally use DNS over TLS (DoT):",
+      "syntax": "dig {{+tls}} @{{1.1.1.1|8.8.8.8|9.9.9.9|...}} {{example.com}}"
+    },
+    {
+      "description": "Perform a reverse DNS lookup on an IP address (PTR record):",
+      "syntax": "dig -x {{8.8.8.8}}"
+    },
+    {
+      "description": "Find authoritative name servers for the zone and display SOA records:",
+      "syntax": "dig +nssearch {{example.com}}"
+    },
+    {
+      "description": "Perform iterative queries and display the entire trace path to resolve a domain name:",
+      "syntax": "dig +trace {{example.com}}"
+    },
+    {
+      "description": "Query a DNS server over a non-standard [p]ort using the TCP protocol:",
+      "syntax": "dig +tcp -p {{port}} @{{dns_server_ip}} {{example.com}}"
+    }
+  ]
+}

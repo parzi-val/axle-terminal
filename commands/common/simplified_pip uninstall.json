@@ -1,0 +1,18 @@
+{
+  "command": "pip uninstall",
+  "description": "Uninstall Python packages. More information: https://pip.pypa.io.",
+  "useCases": [
+    {
+      "description": "Uninstall a package:",
+      "syntax": "pip uninstall {{package}}"
+    },
+    {
+      "description": "Uninstall packages listed in a specific file:",
+      "syntax": "pip uninstall --requirement {{path/to/requirements.txt}}"
+    },
+    {
+      "description": "Uninstall package without asking for confirmation:",
+      "syntax": "pip uninstall --yes {{package}}"
+    }
+  ]
+}

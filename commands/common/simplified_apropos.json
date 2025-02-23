@@ -1,0 +1,18 @@
+{
+  "command": "apropos",
+  "description": "Search the manual pages for names and descriptions. More information: https://manned.org/apropos.",
+  "useCases": [
+    {
+      "description": "Search for a keyword using a regular expression:",
+      "syntax": "apropos {{regular_expression}}"
+    },
+    {
+      "description": "Search without restricting the output to the terminal width ([l]ong output):",
+      "syntax": "apropos -l {{regular_expression}}"
+    },
+    {
+      "description": "Search for pages that match [a]ll the expressions given:",
+      "syntax": "apropos {{regular_expression_1}} -a {{regular_expression_2}} -a {{regular_expression_3}}"
+    }
+  ]
+}

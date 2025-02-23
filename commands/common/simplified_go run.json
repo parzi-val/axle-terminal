@@ -1,0 +1,14 @@
+{
+  "command": "go run",
+  "description": "Compile and run Go code without saving a binary. More information: https://pkg.go.dev/cmd/go#hdr-Compile_and_run_Go_program.",
+  "useCases": [
+    {
+      "description": "Run a Go file:",
+      "syntax": "go run {{path/to/file.go}}"
+    },
+    {
+      "description": "Run a main Go package:",
+      "syntax": "go run {{path/to/package}}"
+    }
+  ]
+}

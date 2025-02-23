@@ -1,0 +1,14 @@
+{
+  "command": "pbmmask",
+  "description": "Create a mask bitmap from a regular bitmap. See also: pambackground. More information: https://netpbm.sourceforge.net/doc/pbmmask.html.",
+  "useCases": [
+    {
+      "description": "Create a mask bitmap separating background from foreground:",
+      "syntax": "pbmmask {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Expand the generated mask by one pixel:",
+      "syntax": "pbmmask -expand {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

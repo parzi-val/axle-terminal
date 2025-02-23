@@ -1,0 +1,34 @@
+{
+  "command": "netstat",
+  "description": "Display network-related information such as open connections, open socket ports, etc. See also: ss. More information: https://manned.org/netstat.",
+  "useCases": [
+    {
+      "description": "List all ports:",
+      "syntax": "netstat --all"
+    },
+    {
+      "description": "List all listening ports:",
+      "syntax": "netstat --listening"
+    },
+    {
+      "description": "List listening TCP ports:",
+      "syntax": "netstat --tcp"
+    },
+    {
+      "description": "Display PID and program names:",
+      "syntax": "netstat --program"
+    },
+    {
+      "description": "List information continuously:",
+      "syntax": "netstat --continuous"
+    },
+    {
+      "description": "List routes and do not resolve IP addresses to hostnames:",
+      "syntax": "netstat --route --numeric"
+    },
+    {
+      "description": "List listening TCP and UDP ports (+ user and process if you're root):",
+      "syntax": "netstat --listening --program --numeric --tcp --udp --extend"
+    }
+  ]
+}

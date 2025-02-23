@@ -1,0 +1,14 @@
+{
+  "command": "zcat",
+  "description": "Print data from gzip compressed files. More information: https://www.gnu.org/software/gzip/manual/gzip.html.",
+  "useCases": [
+    {
+      "description": "Print the uncompressed contents of a gzip archive to stdout:",
+      "syntax": "zcat {{file.txt.gz}}"
+    },
+    {
+      "description": "Print compression details of a gzip archive to stdout:",
+      "syntax": "zcat -l {{file.txt.gz}}"
+    }
+  ]
+}

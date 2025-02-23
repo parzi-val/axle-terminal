@@ -1,0 +1,10 @@
+{
+  "command": "sup",
+  "description": "Manage a RSS feed in the current directory. See also: lb. More information: https://github.com/LukeSmithxyz/lb.",
+  "useCases": [
+    {
+      "description": "Add an article to the RSS feed:",
+      "syntax": "sup {{path/to/file.html}}"
+    }
+  ]
+}

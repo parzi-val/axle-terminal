@@ -1,0 +1,30 @@
+{
+  "command": "btrfs subvolume",
+  "description": "Manage btrfs subvolumes and snapshots. More information: https://btrfs.readthedocs.io/en/latest/btrfs-subvolume.html.",
+  "useCases": [
+    {
+      "description": "Create a new empty subvolume:",
+      "syntax": "sudo btrfs subvolume create {{path/to/new_subvolume}}"
+    },
+    {
+      "description": "List all subvolumes and snapshots in the specified filesystem:",
+      "syntax": "sudo btrfs subvolume list {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Delete a subvolume:",
+      "syntax": "sudo btrfs subvolume delete {{path/to/subvolume}}"
+    },
+    {
+      "description": "Create a read-only snapshot of an existing subvolume:",
+      "syntax": "sudo btrfs subvolume snapshot -r {{path/to/source_subvolume}} {{path/to/target}}"
+    },
+    {
+      "description": "Create a read-write snapshot of an existing subvolume:",
+      "syntax": "sudo btrfs subvolume snapshot {{path/to/source_subvolume}} {{path/to/target}}"
+    },
+    {
+      "description": "Show detailed information about a subvolume:",
+      "syntax": "sudo btrfs subvolume show {{path/to/subvolume}}"
+    }
+  ]
+}

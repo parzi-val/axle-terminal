@@ -1,0 +1,38 @@
+{
+  "command": "aws dynamodb",
+  "description": "Manipulate an AWS Dynamodb database, a fast NoSQL database with predictable performance and seamless scalability. More information: https://docs.aws.amazon.com/cli/latest/reference/dynamodb/.",
+  "useCases": [
+    {
+      "description": "Create a table:",
+      "syntax": "aws dynamodb create-table --table-name {{table_name}} --attribute-definitions {{AttributeName=S,AttributeType=S}} --key-schema {{AttributeName=S,KeyType=HASH}} --provisioned-throughput {{ReadCapacityUnits=5,WriteCapacityUnits=5}}"
+    },
+    {
+      "description": "List all tables in the DynamoDB:",
+      "syntax": "aws dynamodb list-tables"
+    },
+    {
+      "description": "Get details about a specific table:",
+      "syntax": "aws dynamodb describe-table --table-name {{table_name}}"
+    },
+    {
+      "description": "Add an item to a table:",
+      "syntax": "aws dynamodb put-item --table-name {{table_name}} --item '{{{&quot;AttributeName&quot;: {&quot;S&quot;: &quot;value&quot;}}}}'"
+    },
+    {
+      "description": "Retrieve an item from a table:",
+      "syntax": "aws dynamodb get-item --table-name {{table_name}} --key '{{{&quot;ID&quot;: {&quot;N&quot;: &quot;1&quot;}}}}'"
+    },
+    {
+      "description": "Update an item in the table:",
+      "syntax": "aws dynamodb update-item --table-name {{table_name}} --key '{{{&quot;ID&quot;: {&quot;N&quot;: &quot;1&quot;}}}}' --update-expression &quot;{{SET Name = :n}}&quot; --expression-attribute-values '{{{&quot;:n&quot;: {&quot;S&quot;: &quot;Jane&quot;}}}}'"
+    },
+    {
+      "description": "Scan items in the table:",
+      "syntax": "aws dynamodb scan --table-name {{table_name}}"
+    },
+    {
+      "description": "Delete an item from the table:",
+      "syntax": "aws dynamodb delete-item --table-name {{table_name}} --key '{{{&quot;ID&quot;: {&quot;N&quot;: &quot;1&quot;}}}}'"
+    }
+  ]
+}

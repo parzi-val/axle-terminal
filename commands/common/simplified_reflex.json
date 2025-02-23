@@ -1,0 +1,26 @@
+{
+  "command": "reflex",
+  "description": "Watch a directory and rerun a command when certain files change. More information: https://github.com/cespare/reflex.",
+  "useCases": [
+    {
+      "description": "Rebuild with make if any file changes:",
+      "syntax": "reflex make"
+    },
+    {
+      "description": "Compile and run Go application if any .go file changes:",
+      "syntax": "reflex --regex='{{\\.go$}}' {{go run .}}"
+    },
+    {
+      "description": "Ignore a directory when watching for changes:",
+      "syntax": "reflex --inverse-regex='{{^dir/}}' {{command}}"
+    },
+    {
+      "description": "Run command when reflex starts and restarts on file changes:",
+      "syntax": "reflex --start-service=true {{command}}"
+    },
+    {
+      "description": "Substitute the filename that changed in:",
+      "syntax": "reflex -- echo {}"
+    }
+  ]
+}

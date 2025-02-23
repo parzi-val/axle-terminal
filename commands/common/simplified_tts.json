@@ -1,0 +1,30 @@
+{
+  "command": "tts",
+  "description": "Synthesize speech. More information: https://github.com/coqui-ai/TTS#command-line-tts.",
+  "useCases": [
+    {
+      "description": "Run text-to-speech with the default models, writing the output to \"tts_output.wav\":",
+      "syntax": "tts --text &quot;{{text}}&quot;"
+    },
+    {
+      "description": "List provided models:",
+      "syntax": "tts --list_models"
+    },
+    {
+      "description": "Query info for a model by idx:",
+      "syntax": "tts --model_info_by_idx {{model_type/model_query_idx}}"
+    },
+    {
+      "description": "Query info for a model by name:",
+      "syntax": "tts --model_info_by_name {{model_type/language/dataset/model_name}}"
+    },
+    {
+      "description": "Run a text-to-speech model with its default vocoder model:",
+      "syntax": "tts --text &quot;{{text}}&quot; --model_name {{model_type/language/dataset/model_name}}"
+    },
+    {
+      "description": "Run your own text-to-speech model (using the Griffin-Lim vocoder):",
+      "syntax": "tts --text &quot;{{text}}&quot; --model_path {{path/to/model.pth}} --config_path {{path/to/config.json}} --out_path {{path/to/file.wav}}"
+    }
+  ]
+}

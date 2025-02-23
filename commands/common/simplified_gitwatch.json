@@ -1,0 +1,18 @@
+{
+  "command": "gitwatch",
+  "description": "Automatically commit file or directory changes to a Git repository. More information: https://github.com/gitwatch/gitwatch.",
+  "useCases": [
+    {
+      "description": "Automatically commit any changes made to a file or directory:",
+      "syntax": "gitwatch {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Automatically commit changes and push them to a remote repository:",
+      "syntax": "gitwatch -r {{remote_name}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Automatically commit changes and push them to a specific branch of a remote repository:",
+      "syntax": "gitwatch -r {{remote_name}} -b {{branch_name}} {{path/to/file_or_directory}}"
+    }
+  ]
+}

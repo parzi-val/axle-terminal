@@ -1,0 +1,10 @@
+{
+  "command": "cmuwmtopbm",
+  "description": "Convert a CMU window manager bitmap to a PBM image. See also: pbmtocmuwm. More information: https://netpbm.sourceforge.net/doc/cmuwmtopbm.html.",
+  "useCases": [
+    {
+      "description": "Convert a CMU window manager bitmap to a PBM image:",
+      "syntax": "cmuwmtopbm {{path/to/image.pbm}} &gt; {{path/to/output.bmp}}"
+    }
+  ]
+}

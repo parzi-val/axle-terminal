@@ -1,0 +1,18 @@
+{
+  "command": "lsscsi",
+  "description": "List SCSI devices (or hosts) and their attributes. More information: https://manned.org/lspci.",
+  "useCases": [
+    {
+      "description": "List all SCSI devices:",
+      "syntax": "lsscsi"
+    },
+    {
+      "description": "List all SCSI devices with detailed attributes:",
+      "syntax": "lsscsi -L"
+    },
+    {
+      "description": "List all SCSI devices with human-readable disk capacity:",
+      "syntax": "lsscsi -s"
+    }
+  ]
+}

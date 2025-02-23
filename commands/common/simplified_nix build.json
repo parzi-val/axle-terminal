@@ -1,0 +1,22 @@
+{
+  "command": "nix build",
+  "description": "Build a Nix expression (downloading from the cache when possible). See also: nix-build for information about traditional Nix builds from expressions, nix3 flake for information about flakes. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-build.html.",
+  "useCases": [
+    {
+      "description": "Build a package from nixpkgs, symlinking the result to ./result:",
+      "syntax": "nix build {{nixpkgs#pkg}}"
+    },
+    {
+      "description": "Build a package from a flake in the current directory, showing the build logs in the process:",
+      "syntax": "nix build -L {{.#pkg}}"
+    },
+    {
+      "description": "Build the default package from a flake in some directory:",
+      "syntax": "nix build {{./path/to/directory}}"
+    },
+    {
+      "description": "Build a package without making the result symlink, instead printing the store path to the stdout:",
+      "syntax": "nix build --no-link --print-out-paths"
+    }
+  ]
+}

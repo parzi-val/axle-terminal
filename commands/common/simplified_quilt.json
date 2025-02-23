@@ -1,0 +1,30 @@
+{
+  "command": "quilt",
+  "description": "Manage a series of patches. More information: https://savannah.nongnu.org/projects/quilt.",
+  "useCases": [
+    {
+      "description": "Import an existing patch from a file:",
+      "syntax": "quilt import {{path/to/filename.patch}}"
+    },
+    {
+      "description": "Create a new patch:",
+      "syntax": "quilt new {{filename.patch}}"
+    },
+    {
+      "description": "Add a file to the current patch:",
+      "syntax": "quilt add {{path/to/file}}"
+    },
+    {
+      "description": "After editing the file, refresh the current patch with the changes:",
+      "syntax": "quilt refresh"
+    },
+    {
+      "description": "Apply all the patches in the series file:",
+      "syntax": "quilt push -a"
+    },
+    {
+      "description": "Remove all applied patches:",
+      "syntax": "quilt pop -a"
+    }
+  ]
+}

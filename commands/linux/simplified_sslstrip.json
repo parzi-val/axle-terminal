@@ -1,0 +1,30 @@
+{
+  "command": "sslstrip",
+  "description": "Perform Moxie Marlinspike's Secure Sockets Layer (SSL) stripping attacks. Perform an ARP spoofing attack in conjunction. More information: https://www.kali.org/tools/sslstrip/.",
+  "useCases": [
+    {
+      "description": "Log only HTTPS POST traffic on port 10000 by default:",
+      "syntax": "sslstrip"
+    },
+    {
+      "description": "Log only HTTPS POST traffic on port 8080:",
+      "syntax": "sslstrip --listen={{8080}}"
+    },
+    {
+      "description": "Log all SSL traffic to and from the server on port 8080:",
+      "syntax": "sslstrip --ssl --listen={{8080}}"
+    },
+    {
+      "description": "Log all SSL and HTTP traffic to and from the server on port 8080:",
+      "syntax": "sslstrip --listen={{8080}} --all"
+    },
+    {
+      "description": "Specify the file path to store the logs:",
+      "syntax": "sslstrip --listen={{8080}} --write={{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sslstrip --help"
+    }
+  ]
+}

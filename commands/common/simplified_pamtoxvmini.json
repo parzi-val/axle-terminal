@@ -1,0 +1,10 @@
+{
+  "command": "pamtoxvmini",
+  "description": "Convert a Netpbm image to an XV thumbnail picture. More information: https://netpbm.sourceforge.net/doc/pamtoxvmini.html.",
+  "useCases": [
+    {
+      "description": "Convert a PAM image to an XV thumbnail picture:",
+      "syntax": "pamtoxvmini {{path/to/input_file.pam}} &gt; {{path/to/output_file}}"
+    }
+  ]
+}

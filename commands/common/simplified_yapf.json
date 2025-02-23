@@ -1,0 +1,18 @@
+{
+  "command": "yapf",
+  "description": "Python style guide checker. More information: https://github.com/google/yapf.",
+  "useCases": [
+    {
+      "description": "Display a diff of the changes that would be made, without making them (dry-run):",
+      "syntax": "yapf --diff {{path/to/file}}"
+    },
+    {
+      "description": "Format the file in-place and display a diff of the changes:",
+      "syntax": "yapf --diff --in-place {{path/to/file}}"
+    },
+    {
+      "description": "Recursively format all Python files in a directory, concurrently:",
+      "syntax": "yapf --recursive --in-place --style {{pep8}} --parallel {{path/to/directory}}"
+    }
+  ]
+}

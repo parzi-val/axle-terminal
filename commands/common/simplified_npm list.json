@@ -1,0 +1,10 @@
+{
+  "command": "npm list",
+  "description": "This command is an alias of npm ls.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr npm ls"
+    }
+  ]
+}

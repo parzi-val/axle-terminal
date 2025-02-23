@@ -1,0 +1,30 @@
+{
+  "command": "eol",
+  "description": "Show end-of-life dates (EoLs) for a number of products. More information: https://github.com/hugovk/norwegianblue.",
+  "useCases": [
+    {
+      "description": "List all available products:",
+      "syntax": "eol"
+    },
+    {
+      "description": "Get EoLs of one or more products:",
+      "syntax": "eol {{product1 product2 ...}}"
+    },
+    {
+      "description": "Open the product webpage:",
+      "syntax": "eol {{product}} --web"
+    },
+    {
+      "description": "Get EoLs of a one or more products in a specific format:",
+      "syntax": "eol {{product1 product2 ...}} --format {{html|json|md|markdown|pretty|rst|csv|tsv|yaml}}"
+    },
+    {
+      "description": "Get EoLs of one or more products as a single markdown file:",
+      "syntax": "eol {{product1 product2 ...}} --format {{markdown}} &gt; {{eol_report.md}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "eol --help"
+    }
+  ]
+}

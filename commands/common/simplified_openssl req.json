@@ -1,0 +1,14 @@
+{
+  "command": "openssl req",
+  "description": "OpenSSL command to manage PKCS#10 Certificate Signing Requests. More information: https://www.openssl.org/docs/manmaster/man1/openssl-req.html.",
+  "useCases": [
+    {
+      "description": "Generate a certificate signing request to be sent to a certificate authority:",
+      "syntax": "openssl req -new -sha256 -key {{filename.key}} -out {{filename.csr}}"
+    },
+    {
+      "description": "Generate a self-signed certificate and a corresponding key-pair, storing both in a file:",
+      "syntax": "openssl req -new -x509 -newkey {{rsa}}:{{4096}} -keyout {{filename.key}} -out {{filename.cert}} -subj &quot;{{/C=XX/CN=foobar}}&quot; -days {{365}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "systemd-delta",
+  "description": "Find overridden systemd-related configuration files. More information: https://www.freedesktop.org/software/systemd/man/systemd-delta.html.",
+  "useCases": [
+    {
+      "description": "Show all overridden configuration files:",
+      "syntax": "systemd-delta"
+    },
+    {
+      "description": "Show only files of specific types (comma-separated list):",
+      "syntax": "systemd-delta --type {{masked|equivalent|redirected|overridden|extended|unchanged}}"
+    },
+    {
+      "description": "Show only files whose path starts with the specified prefix (Note: a prefix is a directory containing subdirectories with systemd configuration files):",
+      "syntax": "systemd-delta {{/etc|/run|/usr/lib|...}}"
+    },
+    {
+      "description": "Further restrict the search path by adding a suffix (the prefix is optional):",
+      "syntax": "systemd-delta {{prefix}}/{{tmpfiles.d|sysctl.d|systemd/system|...}}"
+    }
+  ]
+}

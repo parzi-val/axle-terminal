@@ -1,0 +1,34 @@
+{
+  "command": "dash",
+  "description": "Debian Almquist Shell, a modern, POSIX-compliant implementation of sh (not Bash-compatible). More information: https://manned.org/dash.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "dash"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "dash -c &quot;{{echo 'dash is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "dash {{path/to/script.sh}}"
+    },
+    {
+      "description": "Check a specific script for syntax errors:",
+      "syntax": "dash -n {{path/to/script.sh}}"
+    },
+    {
+      "description": "Execute a specific script while printing each command before executing it:",
+      "syntax": "dash -x {{path/to/script.sh}}"
+    },
+    {
+      "description": "Execute a specific script and stop at the first [e]rror:",
+      "syntax": "dash -e {{path/to/script.sh}}"
+    },
+    {
+      "description": "Execute specific commands from stdin:",
+      "syntax": "{{echo &quot;echo 'dash is executed'&quot;}} | dash"
+    }
+  ]
+}

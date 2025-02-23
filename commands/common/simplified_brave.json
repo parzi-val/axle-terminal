@@ -1,0 +1,10 @@
+{
+  "command": "brave",
+  "description": "This command is an alias of chromium. More information: https://support.brave.com/hc/en-us/articles/360044860011-How-Do-I-Use-Command-Line-Flags-in-Brave.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr chromium"
+    }
+  ]
+}

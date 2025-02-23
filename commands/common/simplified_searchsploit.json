@@ -1,0 +1,38 @@
+{
+  "command": "searchsploit",
+  "description": "Search Exploit Database for exploits, shellcodes and/or papers. If known version numbers are used as search terms, exploits for both the exact version and others whose version range covers the one specified are shown. More information: https://www.exploit-db.com/searchsploit.",
+  "useCases": [
+    {
+      "description": "Search for an exploit, shellcode, or paper:",
+      "syntax": "searchsploit {{search_terms}}"
+    },
+    {
+      "description": "Search for a known specific version, e.g. sudo version 1.8.27:",
+      "syntax": "searchsploit sudo 1.8.27"
+    },
+    {
+      "description": "Show the exploit-db link to the found resources:",
+      "syntax": "searchsploit --www {{search_terms}}"
+    },
+    {
+      "description": "Copy ([m]irror) the resource to the current directory (requires the number of the exploit):",
+      "syntax": "searchsploit --mirror {{exploit_number}}"
+    },
+    {
+      "description": "E[x]amine the resource, using the pager defined in the $PAGER environment variable:",
+      "syntax": "searchsploit --examine {{exploit_number}}"
+    },
+    {
+      "description": "[u]pdate the local Exploit Database:",
+      "syntax": "searchsploit --update"
+    },
+    {
+      "description": "Search for the [c]ommon [v]ulnerabilities and [e]xposures (CVE) value:",
+      "syntax": "searchsploit --cve {{2021-44228}}"
+    },
+    {
+      "description": "Check results in nmap's XML output with service version (nmap -sV -oX nmap-output.xml) for known exploits:",
+      "syntax": "searchsploit --nmap {{path/to/nmap-output.xml}}"
+    }
+  ]
+}

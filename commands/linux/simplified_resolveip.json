@@ -1,0 +1,18 @@
+{
+  "command": "resolveip",
+  "description": "Resolve hostnames to their IP addresses and vice versa. More information: https://mariadb.com/kb/en/resolveip/.",
+  "useCases": [
+    {
+      "description": "Resolve a hostname to an IP address:",
+      "syntax": "resolveip {{example.org}}"
+    },
+    {
+      "description": "Resolve an IP address to a hostname:",
+      "syntax": "resolveip {{1.1.1.1}}"
+    },
+    {
+      "description": "Silent mode. Produces less output:",
+      "syntax": "resolveip --silent {{example.org}}"
+    }
+  ]
+}

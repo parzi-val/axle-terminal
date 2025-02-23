@@ -1,0 +1,14 @@
+{
+  "command": "reset",
+  "description": "Reinitialize the current terminal. Clears the entire terminal screen. More information: https://manned.org/reset.",
+  "useCases": [
+    {
+      "description": "Reinitialize the current terminal:",
+      "syntax": "reset"
+    },
+    {
+      "description": "Display the terminal type instead:",
+      "syntax": "reset -q"
+    }
+  ]
+}

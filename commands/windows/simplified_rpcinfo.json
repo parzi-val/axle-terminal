@@ -1,0 +1,22 @@
+{
+  "command": "rpcinfo",
+  "description": "List programs via RPC on remote computers. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/rpcinfo.",
+  "useCases": [
+    {
+      "description": "List all programs registered on the local computer:",
+      "syntax": "rpcinfo"
+    },
+    {
+      "description": "List all programs registered on a remote computer:",
+      "syntax": "rpcinfo /p {{computer_name}}"
+    },
+    {
+      "description": "Call a specific program on a remote computer using TCP:",
+      "syntax": "rpcinfo /t {{computer_name}} {{program_name}}"
+    },
+    {
+      "description": "Call a specific program on a remote computer using UDP:",
+      "syntax": "rpcinfo /u {{computer_name}} {{program_name}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "pamexec",
+  "description": "Execute a shell command on each image in a Netpbm file. See also: pamfile, pampick, pamsplit. More information: https://netpbm.sourceforge.net/doc/pamexec.html.",
+  "useCases": [
+    {
+      "description": "Execute a shell command on each image in a Netpbm file:",
+      "syntax": "pamexec {{command}} {{path/to/image.pam}}"
+    },
+    {
+      "description": "Stop processing if a command terminates with a nonzero exit status:",
+      "syntax": "pamexec {{command}} {{path/to/image.pam}} -check"
+    }
+  ]
+}

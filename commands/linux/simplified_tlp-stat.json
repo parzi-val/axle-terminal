@@ -1,0 +1,38 @@
+{
+  "command": "tlp-stat",
+  "description": "Generate TLP status reports. See also tlp. More information: https://linrunner.de/tlp/usage/tlp-stat.",
+  "useCases": [
+    {
+      "description": "Generate status report with configuration and all active settings:",
+      "syntax": "sudo tlp-stat"
+    },
+    {
+      "description": "Show information about various devices:",
+      "syntax": "sudo tlp-stat --{{battery|disk|processor|graphics|pcie|rfkill|usb}}"
+    },
+    {
+      "description": "Show verbose information about devices that support verbosity:",
+      "syntax": "sudo tlp-stat --verbose --{{battery|processor|pcie|usb}}"
+    },
+    {
+      "description": "Show configuration:",
+      "syntax": "sudo tlp-stat {{-c|--config}}"
+    },
+    {
+      "description": "Monitor [p]ower supply udev [ev]ents:",
+      "syntax": "sudo tlp-stat {{-P|--pev}}"
+    },
+    {
+      "description": "Show [p]ower [sup]ply diagonistics:",
+      "syntax": "sudo tlp-stat --psup"
+    },
+    {
+      "description": "Show [temp]eratures and fan speed:",
+      "syntax": "sudo tlp-stat {{-t|--temp}}"
+    },
+    {
+      "description": "Show general system information:",
+      "syntax": "sudo tlp-stat {{-s|--system}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "mklost+found",
+  "description": "Create a lost+found directory. More information: https://manned.org/mklost+found.",
+  "useCases": [
+    {
+      "description": "Create a lost+found directory in the current directory:",
+      "syntax": "mklost+found"
+    }
+  ]
+}

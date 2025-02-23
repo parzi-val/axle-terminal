@@ -1,0 +1,26 @@
+{
+  "command": "init",
+  "description": "Linux run level manager. Requires the SYSVINIT compile-time option to be enabled if using systemd. More information: https://manned.org/man/init.8.",
+  "useCases": [
+    {
+      "description": "Set the system to run a graphical environment:",
+      "syntax": "sudo init 5"
+    },
+    {
+      "description": "Set the system to run multiuser terminal:",
+      "syntax": "sudo init 3"
+    },
+    {
+      "description": "Shut down the system:",
+      "syntax": "init 0"
+    },
+    {
+      "description": "Reboot the system:",
+      "syntax": "init 6"
+    },
+    {
+      "description": "Set the system to run on terminal with only root user allowed and no networking:",
+      "syntax": "sudo init 1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "rsh",
+  "description": "Execute commands on a remote host. More information: https://www.gnu.org/software/inetutils/manual/html_node/rsh-invocation.html.",
+  "useCases": [
+    {
+      "description": "Execute a command on a remote host:",
+      "syntax": "rsh {{remote_host}} {{ls -l}}"
+    },
+    {
+      "description": "Execute a command on a remote host with a specific username:",
+      "syntax": "rsh {{remote_host}} -l {{username}} {{ls -l}}"
+    },
+    {
+      "description": "Redirect stdin to /dev/null when executing a command on a remote host:",
+      "syntax": "rsh {{remote_host}} --no-err {{ls -l}}"
+    }
+  ]
+}

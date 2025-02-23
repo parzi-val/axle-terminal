@@ -1,0 +1,30 @@
+{
+  "command": "json5",
+  "description": "Convert JSON5 files to JSON. More information: https://json5.org.",
+  "useCases": [
+    {
+      "description": "Convert JSON5 stdin to JSON stdout:",
+      "syntax": "echo {{input}} | json5"
+    },
+    {
+      "description": "Convert a JSON5 file to JSON and output to stdout:",
+      "syntax": "json5 {{path/to/input_file.json5}}"
+    },
+    {
+      "description": "Convert a JSON5 file to the specified JSON file:",
+      "syntax": "json5 {{path/to/input_file.json5}} --out-file {{path/to/output_file.json}}"
+    },
+    {
+      "description": "Validate a JSON5 file:",
+      "syntax": "json5 {{path/to/input_file.json5}} --validate"
+    },
+    {
+      "description": "Specify the number of spaces to indent by (or \"t\" for tabs):",
+      "syntax": "json5 --space {{indent_amount}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "json5 --help"
+    }
+  ]
+}

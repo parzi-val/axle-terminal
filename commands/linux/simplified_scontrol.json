@@ -1,0 +1,26 @@
+{
+  "command": "scontrol",
+  "description": "View information about and modify jobs. More information: https://slurm.schedmd.com/scontrol.html.",
+  "useCases": [
+    {
+      "description": "Show information for job:",
+      "syntax": "scontrol show job {{job_id}}"
+    },
+    {
+      "description": "Suspend a comma-separated list of running jobs:",
+      "syntax": "scontrol suspend {{job_id1,job_id2,...}}"
+    },
+    {
+      "description": "Resume a comma-separated list of suspended jobs:",
+      "syntax": "scontrol resume {{job_id1,job_id2,...}}"
+    },
+    {
+      "description": "Hold a comma-separated list of queued jobs (Use release command to permit the jobs to be scheduled):",
+      "syntax": "scontrol hold {{job_id1,job_id2,...}}"
+    },
+    {
+      "description": "Release a comma-separated list of suspended job:",
+      "syntax": "scontrol release {{job_id1,job_id2,...}}"
+    }
+  ]
+}

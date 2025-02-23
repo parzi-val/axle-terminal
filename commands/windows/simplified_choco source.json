@@ -1,0 +1,34 @@
+{
+  "command": "choco source",
+  "description": "Manage sources for packages with Chocolatey. More information: https://chocolatey.org/docs/commands-source.",
+  "useCases": [
+    {
+      "description": "List currently available sources:",
+      "syntax": "choco source list"
+    },
+    {
+      "description": "Add a new package source:",
+      "syntax": "choco source add --name {{name}} --source {{url}}"
+    },
+    {
+      "description": "Add a new package source with credentials:",
+      "syntax": "choco source add --name {{name}} --source {{url}} --user {{username}} --password {{password}}"
+    },
+    {
+      "description": "Add a new package source with a client certificate:",
+      "syntax": "choco source add --name {{name}} --source {{url}} --cert {{path\\to\\certificate_file}}"
+    },
+    {
+      "description": "Enable a package source:",
+      "syntax": "choco source enable --name {{name}}"
+    },
+    {
+      "description": "Disable a package source:",
+      "syntax": "choco source disable --name {{name}}"
+    },
+    {
+      "description": "Remove a package source:",
+      "syntax": "choco source remove --name {{name}}"
+    }
+  ]
+}

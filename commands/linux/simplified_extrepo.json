@@ -1,0 +1,22 @@
+{
+  "command": "extrepo",
+  "description": "Manage external Debian repositories. It is used to manage external repositories in Debian. More information: https://manned.org/extrepo.1p.",
+  "useCases": [
+    {
+      "description": "Search for a given package:",
+      "syntax": "extrepo search {{package}}"
+    },
+    {
+      "description": "Enable the repository:",
+      "syntax": "sudo extrepo enable {{repository_name}}"
+    },
+    {
+      "description": "Disable the repository:",
+      "syntax": "sudo extrepo disable {{repository_name}}"
+    },
+    {
+      "description": "Update the repository:",
+      "syntax": "sudo extrepo update {{repository_name}}"
+    }
+  ]
+}

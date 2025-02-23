@@ -1,0 +1,10 @@
+{
+  "command": "bundler",
+  "description": "Dependency manager for the Ruby programming language. bundler is a common name for the command bundle, but not a command itself. More information: https://bundler.io/man/bundle.1.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr bundle"
+    }
+  ]
+}

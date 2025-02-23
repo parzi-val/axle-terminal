@@ -1,0 +1,30 @@
+{
+  "command": "ipscan",
+  "description": "A fast network scanner designed to be simple to use. Also known as Angry IP Scanner. More information: https://angryip.org/.",
+  "useCases": [
+    {
+      "description": "Scan a specific IP address:",
+      "syntax": "ipscan {{192.168.0.1}}"
+    },
+    {
+      "description": "Scan a range of IP addresses:",
+      "syntax": "ipscan {{192.168.0.1-254}}"
+    },
+    {
+      "description": "Scan a range of IP addresses and save the results to a file:",
+      "syntax": "ipscan {{192.168.0.1-254}} -o {{path/to/output.txt}}"
+    },
+    {
+      "description": "Scan IPs with a specific set of ports:",
+      "syntax": "ipscan {{192.168.0.1-254}} -p {{80,443,22}}"
+    },
+    {
+      "description": "Scan with a delay between requests to avoid network congestion:",
+      "syntax": "ipscan {{192.168.0.1-254}} -d {{200}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ipscan --help"
+    }
+  ]
+}

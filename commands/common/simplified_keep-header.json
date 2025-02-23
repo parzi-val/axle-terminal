@@ -1,0 +1,22 @@
+{
+  "command": "keep-header",
+  "description": "Keep first line untouched by a command, passing it directly to stdout. More information: https://github.com/eBay/tsv-utils#keep-header.",
+  "useCases": [
+    {
+      "description": "Sort a file and keep the first line at the top:",
+      "syntax": "keep-header {{path/to/file}} -- sort"
+    },
+    {
+      "description": "Output first line directly to stdout, passing the remainder of the file through the specified command:",
+      "syntax": "keep-header {{path/to/file}} -- {{command}}"
+    },
+    {
+      "description": "Read from stdin, sorting all except the first line:",
+      "syntax": "cat {{path/to/file}} | keep-header -- {{command}}"
+    },
+    {
+      "description": "Grep a file, keeping the first line regardless of the search pattern:",
+      "syntax": "keep-header {{path/to/file}} -- grep {{pattern}}"
+    }
+  ]
+}

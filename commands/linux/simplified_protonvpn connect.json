@@ -1,0 +1,30 @@
+{
+  "command": "protonvpn connect",
+  "description": "Connect to ProtonVPN. More information: https://github.com/Rafficer/linux-cli-community.",
+  "useCases": [
+    {
+      "description": "Connect to ProtonVPN interactively:",
+      "syntax": "protonvpn {{c|connect}}"
+    },
+    {
+      "description": "Connect to ProtonVPN using the fastest server available:",
+      "syntax": "protonvpn {{c|connect}} {{-f|--fastest}}"
+    },
+    {
+      "description": "Connect to ProtonVPN using a specific server with a specific protocol:",
+      "syntax": "protonvpn {{c|connect}} {{server_name}} -p {{udp|tcp}}"
+    },
+    {
+      "description": "Connect to ProtonVPN using a random server with a specific protocol:",
+      "syntax": "protonvpn {{c|connect}} {{-r|--random}} -p {{udp|tcp}}"
+    },
+    {
+      "description": "Connect to ProtonVPN using the fastest Tor-supporting server:",
+      "syntax": "protonvpn {{c|connect}} --tor"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "protonvpn connect --help"
+    }
+  ]
+}

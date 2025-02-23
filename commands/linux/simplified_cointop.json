@@ -1,0 +1,26 @@
+{
+  "command": "cointop",
+  "description": "Track and monitor cryptocurrencies in the terminal. More information: https://github.com/cointop-sh/cointop.",
+  "useCases": [
+    {
+      "description": "Open TUI:",
+      "syntax": "cointop"
+    },
+    {
+      "description": "Clear the cache:",
+      "syntax": "cointop clean"
+    },
+    {
+      "description": "Display current holdings legibly:",
+      "syntax": "cointop holdings --human"
+    },
+    {
+      "description": "Check price of coin(s):",
+      "syntax": "cointop price --coins {{coin_name1,coin_name2,...}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "cointop version"
+    }
+  ]
+}

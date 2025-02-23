@@ -1,0 +1,22 @@
+{
+  "command": "mkdocs",
+  "description": "Project documentation with Markdown. More information: https://www.mkdocs.org.",
+  "useCases": [
+    {
+      "description": "Create a new mkdocs project:",
+      "syntax": "mkdocs new {{project_name}}"
+    },
+    {
+      "description": "Serve the project in the current directory using the mkdocs dev-server:",
+      "syntax": "mkdocs serve"
+    },
+    {
+      "description": "Build the documentation in the current directory:",
+      "syntax": "mkdocs build"
+    },
+    {
+      "description": "Deploy the documentation in the current directory to GitHub pages:",
+      "syntax": "mkdocs gh-deploy"
+    }
+  ]
+}

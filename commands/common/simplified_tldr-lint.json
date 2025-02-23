@@ -1,0 +1,18 @@
+{
+  "command": "tldr-lint",
+  "description": "Lint and format tldr pages. More information: https://github.com/tldr-pages/tldr-lint.",
+  "useCases": [
+    {
+      "description": "Lint all pages:",
+      "syntax": "tldr-lint {{pages_directory}}"
+    },
+    {
+      "description": "Format a specific page to stdout:",
+      "syntax": "tldr-lint --format {{page.md}}"
+    },
+    {
+      "description": "Format all pages in place:",
+      "syntax": "tldr-lint --format --in-place {{pages_directory}}"
+    }
+  ]
+}

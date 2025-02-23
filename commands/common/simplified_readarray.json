@@ -1,0 +1,22 @@
+{
+  "command": "readarray",
+  "description": "Read lines from stdin into an array. More information: https://www.gnu.org/software/bash/manual/bash.html#index-readarray.",
+  "useCases": [
+    {
+      "description": "Interactively input lines into an array:",
+      "syntax": "readarray {{array_name}}"
+    },
+    {
+      "description": "Read lines from a file and insert them in an array:",
+      "syntax": "readarray {{array_name}} &lt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Remove trailing deliminators (newline by default):",
+      "syntax": "readarray -t {{array_name}} &lt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Copy at most the specified number of lines:",
+      "syntax": "readarray -n {{N}} {{array_name}} &lt; {{path/to/file.txt}}"
+    }
+  ]
+}

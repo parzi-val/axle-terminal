@@ -1,0 +1,34 @@
+{
+  "command": "gcalcli",
+  "description": "Interact with Google Calendar. Requests Google API authorization upon first launch. More information: https://github.com/insanum/gcalcli.",
+  "useCases": [
+    {
+      "description": "List your events for all your calendars over the next 7 days:",
+      "syntax": "gcalcli agenda"
+    },
+    {
+      "description": "Show events starting from or between specific dates (also takes relative dates e.g. \"tomorrow\"):",
+      "syntax": "gcalcli agenda {{mm/dd}} [{{mm/dd}}]"
+    },
+    {
+      "description": "List events from a specific calendar:",
+      "syntax": "gcalcli --calendar {{calendar_name}} agenda"
+    },
+    {
+      "description": "Display an ASCII calendar of events by week:",
+      "syntax": "gcalcli calw"
+    },
+    {
+      "description": "Display an ASCII calendar of events for a month:",
+      "syntax": "gcalcli calm"
+    },
+    {
+      "description": "Quick-add an event to your calendar:",
+      "syntax": "gcalcli --calendar {{calendar_name}} quick &quot;{{mm/dd}} {{HH:MM}} {{event_name}}&quot;"
+    },
+    {
+      "description": "Add an event to calendar. Triggers interactive prompt:",
+      "syntax": "gcalcli --calendar &quot;{{calendar_name}}&quot; add"
+    }
+  ]
+}

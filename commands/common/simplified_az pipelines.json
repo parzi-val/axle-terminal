@@ -1,0 +1,34 @@
+{
+  "command": "az pipelines",
+  "description": "Manage Azure Pipelines resources. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/pipelines.",
+  "useCases": [
+    {
+      "description": "Create a new Azure Pipeline (YAML based):",
+      "syntax": "az pipelines create --org {{organization_url}} --project {{project_name}} --name {{pipeline_name}} --description {{description}} --repository {{repository_name}} --branch {{branch_name}}"
+    },
+    {
+      "description": "Delete a specific pipeline:",
+      "syntax": "az pipelines delete --org {{organization_url}} --project {{project_name}} --id {{pipeline_id}}"
+    },
+    {
+      "description": "List pipelines:",
+      "syntax": "az pipelines list --org {{organization_url}} --project {{project_name}}"
+    },
+    {
+      "description": "Enqueue a specific pipeline to run:",
+      "syntax": "az pipelines run --org {{organization_url}} --project {{project_name}} --name {{pipeline_name}}"
+    },
+    {
+      "description": "Get the details of a specific pipeline:",
+      "syntax": "az pipelines show --org {{organization_url}} --project {{project_name}} --name {{pipeline_name}}"
+    },
+    {
+      "description": "Update a specific pipeline:",
+      "syntax": "az pipelines update --org {{organization_url}} --project {{project_name}} --name {{pipeline_name}} --new-name {{pipeline_new_name}} --new-folder-path {{user1/production_pipelines}}"
+    },
+    {
+      "description": "List all agents in a pool:",
+      "syntax": "az pipelines agent list --org {{organization_url}} --pool-id {{agent_pool}}"
+    }
+  ]
+}

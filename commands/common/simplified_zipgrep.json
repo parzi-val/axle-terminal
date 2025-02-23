@@ -1,0 +1,26 @@
+{
+  "command": "zipgrep",
+  "description": "Find patterns in files in a Zip archive using extended regular expression (supports ?, +, {}, () and |). More information: https://manned.org/zipgrep.",
+  "useCases": [
+    {
+      "description": "Search for a pattern within a Zip archive:",
+      "syntax": "zipgrep &quot;{{search_pattern}}&quot; {{path/to/file.zip}}"
+    },
+    {
+      "description": "Print file name and line number for each match:",
+      "syntax": "zipgrep -H -n &quot;{{search_pattern}}&quot; {{path/to/file.zip}}"
+    },
+    {
+      "description": "Search for lines that do not match a pattern:",
+      "syntax": "zipgrep -v &quot;{{search_pattern}}&quot; {{path/to/file.zip}}"
+    },
+    {
+      "description": "Specify files inside a Zip archive from search:",
+      "syntax": "zipgrep &quot;{{search_pattern}}&quot; {{path/to/file.zip}} {{file/to/search1}} {{file/to/search2}}"
+    },
+    {
+      "description": "Exclude files inside a Zip archive from search:",
+      "syntax": "zipgrep &quot;{{search_pattern}}&quot; {{path/to/file.zip}} -x {{file/to/exclude1}} {{file/to/exclude2}}"
+    }
+  ]
+}

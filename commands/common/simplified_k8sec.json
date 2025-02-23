@@ -1,0 +1,34 @@
+{
+  "command": "k8sec",
+  "description": "Manage Kubernetes secrets. More information: https://github.com/dtan4/k8sec.",
+  "useCases": [
+    {
+      "description": "List all secrets:",
+      "syntax": "k8sec list"
+    },
+    {
+      "description": "List a specific secret as a base64-encoded string:",
+      "syntax": "k8sec list {{secret_name}} --base64"
+    },
+    {
+      "description": "Set a secret's value:",
+      "syntax": "k8sec set {{secret_name}} {{key=value}}"
+    },
+    {
+      "description": "Set a base64-encoded value:",
+      "syntax": "k8sec set --base64 {{secret_name}} {{key=encoded_value}}"
+    },
+    {
+      "description": "Unset a secret:",
+      "syntax": "k8sec unset {{secret_name}}"
+    },
+    {
+      "description": "Load secrets from a file:",
+      "syntax": "k8sec load -f {{path/to/file}} {{secret_name}}"
+    },
+    {
+      "description": "Dump secrets to a file:",
+      "syntax": "k8sec dump -f {{path/to/file}} {{secret_name}}"
+    }
+  ]
+}

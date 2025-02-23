@@ -1,0 +1,26 @@
+{
+  "command": "sl",
+  "description": "Steam locomotive running through your terminal. More information: https://github.com/mtoyoda/sl.",
+  "useCases": [
+    {
+      "description": "Let a steam locomotive run through your terminal:",
+      "syntax": "sl"
+    },
+    {
+      "description": "The train burns, people scream:",
+      "syntax": "sl -a"
+    },
+    {
+      "description": "Let the train fly:",
+      "syntax": "sl -F"
+    },
+    {
+      "description": "Make the train little:",
+      "syntax": "sl -l"
+    },
+    {
+      "description": "Let the user exit (CTRL + C):",
+      "syntax": "sl -e"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "debsecan",
+  "description": "Debian Security Analyzer, a tool to list vulnerabilities on a particular Debian installation. More information: https://gitlab.com/fweimer/debsecan.",
+  "useCases": [
+    {
+      "description": "List vulnerable installed packages on the current host:",
+      "syntax": "debsecan"
+    },
+    {
+      "description": "List vulnerable installed packages of a specific suite:",
+      "syntax": "debsecan --suite {{release_code_name}}"
+    },
+    {
+      "description": "List only fixed vulnerabilities:",
+      "syntax": "debsecan --suite {{release_code_name}} --only-fixed"
+    },
+    {
+      "description": "List only fixed vulnerabilities of unstable (\"sid\") and mail to root:",
+      "syntax": "debsecan --suite {{sid}} --only-fixed --format {{report}} --mailto {{root}} --update-history"
+    },
+    {
+      "description": "Upgrade vulnerable installed packages:",
+      "syntax": "sudo apt upgrade $(debsecan --only-fixed --format {{packages}})"
+    }
+  ]
+}

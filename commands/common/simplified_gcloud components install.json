@@ -1,0 +1,22 @@
+{
+  "command": "gcloud components install",
+  "description": "Install components of the Google Cloud CLI, along with their dependencies. Installs components at the current version of the Google Cloud CLI without upgrading the existing installation. More information: https://cloud.google.com/sdk/gcloud/reference/components/install.",
+  "useCases": [
+    {
+      "description": "View available components for installation:",
+      "syntax": "gcloud components list"
+    },
+    {
+      "description": "Install one or more components (installs any dependencies as well):",
+      "syntax": "gcloud components install {{component_id1 component_id2 ...}}"
+    },
+    {
+      "description": "Check the current version of Google Cloud CLI:",
+      "syntax": "gcloud version"
+    },
+    {
+      "description": "Update Google Cloud CLI to the latest version:",
+      "syntax": "gcloud components update"
+    }
+  ]
+}

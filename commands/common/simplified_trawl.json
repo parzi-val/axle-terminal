@@ -1,0 +1,22 @@
+{
+  "command": "trawl",
+  "description": "Print out network interface information to the console, much like ifconfig/ipconfig/ip/ifdata. More information: https://github.com/robphoenix/trawl.",
+  "useCases": [
+    {
+      "description": "Show column names:",
+      "syntax": "trawl -n"
+    },
+    {
+      "description": "Filter interface names using a case-insensitive regular expression:",
+      "syntax": "trawl -f wi"
+    },
+    {
+      "description": "List available interfaces:",
+      "syntax": "trawl -i"
+    },
+    {
+      "description": "Include the loopback interface:",
+      "syntax": "trawl -l"
+    }
+  ]
+}

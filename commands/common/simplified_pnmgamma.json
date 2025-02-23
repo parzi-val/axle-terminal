@@ -1,0 +1,22 @@
+{
+  "command": "pnmgamma",
+  "description": "Perform gamma correction on PNM images. More information: https://netpbm.sourceforge.net/doc/pnmgamma.html.",
+  "useCases": [
+    {
+      "description": "Convert the image from BT.709 luminance to radiance or sRGB luminance:",
+      "syntax": "pnmgamma -{{bt709tolinear|bt709tosrgb}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Convert the image from radiance or sRGB luminance to BT.709 luminance:",
+      "syntax": "pnmgamma -{{lineartobt709|srgbtobt709}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the gamma value used for the gamma transfer function:",
+      "syntax": "pnmgamma -gamma {{value}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the gamma value used for the gamma transfer function per color component:",
+      "syntax": "pnmgamma -rgamma {{value}} -ggamma {{value}} -bgamma {{value}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

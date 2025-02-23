@@ -1,0 +1,26 @@
+{
+  "command": "lpass",
+  "description": "Command-line interface for the LastPass password manager. More information: https://github.com/lastpass/lastpass-cli.",
+  "useCases": [
+    {
+      "description": "Log in to your LastPass account, by entering your master password when prompted:",
+      "syntax": "lpass login {{username}}"
+    },
+    {
+      "description": "Show login status:",
+      "syntax": "lpass status"
+    },
+    {
+      "description": "List all sites grouped by category:",
+      "syntax": "lpass ls"
+    },
+    {
+      "description": "Generate a new password for gmail.com with the identifier myinbox and add to LastPass:",
+      "syntax": "lpass generate --username {{username}} --url {{gmail.com}} {{myinbox}} {{password_length}}"
+    },
+    {
+      "description": "Show password for a specified entry:",
+      "syntax": "lpass show {{myinbox}} --password"
+    }
+  ]
+}

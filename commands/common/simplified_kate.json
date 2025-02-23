@@ -1,0 +1,34 @@
+{
+  "command": "kate",
+  "description": "KDE's advanced text editor. More information: https://kate-editor.org/.",
+  "useCases": [
+    {
+      "description": "Open specific files:",
+      "syntax": "kate {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open specific remote files:",
+      "syntax": "kate {{https://example.com/path/to/file1 https://example.com/path/to/file2 ...}}"
+    },
+    {
+      "description": "Create a new editor instance even if one is already open:",
+      "syntax": "kate --new"
+    },
+    {
+      "description": "Open a file with the cursor at the specific line:",
+      "syntax": "kate --line {{line_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a file with the cursor at the specific line and column:",
+      "syntax": "kate --line {{line_number}} --column {{column_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Create a file from stdin:",
+      "syntax": "cat {{path/to/file}} | kate --stdin"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "kate --help"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "reg export",
+  "description": "Export the specified subkeys and values to a .reg file. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-export.",
+  "useCases": [
+    {
+      "description": "Export all subkeys and values of a specific key:",
+      "syntax": "reg export {{key_name}} {{path\\to\\file.reg}}"
+    },
+    {
+      "description": "Forcefully (assuming [y]es) overwrite of an existing file:",
+      "syntax": "reg export {{key_name}} {{path\\to\\file.reg}} /y"
+    }
+  ]
+}

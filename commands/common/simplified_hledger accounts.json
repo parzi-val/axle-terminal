@@ -1,0 +1,38 @@
+{
+  "command": "hledger accounts",
+  "description": "List account names. More information: https://hledger.org/hledger.html#accounts.",
+  "useCases": [
+    {
+      "description": "Show all accounts used or declared in the default journal file:",
+      "syntax": "hledger accounts"
+    },
+    {
+      "description": "Show accounts used by transactions:",
+      "syntax": "hledger accounts --used"
+    },
+    {
+      "description": "Show accounts declared with account directives:",
+      "syntax": "hledger accounts --declared"
+    },
+    {
+      "description": "Add new account directives, for accounts used but not declared, to the journal:",
+      "syntax": "hledger accounts --undeclared --directives &gt;&gt; {{2024-accounts.journal}}"
+    },
+    {
+      "description": "Show accounts with asset in their name, and their declared/inferred types:",
+      "syntax": "hledger accounts asset --types"
+    },
+    {
+      "description": "Show accounts of the Asset type:",
+      "syntax": "hledger accounts type:A"
+    },
+    {
+      "description": "Show the first two levels of the accounts hierarchy:",
+      "syntax": "hledger accounts --tree --depth 2"
+    },
+    {
+      "description": "Short form of the above:",
+      "syntax": "hledger acc -t -2"
+    }
+  ]
+}

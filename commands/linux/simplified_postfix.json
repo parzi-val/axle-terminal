@@ -1,0 +1,30 @@
+{
+  "command": "postfix",
+  "description": "Postfix mail transfer agent (MTA) control program. See also dovecot, a mail delivery agent (MDA) that integrates with Postfix. More information: https://www.postfix.org.",
+  "useCases": [
+    {
+      "description": "Check the configuration:",
+      "syntax": "sudo postfix check"
+    },
+    {
+      "description": "Check the status of the Postfix daemon:",
+      "syntax": "sudo postfix status"
+    },
+    {
+      "description": "Start Postfix:",
+      "syntax": "sudo postfix start"
+    },
+    {
+      "description": "Gracefully stop Postfix:",
+      "syntax": "sudo postfix stop"
+    },
+    {
+      "description": "Flush the mail queue:",
+      "syntax": "sudo postfix flush"
+    },
+    {
+      "description": "Reload the configuration files:",
+      "syntax": "sudo postfix reload"
+    }
+  ]
+}

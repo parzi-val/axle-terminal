@@ -1,0 +1,30 @@
+{
+  "command": "grim",
+  "description": "Grab images (Screenshots) from a Wayland compositor. More information: https://sr.ht/~emersion/grim.",
+  "useCases": [
+    {
+      "description": "Screenshot all outputs:",
+      "syntax": "grim"
+    },
+    {
+      "description": "Screenshot a specific output:",
+      "syntax": "grim -o {{path/to/output_file}}"
+    },
+    {
+      "description": "Screenshot a specific region:",
+      "syntax": "grim -g &quot;{{&lt;x_position&gt;,&lt;y_position&gt; &lt;width&gt;x&lt;height&gt;}}&quot;"
+    },
+    {
+      "description": "Select a specific region and screenshot it, (using slurp):",
+      "syntax": "grim -g &quot;{{$(slurp)}}&quot;"
+    },
+    {
+      "description": "Use a custom filename:",
+      "syntax": "grim &quot;{{path/to/file.png}}&quot;"
+    },
+    {
+      "description": "Screenshot and copy to clipboard:",
+      "syntax": "grim - | {{clipboard_manager}}"
+    }
+  ]
+}

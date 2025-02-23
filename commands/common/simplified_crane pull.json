@@ -1,0 +1,26 @@
+{
+  "command": "crane pull",
+  "description": "Pull remote images by reference and store their contents locally. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_pull.md.",
+  "useCases": [
+    {
+      "description": "Pull remote image:",
+      "syntax": "crane pull {{image_name}} {{path/to/tarball}}"
+    },
+    {
+      "description": "Preserve image reference used to pull as an annotation when used with --format=oci:",
+      "syntax": "crane pull {{image_name}} {{path/to/tarball}} --annotate-ref"
+    },
+    {
+      "description": "Path to cache image layers:",
+      "syntax": "crane pull {{image_name}} {{path/to/tarball}} {{-c|--cache_path}} {{path/to/cache}}"
+    },
+    {
+      "description": "Format in which to save images (default 'tarball'):",
+      "syntax": "crane pull {{image_name}} {{path/to/tarball}} {{-format}} {{format_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane pull {{-h|--help}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "pacgraph",
+  "description": "Draw a graph of installed packages to PNG/SVG/GUI/console. More information: https://github.com/keenerd/pacgraph.",
+  "useCases": [
+    {
+      "description": "Produce an SVG and PNG graph:",
+      "syntax": "pacgraph"
+    },
+    {
+      "description": "Produce an SVG graph:",
+      "syntax": "pacgraph --svg"
+    },
+    {
+      "description": "Print summary to console:",
+      "syntax": "pacgraph --console"
+    },
+    {
+      "description": "Override the default filename/location (Note: Do not specify the file extension):",
+      "syntax": "pacgraph --file={{path/to/file}}"
+    },
+    {
+      "description": "Change the color of packages that are not dependencies:",
+      "syntax": "pacgraph --top={{color}}"
+    },
+    {
+      "description": "Change the color of package dependencies:",
+      "syntax": "pacgraph --dep={{color}}"
+    },
+    {
+      "description": "Change the background color of a graph:",
+      "syntax": "pacgraph --background={{color}}"
+    },
+    {
+      "description": "Change the color of links between packages:",
+      "syntax": "pacgraph --link={{color}}"
+    }
+  ]
+}

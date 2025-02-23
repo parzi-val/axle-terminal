@@ -1,0 +1,22 @@
+{
+  "command": "berks",
+  "description": "Chef cookbook dependency manager. More information: https://docs.chef.io/berkshelf.html.",
+  "useCases": [
+    {
+      "description": "Install cookbook dependencies into a local repo:",
+      "syntax": "berks install"
+    },
+    {
+      "description": "Update a specific cookbook and its dependencies:",
+      "syntax": "berks update {{cookbook}}"
+    },
+    {
+      "description": "Upload a cookbook to the Chef server:",
+      "syntax": "berks upload {{cookbook}}"
+    },
+    {
+      "description": "View the dependencies of a cookbook:",
+      "syntax": "berks contingent {{cookbook}}"
+    }
+  ]
+}

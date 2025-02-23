@@ -1,0 +1,38 @@
+{
+  "command": "hcitool",
+  "description": "Monitor, configure connections, and send special commands to Bluetooth devices. More information: https://manned.org/hcitool.",
+  "useCases": [
+    {
+      "description": "Scan for Bluetooth devices:",
+      "syntax": "hcitool scan"
+    },
+    {
+      "description": "Output the name of a device, returning its MAC address:",
+      "syntax": "hcitool name {{bdaddr}}"
+    },
+    {
+      "description": "Fetch information about a remote Bluetooth device:",
+      "syntax": "hcitool info {{bdaddr}}"
+    },
+    {
+      "description": "Check the link quality to a Bluetooth device:",
+      "syntax": "hcitool lq {{bdaddr}}"
+    },
+    {
+      "description": "Modify the transmit power level:",
+      "syntax": "hcitool tpl {{bdaddr}} {{0|1}}"
+    },
+    {
+      "description": "Display the link policy:",
+      "syntax": "hcitool lp"
+    },
+    {
+      "description": "Request authentication with a specific device:",
+      "syntax": "hcitool auth {{bdaddr}}"
+    },
+    {
+      "description": "Display local devices:",
+      "syntax": "hcitool dev"
+    }
+  ]
+}

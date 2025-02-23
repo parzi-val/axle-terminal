@@ -1,0 +1,38 @@
+{
+  "command": "cosign",
+  "description": "Container Signing, Verification and Storage in an OCI registry. More information: https://github.com/sigstore/cosign.",
+  "useCases": [
+    {
+      "description": "Generate a key-pair:",
+      "syntax": "cosign generate-key-pair"
+    },
+    {
+      "description": "Sign a container and store the signature in the registry:",
+      "syntax": "cosign sign -key {{cosign.key}} {{image}}"
+    },
+    {
+      "description": "Sign a container image with a key pair stored in a Kubernetes secret:",
+      "syntax": "cosign sign -key k8s://{{namespace}}/{{key}} {{image}}"
+    },
+    {
+      "description": "Sign a blob with a local key pair file:",
+      "syntax": "cosign sign-blob --key {{cosign.key}} {{path/to/file}}"
+    },
+    {
+      "description": "Verify a container against a public key:",
+      "syntax": "cosign verify -key {{cosign.pub}} {{image}}"
+    },
+    {
+      "description": "Verify images with a public key in a Dockerfile:",
+      "syntax": "cosign dockerfile verify -key {{cosign.pub}} {{path/to/Dockerfile}}"
+    },
+    {
+      "description": "Verify an image with a public key stored in a Kubernetes secret:",
+      "syntax": "cosign verify -key k8s://{{namespace}}/{{key}} {{image}}"
+    },
+    {
+      "description": "Copy a container image and its signatures:",
+      "syntax": "cosign copy {{example.com/src:latest}} {{example.com/dest:latest}}"
+    }
+  ]
+}

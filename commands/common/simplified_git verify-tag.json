@@ -1,0 +1,18 @@
+{
+  "command": "git verify-tag",
+  "description": "Check for GPG verification of tags. If a tag wasn't signed, an error will occur. More information: https://git-scm.com/docs/git-verify-tag.",
+  "useCases": [
+    {
+      "description": "Check tags for a GPG signature:",
+      "syntax": "git verify-tag {{tag1 optional_tag2 ...}}"
+    },
+    {
+      "description": "Check tags for a GPG signature and show details for each tag:",
+      "syntax": "git verify-tag {{tag1 optional_tag2 ...}} --verbose"
+    },
+    {
+      "description": "Check tags for a GPG signature and print the raw details:",
+      "syntax": "git verify-tag {{tag1 optional_tag2 ...}} --raw"
+    }
+  ]
+}

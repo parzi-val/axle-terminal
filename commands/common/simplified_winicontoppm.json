@@ -1,0 +1,10 @@
+{
+  "command": "winicontoppm",
+  "description": "This command has been superseded by winicontopam. More information: https://netpbm.sourceforge.net/doc/winicontoppm.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr winicontopam"
+    }
+  ]
+}

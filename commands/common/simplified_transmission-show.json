@@ -1,0 +1,18 @@
+{
+  "command": "transmission-show",
+  "description": "Get information about a torrent file. See also: transmission. More information: https://manned.org/transmission-show.",
+  "useCases": [
+    {
+      "description": "Display metadata for a specific torrent:",
+      "syntax": "transmission-show {{path/to/file.torrent}}"
+    },
+    {
+      "description": "Generate a magnet link for a specific torrent:",
+      "syntax": "transmission-show --magnet {{path/to/file.torrent}}"
+    },
+    {
+      "description": "Query a torrent's trackers and print the current number of peers:",
+      "syntax": "transmission-show --scrape {{path/to/file.torrent}}"
+    }
+  ]
+}

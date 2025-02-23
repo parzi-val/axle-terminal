@@ -1,0 +1,18 @@
+{
+  "command": "adb connect",
+  "description": "Connect to an Android device wirelessly. More information: https://developer.android.com/tools/adb.",
+  "useCases": [
+    {
+      "description": "Pair with an Android device (address and pairing code can be found in developer options):",
+      "syntax": "adb pair {{ip_address}}:{{port}}"
+    },
+    {
+      "description": "Connect to an Android device (port will be different from pairing):",
+      "syntax": "adb connect {{ip_address}}:{{port}}"
+    },
+    {
+      "description": "Disconnect a device:",
+      "syntax": "adb disconnect {{ip_address}}:{{port}}"
+    }
+  ]
+}

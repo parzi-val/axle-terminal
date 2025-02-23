@@ -1,0 +1,14 @@
+{
+  "command": "imgtoppm",
+  "description": "Convert various image file formats to the PPM (Portable Pixmap) format. More information: https://netpbm.sourceforge.net/doc/imgtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an input image to PPM format:",
+      "syntax": "imgtoppm {{path/to/input}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "imgtoppm -version"
+    }
+  ]
+}

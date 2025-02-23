@@ -1,0 +1,34 @@
+{
+  "command": "driverquery",
+  "description": "Display information about installed device drivers. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/driverquery.",
+  "useCases": [
+    {
+      "description": "Display a list of all installed device drivers:",
+      "syntax": "driverquery"
+    },
+    {
+      "description": "Display a list of drivers in the specified format:",
+      "syntax": "driverquery /fo {{table|list|csv}}"
+    },
+    {
+      "description": "Display a list of drivers with a column to indicate if they are signed:",
+      "syntax": "driverquery /si"
+    },
+    {
+      "description": "Exclude the header in the output list:",
+      "syntax": "driverquery /nh"
+    },
+    {
+      "description": "Display a list of drivers for a remote machine:",
+      "syntax": "driverquery /s {{hostname}} /u {{username}} /p {{password}}"
+    },
+    {
+      "description": "Display a list of drivers with verbose information:",
+      "syntax": "driverquery /v"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "driverquery /?"
+    }
+  ]
+}

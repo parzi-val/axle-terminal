@@ -1,0 +1,22 @@
+{
+  "command": "mamba repoquery",
+  "description": "Efficiently query conda and mamba package repositories and package dependencies. More information: https://mamba.readthedocs.io/en/latest/user_guide/mamba.html#repoquery.",
+  "useCases": [
+    {
+      "description": "Search for all available versions of a particular package:",
+      "syntax": "mamba repoquery search {{package}}"
+    },
+    {
+      "description": "Search for all packages satisfying specific constraints:",
+      "syntax": "mamba repoquery search {{sphinx&lt;5}}"
+    },
+    {
+      "description": "List the dependencies of a package installed in the currently activated environment, in a tree format:",
+      "syntax": "mamba repoquery depends --tree {{scipy}}"
+    },
+    {
+      "description": "Print packages in the current environment that require a particular package to be installed (i.e. inverse of depends):",
+      "syntax": "mamba repoquery whoneeds {{ipython}}"
+    }
+  ]
+}

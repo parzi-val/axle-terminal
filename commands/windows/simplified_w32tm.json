@@ -1,0 +1,34 @@
+{
+  "command": "w32tm",
+  "description": "Query and control the w32time time synchronization service. More information: https://learn.microsoft.com/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings.",
+  "useCases": [
+    {
+      "description": "Show the current status of time synchronization:",
+      "syntax": "w32tm /query /status /verbose"
+    },
+    {
+      "description": "Show a time offset graph against a time server:",
+      "syntax": "w32tm /stripchart /computer:{{time_server}}"
+    },
+    {
+      "description": "Show an NTP reply from a time server:",
+      "syntax": "w32tm /stripchart /packetinfo /samples:1 /computer:{{time_server}}"
+    },
+    {
+      "description": "Show the state of the currently used time servers:",
+      "syntax": "w32tm /query /peers"
+    },
+    {
+      "description": "Show configuration of the w32time service (run in elevated console):",
+      "syntax": "w32tm /query /configuration"
+    },
+    {
+      "description": "Force time resynchronization immediately (run in elevated console):",
+      "syntax": "w32tm /resync /force"
+    },
+    {
+      "description": "Write w32time debug logs into a file (run in elevated console):",
+      "syntax": "w32tm /debug /enable /file:{{path\\to\\debug.log}} /size:{{10000000}} /entries:{{0-300}}"
+    }
+  ]
+}

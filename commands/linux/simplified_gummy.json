@@ -1,0 +1,30 @@
+{
+  "command": "gummy",
+  "description": "Screen brightness/temperature manager for Linux/X11. More information: https://github.com/Gitoffthelawn/gummy.",
+  "useCases": [
+    {
+      "description": "Set the screen temperature to 3000K:",
+      "syntax": "gummy --temperature {{3000}}"
+    },
+    {
+      "description": "Set the screen backlight to 50%:",
+      "syntax": "gummy --backlight {{50}}"
+    },
+    {
+      "description": "Set the screen pixel brightness to 45%:",
+      "syntax": "gummy --brightness {{45}}"
+    },
+    {
+      "description": "Increase current screen pixel brightness by 10%:",
+      "syntax": "gummy --brightness {{+10}}"
+    },
+    {
+      "description": "Decrease current screen pixel brightness by 10%:",
+      "syntax": "gummy --brightness {{-10}}"
+    },
+    {
+      "description": "Set the temperature and pixel brightness for the second screen:",
+      "syntax": "gummy --screen {{1}} --temperature {{3800}} --brightness {{65}}"
+    }
+  ]
+}

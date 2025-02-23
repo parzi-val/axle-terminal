@@ -1,0 +1,38 @@
+{
+  "command": "winget",
+  "description": "Windows Package Manager. More information: https://learn.microsoft.com/windows/package-manager/winget.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "winget install {{package}}"
+    },
+    {
+      "description": "Remove a package (Note: remove can also be used instead of uninstall):",
+      "syntax": "winget uninstall {{package}}"
+    },
+    {
+      "description": "Display information about a package:",
+      "syntax": "winget show {{package}}"
+    },
+    {
+      "description": "Search for a package:",
+      "syntax": "winget search {{package}}"
+    },
+    {
+      "description": "Upgrade all packages to the latest versions:",
+      "syntax": "winget upgrade --all"
+    },
+    {
+      "description": "List all packages installed that can be managed with winget:",
+      "syntax": "winget list --source winget"
+    },
+    {
+      "description": "Import packages from a file, or export installed packages to a file:",
+      "syntax": "winget {{import|export}} {{--import-file|--output}} {{path/to/file}}"
+    },
+    {
+      "description": "Validate manifests before submitting a PR to the winget-pkgs repository:",
+      "syntax": "winget validate {{path/to/manifest}}"
+    }
+  ]
+}

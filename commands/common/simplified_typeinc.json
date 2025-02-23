@@ -1,0 +1,22 @@
+{
+  "command": "typeinc",
+  "description": "An ncurses based terminal typing speed test program, written in Python. Try out different difficulty levels and improve your typing speed. More information: https://github.com/AnirudhG07/Typeinc.",
+  "useCases": [
+    {
+      "description": "Enter the typing test:",
+      "syntax": "typeinc"
+    },
+    {
+      "description": "Display the top 10 rank list for input difficulty level:",
+      "syntax": "typeinc {{-r|--ranklist}} {{difficulty_level}}"
+    },
+    {
+      "description": "Get random English words present in our wordlist:",
+      "syntax": "typeinc {{-w|--words}} {{word_count}}"
+    },
+    {
+      "description": "Calculate hypothetical Typeinc score:",
+      "syntax": "typeinc {{-s|--score}}"
+    }
+  ]
+}

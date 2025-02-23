@@ -1,0 +1,38 @@
+{
+  "command": "gpg-card",
+  "description": "Administrate OpenPGP and PIV smart cards. Similar to gpg --card-edit. More information: https://manned.org/gpg-card.",
+  "useCases": [
+    {
+      "description": "Start in interactive mode:",
+      "syntax": "gpg-card"
+    },
+    {
+      "description": "Invoke one or more commands non-interactively:",
+      "syntax": "gpg-card {{command1}} -- {{command2}} -- {{command3}}"
+    },
+    {
+      "description": "Show information about a smart card:",
+      "syntax": "gpg-card list"
+    },
+    {
+      "description": "Retrieve the public key using the URL stored on an OpenPGP card:",
+      "syntax": "gpg-card fetch"
+    },
+    {
+      "description": "Set the URL used by the fetch command:",
+      "syntax": "gpg-card url"
+    },
+    {
+      "description": "Change or unblock PINs (uses the default action for the card in non-interactive mode):",
+      "syntax": "gpg-card passwd"
+    },
+    {
+      "description": "Toggle the forcesig flag of an OpenPGP card (i.e. require entering the user PIN for signing):",
+      "syntax": "gpg-card forcesig"
+    },
+    {
+      "description": "Factory reset a smart card (i.e. delete all data and reset PINs):",
+      "syntax": "gpg-card factory-reset"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "podman-compose",
+  "description": "Run and manage Compose Specification container definition. More information: https://github.com/containers/podman-compose.",
+  "useCases": [
+    {
+      "description": "List all running containers:",
+      "syntax": "podman-compose ps"
+    },
+    {
+      "description": "Create and start all containers in the background using a local docker-compose.yml:",
+      "syntax": "podman-compose up -d"
+    },
+    {
+      "description": "Start all containers, building if needed:",
+      "syntax": "podman-compose up --build"
+    },
+    {
+      "description": "Start all containers using an alternate compose file:",
+      "syntax": "podman-compose {{-f|--file}} {{path/to/file.yaml}} up"
+    },
+    {
+      "description": "Stop all running containers:",
+      "syntax": "podman-compose stop"
+    },
+    {
+      "description": "Remove all containers, networks, and volumes:",
+      "syntax": "podman-compose down --volumes"
+    },
+    {
+      "description": "Follow logs for a container (omit all container names):",
+      "syntax": "podman-compose logs --follow {{container_name}}"
+    },
+    {
+      "description": "Run a one-time command in a service with no ports mapped:",
+      "syntax": "podman-compose run {{service_name}} {{command}}"
+    }
+  ]
+}

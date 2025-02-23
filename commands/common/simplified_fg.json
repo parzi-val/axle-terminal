@@ -1,0 +1,14 @@
+{
+  "command": "fg",
+  "description": "Run jobs in foreground. More information: https://manned.org/fg.",
+  "useCases": [
+    {
+      "description": "Bring most recently suspended or running background job to foreground:",
+      "syntax": "fg"
+    },
+    {
+      "description": "Bring a specific job to foreground:",
+      "syntax": "fg %{{job_id}}"
+    }
+  ]
+}

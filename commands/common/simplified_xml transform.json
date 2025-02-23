@@ -1,0 +1,14 @@
+{
+  "command": "xml transform",
+  "description": "Transform XML documents using XSLT. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Transform an XML document using an XSL stylesheet, passing one XPATH parameter and one literal string parameter:",
+      "syntax": "xml transform {{path/to/stylesheet.xsl}} -p &quot;{{Count='count(/xml/table/rec)'}}&quot; -s {{Text=&quot;Count=&quot;}} {{path/to/input.xml|URI}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml transform --help"
+    }
+  ]
+}

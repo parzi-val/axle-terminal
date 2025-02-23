@@ -1,0 +1,26 @@
+{
+  "command": "uvicorn",
+  "description": "Python ASGI HTTP Server, for asynchronous projects. More information: https://www.uvicorn.org/.",
+  "useCases": [
+    {
+      "description": "Run Python web app:",
+      "syntax": "uvicorn {{import.path:app_object}}"
+    },
+    {
+      "description": "Listen on port 8080 on localhost:",
+      "syntax": "uvicorn --host {{localhost}} --port {{8080}} {{import.path:app_object}}"
+    },
+    {
+      "description": "Turn on live reload:",
+      "syntax": "uvicorn --reload {{import.path:app_object}}"
+    },
+    {
+      "description": "Use 4 worker processes for handling requests:",
+      "syntax": "uvicorn --workers {{4}} {{import.path:app_object}}"
+    },
+    {
+      "description": "Run app over HTTPS:",
+      "syntax": "uvicorn --ssl-certfile {{cert.pem}} --ssl-keyfile {{key.pem}} {{import.path:app_object}}"
+    }
+  ]
+}

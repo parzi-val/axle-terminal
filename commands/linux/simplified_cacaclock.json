@@ -1,0 +1,18 @@
+{
+  "command": "cacaclock",
+  "description": "Display the current time as ASCII art. More information: https://packages.debian.org/sid/caca-utils.",
+  "useCases": [
+    {
+      "description": "Display the time:",
+      "syntax": "cacaclock"
+    },
+    {
+      "description": "Change the font:",
+      "syntax": "cacaclock -f {{font}}"
+    },
+    {
+      "description": "Change the format using an strftime format specification:",
+      "syntax": "cacaclock -d {{strftime_arguments}}"
+    }
+  ]
+}

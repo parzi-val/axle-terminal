@@ -1,0 +1,18 @@
+{
+  "command": "check-support-status",
+  "description": "Identify installed Debian packages for which support has had to be limited or prematurely ended. More information: https://manned.org/check-support-status.",
+  "useCases": [
+    {
+      "description": "Display packages whose support is limited, has already ended or will end earlier than the distribution's end of life:",
+      "syntax": "check-support-status"
+    },
+    {
+      "description": "Display only packages whose support has ended:",
+      "syntax": "check-support-status --type {{ended}}"
+    },
+    {
+      "description": "Skip printing a headline:",
+      "syntax": "check-support-status --no-heading"
+    }
+  ]
+}

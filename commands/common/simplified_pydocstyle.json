@@ -1,0 +1,34 @@
+{
+  "command": "pydocstyle",
+  "description": "Statically check Python scripts for compliance with Python docstring conventions. More information: https://www.pydocstyle.org/en/latest/.",
+  "useCases": [
+    {
+      "description": "Analyze a Python script or all the Python scripts in a specific directory:",
+      "syntax": "pydocstyle {{file.py|path/to/directory}}"
+    },
+    {
+      "description": "Show an explanation of each error:",
+      "syntax": "pydocstyle {{-e|--explain}} {{file.py|path/to/directory}}"
+    },
+    {
+      "description": "Show debug information:",
+      "syntax": "pydocstyle {{-d|--debug}} {{file.py|path/to/directory}}"
+    },
+    {
+      "description": "Display the total number of errors:",
+      "syntax": "pydocstyle --count {{file.py|path/to/directory}}"
+    },
+    {
+      "description": "Use a specific configuration file:",
+      "syntax": "pydocstyle --config {{path/to/config_file}} {{file.py|path/to/directory}}"
+    },
+    {
+      "description": "Ignore one or more errors:",
+      "syntax": "pydocstyle --ignore {{D101,D2,D107,...}} {{file.py|path/to/directory}}"
+    },
+    {
+      "description": "Check for errors from a specific convention:",
+      "syntax": "pydocstyle --convention {{pep257|numpy|google}} {{file.py|path/to/directory}}"
+    }
+  ]
+}

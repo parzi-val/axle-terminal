@@ -1,0 +1,38 @@
+{
+  "command": "safe",
+  "description": "Interact with HashiCorp Vault. More information: https://github.com/starkandwayne/safe.",
+  "useCases": [
+    {
+      "description": "Add a safe target:",
+      "syntax": "safe target {{vault_addr}} {{target_name}}"
+    },
+    {
+      "description": "Authenticate the CLI client against the Vault server, using an authentication token:",
+      "syntax": "safe auth {{authentication_token}}"
+    },
+    {
+      "description": "Print the environment variables describing the current target:",
+      "syntax": "safe env"
+    },
+    {
+      "description": "Display a tree hierarchy of all reachable keys for a given path:",
+      "syntax": "safe tree {{path}}"
+    },
+    {
+      "description": "Move a secret from one path to another:",
+      "syntax": "safe move {{old/path/to/secret}} {{new/path/to/secret}}"
+    },
+    {
+      "description": "Generate a new 2048-bit SSH key-pair and store it:",
+      "syntax": "safe ssh {{2048}} {{path/to/secret}}"
+    },
+    {
+      "description": "Set non-sensitive keys for a secret:",
+      "syntax": "safe set {{path/to/secret}} {{key}}={{value}}"
+    },
+    {
+      "description": "Set auto-generated password in a secret:",
+      "syntax": "safe gen {{path/to/secret}} {{key}}"
+    }
+  ]
+}

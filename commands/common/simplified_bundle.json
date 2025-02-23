@@ -1,0 +1,38 @@
+{
+  "command": "bundle",
+  "description": "Dependency manager for the Ruby programming language. More information: https://bundler.io/man/bundle.1.html.",
+  "useCases": [
+    {
+      "description": "Install all gems defined in the Gemfile expected in the working directory:",
+      "syntax": "bundle install"
+    },
+    {
+      "description": "Execute a command in the context of the current bundle:",
+      "syntax": "bundle exec {{command}} {{arguments}}"
+    },
+    {
+      "description": "Update all gems by the rules defined in the Gemfile and regenerate Gemfile.lock:",
+      "syntax": "bundle update"
+    },
+    {
+      "description": "Update one or more specific gem(s) defined in the Gemfile:",
+      "syntax": "bundle update {{gem_name1}} {{gem_name2}}"
+    },
+    {
+      "description": "Update one or more specific gems(s) defined in the Gemfile but only to the next patch version:",
+      "syntax": "bundle update --patch {{gem_name1}} {{gem_name2}}"
+    },
+    {
+      "description": "Update all gems within the given group in the Gemfile:",
+      "syntax": "bundle update --group {{development}}"
+    },
+    {
+      "description": "List installed gems in the Gemfile with newer versions available:",
+      "syntax": "bundle outdated"
+    },
+    {
+      "description": "Create a new gem skeleton:",
+      "syntax": "bundle gem {{gem_name}}"
+    }
+  ]
+}

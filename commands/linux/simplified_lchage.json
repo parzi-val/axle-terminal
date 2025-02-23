@@ -1,0 +1,22 @@
+{
+  "command": "lchage",
+  "description": "Display or change user password policy. More information: https://manned.org/lchage.",
+  "useCases": [
+    {
+      "description": "Disable password expiration for the user:",
+      "syntax": "sudo lchage --date -1 {{username}}"
+    },
+    {
+      "description": "Display the password policy for the user:",
+      "syntax": "sudo lchage --list {{username}}"
+    },
+    {
+      "description": "Require password change for the user a certain number of days after the last password change:",
+      "syntax": "sudo lchage --maxdays {{number_of_days}} {{username}}"
+    },
+    {
+      "description": "Start warning the user a certain number of days before the password expires:",
+      "syntax": "sudo lchage --warndays {{number_of_days}} {{username}}"
+    }
+  ]
+}

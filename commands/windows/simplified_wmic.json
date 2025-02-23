@@ -1,0 +1,34 @@
+{
+  "command": "wmic",
+  "description": "Interactive shell for detailed information about running processes. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/wmic.",
+  "useCases": [
+    {
+      "description": "Fundamental grammar:",
+      "syntax": "wmic {{alias}} {{where_clause}} {{verb_clause}}"
+    },
+    {
+      "description": "Show brief details about the currently running processes:",
+      "syntax": "wmic process list brief"
+    },
+    {
+      "description": "Show full details about the currently running processes:",
+      "syntax": "wmic process list full"
+    },
+    {
+      "description": "Access specific fields such as process name, process ID and parent process ID:",
+      "syntax": "wmic process get {{name,processid,parentprocessid}}"
+    },
+    {
+      "description": "Display information about a specific process:",
+      "syntax": "wmic process where {{name=&quot;example.exe&quot;}} list full"
+    },
+    {
+      "description": "Display specific fields for a specific process:",
+      "syntax": "wmic process where processid={{pid}} get {{name,commandline}}"
+    },
+    {
+      "description": "Kill a process:",
+      "syntax": "wmic process {{pid}} delete"
+    }
+  ]
+}

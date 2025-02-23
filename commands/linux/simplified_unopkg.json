@@ -1,0 +1,30 @@
+{
+  "command": "unopkg",
+  "description": "LibreOffice extensions manager. Download extensions from https://extensions.libreoffice.org. See also: libreoffice. More information: https://manned.org/unopkg.",
+  "useCases": [
+    {
+      "description": "Add and deploy given extension:",
+      "syntax": "unopkg add {{path/to/extension}}"
+    },
+    {
+      "description": "Remove extension:",
+      "syntax": "unopkg remove {{extensions_id}}"
+    },
+    {
+      "description": "Display information about deployed extensions:",
+      "syntax": "unopkg list"
+    },
+    {
+      "description": "Raise extensions dialog (GUI):",
+      "syntax": "unopkg gui"
+    },
+    {
+      "description": "Reinstall all deployed extensions:",
+      "syntax": "unopkg reinstall"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "unopkg {{-h|--help}}"
+    }
+  ]
+}

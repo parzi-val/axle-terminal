@@ -1,0 +1,34 @@
+{
+  "command": "if",
+  "description": "Performs conditional processing in batch scripts. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/if.",
+  "useCases": [
+    {
+      "description": "Execute the specified commands if the condition is true:",
+      "syntax": "if {{condition}} ({{echo Condition is true}})"
+    },
+    {
+      "description": "Execute the specified commands if the condition is false:",
+      "syntax": "if not {{condition}} ({{echo Condition is true}})"
+    },
+    {
+      "description": "Execute the first specified commands if the condition is true otherwise execute the second specified commands:",
+      "syntax": "if {{condition}} ({{echo Condition is true}}) else ({{echo Condition is false}})"
+    },
+    {
+      "description": "Check whether %errorlevel% is greater than or equal to the specified exit code:",
+      "syntax": "if errorlevel {{2}} ({{echo Condition is true}})"
+    },
+    {
+      "description": "Check whether two strings are equal:",
+      "syntax": "if %{{variable}}% == {{string}} ({{echo Condition is true}})"
+    },
+    {
+      "description": "Check whether two strings are equal without respecting letter case:",
+      "syntax": "if /i %{{variable}}% == {{string}} ({{echo Condition is true}})"
+    },
+    {
+      "description": "Check whether a file exist:",
+      "syntax": "if exist {{path\\to\\file}} ({{echo Condition is true}})"
+    }
+  ]
+}

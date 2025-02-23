@@ -1,0 +1,38 @@
+{
+  "command": "synoupgrade",
+  "description": "Upgrade Synology DiskStation Manager (DSM) - the Synology NAS operating system. More information: https://www.synology.com/dsm.",
+  "useCases": [
+    {
+      "description": "Check if upgrades are available:",
+      "syntax": "sudo synoupgrade --check"
+    },
+    {
+      "description": "Check for patches without upgrading the DSM version:",
+      "syntax": "sudo synoupgrade --check-smallupdate"
+    },
+    {
+      "description": "Download the latest upgrade available (use --download-smallupdate for patches):",
+      "syntax": "sudo synoupgrade --download"
+    },
+    {
+      "description": "Start the upgrade process:",
+      "syntax": "sudo synoupgrade --start"
+    },
+    {
+      "description": "Upgrade to the latest version automatically:",
+      "syntax": "sudo synoupgrade --auto"
+    },
+    {
+      "description": "Apply patches without upgrading the DSM version automatically:",
+      "syntax": "sudo synoupgrade --auto-smallupdate"
+    },
+    {
+      "description": "Upgrade the DSM using a patch file (should be an absolute path):",
+      "syntax": "sudo synoupgrade --patch {{/path/to/file.pat}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "synoupgrade"
+    }
+  ]
+}

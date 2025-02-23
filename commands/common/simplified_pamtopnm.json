@@ -1,0 +1,14 @@
+{
+  "command": "pamtopnm",
+  "description": "Convert a PAM image to an equivalent PNM image. More information: https://netpbm.sourceforge.net/doc/pamtopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PAM image to an equivalent PNM image, i.e. a PBM, PGM or PPM image:",
+      "syntax": "pamtopnm {{path/to/image.pam}} &gt; {{path/to/output.pbm|pgm|ppm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pamtopnm -version"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "swapoff",
+  "description": "Disable devices and files for swapping. Note: path/to/file can either point to a regular file or a swap partition. More information: https://manned.org/swapoff.",
+  "useCases": [
+    {
+      "description": "Disable a given swap area:",
+      "syntax": "swapoff {{path/to/file}}"
+    },
+    {
+      "description": "Disable all swap areas in /proc/swaps:",
+      "syntax": "swapoff --all"
+    },
+    {
+      "description": "Disable a swap partition by its label:",
+      "syntax": "swapoff -L {{label}}"
+    }
+  ]
+}

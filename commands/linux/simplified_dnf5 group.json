@@ -1,0 +1,10 @@
+{
+  "command": "dnf5 group",
+  "description": "This command is an alias of dnf group. Note: from Fedora 37 to 40 (inclusive), dnf runs DNF v4 while dnf5 runs DNF v5.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr dnf group"
+    }
+  ]
+}

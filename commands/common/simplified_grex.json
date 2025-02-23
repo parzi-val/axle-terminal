@@ -1,0 +1,30 @@
+{
+  "command": "grex",
+  "description": "Generate regular expressions. More information: https://github.com/pemistahl/grex.",
+  "useCases": [
+    {
+      "description": "Generate a simple regular expression:",
+      "syntax": "grex {{space_separated_strings}}"
+    },
+    {
+      "description": "Generate a case-insensitive regular expression:",
+      "syntax": "grex -i {{space_separated_strings}}"
+    },
+    {
+      "description": "Replace digits with '\\d':",
+      "syntax": "grex -d {{space_separated_strings}}"
+    },
+    {
+      "description": "Replace Unicode word character with '\\w':",
+      "syntax": "grex -w {{space_separated_strings}}"
+    },
+    {
+      "description": "Replace spaces with '\\s':",
+      "syntax": "grex -s {{space_separated_strings}}"
+    },
+    {
+      "description": "Add {min, max} quantifier representation for repeating sub-strings:",
+      "syntax": "grex -r {{space_separated_strings}}"
+    }
+  ]
+}

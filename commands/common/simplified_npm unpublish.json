@@ -1,0 +1,26 @@
+{
+  "command": "npm unpublish",
+  "description": "Remove a package from the npm registry. More information: https://docs.npmjs.com/cli/v8/commands/npm-unpublish.",
+  "useCases": [
+    {
+      "description": "Unpublish a specific package version:",
+      "syntax": "npm unpublish {{package_name}}@{{version}}"
+    },
+    {
+      "description": "Unpublish the entire package:",
+      "syntax": "npm unpublish {{package_name}} --force"
+    },
+    {
+      "description": "Unpublish a package that is scoped:",
+      "syntax": "npm unpublish @{{scope}}/{{package_name}}"
+    },
+    {
+      "description": "Specify a timeout period before unpublishing:",
+      "syntax": "npm unpublish {{package_name}} --timeout {{time_in_milliseconds}}"
+    },
+    {
+      "description": "To prevent accidental unpublishing, use the --dry-run flag to see what would be unpublished:",
+      "syntax": "npm unpublish {{package_name}} --dry-run"
+    }
+  ]
+}

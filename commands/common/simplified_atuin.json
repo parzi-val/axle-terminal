@@ -1,0 +1,30 @@
+{
+  "command": "atuin",
+  "description": "Store your shell history in a searchable database. Optionally sync your encrypted history between machines. More information: https://atuin.sh/docs/commands.",
+  "useCases": [
+    {
+      "description": "Install atuin into your shell:",
+      "syntax": "eval &quot;$(atuin init {{bash|zsh|fish}})&quot;"
+    },
+    {
+      "description": "Import history from the shell default history file:",
+      "syntax": "atuin import auto"
+    },
+    {
+      "description": "Search shell history for a specific command:",
+      "syntax": "atuin search {{command}}"
+    },
+    {
+      "description": "Register an account on the default sync server using the specified [u]sername, [e]mail and [p]assword:",
+      "syntax": "atuin register -u {{username}} -e {{email}} -p {{password}}"
+    },
+    {
+      "description": "Login to the default sync server:",
+      "syntax": "atuin login -u {{username}} -p {{password}}"
+    },
+    {
+      "description": "Sync history with the sync server:",
+      "syntax": "atuin sync"
+    }
+  ]
+}

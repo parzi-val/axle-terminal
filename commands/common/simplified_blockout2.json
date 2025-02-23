@@ -1,0 +1,26 @@
+{
+  "command": "blockout2",
+  "description": "Tetris like game in 3D. More information: https://www.blockout.net/blockout2/.",
+  "useCases": [
+    {
+      "description": "Start a new game:",
+      "syntax": "blockout2"
+    },
+    {
+      "description": "Navigate the current piece on a 2D plane:",
+      "syntax": "{{Up|Down|Left|Right arrow key}}"
+    },
+    {
+      "description": "Rotate the piece on its axis:",
+      "syntax": "{{Q|W|E|A|S|D}}"
+    },
+    {
+      "description": "Hard drop the current piece:",
+      "syntax": "&lt;Spacebar&gt;"
+    },
+    {
+      "description": "Pause/unpause the game:",
+      "syntax": "p"
+    }
+  ]
+}

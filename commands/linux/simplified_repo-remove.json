@@ -1,0 +1,10 @@
+{
+  "command": "repo-remove",
+  "description": "Package database maintenance utility which removes packages from a local repository. More information: https://manned.org/repo-add.",
+  "useCases": [
+    {
+      "description": "Remove a package from a local repository:",
+      "syntax": "repo-remove {{path/to/database.db.tar.gz}} {{package}}"
+    }
+  ]
+}

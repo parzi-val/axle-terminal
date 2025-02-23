@@ -1,0 +1,34 @@
+{
+  "command": "lvs",
+  "description": "Display information about logical volumes. See also: lvm. More information: https://manned.org/lvs.",
+  "useCases": [
+    {
+      "description": "Display information about logical volumes:",
+      "syntax": "lvs"
+    },
+    {
+      "description": "Display all logical volumes:",
+      "syntax": "lvs -a"
+    },
+    {
+      "description": "Change default display to show more details:",
+      "syntax": "lvs -v"
+    },
+    {
+      "description": "Display only specific fields:",
+      "syntax": "lvs -o {{field_name_1}},{{field_name_2}}"
+    },
+    {
+      "description": "Append field to default display:",
+      "syntax": "lvs -o +{{field_name}}"
+    },
+    {
+      "description": "Suppress heading line:",
+      "syntax": "lvs --noheadings"
+    },
+    {
+      "description": "Use a separator to separate fields:",
+      "syntax": "lvs --separator {{=}}"
+    }
+  ]
+}

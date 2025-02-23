@@ -1,0 +1,22 @@
+{
+  "command": "typst",
+  "description": "Compile a Typst file to PDF. Note: Specifying the output location is optional. More information: https://github.com/typst/typst.",
+  "useCases": [
+    {
+      "description": "Initialize a new Typst project in a given directory using a template (e.g., @preview/charged-ieee):",
+      "syntax": "typst init &quot;{{template}}&quot; {{path/to/directory}}"
+    },
+    {
+      "description": "Compile a Typst file:",
+      "syntax": "typst compile {{path/to/source.typ}} {{path/to/output.pdf}}"
+    },
+    {
+      "description": "Watch a Typst file and recompile on changes:",
+      "syntax": "typst watch {{path/to/source.typ}} {{path/to/output.pdf}}"
+    },
+    {
+      "description": "List all discoverable fonts in the system and the given directory:",
+      "syntax": "typst --font-path {{path/to/fonts_directory}} fonts"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "odps table",
+  "description": "Create and modify tables in ODPS (Open Data Processing Service). See also odps. More information: https://www.alibabacloud.com/help/doc-detail/27971.htm.",
+  "useCases": [
+    {
+      "description": "Create a table with partition and lifecycle:",
+      "syntax": "create table {{table_name}} ({{col}} {{type}}) partitioned by ({{col}} {{type}}) lifecycle {{days}};"
+    },
+    {
+      "description": "Create a table based on the definition of another table:",
+      "syntax": "create table {{table_name}} like {{another_table}};"
+    },
+    {
+      "description": "Add partition to a table:",
+      "syntax": "alter table {{table_name}} add partition ({{partition_spec}});"
+    },
+    {
+      "description": "Delete partition from a table:",
+      "syntax": "alter table {{table_name}} drop partition ({{partition_spec}});"
+    },
+    {
+      "description": "Delete table:",
+      "syntax": "drop table {{table_name}};"
+    }
+  ]
+}

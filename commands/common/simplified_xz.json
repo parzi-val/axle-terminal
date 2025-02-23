@@ -1,0 +1,38 @@
+{
+  "command": "xz",
+  "description": "Compress or decompress XZ and LZMA files. More information: https://manned.org/xz.",
+  "useCases": [
+    {
+      "description": "Compress a file using xz:",
+      "syntax": "xz {{path/to/file}}"
+    },
+    {
+      "description": "Decompress an XZ file:",
+      "syntax": "xz --decompress {{path/to/file.xz}}"
+    },
+    {
+      "description": "Compress a file using lzma:",
+      "syntax": "xz --format=lzma {{path/to/file}}"
+    },
+    {
+      "description": "Decompress an LZMA file:",
+      "syntax": "xz --decompress --format=lzma {{path/to/file.lzma}}"
+    },
+    {
+      "description": "Decompress a file and write to stdout (implies --keep):",
+      "syntax": "xz --decompress --stdout {{path/to/file.xz}}"
+    },
+    {
+      "description": "Compress a file, but don't delete the original:",
+      "syntax": "xz --keep {{path/to/file}}"
+    },
+    {
+      "description": "Compress a file using the fastest compression:",
+      "syntax": "xz -0 {{path/to/file}}"
+    },
+    {
+      "description": "Compress a file using the best compression:",
+      "syntax": "xz -9 {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "mp3info",
+  "description": "Viewer/editor for ID3v1 (but not ID3v2) tags of MP3 files. More information: https://www.ibiblio.org/mp3info.",
+  "useCases": [
+    {
+      "description": "Show all ID3v1 tags of a specific MP3 file:",
+      "syntax": "mp3info {{path/to/file.mp3}}"
+    },
+    {
+      "description": "Edit ID3v1 tags interactively:",
+      "syntax": "mp3info -i {{path/to/file.mp3}}"
+    },
+    {
+      "description": "Set values for ID3v1 tags in a specific MP3 file:",
+      "syntax": "mp3info -a &quot;{{artist_name}}&quot; -t &quot;{{song_title}}&quot; -l &quot;{{album_title}}&quot; -y {{year}} -c &quot;{{comment_text}}&quot; {{path/to/file.mp3}}"
+    },
+    {
+      "description": "Set the number of the track in the album for a specific MP3 file:",
+      "syntax": "mp3info -n {{track_number}} {{path/to/file.mp3}}"
+    },
+    {
+      "description": "Print a list of valid genres and their numeric codes:",
+      "syntax": "mp3info -G"
+    },
+    {
+      "description": "Set the music genre for a specific MP3 file:",
+      "syntax": "mp3info -g {{genre_number}} {{path/to/file.mp3}}"
+    }
+  ]
+}

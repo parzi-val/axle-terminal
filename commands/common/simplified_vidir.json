@@ -1,0 +1,26 @@
+{
+  "command": "vidir",
+  "description": "Edit directories in a text editor. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Edit the contents of the specified directories:",
+      "syntax": "vidir {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Display each action taken by the program:",
+      "syntax": "vidir --verbose {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Edit the contents of current directory:",
+      "syntax": "vidir"
+    },
+    {
+      "description": "Use the specified text editor:",
+      "syntax": "EDITOR={{vim}} vidir {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Read a list of files to edit from stdin:",
+      "syntax": "{{command}} | vidir -"
+    }
+  ]
+}

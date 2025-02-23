@@ -1,0 +1,22 @@
+{
+  "command": "daemonize",
+  "description": "Run a command (that does not daemonize itself) as a Unix daemon. More information: https://software.clapper.org/daemonize/.",
+  "useCases": [
+    {
+      "description": "Run a command as a daemon:",
+      "syntax": "daemonize {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Write the PID to the specified file:",
+      "syntax": "daemonize -p {{path/to/pidfile}} {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Use a lock file to ensure that only one instance runs at a time:",
+      "syntax": "daemonize -l {{path/to/lockfile}} {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Use the specified user account:",
+      "syntax": "sudo daemonize -u {{user}} {{command}} {{command_arguments}}"
+    }
+  ]
+}

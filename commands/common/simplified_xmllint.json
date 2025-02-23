@@ -1,0 +1,30 @@
+{
+  "command": "xmllint",
+  "description": "XML parser and linter that supports XPath, a syntax for navigating XML trees. More information: https://manned.org/xmllint.",
+  "useCases": [
+    {
+      "description": "Return all nodes (tags) named \"foo\":",
+      "syntax": "xmllint --xpath &quot;//{{foo}}&quot; {{source_file.xml}}"
+    },
+    {
+      "description": "Return the contents of the first node named \"foo\" as a string:",
+      "syntax": "xmllint --xpath &quot;string(//{{foo}})&quot; {{source_file.xml}}"
+    },
+    {
+      "description": "Return the href attribute of the second anchor element in an HTML file:",
+      "syntax": "xmllint --html --xpath &quot;string(//a[2]/@href)&quot; webpage.xhtml"
+    },
+    {
+      "description": "Return human-readable (indented) XML from file:",
+      "syntax": "xmllint --format {{source_file.xml}}"
+    },
+    {
+      "description": "Check that an XML file meets the requirements of its DOCTYPE declaration:",
+      "syntax": "xmllint --valid {{source_file.xml}}"
+    },
+    {
+      "description": "Validate XML against DTD schema hosted online:",
+      "syntax": "xmllint --dtdvalid {{URL}} {{source_file.xml}}"
+    }
+  ]
+}

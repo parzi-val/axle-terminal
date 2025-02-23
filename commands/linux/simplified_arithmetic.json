@@ -1,0 +1,18 @@
+{
+  "command": "arithmetic",
+  "description": "Quiz on simple arithmetic problems. More information: https://manned.org/arithmetic.6.",
+  "useCases": [
+    {
+      "description": "Start an arithmetic quiz:",
+      "syntax": "arithmetic"
+    },
+    {
+      "description": "Specify one or more arithmetic [o]peration symbols to get problems on them:",
+      "syntax": "arithmetic -o {{+|-|x|/}}"
+    },
+    {
+      "description": "Specify a range. Addition and multiplication problems would feature numbers between 0 and range, inclusive. Subtraction and division problems would have required result and number to be operated on, between 0 and range:",
+      "syntax": "arithmetic -r {{7}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "mdadm",
+  "description": "RAID management utility. More information: https://manned.org/mdadm.",
+  "useCases": [
+    {
+      "description": "Create array:",
+      "syntax": "sudo mdadm --create {{/dev/md/MyRAID}} --level {{raid_level}} --raid-devices {{number_of_disks}} {{/dev/sdXN}}"
+    },
+    {
+      "description": "Stop array:",
+      "syntax": "sudo mdadm --stop {{/dev/md0}}"
+    },
+    {
+      "description": "Mark disk as failed:",
+      "syntax": "sudo mdadm --fail {{/dev/md0}} {{/dev/sdXN}}"
+    },
+    {
+      "description": "Remove disk:",
+      "syntax": "sudo mdadm --remove {{/dev/md0}} {{/dev/sdXN}}"
+    },
+    {
+      "description": "Add disk to array:",
+      "syntax": "sudo mdadm --assemble {{/dev/md0}} {{/dev/sdXN}}"
+    },
+    {
+      "description": "Show RAID info:",
+      "syntax": "sudo mdadm --detail {{/dev/md0}}"
+    },
+    {
+      "description": "Reset disk by deleting RAID metadata:",
+      "syntax": "sudo mdadm --zero-superblock {{/dev/sdXN}}"
+    }
+  ]
+}

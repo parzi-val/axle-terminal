@@ -1,0 +1,14 @@
+{
+  "command": "PSWindowsUpdate",
+  "description": "A PowerShell external module to manage Windows Update. This tool provides multiple commands that all can only be run through PowerShell. More information: https://github.com/mgajda83/PSWindowsUpdate.",
+  "useCases": [
+    {
+      "description": "Install the module using Install-Module:",
+      "syntax": "Install-Module PSWindowsUpdate"
+    },
+    {
+      "description": "List all commands available under the module:",
+      "syntax": "Get-Command -Module PSWindowsUpdate"
+    }
+  ]
+}

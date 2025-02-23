@@ -1,0 +1,18 @@
+{
+  "command": "git alias",
+  "description": "Create shortcuts for Git commands. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-alias.",
+  "useCases": [
+    {
+      "description": "List all aliases:",
+      "syntax": "git alias"
+    },
+    {
+      "description": "Create a new alias:",
+      "syntax": "git alias &quot;{{name}}&quot; &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Search for an existing alias:",
+      "syntax": "git alias ^{{name}}"
+    }
+  ]
+}

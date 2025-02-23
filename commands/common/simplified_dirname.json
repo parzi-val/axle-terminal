@@ -1,0 +1,18 @@
+{
+  "command": "dirname",
+  "description": "Calculates the parent directory of a file or directory path. More information: https://www.gnu.org/software/coreutils/manual/html_node/dirname-invocation.html.",
+  "useCases": [
+    {
+      "description": "Calculate the parent directory of a given path:",
+      "syntax": "dirname {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Calculate the parent directory of multiple paths:",
+      "syntax": "dirname {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Delimit output with a NUL character instead of a newline (useful when combining with xargs):",
+      "syntax": "dirname --zero {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    }
+  ]
+}

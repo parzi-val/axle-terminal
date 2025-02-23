@@ -1,0 +1,26 @@
+{
+  "command": "sfdisk",
+  "description": "Display or manipulate a disk partition table. More information: https://manned.org/sfdisk.",
+  "useCases": [
+    {
+      "description": "Back up the partition layout to a file:",
+      "syntax": "sudo sfdisk {{-d|--dump}} {{path/to/device}} &gt; {{path/to/file.dump}}"
+    },
+    {
+      "description": "Restore a partition layout:",
+      "syntax": "sudo sfdisk {{path/to/device}} &lt; {{path/to/file.dump}}"
+    },
+    {
+      "description": "Set the type of a partition:",
+      "syntax": "sfdisk --part-type {{path/to/device}}} {{partition_number}} {{swap}}"
+    },
+    {
+      "description": "Delete a partition:",
+      "syntax": "sfdisk --delete {{path/to/device}} {{partition_number}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sfdisk {{-h|--help}}"
+    }
+  ]
+}

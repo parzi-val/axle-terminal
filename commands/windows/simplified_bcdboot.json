@@ -1,0 +1,26 @@
+{
+  "command": "bcdboot",
+  "description": "Configure or repair boot files. More information: https://learn.microsoft.com/windows-hardware/manufacture/desktop/bcdboot-command-line-options-techref-di.",
+  "useCases": [
+    {
+      "description": "Initialize the system partition by using BCD files from the source Windows folder:",
+      "syntax": "bcdboot {{C:\\Windows}}"
+    },
+    {
+      "description": "Enable [v]erbose mode:",
+      "syntax": "bcdboot {{C:\\Windows}} /v"
+    },
+    {
+      "description": "Specify the volume letter of the [s]ystem partition:",
+      "syntax": "bcdboot {{C:\\Windows}} /s {{S:}}"
+    },
+    {
+      "description": "Specify a [l]ocale:",
+      "syntax": "bcdboot {{C:\\Windows}} /l {{en-us}}"
+    },
+    {
+      "description": "Specify a [f]irmware type while copying the boot files to a specified volume:",
+      "syntax": "bcdboot {{C:\\Windows}} /s {{S:}} /f {{UEFI|BIOS|ALL}}"
+    }
+  ]
+}

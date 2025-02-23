@@ -1,0 +1,14 @@
+{
+  "command": "neotoppm",
+  "description": "Convert an Atari Neochrome NEO file into a PPM image. More information: https://netpbm.sourceforge.net/doc/neotoppm.html.",
+  "useCases": [
+    {
+      "description": "Generate the PPM image as output for an Atari Neochrome NEO file as input:",
+      "syntax": "neotoppm {{path/to/file.neo}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "neotoppm -version"
+    }
+  ]
+}

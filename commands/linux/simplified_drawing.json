@@ -1,0 +1,18 @@
+{
+  "command": "drawing",
+  "description": "Free basic raster image editor in GNOME desktop environment. More information: https://maoschanz.github.io/drawing/.",
+  "useCases": [
+    {
+      "description": "Start Drawing:",
+      "syntax": "drawing"
+    },
+    {
+      "description": "Open specific files:",
+      "syntax": "drawing {{path/to/image1 path/to/image2 ...}}"
+    },
+    {
+      "description": "Open specific files in a new window:",
+      "syntax": "drawing --new-window {{path/to/image1 path/to/image2 ...}}"
+    }
+  ]
+}

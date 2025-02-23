@@ -1,0 +1,30 @@
+{
+  "command": "repquota",
+  "description": "Display a summary of existing file quotas for a filesystem. More information: https://manned.org/repquota.",
+  "useCases": [
+    {
+      "description": "Report stats for all quotas in use:",
+      "syntax": "sudo repquota -all"
+    },
+    {
+      "description": "Report quota stats for all users, even those who aren't using any of their quota:",
+      "syntax": "sudo repquota -v {{filesystem}}"
+    },
+    {
+      "description": "Report on quotas for users only:",
+      "syntax": "repquota --user {{filesystem}}"
+    },
+    {
+      "description": "Report on quotas for groups only:",
+      "syntax": "sudo repquota --group {{filesystem}}"
+    },
+    {
+      "description": "Report on used quota and limits in a human-readable format:",
+      "syntax": "sudo repquota --human-readable {{filesystem}}"
+    },
+    {
+      "description": "Report on all quotas for users and groups in a human-readable format:",
+      "syntax": "sudo repquota -augs"
+    }
+  ]
+}

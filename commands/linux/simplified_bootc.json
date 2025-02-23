@@ -1,0 +1,26 @@
+{
+  "command": "bootc",
+  "description": "Boot and upgrade via container images. Manages transactional, in-place operating system updates using OCI/Docker container images. More information: https://containers.github.io/bootc/.",
+  "useCases": [
+    {
+      "description": "Show deployments in the order they will appear in the bootloader:",
+      "syntax": "bootc status"
+    },
+    {
+      "description": "Check if any updates are available:",
+      "syntax": "bootc upgrade --check"
+    },
+    {
+      "description": "Prepare a new update and reboot into it:",
+      "syntax": "bootc upgrade --apply"
+    },
+    {
+      "description": "Change OS base to new container image:",
+      "syntax": "bootc switch {{image}}"
+    },
+    {
+      "description": "Reboot into the previous ostree deployment:",
+      "syntax": "bootc rollback"
+    }
+  ]
+}

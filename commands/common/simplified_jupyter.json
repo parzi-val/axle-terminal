@@ -1,0 +1,34 @@
+{
+  "command": "jupyter",
+  "description": "Web application to create and share documents that contain code, visualizations and notes. Primarily used for data analysis, scientific computing and machine learning. More information: https://jupyter.org.",
+  "useCases": [
+    {
+      "description": "Start a Jupyter notebook server in the current directory:",
+      "syntax": "jupyter notebook"
+    },
+    {
+      "description": "Open a specific Jupyter notebook:",
+      "syntax": "jupyter notebook {{example.ipynb}}"
+    },
+    {
+      "description": "Export a specific Jupyter notebook into another format:",
+      "syntax": "jupyter nbconvert --to {{html|markdown|pdf|script}} {{example.ipynb}}"
+    },
+    {
+      "description": "Start a server on a specific port:",
+      "syntax": "jupyter notebook --port={{port}}"
+    },
+    {
+      "description": "List currently running notebook servers:",
+      "syntax": "jupyter notebook list"
+    },
+    {
+      "description": "Stop the currently running server:",
+      "syntax": "jupyter notebook stop"
+    },
+    {
+      "description": "Start JupyterLab, if installed, in the current directory:",
+      "syntax": "jupyter lab"
+    }
+  ]
+}

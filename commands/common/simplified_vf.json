@@ -1,0 +1,38 @@
+{
+  "command": "vf",
+  "description": "VirtualFish is a fish shell tool for managing Python virtual environments. More information: https://virtualfish.readthedocs.io/en/latest/.",
+  "useCases": [
+    {
+      "description": "Create a virtual environment:",
+      "syntax": "vf new {{virtualenv_name}}"
+    },
+    {
+      "description": "Create a virtual environment for a specific Python version:",
+      "syntax": "vf new --python {{/usr/local/bin/python3.8}} {{virtualenv_name}}"
+    },
+    {
+      "description": "Activate and use the specified virtual environment:",
+      "syntax": "vf activate {{virtualenv_name}}"
+    },
+    {
+      "description": "Connect the current virtualenv to the current directory, so that it is activated automatically as soon as you enter it (and deactivated as soon as you leave):",
+      "syntax": "vf connect"
+    },
+    {
+      "description": "Deactivate the current virtual environment:",
+      "syntax": "vf deactivate"
+    },
+    {
+      "description": "List all virtual environments:",
+      "syntax": "vf ls"
+    },
+    {
+      "description": "Remove a virtual environment:",
+      "syntax": "vf rm {{virtualenv_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "vf help"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "snmpset",
+  "description": "Set a value using the SNMP protocol. More information: https://manned.org/snmpset.",
+  "useCases": [
+    {
+      "description": "Set a value:",
+      "syntax": "snmpget -v {{version}} -c {{community}} {{ip}} {{oid}} {{value_type}} {{value}}"
+    }
+  ]
+}

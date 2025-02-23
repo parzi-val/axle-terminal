@@ -1,0 +1,22 @@
+{
+  "command": "mh_lint",
+  "description": "Attempt to find bugs in MATLAB or Octave code. Please note that this tool is neither sound nor complete. More information: https://misshit.org.",
+  "useCases": [
+    {
+      "description": "Check the current directory:",
+      "syntax": "mh_lint"
+    },
+    {
+      "description": "Check a specific directory recursively:",
+      "syntax": "mh_lint {{path/to/directory}}"
+    },
+    {
+      "description": "Check a MATLAB file:",
+      "syntax": "mh_lint {{path/to/file.m}}"
+    },
+    {
+      "description": "Check an Octave file:",
+      "syntax": "mh_lint --octave {{path/to/file.m}}"
+    }
+  ]
+}

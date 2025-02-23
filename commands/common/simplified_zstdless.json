@@ -1,0 +1,10 @@
+{
+  "command": "zstdless",
+  "description": "Open a zstd compressed file for interactive reading, allowing scrolling and search. See also: zstd, less. More information: https://manned.org/zstdless.",
+  "useCases": [
+    {
+      "description": "Open a zstd compressed file:",
+      "syntax": "zstdless {{path/to/file.zst}}"
+    }
+  ]
+}

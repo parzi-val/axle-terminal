@@ -1,0 +1,26 @@
+{
+  "command": "gpgconf",
+  "description": "Modify .gnupg home directories. More information: https://www.gnupg.org/documentation/manuals/gnupg/gpgconf.html.",
+  "useCases": [
+    {
+      "description": "List all components:",
+      "syntax": "gpgconf --list-components"
+    },
+    {
+      "description": "List the directories used by gpgconf:",
+      "syntax": "gpgconf --list-dirs"
+    },
+    {
+      "description": "List all options of a component:",
+      "syntax": "gpgconf --list-options {{component}}"
+    },
+    {
+      "description": "List programs and test whether they are runnable:",
+      "syntax": "gpgconf --check-programs"
+    },
+    {
+      "description": "Reload a component:",
+      "syntax": "gpgconf --reload {{component}}"
+    }
+  ]
+}

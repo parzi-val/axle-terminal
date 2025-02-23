@@ -1,0 +1,22 @@
+{
+  "command": "setfacl",
+  "description": "Set file access control lists (ACL). More information: https://manned.org/setfacl.",
+  "useCases": [
+    {
+      "description": "[M]odify ACL of a file for user with read and write access:",
+      "syntax": "setfacl --modify u:{{username}}:rw {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "[M]odify [d]efault ACL of a file for all users:",
+      "syntax": "setfacl --modify --default u::rw {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Remove ACL of a file for a user:",
+      "syntax": "setfacl --remove u:{{username}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Remove all ACL entries of a file:",
+      "syntax": "setfacl --remove-all {{path/to/file_or_directory}}"
+    }
+  ]
+}

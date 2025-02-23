@@ -1,0 +1,34 @@
+{
+  "command": "dolt commit",
+  "description": "Commit staged changes to tables. More information: https://docs.dolthub.com/cli-reference/cli#dolt-commit.",
+  "useCases": [
+    {
+      "description": "Commit all staged changes, opening the editor specified by $EDITOR to enter the commit message:",
+      "syntax": "dolt commit"
+    },
+    {
+      "description": "Commit all staged changes with the specified message:",
+      "syntax": "dolt commit --message &quot;{{commit_message}}&quot;"
+    },
+    {
+      "description": "Stage all unstaged changes to tables before committing:",
+      "syntax": "dolt commit --all"
+    },
+    {
+      "description": "Use the specified ISO 8601 commit date (defaults to current date and time):",
+      "syntax": "dolt commit --date &quot;{{2021-12-31T00:00:00}}&quot;"
+    },
+    {
+      "description": "Use the specified author for the commit:",
+      "syntax": "dolt commit --author &quot;{{author_name}} &lt;{{author_email}}&gt;&quot;"
+    },
+    {
+      "description": "Allow creating an empty commit, with no changes:",
+      "syntax": "dolt commit --allow-empty"
+    },
+    {
+      "description": "Ignore foreign key warnings:",
+      "syntax": "dolt commit --force"
+    }
+  ]
+}

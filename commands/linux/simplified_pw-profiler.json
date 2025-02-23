@@ -1,0 +1,22 @@
+{
+  "command": "pw-profiler",
+  "description": "Profile a local or remote instance. More information: https://docs.pipewire.org/page_man_pw-profiler_1.html.",
+  "useCases": [
+    {
+      "description": "Profile the default instance, logging to profile.log (gnuplot files and a HTML file for result visualizing are also generated):",
+      "syntax": "pw-profiler"
+    },
+    {
+      "description": "Change the log output file:",
+      "syntax": "pw-profiler --output {{path/to/file.log}}"
+    },
+    {
+      "description": "Profile a remote instance:",
+      "syntax": "pw-profiler --remote {{remote_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pw-profiler --help"
+    }
+  ]
+}

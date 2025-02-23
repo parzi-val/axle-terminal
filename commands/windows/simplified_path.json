@@ -1,0 +1,22 @@
+{
+  "command": "path",
+  "description": "Display or set the search path for executable files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/path.",
+  "useCases": [
+    {
+      "description": "Display the current path:",
+      "syntax": "path"
+    },
+    {
+      "description": "Set the path to one or more semicolon-separated directories:",
+      "syntax": "path {{path\\to\\directory1 path\\to\\directory2 ...}}"
+    },
+    {
+      "description": "Append a new directory to the original path:",
+      "syntax": "path {{path\\to\\directory}};%path%"
+    },
+    {
+      "description": "Set command prompt to only search the current directory for executables:",
+      "syntax": "path ;"
+    }
+  ]
+}

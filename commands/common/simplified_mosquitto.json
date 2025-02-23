@@ -1,0 +1,22 @@
+{
+  "command": "mosquitto",
+  "description": "An MQTT broker. More information: https://mosquitto.org/.",
+  "useCases": [
+    {
+      "description": "Start Mosquitto:",
+      "syntax": "mosquitto"
+    },
+    {
+      "description": "Specify a configuration file to use:",
+      "syntax": "mosquitto --config-file {{path/to/file.conf}}"
+    },
+    {
+      "description": "Listen on a specific port:",
+      "syntax": "mosquitto --port {{8883}}"
+    },
+    {
+      "description": "Daemonize by forking into the background:",
+      "syntax": "mosquitto --daemon"
+    }
+  ]
+}

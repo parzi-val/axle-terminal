@@ -1,0 +1,26 @@
+{
+  "command": "gnomon",
+  "description": "Utility to annotate console logging statements with timestamps and find slow processes. More information: https://github.com/paypal/gnomon.",
+  "useCases": [
+    {
+      "description": "Use UNIX (or DOS) pipes to pipe stdout of any command through gnomon:",
+      "syntax": "{{npm test}} | gnomon"
+    },
+    {
+      "description": "Show number of seconds since the start of the process:",
+      "syntax": "{{npm test}} | gnomon --type=elapsed-total"
+    },
+    {
+      "description": "Show an absolute timestamp in UTC:",
+      "syntax": "{{npm test}} | gnomon --type=absolute"
+    },
+    {
+      "description": "Use a high threshold of 0.5 seconds, exceeding which the timestamp will be colored bright red:",
+      "syntax": "{{npm test}} | gnomon --high 0.5"
+    },
+    {
+      "description": "Use a medium threshold of 0.2 seconds, exceeding which the timestamp will be colored bright yellow:",
+      "syntax": "{{npm test}} | gnomon --medium {{0.2}}"
+    }
+  ]
+}

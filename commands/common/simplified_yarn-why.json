@@ -1,0 +1,10 @@
+{
+  "command": "yarn-why",
+  "description": "Identifies why a Yarn package has been installed. More information: https://github.com/amio/yarn-why.",
+  "useCases": [
+    {
+      "description": "Show why a Yarn package is installed:",
+      "syntax": "yarn-why {{package}}"
+    }
+  ]
+}

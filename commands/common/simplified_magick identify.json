@@ -1,0 +1,18 @@
+{
+  "command": "magick identify",
+  "description": "Describe the format and characteristics of image files. See also: magick. More information: https://imagemagick.org/script/identify.php.",
+  "useCases": [
+    {
+      "description": "Describe the format and basic characteristics of an image:",
+      "syntax": "magick identify {{path/to/image}}"
+    },
+    {
+      "description": "Describe the format and verbose characteristics of an image:",
+      "syntax": "magick identify -verbose {{path/to/image}}"
+    },
+    {
+      "description": "Collect dimensions of all JPEG files in the current directory and save them into a CSV file:",
+      "syntax": "magick identify -format &quot;{{%f,%w,%h\\n}}&quot; {{*.jpg}} &gt; {{path/to/filelist.csv}}"
+    }
+  ]
+}

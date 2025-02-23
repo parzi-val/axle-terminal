@@ -1,0 +1,10 @@
+{
+  "command": "git archive-file",
+  "description": "Export all the files of the current Git branch into a Zip archive. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-archive-file.",
+  "useCases": [
+    {
+      "description": "Pack the currently checked out commit into a Zip archive:",
+      "syntax": "git archive-file"
+    }
+  ]
+}

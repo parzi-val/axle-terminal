@@ -1,0 +1,30 @@
+{
+  "command": "java",
+  "description": "Java application launcher. More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/java.html.",
+  "useCases": [
+    {
+      "description": "Execute a Java .class file that contains a main method by using just the class name:",
+      "syntax": "java {{classname}}"
+    },
+    {
+      "description": "Execute a Java program and use additional third-party or user-defined classes:",
+      "syntax": "java -classpath {{path/to/classes1}}:{{path/to/classes2}}:. {{classname}}"
+    },
+    {
+      "description": "Execute a .jar program:",
+      "syntax": "java -jar {{filename.jar}}"
+    },
+    {
+      "description": "Execute a .jar program with debug waiting to connect on port 5005:",
+      "syntax": "java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -jar {{filename.jar}}"
+    },
+    {
+      "description": "Display JDK, JRE and HotSpot versions:",
+      "syntax": "java -version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "java -help"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "docker images",
+  "description": "Manage Docker images. More information: https://docs.docker.com/reference/cli/docker/image/ls/.",
+  "useCases": [
+    {
+      "description": "List all Docker images:",
+      "syntax": "docker images"
+    },
+    {
+      "description": "List all Docker images including intermediates:",
+      "syntax": "docker images --all"
+    },
+    {
+      "description": "List the output in quiet mode (only numeric IDs):",
+      "syntax": "docker images --quiet"
+    },
+    {
+      "description": "List all Docker images not used by any container:",
+      "syntax": "docker images --filter dangling=true"
+    },
+    {
+      "description": "List images that contain a substring in their name:",
+      "syntax": "docker images &quot;{{*name*}}&quot;"
+    },
+    {
+      "description": "Sort images by size:",
+      "syntax": "docker images --format &quot;\\{\\{.ID\\}\\}\\t\\{\\{.Size\\}\\}\\t\\{\\{.Repository\\}\\}:\\{\\{.Tag\\}\\}&quot; | sort -k 2 -h"
+    }
+  ]
+}

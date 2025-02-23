@@ -1,0 +1,10 @@
+{
+  "command": "mtvtoppm",
+  "description": "Convert an MTV or PRT ray tracer file to a PPM image. More information: https://netpbm.sourceforge.net/doc/mtvtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an MTV or PRT ray tracer file to a PPM image:",
+      "syntax": "mtvtoppm {{path/to/file.mtv}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

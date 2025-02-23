@@ -1,0 +1,34 @@
+{
+  "command": "vdir",
+  "description": "List directory contents. Drop-in replacement for ls -l. More information: https://www.gnu.org/software/coreutils/manual/html_node/vdir-invocation.html.",
+  "useCases": [
+    {
+      "description": "List files and directories in the current directory, one per line, with details:",
+      "syntax": "vdir"
+    },
+    {
+      "description": "List with sizes displayed in human-readable units (KB, MB, GB):",
+      "syntax": "vdir -h"
+    },
+    {
+      "description": "List including hidden files (starting with a dot):",
+      "syntax": "vdir -a"
+    },
+    {
+      "description": "List files and directories sorting entries by size (largest first):",
+      "syntax": "vdir -S"
+    },
+    {
+      "description": "List files and directories sorting entries by modification time (newest first):",
+      "syntax": "vdir -t"
+    },
+    {
+      "description": "List grouping directories first:",
+      "syntax": "vdir --group-directories-first"
+    },
+    {
+      "description": "Recursively list all files and directories in a specific directory:",
+      "syntax": "vdir --recursive {{path/to/directory}}"
+    }
+  ]
+}

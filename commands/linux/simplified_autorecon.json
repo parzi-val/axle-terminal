@@ -1,0 +1,22 @@
+{
+  "command": "autorecon",
+  "description": "A multi-threaded network reconnaissance tool which performs automated enumeration of services. More information: https://github.com/Tib3rius/AutoRecon.",
+  "useCases": [
+    {
+      "description": "Perform reconnaissance on target host(s) (detailed scan results will be dumped in ./results):",
+      "syntax": "sudo autorecon {{host_or_ip1,host_or_ip2,...}}"
+    },
+    {
+      "description": "Perform reconnaissance on [t]arget(s) from a file:",
+      "syntax": "sudo autorecon --target-file {{path/to/file}}"
+    },
+    {
+      "description": "[o]utput results to a different directory:",
+      "syntax": "sudo autorecon --output {{path/to/results}} {{host_or_ip1,host_or_ip2,...}}"
+    },
+    {
+      "description": "Limit scanning to specific [p]orts and protocols (T for TCP, U for UDP, B for both):",
+      "syntax": "sudo autorecon --ports {{T:21-25,80,443,U:53,B:123}} {{host_or_ip1,host_or_ip2,...}}"
+    }
+  ]
+}

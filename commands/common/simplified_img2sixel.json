@@ -1,0 +1,14 @@
+{
+  "command": "img2sixel",
+  "description": "Convert images to the Sixel format for displaying in a terminal. More information: https://manned.org/img2sixel.",
+  "useCases": [
+    {
+      "description": "Display an image in the terminal:",
+      "syntax": "img2sixel {{path/to/image}}"
+    },
+    {
+      "description": "Resize the image to the specified width and height before displaying it:",
+      "syntax": "img2sixel {{-w|--width}} {{number}} {{-h|--height}} {{number}} {{path/to/image}}"
+    }
+  ]
+}

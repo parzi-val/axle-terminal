@@ -1,0 +1,22 @@
+{
+  "command": "gnuplot",
+  "description": "A graph plotter that outputs in several formats. More information: http://www.gnuplot.info/.",
+  "useCases": [
+    {
+      "description": "Start the interactive graph plotting shell:",
+      "syntax": "gnuplot"
+    },
+    {
+      "description": "Plot the graph for the specified graph definition file:",
+      "syntax": "gnuplot {{path/to/definition.plt}}"
+    },
+    {
+      "description": "Set the output format by executing a command before loading the definition file:",
+      "syntax": "gnuplot -e &quot;{{set output &quot;path/to/filename.png&quot; size 1024,768}}&quot; {{path/to/definition.plt}}"
+    },
+    {
+      "description": "Persist the graph plot preview window after gnuplot exits:",
+      "syntax": "gnuplot --persist {{path/to/definition.plt}}"
+    }
+  ]
+}

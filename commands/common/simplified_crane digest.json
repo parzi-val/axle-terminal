@@ -1,0 +1,22 @@
+{
+  "command": "crane digest",
+  "description": "Get the digest of an image. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_digest.md.",
+  "useCases": [
+    {
+      "description": "Get the digest of an image:",
+      "syntax": "crane digest {{image_name}}"
+    },
+    {
+      "description": "Print the full image reference by digest:",
+      "syntax": "crane digest {{image_name}} --full-ref"
+    },
+    {
+      "description": "Specify path to tarball containing the image:",
+      "syntax": "crane digest {{image_name}} --tarball {{path/to/tarball}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane digest {{-h|--help}}"
+    }
+  ]
+}

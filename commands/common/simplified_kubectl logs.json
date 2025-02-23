@@ -1,0 +1,34 @@
+{
+  "command": "kubectl logs",
+  "description": "Show logs for containers in a pod. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs.",
+  "useCases": [
+    {
+      "description": "Show logs for a single-container pod:",
+      "syntax": "kubectl logs {{pod_name}}"
+    },
+    {
+      "description": "Show logs for a specified container in a pod:",
+      "syntax": "kubectl logs --container {{container_name}} {{pod_name}}"
+    },
+    {
+      "description": "Show logs for all containers in a pod:",
+      "syntax": "kubectl logs --all-containers={{true}} {{pod_name}}"
+    },
+    {
+      "description": "Stream pod logs:",
+      "syntax": "kubectl logs --follow {{pod_name}}"
+    },
+    {
+      "description": "Show pod logs newer than a relative time like 10s, 5m, or 1h:",
+      "syntax": "kubectl logs --since={{relative_time}} {{pod_name}}"
+    },
+    {
+      "description": "Show the 10 most recent logs in a pod:",
+      "syntax": "kubectl logs --tail={{10}} {{pod_name}}"
+    },
+    {
+      "description": "Show all pod logs for a given deployment:",
+      "syntax": "kubectl logs deployment/{{deployment_name}}"
+    }
+  ]
+}

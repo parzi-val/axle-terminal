@@ -1,0 +1,14 @@
+{
+  "command": "cockpit-desktop",
+  "description": "Securely access Cockpit pages in a running session. It starts cockpit-ws and a web browser in an isolated network space and a cockpit-bridge in a running user session. More information: https://cockpit-project.org/guide/latest/cockpit-desktop.1.html.",
+  "useCases": [
+    {
+      "description": "Open a page:",
+      "syntax": "cockpit-desktop {{url}} {{SSH_host}}"
+    },
+    {
+      "description": "Open storage page:",
+      "syntax": "cockpit-desktop {{/cockpit/@localhost/storage/index.html}}"
+    }
+  ]
+}

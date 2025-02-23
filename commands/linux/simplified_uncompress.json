@@ -1,0 +1,22 @@
+{
+  "command": "uncompress",
+  "description": "Uncompress files compressed using the Unix compress command. More information: https://manned.org/uncompress.1.",
+  "useCases": [
+    {
+      "description": "Uncompress specific files:",
+      "syntax": "uncompress {{path/to/file1.Z path/to/file2.Z ...}}"
+    },
+    {
+      "description": "Uncompress specific files while ignoring non-existent ones:",
+      "syntax": "uncompress -f {{path/to/file1.Z path/to/file2.Z ...}}"
+    },
+    {
+      "description": "Write to stdout (no files are changed and no .Z files are created):",
+      "syntax": "uncompress -c {{path/to/file1.Z path/to/file2.Z ...}}"
+    },
+    {
+      "description": "Verbose mode (write to stderr about percentage reduction or expansion):",
+      "syntax": "uncompress -v {{path/to/file1.Z path/to/file2.Z ...}}"
+    }
+  ]
+}

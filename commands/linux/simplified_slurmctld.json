@@ -1,0 +1,26 @@
+{
+  "command": "slurmctld",
+  "description": "Monitor all other Slurm daemons and resources, accept work (jobs), and allocate resources to those jobs. More information: https://slurm.schedmd.com/slurmctld.html.",
+  "useCases": [
+    {
+      "description": "Clear all previous slurmctld states from its last checkpoint:",
+      "syntax": "slurmctld -c"
+    },
+    {
+      "description": "Set the daemon's nice value to the specified value, typically a negative number:",
+      "syntax": "slurmctld -n {{value}}"
+    },
+    {
+      "description": "Write log messages to the specified file:",
+      "syntax": "slurmctld -L {{path/to/output_file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "slurmctld -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "slurmctld -V"
+    }
+  ]
+}

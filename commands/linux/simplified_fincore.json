@@ -1,0 +1,14 @@
+{
+  "command": "fincore",
+  "description": "Display how much cache memory a file is taking. More information: https://manned.org/fincore.",
+  "useCases": [
+    {
+      "description": "Display cache details for a file:",
+      "syntax": "fincore {{path/to/file}}"
+    },
+    {
+      "description": "Display all possible data columns:",
+      "syntax": "fincore --output-all {{path/to/file}}"
+    }
+  ]
+}

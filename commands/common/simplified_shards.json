@@ -1,0 +1,26 @@
+{
+  "command": "shards",
+  "description": "Dependency management tool for the Crystal language. More information: https://crystal-lang.org/reference/the_shards_command.",
+  "useCases": [
+    {
+      "description": "Create a skeleton shard.yml file:",
+      "syntax": "shards init"
+    },
+    {
+      "description": "Install dependencies from a shard.yml file:",
+      "syntax": "shards install"
+    },
+    {
+      "description": "Update all dependencies:",
+      "syntax": "shards update"
+    },
+    {
+      "description": "List all installed dependencies:",
+      "syntax": "shards list"
+    },
+    {
+      "description": "Display version of dependency:",
+      "syntax": "shards version {{path/to/dependency_directory}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "kotlinc",
+  "description": "Kotlin compiler. More information: https://kotlinlang.org/docs/command-line.html.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "kotlinc"
+    },
+    {
+      "description": "Compile a Kotlin file:",
+      "syntax": "kotlinc {{path/to/file.kt}}"
+    },
+    {
+      "description": "Compile several Kotlin files:",
+      "syntax": "kotlinc {{path/to/file1.kt path/to/file2.kt ...}}"
+    },
+    {
+      "description": "Execute a specific Kotlin Script file:",
+      "syntax": "kotlinc -script {{path/to/file.kts}}"
+    },
+    {
+      "description": "Compile a Kotlin file into a self contained jar file with the Kotlin runtime library included:",
+      "syntax": "kotlinc {{path/to/file.kt}} -include-runtime -d {{path/to/file.jar}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "diff",
+  "description": "Compare files and directories. More information: https://manned.org/diff.",
+  "useCases": [
+    {
+      "description": "Compare files (lists changes to turn old_file into new_file):",
+      "syntax": "diff {{old_file}} {{new_file}}"
+    },
+    {
+      "description": "Compare files, ignoring white spaces:",
+      "syntax": "diff {{-w|--ignore-all-space}} {{old_file}} {{new_file}}"
+    },
+    {
+      "description": "Compare files, showing the differences side by side:",
+      "syntax": "diff {{-y|--side-by-side}} {{old_file}} {{new_file}}"
+    },
+    {
+      "description": "Compare files, showing the differences in unified format (as used by git diff):",
+      "syntax": "diff {{-u|--unified}} {{old_file}} {{new_file}}"
+    },
+    {
+      "description": "Compare directories recursively (shows names for differing files/directories as well as changes made to files):",
+      "syntax": "diff {{-r|--recursive}} {{old_directory}} {{new_directory}}"
+    },
+    {
+      "description": "Compare directories, only showing the names of files that differ:",
+      "syntax": "diff {{-r|--recursive}} {{-q|--brief}} {{old_directory}} {{new_directory}}"
+    },
+    {
+      "description": "Create a patch file for Git from the differences of two text files, treating nonexistent files as empty:",
+      "syntax": "diff {{-a|--text}} {{-u|--unified}} {{-N|--new-file}} {{old_file}} {{new_file}} &gt; {{diff.patch}}"
+    },
+    {
+      "description": "Compare files, showing output in color and try hard to find smaller set of changes:",
+      "syntax": "diff {{-d|--minimal}} --color=always {{old_file}} {{new_file}}"
+    }
+  ]
+}

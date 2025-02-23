@@ -1,0 +1,38 @@
+{
+  "command": "ember",
+  "description": "Ember CLI: create and manage Ember.js applications. More information: https://cli.emberjs.com.",
+  "useCases": [
+    {
+      "description": "Create a new Ember application:",
+      "syntax": "ember new {{my_new_app}}"
+    },
+    {
+      "description": "Create a new Ember addon:",
+      "syntax": "ember addon {{my_new_addon}}"
+    },
+    {
+      "description": "Build the project:",
+      "syntax": "ember build"
+    },
+    {
+      "description": "Build the project in production mode:",
+      "syntax": "ember build -prod"
+    },
+    {
+      "description": "Run the development server:",
+      "syntax": "ember serve"
+    },
+    {
+      "description": "Run the test suite:",
+      "syntax": "ember test"
+    },
+    {
+      "description": "Run a blueprint to generate something like a route or component:",
+      "syntax": "ember generate {{type}} {{name}}"
+    },
+    {
+      "description": "Install an ember-cli addon:",
+      "syntax": "ember install {{name_of_addon}}"
+    }
+  ]
+}

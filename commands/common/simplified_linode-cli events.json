@@ -1,0 +1,18 @@
+{
+  "command": "linode-cli events",
+  "description": "Manage Linode events. See also: linode-cli. More information: https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-viewing-events.",
+  "useCases": [
+    {
+      "description": "List the events on your account:",
+      "syntax": "linode-cli events list"
+    },
+    {
+      "description": "View details about a specific event:",
+      "syntax": "linode-cli events view {{event_id}}"
+    },
+    {
+      "description": "Mark an event as read:",
+      "syntax": "linode-cli events mark-read {{event_id}}"
+    }
+  ]
+}

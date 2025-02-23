@@ -1,0 +1,34 @@
+{
+  "command": "cppcheck",
+  "description": "A static analysis tool for C/C++ code. Instead of syntax errors, it focuses on the types of bugs that compilers normally do not detect. More information: https://cppcheck.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Recursively check the current directory, showing progress on the screen and logging error messages to a file:",
+      "syntax": "cppcheck . 2&gt; cppcheck.log"
+    },
+    {
+      "description": "Recursively check a given directory, and don't print progress messages:",
+      "syntax": "cppcheck --quiet {{path/to/directory}}"
+    },
+    {
+      "description": "Check a given file, specifying which tests to perform (by default only errors are shown):",
+      "syntax": "cppcheck --enable {{error|warning|style|performance|portability|information|all}} {{path/to/file.cpp}}"
+    },
+    {
+      "description": "List available tests:",
+      "syntax": "cppcheck --errorlist"
+    },
+    {
+      "description": "Check a given file, ignoring specific tests:",
+      "syntax": "cppcheck --suppress {{test_id1}} --suppress {{test_id2}} {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Check the current directory, providing paths for include files located outside it (e.g. external libraries):",
+      "syntax": "cppcheck -I {{include/directory_1}} -I {{include/directory_2}} ."
+    },
+    {
+      "description": "Check a Microsoft Visual Studio project (*.vcxproj) or solution (*.sln):",
+      "syntax": "cppcheck --project {{path/to/project.sln}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "vboxmanage-export",
+  "description": "Export virtual machines to a virtual appliance (ISO) or a cloud service. More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-export.",
+  "useCases": [
+    {
+      "description": "Specify the target OVA file:",
+      "syntax": "VBoxManage export --output {{path/to/filename.ova}}"
+    },
+    {
+      "description": "Export in OVF 0.9 legacy mode:",
+      "syntax": "VBoxManage export --legacy09"
+    },
+    {
+      "description": "Export in OVF (0.9|1.0|2.0) format:",
+      "syntax": "VBoxManage export --{{ovf09|ovf10|ovf20}}"
+    },
+    {
+      "description": "Create manifest of the exported files:",
+      "syntax": "VBoxManage export --manifest"
+    },
+    {
+      "description": "Specify a description of the VM:",
+      "syntax": "VBoxManage export --description &quot;{{vm_description}}&quot;"
+    }
+  ]
+}

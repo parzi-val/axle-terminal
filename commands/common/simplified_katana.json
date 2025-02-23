@@ -1,0 +1,30 @@
+{
+  "command": "katana",
+  "description": "A fast crawler focused on execution in automation pipelines offering both headless and non-headless crawling. See also: gau, scrapy, waymore. More information: https://github.com/projectdiscovery/katana.",
+  "useCases": [
+    {
+      "description": "Crawl a list of URLs:",
+      "syntax": "katana -list {{https://example.com,https://google.com,...}}"
+    },
+    {
+      "description": "Crawl a [u]RL using headless mode using Chromium:",
+      "syntax": "katana -u {{https://example.com}} -headless"
+    },
+    {
+      "description": "Use subfinder to find subdomains, and then use [p]a[s]sive sources (Wayback Machine, Common Crawl, and AlienVault) for URL discovery:",
+      "syntax": "subfinder -list {{path/to/domains.txt}} | katana -passive"
+    },
+    {
+      "description": "Pass requests through a proxy (http/socks5) and use custom [H]eaders from a file:",
+      "syntax": "katana -proxy {{http://127.0.0.1:8080}} -headers {{path/to/headers.txt}} -u {{https://example.com}}"
+    },
+    {
+      "description": "Specify the crawling [s]trategy, [d]epth of subdirectories to crawl, and rate limiting (requests per second):",
+      "syntax": "katana -strategy {{depth-first|breadth-first}} -depth {{value}} -rate-limit {{value}} -u {{https://example.com}}"
+    },
+    {
+      "description": "Find subdomains using subfinder, crawl each for a maximum number of seconds, and write results to an [o]utput file:",
+      "syntax": "subfinder -list {{path/to/domains.txt}} | katana -crawl-duration {{value}} -output {{path/to/output.txt}}"
+    }
+  ]
+}

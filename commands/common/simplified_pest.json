@@ -1,0 +1,34 @@
+{
+  "command": "pest",
+  "description": "A PHP testing framework with a focus on simplicity. More information: https://pestphp.com.",
+  "useCases": [
+    {
+      "description": "Initialize a standard Pest configuration in the current directory:",
+      "syntax": "pest --init"
+    },
+    {
+      "description": "Run tests in the current directory:",
+      "syntax": "pest"
+    },
+    {
+      "description": "Run tests annotated with the given group:",
+      "syntax": "pest --group {{name}}"
+    },
+    {
+      "description": "Run tests and print the coverage report to stdout:",
+      "syntax": "pest --coverage"
+    },
+    {
+      "description": "Run tests with coverage and fail if the coverage is less than the minimum percentage:",
+      "syntax": "pest --coverage --min={{80}}"
+    },
+    {
+      "description": "Run tests in parallel:",
+      "syntax": "pest --parallel"
+    },
+    {
+      "description": "Run tests with mutations:",
+      "syntax": "pest --mutate"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "trans",
+  "description": "Translate Shell is a command-line translator. More information: https://github.com/soimort/translate-shell.",
+  "useCases": [
+    {
+      "description": "Translate a word (language is detected automatically):",
+      "syntax": "trans &quot;{{word_or_sentence_to_translate}}&quot;"
+    },
+    {
+      "description": "Get a brief translation:",
+      "syntax": "trans --brief &quot;{{word_or_sentence_to_translate}}&quot;"
+    },
+    {
+      "description": "Translate a word into french:",
+      "syntax": "trans :{{fr}} {{word}}"
+    },
+    {
+      "description": "Translate a word from German to English:",
+      "syntax": "trans {{de}}:{{en}} {{Schmetterling}}"
+    },
+    {
+      "description": "Behave like a dictionary to get the meaning of a word:",
+      "syntax": "trans -d {{word}}"
+    }
+  ]
+}

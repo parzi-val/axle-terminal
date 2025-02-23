@@ -1,0 +1,14 @@
+{
+  "command": "vpnc",
+  "description": "A VPN client for the Cisco 3000 VPN Concentrator. More information: https://manned.org/vpnc.",
+  "useCases": [
+    {
+      "description": "Connect with a defined configuration file:",
+      "syntax": "sudo vpnc {{config_file}}"
+    },
+    {
+      "description": "Terminate the previously created connection:",
+      "syntax": "sudo vpnc-disconnect"
+    }
+  ]
+}

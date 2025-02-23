@@ -1,0 +1,14 @@
+{
+  "command": "ppmpat",
+  "description": "Produce a PPM image with a pattern. More information: https://netpbm.sourceforge.net/doc/ppmpat.html.",
+  "useCases": [
+    {
+      "description": "Produce a PPM file of the specified pattern with the specified dimensions:",
+      "syntax": "ppmpat -{{gingham2|gingham3|madras|tartan|poles|...}} {{width}} {{height}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Produce a PPM file of a camo pattern using the specified colors:",
+      "syntax": "ppmpat -camo -color {{color1,color2,...}} {{width}} {{height}} &gt; {{path/to/file.ppm}}"
+    }
+  ]
+}

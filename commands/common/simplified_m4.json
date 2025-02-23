@@ -1,0 +1,14 @@
+{
+  "command": "m4",
+  "description": "Macro processor. More information: https://www.gnu.org/software/m4.",
+  "useCases": [
+    {
+      "description": "Process macros in a file:",
+      "syntax": "m4 {{path/to/file}}"
+    },
+    {
+      "description": "Define a macro before processing files:",
+      "syntax": "m4 -D{{macro_name}}={{macro_value}} {{path/to/file}}"
+    }
+  ]
+}

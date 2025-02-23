@@ -1,0 +1,34 @@
+{
+  "command": "npm query",
+  "description": "Print an array of dependency objects using CSS-like selectors. More information: https://docs.npmjs.com/cli/commands/npm-query.",
+  "useCases": [
+    {
+      "description": "Print direct dependencies:",
+      "syntax": "npm query ':root &gt; *'"
+    },
+    {
+      "description": "Print all direct production/development dependencies:",
+      "syntax": "npm query ':root &gt; .{{prod|dev}}'"
+    },
+    {
+      "description": "Print dependencies with a specific name:",
+      "syntax": "npm query '#{{package}}'"
+    },
+    {
+      "description": "Print dependencies with a specific name and within a semantic versioning range:",
+      "syntax": "npm query '#{{package}}@{{semantic_version}}'"
+    },
+    {
+      "description": "Print dependencies which have no dependencies:",
+      "syntax": "npm query ':empty'"
+    },
+    {
+      "description": "Find all dependencies with postinstall scripts and uninstall them:",
+      "syntax": "npm query &quot;:attr(scripts, [postinstall])&quot; | jq 'map(.name) | join(&quot;\\n&quot;)' -r | xargs -I {} npm uninstall {}"
+    },
+    {
+      "description": "Find all Git dependencies and print which application requires them:",
+      "syntax": "npm query &quot;:type(git)&quot; | jq 'map(.name)' | xargs -I {} npm why {}"
+    }
+  ]
+}

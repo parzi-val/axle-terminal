@@ -1,0 +1,18 @@
+{
+  "command": "getfacl",
+  "description": "Get file access control lists (ACL). More information: https://manned.org/getfacl.",
+  "useCases": [
+    {
+      "description": "Display the file access control list:",
+      "syntax": "getfacl {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Display the file access control list with [n]umeric user and group IDs:",
+      "syntax": "getfacl --numeric {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Display the file access control list with [t]abular output format:",
+      "syntax": "getfacl --tabular {{path/to/file_or_directory}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "Resolve-Path",
+  "description": "Resolves the wildcard characters in a path, and displays the path contents. Note: This command can only be used through PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/resolve-path.",
+  "useCases": [
+    {
+      "description": "Resolve the home folder path:",
+      "syntax": "Resolve-Path {{~}}"
+    },
+    {
+      "description": "Resolve a UNC path:",
+      "syntax": "Resolve-Path -Path &quot;\\\\{{hostname}}\\{{path\\to\\file}}&quot;"
+    },
+    {
+      "description": "Get relative paths:",
+      "syntax": "Resolve-Path -Path {{path\\to\\file_or_directory}} -Relative"
+    }
+  ]
+}

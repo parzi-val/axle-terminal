@@ -1,0 +1,22 @@
+{
+  "command": "wami",
+  "description": "An open-source and easy-to-use tool that recommends suitable programs for tasks. More information: https://github.com/evait-security/wami.",
+  "useCases": [
+    {
+      "description": "Find expanded results in all categories from the lake and [S]ort them in the specified order:",
+      "syntax": "wami --show-all -S {{asc|desc}} --search-all {{search_string}}"
+    },
+    {
+      "description": "Search GitHub to find expanded results, [S]orted in descending order:",
+      "syntax": "wami --show-all -S desc --github {{search_string}}"
+    },
+    {
+      "description": "Search GitHub for topics that match the search string:",
+      "syntax": "wami --list-topics {{search_string}}"
+    },
+    {
+      "description": "Search the lake for a tool used in pentests to query for default credentials and [S]ort the results in descending order:",
+      "syntax": "wami -S desc --search-all pentest credential default"
+    }
+  ]
+}

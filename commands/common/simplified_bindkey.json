@@ -1,0 +1,22 @@
+{
+  "command": "bindkey",
+  "description": "Add keybindings to Z-Shell. More information: https://zsh.sourceforge.io/Guide/zshguide04.html.",
+  "useCases": [
+    {
+      "description": "Bind a hotkey to a specific command:",
+      "syntax": "bindkey &quot;{{^k}}&quot; {{kill-line}}"
+    },
+    {
+      "description": "Bind a hotkey to a specific key [s]equence:",
+      "syntax": "bindkey -s '^o' 'cd ..\\n'"
+    },
+    {
+      "description": "[l]ist keymaps:",
+      "syntax": "bindkey -l"
+    },
+    {
+      "description": "View the hotkey in a key[M]ap:",
+      "syntax": "bindkey -M main"
+    }
+  ]
+}

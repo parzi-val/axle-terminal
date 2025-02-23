@@ -1,0 +1,30 @@
+{
+  "command": "vcsh",
+  "description": "Version Control System for the home directory using Git repositories. See also: chezmoi, stow, tuckr, homeshick. More information: https://github.com/RichiH/vcsh.",
+  "useCases": [
+    {
+      "description": "Initialize an (empty) repository:",
+      "syntax": "vcsh init {{repository_name}}"
+    },
+    {
+      "description": "Clone a repository into a custom directory name:",
+      "syntax": "vcsh clone {{git_url}} {{repository_name}}"
+    },
+    {
+      "description": "List all managed repositories:",
+      "syntax": "vcsh list"
+    },
+    {
+      "description": "Execute a Git command on a managed repository:",
+      "syntax": "vcsh {{repository_name}} {{git_command}}"
+    },
+    {
+      "description": "Push/pull all managed repositories to/from remotes:",
+      "syntax": "vcsh {{push|pull}}"
+    },
+    {
+      "description": "Write a custom .gitignore file for a managed repository:",
+      "syntax": "vcsh write-gitignore {{repository_name}}"
+    }
+  ]
+}

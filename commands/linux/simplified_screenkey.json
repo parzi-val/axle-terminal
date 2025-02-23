@@ -1,0 +1,34 @@
+{
+  "command": "screenkey",
+  "description": "A screencast tool to display keys pressed. More information: https://www.thregr.org/~wavexx/software/screenkey/.",
+  "useCases": [
+    {
+      "description": "Display keys which are currently being pressed on the screen:",
+      "syntax": "screenkey"
+    },
+    {
+      "description": "Display keys and mouse buttons which are currently being pressed on the screen:",
+      "syntax": "screenkey --mouse"
+    },
+    {
+      "description": "Launch the settings menu of screenkey:",
+      "syntax": "screenkey --show-settings"
+    },
+    {
+      "description": "Launch screenkey at a specific position:",
+      "syntax": "screenkey --position {{top|center|bottom|fixed}}"
+    },
+    {
+      "description": "Change the format of the key modifiers displayed on screen:",
+      "syntax": "screenkey --mods-mode {{normal|emacs|mac|win|tux}}"
+    },
+    {
+      "description": "Change the appearance of screenkey:",
+      "syntax": "screenkey --bg-color &quot;{{#a1b2c3}}&quot; --font {{Hack}} --font-color {{yellow}} --opacity {{0.8}}"
+    },
+    {
+      "description": "Drag and select a window on screen to display screenkey:",
+      "syntax": "screenkey --position fixed --geometry {{$(slop -n -f '%g')}}"
+    }
+  ]
+}

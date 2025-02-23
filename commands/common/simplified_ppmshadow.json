@@ -1,0 +1,18 @@
+{
+  "command": "ppmshadow",
+  "description": "Add simulated shadows to a PPM image. More information: https://netpbm.sourceforge.net/doc/ppmshadow.html.",
+  "useCases": [
+    {
+      "description": "Add simulated shadows to a PPM image:",
+      "syntax": "ppmshadow {{path/to/input_file.ppm}} &gt; {{path/to/output_file.ppm}}"
+    },
+    {
+      "description": "[b]lur the image by the specified number of pixels:",
+      "syntax": "ppmshadow -b {{n}} {{path/to/input_file.ppm}} &gt; {{path/to/output_file.ppm}}"
+    },
+    {
+      "description": "Specify the displacement of the simulated light source to the left and the top of the image:",
+      "syntax": "ppmshadow -x {{left_offset}} -y {{top_offset}} {{path/to/input_file.ppm}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "pueue add",
+  "description": "Enqueue a task for execution. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Add any command to the default queue:",
+      "syntax": "pueue add {{command}}"
+    },
+    {
+      "description": "Pass a list of flags or arguments to a command when enqueuing:",
+      "syntax": "pueue add -- {{command --arg -f}}"
+    },
+    {
+      "description": "Add a command but do not start it if it's the first in a queue:",
+      "syntax": "pueue add --stashed -- {{rsync --archive --compress /local/directory /remote/directory}}"
+    },
+    {
+      "description": "Add a command to a group and start it immediately, see pueue group to manage groups:",
+      "syntax": "pueue add --immediate --group &quot;{{CPU_intensive}}&quot; -- {{ffmpeg -i input.mp4 frame_%d.png}}"
+    },
+    {
+      "description": "Add a command and start it after commands 9 and 12 finish successfully:",
+      "syntax": "pueue add --after {{9}} {{12}} --group &quot;{{torrents}}&quot; -- {{transmission-cli torrent_file.torrent}}"
+    },
+    {
+      "description": "Add a command with a label after some delay has passed, see pueue enqueue for valid datetime formats:",
+      "syntax": "pueue add --label &quot;{{compressing large file}}&quot; --delay &quot;{{wednesday 10:30pm}}&quot; -- &quot;{{7z a compressed_file.7z large_file.xml}}&quot;"
+    }
+  ]
+}

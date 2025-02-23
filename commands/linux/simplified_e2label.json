@@ -1,0 +1,10 @@
+{
+  "command": "e2label",
+  "description": "Change the label on an ext2/ext3/ext4 filesystem. More information: https://manned.org/e2label.",
+  "useCases": [
+    {
+      "description": "Change the volume label on a specific ext partition:",
+      "syntax": "e2label {{/dev/sda1}} &quot;{{label_name}}&quot;"
+    }
+  ]
+}

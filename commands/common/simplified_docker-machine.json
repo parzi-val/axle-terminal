@@ -1,0 +1,30 @@
+{
+  "command": "docker-machine",
+  "description": "Create and manage machines running Docker. More information: https://github.com/docker/machine.",
+  "useCases": [
+    {
+      "description": "List currently running Docker machines:",
+      "syntax": "docker-machine ls"
+    },
+    {
+      "description": "Create a new Docker machine with specific name:",
+      "syntax": "docker-machine create {{name}}"
+    },
+    {
+      "description": "Get the status of a machine:",
+      "syntax": "docker-machine status {{name}}"
+    },
+    {
+      "description": "Start a machine:",
+      "syntax": "docker-machine start {{name}}"
+    },
+    {
+      "description": "Stop a machine:",
+      "syntax": "docker-machine stop {{name}}"
+    },
+    {
+      "description": "Inspect information about a machine:",
+      "syntax": "docker-machine inspect {{name}}"
+    }
+  ]
+}

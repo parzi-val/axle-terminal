@@ -1,0 +1,22 @@
+{
+  "command": "dcode",
+  "description": "Recursively detect and decode strings, supporting hex, decimal, binary, base64, URL, FromChar encodings, Caesar ciphers, and MD5, SHA1, and SHA2 hashes. Warning: uses 3rd-party web services for MD5, SHA1 and SHA2 hash lookups. For sensitive data, use -s to avoid these services. More information: https://github.com/s0md3v/Decodify.",
+  "useCases": [
+    {
+      "description": "Recursively detect and decode a string:",
+      "syntax": "dcode &quot;{{NjM3YTQyNzQ1YTQ0NGUzMg==}}&quot;"
+    },
+    {
+      "description": "Rotate a string by the specified offset:",
+      "syntax": "dcode -rot {{11}} &quot;{{spwwz hzcwo}}&quot;"
+    },
+    {
+      "description": "Rotate a string by all 26 possible offsets:",
+      "syntax": "dcode -rot {{all}} &quot;{{bpgkta xh qtiitg iwpc sr}}&quot;"
+    },
+    {
+      "description": "Reverse a string:",
+      "syntax": "dcode -rev &quot;{{hello world}}&quot;"
+    }
+  ]
+}

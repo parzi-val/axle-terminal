@@ -1,0 +1,22 @@
+{
+  "command": "checkupdates",
+  "description": "Check pending updates in Arch Linux. More information: https://manned.org/checkupdates.8.",
+  "useCases": [
+    {
+      "description": "List pending updates:",
+      "syntax": "checkupdates"
+    },
+    {
+      "description": "List pending updates and download the packages to the pacman cache:",
+      "syntax": "checkupdates --download"
+    },
+    {
+      "description": "List pending updates using a specific pacman database:",
+      "syntax": "CHECKUPDATES_DB={{path/to/directory}} checkupdates"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "checkupdates --help"
+    }
+  ]
+}

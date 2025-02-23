@@ -1,0 +1,30 @@
+{
+  "command": "dotnet add package",
+  "description": "Add or update a .NET package reference in a project file. More information: https://learn.microsoft.com/dotnet/core/tools/dotnet-add-package.",
+  "useCases": [
+    {
+      "description": "Add a package to the project in the current directory:",
+      "syntax": "dotnet add package {{package}}"
+    },
+    {
+      "description": "Add a package to a specific project:",
+      "syntax": "dotnet add {{path/to/file.csproj}} package {{package}}"
+    },
+    {
+      "description": "Add a specific version of a package to the project:",
+      "syntax": "dotnet add package {{package}} --version {{1.0.0}}"
+    },
+    {
+      "description": "Add a package using a specific NuGet source:",
+      "syntax": "dotnet add package {{package}} --source {{https://api.nuget.org/v3/index.json}}"
+    },
+    {
+      "description": "Add a package only when targeting a specific framework:",
+      "syntax": "dotnet add package {{package}} --framework {{net7.0}}"
+    },
+    {
+      "description": "Add and specify the directory where to restore packages (~/.nuget/packages by default):",
+      "syntax": "dotnet add package {{package}} --package-directory {{path/to/directory}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "palmtopnm",
+  "description": "Convert a Palm bitmap file to a PNM image. More information: https://netpbm.sourceforge.net/doc/palmtopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a Palm bitmap to a PNM image:",
+      "syntax": "palmtopnm {{path/to/file.palm}} &gt; {{path/to/file.pnm}}"
+    },
+    {
+      "description": "Display information about the input file:",
+      "syntax": "palmtopnm -verbose {{path/to/file.palm}} &gt; {{path/to/file.pnm}}"
+    },
+    {
+      "description": "Convert the n'th rendition of the image contained in the input file:",
+      "syntax": "palmtopnm -rendition {{n}} {{path/to/file.palm}} &gt; {{path/to/file.pnm}}"
+    },
+    {
+      "description": "Write a histogram of the colors in the input file to stdout:",
+      "syntax": "palmtopnm -showhist {{path/to/file.palm}} &gt; {{path/to/file.pnm}}"
+    },
+    {
+      "description": "Output the transparent color of the input image if set:",
+      "syntax": "palmtopnm -transparent {{path/to/file.palm}}"
+    }
+  ]
+}

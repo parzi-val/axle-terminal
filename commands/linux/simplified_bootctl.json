@@ -1,0 +1,30 @@
+{
+  "command": "bootctl",
+  "description": "Control EFI firmware boot settings and manage boot loader. More information: https://manned.org/bootctl.",
+  "useCases": [
+    {
+      "description": "Show information about the system firmware and the bootloaders:",
+      "syntax": "bootctl status"
+    },
+    {
+      "description": "Show all available bootloader entries:",
+      "syntax": "bootctl list"
+    },
+    {
+      "description": "Set a flag to boot into the system firmware on the next boot (similar to sudo systemctl reboot --firmware-setup):",
+      "syntax": "sudo bootctl reboot-to-firmware true"
+    },
+    {
+      "description": "Specify the path to the EFI system partition (defaults to /efi/, /boot/ or /boot/efi):",
+      "syntax": "bootctl --esp-path={{/path/to/efi_system_partition/}}"
+    },
+    {
+      "description": "Install systemd-boot into the EFI system partition:",
+      "syntax": "sudo bootctl install"
+    },
+    {
+      "description": "Remove all installed versions of systemd-boot from the EFI system partition:",
+      "syntax": "sudo bootctl remove"
+    }
+  ]
+}

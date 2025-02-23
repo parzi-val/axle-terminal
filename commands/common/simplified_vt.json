@@ -1,0 +1,38 @@
+{
+  "command": "vt",
+  "description": "Command-line interface for VirusTotal. API key from a VirusTotal account is required for this command. More information: https://github.com/VirusTotal/vt-cli.",
+  "useCases": [
+    {
+      "description": "Scan a specific file for viruses:",
+      "syntax": "vt scan file {{path/to/file}}"
+    },
+    {
+      "description": "Scan a URL for viruses:",
+      "syntax": "vt scan url {{url}}"
+    },
+    {
+      "description": "Display information from a specific analysis:",
+      "syntax": "vt analysis {{file_id|analysis_id}}"
+    },
+    {
+      "description": "Download files in encrypted Zip format (requires premium account):",
+      "syntax": "vt download {{file_id}} --output {{path/to/directory}} --zip --zip-password {{password}}"
+    },
+    {
+      "description": "Initialize or re-initialize vt to enter API key interactively:",
+      "syntax": "vt init"
+    },
+    {
+      "description": "Display information about a domain:",
+      "syntax": "vt domain {{url}}"
+    },
+    {
+      "description": "Display information for a specific URL:",
+      "syntax": "vt url {{url}}"
+    },
+    {
+      "description": "Display information for a specific IP address:",
+      "syntax": "vt domain {{ip_address}}"
+    }
+  ]
+}

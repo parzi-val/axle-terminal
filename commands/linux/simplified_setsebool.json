@@ -1,0 +1,26 @@
+{
+  "command": "setsebool",
+  "description": "Set SELinux boolean value. See also: semanage-boolean, getsebool. More information: https://manned.org/setsebool.",
+  "useCases": [
+    {
+      "description": "Show the current setting of [a]ll booleans:",
+      "syntax": "getsebool -a"
+    },
+    {
+      "description": "Set or unset a boolean temporarily (non-persistent across reboot):",
+      "syntax": "sudo setsebool {{httpd_can_network_connect}} {{1|true|on|0|false|off}}"
+    },
+    {
+      "description": "Set or unset a boolean [p]ersistently:",
+      "syntax": "sudo setsebool -P {{container_use_devices}} {{1|true|on|0|false|off}}"
+    },
+    {
+      "description": "Set or unset multiple booleans [p]ersistently at once:",
+      "syntax": "sudo setsebool -P {{ftpd_use_fusefs=1 mount_anyfile=0 ...}}"
+    },
+    {
+      "description": "Set or unset a boolean persistently (alternative method using semanage-boolean):",
+      "syntax": "sudo semanage boolean {{-m|--modify}} {{-1|--on|-0|--off}} {{haproxy_connect_any}}"
+    }
+  ]
+}

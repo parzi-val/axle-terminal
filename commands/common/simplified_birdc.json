@@ -1,0 +1,38 @@
+{
+  "command": "birdc",
+  "description": "BIRD remote control. Retrieve information like routes from bird and perform configurations during runtime. More information: https://bird.network.cz/.",
+  "useCases": [
+    {
+      "description": "Open the remote control console:",
+      "syntax": "birdc"
+    },
+    {
+      "description": "Reload the configuration without restarting BIRD:",
+      "syntax": "birdc configure"
+    },
+    {
+      "description": "Show the current status of BIRD:",
+      "syntax": "birdc show status"
+    },
+    {
+      "description": "Show all configured protocols:",
+      "syntax": "birdc show protocols"
+    },
+    {
+      "description": "Show all details about a protocol:",
+      "syntax": "birdc show protocols {{upstream1}} all"
+    },
+    {
+      "description": "Show all routes that contain a specific AS number:",
+      "syntax": "birdc &quot;show route where bgp_path ~ [{{4242120045}}]&quot;"
+    },
+    {
+      "description": "Show all best routes:",
+      "syntax": "birdc show route primary"
+    },
+    {
+      "description": "Show all details of all routes from a given prefix:",
+      "syntax": "birdc show route for {{fd00:/8}} all"
+    }
+  ]
+}

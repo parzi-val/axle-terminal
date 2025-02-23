@@ -1,0 +1,38 @@
+{
+  "command": "lighthouse",
+  "description": "Analyzes web applications and web pages, collecting modern performance metrics and insights on developer best practices. More information: https://github.com/GoogleChrome/lighthouse.",
+  "useCases": [
+    {
+      "description": "Generate an HTML report for a specific website and save it to a file in the current directory:",
+      "syntax": "lighthouse {{https://example.com}}"
+    },
+    {
+      "description": "Generate a JSON report and print it:",
+      "syntax": "lighthouse --output {{json}} {{https://example.com}}"
+    },
+    {
+      "description": "Generate a JSON report and save it to a specific file:",
+      "syntax": "lighthouse --output {{json}} --output-path {{path/to/file.json}} {{https://example.com}}"
+    },
+    {
+      "description": "Generate a report using the browser in headless mode without logging to stdout:",
+      "syntax": "lighthouse --quiet --chrome-flags=&quot;{{--headless}}&quot; {{https://example.com}}"
+    },
+    {
+      "description": "Generate a report, using the HTTP header key/value pairs in the specified JSON file for all requests:",
+      "syntax": "lighthouse --extra-headers={{path/to/file.json}} {{https://example.com}}"
+    },
+    {
+      "description": "Generate a report for specific categories only:",
+      "syntax": "lighthouse --only-categories={{performance,accessibility,best-practices,seo,pwa}} {{https://example.com}}"
+    },
+    {
+      "description": "Generate a report with device emulation and all throttling disabled:",
+      "syntax": "lighthouse --screenEmulation.disabled --throttling-method={{provided}} --no-emulatedUserAgent {{https://example.com}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "lighthouse --help"
+    }
+  ]
+}

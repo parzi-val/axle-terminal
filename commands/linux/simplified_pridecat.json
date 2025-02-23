@@ -1,0 +1,26 @@
+{
+  "command": "pridecat",
+  "description": "Like cat but more colorful :). More information: https://github.com/lunasorcery/pridecat.",
+  "useCases": [
+    {
+      "description": "Print the contents of a file in pride colors to stdout:",
+      "syntax": "pridecat {{path/to/file}}"
+    },
+    {
+      "description": "Print contents of a file in trans colors:",
+      "syntax": "pridecat {{path/to/file}} --{{transgender|trans}}"
+    },
+    {
+      "description": "Alternate between lesbian and bisexual pride flags:",
+      "syntax": "pridecat {{path/to/file}} --lesbian --bi"
+    },
+    {
+      "description": "Print contents of a file with the background colors changed:",
+      "syntax": "pridecat {{path/to/file}} -b"
+    },
+    {
+      "description": "List directory contents in pride flag colors:",
+      "syntax": "ls | pridecat --{{flag}}"
+    }
+  ]
+}

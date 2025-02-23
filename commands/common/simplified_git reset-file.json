@@ -1,0 +1,14 @@
+{
+  "command": "git reset-file",
+  "description": "Revert a file to HEAD or a commit. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-reset-file.",
+  "useCases": [
+    {
+      "description": "Reset a file to HEAD:",
+      "syntax": "git reset-file {{path/to/file}}"
+    },
+    {
+      "description": "Reset a file to a specific commit:",
+      "syntax": "git reset-file {{path/to/file}} {{commit_hash}}"
+    }
+  ]
+}

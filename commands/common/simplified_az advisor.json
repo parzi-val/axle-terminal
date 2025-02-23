@@ -1,0 +1,26 @@
+{
+  "command": "az advisor",
+  "description": "Manage Azure subscription information. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/advisor.",
+  "useCases": [
+    {
+      "description": "List Azure Advisor configuration for the entire subscription:",
+      "syntax": "az advisor configuration list"
+    },
+    {
+      "description": "Show Azure Advisor configuration for the given subscription or resource group:",
+      "syntax": "az advisor configuration show --resource_group {{resource_group}}"
+    },
+    {
+      "description": "List Azure Advisor recommendations:",
+      "syntax": "az advisor recommendation list"
+    },
+    {
+      "description": "Enable Azure Advisor recommendations:",
+      "syntax": "az advisor recommendation enable --resource_group {{resource_group}}"
+    },
+    {
+      "description": "Disable Azure Advisor recommendations:",
+      "syntax": "az advisor recommendation disable --resource_group {{resource_group}}"
+    }
+  ]
+}

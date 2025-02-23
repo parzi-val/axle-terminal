@@ -1,0 +1,26 @@
+{
+  "command": "stripe",
+  "description": "Interact with a Stripe account. More information: https://docs.stripe.com/stripe-cli.",
+  "useCases": [
+    {
+      "description": "Follow the logs of activity on the account:",
+      "syntax": "stripe logs tail"
+    },
+    {
+      "description": "Listen for events, filtering on events with the name charge.succeeded and forwarding them to localhost:3000/events:",
+      "syntax": "stripe listen --events=&quot;{{charge.succeeded}}&quot; --forward-to=&quot;{{localhost:3000/events}}&quot;"
+    },
+    {
+      "description": "Send a test webhook event:",
+      "syntax": "stripe trigger {{charge.succeeded}}"
+    },
+    {
+      "description": "Create a customer:",
+      "syntax": "stripe customers create --email=&quot;{{test@example.com}}&quot; --name=&quot;{{Jenny Rosen}}&quot;"
+    },
+    {
+      "description": "Print to JSON:",
+      "syntax": "stripe listen --print-json"
+    }
+  ]
+}

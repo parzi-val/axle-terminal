@@ -1,0 +1,30 @@
+{
+  "command": "topgrade",
+  "description": "Update all applications on the system. More information: https://github.com/r-darwish/topgrade.",
+  "useCases": [
+    {
+      "description": "Run updates:",
+      "syntax": "topgrade"
+    },
+    {
+      "description": "Say yes to all updates:",
+      "syntax": "topgrade -y"
+    },
+    {
+      "description": "Cleanup temporary/old files:",
+      "syntax": "topgrade -c"
+    },
+    {
+      "description": "Disable a certain update operation:",
+      "syntax": "topgrade --disable {{operation}}"
+    },
+    {
+      "description": "Only perform a certain update operation:",
+      "syntax": "topgrade --only {{operation}}"
+    },
+    {
+      "description": "Edit the configuration file with default editor:",
+      "syntax": "topgrade --edit-config"
+    }
+  ]
+}

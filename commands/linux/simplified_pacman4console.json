@@ -1,0 +1,22 @@
+{
+  "command": "pacman4console",
+  "description": "A text-based console game inspired by the original Pacman. More information: https://github.com/YoctoForBeaglebone/pacman4console.",
+  "useCases": [
+    {
+      "description": "Start a game at Level 1:",
+      "syntax": "pacman4console"
+    },
+    {
+      "description": "Start a game on a certain level (there are nine official levels):",
+      "syntax": "pacman4console --level={{level_number}}"
+    },
+    {
+      "description": "Start the pacman4console level editor, saving to a specified text file:",
+      "syntax": "pacman4consoleedit {{path/to/level_file}}"
+    },
+    {
+      "description": "Play a custom level:",
+      "syntax": "pacman4console --level={{path/to/level_file}}"
+    }
+  ]
+}

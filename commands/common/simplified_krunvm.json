@@ -1,0 +1,26 @@
+{
+  "command": "krunvm",
+  "description": "Create MicroVMs from OCI images. More information: https://github.com/containers/krunvm.",
+  "useCases": [
+    {
+      "description": "Create MicroVM based on Fedora:",
+      "syntax": "krunvm create {{docker.io/fedora}} --cpus {{number_of_vcpus}} --mem {{memory_in_megabytes}} --name &quot;{{name}}&quot;"
+    },
+    {
+      "description": "Start a specific image:",
+      "syntax": "krunvm start &quot;{{image_name}}&quot;"
+    },
+    {
+      "description": "List images:",
+      "syntax": "krunvm list"
+    },
+    {
+      "description": "Change a specific image:",
+      "syntax": "krunvm changevm --cpus {{number_of_vcpus}} --mem {{memory_in_megabytes}} --name &quot;{{new_vm_name}}&quot; &quot;{{current_vm_name}}&quot;"
+    },
+    {
+      "description": "Delete a specific image:",
+      "syntax": "krunvm delete &quot;{{image_name}}&quot;"
+    }
+  ]
+}

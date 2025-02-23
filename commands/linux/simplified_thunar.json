@@ -1,0 +1,18 @@
+{
+  "command": "thunar",
+  "description": "Graphical file manager for XFCE desktop environments. See also: caja, dolphin, nautilus, mc. More information: https://docs.xfce.org/xfce/thunar/start.",
+  "useCases": [
+    {
+      "description": "Open a new window showing the current directory:",
+      "syntax": "thunar"
+    },
+    {
+      "description": "Open the bulk rename utility:",
+      "syntax": "thunar --bulk-rename"
+    },
+    {
+      "description": "Close all open thunar windows:",
+      "syntax": "thunar --quit"
+    }
+  ]
+}

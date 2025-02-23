@@ -1,0 +1,38 @@
+{
+  "command": "pkgfile",
+  "description": "Search files from packages in the official repositories on Arch-based systems. See also: pacman files, describing the usage of pacman --files. More information: https://manned.org/pkgfile.",
+  "useCases": [
+    {
+      "description": "Synchronize the pkgfile database:",
+      "syntax": "sudo pkgfile --update"
+    },
+    {
+      "description": "Search for a package that owns a specific file:",
+      "syntax": "pkgfile {{filename}}"
+    },
+    {
+      "description": "List all files provided by a package:",
+      "syntax": "pkgfile --list {{package}}"
+    },
+    {
+      "description": "List executables provided by a package:",
+      "syntax": "pkgfile --list --binaries {{package}}"
+    },
+    {
+      "description": "Search for a package that owns a specific file using case-insensitive matching:",
+      "syntax": "pkgfile --ignorecase {{filename}}"
+    },
+    {
+      "description": "Search for a package that owns a specific file in the bin or sbin directory:",
+      "syntax": "pkgfile --binaries {{filename}}"
+    },
+    {
+      "description": "Search for a package that owns a specific file, displaying the package version:",
+      "syntax": "pkgfile --verbose {{filename}}"
+    },
+    {
+      "description": "Search for a package that owns a specific file in a specific repository:",
+      "syntax": "pkgfile --repo {{repository_name}} {{filename}}"
+    }
+  ]
+}

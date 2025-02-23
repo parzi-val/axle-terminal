@@ -1,0 +1,18 @@
+{
+  "command": "picom",
+  "description": "Standalone compositor for Xorg. More information: https://manned.org/picom.",
+  "useCases": [
+    {
+      "description": "Enable picom during a session:",
+      "syntax": "picom &amp;"
+    },
+    {
+      "description": "Start picom as a background process:",
+      "syntax": "picom -b"
+    },
+    {
+      "description": "Use a custom configuration file:",
+      "syntax": "picom --config {{path/to/config_file}}"
+    }
+  ]
+}

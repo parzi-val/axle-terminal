@@ -1,0 +1,18 @@
+{
+  "command": "setfattr",
+  "description": "Set extended file attributes. More information: https://manned.org/setfattr.",
+  "useCases": [
+    {
+      "description": "Set name of attribute for file:",
+      "syntax": "setfattr -n user.{{attribute_name}} {{path/to/file}}"
+    },
+    {
+      "description": "Set a user-defined value of an extended attribute on a file:",
+      "syntax": "setfattr -n user.{{attribute_name}} -v &quot;{{value}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Remove a specific attribute of a file:",
+      "syntax": "setfattr -x user.{{attribute_name}} {{path/to/file}}"
+    }
+  ]
+}

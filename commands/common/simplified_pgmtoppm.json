@@ -1,0 +1,14 @@
+{
+  "command": "pgmtoppm",
+  "description": "Colorize a PGM image. More information: https://netpbm.sourceforge.net/doc/pgmtoppm.html.",
+  "useCases": [
+    {
+      "description": "Map all greyscale values of the input image to all colors between the two specified colors:",
+      "syntax": "pgmtoppm -black {{red}} --white {{blue}} {{path/to/input.pgm}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Map all greyscale values of the input image to colors according to the specified colormap:",
+      "syntax": "pgmtoppm -map {{path/to/colormap.ppm}} {{path/to/input.pgm}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

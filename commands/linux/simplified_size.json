@@ -1,0 +1,22 @@
+{
+  "command": "size",
+  "description": "Display the sizes of sections inside binary files. More information: https://sourceware.org/binutils/docs/binutils/size.html.",
+  "useCases": [
+    {
+      "description": "Display the size of sections in a given object or executable file:",
+      "syntax": "size {{path/to/file}}"
+    },
+    {
+      "description": "Display the size of sections in a given object or executable file in [o]ctal:",
+      "syntax": "size {{-o|--radix=8}} {{path/to/file}}"
+    },
+    {
+      "description": "Display the size of sections in a given object or executable file in [d]ecimal:",
+      "syntax": "size {{-d|--radix=10}} {{path/to/file}}"
+    },
+    {
+      "description": "Display the size of sections in a given object or executable file in he[x]adecimal:",
+      "syntax": "size {{-x|--radix=16}} {{path/to/file}}"
+    }
+  ]
+}

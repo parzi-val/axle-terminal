@@ -1,0 +1,26 @@
+{
+  "command": "msfconsole",
+  "description": "Console for the Metasploit Framework. More information: https://docs.rapid7.com/metasploit/msf-overview.",
+  "useCases": [
+    {
+      "description": "Launch the console:",
+      "syntax": "msfconsole"
+    },
+    {
+      "description": "Launch the console [q]uietly without any banner:",
+      "syntax": "msfconsole --quiet"
+    },
+    {
+      "description": "Do [n]ot enable database support:",
+      "syntax": "msfconsole --no-database"
+    },
+    {
+      "description": "E[x]ecute console commands (Note: use ; for passing multiple commands):",
+      "syntax": "msfconsole --execute-command &quot;{{use auxiliary/server/capture/ftp; set SRVHOST 0.0.0.0; set SRVPORT 21; run}}&quot;"
+    },
+    {
+      "description": "Display [v]ersion:",
+      "syntax": "msfconsole --version"
+    }
+  ]
+}

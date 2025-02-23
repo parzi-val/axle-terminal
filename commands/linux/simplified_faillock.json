@@ -1,0 +1,26 @@
+{
+  "command": "faillock",
+  "description": "Display and modify authentication failure record files. More information: https://manned.org/faillock.",
+  "useCases": [
+    {
+      "description": "List login failures of the current user:",
+      "syntax": "faillock"
+    },
+    {
+      "description": "Reset the failure records of the current user:",
+      "syntax": "faillock --reset"
+    },
+    {
+      "description": "List login failures of all users:",
+      "syntax": "sudo faillock"
+    },
+    {
+      "description": "List login failures of the specified user:",
+      "syntax": "sudo faillock --user {{user}}"
+    },
+    {
+      "description": "Reset the failure records of the specified user:",
+      "syntax": "sudo faillock --user {{user}} --reset"
+    }
+  ]
+}

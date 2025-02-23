@@ -1,0 +1,38 @@
+{
+  "command": "kcat",
+  "description": "Apache Kafka producer and consumer tool. More information: https://github.com/edenhill/kcat.",
+  "useCases": [
+    {
+      "description": "Consume messages starting with the newest offset:",
+      "syntax": "kcat -C -t {{topic}} -b {{brokers}}"
+    },
+    {
+      "description": "Consume messages starting with the oldest offset and exit after the last message is received:",
+      "syntax": "kcat -C -t {{topic}} -b {{brokers}} -o beginning -e"
+    },
+    {
+      "description": "Consume messages as a Kafka consumer group:",
+      "syntax": "kcat -G {{group_id}} {{topic}} -b {{brokers}}"
+    },
+    {
+      "description": "Publish message by reading from stdin:",
+      "syntax": "echo {{message}} | kcat -P -t {{topic}} -b {{brokers}}"
+    },
+    {
+      "description": "Publish messages by reading from a file:",
+      "syntax": "kcat -P -t {{topic}} -b {{brokers}} {{path/to/file}}"
+    },
+    {
+      "description": "List metadata for all topics and brokers:",
+      "syntax": "kcat -L -b {{brokers}}"
+    },
+    {
+      "description": "List metadata for a specific topic:",
+      "syntax": "kcat -L -t {{topic}} -b {{brokers}}"
+    },
+    {
+      "description": "Get offset for a topic/partition for a specific point in time:",
+      "syntax": "kcat -Q -t {{topic}}:{{partition}}:{{unix_timestamp}} -b {{brokers}}"
+    }
+  ]
+}

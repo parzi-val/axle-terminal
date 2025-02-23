@@ -1,0 +1,18 @@
+{
+  "command": "hr",
+  "description": "Print a horizontal rule in the terminal. More information: https://github.com/LuRsT/hr.",
+  "useCases": [
+    {
+      "description": "Print a horizontal rule:",
+      "syntax": "hr"
+    },
+    {
+      "description": "Print a horizontal rule with a custom string:",
+      "syntax": "hr {{string}}"
+    },
+    {
+      "description": "Print a multiline horizontal rule:",
+      "syntax": "hr {{string1 string2 ...}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "kubens",
+  "description": "Utility to switch between Kubernetes namespaces. More information: https://github.com/ahmetb/kubectx.",
+  "useCases": [
+    {
+      "description": "List the namespaces:",
+      "syntax": "kubens"
+    },
+    {
+      "description": "Change the active namespace:",
+      "syntax": "kubens {{name}}"
+    },
+    {
+      "description": "Switch to the previous namespace:",
+      "syntax": "kubens -"
+    }
+  ]
+}

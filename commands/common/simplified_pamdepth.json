@@ -1,0 +1,10 @@
+{
+  "command": "pamdepth",
+  "description": "Reduce the depth (i.e. color resolution) in an image. More information: https://netpbm.sourceforge.net/doc/pamdepth.html.",
+  "useCases": [
+    {
+      "description": "Read a PBM image, set its maxval and save it to a file:",
+      "syntax": "pamdepth {{maxval}} {{path/to/image.pbm}} &gt; {{path/to/file.pbm}}"
+    }
+  ]
+}

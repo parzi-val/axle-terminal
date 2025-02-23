@@ -1,0 +1,38 @@
+{
+  "command": "ip rule",
+  "description": "IP routing policy database management. More information: https://manned.org/ip-rule.",
+  "useCases": [
+    {
+      "description": "Display the routing policy:",
+      "syntax": "ip rule {{show|list}}"
+    },
+    {
+      "description": "Add a new rule based on packet source addresses:",
+      "syntax": "sudo ip rule add from {{192.168.178.2/32}}"
+    },
+    {
+      "description": "Add a new rule based on packet destination addresses:",
+      "syntax": "sudo ip rule add to {{192.168.178.2/32}}"
+    },
+    {
+      "description": "Delete a rule based on packet source addresses:",
+      "syntax": "sudo ip rule delete from {{192.168.178.2/32}}"
+    },
+    {
+      "description": "Delete a rule based on packet destination addresses:",
+      "syntax": "sudo ip rule delete to {{192.168.178.2/32}}"
+    },
+    {
+      "description": "Flush all deleted rules:",
+      "syntax": "ip rule flush"
+    },
+    {
+      "description": "Save all rules to a file:",
+      "syntax": "ip rule save &gt; {{path/to/ip_rules.dat}}"
+    },
+    {
+      "description": "Restore all rules from a file:",
+      "syntax": "ip rule restore &lt; {{path/to/ip_rules.dat}}"
+    }
+  ]
+}

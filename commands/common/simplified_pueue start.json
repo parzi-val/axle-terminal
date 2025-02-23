@@ -1,0 +1,26 @@
+{
+  "command": "pueue start",
+  "description": "Resume operation of tasks or groups of tasks. See also: pueue pause. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Resume all tasks in the default group:",
+      "syntax": "pueue start"
+    },
+    {
+      "description": "Resume a specific task:",
+      "syntax": "pueue start {{task_id}}"
+    },
+    {
+      "description": "Resume multiple tasks at once:",
+      "syntax": "pueue start {{task_id}} {{task_id}}"
+    },
+    {
+      "description": "Resume all tasks and start their children:",
+      "syntax": "pueue start --all --children"
+    },
+    {
+      "description": "Resume all tasks in a specific group:",
+      "syntax": "pueue start group {{group_name}}"
+    }
+  ]
+}

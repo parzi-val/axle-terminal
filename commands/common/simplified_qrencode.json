@@ -1,0 +1,22 @@
+{
+  "command": "qrencode",
+  "description": "QR Code generator. Supports PNG and EPS. More information: https://fukuchi.org/works/qrencode.",
+  "useCases": [
+    {
+      "description": "Convert a string to a QR code and save to an output file:",
+      "syntax": "qrencode -o {{path/to/output_file.png}} {{string}}"
+    },
+    {
+      "description": "Convert an input file to a QR code and save to an output file:",
+      "syntax": "qrencode -o {{path/to/output_file.png}} -r {{path/to/input_file}}"
+    },
+    {
+      "description": "Convert a string to a QR code and print it in terminal:",
+      "syntax": "qrencode -t ansiutf8 {{string}}"
+    },
+    {
+      "description": "Convert input from pipe to a QR code and print it in terminal:",
+      "syntax": "echo {{string}} | qrencode -t ansiutf8"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "enscript",
+  "description": "Convert text files to PostScript, HTML, RTF, ANSI, and overstrikes. More information: https://www.gnu.org/software/enscript.",
+  "useCases": [
+    {
+      "description": "Generate a PostScript file from a text file:",
+      "syntax": "enscript {{path/to/input_file}} --output={{path/to/output_file}}"
+    },
+    {
+      "description": "Generate a file in a different language than PostScript:",
+      "syntax": "enscript {{path/to/input_file}} --language={{html|rtf|...}} --output={{path/to/output_file}}"
+    },
+    {
+      "description": "Generate a PostScript file with a landscape layout, splitting the page into columns (maximum 9):",
+      "syntax": "enscript {{path/to/input_file}} --columns={{num}} --landscape --output={{path/to/output_file}}"
+    },
+    {
+      "description": "Display available syntax highlighting languages and file formats:",
+      "syntax": "enscript --help-highlight"
+    },
+    {
+      "description": "Generate a PostScript file with syntax highlighting and color for a specified language:",
+      "syntax": "enscript {{path/to/input_file}} --color=1 --highlight={{language}} --output={{path/to/output_file}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "skicka",
+  "description": "Manage your Google Drive. More information: https://github.com/google/skicka.",
+  "useCases": [
+    {
+      "description": "Upload a file/folder to Google Drive:",
+      "syntax": "skicka upload {{path/to/local}} {{path/to/remote}}"
+    },
+    {
+      "description": "Download a file/folder from Google Drive:",
+      "syntax": "skicka download {{path/to/remote}} {{path/to/local}}"
+    },
+    {
+      "description": "List files:",
+      "syntax": "skicka ls {{path/to/folder}}"
+    },
+    {
+      "description": "Show amount of space used by children folders:",
+      "syntax": "skicka du {{path/to/parent/folder}}"
+    },
+    {
+      "description": "Create a folder:",
+      "syntax": "skicka mkdir {{path/to/folder}}"
+    },
+    {
+      "description": "Delete a file:",
+      "syntax": "skicka rm {{path/to/file}}"
+    }
+  ]
+}

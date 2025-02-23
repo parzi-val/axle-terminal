@@ -1,0 +1,34 @@
+{
+  "command": "kubectl delete",
+  "description": "Delete Kubernetes resources. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#delete.",
+  "useCases": [
+    {
+      "description": "Delete a specific pod:",
+      "syntax": "kubectl delete pod {{pod_name}}"
+    },
+    {
+      "description": "Delete a specific deployment:",
+      "syntax": "kubectl delete deployment {{deployment_name}}"
+    },
+    {
+      "description": "Delete a specific node:",
+      "syntax": "kubectl delete node {{node_name}}"
+    },
+    {
+      "description": "Delete all pods in a specified namespace:",
+      "syntax": "kubectl delete pods --all --namespace {{namespace}}"
+    },
+    {
+      "description": "Delete all deployments and services in a specified namespace:",
+      "syntax": "kubectl delete deployments,services --all --namespace {{namespace}}"
+    },
+    {
+      "description": "Delete all nodes:",
+      "syntax": "kubectl delete nodes --all"
+    },
+    {
+      "description": "Delete resources defined in a YAML manifest:",
+      "syntax": "kubectl delete --filename {{path/to/manifest.yaml}}"
+    }
+  ]
+}

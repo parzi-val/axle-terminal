@@ -1,0 +1,10 @@
+{
+  "command": "hub init",
+  "description": "Initializes a new local Git repository. More information: https://hub.github.com/hub-init.1.html.",
+  "useCases": [
+    {
+      "description": "Initialize a new local repository:",
+      "syntax": "hub init"
+    }
+  ]
+}

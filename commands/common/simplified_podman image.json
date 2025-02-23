@@ -1,0 +1,22 @@
+{
+  "command": "podman image",
+  "description": "Manage Docker images. See also: podman build, podman import, and podman pull. More information: https://docs.podman.io/en/latest/markdown/podman-image.1.html.",
+  "useCases": [
+    {
+      "description": "List local Docker images:",
+      "syntax": "podman image ls"
+    },
+    {
+      "description": "Delete unused local Docker images:",
+      "syntax": "podman image prune"
+    },
+    {
+      "description": "Delete all unused images (not just those without a tag):",
+      "syntax": "podman image prune --all"
+    },
+    {
+      "description": "Show the history of a local Docker image:",
+      "syntax": "podman image history {{image}}"
+    }
+  ]
+}

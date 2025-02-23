@@ -1,0 +1,10 @@
+{
+  "command": "import",
+  "description": "This command is an alias of magick import.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr magick import"
+    }
+  ]
+}

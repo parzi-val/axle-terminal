@@ -1,0 +1,30 @@
+{
+  "command": "vegeta",
+  "description": "A command-line utility and a library for HTTP load testing. See also ab. More information: https://github.com/tsenart/vegeta.",
+  "useCases": [
+    {
+      "description": "Launch an attack lasting 30 seconds:",
+      "syntax": "echo &quot;{{GET https://example.com}}&quot; | vegeta attack -duration={{30s}}"
+    },
+    {
+      "description": "Launch an attack on a server with a self-signed HTTPS certificate:",
+      "syntax": "echo &quot;{{GET https://example.com}}&quot; | vegeta attack -insecure -duration={{30s}}"
+    },
+    {
+      "description": "Launch an attack with a rate of 10 requests per second:",
+      "syntax": "echo &quot;{{GET https://example.com}}&quot; | vegeta attack -duration={{30s}} -rate={{10}}"
+    },
+    {
+      "description": "Launch an attack and display a report:",
+      "syntax": "echo &quot;{{GET https://example.com}}&quot; | vegeta attack -duration={{30s}} | vegeta report"
+    },
+    {
+      "description": "Launch an attack and plot the results on a graph (latency over time):",
+      "syntax": "echo &quot;{{GET https://example.com}}&quot; | vegeta attack -duration={{30s}} | vegeta plot &gt; {{path/to/results.html}}"
+    },
+    {
+      "description": "Launch an attack against multiple URLs from a file:",
+      "syntax": "vegeta attack -duration={{30s}} -targets={{requests.txt}} | vegeta report"
+    }
+  ]
+}

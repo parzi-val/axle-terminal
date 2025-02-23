@@ -1,0 +1,14 @@
+{
+  "command": "vgchange",
+  "description": "Change the attributes of a Logical Volume Manager (LVM) volume group. See also: lvm. More information: https://manned.org/vgchange.",
+  "useCases": [
+    {
+      "description": "Change the activation status of logical volumes in all volume groups:",
+      "syntax": "sudo vgchange --activate {{y|n}}"
+    },
+    {
+      "description": "Change the activation status of logical volumes in the specified volume group (determine with vgscan):",
+      "syntax": "sudo vgchange --activate {{y|n}} {{volume_group}}"
+    }
+  ]
+}

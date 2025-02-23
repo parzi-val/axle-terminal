@@ -1,0 +1,18 @@
+{
+  "command": "ipptool",
+  "description": "Issue IPP requests and receive printer's/server's responses. See also: ippfind, ippeveprinter. More information: https://openprinting.github.io/cups/doc/man-ipptool.html.",
+  "useCases": [
+    {
+      "description": "Get all attributes and their values supported by a printer:",
+      "syntax": "ipptool ipp://{{printer_uri}} get-completed-jobs.test"
+    },
+    {
+      "description": "Get the list of completed jobs of a printer:",
+      "syntax": "ipptool ipp://{{printer_uri}} get-completed-jobs.test"
+    },
+    {
+      "description": "Send an email notification when a printer changes:",
+      "syntax": "ipptool -d recipient=mailto:{{email}} ipp://{{printer_uri}} create-printer-subscription.test"
+    }
+  ]
+}

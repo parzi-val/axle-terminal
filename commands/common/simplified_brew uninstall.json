@@ -1,0 +1,14 @@
+{
+  "command": "brew uninstall",
+  "description": "Uninstall a Homebrew formula/cask. Use brew autoremove to remove unused dependencies afterwards. More information: https://docs.brew.sh/Manpage#uninstall-remove-rm-options-installed_formulainstalled_cask-.",
+  "useCases": [
+    {
+      "description": "Uninstall a formula/cask:",
+      "syntax": "brew uninstall {{formula|cask}}"
+    },
+    {
+      "description": "Uninstall a cask and remove all associated files:",
+      "syntax": "brew uninstall --zap {{cask}}"
+    }
+  ]
+}

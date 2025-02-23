@@ -1,0 +1,22 @@
+{
+  "command": "virt-qemu-run",
+  "description": "Experimental tool to run a QEMU Guest VM independent of libvirtd. More information: https://libvirt.org/manpages/virt-qemu-run.html.",
+  "useCases": [
+    {
+      "description": "Run a QEMU virtual machine:",
+      "syntax": "virt-qemu-run {{path/to/guest.xml}}"
+    },
+    {
+      "description": "Run a QEMU virtual machine and store the state in a specific directory:",
+      "syntax": "virt-qemu-run --root={{path/to/directory}} {{path/to/guest.xml}}"
+    },
+    {
+      "description": "Run a QEMU virtual machine and display verbose information about the startup:",
+      "syntax": "virt-qemu-run --verbose {{path/to/guest.xml}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "virt-qemu-run --help"
+    }
+  ]
+}

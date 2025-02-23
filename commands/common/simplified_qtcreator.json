@@ -1,0 +1,30 @@
+{
+  "command": "qtcreator",
+  "description": "Cross-platform IDE for Qt applications. More information: https://doc.qt.io/qtcreator/creator-cli.html.",
+  "useCases": [
+    {
+      "description": "Start Qt Creator:",
+      "syntax": "qtcreator"
+    },
+    {
+      "description": "Start Qt Creator and restore the last session:",
+      "syntax": "qtcreator -lastsession"
+    },
+    {
+      "description": "Start Qt Creator but don't load the specified plugin:",
+      "syntax": "qtcreator -noload {{plugin}}"
+    },
+    {
+      "description": "Start Qt Creator but don't load any plugins:",
+      "syntax": "qtcreator -noload {{all}}"
+    },
+    {
+      "description": "Start Qt Creator in presentation mode with pop-ups for keyboard shortcuts:",
+      "syntax": "qtcreator -presentationMode"
+    },
+    {
+      "description": "Start Qt Creator and show the diff from a specific commit:",
+      "syntax": "qtcreator -git-show {{commit}}"
+    }
+  ]
+}

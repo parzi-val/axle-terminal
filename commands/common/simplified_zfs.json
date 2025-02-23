@@ -1,0 +1,30 @@
+{
+  "command": "zfs",
+  "description": "Manage ZFS filesystems. More information: https://manned.org/zfs.",
+  "useCases": [
+    {
+      "description": "List all available zfs filesystems:",
+      "syntax": "zfs list"
+    },
+    {
+      "description": "Create a new ZFS filesystem:",
+      "syntax": "zfs create {{pool_name/filesystem_name}}"
+    },
+    {
+      "description": "Delete a ZFS filesystem:",
+      "syntax": "zfs destroy {{pool_name/filesystem_name}}"
+    },
+    {
+      "description": "Create a Snapshot of a ZFS filesystem:",
+      "syntax": "zfs snapshot {{pool_name/filesystem_name}}@{{snapshot_name}}"
+    },
+    {
+      "description": "Enable compression on a filesystem:",
+      "syntax": "zfs set compression=on {{pool_name/filesystem_name}}"
+    },
+    {
+      "description": "Change mountpoint for a filesystem:",
+      "syntax": "zfs set mountpoint={{/my/mount/path}} {{pool_name/filesystem_name}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "tr",
+  "description": "Translate characters: run replacements based on single characters and character sets. More information: https://www.gnu.org/software/coreutils/manual/html_node/tr-invocation.html.",
+  "useCases": [
+    {
+      "description": "Replace all occurrences of a character in a file, and print the result:",
+      "syntax": "tr {{find_character}} {{replace_character}} &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Replace all occurrences of a character from another command's output:",
+      "syntax": "echo {{text}} | tr {{find_character}} {{replace_character}}"
+    },
+    {
+      "description": "Map each character of the first set to the corresponding character of the second set:",
+      "syntax": "tr '{{abcd}}' '{{jkmn}}' &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Delete all occurrences of the specified set of characters from the input:",
+      "syntax": "tr -d '{{input_characters}}' &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Compress a series of identical characters to a single character:",
+      "syntax": "tr -s '{{input_characters}}' &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Translate the contents of a file to upper-case:",
+      "syntax": "tr &quot;[:lower:]&quot; &quot;[:upper:]&quot; &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Strip out non-printable characters from a file:",
+      "syntax": "tr -cd &quot;[:print:]&quot; &lt; {{path/to/file}}"
+    }
+  ]
+}

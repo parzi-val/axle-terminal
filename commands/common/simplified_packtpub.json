@@ -1,0 +1,34 @@
+{
+  "command": "packtpub",
+  "description": "Download freely offered books from packtpub.com. More information: https://github.com/vladimyr/packtpub-cli.",
+  "useCases": [
+    {
+      "description": "Download the daily offer book into the current directory with the specified book format (defaults to pdf):",
+      "syntax": "packtpub download --type {{pdf|ebup|mobi}}"
+    },
+    {
+      "description": "Download the daily offer book into the specified directory:",
+      "syntax": "packtpub download --dir {{path/to/directory}}"
+    },
+    {
+      "description": "Start an interactive login to packtpub.com:",
+      "syntax": "packtpub login"
+    },
+    {
+      "description": "Log out from packtpub.com:",
+      "syntax": "packtpub logout"
+    },
+    {
+      "description": "Display the daily offer:",
+      "syntax": "packtpub view-offer"
+    },
+    {
+      "description": "Open the daily offer in the default web browser:",
+      "syntax": "packtpub view-offer"
+    },
+    {
+      "description": "Display the currently logged-in user:",
+      "syntax": "packtpub whoami"
+    }
+  ]
+}

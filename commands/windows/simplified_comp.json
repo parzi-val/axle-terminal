@@ -1,0 +1,38 @@
+{
+  "command": "comp",
+  "description": "Compare the contents of two files or sets of files. Use wildcards (*) to compare sets of files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/comp.",
+  "useCases": [
+    {
+      "description": "Compare files interactively:",
+      "syntax": "comp"
+    },
+    {
+      "description": "Compare two specified files:",
+      "syntax": "comp {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compare two sets of files:",
+      "syntax": "comp {{path\\to\\directory1}}\\* {{path\\to\\directory2}}\\*"
+    },
+    {
+      "description": "Display differences in [d]ecimal format:",
+      "syntax": "comp /d {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Display differences in [a]SCII format:",
+      "syntax": "comp /a {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Display [l]ine numbers for differences:",
+      "syntax": "comp /l {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compare files [c]ase-insensitively:",
+      "syntax": "comp /c {{path\\to\\file1}} {{path\\to\\file2}}"
+    },
+    {
+      "description": "Compare only the first 5 lines of each file:",
+      "syntax": "comp /n=5 {{path\\to\\file1}} {{path\\to\\file2}}"
+    }
+  ]
+}

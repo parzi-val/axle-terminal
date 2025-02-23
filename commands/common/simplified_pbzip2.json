@@ -1,0 +1,22 @@
+{
+  "command": "pbzip2",
+  "description": "A parallel implementation of the bzip2 file compressor. See also: bzip2, tar. More information: https://manned.org/pbzip2.",
+  "useCases": [
+    {
+      "description": "Compress a file:",
+      "syntax": "pbzip2 {{path/to/file}}"
+    },
+    {
+      "description": "Compress a file using the specified number of processors:",
+      "syntax": "pbzip2 -p{{4}} {{path/to/file}}"
+    },
+    {
+      "description": "[d]ecompress a file:",
+      "syntax": "pbzip2 --decompress {{path/to/compressed_file.bz2}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pbzip2 -h"
+    }
+  ]
+}

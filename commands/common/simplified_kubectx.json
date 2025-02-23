@@ -1,0 +1,30 @@
+{
+  "command": "kubectx",
+  "description": "Utility to manage and switch between kubectl contexts. More information: https://github.com/ahmetb/kubectx.",
+  "useCases": [
+    {
+      "description": "List the contexts:",
+      "syntax": "kubectx"
+    },
+    {
+      "description": "Switch to a named context:",
+      "syntax": "kubectx {{name}}"
+    },
+    {
+      "description": "Switch to the previous context:",
+      "syntax": "kubectx -"
+    },
+    {
+      "description": "Rename a named context:",
+      "syntax": "kubectx {{alias}}={{name}}"
+    },
+    {
+      "description": "Show the current named context:",
+      "syntax": "kubectx -c"
+    },
+    {
+      "description": "Delete a named context:",
+      "syntax": "kubectx -d {{name}}"
+    }
+  ]
+}

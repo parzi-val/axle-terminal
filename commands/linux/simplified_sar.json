@@ -1,0 +1,30 @@
+{
+  "command": "sar",
+  "description": "Monitor performance of various Linux subsystems. More information: https://manned.org/sar.",
+  "useCases": [
+    {
+      "description": "Report I/O and transfer rate issued to physical devices, one per second (press CTRL+C to quit):",
+      "syntax": "sar -b {{1}}"
+    },
+    {
+      "description": "Report a total of 10 network device statistics, one per 2 seconds:",
+      "syntax": "sar -n DEV {{2}} {{10}}"
+    },
+    {
+      "description": "Report CPU utilization, one per 2 seconds:",
+      "syntax": "sar -u ALL {{2}}"
+    },
+    {
+      "description": "Report a total of 20 memory utilization statistics, one per second:",
+      "syntax": "sar -r ALL {{1}} {{20}}"
+    },
+    {
+      "description": "Report the run queue length and load averages, one per second:",
+      "syntax": "sar -q {{1}}"
+    },
+    {
+      "description": "Report paging statistics, one per 5 seconds:",
+      "syntax": "sar -B {{5}}"
+    }
+  ]
+}

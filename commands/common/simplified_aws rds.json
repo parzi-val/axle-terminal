@@ -1,0 +1,38 @@
+{
+  "command": "aws rds",
+  "description": "Use AWS Relational Database Service, a web service for setting up, operating and scaling relational databases. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/index.html.",
+  "useCases": [
+    {
+      "description": "Display help for a specific RDS subcommand:",
+      "syntax": "aws rds {{subcommand}} help"
+    },
+    {
+      "description": "Stop instance:",
+      "syntax": "aws rds stop-db-instance --db-instance-identifier {{instance_identifier}}"
+    },
+    {
+      "description": "Start instance:",
+      "syntax": "aws rds start-db-instance --db-instance-identifier {{instance_identifier}}"
+    },
+    {
+      "description": "Modify an RDS instance:",
+      "syntax": "aws rds modify-db-instance --db-instance-identifier {{instance_identifier}} {{parameters}} --apply-immediately"
+    },
+    {
+      "description": "Apply updates to an RDS instance:",
+      "syntax": "aws rds apply-pending-maintenance-action --resource-identifier {{database_arn}} --apply-action {{system-update}} --opt-in-type {{immediate}}"
+    },
+    {
+      "description": "Change an instance identifier:",
+      "syntax": "aws rds modify-db-instance --db-instance-identifier {{old_instance_identifier}} --new-db-instance-identifier {{new_instance_identifier}}"
+    },
+    {
+      "description": "Reboot an instance:",
+      "syntax": "aws rds reboot-db-instance --db-instance-identifier {{instance_identifier}}"
+    },
+    {
+      "description": "Delete an instance:",
+      "syntax": "aws rds delete-db-instance --db-instance-identifier {{instance_identifier}} --final-db-snapshot-identifier {{snapshot_identifier}} --delete-automated-backups"
+    }
+  ]
+}

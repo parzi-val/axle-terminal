@@ -1,0 +1,10 @@
+{
+  "command": "cacaview",
+  "description": "Display an image in PMN format. More information: https://packages.debian.org/sid/caca-utils.",
+  "useCases": [
+    {
+      "description": "Display an image:",
+      "syntax": "cacaview {{path/to/image}}"
+    }
+  ]
+}

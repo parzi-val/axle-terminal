@@ -1,0 +1,18 @@
+{
+  "command": "jf",
+  "description": "Interact with JFrog products like Artifactory, Xray, Distribution, Pipelines and Mission Control. More information: https://jfrog.com/help/r/jfrog-cli/usage.",
+  "useCases": [
+    {
+      "description": "Add a new configuration:",
+      "syntax": "jf config add"
+    },
+    {
+      "description": "Show the current configuration:",
+      "syntax": "jf config show"
+    },
+    {
+      "description": "Search for artifacts within the given repository and directory:",
+      "syntax": "jf rt search --recursive {{repostiory_name}}/{{path}}/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "ivpn",
+  "description": "Command-line interface for the IVPN client. See also: fastd, mozillavpn, mullvad, warp-cli. More information: https://www.ivpn.net.",
+  "useCases": [
+    {
+      "description": "Print the current state of IVPN, including the connection and firewall status:",
+      "syntax": "ivpn status"
+    },
+    {
+      "description": "List available servers to connect to:",
+      "syntax": "ivpn servers"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "doctl serverless",
+  "description": "Manage serverless functions. More information: https://docs.digitalocean.com/reference/doctl/reference/serverless/.",
+  "useCases": [
+    {
+      "description": "Connect local serverless support to a functions namespace:",
+      "syntax": "doctl serverless connect"
+    },
+    {
+      "description": "Deploy a functions project to your functions namespace:",
+      "syntax": "doctl serverless deploy"
+    },
+    {
+      "description": "Obtain metadata of a functions project:",
+      "syntax": "doctl serverless get-metadata"
+    },
+    {
+      "description": "Provide information about serverless support:",
+      "syntax": "doctl serverless status"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "pdfjam",
+  "description": "Shell frontend for the LaTeX pdfpages package for mingling PDFs. More information: https://github.com/rrthomas/pdfjam.",
+  "useCases": [
+    {
+      "description": "Merge two (or more) PDFs:",
+      "syntax": "pdfjam {{path/to/file1.pdf}} {{path/to/file2.pdf}} --outfile {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Merge the first page of each file together:",
+      "syntax": "pdfjam {{files...}} 1 --outfile {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Merge subranges from two PDFs:",
+      "syntax": "pdfjam {{path/to/file1.pdf 3-5,1}} {{path/to/file2.pdf 4-6}} --outfile {{path/to/output_file.pdf}}"
+    },
+    {
+      "description": "Sign an A4 page (adjust delta to height for other formats) with a scanned signature by overlaying them:",
+      "syntax": "pdfjam {{path/to/file.pdf}} {{path/to/signature}} --fitpaper true --outfile {{path/to/signed.pdf}} --nup &quot;{{1x2}}&quot; --delta &quot;{{0 -842pt}}&quot;"
+    },
+    {
+      "description": "Arrange the pages from the input file into a fancy 2x2 grid:",
+      "syntax": "pdfjam {{path/to/file.pdf}} --nup {{2x2}} --suffix {{4up}} --preamble '{{\\usepackage{fancyhdr} \\pagestyle{fancy}}}'"
+    },
+    {
+      "description": "Reverse the order of pages within each given file and concatenate them:",
+      "syntax": "pdfjam {{files...}} {{last-1}} --suffix {{reversed}}"
+    }
+  ]
+}

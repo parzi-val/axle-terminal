@@ -1,0 +1,22 @@
+{
+  "command": "aws s3 mv",
+  "description": "Move local files or S3 objects to another location locally or in S3. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/mv.html.",
+  "useCases": [
+    {
+      "description": "Move a file from local to a specified bucket:",
+      "syntax": "aws s3 mv {{path/to/local_file}} s3://{{bucket_name}}/{{path/to/remote_file}}"
+    },
+    {
+      "description": "Move a specific S3 object into another bucket:",
+      "syntax": "aws s3 mv s3://{{bucket_name1}}/{{path/to/file}} s3://{{bucket_name2}}/{{path/to/target}}"
+    },
+    {
+      "description": "Move a specific S3 object into another bucket keeping the original name:",
+      "syntax": "aws s3 mv s3://{{bucket_name1}}/{{path/to/file}} s3://{{bucket_name2}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aws s3 mv help"
+    }
+  ]
+}

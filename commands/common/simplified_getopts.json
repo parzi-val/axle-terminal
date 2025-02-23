@@ -1,0 +1,26 @@
+{
+  "command": "getopts",
+  "description": "Parse shell options from arguments. This command does not support longform options and thus using getopt is recommended instead. More information: https://www.gnu.org/software/bash/manual/bash.html#index-getopts.",
+  "useCases": [
+    {
+      "description": "Check if an option is set:",
+      "syntax": "getopts {{x}} {{opt}}; echo $opt"
+    },
+    {
+      "description": "Set an option to require an argument and check said argument:",
+      "syntax": "getopts {{x}}: {{opt}}; echo $OPTARG"
+    },
+    {
+      "description": "Check for multiple options:",
+      "syntax": "while getopts {{xyz}} {{opt}}; do case $opt in x) echo x is set;; y) echo y is set;; z) echo z is set;; esac; done"
+    },
+    {
+      "description": "Set getopts to silent mode and handle option errors:",
+      "syntax": "while getopts :{{x:}} {{opt}}; do case $opt in x) ;; :) echo &quot;Argument required&quot;;; ?) echo &quot;Invalid argument&quot; esac;; done"
+    },
+    {
+      "description": "Reset getopts:",
+      "syntax": "OPTIND=1"
+    }
+  ]
+}

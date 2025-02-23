@@ -1,0 +1,30 @@
+{
+  "command": "omf",
+  "description": "Oh My Fish, the Fishshell Framework. Install packages to extend and modify the fish shell. More information: https://github.com/oh-my-fish/oh-my-fish.",
+  "useCases": [
+    {
+      "description": "Install one or more packages:",
+      "syntax": "omf install {{name}}"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "omf list"
+    },
+    {
+      "description": "List available themes:",
+      "syntax": "omf theme"
+    },
+    {
+      "description": "Apply a theme:",
+      "syntax": "omf theme {{name}}"
+    },
+    {
+      "description": "Remove a theme or package:",
+      "syntax": "omf remove {{name}}"
+    },
+    {
+      "description": "Uninstall Oh My Fish:",
+      "syntax": "omf destroy"
+    }
+  ]
+}

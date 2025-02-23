@@ -1,0 +1,26 @@
+{
+  "command": "magick",
+  "description": "Create, edit, compose, or convert between image formats. This tool replaces convert in ImageMagick 7+. See magick convert to use the old tool in versions 7+. Some subcommands, such as mogrify have their own usage documentation. More information: https://imagemagick.org.",
+  "useCases": [
+    {
+      "description": "Convert between image formats:",
+      "syntax": "magick {{path/to/input_image.png}} {{path/to/output_image.jpg}}"
+    },
+    {
+      "description": "Resize an image, making a new copy:",
+      "syntax": "magick {{path/to/input_image.jpg}} -resize {{100x100}} {{path/to/output_image.jpg}}"
+    },
+    {
+      "description": "Create a GIF out of all JPEG images in the current directory:",
+      "syntax": "magick {{*.jpg}} {{path/to/images.gif}}"
+    },
+    {
+      "description": "Create a checkerboard pattern:",
+      "syntax": "magick -size {{640x480}} pattern:checkerboard {{path/to/checkerboard.png}}"
+    },
+    {
+      "description": "Create a PDF file out of all JPEG images in the current directory:",
+      "syntax": "magick {{*.jpg}} -adjoin {{path/to/file.pdf}}"
+    }
+  ]
+}

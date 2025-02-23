@@ -1,0 +1,26 @@
+{
+  "command": "git describe",
+  "description": "Give an object a human-readable name based on an available ref. More information: https://git-scm.com/docs/git-describe.",
+  "useCases": [
+    {
+      "description": "Create a unique name for the current commit (the name contains the most recent annotated tag, the number of additional commits, and the abbreviated commit hash):",
+      "syntax": "git describe"
+    },
+    {
+      "description": "Create a name with 4 digits for the abbreviated commit hash:",
+      "syntax": "git describe --abbrev={{4}}"
+    },
+    {
+      "description": "Generate a name with the tag reference path:",
+      "syntax": "git describe --all"
+    },
+    {
+      "description": "Describe a Git tag:",
+      "syntax": "git describe {{v1.0.0}}"
+    },
+    {
+      "description": "Create a name for the last commit of a given branch:",
+      "syntax": "git describe {{branch_name}}"
+    }
+  ]
+}

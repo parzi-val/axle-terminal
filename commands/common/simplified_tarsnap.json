@@ -1,0 +1,34 @@
+{
+  "command": "tarsnap",
+  "description": "Manipulate remote Tarsnap encrypted backups. Note: you don't need to specify the key file and the cache directory if you configure them in /usr/local/etc/tarsnap.conf or ~/.tarsnaprc. See also: tarsnap-keygen. More information: https://www.tarsnap.com/man-tarsnap.1.html.",
+  "useCases": [
+    {
+      "description": "[c]reate a backup archive of one or more files or directories, specifying the cryptographic key and the cache directory:",
+      "syntax": "tarsnap -c --keyfile {{path/to/key_file}} --cachedir {{path/to/cache_directory}} -f {{archive_name}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Display how much data would be uploaded:",
+      "syntax": "tarsnap -c --dry-run --print-stats --keyfile {{path/to/key_file}} --cachedir {{path/to/cache_directory}} -f {{archive_name}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "List stored archives:",
+      "syntax": "tarsnap --list-archives --keyfile {{path/to/key_file}}"
+    },
+    {
+      "description": "[d]elete a specific archive:",
+      "syntax": "tarsnap -d --keyfile {{path/to/key_file}} --cachedir {{path/to/cache_directory}} -f {{archive_name}}"
+    },
+    {
+      "description": "Lis[t] the contents of a specific archive in [v]erbose mode:",
+      "syntax": "tarsnap -tv --keyfile {{path/to/key_file}} -f {{archive_name}}"
+    },
+    {
+      "description": "Restore one or more files or directories from a specific archive:",
+      "syntax": "tarsnap -x --keyfile {{path/to/key_file}} -f {{archive_name}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Copy an archive:",
+      "syntax": "tarsnap -c --keyfile {{path/to/key_file}} -f {{new_archive_name}} @@{{source_archive_name}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "fastfetch",
+  "description": "Display information about your operating system, software and hardware. More information: https://github.com/LinusDierheimer/fastfetch.",
+  "useCases": [
+    {
+      "description": "Display system information:",
+      "syntax": "fastfetch"
+    },
+    {
+      "description": "Fetch a specific structure:",
+      "syntax": "fastfetch --structure {{structure}}"
+    },
+    {
+      "description": "Load a custom configuration file:",
+      "syntax": "fastfetch --load-config {{path/to/config_file}}"
+    },
+    {
+      "description": "Use a specific logo:",
+      "syntax": "fastfetch --logo {{logo}}"
+    },
+    {
+      "description": "Display system information without a logo:",
+      "syntax": "fastfetch --logo none"
+    },
+    {
+      "description": "Use a specific color for the keys and title:",
+      "syntax": "fastfetch --color {{blue}}"
+    }
+  ]
+}

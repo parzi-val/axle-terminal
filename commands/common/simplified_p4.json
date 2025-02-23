@@ -1,0 +1,38 @@
+{
+  "command": "p4",
+  "description": "Perforce Version Control System. More information: https://www.perforce.com/manuals/cmdref.",
+  "useCases": [
+    {
+      "description": "Log in to the Perforce service:",
+      "syntax": "p4 login -a"
+    },
+    {
+      "description": "Create a client:",
+      "syntax": "p4 client"
+    },
+    {
+      "description": "Copy files from depot into the client workspace:",
+      "syntax": "p4 sync"
+    },
+    {
+      "description": "Create or edit changelist description:",
+      "syntax": "p4 change"
+    },
+    {
+      "description": "Open a file to edit:",
+      "syntax": "p4 edit -c {{changelist_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a new file to add it to the depot:",
+      "syntax": "p4 add"
+    },
+    {
+      "description": "Display list of files modified by changelist:",
+      "syntax": "p4 describe -c {{changelist_number}}"
+    },
+    {
+      "description": "Submit a changelist to the depot:",
+      "syntax": "p4 submit -c {{changelist_number}}"
+    }
+  ]
+}

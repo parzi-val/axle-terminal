@@ -1,0 +1,38 @@
+{
+  "command": "kak",
+  "description": "Kakoune is a mode-based code editor implementing the \"multiple selections\" paradigm. Data can be selected and simultaneously edited in different locations, using multiple selections; users can also connect to the same session for collaborative editing. More information: https://kakoune.org.",
+  "useCases": [
+    {
+      "description": "Open a file and enter normal mode, to execute commands:",
+      "syntax": "kak {{path/to/file}}"
+    },
+    {
+      "description": "Enter insert mode from normal mode, to write text into the file:",
+      "syntax": "i"
+    },
+    {
+      "description": "Escape insert mode, to go back to normal mode:",
+      "syntax": "&lt;Esc&gt;"
+    },
+    {
+      "description": "Replace all instances of \"foo\" in the current file with \"bar\":",
+      "syntax": "%s{{foo}}&lt;Enter&gt;c{{bar}}&lt;Esc&gt;"
+    },
+    {
+      "description": "Unselect all secondary selections, and keep only the main one:",
+      "syntax": "&lt;Space&gt;"
+    },
+    {
+      "description": "Search for numbers and select the first two:",
+      "syntax": "/\\d+&lt;Enter&gt;N"
+    },
+    {
+      "description": "Insert the contents of a file:",
+      "syntax": "!cat {{path/to/file}}&lt;Enter&gt;"
+    },
+    {
+      "description": "Save the current file:",
+      "syntax": ":w&lt;Enter&gt;"
+    }
+  ]
+}

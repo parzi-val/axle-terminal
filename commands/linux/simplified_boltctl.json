@@ -1,0 +1,30 @@
+{
+  "command": "boltctl",
+  "description": "Control thunderbolt devices. More information: https://manned.org/boltctl.",
+  "useCases": [
+    {
+      "description": "List connected (and authorized) devices:",
+      "syntax": "boltctl"
+    },
+    {
+      "description": "List connected devices, including unauthorized ones:",
+      "syntax": "boltctl list"
+    },
+    {
+      "description": "Authorize a device temporarily:",
+      "syntax": "boltctl authorize {{device_uuid}}"
+    },
+    {
+      "description": "Authorize and remember a device:",
+      "syntax": "boltctl enroll {{device_uuid}}"
+    },
+    {
+      "description": "Revoke a previously authorized device:",
+      "syntax": "boltctl forget {{device_uuid}}"
+    },
+    {
+      "description": "Show more information about a device:",
+      "syntax": "boltctl info {{device_uuid}}"
+    }
+  ]
+}

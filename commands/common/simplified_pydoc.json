@@ -1,0 +1,18 @@
+{
+  "command": "pydoc",
+  "description": "Display offline Python documentation. More information: https://docs.python.org/3/library/pydoc.html.",
+  "useCases": [
+    {
+      "description": "Print documentation on a subject (Python keyword, topic, function, module, package, etc.):",
+      "syntax": "pydoc {{subject}}"
+    },
+    {
+      "description": "Start an HTTP server on an arbitrary unused port and open a [b]rowser to see the documentation:",
+      "syntax": "pydoc -b"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pydoc"
+    }
+  ]
+}

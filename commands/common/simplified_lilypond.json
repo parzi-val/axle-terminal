@@ -1,0 +1,26 @@
+{
+  "command": "lilypond",
+  "description": "Typeset music and/or produce MIDI from file. See also: musescore. More information: https://lilypond.org.",
+  "useCases": [
+    {
+      "description": "Compile a lilypond file into a PDF:",
+      "syntax": "lilypond {{path/to/file}}"
+    },
+    {
+      "description": "Compile into the specified format:",
+      "syntax": "lilypond --formats={{format_dump}} {{path/to/file}}"
+    },
+    {
+      "description": "Compile the specified file, suppressing progress updates:",
+      "syntax": "lilypond -s {{path/to/file}}"
+    },
+    {
+      "description": "Compile the specified file, and also specify the output filename:",
+      "syntax": "lilypond --output={{path/to/output_file}} {{path/to/input_file}}"
+    },
+    {
+      "description": "Show the current version of lilypond:",
+      "syntax": "lilypond --version"
+    }
+  ]
+}

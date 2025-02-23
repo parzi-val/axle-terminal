@@ -1,0 +1,26 @@
+{
+  "command": "fakedata",
+  "description": "Generate fake data using a large variety of generators. More information: https://github.com/lucapette/fakedata.",
+  "useCases": [
+    {
+      "description": "List all valid generators:",
+      "syntax": "fakedata --generators"
+    },
+    {
+      "description": "Generate data using one or more generators:",
+      "syntax": "fakedata {{generator1}} {{generator2}}"
+    },
+    {
+      "description": "Generate data with a specific output format:",
+      "syntax": "fakedata --format {{csv|tab|sql}} {{generator}}"
+    },
+    {
+      "description": "Generate a given number of data items (defaults to 10):",
+      "syntax": "fakedata --limit {{n}} {{generator}}"
+    },
+    {
+      "description": "Generate data using a custom output template (the first letter of generator names must be capitalized):",
+      "syntax": "echo &quot;{{\\{\\{Generator\\}\\}}}&quot; | fakedata"
+    }
+  ]
+}

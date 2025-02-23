@@ -1,0 +1,10 @@
+{
+  "command": "ppmtotga",
+  "description": "This command has been superseded by pamtotga. More information: https://netpbm.sourceforge.net/doc/ppmtotga.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamtotga"
+    }
+  ]
+}

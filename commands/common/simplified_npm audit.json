@@ -1,0 +1,34 @@
+{
+  "command": "npm audit",
+  "description": "Scan for known vulnerabilities in project dependencies. Reports vulnerabilities and suggests remediation. More information: https://docs.npmjs.com/cli/npm-audit.",
+  "useCases": [
+    {
+      "description": "Scan the project’s dependencies for known vulnerabilities:",
+      "syntax": "npm audit"
+    },
+    {
+      "description": "Automatically fix vulnerabilities in the project's dependencies:",
+      "syntax": "npm audit fix"
+    },
+    {
+      "description": "Force an automatic fix to dependencies with vulnerabilities:",
+      "syntax": "npm audit fix {{-f|--force}}"
+    },
+    {
+      "description": "Update the lock file without modifying the node_modules directory:",
+      "syntax": "npm audit fix --package-lock-only"
+    },
+    {
+      "description": "Perform a dry run. Simulate the fix process without making any changes:",
+      "syntax": "npm audit fix --dry-run"
+    },
+    {
+      "description": "Output audit results in JSON format:",
+      "syntax": "npm audit --json"
+    },
+    {
+      "description": "Configure the audit to only fail on vulnerabilities above a specified severity:",
+      "syntax": "npm audit --audit-level={{info|low|moderate|high|critical}}"
+    }
+  ]
+}

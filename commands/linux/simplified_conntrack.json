@@ -1,0 +1,26 @@
+{
+  "command": "conntrack",
+  "description": "Interact with the Netfilter connection tracking system. Search, list, inspect, modify, and delete connection flows. More information: https://manned.org/conntrack.",
+  "useCases": [
+    {
+      "description": "List all currently tracked connections:",
+      "syntax": "conntrack --dump"
+    },
+    {
+      "description": "Display a real-time event log of connection changes:",
+      "syntax": "conntrack --event"
+    },
+    {
+      "description": "Display a real-time event log of connection changes and associated timestamps:",
+      "syntax": "conntrack --event -o timestamp"
+    },
+    {
+      "description": "Display a real-time event log of connection changes for a specific IP address:",
+      "syntax": "conntrack --event --orig-src {{ip_address}}"
+    },
+    {
+      "description": "Delete all flows for a specific source IP address:",
+      "syntax": "conntrack --delete --orig-src {{ip_address}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "libreoffice",
+  "description": "CLI for the powerful and free office suite LibreOffice. More information: https://www.libreoffice.org/.",
+  "useCases": [
+    {
+      "description": "Open one or more files in read-only mode:",
+      "syntax": "libreoffice --view {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Display the content of one or more files:",
+      "syntax": "libreoffice --cat {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Print files using a specific printer:",
+      "syntax": "libreoffice --pt {{printer_name}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Convert all .doc files in current directory to PDF:",
+      "syntax": "libreoffice --convert-to pdf *.doc"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "git rev-parse",
+  "description": "Display metadata related to revisions. More information: https://git-scm.com/docs/git-rev-parse.",
+  "useCases": [
+    {
+      "description": "Get the commit hash of a branch:",
+      "syntax": "git rev-parse {{branch_name}}"
+    },
+    {
+      "description": "Get the current branch name:",
+      "syntax": "git rev-parse --abbrev-ref {{HEAD}}"
+    },
+    {
+      "description": "Get the absolute path to the root directory:",
+      "syntax": "git rev-parse --show-toplevel"
+    }
+  ]
+}

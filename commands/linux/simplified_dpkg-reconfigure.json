@@ -1,0 +1,10 @@
+{
+  "command": "dpkg-reconfigure",
+  "description": "Reconfigure an already installed package. More information: https://manned.org/dpkg-reconfigure.8.",
+  "useCases": [
+    {
+      "description": "Reconfigure one or more packages:",
+      "syntax": "dpkg-reconfigure {{package1 package2 ...}}"
+    }
+  ]
+}

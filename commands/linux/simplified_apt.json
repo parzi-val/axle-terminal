@@ -1,0 +1,38 @@
+{
+  "command": "apt",
+  "description": "Package management utility for Debian based distributions. Recommended replacement for apt-get when used interactively in Ubuntu versions 16.04 and later. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://manned.org/apt.8.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages and versions (it's recommended to run this before other apt commands):",
+      "syntax": "sudo apt update"
+    },
+    {
+      "description": "Search for a given package:",
+      "syntax": "apt search {{package}}"
+    },
+    {
+      "description": "Show information for a package:",
+      "syntax": "apt show {{package}}"
+    },
+    {
+      "description": "Install a package, or update it to the latest available version:",
+      "syntax": "sudo apt install {{package}}"
+    },
+    {
+      "description": "Remove a package (using purge instead also removes its configuration files):",
+      "syntax": "sudo apt remove {{package}}"
+    },
+    {
+      "description": "Upgrade all installed packages to their newest available versions:",
+      "syntax": "sudo apt upgrade"
+    },
+    {
+      "description": "List all packages:",
+      "syntax": "apt list"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "apt list --installed"
+    }
+  ]
+}

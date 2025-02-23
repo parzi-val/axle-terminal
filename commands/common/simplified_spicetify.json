@@ -1,0 +1,30 @@
+{
+  "command": "spicetify",
+  "description": "Customize the Spotify client UI and functionality. More information: https://spicetify.app.",
+  "useCases": [
+    {
+      "description": "Generate a configuration file on very first run and display help:",
+      "syntax": "spicetify"
+    },
+    {
+      "description": "Backup and preprocess Spotify application files:",
+      "syntax": "spicetify backup"
+    },
+    {
+      "description": "Print all configuration fields and values:",
+      "syntax": "spicetify config"
+    },
+    {
+      "description": "Change the value of a configuration field:",
+      "syntax": "spicetify config {{field}} {{value}}"
+    },
+    {
+      "description": "Apply the customization changes to Spotify:",
+      "syntax": "spicetify apply"
+    },
+    {
+      "description": "Restore Spotify to its original state:",
+      "syntax": "spicetify restore"
+    }
+  ]
+}

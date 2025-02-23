@@ -1,0 +1,22 @@
+{
+  "command": "asar",
+  "description": "A file archiver for the Electron platform. More information: https://github.com/electron/asar.",
+  "useCases": [
+    {
+      "description": "Archive a file or directory:",
+      "syntax": "asar pack {{path/to/input_file_or_directory}} {{path/to/output_archive.asar}}"
+    },
+    {
+      "description": "Extract an archive:",
+      "syntax": "asar extract {{path/to/archive.asar}}"
+    },
+    {
+      "description": "Extract a specific file from an archive:",
+      "syntax": "asar extract-file {{path/to/archive.asar}} {{file}}"
+    },
+    {
+      "description": "List the contents of an archive file:",
+      "syntax": "asar list {{path/to/archive.asar}}"
+    }
+  ]
+}

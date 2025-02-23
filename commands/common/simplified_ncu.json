@@ -1,0 +1,38 @@
+{
+  "command": "ncu",
+  "description": "Find newer versions of package dependencies and check outdated npm packages locally or globally. ncu only updates dependency versions in package.json. To install the new versions, run npm install afterwards. More information: https://github.com/raineorshine/npm-check-updates.",
+  "useCases": [
+    {
+      "description": "List outdated dependencies in the current directory:",
+      "syntax": "ncu"
+    },
+    {
+      "description": "List outdated global npm packages:",
+      "syntax": "ncu --global"
+    },
+    {
+      "description": "Upgrade all dependencies in the current directory:",
+      "syntax": "ncu --upgrade"
+    },
+    {
+      "description": "Interactively upgrade dependencies in the current directory:",
+      "syntax": "ncu --interactive"
+    },
+    {
+      "description": "List outdated dependencies up to the highest minor version:",
+      "syntax": "ncu --target {{minor}}"
+    },
+    {
+      "description": "List outdated dependencies that match a keyword or regular expression:",
+      "syntax": "ncu --filter {{keyword|/regex/}}"
+    },
+    {
+      "description": "List only a specific section of outdated dependencies:",
+      "syntax": "ncu --dep {{dev|optional|peer|prod|packageManager}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ncu --help"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "cpulimit",
+  "description": "A tool to throttle the CPU usage of other processes. More information: https://cpulimit.sourceforge.net/.",
+  "useCases": [
+    {
+      "description": "Limit an existing process with PID 1234 to only use 25% of the CPU:",
+      "syntax": "cpulimit --pid {{1234}} --limit {{25%}}"
+    },
+    {
+      "description": "Limit an existing program by its executable name:",
+      "syntax": "cpulimit --exe {{program}} --limit {{25}}"
+    },
+    {
+      "description": "Launch a given program and limit it to only use 50% of the CPU:",
+      "syntax": "cpulimit --limit {{50}} -- {{program argument1 argument2 ...}}"
+    },
+    {
+      "description": "Launch a program, limit its CPU usage to 50% and run cpulimit in the background:",
+      "syntax": "cpulimit --limit {{50}} --background -- {{program}}"
+    },
+    {
+      "description": "Kill its process if the program's CPU usage goes over 50%:",
+      "syntax": "cpulimit --limit 50 --kill -- {{program}}"
+    },
+    {
+      "description": "Throttle both it and its child processes so that none go about 25% CPU:",
+      "syntax": "cpulimit --limit {{25}} --monitor-forks -- {{program}}"
+    }
+  ]
+}

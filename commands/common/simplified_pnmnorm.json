@@ -1,0 +1,22 @@
+{
+  "command": "pnmnorm",
+  "description": "Normalize the contrast in a PNM image. See also: pnmhisteq. More information: https://netpbm.sourceforge.net/doc/pnmnorm.html.",
+  "useCases": [
+    {
+      "description": "Force the brightest pixels to be white, the darkest pixels to be black and spread out the ones in between linearly:",
+      "syntax": "pnmnorm {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Force the brightest pixels to be white, the darkest pixels to be black and spread out the ones in between quadratically such that pixels with a brightness of n become 50 % bright:",
+      "syntax": "pnmnorm -midvalue {{n}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Keep the pixels' hue, only modify the brightness:",
+      "syntax": "pnmnorm -keephues {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify a method to calculate a pixel's brightness:",
+      "syntax": "pnmnorm -{{luminosity|colorvalue|saturation}} {{path/to/image.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

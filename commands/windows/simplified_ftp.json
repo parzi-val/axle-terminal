@@ -1,0 +1,38 @@
+{
+  "command": "ftp",
+  "description": "Interactively transfer files between a local and remote FTP server. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/ftp.",
+  "useCases": [
+    {
+      "description": "Connect to a remote FTP server interactively:",
+      "syntax": "ftp {{host}}"
+    },
+    {
+      "description": "Log in as an anonymous user:",
+      "syntax": "ftp -A {{host}}"
+    },
+    {
+      "description": "Disable automatic login upon initial connection:",
+      "syntax": "ftp -n {{host}}"
+    },
+    {
+      "description": "Run a file containing a list of FTP commands:",
+      "syntax": "ftp -s:{{path\\to\\file}} {{host}}"
+    },
+    {
+      "description": "Download multiple files (glob expression):",
+      "syntax": "mget {{*.png}}"
+    },
+    {
+      "description": "Upload multiple files (glob expression):",
+      "syntax": "mput {{*.zip}}"
+    },
+    {
+      "description": "Delete multiple files on the remote server:",
+      "syntax": "mdelete {{*.txt}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ftp --help"
+    }
+  ]
+}

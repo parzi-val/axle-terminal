@@ -1,0 +1,18 @@
+{
+  "command": "sc_tracediff",
+  "description": "Display traceroute paths where the path has changed. More information: https://www.caida.org/catalog/software/scamper/.",
+  "useCases": [
+    {
+      "description": "Show the difference between traceroutes in two warts files:",
+      "syntax": "sc_tracediff {{path/to/file1.warts}} {{path/to/file2.warts}}"
+    },
+    {
+      "description": "Show the difference between the traceroutes in two warts files, including those that have not changed:",
+      "syntax": "sc_tracediff -a {{path/to/file1.warts}} {{path/to/file2.warts}}"
+    },
+    {
+      "description": "Show the difference between the traceroutes in two warts files and try to show DNS names and not IP addresses if possible:",
+      "syntax": "sc_tracediff -n {{path/to/file1.warts}} {{path/to/file2.warts}}"
+    }
+  ]
+}

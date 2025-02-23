@@ -1,0 +1,26 @@
+{
+  "command": "nxc nfs",
+  "description": "Pentest and exploit NFS servers. Currently supports anonymous mode only. More information: https://www.netexec.wiki/nfs-protocol.",
+  "useCases": [
+    {
+      "description": "Detect the version of a remote NFS server:",
+      "syntax": "nxc nfs {{192.168.178.0/24}}"
+    },
+    {
+      "description": "List the available NFS shares:",
+      "syntax": "nxc nfs {{192.168.178.2}} --shares"
+    },
+    {
+      "description": "Enumerate the exposed shares recursively to the specified depth:",
+      "syntax": "nxc nfs {{192.168.178.2}} --enum-shares {{5}}"
+    },
+    {
+      "description": "Download the specified remote file:",
+      "syntax": "nxc nfs {{192.168.178.2}} --get-file {{path/to/remote_file}} {{path/to/local_file}}"
+    },
+    {
+      "description": "Upload the specified local file to the remote share:",
+      "syntax": "nxc nfs {{192.168.178.2}} --put-file {{path/to/local_file}} {{path/to/remote_file}}"
+    }
+  ]
+}

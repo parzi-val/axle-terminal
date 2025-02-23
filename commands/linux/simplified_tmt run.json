@@ -1,0 +1,38 @@
+{
+  "command": "tmt run",
+  "description": "Execute tmt test steps. By default, all steps are run. More information: https://tmt.readthedocs.io/en/stable/overview.html#run.",
+  "useCases": [
+    {
+      "description": "Run all test steps for each plan:",
+      "syntax": "tmt run"
+    },
+    {
+      "description": "Run only the discover step to show what tests would be run:",
+      "syntax": "tmt run discover -v"
+    },
+    {
+      "description": "Run all steps and adjust the provision step options:",
+      "syntax": "tmt run --all provision --how {{container}} --image {{fedora:rawhide}}"
+    },
+    {
+      "description": "Run only selected plans and tests:",
+      "syntax": "tmt run plan --name {{/plan/name}} test --name {{/test/name}}"
+    },
+    {
+      "description": "Show results from the last run in a web browser:",
+      "syntax": "tmt run --last report --how {{html}} --open"
+    },
+    {
+      "description": "Run tests with the provided context:",
+      "syntax": "tmt run --context {{key=value}} -c {{distro=fedora}}"
+    },
+    {
+      "description": "Run tests interactively (debug test code in the middle of a test):",
+      "syntax": "tmt run --all execute --how {{tmt}} --interactive"
+    },
+    {
+      "description": "Use dry mode to see what actions would happen and use the highest verbosity:",
+      "syntax": "tmt run --dry -vvv"
+    }
+  ]
+}

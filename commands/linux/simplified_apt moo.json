@@ -1,0 +1,10 @@
+{
+  "command": "apt moo",
+  "description": "An APT easter egg. More information: https://manned.org/apt.8.",
+  "useCases": [
+    {
+      "description": "Print a cow easter egg:",
+      "syntax": "apt moo"
+    }
+  ]
+}

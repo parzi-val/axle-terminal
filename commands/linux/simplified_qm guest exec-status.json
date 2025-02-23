@@ -1,0 +1,10 @@
+{
+  "command": "qm guest exec-status",
+  "description": "Print the status of a pid started by the guest-agent on QEMU/KVM Virtual Machine Manager. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Print the status of a specific PID:",
+      "syntax": "qm guest exec-status {{vm_id}} {{pid}}"
+    }
+  ]
+}

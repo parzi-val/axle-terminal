@@ -1,0 +1,18 @@
+{
+  "command": "zapier convert",
+  "description": "Convert a Visual Builder integration to a CLI integration. More information: https://platform.zapier.com/reference/cli#convert.",
+  "useCases": [
+    {
+      "description": "Convert a visual builder integration:",
+      "syntax": "zapier convert {{integration_id}} {{path/to/directory}}"
+    },
+    {
+      "description": "Convert a visual builder integration with a specific version:",
+      "syntax": "zapier convert {{integration_id}} {{path/to/directory}} {{-v|--version}}={{version}}"
+    },
+    {
+      "description": "Show extra debugging output:",
+      "syntax": "zapier convert --debug"
+    }
+  ]
+}

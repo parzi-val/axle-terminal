@@ -1,0 +1,38 @@
+{
+  "command": "clementine",
+  "description": "A modern music player and library organizer. See also: audacious, qmmp, cmus, mpv. More information: https://github.com/clementine-player/Clementine/wiki.",
+  "useCases": [
+    {
+      "description": "Start the GUI or bring it to front:",
+      "syntax": "clementine"
+    },
+    {
+      "description": "Start playing music:",
+      "syntax": "clementine {{url|path/to/music.ext}}"
+    },
+    {
+      "description": "Toggle between pausing and playing:",
+      "syntax": "clementine --play-pause"
+    },
+    {
+      "description": "Stop playback:",
+      "syntax": "clementine --stop"
+    },
+    {
+      "description": "Skip to the next or previous track:",
+      "syntax": "clementine --{{next|previous}}"
+    },
+    {
+      "description": "Create a new playlist with one or more music files or URLs:",
+      "syntax": "clementine --create {{url1 url2 ... | path/to/music1.ext path/to/music2.ext ...}}"
+    },
+    {
+      "description": "Load a playlist file:",
+      "syntax": "clementine --load {{path/to/playlist.ext}}"
+    },
+    {
+      "description": "Play a specific track in the currently loaded playlist:",
+      "syntax": "clementine --play-track {{5}}"
+    }
+  ]
+}

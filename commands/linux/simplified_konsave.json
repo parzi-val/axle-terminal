@@ -1,0 +1,34 @@
+{
+  "command": "konsave",
+  "description": "Save and apply your Linux customizations with just one command. More information: https://github.com/Prayag2/konsave.",
+  "useCases": [
+    {
+      "description": "Save the current configuration as a profile:",
+      "syntax": "konsave --save {{profile_name}}"
+    },
+    {
+      "description": "Apply a profile:",
+      "syntax": "konsave --apply {{profile_name}}"
+    },
+    {
+      "description": "Save the current configuration as a profile, overwriting existing profiles if they exist with the same name:",
+      "syntax": "konsave -s {{profile_name}} --force"
+    },
+    {
+      "description": "List all profiles:",
+      "syntax": "konsave --list"
+    },
+    {
+      "description": "Remove a profile:",
+      "syntax": "konsave --remove {{profile_name}}"
+    },
+    {
+      "description": "Export a profile as a .knsv to the home directory:",
+      "syntax": "konsave --export-profile {{profile_name}}"
+    },
+    {
+      "description": "Import a .knsv profile:",
+      "syntax": "konsave --import-profile {{path/to/profile_name.knsv}}"
+    }
+  ]
+}

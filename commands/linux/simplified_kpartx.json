@@ -1,0 +1,18 @@
+{
+  "command": "kpartx",
+  "description": "Create device maps from partition tables. More information: https://manned.org/kpartx.",
+  "useCases": [
+    {
+      "description": "Add partition mappings:",
+      "syntax": "kpartx -a {{whole_disk.img}}"
+    },
+    {
+      "description": "Delete partition mappings:",
+      "syntax": "kpartx -d {{whole_disk.img}}"
+    },
+    {
+      "description": "List partition mappings:",
+      "syntax": "kpartx -l {{whole_disk.img}}"
+    }
+  ]
+}

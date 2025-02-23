@@ -1,0 +1,30 @@
+{
+  "command": "chkconfig",
+  "description": "Manage the runlevel of services on CentOS 6. More information: https://manned.org/chkconfig.",
+  "useCases": [
+    {
+      "description": "List services with runlevel:",
+      "syntax": "chkconfig --list"
+    },
+    {
+      "description": "Show a service's runlevel:",
+      "syntax": "chkconfig --list {{ntpd}}"
+    },
+    {
+      "description": "Enable service at boot:",
+      "syntax": "chkconfig {{sshd}} on"
+    },
+    {
+      "description": "Enable service at boot for runlevels 2, 3, 4, and 5:",
+      "syntax": "chkconfig --level {{2345}} {{sshd}} on"
+    },
+    {
+      "description": "Disable service at boot:",
+      "syntax": "chkconfig {{ntpd}} off"
+    },
+    {
+      "description": "Disable service at boot for runlevel 3:",
+      "syntax": "chkconfig --level {{3}} {{ntpd}} off"
+    }
+  ]
+}

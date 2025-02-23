@@ -1,0 +1,30 @@
+{
+  "command": "devcontainer",
+  "description": "Use a Docker container as a development environment. More information: https://containers.dev/.",
+  "useCases": [
+    {
+      "description": "Create and run a Dev Container:",
+      "syntax": "devcontainer up"
+    },
+    {
+      "description": "Apply a Dev Container Template to a workspace:",
+      "syntax": "devcontainer templates apply --template-id {{template_id}} --template-args {{template_args}} --workspace-folder {{path/to/workspace}}"
+    },
+    {
+      "description": "Execute a command on a running Dev Container in the current workspace:",
+      "syntax": "devcontainer exec {{command}}"
+    },
+    {
+      "description": "Build a Dev Container image from devcontainer.json:",
+      "syntax": "devcontainer build {{path/to/workspace}}"
+    },
+    {
+      "description": "Open a Dev Container in VS Code (the path is optional):",
+      "syntax": "devcontainer open {{path/to/workspace}}"
+    },
+    {
+      "description": "Read and print the configuration of a Dev Container from devcontainer.json:",
+      "syntax": "devcontainer read-configuration"
+    }
+  ]
+}

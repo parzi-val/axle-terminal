@@ -1,0 +1,38 @@
+{
+  "command": "mamba",
+  "description": "Fast, cross-platform package manager, intended as a drop-in replacement for conda. Some subcommands such as repoquery have their own usage documentation. More information: https://mamba.readthedocs.io/en/latest/user_guide/mamba.html.",
+  "useCases": [
+    {
+      "description": "Create a new environment, installing the specified packages into it:",
+      "syntax": "mamba create --name {{environment_name}} {{python=3.10 matplotlib}}"
+    },
+    {
+      "description": "Install packages into the current environment, specifying the package [c]hannel:",
+      "syntax": "mamba install -c {{conda-forge}} {{python=3.6 numpy}}"
+    },
+    {
+      "description": "Update all packages in the current environment:",
+      "syntax": "mamba update --all"
+    },
+    {
+      "description": "Search for a specific package across repositories:",
+      "syntax": "mamba repoquery search {{numpy}}"
+    },
+    {
+      "description": "List all environments:",
+      "syntax": "mamba info --envs"
+    },
+    {
+      "description": "Remove unused [p]ackages and [t]arballs from the cache:",
+      "syntax": "mamba clean -pt"
+    },
+    {
+      "description": "Activate an environment:",
+      "syntax": "mamba activate {{environment_name}}"
+    },
+    {
+      "description": "List all installed packages in the currently activated environment:",
+      "syntax": "mamba list"
+    }
+  ]
+}

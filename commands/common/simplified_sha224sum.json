@@ -1,0 +1,34 @@
+{
+  "command": "sha224sum",
+  "description": "Calculate SHA224 cryptographic checksums. More information: https://www.gnu.org/software/coreutils/manual/html_node/sha2-utilities.html.",
+  "useCases": [
+    {
+      "description": "Calculate the SHA224 checksum for one or more files:",
+      "syntax": "sha224sum {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Calculate and save the list of SHA224 checksums to a file:",
+      "syntax": "sha224sum {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/file.sha224}}"
+    },
+    {
+      "description": "Calculate a SHA224 checksum from stdin:",
+      "syntax": "{{command}} | sha224sum"
+    },
+    {
+      "description": "Read a file of SHA224 checksums and filenames and verify all files have matching checksums:",
+      "syntax": "sha224sum --check {{path/to/file.sha224}}"
+    },
+    {
+      "description": "Only show a message for missing files or when verification fails:",
+      "syntax": "sha224sum --check --quiet {{path/to/file.sha224}}"
+    },
+    {
+      "description": "Only show a message when verification fails, ignoring missing files:",
+      "syntax": "sha224sum --ignore-missing --check --quiet {{path/to/file.sha224}}"
+    },
+    {
+      "description": "Check a known SHA224 checksum of a file:",
+      "syntax": "echo {{known_sha224_checksum_of_the_file}} {{path/to/file}} | sha224sum --check"
+    }
+  ]
+}

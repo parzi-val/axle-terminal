@@ -1,0 +1,34 @@
+{
+  "command": "linode-cli object-storage",
+  "description": "Manage Linode Object Storage. See also: linode-cli. More information: https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-object-storage.",
+  "useCases": [
+    {
+      "description": "List all Object Storage buckets:",
+      "syntax": "linode-cli object-storage buckets list"
+    },
+    {
+      "description": "Create a new Object Storage bucket:",
+      "syntax": "linode-cli object-storage buckets create --cluster {{cluster_id}} --label {{bucket_label}}"
+    },
+    {
+      "description": "Delete an Object Storage bucket:",
+      "syntax": "linode-cli object-storage buckets delete {{cluster_id}} {{bucket_label}}"
+    },
+    {
+      "description": "List Object Storage cluster regions:",
+      "syntax": "linode-cli object-storage clusters list"
+    },
+    {
+      "description": "List access keys for Object Storage:",
+      "syntax": "linode-cli object-storage keys list"
+    },
+    {
+      "description": "Create a new access key for Object Storage:",
+      "syntax": "linode-cli object-storage keys create --label {{label}}"
+    },
+    {
+      "description": "Revoke an access key for Object Storage:",
+      "syntax": "linode-cli object-storage keys revoke {{access_key_id}}"
+    }
+  ]
+}

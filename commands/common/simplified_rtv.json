@@ -1,0 +1,30 @@
+{
+  "command": "rtv",
+  "description": "Reddit Terminal Viewer. Use arrow keys to navigate. Right and Left to view and return from a submission, respectively. More information: https://github.com/michael-lazar/rtv.",
+  "useCases": [
+    {
+      "description": "Open the front page:",
+      "syntax": "/front"
+    },
+    {
+      "description": "Open a subreddit:",
+      "syntax": "/r/{{subreddit_name}}"
+    },
+    {
+      "description": "Expand/collapse comments:",
+      "syntax": "&lt;Space&gt;"
+    },
+    {
+      "description": "Open link:",
+      "syntax": "o"
+    },
+    {
+      "description": "Log in:",
+      "syntax": "u"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "?"
+    }
+  ]
+}

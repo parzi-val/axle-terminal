@@ -1,0 +1,22 @@
+{
+  "command": "msiexec",
+  "description": "Install, update, repair, or uninstall Windows programs using MSI and MSP package files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/msiexec.",
+  "useCases": [
+    {
+      "description": "Install a program from its MSI package:",
+      "syntax": "msiexec /package {{path\\to\\file.msi}}"
+    },
+    {
+      "description": "Install a MSI package from a website:",
+      "syntax": "msiexec /package {{https://example.com/installer.msi}}"
+    },
+    {
+      "description": "Install a MSP patch file:",
+      "syntax": "msiexec /update {{path\\to\\file.msp}}"
+    },
+    {
+      "description": "Uninstall a program or patch using their respective MSI or MSP file:",
+      "syntax": "msiexec /uninstall {{path\\to\\file}}"
+    }
+  ]
+}

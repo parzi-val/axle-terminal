@@ -1,0 +1,14 @@
+{
+  "command": "idevicesetlocation",
+  "description": "Simulate a location on an iOS device. More information: https://manned.org/idevicesetlocation.",
+  "useCases": [
+    {
+      "description": "Set a specific latitude and longitude:",
+      "syntax": "idevicesetlocation {{latitude}} {{longitude}}"
+    },
+    {
+      "description": "Reset the simulated location:",
+      "syntax": "idevicesetlocation reset"
+    }
+  ]
+}

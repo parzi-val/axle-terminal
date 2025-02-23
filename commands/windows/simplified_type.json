@@ -1,0 +1,10 @@
+{
+  "command": "type",
+  "description": "Display the contents of a file. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/type.",
+  "useCases": [
+    {
+      "description": "Display the contents of a specific file:",
+      "syntax": "type {{path\\to\\file}}"
+    }
+  ]
+}

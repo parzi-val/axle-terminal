@@ -1,0 +1,18 @@
+{
+  "command": "qcp",
+  "description": "Copy files using the default text editor to define the filenames. More information: https://www.nongnu.org/renameutils/.",
+  "useCases": [
+    {
+      "description": "Copy a single file (open an editor with the source filename on the left and the target filename on the right):",
+      "syntax": "qcp {{source_file}}"
+    },
+    {
+      "description": "Copy multiple JPEG files:",
+      "syntax": "qcp {{*.jpg}}"
+    },
+    {
+      "description": "Copy files, but swap the positions of the source and the target filenames in the editor:",
+      "syntax": "qcp --option swap {{*.jpg}}"
+    }
+  ]
+}

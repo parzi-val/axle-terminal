@@ -1,0 +1,14 @@
+{
+  "command": "knockd",
+  "description": "Port knocking daemon to listen for port knocking and execute scripts. More information: https://manned.org/knockd.",
+  "useCases": [
+    {
+      "description": "Start knockd system daemon:",
+      "syntax": "knockd -d"
+    },
+    {
+      "description": "Use specified configuration file for knockd:",
+      "syntax": "knockd -c {{path/to/file}}.configuration"
+    }
+  ]
+}

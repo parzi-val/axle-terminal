@@ -1,0 +1,18 @@
+{
+  "command": "meshnamed",
+  "description": "Distributed naming system for IPv6 mesh networks. More information: https://github.com/zhoreeq/meshname/.",
+  "useCases": [
+    {
+      "description": "Start a local meshname DNS server:",
+      "syntax": "meshnamed"
+    },
+    {
+      "description": "Convert an IPv6 address into a meshname:",
+      "syntax": "meshnamed -getname {{200:6fc8:9220:f400:5cc2:305a:4ac6:967e}}"
+    },
+    {
+      "description": "Convert a meshname to an IPv6 address:",
+      "syntax": "meshnamed -getip {{aiag7sesed2aaxgcgbnevruwpy}}"
+    }
+  ]
+}

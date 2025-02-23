@@ -1,0 +1,10 @@
+{
+  "command": "sc_warts2text",
+  "description": "Simple dump of information contained in a warts file. More information: https://www.caida.org/catalog/software/scamper/.",
+  "useCases": [
+    {
+      "description": "Output the information in warts files as text:",
+      "syntax": "sc_warts2text {{path/to/file1.warts path/to/file2.warts ...}}"
+    }
+  ]
+}

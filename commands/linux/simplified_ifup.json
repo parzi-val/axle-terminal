@@ -1,0 +1,14 @@
+{
+  "command": "ifup",
+  "description": "Enable network interfaces. More information: https://manned.org/ifup.8.",
+  "useCases": [
+    {
+      "description": "Enable interface eth0:",
+      "syntax": "ifup {{eth0}}"
+    },
+    {
+      "description": "Enable all the interfaces defined with \"auto\" in /etc/network/interfaces:",
+      "syntax": "ifup -a"
+    }
+  ]
+}

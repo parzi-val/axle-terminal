@@ -1,0 +1,18 @@
+{
+  "command": "pnmtotiffcmyk",
+  "description": "Convert a PNM image to a CMYK encoded TIFF. More information: https://netpbm.sourceforge.net/doc/pnmtotiffcmyk.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a CMYK encoded TIFF:",
+      "syntax": "pnmtotiffcmyk {{path/to/input_file.pnm}} &gt; {{path/to/output_file.tiff}}"
+    },
+    {
+      "description": "Specify the TIFF compression method:",
+      "syntax": "pnmtotiffcmyk -{{none|packbits|lzw}} {{path/to/input_file.pnm}} &gt; {{path/to/output_file.tiff}}"
+    },
+    {
+      "description": "Control the fill order:",
+      "syntax": "pnmtotiffcmyk -{{msb2lsb|lsb2msb}} {{path/to/input_file.pnm}} &gt; {{path/to/output_file.tiff}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "zint",
+  "description": "Generate barcodes and QR codes. More information: https://www.zint.org.uk/manual/chapter/4.",
+  "useCases": [
+    {
+      "description": "Generate a barcode and save it:",
+      "syntax": "zint --data &quot;{{UTF-8 data}}&quot; --output {{path/to/file}}"
+    },
+    {
+      "description": "Specify a code type for generation:",
+      "syntax": "zint --barcode {{code_type}} --data &quot;{{UTF-8 data}}&quot; --output {{path/to/file}}"
+    },
+    {
+      "description": "List all supported code types:",
+      "syntax": "zint --types"
+    }
+  ]
+}

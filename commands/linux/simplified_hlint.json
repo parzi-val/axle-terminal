@@ -1,0 +1,26 @@
+{
+  "command": "hlint",
+  "description": "Suggest improvements to Haskell code. More information: https://hackage.haskell.org/package/hlint.",
+  "useCases": [
+    {
+      "description": "Display suggestions for a given file:",
+      "syntax": "hlint {{path/to/file}} options"
+    },
+    {
+      "description": "Check all Haskell files and generate a report:",
+      "syntax": "hlint {{path/to/directory}} --report"
+    },
+    {
+      "description": "Automatically apply most suggestions:",
+      "syntax": "hlint {{path/to/file}} --refactor"
+    },
+    {
+      "description": "Display additional options:",
+      "syntax": "hlint {{path/to/file}} --refactor-options"
+    },
+    {
+      "description": "Generate a settings file ignoring all outstanding hints:",
+      "syntax": "hlint {{path/to/file}} --default &gt; {{.hlint.yaml}}"
+    }
+  ]
+}

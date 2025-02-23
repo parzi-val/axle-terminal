@@ -1,0 +1,30 @@
+{
+  "command": "kube-fzf",
+  "description": "Shell commands for command-line fuzzy searching of Kubernetes Pods. See also kubectl for related commands. More information: https://github.com/thecasualcoder/kube-fzf.",
+  "useCases": [
+    {
+      "description": "Get pod details (from current namespace):",
+      "syntax": "findpod"
+    },
+    {
+      "description": "Get pod details (from all namespaces):",
+      "syntax": "findpod -a"
+    },
+    {
+      "description": "Describe a pod:",
+      "syntax": "describepod"
+    },
+    {
+      "description": "Tail pod logs:",
+      "syntax": "tailpod"
+    },
+    {
+      "description": "Exec into a pod's container:",
+      "syntax": "execpod {{shell_command}}"
+    },
+    {
+      "description": "Port-forward a pod:",
+      "syntax": "pfpod {{port_number}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "wakeonlan",
+  "description": "Send packets to wake-on-LAN (WOL) enabled PCs. More information: https://github.com/jpoliv/wakeonlan.",
+  "useCases": [
+    {
+      "description": "Send packets to all devices on the local network (255.255.255.255) by specifying a MAC address:",
+      "syntax": "wakeonlan {{01:02:03:04:05:06}}"
+    },
+    {
+      "description": "Send packet to a specific device via IP address:",
+      "syntax": "wakeonlan {{01:02:03:04:05:06}} -i {{192.168.178.2}}"
+    },
+    {
+      "description": "Print the commands, but don't execute them (dry-run):",
+      "syntax": "wakeonlan -n {{01:02:03:04:05:06}}"
+    },
+    {
+      "description": "Run in quiet mode:",
+      "syntax": "wakeonlan -q {{01:02:03:04:05:06}}"
+    }
+  ]
+}

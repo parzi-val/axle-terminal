@@ -1,0 +1,14 @@
+{
+  "command": "djxl",
+  "description": "Decompress JPEG XL images. Accepted output extensions are PNG, APNG, JPEG, EXR, PGM, PPM, PNM, PFM, PAM, EXIF, XMP and JUMBF. More information: https://github.com/libjxl/libjxl.",
+  "useCases": [
+    {
+      "description": "Decompress a JPEG XL image to another format:",
+      "syntax": "djxl {{path/to/image.jxl}} {{path/to/output.ext}}"
+    },
+    {
+      "description": "Display an extremely detailed help page:",
+      "syntax": "djxl --help --verbose --verbose --verbose --verbose"
+    }
+  ]
+}

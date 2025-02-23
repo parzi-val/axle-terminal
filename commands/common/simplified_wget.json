@@ -1,0 +1,38 @@
+{
+  "command": "wget",
+  "description": "Download files from the Web. Supports HTTP, HTTPS, and FTP. More information: https://www.gnu.org/software/wget.",
+  "useCases": [
+    {
+      "description": "Download the contents of a URL to a file (named \"foo\" in this case):",
+      "syntax": "wget {{https://example.com/foo}}"
+    },
+    {
+      "description": "Download the contents of a URL to a file (named \"bar\" in this case):",
+      "syntax": "wget --output-document {{bar}} {{https://example.com/foo}}"
+    },
+    {
+      "description": "Download a single web page and all its resources with 3-second intervals between requests (scripts, stylesheets, images, etc.):",
+      "syntax": "wget --page-requisites --convert-links --wait=3 {{https://example.com/somepage.html}}"
+    },
+    {
+      "description": "Download all listed files within a directory and its sub-directories (does not download embedded page elements):",
+      "syntax": "wget --mirror --no-parent {{https://example.com/somepath/}}"
+    },
+    {
+      "description": "Limit the download speed and the number of connection retries:",
+      "syntax": "wget --limit-rate={{300k}} --tries={{100}} {{https://example.com/somepath/}}"
+    },
+    {
+      "description": "Download a file from an HTTP server using Basic Auth (also works for FTP):",
+      "syntax": "wget --user={{username}} --password={{password}} {{https://example.com}}"
+    },
+    {
+      "description": "Continue an incomplete download:",
+      "syntax": "wget --continue {{https://example.com}}"
+    },
+    {
+      "description": "Download all URLs stored in a text file to a specific directory:",
+      "syntax": "wget --directory-prefix {{path/to/directory}} --input-file {{URLs.txt}}"
+    }
+  ]
+}

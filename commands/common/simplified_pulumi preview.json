@@ -1,0 +1,22 @@
+{
+  "command": "pulumi preview",
+  "description": "Show a preview of updates to a stack's resources. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_preview/.",
+  "useCases": [
+    {
+      "description": "Show a preview of updates to a stack's resources:",
+      "syntax": "pulumi preview"
+    },
+    {
+      "description": "Show a preview of updates to a stack's resources in JSON format:",
+      "syntax": "pulumi preview --json"
+    },
+    {
+      "description": "Preview updates as a rich diff showing overall changes:",
+      "syntax": "pulumi preview --diff"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pulumi preview --help"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "git shortlog",
+  "description": "Summarizes the git log output. More information: https://git-scm.com/docs/git-shortlog.",
+  "useCases": [
+    {
+      "description": "View a summary of all the commits made, grouped alphabetically by author name:",
+      "syntax": "git shortlog"
+    },
+    {
+      "description": "View a summary of all the commits made, sorted by the number of commits made:",
+      "syntax": "git shortlog {{-n|--numbered}}"
+    },
+    {
+      "description": "View a summary of all the commits made, grouped by the committer identities (name and email):",
+      "syntax": "git shortlog {{-c|--committer}}"
+    },
+    {
+      "description": "View a summary of the last 5 commits (i.e. specify a revision range):",
+      "syntax": "git shortlog HEAD~5..HEAD"
+    },
+    {
+      "description": "View all users, emails and the number of commits in the current branch:",
+      "syntax": "git shortlog {{-s|--summary}} {{-n|--numbered}} {{-e|--email}}"
+    },
+    {
+      "description": "View all users, emails and the number of commits in all branches:",
+      "syntax": "git shortlog {{-s|--summary}} {{-n|--numbered}} {{-e|--email}} --all"
+    }
+  ]
+}

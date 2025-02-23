@@ -1,0 +1,22 @@
+{
+  "command": "pulumi whoami",
+  "description": "Print information about the currently logged in user. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_whoami/.",
+  "useCases": [
+    {
+      "description": "Print the username of the currently logged in user:",
+      "syntax": "pulumi whoami"
+    },
+    {
+      "description": "Print detailed information about the currently logged in user:",
+      "syntax": "pulumi whoami {{-v|--verbose}}"
+    },
+    {
+      "description": "Print detailed information about the currently logged in user as JSON:",
+      "syntax": "pulumi whoami {{-j|--json}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pulumi whoami {{-h|--help}}"
+    }
+  ]
+}

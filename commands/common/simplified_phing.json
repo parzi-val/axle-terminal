@@ -1,0 +1,38 @@
+{
+  "command": "phing",
+  "description": "A PHP build tool based on Apache Ant. More information: https://www.phing.info.",
+  "useCases": [
+    {
+      "description": "Perform the default task in the build.xml file:",
+      "syntax": "phing"
+    },
+    {
+      "description": "Initialize a new build file:",
+      "syntax": "phing -i {{path/to/build.xml}}"
+    },
+    {
+      "description": "Perform a specific task:",
+      "syntax": "phing {{task_name}}"
+    },
+    {
+      "description": "Use the given build file path:",
+      "syntax": "phing -f {{path/to/build.xml}} {{task_name}}"
+    },
+    {
+      "description": "Log to the given file:",
+      "syntax": "phing -logfile {{path/to/log_file}} {{task_name}}"
+    },
+    {
+      "description": "Use custom properties in the build:",
+      "syntax": "phing -D{{property}}={{value}} {{task_name}}"
+    },
+    {
+      "description": "Specify a custom listener class:",
+      "syntax": "phing -listener {{class_name}} {{task_name}}"
+    },
+    {
+      "description": "Build using verbose output:",
+      "syntax": "phing -verbose {{task_name}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "csvformat",
+  "description": "Convert a CSV file to a custom output format. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/csvformat.html.",
+  "useCases": [
+    {
+      "description": "Convert to a tab-delimited file (TSV):",
+      "syntax": "csvformat -T {{data.csv}}"
+    },
+    {
+      "description": "Convert delimiters to a custom character:",
+      "syntax": "csvformat -D &quot;{{custom_character}}&quot; {{data.csv}}"
+    },
+    {
+      "description": "Convert line endings to carriage return (^M) + line feed:",
+      "syntax": "csvformat -M &quot;{{\\r\\n}}&quot; {{data.csv}}"
+    },
+    {
+      "description": "Minimize use of quote characters:",
+      "syntax": "csvformat -U 0 {{data.csv}}"
+    },
+    {
+      "description": "Maximize use of quote characters:",
+      "syntax": "csvformat -U 1 {{data.csv}}"
+    }
+  ]
+}

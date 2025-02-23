@@ -1,0 +1,34 @@
+{
+  "command": "tlmgr conf",
+  "description": "Manage the TeX Live configuration. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Show the current TeX Live configuration:",
+      "syntax": "tlmgr conf"
+    },
+    {
+      "description": "Show the current texmf, tlmgr, or updmap configuration:",
+      "syntax": "tlmgr conf {{texmf|tlmgr|updmap}}"
+    },
+    {
+      "description": "Show only a specific configuration option:",
+      "syntax": "tlmgr conf {{texmf|tlmgr|updmap}} {{configuration_key}}"
+    },
+    {
+      "description": "Set a specific configuration option:",
+      "syntax": "tlmgr conf {{texmf|tlmgr|updmap}} {{configuration_key}} {{value}}"
+    },
+    {
+      "description": "Delete a specific configuration option:",
+      "syntax": "tlmgr conf {{texmf|tlmgr|updmap}} --delete {{configuration_key}}"
+    },
+    {
+      "description": "Disable the execution of system calls via \\write18:",
+      "syntax": "tlmgr conf texmf {{shell_escape}} {{0}}"
+    },
+    {
+      "description": "Show all additional texmf trees:",
+      "syntax": "tlmgr conf auxtrees show"
+    }
+  ]
+}

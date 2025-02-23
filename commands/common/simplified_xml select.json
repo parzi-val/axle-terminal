@@ -1,0 +1,26 @@
+{
+  "command": "xml select",
+  "description": "Select from XML documents using XPATHs. Tip: use xml elements to display the XPATHs of an XML document. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Select all elements matching \"XPATH1\" and print the value of their sub-element \"XPATH2\":",
+      "syntax": "xml select --template --match &quot;{{XPATH1}}&quot; --value-of &quot;{{XPATH2}}&quot; {{path/to/input.xml|URI}}"
+    },
+    {
+      "description": "Match \"XPATH1\" and print the value of \"XPATH2\" as text with new-lines:",
+      "syntax": "xml select --text --template --match &quot;{{XPATH1}}&quot; --value-of &quot;{{XPATH2}}&quot; --nl {{path/to/input.xml|URI}}"
+    },
+    {
+      "description": "Count the elements of \"XPATH1\":",
+      "syntax": "xml select --template --value-of &quot;count({{XPATH1}})&quot; {{path/to/input.xml|URI}}"
+    },
+    {
+      "description": "Count all nodes in one or more XML documents:",
+      "syntax": "xml select --text --template --inp-name --output &quot; &quot; --value-of &quot;count(node())&quot; --nl {{path/to/input1.xml|URI}} {{path/to/input2.xml|URI}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml select --help"
+    }
+  ]
+}

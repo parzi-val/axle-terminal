@@ -1,0 +1,26 @@
+{
+  "command": "tesseract",
+  "description": "OCR (Optical Character Recognition) engine. More information: https://github.com/tesseract-ocr/tesseract.",
+  "useCases": [
+    {
+      "description": "Recognize text in an image and save it to output.txt (the .txt extension is added automatically):",
+      "syntax": "tesseract {{image.png}} {{output}}"
+    },
+    {
+      "description": "Specify a custom language (default is English) with an ISO 639-2 code (e.g. deu = Deutsch = German):",
+      "syntax": "tesseract -l deu {{image.png}} {{output}}"
+    },
+    {
+      "description": "List the ISO 639-2 codes of available languages:",
+      "syntax": "tesseract --list-langs"
+    },
+    {
+      "description": "Specify a custom page segmentation mode (default is 3):",
+      "syntax": "tesseract --psm {{0_to_10}} {{image.png}} {{output}}"
+    },
+    {
+      "description": "List page segmentation modes and their descriptions:",
+      "syntax": "tesseract --help-psm"
+    }
+  ]
+}

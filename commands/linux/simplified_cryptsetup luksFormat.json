@@ -1,0 +1,18 @@
+{
+  "command": "cryptsetup luksFormat",
+  "description": "Initialize a LUKS partition and the initial key slot (0) with a passphrase or keyfile. Note: this operation overwrites all data on the partition. More information: https://manned.org/cryptsetup-luksFormat.",
+  "useCases": [
+    {
+      "description": "Initialize a LUKS volume with a passphrase:",
+      "syntax": "cryptsetup luksFormat {{/dev/sdXY}}"
+    },
+    {
+      "description": "Initialize a LUKS volume with a keyfile:",
+      "syntax": "cryptsetup luksFormat {{/dev/sdXY}} {{path/to/keyfile}}"
+    },
+    {
+      "description": "Initialize a LUKS volume with a passphrase and set its label:",
+      "syntax": "cryptsetup luksFormat --label {{label}} {{/dev/sdXY}}"
+    }
+  ]
+}

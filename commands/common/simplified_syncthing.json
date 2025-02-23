@@ -1,0 +1,38 @@
+{
+  "command": "syncthing",
+  "description": "Continuous bidirectional decentralised folder synchronisation tool. More information: https://docs.syncthing.net/.",
+  "useCases": [
+    {
+      "description": "Start Syncthing:",
+      "syntax": "syncthing"
+    },
+    {
+      "description": "Start Syncthing without opening a web browser:",
+      "syntax": "syncthing -no-browser"
+    },
+    {
+      "description": "Print the device ID:",
+      "syntax": "syncthing -device-id"
+    },
+    {
+      "description": "Change the home directory:",
+      "syntax": "syncthing -home={{path/to/directory}}"
+    },
+    {
+      "description": "Force a full index exchange:",
+      "syntax": "syncthing -reset-deltas"
+    },
+    {
+      "description": "Change the address upon which the web interface listens:",
+      "syntax": "syncthing -gui-address={{ip_address:port|path/to/socket.sock}}"
+    },
+    {
+      "description": "Show filepaths to the files used by Syncthing:",
+      "syntax": "syncthing -paths"
+    },
+    {
+      "description": "Disable the Syncthing monitor process:",
+      "syntax": "syncthing -no-restart"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "adb pair",
+  "description": "This command has been moved to adb connect.",
+  "useCases": [
+    {
+      "description": "View documentation for adb pair:",
+      "syntax": "tldr adb connect"
+    }
+  ]
+}

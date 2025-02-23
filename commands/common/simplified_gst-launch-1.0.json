@@ -1,0 +1,22 @@
+{
+  "command": "gst-launch-1.0",
+  "description": "Build and run a GStreamer pipeline. More information: https://gstreamer.freedesktop.org/documentation/tools/gst-launch.html?gi-language=c.",
+  "useCases": [
+    {
+      "description": "Play test video in a window:",
+      "syntax": "gst-launch-1.0 videotestsrc ! xvimagesink"
+    },
+    {
+      "description": "Play a media file in a window:",
+      "syntax": "gst-launch-1.0 playbin uri={{protocol}}://{{host}}/{{path/to/file}}"
+    },
+    {
+      "description": "Re-encode a media file:",
+      "syntax": "gst-launch-1.0 filesrc location={{path/to/file}} ! {{file_type}}demux ! {{codec_type}}dec ! {{codec_type}}enc ! {{file_type}}mux ! filesink location={{path/to/file}}"
+    },
+    {
+      "description": "Stream a file to an RTSP server:",
+      "syntax": "gst-launch-1.0 filesrc location={{path/to/file}} ! rtspclientsink location=rtsp://{{host_IP}}/{{path/to/file}}"
+    }
+  ]
+}

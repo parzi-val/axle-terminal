@@ -1,0 +1,38 @@
+{
+  "command": "betty",
+  "description": "Use natural language to execute commands. More information: https://github.com/pickhardt/betty.",
+  "useCases": [
+    {
+      "description": "Ask Betty something:",
+      "syntax": "betty {{what time is it}}"
+    },
+    {
+      "description": "Download a file:",
+      "syntax": "betty download {{https://example.com/file.ext}} to {{path/to/output_file.ext}}"
+    },
+    {
+      "description": "Compress a file or directory to one of the support archive formats:",
+      "syntax": "betty {{zip}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Extract an archive into the current directory:",
+      "syntax": "betty {{unzip}} {{archive.tar.gz}}"
+    },
+    {
+      "description": "Extract an archive into a specific directory:",
+      "syntax": "betty unarchive {{archive.tar.gz}} to {{path/to/directory}}"
+    },
+    {
+      "description": "Play Spotify:",
+      "syntax": "betty play {{Spotify}}"
+    },
+    {
+      "description": "Drive Betty to madness:",
+      "syntax": "betty go crazy"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "betty version"
+    }
+  ]
+}

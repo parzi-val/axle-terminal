@@ -1,0 +1,38 @@
+{
+  "command": "pnpm",
+  "description": "Fast, disk space efficient package manager for Node.js. Manage Node.js projects and their module dependencies. More information: https://pnpm.io.",
+  "useCases": [
+    {
+      "description": "Create a package.json file:",
+      "syntax": "pnpm init"
+    },
+    {
+      "description": "Download all the packages listed as dependencies in package.json:",
+      "syntax": "pnpm install"
+    },
+    {
+      "description": "Download a specific version of a package and add it to the list of dependencies in package.json:",
+      "syntax": "pnpm add {{module_name}}@{{version}}"
+    },
+    {
+      "description": "Download a package and add it to the list of [D]ev dependencies in package.json:",
+      "syntax": "pnpm add -D {{module_name}}"
+    },
+    {
+      "description": "Download a package and install it [g]lobally:",
+      "syntax": "pnpm add -g {{module_name}}"
+    },
+    {
+      "description": "Uninstall a package and remove it from the list of dependencies in package.json:",
+      "syntax": "pnpm remove {{module_name}}"
+    },
+    {
+      "description": "Print a tree of locally installed modules:",
+      "syntax": "pnpm list"
+    },
+    {
+      "description": "List top-level [g]lobally installed modules:",
+      "syntax": "pnpm list -g --depth={{0}}"
+    }
+  ]
+}

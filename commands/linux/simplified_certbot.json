@@ -1,0 +1,30 @@
+{
+  "command": "certbot",
+  "description": "The Let's Encrypt Agent for automatically obtaining and renewing TLS certificates. Successor to letsencrypt. More information: https://certbot.eff.org/docs/using.html.",
+  "useCases": [
+    {
+      "description": "Obtain a new certificate via webroot authorization, but do not install it automatically:",
+      "syntax": "sudo certbot certonly --webroot --webroot-path {{path/to/webroot}} --domain {{subdomain.example.com}}"
+    },
+    {
+      "description": "Obtain a new certificate via nginx authorization, installing the new certificate automatically:",
+      "syntax": "sudo certbot --nginx --domain {{subdomain.example.com}}"
+    },
+    {
+      "description": "Obtain a new certificate via apache authorization, installing the new certificate automatically:",
+      "syntax": "sudo certbot --apache --domain {{subdomain.example.com}}"
+    },
+    {
+      "description": "Renew all Let's Encrypt certificates that expire in 30 days or less (don't forget to restart any servers that use them afterwards):",
+      "syntax": "sudo certbot renew"
+    },
+    {
+      "description": "Simulate the obtaining of a new certificate, but don't actually save any new certificates to disk:",
+      "syntax": "sudo certbot --webroot --webroot-path {{path/to/webroot}} --domain {{subdomain.example.com}} --dry-run"
+    },
+    {
+      "description": "Obtain an untrusted test certificate instead:",
+      "syntax": "sudo certbot --webroot --webroot-path {{path/to/webroot}} --domain {{subdomain.example.com}} --test-cert"
+    }
+  ]
+}

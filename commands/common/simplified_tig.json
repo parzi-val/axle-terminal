@@ -1,0 +1,34 @@
+{
+  "command": "tig",
+  "description": "A configurable ncurses-based TUI for Git. See also: gitui, git-gui. More information: https://jonas.github.io/tig/doc/manual.html.",
+  "useCases": [
+    {
+      "description": "Show the sequence of commits starting from the current one in reverse chronological order:",
+      "syntax": "tig"
+    },
+    {
+      "description": "Show the history of a specific branch:",
+      "syntax": "tig {{branch}}"
+    },
+    {
+      "description": "Show the history of specific files or directories:",
+      "syntax": "tig {{path1 path2 ...}}"
+    },
+    {
+      "description": "Show the difference between two references (such as branches or tags):",
+      "syntax": "tig {{base_ref}}..{{compared_ref}}"
+    },
+    {
+      "description": "Display commits from all branches and stashes:",
+      "syntax": "tig --all"
+    },
+    {
+      "description": "Start in stash view, displaying all saved stashes:",
+      "syntax": "tig stash"
+    },
+    {
+      "description": "Display help in TUI:",
+      "syntax": "h"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "gh workflow",
+  "description": "List, view, and run GitHub Actions workflows. More information: https://cli.github.com/manual/gh_workflow.",
+  "useCases": [
+    {
+      "description": "Interactively select a workflow to view the latest jobs for:",
+      "syntax": "gh workflow view"
+    },
+    {
+      "description": "View a specific workflow in the default browser:",
+      "syntax": "gh workflow view {{id|workflow_name|filename.yml}} --web"
+    },
+    {
+      "description": "Display the YAML definition of a specific workflow:",
+      "syntax": "gh workflow view {{id|workflow_name|filename.yml}} --yaml"
+    },
+    {
+      "description": "Display the YAML definition for a specific Git branch or tag:",
+      "syntax": "gh workflow view {{id|workflow_name|filename.yml}} --ref {{branch|tag_name}} --yaml"
+    },
+    {
+      "description": "List workflow files (use --all to include disabled workflows):",
+      "syntax": "gh workflow list"
+    },
+    {
+      "description": "Run a manual workflow with parameters:",
+      "syntax": "gh workflow run {{id|workflow_name|filename.yml}} {{--raw-field param1=value1 --raw-field param2=value2 ...}}"
+    },
+    {
+      "description": "Run a manual workflow using a specific branch or tag with JSON parameters from stdin:",
+      "syntax": "echo '{{{&quot;param1&quot;: &quot;value1&quot;, &quot;param2&quot;: &quot;value2&quot;, ...}}}' | gh workflow run {{id|workflow_name|filename.yml}} --ref {{branch|tag_name}}"
+    },
+    {
+      "description": "Enable or disable a specific workflow:",
+      "syntax": "gh workflow {{enable|disable}} {{id|workflow_name|filename.yml}}"
+    }
+  ]
+}

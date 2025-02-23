@@ -1,0 +1,18 @@
+{
+  "command": "xar",
+  "description": "Manage .xar archives. More information: https://manned.org/xar.",
+  "useCases": [
+    {
+      "description": "Create a xar archive of all files in a given directory:",
+      "syntax": "xar -cf {{archive.xar}} {{path/to/directory}}"
+    },
+    {
+      "description": "List the contents of a given xar archive:",
+      "syntax": "xar -tf {{archive.xar}}"
+    },
+    {
+      "description": "Extract the contents of a given xar archive to the current directory:",
+      "syntax": "xar -xf {{archive.xar}}"
+    }
+  ]
+}

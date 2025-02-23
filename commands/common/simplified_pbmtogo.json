@@ -1,0 +1,10 @@
+{
+  "command": "pbmtogo",
+  "description": "Convert a PBM image to a compressed GraphOn graphic. More information: https://netpbm.sourceforge.net/doc/pbmtogo.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to a compressed GraphOn graphic:",
+      "syntax": "pbmtogo {{path/to/image.pbm}} &gt; {{path/to/output.go}}"
+    }
+  ]
+}

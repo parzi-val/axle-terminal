@@ -1,0 +1,18 @@
+{
+  "command": "graphml2gv",
+  "description": "Convert a graph from graphml to gv format. Converters: gml2gv, gv2gml, gv2gxl, gxl2gv, graphml2gv & mm2gv. More information: https://graphviz.org/pdf/graphml2gv.1.pdf.",
+  "useCases": [
+    {
+      "description": "Convert a graph from gml to gv format:",
+      "syntax": "graphml2gv -o {{output.gv}} {{input.gml}}"
+    },
+    {
+      "description": "Convert a graph using stdin and stdout:",
+      "syntax": "cat {{input.gml}} | graphml2gv &gt; {{output.gv}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "graphml2gv -?"
+    }
+  ]
+}

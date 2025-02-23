@@ -1,0 +1,30 @@
+{
+  "command": "ego",
+  "description": "Funtoo's official system personality management tool. More information: https://funtoo-ego.readthedocs.io/en/develop/.",
+  "useCases": [
+    {
+      "description": "Synchronize the Portage tree:",
+      "syntax": "ego sync"
+    },
+    {
+      "description": "Update the bootloader configuration:",
+      "syntax": "ego boot update"
+    },
+    {
+      "description": "Read a Funtoo wiki page by name:",
+      "syntax": "ego doc {{wiki_page}}"
+    },
+    {
+      "description": "Print current profile:",
+      "syntax": "ego profile show"
+    },
+    {
+      "description": "Enable/Disable mix-ins:",
+      "syntax": "ego profile mix-in +{{gnome}} -{{kde-plasma-5}}"
+    },
+    {
+      "description": "Query Funtoo bugs, related to a specified package:",
+      "syntax": "ego query bug {{package}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "aa-status",
+  "description": "List currently loaded AppArmor modules. See also: aa-complain, aa-disable, aa-enforce. More information: https://gitlab.com/apparmor/apparmor/-/wikis/manpage_aa-status.8.",
+  "useCases": [
+    {
+      "description": "Check status:",
+      "syntax": "sudo aa-status"
+    },
+    {
+      "description": "Display the number of loaded policies:",
+      "syntax": "sudo aa-status --profiled"
+    },
+    {
+      "description": "Display the number of loaded enforicing policies:",
+      "syntax": "sudo aa-status --enforced"
+    },
+    {
+      "description": "Display the number of loaded non-enforcing policies:",
+      "syntax": "sudo aa-status --complaining"
+    },
+    {
+      "description": "Display the number of loaded enforcing policies that kill tasks:",
+      "syntax": "sudo aa-status --kill"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "pgmtopgm",
+  "description": "Copy a PGM image file. More information: https://netpbm.sourceforge.net/doc/pgmtopgm.html.",
+  "useCases": [
+    {
+      "description": "Copy PGM file from stdin to stderr:",
+      "syntax": "pgmtopgm"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pgmtopgm -version"
+    }
+  ]
+}

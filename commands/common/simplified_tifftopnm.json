@@ -1,0 +1,22 @@
+{
+  "command": "tifftopnm",
+  "description": "Convert a TIFF image to a PNM image. More information: https://netpbm.sourceforge.net/doc/tifftopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a TIFF to a PNM file:",
+      "syntax": "tifftopnm {{path/to/input_file.tiff}} &gt; {{path/to/output_file.pnm}}"
+    },
+    {
+      "description": "Create a PGM file containing the alpha channel of the input image:",
+      "syntax": "tifftopnm -alphaout {{path/to/alpha_file.pgm}} {{path/to/input_file.tiff}} &gt; {{path/to/output_file.pnm}}"
+    },
+    {
+      "description": "Respect the fillorder tag in the input TIFF image:",
+      "syntax": "tifftopnm -respectfillorder {{path/to/input_file.tiff}} &gt; {{path/to/output_file.pnm}}"
+    },
+    {
+      "description": "Print TIFF header information to stderr:",
+      "syntax": "tifftopnm -headerdump {{path/to/input_file.tiff}} &gt; {{path/to/output_file.pnm}}"
+    }
+  ]
+}

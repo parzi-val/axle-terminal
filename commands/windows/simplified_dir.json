@@ -1,0 +1,26 @@
+{
+  "command": "dir",
+  "description": "List directory contents. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/dir.",
+  "useCases": [
+    {
+      "description": "Show the contents of the current directory:",
+      "syntax": "dir"
+    },
+    {
+      "description": "Show the contents of a given directory:",
+      "syntax": "dir {{path\\to\\directory}}"
+    },
+    {
+      "description": "Show the contents of the current directory, including hidden ones:",
+      "syntax": "dir /a"
+    },
+    {
+      "description": "Show the contents of a given directory, including hidden ones:",
+      "syntax": "dir {{path\\to\\directory}} /a"
+    },
+    {
+      "description": "Show a bare list of directories and files, with no additional information:",
+      "syntax": "dir /b"
+    }
+  ]
+}

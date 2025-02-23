@@ -1,0 +1,38 @@
+{
+  "command": "Exclamation mark",
+  "description": "Bash builtin to substitute with a command found in history. More information: https://gnu.org/software/bash/manual/bash.html#Event-Designators.",
+  "useCases": [
+    {
+      "description": "Substitute with the previous command and run it with sudo:",
+      "syntax": "sudo !!"
+    },
+    {
+      "description": "Substitute with a command based on its line number found with history:",
+      "syntax": "!{{number}}"
+    },
+    {
+      "description": "Substitute with a command that was used a specified number of lines back:",
+      "syntax": "!-{{number}}"
+    },
+    {
+      "description": "Substitute with the most recent command that starts with a string:",
+      "syntax": "!{{string}}"
+    },
+    {
+      "description": "Substitute with the arguments of the latest command:",
+      "syntax": "{{command}} !*"
+    },
+    {
+      "description": "Substitute with the last argument of the latest command:",
+      "syntax": "{{command}} !$"
+    },
+    {
+      "description": "Substitute with the last command but without the last argument:",
+      "syntax": "!:-"
+    },
+    {
+      "description": "Print last command that starts with a string without executing it:",
+      "syntax": "!{{string}}:p"
+    }
+  ]
+}

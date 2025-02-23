@@ -1,0 +1,18 @@
+{
+  "command": "apkeep",
+  "description": "Download APK files from various sources. More information: https://github.com/EFForg/apkeep.",
+  "useCases": [
+    {
+      "description": "Download an APK file to the specified directory:",
+      "syntax": "apkeep --app {{com.example.application}} {{path/to/directory}}"
+    },
+    {
+      "description": "List all available versions for download:",
+      "syntax": "apkeep --app {{com.example.application}} --list-versions {{path/to/directory}}"
+    },
+    {
+      "description": "Specify a store to download from:",
+      "syntax": "apkeep --app {{com.example.application}} --download-source {{apk-pure|google-play|f-droid|huawei-app-gallery}} {{path/to/directory}}"
+    }
+  ]
+}

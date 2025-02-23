@@ -1,0 +1,34 @@
+{
+  "command": "sops",
+  "description": "SOPS (Secrets OPerationS): a simple and flexible tool for managing secrets. More information: https://github.com/mozilla/sops.",
+  "useCases": [
+    {
+      "description": "Encrypt a file:",
+      "syntax": "sops -e {{path/to/file.json}} &gt; {{path/to/file.enc.json}}"
+    },
+    {
+      "description": "Decrypt a file to stdout:",
+      "syntax": "sops -d {{path/to/file.enc.json}}"
+    },
+    {
+      "description": "Update the declared keys in a sops file:",
+      "syntax": "sops updatekeys {{path/to/file.enc.yaml}}"
+    },
+    {
+      "description": "Rotate data keys for a sops file:",
+      "syntax": "sops -r {{path/to/file.enc.yaml}}"
+    },
+    {
+      "description": "Change the extension of the file once encrypted:",
+      "syntax": "sops -d --input-type json {{path/to/file.enc.json}}"
+    },
+    {
+      "description": "Extract keys by naming them, and array elements by numbering them:",
+      "syntax": "sops -d --extract '[&quot;an_array&quot;][1]' {{path/to/file.enc.json}}"
+    },
+    {
+      "description": "Show the difference between two sops files:",
+      "syntax": "diff &lt;(sops -d {{path/to/secret1.enc.yaml}}) &lt;(sops -d {{path/to/secret2.enc.yaml}})"
+    }
+  ]
+}

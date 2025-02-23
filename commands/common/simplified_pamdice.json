@@ -1,0 +1,14 @@
+{
+  "command": "pamdice",
+  "description": "Slice a Netpbm image vertically or horizontally. See also: pamundice. More information: https://netpbm.sourceforge.net/doc/pamdice.html.",
+  "useCases": [
+    {
+      "description": "Slice a Netpbm image such that the resulting tiles have the specified height and width:",
+      "syntax": "pamdice -outstem {{path/to/filename_stem}} -height {{value}} -width {{value}} {{path/to/input.ppm}}"
+    },
+    {
+      "description": "Make the produced pieces overlap by the specified amount horizontally and vertically:",
+      "syntax": "pamdice -outstem {{path/to/filename_stem}} -height {{value}} -width {{value}} -hoverlap {{value}} -voverlap {{value}} {{path/to/input.ppm}}"
+    }
+  ]
+}

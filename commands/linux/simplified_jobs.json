@@ -1,0 +1,30 @@
+{
+  "command": "jobs",
+  "description": "Shell builtin for viewing information about processes spawned by the current shell. Options other than -l and -p are exclusive to bash. More information: https://www.gnu.org/software/bash/manual/bash.html#index-jobs.",
+  "useCases": [
+    {
+      "description": "View jobs spawned by the current shell:",
+      "syntax": "jobs"
+    },
+    {
+      "description": "List jobs and their process IDs:",
+      "syntax": "jobs -l"
+    },
+    {
+      "description": "Display information about jobs with changed status:",
+      "syntax": "jobs -n"
+    },
+    {
+      "description": "Display only process IDs:",
+      "syntax": "jobs -p"
+    },
+    {
+      "description": "Display running processes:",
+      "syntax": "jobs -r"
+    },
+    {
+      "description": "Display stopped processes:",
+      "syntax": "jobs -s"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "pnmsplit",
+  "description": "This command has been superseded by pamsplit. More information: https://netpbm.sourceforge.net/doc/pnmsplit.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamsplit"
+    }
+  ]
+}

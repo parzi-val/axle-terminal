@@ -1,0 +1,26 @@
+{
+  "command": "mdbook",
+  "description": "Create online books by writing Markdown files. More information: https://rust-lang.github.io/mdBook/.",
+  "useCases": [
+    {
+      "description": "Create an mdbook project in the current directory:",
+      "syntax": "mdbook init"
+    },
+    {
+      "description": "Create an mdbook project in a specific directory:",
+      "syntax": "mdbook init {{path/to/directory}}"
+    },
+    {
+      "description": "Clean the directory with the generated book:",
+      "syntax": "mdbook clean"
+    },
+    {
+      "description": "Serve a book at http://localhost:3000, auto build when file changes:",
+      "syntax": "mdbook serve"
+    },
+    {
+      "description": "Watch a set of Markdown files and automatically build when a file is changed:",
+      "syntax": "mdbook watch"
+    }
+  ]
+}

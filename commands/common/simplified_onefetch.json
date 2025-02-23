@@ -1,0 +1,38 @@
+{
+  "command": "onefetch",
+  "description": "Display project information and code statistics for a local Git repository. More information: https://github.com/o2sh/onefetch/wiki/command-line-options.",
+  "useCases": [
+    {
+      "description": "Display statistics for the Git repository in the current working directory:",
+      "syntax": "onefetch"
+    },
+    {
+      "description": "Display statistics for the Git repository in the specified directory:",
+      "syntax": "onefetch {{path/to/directory}}"
+    },
+    {
+      "description": "Ignore commits made by bots:",
+      "syntax": "onefetch --no-bots"
+    },
+    {
+      "description": "Ignore merge commits:",
+      "syntax": "onefetch --no-merges"
+    },
+    {
+      "description": "Don't print the ASCII art of the language logo:",
+      "syntax": "onefetch --no-art"
+    },
+    {
+      "description": "Show n authors, languages, or file churns (default: 3, 6, and 3 respectively):",
+      "syntax": "onefetch --number-of-{{authors|languages|file-churns}} {{n}}"
+    },
+    {
+      "description": "Ignore the specified files and directories:",
+      "syntax": "onefetch {{-e|--exclude}} {{path/to/file_or_directory|regular_expression}}"
+    },
+    {
+      "description": "Only detect languages from the specified categories (default: programming and markup):",
+      "syntax": "onefetch {{-T|--type}} {{programming|markup|prose|data}}"
+    }
+  ]
+}

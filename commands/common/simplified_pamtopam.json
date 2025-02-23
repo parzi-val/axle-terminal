@@ -1,0 +1,14 @@
+{
+  "command": "pamtopam",
+  "description": "Copy a PAM image. More information: https://netpbm.sourceforge.net/doc/pamtopam.html.",
+  "useCases": [
+    {
+      "description": "Copy a PAM image (i.e. a PBM, PGM, PPM or PAM image) from stdin to stdout:",
+      "syntax": "pamtopam &lt; {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pamtopam -version"
+    }
+  ]
+}

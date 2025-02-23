@@ -1,0 +1,14 @@
+{
+  "command": "dive",
+  "description": "Explore a Docker image, layer contents, and discover ways to shrink it. More information: https://github.com/wagoodman/dive.",
+  "useCases": [
+    {
+      "description": "Analyze a Docker image:",
+      "syntax": "dive {{your_image_tag}}"
+    },
+    {
+      "description": "Build an image and start analyzing it:",
+      "syntax": "dive build -t {{some_tag}}"
+    }
+  ]
+}

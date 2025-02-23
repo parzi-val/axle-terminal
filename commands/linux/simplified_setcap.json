@@ -1,0 +1,26 @@
+{
+  "command": "setcap",
+  "description": "Set capabilities of specified file. See also: getcap. More information: https://manned.org/setcap.",
+  "useCases": [
+    {
+      "description": "Set capability cap_net_raw (to use RAW and PACKET sockets) for a given file:",
+      "syntax": "setcap '{{cap_net_raw}}' {{path/to/file}}"
+    },
+    {
+      "description": "Set multiple capabilities on a file (ep behind the capability means \"effective permitted\"):",
+      "syntax": "setcap '{{cap_dac_read_search,cap_sys_tty_config+ep}}' {{path/to/file}}"
+    },
+    {
+      "description": "Remove all capabilities from a file:",
+      "syntax": "setcap -r {{path/to/file}}"
+    },
+    {
+      "description": "Verify that the specified capabilities are currently associated with the specified file:",
+      "syntax": "setcap -v '{{cap_net_raw}}' {{path/to/file}}"
+    },
+    {
+      "description": "The optional -n root_uid argument can be used to set the file capability for use only in a user namespace with this root user ID owner:",
+      "syntax": "setcap -n {{root_uid}} '{{cap_net_admin}}' {{path/to/file}}"
+    }
+  ]
+}

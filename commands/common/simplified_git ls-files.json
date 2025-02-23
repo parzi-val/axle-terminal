@@ -1,0 +1,22 @@
+{
+  "command": "git ls-files",
+  "description": "Show information about files in the index and the working tree. More information: https://git-scm.com/docs/git-ls-files.",
+  "useCases": [
+    {
+      "description": "Show deleted files:",
+      "syntax": "git ls-files --deleted"
+    },
+    {
+      "description": "Show modified and deleted files:",
+      "syntax": "git ls-files --modified"
+    },
+    {
+      "description": "Show ignored and untracked files:",
+      "syntax": "git ls-files --others"
+    },
+    {
+      "description": "Show untracked files, not ignored:",
+      "syntax": "git ls-files --others --exclude-standard"
+    }
+  ]
+}

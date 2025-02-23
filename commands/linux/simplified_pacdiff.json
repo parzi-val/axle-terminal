@@ -1,0 +1,30 @@
+{
+  "command": "pacdiff",
+  "description": "Maintenance utility for .pacorig, .pacnew and .pacsave files created by pacman. More information: https://manned.org/pacdiff.",
+  "useCases": [
+    {
+      "description": "Review files that need maintenance in interactive mode:",
+      "syntax": "pacdiff"
+    },
+    {
+      "description": "Use sudo and sudoedit to remove and merge files:",
+      "syntax": "pacdiff --sudo"
+    },
+    {
+      "description": "Review files needing maintenance, creating .bakups of the original if you (O)verwrite:",
+      "syntax": "pacdiff --sudo --backup"
+    },
+    {
+      "description": "Use a specific editor to view and merge configuration files (default is vim -d):",
+      "syntax": "DIFFPROG={{editor}} pacdiff"
+    },
+    {
+      "description": "Scan for configuration files with locate instead of using pacman database:",
+      "syntax": "pacdiff --locate"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pacdiff --help"
+    }
+  ]
+}

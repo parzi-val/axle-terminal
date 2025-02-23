@@ -1,0 +1,38 @@
+{
+  "command": "next",
+  "description": "React framework that uses server-side rendering for building optimized web applications. More information: https://nextjs.org/docs.",
+  "useCases": [
+    {
+      "description": "Start the current application in development mode:",
+      "syntax": "next dev"
+    },
+    {
+      "description": "Start the current application and listen on a specific port:",
+      "syntax": "next dev --port {{port}}"
+    },
+    {
+      "description": "Build the current application optimized for production:",
+      "syntax": "next build"
+    },
+    {
+      "description": "Start the compiled application in production mode:",
+      "syntax": "next start"
+    },
+    {
+      "description": "Start the compiled application and listen on a specific port:",
+      "syntax": "next start --port {{port}}"
+    },
+    {
+      "description": "Export the current application to static HTML pages:",
+      "syntax": "next export"
+    },
+    {
+      "description": "Display the Next.js telemetry status:",
+      "syntax": "next telemetry"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "next {{build|dev|export|start|telemetry}} --help"
+    }
+  ]
+}

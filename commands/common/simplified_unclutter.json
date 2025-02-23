@@ -1,0 +1,10 @@
+{
+  "command": "unclutter",
+  "description": "Hides the mouse cursor. More information: https://manned.org/unclutter.1x.",
+  "useCases": [
+    {
+      "description": "Hide mouse cursor after 3 seconds:",
+      "syntax": "unclutter -idle {{3}}"
+    }
+  ]
+}

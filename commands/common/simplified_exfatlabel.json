@@ -1,0 +1,14 @@
+{
+  "command": "exfatlabel",
+  "description": "Get or set an exFAT filesystem label. More information: https://manned.org/exfatlabel.",
+  "useCases": [
+    {
+      "description": "Display the current filesystem label:",
+      "syntax": "exfatlabel {{/dev/sda}}"
+    },
+    {
+      "description": "Set the filesystem label:",
+      "syntax": "exfatlabel {{/dev/sda}} {{new_label}}"
+    }
+  ]
+}

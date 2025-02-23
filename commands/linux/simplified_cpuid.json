@@ -1,0 +1,18 @@
+{
+  "command": "cpuid",
+  "description": "Display detailed information about all CPUs. More information: https://etallen.com/cpuid.html.",
+  "useCases": [
+    {
+      "description": "Display information for all CPUs:",
+      "syntax": "cpuid"
+    },
+    {
+      "description": "Display information only for the current CPU:",
+      "syntax": "cpuid -1"
+    },
+    {
+      "description": "Display raw hex information with no decoding:",
+      "syntax": "cpuid -r"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "loginctl",
+  "description": "Manage the systemd login manager. More information: https://www.freedesktop.org/software/systemd/man/loginctl.html.",
+  "useCases": [
+    {
+      "description": "Print all current sessions:",
+      "syntax": "loginctl list-sessions"
+    },
+    {
+      "description": "Print all properties of a specific session:",
+      "syntax": "loginctl show-session {{session_id}} --all"
+    },
+    {
+      "description": "Print all properties of a specific user:",
+      "syntax": "loginctl show-user {{username}}"
+    },
+    {
+      "description": "Print a specific property of a user:",
+      "syntax": "loginctl show-user {{username}} --property={{property_name}}"
+    },
+    {
+      "description": "Execute a loginctl operation on a remote host:",
+      "syntax": "loginctl list-users -H {{hostname}}"
+    },
+    {
+      "description": "Log a user out on all of their sessions:",
+      "syntax": "loginctl terminate-user {{username}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "plenv",
+  "description": "Switch between multiple versions of Perl. More information: https://github.com/tokuhirom/plenv.",
+  "useCases": [
+    {
+      "description": "Show the currently selected Perl version and how it was selected:",
+      "syntax": "plenv version"
+    },
+    {
+      "description": "List all available installed Perl versions:",
+      "syntax": "plenv versions"
+    },
+    {
+      "description": "Set the global Perl version (used unless a local or shell version takes priority):",
+      "syntax": "plenv global {{version}}"
+    },
+    {
+      "description": "Set the local application-specific Perl version (used in the current directory and all directories below it):",
+      "syntax": "plenv local {{version}}"
+    },
+    {
+      "description": "Set the shell-specific Perl version (used for the current session only):",
+      "syntax": "plenv shell {{version}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plenv"
+    },
+    {
+      "description": "Display help for a command:",
+      "syntax": "plenv help {{command}}"
+    }
+  ]
+}

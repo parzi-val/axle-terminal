@@ -1,0 +1,38 @@
+{
+  "command": "hledger",
+  "description": "A robust, friendly plain text accounting app. See also: hledger-ui for TUI, hledger-web for web interface. More information: https://hledger.org/hledger.html.",
+  "useCases": [
+    {
+      "description": "Record new transactions interactively, saving to the default journal file:",
+      "syntax": "hledger add"
+    },
+    {
+      "description": "Import new transactions from bank.csv, using bank.csv.rules to convert:",
+      "syntax": "hledger import {{path/to/bank.csv}}"
+    },
+    {
+      "description": "Print all transactions, reading from multiple specified journal files:",
+      "syntax": "hledger print --file {{path/to/prices-2024.journal}} --file {{path/to/prices-2023.journal}}"
+    },
+    {
+      "description": "Show all accounts, as a hierarchy, and their types:",
+      "syntax": "hledger accounts --tree --types"
+    },
+    {
+      "description": "Show asset and liability account balances, including zeros, hierarchically:",
+      "syntax": "hledger balancesheet --empty --tree --no-elide"
+    },
+    {
+      "description": "Show monthly incomes/expenses/totals, largest first, summarised to 2 levels:",
+      "syntax": "hledger incomestatement --monthly --row-total --average --sort --depth 2"
+    },
+    {
+      "description": "Show the assets:bank:checking account's transactions and running balance:",
+      "syntax": "hledger aregister assets:bank:checking"
+    },
+    {
+      "description": "Show the amount spent on food from the assets:cash account:",
+      "syntax": "hledger print assets:cash | hledger -f- -I aregister expenses:food"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "toolbox list",
+  "description": "List existing toolbox containers and images. More information: https://manned.org/toolbox-list.1.",
+  "useCases": [
+    {
+      "description": "List all toolbox containers and images:",
+      "syntax": "toolbox list"
+    },
+    {
+      "description": "List only toolbox containers:",
+      "syntax": "toolbox list --containers"
+    },
+    {
+      "description": "List only toolbox images:",
+      "syntax": "toolbox list --images"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "pdfposter",
+  "description": "Convert a large-sheeted PDF into multiple A4 pages for printing. More information: https://pdfposter.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Convert an A2 poster into 4 A4 pages:",
+      "syntax": "pdfposter --poster-size a2 {{input_file.pdf}} {{output_file.pdf}}"
+    },
+    {
+      "description": "Scale an A4 poster to A3 and then generate 2 A4 pages:",
+      "syntax": "pdfposter --scale 2 {{input_file.pdf}} {{output_file.pdf}}"
+    }
+  ]
+}

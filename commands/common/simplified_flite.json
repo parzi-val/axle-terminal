@@ -1,0 +1,30 @@
+{
+  "command": "flite",
+  "description": "Speech synthesis engine. More information: http://www.festvox.org/flite/doc/.",
+  "useCases": [
+    {
+      "description": "List all available voices:",
+      "syntax": "flite -lv"
+    },
+    {
+      "description": "Convert a text string to speech:",
+      "syntax": "flite -t &quot;{{string}}&quot;"
+    },
+    {
+      "description": "Convert the contents of a file to speech:",
+      "syntax": "flite -f {{path/to/file.txt}}"
+    },
+    {
+      "description": "Use the specified voice:",
+      "syntax": "flite -voice {{file://path/to/filename.flitevox|url}}"
+    },
+    {
+      "description": "Store output into a wav file:",
+      "syntax": "flite -voice {{file://path/to/filename.flitevox|url}} -f {{path/to/file.txt}} -o {{output.wav}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "flite --version"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "doctl databases replica",
+  "description": "Manage read-only replicas associated with a database cluster. More information: https://docs.digitalocean.com/reference/doctl/reference/databases/replica/.",
+  "useCases": [
+    {
+      "description": "Run a doctl databases replica command with an access token:",
+      "syntax": "doctl databases pool {{command}} --access-token {{access_token}}"
+    },
+    {
+      "description": "Retrieve information about a read-only database replica:",
+      "syntax": "doctl databases replica get {{database_id}} {{replica_name}}"
+    },
+    {
+      "description": "Retrieve list of read-only database replicas:",
+      "syntax": "doctl databases replica list {{database_id}}"
+    },
+    {
+      "description": "Create a read-only database replica:",
+      "syntax": "doctl databases replica create {{database_id}} {{replica_name}}"
+    },
+    {
+      "description": "Delete a read-only database replica:",
+      "syntax": "doctl databases replica delete {{database_id}} {{replica_name}}"
+    }
+  ]
+}

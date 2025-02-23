@@ -1,0 +1,22 @@
+{
+  "command": "treetime",
+  "description": "TreeTime provides routines for ancestral sequence reconstruction and inference of molecular-clock phylogenies. More information: https://treetime.readthedocs.io/en/latest/tutorials.html.",
+  "useCases": [
+    {
+      "description": "Infer ancestral sequences maximizing the joint or marginal likelihood:",
+      "syntax": "treetime ancestral"
+    },
+    {
+      "description": "Analyze patterns of recurrent mutations aka homoplasies:",
+      "syntax": "treetime homoplasy"
+    },
+    {
+      "description": "Estimate molecular clock parameters and reroot the tree:",
+      "syntax": "treetime clock"
+    },
+    {
+      "description": "Map discrete character such as host or country to the tree:",
+      "syntax": "treetime mugration"
+    }
+  ]
+}

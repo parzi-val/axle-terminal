@@ -1,0 +1,30 @@
+{
+  "command": "npm search",
+  "description": "Search for packages in the npm registry. More information: https://docs.npmjs.com/cli/commands/npm-search.",
+  "useCases": [
+    {
+      "description": "Search for a package by name:",
+      "syntax": "npm search {{package}}"
+    },
+    {
+      "description": "Search for packages by a specific keyword:",
+      "syntax": "npm search {{keyword}}"
+    },
+    {
+      "description": "Search for packages, including detailed information (e.g., description, author, version):",
+      "syntax": "npm search {{package}} --long"
+    },
+    {
+      "description": "Search for packages maintained by a specific author:",
+      "syntax": "npm search --author {{author}}"
+    },
+    {
+      "description": "Search for packages with a specific organization:",
+      "syntax": "npm search --scope {{organization}}"
+    },
+    {
+      "description": "Search for packages with a specific combination of terms:",
+      "syntax": "npm search {{term1 term2 ...}}"
+    }
+  ]
+}

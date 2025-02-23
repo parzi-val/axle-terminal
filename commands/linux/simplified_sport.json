@@ -1,0 +1,34 @@
+{
+  "command": "sport",
+  "description": "Search and install SlackBuilds. More information: http://slackermedia.info/handbook/doku.php?id=slackbuilds.",
+  "useCases": [
+    {
+      "description": "Pull the list of SlackBuilds to run sport for the first time:",
+      "syntax": "sudo mkdir -p /usr/ports &amp;&amp; sudo rsync -av rsync://slackbuilds.org /slackbuilds/$(awk '{print $2}' /etc/slackware-version)/ /usr/ports/"
+    },
+    {
+      "description": "Pull in any updates to the system's tree via rsync:",
+      "syntax": "sudo sport rsync"
+    },
+    {
+      "description": "Search for a package by name:",
+      "syntax": "sport search &quot;{{keyword}}&quot;"
+    },
+    {
+      "description": "Check if a package is installed:",
+      "syntax": "sport check {{package}}"
+    },
+    {
+      "description": "Display README and .info files of a package:",
+      "syntax": "sport cat {{package}}"
+    },
+    {
+      "description": "Install a package once the dependencies are resolved:",
+      "syntax": "sudo sport install {{package}}"
+    },
+    {
+      "description": "Install a list of packages from a file (format: packages separated by spaces):",
+      "syntax": "sudo sport install $(&lt; {{path/to/list}})"
+    }
+  ]
+}

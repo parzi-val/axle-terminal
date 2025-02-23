@@ -1,0 +1,30 @@
+{
+  "command": "tail",
+  "description": "Display the last part of a file. See also: head. More information: https://www.gnu.org/software/coreutils/manual/html_node/tail-invocation.html.",
+  "useCases": [
+    {
+      "description": "Show last 'count' lines in file:",
+      "syntax": "tail --lines {{count}} {{path/to/file}}"
+    },
+    {
+      "description": "Print a file from a specific line number:",
+      "syntax": "tail --lines +{{count}} {{path/to/file}}"
+    },
+    {
+      "description": "Print a specific count of bytes from the end of a given file:",
+      "syntax": "tail --bytes {{count}} {{path/to/file}}"
+    },
+    {
+      "description": "Print the last lines of a given file and keep reading it until Ctrl + C:",
+      "syntax": "tail --follow {{path/to/file}}"
+    },
+    {
+      "description": "Keep reading file until Ctrl + C, even if the file is inaccessible:",
+      "syntax": "tail --retry --follow {{path/to/file}}"
+    },
+    {
+      "description": "Show last 'num' lines in 'file' and refresh every 'n' seconds:",
+      "syntax": "tail --lines {{count}} --sleep-interval {{seconds}} --follow {{path/to/file}}"
+    }
+  ]
+}

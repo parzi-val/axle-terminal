@@ -1,0 +1,18 @@
+{
+  "command": "urpmi.removemedia",
+  "description": "Remove media in Mageia. Note: Mageia documentation uses medium and repository as synonymous. See also: urpmi, urpme, urpmi.addmedia, urpmi.update, urpmf, urpmq. More information: https://wiki.mageia.org/en/URPMI#urpmi.removemedia.",
+  "useCases": [
+    {
+      "description": "Remove a medium:",
+      "syntax": "sudo urpmi.removemedia {{medium}}"
+    },
+    {
+      "description": "Remove all media:",
+      "syntax": "sudo urpmi.removemedia -a"
+    },
+    {
+      "description": "Remove media fuzz[y] matching on media names:",
+      "syntax": "sudo urpmi.removemedia -y {{keyword}}"
+    }
+  ]
+}

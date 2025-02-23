@@ -1,0 +1,18 @@
+{
+  "command": "luajit",
+  "description": "A just-in-time compiler (JIT) for the Lua programming language. See also: lua. More information: https://luajit.org/luajit.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive Lua shell:",
+      "syntax": "luajit"
+    },
+    {
+      "description": "Execute a Lua script:",
+      "syntax": "luajit {{path/to/script.lua}} {{--optional-argument}}"
+    },
+    {
+      "description": "Execute a Lua expression:",
+      "syntax": "luajit -e '{{print(&quot;Hello World&quot;)}}'"
+    }
+  ]
+}

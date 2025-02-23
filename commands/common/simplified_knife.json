@@ -1,0 +1,34 @@
+{
+  "command": "knife",
+  "description": "Interact with a Chef server from a local Chef repo. More information: https://docs.chef.io/knife.html.",
+  "useCases": [
+    {
+      "description": "Bootstrap a new node:",
+      "syntax": "knife bootstrap {{fqdn_or_ip}}"
+    },
+    {
+      "description": "List all registered nodes:",
+      "syntax": "knife node list"
+    },
+    {
+      "description": "Show a node:",
+      "syntax": "knife node show {{node_name}}"
+    },
+    {
+      "description": "Edit a node:",
+      "syntax": "knife node edit {{node_name}}"
+    },
+    {
+      "description": "Edit a role:",
+      "syntax": "knife role edit {{role_name}}"
+    },
+    {
+      "description": "View a data bag:",
+      "syntax": "knife data bag show {{data_bag_name}} {{data_bag_item}}"
+    },
+    {
+      "description": "Upload a local cookbook to the Chef server:",
+      "syntax": "knife cookbook upload {{cookbook_name}}"
+    }
+  ]
+}

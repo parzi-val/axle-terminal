@@ -1,0 +1,26 @@
+{
+  "command": "pulumi up",
+  "description": "Create or update the resources in a stack. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_up/.",
+  "useCases": [
+    {
+      "description": "Preview and deploy changes to a program and/or infrastructure:",
+      "syntax": "pulumi up"
+    },
+    {
+      "description": "Automatically approve and perform the update after previewing it:",
+      "syntax": "pulumi up --yes"
+    },
+    {
+      "description": "Preview and deploy changes in a specific stack:",
+      "syntax": "pulumi up --stack {{stack}}"
+    },
+    {
+      "description": "Don't display stack outputs:",
+      "syntax": "pulumi up --suppress-outputs"
+    },
+    {
+      "description": "Continue updating the resources, even if an error is encountered:",
+      "syntax": "pulumi up --continue-on-error"
+    }
+  ]
+}

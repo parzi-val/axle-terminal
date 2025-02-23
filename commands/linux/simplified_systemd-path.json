@@ -1,0 +1,22 @@
+{
+  "command": "systemd-path",
+  "description": "List and query system and user paths. More information: https://www.freedesktop.org/software/systemd/man/systemd-path.html.",
+  "useCases": [
+    {
+      "description": "Display a list of known paths and their current values:",
+      "syntax": "systemd-path"
+    },
+    {
+      "description": "Query the specified path and display its value:",
+      "syntax": "systemd-path &quot;{{path_name}}&quot;"
+    },
+    {
+      "description": "Suffix printed paths with suffix_string:",
+      "syntax": "systemd-path --suffix {{suffix_string}}"
+    },
+    {
+      "description": "Print a short version string and then exit:",
+      "syntax": "systemd-path --version"
+    }
+  ]
+}

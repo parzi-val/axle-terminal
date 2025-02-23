@@ -1,0 +1,30 @@
+{
+  "command": "raco",
+  "description": "Racket command-line tools. More information: https://docs.racket-lang.org/raco/.",
+  "useCases": [
+    {
+      "description": "Install a package, automatically installing dependencies:",
+      "syntax": "raco pkg install --auto {{package_source}}"
+    },
+    {
+      "description": "Install the current directory as a package:",
+      "syntax": "raco pkg install"
+    },
+    {
+      "description": "Build (or rebuild) bytecode, documentation, executables, and metadata indexes for collections:",
+      "syntax": "raco setup {{collection1 collection2 ...}}"
+    },
+    {
+      "description": "Run tests in files:",
+      "syntax": "raco test {{path/to/tests1.rkt path/to/tests2.rkt ...}}"
+    },
+    {
+      "description": "Search local documentation:",
+      "syntax": "raco docs {{search_terms ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "raco help"
+    }
+  ]
+}

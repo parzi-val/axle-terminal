@@ -1,0 +1,26 @@
+{
+  "command": "cryptsetup",
+  "description": "Manage plain dm-crypt and LUKS (Linux Unified Key Setup) encrypted volumes. Some subcommands such as luksFormat have their own usage documentation. More information: https://manned.org/cryptsetup.",
+  "useCases": [
+    {
+      "description": "Initialize a LUKS volume with a passphrase (overwrites all data on the partition):",
+      "syntax": "cryptsetup luksFormat {{/dev/sdXY}}"
+    },
+    {
+      "description": "Open a LUKS volume and create a decrypted mapping at /dev/mapper/mapping_name:",
+      "syntax": "cryptsetup open {{/dev/sdXY}} {{mapping_name}}"
+    },
+    {
+      "description": "Display information about a mapping:",
+      "syntax": "cryptsetup status {{mapping_name}}"
+    },
+    {
+      "description": "Remove an existing mapping:",
+      "syntax": "cryptsetup close {{mapping_name}}"
+    },
+    {
+      "description": "Change a LUKS volume's passphrase:",
+      "syntax": "cryptsetup luksChangeKey {{/dev/sdXY}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "vgremove",
+  "description": "Remove volume group(s) in LVM. More information: https://manned.org/vgremove.",
+  "useCases": [
+    {
+      "description": "Remove a volume group with confirmation:",
+      "syntax": "vgremove {{volume_group}}"
+    },
+    {
+      "description": "Forcefully remove a volume group without confirmation:",
+      "syntax": "vgremove --force {{volume_group}}"
+    },
+    {
+      "description": "Set the debug level for detailed logging to level 2, (repeat --debug up to 6 times to increase the level):",
+      "syntax": "vgremove --debug --debug {{volume_group}}"
+    },
+    {
+      "description": "Use a specific config setting to override defaults:",
+      "syntax": "vgremove --config '{{global/locking_type=1}}' {{volume_group}}"
+    },
+    {
+      "description": "Display help text for usage information:",
+      "syntax": "vgremove --help"
+    }
+  ]
+}

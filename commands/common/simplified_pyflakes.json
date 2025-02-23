@@ -1,0 +1,22 @@
+{
+  "command": "pyflakes",
+  "description": "Checks Python source code files for errors. More information: https://pypi.org/project/pyflakes.",
+  "useCases": [
+    {
+      "description": "Check a single Python file:",
+      "syntax": "pyflakes check {{path/to/file.py}}"
+    },
+    {
+      "description": "Check Python files in a specific directory:",
+      "syntax": "pyflakes checkPath {{path/to/directory}}"
+    },
+    {
+      "description": "Check Python files in a directory recursively:",
+      "syntax": "pyflakes checkRecursive {{path/to/directory}}"
+    },
+    {
+      "description": "Check all Python files found in multiple directories:",
+      "syntax": "pyflakes iterSourceCode {{path/to/directory_1}} {{path/to/directory_2}}"
+    }
+  ]
+}

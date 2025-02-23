@@ -1,0 +1,34 @@
+{
+  "command": "dart",
+  "description": "Manage Dart projects. More information: https://dart.dev/tools/dart-tool.",
+  "useCases": [
+    {
+      "description": "Initialize a new Dart project in a directory of the same name:",
+      "syntax": "dart create {{project_name}}"
+    },
+    {
+      "description": "Run a Dart file:",
+      "syntax": "dart run {{path/to/file.dart}}"
+    },
+    {
+      "description": "Download dependencies for the current project:",
+      "syntax": "dart pub get"
+    },
+    {
+      "description": "Run unit tests for the current project:",
+      "syntax": "dart test"
+    },
+    {
+      "description": "Update an outdated project's dependencies to support null-safety:",
+      "syntax": "dart pub upgrade --null-safety"
+    },
+    {
+      "description": "Compile a Dart file to a native binary:",
+      "syntax": "dart compile exe {{path/to/file.dart}}"
+    },
+    {
+      "description": "Apply automated fixes to the current project:",
+      "syntax": "dart fix --apply"
+    }
+  ]
+}

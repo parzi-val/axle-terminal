@@ -1,0 +1,30 @@
+{
+  "command": "last",
+  "description": "View the last logged in users. More information: https://manned.org/last.",
+  "useCases": [
+    {
+      "description": "View last logins, their duration and other information as read from /var/log/wtmp:",
+      "syntax": "last"
+    },
+    {
+      "description": "Specify how many of the last logins to show:",
+      "syntax": "last -n {{login_count}}"
+    },
+    {
+      "description": "Print the full date and time for entries and then display the hostname column last to prevent truncation:",
+      "syntax": "last -F -a"
+    },
+    {
+      "description": "View all logins by a specific user and show the IP address instead of the hostname:",
+      "syntax": "last {{username}} -i"
+    },
+    {
+      "description": "View all recorded reboots (i.e., the last logins of the pseudo user \"reboot\"):",
+      "syntax": "last reboot"
+    },
+    {
+      "description": "View all recorded shutdowns (i.e., the last logins of the pseudo user \"shutdown\"):",
+      "syntax": "last shutdown"
+    }
+  ]
+}

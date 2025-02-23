@@ -1,0 +1,18 @@
+{
+  "command": "kwallet-query",
+  "description": "Read and write to a KDE Wallet. More information: https://manned.org/kwallet-query.",
+  "useCases": [
+    {
+      "description": "List all entries in the Passwords folder of kdewallet:",
+      "syntax": "kwallet-query {{kdewallet}} {{-l|--list-entries}}"
+    },
+    {
+      "description": "List all entries in a specific folder:",
+      "syntax": "kwallet-query {{kdewallet}} {{-l|--list-entries}} {{-f|--folder}} {{folder_name}}"
+    },
+    {
+      "description": "List all available folders:",
+      "syntax": "kwallet-query  {{kdewallet}} {{-l|--list-entries}} {{-f|--folder}} &quot;&quot;"
+    }
+  ]
+}

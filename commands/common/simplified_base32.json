@@ -1,0 +1,26 @@
+{
+  "command": "base32",
+  "description": "Encode or decode file or stdin to/from Base32, to stdout. More information: https://manned.org/base32.",
+  "useCases": [
+    {
+      "description": "Encode a file:",
+      "syntax": "base32 {{path/to/file}}"
+    },
+    {
+      "description": "Wrap encoded output at a specific width (0 disables wrapping):",
+      "syntax": "base32 {{-w|--wrap}} {{0|76|...}} {{path/to/file}}"
+    },
+    {
+      "description": "Decode a file:",
+      "syntax": "base32 {{-d|--decode}} {{path/to/file}}"
+    },
+    {
+      "description": "Encode from stdin:",
+      "syntax": "{{command}} | base32"
+    },
+    {
+      "description": "Decode from stdin:",
+      "syntax": "{{command}} | base32 {{-d|--decode}}"
+    }
+  ]
+}

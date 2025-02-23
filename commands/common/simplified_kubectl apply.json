@@ -1,0 +1,22 @@
+{
+  "command": "kubectl apply",
+  "description": "Manage applications through files defining Kubernetes resources. Create and update resources in a cluster. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply.",
+  "useCases": [
+    {
+      "description": "Apply a configuration to a resource by file name or stdin:",
+      "syntax": "kubectl apply -f {{resource_filename}}"
+    },
+    {
+      "description": "Edit the latest last-applied-configuration annotations of resources from the default editor:",
+      "syntax": "kubectl apply edit-last-applied -f {{resource_filename}}"
+    },
+    {
+      "description": "Set the latest last-applied-configuration annotations by setting it to match the contents of a file:",
+      "syntax": "kubectl apply set-last-applied -f {{resource_filename}}"
+    },
+    {
+      "description": "View the latest last-applied-configuration annotations by type/name or file:",
+      "syntax": "kubectl apply view-last-applied -f {{resource_filename}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "ubuntu-bug",
+  "description": "This command is an alias of apport-bug.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr apport-bug"
+    }
+  ]
+}

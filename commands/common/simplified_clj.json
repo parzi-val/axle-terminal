@@ -1,0 +1,30 @@
+{
+  "command": "clj",
+  "description": "Clojure tool to start a REPL or invoke a function with data. All options can be defined in a deps.edn file. More information: https://clojure.org/guides/deps_and_cli.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "clj"
+    },
+    {
+      "description": "Execute a function:",
+      "syntax": "clj -X {{namespace/function_name}}"
+    },
+    {
+      "description": "Run the main function of a specified namespace:",
+      "syntax": "clj -M -m {{namespace}} {{args}}"
+    },
+    {
+      "description": "Prepare a project by resolving dependencies, downloading libraries, and making/caching classpaths:",
+      "syntax": "clj -P"
+    },
+    {
+      "description": "Start an nREPL server with the CIDER middleware:",
+      "syntax": "clj -Sdeps '{:deps {nrepl {:mvn/version &quot;0.7.0&quot;} cider/cider-nrepl {:mvn/version &quot;0.25.2&quot;}}}' -m nrepl.cmdline --middleware '[&quot;cider.nrepl/cider-middleware&quot;]' --interactive"
+    },
+    {
+      "description": "Start a REPL for ClojureScript and open a web browser:",
+      "syntax": "clj -Sdeps '{:deps {org.clojure/clojurescript {:mvn/version &quot;1.10.758&quot;}}}' --main cljs.main --repl"
+    }
+  ]
+}

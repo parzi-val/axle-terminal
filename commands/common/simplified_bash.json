@@ -1,0 +1,38 @@
+{
+  "command": "bash",
+  "description": "Bourne-Again SHell, an sh-compatible command-line interpreter. See also: zsh, histexpand (history expansion). More information: https://www.gnu.org/software/bash/.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "bash"
+    },
+    {
+      "description": "Start an interactive shell session without loading startup configs:",
+      "syntax": "bash --norc"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "bash -c &quot;{{echo 'bash is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "bash {{path/to/script.sh}}"
+    },
+    {
+      "description": "E[x]ecute a specific script, printing each command before executing it:",
+      "syntax": "bash -x {{path/to/script.sh}}"
+    },
+    {
+      "description": "Execute a specific script and stop at the first [e]rror:",
+      "syntax": "bash -e {{path/to/script.sh}}"
+    },
+    {
+      "description": "Execute specific commands from stdin:",
+      "syntax": "{{echo &quot;echo 'bash is executed'&quot;}} | bash"
+    },
+    {
+      "description": "Start a [r]estricted shell session:",
+      "syntax": "bash -r"
+    }
+  ]
+}

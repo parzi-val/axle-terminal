@@ -1,0 +1,30 @@
+{
+  "command": "dmidecode",
+  "description": "Display the DMI (alternatively known as SMBIOS) table contents in a human-readable format. Requires root privileges. More information: https://manned.org/dmidecode.",
+  "useCases": [
+    {
+      "description": "Show all DMI table contents:",
+      "syntax": "sudo dmidecode"
+    },
+    {
+      "description": "Show the BIOS version:",
+      "syntax": "sudo dmidecode -s bios-version"
+    },
+    {
+      "description": "Show the system's serial number:",
+      "syntax": "sudo dmidecode -s system-serial-number"
+    },
+    {
+      "description": "Show BIOS information:",
+      "syntax": "sudo dmidecode -t bios"
+    },
+    {
+      "description": "Show CPU information:",
+      "syntax": "sudo dmidecode -t processor"
+    },
+    {
+      "description": "Show memory information:",
+      "syntax": "sudo dmidecode -t memory"
+    }
+  ]
+}

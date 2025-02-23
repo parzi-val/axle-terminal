@@ -1,0 +1,38 @@
+{
+  "command": "jhipster",
+  "description": "Web application generator using either monolithic or microservices architecture. More information: https://www.jhipster.tech/.",
+  "useCases": [
+    {
+      "description": "Generate a simple full-stack project (monolithic or microservices):",
+      "syntax": "jhipster"
+    },
+    {
+      "description": "Generate a simple frontend project:",
+      "syntax": "jhipster --skip-server"
+    },
+    {
+      "description": "Generate a simple backend project:",
+      "syntax": "jhipster --skip-client"
+    },
+    {
+      "description": "Apply latest JHipster updates to the project:",
+      "syntax": "jhipster upgrade"
+    },
+    {
+      "description": "Add a new entity to a generated project:",
+      "syntax": "jhipster entity {{entity_name}}"
+    },
+    {
+      "description": "Import a JDL file to configure your application (see: https://start.jhipster.tech/jdl-studio/):",
+      "syntax": "jhipster import-jdl {{first_file.jh second_file.jh ... n_file.jh}}"
+    },
+    {
+      "description": "Generate a CI/CD pipeline for your application:",
+      "syntax": "jhipster ci-cd"
+    },
+    {
+      "description": "Generate a Kubernetes configuration for your application:",
+      "syntax": "jhipster kubernetes"
+    }
+  ]
+}

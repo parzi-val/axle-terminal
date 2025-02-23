@@ -1,0 +1,30 @@
+{
+  "command": "tb",
+  "description": "Manage tasks and notes across multiple boards. More information: https://github.com/klaussinani/taskbook.",
+  "useCases": [
+    {
+      "description": "Add a new task to a board:",
+      "syntax": "tb --task {{task_description}} @{{board_name}}"
+    },
+    {
+      "description": "Add a new note to a board:",
+      "syntax": "tb --note {{note_description}} @{{board_name}}"
+    },
+    {
+      "description": "Edit item's priority:",
+      "syntax": "tb --priority @{{item_id}} {{priority}}"
+    },
+    {
+      "description": "Check/uncheck item:",
+      "syntax": "tb --check {{item_id}}"
+    },
+    {
+      "description": "Archive all checked items:",
+      "syntax": "tb --clear"
+    },
+    {
+      "description": "Move item to a board:",
+      "syntax": "tb --move @{{item_id}} {{board_name}}"
+    }
+  ]
+}

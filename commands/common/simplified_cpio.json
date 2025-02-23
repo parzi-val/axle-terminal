@@ -1,0 +1,18 @@
+{
+  "command": "cpio",
+  "description": "Copy files in and out of archives. Supports the following archive formats: cpio's custom binary, old ASCII, new ASCII, crc, HPUX binary, HPUX old ASCII, old tar, and POSIX.1 tar. More information: https://www.gnu.org/software/cpio.",
+  "useCases": [
+    {
+      "description": "Take a list of file names from stdin and add them [o]nto an archive in cpio's binary format:",
+      "syntax": "echo &quot;{{path/to/file1 path/to/file2 ...}}&quot; | cpio -o &gt; {{archive.cpio}}"
+    },
+    {
+      "description": "Copy all files and directories in a directory and add them [o]nto an archive, in [v]erbose mode:",
+      "syntax": "find {{path/to/directory}} | cpio -ov &gt; {{archive.cpio}}"
+    },
+    {
+      "description": "P[i]ck all files from an archive, generating [d]irectories where needed, in [v]erbose mode:",
+      "syntax": "cpio -idv &lt; {{archive.cpio}}"
+    }
+  ]
+}

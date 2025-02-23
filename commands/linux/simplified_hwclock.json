@@ -1,0 +1,18 @@
+{
+  "command": "hwclock",
+  "description": "Read or change the hardware clock. Usually requires root. More information: https://manned.org/hwclock.",
+  "useCases": [
+    {
+      "description": "Display the current time as reported by the hardware clock:",
+      "syntax": "hwclock"
+    },
+    {
+      "description": "Write the current software clock time to the hardware clock (sometimes used during system setup):",
+      "syntax": "hwclock --systohc"
+    },
+    {
+      "description": "Write the current hardware clock time to the software clock:",
+      "syntax": "hwclock --hctosys"
+    }
+  ]
+}

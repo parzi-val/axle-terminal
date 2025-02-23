@@ -1,0 +1,38 @@
+{
+  "command": "podman",
+  "description": "Simple management tool for pods, containers and images. Podman provides a Docker-CLI comparable command-line. Simply put: alias docker=podman. More information: https://github.com/containers/podman/blob/main/commands-demo.md.",
+  "useCases": [
+    {
+      "description": "List all containers (both running and stopped):",
+      "syntax": "podman ps --all"
+    },
+    {
+      "description": "Create a container from an image, with a custom name:",
+      "syntax": "podman run --name {{container_name}} {{image}}"
+    },
+    {
+      "description": "Start or stop an existing container:",
+      "syntax": "podman {{start|stop}} {{container_name}}"
+    },
+    {
+      "description": "Pull an image from a registry (defaults to Docker Hub):",
+      "syntax": "podman pull {{image}}"
+    },
+    {
+      "description": "Display the list of already downloaded images:",
+      "syntax": "podman images"
+    },
+    {
+      "description": "Open a shell inside an already running container:",
+      "syntax": "podman exec --interactive --tty {{container_name}} {{sh}}"
+    },
+    {
+      "description": "Remove a stopped container:",
+      "syntax": "podman rm {{container_name}}"
+    },
+    {
+      "description": "Display the logs of one or more containers and follow log output:",
+      "syntax": "podman logs --follow {{container_name}} {{container_id}}"
+    }
+  ]
+}

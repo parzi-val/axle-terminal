@@ -1,0 +1,26 @@
+{
+  "command": "ia",
+  "description": "Command-line tool to interact with archive.org. More information: https://archive.org/services/docs/api/internetarchive/cli.html.",
+  "useCases": [
+    {
+      "description": "Configure ia with API keys (some functions won't work without this step):",
+      "syntax": "ia configure"
+    },
+    {
+      "description": "Upload one or more items to archive.org:",
+      "syntax": "ia upload {{identifier}} {{path/to/file}} --metadata=&quot;{{mediatype:data}}&quot; --metadata=&quot;{{title:example}}&quot;"
+    },
+    {
+      "description": "Download one or more items from archive.org:",
+      "syntax": "ia download {{item}}"
+    },
+    {
+      "description": "Delete one or more items from archive.org:",
+      "syntax": "ia delete {{identifier}} {{file}}"
+    },
+    {
+      "description": "Search on archive.org, returning results as JSON:",
+      "syntax": "ia search '{{subject:&quot;subject&quot; collection:collection}}'"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "lvdisplay",
+  "description": "Display information about Logical Volume Manager (LVM) logical volumes. See also: lvm. More information: https://manned.org/lvdisplay.",
+  "useCases": [
+    {
+      "description": "Display information about all logical volumes:",
+      "syntax": "sudo lvdisplay"
+    },
+    {
+      "description": "Display information about all logical volumes in volume group vg1:",
+      "syntax": "sudo lvdisplay {{vg1}}"
+    },
+    {
+      "description": "Display information about logical volume lv1 in volume group vg1:",
+      "syntax": "sudo lvdisplay {{vg1/lv1}}"
+    }
+  ]
+}

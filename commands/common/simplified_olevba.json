@@ -1,0 +1,30 @@
+{
+  "command": "olevba",
+  "description": "Parse OLE and OpenXML files (e.g., DOC, XLS, PPT, etc.) to extract VBA macros, deobfuscate, and analyze malicious code. Part of the python-oletools suite. For more information: https://github.com/decalage2/oletools.",
+  "useCases": [
+    {
+      "description": "Analyze a file, showing both macro code and analysis results:",
+      "syntax": "olevba {{path/to/file}}"
+    },
+    {
+      "description": "Recursively analyze all supported files in a directory:",
+      "syntax": "olevba -r {{path/to/directory}}"
+    },
+    {
+      "description": "Provide a password for encrypted Microsoft Office files (may be repeated):",
+      "syntax": "olevba --password {{password}} {{path/to/encrypted_file}}"
+    },
+    {
+      "description": "Display only analysis results, without showing macro source code:",
+      "syntax": "olevba -a {{path/to/file}}"
+    },
+    {
+      "description": "Display only macro source code:",
+      "syntax": "olevba -c {{path/to/file}}"
+    },
+    {
+      "description": "Show obfuscated strings and their decoded content:",
+      "syntax": "olevba --decode {{path/to/file}}"
+    }
+  ]
+}

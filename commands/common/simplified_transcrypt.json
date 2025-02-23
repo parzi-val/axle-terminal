@@ -1,0 +1,26 @@
+{
+  "command": "transcrypt",
+  "description": "Transparently encrypt files within a Git repository. More information: https://github.com/elasticdog/transcrypt.",
+  "useCases": [
+    {
+      "description": "Initialize an unconfigured repository:",
+      "syntax": "transcrypt"
+    },
+    {
+      "description": "List the currently encrypted files:",
+      "syntax": "git ls-crypt"
+    },
+    {
+      "description": "Display the credentials of a configured repository:",
+      "syntax": "transcrypt --display"
+    },
+    {
+      "description": "Initialize and decrypt a fresh clone of a configured repository:",
+      "syntax": "transcrypt --cipher={{cipher}}"
+    },
+    {
+      "description": "Rekey to change the encryption cipher or password:",
+      "syntax": "transcrypt --rekey"
+    }
+  ]
+}

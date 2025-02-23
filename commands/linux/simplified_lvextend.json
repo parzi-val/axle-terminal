@@ -1,0 +1,18 @@
+{
+  "command": "lvextend",
+  "description": "Increase the size of a logical volume. See also: lvm. More information: https://manned.org/lvextend.8.",
+  "useCases": [
+    {
+      "description": "Increase a volume's size to 120 GB:",
+      "syntax": "lvextend --size {{120G}} {{logical_volume}}"
+    },
+    {
+      "description": "Increase a volume's size by 40 GB as well as the underlying filesystem:",
+      "syntax": "lvextend --size +{{40G}} -r {{logical_volume}}"
+    },
+    {
+      "description": "Increase a volume's size to 100% of the free physical volume space:",
+      "syntax": "lvextend --size +{{100}}%FREE {{logical_volume}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "tlmgr key",
+  "description": "Manage GPG keys used to verify TeX Live databases. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "List all keys for TeX Live:",
+      "syntax": "tlmgr key list"
+    },
+    {
+      "description": "Add a key from a specific file:",
+      "syntax": "sudo tlmgr key add {{path/to/key.gpg}}"
+    },
+    {
+      "description": "Add a key from stdin:",
+      "syntax": "cat {{path/to/key.gpg}} | sudo tlmgr key add -"
+    },
+    {
+      "description": "Remove a specific key by its ID:",
+      "syntax": "sudo tlmgr key remove {{key_id}}"
+    }
+  ]
+}

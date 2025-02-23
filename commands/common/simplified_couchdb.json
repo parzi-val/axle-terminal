@@ -1,0 +1,26 @@
+{
+  "command": "couchdb",
+  "description": "Command-line interface for Apache CouchDB database server. More information: https://couchdb.apache.org.",
+  "useCases": [
+    {
+      "description": "Start CouchDB:",
+      "syntax": "couchdb"
+    },
+    {
+      "description": "Start CouchDB interactive shell:",
+      "syntax": "couchdb -i"
+    },
+    {
+      "description": "Start CouchDB as a background process:",
+      "syntax": "couchdb -b"
+    },
+    {
+      "description": "Kill the background process (Note: It will respawn if needed):",
+      "syntax": "couchdb -k"
+    },
+    {
+      "description": "Shutdown the background process:",
+      "syntax": "couchdb -d"
+    }
+  ]
+}

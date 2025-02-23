@@ -1,0 +1,26 @@
+{
+  "command": "git flow",
+  "description": "A collection of Git extensions to provide high-level repository operations. More information: https://github.com/nvie/gitflow.",
+  "useCases": [
+    {
+      "description": "Initialize it inside an existing Git repository:",
+      "syntax": "git flow init"
+    },
+    {
+      "description": "Start developing on a feature branch based on develop:",
+      "syntax": "git flow feature start {{feature}}"
+    },
+    {
+      "description": "Finish development on a feature branch, merging it into the develop branch and deleting it:",
+      "syntax": "git flow feature finish {{feature}}"
+    },
+    {
+      "description": "Publish a feature to the remote server:",
+      "syntax": "git flow feature publish {{feature}}"
+    },
+    {
+      "description": "Get a feature published by another user:",
+      "syntax": "git flow feature pull origin {{feature}}"
+    }
+  ]
+}

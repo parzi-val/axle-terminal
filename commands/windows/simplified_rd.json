@@ -1,0 +1,14 @@
+{
+  "command": "rd",
+  "description": "This command is an alias of rmdir on the Command Prompt and Remove-Item in PowerShell.",
+  "useCases": [
+    {
+      "description": "View documentation for the original Command Prompt command:",
+      "syntax": "tldr rmdir"
+    },
+    {
+      "description": "View documentation for the original PowerShell command:",
+      "syntax": "tldr remove-item"
+    }
+  ]
+}

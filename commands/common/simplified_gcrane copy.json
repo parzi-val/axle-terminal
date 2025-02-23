@@ -1,0 +1,22 @@
+{
+  "command": "gcrane copy",
+  "description": "Efficiently copy a remote image from source to target while retaining the digest value. More information: https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.md.",
+  "useCases": [
+    {
+      "description": "Copy an image from source to target:",
+      "syntax": "gcrane {{cp|copy}} {{source}} {{target}}"
+    },
+    {
+      "description": "Set the maximum number of concurrent copies, defaults to 20:",
+      "syntax": "gcrane copy {{source}} {{target}} {{-j|--jobs}} {{nr_of_copies}}"
+    },
+    {
+      "description": "Whether to recurse through repositories:",
+      "syntax": "gcrane copy {{source}} {{target}} {{-r|--recursive}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gcrane copy {{-h|--help}}"
+    }
+  ]
+}

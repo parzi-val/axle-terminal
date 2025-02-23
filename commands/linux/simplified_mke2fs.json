@@ -1,0 +1,18 @@
+{
+  "command": "mke2fs",
+  "description": "Create a Linux filesystem inside a partition. More information: https://manned.org/mke2fs.",
+  "useCases": [
+    {
+      "description": "Create an ext2 filesystem in partition 1 of device b (sdb1):",
+      "syntax": "mkfs.ext2 {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create an ext3 filesystem in partition 1 of device b (sdb1):",
+      "syntax": "mkfs.ext3 {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create an ext4 filesystem in partition 1 of device b (sdb1):",
+      "syntax": "mkfs.ext4 {{/dev/sdb1}}"
+    }
+  ]
+}

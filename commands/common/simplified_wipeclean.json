@@ -1,0 +1,14 @@
+{
+  "command": "wipeclean",
+  "description": "Clear the terminal screen using an animated wiper. More information: https://github.com/JeanJouliaCode/wipeClean.",
+  "useCases": [
+    {
+      "description": "Clear the terminal screen:",
+      "syntax": "wipeclean"
+    },
+    {
+      "description": "Set the animation speed in frames per second (defaults to 150):",
+      "syntax": "wipeclean --speed {{speed}}"
+    }
+  ]
+}

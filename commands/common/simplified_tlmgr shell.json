@@ -1,0 +1,38 @@
+{
+  "command": "tlmgr shell",
+  "description": "Start an interactive shell of the native TeX Live manager. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell of tlmgr:",
+      "syntax": "tlmgr shell"
+    },
+    {
+      "description": "Run any tlmgr subcommand in the interactive shell:",
+      "syntax": "{{subcommand}} {{arguments}}"
+    },
+    {
+      "description": "Quit the interactive shell:",
+      "syntax": "quit"
+    },
+    {
+      "description": "List all TeX Live variables:",
+      "syntax": "get"
+    },
+    {
+      "description": "Get the value of a TeX Live variable:",
+      "syntax": "get {{variable}}"
+    },
+    {
+      "description": "Set the value of a TeX Live variable:",
+      "syntax": "set {{variable}} {{value}}"
+    },
+    {
+      "description": "Restart the interactive shell:",
+      "syntax": "restart"
+    },
+    {
+      "description": "Display the version of the current protocol:",
+      "syntax": "protocol"
+    }
+  ]
+}

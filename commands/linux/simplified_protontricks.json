@@ -1,0 +1,34 @@
+{
+  "command": "protontricks",
+  "description": "A simple wrapper that runs Winetricks commands for Proton enabled games. More information: https://github.com/Matoking/protontricks.",
+  "useCases": [
+    {
+      "description": "Run the protontricks GUI:",
+      "syntax": "protontricks --gui"
+    },
+    {
+      "description": "Run Winetricks for a specific game:",
+      "syntax": "protontricks {{appid}} {{winetricks_args}}"
+    },
+    {
+      "description": "Run a command within a game's installation directory:",
+      "syntax": "protontricks -c {{command}} {{appid}}"
+    },
+    {
+      "description": "[l]ist all installed games:",
+      "syntax": "protontricks -l"
+    },
+    {
+      "description": "[s]earch for a game's App ID by name:",
+      "syntax": "protontricks -s {{game_name}}"
+    },
+    {
+      "description": "Run an executable in the proton environment of a specific game:",
+      "syntax": "protontricks-launch --appid {{appid}} {{path/to/executable.exe}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "protontricks --help"
+    }
+  ]
+}

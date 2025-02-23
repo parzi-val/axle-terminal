@@ -1,0 +1,30 @@
+{
+  "command": "lxc profile",
+  "description": "Manage profiles for LXD containers. More information: https://linuxcontainers.org/lxd/docs/master/profiles.",
+  "useCases": [
+    {
+      "description": "List all available profiles:",
+      "syntax": "lxc profile list"
+    },
+    {
+      "description": "Show the configuration of a specific profile:",
+      "syntax": "lxc profile show {{profile_name}}"
+    },
+    {
+      "description": "Edit a specific profile in the default editor:",
+      "syntax": "lxc profile edit {{profile_name}}"
+    },
+    {
+      "description": "Edit a specific profile importing the configuration values from a file:",
+      "syntax": "lxc profile edit {{profile_name}} &lt; {{config.yaml}}"
+    },
+    {
+      "description": "Launch a new container with specific profiles:",
+      "syntax": "lxc launch {{container_image}} {{container_name}} --profile {{profile1}} --profile {{profile2}}"
+    },
+    {
+      "description": "Change the profiles of a running container:",
+      "syntax": "lxc profile assign {{container_name}} {{profile1,profile2}}"
+    }
+  ]
+}

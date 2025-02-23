@@ -1,0 +1,30 @@
+{
+  "command": "jigsaw",
+  "description": "A Laravel-based static site builder for PHP. More information: https://jigsaw.tighten.co.",
+  "useCases": [
+    {
+      "description": "Initialize a project:",
+      "syntax": "jigsaw init"
+    },
+    {
+      "description": "Initialize a project using a starter template:",
+      "syntax": "jigsaw init {{template_name}}"
+    },
+    {
+      "description": "Build the site for development:",
+      "syntax": "jigsaw build"
+    },
+    {
+      "description": "Preview the site from the \"build_local\" directory:",
+      "syntax": "jigsaw serve"
+    },
+    {
+      "description": "Build the site for production:",
+      "syntax": "jigsaw build production"
+    },
+    {
+      "description": "Preview the site from the \"build_production\" directory:",
+      "syntax": "jigsaw serve {{build_production}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "userdel",
+  "description": "Remove a user account or remove a user from a group. See also: users, useradd, usermod. More information: https://manned.org/userdel.",
+  "useCases": [
+    {
+      "description": "Remove a user:",
+      "syntax": "sudo userdel {{username}}"
+    },
+    {
+      "description": "Remove a user in other root directory:",
+      "syntax": "sudo userdel {{-R|--root}} {{path/to/other/root}} {{username}}"
+    },
+    {
+      "description": "Remove a user along with the home directory and mail spool:",
+      "syntax": "sudo userdel {{-r|--remove}} {{username}}"
+    }
+  ]
+}

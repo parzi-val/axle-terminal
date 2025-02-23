@@ -1,0 +1,18 @@
+{
+  "command": "grumphp",
+  "description": "A PHP Composer plugin that enables source code quality checks. More information: https://github.com/phpro/grumphp.",
+  "useCases": [
+    {
+      "description": "Register the Git hooks:",
+      "syntax": "grumphp git:init"
+    },
+    {
+      "description": "Trigger the pre-commit hook manually:",
+      "syntax": "grumphp git:pre-commit"
+    },
+    {
+      "description": "Check every versioned file:",
+      "syntax": "grumphp run"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "adb install",
+  "description": "Push packages to a connected Android device or emulator. More information: https://developer.android.com/tools/adb.",
+  "useCases": [
+    {
+      "description": "Push an Android application to an emulator/device:",
+      "syntax": "adb install {{path/to/file.apk}}"
+    },
+    {
+      "description": "Push an Android application to a specific emulator/device (overrides $ANDROID_SERIAL):",
+      "syntax": "adb -s {{serial_number}} install {{path/to/file.apk}}"
+    },
+    {
+      "description": "[r]einstall an existing app, keeping its data:",
+      "syntax": "adb install -r {{path/to/file.apk}}"
+    },
+    {
+      "description": "Push an Android application allowing version code [d]owngrade (debuggable packages only):",
+      "syntax": "adb install -d {{path/to/file.apk}}"
+    },
+    {
+      "description": "[g]rant all permissions listed in the app manifest:",
+      "syntax": "adb install -g {{path/to/file.apk}}"
+    },
+    {
+      "description": "Quickly update an installed package by only updating the parts of the APK that changed:",
+      "syntax": "adb install --fastdeploy {{path/to/file.apk}}"
+    }
+  ]
+}

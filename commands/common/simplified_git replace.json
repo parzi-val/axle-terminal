@@ -1,0 +1,18 @@
+{
+  "command": "git replace",
+  "description": "Create, list, and delete refs to replace objects. More information: https://git-scm.com/docs/git-replace.",
+  "useCases": [
+    {
+      "description": "Replace any commit with a different one, leaving other commits unchanged:",
+      "syntax": "git replace {{object}} {{replacement}}"
+    },
+    {
+      "description": "Delete existing replace refs for the given objects:",
+      "syntax": "git replace --delete {{object}}"
+    },
+    {
+      "description": "Edit an object’s content interactively:",
+      "syntax": "git replace --edit {{object}}"
+    }
+  ]
+}

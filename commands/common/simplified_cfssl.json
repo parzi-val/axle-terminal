@@ -1,0 +1,22 @@
+{
+  "command": "cfssl",
+  "description": "Cloudflare's PKI and TLS toolkit. See also: openssl. More information: https://github.com/cloudflare/cfssl.",
+  "useCases": [
+    {
+      "description": "Show certificate information of a host:",
+      "syntax": "cfssl certinfo -domain {{www.google.com}}"
+    },
+    {
+      "description": "Decode certificate information from a file:",
+      "syntax": "cfssl certinfo -cert {{path/to/certificate.pem}}"
+    },
+    {
+      "description": "Scan host(s) for SSL/TLS issues:",
+      "syntax": "cfssl scan {{host1 host2 ...}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "cfssl {{genkey|gencsr|certinfo|sign|gencrl|ocspdump|ocsprefresh|ocspsign|ocspserve|scan|bundle|crl|print-defaults|revoke|gencert|serve|version|selfsign|info}} -h"
+    }
+  ]
+}

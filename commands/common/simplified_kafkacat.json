@@ -1,0 +1,10 @@
+{
+  "command": "kafkacat",
+  "description": "This command is an alias of kcat.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr kcat"
+    }
+  ]
+}

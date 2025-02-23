@@ -1,0 +1,26 @@
+{
+  "command": "openvpn3",
+  "description": "OpenVPN 3 Linux client. More information: https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux.",
+  "useCases": [
+    {
+      "description": "Start a new VPN session:",
+      "syntax": "openvpn3 session-start --config {{path/to/config.conf}}"
+    },
+    {
+      "description": "List established sessions:",
+      "syntax": "openvpn3 sessions-list"
+    },
+    {
+      "description": "Disconnect the currently established session started with given configuration:",
+      "syntax": "openvpn3 session-manage --config {{path/to/config.conf}} --disconnect"
+    },
+    {
+      "description": "Import VPN configuration:",
+      "syntax": "openvpn3 config-import --config {{path/to/config.conf}}"
+    },
+    {
+      "description": "List imported configurations:",
+      "syntax": "openvpn3 configs-list"
+    }
+  ]
+}

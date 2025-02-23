@@ -1,0 +1,14 @@
+{
+  "command": "rustup help",
+  "description": "Display help on rustup and its subcommands. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "rustup help"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "rustup help {{subcommand}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "cmstp",
+  "description": "Manage connection service profiles. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/cmstp.",
+  "useCases": [
+    {
+      "description": "Install a specific profile:",
+      "syntax": "cmstp &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Install without creating a desktop shortcut:",
+      "syntax": "cmstp /ns &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Install without checking for dependencies:",
+      "syntax": "cmstp /nf &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Only install for the current user:",
+      "syntax": "cmstp /su &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Install for all users (requires administrator privileges):",
+      "syntax": "cmstp /au &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Install silently without any prompts:",
+      "syntax": "cmstp /s &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Uninstall a specific profile:",
+      "syntax": "cmstp /u &quot;{{path\\to\\profile_file}}&quot;"
+    },
+    {
+      "description": "Uninstall silently without a confirmation prompt:",
+      "syntax": "cmstp /u /s &quot;{{path\\to\\profile_file}}&quot;"
+    }
+  ]
+}

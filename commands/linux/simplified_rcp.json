@@ -1,0 +1,22 @@
+{
+  "command": "rcp",
+  "description": "Copy files between local and remote systems. It mimics the behavior of the cp command but operates across different machines. More information: https://www.gnu.org/software/inetutils/manual/html_node/rcp-invocation.html.",
+  "useCases": [
+    {
+      "description": "Copy a file to a remote host:",
+      "syntax": "rcp {{path/to/local_file}} {{username}}@{{remote_host}}:{{/path/to/destination/}}"
+    },
+    {
+      "description": "Copy a directory recursively:",
+      "syntax": "rcp -r {{path/to/local_directory}} {{username}}@{{remote_host}}:{{/path/to/destination/}}"
+    },
+    {
+      "description": "Preserve the file attributes:",
+      "syntax": "rcp -p {{path/to/local_file}} {{username}}@{{remote_host}}:{{/path/to/destination/}}"
+    },
+    {
+      "description": "Force copy without a confirmation:",
+      "syntax": "rcp -f {{path/to/local_file}} {{username}}@{{remote_host}}:{{/path/to/destination/}}"
+    }
+  ]
+}

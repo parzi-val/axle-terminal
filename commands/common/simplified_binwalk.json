@@ -1,0 +1,30 @@
+{
+  "command": "binwalk",
+  "description": "Firmware Analysis Tool. More information: https://github.com/ReFirmLabs/binwalk.",
+  "useCases": [
+    {
+      "description": "Scan a binary file:",
+      "syntax": "binwalk {{path/to/binary}}"
+    },
+    {
+      "description": "Extract files from a binary, specifying the output directory:",
+      "syntax": "binwalk --extract --directory {{output_directory}} {{path/to/binary}}"
+    },
+    {
+      "description": "Recursively extract files from a binary limiting the recursion depth to 2:",
+      "syntax": "binwalk --extract --matryoshka --depth {{2}} {{path/to/binary}}"
+    },
+    {
+      "description": "Extract files from a binary with the specified file signature:",
+      "syntax": "binwalk --dd '{{png image:png}}' {{path/to/binary}}"
+    },
+    {
+      "description": "Analyze the entropy of a binary, saving the plot with the same name as the binary and .png extension appended:",
+      "syntax": "binwalk --entropy --save {{path/to/binary}}"
+    },
+    {
+      "description": "Combine entropy, signature and opcodes analysis in a single command:",
+      "syntax": "binwalk --entropy --signature --opcodes {{path/to/binary}}"
+    }
+  ]
+}

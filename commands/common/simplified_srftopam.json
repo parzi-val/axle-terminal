@@ -1,0 +1,10 @@
+{
+  "command": "srftopam",
+  "description": "Convert an SRF file to Netpbm format. See also: pamtosrf. More information: https://netpbm.sourceforge.net/doc/srftopam.html.",
+  "useCases": [
+    {
+      "description": "Convert an SRF file to Netpbm format:",
+      "syntax": "srftopam {{path/to/file.srf}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

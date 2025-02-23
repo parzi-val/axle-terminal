@@ -1,0 +1,26 @@
+{
+  "command": "reg add",
+  "description": "Add new keys and their values to the registry. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-add.",
+  "useCases": [
+    {
+      "description": "Add a new registry key:",
+      "syntax": "reg add {{key_name}}"
+    },
+    {
+      "description": "Add a new [v]alue under a specific key:",
+      "syntax": "reg add {{key_name}} /v {{value}}"
+    },
+    {
+      "description": "Add a new value with specific [d]ata:",
+      "syntax": "reg add {{key_name}} /d {{data}}"
+    },
+    {
+      "description": "Add a new value to a key with a specific data [t]ype:",
+      "syntax": "reg add {{key_name}} /t REG_{{SZ|MULTI_SZ|DWORD_BIG_ENDIAN|DWORD|BINARY|DWORD_LITTLE_ENDIAN|LINK|FULL_RESOURCE_DESCRIPTOR|EXPAND_SZ}}"
+    },
+    {
+      "description": "[f]orcefully (without a prompt) overwrite the existing registry value:",
+      "syntax": "reg add {{key_name}} /f"
+    }
+  ]
+}

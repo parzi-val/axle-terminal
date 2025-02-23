@@ -1,0 +1,18 @@
+{
+  "command": "pstopnm",
+  "description": "Convert a PostScript file to a PNM image. More information: https://netpbm.sourceforge.net/doc/pstopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PS file to PNM images, storing page N of the input to path/to/fileN.ppm:",
+      "syntax": "pstopnm {{path/to/file.ps}}"
+    },
+    {
+      "description": "Explicitly specify the output format:",
+      "syntax": "pstopnm -{{pbm|pgm|ppm}} {{path/to/file.ps}}"
+    },
+    {
+      "description": "Specify the resolution of the output in dots per inch:",
+      "syntax": "pstopnm -dpi {{n}} {{path/to/file.ps}}"
+    }
+  ]
+}

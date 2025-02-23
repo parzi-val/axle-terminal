@@ -1,0 +1,14 @@
+{
+  "command": "rasttopnm",
+  "description": "Convert a Sun rasterfile to a PNM file. More information: https://netpbm.sourceforge.net/doc/rasttopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a RAST image to a PNM file:",
+      "syntax": "rasttopnm {{path/to/input.rast}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Use the color map indices in the raster if they are color values:",
+      "syntax": "rasttopnm -index {{path/to/input.rast}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

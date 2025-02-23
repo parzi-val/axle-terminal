@@ -1,0 +1,18 @@
+{
+  "command": "ipaggcreate",
+  "description": "Produce aggregate statistics of TCP/IP dumps. More information: https://manned.org/ipaggcreate.",
+  "useCases": [
+    {
+      "description": "Count the number of packets sent from each source address appearing in a PCAP file:",
+      "syntax": "ipaggcreate --src {{path/to/file.pcap}}"
+    },
+    {
+      "description": "Group and count packets read from a network interface by IP packet length:",
+      "syntax": "ipaggcreate --interface {{eth0}} --length"
+    },
+    {
+      "description": "Count the number of bytes sent between each address pair appearing in a PCAP file:",
+      "syntax": "ipaggcreate --address-pairs --bytes {{path/to/file.pcap}}"
+    }
+  ]
+}

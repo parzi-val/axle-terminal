@@ -1,0 +1,14 @@
+{
+  "command": "zcmp",
+  "description": "Compare compressed files. More information: https://manned.org/zcmp.",
+  "useCases": [
+    {
+      "description": "Invoke cmp on two files compressed via gzip:",
+      "syntax": "zcmp {{path/to/file1.gz}} {{path/to/file2.gz}}"
+    },
+    {
+      "description": "Compare a file to its gzipped version (assuming .gz exists already):",
+      "syntax": "zcmp {{path/to/file}}"
+    }
+  ]
+}

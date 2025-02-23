@@ -1,0 +1,30 @@
+{
+  "command": "xfreerdp",
+  "description": "Free Remote Desktop Protocol implementation. More information: https://www.freerdp.com.",
+  "useCases": [
+    {
+      "description": "Connect to a FreeRDP server:",
+      "syntax": "xfreerdp /u:{{username}} /p:{{password}} /v:{{ip_address}}"
+    },
+    {
+      "description": "Connect to a FreeRDP server and activate audio output redirection using sys:alsa device:",
+      "syntax": "xfreerdp /u:{{username}} /p:{{password}} /v:{{ip_address}} /sound:{{sys:alsa}}"
+    },
+    {
+      "description": "Connect to a FreeRDP server with dynamic resolution:",
+      "syntax": "xfreerdp /v:{{ip_address}} /u:{{username}} /p:{{password}} /dynamic-resolution"
+    },
+    {
+      "description": "Connect to a FreeRDP server with clipboard redirection:",
+      "syntax": "xfreerdp /v:{{ip_address}} /u:{{username}} /p:{{password}} +clipboard"
+    },
+    {
+      "description": "Connect to a FreeRDP server ignoring any certificate checks:",
+      "syntax": "xfreerdp /v:{{ip_address}} /u:{{username}} /p:{{password}} /cert:ignore"
+    },
+    {
+      "description": "Connect to a FreeRDP server with a shared directory:",
+      "syntax": "xfreerdp /v:{{ip_address}} /u:{{username}} /p:{{password}} /drive:{{path/to/directory}},{{share_name}}"
+    }
+  ]
+}

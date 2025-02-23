@@ -1,0 +1,34 @@
+{
+  "command": "laravel",
+  "description": "A command-line installer for the Laravel framework. More information: https://laravel.com.",
+  "useCases": [
+    {
+      "description": "Create a new Laravel application:",
+      "syntax": "laravel new {{name}}"
+    },
+    {
+      "description": "Use the latest development release:",
+      "syntax": "laravel new {{name}} --dev"
+    },
+    {
+      "description": "Overwrite if the directory already exists:",
+      "syntax": "laravel new {{name}} --force"
+    },
+    {
+      "description": "Install the Laravel Jetstream scaffolding:",
+      "syntax": "laravel new {{name}} --jet"
+    },
+    {
+      "description": "Install the Laravel Jetstream scaffolding with a specific stack:",
+      "syntax": "laravel new {{name}} --jet --stack {{livewire|inertia}}"
+    },
+    {
+      "description": "Install the Laravel Jetstream scaffolding with support for teams:",
+      "syntax": "laravel new {{name}} --jet --teams"
+    },
+    {
+      "description": "List the available installer commands:",
+      "syntax": "laravel list"
+    }
+  ]
+}

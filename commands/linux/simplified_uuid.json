@@ -1,0 +1,34 @@
+{
+  "command": "uuid",
+  "description": "Generate and decode Universally Unique Identifiers (UUID). See also uuidgen. More information: https://manned.org/uuid.",
+  "useCases": [
+    {
+      "description": "Generate a UUIDv1 (based on time and system's hardware address, if present):",
+      "syntax": "uuid"
+    },
+    {
+      "description": "Generate a UUIDv4 (based on random data):",
+      "syntax": "uuid -v {{4}}"
+    },
+    {
+      "description": "Generate multiple UUIDv4 identifiers at once:",
+      "syntax": "uuid -v {{4}} -n {{number_of_uuids}}"
+    },
+    {
+      "description": "Generate a UUIDv4 and specify the output format:",
+      "syntax": "uuid -v {{4}} -F {{BIN|STR|SIV}}"
+    },
+    {
+      "description": "Generate a UUIDv4 and write the output to a file:",
+      "syntax": "uuid -v {{4}} -o {{path/to/file}}"
+    },
+    {
+      "description": "Generate a UUIDv5 (based on the supplied object name) with a specified namespace prefix:",
+      "syntax": "uuid -v {{5}} ns:{{DNS|URL|OID|X500}} {{object_name}}"
+    },
+    {
+      "description": "Decode a given UUID:",
+      "syntax": "uuid -d {{uuid}}"
+    }
+  ]
+}

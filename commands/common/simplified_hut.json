@@ -1,0 +1,30 @@
+{
+  "command": "hut",
+  "description": "A CLI tool for sourcehut. More information: https://manned.org/hut.",
+  "useCases": [
+    {
+      "description": "Initialize hut's configuration file (this will prompt for an OAuth2 access token, which is required to use hut):",
+      "syntax": "hut init"
+    },
+    {
+      "description": "List Git/Mercurial repositories:",
+      "syntax": "hut {{git|hg}} list"
+    },
+    {
+      "description": "Create a public Git/Mercurial repository:",
+      "syntax": "hut {{git|hg}} create {{name}}"
+    },
+    {
+      "description": "List jobs on https://builds.sr.ht:",
+      "syntax": "hut builds list"
+    },
+    {
+      "description": "Show the status of a job:",
+      "syntax": "hut builds show {{job_id}}"
+    },
+    {
+      "description": "SSH into a job container:",
+      "syntax": "hut ssh {{job_id}}"
+    }
+  ]
+}

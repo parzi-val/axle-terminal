@@ -1,0 +1,22 @@
+{
+  "command": "choco outdated",
+  "description": "Check for outdated packages with Chocolatey. More information: https://chocolatey.org/docs/commands-outdated.",
+  "useCases": [
+    {
+      "description": "Display a list of outdated packages in table format:",
+      "syntax": "choco outdated"
+    },
+    {
+      "description": "Ignore pinned packages in the output:",
+      "syntax": "choco outdated --ignore-pinned"
+    },
+    {
+      "description": "Specify a custom source to check packages from:",
+      "syntax": "choco outdated --source {{source_url|alias}}"
+    },
+    {
+      "description": "Provide a username and password for authentication:",
+      "syntax": "choco outdated --user {{username}} --password {{password}}"
+    }
+  ]
+}

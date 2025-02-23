@@ -1,0 +1,30 @@
+{
+  "command": "pacaur",
+  "description": "A utility for Arch Linux to build and install packages from the Arch User Repository. More information: https://github.com/rmarquis/pacaur.",
+  "useCases": [
+    {
+      "description": "Synchronize and update all packages (includes AUR):",
+      "syntax": "pacaur -Syu"
+    },
+    {
+      "description": "Synchronize and update only AUR packages:",
+      "syntax": "pacaur -Syua"
+    },
+    {
+      "description": "Install a new package (includes AUR):",
+      "syntax": "pacaur -S {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies (includes AUR packages):",
+      "syntax": "pacaur -Rs {{package}}"
+    },
+    {
+      "description": "Search the package database for a keyword (includes AUR):",
+      "syntax": "pacaur -Ss {{keyword}}"
+    },
+    {
+      "description": "List all currently installed packages (includes AUR packages):",
+      "syntax": "pacaur -Qs"
+    }
+  ]
+}

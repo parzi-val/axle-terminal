@@ -1,0 +1,18 @@
+{
+  "command": "exit",
+  "description": "Quit the current CMD instance or the current batch file. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/exit.",
+  "useCases": [
+    {
+      "description": "Quit the current CMD instance:",
+      "syntax": "exit"
+    },
+    {
+      "description": "Quit the current [b]atch script:",
+      "syntax": "exit /b"
+    },
+    {
+      "description": "Quit using a specific exit code:",
+      "syntax": "exit {{2}}"
+    }
+  ]
+}

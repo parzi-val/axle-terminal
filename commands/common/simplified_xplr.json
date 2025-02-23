@@ -1,0 +1,22 @@
+{
+  "command": "xplr",
+  "description": "Terminal-based file system explorer. More information: https://xplr.dev.",
+  "useCases": [
+    {
+      "description": "Open a directory:",
+      "syntax": "xplr {{path/to/directory}}"
+    },
+    {
+      "description": "Focus on a file:",
+      "syntax": "xplr {{path/to/file}}"
+    },
+    {
+      "description": "Focus on a directory:",
+      "syntax": "xplr --force-focus {{path/to/directory}}"
+    },
+    {
+      "description": "Open a directory with specific files or directories selected:",
+      "syntax": "xplr {{path/to/directory}} {{path/to/selected_file_or_directory1}} {{path/to/selected_file_or_directory2}}"
+    }
+  ]
+}

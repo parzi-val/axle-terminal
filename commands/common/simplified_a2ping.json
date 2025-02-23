@@ -1,0 +1,34 @@
+{
+  "command": "a2ping",
+  "description": "Convert images into EPS or PDF files. More information: https://manned.org/a2ping.",
+  "useCases": [
+    {
+      "description": "Convert an image to PDF (Note: Specifying an output filename is optional):",
+      "syntax": "a2ping {{path/to/image.ext}} {{path/to/output.pdf}}"
+    },
+    {
+      "description": "Compress the document using the specified method:",
+      "syntax": "a2ping --nocompress {{none|zip|best|flate}} {{path/to/file}}"
+    },
+    {
+      "description": "Scan HiResBoundingBox if present (defaults to yes):",
+      "syntax": "a2ping --nohires {{path/to/file}}"
+    },
+    {
+      "description": "Allow page content below and left of the origin (defaults to no):",
+      "syntax": "a2ping --below {{path/to/file}}"
+    },
+    {
+      "description": "Pass extra arguments to gs:",
+      "syntax": "a2ping --gsextra {{arguments}} {{path/to/file}}"
+    },
+    {
+      "description": "Pass extra arguments to external program (i.e pdftops):",
+      "syntax": "a2ping --extra {{arguments}} {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "a2ping -h"
+    }
+  ]
+}

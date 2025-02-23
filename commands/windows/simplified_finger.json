@@ -1,0 +1,22 @@
+{
+  "command": "finger",
+  "description": "Return information about users on a specified system. The remote system must be running the Finger service. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/finger.",
+  "useCases": [
+    {
+      "description": "Display information about a specific user:",
+      "syntax": "finger {{user}}@{{host}}"
+    },
+    {
+      "description": "Display information about all users on the specified host:",
+      "syntax": "finger @{{host}}"
+    },
+    {
+      "description": "Display information in a longer format:",
+      "syntax": "finger {{user}}@{{host}} -l"
+    },
+    {
+      "description": "Display help information:",
+      "syntax": "finger /?"
+    }
+  ]
+}

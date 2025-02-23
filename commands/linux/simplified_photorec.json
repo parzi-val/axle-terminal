@@ -1,0 +1,14 @@
+{
+  "command": "photorec",
+  "description": "Deleted file recovery tool. It is recommended to write recovered files to a disk separate to the one being recovered from. More information: https://www.cgsecurity.org/wiki/PhotoRec.",
+  "useCases": [
+    {
+      "description": "Run PhotoRec on a specific device:",
+      "syntax": "sudo photorec {{/dev/sdb}}"
+    },
+    {
+      "description": "Run PhotoRec on a disk image (image.dd):",
+      "syntax": "sudo photorec {{path/to/image.dd}}"
+    }
+  ]
+}

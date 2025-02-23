@@ -1,0 +1,30 @@
+{
+  "command": "nf-core",
+  "description": "The nf-core framework tools, to create, check and develop best-practice guidelines for Nextflow. More information: https://nf-co.re/docs/nf-core-tools.",
+  "useCases": [
+    {
+      "description": "List existing pipelines on nf-core:",
+      "syntax": "nf-core list"
+    },
+    {
+      "description": "Create a new pipeline skeleton:",
+      "syntax": "nf-core create"
+    },
+    {
+      "description": "Lint the pipeline code:",
+      "syntax": "nf-core lint {{path/to/directory}}"
+    },
+    {
+      "description": "Bump software versions in pipeline recipe:",
+      "syntax": "nf-core bump-version {{path/to/directory}} {{new_version}}"
+    },
+    {
+      "description": "Launch an nf-core pipeline:",
+      "syntax": "nf-core launch {{pipeline_name}}"
+    },
+    {
+      "description": "Download an nf-core pipeline for offline use:",
+      "syntax": "nf-core download {{pipeline_name}}"
+    }
+  ]
+}

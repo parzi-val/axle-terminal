@@ -1,0 +1,18 @@
+{
+  "command": "prlimit",
+  "description": "Get or set process resource soft and hard limits. Given a process ID and one or more resources, prlimit tries to retrieve and/or modify the limits. More information: https://manned.org/prlimit.",
+  "useCases": [
+    {
+      "description": "Display limit values for all current resources for the running parent process:",
+      "syntax": "prlimit"
+    },
+    {
+      "description": "Display limit values for all current resources of a specified process:",
+      "syntax": "prlimit --pid {{pid_number}}"
+    },
+    {
+      "description": "Run a command with a custom number of open files limit:",
+      "syntax": "prlimit --nofile={{10}} {{command}}"
+    }
+  ]
+}

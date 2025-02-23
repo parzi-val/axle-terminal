@@ -1,0 +1,26 @@
+{
+  "command": "xdg-open",
+  "description": "Open a file or URL in the user's preferred application. More information: https://portland.freedesktop.org/doc/xdg-open.html.",
+  "useCases": [
+    {
+      "description": "Open the current directory in the default file explorer:",
+      "syntax": "xdg-open ."
+    },
+    {
+      "description": "Open a URL in the default browser:",
+      "syntax": "xdg-open {{https://example.com}}"
+    },
+    {
+      "description": "Open an image in the default image viewer:",
+      "syntax": "xdg-open {{path/to/image}}"
+    },
+    {
+      "description": "Open a PDF in the default PDF viewer:",
+      "syntax": "xdg-open {{path/to/pdf}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xdg-open --help"
+    }
+  ]
+}

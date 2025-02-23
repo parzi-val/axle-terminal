@@ -1,0 +1,18 @@
+{
+  "command": "progpilot",
+  "description": "A PHP static analysis tool for detecting security vulnerabilities. More information: https://github.com/designsecurity/progpilot.",
+  "useCases": [
+    {
+      "description": "Analyze the current directory:",
+      "syntax": "progpilot"
+    },
+    {
+      "description": "Analyze a specific file or directory:",
+      "syntax": "progpilot {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Specify a custom configuration file:",
+      "syntax": "progpilot --configuration {{path/to/configuration.yml}}"
+    }
+  ]
+}

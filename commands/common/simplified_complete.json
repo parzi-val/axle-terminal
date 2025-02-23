@@ -1,0 +1,18 @@
+{
+  "command": "complete",
+  "description": "Get argument autocompletion to shell commands. More information: https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html.",
+  "useCases": [
+    {
+      "description": "Apply a function that performs autocompletion to a command:",
+      "syntax": "complete -F {{function}} {{command}}"
+    },
+    {
+      "description": "Apply a command that performs autocompletion to another command:",
+      "syntax": "complete -C {{autocomplete_command}} {{command}}"
+    },
+    {
+      "description": "Apply autocompletion without appending a space to the completed word:",
+      "syntax": "complete -o nospace -F {{function}} {{command}}"
+    }
+  ]
+}

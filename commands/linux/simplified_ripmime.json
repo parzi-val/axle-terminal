@@ -1,0 +1,22 @@
+{
+  "command": "ripmime",
+  "description": "Extract attachments out of a MIME encoded email package. More information: https://pldaniels.com/ripmime.",
+  "useCases": [
+    {
+      "description": "Extract file contents in the current directory:",
+      "syntax": "ripmime -i {{path/to/file}}"
+    },
+    {
+      "description": "Extract file contents in a specific directory:",
+      "syntax": "ripmime -i {{path/to/file}} -d {{path/to/directory}}"
+    },
+    {
+      "description": "Extract file contents and print verbose output:",
+      "syntax": "ripmime -i {{path/to/file}} -v"
+    },
+    {
+      "description": "Get detailed information about the whole decoding process:",
+      "syntax": "ripmime -i {{path/to/file}} --debug"
+    }
+  ]
+}

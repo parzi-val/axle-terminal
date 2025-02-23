@@ -1,0 +1,26 @@
+{
+  "command": "daps",
+  "description": "An open source program for transforming DocBook XML into output formats such as HTML or PDF. More information: https://opensuse.github.io/daps/doc/index.html.",
+  "useCases": [
+    {
+      "description": "Check if a DocBook XML file is valid:",
+      "syntax": "daps -d {{path/to/file.xml}} validate"
+    },
+    {
+      "description": "Convert a DocBook XML file into PDF:",
+      "syntax": "daps -d {{path/to/file.xml}} pdf"
+    },
+    {
+      "description": "Convert a DocBook XML file into a single HTML file:",
+      "syntax": "daps -d {{path/to/file.xml}} html --single"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "daps --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "daps --version"
+    }
+  ]
+}

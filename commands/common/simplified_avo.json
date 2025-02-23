@@ -1,0 +1,38 @@
+{
+  "command": "avo",
+  "description": "The official command-line interface for Avo. More information: https://www.avo.app/docs/implementation/cli.",
+  "useCases": [
+    {
+      "description": "Initialize a workspace in the current directory:",
+      "syntax": "avo init"
+    },
+    {
+      "description": "Log into the Avo platform:",
+      "syntax": "avo login"
+    },
+    {
+      "description": "Switch to an existing Avo branch:",
+      "syntax": "avo checkout {{branch_name}}"
+    },
+    {
+      "description": "Pull analytics wrappers for the current path:",
+      "syntax": "avo pull"
+    },
+    {
+      "description": "Display the status of the Avo implementation:",
+      "syntax": "avo status"
+    },
+    {
+      "description": "Resolve Git conflicts in Avo files:",
+      "syntax": "avo conflict"
+    },
+    {
+      "description": "Open the current Avo workspace in the default web browser:",
+      "syntax": "avo edit"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "avo {{subcommand}} --help"
+    }
+  ]
+}

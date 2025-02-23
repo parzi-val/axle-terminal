@@ -1,0 +1,34 @@
+{
+  "command": "rc-status",
+  "description": "Show status info about runlevels. See also openrc. More information: https://manned.org/rc-status.",
+  "useCases": [
+    {
+      "description": "Show a summary of services and their status:",
+      "syntax": "rc-status"
+    },
+    {
+      "description": "Include services in all runlevels in the summary:",
+      "syntax": "rc-status --all"
+    },
+    {
+      "description": "List services that have crashed:",
+      "syntax": "rc-status --crashed"
+    },
+    {
+      "description": "List manually started services:",
+      "syntax": "rc-status --manual"
+    },
+    {
+      "description": "List supervised services:",
+      "syntax": "rc-status --supervised"
+    },
+    {
+      "description": "Get the current runlevel:",
+      "syntax": "rc-status --runlevel"
+    },
+    {
+      "description": "List all runlevels:",
+      "syntax": "rc-status --list"
+    }
+  ]
+}

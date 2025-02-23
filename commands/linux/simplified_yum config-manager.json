@@ -1,0 +1,10 @@
+{
+  "command": "yum config-manager",
+  "description": "This command is an alias of dnf config-manager.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr dnf config-manager"
+    }
+  ]
+}

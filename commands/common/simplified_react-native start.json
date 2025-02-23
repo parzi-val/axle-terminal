@@ -1,0 +1,30 @@
+{
+  "command": "react-native start",
+  "description": "Command-line tools to start the React Native server. More information: https://github.com/react-native-community/cli/blob/master/docs/commands.md#start.",
+  "useCases": [
+    {
+      "description": "Start the server that communicates with connected devices:",
+      "syntax": "react-native start"
+    },
+    {
+      "description": "Start the metro bundler with a clean cache:",
+      "syntax": "react-native start --reset-cache"
+    },
+    {
+      "description": "Start the server in a custom port (defaults to 8081):",
+      "syntax": "react-native start --port {{3000}}"
+    },
+    {
+      "description": "Start the server in verbose mode:",
+      "syntax": "react-native start --verbose"
+    },
+    {
+      "description": "Specify the maximum number of workers for transforming files (default is the number of CPU cores):",
+      "syntax": "react-native start --max-workers {{count}}"
+    },
+    {
+      "description": "Disable interactive mode:",
+      "syntax": "react-native start --no-interactive"
+    }
+  ]
+}

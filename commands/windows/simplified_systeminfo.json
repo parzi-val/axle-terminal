@@ -1,0 +1,22 @@
+{
+  "command": "systeminfo",
+  "description": "Display operating system configuration for a local or remote machine. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/systeminfo.",
+  "useCases": [
+    {
+      "description": "Display system configuration for the local machine:",
+      "syntax": "systeminfo"
+    },
+    {
+      "description": "Display system configuration in a specified output format:",
+      "syntax": "systeminfo /fo {{table|list|csv}}"
+    },
+    {
+      "description": "Display system configuration for a remote machine:",
+      "syntax": "systeminfo /s {{remote_name}} /u {{username}} /p {{password}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "systeminfo /?"
+    }
+  ]
+}

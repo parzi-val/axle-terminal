@@ -1,0 +1,18 @@
+{
+  "command": "llvm-bcanalyzer",
+  "description": "LLVM Bitcode (.bc) analyzer. More information: https://llvm.org/docs/CommandGuide/llvm-bcanalyzer.html.",
+  "useCases": [
+    {
+      "description": "Print statistics about a Bitcode file:",
+      "syntax": "llvm-bcanalyzer {{path/to/file.bc}}"
+    },
+    {
+      "description": "Print an SGML representation and statistics about a Bitcode file:",
+      "syntax": "llvm-bcanalyzer -dump {{path/to/file.bc}}"
+    },
+    {
+      "description": "Read a Bitcode file from stdin and analyze it:",
+      "syntax": "cat {{path/to/file.bc}} | llvm-bcanalyzer"
+    }
+  ]
+}

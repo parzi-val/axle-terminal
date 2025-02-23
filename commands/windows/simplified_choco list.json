@@ -1,0 +1,30 @@
+{
+  "command": "choco list",
+  "description": "Display a list of packages with Chocolatey. More information: https://chocolatey.org/docs/commands-list.",
+  "useCases": [
+    {
+      "description": "Display all available packages:",
+      "syntax": "choco list"
+    },
+    {
+      "description": "Display all locally installed packages:",
+      "syntax": "choco list --local-only"
+    },
+    {
+      "description": "Display a list including local programs:",
+      "syntax": "choco list --include-programs"
+    },
+    {
+      "description": "Display only approved packages:",
+      "syntax": "choco list --approved-only"
+    },
+    {
+      "description": "Specify a custom source to display packages from:",
+      "syntax": "choco list --source {{source_url|alias}}"
+    },
+    {
+      "description": "Provide a username and password for authentication:",
+      "syntax": "choco list --user {{username}} --password {{password}}"
+    }
+  ]
+}

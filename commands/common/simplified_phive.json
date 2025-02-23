@@ -1,0 +1,38 @@
+{
+  "command": "phive",
+  "description": "The Phar Installation and Verification Environment for secure PHP application deployment. More information: https://phar.io.",
+  "useCases": [
+    {
+      "description": "Display a list of available aliased Phars:",
+      "syntax": "phive list"
+    },
+    {
+      "description": "Install a specified Phar to the local directory:",
+      "syntax": "phive install {{alias|url}}"
+    },
+    {
+      "description": "Install a specified Phar globally:",
+      "syntax": "phive install {{alias|url}} --global"
+    },
+    {
+      "description": "Install a specified Phar to a target directory:",
+      "syntax": "phive install {{alias|url}} --target {{path/to/directory}}"
+    },
+    {
+      "description": "Update all Phar files to the latest version:",
+      "syntax": "phive update"
+    },
+    {
+      "description": "Remove a specified Phar file:",
+      "syntax": "phive remove {{alias|url}}"
+    },
+    {
+      "description": "Remove unused Phar files:",
+      "syntax": "phive purge"
+    },
+    {
+      "description": "List all available commands:",
+      "syntax": "phive help"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "physlock",
+  "description": "Lock all consoles and virtual terminals. More information: https://github.com/muennich/physlock.",
+  "useCases": [
+    {
+      "description": "Lock every console (require current user or root to unlock):",
+      "syntax": "physlock"
+    },
+    {
+      "description": "Mute kernel messages on console while locked:",
+      "syntax": "physlock -m"
+    },
+    {
+      "description": "Disable SysRq mechanism while locked:",
+      "syntax": "physlock -s"
+    },
+    {
+      "description": "Display a message before the password prompt:",
+      "syntax": "physlock -p &quot;{{Locked!}}&quot;"
+    },
+    {
+      "description": "Fork and detach physlock (useful for suspend or hibernate scripts):",
+      "syntax": "physlock -d"
+    }
+  ]
+}

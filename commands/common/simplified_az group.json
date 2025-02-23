@@ -1,0 +1,22 @@
+{
+  "command": "az group",
+  "description": "Manage resource groups and template deployments. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/group.",
+  "useCases": [
+    {
+      "description": "Create a new resource group:",
+      "syntax": "az group create --name {{name}} --location {{location}}"
+    },
+    {
+      "description": "Check if a resource group exists:",
+      "syntax": "az group exists --name {{name}}"
+    },
+    {
+      "description": "Delete a resource group:",
+      "syntax": "az group delete --name {{name}}"
+    },
+    {
+      "description": "Wait until a condition of the resource group is met:",
+      "syntax": "az group wait --name {{name}} --{{created|deleted|exists|updated}}"
+    }
+  ]
+}

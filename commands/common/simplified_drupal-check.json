@@ -1,0 +1,22 @@
+{
+  "command": "drupal-check",
+  "description": "Check Drupal PHP code for deprecations. More information: https://github.com/mglaman/drupal-check.",
+  "useCases": [
+    {
+      "description": "Check the code in a specific directory for deprecations:",
+      "syntax": "drupal-check {{path/to/directory}}"
+    },
+    {
+      "description": "Check the code excluding a comma-separated list of directories:",
+      "syntax": "drupal-check --exclude-dir {{path/to/excluded_directory}},{{path/to/excluded_files/*.php}} {{path/to/directory}}"
+    },
+    {
+      "description": "Don't show a progress bar:",
+      "syntax": "drupal-check --no-progress {{path/to/directory}}"
+    },
+    {
+      "description": "Perform static analysis to detect bad coding practices:",
+      "syntax": "drupal-check --analysis {{path/to/directory}}"
+    }
+  ]
+}

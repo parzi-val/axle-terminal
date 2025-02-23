@@ -1,0 +1,18 @@
+{
+  "command": "flips",
+  "description": "Create and apply patches for IPS and BPS files. More information: https://github.com/Alcaro/Flips.",
+  "useCases": [
+    {
+      "description": "Start Flips to create and apply patches interactively:",
+      "syntax": "flips"
+    },
+    {
+      "description": "Apply a patch and create a new ROM file:",
+      "syntax": "flips --apply {{patch.bps}} {{rom.smc}} {{hack.smc}}"
+    },
+    {
+      "description": "Create a patch from two ROMs:",
+      "syntax": "flips --create {{rom.smc}} {{hack.smc}} {{patch.bps}}"
+    }
+  ]
+}

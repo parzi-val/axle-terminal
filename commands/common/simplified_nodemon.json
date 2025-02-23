@@ -1,0 +1,34 @@
+{
+  "command": "nodemon",
+  "description": "Watch files and automatically restart a node application when changes are detected. More information: https://nodemon.io.",
+  "useCases": [
+    {
+      "description": "Execute the specified file and watch a specific file for changes:",
+      "syntax": "nodemon {{path/to/file.js}}"
+    },
+    {
+      "description": "Manually restart nodemon (note nodemon must already be active for this to work):",
+      "syntax": "rs"
+    },
+    {
+      "description": "Ignore specific files:",
+      "syntax": "nodemon --ignore {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Pass arguments to the node application:",
+      "syntax": "nodemon {{path/to/file.js}} {{arguments}}"
+    },
+    {
+      "description": "Pass arguments to node itself if they're not nodemon arguments already (e.g. --inspect):",
+      "syntax": "nodemon {{arguments}} {{path/to/file.js}}"
+    },
+    {
+      "description": "Run an arbitrary non-node script:",
+      "syntax": "nodemon --exec &quot;{{command_to_run_script}} {{options}}&quot; {{path/to/script}}"
+    },
+    {
+      "description": "Run a Python script:",
+      "syntax": "nodemon --exec &quot;python {{options}}&quot; {{path/to/file.py}}"
+    }
+  ]
+}

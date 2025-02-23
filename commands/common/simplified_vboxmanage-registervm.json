@@ -1,0 +1,18 @@
+{
+  "command": "vboxmanage-registervm",
+  "description": "Register a virtual machine (VM). More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-registervm.",
+  "useCases": [
+    {
+      "description": "Register an existing VM:",
+      "syntax": "VBoxManage registervm {{path/to/filename.vbox}}"
+    },
+    {
+      "description": "Supply the encryption password file of the VM:",
+      "syntax": "VBoxManage registervm {{path/to/filename.vbox}} --password {{path/to/password_file}}"
+    },
+    {
+      "description": "Prompt for the encryption password on the command-line:",
+      "syntax": "VBoxManage registervm {{path/to/filename.vbox}} --password -"
+    }
+  ]
+}

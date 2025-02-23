@@ -1,0 +1,18 @@
+{
+  "command": "slimrb",
+  "description": "Convert Slim files to HTML. More information: https://rubydoc.info/gems/slim/frames#slim-command-slimrb.",
+  "useCases": [
+    {
+      "description": "Convert a Slim file to HTML:",
+      "syntax": "slimrb {{input.slim}} {{output.html}}"
+    },
+    {
+      "description": "Convert a Slim file and output to prettified HTML:",
+      "syntax": "slimrb --pretty {{input.slim}} {{output.html}}"
+    },
+    {
+      "description": "Convert a Slim file to ERB:",
+      "syntax": "slimrb --erb {{input.slim}} {{output.erb}}"
+    }
+  ]
+}

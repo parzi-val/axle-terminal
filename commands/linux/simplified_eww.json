@@ -1,0 +1,30 @@
+{
+  "command": "eww",
+  "description": "Implement your own custom widgets in any window manager. More information: https://elkowar.github.io/eww.",
+  "useCases": [
+    {
+      "description": "Start the daemon:",
+      "syntax": "eww daemon"
+    },
+    {
+      "description": "Open a widget:",
+      "syntax": "eww -c {{path/to/source_code_directory}} open {{window_name}}"
+    },
+    {
+      "description": "Close a widget:",
+      "syntax": "eww -c {{path/to/source_code_directory}} close {{window_name}}"
+    },
+    {
+      "description": "Reload the configuration:",
+      "syntax": "eww reload"
+    },
+    {
+      "description": "Kill the daemon:",
+      "syntax": "eww kill"
+    },
+    {
+      "description": "Print and watch logs:",
+      "syntax": "eww logs"
+    }
+  ]
+}

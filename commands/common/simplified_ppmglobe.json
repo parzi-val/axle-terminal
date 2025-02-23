@@ -1,0 +1,14 @@
+{
+  "command": "ppmglobe",
+  "description": "Generate strips of an image suitable to be glued onto a sphere. See also: pnmmercator. More information: https://netpbm.sourceforge.net/doc/ppmglobe.html.",
+  "useCases": [
+    {
+      "description": "Transform an image to strips that can be cut out and glues onto a sphere:",
+      "syntax": "ppmglobe {{number_of_strips}} {{path/to/image.ppm}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Use the specified color for the areas between the strips:",
+      "syntax": "ppmglobe -background {{red}} {{number_of_strips}} {{path/to/image.ppm}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

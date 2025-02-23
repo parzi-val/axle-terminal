@@ -1,0 +1,34 @@
+{
+  "command": "psalm",
+  "description": "A static analysis tool for finding errors in PHP applications. More information: https://psalm.dev.",
+  "useCases": [
+    {
+      "description": "Generate a Psalm configuration:",
+      "syntax": "psalm --init"
+    },
+    {
+      "description": "Analyze the current working directory:",
+      "syntax": "psalm"
+    },
+    {
+      "description": "Analyze a specific directory or file:",
+      "syntax": "psalm {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Analyze a project with a specific configuration file:",
+      "syntax": "psalm --config {{path/to/psalm.xml}}"
+    },
+    {
+      "description": "Include informational findings in the output:",
+      "syntax": "psalm --show-info"
+    },
+    {
+      "description": "Analyze a project and display statistics:",
+      "syntax": "psalm --stats"
+    },
+    {
+      "description": "Analyze a project in parallel with 4 threads:",
+      "syntax": "psalm --threads {{4}}"
+    }
+  ]
+}

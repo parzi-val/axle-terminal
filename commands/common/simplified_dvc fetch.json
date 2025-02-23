@@ -1,0 +1,26 @@
+{
+  "command": "dvc fetch",
+  "description": "Download DVC tracked files and directories from a remote repository. More information: https://dvc.org/doc/command-reference/fetch.",
+  "useCases": [
+    {
+      "description": "Fetch the latest changes from the default remote upstream repository (if set):",
+      "syntax": "dvc fetch"
+    },
+    {
+      "description": "Fetch changes from a specific remote upstream repository:",
+      "syntax": "dvc fetch --remote {{remote_name}}"
+    },
+    {
+      "description": "Fetch the latest changes for a specific target/s:",
+      "syntax": "dvc fetch {{target/s}}"
+    },
+    {
+      "description": "Fetch changes for all branch and tags:",
+      "syntax": "dvc fetch --all-branches --all-tags"
+    },
+    {
+      "description": "Fetch changes for all commits:",
+      "syntax": "dvc fetch --all-commits"
+    }
+  ]
+}

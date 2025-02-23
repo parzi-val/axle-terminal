@@ -1,0 +1,10 @@
+{
+  "command": "yuvtoppm",
+  "description": "Convert Abekas YUV bytes to PPM. More information: https://netpbm.sourceforge.net/doc/yuvtoppm.html.",
+  "useCases": [
+    {
+      "description": "Read Akebas YUV bytes from the specified input file, convert them to a PPM image and store them in the specified output file:",
+      "syntax": "yuvtoppm {{width}} {{height}} {{path/to/input_file.yuv}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

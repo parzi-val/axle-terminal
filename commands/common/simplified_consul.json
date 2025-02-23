@@ -1,0 +1,18 @@
+{
+  "command": "consul",
+  "description": "Distributed key-value store with health checking and service discovery. Some subcommands such as kv have their own usage documentation. More information: https://www.consul.io/commands.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "consul --help"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "consul {{subcommand}} --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "consul --version"
+    }
+  ]
+}

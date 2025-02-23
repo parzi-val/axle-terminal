@@ -1,0 +1,18 @@
+{
+  "command": "gcloud init",
+  "description": "Launch an interactive workflow to setup gcloud or reinitialize configurations. More information: https://cloud.google.com/sdk/gcloud/reference/init.",
+  "useCases": [
+    {
+      "description": "Launch a \"Getting Started\" workflow:",
+      "syntax": "gcloud init"
+    },
+    {
+      "description": "Launch a workflow without diagnostics:",
+      "syntax": "gcloud init --skip-diagnostics"
+    },
+    {
+      "description": "Use the console for authentication:",
+      "syntax": "gcloud init --console-only"
+    }
+  ]
+}

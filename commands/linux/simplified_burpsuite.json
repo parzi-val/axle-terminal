@@ -1,0 +1,26 @@
+{
+  "command": "burpsuite",
+  "description": "A GUI based application mainly used in web application penetration testing. More information: https://portswigger.net/burp/documentation/desktop/troubleshooting/launch-from-command-line.",
+  "useCases": [
+    {
+      "description": "Start Burp Suite:",
+      "syntax": "burpsuite"
+    },
+    {
+      "description": "Start Burp Suite using the default configuration:",
+      "syntax": "burpsuite --use-defaults"
+    },
+    {
+      "description": "Open a specific project file:",
+      "syntax": "burpsuite --project-file={{path/to/file}}"
+    },
+    {
+      "description": "Load a specific configuration file:",
+      "syntax": "burpsuite --config-file={{path/to/file}}"
+    },
+    {
+      "description": "Start without extensions:",
+      "syntax": "burpsuite --disable-extensions"
+    }
+  ]
+}

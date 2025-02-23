@@ -1,0 +1,26 @@
+{
+  "command": "lrztar",
+  "description": "A wrapper for lrzip to simplify compression of directories. See also: tar, lrzuntar, lrunzip. More information: https://manned.org/lrztar.",
+  "useCases": [
+    {
+      "description": "Archive a directory with tar, then compress:",
+      "syntax": "lrztar {{path/to/directory}}"
+    },
+    {
+      "description": "Same as above, with ZPAQ - extreme compression, but very slow:",
+      "syntax": "lrztar -z {{path/to/directory}}"
+    },
+    {
+      "description": "Specify the output file:",
+      "syntax": "lrztar -o {{path/to/file}} {{path/to/directory}}"
+    },
+    {
+      "description": "Override the number of processor threads to use:",
+      "syntax": "lrztar -p {{8}} {{path/to/directory}}"
+    },
+    {
+      "description": "Force overwriting of existing files:",
+      "syntax": "lrztar -f {{path/to/directory}}"
+    }
+  ]
+}

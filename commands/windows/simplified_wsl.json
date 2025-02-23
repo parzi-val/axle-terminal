@@ -1,0 +1,38 @@
+{
+  "command": "wsl",
+  "description": "Manage the Windows Subsystem for Linux. More information: https://learn.microsoft.com/windows/wsl/reference.",
+  "useCases": [
+    {
+      "description": "Start a Linux shell (in the default distribution):",
+      "syntax": "wsl {{shell_command}}"
+    },
+    {
+      "description": "Run a Linux command without using a shell:",
+      "syntax": "wsl --exec {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Specify a particular distribution:",
+      "syntax": "wsl --distribution {{distribution}} {{shell_command}}"
+    },
+    {
+      "description": "List available distributions:",
+      "syntax": "wsl --list"
+    },
+    {
+      "description": "Export a distribution to a .tar file:",
+      "syntax": "wsl --export {{distribution}} {{path\\to\\distro_file.tar}}"
+    },
+    {
+      "description": "Import a distribution from a .tar file:",
+      "syntax": "wsl --import {{distribution}} {{path\\to\\install_location}} {{path/to/distro_file.tar}}"
+    },
+    {
+      "description": "Change the version of wsl used for the specified distribution:",
+      "syntax": "wsl --set-version {{distribution}} {{version}}"
+    },
+    {
+      "description": "Shut down Windows Subsystem for Linux:",
+      "syntax": "wsl --shutdown"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "fstrim",
+  "description": "Discard unused blocks on a mounted filesystem. Only supported by flash memory devices such as SSDs and microSD cards. More information: https://manned.org/fstrim.",
+  "useCases": [
+    {
+      "description": "Trim unused blocks on all mounted partitions that support it:",
+      "syntax": "sudo fstrim --all"
+    },
+    {
+      "description": "Trim unused blocks on a specified partition:",
+      "syntax": "sudo fstrim {{/}}"
+    },
+    {
+      "description": "Display statistics after trimming:",
+      "syntax": "sudo fstrim --verbose {{/}}"
+    }
+  ]
+}

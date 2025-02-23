@@ -1,0 +1,10 @@
+{
+  "command": "dolt version",
+  "description": "Display the current dolt CLI version. More information: https://docs.dolthub.com/cli-reference/cli#dolt-version.",
+  "useCases": [
+    {
+      "description": "Display version:",
+      "syntax": "dolt version"
+    }
+  ]
+}

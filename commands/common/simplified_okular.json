@@ -1,0 +1,30 @@
+{
+  "command": "okular",
+  "description": "View documents. More information: https://docs.kde.org/stable5/en/okular/okular/command-line-options.html.",
+  "useCases": [
+    {
+      "description": "Launch document viewer:",
+      "syntax": "okular"
+    },
+    {
+      "description": "Open specific documents:",
+      "syntax": "okular {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open a document at a specific page:",
+      "syntax": "okular --page {{page_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a specific document in presentation mode:",
+      "syntax": "okular --presentation {{path/to/file}}"
+    },
+    {
+      "description": "Open a specific document and start a print dialog:",
+      "syntax": "okular --print {{path/to/file}}"
+    },
+    {
+      "description": "Open a document and search for a specific string:",
+      "syntax": "okular --find {{search_string}} {{path/to/file}}"
+    }
+  ]
+}

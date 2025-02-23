@@ -1,0 +1,34 @@
+{
+  "command": "serve",
+  "description": "Static file serving and directory listing. More information: https://github.com/vercel/serve.",
+  "useCases": [
+    {
+      "description": "Start an HTTP server listening on the default port to serve the current directory:",
+      "syntax": "serve"
+    },
+    {
+      "description": "Start an HTTP server on a specific [p]ort to serve a specific directory:",
+      "syntax": "serve -p {{port}} {{path/to/directory}}"
+    },
+    {
+      "description": "Start an HTTP server with CORS enabled by including the Access-Control-Allow-Origin: * header in all responses:",
+      "syntax": "serve --cors"
+    },
+    {
+      "description": "Start an HTTP server on the default port rewriting all not-found requests to the index.html file:",
+      "syntax": "serve --single"
+    },
+    {
+      "description": "Start an HTTPS server on the default port using the specified certificate:",
+      "syntax": "serve --ssl-cert {{path/to/cert.pem}} --ssl-key {{path/to/key.pem}}"
+    },
+    {
+      "description": "Start an HTTP server on the default port using a specific configuration file:",
+      "syntax": "serve --config {{path/to/serve.json}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "serve --help"
+    }
+  ]
+}

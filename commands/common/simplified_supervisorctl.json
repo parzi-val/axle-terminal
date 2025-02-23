@@ -1,0 +1,30 @@
+{
+  "command": "supervisorctl",
+  "description": "Supervisor is a client/server system that allows its users to control a number of processes on UNIX-like operating systems. Supervisorctl is the command-line client piece of the supervisor which provides a shell-like interface. More information: http://supervisord.org.",
+  "useCases": [
+    {
+      "description": "Show the status of a process (or all processes if process_name is not specified):",
+      "syntax": "supervisorctl status {{process_name}}"
+    },
+    {
+      "description": "Start/stop/restart a process:",
+      "syntax": "supervisorctl {{start|stop|restart}} {{process_name}}"
+    },
+    {
+      "description": "Start/stop/restart all processes in a group:",
+      "syntax": "supervisorctl {{start|stop|restart}} {{group_name}}:*"
+    },
+    {
+      "description": "Show last 100 bytes of process stderr:",
+      "syntax": "supervisorctl tail -100 {{process_name}} stderr"
+    },
+    {
+      "description": "Keep displaying stdout of a process:",
+      "syntax": "supervisorctl tail -f {{process_name}} stdout"
+    },
+    {
+      "description": "Reload process configuration file to add/remove processes as necessary:",
+      "syntax": "supervisorctl update"
+    }
+  ]
+}

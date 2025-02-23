@@ -1,0 +1,14 @@
+{
+  "command": "crane config",
+  "description": "Get the configuration of an image. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_config.md.",
+  "useCases": [
+    {
+      "description": "Get the configuration of an image:",
+      "syntax": "crane config {{image_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane config {{-h|--help}}"
+    }
+  ]
+}

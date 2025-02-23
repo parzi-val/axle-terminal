@@ -1,0 +1,30 @@
+{
+  "command": "egrep",
+  "description": "Find patterns in files using extended regular expression (supports ?, +, {}, (), and |). More information: https://manned.org/egrep.",
+  "useCases": [
+    {
+      "description": "Search for a pattern within a file:",
+      "syntax": "egrep &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for a pattern within multiple files:",
+      "syntax": "egrep &quot;{{search_pattern}}&quot; {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Search stdin for a pattern:",
+      "syntax": "cat {{path/to/file}} | egrep {{search_pattern}}"
+    },
+    {
+      "description": "Print file name and line number for each match:",
+      "syntax": "egrep --with-filename --line-number &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for a pattern in all files recursively in a directory, ignoring binary files:",
+      "syntax": "egrep --recursive --binary-files={{without-match}} &quot;{{search_pattern}}&quot; {{path/to/directory}}"
+    },
+    {
+      "description": "Search for lines that do not match a pattern:",
+      "syntax": "egrep --invert-match &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    }
+  ]
+}

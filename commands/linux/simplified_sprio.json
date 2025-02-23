@@ -1,0 +1,26 @@
+{
+  "command": "sprio",
+  "description": "View the factors determining a job's scheduling priority. More information: https://slurm.schedmd.com/sprio.html.",
+  "useCases": [
+    {
+      "description": "View the factors determining the scheduling priority of all jobs:",
+      "syntax": "sprio"
+    },
+    {
+      "description": "View the factors determining the specified job's scheduling priority:",
+      "syntax": "sprio --jobs={{job_id_1,job_id_2,...}}"
+    },
+    {
+      "description": "Output additional information:",
+      "syntax": "sprio --long"
+    },
+    {
+      "description": "View information for the jobs of specified users:",
+      "syntax": "sprio --user={{user_name_1,user_name_2,...}}"
+    },
+    {
+      "description": "Print the weights for each factor determining job scheduling priority:",
+      "syntax": "sprio --weights"
+    }
+  ]
+}

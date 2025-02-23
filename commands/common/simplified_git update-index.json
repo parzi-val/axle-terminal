@@ -1,0 +1,10 @@
+{
+  "command": "git update-index",
+  "description": "Git command for manipulating the index. More information: https://git-scm.com/docs/git-update-index.",
+  "useCases": [
+    {
+      "description": "Pretend that a modified file is unchanged (git status will not show this as changed):",
+      "syntax": "git update-index --skip-worktree {{path/to/modified_file}}"
+    }
+  ]
+}

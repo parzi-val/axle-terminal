@@ -1,0 +1,30 @@
+{
+  "command": "compgen",
+  "description": "A built-in command for auto-completion in Bash, which is called on pressing TAB key twice. More information: https://www.gnu.org/software/bash/manual/bash.html#index-compgen.",
+  "useCases": [
+    {
+      "description": "List all commands that you could run:",
+      "syntax": "compgen -c"
+    },
+    {
+      "description": "List all commands that you could run that start with a specified string:",
+      "syntax": "compgen -c {{str}}"
+    },
+    {
+      "description": "List all aliases:",
+      "syntax": "compgen -a"
+    },
+    {
+      "description": "List all functions that you could run:",
+      "syntax": "compgen -A function"
+    },
+    {
+      "description": "Show shell reserved keywords:",
+      "syntax": "compgen -k"
+    },
+    {
+      "description": "See all available commands/aliases starting with 'ls':",
+      "syntax": "compgen -ac {{ls}}"
+    }
+  ]
+}

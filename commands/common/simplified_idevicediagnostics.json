@@ -1,0 +1,18 @@
+{
+  "command": "idevicediagnostics",
+  "description": "Interact with the diagnostics interface of an iOS device. More information: https://manned.org/idevicediagnostics.",
+  "useCases": [
+    {
+      "description": "Print diagnostics information:",
+      "syntax": "idevicediagnostics diagnostics"
+    },
+    {
+      "description": "Print mobilegestalt key values:",
+      "syntax": "idevicediagnostics mobilegestalt {{key1}} {{key2}}"
+    },
+    {
+      "description": "Shutdown, restart or sleep the device:",
+      "syntax": "idevicediagnostics {{shutdown|restart|sleep}}"
+    }
+  ]
+}

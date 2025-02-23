@@ -1,0 +1,30 @@
+{
+  "command": "pixi config",
+  "description": "Manage the configuration file. More information: https://pixi.sh/latest/reference/cli/#config.",
+  "useCases": [
+    {
+      "description": "Edit the configuration file:",
+      "syntax": "pixi config edit"
+    },
+    {
+      "description": "List all configurations:",
+      "syntax": "pixi config list"
+    },
+    {
+      "description": "Prepend a value to a list configuration key:",
+      "syntax": "pixi config prepend {{key}} {{value}}"
+    },
+    {
+      "description": "Append a value to a list configuration key:",
+      "syntax": "pixi config append {{key}} {{value}}"
+    },
+    {
+      "description": "Set a configuration key to a value:",
+      "syntax": "pixi config set {{key}} {{value}}"
+    },
+    {
+      "description": "Unset a configuration key:",
+      "syntax": "pixi config unset {{key}}"
+    }
+  ]
+}

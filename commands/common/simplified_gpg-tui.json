@@ -1,0 +1,38 @@
+{
+  "command": "gpg-tui",
+  "description": "Terminal user interface for GNU Public Guard. More information: https://github.com/orhun/gpg-tui.",
+  "useCases": [
+    {
+      "description": "Start gpg-tui:",
+      "syntax": "gpg-tui"
+    },
+    {
+      "description": "Start gpg-tui with color and ASCII armored output:",
+      "syntax": "gpg-tui --style {{colored}} --armor"
+    },
+    {
+      "description": "Quit gpg-tui:",
+      "syntax": "q"
+    },
+    {
+      "description": "Interactively generate a new key:",
+      "syntax": "g"
+    },
+    {
+      "description": "Export the selected key:",
+      "syntax": "x"
+    },
+    {
+      "description": "Set the detail level for the selected key:",
+      "syntax": "1|2|3"
+    },
+    {
+      "description": "Refresh gpg-tui:",
+      "syntax": "r"
+    },
+    {
+      "description": "Display help in gpg-tui:",
+      "syntax": "?"
+    }
+  ]
+}

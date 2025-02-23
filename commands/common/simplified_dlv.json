@@ -1,0 +1,30 @@
+{
+  "command": "dlv",
+  "description": "Debugger for the Go programming language. More information: https://github.com/go-delve/delve/blob/master/Documentation/usage/dlv.md.",
+  "useCases": [
+    {
+      "description": "Compile and begin debugging the main package in the current directory (by default, with no arguments):",
+      "syntax": "dlv debug"
+    },
+    {
+      "description": "Compile and begin debugging a specific package:",
+      "syntax": "dlv debug {{package}} {{arguments}}"
+    },
+    {
+      "description": "Compile a test binary and begin debugging the compiled program:",
+      "syntax": "dlv test"
+    },
+    {
+      "description": "Connect to a headless debug server:",
+      "syntax": "dlv connect {{ip_address}}"
+    },
+    {
+      "description": "Attach to a running process and begin debugging:",
+      "syntax": "div attach {{pid}}"
+    },
+    {
+      "description": "Compile and begin tracing a program:",
+      "syntax": "dlv trace {{package}} --regexp '{{regular_expression}}'"
+    }
+  ]
+}

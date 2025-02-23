@@ -1,0 +1,14 @@
+{
+  "command": "giftopnm",
+  "description": "Convert a GIF file into a PNM image. More information: https://netpbm.sourceforge.net/doc/giftopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a GIF image to a Netpbm image pixel-for-pixel:",
+      "syntax": "giftopnm {{path/to/input.gif}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "giftopnm -version"
+    }
+  ]
+}

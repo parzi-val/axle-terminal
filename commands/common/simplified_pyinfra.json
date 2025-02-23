@@ -1,0 +1,22 @@
+{
+  "command": "pyinfra",
+  "description": "Automates infrastructure at a large scale. More information: https://docs.pyinfra.com.",
+  "useCases": [
+    {
+      "description": "Execute a command over SSH:",
+      "syntax": "pyinfra {{target_ip_address}} exec -- {{command_name_and_arguments}}"
+    },
+    {
+      "description": "Execute contents of a deploy file on a list of targets:",
+      "syntax": "pyinfra {{path/to/target_list.py}} {{path/to/deploy.py}}"
+    },
+    {
+      "description": "Execute commands on locally:",
+      "syntax": "pyinfra @local {{path/to/deploy.py}}"
+    },
+    {
+      "description": "Execute commands over Docker:",
+      "syntax": "pyinfra @docker/{{container}} {{path/to/deploy.py}}"
+    }
+  ]
+}

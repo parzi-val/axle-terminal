@@ -1,0 +1,22 @@
+{
+  "command": "apt-file",
+  "description": "Search for files in apt packages, including ones not yet installed. More information: https://manned.org/apt-file.1.",
+  "useCases": [
+    {
+      "description": "Update the metadata database:",
+      "syntax": "sudo apt update"
+    },
+    {
+      "description": "Search for packages that contain the specified file or path:",
+      "syntax": "apt-file {{search|find}} {{partial_path/to/file}}"
+    },
+    {
+      "description": "List the contents of a specific package:",
+      "syntax": "apt-file {{show|list}} {{package}}"
+    },
+    {
+      "description": "Search for packages that match the regular_expression:",
+      "syntax": "apt-file {{search|find}} --regexp {{regular_expression}}"
+    }
+  ]
+}

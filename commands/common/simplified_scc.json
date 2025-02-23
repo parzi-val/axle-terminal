@@ -1,0 +1,38 @@
+{
+  "command": "scc",
+  "description": "Count lines of code. Written in Go. More information: https://github.com/boyter/scc.",
+  "useCases": [
+    {
+      "description": "Print lines of code in the current directory:",
+      "syntax": "scc"
+    },
+    {
+      "description": "Print lines of code in the target directory:",
+      "syntax": "scc {{path/to/directory}}"
+    },
+    {
+      "description": "Display output for every file:",
+      "syntax": "scc --by-file"
+    },
+    {
+      "description": "Display output using a specific output format (defaults to tabular):",
+      "syntax": "scc --format {{tabular|wide|json|csv|cloc-yaml|html|html-table}}"
+    },
+    {
+      "description": "Only count files with specific file extensions:",
+      "syntax": "scc --include-ext {{go,java,js}}"
+    },
+    {
+      "description": "Exclude directories from being counted:",
+      "syntax": "scc --exclude-dir {{.git,.hg}}"
+    },
+    {
+      "description": "Display output and sort by column (defaults to by files):",
+      "syntax": "scc --sort {{files|name|lines|blanks|code|comments|complexity}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "scc -h"
+    }
+  ]
+}

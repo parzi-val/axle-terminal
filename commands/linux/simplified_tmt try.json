@@ -1,0 +1,38 @@
+{
+  "command": "tmt try",
+  "description": "Quickly experiment with tests and environments. More information: https://tmt.readthedocs.io/en/stable/stories/cli.html#try.",
+  "useCases": [
+    {
+      "description": "Quickly experiment with the default provision method (no tests in the CWD):",
+      "syntax": "tmt try"
+    },
+    {
+      "description": "Run a test in the current working directory:",
+      "syntax": "cd {{path/to/test}} &amp;&amp; tmt try"
+    },
+    {
+      "description": "Use a specific operating system:",
+      "syntax": "tmt try {{fedora-41}}"
+    },
+    {
+      "description": "Select both custom image and provision method:",
+      "syntax": "tmt try {{fedora@container}}"
+    },
+    {
+      "description": "Select tests with custom filter:",
+      "syntax": "tmt try --test {{feature}}"
+    },
+    {
+      "description": "Provision guest and wait for instructions:",
+      "syntax": "tmt try --ask"
+    },
+    {
+      "description": "Directly log into the guest without asking:",
+      "syntax": "tmt try --login"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "tmt try --help"
+    }
+  ]
+}

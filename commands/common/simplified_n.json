@@ -1,0 +1,26 @@
+{
+  "command": "n",
+  "description": "Manage multiple node versions. More information: https://github.com/tj/n.",
+  "useCases": [
+    {
+      "description": "Install a given version of node. If the version is already installed, it will be activated:",
+      "syntax": "n {{version}}"
+    },
+    {
+      "description": "Display installed versions and interactively activate one of them:",
+      "syntax": "n"
+    },
+    {
+      "description": "Remove a version:",
+      "syntax": "n rm {{version}}"
+    },
+    {
+      "description": "Execute a file with a given version:",
+      "syntax": "n use {{version}} {{file.js}}"
+    },
+    {
+      "description": "Output binary path for a version:",
+      "syntax": "n bin {{version}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "wapm",
+  "description": "The WebAssembly package manager. More information: https://wapm.io/help/reference.",
+  "useCases": [
+    {
+      "description": "Interactively create a new wapm.toml file:",
+      "syntax": "wapm init"
+    },
+    {
+      "description": "Download all the packages listed as dependencies in wapm.toml:",
+      "syntax": "wapm install"
+    },
+    {
+      "description": "Download a specific version of a package and add it to the list of dependencies in wapm.toml:",
+      "syntax": "wapm install {{package}}@{{version}}"
+    },
+    {
+      "description": "Download a package and install it globally:",
+      "syntax": "wapm install --global {{package}}"
+    },
+    {
+      "description": "Uninstall a package and remove it from the list of dependencies in wapm.toml:",
+      "syntax": "wapm uninstall {{package}}"
+    },
+    {
+      "description": "Print a tree of locally installed dependencies:",
+      "syntax": "wapm list"
+    },
+    {
+      "description": "List top-level globally installed packages:",
+      "syntax": "wapm list --global"
+    },
+    {
+      "description": "Execute a package command using the Wasmer runtime:",
+      "syntax": "wapm run {{command_name}} {{arguments}}"
+    }
+  ]
+}

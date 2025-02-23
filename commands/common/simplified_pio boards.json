@@ -1,0 +1,14 @@
+{
+  "command": "pio boards",
+  "description": "List pre-configured embedded boards available in PlatformIO. More information: https://docs.platformio.org/en/latest/core/userguide/cmd_boards.html.",
+  "useCases": [
+    {
+      "description": "List all available boards:",
+      "syntax": "pio boards"
+    },
+    {
+      "description": "List only boards from installed platforms:",
+      "syntax": "pio boards --installed"
+    }
+  ]
+}

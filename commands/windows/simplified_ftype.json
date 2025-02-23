@@ -1,0 +1,18 @@
+{
+  "command": "ftype",
+  "description": "Display or modify file types used for file extension association. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/ftype.",
+  "useCases": [
+    {
+      "description": "Display a list of all file types:",
+      "syntax": "ftype"
+    },
+    {
+      "description": "Display the associated program for a specific file type:",
+      "syntax": "ftype {{file_type}}"
+    },
+    {
+      "description": "Set the associated program for a specific file type:",
+      "syntax": "ftype {{file_type}}=&quot;{{path/to/executable_file}}&quot;"
+    }
+  ]
+}

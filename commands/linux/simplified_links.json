@@ -1,0 +1,30 @@
+{
+  "command": "links",
+  "description": "Command-line web browser. More information: http://links.twibright.com/.",
+  "useCases": [
+    {
+      "description": "Visit a website:",
+      "syntax": "links {{https://example.com}}"
+    },
+    {
+      "description": "Apply restrictions for anonymous account:",
+      "syntax": "links -anonymous {{https://example.com}}"
+    },
+    {
+      "description": "Enable Cookies (1 to enable):",
+      "syntax": "links -enable-cookies {{0|1}} {{https://example.com}}"
+    },
+    {
+      "description": "Navigate forwards and backwards through the links on a page:",
+      "syntax": "{{Up arrow key|Down arrow key}}"
+    },
+    {
+      "description": "Go forwards and backwards one page:",
+      "syntax": "{{Left arrow key|Right arrow key}}"
+    },
+    {
+      "description": "Exit:",
+      "syntax": "q + y"
+    }
+  ]
+}

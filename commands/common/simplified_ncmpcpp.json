@@ -1,0 +1,22 @@
+{
+  "command": "ncmpcpp",
+  "description": "A music player client for the Music Player Daemon. See also: mpd, mpc, qmmp, termusic. More information: https://rybczak.net/ncmpcpp.",
+  "useCases": [
+    {
+      "description": "Connect to a music player daemon on a given host and port:",
+      "syntax": "ncmpcpp --host {{ip}} --port {{port}}"
+    },
+    {
+      "description": "Display metadata of the current song to console:",
+      "syntax": "ncmpcpp --current-song"
+    },
+    {
+      "description": "Use a specified configuration file:",
+      "syntax": "ncmpcpp --config {{file}}"
+    },
+    {
+      "description": "Use a different set of key bindings from a file:",
+      "syntax": "ncmpcpp --bindings {{file}}"
+    }
+  ]
+}

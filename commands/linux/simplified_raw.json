@@ -1,0 +1,18 @@
+{
+  "command": "raw",
+  "description": "Bind a Unix raw character device. More information: https://manned.org/raw.8.",
+  "useCases": [
+    {
+      "description": "Bind a raw character device to a block device:",
+      "syntax": "raw /dev/raw/raw{{1}} {{/dev/block_device}}"
+    },
+    {
+      "description": "Query an existing binding instead of setting a new one:",
+      "syntax": "raw /dev/raw/raw{{1}}"
+    },
+    {
+      "description": "Query all bound raw devices:",
+      "syntax": "raw -qa"
+    }
+  ]
+}

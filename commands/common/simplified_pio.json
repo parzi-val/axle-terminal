@@ -1,0 +1,18 @@
+{
+  "command": "pio",
+  "description": "Development environment for embedded boards. Some subcommands such as run have their own usage documentation. More information: https://docs.platformio.org/en/latest/core/userguide/.",
+  "useCases": [
+    {
+      "description": "Display help and list subcommands:",
+      "syntax": "pio --help"
+    },
+    {
+      "description": "Display help for a specific subcommand:",
+      "syntax": "pio {{subcommand}} --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pio --version"
+    }
+  ]
+}

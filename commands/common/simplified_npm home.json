@@ -1,0 +1,18 @@
+{
+  "command": "npm home",
+  "description": "Open the npm page, Yarn page, or GitHub repository of a package in the web browser. More information: https://github.com/sindresorhus/npm-home.",
+  "useCases": [
+    {
+      "description": "Open the npm page of a specific package in the web browser:",
+      "syntax": "npm-home {{package}}"
+    },
+    {
+      "description": "Open the GitHub repository of a specific package in the web browser:",
+      "syntax": "npm-home -g {{package}}"
+    },
+    {
+      "description": "Open the Yarn page of a specific package in the web browser:",
+      "syntax": "npm-home -y {{package}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "glances",
+  "description": "A cross-platform system monitoring tool. More information: https://nicolargo.github.io/glances/.",
+  "useCases": [
+    {
+      "description": "Run in terminal:",
+      "syntax": "glances"
+    },
+    {
+      "description": "Run in web server mode to show results in browser:",
+      "syntax": "glances -w"
+    },
+    {
+      "description": "Run in server mode to allow connections from other Glances clients:",
+      "syntax": "glances -s"
+    },
+    {
+      "description": "Connect to a Glances server:",
+      "syntax": "glances -c {{hostname}}"
+    },
+    {
+      "description": "Require a password in (web) server mode:",
+      "syntax": "glances -s --password"
+    }
+  ]
+}

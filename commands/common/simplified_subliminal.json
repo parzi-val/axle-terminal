@@ -1,0 +1,10 @@
+{
+  "command": "subliminal",
+  "description": "Python-based subtitle downloader. More information: https://github.com/Diaoul/subliminal.",
+  "useCases": [
+    {
+      "description": "Download English subtitles for a video:",
+      "syntax": "subliminal download -l {{en}} {{video.ext}}"
+    }
+  ]
+}

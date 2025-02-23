@@ -1,0 +1,14 @@
+{
+  "command": "svgtopam",
+  "description": "Convert an SVG file to Netpbm format. More information: https://netpbm.sourceforge.net/doc/svgtopam.html.",
+  "useCases": [
+    {
+      "description": "Convert an SVG file to Netpbm format:",
+      "syntax": "svgtopam {{path/to/file.svg}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Emit textual output describing the input image:",
+      "syntax": "svgtopam -trace {{path/to/file.svg}}"
+    }
+  ]
+}

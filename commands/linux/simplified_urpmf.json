@@ -1,0 +1,22 @@
+{
+  "command": "urpmf",
+  "description": "Find files in packages and query information about them in Mageia. See also: urpmi, urpme, urpmi.addmedia, urpmi.removemedia, urpmi.update, urpmq. More information: https://wiki.mageia.org/en/URPMI#urpmi.removemedia.",
+  "useCases": [
+    {
+      "description": "Search for packages that contain a file:",
+      "syntax": "urpmf {{filename}}"
+    },
+    {
+      "description": "Search for packages that contain both a keyword [a]nd another in their summaries:",
+      "syntax": "urpmf --summary {{keyword1}} -a {{keyword2}}"
+    },
+    {
+      "description": "Search for packages that contain a keyword [o]r another in their descriptions:",
+      "syntax": "urpmf --description {{keyword1}} -o {{keyword2}}"
+    },
+    {
+      "description": "Search for packages that do not contain a keyword in their name ignoring case distinction using \"|\" as the [F]ield separator (\":\" by default):",
+      "syntax": "urpmf --description ! {{keyword}} -F'|'"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "ip route show",
+  "description": "Display subcommand for IP Routing table management. More information: https://manned.org/ip-route.",
+  "useCases": [
+    {
+      "description": "Display the routing table:",
+      "syntax": "ip route show"
+    },
+    {
+      "description": "Display the main routing table (same as first example):",
+      "syntax": "ip route show {{main|254}}"
+    },
+    {
+      "description": "Display the local routing table:",
+      "syntax": "ip route show table {{local|255}}"
+    },
+    {
+      "description": "Display all routing tables:",
+      "syntax": "ip route show table {{all|unspec|0}}"
+    },
+    {
+      "description": "List routes from a given device only:",
+      "syntax": "ip route show dev {{eth0}}"
+    },
+    {
+      "description": "List routes within a given scope:",
+      "syntax": "ip route show scope link"
+    },
+    {
+      "description": "Display the routing cache:",
+      "syntax": "ip route show cache"
+    },
+    {
+      "description": "Display only IPv6 or IPv4 routes:",
+      "syntax": "ip {{-6|-4}} route show"
+    }
+  ]
+}

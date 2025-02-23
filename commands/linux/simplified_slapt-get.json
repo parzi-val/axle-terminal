@@ -1,0 +1,30 @@
+{
+  "command": "slapt-get",
+  "description": "An apt like system for Slackware package management. Package sources need to be configured in the slapt-getrc file. More information: https://software.jaos.org.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages and versions:",
+      "syntax": "slapt-get --update"
+    },
+    {
+      "description": "Install a package, or update it to the latest available version:",
+      "syntax": "slapt-get --install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "slapt-get --remove {{package}}"
+    },
+    {
+      "description": "Upgrade all installed packages to their latest available versions:",
+      "syntax": "slapt-get --upgrade"
+    },
+    {
+      "description": "Locate packages by the package name, disk set, or version:",
+      "syntax": "slapt-get --search {{query}}"
+    },
+    {
+      "description": "Show information about a package:",
+      "syntax": "slapt-get --show {{package}}"
+    }
+  ]
+}

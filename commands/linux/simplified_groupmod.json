@@ -1,0 +1,14 @@
+{
+  "command": "groupmod",
+  "description": "Modify existing user groups in the system. See also: groups, groupadd, groupdel. More information: https://manned.org/groupmod.",
+  "useCases": [
+    {
+      "description": "Change the group name:",
+      "syntax": "sudo groupmod --new-name {{new_group}} {{group_name}}"
+    },
+    {
+      "description": "Change the group ID:",
+      "syntax": "sudo groupmod --gid {{new_id}} {{group_name}}"
+    }
+  ]
+}

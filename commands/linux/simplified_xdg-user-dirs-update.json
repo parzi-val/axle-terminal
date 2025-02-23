@@ -1,0 +1,14 @@
+{
+  "command": "xdg-user-dirs-update",
+  "description": "Update XDG user directories. More information: https://manned.org/xdg-user-dirs-update.",
+  "useCases": [
+    {
+      "description": "Change XDG's DESKTOP directory to the specified directory (must be absolute):",
+      "syntax": "xdg-user-dirs-update --set DESKTOP &quot;{{path/to/directory}}&quot;"
+    },
+    {
+      "description": "Write the result to the specified dry-run-file instead of the user-dirs.dirs file:",
+      "syntax": "xdg-user-dirs-update --dummy-output &quot;{{path/to/dry_run_file}}&quot; --set {{xdg_user_directory}} &quot;{{path/to/directory}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "dolt config",
+  "description": "Read and write local (per repository) and global (per user) Dolt configuration variables. More information: https://docs.dolthub.com/cli-reference/cli#dolt-config.",
+  "useCases": [
+    {
+      "description": "List all local and global configuration options and their values:",
+      "syntax": "dolt config --list"
+    },
+    {
+      "description": "Display the value of a local or global configuration variable:",
+      "syntax": "dolt config --get {{name}}"
+    },
+    {
+      "description": "Modify the value of a local configuration variable, creating it if it doesn't exist:",
+      "syntax": "dolt config --add {{name}} {{value}}"
+    },
+    {
+      "description": "Modify the value of a global configuration variable, creating it if it doesn't exist:",
+      "syntax": "dolt config --global --add {{name}} {{value}}"
+    },
+    {
+      "description": "Delete a local configuration variable:",
+      "syntax": "dolt config --unset {{name}}"
+    },
+    {
+      "description": "Delete a global configuration variable:",
+      "syntax": "dolt config --global --unset {{name}}"
+    }
+  ]
+}

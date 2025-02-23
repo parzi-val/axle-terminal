@@ -1,0 +1,14 @@
+{
+  "command": "docker top",
+  "description": "Display the running processes of a container. More information: https://docs.docker.com/reference/cli/docker/container/top/.",
+  "useCases": [
+    {
+      "description": "Display the running processes of a container:",
+      "syntax": "docker top {{container}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "docker top --help"
+    }
+  ]
+}

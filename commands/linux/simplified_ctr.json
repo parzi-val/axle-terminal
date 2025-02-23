@@ -1,0 +1,22 @@
+{
+  "command": "ctr",
+  "description": "Manage containerd containers and images. More information: https://containerd.io.",
+  "useCases": [
+    {
+      "description": "List all containers (running and stopped):",
+      "syntax": "ctr containers list"
+    },
+    {
+      "description": "List all images:",
+      "syntax": "ctr images list"
+    },
+    {
+      "description": "Pull an image:",
+      "syntax": "ctr images pull {{image}}"
+    },
+    {
+      "description": "Tag an image:",
+      "syntax": "ctr images tag {{source_image}}:{{source_tag}} {{target_image}}:{{target_tag}}"
+    }
+  ]
+}

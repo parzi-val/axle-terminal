@@ -1,0 +1,34 @@
+{
+  "command": "ogrinfo",
+  "description": "List information about an OGR-supported data source. More information: https://gdal.org/programs/ogrinfo.html.",
+  "useCases": [
+    {
+      "description": "List supported formats:",
+      "syntax": "ogrinfo --formats"
+    },
+    {
+      "description": "List layers of a data source:",
+      "syntax": "ogrinfo {{path/to/input.gpkg}}"
+    },
+    {
+      "description": "Get detailed information about a specific layer of a data source:",
+      "syntax": "ogrinfo {{path/to/input.gpkg}} {{layer_name}}"
+    },
+    {
+      "description": "Show summary information about a specific layer of a data source:",
+      "syntax": "ogrinfo -so {{path/to/input.gpkg}} {{layer_name}}"
+    },
+    {
+      "description": "Show summary of all layers of the data source:",
+      "syntax": "ogrinfo -so -al {{path/to/input.gpkg}}"
+    },
+    {
+      "description": "Show detailed information of features matching a condition:",
+      "syntax": "ogrinfo -where '{{attribute_name &gt; 42}}' {{path/to/input.gpkg}} {{layer_name}}"
+    },
+    {
+      "description": "Update a layer in the data source with SQL:",
+      "syntax": "ogrinfo {{path/to/input.geojson}} -dialect SQLite -sql &quot;{{UPDATE input SET attribute_name = 'foo'}}&quot;"
+    }
+  ]
+}

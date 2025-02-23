@@ -1,0 +1,18 @@
+{
+  "command": "apx",
+  "description": "Package management utility with support for multiple sources, allowing you to install packages in subsystems. More information: https://github.com/Vanilla-OS/apx.",
+  "useCases": [
+    {
+      "description": "View documentation for managing package managers:",
+      "syntax": "tldr apx pkgmanagers"
+    },
+    {
+      "description": "View documentation for managing stacks:",
+      "syntax": "tldr apx stacks"
+    },
+    {
+      "description": "View documentation for managing subsystems:",
+      "syntax": "tldr apx subsystems"
+    }
+  ]
+}

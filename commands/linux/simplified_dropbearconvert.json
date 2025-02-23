@@ -1,0 +1,14 @@
+{
+  "command": "dropbearconvert",
+  "description": "Convert between Dropbear and OpenSSH private key formats. More information: https://manned.org/dropbearconvert.1.",
+  "useCases": [
+    {
+      "description": "Convert an OpenSSH private key to the Dropbear format:",
+      "syntax": "dropbearconvert openssh dropbear {{path/to/input_key}} {{path/to/output_key}}"
+    },
+    {
+      "description": "Convert a Dropbear private key to the OpenSSH format:",
+      "syntax": "dropbearconvert dropbear openssh {{path/to/input_key}} {{path/to/output_key}}"
+    }
+  ]
+}

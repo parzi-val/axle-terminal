@@ -1,0 +1,34 @@
+{
+  "command": "ipcs",
+  "description": "Show information about the usage of XSI IPC facilities: shared memory segments, message queues, and semaphore arrays. More information: https://manned.org/ipcs.1p.",
+  "useCases": [
+    {
+      "description": "Show information about all the IPC:",
+      "syntax": "ipcs -a"
+    },
+    {
+      "description": "Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets:",
+      "syntax": "ipcs {{-m|-q|-s}}"
+    },
+    {
+      "description": "Show information on maximum allowable size in [b]ytes:",
+      "syntax": "ipcs -b"
+    },
+    {
+      "description": "Show [c]reator’s user name and group name for all IPC facilities:",
+      "syntax": "ipcs -c"
+    },
+    {
+      "description": "Show the [p]ID of the last operators for all IPC facilities:",
+      "syntax": "ipcs -p"
+    },
+    {
+      "description": "Show access [t]imes for all IPC facilities:",
+      "syntax": "ipcs -t"
+    },
+    {
+      "description": "Show [o]utstanding usage for active message queues, and shared memory segments:",
+      "syntax": "ipcs -o"
+    }
+  ]
+}

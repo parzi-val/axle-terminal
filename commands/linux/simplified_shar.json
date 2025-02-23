@@ -1,0 +1,26 @@
+{
+  "command": "shar",
+  "description": "Create a shell archive. More information: https://www.gnu.org/software/sharutils/manual/sharutils.html.",
+  "useCases": [
+    {
+      "description": "Create a shell script that when executed extracts the given files from itself:",
+      "syntax": "shar --vanilla-operation {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/archive.sh}}"
+    },
+    {
+      "description": "Compress the files in the archive:",
+      "syntax": "shar --compactor {{xz}} {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/archive.sh}}"
+    },
+    {
+      "description": "Treat all files as binary (i.e. uuencode everything):",
+      "syntax": "shar --uuencode {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/archive.sh}}"
+    },
+    {
+      "description": "Treat all files as text (i.e. uuencode nothing):",
+      "syntax": "shar --text-files {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/archive.sh}}"
+    },
+    {
+      "description": "Include a name and cut mark in the header comment of the archive:",
+      "syntax": "shar --archive-name &quot;{{My files}}&quot; --cut-mark {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/archive.sh}}"
+    }
+  ]
+}

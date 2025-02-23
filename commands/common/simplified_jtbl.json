@@ -1,0 +1,22 @@
+{
+  "command": "jtbl",
+  "description": "Utility to print JSON and JSON Lines data as a table in the terminal. More information: https://github.com/kellyjonbrazil/jtbl.",
+  "useCases": [
+    {
+      "description": "Print a table from JSON or JSON Lines input:",
+      "syntax": "cat {{file.json}} | jtbl"
+    },
+    {
+      "description": "Print a table and specify the column width for wrapping:",
+      "syntax": "cat {{file.json}} | jtbl --cols={{width}}"
+    },
+    {
+      "description": "Print a table and truncate rows instead of wrapping:",
+      "syntax": "cat {{file.json}} | jtbl -t"
+    },
+    {
+      "description": "Print a table and don't wrap or truncate rows:",
+      "syntax": "cat {{file.json}} | jtbl -n"
+    }
+  ]
+}

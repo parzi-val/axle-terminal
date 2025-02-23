@@ -1,0 +1,30 @@
+{
+  "command": "paxs",
+  "description": "Manage packages across Yay, Flatpak, and Snap. Supports searching, installing, removing, and upgrading packages. More information: https://github.com/zamhedonia/paxs.",
+  "useCases": [
+    {
+      "description": "Search for a package:",
+      "syntax": "paxs {{search_term}}"
+    },
+    {
+      "description": "Upgrade all packages:",
+      "syntax": "paxs -u"
+    },
+    {
+      "description": "Install a package (prompting for the source):",
+      "syntax": "paxs -i {{package}}"
+    },
+    {
+      "description": "Remove a package (prompting for the source):",
+      "syntax": "paxs -r {{package}}"
+    },
+    {
+      "description": "Check for updates across all package managers:",
+      "syntax": "paxs -c"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "paxs -h"
+    }
+  ]
+}

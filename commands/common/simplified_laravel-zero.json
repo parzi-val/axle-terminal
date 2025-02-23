@@ -1,0 +1,18 @@
+{
+  "command": "laravel-zero",
+  "description": "A command-line installer for the Laravel Zero framework. More information: https://laravel-zero.com.",
+  "useCases": [
+    {
+      "description": "Create a new Laravel Zero application:",
+      "syntax": "laravel-zero new {{name}}"
+    },
+    {
+      "description": "Update the installer to the latest version:",
+      "syntax": "laravel-zero self-update"
+    },
+    {
+      "description": "List the available installer commands:",
+      "syntax": "laravel-zero list"
+    }
+  ]
+}

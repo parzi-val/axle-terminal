@@ -1,0 +1,38 @@
+{
+  "command": "kde-builder",
+  "description": "Easily build KDE components from its source repositories. Drop-in replacement for kdesrc-build. More information: https://kde-builder.kde.org/en/cmdline/cmdline-usage.html.",
+  "useCases": [
+    {
+      "description": "Initialize kde-builder:",
+      "syntax": "kde-builder --generate-config &amp;&amp; kde-builder --install-distro-packages"
+    },
+    {
+      "description": "Compile a KDE component and its dependencies from the source:",
+      "syntax": "kde-builder {{component_name}}"
+    },
+    {
+      "description": "Compile a component without updating its local code and without compiling its [D]ependencies:",
+      "syntax": "kde-builder --no-src --no-include-dependencies {{component_name}}"
+    },
+    {
+      "description": "[r]efresh the build directories before compiling:",
+      "syntax": "kde-builder --refresh-build {{component_name}}"
+    },
+    {
+      "description": "Resume compilation from a specific dependency:",
+      "syntax": "kde-builder --resume-from {{dependency_component}} {{component_name}}"
+    },
+    {
+      "description": "Run a component with a specified executable name:",
+      "syntax": "kde-builder --run {{executable_name}}"
+    },
+    {
+      "description": "Build all configured components:",
+      "syntax": "kde-builder"
+    },
+    {
+      "description": "Use system libraries in place of a component if it fails to build:",
+      "syntax": "kde-builder --no-stop-on-failure {{component_name}}"
+    }
+  ]
+}

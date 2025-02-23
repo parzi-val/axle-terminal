@@ -1,0 +1,30 @@
+{
+  "command": "fd",
+  "description": "An alternative to find. Aims to be faster and easier to use than find. More information: https://github.com/sharkdp/fd.",
+  "useCases": [
+    {
+      "description": "Recursively find files matching a specific pattern in the current directory:",
+      "syntax": "fd &quot;{{string|regex}}&quot;"
+    },
+    {
+      "description": "Find files that begin with a specific string:",
+      "syntax": "fd &quot;{{^string}}&quot;"
+    },
+    {
+      "description": "Find files with a specific extension:",
+      "syntax": "fd --extension {{txt}}"
+    },
+    {
+      "description": "Find files in a specific directory:",
+      "syntax": "fd &quot;{{string|regex}}&quot; {{path/to/directory}}"
+    },
+    {
+      "description": "Include ignored and hidden files in the search:",
+      "syntax": "fd --hidden --no-ignore &quot;{{string|regex}}&quot;"
+    },
+    {
+      "description": "Execute a command on each search result returned:",
+      "syntax": "fd &quot;{{string|regex}}&quot; --exec {{command}}"
+    }
+  ]
+}

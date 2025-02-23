@@ -1,0 +1,22 @@
+{
+  "command": "popeye",
+  "description": "Report potential issues with Kubernetes deployment manifests. More information: https://github.com/derailed/popeye.",
+  "useCases": [
+    {
+      "description": "Scan the current Kubernetes cluster:",
+      "syntax": "popeye"
+    },
+    {
+      "description": "Scan a specific namespace:",
+      "syntax": "popeye -n {{namespace}}"
+    },
+    {
+      "description": "Scan specific Kubernetes context:",
+      "syntax": "popeye --context={{context}}"
+    },
+    {
+      "description": "Use a spinach configuration file for scanning:",
+      "syntax": "popeye -f {{spinach.yaml}}"
+    }
+  ]
+}

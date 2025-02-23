@@ -1,0 +1,22 @@
+{
+  "command": "choco apikey",
+  "description": "Manage API keys for Chocolatey sources. More information: https://chocolatey.org/docs/commands-apikey.",
+  "useCases": [
+    {
+      "description": "Display a list of sources and their API keys:",
+      "syntax": "choco apikey"
+    },
+    {
+      "description": "Display a specific source and its API key:",
+      "syntax": "choco apikey --source &quot;{{source_url}}&quot;"
+    },
+    {
+      "description": "Set an API key for a source:",
+      "syntax": "choco apikey --source &quot;{{source_url}}&quot; --key &quot;{{api_key}}&quot;"
+    },
+    {
+      "description": "Remove an API key for a source:",
+      "syntax": "choco apikey --source &quot;{{source_url}}&quot; --remove"
+    }
+  ]
+}

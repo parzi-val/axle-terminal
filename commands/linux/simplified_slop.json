@@ -1,0 +1,26 @@
+{
+  "command": "slop",
+  "description": "Get a selection of the screen. More information: https://github.com/naelstrof/slop.",
+  "useCases": [
+    {
+      "description": "Wait for the user to make a selection and output its geometry to stdout:",
+      "syntax": "slop"
+    },
+    {
+      "description": "Double click, rather than click and drag, to draw a selection:",
+      "syntax": "slop -D"
+    },
+    {
+      "description": "Highlight the selection rather than outlining it:",
+      "syntax": "slop -l"
+    },
+    {
+      "description": "Specify the output format:",
+      "syntax": "slop -f {{format_string}}"
+    },
+    {
+      "description": "Specify the selection rectangle's color:",
+      "syntax": "slop -c {{red}},{{green}},{{blue}},{{alpha}}"
+    }
+  ]
+}

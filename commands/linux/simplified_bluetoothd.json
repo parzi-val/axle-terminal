@@ -1,0 +1,26 @@
+{
+  "command": "bluetoothd",
+  "description": "Daemon to manage bluetooth devices. More information: https://manned.org/bluetoothd.",
+  "useCases": [
+    {
+      "description": "Start the daemon:",
+      "syntax": "bluetoothd"
+    },
+    {
+      "description": "Start the daemon, logging to stdout:",
+      "syntax": "bluetoothd --nodetach"
+    },
+    {
+      "description": "Start the daemon with a specific configuration file (defaults to /etc/bluetooth/main.conf):",
+      "syntax": "bluetoothd --configfile {{path/to/file}}"
+    },
+    {
+      "description": "Start the daemon with verbose output to stderr:",
+      "syntax": "bluetoothd --debug"
+    },
+    {
+      "description": "Start the daemon with verbose output coming from specific files in the bluetoothd or plugins source:",
+      "syntax": "bluetoothd --debug={{path/to/file1:path/to/file2:...}}"
+    }
+  ]
+}

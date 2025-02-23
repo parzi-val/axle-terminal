@@ -1,0 +1,38 @@
+{
+  "command": "if",
+  "description": "Performs conditional processing in shell scripts. See also: test, [. More information: https://www.gnu.org/software/bash/manual/bash.html#Conditional-Constructs.",
+  "useCases": [
+    {
+      "description": "Execute the specified commands if the condition command's exit status is zero:",
+      "syntax": "if {{condition_command}}; then {{echo &quot;Condition is true&quot;}}; fi"
+    },
+    {
+      "description": "Execute the specified commands if the condition command's exit status is not zero:",
+      "syntax": "if ! {{condition_command}}; then {{echo &quot;Condition is true&quot;}}; fi"
+    },
+    {
+      "description": "Execute the first specified commands if the condition command's exit status is zero otherwise execute the second specified commands:",
+      "syntax": "if {{condition_command}}; then {{echo &quot;Condition is true&quot;}}; else {{echo &quot;Condition is false&quot;}}; fi"
+    },
+    {
+      "description": "Check whether a [f]ile exists:",
+      "syntax": "if [[ -f {{path/to/file}} ]]; then {{echo &quot;Condition is true&quot;}}; fi"
+    },
+    {
+      "description": "Check whether a [d]irectory exists:",
+      "syntax": "if [[ -d {{path/to/directory}} ]]; then {{echo &quot;Condition is true&quot;}}; fi"
+    },
+    {
+      "description": "Check whether a file or directory [e]xists:",
+      "syntax": "if [[ -e {{path/to/file_or_directory}} ]]; then {{echo &quot;Condition is true&quot;}}; fi"
+    },
+    {
+      "description": "Check whether a variable is defined:",
+      "syntax": "if [[ -n &quot;${{variable}}&quot; ]]; then {{echo &quot;Condition is true&quot;}}; fi"
+    },
+    {
+      "description": "List all possible conditions (test is an alias to [; both are commonly used with if):",
+      "syntax": "man test"
+    }
+  ]
+}

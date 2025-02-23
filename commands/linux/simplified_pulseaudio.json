@@ -1,0 +1,26 @@
+{
+  "command": "pulseaudio",
+  "description": "The PulseAudio sound system daemon and manager. More information: https://www.freedesktop.org/wiki/Software/PulseAudio/.",
+  "useCases": [
+    {
+      "description": "Check if PulseAudio is running (a non-zero exit code means it is not running):",
+      "syntax": "pulseaudio --check"
+    },
+    {
+      "description": "Start the PulseAudio daemon in the background:",
+      "syntax": "pulseaudio --start"
+    },
+    {
+      "description": "Kill the running PulseAudio daemon:",
+      "syntax": "pulseaudio --kill"
+    },
+    {
+      "description": "List available modules:",
+      "syntax": "pulseaudio --dump-modules"
+    },
+    {
+      "description": "Load a module into the currently running daemon with the specified arguments:",
+      "syntax": "pulseaudio --load=&quot;{{module_name}} {{arguments}}&quot;"
+    }
+  ]
+}

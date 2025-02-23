@@ -1,0 +1,14 @@
+{
+  "command": "atrm",
+  "description": "Remove jobs scheduled by at or batch commands. To find job numbers use atq. More information: https://manned.org/atrm.",
+  "useCases": [
+    {
+      "description": "Remove job number 10:",
+      "syntax": "atrm {{10}}"
+    },
+    {
+      "description": "Remove many jobs, separated by spaces:",
+      "syntax": "atrm {{15}} {{17}} {{22}}"
+    }
+  ]
+}

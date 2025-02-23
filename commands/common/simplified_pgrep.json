@@ -1,0 +1,18 @@
+{
+  "command": "pgrep",
+  "description": "Find or signal processes by name. More information: https://www.manned.org/pgrep.",
+  "useCases": [
+    {
+      "description": "Return PIDs of any running processes with a matching command string:",
+      "syntax": "pgrep {{process_name}}"
+    },
+    {
+      "description": "Search for processes including their command-line options:",
+      "syntax": "pgrep --full &quot;{{process_name}} {{parameter}}&quot;"
+    },
+    {
+      "description": "Search for processes run by a specific user:",
+      "syntax": "pgrep --euid root {{process_name}}"
+    }
+  ]
+}

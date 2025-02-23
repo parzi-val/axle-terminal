@@ -1,0 +1,34 @@
+{
+  "command": "hledger print",
+  "description": "Show full journal entries, representing transactions. More information: https://hledger.org/hledger.html#print.",
+  "useCases": [
+    {
+      "description": "Show all transactions in the default journal file:",
+      "syntax": "hledger print"
+    },
+    {
+      "description": "Show transactions, with any implied amounts or costs made explicit:",
+      "syntax": "hledger print --explicit --infer-costs"
+    },
+    {
+      "description": "Show transactions from two specified files, with amounts converted to cost:",
+      "syntax": "hledger print --file {{path/to/2023.journal}} --file {{path/to/2024.journal}} --cost"
+    },
+    {
+      "description": "Show $ transactions in *food* but not *groceries* accounts this month:",
+      "syntax": "hledger print cur:\\\\$ food not:groceries date:thismonth"
+    },
+    {
+      "description": "Show transactions of amount 50 or more, with whole foods in their description:",
+      "syntax": "hledger print amt:'&gt;50' desc:'whole foods'"
+    },
+    {
+      "description": "Show cleared transactions, with EUR amounts rounded and with decimal commas:",
+      "syntax": "hledger print --cleared --commodity '1000, EUR' --round hard"
+    },
+    {
+      "description": "Write transactions from foo.journal as a CSV file:",
+      "syntax": "hledger print --file {{path/to/foo.journal}} --output-file {{path/to/output_file.csv}}"
+    }
+  ]
+}

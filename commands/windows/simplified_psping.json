@@ -1,0 +1,26 @@
+{
+  "command": "psping",
+  "description": "A ping tool that includes TCP ping, latency and bandwidth measurement. More information: https://learn.microsoft.com/sysinternals/downloads/psping.",
+  "useCases": [
+    {
+      "description": "Ping a host using ICMP:",
+      "syntax": "psping {{hostname}}"
+    },
+    {
+      "description": "Ping a host over a TCP port:",
+      "syntax": "psping {{hostname}}:{{port}}"
+    },
+    {
+      "description": "Specify the number of pings and perform it quietly:",
+      "syntax": "psping {{hostname}} -n {{pings}} -q"
+    },
+    {
+      "description": "Ping the target over TCP 50 times and produce a histogram of the results:",
+      "syntax": "psping {{hostname}}:{{port}} -q -n {{50}} -h"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "psping /?"
+    }
+  ]
+}

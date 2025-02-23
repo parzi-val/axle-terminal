@@ -1,0 +1,34 @@
+{
+  "command": "mongodump",
+  "description": "Utility to export the contents of a MongoDB instance. More information: https://docs.mongodb.com/database-tools/mongodump/.",
+  "useCases": [
+    {
+      "description": "Create a dump of all databases (this will place the files inside a directory called \"dump\"):",
+      "syntax": "mongodump"
+    },
+    {
+      "description": "Specify an output location for the dump:",
+      "syntax": "mongodump --out {{path/to/directory}}"
+    },
+    {
+      "description": "Create a dump of a given database:",
+      "syntax": "mongodump --db {{database_name}}"
+    },
+    {
+      "description": "Create a dump of a given collection within a given database:",
+      "syntax": "mongodump --collection {{collection_name}} --db {{database_name}}"
+    },
+    {
+      "description": "Connect to a given host running on a given port, and create a dump:",
+      "syntax": "mongodump --host {{host}} --port {{port}}"
+    },
+    {
+      "description": "Create a dump of a given database with a given username; user will be prompted for password:",
+      "syntax": "mongodump --username {{username}} {{database}} --password"
+    },
+    {
+      "description": "Create a dump from a specific instance; host, user, password and database will be defined in the connection string:",
+      "syntax": "mongodump --uri {{connection_string}}"
+    }
+  ]
+}

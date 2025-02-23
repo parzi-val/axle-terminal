@@ -1,0 +1,34 @@
+{
+  "command": "entr",
+  "description": "Run arbitrary commands when files change. More information: https://eradman.com/entrproject/.",
+  "useCases": [
+    {
+      "description": "Rebuild with make if any file in any subdirectory changes:",
+      "syntax": "{{ag -l}} | entr {{make}}"
+    },
+    {
+      "description": "Rebuild and test with make if any .c source files in the current directory change:",
+      "syntax": "{{ls *.c}} | entr {{'make &amp;&amp; make test'}}"
+    },
+    {
+      "description": "Send a SIGTERM to any previously spawned ruby subprocesses before executing ruby main.rb:",
+      "syntax": "{{ls *.rb}} | entr -r {{ruby main.rb}}"
+    },
+    {
+      "description": "Run a command with the changed file (/_) as an argument:",
+      "syntax": "{{ls *.sql}} | entr {{psql -f}} /_"
+    },
+    {
+      "description": "[c]lear the screen and run a query after the SQL script is updated:",
+      "syntax": "{{echo my.sql}} | entr -cp {{psql -f}} /_"
+    },
+    {
+      "description": "Rebuild the project if source files change, limiting output to the first few lines:",
+      "syntax": "{{find src/}} | entr -s {{'make | sed 10q'}}"
+    },
+    {
+      "description": "Launch and auto-[r]eload a Node.js server:",
+      "syntax": "{{ls *.js}} | entr -r {{node app.js}}"
+    }
+  ]
+}

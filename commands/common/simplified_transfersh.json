@@ -1,0 +1,30 @@
+{
+  "command": "transfersh",
+  "description": "An unofficial command-line client for transfer.sh. More information: https://github.com/AlpixTM/transfersh.",
+  "useCases": [
+    {
+      "description": "Upload a file to transfer.sh:",
+      "syntax": "transfersh {{path/to/file}}"
+    },
+    {
+      "description": "Upload a file showing a progress bar (requires Python package requests_toolbelt):",
+      "syntax": "transfersh --progress {{path/to/file}}"
+    },
+    {
+      "description": "Upload a file using a different file name:",
+      "syntax": "transfersh --name {{filename}} {{path/to/file}}"
+    },
+    {
+      "description": "Upload a file to a custom transfer.sh server:",
+      "syntax": "transfersh --servername {{upload.server.name}} {{path/to/file}}"
+    },
+    {
+      "description": "Upload all files from a directory recursively:",
+      "syntax": "transfersh --recursive {{path/to/directory/}}"
+    },
+    {
+      "description": "Upload a specific directory as an uncompressed tar:",
+      "syntax": "transfersh -rt {{path/to/directory}}"
+    }
+  ]
+}

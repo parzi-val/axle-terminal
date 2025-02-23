@@ -1,0 +1,14 @@
+{
+  "command": "git merge-repo",
+  "description": "Merge two repository histories. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-merge-repo.",
+  "useCases": [
+    {
+      "description": "Merge a repository's branch into the current repository's directory:",
+      "syntax": "git merge-repo {{path/to/repo}} {{branch_name}} {{path/to/directory}}"
+    },
+    {
+      "description": "Merge a remote repository's branch into the current repository's directory, not preserving history:",
+      "syntax": "git merge-repo {{path/to/remote_repo}} {{branch_name}} ."
+    }
+  ]
+}

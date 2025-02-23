@@ -1,0 +1,14 @@
+{
+  "command": "ppmflash",
+  "description": "Brighten a PPM image file. More information: https://netpbm.sourceforge.net/doc/ppmflash.html.",
+  "useCases": [
+    {
+      "description": "Generate a PPM image as output that is flashfactor times brighter than the input PPM image:",
+      "syntax": "ppmflash {{flashfactor}} {{path/to/file.ppm}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ppmflash -version"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "eject",
+  "description": "Eject cds, floppy disks and tape drives. More information: https://manned.org/eject.",
+  "useCases": [
+    {
+      "description": "Display the default device:",
+      "syntax": "eject -d"
+    },
+    {
+      "description": "Eject the default device:",
+      "syntax": "eject"
+    },
+    {
+      "description": "Eject a specific device (the default order is cd-rom, scsi, floppy and tape):",
+      "syntax": "eject {{/dev/cdrom}}"
+    },
+    {
+      "description": "Toggle whether a device's tray is open or closed:",
+      "syntax": "eject -T {{/dev/cdrom}}"
+    },
+    {
+      "description": "Eject a cd drive:",
+      "syntax": "eject -r {{/dev/cdrom}}"
+    },
+    {
+      "description": "Eject a floppy drive:",
+      "syntax": "eject -f {{/mnt/floppy}}"
+    },
+    {
+      "description": "Eject a tape drive:",
+      "syntax": "eject -q {{/mnt/tape}}"
+    }
+  ]
+}

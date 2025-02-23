@@ -1,0 +1,26 @@
+{
+  "command": "gdc",
+  "description": "D compiler using GCC as a backend. More information: https://wiki.dlang.org/Using_GDC.",
+  "useCases": [
+    {
+      "description": "Create an executable:",
+      "syntax": "gdc {{path/to/source.d}} -o {{path/to/output_executable}}"
+    },
+    {
+      "description": "Print information about module dependencies:",
+      "syntax": "gdc -fdeps"
+    },
+    {
+      "description": "Generate Ddoc documentation:",
+      "syntax": "gdc -fdoc"
+    },
+    {
+      "description": "Generate D interface files:",
+      "syntax": "gdc -fintfc"
+    },
+    {
+      "description": "Do not link the standard GCC libraries in the compilation:",
+      "syntax": "gdc -nostdlib"
+    }
+  ]
+}

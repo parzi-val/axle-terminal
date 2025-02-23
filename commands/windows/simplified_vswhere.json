@@ -1,0 +1,22 @@
+{
+  "command": "vswhere",
+  "description": "Locate Visual Studio 2017 and newer installations. More information: https://github.com/microsoft/vswhere.",
+  "useCases": [
+    {
+      "description": "Find the path of vcvarsall.bat to set environment variables:",
+      "syntax": "vswhere -products * -latest -prerelease -find **\\VC\\Auxiliary\\Build\\vcvarsall.bat"
+    },
+    {
+      "description": "Find the directory of the x64 MSVC compiler (cl.exe, etc):",
+      "syntax": "vswhere -products * -latest -prerelease -find **\\Hostx64\\x64\\*"
+    },
+    {
+      "description": "Find the directory of Clang bundled with Visual Studio bundled (clang-cl, clang-tidy, etc):",
+      "syntax": "vswhere -products * -latest -prerelease -find **\\Llvm\\bin\\*"
+    },
+    {
+      "description": "Find the path of MSBuild.exe:",
+      "syntax": "vswhere -products * -latest -prerelease -find MSBuild\\**\\Bin\\MSBuild.exe"
+    }
+  ]
+}

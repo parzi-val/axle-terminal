@@ -1,0 +1,30 @@
+{
+  "command": "retroarch",
+  "description": "A frontend for emulators, game engines and media players. The reference implementation of the libretro API. More information: https://github.com/libretro/RetroArch.",
+  "useCases": [
+    {
+      "description": "Start in the menu mode:",
+      "syntax": "retroarch"
+    },
+    {
+      "description": "Start in full screen mode:",
+      "syntax": "retroarch --fullscreen"
+    },
+    {
+      "description": "List all compiled features:",
+      "syntax": "retroarch --features"
+    },
+    {
+      "description": "Set the path of a configuration file:",
+      "syntax": "retroarch --config={{path/to/config_file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "retroarch --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "retroarch --version"
+    }
+  ]
+}

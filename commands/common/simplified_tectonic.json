@@ -1,0 +1,30 @@
+{
+  "command": "tectonic",
+  "description": "A modern, self-contained TeX/LaTeX engine. More information: https://tectonic-typesetting.github.io/book/latest.",
+  "useCases": [
+    {
+      "description": "Compile a standalone TeX/LaTeX file:",
+      "syntax": "tectonic -X compile {{path/to/file.tex}}"
+    },
+    {
+      "description": "Compile a standalone TeX/LaTeX file with synctex data:",
+      "syntax": "tectonic -X compile --synctex {{path/to/file.tex}}"
+    },
+    {
+      "description": "Initialize a tectonic project in the current directory:",
+      "syntax": "tectonic -X init"
+    },
+    {
+      "description": "Initialize a tectonic project in the specified directory:",
+      "syntax": "tectonic -X new {{project_name}}"
+    },
+    {
+      "description": "Build the project in the current directory:",
+      "syntax": "tectonic -X build"
+    },
+    {
+      "description": "Start a watcher to build the project in the current directory on change:",
+      "syntax": "tectonic -X watch"
+    }
+  ]
+}

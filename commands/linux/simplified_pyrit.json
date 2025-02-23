@@ -1,0 +1,38 @@
+{
+  "command": "pyrit",
+  "description": "WPA/WPA2 cracking tool using computational power. More information: https://github.com/JPaulMora/Pyrit.",
+  "useCases": [
+    {
+      "description": "Display system cracking speed:",
+      "syntax": "pyrit benchmark"
+    },
+    {
+      "description": "List available cores:",
+      "syntax": "pyrit list_cores"
+    },
+    {
+      "description": "Set [e]SSID:",
+      "syntax": "pyrit -e &quot;{{ESSID}}&quot; create_essid"
+    },
+    {
+      "description": "[r]ead and analyze a specific packet capture file:",
+      "syntax": "pyrit -r {{path/to/file.cap|path/to/file.pcap}} analyze"
+    },
+    {
+      "description": "Read and [i]mport passwords to the current database:",
+      "syntax": "pyrit -i {{path/to/file}} {{import_unique_passwords|unique_passwords|import_passwords}}"
+    },
+    {
+      "description": "Exp[o]rt passwords from database to a specific file:",
+      "syntax": "pyrit -o {{path/to/file}} export_passwords"
+    },
+    {
+      "description": "Translate passwords with Pired Master Keys:",
+      "syntax": "pyrit batch"
+    },
+    {
+      "description": "[r]ead the capture file and crack the password:",
+      "syntax": "pyrit -r {{path/to/file}} attack_db"
+    }
+  ]
+}

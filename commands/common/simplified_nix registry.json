@@ -1,0 +1,26 @@
+{
+  "command": "nix registry",
+  "description": "Manage a Nix flake registry. See also: nix3 flake for information about flakes. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-registry.html.",
+  "useCases": [
+    {
+      "description": "Pin the nixpkgs revision to the current version of the upstream repository:",
+      "syntax": "nix registry pin {{nixpkgs}}"
+    },
+    {
+      "description": "Pin an entry to the latest version of the branch, or a particular reivision of a GitHub repository:",
+      "syntax": "nix registry pin {{entry}} {{github:owner/repo/branch_or_revision}}"
+    },
+    {
+      "description": "Add a new entry that always points to the latest version of a GitHub repository, updating automatically:",
+      "syntax": "nix registry add {{entry}} {{github:owner/repo}}"
+    },
+    {
+      "description": "Remove a registry entry:",
+      "syntax": "nix registry remove {{entry}}"
+    },
+    {
+      "description": "See documentation about what Nix flake registries are:",
+      "syntax": "nix registry --help"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "sattach",
+  "description": "Attach to a Slurm job step. More information: https://slurm.schedmd.com/sattach.html.",
+  "useCases": [
+    {
+      "description": "Redirect the IO streams (stdout, stderr, and stdin) of a Slurm job step to the current terminal:",
+      "syntax": "sattach {{jobid}}.{{stepid}}"
+    },
+    {
+      "description": "Use the current console's input as stdin to the specified task:",
+      "syntax": "sattach --input-filter {{task_number}}"
+    },
+    {
+      "description": "Only redirect stdin/stderr of the specified task:",
+      "syntax": "sattach --{{output|error}}-filter {{task_number}}"
+    }
+  ]
+}

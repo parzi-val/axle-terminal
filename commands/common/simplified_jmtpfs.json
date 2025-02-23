@@ -1,0 +1,26 @@
+{
+  "command": "jmtpfs",
+  "description": "FUSE-based filesystem for accessing MTP devices. More information: https://manned.org/jmtpfs.",
+  "useCases": [
+    {
+      "description": "Mount an MTP device to a directory:",
+      "syntax": "jmtpfs {{path/to/directory}}"
+    },
+    {
+      "description": "Set mount options:",
+      "syntax": "jmtpfs -o {{allow_other,auto_unmount}} {{path/to/directory}}"
+    },
+    {
+      "description": "List available MTP devices:",
+      "syntax": "jmtpfs --listDevices"
+    },
+    {
+      "description": "If multiple devices are present, mount a specific device:",
+      "syntax": "jmtpfs -device={{bus_id}},{{device_id}} {{path/to/directory}}"
+    },
+    {
+      "description": "Unmount MTP device:",
+      "syntax": "fusermount -u {{path/to/directory}}"
+    }
+  ]
+}

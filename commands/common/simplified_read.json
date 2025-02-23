@@ -1,0 +1,38 @@
+{
+  "command": "read",
+  "description": "Shell builtin for retrieving data from stdin. More information: https://www.gnu.org/software/bash/manual/bash.html#index-read.",
+  "useCases": [
+    {
+      "description": "Store data that you type from the keyboard:",
+      "syntax": "read {{variable}}"
+    },
+    {
+      "description": "Store each of the next lines you enter as values of an array:",
+      "syntax": "read -a {{array}}"
+    },
+    {
+      "description": "Specify the number of maximum characters to be read:",
+      "syntax": "read -n {{character_count}} {{variable}}"
+    },
+    {
+      "description": "Assign multiple values to multiple variables:",
+      "syntax": "read {{_ variable1 _ variable2}} &lt;&lt;&lt; &quot;{{The surname is Bond}}&quot;"
+    },
+    {
+      "description": "Do not let backslash (\\) act as an escape character:",
+      "syntax": "read -r {{variable}}"
+    },
+    {
+      "description": "Display a prompt before the input:",
+      "syntax": "read -p &quot;{{Enter your input here: }}&quot; {{variable}}"
+    },
+    {
+      "description": "Do not echo typed characters (silent mode):",
+      "syntax": "read -s {{variable}}"
+    },
+    {
+      "description": "Read stdin and perform an action on every line:",
+      "syntax": "while read line; do {{echo|ls|rm|...}} &quot;$line&quot;; done &lt; {{/dev/stdin|path/to/file|...}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "vboxmanage-clonevm",
+  "description": "Create a clone of an existing virtual machine (VM). More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-clonevm.",
+  "useCases": [
+    {
+      "description": "Clone the specified VM:",
+      "syntax": "VBoxManage clonevm {{vm_name}}"
+    },
+    {
+      "description": "Specify a new name for the new VM:",
+      "syntax": "VBoxManage clonevm {{vm_name}} --name {{new_vm_name}}"
+    },
+    {
+      "description": "Indicate the folder where the new VM configuration is saved:",
+      "syntax": "VBoxManage clonevm {{vm_name}} --basefolder {{path/to/directory}}"
+    },
+    {
+      "description": "Register the cloned VM in VirtualBox:",
+      "syntax": "VBoxManage clonevm {{vm_name}} --register"
+    }
+  ]
+}

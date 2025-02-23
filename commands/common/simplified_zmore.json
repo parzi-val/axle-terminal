@@ -1,0 +1,26 @@
+{
+  "command": "zmore",
+  "description": "View gzip compressed files with more. More information: https://manned.org/zmore.",
+  "useCases": [
+    {
+      "description": "Open a compressed file:",
+      "syntax": "zmore {{path/to/file.txt.gz}}"
+    },
+    {
+      "description": "Display the next page of the file:",
+      "syntax": "&lt;Space&gt;"
+    },
+    {
+      "description": "Search for a pattern in the file (press n to go to next match):",
+      "syntax": "/{{regular_expression}}"
+    },
+    {
+      "description": "Exit:",
+      "syntax": "q"
+    },
+    {
+      "description": "Display interactive command help:",
+      "syntax": "h"
+    }
+  ]
+}

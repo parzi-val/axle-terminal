@@ -1,0 +1,30 @@
+{
+  "command": "jupytext",
+  "description": "Convert Jupyter notebooks to plain text documents, and back again. More information: https://jupytext.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Turn a notebook into a paired .ipynb/.py notebook:",
+      "syntax": "jupytext --set-formats ipynb,py {{notebook.ipynb}}"
+    },
+    {
+      "description": "Convert a notebook to a .py file:",
+      "syntax": "jupytext --to py {{notebook.ipynb}}"
+    },
+    {
+      "description": "Convert a .py file to a notebook with no outputs:",
+      "syntax": "jupytext --to notebook {{notebook.py}}"
+    },
+    {
+      "description": "Convert a .md file to a notebook and run it:",
+      "syntax": "jupytext --to notebook --execute {{notebook.md}}"
+    },
+    {
+      "description": "Update the input cells in a notebook and preserve outputs and metadata:",
+      "syntax": "jupytext --update --to notebook {{notebook.py}}"
+    },
+    {
+      "description": "Update all paired representations of a notebook:",
+      "syntax": "jupytext --sync {{notebook.ipynb}}"
+    }
+  ]
+}

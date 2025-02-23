@@ -1,0 +1,30 @@
+{
+  "command": "zile",
+  "description": "A lightweight clone of the Emacs text editor. More information: https://www.gnu.org/software/zile/.",
+  "useCases": [
+    {
+      "description": "Start a buffer for temporary notes, which won't be saved:",
+      "syntax": "zile"
+    },
+    {
+      "description": "Open a file:",
+      "syntax": "zile {{path/to/file}}"
+    },
+    {
+      "description": "Save a file:",
+      "syntax": "&lt;Ctrl&gt; + X, &lt;Ctrl&gt; + S"
+    },
+    {
+      "description": "Quit:",
+      "syntax": "&lt;Ctrl&gt; + X, &lt;Ctrl&gt; + C"
+    },
+    {
+      "description": "Open a file at a specified line number:",
+      "syntax": "zile +{{line_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Undo changes:",
+      "syntax": "&lt;Ctrl&gt; + X, U"
+    }
+  ]
+}

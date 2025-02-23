@@ -1,0 +1,34 @@
+{
+  "command": "qmmp",
+  "description": "An audio player with an interface similar to Winamp or XMMS. See also: clementine, ncmpcpp, cmus. More information: https://qmmp.ylsoftware.com.",
+  "useCases": [
+    {
+      "description": "Launch the GUI:",
+      "syntax": "qmmp"
+    },
+    {
+      "description": "Start or stop the currently playing audio:",
+      "syntax": "qmmp --play-pause"
+    },
+    {
+      "description": "Seek [f]or[w]ar[d]s or [b]ack[w]ar[d]s a specific amount of time in seconds:",
+      "syntax": "qmmp --seek-{{fwd|bwd}} {{time_in_seconds}}"
+    },
+    {
+      "description": "Play the next audio file:",
+      "syntax": "qmmp --next"
+    },
+    {
+      "description": "Play the previous audio file:",
+      "syntax": "qmmp --previous"
+    },
+    {
+      "description": "Display the current volume:",
+      "syntax": "qmmp --volume-status"
+    },
+    {
+      "description": "[inc]rease or [dec]rease the volume of the currently playing audio by 5%:",
+      "syntax": "qmmp --volume-{{inc|dec}}"
+    }
+  ]
+}

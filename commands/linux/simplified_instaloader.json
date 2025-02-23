@@ -1,0 +1,38 @@
+{
+  "command": "instaloader",
+  "description": "Download pictures, videos, captions, and other metadata from Instagram. Note: You will need to provide Instagram login information if you want high-quality media downloads. More information: https://instaloader.github.io.",
+  "useCases": [
+    {
+      "description": "Download a profile:",
+      "syntax": "instaloader {{profile_name}}"
+    },
+    {
+      "description": "Download highlights:",
+      "syntax": "instaloader --highlights {{profile_name}}"
+    },
+    {
+      "description": "Download posts with geotags (if available), suppressing any user interaction:",
+      "syntax": "instaloader --quiet --geotags {{profile_name}}"
+    },
+    {
+      "description": "Specify a user agent for HTTP requests:",
+      "syntax": "instaloader --user-agent {{user_agent}} {{profile_name}}"
+    },
+    {
+      "description": "Specify login info and download posts (useful for private profiles):",
+      "syntax": "instaloader --login {{username}} --password {{password}} {{profile_name}}"
+    },
+    {
+      "description": "Skip a target if the first downloaded file has been found (useful for updating Instagram archives):",
+      "syntax": "instaloader --fast-update {{profile_name}}"
+    },
+    {
+      "description": "Download stories and IGTV videos (login required):",
+      "syntax": "instaloader --login {{username}} --password {{password}} --stories --igtv {{profile_name}}"
+    },
+    {
+      "description": "Download all types of posts (login required):",
+      "syntax": "instaloader --login {{username}} --password {{password}} --stories --igtv --highlights {{profile_name}}"
+    }
+  ]
+}

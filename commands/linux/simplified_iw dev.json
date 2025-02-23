@@ -1,0 +1,34 @@
+{
+  "command": "iw dev",
+  "description": "Show and manipulate wireless devices. For a list of channels, frequencies and reg information: https://wireless.docs.kernel.org/en/latest/en/developers/documentation/channellist.html. More information: https://wireless.docs.kernel.org/en/latest/en/users/documentation/iw.html.",
+  "useCases": [
+    {
+      "description": "Set device to monitor mode (interface must be down first. See also ip link):",
+      "syntax": "sudo iw dev {{wlp}} set type monitor"
+    },
+    {
+      "description": "Set device to managed mode (interface must be down first):",
+      "syntax": "sudo iw dev {{wlp}} set type managed"
+    },
+    {
+      "description": "Set device WiFi channel (device must first be in monitor mode with the interface up):",
+      "syntax": "sudo iw dev {{wlp}} set channel {{channel_number}}"
+    },
+    {
+      "description": "Set device WiFi frequency in Mhz (device must first be in monitor mode with the interface up):",
+      "syntax": "sudo iw dev {{wlp}} set freq {{freq_in_mhz}}"
+    },
+    {
+      "description": "Show all known station info:",
+      "syntax": "iw dev {{wlp}} station dump"
+    },
+    {
+      "description": "Create a virtual interface in monitor mode with a specific MAC address:",
+      "syntax": "sudo iw dev {{wlp}} interface add &quot;{{vif_name}}&quot; type monitor addr {{12:34:56:aa:bb:cc}}"
+    },
+    {
+      "description": "Delete virtual interface:",
+      "syntax": "sudo iw dev &quot;{{vif_name}}&quot; del"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "flatpak update",
+  "description": "Update flatpak applications and runtimes. More information: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-update.",
+  "useCases": [
+    {
+      "description": "Update all installed applications and runtimes (use -y to confirm all prompts automatically):",
+      "syntax": "flatpak update"
+    },
+    {
+      "description": "Update only a specific app:",
+      "syntax": "flatpak update {{com.example.app}}"
+    },
+    {
+      "description": "Update/Downgrade to a specific commit (also see flatpak remote-info and flatpak mask):",
+      "syntax": "flatpak update --commit={{COMMIT}} {{com.example.app}}"
+    }
+  ]
+}

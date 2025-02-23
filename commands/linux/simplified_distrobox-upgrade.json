@@ -1,0 +1,18 @@
+{
+  "command": "distrobox-upgrade",
+  "description": "Upgrade one or multiple Distrobox containers. See also: tldr distrobox. More information: https://distrobox.it/usage/distrobox-upgrade.",
+  "useCases": [
+    {
+      "description": "Upgrade a container using the container's native package manager:",
+      "syntax": "distrobox-upgrade {{container_name}}"
+    },
+    {
+      "description": "Upgrade all containers using the container's native package managers:",
+      "syntax": "distrobox-upgrade --all"
+    },
+    {
+      "description": "Upgrade specific containers via the container's native package manager:",
+      "syntax": "distrobox-upgrade {{container1 container2 ...}}"
+    }
+  ]
+}

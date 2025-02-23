@@ -1,0 +1,26 @@
+{
+  "command": "help2man",
+  "description": "Produce simple man pages from an executable's --help and --version output. More information: https://www.gnu.org/software/help2man.",
+  "useCases": [
+    {
+      "description": "Generate a man page for an executable:",
+      "syntax": "help2man {{executable}}"
+    },
+    {
+      "description": "Specify the \"name\" paragraph in the man page:",
+      "syntax": "help2man {{executable}} --name {{name}}"
+    },
+    {
+      "description": "Specify the section for the man page (defaults to 1):",
+      "syntax": "help2man {{executable}} --section {{section}}"
+    },
+    {
+      "description": "Output to a file instead of stdout:",
+      "syntax": "help2man {{executable}} --output {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "help2man --help"
+    }
+  ]
+}

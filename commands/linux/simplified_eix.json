@@ -1,0 +1,26 @@
+{
+  "command": "eix",
+  "description": "Utilities for searching local Gentoo packages. Update local package cache using eix-update. More information: https://wiki.gentoo.org/wiki/Eix.",
+  "useCases": [
+    {
+      "description": "Search for a package:",
+      "syntax": "eix {{query}}"
+    },
+    {
+      "description": "Search for installed packages:",
+      "syntax": "eix --installed {{query}}"
+    },
+    {
+      "description": "Search in package descriptions:",
+      "syntax": "eix --description &quot;{{description}}&quot;"
+    },
+    {
+      "description": "Search by package license:",
+      "syntax": "eix --license {{license}}"
+    },
+    {
+      "description": "Exclude results from search:",
+      "syntax": "eix --not --license {{license}}"
+    }
+  ]
+}

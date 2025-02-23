@@ -1,0 +1,18 @@
+{
+  "command": "tex-fmt",
+  "description": "Format LaTeX source code. More information: https://github.com/WGUNDERWOOD/tex-fmt.",
+  "useCases": [
+    {
+      "description": "Format a file, overwriting the original:",
+      "syntax": "tex-fmt {{path/to/file.tex}}"
+    },
+    {
+      "description": "Check if a file is correctly formatted:",
+      "syntax": "tex-fmt --check {{path/to/file.tex}}"
+    },
+    {
+      "description": "Format a file read from stdin and print to stdout:",
+      "syntax": "cat {{path/to/file.tex}} | tex-fmt --stdin"
+    }
+  ]
+}

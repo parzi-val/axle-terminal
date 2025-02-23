@@ -1,0 +1,26 @@
+{
+  "command": "gpasswd",
+  "description": "Administer /etc/group and /etc/gshadow. More information: https://manned.org/gpasswd.",
+  "useCases": [
+    {
+      "description": "Define group administrators:",
+      "syntax": "sudo gpasswd -A {{user1,user2}} {{group}}"
+    },
+    {
+      "description": "Set the list of group members:",
+      "syntax": "sudo gpasswd -M {{user1,user2}} {{group}}"
+    },
+    {
+      "description": "Create a password for the named group:",
+      "syntax": "gpasswd {{group}}"
+    },
+    {
+      "description": "Add a user to the named group:",
+      "syntax": "gpasswd -a {{user}} {{group}}"
+    },
+    {
+      "description": "Remove a user from the named group:",
+      "syntax": "gpasswd -d {{user}} {{group}}"
+    }
+  ]
+}

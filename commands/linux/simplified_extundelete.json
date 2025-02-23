@@ -1,0 +1,22 @@
+{
+  "command": "extundelete",
+  "description": "Recover deleted files from ext3 or ext4 partitions by parsing the journal. See also date for Unix time information and umount for unmounting partitions. More information: https://extundelete.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Restore all deleted files inside partition N on device X:",
+      "syntax": "sudo extundelete {{/dev/sdXN}} --restore-all"
+    },
+    {
+      "description": "Restore a file from a path relative to root (Do not start the path with /):",
+      "syntax": "extundelete {{/dev/sdXN}} --restore-file {{path/to/file}}"
+    },
+    {
+      "description": "Restore a directory from a path relative to root (Do not start the path with /):",
+      "syntax": "extundelete {{/dev/sdXN}} --restore-directory {{path/to/directory}}"
+    },
+    {
+      "description": "Restore all files deleted after January 1st, 2020 (in Unix time):",
+      "syntax": "extundelete {{/dev/sdXN}} --restore-all --after {{1577840400}}"
+    }
+  ]
+}

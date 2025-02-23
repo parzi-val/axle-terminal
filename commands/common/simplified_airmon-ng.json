@@ -1,0 +1,22 @@
+{
+  "command": "airmon-ng",
+  "description": "Activate monitor mode on wireless network devices. Part of aircrack-ng. More information: https://www.aircrack-ng.org/doku.php?id=airmon-ng.",
+  "useCases": [
+    {
+      "description": "List wireless devices and their statuses:",
+      "syntax": "sudo airmon-ng"
+    },
+    {
+      "description": "Turn on monitor mode for a specific device:",
+      "syntax": "sudo airmon-ng start {{wlan0}}"
+    },
+    {
+      "description": "Kill disturbing processes that use wireless devices:",
+      "syntax": "sudo airmon-ng check kill"
+    },
+    {
+      "description": "Turn off monitor mode for a specific network interface:",
+      "syntax": "sudo airmon-ng stop {{wlan0mon}}"
+    }
+  ]
+}

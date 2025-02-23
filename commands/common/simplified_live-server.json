@@ -1,0 +1,22 @@
+{
+  "command": "live-server",
+  "description": "A simple development HTTP server with live reload capability. More information: https://github.com/tapio/live-server.",
+  "useCases": [
+    {
+      "description": "Serve an index.html file and reload on changes:",
+      "syntax": "live-server"
+    },
+    {
+      "description": "Specify a port (default is 8080) from which to serve a file:",
+      "syntax": "live-server --port={{8081}}"
+    },
+    {
+      "description": "Specify a given file to serve:",
+      "syntax": "live-server --open={{about.html}}"
+    },
+    {
+      "description": "Proxy all requests for ROUTE to URL:",
+      "syntax": "live-server --proxy={{/}}:{{http:localhost:3000}}"
+    }
+  ]
+}

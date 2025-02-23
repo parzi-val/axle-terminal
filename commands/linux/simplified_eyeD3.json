@@ -1,0 +1,22 @@
+{
+  "command": "eyeD3",
+  "description": "Read and manipulate metadata of MP3 files. More information: https://eyed3.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "View information about an MP3 file:",
+      "syntax": "eyeD3 {{filename.mp3}}"
+    },
+    {
+      "description": "Set the title of an MP3 file:",
+      "syntax": "eyeD3 --title &quot;{{A Title}}&quot; {{filename.mp3}}"
+    },
+    {
+      "description": "Set the album of all the MP3 files in a directory:",
+      "syntax": "eyeD3 --album &quot;{{Album Name}}&quot; {{*.mp3}}"
+    },
+    {
+      "description": "Set the front cover art for an MP3 file:",
+      "syntax": "eyeD3 --add-image {{front_cover.jpeg}}:FRONT_COVER: {{filename.mp3}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "aws s3",
+  "description": "CLI for AWS S3 - provides storage through web services interfaces. Some subcommands such as cp have their own usage documentation. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html.",
+  "useCases": [
+    {
+      "description": "Show files in a bucket:",
+      "syntax": "aws s3 ls {{bucket_name}}"
+    },
+    {
+      "description": "Sync files and directories from local to bucket:",
+      "syntax": "aws s3 sync {{path/to/file1 path/to/file2 ...}} s3://{{bucket_name}}"
+    },
+    {
+      "description": "Sync files and directories from bucket to local:",
+      "syntax": "aws s3 sync s3://{{bucket_name}} {{path/to/target}}"
+    },
+    {
+      "description": "Sync files and directories with exclusions:",
+      "syntax": "aws s3 sync {{path/to/file1 path/to/file2 ...}} s3://{{bucket_name}} --exclude {{path/to/file}} --exclude {{path/to/directory}}/*"
+    },
+    {
+      "description": "Remove file from bucket:",
+      "syntax": "aws s3 rm s3://{{bucket}}/{{path/to/file}}"
+    },
+    {
+      "description": "Preview changes only:",
+      "syntax": "aws s3 {{any_command}} --dryrun"
+    }
+  ]
+}

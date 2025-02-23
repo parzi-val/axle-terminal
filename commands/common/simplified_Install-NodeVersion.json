@@ -1,0 +1,26 @@
+{
+  "command": "Install-NodeVersion",
+  "description": "Install Node.js runtime versions for ps-nvm. This command is part of ps-nvm and can only be run under PowerShell. More information: https://github.com/aaronpowell/ps-nvm.",
+  "useCases": [
+    {
+      "description": "Install a specific Node.js version:",
+      "syntax": "Install-NodeVersion {{node_version}}"
+    },
+    {
+      "description": "Install multiple Node.js versions:",
+      "syntax": "Install-NodeVersion {{node_version1 , node_version2 , ...}}"
+    },
+    {
+      "description": "Install latest available version of Node.js 20:",
+      "syntax": "Install-NodeVersion ^20"
+    },
+    {
+      "description": "Install the x86 (x86 32-bit) / x64 (x86 64-bit) / arm64 (ARM 64-bit) version of Node.js:",
+      "syntax": "Install-NodeVersion {{node_version}} -Architecture {{x86|x64|arm64}}"
+    },
+    {
+      "description": "Use a HTTP proxy to download Node.js:",
+      "syntax": "Install-NodeVersion {{node-version}} -Proxy {{http://example.com}}"
+    }
+  ]
+}

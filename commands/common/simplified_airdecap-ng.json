@@ -1,0 +1,26 @@
+{
+  "command": "airdecap-ng",
+  "description": "Decrypt a WEP, WPA, or WPA2 encrypted capture file. Part of Aircrack-ng network software suite. More information: https://www.aircrack-ng.org/doku.php?id=airdecap-ng.",
+  "useCases": [
+    {
+      "description": "Remove wireless headers from an open network capture file and use the access point's MAC address to filter:",
+      "syntax": "airdecap-ng -b {{ap_mac}} {{path/to/capture.cap}}"
+    },
+    {
+      "description": "Decrypt a [w]EP encrypted capture file using the key in hex format:",
+      "syntax": "airdecap-ng -w {{hex_key}} {{path/to/capture.cap}}"
+    },
+    {
+      "description": "Decrypt a WPA/WPA2 encrypted capture file using the access point's [e]ssid and [p]assword:",
+      "syntax": "airdecap-ng -e {{essid}} -p {{password}} {{path/to/capture.cap}}"
+    },
+    {
+      "description": "Decrypt a WPA/WPA2 encrypted capture file preserving the headers using the access point's [e]ssid and [p]assword:",
+      "syntax": "airdecap-ng -l -e {{essid}} -p {{password}} {{path/to/capture.cap}}"
+    },
+    {
+      "description": "Decrypt a WPA/WPA2 encrypted capture file using the access point's [e]ssid and [p]assword and use its MAC address to filter:",
+      "syntax": "airdecap-ng -b {{ap_mac}} -e {{essid}} -p {{password}} {{path/to/capture.cap}}"
+    }
+  ]
+}

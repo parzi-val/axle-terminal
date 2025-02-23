@@ -1,0 +1,38 @@
+{
+  "command": "brew",
+  "description": "Homebrew - a package manager for macOS and Linux. Some subcommands such as install have their own usage documentation. More information: https://docs.brew.sh/Manpage.",
+  "useCases": [
+    {
+      "description": "Install the latest stable version of a formula or cask (use --devel for development versions):",
+      "syntax": "brew install {{formula}}"
+    },
+    {
+      "description": "List all installed formulae and casks:",
+      "syntax": "brew list"
+    },
+    {
+      "description": "Upgrade an installed formula or cask (if none is given, all installed formulae/casks are upgraded):",
+      "syntax": "brew upgrade {{formula}}"
+    },
+    {
+      "description": "Fetch the newest version of Homebrew and of all formulae and casks from the Homebrew source repository:",
+      "syntax": "brew update"
+    },
+    {
+      "description": "Show formulae and casks that have a more recent version available:",
+      "syntax": "brew outdated"
+    },
+    {
+      "description": "Search for available formulae (i.e. packages) and casks (i.e. native macOS .app packages):",
+      "syntax": "brew search {{text}}"
+    },
+    {
+      "description": "Display information about a formula or a cask (version, installation path, dependencies, etc.):",
+      "syntax": "brew info {{formula}}"
+    },
+    {
+      "description": "Check the local Homebrew installation for potential problems:",
+      "syntax": "brew doctor"
+    }
+  ]
+}

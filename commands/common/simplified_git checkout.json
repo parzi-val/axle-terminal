@@ -1,0 +1,38 @@
+{
+  "command": "git checkout",
+  "description": "Checkout a branch or paths to the working tree. More information: https://git-scm.com/docs/git-checkout.",
+  "useCases": [
+    {
+      "description": "Create and switch to a new branch:",
+      "syntax": "git checkout -b {{branch_name}}"
+    },
+    {
+      "description": "Create and switch to a new branch based on a specific reference (branch, remote/branch, tag are examples of valid references):",
+      "syntax": "git checkout -b {{branch_name}} {{reference}}"
+    },
+    {
+      "description": "Switch to an existing local branch:",
+      "syntax": "git checkout {{branch_name}}"
+    },
+    {
+      "description": "Switch to the previously checked out branch:",
+      "syntax": "git checkout -"
+    },
+    {
+      "description": "Switch to an existing remote branch:",
+      "syntax": "git checkout --track {{remote_name}}/{{branch_name}}"
+    },
+    {
+      "description": "Discard all unstaged changes in the current directory (see git reset for more undo-like commands):",
+      "syntax": "git checkout ."
+    },
+    {
+      "description": "Discard unstaged changes to a given file:",
+      "syntax": "git checkout {{path/to/file}}"
+    },
+    {
+      "description": "Replace a file in the current directory with the version of it committed in a given branch:",
+      "syntax": "git checkout {{branch_name}} -- {{path/to/file}}"
+    }
+  ]
+}

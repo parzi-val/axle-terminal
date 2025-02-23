@@ -1,0 +1,10 @@
+{
+  "command": "pamstretch-gen",
+  "description": "Scale up a PAM image by decimal values. See also: pamstretch, pamenlarge, pamscale. More information: https://netpbm.sourceforge.net/doc/pamstretch-gen.html.",
+  "useCases": [
+    {
+      "description": "Scale up a PAM image by the specified decimal factor:",
+      "syntax": "pamstretch-gen {{N}} {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

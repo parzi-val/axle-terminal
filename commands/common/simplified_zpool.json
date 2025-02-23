@@ -1,0 +1,38 @@
+{
+  "command": "zpool",
+  "description": "Manage ZFS pools. More information: https://manned.org/zpool.",
+  "useCases": [
+    {
+      "description": "Show the configuration and status of all ZFS zpools:",
+      "syntax": "zpool status"
+    },
+    {
+      "description": "Check a ZFS pool for errors (verifies the checksum of EVERY block). Very CPU and disk intensive:",
+      "syntax": "zpool scrub {{pool_name}}"
+    },
+    {
+      "description": "List zpools available for import:",
+      "syntax": "zpool import"
+    },
+    {
+      "description": "Import a zpool:",
+      "syntax": "zpool import {{pool_name}}"
+    },
+    {
+      "description": "Export a zpool (unmount all filesystems):",
+      "syntax": "zpool export {{pool_name}}"
+    },
+    {
+      "description": "Show the history of all pool operations:",
+      "syntax": "zpool history {{pool_name}}"
+    },
+    {
+      "description": "Create a mirrored pool:",
+      "syntax": "zpool create {{pool_name}} mirror {{disk1}} {{disk2}} mirror {{disk3}} {{disk4}}"
+    },
+    {
+      "description": "Add a cache (L2ARC) device to a zpool:",
+      "syntax": "zpool add {{pool_name}} cache {{cache_disk}}"
+    }
+  ]
+}

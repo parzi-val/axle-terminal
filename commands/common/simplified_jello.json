@@ -1,0 +1,34 @@
+{
+  "command": "jello",
+  "description": "A command-line JSON processor using Python syntax. More information: https://github.com/kellyjonbrazil/jello.",
+  "useCases": [
+    {
+      "description": "Pretty-print JSON or JSON-Lines data from stdin to stdout:",
+      "syntax": "cat {{file.json}} | jello"
+    },
+    {
+      "description": "Output a schema of JSON or JSON Lines data from stdin to stdout (useful for grep):",
+      "syntax": "cat {{file.json}} | jello -s"
+    },
+    {
+      "description": "Output all elements from arrays (or all the values from objects) in JSON or JSON-Lines data from stdin to stdout:",
+      "syntax": "cat {{file.json}} | jello -l"
+    },
+    {
+      "description": "Output the first element in JSON or JSON-Lines data from stdin to stdout:",
+      "syntax": "cat {{file.json}} | jello _[0]"
+    },
+    {
+      "description": "Output the value of a given key of each element in JSON or JSON-Lines data from stdin to stdout:",
+      "syntax": "cat {{file.json}} | jello '[i.{{key_name}} for i in _]'"
+    },
+    {
+      "description": "Output the value of multiple keys as a new JSON object (assuming the input JSON has the keys key_name1 and key_name2):",
+      "syntax": "cat {{file.json}} | jello '{&quot;{{key1}}&quot;: _.{{key_name1}}, &quot;{{key_name}}&quot;: _.{{key_name2}}}'"
+    },
+    {
+      "description": "Output the value of a given key to a string (and disable JSON output):",
+      "syntax": "cat {{file.json}} | jello -r '&quot;{{some text}}: &quot; + _.{{key_name}}'"
+    }
+  ]
+}

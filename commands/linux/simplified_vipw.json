@@ -1,0 +1,14 @@
+{
+  "command": "vipw",
+  "description": "Edit the password file. More information: https://manned.org/vipw.",
+  "useCases": [
+    {
+      "description": "Edit the password file:",
+      "syntax": "vipw"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "vipw --version"
+    }
+  ]
+}

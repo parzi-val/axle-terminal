@@ -1,0 +1,34 @@
+{
+  "command": "pw-config",
+  "description": "List configuration paths and sections that will be used by the PipeWire server and clients. More information: https://docs.pipewire.org/page_man_pw-config_1.html.",
+  "useCases": [
+    {
+      "description": "List all configuration files that will be used:",
+      "syntax": "pw-config"
+    },
+    {
+      "description": "List all configuration files that will be used by the PipeWire PulseAudio server:",
+      "syntax": "pw-config --name pipewire-pulse.conf"
+    },
+    {
+      "description": "List all configuration sections used by the PipeWire PulseAudio server:",
+      "syntax": "pw-config --name pipewire-pulse.conf list"
+    },
+    {
+      "description": "List the context.properties fragments used by the JACK clients:",
+      "syntax": "pw-config --name jack.conf list context.properties"
+    },
+    {
+      "description": "List the merged context.properties used by the JACK clients:",
+      "syntax": "pw-config --name jack.conf merge context.properties"
+    },
+    {
+      "description": "List the merged context.modules used by the PipeWire server and [r]eformat:",
+      "syntax": "pw-config --name pipewire.conf --recurse merge context.modules"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pw-config --help"
+    }
+  ]
+}

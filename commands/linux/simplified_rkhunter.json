@@ -1,0 +1,26 @@
+{
+  "command": "rkhunter",
+  "description": "Searches for rootkits and malware. More information: https://manned.org/rkhunter.",
+  "useCases": [
+    {
+      "description": "Check a system for rootkits and malware:",
+      "syntax": "sudo rkhunter --check"
+    },
+    {
+      "description": "Update rkhunter:",
+      "syntax": "sudo rkhunter --update"
+    },
+    {
+      "description": "Print all available tests:",
+      "syntax": "sudo rkhunter --list"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "sudo rkhunter --versioncheck"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sudo rkhunter --help"
+    }
+  ]
+}

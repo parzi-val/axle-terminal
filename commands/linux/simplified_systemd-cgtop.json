@@ -1,0 +1,26 @@
+{
+  "command": "systemd-cgtop",
+  "description": "Show the top control groups of the local Linux control group hierarchy, ordered by their CPU, memory, or disk I/O load. See also: top. More information: https://www.freedesktop.org/software/systemd/man/systemd-cgtop.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive view:",
+      "syntax": "systemd-cgtop"
+    },
+    {
+      "description": "Change the sort order:",
+      "syntax": "systemd-cgtop --order={{cpu|memory|path|tasks|io}}"
+    },
+    {
+      "description": "Show the CPU usage by time instead of percentage:",
+      "syntax": "systemd-cgtop --cpu=percentage"
+    },
+    {
+      "description": "Change the update interval in seconds (or one of these time units: ms, us, min):",
+      "syntax": "systemd-cgtop --delay={{interval}}"
+    },
+    {
+      "description": "Only count userspace processes (without kernel threads):",
+      "syntax": "systemd-cgtop -P"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "locale",
+  "description": "Get locale-specific information. More information: https://manned.org/locale.",
+  "useCases": [
+    {
+      "description": "List all global environment variables describing the user's locale:",
+      "syntax": "locale"
+    },
+    {
+      "description": "List all available locales:",
+      "syntax": "locale --all-locales"
+    },
+    {
+      "description": "Display all available locales and the associated metadata:",
+      "syntax": "locale --all-locales --verbose"
+    },
+    {
+      "description": "Display the current date format:",
+      "syntax": "locale date_fmt"
+    }
+  ]
+}

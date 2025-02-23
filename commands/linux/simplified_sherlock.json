@@ -1,0 +1,34 @@
+{
+  "command": "sherlock",
+  "description": "Find usernames across social networks. More information: https://github.com/sherlock-project/sherlock.",
+  "useCases": [
+    {
+      "description": "Search for a specific username on social networks saving the results to a file:",
+      "syntax": "sherlock {{username}} --output {{path/to/file}}"
+    },
+    {
+      "description": "Search for specific usernames on social networks saving the results into a directory:",
+      "syntax": "sherlock {{username1 username2 ...}} --folderoutput {{path/to/directory}}"
+    },
+    {
+      "description": "Search for a specific username on social networks using the Tor network:",
+      "syntax": "sherlock --tor {{username}}"
+    },
+    {
+      "description": "Make requests over Tor with a new Tor circuit after each request:",
+      "syntax": "sherlock --unique-tor {{username}}"
+    },
+    {
+      "description": "Search for a specific username on social networks using a proxy:",
+      "syntax": "sherlock {{username}} --proxy {{proxy_url}}"
+    },
+    {
+      "description": "Search for a specific username on social networks and open results in the default web browser:",
+      "syntax": "sherlock {{username}} --browse"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sherlock --help"
+    }
+  ]
+}

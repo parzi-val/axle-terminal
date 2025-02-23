@@ -1,0 +1,30 @@
+{
+  "command": "tlmgr check",
+  "description": "Check the consistency of a TeX Live installation. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Check the consistency of the whole TeX Live installation:",
+      "syntax": "tlmgr check all"
+    },
+    {
+      "description": "Check the consistency of the whole TeX Live information in verbose mode:",
+      "syntax": "tlmgr check all -v"
+    },
+    {
+      "description": "Check for missing dependencies:",
+      "syntax": "tlmgr check depends"
+    },
+    {
+      "description": "Check if all TeX Live executables are present:",
+      "syntax": "tlmgr check executes"
+    },
+    {
+      "description": "Check if all files listed in the local TLPDB are present:",
+      "syntax": "tlmgr check files"
+    },
+    {
+      "description": "Check for duplicate filenames in the runfiles sections:",
+      "syntax": "tlmgr check runfiles"
+    }
+  ]
+}

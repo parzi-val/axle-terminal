@@ -1,0 +1,26 @@
+{
+  "command": "github-label-sync",
+  "description": "Synchronize GitHub labels. More information: https://github.com/Financial-Times/github-label-sync.",
+  "useCases": [
+    {
+      "description": "Synchronize labels using a local labels.json file:",
+      "syntax": "github-label-sync --access-token {{token}} {{repository_name}}"
+    },
+    {
+      "description": "Synchronize labels using a specific labels JSON file:",
+      "syntax": "github-label-sync --access-token {{token}} --labels {{url|path/to/json_file}} {{repository_name}}"
+    },
+    {
+      "description": "Perform a dry run instead of actually synchronizing labels:",
+      "syntax": "github-label-sync --access-token {{token}} --dry-run {{repository_name}}"
+    },
+    {
+      "description": "Keep labels that aren't in labels.json:",
+      "syntax": "github-label-sync --access-token {{token}} --allow-added-labels {{repository_name}}"
+    },
+    {
+      "description": "Synchronize using the GITHUB_ACCESS_TOKEN environment variable:",
+      "syntax": "github-label-sync {{repository_name}}"
+    }
+  ]
+}

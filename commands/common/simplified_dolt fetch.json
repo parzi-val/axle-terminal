@@ -1,0 +1,18 @@
+{
+  "command": "dolt fetch",
+  "description": "Download objects and refs from another repository. More information: https://docs.dolthub.com/cli-reference/cli#dolt-fetch.",
+  "useCases": [
+    {
+      "description": "Fetch the latest changes from the default remote upstream repository (origin):",
+      "syntax": "dolt fetch"
+    },
+    {
+      "description": "Fetch latest changes from a specific remote upstream repository:",
+      "syntax": "dolt fetch {{remote_name}}"
+    },
+    {
+      "description": "Update branches with the current state of the remote, overwriting any conflicting history:",
+      "syntax": "dolt fetch -f"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "replace",
+  "description": "Replace files. See also: robocopy, move, copy, and del. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/replace.",
+  "useCases": [
+    {
+      "description": "Replace the destination file with the one from the source directory:",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}}"
+    },
+    {
+      "description": "Add files to the destination directory instead of replacing existing files:",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /a"
+    },
+    {
+      "description": "Interactively copy multiple files, with a prompt before replacing or adding a destination file:",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /p"
+    },
+    {
+      "description": "Replace even read only files:",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /r"
+    },
+    {
+      "description": "Wait for you to insert a disk before it replaces files (originally to allow inserting a floppy disk):",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /w"
+    },
+    {
+      "description": "Replace all files in subdirectories of the destination:",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /s"
+    },
+    {
+      "description": "Replace only files in the destination directory which are older than the files in the source directory:",
+      "syntax": "replace {{path\\to\\file_or_directory}} {{path\\to\\destination_directory}} /u"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "replace /?"
+    }
+  ]
+}

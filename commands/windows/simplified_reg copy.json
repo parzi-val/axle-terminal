@@ -1,0 +1,18 @@
+{
+  "command": "reg copy",
+  "description": "Copy keys and their values in the registry. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-copy.",
+  "useCases": [
+    {
+      "description": "Copy a registry key to a new registry location:",
+      "syntax": "reg copy {{old_key_name}} {{new_key_name}}"
+    },
+    {
+      "description": "Copy a registry key recursively (with all [s]ubkeys) to a new registry location:",
+      "syntax": "reg copy {{old_key_name}} {{new_key_name}} /s"
+    },
+    {
+      "description": "[f]orcefully (without a prompt) copy a registry key:",
+      "syntax": "reg copy {{old_key_name}} {{new_key_name}} /f"
+    }
+  ]
+}

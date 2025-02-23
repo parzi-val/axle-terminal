@@ -1,0 +1,22 @@
+{
+  "command": "update-rc.d",
+  "description": "Install and remove services which are System-V style init script links. Init scripts are in the /etc/init.d/. More information: https://manned.org/update-rc.d.",
+  "useCases": [
+    {
+      "description": "Install a service:",
+      "syntax": "update-rc.d {{mysql}} defaults"
+    },
+    {
+      "description": "Enable a service:",
+      "syntax": "update-rc.d {{mysql}} enable"
+    },
+    {
+      "description": "Disable a service:",
+      "syntax": "update-rc.d {{mysql}} disable"
+    },
+    {
+      "description": "Forcibly remove a service:",
+      "syntax": "update-rc.d -f {{mysql}} remove"
+    }
+  ]
+}

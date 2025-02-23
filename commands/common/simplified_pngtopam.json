@@ -1,0 +1,22 @@
+{
+  "command": "pngtopam",
+  "description": "Convert a PNG image to a Netpbm image. See also: pamtopng. More information: https://netpbm.sourceforge.net/doc/pngtopam.html.",
+  "useCases": [
+    {
+      "description": "Convert the specified PNG image to a Netpbm image:",
+      "syntax": "pngtopam {{path/to/image.png}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Create an output image that includes both the main image and transparency mask of the input image:",
+      "syntax": "pngtopam -alphapam {{path/to/image.png}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Replace transparent pixels by the specified color:",
+      "syntax": "pngtopam -mix -background {{color}} {{path/to/image.png}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Write tEXt chunks found in the input image to the specified text file:",
+      "syntax": "pngtopam -text {{path/to/file.txt}} {{path/to/image.png}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

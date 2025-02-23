@@ -1,0 +1,34 @@
+{
+  "command": "wpctl",
+  "description": "Manage WirePlumber, a session and policy manager for PipeWire. Note: you can use the special name @DEFAULT_SINK@ in place of id to operate on the default sink. More information: https://pipewire.pages.freedesktop.org/wireplumber/.",
+  "useCases": [
+    {
+      "description": "List all objects managed by WirePlumber:",
+      "syntax": "wpctl status"
+    },
+    {
+      "description": "Print all properties of an object:",
+      "syntax": "wpctl inspect {{id}}"
+    },
+    {
+      "description": "Set an object to be the default in its group:",
+      "syntax": "wpctl set-default {{id}}"
+    },
+    {
+      "description": "Get the volume of a sink:",
+      "syntax": "wpctl get-volume {{id}}"
+    },
+    {
+      "description": "Set the volume of a sink to n percent:",
+      "syntax": "wpctl set-volume {{id}} {{n}}%"
+    },
+    {
+      "description": "Increase/Decrease the volume of a sink by n percent:",
+      "syntax": "wpctl set-volume {{id}} {{n}}%{{+|-}}"
+    },
+    {
+      "description": "Mute/Unmute a sink (1 is mute, 0 is unmute):",
+      "syntax": "wpctl set-mute {{id}} {{1|0|toggle}}"
+    }
+  ]
+}

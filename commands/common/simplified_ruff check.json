@@ -1,0 +1,34 @@
+{
+  "command": "ruff check",
+  "description": "An extremely fast Python linter. check is the default command - it can be omitted everywhere. If no files or directories are specified, the current working directory is used by default. More information: https://docs.astral.sh/ruff/linter.",
+  "useCases": [
+    {
+      "description": "Run the linter on the given files or directories:",
+      "syntax": "ruff check {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Apply the suggested fixes, modifying the files in-place:",
+      "syntax": "ruff check --fix"
+    },
+    {
+      "description": "Run the linter and re-lint on change:",
+      "syntax": "ruff check --watch"
+    },
+    {
+      "description": "Only enable the specified rules (or all rules), ignoring the configuration file:",
+      "syntax": "ruff check --select {{ALL|rule_code1,rule_code2,...}}"
+    },
+    {
+      "description": "Additionally enable the specified rules:",
+      "syntax": "ruff check --extend-select {{rule_code1,rule_code2,...}}"
+    },
+    {
+      "description": "Disable the specified rules:",
+      "syntax": "ruff check --ignore {{rule_code1,rule_code2,...}}"
+    },
+    {
+      "description": "Ignore all existing violations of a rule by adding # noqa directives to all lines that violate it:",
+      "syntax": "ruff check --select {{rule_code}} --add-noqa"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "chronic",
+  "description": "Display stdout and stderr of a command if and only if it fails. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Display stdout and stderr of the specified command if and only if it produces a non-zero exit code or crashes:",
+      "syntax": "chronic {{command options ...}}"
+    },
+    {
+      "description": "Display stdout and stderr of the specified command if and only if it produces a non-empty stderr:",
+      "syntax": "chronic -e {{command options ...}}"
+    },
+    {
+      "description": "Enable [v]erbose mode:",
+      "syntax": "chronic -v {{command options ...}}"
+    }
+  ]
+}

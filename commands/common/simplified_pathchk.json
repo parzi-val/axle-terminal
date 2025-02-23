@@ -1,0 +1,22 @@
+{
+  "command": "pathchk",
+  "description": "Check the validity and portability of pathnames. More information: https://www.gnu.org/software/coreutils/manual/html_node/pathchk-invocation.html.",
+  "useCases": [
+    {
+      "description": "Check pathnames for validity in the current system:",
+      "syntax": "pathchk {{path1 path2 …}}"
+    },
+    {
+      "description": "Check pathnames for validity on a wider range of POSIX compliant systems:",
+      "syntax": "pathchk -p {{path1 path2 …}}"
+    },
+    {
+      "description": "Check pathnames for validity on all POSIX compliant systems:",
+      "syntax": "pathchk --portability {{path1 path2 …}}"
+    },
+    {
+      "description": "Only check for empty pathnames or leading dashes (-):",
+      "syntax": "pathchk -P {{path1 path2 …}}"
+    }
+  ]
+}

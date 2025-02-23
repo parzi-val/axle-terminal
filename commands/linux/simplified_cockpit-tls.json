@@ -1,0 +1,14 @@
+{
+  "command": "cockpit-tls",
+  "description": "TLS terminating HTTP proxy to encrypt traffic between a client and cockpit-ws. More information: https://cockpit-project.org/guide/latest/cockpit-tls.8.html.",
+  "useCases": [
+    {
+      "description": "Serve HTTP requests to a specific port instead of port 9090:",
+      "syntax": "cockpit-tls --port {{port}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cockpit-tls --help"
+    }
+  ]
+}

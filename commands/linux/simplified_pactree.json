@@ -1,0 +1,26 @@
+{
+  "command": "pactree",
+  "description": "Package dependency tree viewer for pacman. More information: https://manned.org/pactree.8.",
+  "useCases": [
+    {
+      "description": "Print the dependency tree of a specific package:",
+      "syntax": "pactree {{package}}"
+    },
+    {
+      "description": "Print what packages depend on a specific package:",
+      "syntax": "pactree --reverse {{package}}"
+    },
+    {
+      "description": "Dump dependencies one per line, skipping duplicates:",
+      "syntax": "pactree --unique {{package}}"
+    },
+    {
+      "description": "Include optional dependencies of a specific package and colorize the output:",
+      "syntax": "pactree --optional --color {{package}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pactree"
+    }
+  ]
+}

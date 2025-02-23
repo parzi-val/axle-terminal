@@ -1,0 +1,34 @@
+{
+  "command": "borg",
+  "description": "Deduplicating backup tool. Create local or remote backups that are mountable as filesystems. More information: https://borgbackup.readthedocs.io/en/stable/usage/general.html.",
+  "useCases": [
+    {
+      "description": "Initialize a (local) repository:",
+      "syntax": "borg init {{path/to/repo_directory}}"
+    },
+    {
+      "description": "Backup a directory into the repository, creating an archive called \"Monday\":",
+      "syntax": "borg create --progress {{path/to/repo_directory}}::{{Monday}} {{path/to/source_directory}}"
+    },
+    {
+      "description": "List all archives in a repository:",
+      "syntax": "borg list {{path/to/repo_directory}}"
+    },
+    {
+      "description": "Extract a specific directory from the \"Monday\" archive in a remote repository, excluding all *.ext files:",
+      "syntax": "borg extract {{user}}@{{host}}:{{path/to/repo_directory}}::{{Monday}} {{path/to/target_directory}} --exclude '{{*.ext}}'"
+    },
+    {
+      "description": "Prune a repository by deleting all archives older than 7 days, listing changes:",
+      "syntax": "borg prune --keep-within {{7d}} --list {{path/to/repo_directory}}"
+    },
+    {
+      "description": "Mount a repository as a FUSE filesystem:",
+      "syntax": "borg mount {{path/to/repo_directory}}::{{Monday}} {{path/to/mountpoint}}"
+    },
+    {
+      "description": "Display help on creating archives:",
+      "syntax": "borg create --help"
+    }
+  ]
+}

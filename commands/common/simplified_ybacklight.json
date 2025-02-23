@@ -1,0 +1,22 @@
+{
+  "command": "ybacklight",
+  "description": "Manage screen backlight brightness. See also xbacklight. More information: https://github.com/pixelcmtd/ybacklight.",
+  "useCases": [
+    {
+      "description": "Print current brightness and maximal brightness, shortened and separated by a slash:",
+      "syntax": "ybacklight Sc/Sm"
+    },
+    {
+      "description": "Specify the brightness:",
+      "syntax": "ybacklight s{{420}}"
+    },
+    {
+      "description": "Increase the brightness by 42 big steps (4200 by default):",
+      "syntax": "ybacklight Si42"
+    },
+    {
+      "description": "Decrease the brightness by 300:",
+      "syntax": "ybacklight d300"
+    }
+  ]
+}

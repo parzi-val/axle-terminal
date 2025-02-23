@@ -1,0 +1,38 @@
+{
+  "command": "git stash",
+  "description": "Stash local Git changes in a temporary area. More information: https://git-scm.com/docs/git-stash.",
+  "useCases": [
+    {
+      "description": "Stash current changes with a [m]essage, except new (untracked) files:",
+      "syntax": "git stash push --message {{optional_stash_message}}"
+    },
+    {
+      "description": "Stash current changes, including new ([u]ntracked) files:",
+      "syntax": "git stash --include-untracked"
+    },
+    {
+      "description": "Interactively select [p]arts of changed files for stashing:",
+      "syntax": "git stash --patch"
+    },
+    {
+      "description": "List all stashes (shows stash name, related branch and message):",
+      "syntax": "git stash list"
+    },
+    {
+      "description": "Show the changes as a [p]atch between the stash (default is stash@{0}) and the commit back when stash entry was first created:",
+      "syntax": "git stash show --patch {{stash@{0}}}"
+    },
+    {
+      "description": "Apply a stash (default is the latest, named stash@{0}):",
+      "syntax": "git stash apply {{optional_stash_name_or_commit}}"
+    },
+    {
+      "description": "Drop or apply a stash (default is stash@{0}) and remove it from the stash list if applying doesn't cause conflicts:",
+      "syntax": "git stash pop {{optional_stash_name}}"
+    },
+    {
+      "description": "Drop all stashes:",
+      "syntax": "git stash clear"
+    }
+  ]
+}

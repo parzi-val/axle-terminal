@@ -1,0 +1,30 @@
+{
+  "command": "slurp",
+  "description": "Select a region in a Wayland compositor. More information: https://github.com/emersion/slurp.",
+  "useCases": [
+    {
+      "description": "Select a region and print it to stdout:",
+      "syntax": "slurp"
+    },
+    {
+      "description": "Select a region and print it to stdout, while displaying the dimensions of the selection:",
+      "syntax": "slurp -d"
+    },
+    {
+      "description": "Select a single point instead of a region:",
+      "syntax": "slurp -p"
+    },
+    {
+      "description": "Select an output and print its name:",
+      "syntax": "slurp -o -f '%o'"
+    },
+    {
+      "description": "Select a specific region and take a borderless screenshot of it, using grim:",
+      "syntax": "grim -g &quot;$(slurp -w 0)&quot;"
+    },
+    {
+      "description": "Select a specific region and take a borderless video of it, using wf-recorder:",
+      "syntax": "wf-recorder --geometry &quot;$(slurp -w 0)&quot;"
+    }
+  ]
+}

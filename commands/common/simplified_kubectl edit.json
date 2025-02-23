@@ -1,0 +1,26 @@
+{
+  "command": "kubectl edit",
+  "description": "Edit Kubernetes resources. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#edit.",
+  "useCases": [
+    {
+      "description": "Edit a pod:",
+      "syntax": "kubectl edit pod/{{pod_name}}"
+    },
+    {
+      "description": "Edit a deployment:",
+      "syntax": "kubectl edit deployment/{{deployment_name}}"
+    },
+    {
+      "description": "Edit a service:",
+      "syntax": "kubectl edit svc/{{service_name}}"
+    },
+    {
+      "description": "Edit a resource using a specific editor:",
+      "syntax": "KUBE_EDITOR={{nano}} kubectl edit {{resource}}/{{resource_name}}"
+    },
+    {
+      "description": "Edit a resource in JSON format:",
+      "syntax": "kubectl edit {{resource}}/{{resource_name}} --output json"
+    }
+  ]
+}

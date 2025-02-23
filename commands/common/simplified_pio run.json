@@ -1,0 +1,30 @@
+{
+  "command": "pio run",
+  "description": "Run PlatformIO project targets. More information: https://docs.platformio.org/en/latest/core/userguide/cmd_run.html.",
+  "useCases": [
+    {
+      "description": "List all available project targets:",
+      "syntax": "pio run --list-targets"
+    },
+    {
+      "description": "List all available project targets of a specific environment:",
+      "syntax": "pio run --list-targets --environment {{environment}}"
+    },
+    {
+      "description": "Run all targets:",
+      "syntax": "pio run"
+    },
+    {
+      "description": "Run all targets of specified environments:",
+      "syntax": "pio run --environment {{environment1}} --environment {{environment2}}"
+    },
+    {
+      "description": "Run specified targets:",
+      "syntax": "pio run --target {{target1}} --target {{target2}}"
+    },
+    {
+      "description": "Run the targets of a specified configuration file:",
+      "syntax": "pio run --project-conf {{path/to/platformio.ini}}"
+    }
+  ]
+}

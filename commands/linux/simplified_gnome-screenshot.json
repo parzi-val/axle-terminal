@@ -1,0 +1,38 @@
+{
+  "command": "gnome-screenshot",
+  "description": "Capture the screen, a window, or a user-defined area and save the image to a file. More information: https://manned.org/gnome-screenshot.",
+  "useCases": [
+    {
+      "description": "Take a screenshot and save it to the default location, normally ~/Pictures:",
+      "syntax": "gnome-screenshot"
+    },
+    {
+      "description": "Take a screenshot and save it to the named file location:",
+      "syntax": "gnome-screenshot --file {{path/to/file}}"
+    },
+    {
+      "description": "Take a screenshot and save it to the clipboard:",
+      "syntax": "gnome-screenshot --clipboard"
+    },
+    {
+      "description": "Take a screenshot after the specified number of seconds:",
+      "syntax": "gnome-screenshot --delay {{5}}"
+    },
+    {
+      "description": "Launch the GNOME Screenshot GUI:",
+      "syntax": "gnome-screenshot --interactive"
+    },
+    {
+      "description": "Take a screenshot of the current window and save it to the specified file location:",
+      "syntax": "gnome-screenshot --window --file {{path/to/file}}"
+    },
+    {
+      "description": "Take a screenshot after the specified number of seconds and save it to the clipboard:",
+      "syntax": "gnome-screenshot --delay {{10}} --clipboard"
+    },
+    {
+      "description": "Display the version:",
+      "syntax": "gnome-screenshot --version"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "hakyll-init",
+  "description": "Generate a new Hakyll sample blog. More information: https://github.com/jaspervdj/hakyll-init.",
+  "useCases": [
+    {
+      "description": "Generate a new Hakyll sample blog:",
+      "syntax": "hakyll-init {{path/to/directory}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "hakyll-init --help"
+    }
+  ]
+}

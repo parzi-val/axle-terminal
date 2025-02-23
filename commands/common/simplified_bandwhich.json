@@ -1,0 +1,26 @@
+{
+  "command": "bandwhich",
+  "description": "Display the current network utilization by process, connection or remote IP/hostname. More information: https://github.com/imsnif/bandwhich.",
+  "useCases": [
+    {
+      "description": "Show the remote addresses table only:",
+      "syntax": "bandwhich --addresses"
+    },
+    {
+      "description": "Show DNS queries:",
+      "syntax": "bandwhich --show-dns"
+    },
+    {
+      "description": "Show total (cumulative) usage:",
+      "syntax": "bandwhich --total-utilization"
+    },
+    {
+      "description": "Show the network utilization for a specific network interface:",
+      "syntax": "bandwhich --interface {{eth0}}"
+    },
+    {
+      "description": "Show DNS queries with a given DNS server:",
+      "syntax": "bandwhich --show-dns --dns-server {{dns_server_ip}}"
+    }
+  ]
+}

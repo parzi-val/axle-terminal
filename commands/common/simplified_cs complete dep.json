@@ -1,0 +1,22 @@
+{
+  "command": "cs complete dep",
+  "description": "Search for libraries without doing it directly on the web. More information: https://get-coursier.io/docs/cli-complete.",
+  "useCases": [
+    {
+      "description": "Print which artifacts are published under a specific Maven group identifier:",
+      "syntax": "cs complete-dep {{group_id}}"
+    },
+    {
+      "description": "List published library versions under a specific Maven group identifier and an artifact one:",
+      "syntax": "cs complete-dep {{group_id}}:{{artifact_id}}"
+    },
+    {
+      "description": "Print which artifacts are pubblished under a given Maven groupId searching in the ivy2local:",
+      "syntax": "cs complete-dep {{group_id}} --repository ivy2local"
+    },
+    {
+      "description": "List published artifacts under a Maven group identifier searching in a specific repository and credentials:",
+      "syntax": "cs complete-dep {{group_id}}:{{artifact_id}} --repository {{repository_url}} --credentials {{user}}:{{password}}"
+    }
+  ]
+}

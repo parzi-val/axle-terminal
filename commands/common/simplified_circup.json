@@ -1,0 +1,26 @@
+{
+  "command": "circup",
+  "description": "The CircuitPython library updater. More information: https://github.com/adafruit/circup.",
+  "useCases": [
+    {
+      "description": "Interactively update modules on a device:",
+      "syntax": "circup update"
+    },
+    {
+      "description": "Install a new library:",
+      "syntax": "circup install {{library_name}}"
+    },
+    {
+      "description": "Search for a library:",
+      "syntax": "circup show {{partial_name}}"
+    },
+    {
+      "description": "List all libraries on a connected device in requirements.txt format:",
+      "syntax": "circup freeze"
+    },
+    {
+      "description": "Save all libraries on a connected device in the current directory:",
+      "syntax": "circup freeze -r"
+    }
+  ]
+}

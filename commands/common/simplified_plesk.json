@@ -1,0 +1,30 @@
+{
+  "command": "plesk",
+  "description": "Plesk hosting control panel. More information: https://docs.plesk.com.",
+  "useCases": [
+    {
+      "description": "Generate an auto login link for the admin user and print it:",
+      "syntax": "plesk login"
+    },
+    {
+      "description": "Show product version information:",
+      "syntax": "plesk version"
+    },
+    {
+      "description": "List all hosted domains:",
+      "syntax": "plesk bin domain --list"
+    },
+    {
+      "description": "Start watching for changes in the panel.log file:",
+      "syntax": "plesk log {{panel.log}}"
+    },
+    {
+      "description": "Start the interactive MySQL console:",
+      "syntax": "plesk db"
+    },
+    {
+      "description": "Open the Plesk main configuration file in the default editor:",
+      "syntax": "plesk conf {{panel.ini}}"
+    }
+  ]
+}

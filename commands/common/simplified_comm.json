@@ -1,0 +1,26 @@
+{
+  "command": "comm",
+  "description": "Select or reject lines common to two files. Both files must be sorted. More information: https://www.gnu.org/software/coreutils/manual/html_node/comm-invocation.html.",
+  "useCases": [
+    {
+      "description": "Produce three tab-separated columns: lines only in first file, lines only in second file and common lines:",
+      "syntax": "comm {{file1}} {{file2}}"
+    },
+    {
+      "description": "Print only lines common to both files:",
+      "syntax": "comm -12 {{file1}} {{file2}}"
+    },
+    {
+      "description": "Print only lines common to both files, reading one file from stdin:",
+      "syntax": "cat {{file1}} | comm -12 - {{file2}}"
+    },
+    {
+      "description": "Get lines only found in first file, saving the result to a third file:",
+      "syntax": "comm -23 {{file1}} {{file2}} &gt; {{file1_only}}"
+    },
+    {
+      "description": "Print lines only found in second file, when the files aren't sorted:",
+      "syntax": "comm -13 &lt;(sort {{file1}}) &lt;(sort {{file2}})"
+    }
+  ]
+}

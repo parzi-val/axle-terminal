@@ -1,0 +1,34 @@
+{
+  "command": "hledger-ui",
+  "description": "A terminal interface (TUI) for hledger, a robust, friendly plain text accounting app. More information: https://hledger.org/hledger-ui.html.",
+  "useCases": [
+    {
+      "description": "Start in the main menu screen, reading from the default journal file:",
+      "syntax": "hledger-ui"
+    },
+    {
+      "description": "Start with a different color theme:",
+      "syntax": "hledger-ui --theme {{terminal|greenterm|dark}}"
+    },
+    {
+      "description": "Start in the balance sheet accounts screen, showing hierarchy down to level 3:",
+      "syntax": "hledger-ui --bs --tree --depth 3"
+    },
+    {
+      "description": "Start in this account's screen, showing cleared transactions, and reload on change:",
+      "syntax": "hledger-ui --register {{assets:bank:checking}} --cleared --watch"
+    },
+    {
+      "description": "Read two journal files, and show amounts as current value when known:",
+      "syntax": "hledger-ui --file {{path/to/2024.journal}} --file {{path/to/2024-prices.journal}} --value now"
+    },
+    {
+      "description": "Show the manual in Info format, if possible:",
+      "syntax": "hledger-ui --info"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "hledger-ui --help"
+    }
+  ]
+}

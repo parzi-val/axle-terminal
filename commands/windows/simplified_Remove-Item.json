@@ -1,0 +1,30 @@
+{
+  "command": "Remove-Item",
+  "description": "Delete files, folders, as well as registry keys and subkeys. This command can only be run through PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/remove-item.",
+  "useCases": [
+    {
+      "description": "Remove specific files or registry keys (without subkeys):",
+      "syntax": "Remove-Item {{path\\to\\file_or_key1 , path\\to\\file_or_key2 ...}}"
+    },
+    {
+      "description": "Remove hidden or read-only files:",
+      "syntax": "Remove-Item -Force {{path\\to\\file1 , path\\to\\file2 ...}}"
+    },
+    {
+      "description": "Remove specific files or registry keys interactively prompting before each removal:",
+      "syntax": "Remove-Item -Confirm {{path\\to\\file_or_key1 , path\\to\\file_or_key2 ...}}"
+    },
+    {
+      "description": "Remove specific files and directories recursively (Windows 10 version 1909 or later):",
+      "syntax": "Remove-Item -Recurse {{path\\to\\file_or_directory1 , path\\to\\file_or_directory2 ...}}"
+    },
+    {
+      "description": "Remove specific Windows registry keys and all its subkeys:",
+      "syntax": "Remove-Item -Recurse {{path\\to\\key1 , path\\to\\key2 ...}}"
+    },
+    {
+      "description": "Perform a dry run of the deletion process:",
+      "syntax": "Remove-Item -WhatIf {{path\\to\\file1 , path\\to\\file2 ...}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "ropper",
+  "description": "Find ROP gadgets in binary files. More information: https://scoding.de/ropper/.",
+  "useCases": [
+    {
+      "description": "List gadgets in the binary file:",
+      "syntax": "ropper --file {{path/to/binary}}"
+    },
+    {
+      "description": "Filter gadgets in the binary file by a regular expression:",
+      "syntax": "ropper --file {{path/to/binary}} --search {{regex}}"
+    },
+    {
+      "description": "List gadgets of specified type in the binary file:",
+      "syntax": "ropper --file {{path/to/binary}} --type {{rop|job|sys|all}}"
+    },
+    {
+      "description": "Exclude bad byte gadgets in the binary file:",
+      "syntax": "ropper --file {{path/to/binary}} --badbytes {{byte_string}}"
+    },
+    {
+      "description": "List gadgets up to the specified instruction count in the binary file:",
+      "syntax": "ropper --file {{path/to/binary}} --inst-count {{count}}"
+    }
+  ]
+}

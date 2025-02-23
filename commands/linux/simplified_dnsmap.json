@@ -1,0 +1,22 @@
+{
+  "command": "dnsmap",
+  "description": "The dnsmap command scans a domain for common subdomains e.g. smtp.domain.org. More information: https://github.com/resurrecting-open-source-projects/dnsmap.",
+  "useCases": [
+    {
+      "description": "Scan for subdomains using the internal wordlist:",
+      "syntax": "dnsmap {{example.com}}"
+    },
+    {
+      "description": "Specify a list of subdomains to check for:",
+      "syntax": "dnsmap {{example.com}} -w {{path/to/wordlist.txt}}"
+    },
+    {
+      "description": "Store results to a CSV file:",
+      "syntax": "dnsmap {{example.com}} -c {{path/to/file.csv}}"
+    },
+    {
+      "description": "Ignore 2 IPs that are false positives (up to 5 possible):",
+      "syntax": "dnsmap {{example.com}} -i {{123.45.67.89,98.76.54.32}}"
+    }
+  ]
+}

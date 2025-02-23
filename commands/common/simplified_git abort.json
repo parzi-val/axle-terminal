@@ -1,0 +1,10 @@
+{
+  "command": "git abort",
+  "description": "Abort an ongoing rebase, merge, or cherry-pick. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-abort.",
+  "useCases": [
+    {
+      "description": "Abort a Git rebase, merge, or cherry-pick:",
+      "syntax": "git abort"
+    }
+  ]
+}

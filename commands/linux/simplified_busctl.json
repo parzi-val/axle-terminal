@@ -1,0 +1,34 @@
+{
+  "command": "busctl",
+  "description": "Introspect and monitor the D-Bus bus. More information: https://www.freedesktop.org/software/systemd/man/busctl.html.",
+  "useCases": [
+    {
+      "description": "Show all peers on the bus, by their service names:",
+      "syntax": "busctl list"
+    },
+    {
+      "description": "Show process information and credentials of a bus service, a process, or the owner of the bus (if no parameter is specified):",
+      "syntax": "busctl status {{service|pid}}"
+    },
+    {
+      "description": "Dump messages being exchanged. If no service is specified, show all messages on the bus:",
+      "syntax": "busctl monitor {{service1 service2 ...}}"
+    },
+    {
+      "description": "Show an object tree of one or more services (or all services if no service is specified):",
+      "syntax": "busctl tree {{service1 service2 ...}}"
+    },
+    {
+      "description": "Show interfaces, methods, properties and signals of the specified object on the specified service:",
+      "syntax": "busctl introspect {{service}} {{path/to/object}}"
+    },
+    {
+      "description": "Retrieve the current value of one or more object properties:",
+      "syntax": "busctl get-property {{service}} {{path/to/object}} {{interface_name}} {{property_name}}"
+    },
+    {
+      "description": "Invoke a method and show the response:",
+      "syntax": "busctl call {{service}} {{path/to/object}} {{interface_name}} {{method_name}}"
+    }
+  ]
+}

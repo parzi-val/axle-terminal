@@ -1,0 +1,18 @@
+{
+  "command": "ppmrainbow",
+  "description": "Generate a rainbow. More information: https://netpbm.sourceforge.net/doc/ppmrainbow.html.",
+  "useCases": [
+    {
+      "description": "Generate a rainbow consisting of the specified colors:",
+      "syntax": "ppmrainbow {{color1 color2 ...}} &gt; {{path/to/output_file.ppm}}"
+    },
+    {
+      "description": "Specify the size of the output in pixels:",
+      "syntax": "ppmrainbow -width {{width}} -height {{height}} {{color1 color2 ...}} &gt; {{path/to/output_file.ppm}}"
+    },
+    {
+      "description": "End the rainbow with the last color specified, do not repeat the first color:",
+      "syntax": "ppmrainbow -norepeat {{color1 color2 ...}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

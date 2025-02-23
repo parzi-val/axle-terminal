@@ -1,0 +1,34 @@
+{
+  "command": "trdsql",
+  "description": "Execute SQL on CSV, LTSV, JSON, YAML, and TBLN files. More information: https://noborus.github.io/trdsql/.",
+  "useCases": [
+    {
+      "description": "Convert object data from multiple JSON files to a CSV file with header (-oh) and double quote:",
+      "syntax": "trdsql -ocsv -oh &quot;SELECT * FROM {{path/to/file/*.json}}&quot; | sed 's/\\([^,]*\\)/&quot;&amp;&quot;/g' &gt; {{path/to/file.csv}}"
+    },
+    {
+      "description": "Interpret JSON list as a table and put objects inside as columns (path/to/file.json: {&quot;list&quot;:[{&quot;age&quot;:&quot;26&quot;,&quot;name&quot;:&quot;Tanaka&quot;}]}):",
+      "syntax": "trdsql &quot;SELECT * FROM {{path/to/file.json}}::.list"
+    },
+    {
+      "description": "Manipulate complex SQL query with data from multiple CSV files with first line is header (-ih):",
+      "syntax": "trdsql -icsv -ih &quot;SELECT {{column1,column2}} FROM {{path/to/file*.csv}} WHERE column2 != '' ORDER BY column1 GROUP BY column1&quot;"
+    },
+    {
+      "description": "Merge content of 2 CSV files to one CSV file:",
+      "syntax": "trdsql &quot;SELECT {{column1,colum2}} FROM {{path/to/file1.csv}} UNION SELECT {{column1,column2}} FROM {{path/to/file2.csv}}&quot;"
+    },
+    {
+      "description": "Connect to PostgreSQL database:",
+      "syntax": "trdsql -driver postgres -dsn &quot;host={{hostname}} port={{5433}} dbname={{database_name}}&quot; &quot;SELECT 1&quot;"
+    },
+    {
+      "description": "Create table data to MySQL database from CSV file:",
+      "syntax": "trdsql -driver mysql -dsn &quot;{{username}}:{{password}}@{{hostname}}/{{database}}&quot; -ih &quot;CREATE TABLE {{table}} ({{column1}} int, {{colum2}} varchar(20)) AS SELECT {{column3}} AS {{column1}},{{column2}} FROM {{path/to/header_file.csv}}&quot;"
+    },
+    {
+      "description": "Show data from compress log files:",
+      "syntax": "trdsql -iltsv &quot;SELECT * FROM {{path/to/access.log.gz}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "httping",
+  "description": "Measure the latency and throughput of a web server. More information: https://manned.org/httping.",
+  "useCases": [
+    {
+      "description": "Ping the specified URL:",
+      "syntax": "httping -g {{url}}"
+    },
+    {
+      "description": "Ping the web server on host and port:",
+      "syntax": "httping -h {{host}} -p {{port}}"
+    },
+    {
+      "description": "Ping the web server on host using a TLS connection:",
+      "syntax": "httping -l -g https://{{host}}"
+    },
+    {
+      "description": "Ping the web server on host using HTTP basic authentication:",
+      "syntax": "httping -g http://{{host}} -U {{username}} -P {{password}}"
+    }
+  ]
+}

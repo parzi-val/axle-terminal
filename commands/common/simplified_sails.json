@@ -1,0 +1,26 @@
+{
+  "command": "sails",
+  "description": "A realtime enterprise level MVC framework built on top of Node.js. More information: https://sailsjs.com.",
+  "useCases": [
+    {
+      "description": "Start Sails:",
+      "syntax": "sails lift"
+    },
+    {
+      "description": "Create new Sails project:",
+      "syntax": "sails new {{projectName}}"
+    },
+    {
+      "description": "Generate Sails API:",
+      "syntax": "sails generate {{name}}"
+    },
+    {
+      "description": "Generate Sails Controller:",
+      "syntax": "sails generate controller {{name}}"
+    },
+    {
+      "description": "Generate Sails Model:",
+      "syntax": "sails generate model {{name}}"
+    }
+  ]
+}

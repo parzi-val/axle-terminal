@@ -1,0 +1,30 @@
+{
+  "command": "taskkill",
+  "description": "Terminate a process by its process ID or name. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/taskkill.",
+  "useCases": [
+    {
+      "description": "Terminate a process by its ID:",
+      "syntax": "taskkill /pid {{process_id}}"
+    },
+    {
+      "description": "Terminate a process by its name:",
+      "syntax": "taskkill /im {{process_name}}"
+    },
+    {
+      "description": "Forcefully terminate a specified process:",
+      "syntax": "taskkill /pid {{process_id}} /f"
+    },
+    {
+      "description": "Terminate a process and its child processes:",
+      "syntax": "taskkill /im {{process_name}} /t"
+    },
+    {
+      "description": "Terminate a process on a remote machine:",
+      "syntax": "taskkill /pid {{process_id}} /s {{remote_name}}"
+    },
+    {
+      "description": "Display information about the usage of the command:",
+      "syntax": "taskkill /?"
+    }
+  ]
+}

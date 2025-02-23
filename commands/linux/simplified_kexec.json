@@ -1,0 +1,22 @@
+{
+  "command": "kexec",
+  "description": "Directly reboot into a new kernel. More information: https://manned.org/kexec.",
+  "useCases": [
+    {
+      "description": "Load a new kernel:",
+      "syntax": "kexec -l {{path/to/kernel}} --initrd={{path/to/initrd}} --command-line={{arguments}}"
+    },
+    {
+      "description": "Load a new kernel with current boot parameters:",
+      "syntax": "kexec -l {{path/to/kernel}} --initrd={{path/to/initrd}} --reuse-cmdline"
+    },
+    {
+      "description": "Execute a currently loaded kernel:",
+      "syntax": "kexec -e"
+    },
+    {
+      "description": "Unload current kexec target kernel:",
+      "syntax": "kexec -u"
+    }
+  ]
+}

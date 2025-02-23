@@ -1,0 +1,38 @@
+{
+  "command": "git push",
+  "description": "Push commits to a remote repository. More information: https://git-scm.com/docs/git-push.",
+  "useCases": [
+    {
+      "description": "Send local changes in the current branch to its default remote counterpart:",
+      "syntax": "git push"
+    },
+    {
+      "description": "Send changes from a specific local branch to its remote counterpart:",
+      "syntax": "git push {{remote_name}} {{local_branch}}"
+    },
+    {
+      "description": "Send changes from a specific local branch to its remote counterpart, and set the remote one as the default push/pull target of the local one:",
+      "syntax": "git push -u {{remote_name}} {{local_branch}}"
+    },
+    {
+      "description": "Send changes from a specific local branch to a specific remote branch:",
+      "syntax": "git push {{remote_name}} {{local_branch}}:{{remote_branch}}"
+    },
+    {
+      "description": "Send changes on all local branches to their counterparts in a given remote repository:",
+      "syntax": "git push --all {{remote_name}}"
+    },
+    {
+      "description": "Delete a branch in a remote repository:",
+      "syntax": "git push {{remote_name}} --delete {{remote_branch}}"
+    },
+    {
+      "description": "Remove remote branches that don't have a local counterpart:",
+      "syntax": "git push --prune {{remote_name}}"
+    },
+    {
+      "description": "Publish tags that aren't yet in the remote repository:",
+      "syntax": "git push --tags"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "smbnetfs",
+  "description": "Mount SMB shares interactively. More information: https://sourceforge.net/projects/smbnetfs/.",
+  "useCases": [
+    {
+      "description": "Make shares available at mountpoint:",
+      "syntax": "smbnetfs {{mountpoint}}"
+    }
+  ]
+}

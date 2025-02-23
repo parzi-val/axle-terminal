@@ -1,0 +1,30 @@
+{
+  "command": "tye",
+  "description": "Develop, test, and deploy microservices and distributed applications easily. More information: https://github.com/dotnet/tye.",
+  "useCases": [
+    {
+      "description": "Scaffold a tye.yaml file representing the application:",
+      "syntax": "tye init"
+    },
+    {
+      "description": "Run an application locally:",
+      "syntax": "tye run"
+    },
+    {
+      "description": "Build an application's containers:",
+      "syntax": "tye build"
+    },
+    {
+      "description": "Push an application's containers:",
+      "syntax": "tye push"
+    },
+    {
+      "description": "Deploy an application to Kubernetes:",
+      "syntax": "tye deploy"
+    },
+    {
+      "description": "Remove a deployed application from Kubernetes:",
+      "syntax": "tye undeploy"
+    }
+  ]
+}

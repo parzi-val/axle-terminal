@@ -1,0 +1,34 @@
+{
+  "command": "i3-scrot",
+  "description": "Wrapper script around the screenshot utility scrot for the i3 window manager. The default save location is ~/Pictures and can be changed in ~/.config/i3-scrot.conf. More information: https://gitlab.manjaro.org/packages/community/i3/i3-scrot.",
+  "useCases": [
+    {
+      "description": "Capture a screenshot of the whole screen and save it to the default directory:",
+      "syntax": "i3-scrot"
+    },
+    {
+      "description": "Capture a screenshot of the active window:",
+      "syntax": "i3-scrot --window"
+    },
+    {
+      "description": "Capture a screenshot of a specific rectangular selection:",
+      "syntax": "i3-scrot --select"
+    },
+    {
+      "description": "Capture a screenshot of the whole screen and copy it to the clipboard:",
+      "syntax": "i3-scrot --desk-to-clipboard"
+    },
+    {
+      "description": "Capture a screenshot of the active window and copy it to the clipboard:",
+      "syntax": "i3-scrot --window-to-clipboard"
+    },
+    {
+      "description": "Capture a screenshot of a specific selection and copy it to the clipboard:",
+      "syntax": "i3-scrot --select-to-clipboard"
+    },
+    {
+      "description": "Capture a screenshot of the active window after a delay of 5 seconds:",
+      "syntax": "i3-scrot --window {{5}}"
+    }
+  ]
+}

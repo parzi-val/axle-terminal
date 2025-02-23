@@ -1,0 +1,18 @@
+{
+  "command": "Get-NodeVersions",
+  "description": "List installed and available Node.js versions for ps-nvm. Part of ps-nvm and can only be run under PowerShell. More information: https://github.com/aaronpowell/ps-nvm.",
+  "useCases": [
+    {
+      "description": "List all installed Node.js versions:",
+      "syntax": "Get-NodeVersions"
+    },
+    {
+      "description": "List all available Node.js versions:",
+      "syntax": "Get-NodeVersions -Remote"
+    },
+    {
+      "description": "List all available Node.js 20.x versions:",
+      "syntax": "Get-NodeVersions -Remote -Filter &quot;&gt;=20.0.0 &lt;21.0.0&quot;"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "openai",
+  "description": "CLI tool providing access to the OpenAI API. More information: https://github.com/openai/openai-python.",
+  "useCases": [
+    {
+      "description": "List models:",
+      "syntax": "openai api models.list"
+    },
+    {
+      "description": "Create a completion:",
+      "syntax": "openai api completions.create --model {{ada}} --prompt &quot;{{Hello world}}&quot;"
+    },
+    {
+      "description": "Create a chat completion:",
+      "syntax": "openai api chat_completions.create --model {{gpt-3.5-turbo}} --message {{user &quot;Hello world&quot;}}"
+    },
+    {
+      "description": "Generate images via DALL·E API:",
+      "syntax": "openai api image.create --prompt &quot;{{two dogs playing chess, cartoon}}&quot; --num-images {{1}}"
+    }
+  ]
+}

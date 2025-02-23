@@ -1,0 +1,38 @@
+{
+  "command": "npm star",
+  "description": "Mark a package as favorite. More information: https://docs.npmjs.com/cli/commands/npm-star.",
+  "useCases": [
+    {
+      "description": "Star a public package from the default registry:",
+      "syntax": "npm star {{package_name}}"
+    },
+    {
+      "description": "Star a package within a specific scope:",
+      "syntax": "npm star @{{scope}}/{{package_name}}"
+    },
+    {
+      "description": "Star a package from a specific registry:",
+      "syntax": "npm star {{package_name}} --registry={{registry_url}}"
+    },
+    {
+      "description": "Star a private package that requires authentication:",
+      "syntax": "npm star {{package_name}} --auth-type={{legacy|oauth|web|saml}}"
+    },
+    {
+      "description": "Star a package by providing an OTP for two-factor authentication:",
+      "syntax": "npm star {{package_name}} --otp={{otp}}"
+    },
+    {
+      "description": "Star a package with detailed logging:",
+      "syntax": "npm star {{package_name}} --loglevel=verbose"
+    },
+    {
+      "description": "List all your starred packages:",
+      "syntax": "npm star --list"
+    },
+    {
+      "description": "List your starred packages from a specific registry:",
+      "syntax": "npm star --list --registry={{registry_url}}"
+    }
+  ]
+}

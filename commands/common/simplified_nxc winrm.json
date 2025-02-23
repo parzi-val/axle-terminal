@@ -1,0 +1,22 @@
+{
+  "command": "nxc winrm",
+  "description": "Pentest and exploit Windows Remote Management (winrm). More information: https://www.netexec.wiki/winrm-protocol.",
+  "useCases": [
+    {
+      "description": "Search for valid credentials by trying out every combination in the specified lists of [u]sernames and [p]asswords:",
+      "syntax": "nxc winrm {{192.168.178.2}} -u {{path/to/usernames.txt}} -p {{path/to/passwords.txt}}"
+    },
+    {
+      "description": "Specify the domain to authenticate to (avoids an initial SMB connection):",
+      "syntax": "nxc winrm {{192.168.178.2}} -u {{username}} -p {{password}} -d {{domain_name}}"
+    },
+    {
+      "description": "Execute the specified command on the host:",
+      "syntax": "nxc winrm {{192.168.178.2}} -u {{username}} -p {{password}} -x {{whoami}}"
+    },
+    {
+      "description": "Execute the specified PowerShell command on the host as administrator using LAPS:",
+      "syntax": "nxc winrm {{192.168.178.2}} -u {{username}} -p {{password}} --laps -X {{whoami}}"
+    }
+  ]
+}

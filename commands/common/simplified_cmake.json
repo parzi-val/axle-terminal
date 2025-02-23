@@ -1,0 +1,38 @@
+{
+  "command": "cmake",
+  "description": "Cross-platform build automation system, that generates recipes for native build systems. More information: https://cmake.org/cmake/help/latest/manual/cmake.1.html.",
+  "useCases": [
+    {
+      "description": "Generate a build recipe in the current directory with CMakeLists.txt from a project directory:",
+      "syntax": "cmake {{path/to/project_directory}}"
+    },
+    {
+      "description": "Generate a build recipe, with build type set to Release with CMake variable:",
+      "syntax": "cmake {{path/to/project_directory}} -D {{CMAKE_BUILD_TYPE=Release}}"
+    },
+    {
+      "description": "Generate a build recipe using generator_name as the underlying build system:",
+      "syntax": "cmake -G {{generator_name}} {{path/to/project_directory}}"
+    },
+    {
+      "description": "Use a generated recipe in a given directory to build artifacts:",
+      "syntax": "cmake --build {{path/to/build_directory}}"
+    },
+    {
+      "description": "Install the build artifacts into /usr/local/ and strip debugging symbols:",
+      "syntax": "cmake --install {{path/to/build_directory}} --strip"
+    },
+    {
+      "description": "Install the build artifacts using the custom prefix for paths:",
+      "syntax": "cmake --install {{path/to/build_directory}} --strip --prefix {{path/to/directory}}"
+    },
+    {
+      "description": "Run a custom build target:",
+      "syntax": "cmake --build {{path/to/build_directory}} --target {{target_name}}"
+    },
+    {
+      "description": "Display help, obtain a list of generators:",
+      "syntax": "cmake --help"
+    }
+  ]
+}

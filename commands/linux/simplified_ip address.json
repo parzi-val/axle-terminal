@@ -1,0 +1,30 @@
+{
+  "command": "ip address",
+  "description": "IP Address management subcommand. More information: https://manned.org/ip-address.",
+  "useCases": [
+    {
+      "description": "List network interfaces and their associated IP addresses:",
+      "syntax": "ip address"
+    },
+    {
+      "description": "Filter to show only active network interfaces:",
+      "syntax": "ip address show up"
+    },
+    {
+      "description": "Display information about a specific network interface:",
+      "syntax": "ip address show dev {{eth0}}"
+    },
+    {
+      "description": "Add an IP address to a network interface:",
+      "syntax": "ip address add {{ip_address}} dev {{eth0}}"
+    },
+    {
+      "description": "Remove an IP address from a network interface:",
+      "syntax": "ip address delete {{ip_address}} dev {{eth0}}"
+    },
+    {
+      "description": "Delete all IP addresses in a given scope from a network interface:",
+      "syntax": "ip address flush dev {{eth0}} scope {{global|host|link}}"
+    }
+  ]
+}

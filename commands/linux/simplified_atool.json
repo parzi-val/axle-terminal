@@ -1,0 +1,22 @@
+{
+  "command": "atool",
+  "description": "Manage archives of various formats. More information: https://www.nongnu.org/atool/.",
+  "useCases": [
+    {
+      "description": "List files in a Zip archive:",
+      "syntax": "atool --list {{path/to/archive.zip}}"
+    },
+    {
+      "description": "Unpack a tar.gz archive into a new subdirectory (or current directory if it contains only one file):",
+      "syntax": "atool --extract {{path/to/archive.tar.gz}}"
+    },
+    {
+      "description": "Create a new 7z archive with two files:",
+      "syntax": "atool --add {{path/to/archive.7z}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Extract all Zip and rar archives in the current directory:",
+      "syntax": "atool --each --extract {{*.zip *.rar}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "kubectl wait",
+  "description": "Wait for resource(s) to reach a certain state. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#wait.",
+  "useCases": [
+    {
+      "description": "Wait for a deployment to become available:",
+      "syntax": "kubectl wait --for=condition=available deployment/{{deployment_name}}"
+    },
+    {
+      "description": "Wait for all pods with a certain [l]abel to be ready:",
+      "syntax": "kubectl wait --for=condition=ready pod -l {{label_key}}={{label_value}}"
+    },
+    {
+      "description": "Wait for a pod to be deleted:",
+      "syntax": "kubectl wait --for=delete pod {{pod_name}}"
+    },
+    {
+      "description": "Wait for a job to complete, within 120 seconds (if the condition isn't met on time, the exit status will be unsuccessful):",
+      "syntax": "kubectl wait --for=condition=complete job/{{job_name}} --timeout 120s"
+    }
+  ]
+}

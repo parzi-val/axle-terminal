@@ -1,0 +1,14 @@
+{
+  "command": "function",
+  "description": "Define a function. More information: https://www.gnu.org/software/bash/manual/bash.html#Shell-Functions.",
+  "useCases": [
+    {
+      "description": "Define a function with the specified name:",
+      "syntax": "function {{func_name}} { {{echo &quot;Function contents here&quot;}}; }"
+    },
+    {
+      "description": "Run a function named func_name:",
+      "syntax": "func_name"
+    }
+  ]
+}

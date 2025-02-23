@@ -1,0 +1,26 @@
+{
+  "command": "fin",
+  "description": "Docksal command-line utility. More information: https://docs.docksal.io/fin/fin/.",
+  "useCases": [
+    {
+      "description": "Start the project in the current directory:",
+      "syntax": "fin project start"
+    },
+    {
+      "description": "Stop the project in the current directory:",
+      "syntax": "fin project stop"
+    },
+    {
+      "description": "Open a shell into a specific container:",
+      "syntax": "fin bash {{container_name}}"
+    },
+    {
+      "description": "Display logs of a specific container:",
+      "syntax": "fin logs {{container_name}}"
+    },
+    {
+      "description": "Display logs of a specific container and follow the log:",
+      "syntax": "fin logs -f {{container_name}}"
+    }
+  ]
+}

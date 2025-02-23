@@ -1,0 +1,22 @@
+{
+  "command": "cargo doc",
+  "description": "Build the documentation of Rust packages. More information: https://doc.rust-lang.org/cargo/commands/cargo-doc.html.",
+  "useCases": [
+    {
+      "description": "Build the documentation for the current project and all dependencies:",
+      "syntax": "cargo doc"
+    },
+    {
+      "description": "Do not build documentation for dependencies:",
+      "syntax": "cargo doc --no-deps"
+    },
+    {
+      "description": "Build and open the documentation in a browser:",
+      "syntax": "cargo doc --open"
+    },
+    {
+      "description": "Build and view the documentation of a particular package:",
+      "syntax": "cargo doc --open --package {{package}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ubuntu-security-status",
+  "description": "Display information about security support for installed Ubuntu packages. More information: https://git.launchpad.net/ubuntu/+source/update-manager/tree/ubuntu-security-status.",
+  "useCases": [
+    {
+      "description": "Display the number of unsupported packages:",
+      "syntax": "ubuntu-security-status"
+    },
+    {
+      "description": "List packages that are no longer available for download:",
+      "syntax": "ubuntu-security-status --unavailable"
+    },
+    {
+      "description": "List third-party packages:",
+      "syntax": "ubuntu-security-status --thirdparty"
+    }
+  ]
+}

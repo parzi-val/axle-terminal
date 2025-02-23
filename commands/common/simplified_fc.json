@@ -1,0 +1,34 @@
+{
+  "command": "fc",
+  "description": "Open the most recent command for editing and then run it. More information: https://manned.org/fc.",
+  "useCases": [
+    {
+      "description": "Open the last command in the default system editor and run it after editing:",
+      "syntax": "fc"
+    },
+    {
+      "description": "Specify an editor to open with:",
+      "syntax": "fc -e {{'emacs'}}"
+    },
+    {
+      "description": "List recent commands from history:",
+      "syntax": "fc -l"
+    },
+    {
+      "description": "List recent commands in reverse order:",
+      "syntax": "fc -l -r"
+    },
+    {
+      "description": "Edit and run a command from history:",
+      "syntax": "fc {{number}}"
+    },
+    {
+      "description": "Edit commands in a given interval and run them:",
+      "syntax": "fc '{{416}}' '{{420}}'"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "fc --help"
+    }
+  ]
+}

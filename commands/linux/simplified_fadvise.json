@@ -1,0 +1,18 @@
+{
+  "command": "fadvise",
+  "description": "Control Linux file caching behavior. More information: https://manned.org/fadvise.",
+  "useCases": [
+    {
+      "description": "Preload a file into cache:",
+      "syntax": "fadvise {{-a|--advice}} willneed {{path/to/file}}"
+    },
+    {
+      "description": "Suggest dropping a file from cache:",
+      "syntax": "fadvise {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "fadvise --help"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "runsvchdir",
+  "description": "Change the directory runsvdir uses by default. More information: https://manned.org/runsvchdir.8.",
+  "useCases": [
+    {
+      "description": "Switch runsvdir directories:",
+      "syntax": "sudo runsvchdir {{path/to/directory}}"
+    }
+  ]
+}

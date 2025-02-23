@@ -1,0 +1,30 @@
+{
+  "command": "licensor",
+  "description": "Write licenses to stdout. More information: https://github.com/raftario/licensor.",
+  "useCases": [
+    {
+      "description": "Write the MIT license to a file named LICENSE:",
+      "syntax": "licensor {{MIT}} &gt; {{LICENSE}}"
+    },
+    {
+      "description": "Write the MIT license with a [p]laceholder copyright notice to a file named LICENSE:",
+      "syntax": "licensor -p {{MIT}} &gt; {{LICENSE}}"
+    },
+    {
+      "description": "Specify a copyright holder named Bobby Tables:",
+      "syntax": "licensor {{MIT}} &quot;{{Bobby Tables}}&quot; &gt; {{LICENSE}}"
+    },
+    {
+      "description": "Specify licence exceptions with a WITH expression:",
+      "syntax": "licensor &quot;{{Apache-2.0 WITH LLVM-exception}}&quot; &gt; {{LICENSE}}"
+    },
+    {
+      "description": "List all available licenses:",
+      "syntax": "licensor --licenses"
+    },
+    {
+      "description": "List all available exceptions:",
+      "syntax": "licensor --exceptions"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "ansible-vault",
+  "description": "Encrypt and decrypt values, data structures and files within Ansible projects. More information: https://docs.ansible.com/ansible/latest/user_guide/vault.html#id17.",
+  "useCases": [
+    {
+      "description": "Create a new encrypted vault file with a prompt for a password:",
+      "syntax": "ansible-vault create {{vault_file}}"
+    },
+    {
+      "description": "Create a new encrypted vault file using a vault key file to encrypt it:",
+      "syntax": "ansible-vault create --vault-password-file {{password_file}} {{vault_file}}"
+    },
+    {
+      "description": "Encrypt an existing file using an optional password file:",
+      "syntax": "ansible-vault encrypt --vault-password-file {{password_file}} {{vault_file}}"
+    },
+    {
+      "description": "Encrypt a string using Ansible's encrypted string format, displaying interactive prompts:",
+      "syntax": "ansible-vault encrypt_string"
+    },
+    {
+      "description": "View an encrypted file, using a password file to decrypt:",
+      "syntax": "ansible-vault view --vault-password-file {{password_file}} {{vault_file}}"
+    },
+    {
+      "description": "Re-key already encrypted vault file with a new password file:",
+      "syntax": "ansible-vault rekey --vault-password-file {{old_password_file}} --new-vault-password-file {{new_password_file}} {{vault_file}}"
+    }
+  ]
+}

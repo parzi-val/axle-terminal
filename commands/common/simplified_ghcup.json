@@ -1,0 +1,34 @@
+{
+  "command": "ghcup",
+  "description": "Haskell toolchain installer. Install, manage, and update Haskell toolchains. More information: https://gitlab.haskell.org/haskell/ghcup-hs.",
+  "useCases": [
+    {
+      "description": "Start the interactive TUI:",
+      "syntax": "ghcup tui"
+    },
+    {
+      "description": "List available GHC/cabal versions:",
+      "syntax": "ghcup list"
+    },
+    {
+      "description": "Install the recommended GHC version:",
+      "syntax": "ghcup install ghc"
+    },
+    {
+      "description": "Install a specific GHC version:",
+      "syntax": "ghcup install ghc {{version}}"
+    },
+    {
+      "description": "Set the currently \"active\" GHC version:",
+      "syntax": "ghcup set ghc {{version}}"
+    },
+    {
+      "description": "Install cabal-install:",
+      "syntax": "ghcup install cabal"
+    },
+    {
+      "description": "Update ghcup itself:",
+      "syntax": "ghcup upgrade"
+    }
+  ]
+}

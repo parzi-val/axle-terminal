@@ -1,0 +1,34 @@
+{
+  "command": "croc",
+  "description": "Send and receive files easily and securely over any network. More information: https://github.com/schollz/croc.",
+  "useCases": [
+    {
+      "description": "Send a file or directory:",
+      "syntax": "croc send {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Send a file or directory with a specific passphrase:",
+      "syntax": "croc send --code {{passphrase}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Receive a file or directory on receiving machine:",
+      "syntax": "croc {{passphrase}}"
+    },
+    {
+      "description": "Send and connect over a custom relay:",
+      "syntax": "croc --relay {{ip_to_relay}} send {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Receive and connect over a custom relay:",
+      "syntax": "croc --relay {{ip_to_relay}} {{passphrase}}"
+    },
+    {
+      "description": "Host a croc relay on the default ports:",
+      "syntax": "croc relay"
+    },
+    {
+      "description": "Display parameters and options for a croc command:",
+      "syntax": "croc {{send|relay}} --help"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "create_ap",
+  "description": "Create an AP (Access Point) at any channel. More information: https://github.com/oblique/create_ap.",
+  "useCases": [
+    {
+      "description": "Create an open network with no passphrase:",
+      "syntax": "create_ap {{wlan0}} {{eth0}} {{access_point_ssid}}"
+    },
+    {
+      "description": "Use a WPA + WPA2 passphrase:",
+      "syntax": "create_ap {{wlan0}} {{eth0}} {{access_point_ssid}} {{passphrase}}"
+    },
+    {
+      "description": "Create an access point without Internet sharing:",
+      "syntax": "create_ap -n {{wlan0}} {{access_point_ssid}} {{passphrase}}"
+    },
+    {
+      "description": "Create a bridged network with Internet sharing:",
+      "syntax": "create_ap -m bridge {{wlan0}} {{eth0}} {{access_point_ssid}} {{passphrase}}"
+    },
+    {
+      "description": "Create a bridged network with Internet sharing and a pre-configured bridge interface:",
+      "syntax": "create_ap -m bridge {{wlan0}} {{br0}} {{access_point_ssid}} {{passphrase}}"
+    },
+    {
+      "description": "Create an access port for Internet sharing from the same Wi-Fi interface:",
+      "syntax": "create_ap {{wlan0}} {{wlan0}} {{access_point_ssid}} {{passphrase}}"
+    },
+    {
+      "description": "Choose a different Wi-Fi adapter driver:",
+      "syntax": "create_ap --driver {{wifi_adapter}} {{wlan0}} {{eth0}} {{access_point_ssid}} {{passphrase}}"
+    }
+  ]
+}

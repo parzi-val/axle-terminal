@@ -1,0 +1,22 @@
+{
+  "command": "ssh-keyscan",
+  "description": "Get the public SSH keys of remote hosts. More information: https://man.openbsd.org/ssh-keyscan.",
+  "useCases": [
+    {
+      "description": "Retrieve all public SSH keys of a remote host:",
+      "syntax": "ssh-keyscan {{host}}"
+    },
+    {
+      "description": "Retrieve all public SSH keys of a remote host listening on a specific port:",
+      "syntax": "ssh-keyscan -p {{port}} {{host}}"
+    },
+    {
+      "description": "Retrieve certain types of public SSH keys of a remote host:",
+      "syntax": "ssh-keyscan -t {{rsa,dsa,ecdsa,ed25519}} {{host}}"
+    },
+    {
+      "description": "Manually update the SSH known_hosts file with the fingerprint of a given host:",
+      "syntax": "ssh-keyscan -H {{host}} &gt;&gt; ~/.ssh/known_hosts"
+    }
+  ]
+}

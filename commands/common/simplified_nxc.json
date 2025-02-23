@@ -1,0 +1,22 @@
+{
+  "command": "nxc",
+  "description": "Network service enumeration and exploitation tool. Some subcommands such as smb have their own usage documentation. More information: https://www.netexec.wiki/.",
+  "useCases": [
+    {
+      "description": "[L]ist available modules for the specified protocol:",
+      "syntax": "nxc {{smb|ssh|ldap|ftp|wmi|winrm|rdp|vnc|mssql}} -L"
+    },
+    {
+      "description": "List the options available for the specified module:",
+      "syntax": "nxc {{smb|ssh|ldap|ftp|wmi|winrm|rdp|vnc|mssql}} -M {{module_name}} --options"
+    },
+    {
+      "description": "Specify an option for a module:",
+      "syntax": "nxc {{smb|ssh|ldap|ftp|wmi|winrm|rdp|vnc|mssql}} -M {{module_name}} -o {{OPTION_NAME}}={{option_value}}"
+    },
+    {
+      "description": "View the options available for the specified protocol:",
+      "syntax": "nxc {{smb|ssh|ldap|ftp|wmi|winrm|rdp|vnc|mssql}} --help"
+    }
+  ]
+}

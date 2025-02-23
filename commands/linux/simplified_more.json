@@ -1,0 +1,30 @@
+{
+  "command": "more",
+  "description": "Interactively display a file, allowing scrolling and searching. See also: less. More information: https://manned.org/more.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "more {{path/to/file}}"
+    },
+    {
+      "description": "Display a specific line:",
+      "syntax": "more +{{line_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Go to the next page:",
+      "syntax": "&lt;Space&gt;"
+    },
+    {
+      "description": "Search for a string (press n to go to the next match):",
+      "syntax": "/{{something}}"
+    },
+    {
+      "description": "Exit:",
+      "syntax": "q"
+    },
+    {
+      "description": "Display help about interactive commands:",
+      "syntax": "h"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "sort",
+  "description": "Sort lines of text files. More information: https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html.",
+  "useCases": [
+    {
+      "description": "Sort a file in ascending order:",
+      "syntax": "sort {{path/to/file}}"
+    },
+    {
+      "description": "Sort a file in descending order:",
+      "syntax": "sort --reverse {{path/to/file}}"
+    },
+    {
+      "description": "Sort a file in case-insensitive way:",
+      "syntax": "sort --ignore-case {{path/to/file}}"
+    },
+    {
+      "description": "Sort a file using numeric rather than alphabetic order:",
+      "syntax": "sort --numeric-sort {{path/to/file}}"
+    },
+    {
+      "description": "Sort /etc/passwd by the 3rd field of each line numerically, using \":\" as a field separator:",
+      "syntax": "sort --field-separator={{:}} --key={{3n}} {{/etc/passwd}}"
+    },
+    {
+      "description": "As above, but when items in the 3rd field are equal, sort by the 4th field by numbers with exponents:",
+      "syntax": "sort -t {{:}} -k {{3,3n}} -k {{4,4g}} {{/etc/passwd}}"
+    },
+    {
+      "description": "Sort a file preserving only unique lines:",
+      "syntax": "sort --unique {{path/to/file}}"
+    },
+    {
+      "description": "Sort a file, printing the output to the specified output file (can be used to sort a file in-place):",
+      "syntax": "sort --output={{path/to/file}} {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "ddgr",
+  "description": "Search DuckDuckGo (HTML version) from the terminal. More information: https://github.com/jarun/ddgr.",
+  "useCases": [
+    {
+      "description": "Start in interactive mode:",
+      "syntax": "ddgr"
+    },
+    {
+      "description": "Search DuckDuckGo for a keyword:",
+      "syntax": "ddgr {{keyword}}"
+    },
+    {
+      "description": "Limit the number of search results to N:",
+      "syntax": "ddgr -n {{N}} {{keyword}}"
+    },
+    {
+      "description": "Display the complete URL in search results:",
+      "syntax": "ddgr -x {{keyword}}"
+    },
+    {
+      "description": "Search DuckDuckGo for a keyword and open the first result in the browser:",
+      "syntax": "ddgr !w {{keyword}}"
+    },
+    {
+      "description": "Perform a website-specific search:",
+      "syntax": "ddgr -w {{site}} {{keyword}}"
+    },
+    {
+      "description": "Search for a specific file type:",
+      "syntax": "ddgr {{keyword}} filetype:{{filetype}}"
+    },
+    {
+      "description": "Display help in interactive mode:",
+      "syntax": "?"
+    }
+  ]
+}

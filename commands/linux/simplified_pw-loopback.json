@@ -1,0 +1,30 @@
+{
+  "command": "pw-loopback",
+  "description": "Create loopback devices in PipeWire. More information: https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Virtual-Devices.",
+  "useCases": [
+    {
+      "description": "Create a loopback device with the default loopback behavior:",
+      "syntax": "pw-loopback"
+    },
+    {
+      "description": "Create a loopback device that automatically connects to the speakers:",
+      "syntax": "pw-loopback -m '{{[FL FR]}}' --capture-props='{{media.class=Audio/Sink}}'"
+    },
+    {
+      "description": "Create a loopback device that automatically connects to the microphone:",
+      "syntax": "pw-loopback -m '{{[FL FR]}}' --playback-props='{{media.class=Audio/Source}}'"
+    },
+    {
+      "description": "Create a dummy loopback device that doesn't automatically connect to anything:",
+      "syntax": "pw-loopback -m '{{[FL FR]}}' --capture-props='{{media.class=Audio/Sink}}' --playback-props='{{media.class=Audio/Source}}'"
+    },
+    {
+      "description": "Create a loopback device that automatically connects to the speakers and swaps the left and right channels between the sink and source:",
+      "syntax": "pw-loopback --capture-props='{{media.class=Audio/Sink audio.position=[FL FR]}}' --playback-props='{{audio.position=[FR FL]}}'"
+    },
+    {
+      "description": "Create a loopback device that automatically connects to the microphone and swaps the left and right channels between the sink and source:",
+      "syntax": "pw-loopback --capture-props='{{audio.position=[FR FL]}}' --playback-props='{{media.class=Audio/Source audio.position=[FL FR]}}'"
+    }
+  ]
+}

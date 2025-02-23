@@ -1,0 +1,34 @@
+{
+  "command": "monodis",
+  "description": "The Mono Common Intermediate Language (CIL) disassembler. More information: https://www.mono-project.com/docs/tools+libraries/tools/monodis/.",
+  "useCases": [
+    {
+      "description": "Disassemble an assembly to textual CIL:",
+      "syntax": "monodis {{path/to/assembly.exe}}"
+    },
+    {
+      "description": "Save the output to a file:",
+      "syntax": "monodis --output={{path/to/output.il}} {{path/to/assembly.exe}}"
+    },
+    {
+      "description": "Show information about an assembly:",
+      "syntax": "monodis --assembly {{path/to/assembly.dll}}"
+    },
+    {
+      "description": "List the references of an assembly:",
+      "syntax": "monodis --assemblyref {{path/to/assembly.exe}}"
+    },
+    {
+      "description": "List all the methods in an assembly:",
+      "syntax": "monodis --method {{path/to/assembly.exe}}"
+    },
+    {
+      "description": "List resources embedded within an assembly:",
+      "syntax": "monodis --manifest {{path/to/assembly.dll}}"
+    },
+    {
+      "description": "Extract all the embedded resources to the current directory:",
+      "syntax": "monodis --mresources {{path/to/assembly.dll}}"
+    }
+  ]
+}

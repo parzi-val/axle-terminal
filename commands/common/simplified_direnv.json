@@ -1,0 +1,26 @@
+{
+  "command": "direnv",
+  "description": "Shell extension to load and unload environment variables depending on the current directory. More information: https://github.com/direnv/direnv.",
+  "useCases": [
+    {
+      "description": "Grant direnv permission to load the .envrc present in the current directory:",
+      "syntax": "direnv allow {{.}}"
+    },
+    {
+      "description": "Revoke the authorization to load the .envrc present in the current directory:",
+      "syntax": "direnv deny {{.}}"
+    },
+    {
+      "description": "Edit the .envrc file in the default text editor and reload the environment on exit:",
+      "syntax": "direnv edit {{.}}"
+    },
+    {
+      "description": "Trigger a reload of the environment:",
+      "syntax": "direnv reload"
+    },
+    {
+      "description": "Print some debug status information:",
+      "syntax": "direnv status"
+    }
+  ]
+}

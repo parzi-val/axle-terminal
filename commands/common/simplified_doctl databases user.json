@@ -1,0 +1,34 @@
+{
+  "command": "doctl databases user",
+  "description": "View details for, and create, database users. More information: https://docs.digitalocean.com/reference/doctl/reference/databases/user.",
+  "useCases": [
+    {
+      "description": "Run a doctl databases user command with an access token:",
+      "syntax": "doctl databases user {{command}} --access-token {{access_token}}"
+    },
+    {
+      "description": "Retrieve details about a database user:",
+      "syntax": "doctl databases user get {{database_id}} {{user_name}}"
+    },
+    {
+      "description": "Retrieve a list of database users for a given database:",
+      "syntax": "doctl databases user list {{database_id}}"
+    },
+    {
+      "description": "Reset the auth password for a given user:",
+      "syntax": "doctl databases user reset {{database id}} {{user_name}}"
+    },
+    {
+      "description": "Reset the MySQL auth plugn for a given user:",
+      "syntax": "doctl databases user reset {{database_id}} {{user_name}} {{caching_sha2_password|mysql_native_password}}"
+    },
+    {
+      "description": "Create a user in the given database with a given username:",
+      "syntax": "doctl databases user create {{database_id}} {{user_name}}"
+    },
+    {
+      "description": "Delete a user from the given database with the given username:",
+      "syntax": "doctl databases user delete {{database_id}} {{user_name}}"
+    }
+  ]
+}

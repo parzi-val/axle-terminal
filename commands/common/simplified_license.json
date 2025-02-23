@@ -1,0 +1,22 @@
+{
+  "command": "license",
+  "description": "Create license files for open-source projects. More information: https://nishanths.github.io/license.",
+  "useCases": [
+    {
+      "description": "Print a license to stdout, using the defaults (auto-detected author name, and current year):",
+      "syntax": "license {{license_name}}"
+    },
+    {
+      "description": "Generate a license and save it to a file:",
+      "syntax": "license -o {{path/to/file}} {{license_name}}"
+    },
+    {
+      "description": "List all available licenses:",
+      "syntax": "license ls"
+    },
+    {
+      "description": "Generate a license with custom author name and year:",
+      "syntax": "license --name {{author}} --year {{release_year}} {{license_name}}"
+    }
+  ]
+}

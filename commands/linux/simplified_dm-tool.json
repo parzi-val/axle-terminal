@@ -1,0 +1,22 @@
+{
+  "command": "dm-tool",
+  "description": "A tool to communicate with the display manager. More information: https://manned.org/dm-tool.",
+  "useCases": [
+    {
+      "description": "Show the greeter while keeping current desktop session open and waiting to be restored upon authentication by logged in user:",
+      "syntax": "dm-tool switch-to-greeter"
+    },
+    {
+      "description": "Lock the current session:",
+      "syntax": "dm-tool lock"
+    },
+    {
+      "description": "Switch to a specific user, showing an authentication prompt if required:",
+      "syntax": "dm-tool switch-to-user {{username}} {{session}}"
+    },
+    {
+      "description": "Add a dynamic seat from within a running LightDM session:",
+      "syntax": "dm-tool add-seat {{xlocal}} {{name}}={{value}}"
+    }
+  ]
+}

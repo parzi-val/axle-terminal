@@ -1,0 +1,18 @@
+{
+  "command": "numfmt",
+  "description": "Convert numbers to and from human-readable strings. More information: https://www.gnu.org/software/coreutils/manual/html_node/numfmt-invocation.html.",
+  "useCases": [
+    {
+      "description": "Convert 1.5K (SI Units) to 1500:",
+      "syntax": "numfmt --from=si 1.5K"
+    },
+    {
+      "description": "Convert 5th field (1-indexed) to IEC Units without converting header:",
+      "syntax": "ls -l | numfmt --header=1 --field=5 --to=iec"
+    },
+    {
+      "description": "Convert to IEC units, pad with 5 characters, left aligned:",
+      "syntax": "du -s * | numfmt --to=iec --format=&quot;%-5f&quot;"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "osv-scanner",
+  "description": "Scan various mediums for dependencies and matches them against the OSV database. More information: https://osv.dev/about.",
+  "useCases": [
+    {
+      "description": "Scan a Docker image:",
+      "syntax": "osv-scanner -D {{docker_image_name}}"
+    },
+    {
+      "description": "Scan a package lockfile:",
+      "syntax": "osv-scanner -L {{path/to/lockfile}}"
+    },
+    {
+      "description": "Scan an SBOM file:",
+      "syntax": "osv-scanner -S {{path/to/sbom_file}}"
+    },
+    {
+      "description": "Scan multiple directories recursively:",
+      "syntax": "osv-scanner -r {{directory1 directory2 ...}}"
+    },
+    {
+      "description": "Skip scanning Git repositories:",
+      "syntax": "osv-scanner --skip-git {{-r|-D}} {{target}}"
+    },
+    {
+      "description": "Output result in JSON format:",
+      "syntax": "osv-scanner --json {{-D|-L|-S|-r}} {{target}}"
+    }
+  ]
+}

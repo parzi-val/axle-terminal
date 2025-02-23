@@ -1,0 +1,22 @@
+{
+  "command": "chars",
+  "description": "Display names and codes for various ASCII and Unicode characters and code points. More information: https://github.com/antifuchs/chars.",
+  "useCases": [
+    {
+      "description": "Look up a character by its value:",
+      "syntax": "chars '{{ß}}'"
+    },
+    {
+      "description": "Look up a character by its Unicode code point:",
+      "syntax": "chars {{U+1F63C}}"
+    },
+    {
+      "description": "Look up possible characters given an ambiguous code point:",
+      "syntax": "chars {{10}}"
+    },
+    {
+      "description": "Look up a control character:",
+      "syntax": "chars &quot;{{^C}}&quot;"
+    }
+  ]
+}

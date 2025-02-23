@@ -1,0 +1,22 @@
+{
+  "command": "pnmalias",
+  "description": "Apply antialiasing onto a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmalias.html.",
+  "useCases": [
+    {
+      "description": "Perform antialiasing on a PNM image, taking black pixels as background and white pixels as foreground:",
+      "syntax": "pnmalias {{path/to/input.pnm}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Explicitly specify the background and foreground color:",
+      "syntax": "pnmalias -bcolor {{background_color}} -fcolor {{foreground_color}} {{path/to/input.pnm}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Apply altialiasing to foreground pixels only:",
+      "syntax": "pnmalias -fonly {{path/to/input.pnm}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Apply antialiasing to all surrounding pixels of background pixels:",
+      "syntax": "pnmalias -balias {{path/to/input.pnm}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

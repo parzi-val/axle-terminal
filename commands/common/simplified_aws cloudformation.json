@@ -1,0 +1,34 @@
+{
+  "command": "aws cloudformation",
+  "description": "Model, provision, and manage AWS and third-party resources by treating infrastructure as code. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/index.html.",
+  "useCases": [
+    {
+      "description": "Create a stack from a template file:",
+      "syntax": "aws cloudformation create-stack --stack-name {{stack-name}} --region {{region}} --template-body {{file://path/to/file.yml}} --profile {{profile}}"
+    },
+    {
+      "description": "Delete a stack:",
+      "syntax": "aws cloudformation delete-stack --stack-name {{stack-name}} --profile {{profile}}"
+    },
+    {
+      "description": "List all stacks:",
+      "syntax": "aws cloudformation list-stacks --profile {{profile}}"
+    },
+    {
+      "description": "List all running stacks:",
+      "syntax": "aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE --profile {{profile}}"
+    },
+    {
+      "description": "Check the status of a stack:",
+      "syntax": "aws cloudformation describe-stacks --stack-name {{stack-id}} --profile {{profile}}"
+    },
+    {
+      "description": "Initiate drift detection for a stack:",
+      "syntax": "aws cloudformation detect-stack-drift --stack-name {{stack-id}} --profile {{profile}}"
+    },
+    {
+      "description": "Check the drift status output of a stack using 'StackDriftDetectionId' from the previous command output:",
+      "syntax": "aws cloudformation describe-stack-resource-drifts --stack-name {{stack-drift-detection-id}} --profile {{profile}}"
+    }
+  ]
+}

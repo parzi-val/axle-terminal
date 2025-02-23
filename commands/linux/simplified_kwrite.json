@@ -1,0 +1,22 @@
+{
+  "command": "kwrite",
+  "description": "Text editor of the KDE Desktop project. See also kate. More information: https://apps.kde.org/kwrite/.",
+  "useCases": [
+    {
+      "description": "Open a text file:",
+      "syntax": "kwrite {{path/to/file}}"
+    },
+    {
+      "description": "Open multiple text files:",
+      "syntax": "kwrite {{file1 file2 ...}}"
+    },
+    {
+      "description": "Open a text file with a specific encoding:",
+      "syntax": "kwrite --encoding={{UTF-8}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a text file and navigate to a specific line and column:",
+      "syntax": "kwrite --line {{line_number}} --column {{column_number}} {{path/to/file}}"
+    }
+  ]
+}

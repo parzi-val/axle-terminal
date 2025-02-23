@@ -1,0 +1,18 @@
+{
+  "command": "caller",
+  "description": "Print function context. More information: https://www.gnu.org/software/bash/manual/bash.html#index-caller.",
+  "useCases": [
+    {
+      "description": "Print the line and filename where the current function was called:",
+      "syntax": "caller"
+    },
+    {
+      "description": "Print the line, function and filename where the current function was called:",
+      "syntax": "caller 0"
+    },
+    {
+      "description": "Print the line, the function name and the filename of a function call n frames back:",
+      "syntax": "caller {{n}}"
+    }
+  ]
+}

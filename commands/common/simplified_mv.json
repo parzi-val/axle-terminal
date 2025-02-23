@@ -1,0 +1,38 @@
+{
+  "command": "mv",
+  "description": "Move or rename files and directories. More information: https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html.",
+  "useCases": [
+    {
+      "description": "Rename a file or directory when the target is not an existing directory:",
+      "syntax": "mv {{path/to/source}} {{path/to/target}}"
+    },
+    {
+      "description": "Move a file or directory into an existing directory:",
+      "syntax": "mv {{path/to/source}} {{path/to/existing_directory}}"
+    },
+    {
+      "description": "Move multiple files into an existing directory, keeping the filenames unchanged:",
+      "syntax": "mv {{path/to/source1 path/to/source2 ...}} {{path/to/existing_directory}}"
+    },
+    {
+      "description": "Do not prompt ([f]) for confirmation before overwriting existing files:",
+      "syntax": "mv --force {{path/to/source}} {{path/to/target}}"
+    },
+    {
+      "description": "Prompt for confirmation [i]nteractively before overwriting existing files, regardless of file permissions:",
+      "syntax": "mv --interactive {{path/to/source}} {{path/to/target}}"
+    },
+    {
+      "description": "Do not overwrite ([n]) existing files at the target:",
+      "syntax": "mv --no-clobber {{path/to/source}} {{path/to/target}}"
+    },
+    {
+      "description": "Move files in [v]erbose mode, showing files after they are moved:",
+      "syntax": "mv --verbose {{path/to/source}} {{path/to/target}}"
+    },
+    {
+      "description": "Specify [t]arget directory so that you can use external tools to gather movable files:",
+      "syntax": "{{find /var/log -type f -name '*.log' -print0}} | {{xargs -0}} mv --target-directory {{path/to/target_directory}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "mokutil",
+  "description": "Configure Secure Boot Machine Owner Keys (MOK). Some operations, such as enabling and disabling Secure Boot or enrolling keys require a reboot. More information: https://github.com/lcp/mokutil.",
+  "useCases": [
+    {
+      "description": "Show if Secure Boot is enabled:",
+      "syntax": "mokutil --sb-state"
+    },
+    {
+      "description": "Enable Secure Boot:",
+      "syntax": "mokutil --enable-validation"
+    },
+    {
+      "description": "Disable Secure Boot:",
+      "syntax": "mokutil --disable-validation"
+    },
+    {
+      "description": "List enrolled keys:",
+      "syntax": "mokutil --list-enrolled"
+    },
+    {
+      "description": "Enroll a new key:",
+      "syntax": "mokutil --import {{path/to/key.der}}"
+    },
+    {
+      "description": "List the keys to be enrolled:",
+      "syntax": "mokutil --list-new"
+    },
+    {
+      "description": "Set shim verbosity:",
+      "syntax": "mokutil --set-verbosity true"
+    }
+  ]
+}

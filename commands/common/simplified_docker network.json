@@ -1,0 +1,34 @@
+{
+  "command": "docker network",
+  "description": "Create and manage Docker networks. More information: https://docs.docker.com/reference/cli/docker/network/.",
+  "useCases": [
+    {
+      "description": "List all available and configured networks on Docker daemon:",
+      "syntax": "docker network ls"
+    },
+    {
+      "description": "Create a user-defined network:",
+      "syntax": "docker network create --driver {{driver_name}} {{network_name}}"
+    },
+    {
+      "description": "Display detailed information about one or more networks:",
+      "syntax": "docker network inspect {{network_name1 network_name2 ...}}"
+    },
+    {
+      "description": "Connect a container to a network using a name or ID:",
+      "syntax": "docker network connect {{network_name}} {{container_name|ID}}"
+    },
+    {
+      "description": "Disconnect a container from a network:",
+      "syntax": "docker network disconnect {{network_name}} {{container_name|ID}}"
+    },
+    {
+      "description": "Remove all unused (not referenced by any container) networks:",
+      "syntax": "docker network prune"
+    },
+    {
+      "description": "Remove one or more unused networks:",
+      "syntax": "docker network rm {{network_name1 network_name2 ...}}"
+    }
+  ]
+}

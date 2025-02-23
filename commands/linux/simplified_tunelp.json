@@ -1,0 +1,26 @@
+{
+  "command": "tunelp",
+  "description": "Set various parameters for parallel port devices for troubleshooting or for better performance. Part of util-linux. More information: https://manned.org/tunelp.",
+  "useCases": [
+    {
+      "description": "Check the [s]tatus of a parallel port device:",
+      "syntax": "tunelp --status {{/dev/lp0}}"
+    },
+    {
+      "description": "[r]eset a given parallel port:",
+      "syntax": "tunelp --reset {{/dev/lp0}}"
+    },
+    {
+      "description": "Use a given [i]RQ for a device, each one representing an interrupt line:",
+      "syntax": "tunelp -i 5 {{/dev/lp0}}"
+    },
+    {
+      "description": "Try a given number of times to output a [c]haracter to the printer before sleeping for a given [t]ime:",
+      "syntax": "tunelp --chars {{times}} --time {{time_in_centiseconds}} {{/dev/lp0}}"
+    },
+    {
+      "description": "Enable or disable [a]borting on error (disabled by default):",
+      "syntax": "tunelp --abort {{on|off}}"
+    }
+  ]
+}

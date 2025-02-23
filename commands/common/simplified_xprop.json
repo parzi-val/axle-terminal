@@ -1,0 +1,22 @@
+{
+  "command": "xprop",
+  "description": "Display window and font properties in an X server. More information: https://manned.org/xprop.",
+  "useCases": [
+    {
+      "description": "Display the name of the root window:",
+      "syntax": "xprop -root WM_NAME"
+    },
+    {
+      "description": "Display the window manager hints for a window:",
+      "syntax": "xprop -name &quot;{{window_name}}&quot; WM_HINTS"
+    },
+    {
+      "description": "Display the point size of a font:",
+      "syntax": "xprop -font &quot;{{font_name}}&quot; POINT_SIZE"
+    },
+    {
+      "description": "Display all the properties of the window with the ID 0x200007:",
+      "syntax": "xprop -id {{0x200007}}"
+    }
+  ]
+}

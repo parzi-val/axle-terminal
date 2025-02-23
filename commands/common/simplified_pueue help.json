@@ -1,0 +1,14 @@
+{
+  "command": "pueue help",
+  "description": "Display help for subcommands. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Show all available subcommands and flags:",
+      "syntax": "pueue help"
+    },
+    {
+      "description": "Display help for a specific subcommand:",
+      "syntax": "pueue help {{subcommand}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "d2",
+  "description": "A modern diagram scripting language that turns text to diagrams. Note: the output file supports SVG and PNG file formats. More information: https://d2lang.com/tour/man.",
+  "useCases": [
+    {
+      "description": "Compile and render a D2 source file into an output file:",
+      "syntax": "d2 {{path/to/input_file.d2}} {{path/to/output_file.ext}}"
+    },
+    {
+      "description": "[w]atch live changes made to a D2 source file in the default web browser:",
+      "syntax": "d2 --watch {{path/to/input_file.d2}} {{path/to/output_file.ext}}"
+    },
+    {
+      "description": "Format a D2 source file:",
+      "syntax": "d2 fmt {{path/to/input_file.d2}}"
+    },
+    {
+      "description": "List available themes:",
+      "syntax": "d2 themes"
+    },
+    {
+      "description": "Use a different [t]heme for the output file (list available themes first to get the desired theme_id):",
+      "syntax": "d2 --theme {{theme_id}} {{path/to/input_file.d2}} {{path/to/output_file.ext}}"
+    },
+    {
+      "description": "Make rendered diagrams look like hand [s]ketches:",
+      "syntax": "d2 --sketch true {{path/to/input_file.d2}} {{path/to/output_file.ext}}"
+    }
+  ]
+}

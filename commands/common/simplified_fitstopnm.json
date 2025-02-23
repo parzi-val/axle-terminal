@@ -1,0 +1,14 @@
+{
+  "command": "fitstopnm",
+  "description": "Convert a Flexible Image Transport System (FITS) file to a PNM image. See also: pamtofits. More information: https://netpbm.sourceforge.net/doc/fitstopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a FITS file to a PNM image:",
+      "syntax": "fitstopnm {{path/to/file.fits}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Convert the image on the specified position of the third axis in the FITS file:",
+      "syntax": "fitstopnm -image {{z_position}} {{path/to/file.fits}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

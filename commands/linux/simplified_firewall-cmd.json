@@ -1,0 +1,38 @@
+{
+  "command": "firewall-cmd",
+  "description": "The firewalld command-line client. View and adapt the runtime or permanent firewall configuration state. More information: https://firewalld.org/documentation/man-pages/firewall-cmd.",
+  "useCases": [
+    {
+      "description": "View all available firewall zones and rules in their runtime configuration state:",
+      "syntax": "firewall-cmd --list-all-zones"
+    },
+    {
+      "description": "Permanently move the interface into the block zone, effectively blocking all communication:",
+      "syntax": "firewall-cmd --permanent --zone={{block}} --change-interface={{enp1s0}}"
+    },
+    {
+      "description": "Permanently open the port for a service in the specified zone (like port 443 when in the public zone):",
+      "syntax": "firewall-cmd --permanent --zone={{public}} --add-service={{https}}"
+    },
+    {
+      "description": "Permanently close the port for a service in the specified zone (like port 80 when in the public zone):",
+      "syntax": "firewall-cmd --permanent --zone={{public}} --remove-service={{http}}"
+    },
+    {
+      "description": "Permanently forward a port for incoming packets in the specified zone (like port 443 to 8443 when entering the public zone):",
+      "syntax": "firewall-cmd --permanent --zone={{public}} --add-rich-rule='rule family=&quot;{{ipv4|ipv6}}&quot; forward-port port=&quot;{{443}}&quot; protocol=&quot;{{udp|tcp}}&quot; to-port=&quot;{{8443}}&quot;'"
+    },
+    {
+      "description": "Reload firewalld to lose any runtime changes and force the permanent configuration to take effect immediately:",
+      "syntax": "firewall-cmd --reload"
+    },
+    {
+      "description": "Save the runtime configuration state to the permanent configuration:",
+      "syntax": "firewall-cmd --runtime-to-permanent"
+    },
+    {
+      "description": "Enable panic mode in case of Emergency. All traffic is dropped, any active connection will be terminated:",
+      "syntax": "firewall-cmd --panic-on"
+    }
+  ]
+}

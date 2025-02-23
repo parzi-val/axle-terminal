@@ -1,0 +1,14 @@
+{
+  "command": "sphinx-build",
+  "description": "Sphinx documentation generator. More information: https://www.sphinx-doc.org/en/master/man/sphinx-build.html.",
+  "useCases": [
+    {
+      "description": "Build documentation:",
+      "syntax": "sphinx-build -b {{html|epub|text|latex|man|...}} {{path/to/source_dir}} {{path/to/build_dir}}"
+    },
+    {
+      "description": "Build documentations intended for readthedocs.io (requires the sphinx-rtd-theme pip package):",
+      "syntax": "sphinx-build -b {{html}} {{path/to/docs_dir}} {{path/to/build_dir}}"
+    }
+  ]
+}

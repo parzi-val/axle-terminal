@@ -1,0 +1,30 @@
+{
+  "command": "Less than",
+  "description": "Redirect data to stdin. More information: https://gnu.org/software/bash/manual/bash.html#Redirecting-Input.",
+  "useCases": [
+    {
+      "description": "Redirect a file to stdin (achieves the same effect as cat file.txt |):",
+      "syntax": "{{command}} &lt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Create a here document and pass that into stdin (requires a multiline command):",
+      "syntax": "{{command}} &lt;&lt; {{EOF}} &lt;Enter&gt; {{multiline_data}} &lt;Enter&gt; {{EOF}}"
+    },
+    {
+      "description": "Create a here string and pass that into stdin (achieves the same effect as echo string |):",
+      "syntax": "{{command}} &lt;&lt;&lt; {{string}}"
+    },
+    {
+      "description": "Process data from a file and write the output to another file:",
+      "syntax": "{{command}} &lt; {{path/to/file.txt}} &gt; {{path/to/file2.txt}}"
+    },
+    {
+      "description": "Write a here document into a file:",
+      "syntax": "cat &lt;&lt; {{EOF}} &gt; {{path/to/file.txt}} &lt;Enter&gt; {{multiline_data}} &lt;Enter&gt; {{EOF}}"
+    },
+    {
+      "description": "Disregard leading tabs (good for scripts with indentation but does not work for spaces):",
+      "syntax": "cat &lt;&lt;- {{EOF}} &gt; {{path/to/file.txt}} &lt;Enter&gt; {{multiline_data}} &lt;Enter&gt; {{EOF}}"
+    }
+  ]
+}

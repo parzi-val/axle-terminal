@@ -1,0 +1,34 @@
+{
+  "command": "btrfs balance",
+  "description": "Balance block groups on a btrfs filesystem. More information: https://btrfs.readthedocs.io/en/latest/btrfs-balance.html.",
+  "useCases": [
+    {
+      "description": "Show the status of a running or paused balance operation:",
+      "syntax": "sudo btrfs balance status {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Balance all block groups (slow; rewrites all blocks in filesystem):",
+      "syntax": "sudo btrfs balance start {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Balance data block groups which are less than 15% utilized, running the operation in the background:",
+      "syntax": "sudo btrfs balance start --bg -dusage={{15}} {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Balance a max of 10 metadata chunks with less than 20% utilization and at least 1 chunk on a given device devid (see btrfs filesystem show):",
+      "syntax": "sudo btrfs balance start -musage={{20}},limit={{10}},devid={{devid}} {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Convert data blocks to the raid6 and metadata to raid1c3 (see mkfs.btrfs(8) for profiles):",
+      "syntax": "sudo btrfs balance start -dconvert={{raid6}} -mconvert={{raid1c3}} {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Convert data blocks to raid1, skipping already converted chunks (e.g. after a previous cancelled conversion operation):",
+      "syntax": "sudo btrfs balance start -dconvert={{raid1}},soft {{path/to/btrfs_filesystem}}"
+    },
+    {
+      "description": "Cancel, pause, or resume a running or paused balance operation:",
+      "syntax": "sudo btrfs balance {{cancel|pause|resume}} {{path/to/btrfs_filesystem}}"
+    }
+  ]
+}

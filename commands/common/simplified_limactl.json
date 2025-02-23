@@ -1,0 +1,34 @@
+{
+  "command": "limactl",
+  "description": "Virtual machine manager for Linux guests, with multiple VM templates available. Can be used to run containers on macOS, but also for generic virtual machine use cases on macOS and Linux hosts. More information: https://github.com/lima-vm/lima.",
+  "useCases": [
+    {
+      "description": "List VMs:",
+      "syntax": "limactl list"
+    },
+    {
+      "description": "Create a VM using the default settings and optionally provide a name and/or a template (see limactl create --list-templates for available templates):",
+      "syntax": "limactl create --name {{vm_name}} template://{{debian|fedora|ubuntu|…}}"
+    },
+    {
+      "description": "Start a VM (this might install some dependencies in it and take a few minutes):",
+      "syntax": "limactl start {{vm_name}}"
+    },
+    {
+      "description": "Open a remote shell inside a VM:",
+      "syntax": "limactl shell {{vm_name}}"
+    },
+    {
+      "description": "Run a command inside a VM:",
+      "syntax": "limactl shell {{vm_name}} {{command}}"
+    },
+    {
+      "description": "Stop/shutdown a VM:",
+      "syntax": "limactl stop {{vm_name}}"
+    },
+    {
+      "description": "Delete a VM:",
+      "syntax": "limactl remove {{vm_name}}"
+    }
+  ]
+}

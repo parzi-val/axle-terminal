@@ -1,0 +1,30 @@
+{
+  "command": "lxc network",
+  "description": "Manage networks for LXD containers. More information: https://linuxcontainers.org/lxd/docs/master/networks.",
+  "useCases": [
+    {
+      "description": "List all available networks:",
+      "syntax": "lxc network list"
+    },
+    {
+      "description": "Show the configuration of a specific network:",
+      "syntax": "lxc network show {{network_name}}"
+    },
+    {
+      "description": "Add a running instance to a specific network:",
+      "syntax": "lxc network attach {{network_name}} {{container_name}}"
+    },
+    {
+      "description": "Create a new managed network:",
+      "syntax": "lxc network create {{network_name}}"
+    },
+    {
+      "description": "Set a bridge interface of a specific network:",
+      "syntax": "lxc network set {{network_name}} bridge.external_interfaces {{eth0}}"
+    },
+    {
+      "description": "Disable NAT for a specific network:",
+      "syntax": "lxc network set {{network_name}} ipv{{4}}.nat false"
+    }
+  ]
+}

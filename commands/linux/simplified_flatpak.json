@@ -1,0 +1,38 @@
+{
+  "command": "flatpak",
+  "description": "Build, install and run flatpak applications and runtimes. More information: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak.",
+  "useCases": [
+    {
+      "description": "Run an installed application:",
+      "syntax": "flatpak run {{com.example.app}}"
+    },
+    {
+      "description": "Install an application from a remote source:",
+      "syntax": "flatpak install {{remote_name}} {{com.example.app}}"
+    },
+    {
+      "description": "List installed applications, ignoring runtimes:",
+      "syntax": "flatpak list --app"
+    },
+    {
+      "description": "Update all installed applications and runtimes:",
+      "syntax": "flatpak update"
+    },
+    {
+      "description": "Add a remote source:",
+      "syntax": "flatpak remote-add --if-not-exists {{remote_name}} {{remote_url}}"
+    },
+    {
+      "description": "Remove an installed application:",
+      "syntax": "flatpak remove {{com.example.app}}"
+    },
+    {
+      "description": "Remove all unused applications:",
+      "syntax": "flatpak remove --unused"
+    },
+    {
+      "description": "Show information about an installed application:",
+      "syntax": "flatpak info {{com.example.app}}"
+    }
+  ]
+}

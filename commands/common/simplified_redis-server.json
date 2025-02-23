@@ -1,0 +1,26 @@
+{
+  "command": "redis-server",
+  "description": "Persistent key-value database. More information: https://redis.io.",
+  "useCases": [
+    {
+      "description": "Start Redis server, using the default port (6379), and write logs to stdout:",
+      "syntax": "redis-server"
+    },
+    {
+      "description": "Start Redis server, using the default port, as a background process:",
+      "syntax": "redis-server --daemonize yes"
+    },
+    {
+      "description": "Start Redis server, using the specified port, as a background process:",
+      "syntax": "redis-server --port {{port}} --daemonize yes"
+    },
+    {
+      "description": "Start Redis server with a custom configuration file:",
+      "syntax": "redis-server {{path/to/redis.conf}}"
+    },
+    {
+      "description": "Start Redis server with verbose logging:",
+      "syntax": "redis-server --loglevel {{warning|notice|verbose|debug}}"
+    }
+  ]
+}

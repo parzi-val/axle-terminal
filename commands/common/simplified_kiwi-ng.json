@@ -1,0 +1,22 @@
+{
+  "command": "kiwi-ng",
+  "description": "An OS image and appliance builder. More information: https://osinside.github.io/kiwi/.",
+  "useCases": [
+    {
+      "description": "Build an appliance:",
+      "syntax": "kiwi-ng system build --description={{path/to/directory}} --target-dir={{path/to/directory}}"
+    },
+    {
+      "description": "Show build result of built appliance:",
+      "syntax": "kiwi-ng result list --target-dir={{path/to/directory}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "kiwi-ng help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "kiwi-ng -v"
+    }
+  ]
+}

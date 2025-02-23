@@ -1,0 +1,34 @@
+{
+  "command": "bundletool dump",
+  "description": "Manipulate Android Application Bundles. More information: https://developer.android.com/tools/bundletool.",
+  "useCases": [
+    {
+      "description": "Display the AndroidManifest.xml of the base module:",
+      "syntax": "bundletool dump manifest --bundle {{path/to/bundle.aab}}"
+    },
+    {
+      "description": "Display a specific value from the AndroidManifest.xml using XPath:",
+      "syntax": "bundletool dump manifest --bundle {{path/to/bundle.aab}} --xpath {{/manifest/@android:versionCode}}"
+    },
+    {
+      "description": "Display the AndroidManifest.xml of a specific module:",
+      "syntax": "bundletool dump manifest --bundle {{path/to/bundle.aab}} --module {{name}}"
+    },
+    {
+      "description": "Display all the resources in the application bundle:",
+      "syntax": "bundletool dump resources --bundle {{path/to/bundle.aab}}"
+    },
+    {
+      "description": "Display the configuration for a specific resource:",
+      "syntax": "bundletool dump resources --bundle {{path/to/bundle.aab}} --resource {{type/name}}"
+    },
+    {
+      "description": "Display the configuration and values for a specific resource using the ID:",
+      "syntax": "bundletool dump resources --bundle {{path/to/bundle.aab}} --resource {{0x7f0e013a}} --values"
+    },
+    {
+      "description": "Display the contents of the bundle configuration file:",
+      "syntax": "bundletool dump config --bundle {{path/to/bundle.aab}}"
+    }
+  ]
+}

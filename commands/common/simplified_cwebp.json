@@ -1,0 +1,26 @@
+{
+  "command": "cwebp",
+  "description": "Compress an image file to a WebP file. More information: https://developers.google.com/speed/webp/docs/cwebp.",
+  "useCases": [
+    {
+      "description": "Compress a WebP file with default settings (q = 75) to the [o]utput file:",
+      "syntax": "cwebp {{path/to/image_file}} -o {{path/to/output.webp}}"
+    },
+    {
+      "description": "Compress a WebP file with the best [q]uality and largest file size:",
+      "syntax": "cwebp {{path/to/image_file}} -o {{path/to/output.webp}} -q {{100}}"
+    },
+    {
+      "description": "Compress a WebP file with the worst [q]uality and smallest file size:",
+      "syntax": "cwebp {{path/to/image_file}} -o {{path/to/output.webp}} -q {{0}}"
+    },
+    {
+      "description": "Compress a WebP file and apply resize to image:",
+      "syntax": "cwebp {{path/to/image_file}} -o {{path/to/output.webp}} -resize {{width}} {{height}}"
+    },
+    {
+      "description": "Compress a WebP file and drop alpha channel information:",
+      "syntax": "cwebp {{path/to/image_file}} -o {{path/to/output.webp}} -noalpha"
+    }
+  ]
+}

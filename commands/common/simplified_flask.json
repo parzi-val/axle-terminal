@@ -1,0 +1,18 @@
+{
+  "command": "flask",
+  "description": "A general utility script for Flask applications. Loads the application defined in the FLASK_APP environment variable. More information: https://flask.palletsprojects.com/en/1.1.x/cli/.",
+  "useCases": [
+    {
+      "description": "Run a development server:",
+      "syntax": "flask run"
+    },
+    {
+      "description": "Show the routes for the app:",
+      "syntax": "flask routes"
+    },
+    {
+      "description": "Run a Python interactive shell in the app's context:",
+      "syntax": "flask shell"
+    }
+  ]
+}

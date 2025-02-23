@@ -1,0 +1,34 @@
+{
+  "command": "lpr",
+  "description": "Print files. See also: lpstat and lpadmin. More information: https://openprinting.github.io/cups/doc/man-lpr.html.",
+  "useCases": [
+    {
+      "description": "Print a file to the default printer:",
+      "syntax": "lpr {{path/to/file}}"
+    },
+    {
+      "description": "Print 2 copies:",
+      "syntax": "lpr -# {{2}} {{path/to/file}}"
+    },
+    {
+      "description": "Print to a named printer:",
+      "syntax": "lpr -P {{printer}} {{path/to/file}}"
+    },
+    {
+      "description": "Print either a single page (e.g. 2) or a range of pages (e.g. 2-16):",
+      "syntax": "lpr -o page-ranges={{2|2-16}} {{path/to/file}}"
+    },
+    {
+      "description": "Print double-sided either in portrait (long) or in landscape (short):",
+      "syntax": "lpr -o sides={{two-sided-long-edge|two-sided-short-edge}} {{path/to/file}}"
+    },
+    {
+      "description": "Set page size (more options may be available depending on setup):",
+      "syntax": "lpr -o media={{a4|letter|legal}} {{path/to/file}}"
+    },
+    {
+      "description": "Print multiple pages per sheet:",
+      "syntax": "lpr -o number-up={{2|4|6|9|16}} {{path/to/file}}"
+    }
+  ]
+}

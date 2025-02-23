@@ -1,0 +1,34 @@
+{
+  "command": "strace",
+  "description": "Troubleshooting tool for tracing system calls. More information: https://manned.org/strace.",
+  "useCases": [
+    {
+      "description": "Start tracing a specific [p]rocess by its PID:",
+      "syntax": "strace -p {{pid}}"
+    },
+    {
+      "description": "Trace a [p]rocess and filt[e]r output by system call:",
+      "syntax": "strace -p {{pid}} -e {{system_call,system_call2,...}}"
+    },
+    {
+      "description": "Count time, calls, and errors for each system call and report a summary on program exit:",
+      "syntax": "strace -p {{pid}} -c"
+    },
+    {
+      "description": "Show the [T]ime spent in every system call and specify the maximum string [s]ize to print:",
+      "syntax": "strace -p {{pid}} -T -s {{32}}"
+    },
+    {
+      "description": "Start tracing a program by executing it:",
+      "syntax": "strace {{program}}"
+    },
+    {
+      "description": "Start tracing file operations of a program:",
+      "syntax": "strace -e trace=file {{program}}"
+    },
+    {
+      "description": "Start tracing network operations of a program as well as all its [f]orked and child processes, saving the [o]utput to a file:",
+      "syntax": "strace -f -e trace=network -o {{trace.txt}} {{program}}"
+    }
+  ]
+}

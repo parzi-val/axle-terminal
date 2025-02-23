@@ -1,0 +1,18 @@
+{
+  "command": "vipe",
+  "description": "Run a text editor in the middle of a UNIX pipeline. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Edit the output of command1 before piping it into command2:",
+      "syntax": "{{command1}} | vipe | {{command2}}"
+    },
+    {
+      "description": "Buffer the output of command1 in a temporary file with the specified file extension in order to aid syntax highlighting:",
+      "syntax": "{{command1}} | vipe --suffix {{json}} | {{command2}}"
+    },
+    {
+      "description": "Use the specified text editor:",
+      "syntax": "{{command1}} | EDITOR={{vim}} vipe | {{command2}}"
+    }
+  ]
+}

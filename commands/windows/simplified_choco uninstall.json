@@ -1,0 +1,26 @@
+{
+  "command": "choco uninstall",
+  "description": "Uninstall packages with Chocolatey. More information: https://chocolatey.org/docs/commands-uninstall.",
+  "useCases": [
+    {
+      "description": "Uninstall one or more packages:",
+      "syntax": "choco uninstall {{package1 package2 ...}}"
+    },
+    {
+      "description": "Uninstall a specific version of a package:",
+      "syntax": "choco uninstall {{package}} --version {{version}}"
+    },
+    {
+      "description": "Confirm all prompts automatically:",
+      "syntax": "choco uninstall {{package}} --yes"
+    },
+    {
+      "description": "Remove all dependencies when uninstalling:",
+      "syntax": "choco uninstall {{package}} --remove-dependencies"
+    },
+    {
+      "description": "Uninstall all packages:",
+      "syntax": "choco uninstall all"
+    }
+  ]
+}

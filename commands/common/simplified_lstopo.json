@@ -1,0 +1,26 @@
+{
+  "command": "lstopo",
+  "description": "Show the hardware topology of the system. More information: https://manned.org/lstopo.",
+  "useCases": [
+    {
+      "description": "Show the summarized system topology in a graphical window (or print to console if no graphical display is available):",
+      "syntax": "lstopo"
+    },
+    {
+      "description": "Show the full system topology without summarizations:",
+      "syntax": "lstopo --no-factorize"
+    },
+    {
+      "description": "Show the summarized system topology with only [p]hysical indices (i.e. as seen by the OS):",
+      "syntax": "lstopo --physical"
+    },
+    {
+      "description": "Write the full system topology to a file in the specified format:",
+      "syntax": "lstopo --no-factorize --output-format {{console|ascii|tex|fig|svg|pdf|ps|png|xml}} {{path/to/file}}"
+    },
+    {
+      "description": "Output in monochrome or greyscale:",
+      "syntax": "lstopo --palette {{none|grey}}"
+    }
+  ]
+}

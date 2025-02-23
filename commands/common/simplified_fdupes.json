@@ -1,0 +1,34 @@
+{
+  "command": "fdupes",
+  "description": "Finds duplicate files in a set of directories. More information: https://github.com/adrianlopezroche/fdupes.",
+  "useCases": [
+    {
+      "description": "Search a single directory:",
+      "syntax": "fdupes {{path/to/directory}}"
+    },
+    {
+      "description": "Search multiple directories:",
+      "syntax": "fdupes {{directory1}} {{directory2}}"
+    },
+    {
+      "description": "Search a directory recursively:",
+      "syntax": "fdupes -r {{path/to/directory}}"
+    },
+    {
+      "description": "Search multiple directories, one recursively:",
+      "syntax": "fdupes {{directory1}} -R {{directory2}}"
+    },
+    {
+      "description": "Search recursively, considering hardlinks as duplicates:",
+      "syntax": "fdupes -rH {{path/to/directory}}"
+    },
+    {
+      "description": "Search recursively for duplicates and display interactive prompt to pick which ones to keep, deleting the others:",
+      "syntax": "fdupes -rd {{path/to/directory}}"
+    },
+    {
+      "description": "Search recursively and delete duplicates without prompting:",
+      "syntax": "fdupes -rdN {{path/to/directory}}"
+    }
+  ]
+}

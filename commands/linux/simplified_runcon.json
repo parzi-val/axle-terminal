@@ -1,0 +1,22 @@
+{
+  "command": "runcon",
+  "description": "Run a program in a different SELinux security context. See also: secon. More information: https://www.gnu.org/software/coreutils/manual/html_node/runcon-invocation.html.",
+  "useCases": [
+    {
+      "description": "Print the security context of the current execution context:",
+      "syntax": "runcon"
+    },
+    {
+      "description": "Specify the domain to run a command in:",
+      "syntax": "runcon -t {{domain}}_t {{command}}"
+    },
+    {
+      "description": "Specify the context role to run a command with:",
+      "syntax": "runcon -r {{role}}_r {{command}}"
+    },
+    {
+      "description": "Specify the full context to run a command with:",
+      "syntax": "runcon {{user}}_u:{{role}}_r:{{domain}}_t {{command}}"
+    }
+  ]
+}

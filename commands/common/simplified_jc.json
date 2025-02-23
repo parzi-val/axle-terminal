@@ -1,0 +1,22 @@
+{
+  "command": "jc",
+  "description": "Convert the output of multiple commands to JSON. More information: https://github.com/kellyjonbrazil/jc.",
+  "useCases": [
+    {
+      "description": "Convert command output to JSON via pipe:",
+      "syntax": "{{ifconfig}} | jc {{--ifconfig}}"
+    },
+    {
+      "description": "Convert command output to JSON via magic syntax:",
+      "syntax": "jc {{ifconfig}}"
+    },
+    {
+      "description": "Output pretty JSON via pipe:",
+      "syntax": "{{ifconfig}} | jc {{--ifconfig}} -p"
+    },
+    {
+      "description": "Output pretty JSON via magic syntax:",
+      "syntax": "jc -p {{ifconfig}}"
+    }
+  ]
+}

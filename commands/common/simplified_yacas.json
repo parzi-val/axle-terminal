@@ -1,0 +1,30 @@
+{
+  "command": "yacas",
+  "description": "Yet Another Computer Algebra System. More information: https://www.yacas.org.",
+  "useCases": [
+    {
+      "description": "Start an interactive yacas session:",
+      "syntax": "yacas"
+    },
+    {
+      "description": "While in a yacas session, execute a statement:",
+      "syntax": "{{Integrate(x)Cos(x)}};"
+    },
+    {
+      "description": "While in a yacas session, display an example:",
+      "syntax": "{{Example()}};"
+    },
+    {
+      "description": "Quit from a yacas session:",
+      "syntax": "{{quit}}"
+    },
+    {
+      "description": "Execute one or more yacas scripts (without terminal or prompts), then exit:",
+      "syntax": "yacas -p -c {{path/to/script1}} {{path/to/script2}}"
+    },
+    {
+      "description": "Execute and print the result of one statement, then exit:",
+      "syntax": "echo &quot;{{Echo( Deriv(x)Cos(1/x) );}}&quot; | yacas -p -c /dev/stdin"
+    }
+  ]
+}

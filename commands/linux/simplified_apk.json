@@ -1,0 +1,30 @@
+{
+  "command": "apk",
+  "description": "Alpine Linux package management tool. More information: https://manned.org/apk.",
+  "useCases": [
+    {
+      "description": "Update repository indexes from all remote repositories:",
+      "syntax": "apk update"
+    },
+    {
+      "description": "Install a new package:",
+      "syntax": "apk add {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "apk del {{package}}"
+    },
+    {
+      "description": "Repair a package or upgrade it without modifying main dependencies:",
+      "syntax": "apk fix {{package}}"
+    },
+    {
+      "description": "Search for a package via keywords:",
+      "syntax": "apk search {{keywords}}"
+    },
+    {
+      "description": "Display information about a specific package:",
+      "syntax": "apk info {{package}}"
+    }
+  ]
+}

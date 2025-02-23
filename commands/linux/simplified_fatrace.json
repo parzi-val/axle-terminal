@@ -1,0 +1,14 @@
+{
+  "command": "fatrace",
+  "description": "Report file access events. More information: https://manned.org/fatrace.",
+  "useCases": [
+    {
+      "description": "Print file access events in all mounted filesystems to stdout:",
+      "syntax": "sudo fatrace"
+    },
+    {
+      "description": "Print file access events on the mount of the current directory, with timestamps, to stdout:",
+      "syntax": "sudo fatrace {{-c|--current-mount}} {{-t|--timestamp}}"
+    }
+  ]
+}

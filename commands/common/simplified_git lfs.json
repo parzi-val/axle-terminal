@@ -1,0 +1,38 @@
+{
+  "command": "git lfs",
+  "description": "Work with large files in Git repositories. More information: https://git-lfs.com.",
+  "useCases": [
+    {
+      "description": "Initialize Git LFS:",
+      "syntax": "git lfs install"
+    },
+    {
+      "description": "Track files that match a glob:",
+      "syntax": "git lfs track '{{*.bin}}'"
+    },
+    {
+      "description": "Change the Git LFS endpoint URL (useful if the LFS server is separate from the Git server):",
+      "syntax": "git config {{-f|--file}} .lfsconfig lfs.url {{lfs_endpoint_url}}"
+    },
+    {
+      "description": "List tracked patterns:",
+      "syntax": "git lfs track"
+    },
+    {
+      "description": "List tracked files that have been committed:",
+      "syntax": "git lfs ls-files"
+    },
+    {
+      "description": "Push all Git LFS objects to the remote server (useful if errors are encountered):",
+      "syntax": "git lfs push --all {{remote_name}} {{branch_name}}"
+    },
+    {
+      "description": "Fetch all Git LFS objects:",
+      "syntax": "git lfs fetch"
+    },
+    {
+      "description": "Checkout all Git LFS objects:",
+      "syntax": "git lfs checkout"
+    }
+  ]
+}

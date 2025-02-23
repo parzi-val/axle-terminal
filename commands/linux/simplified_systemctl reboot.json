@@ -1,0 +1,14 @@
+{
+  "command": "systemctl reboot",
+  "description": "Reboot the system. More information: https://www.freedesktop.org/software/systemd/man/systemctl.html#reboot.",
+  "useCases": [
+    {
+      "description": "Reboot the system:",
+      "syntax": "systemctl reboot"
+    },
+    {
+      "description": "Reboot into the BIOS/UEFI menu:",
+      "syntax": "systemctl reboot --firmware-setup"
+    }
+  ]
+}

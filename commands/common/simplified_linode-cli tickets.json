@@ -1,0 +1,22 @@
+{
+  "command": "linode-cli tickets",
+  "description": "Manage Linode Support Tickets. See also: linode-cli. More information: https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-account-management.",
+  "useCases": [
+    {
+      "description": "List your Support Tickets:",
+      "syntax": "linode-cli tickets list"
+    },
+    {
+      "description": "Open a new Ticket:",
+      "syntax": "linode-cli tickets create --summary &quot;{{Summary or quick title for the Ticket}}&quot; --description &quot;{{Detailed description of the issue}}&quot;"
+    },
+    {
+      "description": "List replies to a Ticket:",
+      "syntax": "linode-cli tickets replies {{ticket_id}}"
+    },
+    {
+      "description": "Reply to a specific Ticket:",
+      "syntax": "linode-cli tickets reply {{ticket_id}} --description &quot;{{The content of your reply}}&quot;"
+    }
+  ]
+}

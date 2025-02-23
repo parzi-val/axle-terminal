@@ -1,0 +1,22 @@
+{
+  "command": "az storage container",
+  "description": "Manage blob storage containers in Azure. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/storage/container.",
+  "useCases": [
+    {
+      "description": "Create a container in a storage account:",
+      "syntax": "az storage container create --account-name {{storage_account_name}} --name {{container_name}} --public-access {{access_level}} --fail-on-exist"
+    },
+    {
+      "description": "Generate a shared access signature for the container:",
+      "syntax": "az storage container generate-sas --account-name {{storage_account_name}} --name {{container_name}} --permissions {{sas_permissions}} --expiry {{expiry_date}} --https-only"
+    },
+    {
+      "description": "List containers in a storage account:",
+      "syntax": "az storage container list --account-name {{storage_account_name}} --prefix {{filter_prefix}}"
+    },
+    {
+      "description": "Mark the specified container for deletion:",
+      "syntax": "az storage container delete --account-name {{storage_account_name}} --name {{container_name}} --fail-not-exist"
+    }
+  ]
+}

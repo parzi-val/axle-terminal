@@ -1,0 +1,10 @@
+{
+  "command": "pbmtoptx",
+  "description": "Convert a PBM image into Printronix printer graphics. More information: https://netpbm.sourceforge.net/doc/pbmtoptx.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image into a PTX file:",
+      "syntax": "pbmtoptx {{path/to/image.pbm}} &gt; {{path/to/output.ptx}}"
+    }
+  ]
+}

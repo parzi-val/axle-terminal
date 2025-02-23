@@ -1,0 +1,10 @@
+{
+  "command": "rustup check",
+  "description": "Check for updates to Rust toolchains and rustup. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Check for all updates:",
+      "syntax": "rustup check"
+    }
+  ]
+}

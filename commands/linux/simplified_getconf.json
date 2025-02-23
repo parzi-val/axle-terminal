@@ -1,0 +1,26 @@
+{
+  "command": "getconf",
+  "description": "Get configuration values from your Linux system. More information: https://manned.org/getconf.1.",
+  "useCases": [
+    {
+      "description": "List [a]ll configuration values available:",
+      "syntax": "getconf -a"
+    },
+    {
+      "description": "List the configuration values for a specific directory:",
+      "syntax": "getconf -a {{path/to/directory}}"
+    },
+    {
+      "description": "Check if the system is 32-bit or 64-bit:",
+      "syntax": "getconf LONG_BIT"
+    },
+    {
+      "description": "Check how many processes the current user can run at once:",
+      "syntax": "getconf CHILD_MAX"
+    },
+    {
+      "description": "List every configuration value and then find patterns with the grep command (i.e every value with MAX in it):",
+      "syntax": "getconf -a | grep MAX"
+    }
+  ]
+}

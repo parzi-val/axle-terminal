@@ -1,0 +1,18 @@
+{
+  "command": "brew upgrade",
+  "description": "Upgrade outdated formulae and casks. More information: https://docs.brew.sh/Manpage#upgrade-options-outdated_formulaoutdated_cask-.",
+  "useCases": [
+    {
+      "description": "Upgrade all outdated casks and formulae:",
+      "syntax": "brew upgrade"
+    },
+    {
+      "description": "Upgrade a specific formula/cask:",
+      "syntax": "brew upgrade {{formula|cask}}"
+    },
+    {
+      "description": "Print what would be upgraded, but don't actually upgrade anything:",
+      "syntax": "brew upgrade --dry-run"
+    }
+  ]
+}

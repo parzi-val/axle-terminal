@@ -1,0 +1,38 @@
+{
+  "command": "v",
+  "description": "A tool for managing V source code. More information: https://docs.vlang.io/getting-started.html.",
+  "useCases": [
+    {
+      "description": "Compile a file and output its executable:",
+      "syntax": "v {{path/to/file.v}}"
+    },
+    {
+      "description": "Compile the current project or directory:",
+      "syntax": "v ."
+    },
+    {
+      "description": "Compile a file and run it:",
+      "syntax": "v run {{path/to/file.v}}"
+    },
+    {
+      "description": "Compile a file and run it, output its executable:",
+      "syntax": "v crun {{path/to/file.v}}"
+    },
+    {
+      "description": "Re-compile on every modification to a file:",
+      "syntax": "v watch {{path/to/file.v}}"
+    },
+    {
+      "description": "Re-run on every modification to a file:",
+      "syntax": "v watch run {{path/to/file.v}}"
+    },
+    {
+      "description": "Open the v repl:",
+      "syntax": "v repl"
+    },
+    {
+      "description": "Format a file and [w]rite to it:",
+      "syntax": "v fmt -w {{path/to/file.v}}"
+    }
+  ]
+}

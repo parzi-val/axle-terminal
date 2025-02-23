@@ -1,0 +1,22 @@
+{
+  "command": "smbget",
+  "description": "wget-like utility for downloading files from SMB servers. More information: https://www.samba.org/samba/docs/current/man-html/smbget.1.html.",
+  "useCases": [
+    {
+      "description": "Download a file from a server:",
+      "syntax": "smbget {{smb://server/share/file}}"
+    },
+    {
+      "description": "Download a share or directory recursively:",
+      "syntax": "smbget --recursive {{smb://server/share}}"
+    },
+    {
+      "description": "Connect with a username and password:",
+      "syntax": "smbget {{smb://server/share/file}} --user {{username%password}}"
+    },
+    {
+      "description": "Require encrypted transfers:",
+      "syntax": "smbget {{smb://server/share/file}} --encrypt"
+    }
+  ]
+}

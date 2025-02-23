@@ -1,0 +1,22 @@
+{
+  "command": "tslint",
+  "description": "A pluggable linting utility for TypeScript. More information: https://palantir.github.io/tslint.",
+  "useCases": [
+    {
+      "description": "Create TSLint config:",
+      "syntax": "tslint --init"
+    },
+    {
+      "description": "Lint on a given set of files:",
+      "syntax": "tslint {{path/to/file1.js path/to/file2.js ...}}"
+    },
+    {
+      "description": "Fix lint issues:",
+      "syntax": "tslint --fix"
+    },
+    {
+      "description": "Lint with the configuration file in the project root:",
+      "syntax": "tslint --project {{path/to/project_root}}"
+    }
+  ]
+}

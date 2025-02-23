@@ -1,0 +1,18 @@
+{
+  "command": "ptargrep",
+  "description": "Find regular expression patterns in tar archive files. More information: https://manned.org/ptargrep.",
+  "useCases": [
+    {
+      "description": "Search for a pattern within one or more tar archives:",
+      "syntax": "ptargrep &quot;{{search_pattern}}&quot; {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Extract to the current directory using the basename of the file from the archive:",
+      "syntax": "ptargrep --basename &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for a case-insensitive pattern matching within a tar archive:",
+      "syntax": "ptargrep --ignore-case &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "fastboot",
+  "description": "Communicate with connected Android devices when in bootloader mode (the one place ADB doesn't work). More information: https://cs.android.com/android/platform/superproject/+/main:system/core/fastboot.",
+  "useCases": [
+    {
+      "description": "Unlock the bootloader:",
+      "syntax": "fastboot oem unlock"
+    },
+    {
+      "description": "Relock the bootloader:",
+      "syntax": "fastboot oem lock"
+    },
+    {
+      "description": "Reboot the device from fastboot mode into fastboot mode again:",
+      "syntax": "fastboot reboot bootloader"
+    },
+    {
+      "description": "Flash a given image:",
+      "syntax": "fastboot flash {{path/to/file.img}}"
+    },
+    {
+      "description": "Flash a custom recovery image:",
+      "syntax": "fastboot flash recovery {{path/to/file.img}}"
+    },
+    {
+      "description": "List connected devices:",
+      "syntax": "fastboot devices"
+    },
+    {
+      "description": "Display all information of a device:",
+      "syntax": "fastboot getvar all"
+    }
+  ]
+}

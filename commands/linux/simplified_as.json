@@ -1,0 +1,22 @@
+{
+  "command": "as",
+  "description": "Portable GNU assembler. Primarily intended to assemble output from gcc to be used by ld. More information: https://manned.org/as.",
+  "useCases": [
+    {
+      "description": "Assemble a file, writing the output to a.out:",
+      "syntax": "as {{path/to/file.s}}"
+    },
+    {
+      "description": "Assemble the output to a given file:",
+      "syntax": "as {{path/to/file.s}} -o {{path/to/output_file.o}}"
+    },
+    {
+      "description": "Generate output faster by skipping whitespace and comment preprocessing. (Should only be used for trusted compilers):",
+      "syntax": "as -f {{path/to/file.s}}"
+    },
+    {
+      "description": "Include a given path to the list of directories to search for files specified in .include directives:",
+      "syntax": "as -I {{path/to/directory}} {{path/to/file.s}}"
+    }
+  ]
+}

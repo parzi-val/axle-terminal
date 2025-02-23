@@ -1,0 +1,14 @@
+{
+  "command": "btrfs version",
+  "description": "Display btrfs-progs version. More information: https://btrfs.readthedocs.io/en/latest/btrfs.html.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "btrfs version --help"
+    },
+    {
+      "description": "Display btrfs-progs version:",
+      "syntax": "btrfs version"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "mongosh",
+  "description": "A new shell for MongoDB, replacement for mongo. Note: all connection options can be replaced with one string: mongodb://user@host:port/db_name?authSource=authdb_name. More information: https://www.mongodb.com/docs/mongodb-shell.",
+  "useCases": [
+    {
+      "description": "Connect to a local database on the default port (mongodb://localhost:27017):",
+      "syntax": "mongosh"
+    },
+    {
+      "description": "Connect to a database:",
+      "syntax": "mongosh --host {{host}} --port {{port}} {{db_name}}"
+    },
+    {
+      "description": "Authenticate using the specified username on the specified database (you will be prompted for a password):",
+      "syntax": "mongosh --host {{host}} --port {{port}} --username {{username}} --authenticationDatabase {{authdb_name}} {{db_name}}"
+    },
+    {
+      "description": "Evaluate a JavaScript expression on a database:",
+      "syntax": "mongosh --eval '{{JSON.stringify(db.foo.findOne())}}' {{db_name}}"
+    }
+  ]
+}

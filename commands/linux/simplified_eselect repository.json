@@ -1,0 +1,34 @@
+{
+  "command": "eselect repository",
+  "description": "An eselect module for configuring ebuild repositories for Portage. After enabling a repository, you have to run emerge --sync repo_name to download ebuilds. More information: https://wiki.gentoo.org/wiki/Eselect/Repository.",
+  "useCases": [
+    {
+      "description": "List all ebuild repositories registered on https://repos.gentoo.org:",
+      "syntax": "eselect repository list"
+    },
+    {
+      "description": "List enabled repositories:",
+      "syntax": "eselect repository list -i"
+    },
+    {
+      "description": "Enable a repository from the list by its name or index from the list command:",
+      "syntax": "eselect repository enable {{name|index}}"
+    },
+    {
+      "description": "Enable an unregistered repository:",
+      "syntax": "eselect repository add {{name}} {{rsync|git|mercurial|svn|...}} {{sync_uri}}"
+    },
+    {
+      "description": "Disable repositories without removing their contents:",
+      "syntax": "eselect repository disable {{repo1 repo2 ...}}"
+    },
+    {
+      "description": "Disable repositories and remove their contents:",
+      "syntax": "eselect repository remove {{repo1 repo2 ...}}"
+    },
+    {
+      "description": "Create a local repository and enable it:",
+      "syntax": "eselect repository create {{name}} {{path/to/repo}}"
+    }
+  ]
+}

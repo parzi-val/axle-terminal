@@ -1,0 +1,26 @@
+{
+  "command": "libinput",
+  "description": "Interface with libinput. More information: https://wayland.freedesktop.org/libinput/doc/latest/.",
+  "useCases": [
+    {
+      "description": "List all devices recognized by libinput:",
+      "syntax": "sudo libinput list-devices"
+    },
+    {
+      "description": "Print all libinput events:",
+      "syntax": "sudo libinput debug-events"
+    },
+    {
+      "description": "Show a GUI to visualize libinput's events:",
+      "syntax": "sudo libinput debug-gui"
+    },
+    {
+      "description": "Debug tablet axis values:",
+      "syntax": "sudo libinput debug-tablet"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "libinput -h"
+    }
+  ]
+}

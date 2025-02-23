@@ -1,0 +1,34 @@
+{
+  "command": "crane append",
+  "description": "Push an image based on an (optional) base image. Appends layers containing the contents of the provided tarballs. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_append.md.",
+  "useCases": [
+    {
+      "description": "Push image based on a base image:",
+      "syntax": "crane append {{-b|--base}} {{image_name}}"
+    },
+    {
+      "description": "Push image with appended layer from tarball:",
+      "syntax": "crane append {{-f|--new_layer}} {{layer_name1 layer_name2 ...}}"
+    },
+    {
+      "description": "Push image with appended layer with new tag:",
+      "syntax": "crane append {{-t|--new_tag}} {{tag_name}}"
+    },
+    {
+      "description": "Push resulting image to new tarball:",
+      "syntax": "crane append {{-o|--output}} {{path/to/tarball}}"
+    },
+    {
+      "description": "Use empty base image of type OCI media instead of Docker:",
+      "syntax": "crane append --oci-empty-base"
+    },
+    {
+      "description": "Annotate resulting image as being based on the base image:",
+      "syntax": "crane append --set-base-image-annotations"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane append {{-h|--help}}"
+    }
+  ]
+}

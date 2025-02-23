@@ -1,0 +1,26 @@
+{
+  "command": "bup",
+  "description": "Backup system based on the Git packfile format, providing incremental saves and global deduplication. More information: https://github.com/bup/bup.",
+  "useCases": [
+    {
+      "description": "Initialize a backup repository in a given local [d]irectory:",
+      "syntax": "bup -d {{path/to/repository}} init"
+    },
+    {
+      "description": "Prepare a given [d]irectory before taking a backup:",
+      "syntax": "bup -d {{path/to/repository}} index {{path/to/directory}}"
+    },
+    {
+      "description": "Backup a [d]irectory to the repository specifying its [n]ame:",
+      "syntax": "bup -d {{path/to/repository}} save -n {{backup_name}} {{path/to/directory}}"
+    },
+    {
+      "description": "Show the backup snapshots currently stored in the repository:",
+      "syntax": "bup -d {{path/to/repository}} ls"
+    },
+    {
+      "description": "Restore a specific backup snapshot to a target dire[C]tory:",
+      "syntax": "bup -d {{path/to/repository}} restore -C {{path/to/target_directory}} {{backup_name}}"
+    }
+  ]
+}

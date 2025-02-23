@@ -1,0 +1,18 @@
+{
+  "command": "psgrep",
+  "description": "Search running processes with grep. More information: https://jvz.github.io/psgrep.",
+  "useCases": [
+    {
+      "description": "Find process lines containing a specific string:",
+      "syntax": "psgrep {{process_name}}"
+    },
+    {
+      "description": "Find process lines containing a specific string, excluding headers:",
+      "syntax": "psgrep -n {{process_name}}"
+    },
+    {
+      "description": "Search using a simplified format (PID, user, command):",
+      "syntax": "psgrep -s {{process_name}}"
+    }
+  ]
+}

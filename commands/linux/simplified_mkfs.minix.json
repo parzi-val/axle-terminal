@@ -1,0 +1,10 @@
+{
+  "command": "mkfs.minix",
+  "description": "Create a Minix filesystem inside a partition. More information: https://manned.org/mkfs.minix.",
+  "useCases": [
+    {
+      "description": "Create a Minix filesystem inside partition 1 on device b (sdb1):",
+      "syntax": "mkfs.minix {{/dev/sdb1}}"
+    }
+  ]
+}

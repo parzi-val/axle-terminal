@@ -1,0 +1,22 @@
+{
+  "command": "pw-top",
+  "description": "View the PipeWire nodes and devices statistics in real-time. See also: pipewire, pw-dump, pw-cli, pw-profiler. More information: https://docs.pipewire.org/page_man_pw-top_1.html.",
+  "useCases": [
+    {
+      "description": "Display an interactive view of PipeWire nodes and devices:",
+      "syntax": "pw-top"
+    },
+    {
+      "description": "Monitor a remote instance:",
+      "syntax": "pw-top --remote {{remote_name}}"
+    },
+    {
+      "description": "Print information periodically instead of running in interactive mode:",
+      "syntax": "pw-top --batch-mode"
+    },
+    {
+      "description": "Print information periodically for a specific number of times:",
+      "syntax": "pw-top --batch-mode --iterations {{3}}"
+    }
+  ]
+}

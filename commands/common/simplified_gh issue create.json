@@ -1,0 +1,34 @@
+{
+  "command": "gh issue create",
+  "description": "Create GitHub issues on a repository. More information: https://cli.github.com/manual/gh_issue_create.",
+  "useCases": [
+    {
+      "description": "Create a new issue against the current repository interactively:",
+      "syntax": "gh issue create"
+    },
+    {
+      "description": "Create a new issue with the bug label interactively:",
+      "syntax": "gh issue create --label &quot;{{bug}}&quot;"
+    },
+    {
+      "description": "Create a new issue interactively and assign it to the specified users:",
+      "syntax": "gh issue create --assignee {{user1,user2,...}}"
+    },
+    {
+      "description": "Create a new issue with a title, body and assign it to the current user:",
+      "syntax": "gh issue create --title &quot;{{title}}&quot; --body &quot;{{body}}&quot; --assignee &quot;{{@me}}&quot;"
+    },
+    {
+      "description": "Create a new issue interactively, reading the body text from a file:",
+      "syntax": "gh issue create --body-file {{path/to/file}}"
+    },
+    {
+      "description": "Create a new issue in the default web browser:",
+      "syntax": "gh issue create --web"
+    },
+    {
+      "description": "Display the help:",
+      "syntax": "gh issue create --help"
+    }
+  ]
+}

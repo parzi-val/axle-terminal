@@ -1,0 +1,34 @@
+{
+  "command": "uuidparse",
+  "description": "Parse universally unique identifiers. See also: uuidgen. More information: https://manned.org/uuidparse.1.",
+  "useCases": [
+    {
+      "description": "Parse the specified UUIDs, use a tabular output format:",
+      "syntax": "uuidparse {{uuid1 uuid2 ...}}"
+    },
+    {
+      "description": "Parse UUIDs from stdin:",
+      "syntax": "{{command}} | uuidparse"
+    },
+    {
+      "description": "Use the JSON output format:",
+      "syntax": "uuidparse --json {{uuid1 uuid2 ...}}"
+    },
+    {
+      "description": "Do not print a header line:",
+      "syntax": "uuidparse --noheadings {{uuid1 uuid2 ...}}"
+    },
+    {
+      "description": "Use the raw output format:",
+      "syntax": "uuidparse --raw {{uuid1 uuid2 ...}}"
+    },
+    {
+      "description": "Specify which of the four output columns to print:",
+      "syntax": "uuidparse --output {{UUID,VARIANT,TYPE,TIME}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "uuidparse -h"
+    }
+  ]
+}

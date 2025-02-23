@@ -1,0 +1,26 @@
+{
+  "command": "nmtui",
+  "description": "Text user interface for controlling NetworkManager. Use arrow keys to navigate, enter to select an option. More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmtui.html.",
+  "useCases": [
+    {
+      "description": "Open the user interface:",
+      "syntax": "nmtui"
+    },
+    {
+      "description": "List available connections, with the option to activate or deactivate them:",
+      "syntax": "nmtui connect"
+    },
+    {
+      "description": "Connect to a given network:",
+      "syntax": "nmtui connect {{name|uuid|device|SSID}}"
+    },
+    {
+      "description": "Edit/Add/Delete a given network:",
+      "syntax": "nmtui edit {{name|id}}"
+    },
+    {
+      "description": "Set the system hostname:",
+      "syntax": "nmtui hostname"
+    }
+  ]
+}

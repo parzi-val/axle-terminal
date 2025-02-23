@@ -1,0 +1,38 @@
+{
+  "command": "corepack",
+  "description": "Zero-runtime-dependency package acting as bridge between Node projects and their package managers. More information: https://github.com/nodejs/corepack.",
+  "useCases": [
+    {
+      "description": "Add the Corepack shims to the Node.js installation directory to make them available as global commands:",
+      "syntax": "corepack enable"
+    },
+    {
+      "description": "Add the Corepack shims to a specific directory:",
+      "syntax": "corepack enable --install-directory {{path/to/directory}}"
+    },
+    {
+      "description": "Remove the Corepack shims from the Node.js installation directory:",
+      "syntax": "corepack disable"
+    },
+    {
+      "description": "Prepare a specific package manager:",
+      "syntax": "corepack prepare {{package_manager}}@{{version}} --activate"
+    },
+    {
+      "description": "Prepare the package manager configured for the project in the current path:",
+      "syntax": "corepack prepare"
+    },
+    {
+      "description": "Use a package manager without installing it as a global command:",
+      "syntax": "corepack {{npm|pnpm|yarn}} {{package_manager_arguments}}"
+    },
+    {
+      "description": "Install a package manager from the specified archive:",
+      "syntax": "corepack hydrate {{path/to/corepack.tgz}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "corepack {{subcommand}} --help"
+    }
+  ]
+}

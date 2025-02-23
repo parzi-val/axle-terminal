@@ -1,0 +1,26 @@
+{
+  "command": "gcrane completion",
+  "description": "Generate the autocompletion script for gcrane for the specified shell. The available shells are bash, fish, powershell, and zsh. More information: https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.md.",
+  "useCases": [
+    {
+      "description": "Generate the autocompletion script for your shell:",
+      "syntax": "gcrane completion {{shell_name}}"
+    },
+    {
+      "description": "Disable completion descriptions:",
+      "syntax": "gcrane completion {{shell_name}} --no-descriptions"
+    },
+    {
+      "description": "Load completions in your current shell session (powershell):",
+      "syntax": "gcrane completion powershell | Out-String | Invoke-Expression"
+    },
+    {
+      "description": "Load completions for every new session (powershell):",
+      "syntax": "gcrane completion powershell | Out-String | Invoke-Expression"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gcrane completion {{shell_name}} {{-h|--help}}"
+    }
+  ]
+}

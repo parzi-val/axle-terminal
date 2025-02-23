@@ -1,0 +1,18 @@
+{
+  "command": "pcxtoppm",
+  "description": "Convert a PCX file to a PPM image. More information: https://netpbm.sourceforge.net/doc/pcxtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PCX file to a PPM image:",
+      "syntax": "pcxtoppm {{path/to/file.pcx}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Use a predefined standard palette even if the PCX file provides one:",
+      "syntax": "pcxtoppm -stdpalette {{path/to/file.pcx}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Print information on the PCX header to stdout:",
+      "syntax": "pcxtoppm -verbose {{path/to/file.pcx}} &gt; {{path/to/file.ppm}}"
+    }
+  ]
+}

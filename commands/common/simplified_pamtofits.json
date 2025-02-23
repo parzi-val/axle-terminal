@@ -1,0 +1,10 @@
+{
+  "command": "pamtofits",
+  "description": "Convert a Netpbm image to the Flexible Image Transport System (FITS) format. See also: fitstopnm. More information: https://netpbm.sourceforge.net/doc/pamtofits.html.",
+  "useCases": [
+    {
+      "description": "Convert a Netpbm image to the FITS format:",
+      "syntax": "pamtofits {{path/to/image.pam}} &gt; {{path/to/output.fits}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "ganache-cli",
+  "description": "Command-line version of Ganache, your personal blockchain for Ethereum development. More information: https://www.trufflesuite.com/ganache.",
+  "useCases": [
+    {
+      "description": "Run Ganache:",
+      "syntax": "ganache-cli"
+    },
+    {
+      "description": "Run Ganache with a specific number of accounts:",
+      "syntax": "ganache-cli --accounts={{number_of_accounts}}"
+    },
+    {
+      "description": "Run Ganache and lock available accounts by default:",
+      "syntax": "ganache-cli --secure"
+    },
+    {
+      "description": "Run Ganache server and unlock specific accounts:",
+      "syntax": "ganache-cli --secure --unlock &quot;{{account_private_key1}}&quot; --unlock &quot;{{account_private_key2}}&quot;"
+    },
+    {
+      "description": "Run Ganache with a specific account and balance:",
+      "syntax": "ganache-cli --account=&quot;{{account_private_key}},{{account_balance}}&quot;"
+    },
+    {
+      "description": "Run Ganache with accounts with a default balance:",
+      "syntax": "ganache-cli --defaultBalanceEther={{default_balance}}"
+    },
+    {
+      "description": "Run Ganache and log all requests to stdout:",
+      "syntax": "ganache-cli --verbose"
+    }
+  ]
+}

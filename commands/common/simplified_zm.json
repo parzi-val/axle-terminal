@@ -1,0 +1,18 @@
+{
+  "command": "zm",
+  "description": "A tool for managing articles of newspapers and blogs. More information: https://github.com/ZERMZeitung/zm2.",
+  "useCases": [
+    {
+      "description": "Make a new draft:",
+      "syntax": "zm new"
+    },
+    {
+      "description": "Edit a draft:",
+      "syntax": "zm edit"
+    },
+    {
+      "description": "Publish a draft and commit it with git:",
+      "syntax": "zm publish"
+    }
+  ]
+}

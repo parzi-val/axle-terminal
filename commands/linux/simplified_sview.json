@@ -1,0 +1,10 @@
+{
+  "command": "sview",
+  "description": "Start a GUI to view and modify the state of Slurm. More information: https://slurm.schedmd.com/sview.html.",
+  "useCases": [
+    {
+      "description": "Start a GUI to view and modify the state of Slurm:",
+      "syntax": "sview"
+    }
+  ]
+}

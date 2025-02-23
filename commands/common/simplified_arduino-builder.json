@@ -1,0 +1,26 @@
+{
+  "command": "arduino-builder",
+  "description": "Compile arduino sketches. DEPRECATION WARNING: this tool is being phased out in favor of arduino. More information: https://github.com/arduino/arduino-builder.",
+  "useCases": [
+    {
+      "description": "Compile a sketch:",
+      "syntax": "arduino-builder -compile {{path/to/sketch.ino}}"
+    },
+    {
+      "description": "Specify the debug level (default: 5):",
+      "syntax": "arduino-builder -debug-level {{1..10}}"
+    },
+    {
+      "description": "Specify a custom build directory:",
+      "syntax": "arduino-builder -build-path {{path/to/build_directory}}"
+    },
+    {
+      "description": "Use a build option file, instead of specifying -hardware, -tools, etc. manually every time:",
+      "syntax": "arduino-builder -build-options-file {{path/to/build.options.json}}"
+    },
+    {
+      "description": "Enable verbose mode:",
+      "syntax": "arduino-builder -verbose {{true}}"
+    }
+  ]
+}

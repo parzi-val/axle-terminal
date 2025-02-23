@@ -1,0 +1,30 @@
+{
+  "command": "aws s3 ls",
+  "description": "List AWS S3 buckets, folders (prefixes), and files (objects). More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html.",
+  "useCases": [
+    {
+      "description": "List all buckets:",
+      "syntax": "aws s3 ls"
+    },
+    {
+      "description": "List files and folders in the root of a bucket (s3:// is optional):",
+      "syntax": "aws s3 ls s3://{{bucket_name}}"
+    },
+    {
+      "description": "List files and folders directly inside a directory:",
+      "syntax": "aws s3 ls {{bucket_name}}/{{path/to/directory}}/"
+    },
+    {
+      "description": "List all files in a bucket:",
+      "syntax": "aws s3 ls --recursive {{bucket_name}}"
+    },
+    {
+      "description": "List all files in a path with a given prefix:",
+      "syntax": "aws s3 ls --recursive {{bucket_name}}/{{path/to/directory/}}{{prefix}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aws s3 ls help"
+    }
+  ]
+}

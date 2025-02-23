@@ -1,0 +1,34 @@
+{
+  "command": "dolphin",
+  "description": "KDE's file manager to manage files and directories. See also: nautilus, caja, thunar, ranger. More information: https://apps.kde.org/dolphin/.",
+  "useCases": [
+    {
+      "description": "Launch the file manager:",
+      "syntax": "dolphin"
+    },
+    {
+      "description": "Open specific directories:",
+      "syntax": "dolphin {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Open with specific files or directories selected:",
+      "syntax": "dolphin --select {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Open a new window:",
+      "syntax": "dolphin --new-window"
+    },
+    {
+      "description": "Open specific directories in split view:",
+      "syntax": "dolphin --split {{path/to/directory1}} {{path/to/directory2}}"
+    },
+    {
+      "description": "Launch the daemon (only required to use the D-Bus interface):",
+      "syntax": "dolphin --daemon"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dolphin --help"
+    }
+  ]
+}

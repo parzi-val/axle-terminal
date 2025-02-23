@@ -1,0 +1,38 @@
+{
+  "command": "journalctl",
+  "description": "Query the systemd journal. More information: https://manned.org/journalctl.",
+  "useCases": [
+    {
+      "description": "Show all messages with priority level 3 (errors) from this [b]oot:",
+      "syntax": "journalctl -b --priority=3"
+    },
+    {
+      "description": "Delete journal logs which are older than 2 days:",
+      "syntax": "journalctl --vacuum-time=2d"
+    },
+    {
+      "description": "Show only the last N li[n]es and [f]ollow new messages (like tail -f for traditional syslog):",
+      "syntax": "journalctl --lines {{N}} --follow"
+    },
+    {
+      "description": "Show all messages by a specific [u]nit:",
+      "syntax": "journalctl --unit {{unit}}"
+    },
+    {
+      "description": "Show logs for a given unit since the last time it started:",
+      "syntax": "journalctl _SYSTEMD_INVOCATION_ID=$(systemctl show --value --property=InvocationID {{unit}})"
+    },
+    {
+      "description": "Filter messages within a time range (either timestamp or placeholders like \"yesterday\"):",
+      "syntax": "journalctl --since {{now|today|yesterday|tomorrow}} --until &quot;{{YYYY-MM-DD HH:MM:SS}}&quot;"
+    },
+    {
+      "description": "Show all messages by a specific process:",
+      "syntax": "journalctl _PID={{pid}}"
+    },
+    {
+      "description": "Show all messages by a specific executable:",
+      "syntax": "journalctl {{path/to/executable}}"
+    }
+  ]
+}

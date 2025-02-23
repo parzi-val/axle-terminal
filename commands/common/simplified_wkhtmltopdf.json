@@ -1,0 +1,26 @@
+{
+  "command": "wkhtmltopdf",
+  "description": "An open-source command-line tool to convert HTML documents or web pages into PDF files. More information: https://wkhtmltopdf.org/.",
+  "useCases": [
+    {
+      "description": "Convert a HTML document into PDF:",
+      "syntax": "wkhtmltopdf {{input.html}} {{output.pdf}}"
+    },
+    {
+      "description": "Specify the PDF page size (please see PaperSize of QPrinter for supported sizes):",
+      "syntax": "wkhtmltopdf --page-size {{A4}} {{input.html}} {{output.pdf}}"
+    },
+    {
+      "description": "Set the PDF page margins:",
+      "syntax": "wkhtmltopdf --margin-{{top|bottom|left|right}} {{10mm}} {{input.html}} {{output.pdf}}"
+    },
+    {
+      "description": "Set the PDF page orientation:",
+      "syntax": "wkhtmltopdf --orientation {{Landscape|Portrait}} {{input.html}} {{output.pdf}}"
+    },
+    {
+      "description": "Generate a greyscale version of the PDF document:",
+      "syntax": "wkhtmltopdf --grayscale {{input.html}} {{output.pdf}}"
+    }
+  ]
+}

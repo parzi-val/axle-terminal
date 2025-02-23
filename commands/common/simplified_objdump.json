@@ -1,0 +1,26 @@
+{
+  "command": "objdump",
+  "description": "View information about object files. More information: https://manned.org/objdump.",
+  "useCases": [
+    {
+      "description": "Display the file header information:",
+      "syntax": "objdump -f {{path/to/binary}}"
+    },
+    {
+      "description": "Display all header information:",
+      "syntax": "objdump -x {{path/to/binary}}"
+    },
+    {
+      "description": "Display the disassembled output of executable sections:",
+      "syntax": "objdump -d {{path/to/binary}}"
+    },
+    {
+      "description": "Display the disassembled executable sections in Intel syntax:",
+      "syntax": "objdump -M intel -d {{path/to/binary}}"
+    },
+    {
+      "description": "Display a complete binary hex dump of all sections:",
+      "syntax": "objdump -s {{path/to/binary}}"
+    }
+  ]
+}

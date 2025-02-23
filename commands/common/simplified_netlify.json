@@ -1,0 +1,22 @@
+{
+  "command": "netlify",
+  "description": "Deploy sites and configure continuous deployment to the Netlify platform. More information: https://cli.netlify.com.",
+  "useCases": [
+    {
+      "description": "Log in to the Netlify account:",
+      "syntax": "netlify login"
+    },
+    {
+      "description": "Deploy the contents of a directory to Netlify:",
+      "syntax": "netlify deploy"
+    },
+    {
+      "description": "Configure continuous deployment for a new or an existing site:",
+      "syntax": "netlify init"
+    },
+    {
+      "description": "Start a local dev server:",
+      "syntax": "netlify dev"
+    }
+  ]
+}

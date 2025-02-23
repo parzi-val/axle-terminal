@@ -1,0 +1,14 @@
+{
+  "command": "rlogin",
+  "description": "Log in to a remote host. More information: https://www.gnu.org/software/inetutils/manual/html_node/rlogin-invocation.html.",
+  "useCases": [
+    {
+      "description": "Log in to a remote host:",
+      "syntax": "rlogin {{remote_host}}"
+    },
+    {
+      "description": "Log in to a remote host with a specific username:",
+      "syntax": "rlogin -l {{username}} {{remote_host}}"
+    }
+  ]
+}

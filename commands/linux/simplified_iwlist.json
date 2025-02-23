@@ -1,0 +1,38 @@
+{
+  "command": "iwlist",
+  "description": "Get detailed information from a wireless interface. More information: https://manned.org/iwlist.8.",
+  "useCases": [
+    {
+      "description": "Display the list of access points and ad-hoc cells in range:",
+      "syntax": "iwlist {{wireless_interface}} scan"
+    },
+    {
+      "description": "Display available frequencies in the device:",
+      "syntax": "iwlist {{wireless_interface}} frequency"
+    },
+    {
+      "description": "List the bit-rates supported by the device:",
+      "syntax": "iwlist {{wireless_interface}} rate"
+    },
+    {
+      "description": "List the WPA authentication parameters currently set:",
+      "syntax": "iwlist {{wireless_interface}} auth"
+    },
+    {
+      "description": "List all the WPA encryption keys set in the device:",
+      "syntax": "iwlist {{wireless_interface}} wpakeys"
+    },
+    {
+      "description": "List the encryption key sizes supported and list all the encryption keys set in the device:",
+      "syntax": "iwlist {{wireless_interface}} keys"
+    },
+    {
+      "description": "List the various power management attributes and modes of the device:",
+      "syntax": "iwlist {{wireless_interface}} power"
+    },
+    {
+      "description": "List generic information elements set in the device (used for WPA support):",
+      "syntax": "iwlist {{wireless_interface}} genie"
+    }
+  ]
+}

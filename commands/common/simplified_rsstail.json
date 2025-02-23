@@ -1,0 +1,26 @@
+{
+  "command": "rsstail",
+  "description": "tail for RSS feeds. More information: https://github.com/gvalkov/rsstail.py.",
+  "useCases": [
+    {
+      "description": "Show the feed of a given URL and wait for new entries appearing at the bottom:",
+      "syntax": "rsstail -u {{url}}"
+    },
+    {
+      "description": "Show the feed in reverse chronological order (newer at the bottom):",
+      "syntax": "rsstail -r -u {{url}}"
+    },
+    {
+      "description": "Include publication date and link:",
+      "syntax": "rsstail -pl -u {{url}}"
+    },
+    {
+      "description": "Set update interval:",
+      "syntax": "rsstail -u {{url}} -i {{interval_in_seconds}}"
+    },
+    {
+      "description": "Show feed and exit:",
+      "syntax": "rsstail -1 -u {{url}}"
+    }
+  ]
+}

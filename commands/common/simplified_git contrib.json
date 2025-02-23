@@ -1,0 +1,10 @@
+{
+  "command": "git contrib",
+  "description": "Display commits from an author. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-contrib.",
+  "useCases": [
+    {
+      "description": "Display all commit hashes and their corresponding commit messages from a specific author:",
+      "syntax": "git contrib {{author}}"
+    }
+  ]
+}

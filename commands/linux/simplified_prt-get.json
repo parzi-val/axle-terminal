@@ -1,0 +1,34 @@
+{
+  "command": "prt-get",
+  "description": "The CRUX package manager. More information: https://crux.nu/doc/prt-get%20-%20User%20Manual.html.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "prt-get install {{package}}"
+    },
+    {
+      "description": "Install a package with dependency handling:",
+      "syntax": "prt-get depinst {{package}}"
+    },
+    {
+      "description": "Update a package manually:",
+      "syntax": "prt-get upgrade {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "prt-get remove {{package}}"
+    },
+    {
+      "description": "Upgrade the system from the local ports tree:",
+      "syntax": "prt-get sysup"
+    },
+    {
+      "description": "Search the ports tree:",
+      "syntax": "prt-get search {{query}}"
+    },
+    {
+      "description": "Search for a file in a package:",
+      "syntax": "prt-get fsearch {{file}}"
+    }
+  ]
+}

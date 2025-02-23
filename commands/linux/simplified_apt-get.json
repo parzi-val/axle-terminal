@@ -1,0 +1,38 @@
+{
+  "command": "apt-get",
+  "description": "Debian and Ubuntu package management utility. Search for packages using apt-cache. It is recommended to use apt when used interactively in Ubuntu versions 16.04 and later. More information: https://manned.org/apt-get.8.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages and versions (it's recommended to run this before other apt-get commands):",
+      "syntax": "apt-get update"
+    },
+    {
+      "description": "Install a package, or update it to the latest available version:",
+      "syntax": "apt-get install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "apt-get remove {{package}}"
+    },
+    {
+      "description": "Remove a package and its configuration files:",
+      "syntax": "apt-get purge {{package}}"
+    },
+    {
+      "description": "Upgrade all installed packages to their newest available versions:",
+      "syntax": "apt-get upgrade"
+    },
+    {
+      "description": "Clean the local repository - removing package files (.deb) from interrupted downloads that can no longer be downloaded:",
+      "syntax": "apt-get autoclean"
+    },
+    {
+      "description": "Remove all packages that are no longer needed:",
+      "syntax": "apt-get autoremove"
+    },
+    {
+      "description": "Upgrade installed packages (like upgrade), but remove obsolete packages and install additional packages to meet new dependencies:",
+      "syntax": "apt-get dist-upgrade"
+    }
+  ]
+}

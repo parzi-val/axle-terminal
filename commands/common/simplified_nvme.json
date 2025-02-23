@@ -1,0 +1,14 @@
+{
+  "command": "nvme",
+  "description": "NVMe storage user space utility. More information: https://github.com/linux-nvme/nvme-cli.",
+  "useCases": [
+    {
+      "description": "List all nvme devices:",
+      "syntax": "sudo nvme list"
+    },
+    {
+      "description": "Show device information:",
+      "syntax": "sudo nvme smart-log {{device}}"
+    }
+  ]
+}

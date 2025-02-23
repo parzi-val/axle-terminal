@@ -1,0 +1,22 @@
+{
+  "command": "pyATS",
+  "description": "A vendor agnostic test automation framework by Cisco Systems, used for network and systems testing. More information: https://developer.cisco.com/pyats/.",
+  "useCases": [
+    {
+      "description": "Run a pyATS subcommand:",
+      "syntax": "pyats {{subcommand}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pyats --help"
+    },
+    {
+      "description": "Display help about a specific subcommand:",
+      "syntax": "pyats {{subcommand}} --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pyats version check"
+    }
+  ]
+}

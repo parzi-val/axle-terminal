@@ -1,0 +1,22 @@
+{
+  "command": "git commits-since",
+  "description": "Display commits since a time or date. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-commits-since.",
+  "useCases": [
+    {
+      "description": "Display commits since yesterday:",
+      "syntax": "git commits-since {{yesterday}}"
+    },
+    {
+      "description": "Display commits since last week:",
+      "syntax": "git commits-since {{last week}}"
+    },
+    {
+      "description": "Display commits since last month:",
+      "syntax": "git commits-since {{last month}}"
+    },
+    {
+      "description": "Display commits since yesterday 2pm:",
+      "syntax": "git commits-since {{yesterday 2pm}}"
+    }
+  ]
+}

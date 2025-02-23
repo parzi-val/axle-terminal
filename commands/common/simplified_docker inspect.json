@@ -1,0 +1,34 @@
+{
+  "command": "docker inspect",
+  "description": "Return low-level information on Docker objects. More information: https://docs.docker.com/reference/cli/docker/inspect/.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "docker inspect"
+    },
+    {
+      "description": "Display information about a container, image, or volume using a name or ID:",
+      "syntax": "docker inspect {{container|image|ID}}"
+    },
+    {
+      "description": "Display a container's IP address:",
+      "syntax": "docker inspect --format '\\{\\{range.NetworkSettings.Networks\\}\\}\\{\\{.IPAddress\\}\\}\\{\\{end\\}\\}' {{container}}"
+    },
+    {
+      "description": "Display the path to the container's log file:",
+      "syntax": "docker inspect --format='\\{\\{.LogPath\\}\\}' {{container}}"
+    },
+    {
+      "description": "Display the image name of the container:",
+      "syntax": "docker inspect --format='\\{\\{.Config.Image\\}\\}' {{container}}"
+    },
+    {
+      "description": "Display the configuration information as JSON:",
+      "syntax": "docker inspect --format='\\{\\{json .Config\\}\\}' {{container}}"
+    },
+    {
+      "description": "Display all port bindings:",
+      "syntax": "docker inspect --format='\\{\\{range $p, $conf := .NetworkSettings.Ports\\}\\} \\{\\{$p\\}\\} -&gt; \\{\\{(index $conf 0).HostPort\\}\\} \\{\\{end\\}\\}' {{container}}"
+    }
+  ]
+}

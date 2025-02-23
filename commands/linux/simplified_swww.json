@@ -1,0 +1,26 @@
+{
+  "command": "swww",
+  "description": "Efficient animated wallpaper daemon for Wayland. See also: swww-daemon. More information: https://github.com/LGFae/swww.",
+  "useCases": [
+    {
+      "description": "Set wallpaper:",
+      "syntax": "swww img {{path/to/image}}"
+    },
+    {
+      "description": "Set wallpaper to specified [o]utputs:",
+      "syntax": "swww img -o {{output1,output2,...}} {{path/to/image}}"
+    },
+    {
+      "description": "Restore last wallpaper:",
+      "syntax": "swww restore"
+    },
+    {
+      "description": "Kill daemon:",
+      "syntax": "swww kill"
+    },
+    {
+      "description": "Display output information:",
+      "syntax": "swww query"
+    }
+  ]
+}

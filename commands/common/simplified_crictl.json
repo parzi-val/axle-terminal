@@ -1,0 +1,38 @@
+{
+  "command": "crictl",
+  "description": "Command-line for CRI-compatible container runtimes. More information: https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md.",
+  "useCases": [
+    {
+      "description": "List all kubernetes pods (Ready and NotReady):",
+      "syntax": "crictl pods"
+    },
+    {
+      "description": "List all containers (Running and Exited):",
+      "syntax": "crictl ps --all"
+    },
+    {
+      "description": "List all images:",
+      "syntax": "crictl images"
+    },
+    {
+      "description": "Print information about specific containers:",
+      "syntax": "crictl inspect {{container_id1 container_id2 ...}}"
+    },
+    {
+      "description": "Open a specific shell inside a running container:",
+      "syntax": "crictl exec -it {{container_id}} {{sh}}"
+    },
+    {
+      "description": "Pull a specific image from a registry:",
+      "syntax": "crictl pull {{image:tag}}"
+    },
+    {
+      "description": "Print and [f]ollow logs of a specific container:",
+      "syntax": "crictl logs -f {{container_id}}"
+    },
+    {
+      "description": "Remove one or more images:",
+      "syntax": "crictl rmi {{image_id1 image_id2 ...}}"
+    }
+  ]
+}

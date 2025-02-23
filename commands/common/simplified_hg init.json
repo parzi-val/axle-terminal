@@ -1,0 +1,14 @@
+{
+  "command": "hg init",
+  "description": "Create a new repository in the specified directory. More information: https://www.mercurial-scm.org/doc/hg.1.html#init.",
+  "useCases": [
+    {
+      "description": "Initialize a new repository in the current directory:",
+      "syntax": "hg init"
+    },
+    {
+      "description": "Initialize a new repository in the specified directory:",
+      "syntax": "hg init {{path/to/directory}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "file",
+  "description": "Determine file type. More information: https://manned.org/file.",
+  "useCases": [
+    {
+      "description": "Give a description of the type of the specified file. Works fine for files with no file extension:",
+      "syntax": "file {{path/to/file}}"
+    },
+    {
+      "description": "Look inside a zipped file and determine the file type(s) inside:",
+      "syntax": "file -z {{foo.zip}}"
+    },
+    {
+      "description": "Allow file to work with special or device files:",
+      "syntax": "file -s {{path/to/file}}"
+    },
+    {
+      "description": "Don't stop at first file type match; keep going until the end of the file:",
+      "syntax": "file -k {{path/to/file}}"
+    },
+    {
+      "description": "Determine the MIME encoding type of a file:",
+      "syntax": "file -i {{path/to/file}}"
+    }
+  ]
+}

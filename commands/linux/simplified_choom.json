@@ -1,0 +1,18 @@
+{
+  "command": "choom",
+  "description": "Display and change the adjust out-of-memory killer score. More information: https://manned.org/choom.",
+  "useCases": [
+    {
+      "description": "Display the OOM-killer score of the process with a specific ID:",
+      "syntax": "choom -p {{pid}}"
+    },
+    {
+      "description": "Change the adjust OOM-killer score of a specific process:",
+      "syntax": "choom -p {{pid}} -n {{-1000..+1000}}"
+    },
+    {
+      "description": "Run a command with a specific adjust OOM-killer score:",
+      "syntax": "choom -n {{-1000..+1000}} {{command}} {{argument1 argument2 ...}}"
+    }
+  ]
+}

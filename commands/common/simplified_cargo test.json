@@ -1,0 +1,30 @@
+{
+  "command": "cargo test",
+  "description": "Execute the unit and integration tests of a Rust package. More information: https://doc.rust-lang.org/cargo/commands/cargo-test.html.",
+  "useCases": [
+    {
+      "description": "Only run tests containing a specific string in their names:",
+      "syntax": "cargo test {{testname}}"
+    },
+    {
+      "description": "Set the number of simultaneous running test cases:",
+      "syntax": "cargo test -- --test-threads {{count}}"
+    },
+    {
+      "description": "Test artifacts in release mode, with optimizations:",
+      "syntax": "cargo test --release"
+    },
+    {
+      "description": "Test all packages in the workspace:",
+      "syntax": "cargo test --workspace"
+    },
+    {
+      "description": "Run tests for a specific package:",
+      "syntax": "cargo test --package {{package}}"
+    },
+    {
+      "description": "Run tests without hiding output from test executions:",
+      "syntax": "cargo test -- --nocapture"
+    }
+  ]
+}

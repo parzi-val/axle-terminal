@@ -1,0 +1,10 @@
+{
+  "command": "pgmtost4",
+  "description": "Convert a PGM image to the SBIG ST-4 format. More information: https://netpbm.sourceforge.net/doc/pgmtost4.html.",
+  "useCases": [
+    {
+      "description": "Convert a PGM image file to the SBIG ST-4 format:",
+      "syntax": "pgmtost4 {{path/to/input_file.pgm}} &gt; {{path/to/output.st4}}"
+    }
+  ]
+}

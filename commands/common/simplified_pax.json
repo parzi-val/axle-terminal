@@ -1,0 +1,30 @@
+{
+  "command": "pax",
+  "description": "Archiving and copying utility. More information: https://manned.org/pax.1p.",
+  "useCases": [
+    {
+      "description": "List the contents of an archive:",
+      "syntax": "pax -f {{archive.tar}}"
+    },
+    {
+      "description": "List the contents of a gzip archive:",
+      "syntax": "pax -zf {{archive.tar.gz}}"
+    },
+    {
+      "description": "Create an archive from files:",
+      "syntax": "pax -wf {{target.tar}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Create an archive from files, using output redirection:",
+      "syntax": "pax -w {{path/to/file1 path/to/file2 ...}} &gt; {{target.tar}}"
+    },
+    {
+      "description": "Extract an archive into the current directory:",
+      "syntax": "pax -rf {{source.tar}}"
+    },
+    {
+      "description": "Copy to a directory, while keeping the original metadata; target/ must exist:",
+      "syntax": "pax -rw {{path/to/file1}} {{path/to/directory1 path/to/directory2 ...}} {{target/}}"
+    }
+  ]
+}

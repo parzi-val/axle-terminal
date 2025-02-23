@@ -1,0 +1,22 @@
+{
+  "command": "cuyo",
+  "description": "Tetris like game. More information: https://www.karimmi.de/cuyo/.",
+  "useCases": [
+    {
+      "description": "Start a new game:",
+      "syntax": "cuyo"
+    },
+    {
+      "description": "Navigate the piece horizontally:",
+      "syntax": "{{A|D|Left arrow key|Right arrow key}}"
+    },
+    {
+      "description": "Turn the piece:",
+      "syntax": "{{W|Up arrow key}}"
+    },
+    {
+      "description": "Hard drop the piece:",
+      "syntax": "{{S|Down arrow key}}"
+    }
+  ]
+}

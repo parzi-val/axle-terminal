@@ -1,0 +1,14 @@
+{
+  "command": "kaggle",
+  "description": "Official CLI for Kaggle implemented in Python 3. More information: https://github.com/Kaggle/kaggle-api.",
+  "useCases": [
+    {
+      "description": "View current configuration values:",
+      "syntax": "kaggle config view"
+    },
+    {
+      "description": "Download a specific file from a competition dataset:",
+      "syntax": "kaggle competitions download {{competition}} -f {{filename}}"
+    }
+  ]
+}

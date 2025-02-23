@@ -1,0 +1,22 @@
+{
+  "command": "megatools-dl",
+  "description": "Download files from mega.nz. Part of the megatools suite. More information: https://megatools.megous.com/man/megatools-dl.html.",
+  "useCases": [
+    {
+      "description": "Download files from a mega.nz link into the current directory:",
+      "syntax": "megatools-dl {{https://mega.nz/...}}"
+    },
+    {
+      "description": "Download files from a mega.nz link into a specific directory:",
+      "syntax": "megatools-dl --path {{path/to/directory}} {{https://mega.nz/...}}"
+    },
+    {
+      "description": "Interactively choose which files to download:",
+      "syntax": "megatools-dl --choose-files {{https://mega.nz/...}}"
+    },
+    {
+      "description": "Limit the download speed in KiB/s:",
+      "syntax": "megatools-dl --limit-speed {{speed}} {{https://mega.nz/...}}"
+    }
+  ]
+}

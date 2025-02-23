@@ -1,0 +1,22 @@
+{
+  "command": "dotnet",
+  "description": "Cross platform .NET command-line tools for .NET Core. Some subcommands such as build have their own usage documentation. More information: https://learn.microsoft.com/dotnet/core/tools.",
+  "useCases": [
+    {
+      "description": "Initialize a new .NET project:",
+      "syntax": "dotnet new {{template_short_name}}"
+    },
+    {
+      "description": "Restore NuGet packages:",
+      "syntax": "dotnet restore"
+    },
+    {
+      "description": "Build and execute the .NET project in the current directory:",
+      "syntax": "dotnet run"
+    },
+    {
+      "description": "Run a packaged dotnet application (only needs the runtime, the rest of the commands require the .NET Core SDK installed):",
+      "syntax": "dotnet {{path/to/application.dll}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "tput",
+  "description": "View and modify terminal settings and capabilities. More information: https://manned.org/tput.",
+  "useCases": [
+    {
+      "description": "Move the cursor to a screen location:",
+      "syntax": "tput cup {{row}} {{column}}"
+    },
+    {
+      "description": "Set foreground (af) or background (ab) color:",
+      "syntax": "tput {{setaf|setab}} {{ansi_color_code}}"
+    },
+    {
+      "description": "Reverse text and background colors:",
+      "syntax": "tput rev"
+    },
+    {
+      "description": "Reset all terminal text attributes:",
+      "syntax": "tput sgr0"
+    },
+    {
+      "description": "Show number of columns, lines, or colors:",
+      "syntax": "tput {{cols|lines|colors}}"
+    },
+    {
+      "description": "Enable or disable word wrap:",
+      "syntax": "tput {{smam|rmam}}"
+    },
+    {
+      "description": "Hide or show the terminal cursor:",
+      "syntax": "tput {{civis|cnorm}}"
+    },
+    {
+      "description": "Save or restore terminal text status (smcup also captures scroll wheel events):",
+      "syntax": "tput {{smcup|rmcup}}"
+    }
+  ]
+}

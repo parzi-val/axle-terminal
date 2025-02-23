@@ -1,0 +1,14 @@
+{
+  "command": "ppmdist",
+  "description": "Produce a grayscale version of a PPM image. More information: https://netpbm.sourceforge.net/doc/ppmdist.html.",
+  "useCases": [
+    {
+      "description": "Produce a grayscale version of the specified PPM image:",
+      "syntax": "ppmdist {{path/to/input.ppm}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Use the specified method to map colors to graylevels:",
+      "syntax": "ppmdist -{{frequency|intensity}} {{path/to/input.ppm}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

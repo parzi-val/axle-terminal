@@ -1,0 +1,26 @@
+{
+  "command": "in-toto-sign",
+  "description": "Sign in-toto link or layout metadata or verify their signatures. More information: https://in-toto.readthedocs.io/en/latest/command-line-tools/in-toto-sign.html.",
+  "useCases": [
+    {
+      "description": "Sign 'unsigned.layout' with two keys and write it to 'root.layout':",
+      "syntax": "in-toto-sign -f {{unsigned.layout}} -k {{priv_key1}} {{priv_key2}} -o {{root.layout}}"
+    },
+    {
+      "description": "Replace signature in link file and write to default filename:",
+      "syntax": "in-toto-sign -f {{package.2f89b927.link}} -k {{priv_key}}"
+    },
+    {
+      "description": "Verify a layout signed with 3 keys:",
+      "syntax": "in-toto-sign -f {{root.layout}} -k {{pub_key0}} {{pub_key1}} {{pub_key2}} --verify"
+    },
+    {
+      "description": "Sign a layout with the default GPG key in default GPG keyring:",
+      "syntax": "in-toto-sign -f {{root.layout}} --gpg"
+    },
+    {
+      "description": "Verify a layout with a GPG key identified by keyid '...439F3C2':",
+      "syntax": "in-toto-sign -f {{root.layout}} --verify --gpg {{...439F3C2}}"
+    }
+  ]
+}

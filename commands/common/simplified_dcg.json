@@ -1,0 +1,18 @@
+{
+  "command": "dcg",
+  "description": "Drupal code generator. More information: https://github.com/Chi-teck/drupal-code-generator.",
+  "useCases": [
+    {
+      "description": "Start a wizard to choose what kind of code (e.g. module, service, form, etc.) to generate:",
+      "syntax": "dcg"
+    },
+    {
+      "description": "Directly specify the kind of code to generate:",
+      "syntax": "dcg {{service|plugin|theme|module|form}}"
+    },
+    {
+      "description": "Generate the code in a specific directory:",
+      "syntax": "dcg --directory {{path/to/directory}}"
+    }
+  ]
+}

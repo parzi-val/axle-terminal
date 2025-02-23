@@ -1,0 +1,10 @@
+{
+  "command": "qm cleanup",
+  "description": "Clean up resources on QEMU/KVM Virtual Machine Manager like tap devices, VGPUs, etc. Called after a VM shuts down, crashes, etc. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Clean up resources:",
+      "syntax": "qm cleanup {{vm_id}} {{clean-shutdown}} {{guest-requested}}"
+    }
+  ]
+}

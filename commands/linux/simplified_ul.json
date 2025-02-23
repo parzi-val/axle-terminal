@@ -1,0 +1,14 @@
+{
+  "command": "ul",
+  "description": "Underline a text. Each character in a string must be underlined separately. More information: https://manned.org/ul.",
+  "useCases": [
+    {
+      "description": "Display the contents of the file with underlines where applicable:",
+      "syntax": "ul {{file.txt}}"
+    },
+    {
+      "description": "Display the contents of the file with underlines made of dashes -:",
+      "syntax": "ul -i {{file.txt}}"
+    }
+  ]
+}

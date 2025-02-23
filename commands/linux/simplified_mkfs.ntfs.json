@@ -1,0 +1,18 @@
+{
+  "command": "mkfs.ntfs",
+  "description": "Create a NTFS filesystem inside a partition. More information: https://manned.org/mkfs.ntfs.",
+  "useCases": [
+    {
+      "description": "Create a NTFS filesystem inside partition 1 on device b (sdb1):",
+      "syntax": "mkfs.ntfs {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create filesystem with a volume-label:",
+      "syntax": "mkfs.ntfs -L {{volume_label}} {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create filesystem with specific UUID:",
+      "syntax": "mkfs.ntfs -U {{UUID}} {{/dev/sdb1}}"
+    }
+  ]
+}

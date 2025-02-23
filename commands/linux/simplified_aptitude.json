@@ -1,0 +1,38 @@
+{
+  "command": "aptitude",
+  "description": "Debian and Ubuntu package management utility. More information: https://manned.org/aptitude.8.",
+  "useCases": [
+    {
+      "description": "Synchronize list of packages and versions available. This should be run first, before running subsequent aptitude commands:",
+      "syntax": "aptitude update"
+    },
+    {
+      "description": "Install a new package and its dependencies:",
+      "syntax": "aptitude install {{package}}"
+    },
+    {
+      "description": "Search for a package:",
+      "syntax": "aptitude search {{package}}"
+    },
+    {
+      "description": "Search for an installed package (?installed is an aptitude search term):",
+      "syntax": "aptitude search '?installed({{package}})'"
+    },
+    {
+      "description": "Remove a package and all packages depending on it:",
+      "syntax": "aptitude remove {{package}}"
+    },
+    {
+      "description": "Upgrade installed packages to the newest available versions:",
+      "syntax": "aptitude upgrade"
+    },
+    {
+      "description": "Upgrade installed packages (like aptitude upgrade) including removing obsolete packages and installing additional packages to meet new package dependencies:",
+      "syntax": "aptitude full-upgrade"
+    },
+    {
+      "description": "Put an installed package on hold to prevent it from being automatically upgraded:",
+      "syntax": "aptitude hold '?installed({{package}})'"
+    }
+  ]
+}

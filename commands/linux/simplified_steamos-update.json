@@ -1,0 +1,14 @@
+{
+  "command": "steamos-update",
+  "description": "Update SteamOS. More information: https://gitlab.com/users/evlaV/projects.",
+  "useCases": [
+    {
+      "description": "Update the operating system:",
+      "syntax": "steamos-update"
+    },
+    {
+      "description": "Check if there is an update available:",
+      "syntax": "steamos-update check"
+    }
+  ]
+}

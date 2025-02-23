@@ -1,0 +1,14 @@
+{
+  "command": "magick compare",
+  "description": "Create a comparison image to visually annotate the difference between two images. See also: magick. More information: https://imagemagick.org/script/compare.php.",
+  "useCases": [
+    {
+      "description": "Compare two images:",
+      "syntax": "magick compare {{path/to/image1.png}} {{path/to/image2.png}} {{path/to/diff.png}}"
+    },
+    {
+      "description": "Compare two images using the specified metric:",
+      "syntax": "magick compare -verbose -metric {{PSNR}} {{path/to/image1.png}} {{path/to/image2.png}} {{path/to/diff.png}}"
+    }
+  ]
+}

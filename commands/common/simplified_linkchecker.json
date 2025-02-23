@@ -1,0 +1,22 @@
+{
+  "command": "linkchecker",
+  "description": "Command-line client to check HTML documents and websites for broken links. More information: https://linkchecker.github.io/linkchecker/.",
+  "useCases": [
+    {
+      "description": "Find broken links on https://example.com/:",
+      "syntax": "linkchecker {{https://example.com/}}"
+    },
+    {
+      "description": "Also check URLs that point to external domains:",
+      "syntax": "linkchecker --check-extern {{https://example.com/}}"
+    },
+    {
+      "description": "Ignore URLs that match a specific regular expression:",
+      "syntax": "linkchecker --ignore-url {{regular_expression}} {{https://example.com/}}"
+    },
+    {
+      "description": "Output results to a CSV file:",
+      "syntax": "linkchecker --file-output {{csv}}/{{path/to/file}} {{https://example.com/}}"
+    }
+  ]
+}

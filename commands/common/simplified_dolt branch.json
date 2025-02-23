@@ -1,0 +1,38 @@
+{
+  "command": "dolt branch",
+  "description": "Manage Dolt branches. More information: https://docs.dolthub.com/cli-reference/cli#dolt-branch.",
+  "useCases": [
+    {
+      "description": "List local branches (current branch is highlighted by *):",
+      "syntax": "dolt branch"
+    },
+    {
+      "description": "List all local and remote branches:",
+      "syntax": "dolt branch --all"
+    },
+    {
+      "description": "Create a new branch based on the current branch:",
+      "syntax": "dolt branch {{branch_name}}"
+    },
+    {
+      "description": "Create a new branch with the specified commit as the latest:",
+      "syntax": "dolt branch {{branch_name}} {{commit}}"
+    },
+    {
+      "description": "Rename a branch:",
+      "syntax": "dolt branch --move {{branch_name1}} {{branch_name2}}"
+    },
+    {
+      "description": "Duplicate a branch:",
+      "syntax": "dolt branch --copy {{branch_name1}} {{branch_name2}}"
+    },
+    {
+      "description": "Delete a branch:",
+      "syntax": "dolt branch --delete {{branch_name}}"
+    },
+    {
+      "description": "Display the name of the current branch:",
+      "syntax": "dolt branch --show-current"
+    }
+  ]
+}

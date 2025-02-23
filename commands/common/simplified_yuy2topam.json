@@ -1,0 +1,10 @@
+{
+  "command": "yuy2topam",
+  "description": "Convert YUY2 bytes to PAM. More information: https://netpbm.sourceforge.net/doc/yuy2topam.html.",
+  "useCases": [
+    {
+      "description": "Convert YUY2 bytes to PAM:",
+      "syntax": "yuy2topam -width {{value}} -height {{value}} {{path/to/file.yuy2}} &gt; {{path/to/file.pam}}"
+    }
+  ]
+}

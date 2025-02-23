@@ -1,0 +1,38 @@
+{
+  "command": "schroot",
+  "description": "Run a command or start an interactive shell with a different root directory. More customizable than chroot. More information: https://wiki.debian.org/Schroot.",
+  "useCases": [
+    {
+      "description": "List available chroots:",
+      "syntax": "schroot --list"
+    },
+    {
+      "description": "Run a command in a specific chroot:",
+      "syntax": "schroot --chroot {{chroot}} {{command}}"
+    },
+    {
+      "description": "Run a command with options in a specific chroot:",
+      "syntax": "schroot --chroot {{chroot}} {{command}} -- {{command_options}}"
+    },
+    {
+      "description": "Run a command in all available chroots:",
+      "syntax": "schroot --all {{command}}"
+    },
+    {
+      "description": "Start an interactive shell within a specific chroot as a specific user:",
+      "syntax": "schroot --chroot {{chroot}} --user {{user}}"
+    },
+    {
+      "description": "Begin a new session (a unique session ID is returned on stdout):",
+      "syntax": "schroot --begin-session --chroot {{chroot}}"
+    },
+    {
+      "description": "Connect to an existing session:",
+      "syntax": "schroot --run-session --chroot {{session_id}}"
+    },
+    {
+      "description": "End an existing session:",
+      "syntax": "schroot --end-session --chroot {{session_id}}"
+    }
+  ]
+}

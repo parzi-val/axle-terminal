@@ -1,0 +1,22 @@
+{
+  "command": "jar",
+  "description": "Java applications/libraries packager. More information: https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html.",
+  "useCases": [
+    {
+      "description": "Recursively archive all files in the current directory into a .jar file:",
+      "syntax": "jar cf {{file.jar}} *"
+    },
+    {
+      "description": "Unzip .jar/.war file to the current directory:",
+      "syntax": "jar -xvf {{file.jar}}"
+    },
+    {
+      "description": "List a .jar/.war file content:",
+      "syntax": "jar tf {{path/to/file.jar}}"
+    },
+    {
+      "description": "List a .jar/.war file content with verbose output:",
+      "syntax": "jar tvf {{path/to/file.jar}}"
+    }
+  ]
+}

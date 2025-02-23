@@ -1,0 +1,38 @@
+{
+  "command": "synopkg",
+  "description": "Package management utility for Synology DiskStation Manager. More information: https://www.synology.com/dsm.",
+  "useCases": [
+    {
+      "description": "List the names of installed packages:",
+      "syntax": "synopkg list --name"
+    },
+    {
+      "description": "List packages which depend on a specific package:",
+      "syntax": "synopkg list --depend-on {{package}}"
+    },
+    {
+      "description": "Start/Stop a package:",
+      "syntax": "sudo synopkg {{start|stop}} {{package}}"
+    },
+    {
+      "description": "Print the status of a package:",
+      "syntax": "synopkg status {{package}}"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "sudo synopkg uninstall {{package}}"
+    },
+    {
+      "description": "Check if updates are available for a package:",
+      "syntax": "synopkg checkupdate {{package}}"
+    },
+    {
+      "description": "Upgrade all packages to the latest version:",
+      "syntax": "sudo synopkg upgradeall"
+    },
+    {
+      "description": "Install a package from a synopkg file:",
+      "syntax": "sudo synopkg install {{path/to/package.spk}}"
+    }
+  ]
+}

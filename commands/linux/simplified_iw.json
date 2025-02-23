@@ -1,0 +1,38 @@
+{
+  "command": "iw",
+  "description": "Show and manipulate wireless devices. See also: iw dev. More information: https://wireless.docs.kernel.org/en/latest/en/users/documentation/iw.html.",
+  "useCases": [
+    {
+      "description": "Scan for available wireless networks:",
+      "syntax": "iw dev {{wlp}} scan"
+    },
+    {
+      "description": "Join an open wireless network:",
+      "syntax": "iw dev {{wlp}} connect {{SSID}}"
+    },
+    {
+      "description": "Close the current connection:",
+      "syntax": "iw dev {{wlp}} disconnect"
+    },
+    {
+      "description": "Show information about the current connection:",
+      "syntax": "iw dev {{wlp}} link"
+    },
+    {
+      "description": "List all physical and logical wireless network interfaces:",
+      "syntax": "iw dev"
+    },
+    {
+      "description": "List all wireless capabilities for all physical hardware interfaces:",
+      "syntax": "iw phy"
+    },
+    {
+      "description": "List the kernel's current wireless regulatory domain information:",
+      "syntax": "iw reg get"
+    },
+    {
+      "description": "Display help for all commands:",
+      "syntax": "iw help"
+    }
+  ]
+}

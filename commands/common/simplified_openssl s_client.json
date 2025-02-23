@@ -1,0 +1,22 @@
+{
+  "command": "openssl s_client",
+  "description": "OpenSSL command to create TLS client connections. More information: https://www.openssl.org/docs/manmaster/man1/openssl-s_client.html.",
+  "useCases": [
+    {
+      "description": "Display the start and expiry dates for a domain's certificate:",
+      "syntax": "openssl s_client -connect {{host}}:{{port}} 2&gt;/dev/null | openssl x509 -noout -dates"
+    },
+    {
+      "description": "Display the certificate presented by an SSL/TLS server:",
+      "syntax": "openssl s_client -connect {{host}}:{{port}} &lt;/dev/null"
+    },
+    {
+      "description": "Set the Server Name Indicator (SNI) when connecting to the SSL/TLS server:",
+      "syntax": "openssl s_client -connect {{host}}:{{port}} -servername {{hostname}}"
+    },
+    {
+      "description": "Display the complete certificate chain of an HTTPS server:",
+      "syntax": "openssl s_client -connect {{host}}:443 -showcerts &lt;/dev/null"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "diffstat",
+  "description": "Create a histogram from the output of the diff command. More information: https://manned.org/diffstat.",
+  "useCases": [
+    {
+      "description": "Display changes in a histogram:",
+      "syntax": "diff {{path/to/file1}} {{path/to/file2}} | diffstat"
+    },
+    {
+      "description": "Display inserted, deleted and modified changes as a table:",
+      "syntax": "diff {{path/to/file1}} {{path/to/file2}} | diffstat -t"
+    }
+  ]
+}

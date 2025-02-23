@@ -1,0 +1,30 @@
+{
+  "command": "pio test",
+  "description": "Run local tests on a PlatformIO project. More information: https://docs.platformio.org/en/latest/core/userguide/cmd_test.html.",
+  "useCases": [
+    {
+      "description": "Run all tests in all environments of the current PlatformIO project:",
+      "syntax": "pio test"
+    },
+    {
+      "description": "Test only specific environments:",
+      "syntax": "pio test --environment {{environment1}} --environment {{environment2}}"
+    },
+    {
+      "description": "Run only tests whose name matches a specific glob pattern:",
+      "syntax": "pio test --filter &quot;{{pattern}}&quot;"
+    },
+    {
+      "description": "Ignore tests whose name matches a specific glob pattern:",
+      "syntax": "pio test --ignore &quot;{{pattern}}&quot;"
+    },
+    {
+      "description": "Specify a port for firmware uploading:",
+      "syntax": "pio test --upload-port {{upload_port}}"
+    },
+    {
+      "description": "Specify a custom configuration file for running the tests:",
+      "syntax": "pio test --project-conf {{path/to/platformio.ini}}"
+    }
+  ]
+}

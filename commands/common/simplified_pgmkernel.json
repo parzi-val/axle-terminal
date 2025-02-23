@@ -1,0 +1,18 @@
+{
+  "command": "pgmkernel",
+  "description": "Generate a convolution kernel to be used with pnmconvol. See also: pnmconvol. More information: https://netpbm.sourceforge.net/doc/pgmkernel.html.",
+  "useCases": [
+    {
+      "description": "Generate a convolution kernel:",
+      "syntax": "pgmkernel {{width}} {{height}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Generate a quadratic convolution kernel:",
+      "syntax": "pgmkernel {{size}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Specify the weight of the center in the generated kernel:",
+      "syntax": "pgmkernel -weight {{value}} {{width}} {{height}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

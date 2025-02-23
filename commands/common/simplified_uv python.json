@@ -1,0 +1,30 @@
+{
+  "command": "uv python",
+  "description": "Manage Python versions and installations. More information: https://docs.astral.sh/uv/reference/cli/#uv-python.",
+  "useCases": [
+    {
+      "description": "List all available Python installations:",
+      "syntax": "uv python list"
+    },
+    {
+      "description": "Install a Python version:",
+      "syntax": "uv python install {{version}}"
+    },
+    {
+      "description": "Uninstall a Python version:",
+      "syntax": "uv python uninstall {{version}}"
+    },
+    {
+      "description": "Search for a Python installation:",
+      "syntax": "uv python find {{version}}"
+    },
+    {
+      "description": "Pin the current project to use a specific Python version:",
+      "syntax": "uv python pin {{version}}"
+    },
+    {
+      "description": "Show the uv Python installation directory:",
+      "syntax": "uv python dir"
+    }
+  ]
+}

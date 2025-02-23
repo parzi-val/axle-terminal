@@ -1,0 +1,22 @@
+{
+  "command": "perldoc",
+  "description": "Look up Perl documentation in .pod format. More information: https://perldoc.perl.org/perldoc.",
+  "useCases": [
+    {
+      "description": "View documentation for a builtin [f]unction, a [v]ariable or an [a]PI:",
+      "syntax": "perldoc -{{f|v|a}} {{name}}"
+    },
+    {
+      "description": "Search in the question headings of Perl FAQ:",
+      "syntax": "perldoc -q {{regex}}"
+    },
+    {
+      "description": "Send output directly to stdout (by default, it is send to a pager):",
+      "syntax": "perldoc -T {{page|module|program|URL}}"
+    },
+    {
+      "description": "Specify the language code of the desired translation:",
+      "syntax": "perldoc -L {{language_code}} {{page|module|program|URL}}"
+    }
+  ]
+}

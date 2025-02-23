@@ -1,0 +1,22 @@
+{
+  "command": "pyenv virtualenv",
+  "description": "Create virtual environments based on one's installed Python distributions. More information: https://github.com/pyenv/pyenv-virtualenv.",
+  "useCases": [
+    {
+      "description": "Create a new Python 3.6.6 virtual environment:",
+      "syntax": "pyenv virtualenv {{3.6.6}} {{virtualenv_name}}"
+    },
+    {
+      "description": "List all existing virtual environments:",
+      "syntax": "pyenv virtualenvs"
+    },
+    {
+      "description": "Activate a virtual environment:",
+      "syntax": "pyenv activate {{virtualenv_name}}"
+    },
+    {
+      "description": "Deactivate the virtual environment:",
+      "syntax": "pyenv deactivate"
+    }
+  ]
+}

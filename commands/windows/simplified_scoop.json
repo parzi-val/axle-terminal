@@ -1,0 +1,34 @@
+{
+  "command": "scoop",
+  "description": "The Scoop package manager. Some subcommands such as bucket have their own usage documentation. More information: https://scoop.sh.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "scoop install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "scoop uninstall {{package}}"
+    },
+    {
+      "description": "Update all installed packages:",
+      "syntax": "scoop update --all"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "scoop list"
+    },
+    {
+      "description": "Display information about a package:",
+      "syntax": "scoop info {{package}}"
+    },
+    {
+      "description": "Search for a package:",
+      "syntax": "scoop search {{package}}"
+    },
+    {
+      "description": "Remove old versions of all packages and clear the download cache:",
+      "syntax": "scoop cleanup --cache --all"
+    }
+  ]
+}

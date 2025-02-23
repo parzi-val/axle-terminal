@@ -1,0 +1,18 @@
+{
+  "command": "pnmtosgi",
+  "description": "Convert a PNM file to an SGI image file. More information: https://netpbm.sourceforge.net/doc/pnmtosgi.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to an SGI image:",
+      "syntax": "pnmtosgi {{path/to/input.pnm}} &gt; {{path/to/output.sgi}}"
+    },
+    {
+      "description": "Disable or enable compression:",
+      "syntax": "pnmtosgi -{{verbatim|rle}} {{path/to/input.pnm}} &gt; {{path/to/output.sgi}}"
+    },
+    {
+      "description": "Write the specified string into the SGI image header's imagename field:",
+      "syntax": "pnmtosgi -imagename {{string}} {{path/to/input.pnm}} &gt; {{path/to/output.sgi}}"
+    }
+  ]
+}

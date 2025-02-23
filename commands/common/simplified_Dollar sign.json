@@ -1,0 +1,34 @@
+{
+  "command": "Dollar sign",
+  "description": "Expand a Bash variable. More information: https://gnu.org/software/bash/manual/bash.html#Shell-Variables.",
+  "useCases": [
+    {
+      "description": "Print a variable:",
+      "syntax": "echo ${{VARIABLE}}"
+    },
+    {
+      "description": "Print the exit status of the previous command:",
+      "syntax": "echo $?"
+    },
+    {
+      "description": "Print a random number between 0 and 32767:",
+      "syntax": "echo $RANDOM"
+    },
+    {
+      "description": "Print one of the prompt strings:",
+      "syntax": "echo ${{PS0|PS1|PS2|PS3|PS4}}"
+    },
+    {
+      "description": "Expand with the output of command and run it. Same as enclosing command in backtics:",
+      "syntax": "$({{command}})"
+    },
+    {
+      "description": "List how many arguments the current context has:",
+      "syntax": "echo $#"
+    },
+    {
+      "description": "Print out a Bash array:",
+      "syntax": "echo ${array[@]}"
+    }
+  ]
+}

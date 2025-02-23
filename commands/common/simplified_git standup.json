@@ -1,0 +1,22 @@
+{
+  "command": "git standup",
+  "description": "See commits from a specified user. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-standup.",
+  "useCases": [
+    {
+      "description": "Show a given author's commits from the last 10 days:",
+      "syntax": "git standup -a {{name|email}} -d {{10}}"
+    },
+    {
+      "description": "Show a given author's commits from the last 10 days and whether they are GPG signed:",
+      "syntax": "git standup -a {{name|email}} -d {{10}} -g"
+    },
+    {
+      "description": "Show all the commits from all contributors for the last 10 days:",
+      "syntax": "git standup -a all -d {{10}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "git standup -h"
+    }
+  ]
+}

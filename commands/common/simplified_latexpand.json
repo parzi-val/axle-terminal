@@ -1,0 +1,26 @@
+{
+  "command": "latexpand",
+  "description": "Simplify LaTeX source files by removing comments and resolving \\includes, \\inputs, etc. More information: https://www.ctan.org/pkg/latexpand.",
+  "useCases": [
+    {
+      "description": "Simplify the specified source file and save the result to the specified [o]utput file:",
+      "syntax": "latexpand --output {{path/to/output.tex}} {{path/to/file.tex}}"
+    },
+    {
+      "description": "Do not remove comments:",
+      "syntax": "latexpand --keep-comments --output {{path/to/output.tex}} {{path/to/file.tex}}"
+    },
+    {
+      "description": "Do not expand \\includes, \\inputs etc.:",
+      "syntax": "latexpand --keep-includes --output {{path/to/output.tex}} {{path/to/file.tex}}"
+    },
+    {
+      "description": "Expand \\usepackages as far as the corresponding STY files can be found:",
+      "syntax": "latexpand --expand-usepackage --output {{path/to/output.tex}} {{path/to/file.tex}}"
+    },
+    {
+      "description": "Inline the specified BBL file:",
+      "syntax": "latexpand --expand-bbl {{path/to/bibliography.bbl}} --output {{path/to/output.tex}} {{path/to/file.tex}}"
+    }
+  ]
+}

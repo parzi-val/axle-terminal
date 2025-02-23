@@ -1,0 +1,26 @@
+{
+  "command": "adig",
+  "description": "Print information received from Domain Name System (DNS) servers. More information: https://manned.org/adig.",
+  "useCases": [
+    {
+      "description": "Display A (default) record from DNS for hostname(s):",
+      "syntax": "adig {{example.com}}"
+    },
+    {
+      "description": "Display extra [d]ebugging output:",
+      "syntax": "adig -d {{example.com}}"
+    },
+    {
+      "description": "Connect to a specific DNS [s]erver:",
+      "syntax": "adig -s {{1.2.3.4}} {{example.com}}"
+    },
+    {
+      "description": "Use a specific TCP port to connect to a DNS server:",
+      "syntax": "adig -T {{port}} {{example.com}}"
+    },
+    {
+      "description": "Use a specific UDP port to connect to a DNS server:",
+      "syntax": "adig -U {{port}} {{example.com}}"
+    }
+  ]
+}

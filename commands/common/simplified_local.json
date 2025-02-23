@@ -1,0 +1,26 @@
+{
+  "command": "local",
+  "description": "Declare local variables and give them attributes. See also: declare. More information: https://www.gnu.org/software/bash/manual/bash.html#index-local.",
+  "useCases": [
+    {
+      "description": "Declare a string variable with the specified value:",
+      "syntax": "local {{variable}}=&quot;{{value}}&quot;"
+    },
+    {
+      "description": "Declare an integer variable with the specified value:",
+      "syntax": "local -i {{variable}}=&quot;{{value}}&quot;"
+    },
+    {
+      "description": "Declare an array variable with the specified value:",
+      "syntax": "local {{variable}}=({{item_a item_b item_c}})"
+    },
+    {
+      "description": "Declare an associative array variable with the specified value:",
+      "syntax": "local -A {{variable}}=({{[key_a]=item_a [key_b]=item_b [key_c]=item_c}})"
+    },
+    {
+      "description": "Declare a readonly variable with the specified value:",
+      "syntax": "local -r {{variable}}=&quot;{{value}}&quot;"
+    }
+  ]
+}

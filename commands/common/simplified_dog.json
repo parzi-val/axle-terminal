@@ -1,0 +1,30 @@
+{
+  "command": "dog",
+  "description": "DNS lookup utility. It has colorful output, supports DNS-over-TLS and DNS-over-HTTPS protocols, and can emit JSON. More information: https://dns.lookup.dog.",
+  "useCases": [
+    {
+      "description": "Lookup the IP(s) associated with a hostname (A records):",
+      "syntax": "dog {{example.com}}"
+    },
+    {
+      "description": "Query the MX records type associated with a given domain name:",
+      "syntax": "dog {{example.com}} MX"
+    },
+    {
+      "description": "Specify a specific DNS server to query (e.g. Cloudflare):",
+      "syntax": "dog {{example.com}} MX @{{1.1.1.1}}"
+    },
+    {
+      "description": "Query over TCP rather than UDP:",
+      "syntax": "dog {{example.com}} MX @{{1.1.1.1}} --tcp"
+    },
+    {
+      "description": "Query the MX records type associated with a given domain name over TCP using explicit arguments:",
+      "syntax": "dog --query {{example.com}} --type MX --nameserver {{1.1.1.1}} --tcp"
+    },
+    {
+      "description": "Lookup the IP(s) associated with a hostname (A records) using DNS over HTTPS (DoH):",
+      "syntax": "dog {{example.com}} --https @{{https://cloudflare-dns.com/dns-query}}"
+    }
+  ]
+}

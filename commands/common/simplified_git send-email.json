@@ -1,0 +1,26 @@
+{
+  "command": "git send-email",
+  "description": "Send a collection of patches as emails. Patches can be specified as files, directions, or a revision list. More information: https://git-scm.com/docs/git-send-email.",
+  "useCases": [
+    {
+      "description": "Send the last commit in the current branch interactively:",
+      "syntax": "git send-email -1"
+    },
+    {
+      "description": "Send a given commit:",
+      "syntax": "git send-email -1 {{commit}}"
+    },
+    {
+      "description": "Send multiple (e.g. 10) commits in the current branch:",
+      "syntax": "git send-email {{-10}}"
+    },
+    {
+      "description": "Send an introductory email message for the patch series:",
+      "syntax": "git send-email -{{number_of_commits}} --compose"
+    },
+    {
+      "description": "Review and edit the email message for each patch you're about to send:",
+      "syntax": "git send-email -{{number_of_commits}} --annotate"
+    }
+  ]
+}

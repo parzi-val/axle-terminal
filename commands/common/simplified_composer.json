@@ -1,0 +1,38 @@
+{
+  "command": "composer",
+  "description": "A package-based dependency manager for PHP projects. More information: https://getcomposer.org/.",
+  "useCases": [
+    {
+      "description": "Interactively create a composer.json file:",
+      "syntax": "composer init"
+    },
+    {
+      "description": "Add a package as a dependency for this project, adding an entry to composer.json:",
+      "syntax": "composer require {{user/package}}"
+    },
+    {
+      "description": "Install all the dependencies in this project's composer.json and create composer.lock:",
+      "syntax": "composer install"
+    },
+    {
+      "description": "Uninstall a package from this project, removing it as a dependency from composer.json and composer.lock:",
+      "syntax": "composer remove {{user/package}}"
+    },
+    {
+      "description": "Update all the dependencies in this project's composer.json and note new versions in composer.lock file:",
+      "syntax": "composer update"
+    },
+    {
+      "description": "Update only composer.lock after updating composer.json manually:",
+      "syntax": "composer update --lock"
+    },
+    {
+      "description": "Learn more about why a dependency can't be installed:",
+      "syntax": "composer why-not {{user/package}}"
+    },
+    {
+      "description": "Update composer to its latest version:",
+      "syntax": "composer self-update"
+    }
+  ]
+}

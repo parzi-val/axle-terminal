@@ -1,0 +1,14 @@
+{
+  "command": "runit",
+  "description": "3-stage init system. More information: https://smarden.org/runit/runit.8.html.",
+  "useCases": [
+    {
+      "description": "Start runit's 3-stage init scheme:",
+      "syntax": "runit"
+    },
+    {
+      "description": "Shut down runit:",
+      "syntax": "kill --CONT {{runit_pid}}"
+    }
+  ]
+}

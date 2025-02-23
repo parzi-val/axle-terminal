@@ -1,0 +1,10 @@
+{
+  "command": "pjtoppm",
+  "description": "Convert a HP PaintJet file to PPM. More information: https://netpbm.sourceforge.net/doc/pjtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a HP PaintJet file to PPM:",
+      "syntax": "pjtoppm {{path/to/input.pj}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

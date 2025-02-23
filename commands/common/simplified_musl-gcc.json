@@ -1,0 +1,10 @@
+{
+  "command": "musl-gcc",
+  "description": "A wrapper around gcc that automatically sets options for linking against musl libc. All options specified are passed directly to gcc. More information: https://manned.org/musl-gcc.",
+  "useCases": [
+    {
+      "description": "View documentation for gcc:",
+      "syntax": "tldr gcc"
+    }
+  ]
+}

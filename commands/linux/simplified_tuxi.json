@@ -1,0 +1,22 @@
+{
+  "command": "tuxi",
+  "description": "Scrape Google search results and SERPs and provide instant and concise answers. More information: https://github.com/Bugswriter/tuxi.",
+  "useCases": [
+    {
+      "description": "Make a search using Google:",
+      "syntax": "tuxi {{search_terms}}"
+    },
+    {
+      "description": "Display the search results in [r]aw format (no pretty output, no colors):",
+      "syntax": "tuxi -r {{search_terms}}"
+    },
+    {
+      "description": "Display only search results (silences \"Did you mean?\", greetings and usage):",
+      "syntax": "tuxi -q {{search_terms}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "tuxi -h"
+    }
+  ]
+}

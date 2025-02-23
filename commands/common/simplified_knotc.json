@@ -1,0 +1,26 @@
+{
+  "command": "knotc",
+  "description": "Control knot DNS server. More information: https://www.knot-dns.cz/docs/latest/html/man_knotc.html.",
+  "useCases": [
+    {
+      "description": "Start editing a zone:",
+      "syntax": "knotc zone-begin {{zone}}"
+    },
+    {
+      "description": "Set an A record with TTL of 3600:",
+      "syntax": "knotc zone-set {{zone}} {{subdomain}} 3600 A {{ip_address}}"
+    },
+    {
+      "description": "Finish editing the zone:",
+      "syntax": "knotc zone-commit {{zone}}"
+    },
+    {
+      "description": "Get the current zone data:",
+      "syntax": "knotc zone-read {{zone}}"
+    },
+    {
+      "description": "Get the current server configuration:",
+      "syntax": "knotc conf-read server"
+    }
+  ]
+}

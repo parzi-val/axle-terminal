@@ -1,0 +1,10 @@
+{
+  "command": "nmtui-hostname",
+  "description": "This command is an alias of nmtui hostname.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr nmtui"
+    }
+  ]
+}

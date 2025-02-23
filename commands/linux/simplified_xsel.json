@@ -1,0 +1,30 @@
+{
+  "command": "xsel",
+  "description": "X11 selection and clipboard manipulation tool. More information: https://manned.org/xsel.",
+  "useCases": [
+    {
+      "description": "Use a command's output as input of the clip[b]oard (equivalent to Ctrl + C):",
+      "syntax": "echo 123 | xsel -ib"
+    },
+    {
+      "description": "Use the contents of a file as input of the clipboard:",
+      "syntax": "cat {{path/to/file}} | xsel -ib"
+    },
+    {
+      "description": "Output the clipboard's contents into the terminal (equivalent to Ctrl + V):",
+      "syntax": "xsel -ob"
+    },
+    {
+      "description": "Output the clipboard's contents into a file:",
+      "syntax": "xsel -ob &gt; {{path/to/file}}"
+    },
+    {
+      "description": "Clear the clipboard:",
+      "syntax": "xsel -cb"
+    },
+    {
+      "description": "Output the X11 primary selection's contents into the terminal (equivalent to a mouse middle-click):",
+      "syntax": "xsel -op"
+    }
+  ]
+}

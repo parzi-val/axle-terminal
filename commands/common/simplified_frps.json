@@ -1,0 +1,30 @@
+{
+  "command": "frps",
+  "description": "Quickly set up a reverse proxy service. Part of frp. More information: https://github.com/fatedier/frp.",
+  "useCases": [
+    {
+      "description": "Start the service, using the default configuration file (assumed to be frps.ini in the current directory):",
+      "syntax": "frps"
+    },
+    {
+      "description": "Start the service, using the newer TOML configuration file (frps.toml instead of frps.ini) in the current directory:",
+      "syntax": "frps {{-c|--config}} ./frps.toml"
+    },
+    {
+      "description": "Start the service, using a specified config file:",
+      "syntax": "frps {{-c|--config}} {{path/to/file}}"
+    },
+    {
+      "description": "Check if the configuration file is valid:",
+      "syntax": "frps verify {{-c|--config}} {{path/to/file}}"
+    },
+    {
+      "description": "Print autocompletion setup script for Bash, fish, PowerShell, or Zsh:",
+      "syntax": "frps completion {{bash|fish|powershell|zsh}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "frps {{-v|--version}}"
+    }
+  ]
+}

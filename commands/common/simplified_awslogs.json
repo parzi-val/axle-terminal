@@ -1,0 +1,26 @@
+{
+  "command": "awslogs",
+  "description": "Queries groups, streams and events from Amazon CloudWatch logs. More information: https://github.com/jorgebastida/awslogs.",
+  "useCases": [
+    {
+      "description": "List log groups:",
+      "syntax": "awslogs groups"
+    },
+    {
+      "description": "List existing streams for the specified group:",
+      "syntax": "awslogs streams {{/var/log/syslog}}"
+    },
+    {
+      "description": "Get logs for any streams in the specified group between 1 and 2 hours ago:",
+      "syntax": "awslogs get {{/var/log/syslog}} --start='{{2h ago}}' --end='{{1h ago}}'"
+    },
+    {
+      "description": "Get logs that match a specific CloudWatch Logs Filter pattern:",
+      "syntax": "awslogs get {{/aws/lambda/my_lambda_group}} --filter-pattern='{{ERROR}}'"
+    },
+    {
+      "description": "Watch logs for any streams in the specified group:",
+      "syntax": "awslogs get {{/var/log/syslog}} ALL --watch"
+    }
+  ]
+}

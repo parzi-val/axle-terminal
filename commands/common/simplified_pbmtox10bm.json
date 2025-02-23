@@ -1,0 +1,10 @@
+{
+  "command": "pbmtox10bm",
+  "description": "This command has been superseded by pbmtoxbm -x10. More information: https://netpbm.sourceforge.net/doc/pbmtox10bm.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pbmtoxbm"
+    }
+  ]
+}

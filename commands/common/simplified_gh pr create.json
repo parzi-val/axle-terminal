@@ -1,0 +1,26 @@
+{
+  "command": "gh pr create",
+  "description": "Manage GitHub pull requests. More information: https://cli.github.com/manual/gh_pr_create.",
+  "useCases": [
+    {
+      "description": "Interactively create a pull request:",
+      "syntax": "gh pr create"
+    },
+    {
+      "description": "Create a pull request, determining the title and description from the commit messages of the current branch:",
+      "syntax": "gh pr create --fill"
+    },
+    {
+      "description": "Create a draft pull request:",
+      "syntax": "gh pr create --draft"
+    },
+    {
+      "description": "Create a pull request specifying the base branch, title, and description:",
+      "syntax": "gh pr create --base {{base_branch}} --title &quot;{{title}}&quot; --body &quot;{{body}}&quot;"
+    },
+    {
+      "description": "Start opening a pull request in the default web browser:",
+      "syntax": "gh pr create --web"
+    }
+  ]
+}

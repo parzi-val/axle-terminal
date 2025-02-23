@@ -1,0 +1,30 @@
+{
+  "command": "pacman --upgrade",
+  "description": "Arch Linux package manager utility. See also: pacman. More information: https://manned.org/pacman.8.",
+  "useCases": [
+    {
+      "description": "Install one or more packages from files:",
+      "syntax": "sudo pacman -U {{path/to/package1.pkg.tar.zst}} {{path/to/package2.pkg.tar.zst}}"
+    },
+    {
+      "description": "Install a package without prompting:",
+      "syntax": "sudo pacman -U --noconfirm {{path/to/package.pkg.tar.zst}}"
+    },
+    {
+      "description": "Overwrite conflicting files during a package installation:",
+      "syntax": "sudo pacman -U --overwrite {{path/to/file}} {{path/to/package.pkg.tar.zst}}"
+    },
+    {
+      "description": "Install a package, skipping the [d]ependency version checks:",
+      "syntax": "sudo pacman -Ud {{path/to/package.pkg.tar.zst}}"
+    },
+    {
+      "description": "Fetch and [p]rint packages that would be affected by upgrade (does not install any packages):",
+      "syntax": "pacman -Up {{path/to/package.pkg.tar.zst}}"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "pacman -Uh"
+    }
+  ]
+}

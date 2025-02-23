@@ -1,0 +1,26 @@
+{
+  "command": "ffsend",
+  "description": "Easily and securely share files. More information: https://gitlab.com/timvisee/ffsend.",
+  "useCases": [
+    {
+      "description": "Upload a file:",
+      "syntax": "ffsend upload {{path/to/file}}"
+    },
+    {
+      "description": "Download a file:",
+      "syntax": "ffsend download {{url}}"
+    },
+    {
+      "description": "Upload a file with password:",
+      "syntax": "ffsend upload {{path/to/file}} {{-p|--password}} {{password}}"
+    },
+    {
+      "description": "Download a file protected by password:",
+      "syntax": "ffsend download {{url}} {{-p|--password}} {{password}}"
+    },
+    {
+      "description": "Upload a file and allow 4 downloads:",
+      "syntax": "ffsend upload {{path/to/file}} {{-d|--downloads}} {{4}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "bun",
+  "description": "JavaScript runtime and toolkit. Includes a bundler, a test runner, and a package manager. More information: https://bun.sh.",
+  "useCases": [
+    {
+      "description": "Run a JavaScript file or a package.json script:",
+      "syntax": "bun run {{path/to/file|script_name}}"
+    },
+    {
+      "description": "Run unit tests:",
+      "syntax": "bun test"
+    },
+    {
+      "description": "Download and install all the packages listed as dependencies in package.json:",
+      "syntax": "bun install"
+    },
+    {
+      "description": "Add a dependency to package.json:",
+      "syntax": "bun add {{module_name}}"
+    },
+    {
+      "description": "Remove a dependency from package.json:",
+      "syntax": "bun remove {{module_name}}"
+    },
+    {
+      "description": "Create a new Bun project in the current directory:",
+      "syntax": "bun init"
+    },
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "bun repl"
+    },
+    {
+      "description": "Upgrade Bun to the latest version:",
+      "syntax": "bun upgrade"
+    }
+  ]
+}

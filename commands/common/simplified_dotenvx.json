@@ -1,0 +1,34 @@
+{
+  "command": "dotenvx",
+  "description": "A better dotenv, from the creator of dotenv. More information: https://dotenvx.com/docs.",
+  "useCases": [
+    {
+      "description": "Run a command with environment variables from a .env file:",
+      "syntax": "dotenvx run -- {{command}}"
+    },
+    {
+      "description": "Run a command with environment variables from a specific .env file:",
+      "syntax": "dotenvx run -f {{path/to/file.env}} -- {{command}}"
+    },
+    {
+      "description": "Set an environment variable with encryption:",
+      "syntax": "dotenvx set {{key}} {{value}}"
+    },
+    {
+      "description": "Set an environment variable without encryption:",
+      "syntax": "dotenvx set {{key}} {{value}} --plain"
+    },
+    {
+      "description": "Return environment variables defined in a .env file:",
+      "syntax": "dotenvx get"
+    },
+    {
+      "description": "Return the value of an environment variable defined in a .env file:",
+      "syntax": "dotenvx get {{key}}"
+    },
+    {
+      "description": "Return all environment variables from .env files and OS:",
+      "syntax": "dotenvx get --all"
+    }
+  ]
+}

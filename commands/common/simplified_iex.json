@@ -1,0 +1,18 @@
+{
+  "command": "iex",
+  "description": "IEx is the interactive shell for Elixir. More information: https://hexdocs.pm/iex.",
+  "useCases": [
+    {
+      "description": "Start an interactive session:",
+      "syntax": "iex"
+    },
+    {
+      "description": "Start a session that remembers history:",
+      "syntax": "iex --erl &quot;-kernel shell_history enabled&quot;"
+    },
+    {
+      "description": "Start and load Mix project files:",
+      "syntax": "iex -S mix"
+    }
+  ]
+}

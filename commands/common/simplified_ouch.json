@@ -1,0 +1,22 @@
+{
+  "command": "ouch",
+  "description": "Command-line utility for compressing and decompressing files and directories. More information: https://crates.io/crates/ouch.",
+  "useCases": [
+    {
+      "description": "Decompress a specific file:",
+      "syntax": "ouch decompress {{path/to/archive.tar.xz}}"
+    },
+    {
+      "description": "Decompress a file to a specific location:",
+      "syntax": "ouch decompress {{path/to/archive.tar.xz}} --dir {{path/to/directory}}"
+    },
+    {
+      "description": "Decompress multiple files:",
+      "syntax": "ouch decompress {{path/to/archive1.tar path/to/archive2.tar.gz ...}}"
+    },
+    {
+      "description": "Compress files:",
+      "syntax": "ouch compress {{path/to/file1 path/to/file2 ...}} {{path/to/archive.zip}}"
+    }
+  ]
+}

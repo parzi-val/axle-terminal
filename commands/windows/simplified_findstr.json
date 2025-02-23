@@ -1,0 +1,38 @@
+{
+  "command": "findstr",
+  "description": "Find specified text within one or more files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/findstr.",
+  "useCases": [
+    {
+      "description": "Find one or more strings in all files:",
+      "syntax": "findstr &quot;{{string1 string2 ...}}&quot; *"
+    },
+    {
+      "description": "Find one or more strings in a piped command's output:",
+      "syntax": "{{dir}} | findstr &quot;{{string1 string2 ...}}&quot;"
+    },
+    {
+      "description": "Find one or more strings in all files recur[s]ively:",
+      "syntax": "findstr /s &quot;{{string1 string2 ...}}&quot; *"
+    },
+    {
+      "description": "Find strings using a case-insensitive search:",
+      "syntax": "findstr /i &quot;{{string1 string2 ...}}&quot; *"
+    },
+    {
+      "description": "Find strings in all files using regular expressions:",
+      "syntax": "findstr /r &quot;{{expression}}&quot; *"
+    },
+    {
+      "description": "Find a literal string (containing spaces) in all text files:",
+      "syntax": "findstr /c:&quot;{{string1 string2 ...}}&quot; *.txt"
+    },
+    {
+      "description": "Display the line number before each matching line:",
+      "syntax": "findstr /n &quot;{{string1 string2 ...}}&quot; *"
+    },
+    {
+      "description": "Display only the filenames that contain a match:",
+      "syntax": "findstr /m &quot;{{string1 string2 ...}}&quot; *"
+    }
+  ]
+}

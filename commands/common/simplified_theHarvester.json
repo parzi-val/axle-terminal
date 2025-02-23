@@ -1,0 +1,26 @@
+{
+  "command": "theHarvester",
+  "description": "A tool designed to be used in the early stages of a penetration test. More information: https://github.com/laramies/theHarvester.",
+  "useCases": [
+    {
+      "description": "Gather information on a domain using Google:",
+      "syntax": "theHarvester --domain {{domain_name}} --source google"
+    },
+    {
+      "description": "Gather information on a domain using multiple sources:",
+      "syntax": "theHarvester --domain {{domain_name}} --source {{duckduckgo,bing,crtsh}}"
+    },
+    {
+      "description": "Change the limit of results to work with:",
+      "syntax": "theHarvester --domain {{domain_name}} --source {{google}} --limit {{200}}"
+    },
+    {
+      "description": "Save the output to two files in XML and HTML format:",
+      "syntax": "theHarvester --domain {{domain_name}} --source {{google}} --file {{output_file_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "theHarvester --help"
+    }
+  ]
+}

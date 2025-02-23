@@ -1,0 +1,38 @@
+{
+  "command": "fdisk",
+  "description": "Manage partition tables and partitions on a hard disk. See also: partprobe. More information: https://manned.org/fdisk.",
+  "useCases": [
+    {
+      "description": "List partitions:",
+      "syntax": "sudo fdisk -l"
+    },
+    {
+      "description": "Start the partition manipulator:",
+      "syntax": "sudo fdisk {{/dev/sdX}}"
+    },
+    {
+      "description": "Once partitioning a disk, create a partition:",
+      "syntax": "n"
+    },
+    {
+      "description": "Once partitioning a disk, select a partition to delete:",
+      "syntax": "d"
+    },
+    {
+      "description": "Once partitioning a disk, view the partition table:",
+      "syntax": "p"
+    },
+    {
+      "description": "Once partitioning a disk, write the changes made:",
+      "syntax": "w"
+    },
+    {
+      "description": "Once partitioning a disk, discard the changes made:",
+      "syntax": "q"
+    },
+    {
+      "description": "Once partitioning a disk, open a help menu:",
+      "syntax": "m"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "rspec",
+  "description": "Behavior-driven development testing framework written in Ruby to test Ruby code. More information: https://rspec.info.",
+  "useCases": [
+    {
+      "description": "Initialize an .rspec configuration and a spec helper file:",
+      "syntax": "rspec --init"
+    },
+    {
+      "description": "Run all tests:",
+      "syntax": "rspec"
+    },
+    {
+      "description": "Run a specific directory of tests:",
+      "syntax": "rspec {{path/to/directory}}"
+    },
+    {
+      "description": "Run one or more test files:",
+      "syntax": "rspec {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Run a specific test in a file (e.g. the test starts on line 83):",
+      "syntax": "rspec {{path/to/file}}:{{83}}"
+    },
+    {
+      "description": "Run specs with a specific seed:",
+      "syntax": "rspec --seed {{seed_number}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "lsattr",
+  "description": "List file attributes on a Linux filesystem. More information: https://manned.org/lsattr.",
+  "useCases": [
+    {
+      "description": "Display the attributes of the files in the current directory:",
+      "syntax": "lsattr"
+    },
+    {
+      "description": "List the attributes of files in a particular path:",
+      "syntax": "lsattr {{path}}"
+    },
+    {
+      "description": "List file attributes recursively in the current and subsequent directories:",
+      "syntax": "lsattr -R"
+    },
+    {
+      "description": "Show attributes of all the files in the current directory, including hidden ones:",
+      "syntax": "lsattr -a"
+    },
+    {
+      "description": "Display attributes of directories in the current directory:",
+      "syntax": "lsattr -d"
+    }
+  ]
+}

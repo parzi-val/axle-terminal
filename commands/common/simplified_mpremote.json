@@ -1,0 +1,26 @@
+{
+  "command": "mpremote",
+  "description": "Remotely control MicroPython devices. More information: https://docs.micropython.org/en/latest/reference/mpremote.html.",
+  "useCases": [
+    {
+      "description": "List all connected MicroPython devices:",
+      "syntax": "mpremote connect list"
+    },
+    {
+      "description": "Open an interactive REPL session with a connected device:",
+      "syntax": "mpremote connect {{device}}"
+    },
+    {
+      "description": "Run a local script on a connected device:",
+      "syntax": "mpremote run {{path/to/script.py}}"
+    },
+    {
+      "description": "Mount a local directory to the device:",
+      "syntax": "mpremote mount {{path/to/directory}}"
+    },
+    {
+      "description": "Install a mip package on the device:",
+      "syntax": "mpremote mip install {{package}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "argon2",
+  "description": "Calculate Argon2 cryptographic hashes. More information: https://github.com/P-H-C/phc-winner-argon2#command-line-utility.",
+  "useCases": [
+    {
+      "description": "Calculate a hash with a password and a salt with the default parameters:",
+      "syntax": "echo &quot;{{password}}&quot; | argon2 &quot;{{salt_text}}&quot;"
+    },
+    {
+      "description": "Calculate a hash with the specified algorithm:",
+      "syntax": "echo &quot;{{password}}&quot; | argon2 &quot;{{salt_text}}&quot; -{{d|i|id}}"
+    },
+    {
+      "description": "Display the output hash without additional information:",
+      "syntax": "echo &quot;{{password}}&quot; | argon2 &quot;{{salt_text}}&quot; -e"
+    },
+    {
+      "description": "Calculate a hash with given iteration [t]imes, [m]emory usage, and [p]arallelism parameters:",
+      "syntax": "echo &quot;{{password}}&quot; | argon2 &quot;{{salt_text}}&quot; -t {{5}} -m {{20}} -p {{7}}"
+    }
+  ]
+}

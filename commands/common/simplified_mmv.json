@@ -1,0 +1,22 @@
+{
+  "command": "mmv",
+  "description": "Move and rename files in bulk. More information: https://manned.org/mmv.1.",
+  "useCases": [
+    {
+      "description": "Rename all files with a certain extension to a different extension:",
+      "syntax": "mmv &quot;*{{.old_extension}}&quot; &quot;#1{{.new_extension}}&quot;"
+    },
+    {
+      "description": "Copy report6part4.txt to ./french/rapport6partie4.txt along with all similarly named files:",
+      "syntax": "mmv -c &quot;{{report*part*.txt}}&quot; &quot;{{./french/rapport#1partie#2.txt}}&quot;"
+    },
+    {
+      "description": "Append all .txt files into one file:",
+      "syntax": "mmv -a &quot;{{*.txt}}&quot; &quot;{{all.txt}}&quot;"
+    },
+    {
+      "description": "Convert dates in filenames from \"M-D-Y\" format to \"D-M-Y\" format:",
+      "syntax": "mmv &quot;{{[0-1][0-9]-[0-3][0-9]-[0-9][0-9][0-9][0-9].txt}}&quot; &quot;{{#3#4-#1#2-#5#6#7#8.txt}}&quot;"
+    }
+  ]
+}

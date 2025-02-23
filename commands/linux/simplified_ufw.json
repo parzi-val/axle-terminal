@@ -1,0 +1,38 @@
+{
+  "command": "ufw",
+  "description": "Uncomplicated Firewall. Frontend for iptables aiming to make configuration of a firewall easier. More information: https://wiki.ubuntu.com/UncomplicatedFirewall.",
+  "useCases": [
+    {
+      "description": "Enable ufw:",
+      "syntax": "ufw enable"
+    },
+    {
+      "description": "Disable ufw:",
+      "syntax": "ufw disable"
+    },
+    {
+      "description": "Show ufw rules, along with their numbers:",
+      "syntax": "ufw status numbered"
+    },
+    {
+      "description": "Allow incoming traffic on port 5432 on this host with a comment identifying the service:",
+      "syntax": "ufw allow {{5432}} comment &quot;{{Service}}&quot;"
+    },
+    {
+      "description": "Allow only TCP traffic from 192.168.0.4 to any address on this host, on port 22:",
+      "syntax": "ufw allow proto {{tcp}} from {{192.168.0.4}} to {{any}} port {{22}}"
+    },
+    {
+      "description": "Deny traffic on port 80 on this host:",
+      "syntax": "ufw deny {{80}}"
+    },
+    {
+      "description": "Deny all UDP traffic to ports in range 8412:8500:",
+      "syntax": "ufw deny proto {{udp}} from {{any}} to {{any}} port {{8412:8500}}"
+    },
+    {
+      "description": "Delete a particular rule. The rule number can be retrieved from the ufw status numbered command:",
+      "syntax": "ufw delete {{rule_number}}"
+    }
+  ]
+}

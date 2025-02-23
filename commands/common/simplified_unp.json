@@ -1,0 +1,14 @@
+{
+  "command": "unp",
+  "description": "Extract any archive. Relevant extractors need to be installed, e.g. unrar for RAR. More information: https://manned.org/unp.",
+  "useCases": [
+    {
+      "description": "Extract an archive:",
+      "syntax": "unp {{path/to/archive.zip}}"
+    },
+    {
+      "description": "Extract multiple archives:",
+      "syntax": "unp {{path/to/archive1.tar.gz}} {{path/to/archive2.rar}}"
+    }
+  ]
+}

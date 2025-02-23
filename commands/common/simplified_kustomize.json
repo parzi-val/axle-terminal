@@ -1,0 +1,22 @@
+{
+  "command": "kustomize",
+  "description": "Easily deploy resources for Kubernetes. More information: https://github.com/kubernetes-sigs/kustomize.",
+  "useCases": [
+    {
+      "description": "Create a kustomization file with resources and namespace:",
+      "syntax": "kustomize create --resources {{deployment.yaml,service.yaml}} --namespace {{staging}}"
+    },
+    {
+      "description": "Build a kustomization file and deploy it with kubectl:",
+      "syntax": "kustomize build . | kubectl apply -f -"
+    },
+    {
+      "description": "Set an image in the kustomization file:",
+      "syntax": "kustomize edit set image {{busybox=alpine:3.6}}"
+    },
+    {
+      "description": "Search for Kubernetes resources in the current directory to be added to the kustomization file:",
+      "syntax": "kustomize create --autodetect"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "a2dismod",
+  "description": "Disable an Apache module on Debian-based OSes. More information: https://manned.org/a2dismod.8.",
+  "useCases": [
+    {
+      "description": "Disable a module:",
+      "syntax": "sudo a2dismod {{module}}"
+    },
+    {
+      "description": "Don't show informative messages:",
+      "syntax": "sudo a2dismod --quiet {{module}}"
+    }
+  ]
+}

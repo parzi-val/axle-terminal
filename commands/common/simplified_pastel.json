@@ -1,0 +1,26 @@
+{
+  "command": "pastel",
+  "description": "Generate, analyze, convert and manipulate colors. More information: https://github.com/sharkdp/pastel.",
+  "useCases": [
+    {
+      "description": "Convert colors from one format to another. Here from RGB to HSL:",
+      "syntax": "pastel format {{hsl}} {{ff8000}}"
+    },
+    {
+      "description": "Show and analyze colors on the terminal:",
+      "syntax": "pastel color &quot;{{rgb(255,50,127)}}&quot;"
+    },
+    {
+      "description": "Pick a color from somewhere on the screen:",
+      "syntax": "pastel pick"
+    },
+    {
+      "description": "Generate a set of N visually distinct colors:",
+      "syntax": "pastel distinct {{8}}"
+    },
+    {
+      "description": "List all X11/CSS color names:",
+      "syntax": "pastel list"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "pnpm outdated",
+  "description": "Check for outdated packages. The check can be limited to a subset of the installed packages by providing arguments (patterns are supported). More information: https://pnpm.io/cli/outdated.",
+  "useCases": [
+    {
+      "description": "Check for outdated packages:",
+      "syntax": "pnpm outdated"
+    },
+    {
+      "description": "Check for outdated dependencies found in every workspace package:",
+      "syntax": "pnpm outdated -r"
+    },
+    {
+      "description": "Filter outdated packages using a package selector:",
+      "syntax": "pnpm outdated --filter {{package_selector}}"
+    },
+    {
+      "description": "List outdated packages [g]lobally:",
+      "syntax": "pnpm outdated --global"
+    },
+    {
+      "description": "Print details of outdated packages:",
+      "syntax": "pnpm outdated --long"
+    },
+    {
+      "description": "Print outdated dependencies in a specific format:",
+      "syntax": "pnpm outdated --format {{format}}"
+    },
+    {
+      "description": "Print only versions that satisfy specifications in package.json:",
+      "syntax": "pnpm outdated --compatible"
+    },
+    {
+      "description": "Check only outdated [D]ev dependencies:",
+      "syntax": "pnpm outdated --dev"
+    }
+  ]
+}

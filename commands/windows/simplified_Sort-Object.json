@@ -1,0 +1,26 @@
+{
+  "command": "Sort-Object",
+  "description": "Sorts objects by property values. Note: This command can only be used through PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/sort-object.",
+  "useCases": [
+    {
+      "description": "Sort the current directory by name:",
+      "syntax": "Get-ChildItem | Sort-Object"
+    },
+    {
+      "description": "Sort the current directory by name descending:",
+      "syntax": "Get-ChildItem | Sort-Object -Descending"
+    },
+    {
+      "description": "Sort items removing duplicates:",
+      "syntax": "&quot;a&quot;, &quot;b&quot;, &quot;a&quot; | Sort-Object -Unique"
+    },
+    {
+      "description": "Sort the current directory by file length:",
+      "syntax": "Get-ChildItem | Sort-Object -Property Length"
+    },
+    {
+      "description": "Sort processes with the highest memory usage based on their working set (WS) size:",
+      "syntax": "Get-Process | Sort-Object -Property WS"
+    }
+  ]
+}

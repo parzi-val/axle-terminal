@@ -1,0 +1,22 @@
+{
+  "command": "pnmtofiasco",
+  "description": "Convert a PNM image to a compressed FIASCO file. More information: https://netpbm.sourceforge.net/doc/pnmtofiasco.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a compressed FIASCO file:",
+      "syntax": "pnmtofiasco {{path/to/file.pnm}} &gt; {{path/to/file.fiasco}}"
+    },
+    {
+      "description": "Specify the [i]nput files through a pattern:",
+      "syntax": "pnmtofiasco --image-name &quot;{{img[01-09+1].pnm}}&quot; &gt; {{path/to/file.fiasco}}"
+    },
+    {
+      "description": "Specify the compression quality:",
+      "syntax": "pnmtofiasco --quality {{quality_level}} {{path/to/file.pnm}} &gt; {{path/to/file.fiasco}}"
+    },
+    {
+      "description": "Load the options to be used from the specified configuration file:",
+      "syntax": "pnmtofiasco --config {{path/to/fiascorc}} {{path/to/file.pnm}} &gt; {{path/to/file.fiasco}}"
+    }
+  ]
+}

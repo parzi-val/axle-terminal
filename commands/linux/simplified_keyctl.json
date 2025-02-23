@@ -1,0 +1,38 @@
+{
+  "command": "keyctl",
+  "description": "Manipulate the Linux kernel keyring. More information: https://manned.org/keyctl.",
+  "useCases": [
+    {
+      "description": "List keys in a specific keyring:",
+      "syntax": "keyctl list {{target_keyring}}"
+    },
+    {
+      "description": "List current keys in the user default session:",
+      "syntax": "keyctl list {{@us}}"
+    },
+    {
+      "description": "Store a key in a specific keyring:",
+      "syntax": "keyctl add {{type_keyring}} {{key_name}} {{key_value}} {{target_keyring}}"
+    },
+    {
+      "description": "Store a key with its value from stdin:",
+      "syntax": "echo -n {{key_value}} | keyctl padd {{type_keyring}} {{key_name}} {{target_keyring}}"
+    },
+    {
+      "description": "Put a timeout on a key:",
+      "syntax": "keyctl timeout {{key_name}} {{timeout_in_seconds}}"
+    },
+    {
+      "description": "Read a key and format it as a hex-dump if not printable:",
+      "syntax": "keyctl read {{key_name}}"
+    },
+    {
+      "description": "Read a key and format as-is:",
+      "syntax": "keyctl pipe {{key_name}}"
+    },
+    {
+      "description": "Revoke a key and prevent any further action on it:",
+      "syntax": "keyctl revoke {{key_name}}"
+    }
+  ]
+}

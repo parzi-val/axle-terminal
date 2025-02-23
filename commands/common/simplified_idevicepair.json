@@ -1,0 +1,14 @@
+{
+  "command": "idevicepair",
+  "description": "Manage host pairings with iOS devices. More information: https://manned.org/idevicepair.",
+  "useCases": [
+    {
+      "description": "Pair a device with the host:",
+      "syntax": "idevicepair pair"
+    },
+    {
+      "description": "List devices paired with the host:",
+      "syntax": "idevicepair list"
+    }
+  ]
+}

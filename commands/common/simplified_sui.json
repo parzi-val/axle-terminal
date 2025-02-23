@@ -1,0 +1,26 @@
+{
+  "command": "sui",
+  "description": "Interact with the Sui network. More information: https://docs.sui.io/references/cli/cheatsheet.",
+  "useCases": [
+    {
+      "description": "Execute a Sui subcommand:",
+      "syntax": "sui {{subcommand}}"
+    },
+    {
+      "description": "Build tools for a smart contract:",
+      "syntax": "sui move {{subcommand}}"
+    },
+    {
+      "description": "Publish smart contracts, get object information, execute transactions and more:",
+      "syntax": "sui client {{subcommand}}"
+    },
+    {
+      "description": "Start a local network:",
+      "syntax": "sui start"
+    },
+    {
+      "description": "Update from source:",
+      "syntax": "cargo install --locked --git https://github.com/MystenLabs/sui.git --branch testnet sui"
+    }
+  ]
+}

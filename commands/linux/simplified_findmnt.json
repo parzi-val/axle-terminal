@@ -1,0 +1,30 @@
+{
+  "command": "findmnt",
+  "description": "Find your filesystem. More information: https://manned.org/findmnt.",
+  "useCases": [
+    {
+      "description": "List all mounted filesystems:",
+      "syntax": "findmnt"
+    },
+    {
+      "description": "Search for a device:",
+      "syntax": "findmnt {{/dev/sdb1}}"
+    },
+    {
+      "description": "Search for a mountpoint:",
+      "syntax": "findmnt {{/}}"
+    },
+    {
+      "description": "Find filesystems in specific type:",
+      "syntax": "findmnt -t {{ext4}}"
+    },
+    {
+      "description": "Find filesystems with specific label:",
+      "syntax": "findmnt LABEL={{BigStorage}}"
+    },
+    {
+      "description": "Check mount table content in detail and verify /etc/fstab:",
+      "syntax": "findmnt --verify --verbose"
+    }
+  ]
+}

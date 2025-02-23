@@ -1,0 +1,34 @@
+{
+  "command": "rich",
+  "description": "A toolbox for fancy output in the terminal. More information: https://github.com/Textualize/rich-cli.",
+  "useCases": [
+    {
+      "description": "Display a file with syntax highlighting:",
+      "syntax": "rich {{path/to/file.py}}"
+    },
+    {
+      "description": "Add line numbers, and indentation guides:",
+      "syntax": "rich {{path/to/file.py}} --line-numbers --guides"
+    },
+    {
+      "description": "Apply a theme:",
+      "syntax": "rich {{path/to/file.py}} --theme {{monokai}}"
+    },
+    {
+      "description": "Display a file in an interactive pager:",
+      "syntax": "rich {{path/to/file.py}} --pager"
+    },
+    {
+      "description": "Display contents from a URL:",
+      "syntax": "rich {{https://raw.githubusercontent.com/Textualize/rich-cli/main/README.md}} --markdown --pager"
+    },
+    {
+      "description": "Export a file as HTML:",
+      "syntax": "rich {{path/to/file.md}} --export-html {{path/to/file.html}}"
+    },
+    {
+      "description": "Display text with formatting tags, custom alignment, and line width:",
+      "syntax": "rich --print &quot;{{Hello [green on black]Stylized[/green on black] [bold]World[/bold]}}&quot; --{{left|center|right}} --width {{10}}"
+    }
+  ]
+}

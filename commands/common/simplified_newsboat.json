@@ -1,0 +1,26 @@
+{
+  "command": "newsboat",
+  "description": "An RSS/Atom feed reader for text terminals. More information: https://newsboat.org/.",
+  "useCases": [
+    {
+      "description": "First import feed URLs from an OPML file:",
+      "syntax": "newsboat -i {{my-feeds.xml}}"
+    },
+    {
+      "description": "Alternatively, add feeds manually:",
+      "syntax": "echo {{http://example.com/path/to/feed}} &gt;&gt; &quot;${HOME}/.newsboat/urls&quot;"
+    },
+    {
+      "description": "Start Newsboat and refresh all feeds on startup:",
+      "syntax": "newsboat -r"
+    },
+    {
+      "description": "Execute one or more commands in non-interactive mode:",
+      "syntax": "newsboat -x {{reload print-unread ...}}"
+    },
+    {
+      "description": "See keyboard shortcuts (the most relevant are visible in the status line):",
+      "syntax": "?"
+    }
+  ]
+}

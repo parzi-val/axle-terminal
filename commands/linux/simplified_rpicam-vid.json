@@ -1,0 +1,10 @@
+{
+  "command": "rpicam-vid",
+  "description": "Capture a video using a Raspberry Pi camera. See also: vlc. More information: https://www.raspberrypi.com/documentation/computers/camera_software.html#rpicam-vid.",
+  "useCases": [
+    {
+      "description": "Capture a 10 second video:",
+      "syntax": "rpicam-vid -t 10000 -o {{path/to/file.h264}}"
+    }
+  ]
+}

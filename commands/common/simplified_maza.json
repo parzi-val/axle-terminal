@@ -1,0 +1,22 @@
+{
+  "command": "maza",
+  "description": "Local ad blocker. Like Pi-hole but local and using the operating system. More information: https://github.com/tanrax/maza-ad-blocking.",
+  "useCases": [
+    {
+      "description": "Update the Maza database:",
+      "syntax": "maza update"
+    },
+    {
+      "description": "Start Maza:",
+      "syntax": "sudo maza start"
+    },
+    {
+      "description": "Stop Maza:",
+      "syntax": "sudo maza stop"
+    },
+    {
+      "description": "Show the status of Maza:",
+      "syntax": "maza status"
+    }
+  ]
+}

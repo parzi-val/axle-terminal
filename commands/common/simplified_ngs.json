@@ -1,0 +1,18 @@
+{
+  "command": "ngs",
+  "description": "Scripting language created specifically for Ops. More information: https://github.com/ngs-lang/ngs.",
+  "useCases": [
+    {
+      "description": "Execute a code snippet:",
+      "syntax": "ngs -e &quot;{{echo('ngs is executed')}}&quot;"
+    },
+    {
+      "description": "Execute a script:",
+      "syntax": "ngs {{path/to/script.ngs}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ngs --version"
+    }
+  ]
+}

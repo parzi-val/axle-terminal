@@ -1,0 +1,26 @@
+{
+  "command": "powerstat",
+  "description": "Measures the power consumption of a computer that has a battery power source or supports the RAPL interface. More information: https://manned.org/powerstat.",
+  "useCases": [
+    {
+      "description": "Measure power with the default of 10 samples with an interval of 10 seconds:",
+      "syntax": "powerstat"
+    },
+    {
+      "description": "Measure power with custom number of samples and interval duration:",
+      "syntax": "powerstat {{interval}} {{number_of_samples}}"
+    },
+    {
+      "description": "Measure power using Intel's RAPL interface:",
+      "syntax": "powerstat -R {{interval}} {{number_of_samples}}"
+    },
+    {
+      "description": "Show a histogram of the power measurements:",
+      "syntax": "powerstat -H {{interval}} {{number_of_samples}}"
+    },
+    {
+      "description": "Enable all statistics gathering options:",
+      "syntax": "powerstat -a {{interval}} {{number_of_samples}}"
+    }
+  ]
+}

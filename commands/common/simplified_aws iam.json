@@ -1,0 +1,38 @@
+{
+  "command": "aws iam",
+  "description": "Interact with Identity and Access Management (IAM), a web service for securely controlling access to AWS services. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html.",
+  "useCases": [
+    {
+      "description": "List users:",
+      "syntax": "aws iam list-users"
+    },
+    {
+      "description": "List policies:",
+      "syntax": "aws iam list-policies"
+    },
+    {
+      "description": "List groups:",
+      "syntax": "aws iam list-groups"
+    },
+    {
+      "description": "Get users in a group:",
+      "syntax": "aws iam get-group --group-name {{group_name}}"
+    },
+    {
+      "description": "Describe an IAM policy:",
+      "syntax": "aws iam get-policy --policy-arn arn:aws:iam::aws:policy/{{policy_name}}"
+    },
+    {
+      "description": "List access keys:",
+      "syntax": "aws iam list-access-keys"
+    },
+    {
+      "description": "List access keys for a specific user:",
+      "syntax": "aws iam list-access-keys --user-name {{user_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aws iam help"
+    }
+  ]
+}

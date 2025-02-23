@@ -1,0 +1,18 @@
+{
+  "command": "tex",
+  "description": "Compile a DVI document from TeX source files. More information: https://www.tug.org/begin.html.",
+  "useCases": [
+    {
+      "description": "Compile a DVI document:",
+      "syntax": "tex {{source.tex}}"
+    },
+    {
+      "description": "Compile a DVI document, specifying an output directory:",
+      "syntax": "tex -output-directory={{path/to/directory}} {{source.tex}}"
+    },
+    {
+      "description": "Compile a DVI document, exiting on each error:",
+      "syntax": "tex -halt-on-error {{source.tex}}"
+    }
+  ]
+}

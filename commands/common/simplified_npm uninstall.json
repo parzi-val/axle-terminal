@@ -1,0 +1,18 @@
+{
+  "command": "npm uninstall",
+  "description": "Remove a package. More information: https://docs.npmjs.com/cli/v8/commands/npm-uninstall.",
+  "useCases": [
+    {
+      "description": "Remove a package from the current project:",
+      "syntax": "npm uninstall {{package_name}}"
+    },
+    {
+      "description": "Remove a package globally:",
+      "syntax": "npm uninstall -g {{package_name}}"
+    },
+    {
+      "description": "Remove multiple packages at once:",
+      "syntax": "npm uninstall {{package_name1 package_name2 ...}}"
+    }
+  ]
+}

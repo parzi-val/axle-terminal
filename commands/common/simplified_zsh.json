@@ -1,0 +1,38 @@
+{
+  "command": "zsh",
+  "description": "Z SHell, a Bash-compatible command-line interpreter. See also: bash, histexpand. More information: https://www.zsh.org.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "zsh"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "zsh -c &quot;{{echo Hello world}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "zsh {{path/to/script.zsh}}"
+    },
+    {
+      "description": "Check a specific script for syntax errors without executing it:",
+      "syntax": "zsh --no-exec {{path/to/script.zsh}}"
+    },
+    {
+      "description": "Execute specific commands from stdin:",
+      "syntax": "{{echo Hello world}} | zsh"
+    },
+    {
+      "description": "Execute a specific script, printing each command in the script before executing it:",
+      "syntax": "zsh --xtrace {{path/to/script.zsh}}"
+    },
+    {
+      "description": "Start an interactive shell session in verbose mode, printing each command before executing it:",
+      "syntax": "zsh --verbose"
+    },
+    {
+      "description": "Execute a specific command inside zsh with disabled glob patterns:",
+      "syntax": "noglob {{command}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "blkdiscard",
+  "description": "Discards device sectors on storage devices. Useful for SSDs. More information: https://manned.org/blkdiscard.",
+  "useCases": [
+    {
+      "description": "Discard all sectors on a device, removing all data:",
+      "syntax": "blkdiscard {{/dev/device}}"
+    },
+    {
+      "description": "Securely discard all blocks on a device, removing all data:",
+      "syntax": "blkdiscard --secure {{/dev/device}}"
+    },
+    {
+      "description": "Discard the first 100 MB of a device:",
+      "syntax": "blkdiscard --length {{100MB}} {{/dev/device}}"
+    }
+  ]
+}

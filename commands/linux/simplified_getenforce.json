@@ -1,0 +1,10 @@
+{
+  "command": "getenforce",
+  "description": "Get the current mode of SELinux (i.e. enforcing, permissive, or disabled). See also: setenforce, semanage-permissive. More information: https://manned.org/getenforce.",
+  "useCases": [
+    {
+      "description": "Display the current mode of SELinux:",
+      "syntax": "getenforce"
+    }
+  ]
+}

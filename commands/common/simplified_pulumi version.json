@@ -1,0 +1,14 @@
+{
+  "command": "pulumi version",
+  "description": "Display Pulumi's version number. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_version/.",
+  "useCases": [
+    {
+      "description": "Display version:",
+      "syntax": "pulumi version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pulumi version {{-h|--help}}"
+    }
+  ]
+}

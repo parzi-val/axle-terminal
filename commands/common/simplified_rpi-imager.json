@@ -1,0 +1,18 @@
+{
+  "command": "rpi-imager",
+  "description": "Flash images onto storage devices. More information: https://github.com/raspberrypi/rpi-imager.",
+  "useCases": [
+    {
+      "description": "Write a specific image to a specific block device:",
+      "syntax": "rpi-imager --cli {{path/to/image.zip}} {{/dev/sdX}}"
+    },
+    {
+      "description": "Write a specific image to a block device, disabling the checksum verification:",
+      "syntax": "rpi-imager --cli --disable-verify {{path/to/image.zip}} {{/dev/sdX}}"
+    },
+    {
+      "description": "Write a specific image to a block device, which will expect a specific checksum when running the verification:",
+      "syntax": "rpi-imager --cli --sha256 {{expected_hash}} {{path/to/image.zip}} {{/dev/sdX}}"
+    }
+  ]
+}

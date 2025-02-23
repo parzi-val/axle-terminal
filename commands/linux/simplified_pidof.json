@@ -1,0 +1,22 @@
+{
+  "command": "pidof",
+  "description": "Get the ID of a process using its name. More information: https://manned.org/pidof.",
+  "useCases": [
+    {
+      "description": "List all process IDs with given name:",
+      "syntax": "pidof {{bash}}"
+    },
+    {
+      "description": "List a single process ID with given name:",
+      "syntax": "pidof -s {{bash}}"
+    },
+    {
+      "description": "List process IDs including scripts with given name:",
+      "syntax": "pidof -x {{script.py}}"
+    },
+    {
+      "description": "Kill all processes with given name:",
+      "syntax": "kill $(pidof {{name}})"
+    }
+  ]
+}

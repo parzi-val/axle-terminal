@@ -1,0 +1,18 @@
+{
+  "command": "pueue completions",
+  "description": "Generates shell completion files for Bash, Elvish, Fish, PowerShell, and Zsh. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Generate completions for Bash:",
+      "syntax": "sudo pueue completions bash {{/usr/share/bash-completion/completions/pueue.bash}}"
+    },
+    {
+      "description": "Generate completions for Zsh:",
+      "syntax": "sudo pueue completions zsh {{/usr/share/zsh/site-functions}}"
+    },
+    {
+      "description": "Generate completions for fish:",
+      "syntax": "sudo pueue completions fish {{/usr/share/fish/completions}}"
+    }
+  ]
+}

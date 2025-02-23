@@ -1,0 +1,34 @@
+{
+  "command": "ps",
+  "description": "Information about running processes. More information: https://manned.org/ps.",
+  "useCases": [
+    {
+      "description": "List all running processes:",
+      "syntax": "ps aux"
+    },
+    {
+      "description": "List all running processes including the full command string:",
+      "syntax": "ps auxww"
+    },
+    {
+      "description": "Search for a process that matches a string (the brackets will prevent grep from matching itself):",
+      "syntax": "ps aux | grep {{[s]tring}}"
+    },
+    {
+      "description": "List all processes of the current user in extra full format:",
+      "syntax": "ps --user $(id -u) -F"
+    },
+    {
+      "description": "List all processes of the current user as a tree:",
+      "syntax": "ps --user $(id -u) f"
+    },
+    {
+      "description": "Get the parent PID of a process:",
+      "syntax": "ps -o ppid= -p {{pid}}"
+    },
+    {
+      "description": "Sort processes by memory consumption:",
+      "syntax": "ps --sort size"
+    }
+  ]
+}

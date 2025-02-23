@@ -1,0 +1,30 @@
+{
+  "command": "npm run",
+  "description": "Run a script. More information: https://docs.npmjs.com/cli/commands/npm-run-script.",
+  "useCases": [
+    {
+      "description": "Run a script:",
+      "syntax": "npm run {{script_name}}"
+    },
+    {
+      "description": "Pass arguments to a script:",
+      "syntax": "npm run {{script_name}} -- {{argument}} {{--option}}"
+    },
+    {
+      "description": "Run a script named start:",
+      "syntax": "npm start"
+    },
+    {
+      "description": "Run a script named stop:",
+      "syntax": "npm stop"
+    },
+    {
+      "description": "Run a script named restart:",
+      "syntax": "npm restart"
+    },
+    {
+      "description": "Run a script named test:",
+      "syntax": "npm test"
+    }
+  ]
+}

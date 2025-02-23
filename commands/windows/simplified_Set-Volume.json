@@ -1,0 +1,22 @@
+{
+  "command": "Set-Volume",
+  "description": "Sets or changes the file system label of an existing volume. Note: This command can only be used through PowerShell. More information: https://learn.microsoft.com/powershell/module/storage/set-volume.",
+  "useCases": [
+    {
+      "description": "Change the file system label of a volume identified by drive letter:",
+      "syntax": "Set-Volume -DriveLetter &quot;D&quot; -NewFileSystemLabel &quot;DataVolume&quot;"
+    },
+    {
+      "description": "Change the file system label of a volume identified by the system label:",
+      "syntax": "Set-Volume -FileSystemLabel &quot;OldLabel&quot; -NewFileSystemLabel &quot;NewLabel&quot;"
+    },
+    {
+      "description": "Modify the properties of a volume using a volume object:",
+      "syntax": "Set-Volume -InputObject $(Get-Volume -DriveLetter &quot;E&quot;) -NewFileSystemLabel &quot;Backup&quot;"
+    },
+    {
+      "description": "Specify the Data Deduplication mode for the volume:",
+      "syntax": "Set-Volume -DriveLetter &quot;D&quot; -DedupMode Backup"
+    }
+  ]
+}

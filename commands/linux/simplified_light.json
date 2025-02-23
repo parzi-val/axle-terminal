@@ -1,0 +1,22 @@
+{
+  "command": "light",
+  "description": "Control the backlight of your screen. More information: https://manned.org/light.",
+  "useCases": [
+    {
+      "description": "Get the current backlight value in percent:",
+      "syntax": "light"
+    },
+    {
+      "description": "Set the backlight value to 50 percent:",
+      "syntax": "light -S {{50}}"
+    },
+    {
+      "description": "Reduce 20 percent from the current backlight value:",
+      "syntax": "light -U {{20}}"
+    },
+    {
+      "description": "Add 20 percent to the current backlight value:",
+      "syntax": "light -A {{20}}"
+    }
+  ]
+}

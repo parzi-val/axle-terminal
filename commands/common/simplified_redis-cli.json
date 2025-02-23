@@ -1,0 +1,34 @@
+{
+  "command": "redis-cli",
+  "description": "Opens a connection to a Redis server. More information: https://redis.io/topics/rediscli.",
+  "useCases": [
+    {
+      "description": "Connect to the local server:",
+      "syntax": "redis-cli"
+    },
+    {
+      "description": "Connect to a remote server on the default port (6379):",
+      "syntax": "redis-cli -h {{host}}"
+    },
+    {
+      "description": "Connect to a remote server specifying a port number:",
+      "syntax": "redis-cli -h {{host}} -p {{port}}"
+    },
+    {
+      "description": "Connect to a remote server specifying a URI:",
+      "syntax": "redis-cli -u {{uri}}"
+    },
+    {
+      "description": "Specify a password:",
+      "syntax": "redis-cli -a {{password}}"
+    },
+    {
+      "description": "Execute Redis command:",
+      "syntax": "redis-cli {{redis_command}}"
+    },
+    {
+      "description": "Connect to the local cluster:",
+      "syntax": "redis-cli -c"
+    }
+  ]
+}

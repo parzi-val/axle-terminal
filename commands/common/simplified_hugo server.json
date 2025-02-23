@@ -1,0 +1,26 @@
+{
+  "command": "hugo server",
+  "description": "Build and serve a site with Hugo's built-in webserver. More information: https://gohugo.io/commands/hugo_server/.",
+  "useCases": [
+    {
+      "description": "Build and serve a site:",
+      "syntax": "hugo server"
+    },
+    {
+      "description": "Build and serve a site on a specified port number:",
+      "syntax": "hugo server --port {{port_number}}"
+    },
+    {
+      "description": "Build and serve a site while minifying supported output formats (HTML, XML, etc.):",
+      "syntax": "hugo server --minify"
+    },
+    {
+      "description": "Build and serve a site in the production environment with full re-renders while minifying supported formats:",
+      "syntax": "hugo server --environment {{production}} --disableFastRender --minify"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "hugo server --help"
+    }
+  ]
+}

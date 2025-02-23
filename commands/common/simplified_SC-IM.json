@@ -1,0 +1,30 @@
+{
+  "command": "SC-IM",
+  "description": "A curses based, vim-like spreadsheet calculator. Use hjkl or arrow keys to navigate. More information: https://github.com/andmarti1424/sc-im.",
+  "useCases": [
+    {
+      "description": "Start SC-IM:",
+      "syntax": "scim {{path/to/file.csv}}"
+    },
+    {
+      "description": "Enter a string into the current cell:",
+      "syntax": "{{&lt;|&gt;}}"
+    },
+    {
+      "description": "Enter a numeric constant into the current cell:",
+      "syntax": "="
+    },
+    {
+      "description": "Edit string in the current cell:",
+      "syntax": "E"
+    },
+    {
+      "description": "Edit number in the current cell:",
+      "syntax": "e"
+    },
+    {
+      "description": "Center align the current cell:",
+      "syntax": "|"
+    }
+  ]
+}

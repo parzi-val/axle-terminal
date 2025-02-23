@@ -1,0 +1,38 @@
+{
+  "command": "pihole",
+  "description": "Terminal interface for the Pi-hole ad-blocking DNS server. More information: https://docs.pi-hole.net/core/pihole-command/.",
+  "useCases": [
+    {
+      "description": "Check the Pi-hole daemon's status:",
+      "syntax": "pihole status"
+    },
+    {
+      "description": "Update Pi-hole and Gravity:",
+      "syntax": "pihole -up"
+    },
+    {
+      "description": "Monitor detailed system status:",
+      "syntax": "pihole chronometer"
+    },
+    {
+      "description": "Start or stop the daemon:",
+      "syntax": "pihole {{enable|disable}}"
+    },
+    {
+      "description": "Restart the daemon (not the server itself):",
+      "syntax": "pihole restartdns"
+    },
+    {
+      "description": "Whitelist or blacklist a domain:",
+      "syntax": "pihole {{whitelist|blacklist}} {{example.com}}"
+    },
+    {
+      "description": "Search the lists for a domain:",
+      "syntax": "pihole query {{example.com}}"
+    },
+    {
+      "description": "Open a real-time log of connections:",
+      "syntax": "pihole tail"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "rpi-eeprom-update",
+  "description": "Update EEPROM and view other EEPROM information. More information: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#rpi-eeprom-update.",
+  "useCases": [
+    {
+      "description": "Print information about the current raspberry pi EEPROM installed:",
+      "syntax": "sudo rpi-eeprom-update"
+    },
+    {
+      "description": "Update a raspberry pi EEPROM:",
+      "syntax": "sudo rpi-eeprom-update -a"
+    },
+    {
+      "description": "Cancel the pending update:",
+      "syntax": "sudo rpi-eeprom-update -r"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rpi-eeprom-update -h"
+    }
+  ]
+}

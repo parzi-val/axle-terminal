@@ -1,0 +1,26 @@
+{
+  "command": "kitty",
+  "description": "A fast, feature-rich, GPU based terminal emulator. More information: https://sw.kovidgoyal.net/kitty/.",
+  "useCases": [
+    {
+      "description": "Open a new terminal:",
+      "syntax": "kitty"
+    },
+    {
+      "description": "Open a terminal with the specified title for the window:",
+      "syntax": "kitty --title &quot;{{title}}&quot;"
+    },
+    {
+      "description": "Start the theme-chooser builtin:",
+      "syntax": "kitty +kitten themes"
+    },
+    {
+      "description": "Display an image in the terminal:",
+      "syntax": "kitty +kitten icat {{path/to/image}}"
+    },
+    {
+      "description": "Copy the contents of stdin to the clipboard:",
+      "syntax": "echo {{example}} | kitty +kitten clipboard"
+    }
+  ]
+}

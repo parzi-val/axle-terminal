@@ -1,0 +1,18 @@
+{
+  "command": "git cat-file",
+  "description": "Provide content or type and size information for Git repository objects. More information: https://git-scm.com/docs/git-cat-file.",
+  "useCases": [
+    {
+      "description": "Get the [s]ize of the HEAD commit in bytes:",
+      "syntax": "git cat-file -s HEAD"
+    },
+    {
+      "description": "Get the [t]ype (blob, tree, commit, tag) of a given Git object:",
+      "syntax": "git cat-file -t {{8c442dc3}}"
+    },
+    {
+      "description": "Pretty-[p]rint the contents of a given Git object based on its type:",
+      "syntax": "git cat-file -p {{HEAD~2}}"
+    }
+  ]
+}

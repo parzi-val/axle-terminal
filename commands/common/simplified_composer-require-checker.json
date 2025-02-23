@@ -1,0 +1,14 @@
+{
+  "command": "composer-require-checker",
+  "description": "Analyze Composer dependencies for soft dependencies. More information: https://github.com/maglnet/ComposerRequireChecker.",
+  "useCases": [
+    {
+      "description": "Analyze a Composer JSON file:",
+      "syntax": "composer-require-checker check {{path/to/composer.json}}"
+    },
+    {
+      "description": "Analyze a Composer JSON file with a specific configuration:",
+      "syntax": "composer-require-checker check --config-file {{path/to/config.json}} {{path/to/composer.json}}"
+    }
+  ]
+}

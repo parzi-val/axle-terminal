@@ -1,0 +1,34 @@
+{
+  "command": "cbatticon",
+  "description": "A lightweight and fast battery icon that sits in your system tray. More information: https://github.com/valr/cbatticon.",
+  "useCases": [
+    {
+      "description": "Show the battery icon in the system tray:",
+      "syntax": "cbatticon"
+    },
+    {
+      "description": "Show the battery icon and set the update interval to 20 seconds:",
+      "syntax": "cbatticon --update-interval {{20}}"
+    },
+    {
+      "description": "List available icon types:",
+      "syntax": "cbatticon --list-icon-types"
+    },
+    {
+      "description": "Show the battery icon with a specific icon type:",
+      "syntax": "cbatticon --icon-type {{standard|notification|symbolic}}"
+    },
+    {
+      "description": "List available power supplies:",
+      "syntax": "cbatticon --list-power-supplies"
+    },
+    {
+      "description": "Show the battery icon for a specific battery:",
+      "syntax": "cbatticon {{BAT0}}"
+    },
+    {
+      "description": "Show the battery icon and which command to execute when the battery level reaches the set critical level:",
+      "syntax": "cbatticon --critical-level {{5}} --command-critical-level {{poweroff}}"
+    }
+  ]
+}

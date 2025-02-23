@@ -1,0 +1,26 @@
+{
+  "command": "lrunzip",
+  "description": "A large file decompression program. See also: lrzip, lrztar, lrzuntar. More information: https://manned.org/lrunzip.",
+  "useCases": [
+    {
+      "description": "Decompress a file:",
+      "syntax": "lrunzip {{filename.lrz}}"
+    },
+    {
+      "description": "Decompress a file using a specific number of processor threads:",
+      "syntax": "lrunzip -p {{8}} {{filename.lrz}}"
+    },
+    {
+      "description": "Decompress a file and silently overwrite files if they exist:",
+      "syntax": "lrunzip -f {{filename.lrz}}"
+    },
+    {
+      "description": "Keep broken or damaged files instead of deleting them when decompressing:",
+      "syntax": "lrunzip -K {{filename.lrz}}"
+    },
+    {
+      "description": "Specify output file name and/or path:",
+      "syntax": "lrunzip -o {{outfilename}} {{filename.lrz}}"
+    }
+  ]
+}

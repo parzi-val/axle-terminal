@@ -1,0 +1,22 @@
+{
+  "command": "kind",
+  "description": "Run local Kubernetes clusters using Docker container \"nodes\". Designed for testing Kubernetes itself, but may be used for local development or continuous integration. More information: https://github.com/kubernetes-sigs/kind.",
+  "useCases": [
+    {
+      "description": "Create a local Kubernetes cluster:",
+      "syntax": "kind create cluster --name {{cluster_name}}"
+    },
+    {
+      "description": "Delete one or more clusters:",
+      "syntax": "kind delete clusters {{cluster_name}}"
+    },
+    {
+      "description": "Get details about clusters, nodes, or the kubeconfig:",
+      "syntax": "kind get {{clusters|nodes|kubeconfig}}"
+    },
+    {
+      "description": "Export the kubeconfig or the logs:",
+      "syntax": "kind export {{kubeconfig|logs}}"
+    }
+  ]
+}

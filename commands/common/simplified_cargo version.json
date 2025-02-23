@@ -1,0 +1,14 @@
+{
+  "command": "cargo version",
+  "description": "Display cargo version information. More information: https://doc.rust-lang.org/cargo/commands/cargo-version.html.",
+  "useCases": [
+    {
+      "description": "Display version:",
+      "syntax": "cargo version"
+    },
+    {
+      "description": "Display additional build information:",
+      "syntax": "cargo version --verbose"
+    }
+  ]
+}

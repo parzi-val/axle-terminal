@@ -1,0 +1,22 @@
+{
+  "command": "docker login",
+  "description": "Log into a Docker registry. More information: https://docs.docker.com/reference/cli/docker/login/.",
+  "useCases": [
+    {
+      "description": "Interactively log into a registry:",
+      "syntax": "docker login"
+    },
+    {
+      "description": "Log into a registry with a specific username (user will be prompted for a password):",
+      "syntax": "docker login --username {{username}}"
+    },
+    {
+      "description": "Log into a registry with username and password:",
+      "syntax": "docker login --username {{username}} --password {{password}} {{server}}"
+    },
+    {
+      "description": "Log into a registry with password from stdin:",
+      "syntax": "echo &quot;{{password}}&quot; | docker login --username {{username}} --password-stdin"
+    }
+  ]
+}

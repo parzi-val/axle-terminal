@@ -1,0 +1,22 @@
+{
+  "command": "sbatch",
+  "description": "Submit a batch job to the SLURM scheduler. More information: https://manned.org/sbatch.",
+  "useCases": [
+    {
+      "description": "Submit a batch job:",
+      "syntax": "sbatch {{path/to/job.sh}}"
+    },
+    {
+      "description": "Submit a batch job with a custom name:",
+      "syntax": "sbatch --job-name={{myjob}} {{path/to/job.sh}}"
+    },
+    {
+      "description": "Submit a batch job with a time limit of 30 minutes:",
+      "syntax": "sbatch --time={{00:30:00}} {{path/to/job.sh}}"
+    },
+    {
+      "description": "Submit a job and request multiple nodes:",
+      "syntax": "sbatch --nodes={{3}} {{path/to/job.sh}}"
+    }
+  ]
+}

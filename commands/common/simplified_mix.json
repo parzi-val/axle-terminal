@@ -1,0 +1,26 @@
+{
+  "command": "mix",
+  "description": "Build tool that provides tasks for creating, compiling, and testing Elixir projects, managing its dependencies, and more. More information: https://hexdocs.pm/mix.",
+  "useCases": [
+    {
+      "description": "Execute a particular file:",
+      "syntax": "mix run {{my_script.exs}}"
+    },
+    {
+      "description": "Create a new project:",
+      "syntax": "mix new {{project_name}}"
+    },
+    {
+      "description": "Compile project:",
+      "syntax": "mix compile"
+    },
+    {
+      "description": "Run project tests:",
+      "syntax": "mix test"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mix help"
+    }
+  ]
+}

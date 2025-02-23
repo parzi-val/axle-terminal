@@ -1,0 +1,38 @@
+{
+  "command": "git rebase",
+  "description": "Reapply commits from one branch on top of another branch. Commonly used to \"move\" an entire branch to another base, creating copies of the commits in the new location. More information: https://git-scm.com/docs/git-rebase.",
+  "useCases": [
+    {
+      "description": "Rebase the current branch on top of another specified branch:",
+      "syntax": "git rebase {{new_base_branch}}"
+    },
+    {
+      "description": "Start an interactive rebase, which allows the commits to be reordered, omitted, combined or modified:",
+      "syntax": "git rebase {{-i|--interactive}} {{target_base_branch_or_commit_hash}}"
+    },
+    {
+      "description": "Continue a rebase that was interrupted by a merge failure, after editing conflicting files:",
+      "syntax": "git rebase --continue"
+    },
+    {
+      "description": "Continue a rebase that was paused due to merge conflicts, by skipping the conflicted commit:",
+      "syntax": "git rebase --skip"
+    },
+    {
+      "description": "Abort a rebase in progress (e.g. if it is interrupted by a merge conflict):",
+      "syntax": "git rebase --abort"
+    },
+    {
+      "description": "Move part of the current branch onto a new base, providing the old base to start from:",
+      "syntax": "git rebase --onto {{new_base}} {{old_base}}"
+    },
+    {
+      "description": "Reapply the last 5 commits in-place, stopping to allow them to be reordered, omitted, combined or modified:",
+      "syntax": "git rebase {{-i|--interactive}} {{HEAD~5}}"
+    },
+    {
+      "description": "Auto-resolve any conflicts by favoring the working branch version (theirs keyword has reversed meaning in this case):",
+      "syntax": "git rebase {{-X|--strategy-option}} theirs {{branch_name}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "lsb_release",
+  "description": "Get LSB (Linux Standard Base) and distribution-specific information. More information: https://manned.org/lsb_release.",
+  "useCases": [
+    {
+      "description": "Print all available information:",
+      "syntax": "lsb_release -a"
+    },
+    {
+      "description": "Print a description (usually the full name) of the operating system:",
+      "syntax": "lsb_release -d"
+    },
+    {
+      "description": "Print only the operating system name (ID), suppressing the field name:",
+      "syntax": "lsb_release -i -s"
+    },
+    {
+      "description": "Print the release number and codename of the distribution, suppressing the field names:",
+      "syntax": "lsb_release -rcs"
+    }
+  ]
+}

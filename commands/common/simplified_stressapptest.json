@@ -1,0 +1,18 @@
+{
+  "command": "stressapptest",
+  "description": "Userspace memory and IO test. More information: https://github.com/stressapptest/stressapptest.",
+  "useCases": [
+    {
+      "description": "Test the given amount of memory (in Megabytes):",
+      "syntax": "stressapptest -M {{memory}}"
+    },
+    {
+      "description": "Test memory as well as I/O for the given file:",
+      "syntax": "stressapptest -M {{memory}} -f {{path/to/file}}"
+    },
+    {
+      "description": "Test specifying the verbosity level, where 0=lowest, 20=highest, 8=default:",
+      "syntax": "stressapptest -M {{memory}} -v {{level}}"
+    }
+  ]
+}

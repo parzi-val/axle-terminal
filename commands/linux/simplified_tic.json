@@ -1,0 +1,18 @@
+{
+  "command": "tic",
+  "description": "Compile terminfo and install for ncurses. More information: https://pubs.opengroup.org/onlinepubs/007908799/xcurses/terminfo.html.",
+  "useCases": [
+    {
+      "description": "Compile and install terminfo for a terminal:",
+      "syntax": "tic -xe {{terminal}} {{path/to/terminal.info}}"
+    },
+    {
+      "description": "Check terminfo file for errors:",
+      "syntax": "tic -c {{path/to/terminal.info}}"
+    },
+    {
+      "description": "Print database locations:",
+      "syntax": "tic -D"
+    }
+  ]
+}

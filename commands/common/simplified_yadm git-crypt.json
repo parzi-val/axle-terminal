@@ -1,0 +1,22 @@
+{
+  "command": "yadm git-crypt",
+  "description": "Git Crypt enables transparent encryption and decryption of files in a git repository. See also: git-crypt. More information: https://github.com/AGWA/git-crypt.",
+  "useCases": [
+    {
+      "description": "Initialize repo to use Git Crypt:",
+      "syntax": "yadm git-crypt init"
+    },
+    {
+      "description": "Share the repository using GPG:",
+      "syntax": "yadm git-crypt add-gpg-user {{user_id}}"
+    },
+    {
+      "description": "After cloning a repository with encrypted files, unlock them:",
+      "syntax": "yadm git-crypt unlock"
+    },
+    {
+      "description": "Export a symmetric secret key:",
+      "syntax": "yadm git-crypt export-key {{path/to/key_file}}"
+    }
+  ]
+}

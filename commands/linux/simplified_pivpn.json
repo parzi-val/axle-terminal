@@ -1,0 +1,26 @@
+{
+  "command": "pivpn",
+  "description": "Easy security-hardened OpenVPN setup and manager. Originally designed for the Raspberry Pi, but works on other Linux devices too. More information: https://www.pivpn.io/.",
+  "useCases": [
+    {
+      "description": "Add a new client device:",
+      "syntax": "sudo pivpn add"
+    },
+    {
+      "description": "List all client devices:",
+      "syntax": "sudo pivpn list"
+    },
+    {
+      "description": "List currently connected devices and their statistics:",
+      "syntax": "sudo pivpn clients"
+    },
+    {
+      "description": "Revoke a previously authenticated device:",
+      "syntax": "sudo pivpn revoke"
+    },
+    {
+      "description": "Uninstall PiVPN:",
+      "syntax": "sudo pivpn uninstall"
+    }
+  ]
+}

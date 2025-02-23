@@ -1,0 +1,18 @@
+{
+  "command": "pop",
+  "description": "Send emails from your terminal. More information: https://github.com/charmbracelet/pop.",
+  "useCases": [
+    {
+      "description": "Launch the Text-based User Interface:",
+      "syntax": "pop"
+    },
+    {
+      "description": "Send an email using the content of a Markdown file as body:",
+      "syntax": "pop &lt; {{path/to/message.md}} --from {{me@example.com}} --to {{you@example.com}} --subject &quot;{{On the Subject of Ducks...}}&quot; --attach {{path/to/attachment}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pop --help"
+    }
+  ]
+}

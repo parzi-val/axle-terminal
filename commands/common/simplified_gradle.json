@@ -1,0 +1,34 @@
+{
+  "command": "gradle",
+  "description": "An open source build automation system. More information: https://gradle.org.",
+  "useCases": [
+    {
+      "description": "Compile a package:",
+      "syntax": "gradle build"
+    },
+    {
+      "description": "Exclude test task:",
+      "syntax": "gradle build -x {{test}}"
+    },
+    {
+      "description": "Run in offline mode to prevent Gradle from accessing the network during builds:",
+      "syntax": "gradle build --offline"
+    },
+    {
+      "description": "Clear the build directory:",
+      "syntax": "gradle clean"
+    },
+    {
+      "description": "Build an Android Package (APK) in release mode:",
+      "syntax": "gradle assembleRelease"
+    },
+    {
+      "description": "List the main tasks:",
+      "syntax": "gradle tasks"
+    },
+    {
+      "description": "List all the tasks:",
+      "syntax": "gradle tasks --all"
+    }
+  ]
+}

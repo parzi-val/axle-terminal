@@ -1,0 +1,18 @@
+{
+  "command": "cupsreject",
+  "description": "Reject jobs sent to printers. Note: destination is referred as a printer or a class of printers. See also: cupsaccept, cupsenable, cupsdisable, lpstat. More information: https://www.cups.org/doc/man-cupsaccept.html.",
+  "useCases": [
+    {
+      "description": "Reject print jobs to the specified destinations:",
+      "syntax": "cupsreject {{destination1 destination2 ...}}"
+    },
+    {
+      "description": "Specify a different server:",
+      "syntax": "cupsreject -h {{server}} {{destination1 destination2 ...}}"
+    },
+    {
+      "description": "Specify a reason string (\"Reason Unknown\" by default):",
+      "syntax": "cupsreject -r {{reason}} {{destination1 destination2 ...}}"
+    }
+  ]
+}

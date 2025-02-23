@@ -1,0 +1,14 @@
+{
+  "command": "qm sendkey",
+  "description": "Send QEMU monitor encoding key event to a virtual machine. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Send the specified key event to a specific virtual machine:",
+      "syntax": "qm sendkey {{vm_id}} {{key}}"
+    },
+    {
+      "description": "Allow root user to send key event and ignore locks:",
+      "syntax": "qm sendkey --skiplock {{true}} {{vm_id}} {{key}}"
+    }
+  ]
+}

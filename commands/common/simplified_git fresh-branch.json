@@ -1,0 +1,10 @@
+{
+  "command": "git fresh-branch",
+  "description": "Create an empty local branch. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md##git-fresh-branch.",
+  "useCases": [
+    {
+      "description": "Create an empty local branch:",
+      "syntax": "git fresh-branch {{branch_name}}"
+    }
+  ]
+}

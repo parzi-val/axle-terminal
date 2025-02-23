@@ -1,0 +1,26 @@
+{
+  "command": "btrfs",
+  "description": "A filesystem based on the copy-on-write (COW) principle for Linux. Some subcommands such as device have their own usage documentation. More information: https://btrfs.readthedocs.io/en/latest/btrfs.html.",
+  "useCases": [
+    {
+      "description": "Create subvolume:",
+      "syntax": "sudo btrfs subvolume create {{path/to/subvolume}}"
+    },
+    {
+      "description": "List subvolumes:",
+      "syntax": "sudo btrfs subvolume list {{path/to/mount_point}}"
+    },
+    {
+      "description": "Show space usage information:",
+      "syntax": "sudo btrfs filesystem df {{path/to/mount_point}}"
+    },
+    {
+      "description": "Enable quota:",
+      "syntax": "sudo btrfs quota enable {{path/to/subvolume}}"
+    },
+    {
+      "description": "Show quota:",
+      "syntax": "sudo btrfs qgroup show {{path/to/subvolume}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "tlmgr",
+  "description": "Manage packages and configuration options of an existing TeX Live installation. Some subcommands such as paper have their own usage documentation. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Install a package and its dependencies:",
+      "syntax": "tlmgr install {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies:",
+      "syntax": "tlmgr remove {{package}}"
+    },
+    {
+      "description": "Display information about a package:",
+      "syntax": "tlmgr info {{package}}"
+    },
+    {
+      "description": "Update all packages:",
+      "syntax": "tlmgr update --all"
+    },
+    {
+      "description": "Show possible updates without updating anything:",
+      "syntax": "tlmgr update --list"
+    },
+    {
+      "description": "Start a GUI version of tlmgr:",
+      "syntax": "tlmgr gui"
+    },
+    {
+      "description": "List all TeX Live configurations:",
+      "syntax": "tlmgr conf"
+    }
+  ]
+}

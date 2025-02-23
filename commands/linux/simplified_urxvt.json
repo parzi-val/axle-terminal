@@ -1,0 +1,26 @@
+{
+  "command": "urxvt",
+  "description": "Rxvt-unicode. A customizable terminal emulator. More information: https://manned.org/urxvt.",
+  "useCases": [
+    {
+      "description": "Open a new urxvt window:",
+      "syntax": "urxvt"
+    },
+    {
+      "description": "Run in a specific directory:",
+      "syntax": "urxvt -cd {{path/to/directory}}"
+    },
+    {
+      "description": "Run a command in a new urxvt window:",
+      "syntax": "urxvt -e {{command}}"
+    },
+    {
+      "description": "Run a command and keep the window open:",
+      "syntax": "urxvt --hold -e {{command}}"
+    },
+    {
+      "description": "Run a command within the sh shell:",
+      "syntax": "urxvt -e {{sh}} -c {{command}}"
+    }
+  ]
+}

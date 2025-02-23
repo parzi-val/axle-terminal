@@ -1,0 +1,22 @@
+{
+  "command": "jmeter",
+  "description": "Open source Java application designed for load testing functional behavior and measure performance. More information: https://jmeter.apache.org.",
+  "useCases": [
+    {
+      "description": "Run a specific test plan in nongui mode:",
+      "syntax": "jmeter --nongui --testfile {{path/to/file.jmx}}"
+    },
+    {
+      "description": "Run a test plan in nongui mode using a specific log file:",
+      "syntax": "jmeter --nogui --testfile {{path/to/file.jmx}} --logfile {{path/to/logfile.jtl}}"
+    },
+    {
+      "description": "Run a test plan in nongui mode using a specific proxy:",
+      "syntax": "jmeter --nongui --testfile {{path/to/file.jmx}} --proxyHost {{127.0.0.1}} --proxyPort {{8888}}"
+    },
+    {
+      "description": "Run a test plan in nongui mode using a specific JMeter property:",
+      "syntax": "jmeter --jmeterproperty {{key}}='{{value}}' --nongui --testfile {{path/to/file.jmx}}"
+    }
+  ]
+}

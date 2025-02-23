@@ -1,0 +1,38 @@
+{
+  "command": "aws kafka",
+  "description": "Manage an Amazon MSK (Managed Streaming for Apache Kafka) cluster. See also: aws. More information: https://docs.aws.amazon.com/cli/latest/reference/kafka/index.html.",
+  "useCases": [
+    {
+      "description": "Create a new MSK cluster:",
+      "syntax": "aws kafka create-cluster --cluster-name {{cluster_name}} --broker-node-group-info instanceType={{instance_type}},clientSubnets={{subnet_id1 subnet_id2 ...}} --kafka-version {{version}} --number-of-broker-nodes {{number}}"
+    },
+    {
+      "description": "Describe a MSK cluster:",
+      "syntax": "aws kafka describe-cluster --cluster-arn {{cluster_arn}}"
+    },
+    {
+      "description": "List all MSK clusters in the current region:",
+      "syntax": "aws kafka list-clusters"
+    },
+    {
+      "description": "Create a new MSK configuration:",
+      "syntax": "aws kafka create-configuration --name {{configuration_name}} --server-properties file://{{path/to/configuration_file.txt}}"
+    },
+    {
+      "description": "Describe a MSK configuration:",
+      "syntax": "aws kafka describe-configuration --arn {{configuration_arn}}"
+    },
+    {
+      "description": "List all MSK configurations in the current region:",
+      "syntax": "aws kafka list-configurations"
+    },
+    {
+      "description": "Update the MSK cluster configuration:",
+      "syntax": "aws kafka update-cluster-configuration --cluster-arn {{cluster_arn}} --configuration-info arn={{configuration_arn}},revision={{configuration_revision}}"
+    },
+    {
+      "description": "Delete the MSK cluster:",
+      "syntax": "aws kafka delete-cluster --cluster-arn {{cluster_arn}}"
+    }
+  ]
+}

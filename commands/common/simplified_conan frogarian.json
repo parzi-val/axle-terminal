@@ -1,0 +1,10 @@
+{
+  "command": "conan frogarian",
+  "description": "Display the conan frogarian. More information: https://docs.conan.io/.",
+  "useCases": [
+    {
+      "description": "Display the conan frogarian:",
+      "syntax": "conan frogarian"
+    }
+  ]
+}

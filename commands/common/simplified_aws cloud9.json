@@ -1,0 +1,34 @@
+{
+  "command": "aws cloud9",
+  "description": "Manage Cloud9 - a collection of tools to code, build, run, test, debug, and release software in the cloud. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloud9/index.html.",
+  "useCases": [
+    {
+      "description": "List all Cloud9 development environment identifiers:",
+      "syntax": "aws cloud9 list-environments"
+    },
+    {
+      "description": "Create a Cloud9 development environment:",
+      "syntax": "aws cloud9 create-environment-ec2 --name {{name}} --instance-type {{instance_type}}"
+    },
+    {
+      "description": "Display information about Cloud9 development environments:",
+      "syntax": "aws cloud9 describe-environments --environment-ids {{environment_ids}}"
+    },
+    {
+      "description": "Add an environment member to a Cloud9 development environment:",
+      "syntax": "aws cloud9 create-environment-membership --environment-id {{environment_id}} --user-arn {{user_arn}} --permissions {{permissions}}"
+    },
+    {
+      "description": "Display status information for a Cloud9 development environment:",
+      "syntax": "aws cloud9 describe-environment-status --environment-id {{environment_id}}"
+    },
+    {
+      "description": "Delete a Cloud9 environment:",
+      "syntax": "aws cloud9 delete-environment --environment-id {{environment_id}}"
+    },
+    {
+      "description": "Delete an environment member from a development environment:",
+      "syntax": "aws cloud9 delete-environment-membership --environment-id {{environment_id}} --user-arn {{user_arn}}"
+    }
+  ]
+}

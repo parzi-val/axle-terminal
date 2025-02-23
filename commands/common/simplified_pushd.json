@@ -1,0 +1,22 @@
+{
+  "command": "pushd",
+  "description": "Place a directory on a stack so it can be accessed later. See also popd to switch back to original directory and dirs to display directory stack contents. More information: https://www.gnu.org/software/bash/manual/html_node/Directory-Stack-Builtins.html.",
+  "useCases": [
+    {
+      "description": "Switch to directory and push it on the stack:",
+      "syntax": "pushd {{path/to/directory}}"
+    },
+    {
+      "description": "Switch first and second directories on the stack:",
+      "syntax": "pushd"
+    },
+    {
+      "description": "Rotate stack by making the 5th element the top of the stack:",
+      "syntax": "pushd +4"
+    },
+    {
+      "description": "Rotate the stack 4 times to the left (the current directory stays at the top by replacing the 5th element):",
+      "syntax": "pushd -n +4"
+    }
+  ]
+}

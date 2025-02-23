@@ -1,0 +1,14 @@
+{
+  "command": "readlink",
+  "description": "Follow symlinks and get symlink information. More information: https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html.",
+  "useCases": [
+    {
+      "description": "Get the actual file to which the symlink points:",
+      "syntax": "readlink {{path/to/file}}"
+    },
+    {
+      "description": "Get the absolute path to a file:",
+      "syntax": "readlink -f {{path/to/file}}"
+    }
+  ]
+}

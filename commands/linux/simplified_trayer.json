@@ -1,0 +1,30 @@
+{
+  "command": "trayer",
+  "description": "A lightweight GTK-2 based systray. More information: https://github.com/sargon/trayer-srg.",
+  "useCases": [
+    {
+      "description": "Run trayer:",
+      "syntax": "trayer"
+    },
+    {
+      "description": "Position trayer to a specific edge:",
+      "syntax": "trayer --edge {{left|right|top|bottom}}"
+    },
+    {
+      "description": "Provide a specific height and width of the panel (in pixels):",
+      "syntax": "trayer --width {{10}} --height {{32}}"
+    },
+    {
+      "description": "Provide the width of the panel in pixels or percentages:",
+      "syntax": "trayer --widthtype {{pixel|percent}} --width {{72}}"
+    },
+    {
+      "description": "Align trayer to a specific direction:",
+      "syntax": "trayer --align {{left|center|right}}"
+    },
+    {
+      "description": "Provide spacing between icons (in pixels):",
+      "syntax": "trayer --iconspacing {{10}}"
+    }
+  ]
+}

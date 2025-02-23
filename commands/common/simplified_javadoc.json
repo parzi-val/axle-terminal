@@ -1,0 +1,18 @@
+{
+  "command": "javadoc",
+  "description": "Generate Java API documentation in HTML format from source code. More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/javadoc.html.",
+  "useCases": [
+    {
+      "description": "Generate documentation for Java source code and save the result in a directory:",
+      "syntax": "javadoc -d {{path/to/directory/}} {{path/to/java_source_code}}"
+    },
+    {
+      "description": "Generate documentation with a specific encoding:",
+      "syntax": "javadoc -docencoding {{UTF-8}} {{path/to/java_source_code}}"
+    },
+    {
+      "description": "Generate documentation excluding some packages:",
+      "syntax": "javadoc -exclude {{package_list}} {{path/to/java_source_code}}"
+    }
+  ]
+}

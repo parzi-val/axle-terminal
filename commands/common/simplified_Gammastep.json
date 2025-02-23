@@ -1,0 +1,30 @@
+{
+  "command": "Gammastep",
+  "description": "Adjust the screen's color temperature according to the time of day. More information: https://gitlab.com/chinstrap/gammastep.",
+  "useCases": [
+    {
+      "description": "Turn on Gammastep with a specific [t]emperature during the day (e.g. 5700k) and at night (e.g. 3600k):",
+      "syntax": "gammastep -t {{5700}}:{{3600}}"
+    },
+    {
+      "description": "Turn on Gammastep with a manually specified custom [l]ocation:",
+      "syntax": "gammastep -l {{latitude}}:{{longitude}}"
+    },
+    {
+      "description": "Turn on Gammastep with a specific screen [b]rightness during the day (e.g. 70%) and at night (e.g. 40%), with minimum brightness 10% and maximum brightness 100%:",
+      "syntax": "gammastep -b {{0.7}}:{{0.4}}"
+    },
+    {
+      "description": "Turn on Gammastep with custom [g]amma levels (between 0 and 1):",
+      "syntax": "gammastep -g {{red}}:{{green}}:{{blue}}"
+    },
+    {
+      "description": "Turn on Gammastep with a c[O]nstant unchanging color temperature:",
+      "syntax": "gammastep -O {{temperature}}"
+    },
+    {
+      "description": "Reset temperature adjustments applied by Gammastep:",
+      "syntax": "gammastep -x"
+    }
+  ]
+}

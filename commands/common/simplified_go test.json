@@ -1,0 +1,30 @@
+{
+  "command": "go test",
+  "description": "Tests Go packages (files have to end with _test.go). More information: https://pkg.go.dev/cmd/go#hdr-Testing_flags.",
+  "useCases": [
+    {
+      "description": "Test the package found in the current directory:",
+      "syntax": "go test"
+    },
+    {
+      "description": "[v]erbosely test the package in the current directory:",
+      "syntax": "go test -v"
+    },
+    {
+      "description": "Test the packages in the current directory and all subdirectories (note the ...):",
+      "syntax": "go test -v ./..."
+    },
+    {
+      "description": "Test the package in the current directory and run all benchmarks:",
+      "syntax": "go test -v -bench ."
+    },
+    {
+      "description": "Test the package in the current directory and run all benchmarks for 50 seconds:",
+      "syntax": "go test -v -bench . -benchtime {{50s}}"
+    },
+    {
+      "description": "Test the package with coverage analysis:",
+      "syntax": "go test -cover"
+    }
+  ]
+}

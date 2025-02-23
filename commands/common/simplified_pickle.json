@@ -1,0 +1,22 @@
+{
+  "command": "pickle",
+  "description": "A PHP extension installer based on Composer. More information: https://github.com/FriendsOfPHP/pickle.",
+  "useCases": [
+    {
+      "description": "Install a specific PHP extension:",
+      "syntax": "pickle install {{extension_name}}"
+    },
+    {
+      "description": "Convert an existing PECL extension configuration to a Pickle configuration file:",
+      "syntax": "pickle convert {{path/to/directory}}"
+    },
+    {
+      "description": "Validate a PECL extension:",
+      "syntax": "pickle validate {{path/to/directory}}"
+    },
+    {
+      "description": "Package a PECL extension for release:",
+      "syntax": "pickle release {{path/to/directory}}"
+    }
+  ]
+}

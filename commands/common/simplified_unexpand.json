@@ -1,0 +1,26 @@
+{
+  "command": "unexpand",
+  "description": "Convert spaces to tabs. More information: https://www.gnu.org/software/coreutils/manual/html_node/unexpand-invocation.html.",
+  "useCases": [
+    {
+      "description": "Convert blanks in each file to tabs, writing to stdout:",
+      "syntax": "unexpand {{path/to/file}}"
+    },
+    {
+      "description": "Convert blanks to tabs, reading from stdout:",
+      "syntax": "unexpand"
+    },
+    {
+      "description": "Convert all blanks, instead of just initial blanks:",
+      "syntax": "unexpand -a {{path/to/file}}"
+    },
+    {
+      "description": "Convert only leading sequences of blanks (overrides -a):",
+      "syntax": "unexpand --first-only {{path/to/file}}"
+    },
+    {
+      "description": "Have tabs a certain number of characters apart, not 8 (enables -a):",
+      "syntax": "unexpand -t {{number}} {{path/to/file}}"
+    }
+  ]
+}

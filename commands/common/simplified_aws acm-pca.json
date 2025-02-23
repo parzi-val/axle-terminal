@@ -1,0 +1,38 @@
+{
+  "command": "aws acm-pca",
+  "description": "AWS Certificate Manager Private Certificate Authority. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm-pca/index.html.",
+  "useCases": [
+    {
+      "description": "Create a private certificate authority:",
+      "syntax": "aws acm-pca create-certificate-authority --certificate-authority-configuration {{ca_config}} --idempotency-token {{token}} --permanent-deletion-time-in-days {{number}}"
+    },
+    {
+      "description": "Describe a private certificate authority:",
+      "syntax": "aws acm-pca describe-certificate-authority --certificate-authority-arn {{ca_arn}}"
+    },
+    {
+      "description": "List private certificate authorities:",
+      "syntax": "aws acm-pca list-certificate-authorities"
+    },
+    {
+      "description": "Update a certificate authority:",
+      "syntax": "aws acm-pca update-certificate-authority --certificate-authority-arn {{ca_arn}} --certificate-authority-configuration {{ca_config}} --status {{status}}"
+    },
+    {
+      "description": "Delete a private certificate authority:",
+      "syntax": "aws acm-pca delete-certificate-authority --certificate-authority-arn {{ca_arn}}"
+    },
+    {
+      "description": "Issue a certificate:",
+      "syntax": "aws acm-pca issue-certificate --certificate-authority-arn {{ca_arn}} --certificate-signing-request {{cert_signing_request}} --signing-algorithm {{algorithm}} --validity {{validity}}"
+    },
+    {
+      "description": "Revoke a certificate:",
+      "syntax": "aws acm-pca revoke-certificate --certificate-authority-arn {{ca_arn}} --certificate-serial {{serial}} --reason {{reason}}"
+    },
+    {
+      "description": "Get certificate details:",
+      "syntax": "aws acm-pca get-certificate --certificate-authority-arn {{ca_arn}} --certificate-arn {{cert_arn}}"
+    }
+  ]
+}

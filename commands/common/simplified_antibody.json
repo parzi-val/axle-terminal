@@ -1,0 +1,18 @@
+{
+  "command": "antibody",
+  "description": "\"The fastest\" shell plugin manager. More information: https://getantibody.github.io.",
+  "useCases": [
+    {
+      "description": "Bundle all plugins for static loading:",
+      "syntax": "antibody bundle &lt; {{~/.zsh_plugins.txt}} &gt; {{~/.zsh_plugins.sh}}"
+    },
+    {
+      "description": "Update all bundles:",
+      "syntax": "antibody update"
+    },
+    {
+      "description": "List all installed plugins:",
+      "syntax": "antibody list"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "zless",
+  "description": "View gzip and xz compressed files. More information: https://manned.org/zless.",
+  "useCases": [
+    {
+      "description": "Page through a gzip compressed file with less:",
+      "syntax": "zless {{file.txt.gz}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "podman rmi",
+  "description": "Remove Podman images. More information: https://docs.podman.io/en/latest/markdown/podman-rmi.1.html.",
+  "useCases": [
+    {
+      "description": "Remove one or more images given their names:",
+      "syntax": "podman rmi {{image:tag}} {{image2:tag}} {{...}}"
+    },
+    {
+      "description": "Force remove an image:",
+      "syntax": "podman rmi --force {{image}}"
+    },
+    {
+      "description": "Remove an image without deleting untagged parents:",
+      "syntax": "podman rmi --no-prune {{image}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "podman rmi"
+    }
+  ]
+}

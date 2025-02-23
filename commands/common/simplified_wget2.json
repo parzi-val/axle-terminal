@@ -1,0 +1,38 @@
+{
+  "command": "wget2",
+  "description": "An improved version of wget for downloading files from the web. Supports HTTP, HTTPS, and HTTP/2 protocols with enhanced performance. By default, wget2 uses multiple threads for faster downloads. More information: https://gitlab.com/gnuwget/wget2.",
+  "useCases": [
+    {
+      "description": "Download the contents of a URL to a file using multiple threads (default behavior differs from wget):",
+      "syntax": "wget2 {{https://example.com/foo}}"
+    },
+    {
+      "description": "Limit the number of threads used for downloading (default is 5 threads):",
+      "syntax": "wget2 --max-threads={{10}} {{https://example.com/foo}}"
+    },
+    {
+      "description": "Download a single web page and all its resources (scripts, stylesheets, images, etc.):",
+      "syntax": "wget2 --page-requisites --convert-links {{https://example.com/somepage.html}}"
+    },
+    {
+      "description": "Mirror a website, but do not ascend to the parent directory (does not download embedded page elements):",
+      "syntax": "wget2 --mirror --no-parent {{https://example.com/somepath/}}"
+    },
+    {
+      "description": "Limit the download speed and the number of connection retries:",
+      "syntax": "wget2 --limit-rate={{300k}} --tries={{100}} {{https://example.com/somepath/}}"
+    },
+    {
+      "description": "Continue an incomplete download (behavior is consistent with wget):",
+      "syntax": "wget2 --continue {{https://example.com}}"
+    },
+    {
+      "description": "Download all URLs stored in a text file to a specific directory:",
+      "syntax": "wget2 --directory-prefix {{path/to/directory}} --input-file {{URLs.txt}}"
+    },
+    {
+      "description": "Download a file from an HTTP server using Basic Auth (also works for HTTPS):",
+      "syntax": "wget2 --user={{username}} --password={{password}} {{https://example.com}}"
+    }
+  ]
+}

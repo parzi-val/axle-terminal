@@ -1,0 +1,22 @@
+{
+  "command": "p5",
+  "description": "Template builder and sketch manager for p5.js. More information: https://github.com/chiunhau/p5-manager.",
+  "useCases": [
+    {
+      "description": "Create a new p5 collection:",
+      "syntax": "p5 new {{collection_name}}"
+    },
+    {
+      "description": "Generate a new p5 project (should be run from collection directory):",
+      "syntax": "p5 generate {{project_name}}"
+    },
+    {
+      "description": "Run the p5 manager server:",
+      "syntax": "p5 server"
+    },
+    {
+      "description": "Update libraries to their latest versions:",
+      "syntax": "p5 update"
+    }
+  ]
+}

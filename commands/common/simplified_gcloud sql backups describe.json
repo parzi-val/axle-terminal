@@ -1,0 +1,10 @@
+{
+  "command": "gcloud sql backups describe",
+  "description": "Retrieve information about a backup. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/sql/backups/describe.",
+  "useCases": [
+    {
+      "description": "Retrieve information about a backup:",
+      "syntax": "gcloud sql backups describe {{backup_id}} --instance={{instance_id}}"
+    }
+  ]
+}

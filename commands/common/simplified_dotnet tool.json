@@ -1,0 +1,34 @@
+{
+  "command": "dotnet tool",
+  "description": "Manage .NET tools and search published tools in NuGet. More information: https://learn.microsoft.com/dotnet/core/tools/global-tools.",
+  "useCases": [
+    {
+      "description": "Install a global tool (don't use --global for local tools):",
+      "syntax": "dotnet tool install --global {{dotnetsay}}"
+    },
+    {
+      "description": "Install tools defined in the local tool manifest:",
+      "syntax": "dotnet tool restore"
+    },
+    {
+      "description": "Update a specific global tool (don't use --global for local tools):",
+      "syntax": "dotnet tool update --global {{tool_name}}"
+    },
+    {
+      "description": "Uninstall a global tool (don't use --global for local tools):",
+      "syntax": "dotnet tool uninstall --global {{tool_name}}"
+    },
+    {
+      "description": "List installed global tools (don't use --global for local tools):",
+      "syntax": "dotnet tool list --global"
+    },
+    {
+      "description": "Search tools in NuGet:",
+      "syntax": "dotnet tool search {{search_term}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dotnet tool --help"
+    }
+  ]
+}

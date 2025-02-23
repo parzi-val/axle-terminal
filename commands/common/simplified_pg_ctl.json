@@ -1,0 +1,26 @@
+{
+  "command": "pg_ctl",
+  "description": "Utility for controlling a PostgreSQL server and database cluster. More information: https://www.postgresql.org/docs/current/app-pg-ctl.html.",
+  "useCases": [
+    {
+      "description": "Initialize a new PostgreSQL database cluster:",
+      "syntax": "pg_ctl -D {{data_directory}} init"
+    },
+    {
+      "description": "Start a PostgreSQL server:",
+      "syntax": "pg_ctl -D {{data_directory}} start"
+    },
+    {
+      "description": "Stop a PostgreSQL server:",
+      "syntax": "pg_ctl -D {{data_directory}} stop"
+    },
+    {
+      "description": "Restart a PostgreSQL server:",
+      "syntax": "pg_ctl -D {{data_directory}} restart"
+    },
+    {
+      "description": "Reload the PostgreSQL server configuration:",
+      "syntax": "pg_ctl -D {{data_directory}} reload"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "vboxmanage-unregistervm",
+  "description": "Unregister a virtual machine (VM). More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-unregistervm.",
+  "useCases": [
+    {
+      "description": "Unregister an existing VM:",
+      "syntax": "VBoxManage unregistervm {{uuid|vm_name}}"
+    },
+    {
+      "description": "Delete hard disk image files, all saved state files, VM logs, and XML VM machine files:",
+      "syntax": "VBoxManage unregistervm {{uuid|vm_name}} --delete"
+    },
+    {
+      "description": "Delete all files from the VM:",
+      "syntax": "VBoxManage unregistervm {{uuid|vm_name}} --delete-all"
+    }
+  ]
+}

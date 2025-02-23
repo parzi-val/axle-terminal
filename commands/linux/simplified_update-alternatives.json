@@ -1,0 +1,26 @@
+{
+  "command": "update-alternatives",
+  "description": "Convenientily maintain symbolic links to determine default commands. More information: https://manned.org/update-alternatives.",
+  "useCases": [
+    {
+      "description": "Add a symbolic link:",
+      "syntax": "sudo update-alternatives --install {{path/to/symlink}} {{command_name}} {{path/to/command_binary}} {{priority}}"
+    },
+    {
+      "description": "Configure a symbolic link for java:",
+      "syntax": "sudo update-alternatives --config {{java}}"
+    },
+    {
+      "description": "Remove a symbolic link:",
+      "syntax": "sudo update-alternatives --remove {{java}} {{/opt/java/jdk1.8.0_102/bin/java}}"
+    },
+    {
+      "description": "Display information about a specified command:",
+      "syntax": "update-alternatives --display {{java}}"
+    },
+    {
+      "description": "Display all commands and their current selection:",
+      "syntax": "update-alternatives --get-selections"
+    }
+  ]
+}

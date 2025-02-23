@@ -1,0 +1,26 @@
+{
+  "command": "print",
+  "description": "Z Shell (zsh) builtin. Prints arguments, similar to echo. See also: echo, printf, zsh. More information: https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html.",
+  "useCases": [
+    {
+      "description": "Print input:",
+      "syntax": "print &quot;Hello&quot; &quot;World&quot;"
+    },
+    {
+      "description": "Print separated by newline(s):",
+      "syntax": "print -l &quot;Line1&quot; &quot;Line 2&quot; &quot;Line3&quot;"
+    },
+    {
+      "description": "Print without trailing newline:",
+      "syntax": "print -n &quot;Hello&quot;; print &quot;World&quot;"
+    },
+    {
+      "description": "Enable backslash escapes:",
+      "syntax": "print -e &quot;Line 1\\nLine2&quot;"
+    },
+    {
+      "description": "Print arguments as described by 'printf' (for greater portability across shells, consider instead the printf command):",
+      "syntax": "print -f &quot;%s is %d years old.\\n&quot; &quot;Alice&quot; 30"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "coredumpctl",
+  "description": "Retrieve and process saved core dumps and metadata. More information: https://www.freedesktop.org/software/systemd/man/coredumpctl.html.",
+  "useCases": [
+    {
+      "description": "List all captured core dumps:",
+      "syntax": "coredumpctl"
+    },
+    {
+      "description": "List captured core dumps for a program:",
+      "syntax": "coredumpctl list {{program}}"
+    },
+    {
+      "description": "Show information about the core dumps matching a program with PID:",
+      "syntax": "coredumpctl info {{PID}}"
+    },
+    {
+      "description": "Invoke debugger using the last core dump:",
+      "syntax": "coredumpctl debug"
+    },
+    {
+      "description": "Invoke debugger using the last core dump of a program:",
+      "syntax": "coredumpctl debug {{program}}"
+    },
+    {
+      "description": "Extract the last core dump of a program to a file:",
+      "syntax": "coredumpctl --output={{path/to/file}} dump {{program}}"
+    },
+    {
+      "description": "Skip debuginfod and pagination prompts and then print the backtrace when using gdb:",
+      "syntax": "coredumpctl debug --debugger-arguments=&quot;-iex 'set debuginfod enabled on' -iex 'set pagination off' -ex bt&quot;"
+    }
+  ]
+}

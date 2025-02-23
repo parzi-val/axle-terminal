@@ -1,0 +1,14 @@
+{
+  "command": "scancel",
+  "description": "Cancel a Slurm job. More information: https://slurm.schedmd.com/scancel.html.",
+  "useCases": [
+    {
+      "description": "Cancel a job using its ID:",
+      "syntax": "scancel {{job_id}}"
+    },
+    {
+      "description": "Cancel all jobs from a user:",
+      "syntax": "scancel {{user_name}}"
+    }
+  ]
+}

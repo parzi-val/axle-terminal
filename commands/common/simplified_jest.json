@@ -1,0 +1,38 @@
+{
+  "command": "jest",
+  "description": "A zero-configuration JavaScript testing platform. More information: https://jestjs.io.",
+  "useCases": [
+    {
+      "description": "Run all available tests:",
+      "syntax": "jest"
+    },
+    {
+      "description": "Run the test suites from the given files:",
+      "syntax": "jest {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Run the test suites from files within the current and subdirectories, whose paths match the given regular expression:",
+      "syntax": "jest {{regular_expression1}} {{regular_expression2}}"
+    },
+    {
+      "description": "Run the tests whose names match the given regular expression:",
+      "syntax": "jest --testNamePattern {{regular_expression}}"
+    },
+    {
+      "description": "Run test suites related to a given source file:",
+      "syntax": "jest --findRelatedTests {{path/to/source_file.js}}"
+    },
+    {
+      "description": "Run test suites related to all uncommitted files:",
+      "syntax": "jest --onlyChanged"
+    },
+    {
+      "description": "Watch files for changes and automatically re-run related tests:",
+      "syntax": "jest --watch"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "jest --help"
+    }
+  ]
+}

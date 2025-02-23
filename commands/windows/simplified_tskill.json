@@ -1,0 +1,14 @@
+{
+  "command": "tskill",
+  "description": "Ends a process running in a session on a Remote Desktop Session Host. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/tskill.",
+  "useCases": [
+    {
+      "description": "Terminate a process by its process identifier:",
+      "syntax": "tskill {{process_id}}"
+    },
+    {
+      "description": "Terminate a process by its name:",
+      "syntax": "tskill {{process_name}}"
+    }
+  ]
+}

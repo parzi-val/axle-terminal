@@ -1,0 +1,22 @@
+{
+  "command": "dune",
+  "description": "A build system for OCaml programs. More information: https://dune.build.",
+  "useCases": [
+    {
+      "description": "Build all targets:",
+      "syntax": "dune build"
+    },
+    {
+      "description": "Clean up the workspace:",
+      "syntax": "dune clean"
+    },
+    {
+      "description": "Run all tests:",
+      "syntax": "dune runtest"
+    },
+    {
+      "description": "Start the utop REPL with compiled modules automatically loaded into it, to remove the need to load them by hand:",
+      "syntax": "dune utop"
+    }
+  ]
+}

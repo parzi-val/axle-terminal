@@ -1,0 +1,18 @@
+{
+  "command": "ppmtoacad",
+  "description": "Convert a PPM image to an AutoCAD database or slide. More information: https://netpbm.sourceforge.net/doc/ppmtoacad.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to an AutoCAD slide:",
+      "syntax": "ppmtoacad {{path/to/file.ppm}} &gt; {{path/to/file.acad}}"
+    },
+    {
+      "description": "Convert a PPM image to an AutoCAD binary database import file:",
+      "syntax": "ppmtoacad -dxb {{path/to/file.ppm}} &gt; {{path/to/file.dxb}}"
+    },
+    {
+      "description": "Restrict the colors in the output to 8 RGB shades:",
+      "syntax": "ppmtoacad -8 {{path/to/file.ppm}} &gt; {{path/to/file.dxb}}"
+    }
+  ]
+}

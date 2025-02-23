@@ -1,0 +1,34 @@
+{
+  "command": "hledger balancesheet",
+  "description": "Show the end balances in asset and liability accounts. Amounts are shown with normal positive sign, as in conventional financial statements. More information: https://hledger.org/hledger.html#balancesheet.",
+  "useCases": [
+    {
+      "description": "Show the current balances in Asset and Liability accounts, excluding zeros:",
+      "syntax": "hledger balancesheet"
+    },
+    {
+      "description": "Show just the liquid assets (Cash account type):",
+      "syntax": "hledger balancesheet type:C"
+    },
+    {
+      "description": "Include accounts with zero balances, and show the account hierarchy:",
+      "syntax": "hledger balancesheet --empty --tree"
+    },
+    {
+      "description": "Show the balances at the end of each month:",
+      "syntax": "hledger balancesheet --monthly"
+    },
+    {
+      "description": "Show the balances' market value in home currency at the end of each month:",
+      "syntax": "hledger balancesheet --monthly -V"
+    },
+    {
+      "description": "Show quarterly balances, with just the top two levels of account hierarchy:",
+      "syntax": "hledger balancesheet --quarterly --tree --depth 2"
+    },
+    {
+      "description": "Short form of the above, and generate HTML output in bs.html:",
+      "syntax": "hledger bs -Qt -2 -o bs.html"
+    }
+  ]
+}

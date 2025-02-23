@@ -1,0 +1,10 @@
+{
+  "command": "gtk-launch",
+  "description": "Launch applications from .desktop files that reside in standard locations. More information: https://manned.org/gtk-launch.",
+  "useCases": [
+    {
+      "description": "Launch an application:",
+      "syntax": "gtk-launch {{Application_name}}"
+    }
+  ]
+}

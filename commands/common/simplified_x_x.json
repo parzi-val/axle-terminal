@@ -1,0 +1,18 @@
+{
+  "command": "x_x",
+  "description": "View Excel and CSV files. More information: https://github.com/kristianperkins/x_x.",
+  "useCases": [
+    {
+      "description": "View an XLSX or CSV file:",
+      "syntax": "x_x {{file.xlsx|file.csv}}"
+    },
+    {
+      "description": "View an XLSX or CSV file, using the first row as table headers:",
+      "syntax": "x_x -h {{0}} {{file.xlsx|file.csv}}"
+    },
+    {
+      "description": "View a CSV file with unconventional delimiters:",
+      "syntax": "x_x --delimiter={{';'}} --quotechar={{'|'}} {{file.csv}}"
+    }
+  ]
+}

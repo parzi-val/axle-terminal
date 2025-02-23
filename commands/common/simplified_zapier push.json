@@ -1,0 +1,18 @@
+{
+  "command": "zapier push",
+  "description": "Build and upload a Zapier integration. More information: https://platform.zapier.com/reference/cli#push.",
+  "useCases": [
+    {
+      "description": "Push an integration to Zapier:",
+      "syntax": "zapier push"
+    },
+    {
+      "description": "Disable smart file inclusion (will only include files required by index.js):",
+      "syntax": "zapier push --disable-dependency-detection"
+    },
+    {
+      "description": "Show extra debugging output:",
+      "syntax": "zapier push {{-d|--debug}}"
+    }
+  ]
+}

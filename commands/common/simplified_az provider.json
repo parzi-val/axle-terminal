@@ -1,0 +1,26 @@
+{
+  "command": "az provider",
+  "description": "Manage resource providers. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/provider.",
+  "useCases": [
+    {
+      "description": "Register a provider:",
+      "syntax": "az provider register --namespace {{Microsoft.PolicyInsights}}"
+    },
+    {
+      "description": "Unregister a provider:",
+      "syntax": "az provider unregister --namespace {{Microsoft.Automation}}"
+    },
+    {
+      "description": "List all providers for a subscription:",
+      "syntax": "az provider list"
+    },
+    {
+      "description": "Show information about a specific provider:",
+      "syntax": "az provider show --namespace {{Microsoft.Storage}}"
+    },
+    {
+      "description": "List all resource types for a specific provider:",
+      "syntax": "az provider list --query &quot;[?namespace=='{{Microsoft.Network}}'].resourceTypes[].resourceType&quot;"
+    }
+  ]
+}

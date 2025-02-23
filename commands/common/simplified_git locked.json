@@ -1,0 +1,10 @@
+{
+  "command": "git locked",
+  "description": "List locked files in a Git repository. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-locked.",
+  "useCases": [
+    {
+      "description": "List all local locked files:",
+      "syntax": "git locked"
+    }
+  ]
+}

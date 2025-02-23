@@ -1,0 +1,18 @@
+{
+  "command": "qm config",
+  "description": "Display the virtual machine configuration with pending configuration changes applied. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Display the virtual machine configuration:",
+      "syntax": "qm config {{vm_id}}"
+    },
+    {
+      "description": "Display the current configuration values instead of pending values for the virtual machine:",
+      "syntax": "qm config --current {{true}} {{vm_id}}"
+    },
+    {
+      "description": "Fetch the configuration values from the given snapshot:",
+      "syntax": "qm config --snapshot {{snapshot_name}} {{vm_id}}"
+    }
+  ]
+}

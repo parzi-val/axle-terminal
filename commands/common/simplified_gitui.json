@@ -1,0 +1,38 @@
+{
+  "command": "gitui",
+  "description": "A lightweight keyboard-only TUI for Git. See also: tig, git-gui. More information: https://github.com/extrawurst/gitui.",
+  "useCases": [
+    {
+      "description": "Specify the color theme (defaults to theme.ron):",
+      "syntax": "gitui --theme {{theme}}"
+    },
+    {
+      "description": "Store logging output into a cache directory:",
+      "syntax": "gitui --logging"
+    },
+    {
+      "description": "Use notify-based file system watcher instead of tick-based update:",
+      "syntax": "gitui --watcher"
+    },
+    {
+      "description": "Generate a bug report:",
+      "syntax": "gitui --bugreport"
+    },
+    {
+      "description": "Use a specific Git directory:",
+      "syntax": "gitui --directory {{path/to/directory}}"
+    },
+    {
+      "description": "Use a specific working directory:",
+      "syntax": "gitui --workdir {{path/to/directory}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gitui --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "gitui --version"
+    }
+  ]
+}

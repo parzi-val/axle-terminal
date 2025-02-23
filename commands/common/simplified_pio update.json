@@ -1,0 +1,18 @@
+{
+  "command": "pio update",
+  "description": "Update installed PlatformIO Core packages, development platforms and global libraries. See also: pio platform update, pio lib update. More information: https://docs.platformio.org/en/latest/core/userguide/cmd_update.html.",
+  "useCases": [
+    {
+      "description": "Perform a full update of all packages, development platforms and global libraries:",
+      "syntax": "pio update"
+    },
+    {
+      "description": "Update core packages only (skips platforms and libraries):",
+      "syntax": "pio update --core-packages"
+    },
+    {
+      "description": "Check for new versions of packages, platforms and libraries but do not actually update them:",
+      "syntax": "pio update --dry-run"
+    }
+  ]
+}

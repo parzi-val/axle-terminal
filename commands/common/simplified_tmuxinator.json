@@ -1,0 +1,26 @@
+{
+  "command": "tmuxinator",
+  "description": "Create and manage tmux sessions easily. More information: https://github.com/tmuxinator/tmuxinator.",
+  "useCases": [
+    {
+      "description": "Create a new project:",
+      "syntax": "tmuxinator new {{project}}"
+    },
+    {
+      "description": "Edit a project:",
+      "syntax": "tmuxinator edit {{project}}"
+    },
+    {
+      "description": "List projects:",
+      "syntax": "tmuxinator list"
+    },
+    {
+      "description": "Start a tmux session based on project:",
+      "syntax": "tmuxinator start {{project}}"
+    },
+    {
+      "description": "Stop a project's tmux session:",
+      "syntax": "tmuxinator stop {{project}}"
+    }
+  ]
+}

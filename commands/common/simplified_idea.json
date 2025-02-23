@@ -1,0 +1,26 @@
+{
+  "command": "idea",
+  "description": "JetBrains Java and Kotlin IDE. More information: https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html.",
+  "useCases": [
+    {
+      "description": "Open the current directory in IntelliJ IDEA:",
+      "syntax": "idea {{path/to/directory}}"
+    },
+    {
+      "description": "Open a specific file or directory in IntelliJ IDEA:",
+      "syntax": "idea {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Open the diff viewer to compare up to 3 files:",
+      "syntax": "idea diff {{path/to/file1 path/to/file2 path/to/optional_file3}}"
+    },
+    {
+      "description": "Open the merge dialog to perform a two-way file merge:",
+      "syntax": "idea merge {{path/to/file1}} {{path/to/file2}} {{path/to/output}}"
+    },
+    {
+      "description": "Run code inspections on a project:",
+      "syntax": "idea inspect {{path/to/project_directory}} {{path/to/inspection_profile}} {{path/to/output}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "pnmtotiff",
+  "description": "This command has been superseded by pamtotiff. More information: https://netpbm.sourceforge.net/doc/pnmtotiff.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamtotiff"
+    }
+  ]
+}

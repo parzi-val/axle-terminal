@@ -1,0 +1,22 @@
+{
+  "command": "mongod",
+  "description": "The MongoDB database server. More information: https://docs.mongodb.com/manual/reference/program/mongod.",
+  "useCases": [
+    {
+      "description": "Specify the storage directory (default: /data/db on Linux and macOS, C:\\data\\db on Windows):",
+      "syntax": "mongod --dbpath {{path/to/directory}}"
+    },
+    {
+      "description": "Specify a configuration file:",
+      "syntax": "mongod --config {{path/to/file}}"
+    },
+    {
+      "description": "Specify the port to listen on (default: 27017):",
+      "syntax": "mongod --port {{port}}"
+    },
+    {
+      "description": "Specify the database profiling level. 0 is off, 1 is only slow operations, 2 is all (default: 0):",
+      "syntax": "mongod --profile {{0|1|2}}"
+    }
+  ]
+}

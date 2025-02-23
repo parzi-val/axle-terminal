@@ -1,0 +1,30 @@
+{
+  "command": "mosquitto_pub",
+  "description": "A simple MQTT version 3.1.1 client that will publish a single message on a topic and exit. More information: https://mosquitto.org/man/mosquitto_pub-1.html.",
+  "useCases": [
+    {
+      "description": "Publish a temperature value of 32 on the topic sensors/temperature to 192.168.1.1 (defaults to localhost) with Quality of Service (QoS) set to 1:",
+      "syntax": "mosquitto_pub -h {{192.168.1.1}} -t {{sensors/temperature}} -m {{32}} -q {{1}}"
+    },
+    {
+      "description": "Publish timestamp and temperature data on the topic sensors/temperature to a remote host on a non-standard port:",
+      "syntax": "mosquitto_pub -h {{192.168.1.1}} -p {{1885}} -t {{sensors/temperature}} -m &quot;{{1266193804 32}}&quot;"
+    },
+    {
+      "description": "Publish light switch status and retain the message on the topic switches/kitchen_lights/status to a remote host because there may be a long period of time between light switch events:",
+      "syntax": "mosquitto_pub -r -h &quot;{{iot.eclipse.org}}&quot; -t {{switches/kitchen_lights/status}} -m &quot;{{on}}&quot;"
+    },
+    {
+      "description": "Send the contents of a file (data.txt) as a message and publish it to sensors/temperature topic:",
+      "syntax": "mosquitto_pub -t {{sensors/temperature}} -f {{data.txt}}"
+    },
+    {
+      "description": "Send the contents of a file (data.txt), by reading from stdin and send the entire input as a message and publish it to sensors/temperature topic:",
+      "syntax": "mosquitto_pub -t {{sensors/temperature}} -s &lt; {{data.txt}}"
+    },
+    {
+      "description": "Read newline delimited data from stdin as a message and publish it to sensors/temperature topic:",
+      "syntax": "{{echo data.txt}} | mosquitto_pub -t {{sensors/temperature}} -l"
+    }
+  ]
+}

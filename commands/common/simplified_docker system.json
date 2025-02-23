@@ -1,0 +1,38 @@
+{
+  "command": "docker system",
+  "description": "Manage Docker data and display system-wide information. More information: https://docs.docker.com/reference/cli/docker/system/.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "docker system"
+    },
+    {
+      "description": "Show Docker disk usage:",
+      "syntax": "docker system df"
+    },
+    {
+      "description": "Show detailed information on disk usage:",
+      "syntax": "docker system df --verbose"
+    },
+    {
+      "description": "Remove unused data:",
+      "syntax": "docker system prune"
+    },
+    {
+      "description": "Remove unused data created more than a specified amount of time in the past:",
+      "syntax": "docker system prune --filter &quot;until={{hours}}h{{minutes}}m&quot;"
+    },
+    {
+      "description": "Display real-time events from the Docker daemon:",
+      "syntax": "docker system events"
+    },
+    {
+      "description": "Display real-time events from containers streamed as valid JSON Lines:",
+      "syntax": "docker system events --filter 'type=container' --format '{{json .}}'"
+    },
+    {
+      "description": "Display system-wide information:",
+      "syntax": "docker system info"
+    }
+  ]
+}

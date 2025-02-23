@@ -1,0 +1,18 @@
+{
+  "command": "npm fund",
+  "description": "Retrieve funding information from packages. More information: https://docs.npmjs.com/cli/commands/npm-fund.",
+  "useCases": [
+    {
+      "description": "List dependencies with funding URL for the project in the current directory:",
+      "syntax": "npm fund"
+    },
+    {
+      "description": "Open the funding URL for a specific package in the default web browser:",
+      "syntax": "npm fund {{package}}"
+    },
+    {
+      "description": "List dependencies with a funding URL for a specific [w]orkspace for the project in the current directory:",
+      "syntax": "npm fund -w {{workspace}}"
+    }
+  ]
+}

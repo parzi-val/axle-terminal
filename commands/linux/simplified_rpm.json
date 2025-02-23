@@ -1,0 +1,38 @@
+{
+  "command": "rpm",
+  "description": "RPM Package Manager. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://rpm.org/.",
+  "useCases": [
+    {
+      "description": "Show version of httpd package:",
+      "syntax": "rpm --query {{httpd}}"
+    },
+    {
+      "description": "List versions of all matching packages:",
+      "syntax": "rpm --query --all '{{mariadb*}}'"
+    },
+    {
+      "description": "Forcibly install a package regardless of currently installed versions:",
+      "syntax": "rpm --upgrade {{path/to/package.rpm}} --force"
+    },
+    {
+      "description": "Identify owner of a file and show version of the package:",
+      "syntax": "rpm --query --file {{/etc/postfix/main.cf}}"
+    },
+    {
+      "description": "List package-owned files:",
+      "syntax": "rpm --query --list {{kernel}}"
+    },
+    {
+      "description": "Show scriptlets from an RPM file:",
+      "syntax": "rpm --query --package --scripts {{package.rpm}}"
+    },
+    {
+      "description": "Show changed, missing and/or incorrectly installed files of matching packages:",
+      "syntax": "rpm --verify --all '{{php-*}}'"
+    },
+    {
+      "description": "Display the changelog of a specific package:",
+      "syntax": "rpm --query --changelog {{package}}"
+    }
+  ]
+}

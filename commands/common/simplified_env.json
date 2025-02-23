@@ -1,0 +1,30 @@
+{
+  "command": "env",
+  "description": "Show the environment or run a program in a modified environment. More information: https://www.gnu.org/software/coreutils/manual/html_node/env-invocation.html.",
+  "useCases": [
+    {
+      "description": "Show the environment:",
+      "syntax": "env"
+    },
+    {
+      "description": "Run a program. Often used in scripts after the shebang (#!) for looking up the path to the program:",
+      "syntax": "env {{program}}"
+    },
+    {
+      "description": "Clear the environment and run a program:",
+      "syntax": "env -i {{program}}"
+    },
+    {
+      "description": "Remove variable from the environment and run a program:",
+      "syntax": "env -u {{variable}} {{program}}"
+    },
+    {
+      "description": "Set a variable and run a program:",
+      "syntax": "env {{variable}}={{value}} {{program}}"
+    },
+    {
+      "description": "Set one or more variables and run a program:",
+      "syntax": "env {{variable1}}={{value}} {{variable2}}={{value}} {{variable3}}={{value}} {{program}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "rustup-init.sh",
+  "description": "Script to install rustup and the Rust toolchain. More information: https://forge.rust-lang.org/infra/other-installation-methods.html#rustup.",
+  "useCases": [
+    {
+      "description": "Download and run rustup-init to install rustup and the default Rust toolchain:",
+      "syntax": "curl https://sh.rustup.rs -sSf | sh -s"
+    },
+    {
+      "description": "Download and run rustup-init and pass arguments to it:",
+      "syntax": "curl https://sh.rustup.rs -sSf | sh -s -- {{arguments}}"
+    },
+    {
+      "description": "Run rustup-init and specify additional components or targets to install:",
+      "syntax": "rustup-init.sh --target {{target}} --component {{component}}"
+    },
+    {
+      "description": "Run rustup-init and specify the default toolchain to install:",
+      "syntax": "rustup-init.sh --default-toolchain {{toolchain}}"
+    },
+    {
+      "description": "Run rustup-init and do not install any toolchain:",
+      "syntax": "rustup-init.sh --default-toolchain {{none}}"
+    },
+    {
+      "description": "Run rustup-init and specify an installation profile:",
+      "syntax": "rustup-init.sh --profile {{minimal|default|complete}}"
+    },
+    {
+      "description": "Run rustup-init without asking for confirmation:",
+      "syntax": "rustup-init.sh -y"
+    }
+  ]
+}

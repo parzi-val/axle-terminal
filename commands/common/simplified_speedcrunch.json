@@ -1,0 +1,38 @@
+{
+  "command": "speedcrunch",
+  "description": "A high-precision scientific calculator. More information: https://www.speedcrunch.org.",
+  "useCases": [
+    {
+      "description": "Start SpeedCrunch:",
+      "syntax": "speedcrunch"
+    },
+    {
+      "description": "Copy the result of the most recent calculation:",
+      "syntax": "&lt;Ctrl&gt; + R"
+    },
+    {
+      "description": "Open the formula book:",
+      "syntax": "&lt;Ctrl&gt; + 1"
+    },
+    {
+      "description": "Clear the calculator of recent calculations:",
+      "syntax": "&lt;Ctrl&gt; + N"
+    },
+    {
+      "description": "Wrap highlighted in parentheses (defaults to wrapping all if nothing selected):",
+      "syntax": "&lt;Ctrl&gt; + P"
+    },
+    {
+      "description": "Load a speedcrunch session:",
+      "syntax": "&lt;Ctrl&gt; + L"
+    },
+    {
+      "description": "Save a speedcrunch session:",
+      "syntax": "&lt;Ctrl&gt; + S"
+    },
+    {
+      "description": "Toggle keypad:",
+      "syntax": "&lt;Ctrl&gt; + K"
+    }
+  ]
+}

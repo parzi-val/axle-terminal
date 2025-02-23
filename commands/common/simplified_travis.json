@@ -1,0 +1,26 @@
+{
+  "command": "travis",
+  "description": "Command-line client to interface with Travis CI. More information: https://github.com/travis-ci/travis.rb.",
+  "useCases": [
+    {
+      "description": "Display the client version:",
+      "syntax": "travis version"
+    },
+    {
+      "description": "Authenticate the CLI client against the server, using an authentication token:",
+      "syntax": "travis login"
+    },
+    {
+      "description": "List repositories the user has permissions on:",
+      "syntax": "travis repos"
+    },
+    {
+      "description": "Encrypt values in .travis.yml:",
+      "syntax": "travis encrypt {{token}}"
+    },
+    {
+      "description": "Generate a .travis.yml file and enable the project:",
+      "syntax": "travis init"
+    }
+  ]
+}

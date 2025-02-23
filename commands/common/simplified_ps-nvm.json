@@ -1,0 +1,30 @@
+{
+  "command": "ps-nvm",
+  "description": "PowerShell-based utility to manage multiple Node.js versions, inspired by nvm. This tool provides multiple commands that all can only be run through PowerShell. More information: https://github.com/aaronpowell/ps-nvm.",
+  "useCases": [
+    {
+      "description": "View documentation for Get-NodeInstallLocation, a tool to get the current Node.js install location:",
+      "syntax": "tldr get-nodeinstalllocation"
+    },
+    {
+      "description": "View documentation for Get-NodeVersions, a tool to list all available and currently-installed Node.js versions:",
+      "syntax": "tldr get-nodeversions"
+    },
+    {
+      "description": "View documentation for Install-NodeVersion, a tool to install Node.js runtime versions:",
+      "syntax": "tldr install-nodeversion"
+    },
+    {
+      "description": "View documentation for Remove-NodeVersion, a tool to uninstall an existing Node.js version:",
+      "syntax": "tldr remove-nodeversion"
+    },
+    {
+      "description": "View documentation for Set-NodeInstallLocation, a tool to set the Node.js install location:",
+      "syntax": "tldr set-nodeinstalllocation"
+    },
+    {
+      "description": "View documentation for Set-NodeVersion, a tool to set the default version of Node.js:",
+      "syntax": "tldr set-nodeversion"
+    }
+  ]
+}

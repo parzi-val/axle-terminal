@@ -1,0 +1,18 @@
+{
+  "command": "plasma-apply-cursortheme",
+  "description": "Switch Plasma cursor theme. More information: https://invent.kde.org/plasma/plasma-workspace.",
+  "useCases": [
+    {
+      "description": "List available cursor themes:",
+      "syntax": "plasma-apply-cursortheme --list-themes"
+    },
+    {
+      "description": "Apply a cursor theme:",
+      "syntax": "plasma-apply-cursortheme {{breeze_cursors}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plasma-apply-cursortheme --help"
+    }
+  ]
+}

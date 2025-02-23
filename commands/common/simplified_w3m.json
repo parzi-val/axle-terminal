@@ -1,0 +1,30 @@
+{
+  "command": "w3m",
+  "description": "A text-based web browser. Supports SSL and mouse input, even over SSH. More information: https://w3m.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Open a URL:",
+      "syntax": "w3m {{https://example.com}}"
+    },
+    {
+      "description": "Open a URL in monochrome mode:",
+      "syntax": "w3m {{https://example.com}} -M"
+    },
+    {
+      "description": "Open a URL without mouse support:",
+      "syntax": "w3m {{https://example.com}} -no-mouse"
+    },
+    {
+      "description": "Open a new browser tab:",
+      "syntax": "&lt;Shift&gt; + T"
+    },
+    {
+      "description": "Display your browser history:",
+      "syntax": "&lt;Ctrl&gt; + H"
+    },
+    {
+      "description": "Quit w3m:",
+      "syntax": "q + y"
+    }
+  ]
+}

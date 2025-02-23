@@ -1,0 +1,18 @@
+{
+  "command": "iptables-save",
+  "description": "Save the iptables IPv4 configuration. Use ip6tables-save to do the same for IPv6. More information: https://manned.org/iptables-save.",
+  "useCases": [
+    {
+      "description": "Print the iptables configuration:",
+      "syntax": "sudo iptables-save"
+    },
+    {
+      "description": "Print the iptables configuration of a specific [t]able:",
+      "syntax": "sudo iptables-save --table {{table}}"
+    },
+    {
+      "description": "Save the iptables configuration to a [f]ile:",
+      "syntax": "sudo iptables-save --file {{path/to/file}}"
+    }
+  ]
+}

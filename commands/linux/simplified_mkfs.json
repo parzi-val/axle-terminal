@@ -1,0 +1,18 @@
+{
+  "command": "mkfs",
+  "description": "Build a Linux filesystem on a hard disk partition. This command is deprecated in favor of filesystem specific mkfs. utils. More information: https://manned.org/mkfs.",
+  "useCases": [
+    {
+      "description": "Build a Linux ext2 filesystem on a partition:",
+      "syntax": "mkfs {{path/to/partition}}"
+    },
+    {
+      "description": "Build a filesystem of a specified type:",
+      "syntax": "mkfs -t {{ext4}} {{path/to/partition}}"
+    },
+    {
+      "description": "Build a filesystem of a specified type and check for bad blocks:",
+      "syntax": "mkfs -c -t {{ntfs}} {{path/to/partition}}"
+    }
+  ]
+}

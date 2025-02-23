@@ -1,0 +1,26 @@
+{
+  "command": "pkgctl repo",
+  "description": "Manage Git packaging repositories and their configuration for Arch Linux. See also: pkgctl. More information: https://manned.org/pkgctl-repo.1.",
+  "useCases": [
+    {
+      "description": "Clone a package repository (requires setting an SSH key in your Arch Linux GitLab account):",
+      "syntax": "pkgctl repo clone {{pkgname}}"
+    },
+    {
+      "description": "Clone a package repository over HTTPS:",
+      "syntax": "pkgctl repo clone --protocol=https {{pkgname}}"
+    },
+    {
+      "description": "Create a new GitLab package repository and clone it after creation (requires valid GitLab API authentication):",
+      "syntax": "pkgctl repo create {{pkgbase}}"
+    },
+    {
+      "description": "Switch a package repository to a specified version:",
+      "syntax": "pkgctl repo switch {{version}} {{pkgbase}}"
+    },
+    {
+      "description": "Open a package repository's website:",
+      "syntax": "pkgctl repo web {{pkgbase}}"
+    }
+  ]
+}

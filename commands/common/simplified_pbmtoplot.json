@@ -1,0 +1,10 @@
+{
+  "command": "pbmtoplot",
+  "description": "Convert a PBM image into a UNIX plot file. More information: https://netpbm.sourceforge.net/doc/pbmtoplot.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image into a UNIX plot file:",
+      "syntax": "pbmtoplot {{path/to/image.pbm}} &gt; {{path/to/output.plot}}"
+    }
+  ]
+}

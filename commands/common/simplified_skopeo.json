@@ -1,0 +1,30 @@
+{
+  "command": "skopeo",
+  "description": "Container image management toolbox. Provides various utility commands to manage remote container images. More information: https://github.com/containers/skopeo.",
+  "useCases": [
+    {
+      "description": "Inspect a remote image from a registry:",
+      "syntax": "skopeo inspect docker://{{registry_hostname}}/{{image:tag}}"
+    },
+    {
+      "description": "List available tags for a remote image:",
+      "syntax": "skopeo list-tags docker://{{registry_hostname}}/{{image}}"
+    },
+    {
+      "description": "Download an image from a registry:",
+      "syntax": "skopeo copy docker://{{registry_hostname}}/{{image:tag}} dir:{{path/to/directory}}"
+    },
+    {
+      "description": "Copy an image from one registry to another:",
+      "syntax": "skopeo copy docker://{{source_registry}}/{{image:tag}} docker://{{destination_registry}}/{{image:tag}}"
+    },
+    {
+      "description": "Delete an image from a registry:",
+      "syntax": "skopeo delete docker://{{registry_hostname}}/{{image:tag}}"
+    },
+    {
+      "description": "Log in to a registry:",
+      "syntax": "skopeo login --username {{username}} {{registry_hostname}}"
+    }
+  ]
+}

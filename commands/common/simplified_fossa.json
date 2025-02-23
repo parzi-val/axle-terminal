@@ -1,0 +1,26 @@
+{
+  "command": "fossa",
+  "description": "CLI for the Fossa service - Generate realtime license audits, vulnerability scans and reports about dependencies licenses. More information: https://github.com/fossas/fossa-cli.",
+  "useCases": [
+    {
+      "description": "Initialize a .fossa.yml configuration file:",
+      "syntax": "fossa init"
+    },
+    {
+      "description": "Run a default project build:",
+      "syntax": "fossa build"
+    },
+    {
+      "description": "Analyze built dependencies:",
+      "syntax": "fossa analyze"
+    },
+    {
+      "description": "Generate reports:",
+      "syntax": "fossa report"
+    },
+    {
+      "description": "Test current revision against the FOSSA scan status and exit with errors if issues are found:",
+      "syntax": "fossa test"
+    }
+  ]
+}

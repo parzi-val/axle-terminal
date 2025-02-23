@@ -1,0 +1,14 @@
+{
+  "command": "asciitopgm",
+  "description": "Convert ASCII graphics into a PGM file. More information: https://netpbm.sourceforge.net/doc/asciitopgm.html.",
+  "useCases": [
+    {
+      "description": "Read ASCII data as input and produce a PGM image with pixel values that are an approximation of the \"brightness\" of the ASCII characters:",
+      "syntax": "asciitopgm {{path/to/input_file}} &gt; {{path/to/output_file.pgm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "asciitopgm -version"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "virt-sparsify",
+  "description": "Make virtual machine drive images thin-provisioned. Note: Use only for offline machines to avoid data corruption. More information: https://libguestfs.org.",
+  "useCases": [
+    {
+      "description": "Create a sparsified compressed image without snapshots from an unsparsified one:",
+      "syntax": "virt-sparsify --compress {{path/to/image.qcow2}} {{path/to/image_new.qcow2}}"
+    },
+    {
+      "description": "Sparsify an image in-place:",
+      "syntax": "virt-sparsify --in-place {{path/to/image.img}}"
+    }
+  ]
+}

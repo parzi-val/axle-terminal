@@ -1,0 +1,26 @@
+{
+  "command": "scala-cli",
+  "description": "Interact with the Scala programming language. More information: https://scala-cli.virtuslab.org/docs/overview/.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell) using a specific Scala and JVM version:",
+      "syntax": "scala-cli --scala {{3.1.0}} --jvm {{temurin:17}}"
+    },
+    {
+      "description": "Compile and run a Scala script:",
+      "syntax": "scala-cli run {{path/to/script.scala}}"
+    },
+    {
+      "description": "Compile and test a Scala script:",
+      "syntax": "scala-cli test {{path/to/script.scala}}"
+    },
+    {
+      "description": "Format a Scala script, updating the file in-place:",
+      "syntax": "scala-cli fmt {{path/to/script.scala}}"
+    },
+    {
+      "description": "Generate files for IDE (VSCode and IntelliJ) support:",
+      "syntax": "scala-cli setup-ide {{path/to/script.scala}}"
+    }
+  ]
+}

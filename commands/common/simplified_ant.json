@@ -1,0 +1,26 @@
+{
+  "command": "ant",
+  "description": "Apache Ant: build and manage Java-based projects. More information: https://ant.apache.org.",
+  "useCases": [
+    {
+      "description": "Build a project with default build file build.xml:",
+      "syntax": "ant"
+    },
+    {
+      "description": "Build a project using build [f]ile other than build.xml:",
+      "syntax": "ant -f {{buildfile.xml}}"
+    },
+    {
+      "description": "Print information on possible targets for this project:",
+      "syntax": "ant -p"
+    },
+    {
+      "description": "Print debugging information:",
+      "syntax": "ant -d"
+    },
+    {
+      "description": "Execute all targets that do not depend on fail target(s):",
+      "syntax": "ant -k"
+    }
+  ]
+}

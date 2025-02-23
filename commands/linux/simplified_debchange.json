@@ -1,0 +1,18 @@
+{
+  "command": "debchange",
+  "description": "Mantain the debian/changelog file of a Debian source package. More information: https://manned.org/debchange.1.",
+  "useCases": [
+    {
+      "description": "Add a new version for a non-maintainer upload to the changelog:",
+      "syntax": "debchange --nmu"
+    },
+    {
+      "description": "Add a changelog entry to the current version:",
+      "syntax": "debchange --append"
+    },
+    {
+      "description": "Add a changelog entry to close the bug with specified ID:",
+      "syntax": "debchange --closes {{bug_id}}"
+    }
+  ]
+}

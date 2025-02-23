@@ -1,0 +1,26 @@
+{
+  "command": "pdfdetach",
+  "description": "List or extract attachments (embedded files) from a PDF file. See also: pdfattach, pdfimages, pdfinfo. More information: https://manned.org/pdfdetach.",
+  "useCases": [
+    {
+      "description": "List all attachments in a file with a specific text encoding:",
+      "syntax": "pdfdetach list -enc {{UTF-8}} {{path/to/input.pdf}}"
+    },
+    {
+      "description": "Save specific embedded file by specifying its number:",
+      "syntax": "pdfdetach -save {{number}} {{path/to/input.pdf}}"
+    },
+    {
+      "description": "Save specific embedded file by specifying its name:",
+      "syntax": "pdfdetach -savefile {{name}} {{path/to/input.pdf}}"
+    },
+    {
+      "description": "Save the embedded file with a custom output filename:",
+      "syntax": "pdfdetach -save {{number}} -o {{path/to/output}} {{path/to/input.pdf}}"
+    },
+    {
+      "description": "Save the attachment from a file secured by owner/user password:",
+      "syntax": "pdfdetach -save {{number}} {{-opw|-upw}} {{password}} {{path/to/input.pdf}}"
+    }
+  ]
+}

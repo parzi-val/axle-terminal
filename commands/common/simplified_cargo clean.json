@@ -1,0 +1,22 @@
+{
+  "command": "cargo clean",
+  "description": "Remove generated artifacts in the target directory. More information: https://doc.rust-lang.org/cargo/commands/cargo-clean.html.",
+  "useCases": [
+    {
+      "description": "Remove the entire target directory:",
+      "syntax": "cargo clean"
+    },
+    {
+      "description": "Remove documentation artifacts (the target/doc directory):",
+      "syntax": "cargo clean --doc"
+    },
+    {
+      "description": "Remove release artifacts (the target/release directory):",
+      "syntax": "cargo clean --release"
+    },
+    {
+      "description": "Remove artifacts in the directory of the given profile (in this case, target/debug):",
+      "syntax": "cargo clean --profile {{dev}}"
+    }
+  ]
+}

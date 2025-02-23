@@ -1,0 +1,26 @@
+{
+  "command": "clang-format",
+  "description": "Auto-format C/C++/Java/JavaScript/Objective-C/Protobuf/C# code. More information: https://clang.llvm.org/docs/ClangFormat.html.",
+  "useCases": [
+    {
+      "description": "Format a file and print the result to stdout:",
+      "syntax": "clang-format {{path/to/file}}"
+    },
+    {
+      "description": "Format a file in-place:",
+      "syntax": "clang-format -i {{path/to/file}}"
+    },
+    {
+      "description": "Format a file using a predefined coding style:",
+      "syntax": "clang-format --style {{LLVM|GNU|Google|Chromium|Microsoft|Mozilla|WebKit}} {{path/to/file}}"
+    },
+    {
+      "description": "Format a file using the .clang-format file in one of the parent directories of the source file:",
+      "syntax": "clang-format --style=file {{path/to/file}}"
+    },
+    {
+      "description": "Generate a custom .clang-format file:",
+      "syntax": "clang-format --style {{LLVM|GNU|Google|Chromium|Microsoft|Mozilla|WebKit}} --dump-config &gt; {{.clang-format}}"
+    }
+  ]
+}

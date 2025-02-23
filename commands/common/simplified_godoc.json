@@ -1,0 +1,26 @@
+{
+  "command": "godoc",
+  "description": "View documentation for go packages. More information: https://godoc.org/.",
+  "useCases": [
+    {
+      "description": "Display help for a specific package:",
+      "syntax": "godoc {{fmt}}"
+    },
+    {
+      "description": "Display help for the function \"Printf\" of \"fmt\" package:",
+      "syntax": "godoc {{fmt}} {{Printf}}"
+    },
+    {
+      "description": "Serve documentation as a web server on port 6060:",
+      "syntax": "godoc -http=:{{6060}}"
+    },
+    {
+      "description": "Create an index file:",
+      "syntax": "godoc -write_index -index_files={{path/to/file}}"
+    },
+    {
+      "description": "Use the given index file to search the docs:",
+      "syntax": "godoc -http=:{{6060}} -index -index_files={{path/to/file}}"
+    }
+  ]
+}

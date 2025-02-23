@@ -1,0 +1,18 @@
+{
+  "command": "git extras",
+  "description": "Git extension pack. More information: https://github.com/tj/git-extras.",
+  "useCases": [
+    {
+      "description": "Install or upgrade git-extras commands:",
+      "syntax": "git extras update"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "git extras --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "git extras --version"
+    }
+  ]
+}

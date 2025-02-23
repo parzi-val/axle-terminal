@@ -1,0 +1,18 @@
+{
+  "command": "mycli",
+  "description": "A CLI for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting. More information: https://manned.org/mycli.",
+  "useCases": [
+    {
+      "description": "Connect to a database with the currently logged in user:",
+      "syntax": "mycli {{database_name}}"
+    },
+    {
+      "description": "Connect to a database with the specified user:",
+      "syntax": "mycli -u {{user}} {{database_name}}"
+    },
+    {
+      "description": "Connect to a database on the specified host with the specified user:",
+      "syntax": "mycli -u {{user}} -h {{host}} {{database_name}}"
+    }
+  ]
+}

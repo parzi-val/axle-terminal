@@ -1,0 +1,18 @@
+{
+  "command": "gotty",
+  "description": "Share your terminal as a web application. More information: https://github.com/yudai/gotty.",
+  "useCases": [
+    {
+      "description": "Share result of command:",
+      "syntax": "gotty {{command}}"
+    },
+    {
+      "description": "Share with write permission:",
+      "syntax": "gotty -w {{shell}}"
+    },
+    {
+      "description": "Share with credential (Basic Auth):",
+      "syntax": "gotty -w -c {{username}}:{{password}} {{shell}}"
+    }
+  ]
+}

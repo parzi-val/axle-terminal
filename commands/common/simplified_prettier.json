@@ -1,0 +1,30 @@
+{
+  "command": "prettier",
+  "description": "An opinionated code formatter for JavaScript, JSON, CSS, YAML, and more. More information: https://prettier.io/.",
+  "useCases": [
+    {
+      "description": "Format a file and print the result to stdout:",
+      "syntax": "prettier {{path/to/file}}"
+    },
+    {
+      "description": "Check if a specific file has been formatted:",
+      "syntax": "prettier --check {{path/to/file}}"
+    },
+    {
+      "description": "Run with a specific configuration file:",
+      "syntax": "prettier --config {{path/to/config_file}} {{path/to/file}}"
+    },
+    {
+      "description": "Format a file or directory, replacing the original:",
+      "syntax": "prettier --write {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Format files or directories recursively using single quotes and no trailing commas:",
+      "syntax": "prettier --single-quote --trailing-comma {{none}} --write {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Format JavaScript and TypeScript files recursively, replacing the original:",
+      "syntax": "prettier --write &quot;**/*.{js,jsx,ts,tsx}&quot;"
+    }
+  ]
+}

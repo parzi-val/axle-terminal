@@ -1,0 +1,30 @@
+{
+  "command": "devenv",
+  "description": "Fast, Declarative, Reproducible and Composable Developer Environments using Nix. More information: https://devenv.sh.",
+  "useCases": [
+    {
+      "description": "Initialise the environment:",
+      "syntax": "devenv init"
+    },
+    {
+      "description": "Enter the Development Environment with relaxed hermeticity (state of being airtight):",
+      "syntax": "devenv shell --impure"
+    },
+    {
+      "description": "Get detailed information about the current environment:",
+      "syntax": "devenv info --verbose"
+    },
+    {
+      "description": "Start processes with devenv:",
+      "syntax": "devenv up --config /{{file}}/{{path}}/"
+    },
+    {
+      "description": "Clean the environment variables and re-enter the shell in offline mode:",
+      "syntax": "devenv --clean --offline"
+    },
+    {
+      "description": "Delete the previous shell generations:",
+      "syntax": "devenv gc"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "tlmgr info",
+  "description": "Show information about TeX Live packages. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "List all available TeX Live packages, prefexing installed ones with i:",
+      "syntax": "tlmgr info"
+    },
+    {
+      "description": "List all available collections:",
+      "syntax": "tlmgr info collections"
+    },
+    {
+      "description": "List all available schemes:",
+      "syntax": "tlmgr info scheme"
+    },
+    {
+      "description": "Show information about a specific package:",
+      "syntax": "tlmgr info {{package}}"
+    },
+    {
+      "description": "List all files contained in a specific package:",
+      "syntax": "tlmgr info {{package}} --list"
+    },
+    {
+      "description": "List all installed packages:",
+      "syntax": "tlmgr info --only-installed"
+    },
+    {
+      "description": "Show only specific information about a package:",
+      "syntax": "tlmgr info {{package}} --data &quot;{{name}},{{category}},{{installed}},{{size}},{{depends}},...&quot;"
+    },
+    {
+      "description": "Print all available packages as JSON encoded array:",
+      "syntax": "tlmgr info --json"
+    }
+  ]
+}

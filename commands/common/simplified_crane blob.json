@@ -1,0 +1,14 @@
+{
+  "command": "crane blob",
+  "description": "Read a blob from a registry. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_blob.md.",
+  "useCases": [
+    {
+      "description": "Read the blob from a registry:",
+      "syntax": "crane blob {{blob_identifier}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane blob {{-h|--help}}"
+    }
+  ]
+}

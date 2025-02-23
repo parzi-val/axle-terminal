@@ -1,0 +1,26 @@
+{
+  "command": "ldc",
+  "description": "D compiler using LLVM as a backend. More information: https://wiki.dlang.org/Using_LDC.",
+  "useCases": [
+    {
+      "description": "Compile a source code file into an executable binary:",
+      "syntax": "ldc2 {{path/to/source.d}} -of={{path/to/output_executable}}"
+    },
+    {
+      "description": "Compile the source code file without linking:",
+      "syntax": "ldc2 -c {{path/to/source.d}}"
+    },
+    {
+      "description": "Select the target architecture and OS:",
+      "syntax": "ldc -mtriple={{architecture_OS}} -c {{path/to/source.d}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ldc2 -h"
+    },
+    {
+      "description": "Display complete help:",
+      "syntax": "ldc2 -help-hidden"
+    }
+  ]
+}

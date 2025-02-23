@@ -1,0 +1,34 @@
+{
+  "command": "gpclient",
+  "description": "Connect to a GlobalProtect VPN on Linux via OpenConnect. More information: https://github.com/yuezk/GlobalProtect-openconnect.",
+  "useCases": [
+    {
+      "description": "Connect to a GlobalProtect VPN using a portal server:",
+      "syntax": "gpclient connect {{vpn_gateway_url}}"
+    },
+    {
+      "description": "Disconnect from the currently connected VPN server:",
+      "syntax": "gpclient disconnect"
+    },
+    {
+      "description": "Launch the graphical user interface (GUI) for VPN management:",
+      "syntax": "gpclient launch-gui"
+    },
+    {
+      "description": "Use OpenSSL workaround to bypass legacy renegotiation errors:",
+      "syntax": "gpclient connect --fix-openssl {{vpn_gateway_url}}"
+    },
+    {
+      "description": "Ignore TLS errors during connection:",
+      "syntax": "gpclient connect --ignore-tls-errors {{vpn_gateway_url}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "gpclient --version"
+    },
+    {
+      "description": "Display help for any command:",
+      "syntax": "gpclient help {{command}}"
+    }
+  ]
+}

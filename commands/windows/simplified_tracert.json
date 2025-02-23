@@ -1,0 +1,30 @@
+{
+  "command": "tracert",
+  "description": "Receive information about each step in the route between your PC and the target. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/tracert.",
+  "useCases": [
+    {
+      "description": "Trace a route:",
+      "syntax": "tracert {{IP}}"
+    },
+    {
+      "description": "Prevent tracert from resolving IP addresses to hostnames:",
+      "syntax": "tracert /d {{IP}}"
+    },
+    {
+      "description": "Force tracert to use IPv4 only:",
+      "syntax": "tracert /4 {{IP}}"
+    },
+    {
+      "description": "Force tracert to use IPv6 only:",
+      "syntax": "tracert /6 {{IP}}"
+    },
+    {
+      "description": "Specify the maximum number of hops in the search for the target:",
+      "syntax": "tracert /h {{max_hops}} {{IP}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "tracert /?"
+    }
+  ]
+}

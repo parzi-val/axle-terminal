@@ -1,0 +1,22 @@
+{
+  "command": "exec",
+  "description": "Execute a command without creating a child process. More information: https://www.gnu.org/software/bash/manual/bash.html#index-exec.",
+  "useCases": [
+    {
+      "description": "Execute a specific command:",
+      "syntax": "exec {{command -with -flags}}"
+    },
+    {
+      "description": "Execute a command with a (mostly) empty environment:",
+      "syntax": "exec -c {{command -with -flags}}"
+    },
+    {
+      "description": "Execute a command as a login shell:",
+      "syntax": "exec -l {{command -with -flags}}"
+    },
+    {
+      "description": "Execute a command with a different name:",
+      "syntax": "exec -a {{name}} {{command -with -flags}}"
+    }
+  ]
+}

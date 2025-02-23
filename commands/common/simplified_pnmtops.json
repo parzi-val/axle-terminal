@@ -1,0 +1,18 @@
+{
+  "command": "pnmtops",
+  "description": "Convert a PNM image to a PostScript file. More information: https://netpbm.sourceforge.net/doc/pnmtops.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a PS file:",
+      "syntax": "pnmtops {{path/to/file.pnm}} &gt; {{path/to/file.ps}}"
+    },
+    {
+      "description": "Specify the dimensions of the output image in inches:",
+      "syntax": "pnmtops -imagewidth {{imagewidth}} -imageheight {{imageheight}} {{path/to/file.pnm}} &gt; {{path/to/file.ps}}"
+    },
+    {
+      "description": "Specify the dimensions of the page the output image resides on in inches:",
+      "syntax": "pnmtops -width {{width}} -height {{height}} {{path/to/file.pnm}} &gt; {{path/to/file.ps}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "Percent sign",
+  "description": "Manage jobs. More information: https://www.gnu.org/software/bash/manual/bash.html#Job-Control-Basics.",
+  "useCases": [
+    {
+      "description": "Bring the current job to front:",
+      "syntax": "%"
+    },
+    {
+      "description": "Bring the previous job to front:",
+      "syntax": "%-"
+    },
+    {
+      "description": "Bring a job numbered N to front:",
+      "syntax": "%{{N}}"
+    },
+    {
+      "description": "Bring a job whose command starts with string to front:",
+      "syntax": "%{{string}}"
+    },
+    {
+      "description": "Bring a job whose command contains string to front:",
+      "syntax": "%?{{string}}"
+    },
+    {
+      "description": "Resume a suspended job:",
+      "syntax": "%{{1}} &amp;"
+    }
+  ]
+}

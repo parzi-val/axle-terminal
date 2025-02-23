@@ -1,0 +1,18 @@
+{
+  "command": "wget",
+  "description": "In PowerShell, this command may be an alias of Invoke-WebRequest when the original wget program (https://www.gnu.org/software/wget) is not properly installed. Note: if version command returns an error, PowerShell may have substituted this command with Invoke-WebRequest. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest.",
+  "useCases": [
+    {
+      "description": "View documentation for the original wget command:",
+      "syntax": "tldr wget -p common"
+    },
+    {
+      "description": "View documentation for PowerShell's Invoke-WebRequest command:",
+      "syntax": "tldr invoke-webrequest"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "wget --version"
+    }
+  ]
+}

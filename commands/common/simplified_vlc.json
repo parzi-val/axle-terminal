@@ -1,0 +1,26 @@
+{
+  "command": "vlc",
+  "description": "Cross-platform multimedia player. See also: mpv, mplayer, ytfzf. More information: https://wiki.videolan.org/Documentation:Command_line/.",
+  "useCases": [
+    {
+      "description": "Play a file:",
+      "syntax": "vlc {{path/to/file}}"
+    },
+    {
+      "description": "Play in fullscreen:",
+      "syntax": "vlc --fullscreen {{path/to/file}}"
+    },
+    {
+      "description": "Play muted:",
+      "syntax": "vlc --no-audio {{path/to/file}}"
+    },
+    {
+      "description": "Play repeatedly:",
+      "syntax": "vlc --loop {{path/to/file}}"
+    },
+    {
+      "description": "Play video from a URL:",
+      "syntax": "vlc {{https://www.youtube.com/watch?v=oHg5SJYRHA0}}"
+    }
+  ]
+}

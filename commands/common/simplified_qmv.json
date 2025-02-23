@@ -1,0 +1,30 @@
+{
+  "command": "qmv",
+  "description": "Move files and directories using the default text editor to define the filenames. More information: https://www.nongnu.org/renameutils/.",
+  "useCases": [
+    {
+      "description": "Move a single file (open an editor with the source filename on the left and the target filename on the right):",
+      "syntax": "qmv {{source_file}}"
+    },
+    {
+      "description": "Move multiple JPEG files:",
+      "syntax": "qmv {{*.jpg}}"
+    },
+    {
+      "description": "Move multiple directories:",
+      "syntax": "qmv -d {{path/to/directory1}} {{path/to/directory2}} {{path/to/directory3}}"
+    },
+    {
+      "description": "Move all files and directories inside a directory:",
+      "syntax": "qmv --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Move files, but swap the positions of the source and the target filenames in the editor:",
+      "syntax": "qmv --option swap {{*.jpg}}"
+    },
+    {
+      "description": "Rename all files and folders in the current directory, but show only target filenames in the editor (you can think of it as a kind of simple mode):",
+      "syntax": "qmv --format=do ."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "guake",
+  "description": "A drop-down terminal for GNOME. More information: https://github.com/Guake/guake.",
+  "useCases": [
+    {
+      "description": "Toggle Guake visibility:",
+      "syntax": "F12"
+    },
+    {
+      "description": "Toggle fullscreen mode:",
+      "syntax": "F11"
+    },
+    {
+      "description": "Open a new tab:",
+      "syntax": "&lt;Ctrl&gt; + &lt;Shift&gt; + T"
+    },
+    {
+      "description": "Close the terminal:",
+      "syntax": "&lt;Super&gt; + X"
+    },
+    {
+      "description": "Go to the previous tab:",
+      "syntax": "&lt;Ctrl&gt; + &lt;PageUp&gt;"
+    },
+    {
+      "description": "Search the selected text in the browser:",
+      "syntax": "&lt;Shift&gt; + &lt;Ctrl&gt; + L"
+    }
+  ]
+}

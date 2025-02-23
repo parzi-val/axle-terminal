@@ -1,0 +1,38 @@
+{
+  "command": "quarkus",
+  "description": "Create Quarkus projects, manage extensions and perform essential build and development tasks. More information: https://quarkus.io/guides/cli-tooling.",
+  "useCases": [
+    {
+      "description": "Create a new application project in a new directory:",
+      "syntax": "quarkus create app {{project_name}}"
+    },
+    {
+      "description": "Run the current project in live coding mode:",
+      "syntax": "quarkus dev"
+    },
+    {
+      "description": "Run the application:",
+      "syntax": "quarkus run"
+    },
+    {
+      "description": "Run the current project in continuous testing mode:",
+      "syntax": "quarkus test"
+    },
+    {
+      "description": "Add one or more extensions to the current project:",
+      "syntax": "quarkus extension add {{extension_name1 extension_name2 ...}}"
+    },
+    {
+      "description": "Build a container image using Docker:",
+      "syntax": "quarkus image build docker"
+    },
+    {
+      "description": "Deploy the application to Kubernetes:",
+      "syntax": "quarkus deploy kubernetes"
+    },
+    {
+      "description": "Update project:",
+      "syntax": "quarkus update"
+    }
+  ]
+}

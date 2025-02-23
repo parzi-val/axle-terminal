@@ -1,0 +1,34 @@
+{
+  "command": "feh",
+  "description": "Lightweight image viewing utility. More information: https://feh.finalrewind.org.",
+  "useCases": [
+    {
+      "description": "View images locally or using a URL:",
+      "syntax": "feh {{path/to/images}}"
+    },
+    {
+      "description": "View images recursively:",
+      "syntax": "feh --recursive {{path/to/images}}"
+    },
+    {
+      "description": "View images without window borders:",
+      "syntax": "feh --borderless {{path/to/images}}"
+    },
+    {
+      "description": "Exit after the last image:",
+      "syntax": "feh --cycle-once {{path/to/images}}"
+    },
+    {
+      "description": "Use a specific slideshow cycle delay:",
+      "syntax": "feh --slideshow-delay {{seconds}} {{path/to/images}}"
+    },
+    {
+      "description": "Use a specific wallpaper mode (centered, filled, maximized, scaled or tiled):",
+      "syntax": "feh --bg-{{center|fill|max|scale|tile}} {{path/to/image}}"
+    },
+    {
+      "description": "Create a montage of all images within a directory, outputting as a new image:",
+      "syntax": "feh --montage --thumb-height {{150}} --thumb-width {{150}} --index-info &quot;{{%nn%wx%h}}&quot; --output {{path/to/montage_image.png}}"
+    }
+  ]
+}

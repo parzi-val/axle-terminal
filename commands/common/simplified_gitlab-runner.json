@@ -1,0 +1,30 @@
+{
+  "command": "gitlab-runner",
+  "description": "Manage GitLab runners. More information: https://docs.gitlab.com/runner/.",
+  "useCases": [
+    {
+      "description": "Register a runner:",
+      "syntax": "sudo gitlab-runner register --url {{https://gitlab.example.com}} --registration-token {{token}} --name {{name}}"
+    },
+    {
+      "description": "Register a runner with a Docker executor:",
+      "syntax": "sudo gitlab-runner register --url {{https://gitlab.example.com}} --registration-token {{token}} --name {{name}} --executor {{docker}}"
+    },
+    {
+      "description": "Unregister a runner:",
+      "syntax": "sudo gitlab-runner unregister --name {{name}}"
+    },
+    {
+      "description": "Display the status of the runner service:",
+      "syntax": "sudo gitlab-runner status"
+    },
+    {
+      "description": "Restart the runner service:",
+      "syntax": "sudo gitlab-runner restart"
+    },
+    {
+      "description": "Check if the registered runners can connect to GitLab:",
+      "syntax": "sudo gitlab-runner verify"
+    }
+  ]
+}

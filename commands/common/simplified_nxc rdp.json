@@ -1,0 +1,22 @@
+{
+  "command": "nxc rdp",
+  "description": "Pentest and exploit RDP servers. More information: https://www.netexec.wiki/rdp-protocol.",
+  "useCases": [
+    {
+      "description": "Search for valid credentials by trying out every combination in the specified lists of [u]sernames and [p]asswords:",
+      "syntax": "nxc rdp {{192.168.178.2}} -u {{path/to/usernames.txt}} -p {{path/to/passwords.txt}}"
+    },
+    {
+      "description": "Take a screenshot after waiting the for specified number of seconds:",
+      "syntax": "nxc rdp {{192.168.178.2}} -u {{username}} -p {{password}} --screenshot --screentime {{10}}"
+    },
+    {
+      "description": "Take a screenshot in the specified resolution:",
+      "syntax": "nxc rdp {{192.168.178.2}} -u {{username}} -p {{password}} --screenshot --res {{1024x768}}"
+    },
+    {
+      "description": "Take a screenshot of the RDP login prompt if Network Level Authentication is disabled:",
+      "syntax": "nxc rdp {{192.168.178.2}} -u {{username}} -p {{password}} --nla-screenshot"
+    }
+  ]
+}

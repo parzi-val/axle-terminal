@@ -1,0 +1,10 @@
+{
+  "command": "sbigtopgm",
+  "description": "Convert an SBIG CCDOPS file to PGM. More information: https://netpbm.sourceforge.net/doc/sbigtopgm.html.",
+  "useCases": [
+    {
+      "description": "Convert an SBIG CCDOPS image file to PGM:",
+      "syntax": "sbigtopgm {{path/to/input_file.sbig}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "q",
+  "description": "Execute SQL-like queries on CSV and TSV files. More information: https://harelba.github.io/q.",
+  "useCases": [
+    {
+      "description": "Query a CSV file by specifying the delimiter as ',':",
+      "syntax": "q -d',' &quot;SELECT * from {{path/to/file}}&quot;"
+    },
+    {
+      "description": "Query a TSV file:",
+      "syntax": "q -t &quot;SELECT * from {{path/to/file}}&quot;"
+    },
+    {
+      "description": "Query file with header row:",
+      "syntax": "q -d{{delimiter}} -H &quot;SELECT * from {{path/to/file}}&quot;"
+    },
+    {
+      "description": "Read data from stdin; '-' in the query represents the data from stdin:",
+      "syntax": "{{output}} | q &quot;select * from -&quot;"
+    },
+    {
+      "description": "Join two files (aliased as f1 and f2 in the example) on column c1, a common column:",
+      "syntax": "q &quot;SELECT * FROM {{path/to/file}} f1 JOIN {{path/to/other_file}} f2 ON (f1.c1 = f2.c1)&quot;"
+    },
+    {
+      "description": "Format output using an output delimiter with an output header line (Note: command will output column names based on the input file header or the column aliases overridden in the query):",
+      "syntax": "q -D{{delimiter}} -O &quot;SELECT {{column}} as {{alias}} from {{path/to/file}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "rails routes",
+  "description": "List routes in a Rails application. More information: https://guides.rubyonrails.org/routing.html.",
+  "useCases": [
+    {
+      "description": "List all routes:",
+      "syntax": "rails routes"
+    },
+    {
+      "description": "List all routes in an expanded format:",
+      "syntax": "rails routes --expanded"
+    },
+    {
+      "description": "List routes partially matching URL helper method name, HTTP verb, or URL path:",
+      "syntax": "rails routes -g {{posts_path|GET|/posts}}"
+    },
+    {
+      "description": "List routes that map to a specified controller:",
+      "syntax": "rails routes -c {{posts|Posts|Blogs::PostsController}}"
+    }
+  ]
+}

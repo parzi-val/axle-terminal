@@ -1,0 +1,10 @@
+{
+  "command": "ppmtojpeg",
+  "description": "This command has been superseded by pnmtojpeg. More information: https://netpbm.sourceforge.net/doc/ppmtojpeg.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pnmtojpeg"
+    }
+  ]
+}

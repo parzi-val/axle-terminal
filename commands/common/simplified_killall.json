@@ -1,0 +1,26 @@
+{
+  "command": "killall",
+  "description": "Send kill signal to all instances of a process by name (must be exact name). All signals except SIGKILL and SIGSTOP can be intercepted by the process, allowing a clean exit. More information: https://manned.org/killall.",
+  "useCases": [
+    {
+      "description": "Terminate a process using the default SIGTERM (terminate) signal:",
+      "syntax": "killall {{process_name}}"
+    },
+    {
+      "description": "[l]ist available signal names (to be used without the 'SIG' prefix):",
+      "syntax": "killall -l"
+    },
+    {
+      "description": "Interactively ask for confirmation before termination:",
+      "syntax": "killall -i {{process_name}}"
+    },
+    {
+      "description": "Terminate a process using the SIGINT (interrupt) signal, which is the same signal sent by pressing Ctrl + C:",
+      "syntax": "killall -INT {{process_name}}"
+    },
+    {
+      "description": "Force kill a process:",
+      "syntax": "killall -KILL {{process_name}}"
+    }
+  ]
+}

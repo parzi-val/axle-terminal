@@ -1,0 +1,22 @@
+{
+  "command": "shuf",
+  "description": "Generate random permutations. More information: https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html.",
+  "useCases": [
+    {
+      "description": "Randomize the order of lines in a file and output the result:",
+      "syntax": "shuf {{path/to/file}}"
+    },
+    {
+      "description": "Only output the first 5 entries of the result:",
+      "syntax": "shuf --head-count=5 {{path/to/file}}"
+    },
+    {
+      "description": "Write the output to another file:",
+      "syntax": "shuf {{path/to/input_file}} --output={{path/to/output_file}}"
+    },
+    {
+      "description": "Generate 3 random numbers in the range 1-10 (inclusive):",
+      "syntax": "shuf --head-count=3 --input-range=1-10 --repeat"
+    }
+  ]
+}

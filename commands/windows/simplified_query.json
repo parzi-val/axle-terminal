@@ -1,0 +1,30 @@
+{
+  "command": "query",
+  "description": "Display information about user sessions and process. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/query.",
+  "useCases": [
+    {
+      "description": "Display all user sessions:",
+      "syntax": "query session"
+    },
+    {
+      "description": "Display the current user sessions on a remote computer:",
+      "syntax": "query session /server:{{hostname}}"
+    },
+    {
+      "description": "Display logged in users:",
+      "syntax": "query user"
+    },
+    {
+      "description": "Display all user sessions on a remote computer:",
+      "syntax": "query session /server:{{hostname}}"
+    },
+    {
+      "description": "Display all running processes:",
+      "syntax": "query process"
+    },
+    {
+      "description": "Display running processes by session or user name:",
+      "syntax": "query process {{session_name|user_name}}"
+    }
+  ]
+}

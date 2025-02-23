@@ -1,0 +1,34 @@
+{
+  "command": "llm",
+  "description": "Interact with Large Language Models (LLMs) via remote APIs and models that can be installed and run on your machine. More information: https://llm.datasette.io/en/stable/help.html.",
+  "useCases": [
+    {
+      "description": "Set up an OpenAI API Key:",
+      "syntax": "llm keys set openai"
+    },
+    {
+      "description": "Run a prompt:",
+      "syntax": "llm &quot;{{Ten fun names for a pet pelican}}&quot;"
+    },
+    {
+      "description": "Run a [s]ystem prompt against a file:",
+      "syntax": "cat {{path/to/file.py}} | llm --system &quot;{{Explain this code}}&quot;"
+    },
+    {
+      "description": "Install packages from PyPI into the same environment as LLM:",
+      "syntax": "llm install {{package1 package2 ...}}"
+    },
+    {
+      "description": "Download and run a prompt against a [m]odel:",
+      "syntax": "llm --model {{orca-mini-3b-gguf2-q4_0}} &quot;{{What is the capital of France?}}&quot;"
+    },
+    {
+      "description": "Create a [s]ystem prompt and [s]ave it with a template name:",
+      "syntax": "llm --system '{{You are a sentient cheesecake}}' --save {{sentient_cheesecake}}"
+    },
+    {
+      "description": "Have an interactive chat with a specific [m]odel using a specific [t]emplate:",
+      "syntax": "llm chat --model {{chatgpt}} --template {{sentient_cheesecake}}"
+    }
+  ]
+}

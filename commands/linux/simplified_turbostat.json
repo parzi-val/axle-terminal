@@ -1,0 +1,26 @@
+{
+  "command": "turbostat",
+  "description": "Report processor topology, frequency, temperature, power, and idle statistics. More information: https://manned.org/turbostat.8.",
+  "useCases": [
+    {
+      "description": "Display statistics every 5 seconds:",
+      "syntax": "sudo turbostat"
+    },
+    {
+      "description": "Display statistics every specified amount of seconds:",
+      "syntax": "sudo turbostat -i {{n_seconds}}"
+    },
+    {
+      "description": "Do not decode and print the system configuration header information:",
+      "syntax": "sudo turbostat --quiet"
+    },
+    {
+      "description": "Display useful information about CPU every 1 second, without header information:",
+      "syntax": "sudo turbostat --quiet --interval 1 --cpu 0-{{CPU_thread_count}} --show &quot;PkgWatt&quot;,&quot;Busy%&quot;,&quot;Core&quot;,&quot;CoreTmp&quot;,&quot;Thermal&quot;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "turbostat --help"
+    }
+  ]
+}

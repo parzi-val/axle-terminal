@@ -1,0 +1,26 @@
+{
+  "command": "lsns",
+  "description": "List information about all namespaces or about the specified namespace. More information: https://manned.org/lsns.",
+  "useCases": [
+    {
+      "description": "List all namespaces:",
+      "syntax": "lsns"
+    },
+    {
+      "description": "List namespaces in JSON format:",
+      "syntax": "lsns --json"
+    },
+    {
+      "description": "List namespaces associated with the specified process:",
+      "syntax": "lsns --task {{pid}}"
+    },
+    {
+      "description": "List the specified type of namespaces only:",
+      "syntax": "lsns --type {{mnt|net|ipc|user|pid|uts|cgroup|time}}"
+    },
+    {
+      "description": "List namespaces, only showing the namespace ID, type, PID, and command:",
+      "syntax": "lsns --output {{NS,TYPE,PID,COMMAND}}"
+    }
+  ]
+}

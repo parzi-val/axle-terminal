@@ -1,0 +1,18 @@
+{
+  "command": "nativefier",
+  "description": "Create a desktop app for any web site with minimal configuration. More information: https://github.com/jiahaog/nativefier.",
+  "useCases": [
+    {
+      "description": "Make a desktop app for a website:",
+      "syntax": "nativefier {{url}}"
+    },
+    {
+      "description": "Create a desktop app with a custom name:",
+      "syntax": "nativefier --name {{name}} {{url}}"
+    },
+    {
+      "description": "Use a custom icon, should be a PNG:",
+      "syntax": "nativefier --icon {{path/to/icon.png}} {{url}}"
+    }
+  ]
+}

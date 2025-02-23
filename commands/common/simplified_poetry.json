@@ -1,0 +1,38 @@
+{
+  "command": "poetry",
+  "description": "Manage Python packages and dependencies. See also: asdf. More information: https://python-poetry.org/docs/cli/.",
+  "useCases": [
+    {
+      "description": "Create a new Poetry project in the directory with a specific name:",
+      "syntax": "poetry new {{project_name}}"
+    },
+    {
+      "description": "Install and add a dependency and its sub-dependencies to the pyproject.toml file in the current directory:",
+      "syntax": "poetry add {{dependency}}"
+    },
+    {
+      "description": "Install the project dependencies using the pyproject.toml file in the current directory:",
+      "syntax": "poetry install"
+    },
+    {
+      "description": "Interactively initialize the current directory as a new Poetry project:",
+      "syntax": "poetry init"
+    },
+    {
+      "description": "Get the latest version of all dependencies and update poetry.lock:",
+      "syntax": "poetry update"
+    },
+    {
+      "description": "Execute a command inside the project's virtual environment:",
+      "syntax": "poetry run {{command}}"
+    },
+    {
+      "description": "Bump the version of the project in pyproject.toml:",
+      "syntax": "poetry version {{patch|minor|major|prepatch|preminor|premajor|prerelease}}"
+    },
+    {
+      "description": "Spawn a shell within the project's virtual environment:",
+      "syntax": "poetry shell"
+    }
+  ]
+}

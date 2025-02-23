@@ -1,0 +1,22 @@
+{
+  "command": "gcrane ls",
+  "description": "List the tags in a repository. More complex form than crane ls, which allows for listing tags, manifest and sub-repositories. More information: https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.md.",
+  "useCases": [
+    {
+      "description": "List the tags:",
+      "syntax": "gcrane ls {{repository}}"
+    },
+    {
+      "description": "Format response from the registry as JSON:",
+      "syntax": "gcrane ls {{repository}} --json"
+    },
+    {
+      "description": "Whether to recurse through repositories:",
+      "syntax": "gcrane ls {{repository}} {{-r|--recursive}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gcrane ls {{-h|--help}}"
+    }
+  ]
+}

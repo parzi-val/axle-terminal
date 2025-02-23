@@ -1,0 +1,34 @@
+{
+  "command": "gist",
+  "description": "Upload code to https://gist.github.com. More information: https://github.com/defunkt/gist.",
+  "useCases": [
+    {
+      "description": "Log in to gist on this computer:",
+      "syntax": "gist --login"
+    },
+    {
+      "description": "Create a gist from any number of text files:",
+      "syntax": "gist {{file.txt}} {{file2.txt}}"
+    },
+    {
+      "description": "Create a private gist with a description:",
+      "syntax": "gist --private --description &quot;{{A meaningful description}}&quot; {{file.txt}}"
+    },
+    {
+      "description": "Read contents from stdin and create a gist from it:",
+      "syntax": "{{echo &quot;hello world&quot;}} | gist"
+    },
+    {
+      "description": "List your public and private gists:",
+      "syntax": "gist --list"
+    },
+    {
+      "description": "List all public gists for any user:",
+      "syntax": "gist --list {{username}}"
+    },
+    {
+      "description": "Update a gist using the ID from URL:",
+      "syntax": "gist --update {{GIST_ID}} {{file.txt}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "mysqld",
+  "description": "Start the MySQL database server. More information: https://dev.mysql.com/doc/refman/en/mysqld.html.",
+  "useCases": [
+    {
+      "description": "Start the MySQL database server:",
+      "syntax": "mysqld"
+    },
+    {
+      "description": "Start the server, printing error messages to the console:",
+      "syntax": "mysqld --console"
+    },
+    {
+      "description": "Start the server, saving logging output to a custom log file:",
+      "syntax": "mysqld --log={{path/to/file.log}}"
+    },
+    {
+      "description": "Print the default arguments and their values and exit:",
+      "syntax": "mysqld --print-defaults"
+    },
+    {
+      "description": "Start the server, reading arguments and values from a file:",
+      "syntax": "mysqld --defaults-file={{path/to/file}}"
+    },
+    {
+      "description": "Start the server and listen on a custom port:",
+      "syntax": "mysqld --port={{port}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mysqld --verbose --help"
+    }
+  ]
+}

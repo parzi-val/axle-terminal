@@ -1,0 +1,30 @@
+{
+  "command": "dconf write",
+  "description": "Write key values in dconf databases. See also: dconf. More information: https://manned.org/dconf.",
+  "useCases": [
+    {
+      "description": "Write a specific key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;{{value}}&quot;"
+    },
+    {
+      "description": "Write a specific string key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;'{{string}}'&quot;"
+    },
+    {
+      "description": "Write a specific integer key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;{{5}}&quot;"
+    },
+    {
+      "description": "Write a specific boolean key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;{{true|false}}&quot;"
+    },
+    {
+      "description": "Write a specific array key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;[{{'first', 'second', ...}}]&quot;"
+    },
+    {
+      "description": "Write a specific empty array key value:",
+      "syntax": "dconf write {{/path/to/key}} &quot;@as []&quot;"
+    }
+  ]
+}

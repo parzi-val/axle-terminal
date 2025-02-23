@@ -1,0 +1,22 @@
+{
+  "command": "clip",
+  "description": "Copy input content to the Windows clipboard. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/clip.",
+  "useCases": [
+    {
+      "description": "Pipe command-line output to the Windows clipboard:",
+      "syntax": "{{dir}} | clip"
+    },
+    {
+      "description": "Copy the contents of a file to the Windows clipboard:",
+      "syntax": "clip &lt; {{path\\to\\file.ext}}"
+    },
+    {
+      "description": "Copy text with a trailing newline to the Windows clipboard:",
+      "syntax": "echo {{some text}} | clip"
+    },
+    {
+      "description": "Copy text without a trailing newline to the Windows clipboard:",
+      "syntax": "echo | set /p=&quot;some text&quot; | clip"
+    }
+  ]
+}

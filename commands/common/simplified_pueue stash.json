@@ -1,0 +1,22 @@
+{
+  "command": "pueue stash",
+  "description": "Stash tasks to prevent them starting automatically. See also pueue start and pueue enqueue. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Stash an enqueued task:",
+      "syntax": "pueue stash {{task_id}}"
+    },
+    {
+      "description": "Stash multiple tasks at once:",
+      "syntax": "pueue stash {{task_id}} {{task_id}}"
+    },
+    {
+      "description": "Start a stashed task immediately:",
+      "syntax": "pueue start {{task_id}}"
+    },
+    {
+      "description": "Enqueue a task to be executed when preceding tasks finish:",
+      "syntax": "pueue enqueue {{task_id}}"
+    }
+  ]
+}

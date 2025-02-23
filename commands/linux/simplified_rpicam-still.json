@@ -1,0 +1,18 @@
+{
+  "command": "rpicam-still",
+  "description": "Capture and store a photo using a Raspberry Pi camera with legacy features missing from rpicam-jpeg. More information: https://www.raspberrypi.com/documentation/computers/camera_software.html#rpicam-still.",
+  "useCases": [
+    {
+      "description": "Capture a photo with different encoding:",
+      "syntax": "rpicam-still -e {{bmp|png|rgb|yuv420}} -o {{path/to/file.{{bmp|png|rgb|yuv420}}}}"
+    },
+    {
+      "description": "Capture a raw image:",
+      "syntax": "rpicam-still -r -o {{path/to/file.jpg}}"
+    },
+    {
+      "description": "Capture a 100 second exposure image:",
+      "syntax": "rpicam-still -o {{path/to/file.jpg}} --shutter 100000"
+    }
+  ]
+}

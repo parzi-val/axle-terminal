@@ -1,0 +1,26 @@
+{
+  "command": "test",
+  "description": "Check file types and compare values. Returns 0 if the condition evaluates to true, 1 if it evaluates to false. More information: https://www.gnu.org/software/coreutils/manual/html_node/test-invocation.html.",
+  "useCases": [
+    {
+      "description": "Test if a given variable is equal to a given string:",
+      "syntax": "test &quot;{{$MY_VAR}}&quot; = &quot;{{/bin/zsh}}&quot;"
+    },
+    {
+      "description": "Test if a given variable is empty:",
+      "syntax": "test -z &quot;{{$GIT_BRANCH}}&quot;"
+    },
+    {
+      "description": "Test if a file exists:",
+      "syntax": "test -f &quot;{{path/to/file_or_directory}}&quot;"
+    },
+    {
+      "description": "Test if a directory does not exist:",
+      "syntax": "test ! -d &quot;{{path/to/directory}}&quot;"
+    },
+    {
+      "description": "If A is true, then do B, or C in the case of an error (notice that C may run even if A fails):",
+      "syntax": "test {{condition}} &amp;&amp; {{echo &quot;true&quot;}} || {{echo &quot;false&quot;}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "hyperfine",
+  "description": "A command-line benchmarking tool. More information: https://github.com/sharkdp/hyperfine/.",
+  "useCases": [
+    {
+      "description": "Run a basic benchmark, performing at least 10 runs:",
+      "syntax": "hyperfine '{{make}}'"
+    },
+    {
+      "description": "Run a comparative benchmark:",
+      "syntax": "hyperfine '{{make target1}}' '{{make target2}}'"
+    },
+    {
+      "description": "Change minimum number of benchmarking runs:",
+      "syntax": "hyperfine --min-runs {{7}} '{{make}}'"
+    },
+    {
+      "description": "Perform benchmark with warmup:",
+      "syntax": "hyperfine --warmup {{5}} '{{make}}'"
+    },
+    {
+      "description": "Run a command before each benchmark run (to clear caches, etc.):",
+      "syntax": "hyperfine --prepare '{{make clean}}' '{{make}}'"
+    },
+    {
+      "description": "Run a benchmark where a single parameter changes for each run:",
+      "syntax": "hyperfine --prepare '{{make clean}}' --parameter-scan {{num_threads}} {{1}} {{10}} '{{make -j {num_threads}}}'"
+    }
+  ]
+}

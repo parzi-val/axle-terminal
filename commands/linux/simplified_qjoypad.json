@@ -1,0 +1,30 @@
+{
+  "command": "qjoypad",
+  "description": "Translate input from gamepads or joysticks into keyboard strokes or mouse actions. More information: https://qjoypad.sourceforge.net/.",
+  "useCases": [
+    {
+      "description": "Start QJoyPad:",
+      "syntax": "qjoypad"
+    },
+    {
+      "description": "Start QJoyPad and look for devices in a specific directory:",
+      "syntax": "qjoypad --device={{path/to/directory}}"
+    },
+    {
+      "description": "Start QJoyPad but don't show a system tray icon:",
+      "syntax": "qjoypad --notray"
+    },
+    {
+      "description": "Start QJoyPad and force the window manager to use a system tray icon:",
+      "syntax": "qjoypad --force-tray"
+    },
+    {
+      "description": "Force a running instance of QJoyPad to update its list of devices and layouts:",
+      "syntax": "qjoypad --update"
+    },
+    {
+      "description": "Load the given layout in an already running instance of QJoyPad, or start QJoyPad using the given layout:",
+      "syntax": "qjoypad &quot;{{layout}}&quot;"
+    }
+  ]
+}

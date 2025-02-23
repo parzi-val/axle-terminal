@@ -1,0 +1,18 @@
+{
+  "command": "hello",
+  "description": "Print \"Hello, world!\", \"hello, world\" or a customizable text. More information: https://www.gnu.org/software/hello/.",
+  "useCases": [
+    {
+      "description": "Print \"Hello, world!\":",
+      "syntax": "hello"
+    },
+    {
+      "description": "Print \"hello, world\", the traditional type:",
+      "syntax": "hello --traditional"
+    },
+    {
+      "description": "Print a text message:",
+      "syntax": "hello --greeting=&quot;{{greeting_text}}&quot;"
+    }
+  ]
+}

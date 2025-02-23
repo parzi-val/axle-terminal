@@ -1,0 +1,30 @@
+{
+  "command": "apx stacks",
+  "description": "Manage stacks in apx. Note: user-created stack configurations are stored in ~/.local/share/apx/stacks. More information: https://github.com/Vanilla-OS/apx.",
+  "useCases": [
+    {
+      "description": "Interactively create a new stack configuration:",
+      "syntax": "apx stacks new"
+    },
+    {
+      "description": "Interactively update a stack configuration:",
+      "syntax": "apx stacks update {{name}}"
+    },
+    {
+      "description": "List all available stack configurations:",
+      "syntax": "apx stacks list"
+    },
+    {
+      "description": "Remove a specified stack configuration:",
+      "syntax": "apx stacks rm --name {{string}}"
+    },
+    {
+      "description": "Import a stack configuration:",
+      "syntax": "apx stacks import --input {{path/to/stack.yml}}"
+    },
+    {
+      "description": "Export the stack configuration (Note: the output flag is optional, it is exported to the current working directory by default):",
+      "syntax": "apx stacks export --name {{string}} --output {{path/to/output_file}}"
+    }
+  ]
+}

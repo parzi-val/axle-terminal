@@ -1,0 +1,14 @@
+{
+  "command": "uudecode",
+  "description": "Decode files encoded by uuencode. More information: https://manned.org/uudecode.",
+  "useCases": [
+    {
+      "description": "Decode a file that was encoded with uuencode and print the result to stdout:",
+      "syntax": "uudecode {{path/to/encoded_file}}"
+    },
+    {
+      "description": "Decode a file that was encoded with uuencode and write the result to a file:",
+      "syntax": "uudecode -o {{path/to/decoded_file}} {{path/to/encoded_file}}"
+    }
+  ]
+}

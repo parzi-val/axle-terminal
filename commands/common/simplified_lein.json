@@ -1,0 +1,26 @@
+{
+  "command": "lein",
+  "description": "Manage Clojure projects with declarative configuration. More information: https://leiningen.org.",
+  "useCases": [
+    {
+      "description": "Generate scaffolding for a new project based on a template:",
+      "syntax": "lein new {{template_name}} {{project_name}}"
+    },
+    {
+      "description": "Start a REPL session either with the project or standalone:",
+      "syntax": "lein repl"
+    },
+    {
+      "description": "Run the project's -main function with optional args:",
+      "syntax": "lein run {{args}}"
+    },
+    {
+      "description": "Run the project's tests:",
+      "syntax": "lein test"
+    },
+    {
+      "description": "Package up the project files and all its dependencies into a jar file:",
+      "syntax": "lein uberjar"
+    }
+  ]
+}

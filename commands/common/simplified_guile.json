@@ -1,0 +1,22 @@
+{
+  "command": "guile",
+  "description": "Guile Scheme interpreter. More information: https://www.gnu.org/software/guile.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "guile"
+    },
+    {
+      "description": "Execute the script in a given Scheme file:",
+      "syntax": "guile {{script.scm}}"
+    },
+    {
+      "description": "Execute a Scheme expression:",
+      "syntax": "guile -c &quot;{{expression}}&quot;"
+    },
+    {
+      "description": "Listen on a port or a Unix domain socket (the default is port 37146) for remote REPL connections:",
+      "syntax": "guile --listen={{port_or_socket}}"
+    }
+  ]
+}

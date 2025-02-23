@@ -1,0 +1,30 @@
+{
+  "command": "git magic",
+  "description": "Automate add, commit, and push routines. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-magic.",
+  "useCases": [
+    {
+      "description": "Commit changes with a generated message:",
+      "syntax": "git magic"
+    },
+    {
+      "description": "[a]dd untracked files and commit changes with a generated message:",
+      "syntax": "git magic -a"
+    },
+    {
+      "description": "Commit changes with a custom [m]essage:",
+      "syntax": "git magic -m &quot;{{custom_commit_message}}&quot;"
+    },
+    {
+      "description": "[e]dit the commit [m]essage before committing:",
+      "syntax": "git magic -em &quot;{{custom_commit_message}}&quot;"
+    },
+    {
+      "description": "Commit changes and [p]ush to remote:",
+      "syntax": "git magic -p"
+    },
+    {
+      "description": "Commit changes with a [f]orce [p]ush to remote:",
+      "syntax": "git magic -fp"
+    }
+  ]
+}

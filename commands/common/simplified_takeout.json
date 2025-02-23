@@ -1,0 +1,38 @@
+{
+  "command": "takeout",
+  "description": "A Docker-based development-only dependency manager. More information: https://github.com/tighten/takeout.",
+  "useCases": [
+    {
+      "description": "Display a list of available services:",
+      "syntax": "takeout enable"
+    },
+    {
+      "description": "Enable a specific service:",
+      "syntax": "takeout enable {{name}}"
+    },
+    {
+      "description": "Enable a specific service with the default parameters:",
+      "syntax": "takeout enable --default {{name}}"
+    },
+    {
+      "description": "Display a list of enabled services:",
+      "syntax": "takeout disable"
+    },
+    {
+      "description": "Disable a specific service:",
+      "syntax": "takeout disable {{name}}"
+    },
+    {
+      "description": "Disable all services:",
+      "syntax": "takeout disable --all"
+    },
+    {
+      "description": "Start a specific container:",
+      "syntax": "takeout start {{container_id}}"
+    },
+    {
+      "description": "Stop a specific container:",
+      "syntax": "takeout stop {{container_id}}"
+    }
+  ]
+}

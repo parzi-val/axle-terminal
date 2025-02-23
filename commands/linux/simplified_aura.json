@@ -1,0 +1,38 @@
+{
+  "command": "aura",
+  "description": "The Aura Package Manager: a secure, multilingual package manager for Arch Linux and the AUR. More information: https://github.com/fosskers/aura.",
+  "useCases": [
+    {
+      "description": "Search for packages from the official repositories and AUR:",
+      "syntax": "aura --aursync --both --search {{keyword|regular_expression}}"
+    },
+    {
+      "description": "Install a package from the AUR:",
+      "syntax": "aura --aursync {{package}}"
+    },
+    {
+      "description": "Update all AUR packages in a verbose mode and remove all make dependencies:",
+      "syntax": "aura --aursync --diff --sysupgrade --delmakedeps --unsuppress"
+    },
+    {
+      "description": "Install a package from the official repositories:",
+      "syntax": "aura --sync {{package}}"
+    },
+    {
+      "description": "Synchronize and update all packages from the official repositories:",
+      "syntax": "aura --sync --refresh --sysupgrade"
+    },
+    {
+      "description": "Downgrade a package using the package cache:",
+      "syntax": "aura --downgrade {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies:",
+      "syntax": "aura --remove --recursive --unneeded {{package}}"
+    },
+    {
+      "description": "Remove orphan packages (installed as dependencies but not required by any package):",
+      "syntax": "aura --orphans --abandon"
+    }
+  ]
+}

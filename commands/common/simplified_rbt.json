@@ -1,0 +1,26 @@
+{
+  "command": "rbt",
+  "description": "RBTools is a set of command-line tools for working with Review Board and RBCommons. More information: https://www.reviewboard.org/docs/rbtools/dev/.",
+  "useCases": [
+    {
+      "description": "Post changes to Review Board:",
+      "syntax": "rbt post {{change_number}}"
+    },
+    {
+      "description": "Display the diff that will be sent to Review Board:",
+      "syntax": "rbt diff"
+    },
+    {
+      "description": "Land a change in a local branch or on a review request:",
+      "syntax": "rbt land {{branch_name}}"
+    },
+    {
+      "description": "Patch your tree with a change on a review request:",
+      "syntax": "rbt patch {{review_request_id}}"
+    },
+    {
+      "description": "Set up RBTool to talk to a repository:",
+      "syntax": "rbt setup-repo"
+    }
+  ]
+}

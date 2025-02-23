@@ -1,0 +1,22 @@
+{
+  "command": "xdg-mime",
+  "description": "Query and manage MIME types according to the XDG standard. More information: https://portland.freedesktop.org/doc/xdg-mime.html.",
+  "useCases": [
+    {
+      "description": "Display the MIME type of a file:",
+      "syntax": "xdg-mime query filetype {{path/to/file}}"
+    },
+    {
+      "description": "Display the default application for opening PNGs:",
+      "syntax": "xdg-mime query default {{image/png}}"
+    },
+    {
+      "description": "Display the default application for opening a specific file:",
+      "syntax": "xdg-mime query default $(xdg-mime query filetype {{path/to/file}})"
+    },
+    {
+      "description": "Set imv as the default application for opening PNG and JPEG images:",
+      "syntax": "xdg-mime default {{imv.desktop}} {{image/png}} {{image/jpeg}}"
+    }
+  ]
+}

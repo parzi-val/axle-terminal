@@ -1,0 +1,10 @@
+{
+  "command": "zstdmt",
+  "description": "This command is an alias of zstd --threads 0 (which sets the number of working threads to the number of physical CPU cores).",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr zstd"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "aws cloudwatch",
+  "description": "Monitor AWS resources to gain system-wide visibility into resource utilization, application performance, and operational health. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/index.html.",
+  "useCases": [
+    {
+      "description": "List dashboards for your account:",
+      "syntax": "aws cloudwatch list-dashboards"
+    },
+    {
+      "description": "Display details for the specified dashboard:",
+      "syntax": "aws cloudwatch get-dashboard --dashboard-name {{dashboard_name}}"
+    },
+    {
+      "description": "List metrics:",
+      "syntax": "aws cloudwatch list-metrics"
+    },
+    {
+      "description": "List alarms:",
+      "syntax": "aws cloudwatch describe-alarms"
+    },
+    {
+      "description": "Create or update an alarm and associate it with a metric:",
+      "syntax": "aws cloudwatch put-metric-alarm --alarm-name {{alarm_name}} --evaluation-periods {{evaluation_periods}} --comparison-operator {{comparison_operator}}"
+    },
+    {
+      "description": "Delete the specified alarms:",
+      "syntax": "aws cloudwatch delete-alarms --alarm_names {{alarm_names}}"
+    },
+    {
+      "description": "Delete the specified dashboards:",
+      "syntax": "aws cloudwatch delete-dashboards --dashboard-names {{dashboard_names}}"
+    }
+  ]
+}

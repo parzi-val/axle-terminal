@@ -1,0 +1,18 @@
+{
+  "command": "opt",
+  "description": "Runs optimizations and analyse LLVM source files. More information: https://llvm.org/docs/CommandGuide/opt.html.",
+  "useCases": [
+    {
+      "description": "Run an optimization or analysis on a bitcode file:",
+      "syntax": "opt -{{passname}} {{path/to/file.bc}} -S -o {{file_opt.bc}}"
+    },
+    {
+      "description": "Output the Control Flow Graph of a function to a .dot file:",
+      "syntax": "opt {{-dot-cfg}} -S {{path/to/file.bc}} -disable-output"
+    },
+    {
+      "description": "Optimize the program at level 2 and output the result to another file:",
+      "syntax": "opt -O2 {{path/to/file.bc}} -S -o {{path/to/output_file.bc}}"
+    }
+  ]
+}

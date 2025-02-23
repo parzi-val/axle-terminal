@@ -1,0 +1,26 @@
+{
+  "command": "chafa",
+  "description": "Image printing in the terminal. See also: catimg, pixterm. More information: https://hpjansson.org/chafa/man.",
+  "useCases": [
+    {
+      "description": "Render an image directly in the terminal:",
+      "syntax": "chafa {{path/to/file}}"
+    },
+    {
+      "description": "Render an image with 24-bit [c]olor:",
+      "syntax": "chafa -c full {{path/to/file}}"
+    },
+    {
+      "description": "Improve image rendering with small color palettes using dithering:",
+      "syntax": "chafa -c 16 --dither ordered {{path/to/file}}"
+    },
+    {
+      "description": "Render an image, making it appear pixelated:",
+      "syntax": "chafa --symbols vhalf {{path/to/file}}"
+    },
+    {
+      "description": "Render a monochrome image with only braille characters:",
+      "syntax": "chafa -c none --symbols braille {{path/to/file}}"
+    }
+  ]
+}

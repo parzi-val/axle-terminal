@@ -1,0 +1,10 @@
+{
+  "command": "git blame-someone-else",
+  "description": "Blame someone else for your bad code. More information: https://github.com/jayphelps/git-blame-someone-else.",
+  "useCases": [
+    {
+      "description": "Change the committer and author of a commit:",
+      "syntax": "git blame-someone-else &quot;{{author &lt;someone@example.com&gt;}}&quot; {{commit}}"
+    }
+  ]
+}

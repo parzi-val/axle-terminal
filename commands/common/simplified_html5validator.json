@@ -1,0 +1,34 @@
+{
+  "command": "html5validator",
+  "description": "Validate HTML5. More information: https://github.com/svenkreiss/html5validator.",
+  "useCases": [
+    {
+      "description": "Validate a specific file:",
+      "syntax": "html5validator {{path/to/file}}"
+    },
+    {
+      "description": "Validate all HTML files in a specific directory:",
+      "syntax": "html5validator --root {{path/to/directory}}"
+    },
+    {
+      "description": "Show warnings as well as errors:",
+      "syntax": "html5validator --show-warnings {{path/to/file}}"
+    },
+    {
+      "description": "Match multiple files using a glob pattern:",
+      "syntax": "html5validator --root {{path/to/directory}} --match &quot;{{*.html *.php}}&quot;"
+    },
+    {
+      "description": "Ignore specific directory names:",
+      "syntax": "html5validator --root {{path/to/directory}} --blacklist &quot;{{node_modules vendor}}&quot;"
+    },
+    {
+      "description": "Output the results in a specific format:",
+      "syntax": "html5validator --format {{gnu|xml|json|text}} {{path/to/file}}"
+    },
+    {
+      "description": "Output the log at a specific verbosity level:",
+      "syntax": "html5validator --root {{path/to/directory}} --log {{debug|info|warning}}"
+    }
+  ]
+}

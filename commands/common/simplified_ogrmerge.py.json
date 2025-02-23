@@ -1,0 +1,18 @@
+{
+  "command": "ogrmerge.py",
+  "description": "Merge several vector datasets into a single one. More information: https://gdal.org/programs/ogrmerge.html.",
+  "useCases": [
+    {
+      "description": "Create a GeoPackage with a layer for each input Shapefile:",
+      "syntax": "ogrmerge.py -f {{GPKG}} -o {{path/to/output.gpkg}} {{path/to/input1.shp path/to/input2.shp ...}}"
+    },
+    {
+      "description": "Create a virtual datasource (VRT) with a layer for each input GeoJSON:",
+      "syntax": "ogrmerge.py -f {{VRT}} -o {{path/to/output.vrt}} {{path/to/input1.geojson path/to/input2.geojson ...}}"
+    },
+    {
+      "description": "Concatenate two vector datasets and store source name of dataset in attribute 'source_name':",
+      "syntax": "ogrmerge.py -single -f {{GeoJSON}} -o {{path/to/output.geojson}} -src_layer_field_name country {{source_name}} {{path/to/input1.shp path/to/input2.shp ...}}"
+    }
+  ]
+}

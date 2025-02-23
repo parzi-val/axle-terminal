@@ -1,0 +1,18 @@
+{
+  "command": "mkswap",
+  "description": "Set up a Linux swap area on a device or in a file. Note: path/to/file can either point to a regular file or a swap partition. More information: https://manned.org/mkswap.",
+  "useCases": [
+    {
+      "description": "Set up a given swap area:",
+      "syntax": "sudo mkswap {{path/to/file}}"
+    },
+    {
+      "description": "Check a partition for bad blocks before creating the swap area:",
+      "syntax": "sudo mkswap -c {{path/to/file}}"
+    },
+    {
+      "description": "Specify a label for the partition (to allow swapon to use the label):",
+      "syntax": "sudo mkswap -L {{label}} {{/dev/sda1}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "llvm-as",
+  "description": "LLVM Intermediate Representation (.ll) to Bitcode (.bc) assembler. More information: https://llvm.org/docs/CommandGuide/llvm-as.html.",
+  "useCases": [
+    {
+      "description": "Assemble an IR file:",
+      "syntax": "llvm-as -o {{path/to/out.bc}} {{path/to/source.ll}}"
+    },
+    {
+      "description": "Assemble an IR file and include a module hash in the produced Bitcode file:",
+      "syntax": "llvm-as --module-hash -o {{path/to/out.bc}} {{path/to/source.ll}}"
+    },
+    {
+      "description": "Read an IR file from stdin and assemble it:",
+      "syntax": "cat {{path/to/source.ll}} | llvm-as -o {{path/to/out.bc}}"
+    }
+  ]
+}

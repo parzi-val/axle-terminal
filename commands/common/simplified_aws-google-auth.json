@@ -1,0 +1,22 @@
+{
+  "command": "aws-google-auth",
+  "description": "Acquire AWS temporary (STS) credentials using Google Apps as a federated (Single Sign-On) provider. More information: https://github.com/cevoaustralia/aws-google-auth.",
+  "useCases": [
+    {
+      "description": "Log in with Google SSO using the specified [u]sername [I]DP and [S]P identifiers and set the credentials [d]uration to one hour:",
+      "syntax": "aws-google-auth -u {{example@example.com}} -I {{$GOOGLE_IDP_ID}} -S {{$GOOGLE_SP_ID}} -d {{3600}}"
+    },
+    {
+      "description": "Log in [a]sking which role to use (in case of several available SAML roles):",
+      "syntax": "aws-google-auth -u {{example@example.com}} -I {{$GOOGLE_IDP_ID}} -S {{$GOOGLE_SP_ID}} -d {{3600}} -a"
+    },
+    {
+      "description": "Resolve aliases for AWS accounts:",
+      "syntax": "aws-google-auth -u {{example@example.com}} -I {{$GOOGLE_IDP_ID}} -S {{$GOOGLE_SP_ID}} -d {{3600}} -a --resolve-aliases"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aws-google-auth -h"
+    }
+  ]
+}

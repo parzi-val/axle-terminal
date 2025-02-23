@@ -1,0 +1,22 @@
+{
+  "command": "squeue",
+  "description": "View the jobs queued in the SLURM scheduler. More information: https://manned.org/squeue.",
+  "useCases": [
+    {
+      "description": "View the queue:",
+      "syntax": "squeue"
+    },
+    {
+      "description": "View jobs queued by a specific user:",
+      "syntax": "squeue -u {{username}}"
+    },
+    {
+      "description": "View the queue and refresh every 5 seconds:",
+      "syntax": "squeue -i {{5}}"
+    },
+    {
+      "description": "View the queue with expected start times:",
+      "syntax": "squeue --start"
+    }
+  ]
+}

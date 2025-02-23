@@ -1,0 +1,18 @@
+{
+  "command": "getsebool",
+  "description": "Get SELinux boolean value. See also: semanage-boolean, setsebool. More information: https://manned.org/getsebool.",
+  "useCases": [
+    {
+      "description": "Show the current setting of a boolean:",
+      "syntax": "getsebool {{httpd_can_connect_ftp}}"
+    },
+    {
+      "description": "Show the current setting of [a]ll booleans:",
+      "syntax": "getsebool -a"
+    },
+    {
+      "description": "Show the current setting of all booleans with explanations:",
+      "syntax": "sudo semanage boolean {{-l|--list}}"
+    }
+  ]
+}

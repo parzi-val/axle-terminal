@@ -1,0 +1,38 @@
+{
+  "command": "nft",
+  "description": "Allows configuration of tables, chains and rules provided by the Linux kernel firewall. Nftables replaces iptables. More information: https://wiki.nftables.org/wiki-nftables/index.php/Main_Page.",
+  "useCases": [
+    {
+      "description": "View current configuration:",
+      "syntax": "sudo nft list ruleset"
+    },
+    {
+      "description": "Add a new table with family \"inet\" and table \"filter\":",
+      "syntax": "sudo nft add table {{inet}} {{filter}}"
+    },
+    {
+      "description": "Add a new chain to accept all inbound traffic:",
+      "syntax": "sudo nft add chain {{inet}} {{filter}} {{input}} \\{ type {{filter}} hook {{input}} priority {{0}} \\; policy {{accept}} \\; \\}"
+    },
+    {
+      "description": "Add a new rule to accept several TCP ports:",
+      "syntax": "sudo nft add rule {{inet}} {{filter}} {{input}} {{tcp}} {{dport \\{ telnet, ssh, http, https \\} accept}}"
+    },
+    {
+      "description": "Add a NAT rule to translate all traffic from the 192.168.0.0/24 subnet to the host's public IP:",
+      "syntax": "sudo nft add rule {{nat}} {{postrouting}} ip saddr {{192.168.0.0/24}} {{masquerade}}"
+    },
+    {
+      "description": "Show rule handles:",
+      "syntax": "sudo nft --handle --numeric list chain {{family}} {{table}} {{chain}}"
+    },
+    {
+      "description": "Delete a rule:",
+      "syntax": "sudo nft delete rule {{inet}} {{filter}} {{input}} handle {{3}}"
+    },
+    {
+      "description": "Save current configuration:",
+      "syntax": "sudo nft list ruleset &gt; {{/etc/nftables.conf}}"
+    }
+  ]
+}

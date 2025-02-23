@@ -1,0 +1,10 @@
+{
+  "command": "pbmtosunicon",
+  "description": "Convert a PBM image into a Sun icon. More information: https://netpbm.sourceforge.net/doc/pbmtosunicon.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image into a Sun icon:",
+      "syntax": "pbmtosunicon {{path/to/input.pbm}} &gt; {{path/to/output.ico}}"
+    }
+  ]
+}

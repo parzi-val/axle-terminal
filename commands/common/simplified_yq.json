@@ -1,0 +1,38 @@
+{
+  "command": "yq",
+  "description": "A lightweight and portable command-line YAML processor. More information: https://mikefarah.gitbook.io/yq/.",
+  "useCases": [
+    {
+      "description": "Output a YAML file, in pretty-print format (v4+):",
+      "syntax": "yq eval {{path/to/file.yaml}}"
+    },
+    {
+      "description": "Output a YAML file, in pretty-print format (v3):",
+      "syntax": "yq read {{path/to/file.yaml}} --colors"
+    },
+    {
+      "description": "Output the first element in a YAML file that contains only an array (v4+):",
+      "syntax": "yq eval '.[0]' {{path/to/file.yaml}}"
+    },
+    {
+      "description": "Output the first element in a YAML file that contains only an array (v3):",
+      "syntax": "yq read {{path/to/file.yaml}} '[0]'"
+    },
+    {
+      "description": "Set (or overwrite) a key to a value in a file (v4+):",
+      "syntax": "yq eval '.{{key}} = &quot;{{value}}&quot;' --inplace {{path/to/file.yaml}}"
+    },
+    {
+      "description": "Set (or overwrite) a key to a value in a file (v3):",
+      "syntax": "yq write --inplace {{path/to/file.yaml}} '{{key}}' '{{value}}'"
+    },
+    {
+      "description": "Merge two files and print to stdout (v4+):",
+      "syntax": "yq eval-all 'select(filename == &quot;{{path/to/file1.yaml}}&quot;) * select(filename == &quot;{{path/to/file2.yaml}}&quot;)' {{path/to/file1.yaml}} {{path/to/file2.yaml}}"
+    },
+    {
+      "description": "Merge two files and print to stdout (v3):",
+      "syntax": "yq merge {{path/to/file1.yaml}} {{path/to/file2.yaml}} --colors"
+    }
+  ]
+}

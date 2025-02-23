@@ -1,0 +1,30 @@
+{
+  "command": "procs",
+  "description": "Display information about the active processes. More information: https://github.com/dalance/procs.",
+  "useCases": [
+    {
+      "description": "List all processes showing the PID, user, CPU usage, memory usage, and the command which started them:",
+      "syntax": "procs"
+    },
+    {
+      "description": "List all processes as a tree:",
+      "syntax": "procs --tree"
+    },
+    {
+      "description": "List information about processes, if the commands which started them contain Zsh:",
+      "syntax": "procs {{zsh}}"
+    },
+    {
+      "description": "List information about all processes sorted by CPU time in [a]scending or [d]escending order:",
+      "syntax": "procs {{--sorta|--sortd}} cpu"
+    },
+    {
+      "description": "List information about processes with either a PID, command, or user containing 41 or firefox:",
+      "syntax": "procs --or {{PID|command|user}} {{41}} {{firefox}}"
+    },
+    {
+      "description": "List information about processes with both PID 41 and a command or user containing zsh:",
+      "syntax": "procs --and {{41}} {{zsh}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "chown",
+  "description": "Change user and group ownership of files and directories. More information: https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html.",
+  "useCases": [
+    {
+      "description": "Change the owner user of a file/directory:",
+      "syntax": "chown {{user}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Change the owner user and group of a file/directory:",
+      "syntax": "chown {{user}}:{{group}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Change the owner user and group to both have the name user:",
+      "syntax": "chown {{user}}: {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Recursively change the owner of a directory and its contents:",
+      "syntax": "chown -R {{user}} {{path/to/directory}}"
+    },
+    {
+      "description": "Change the owner of a symbolic link:",
+      "syntax": "chown -h {{user}} {{path/to/symlink}}"
+    },
+    {
+      "description": "Change the owner of a file/directory to match a reference file:",
+      "syntax": "chown --reference {{path/to/reference_file}} {{path/to/file_or_directory}}"
+    }
+  ]
+}

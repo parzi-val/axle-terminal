@@ -1,0 +1,22 @@
+{
+  "command": "git show-ref",
+  "description": "Git command for listing references. More information: https://git-scm.com/docs/git-show-ref.",
+  "useCases": [
+    {
+      "description": "Show all refs in the repository:",
+      "syntax": "git show-ref"
+    },
+    {
+      "description": "Show only heads references:",
+      "syntax": "git show-ref --heads"
+    },
+    {
+      "description": "Show only tags references:",
+      "syntax": "git show-ref --tags"
+    },
+    {
+      "description": "Verify that a given reference exists:",
+      "syntax": "git show-ref --verify {{path/to/ref}}"
+    }
+  ]
+}

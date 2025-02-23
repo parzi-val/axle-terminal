@@ -1,0 +1,26 @@
+{
+  "command": "nix store",
+  "description": "Manipulate the Nix store. See also: nix-store. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-store.html.",
+  "useCases": [
+    {
+      "description": "Collect garbage, i.e. remove unused paths to reduce space usage:",
+      "syntax": "nix store gc"
+    },
+    {
+      "description": "Hard-link identical files together to reduce space usage:",
+      "syntax": "nix store optimise"
+    },
+    {
+      "description": "Delete a specific store path (most be unused):",
+      "syntax": "nix store delete {{/nix/store/...}}"
+    },
+    {
+      "description": "List a contents of the store path, on a remote store:",
+      "syntax": "nix store --store {{https://cache.nixos.org}} ls {{/nix/store/...}}"
+    },
+    {
+      "description": "Show the differences in versions between two store paths, with their respective dependencies:",
+      "syntax": "nix store diff-closures {{/nix/store/...}} {{/nix/store/...}}"
+    }
+  ]
+}

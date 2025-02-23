@@ -1,0 +1,26 @@
+{
+  "command": "satis",
+  "description": "The command-line utility for the Satis static Composer repository. More information: https://github.com/composer/satis.",
+  "useCases": [
+    {
+      "description": "Initialize a Satis configuration:",
+      "syntax": "satis init {{satis.json}}"
+    },
+    {
+      "description": "Add a VCS repository to the Satis configuration:",
+      "syntax": "satis add {{repository_url}}"
+    },
+    {
+      "description": "Build the static output from the configuration:",
+      "syntax": "satis build {{satis.json}} {{path/to/output_directory}}"
+    },
+    {
+      "description": "Build the static output by updating only the specified repository:",
+      "syntax": "satis build --repository-url {{repository_url}} {{satis.json}} {{path/to/output_directory}}"
+    },
+    {
+      "description": "Remove useless archive files:",
+      "syntax": "satis purge {{satis.json}} {{path/to/output_directory}}"
+    }
+  ]
+}

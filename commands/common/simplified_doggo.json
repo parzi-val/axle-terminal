@@ -1,0 +1,26 @@
+{
+  "command": "doggo",
+  "description": "DNS client for Humans. Written in Golang. More information: https://github.com/mr-karan/doggo.",
+  "useCases": [
+    {
+      "description": "Perform a simple DNS lookup:",
+      "syntax": "doggo {{example.com}}"
+    },
+    {
+      "description": "Query MX records using a specific nameserver:",
+      "syntax": "doggo MX {{codeberg.org}} @{{1.1.1.2}}"
+    },
+    {
+      "description": "Use DNS over HTTPS:",
+      "syntax": "doggo {{example.com}} @{{https://dns.quad9.net/dns-query}}"
+    },
+    {
+      "description": "Output in the JSON format:",
+      "syntax": "doggo {{example.com}} --json | jq '{{.responses[0].answers[].address}}'"
+    },
+    {
+      "description": "Perform a reverse DNS lookup:",
+      "syntax": "doggo --reverse {{8.8.4.4}} --short"
+    }
+  ]
+}

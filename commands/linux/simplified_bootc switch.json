@@ -1,0 +1,18 @@
+{
+  "command": "bootc switch",
+  "description": "Target a new container image reference to boot. More information: https://containers.github.io/bootc/man/bootc-switch.html.",
+  "useCases": [
+    {
+      "description": "Change the base OS to a new container image from a registry:",
+      "syntax": "sudo bootc switch {{image}}"
+    },
+    {
+      "description": "Change the base OS to a new container image from the local image storage of the root user:",
+      "syntax": "sudo bootc switch --transport containers-storage {{image}}"
+    },
+    {
+      "description": "Change the base OS to a new container image stored in a tarball:",
+      "syntax": "sudo bootc switch --transport oci-archive {{path/to/image.tar.gz}}"
+    }
+  ]
+}

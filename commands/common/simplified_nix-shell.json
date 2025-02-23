@@ -1,0 +1,30 @@
+{
+  "command": "nix-shell",
+  "description": "Start an interactive shell based on a Nix expression. See also: nix3 shell. More information: https://nixos.org/manual/nix/stable/command-ref/nix-shell.html.",
+  "useCases": [
+    {
+      "description": "Start with nix expression in shell.nix or default.nix in the current directory:",
+      "syntax": "nix-shell"
+    },
+    {
+      "description": "Run shell command in non-interactive shell and exit:",
+      "syntax": "nix-shell --run &quot;{{command}} {{argument1 argument2 ...}}&quot;"
+    },
+    {
+      "description": "Start with expression in default.nix in the current directory:",
+      "syntax": "nix-shell {{default.nix}}"
+    },
+    {
+      "description": "Start with packages loaded from nixpkgs:",
+      "syntax": "nix-shell --packages {{package1 package2 ...}}"
+    },
+    {
+      "description": "Start with packages loaded from specific nixpkgs revision:",
+      "syntax": "nix-shell --packages {{package1 package2 ...}} -I nixpkgs={{https://github.com/NixOS/nixpkgs/archive/nixpkgs_revision.tar.gz}}"
+    },
+    {
+      "description": "Evaluate rest of file in specific interpreter, for use in #!-scripts (see https://nixos.org/manual/nix/stable/#use-as-a-interpreter):",
+      "syntax": "nix-shell -i {{interpreter}} --packages {{package1 package2 ...}}"
+    }
+  ]
+}

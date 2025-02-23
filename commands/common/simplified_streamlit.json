@@ -1,0 +1,22 @@
+{
+  "command": "streamlit",
+  "description": "Framework for creating interactive, data-driven web apps in Python. More information: https://docs.streamlit.io/.",
+  "useCases": [
+    {
+      "description": "Check for the Streamlit installation:",
+      "syntax": "streamlit hello"
+    },
+    {
+      "description": "Run your Streamlit application:",
+      "syntax": "streamlit run {{project_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "streamlit --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "streamlit --version"
+    }
+  ]
+}

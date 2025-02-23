@@ -1,0 +1,34 @@
+{
+  "command": "pvecm",
+  "description": "Proxmox VE Cluster Manager. More information: https://pve.proxmox.com/pve-docs/pvecm.1.html.",
+  "useCases": [
+    {
+      "description": "Add the current node to an existing cluster:",
+      "syntax": "pvecm add {{hostname_or_ip}}"
+    },
+    {
+      "description": "Add a node to the cluster configuration (internal use):",
+      "syntax": "pvecm addnode {{node}}"
+    },
+    {
+      "description": "Display the version of the cluster join API available on this node:",
+      "syntax": "pvecm apiver"
+    },
+    {
+      "description": "Generate new cluster configuration:",
+      "syntax": "pvecm create {{clustername}}"
+    },
+    {
+      "description": "Remove a node from the cluster configuration:",
+      "syntax": "pvecm delnode {{node}}"
+    },
+    {
+      "description": "Display the local view of the cluster nodes:",
+      "syntax": "pvecm nodes"
+    },
+    {
+      "description": "Display the local view of the cluster status:",
+      "syntax": "pvecm status"
+    }
+  ]
+}

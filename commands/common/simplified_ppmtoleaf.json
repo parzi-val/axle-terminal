@@ -1,0 +1,10 @@
+{
+  "command": "ppmtoleaf",
+  "description": "Convert a PPM image to the Interleaf image format. More information: https://netpbm.sourceforge.net/doc/ppmtoleaf.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a LEAF file:",
+      "syntax": "ppmtoleaf {{path/to/file.ppm}} &gt; {{path/to/file.leaf}}"
+    }
+  ]
+}

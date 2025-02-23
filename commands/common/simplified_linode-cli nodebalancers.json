@@ -1,0 +1,34 @@
+{
+  "command": "linode-cli nodebalancers",
+  "description": "Manage Linode NodeBalancers. See also: linode-cli. More information: https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-nodebalancers.",
+  "useCases": [
+    {
+      "description": "List all NodeBalancers:",
+      "syntax": "linode-cli nodebalancers list"
+    },
+    {
+      "description": "Create a new NodeBalancer:",
+      "syntax": "linode-cli nodebalancers create --region {{region}}"
+    },
+    {
+      "description": "View details of a specific NodeBalancer:",
+      "syntax": "linode-cli nodebalancers view {{nodebalancer_id}}"
+    },
+    {
+      "description": "Update an existing NodeBalancer:",
+      "syntax": "linode-cli nodebalancers update {{nodebalancer_id}} --label {{new_label}}"
+    },
+    {
+      "description": "Delete a NodeBalancer:",
+      "syntax": "linode-cli nodebalancers delete {{nodebalancer_id}}"
+    },
+    {
+      "description": "List configurations for a NodeBalancer:",
+      "syntax": "linode-cli nodebalancers configs list {{nodebalancer_id}}"
+    },
+    {
+      "description": "Add a new configuration to a NodeBalancer:",
+      "syntax": "linode-cli nodebalancers configs create {{nodebalancer_id}} --port {{port}} --protocol {{protocol}}"
+    }
+  ]
+}

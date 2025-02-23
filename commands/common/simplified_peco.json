@@ -1,0 +1,18 @@
+{
+  "command": "peco",
+  "description": "Interactive filtering tool. More information: https://github.com/peco/peco.",
+  "useCases": [
+    {
+      "description": "Start peco on all files in the specified directory:",
+      "syntax": "find {{path/to/directory}} -type f | peco"
+    },
+    {
+      "description": "Start peco for running processes:",
+      "syntax": "ps aux | peco"
+    },
+    {
+      "description": "Start peco with a specified query:",
+      "syntax": "peco --query &quot;{{query}}&quot;"
+    }
+  ]
+}

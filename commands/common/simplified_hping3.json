@@ -1,0 +1,34 @@
+{
+  "command": "hping3",
+  "description": "Advanced ping utility which supports protocols such TCP, UDP, and raw IP. Best run with elevated privileges. More information: https://github.com/antirez/hping.",
+  "useCases": [
+    {
+      "description": "Ping a destination with 4 ICMP ping requests:",
+      "syntax": "hping3 --icmp --count {{4}} {{ip_or_hostname}}"
+    },
+    {
+      "description": "Ping an IP address over UDP on port 80:",
+      "syntax": "hping3 --udp --destport {{80}} --syn {{ip_or_hostname}}"
+    },
+    {
+      "description": "Scan TCP port 80, scanning from the specific local source port 5090:",
+      "syntax": "hping3 --verbose --syn --destport {{80}} --baseport {{5090}} {{ip_or_hostname}}"
+    },
+    {
+      "description": "Traceroute using a TCP scan to a specific destination port:",
+      "syntax": "hping3 --traceroute --verbose --syn --destport {{80}} {{ip_or_hostname}}"
+    },
+    {
+      "description": "Scan a set of TCP ports on a specific IP address:",
+      "syntax": "hping3 --scan {{80,3000,9000}} --syn {{ip_or_hostname}}"
+    },
+    {
+      "description": "Perform a TCP ACK scan to check if a given host is alive:",
+      "syntax": "hping3 --count {{2}} --verbose --destport {{80}} --ack {{ip_or_hostname}}"
+    },
+    {
+      "description": "Perform a charge test on port 80:",
+      "syntax": "hping3 --flood --destport {{80}} --syn {{ip_or_hostname}}"
+    }
+  ]
+}

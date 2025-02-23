@@ -1,0 +1,14 @@
+{
+  "command": "pgmnoise",
+  "description": "Generate white noise. More information: https://netpbm.sourceforge.net/doc/pgmnoise.html.",
+  "useCases": [
+    {
+      "description": "Generate a PGM image containing white noise:",
+      "syntax": "pgmnoise {{width}} {{height}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Specify the seed for the pseudo-random number generator:",
+      "syntax": "pgmnoise {{width}} {{height}} -randomseed {{value}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

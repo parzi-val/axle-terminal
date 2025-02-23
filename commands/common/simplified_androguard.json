@@ -1,0 +1,18 @@
+{
+  "command": "androguard",
+  "description": "Reverse engineer Android applications. Written in Python. More information: https://github.com/androguard/androguard.",
+  "useCases": [
+    {
+      "description": "Display Android app manifest:",
+      "syntax": "androguard axml {{path/to/app.apk}}"
+    },
+    {
+      "description": "Display app metadata (version and app ID):",
+      "syntax": "androguard apkid {{path/to/app.apk}}"
+    },
+    {
+      "description": "Decompile Java code from an app:",
+      "syntax": "androguard decompile {{path/to/app.apk}} --output {{path/to/directory}}"
+    }
+  ]
+}

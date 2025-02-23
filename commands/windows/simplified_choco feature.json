@@ -1,0 +1,18 @@
+{
+  "command": "choco feature",
+  "description": "Interact with features with Chocolatey. More information: https://chocolatey.org/docs/commands-feature.",
+  "useCases": [
+    {
+      "description": "Display a list of available features:",
+      "syntax": "choco feature list"
+    },
+    {
+      "description": "Enable a feature:",
+      "syntax": "choco feature enable --name {{name}}"
+    },
+    {
+      "description": "Disable a feature:",
+      "syntax": "choco feature disable --name {{name}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "mh_metric",
+  "description": "Calculate and enforce code metrics for MATLAB or Octave code. More information: https://misshit.org.",
+  "useCases": [
+    {
+      "description": "Print the code metrics for the specified files:",
+      "syntax": "mh_metric {{path/to/file1.m path/to/file2.m ...}}"
+    },
+    {
+      "description": "Print the code metrics for the specified Octave files:",
+      "syntax": "mh_metric --octave {{path/to/file1.m path/to/file2.m ...}}"
+    },
+    {
+      "description": "Print the code metrics for the specified directory recursively:",
+      "syntax": "mh_metric {{path/to/directory}}"
+    },
+    {
+      "description": "Print the code metrics for the current directory:",
+      "syntax": "mh_metric"
+    },
+    {
+      "description": "Print the code metrics report in HTML or JSON format:",
+      "syntax": "mh_metric --{{html|json}} {{path/to/output_file}}"
+    }
+  ]
+}

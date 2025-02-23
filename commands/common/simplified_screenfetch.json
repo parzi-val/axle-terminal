@@ -1,0 +1,26 @@
+{
+  "command": "screenfetch",
+  "description": "Display system information. More information: https://github.com/KittyKatt/screenFetch.",
+  "useCases": [
+    {
+      "description": "Start screenfetch:",
+      "syntax": "screenfetch"
+    },
+    {
+      "description": "Take a screenshot (requires 'scrot'):",
+      "syntax": "screenfetch -s"
+    },
+    {
+      "description": "Specify distribution logo:",
+      "syntax": "screenfetch -A '{{distribution_name}}'"
+    },
+    {
+      "description": "Specify distribution logo and text:",
+      "syntax": "screenfetch -D '{{distribution_name}}'"
+    },
+    {
+      "description": "Strip all color:",
+      "syntax": "screenfetch -N"
+    }
+  ]
+}

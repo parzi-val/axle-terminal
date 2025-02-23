@@ -1,0 +1,30 @@
+{
+  "command": "whereis",
+  "description": "Locate the binary, source, and manual page files for a command. More information: https://manned.org/whereis.",
+  "useCases": [
+    {
+      "description": "Locate binary, source and man pages for SSH:",
+      "syntax": "whereis {{ssh}}"
+    },
+    {
+      "description": "Locate binary and man pages for ls:",
+      "syntax": "whereis -bm {{ls}}"
+    },
+    {
+      "description": "Locate source of gcc and man pages for Git:",
+      "syntax": "whereis -s {{gcc}} -m {{git}}"
+    },
+    {
+      "description": "Locate binaries for gcc in /usr/bin/ only:",
+      "syntax": "whereis -b -B {{/usr/bin/}} -f {{gcc}}"
+    },
+    {
+      "description": "Locate unusual binaries (those that have more or less than one binary on the system):",
+      "syntax": "whereis -u *"
+    },
+    {
+      "description": "Locate binaries that have unusual manual entries (binaries that have more or less than one manual installed):",
+      "syntax": "whereis -u -m *"
+    }
+  ]
+}

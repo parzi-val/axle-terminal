@@ -1,0 +1,18 @@
+{
+  "command": "fprintd-list",
+  "description": "List enrolled fingerprints. More information: https://manned.org/fprintd-list.",
+  "useCases": [
+    {
+      "description": "List enrolled fingerprints for a specific user:",
+      "syntax": "fprintd-list {{username}}"
+    },
+    {
+      "description": "List enrolled fingerprints for one or more users:",
+      "syntax": "fprintd-list {{username1 username2 ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "fprintd-list"
+    }
+  ]
+}

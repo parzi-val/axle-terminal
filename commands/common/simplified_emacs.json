@@ -1,0 +1,38 @@
+{
+  "command": "emacs",
+  "description": "The extensible, customizable, self-documenting, real-time display editor. See also emacsclient. More information: https://www.gnu.org/software/emacs.",
+  "useCases": [
+    {
+      "description": "Start Emacs and open a file:",
+      "syntax": "emacs {{path/to/file}}"
+    },
+    {
+      "description": "Open a file at a specified line number:",
+      "syntax": "emacs +{{line_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Run an Emacs Lisp file as a script:",
+      "syntax": "emacs --script {{path/to/file.el}}"
+    },
+    {
+      "description": "Start Emacs in console mode (without an X window):",
+      "syntax": "emacs --no-window-system"
+    },
+    {
+      "description": "Start an Emacs server in the background (accessible via emacsclient):",
+      "syntax": "emacs --daemon"
+    },
+    {
+      "description": "Stop a running Emacs server and all its instances, asking for confirmation on unsaved files:",
+      "syntax": "emacsclient --eval '(save-buffers-kill-emacs)'"
+    },
+    {
+      "description": "Save a file in Emacs:",
+      "syntax": "&lt;Ctrl&gt; + X, &lt;Ctrl&gt; + S"
+    },
+    {
+      "description": "Quit Emacs:",
+      "syntax": "&lt;Ctrl&gt; + X, &lt;Ctrl&gt; + C"
+    }
+  ]
+}

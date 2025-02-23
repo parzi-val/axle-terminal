@@ -1,0 +1,30 @@
+{
+  "command": "xdotool",
+  "description": "Command-line automation for X11. More information: https://manned.org/xdotool.",
+  "useCases": [
+    {
+      "description": "Retrieve the X-Windows window ID of the running Firefox window(s):",
+      "syntax": "xdotool search --onlyvisible --name {{firefox}}"
+    },
+    {
+      "description": "Click the right mouse button:",
+      "syntax": "xdotool click {{3}}"
+    },
+    {
+      "description": "Get the ID of the currently active window:",
+      "syntax": "xdotool getactivewindow"
+    },
+    {
+      "description": "Focus on the window with ID of 12345:",
+      "syntax": "xdotool windowfocus --sync {{12345}}"
+    },
+    {
+      "description": "Type a message, with a 500ms delay for each letter:",
+      "syntax": "xdotool type --delay {{500}} &quot;Hello world&quot;"
+    },
+    {
+      "description": "Press the enter key:",
+      "syntax": "xdotool key {{KP_Enter}}"
+    }
+  ]
+}

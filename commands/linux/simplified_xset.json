@@ -1,0 +1,30 @@
+{
+  "command": "xset",
+  "description": "User preference utility for X. More information: https://manned.org/xset.",
+  "useCases": [
+    {
+      "description": "Disable the screensaver:",
+      "syntax": "xset s off"
+    },
+    {
+      "description": "Disable the bell sound:",
+      "syntax": "xset b off"
+    },
+    {
+      "description": "Set the screensaver to start after 60 minutes of inactivity:",
+      "syntax": "xset s 3600 3600"
+    },
+    {
+      "description": "Disable DPMS (Energy Star) features:",
+      "syntax": "xset -dpms"
+    },
+    {
+      "description": "Enable DPMS (Energy Star) features:",
+      "syntax": "xset +dpms"
+    },
+    {
+      "description": "Query information on any X server:",
+      "syntax": "xset -display :{{0}} q"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "aws sqs",
+  "description": "Create, delete, and send messages to queues for the AWS SQS service. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/index.html.",
+  "useCases": [
+    {
+      "description": "List all availables queues:",
+      "syntax": "aws sqs list-queues"
+    },
+    {
+      "description": "Display the URL of a specific queue:",
+      "syntax": "aws sqs get-queue-url --queue-name {{queue_name}}"
+    },
+    {
+      "description": "Create a queue with specific attributes from a file in JSON format:",
+      "syntax": "aws sqs create-queue --queue-name {{queue_name}} --attributes {{file://path/to/attributes_file.json}}"
+    },
+    {
+      "description": "Send a specific message to a queue:",
+      "syntax": "aws sqs send-message --queue-url https://sqs.{{region}}.amazonaws.com/{{queue_name}} --message-body &quot;{{message_body}}&quot; --delay-seconds {{delay}} --message-attributes {{file://path/to/attributes_file.json}}"
+    },
+    {
+      "description": "Delete the specified message from a queue:",
+      "syntax": "aws sqs delete-message --queue-url {{https://queue_url}} --receipt-handle {{receipt_handle}}"
+    },
+    {
+      "description": "Delete a specific queue:",
+      "syntax": "aws sqs delete-queue --queue-url https://sqs.{{region}}.amazonaws.com/{{queue_name}}"
+    },
+    {
+      "description": "Delete all messages from the specified queue:",
+      "syntax": "aws sqs purge-queue --queue-url https://sqs.{{region}}.amazonaws.com/{{queue_name}}"
+    },
+    {
+      "description": "Enable a specific AWS account to send messages to queue:",
+      "syntax": "aws sqs add-permission --queue-url https://sqs.{{region}}.amazonaws.com/{{queue_name}} --label {{permission_name}} --aws-account-ids {{account_id}} --actions SendMessage"
+    }
+  ]
+}

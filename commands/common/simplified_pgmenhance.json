@@ -1,0 +1,14 @@
+{
+  "command": "pgmenhance",
+  "description": "Edge-enhance a PGM image. See also: pamedge. More information: https://netpbm.sourceforge.net/doc/pgmenhance.html.",
+  "useCases": [
+    {
+      "description": "Edge-enhance a PGM image:",
+      "syntax": "pgmenhance {{path/to/image.pgm}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Specify the level of enhancement:",
+      "syntax": "pgmenhance -{{1..9}} {{path/to/image.pgm}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

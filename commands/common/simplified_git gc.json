@@ -1,0 +1,26 @@
+{
+  "command": "git gc",
+  "description": "Optimise the local repository by cleaning unnecessary files. More information: https://git-scm.com/docs/git-gc.",
+  "useCases": [
+    {
+      "description": "Optimise the repository:",
+      "syntax": "git gc"
+    },
+    {
+      "description": "Aggressively optimise, takes more time:",
+      "syntax": "git gc --aggressive"
+    },
+    {
+      "description": "Do not prune loose objects (prunes by default):",
+      "syntax": "git gc --no-prune"
+    },
+    {
+      "description": "Suppress all output:",
+      "syntax": "git gc --quiet"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "git gc --help"
+    }
+  ]
+}

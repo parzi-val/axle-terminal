@@ -1,0 +1,18 @@
+{
+  "command": "xman",
+  "description": "Manual page viewer for X Window System. More information: https://manned.org/xman.",
+  "useCases": [
+    {
+      "description": "Start xman in three-button window:",
+      "syntax": "xman"
+    },
+    {
+      "description": "Open the manual page output stored in a given file:",
+      "syntax": "xman -helpfile {{filename}}"
+    },
+    {
+      "description": "Show both manual page and directory:",
+      "syntax": "xman -bothshown"
+    }
+  ]
+}

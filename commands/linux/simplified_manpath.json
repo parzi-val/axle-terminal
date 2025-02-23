@@ -1,0 +1,14 @@
+{
+  "command": "manpath",
+  "description": "Determine the search path for manual pages. More information: https://manned.org/manpath.",
+  "useCases": [
+    {
+      "description": "Display the search path used to find man pages:",
+      "syntax": "manpath"
+    },
+    {
+      "description": "Show the entire global manpath:",
+      "syntax": "manpath --global"
+    }
+  ]
+}

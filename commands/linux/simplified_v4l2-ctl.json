@@ -1,0 +1,38 @@
+{
+  "command": "v4l2-ctl",
+  "description": "Control video devices. More information: https://manned.org/v4l2-ctl.",
+  "useCases": [
+    {
+      "description": "List all video devices:",
+      "syntax": "v4l2-ctl --list-devices"
+    },
+    {
+      "description": "List supported video formats and resolutions of default video device /dev/video0:",
+      "syntax": "v4l2-ctl --list-formats-ext"
+    },
+    {
+      "description": "List supported video formats and resolutions of a specific video device:",
+      "syntax": "v4l2-ctl --list-formats-ext --device {{path/to/video_device}}"
+    },
+    {
+      "description": "Get all details of a video device:",
+      "syntax": "v4l2-ctl --all --device {{path/to/video_device}}"
+    },
+    {
+      "description": "Capture a JPEG photo with a specific resolution from video device:",
+      "syntax": "v4l2-ctl --device {{path/to/video_device}} --set-fmt-video=width={{width}},height={{height}},pixelformat=MJPG --stream-mmap --stream-to={{path/to/output.jpg}} --stream-count=1"
+    },
+    {
+      "description": "Capture a raw video stream from video device:",
+      "syntax": "v4l2-ctl --device {{path/to/video_device}} --set-fmt-video=width={{width}},height={{height}},pixelformat={{format}} --stream-mmap --stream-to={{path/to/output}} --stream-count={{number_of_frames_to_capture}}"
+    },
+    {
+      "description": "List all video device's controls and their values:",
+      "syntax": "v4l2-ctl --list-ctrls --device {{path/to/video_device}}"
+    },
+    {
+      "description": "Set the value of a video device control:",
+      "syntax": "v4l2-ctl --device {{path/to/video_device}} --set-ctrl={{control_name}}={{value}}"
+    }
+  ]
+}

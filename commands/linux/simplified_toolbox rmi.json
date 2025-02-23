@@ -1,0 +1,18 @@
+{
+  "command": "toolbox rmi",
+  "description": "Remove toolbox images. See also: toolbox rm. More information: https://manned.org/toolbox-rmi.1.",
+  "useCases": [
+    {
+      "description": "Remove one or more toolbox image:",
+      "syntax": "toolbox rmi {{image_name1 image_name2 ...}}"
+    },
+    {
+      "description": "Remove all toolbox images:",
+      "syntax": "toolbox rmi --all"
+    },
+    {
+      "description": "Force the removal of a toolbox image which is currently being used by a container (the container will be removed as well):",
+      "syntax": "toolbox rmi --force {{image_name}}"
+    }
+  ]
+}

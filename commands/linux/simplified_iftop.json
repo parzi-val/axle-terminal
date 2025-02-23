@@ -1,0 +1,30 @@
+{
+  "command": "iftop",
+  "description": "Show bandwidth usage on an interface by host. More information: https://manned.org/iftop.",
+  "useCases": [
+    {
+      "description": "Show the bandwidth usage:",
+      "syntax": "sudo iftop"
+    },
+    {
+      "description": "Show the bandwidth usage of a given interface:",
+      "syntax": "sudo iftop -i {{interface}}"
+    },
+    {
+      "description": "Show the bandwidth usage with port information:",
+      "syntax": "sudo iftop -P"
+    },
+    {
+      "description": "Do not show bar graphs of traffic:",
+      "syntax": "sudo iftop -b"
+    },
+    {
+      "description": "Do not look up hostnames:",
+      "syntax": "sudo iftop -n"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "?"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "miniserve",
+  "description": "Simple HTTP file server. More information: https://github.com/svenstaro/miniserve.",
+  "useCases": [
+    {
+      "description": "Serve a directory:",
+      "syntax": "miniserve {{path/to/directory}}"
+    },
+    {
+      "description": "Serve a single file:",
+      "syntax": "miniserve {{path/to/file}}"
+    },
+    {
+      "description": "Serve a directory using HTTP basic authentication:",
+      "syntax": "miniserve --auth {{username}}:{{password}} {{path/to/directory}}"
+    }
+  ]
+}

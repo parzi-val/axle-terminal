@@ -1,0 +1,38 @@
+{
+  "command": "adb",
+  "description": "Android Debug Bridge: communicate with an Android emulator instance or connected Android devices. Some subcommands such as shell have their own usage documentation. More information: https://developer.android.com/tools/adb.",
+  "useCases": [
+    {
+      "description": "Check whether the adb server process is running and start it:",
+      "syntax": "adb start-server"
+    },
+    {
+      "description": "Terminate the adb server process:",
+      "syntax": "adb kill-server"
+    },
+    {
+      "description": "Start a remote shell in the target emulator/device instance:",
+      "syntax": "adb shell"
+    },
+    {
+      "description": "Push an Android application to an emulator/device:",
+      "syntax": "adb install -r {{path/to/file.apk}}"
+    },
+    {
+      "description": "Copy a file/directory from the target device:",
+      "syntax": "adb pull {{path/to/device_file_or_directory}} {{path/to/local_destination_directory}}"
+    },
+    {
+      "description": "Copy a file/directory to the target device:",
+      "syntax": "adb push {{path/to/local_file_or_directory}} {{path/to/device_destination_directory}}"
+    },
+    {
+      "description": "List all connected devices:",
+      "syntax": "adb devices"
+    },
+    {
+      "description": "Specify which device to send commands to if there are multiple devices:",
+      "syntax": "adb -s {{device_ID}} {{shell}}"
+    }
+  ]
+}

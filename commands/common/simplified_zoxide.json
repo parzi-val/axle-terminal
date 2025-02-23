@@ -1,0 +1,30 @@
+{
+  "command": "zoxide",
+  "description": "Keep track of the most frequently used directories. Uses a ranking algorithm to navigate to the best match. More information: https://github.com/ajeetdsouza/zoxide.",
+  "useCases": [
+    {
+      "description": "Go to the highest-ranked directory that contains \"foo\" in the name:",
+      "syntax": "zoxide query {{foo}}"
+    },
+    {
+      "description": "Go to the highest-ranked directory that contains \"foo\" and then \"bar\":",
+      "syntax": "zoxide query {{foo}} {{bar}}"
+    },
+    {
+      "description": "Start an interactive directory search (requires fzf):",
+      "syntax": "zoxide query --interactive"
+    },
+    {
+      "description": "Add a directory or increment its rank:",
+      "syntax": "zoxide add {{path/to/directory}}"
+    },
+    {
+      "description": "Remove a directory from zoxide's database interactively:",
+      "syntax": "zoxide remove {{path/to/directory}} --interactive"
+    },
+    {
+      "description": "Generate shell configuration for command aliases (z, za, zi, zq, zr):",
+      "syntax": "zoxide init {{bash|fish|zsh}}"
+    }
+  ]
+}

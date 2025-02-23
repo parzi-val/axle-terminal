@@ -1,0 +1,14 @@
+{
+  "command": "ddrescue",
+  "description": "Data recovery tool that reads data from damaged block devices. More information: https://www.gnu.org/software/ddrescue/.",
+  "useCases": [
+    {
+      "description": "Take an image of a device, creating a log file:",
+      "syntax": "sudo ddrescue {{/dev/sdb}} {{path/to/image.dd}} {{path/to/log.txt}}"
+    },
+    {
+      "description": "Clone Disk A to Disk B, creating a log file:",
+      "syntax": "sudo ddrescue --force --no-scrape {{/dev/sdX}} {{/dev/sdY}} {{path/to/log.txt}}"
+    }
+  ]
+}

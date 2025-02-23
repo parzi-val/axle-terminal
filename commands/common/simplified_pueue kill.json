@@ -1,0 +1,26 @@
+{
+  "command": "pueue kill",
+  "description": "Kill running tasks or whole groups. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Kill all tasks in the default group:",
+      "syntax": "pueue kill"
+    },
+    {
+      "description": "Kill a specific task:",
+      "syntax": "pueue kill {{task_id}}"
+    },
+    {
+      "description": "Kill a task and terminate all its child processes:",
+      "syntax": "pueue kill --children {{task_id}}"
+    },
+    {
+      "description": "Kill all tasks in a group and pause the group:",
+      "syntax": "pueue kill --group {{group_name}}"
+    },
+    {
+      "description": "Kill all tasks across all groups and pause all groups:",
+      "syntax": "pueue kill --all"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "choco pack",
+  "description": "Package a NuGet specification into a nupkg file. More information: https://chocolatey.org/docs/commands-pack.",
+  "useCases": [
+    {
+      "description": "Package a NuGet specification to a nupkg file:",
+      "syntax": "choco pack {{path\\to\\specification_file}}"
+    },
+    {
+      "description": "Package a NuGet specification specifying the version of the resulting file:",
+      "syntax": "choco pack {{path\\to\\specification_file}} --version {{version}}"
+    },
+    {
+      "description": "Package a NuGet specification to a specific directory:",
+      "syntax": "choco pack {{path\\to\\specification_file}} --output-directory {{path\\to\\output_directory}}"
+    }
+  ]
+}

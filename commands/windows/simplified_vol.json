@@ -1,0 +1,14 @@
+{
+  "command": "vol",
+  "description": "Display information about volumes. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/vol.",
+  "useCases": [
+    {
+      "description": "Display the label and serial number for the current drive:",
+      "syntax": "vol"
+    },
+    {
+      "description": "Display the label and serial number for a specific volume:",
+      "syntax": "vol {{D:}}"
+    }
+  ]
+}

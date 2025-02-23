@@ -1,0 +1,38 @@
+{
+  "command": "gcloud",
+  "description": "The official CLI tool for Google Cloud Platform. Note: gcloud subcommands have their own usage documentation. More information: https://cloud.google.com/sdk/gcloud.",
+  "useCases": [
+    {
+      "description": "List all properties in one's active configuration:",
+      "syntax": "gcloud config list"
+    },
+    {
+      "description": "Login to a Google account:",
+      "syntax": "gcloud auth login"
+    },
+    {
+      "description": "Set the active project:",
+      "syntax": "gcloud config set project {{project_name}}"
+    },
+    {
+      "description": "SSH into a virtual machine instance:",
+      "syntax": "gcloud compute ssh {{user}}@{{instance}}"
+    },
+    {
+      "description": "Display all Google Compute Engine instances in a project (by default instances from all zones are listed):",
+      "syntax": "gcloud compute instances list"
+    },
+    {
+      "description": "Update a kubeconfig file with the appropriate credentials to point kubectl to a specific cluster in Google Kubernetes Engine (GKE):",
+      "syntax": "gcloud container clusters get-credentials {{cluster_name}}"
+    },
+    {
+      "description": "Update all gcloud components:",
+      "syntax": "gcloud components update"
+    },
+    {
+      "description": "Display help for a given command:",
+      "syntax": "gcloud help {{command}}"
+    }
+  ]
+}

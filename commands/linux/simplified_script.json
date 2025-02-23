@@ -1,0 +1,26 @@
+{
+  "command": "script",
+  "description": "Record all terminal output to file. More information: https://manned.org/script.",
+  "useCases": [
+    {
+      "description": "Record a new session to a file named typescript in the current directory:",
+      "syntax": "script"
+    },
+    {
+      "description": "Record a new session to a custom filepath:",
+      "syntax": "script {{path/to/session.out}}"
+    },
+    {
+      "description": "Record a new session, appending to an existing file:",
+      "syntax": "script -a {{path/to/session.out}}"
+    },
+    {
+      "description": "Record timing information (data is outputted to stderr):",
+      "syntax": "script -t 2&gt; {{path/to/timing_file}}"
+    },
+    {
+      "description": "Write out data as soon as it happens:",
+      "syntax": "script -f {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "amass",
+  "description": "In-depth Attack Surface Mapping and Asset Discovery tool. Some subcommands such as intel have their own usage documentation. More information: https://github.com/owasp-amass/amass.",
+  "useCases": [
+    {
+      "description": "Execute an Amass subcommand:",
+      "syntax": "amass {{intel|enum}} {{options}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "amass -help"
+    },
+    {
+      "description": "Display help on an Amass subcommand:",
+      "syntax": "amass {{intel|enum}} -help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "amass -version"
+    }
+  ]
+}

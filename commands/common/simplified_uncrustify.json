@@ -1,0 +1,30 @@
+{
+  "command": "uncrustify",
+  "description": "C, C++, C#, D, Java and Pawn source code formatter. More information: https://github.com/uncrustify/uncrustify.",
+  "useCases": [
+    {
+      "description": "Format a single file:",
+      "syntax": "uncrustify -f {{path/to/file.cpp}} -o {{path/to/output.cpp}}"
+    },
+    {
+      "description": "Read filenames from stdin, and take backups before writing output back to the original filepaths:",
+      "syntax": "find . -name &quot;*.cpp&quot; | uncrustify -F - --replace"
+    },
+    {
+      "description": "Don't make backups (useful if files are under version control):",
+      "syntax": "find . -name &quot;*.cpp&quot; | uncrustify -F - --no-backup"
+    },
+    {
+      "description": "Use a custom configuration file and write the result to stdout:",
+      "syntax": "uncrustify -c {{path/to/uncrustify.cfg}} -f {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Explicitly set a configuration variable's value:",
+      "syntax": "uncrustify --set {{option}}={{value}}"
+    },
+    {
+      "description": "Generate a new configuration file:",
+      "syntax": "uncrustify --update-config -o {{path/to/new.cfg}}"
+    }
+  ]
+}

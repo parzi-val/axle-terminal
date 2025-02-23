@@ -1,0 +1,22 @@
+{
+  "command": "Stormlock",
+  "description": "Centralized locking system. More information: https://github.com/tmccombs/stormlock.",
+  "useCases": [
+    {
+      "description": "Acquire a lease for resource:",
+      "syntax": "stormlock acquire {{resource}}"
+    },
+    {
+      "description": "Release the given lease for the given resource:",
+      "syntax": "stormlock release {{resource}} {{lease_id}}"
+    },
+    {
+      "description": "Show information on the current lease for a resource, if any:",
+      "syntax": "stormlock current {{resource}}"
+    },
+    {
+      "description": "Test if a lease for given resource is currently active:",
+      "syntax": "stormlock is-held {{resource}} {{lease_id}}"
+    }
+  ]
+}

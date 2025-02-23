@@ -1,0 +1,22 @@
+{
+  "command": "dvc",
+  "description": "Data Version Control: like git for data. Some subcommands such as commit have their own usage documentation. More information: https://dvc.org/.",
+  "useCases": [
+    {
+      "description": "Execute a DVC subcommand:",
+      "syntax": "dvc {{subcommand}}"
+    },
+    {
+      "description": "Display general help:",
+      "syntax": "dvc --help"
+    },
+    {
+      "description": "Display help about a specific subcommand:",
+      "syntax": "dvc {{subcommand}} --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "dvc --version"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ppmtobmp",
+  "description": "Convert a PPM image to a BMP file. More information: https://netpbm.sourceforge.net/doc/ppmtobmp.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a BMP file:",
+      "syntax": "ppmtobmp {{path/to/file.ppm}} &gt; {{path/to/file.bmp}}"
+    },
+    {
+      "description": "Explicitly specify whether or not a Windows BMP file or an OS/2 BMP file should be created:",
+      "syntax": "ppmtobmp -{{windows|os2}} {{path/to/file.ppm}} &gt; {{path/to/file.bmp}}"
+    },
+    {
+      "description": "Use a specific number of bits for each pixel:",
+      "syntax": "ppmtobmp -bbp {{1|4|8|24}} {{path/to/file.ppm}} &gt; {{path/to/file.bmp}}"
+    }
+  ]
+}

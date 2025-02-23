@@ -1,0 +1,22 @@
+{
+  "command": "git init",
+  "description": "Initializes a new local Git repository. More information: https://git-scm.com/docs/git-init.",
+  "useCases": [
+    {
+      "description": "Initialize a new local repository:",
+      "syntax": "git init"
+    },
+    {
+      "description": "Initialize a repository with the specified name for the initial branch:",
+      "syntax": "git init --initial-branch={{branch_name}}"
+    },
+    {
+      "description": "Initialize a repository using SHA256 for object hashes (requires Git version 2.29+):",
+      "syntax": "git init --object-format={{sha256}}"
+    },
+    {
+      "description": "Initialize a barebones repository, suitable for use as a remote over SSH:",
+      "syntax": "git init --bare"
+    }
+  ]
+}

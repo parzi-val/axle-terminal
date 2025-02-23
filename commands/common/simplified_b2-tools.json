@@ -1,0 +1,38 @@
+{
+  "command": "b2-tools",
+  "description": "Access all features of Backblaze B2 Cloud Storage easily. More information: https://www.backblaze.com/docs/cloud-storage-command-line-tools.",
+  "useCases": [
+    {
+      "description": "Access your account:",
+      "syntax": "b2 authorize_account {{key_id}}"
+    },
+    {
+      "description": "List the existing buckets in your account:",
+      "syntax": "b2 list_buckets"
+    },
+    {
+      "description": "Create a bucket, provide the bucket name, and access type (e.g. allPublic or allPrivate):",
+      "syntax": "b2 create_bucket {{bucket_name}} {{allPublic|allPrivate}}"
+    },
+    {
+      "description": "Upload a file. Choose a file, bucket, and a folder:",
+      "syntax": "b2 upload_file {{bucket_name}} {{path/to/file}} {{folder_name}}"
+    },
+    {
+      "description": "Upload a source directory to a Backblaze B2 bucket destination:",
+      "syntax": "b2 sync {{path/to/source_file}} {{bucket_name}}"
+    },
+    {
+      "description": "Copy a file from one bucket to another bucket:",
+      "syntax": "b2 copy-file-by-id {{path/to/source_file_id}} {{destination_bucket_name}} {{path/to/b2_file}}"
+    },
+    {
+      "description": "Show the files in your bucket:",
+      "syntax": "b2 ls {{bucket_name}}"
+    },
+    {
+      "description": "Remove a \"folder\" or a set of files matching a pattern:",
+      "syntax": "b2 rm {{path/to/folder|pattern}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "trap",
+  "description": "Execute a command upon an event. More information: https://manned.org/trap.1posix.",
+  "useCases": [
+    {
+      "description": "List the commands and the names of the expected events:",
+      "syntax": "trap"
+    },
+    {
+      "description": "Execute a command when a signal is received:",
+      "syntax": "trap 'echo &quot;Caught signal {{SIGHUP}}&quot;' {{HUP}}"
+    },
+    {
+      "description": "Remove commands:",
+      "syntax": "trap - {{HUP}} {{INT}}"
+    }
+  ]
+}

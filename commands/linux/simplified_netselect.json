@@ -1,0 +1,26 @@
+{
+  "command": "netselect",
+  "description": "Speed test for choosing a fast network server. More information: https://github.com/apenwarr/netselect.",
+  "useCases": [
+    {
+      "description": "Choose the server with the lowest latency:",
+      "syntax": "sudo netselect {{host_1}} {{host_2}}"
+    },
+    {
+      "description": "Display nameserver resolution and statistics:",
+      "syntax": "sudo netselect -vv {{host_1}} {{host_2}}"
+    },
+    {
+      "description": "Define maximum TTL (time to live):",
+      "syntax": "sudo netselect -m {{10}} {{host_1}} {{host_2}}"
+    },
+    {
+      "description": "Print fastest N servers among the hosts:",
+      "syntax": "sudo netselect -s {{N}} {{host_1}} {{host_2}} {{host_3}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "netselect"
+    }
+  ]
+}

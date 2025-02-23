@@ -1,0 +1,26 @@
+{
+  "command": "rails generate",
+  "description": "Generate new Rails templates in an existing project. More information: https://guides.rubyonrails.org/command_line.html#bin-rails-generate.",
+  "useCases": [
+    {
+      "description": "List all available generators:",
+      "syntax": "rails generate"
+    },
+    {
+      "description": "Generate a new model named Post with attributes title and body:",
+      "syntax": "rails generate model {{Post}} {{title:string}} {{body:text}}"
+    },
+    {
+      "description": "Generate a new controller named Posts with actions index, show, new and create:",
+      "syntax": "rails generate controller {{Posts}} {{index}} {{show}} {{new}} {{create}}"
+    },
+    {
+      "description": "Generate a new migration that adds a category attribute to an existing model called Post:",
+      "syntax": "rails generate migration {{AddCategoryToPost}} {{category:string}}"
+    },
+    {
+      "description": "Generate a scaffold for a model named Post, predefining the attributes title and body:",
+      "syntax": "rails generate scaffold {{Post}} {{title:string}} {{body:text}}"
+    }
+  ]
+}

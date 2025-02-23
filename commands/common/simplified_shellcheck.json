@@ -1,0 +1,38 @@
+{
+  "command": "shellcheck",
+  "description": "Statically check shell scripts for errors, usage of deprecated/insecure features, and bad practices. More information: https://github.com/koalaman/shellcheck/wiki.",
+  "useCases": [
+    {
+      "description": "Check a shell script:",
+      "syntax": "shellcheck {{path/to/script.sh}}"
+    },
+    {
+      "description": "Check a shell script interpreting it as the specified [s]hell dialect (overrides the shebang at the top of the script):",
+      "syntax": "shellcheck --shell {{sh|bash|dash|ksh}} {{path/to/script.sh}}"
+    },
+    {
+      "description": "Ignor[e] one or more error types:",
+      "syntax": "shellcheck --exclude {{SC1009,SC1073,...}} {{path/to/script.sh}}"
+    },
+    {
+      "description": "Also check any sourced shell scripts:",
+      "syntax": "shellcheck --check-sourced {{path/to/script.sh}}"
+    },
+    {
+      "description": "Display output in the specified [f]ormat (defaults to tty):",
+      "syntax": "shellcheck --format {{tty|checkstyle|diff|gcc|json|json1|quiet}} {{path/to/script.sh}}"
+    },
+    {
+      "description": "Enable one or more [o]ptional checks:",
+      "syntax": "shellcheck --enable {{add-default-case,avoid-nullary-conditions,...}} {{path/to/script.sh}}"
+    },
+    {
+      "description": "List all available optional checks that are disabled by default:",
+      "syntax": "shellcheck --list-optional"
+    },
+    {
+      "description": "Adjust the level of [S]everity to consider (defaults to style):",
+      "syntax": "shellcheck --severity {{error|warning|info|style}} {{path/to/script.sh}}"
+    }
+  ]
+}

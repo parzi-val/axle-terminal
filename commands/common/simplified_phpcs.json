@@ -1,0 +1,38 @@
+{
+  "command": "phpcs",
+  "description": "Tokenize PHP, JavaScript and CSS files to detect violations of a defined set of coding standards. More information: https://github.com/squizlabs/PHP_CodeSniffer.",
+  "useCases": [
+    {
+      "description": "Sniff the specified directory for issues (defaults to the PEAR standard):",
+      "syntax": "phpcs {{path/to/directory}}"
+    },
+    {
+      "description": "Display a list of installed coding standards:",
+      "syntax": "phpcs -i"
+    },
+    {
+      "description": "Specify a coding standard to validate against:",
+      "syntax": "phpcs {{path/to/directory}} --standard {{standard}}"
+    },
+    {
+      "description": "Specify comma-separated file extensions to include when sniffing:",
+      "syntax": "phpcs {{path/to/directory}} --extensions {{file_extension1,file_extension2,...}}"
+    },
+    {
+      "description": "Specify the format of the output report (e.g. full, xml, json, summary):",
+      "syntax": "phpcs {{path/to/directory}} --report {{format}}"
+    },
+    {
+      "description": "Set configuration variables to be used during the process:",
+      "syntax": "phpcs {{path/to/directory}} --config-set {{key}} {{value}}"
+    },
+    {
+      "description": "A comma-separated list of files to load before processing:",
+      "syntax": "phpcs {{path/to/directory}} --bootstrap {{path/to/file1,path/to/file2,...}}"
+    },
+    {
+      "description": "Don't recurse into subdirectories:",
+      "syntax": "phpcs {{path/to/directory}} -l"
+    }
+  ]
+}

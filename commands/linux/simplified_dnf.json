@@ -1,0 +1,38 @@
+{
+  "command": "dnf",
+  "description": "Package management utility for RHEL, Fedora, and CentOS (replaces yum). Some subcommands such as group and config-manager have their own usage documentation. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://dnf.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Upgrade installed packages to the newest available versions:",
+      "syntax": "sudo dnf upgrade"
+    },
+    {
+      "description": "Search packages via keywords:",
+      "syntax": "dnf search {{keyword1 keyword2 ...}}"
+    },
+    {
+      "description": "Display details about a package:",
+      "syntax": "dnf info {{package}}"
+    },
+    {
+      "description": "Install a new package (use -y to confirm all prompts automatically):",
+      "syntax": "sudo dnf install {{package1 package2 ...}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "sudo dnf remove {{package1 package2 ...}}"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "dnf list --installed"
+    },
+    {
+      "description": "Find which packages provide a given command:",
+      "syntax": "dnf provides {{command}}"
+    },
+    {
+      "description": "View all past operations:",
+      "syntax": "dnf history"
+    }
+  ]
+}

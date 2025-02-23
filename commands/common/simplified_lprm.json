@@ -1,0 +1,26 @@
+{
+  "command": "lprm",
+  "description": "Cancel queued print jobs of a server. See also: lpq. More information: https://openprinting.github.io/cups/doc/man-lprm.html.",
+  "useCases": [
+    {
+      "description": "Cancel current job on the default printer:",
+      "syntax": "lprm"
+    },
+    {
+      "description": "Cancel a job of a specific server:",
+      "syntax": "lprm -h {{server[:port]}} {{job_id}}"
+    },
+    {
+      "description": "Cancel multiple jobs with a encrypted connection to the server:",
+      "syntax": "lprm -E {{job_id1 job_id2 ...}}"
+    },
+    {
+      "description": "Cancel all jobs:",
+      "syntax": "lprm -"
+    },
+    {
+      "description": "Cancel the current job of a specific printer or class:",
+      "syntax": "lprm -P {{destination[/instance]}}"
+    }
+  ]
+}

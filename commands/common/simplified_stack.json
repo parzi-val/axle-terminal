@@ -1,0 +1,30 @@
+{
+  "command": "stack",
+  "description": "Manage Haskell projects. More information: https://github.com/commercialhaskell/stack.",
+  "useCases": [
+    {
+      "description": "Create a new package:",
+      "syntax": "stack new {{package}} {{template}}"
+    },
+    {
+      "description": "Compile a package:",
+      "syntax": "stack build"
+    },
+    {
+      "description": "Run tests inside a package:",
+      "syntax": "stack test"
+    },
+    {
+      "description": "Compile a project and re-compile every time a file changes:",
+      "syntax": "stack build --file-watch"
+    },
+    {
+      "description": "Compile a project and execute a command after compilation:",
+      "syntax": "stack build --exec &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Run a program and pass an argument to it:",
+      "syntax": "stack exec {{program}} -- {{argument}}"
+    }
+  ]
+}

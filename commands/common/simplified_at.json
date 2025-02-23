@@ -1,0 +1,26 @@
+{
+  "command": "at",
+  "description": "Execute commands once at a later time. Results will be sent to the users mail. More information: https://manned.org/at.",
+  "useCases": [
+    {
+      "description": "Start the atd daemon:",
+      "syntax": "systemctl start atd"
+    },
+    {
+      "description": "Create commands interactively and execute them in 5 minutes (press &lt;Ctrl&gt; + D when done):",
+      "syntax": "at now + 5 minutes"
+    },
+    {
+      "description": "Create commands interactively and execute them at a specific time:",
+      "syntax": "at {{hh:mm}}"
+    },
+    {
+      "description": "Execute a command from stdin at 10:00 AM today:",
+      "syntax": "echo &quot;{{command}}&quot; | at 1000"
+    },
+    {
+      "description": "Execute commands from a given file next Tuesday:",
+      "syntax": "at -f {{path/to/file}} 9:30 PM Tue"
+    }
+  ]
+}

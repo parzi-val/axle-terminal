@@ -1,0 +1,34 @@
+{
+  "command": "urpmq",
+  "description": "Query information about packages and media in Mageia. See also: urpmi, urpmi.update, urpmi.addmedia, urpmi.removemedia, urpmf, urpme. More information: https://wiki.mageia.org/en/URPMI#urpmq.",
+  "useCases": [
+    {
+      "description": "Display information about an installable package:",
+      "syntax": "urpmq -i {{package}}"
+    },
+    {
+      "description": "Display direct dependencies of a package:",
+      "syntax": "urpmq --requires {{package}}"
+    },
+    {
+      "description": "Display direct and indirect dependencies of a package:",
+      "syntax": "urpmq --requires-recursive {{package}}"
+    },
+    {
+      "description": "List the not installed packages needed for an RPM file with their sources:",
+      "syntax": "sudo urpmq --requires-recursive -m --sources {{path/to/file.rpm}}"
+    },
+    {
+      "description": "List all configured media with their URLs, including inactive media:",
+      "syntax": "urpmq --list-media --list-url"
+    },
+    {
+      "description": "Search for a package printing [g]roup, version and [r]elease:",
+      "syntax": "urpmq -g -r --fuzzy {{keyword}}"
+    },
+    {
+      "description": "Search for a package with using its exact name:",
+      "syntax": "urpmq -g -r {{package}}"
+    }
+  ]
+}

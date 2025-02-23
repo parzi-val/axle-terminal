@@ -1,0 +1,18 @@
+{
+  "command": "valac",
+  "description": "Vala code compiler. Tutorial: https://wiki.gnome.org/Projects/Vala/Tutorial. More information: https://valadoc.org/.",
+  "useCases": [
+    {
+      "description": "Compile a vala file, with gtk+:",
+      "syntax": "valac {{path/to/file.vala}} --pkg {{gtk+-3.0}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "valac --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "valac --version"
+    }
+  ]
+}

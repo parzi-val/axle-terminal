@@ -1,0 +1,30 @@
+{
+  "command": "alias",
+  "description": "Create aliases - words that are replaced by a command string. Aliases expire with the current shell session unless defined in the shell's configuration file, e.g. ~/.bashrc. More information: https://tldp.org/LDP/abs/html/aliases.html.",
+  "useCases": [
+    {
+      "description": "List all aliases:",
+      "syntax": "alias"
+    },
+    {
+      "description": "Create a generic alias:",
+      "syntax": "alias {{word}}=&quot;{{command}}&quot;"
+    },
+    {
+      "description": "View the command associated to a given alias:",
+      "syntax": "alias {{word}}"
+    },
+    {
+      "description": "Remove an aliased command:",
+      "syntax": "unalias {{word}}"
+    },
+    {
+      "description": "Turn rm into an interactive command:",
+      "syntax": "alias {{rm}}=&quot;{{rm --interactive}}&quot;"
+    },
+    {
+      "description": "Create la as a shortcut for ls --all:",
+      "syntax": "alias {{la}}=&quot;{{ls --all}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "argos-translate",
+  "description": "An open-source offline translation library and CLI tool written in Python. More information: https://www.argosopentech.com/.",
+  "useCases": [
+    {
+      "description": "Install translation pairs for Spanish to English translation:",
+      "syntax": "argospm install translate-es_en"
+    },
+    {
+      "description": "Translate some text from Spanish (es) to English (en) (Note: only two letter language codes are supported):",
+      "syntax": "argos-translate --from-lang es --to-lang en {{un texto corto}}"
+    },
+    {
+      "description": "Translate a text file from English to Hindi:",
+      "syntax": "cat {{path/to/file.txt}} | argos-translate --from-lang en --to-lang hi"
+    },
+    {
+      "description": "List all installed translation pairs:",
+      "syntax": "argospm list"
+    },
+    {
+      "description": "Show translation pairs from English that are available to be installed:",
+      "syntax": "argospm search --from-lang en"
+    },
+    {
+      "description": "Update installed language package pairs:",
+      "syntax": "argospm update"
+    },
+    {
+      "description": "Translate from ar to ru (Note: this requires the translation pairs translate-ar_en and translate-en_ru to be installed):",
+      "syntax": "argos-translate --from-lang ar --to-lang ru {{صورة تساوي أكثر من ألف كلمة}}"
+    }
+  ]
+}

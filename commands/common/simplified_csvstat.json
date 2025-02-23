@@ -1,0 +1,26 @@
+{
+  "command": "csvstat",
+  "description": "Print descriptive statistics for all columns in a CSV file. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/csvstat.html.",
+  "useCases": [
+    {
+      "description": "Show all stats for all columns:",
+      "syntax": "csvstat {{data.csv}}"
+    },
+    {
+      "description": "Show all stats for columns 2 and 4:",
+      "syntax": "csvstat -c {{2,4}} {{data.csv}}"
+    },
+    {
+      "description": "Show sums for all columns:",
+      "syntax": "csvstat --sum {{data.csv}}"
+    },
+    {
+      "description": "Show the max value length for column 3:",
+      "syntax": "csvstat -c {{3}} --len {{data.csv}}"
+    },
+    {
+      "description": "Show the number of unique values in the \"name\" column:",
+      "syntax": "csvstat -c {{name}} --unique {{data.csv}}"
+    }
+  ]
+}

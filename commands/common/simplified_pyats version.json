@@ -1,0 +1,22 @@
+{
+  "command": "pyats version",
+  "description": "View and upgrade the pyATS installation. More information: https://developer.cisco.com/pyats/.",
+  "useCases": [
+    {
+      "description": "Display version of all packages:",
+      "syntax": "pyats version check"
+    },
+    {
+      "description": "Display outdated packages:",
+      "syntax": "pyats version check --outdated"
+    },
+    {
+      "description": "Update packages to the most recent version:",
+      "syntax": "pyats version update"
+    },
+    {
+      "description": "Update or downgrade packages to a specific version:",
+      "syntax": "pyats version update {{version}}"
+    }
+  ]
+}

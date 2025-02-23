@@ -1,0 +1,34 @@
+{
+  "command": "az vm",
+  "description": "Manage virtual machines in Azure. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/vm.",
+  "useCases": [
+    {
+      "description": "Display a table of available Virtual Machines:",
+      "syntax": "az vm list --output table"
+    },
+    {
+      "description": "Create a virtual machine using the default Ubuntu image and generate SSH keys:",
+      "syntax": "az vm create --resource-group {{rg}} --name {{vm_name}} --image {{UbuntuLTS}} --admin-user {{azureuser}} --generate-ssh-keys"
+    },
+    {
+      "description": "Stop a Virtual Machine:",
+      "syntax": "az vm stop --resource-group {{rg}} --name {{vm_name}}"
+    },
+    {
+      "description": "Deallocate a Virtual Machine:",
+      "syntax": "az vm deallocate --resource-group {{rg}} --name {{vm_name}}"
+    },
+    {
+      "description": "Start a Virtual Machine:",
+      "syntax": "az vm start --resource-group {{rg}} --name {{vm_name}}"
+    },
+    {
+      "description": "Restart a Virtual Machine:",
+      "syntax": "az vm restart --resource-group {{rg}} --name {{vm_name}}"
+    },
+    {
+      "description": "List VM images available in the Azure Marketplace:",
+      "syntax": "az vm image list"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "adb shell",
+  "description": "Run shell commands on a connected Android device or emulator. More information: https://developer.android.com/tools/adb.",
+  "useCases": [
+    {
+      "description": "Start a remote interactive shell on the emulator or device:",
+      "syntax": "adb shell"
+    },
+    {
+      "description": "Get all the properties from emulator or device:",
+      "syntax": "adb shell getprop"
+    },
+    {
+      "description": "Revert all runtime permissions to their default:",
+      "syntax": "adb shell pm reset-permissions"
+    },
+    {
+      "description": "Revoke a dangerous permission for an application:",
+      "syntax": "adb shell pm revoke {{package}} {{permission}}"
+    },
+    {
+      "description": "Trigger a key event:",
+      "syntax": "adb shell input keyevent {{keycode}}"
+    },
+    {
+      "description": "Clear the data of an application on an emulator or device:",
+      "syntax": "adb shell pm clear {{package}}"
+    },
+    {
+      "description": "Start an activity on emulator or device:",
+      "syntax": "adb shell am start -n {{package}}/{{activity}}"
+    },
+    {
+      "description": "Start the home activity on an emulator or device:",
+      "syntax": "adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN"
+    }
+  ]
+}

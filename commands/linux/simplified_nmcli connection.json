@@ -1,0 +1,34 @@
+{
+  "command": "nmcli connection",
+  "description": "Manage connections with NetworkManager. This subcommand can also be called with nmcli c. More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmcli.html.",
+  "useCases": [
+    {
+      "description": "List all NetworkManager connections (shows name, UUID, type and device):",
+      "syntax": "nmcli connection"
+    },
+    {
+      "description": "Activate a connection:",
+      "syntax": "nmcli connection up uuid {{uuid}}"
+    },
+    {
+      "description": "Deactivate a connection:",
+      "syntax": "nmcli connection down uuid {{uuid}}"
+    },
+    {
+      "description": "Create an auto-configured dual stack connection:",
+      "syntax": "nmcli connection add ifname {{interface_name}} type {{ethernet}} ipv4.method {{auto}} ipv6.method {{auto}}"
+    },
+    {
+      "description": "Create a static IPv6-only connection:",
+      "syntax": "nmcli connection add ifname {{interface_name}} type {{ethernet}} ip6 {{2001:db8::2/64}} gw6 {{2001:db8::1}} ipv6.dns {{2001:db8::1}} ipv4.method {{ignore}}"
+    },
+    {
+      "description": "Create a static IPv4-only connection:",
+      "syntax": "nmcli connection add ifname {{interface_name}} type {{ethernet}} ip4 {{10.0.0.7/8}} gw4 {{10.0.0.1}} ipv4.dns {{10.0.0.1}} ipv6.method {{ignore}}"
+    },
+    {
+      "description": "Create a VPN connection using OpenVPN from an OVPN file:",
+      "syntax": "nmcli connection import type {{openvpn}} file {{path/to/vpn_config.ovpn}}"
+    }
+  ]
+}

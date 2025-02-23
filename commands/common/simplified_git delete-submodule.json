@@ -1,0 +1,10 @@
+{
+  "command": "git delete-submodule",
+  "description": "Delete a submodule from a git repository. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-submodule.",
+  "useCases": [
+    {
+      "description": "Delete a specific submodule:",
+      "syntax": "git delete-submodule {{path/to/submodule}}"
+    }
+  ]
+}

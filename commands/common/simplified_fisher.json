@@ -1,0 +1,30 @@
+{
+  "command": "fisher",
+  "description": "Fisher, a fish-shell plugin manager. Install plugins by name or from a managed 'fishfile' for bundled installs. More information: https://github.com/jorgebucaran/fisher.",
+  "useCases": [
+    {
+      "description": "Install one or more plugins:",
+      "syntax": "fisher {{plugin1}} {{plugin2}}"
+    },
+    {
+      "description": "Install a plugin from a GitHub gist:",
+      "syntax": "fisher {{gist_url}}"
+    },
+    {
+      "description": "Edit 'fishfile' manually with your favorite editor and install multiple plugins:",
+      "syntax": "{{editor}} ~/.config/fish/fishfile; fisher"
+    },
+    {
+      "description": "List installed plugins:",
+      "syntax": "fisher ls"
+    },
+    {
+      "description": "Update plugins:",
+      "syntax": "fisher update"
+    },
+    {
+      "description": "Remove one or more plugins:",
+      "syntax": "fisher remove {{plugin1}} {{plugin2}}"
+    }
+  ]
+}

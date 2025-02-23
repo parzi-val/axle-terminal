@@ -1,0 +1,14 @@
+{
+  "command": "whoami",
+  "description": "Print the username associated with the current effective user ID. More information: https://www.gnu.org/software/coreutils/manual/html_node/whoami-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display currently logged username:",
+      "syntax": "whoami"
+    },
+    {
+      "description": "Display the username after a change in the user ID:",
+      "syntax": "sudo whoami"
+    }
+  ]
+}

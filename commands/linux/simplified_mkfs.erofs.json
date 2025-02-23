@@ -1,0 +1,22 @@
+{
+  "command": "mkfs.erofs",
+  "description": "Create an EROFS filesystem in an image. More information: https://erofs.docs.kernel.org/en/latest/.",
+  "useCases": [
+    {
+      "description": "Create an EROFS filesystem based on the root directory:",
+      "syntax": "mkfs.erofs image.erofs root/"
+    },
+    {
+      "description": "Create an EROFS image with a specific UUID:",
+      "syntax": "mkfs.erofs -U {{UUID}} image.erofs root/"
+    },
+    {
+      "description": "Create a compressed EROFS image:",
+      "syntax": "mkfs.erofs -zlz4hc image.erofs root/"
+    },
+    {
+      "description": "Create an EROFS image where all files are owned by root:",
+      "syntax": "mkfs.erofs --all-root image.erofs root/"
+    }
+  ]
+}

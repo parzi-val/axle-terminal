@@ -1,0 +1,26 @@
+{
+  "command": "git rev-list",
+  "description": "List revisions (commits) in reverse chronological order. More information: https://git-scm.com/docs/git-rev-list.",
+  "useCases": [
+    {
+      "description": "List all commits on the current branch:",
+      "syntax": "git rev-list {{HEAD}}"
+    },
+    {
+      "description": "Print the latest commit that changed (add/edit/remove) a specific file on the current branch:",
+      "syntax": "git rev-list {{-n|--max-count}} 1 HEAD -- {{path/to/file}}"
+    },
+    {
+      "description": "List commits more recent than a specific date, on a specific branch:",
+      "syntax": "git rev-list --since &quot;{{2019-12-01 00:00:00}}&quot; {{branch_name}}"
+    },
+    {
+      "description": "List all merge commits on a specific commit:",
+      "syntax": "git rev-list --merges {{commit}}"
+    },
+    {
+      "description": "Print the number of commits since a specific tag:",
+      "syntax": "git rev-list {{tag_name}}..HEAD --count"
+    }
+  ]
+}

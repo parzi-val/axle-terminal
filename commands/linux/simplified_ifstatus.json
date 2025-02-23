@@ -1,0 +1,10 @@
+{
+  "command": "ifstatus",
+  "description": "Display OpenWRT interface status in JSON format. More information: https://openwrt.org/docs/techref/netifd.",
+  "useCases": [
+    {
+      "description": "Display interface status:",
+      "syntax": "ifstatus {{interface_name}}"
+    }
+  ]
+}

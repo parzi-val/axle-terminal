@@ -1,0 +1,30 @@
+{
+  "command": "rtcwake",
+  "description": "Enter a system sleep state until specified wakeup time relative to your BIOS clock. More information: https://manned.org/rtcwake.",
+  "useCases": [
+    {
+      "description": "Show whether an alarm is set or not:",
+      "syntax": "sudo rtcwake -m show -v"
+    },
+    {
+      "description": "Suspend to RAM and wakeup after 10 seconds:",
+      "syntax": "sudo rtcwake -m mem -s {{10}}"
+    },
+    {
+      "description": "Suspend to disk (higher power saving) and wakeup 15 minutes later:",
+      "syntax": "sudo rtcwake -m disk --date +{{15}}min"
+    },
+    {
+      "description": "Freeze the system (more efficient than suspend-to-RAM but version 3.9 or newer of the Linux kernel is required) and wakeup at a given date and time:",
+      "syntax": "sudo rtcwake -m freeze --date {{YYYYMMDDhhmm}}"
+    },
+    {
+      "description": "Disable a previously set alarm:",
+      "syntax": "sudo rtcwake -m disable"
+    },
+    {
+      "description": "Perform a dry run to wakeup the computer at a given time. (Press Ctrl + C to abort):",
+      "syntax": "sudo rtcwake -m on --date {{hh:ss}}"
+    }
+  ]
+}

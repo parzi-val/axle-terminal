@@ -1,0 +1,22 @@
+{
+  "command": "cs launch",
+  "description": "Launch an application from the name directly from Maven dependencies without the need of installing it. More information: https://get-coursier.io/docs/cli-launch.",
+  "useCases": [
+    {
+      "description": "Launch a specific application with arguments:",
+      "syntax": "cs launch {{application_name}} -- {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Launch a specific application version with arguments:",
+      "syntax": "cs launch {{application_name}}:{{application_version}} -- {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Launch a specific version of an application specifying which is the main file:",
+      "syntax": "cs launch {{group_id}}:{{artifact_id}}:{{artifact_version}} --main-class {{path/to/main_class_file}}"
+    },
+    {
+      "description": "Launch an application with specific Java options and JVM memory ones:",
+      "syntax": "cs launch --java-opt {{-Doption_name1:option_value1 -Doption_name2:option_value2 ...}} --java-opt {{-Xjvm_option1 -Xjvm_option2 ...}} {{application_name}}"
+    }
+  ]
+}

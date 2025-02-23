@@ -1,0 +1,18 @@
+{
+  "command": "pamtogif",
+  "description": "Convert a Netpbm image into an unanimated GIF image. See also: giftopnm, gifsicle. More information: https://netpbm.sourceforge.net/doc/pamtogif.html.",
+  "useCases": [
+    {
+      "description": "Convert a Netpbm image into an unanimated GIF image:",
+      "syntax": "pamtogif {{path/to/image.pam}} &gt; {{path/to/output.gif}}"
+    },
+    {
+      "description": "Mark the specified color as transparent in the output GIF file:",
+      "syntax": "pamtogif -transparent {{color}} {{path/to/image.pam}} &gt; {{path/to/output.gif}}"
+    },
+    {
+      "description": "Include the specified text as a comment in the output GIF file:",
+      "syntax": "pamtogif -comment &quot;{{Hello World!}}&quot; {{path/to/image.pam}} &gt; {{path/to/output.gif}}"
+    }
+  ]
+}

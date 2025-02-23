@@ -1,0 +1,26 @@
+{
+  "command": "airpaste",
+  "description": "Share messages and files on the same network using mDNS. More information: https://github.com/mafintosh/airpaste.",
+  "useCases": [
+    {
+      "description": "Wait for a message and display it when received:",
+      "syntax": "airpaste"
+    },
+    {
+      "description": "Send text:",
+      "syntax": "echo {{text}} | airpaste"
+    },
+    {
+      "description": "Send a file:",
+      "syntax": "airpaste &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Receive a file:",
+      "syntax": "airpaste &gt; {{path/to/file}}"
+    },
+    {
+      "description": "Create or join a channel:",
+      "syntax": "airpaste {{channel_name}}"
+    }
+  ]
+}

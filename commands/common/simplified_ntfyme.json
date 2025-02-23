@@ -1,0 +1,38 @@
+{
+  "command": "ntfyme",
+  "description": "A notification tool to track and notify you about your long-running termination process. Send notifications with success/error messages with Gmail, Telegram, and more. More information: https://github.com/AnirudhG07/ntfyme.",
+  "useCases": [
+    {
+      "description": "Directly run your command:",
+      "syntax": "ntfyme exec {{-c|--cmd}} {{command}}"
+    },
+    {
+      "description": "Pipe your command and run:",
+      "syntax": "echo {{command}} | ntfyme exec"
+    },
+    {
+      "description": "Run multiple commands by enclosing them in quotes:",
+      "syntax": "echo &quot;{{command1; command2; command3}}&quot; | ntfyme exec"
+    },
+    {
+      "description": "Track and terminate the process after prolonged suspension:",
+      "syntax": "ntfyme exec {{-t|--track-process}} {{-c|--cmd}} {{command}}"
+    },
+    {
+      "description": "Setup the tool configurations interactively:",
+      "syntax": "ntfyme setup"
+    },
+    {
+      "description": "Encrypt your password:",
+      "syntax": "ntfyme enc"
+    },
+    {
+      "description": "See the log history:",
+      "syntax": "ntfyme log"
+    },
+    {
+      "description": "Open and edit the configuration file:",
+      "syntax": "ntfyme config"
+    }
+  ]
+}

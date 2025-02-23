@@ -1,0 +1,26 @@
+{
+  "command": "just",
+  "description": "A V8 JavaScript runtime for Linux. More information: https://github.com/just-js/just.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "just"
+    },
+    {
+      "description": "Run a JavaScript file:",
+      "syntax": "just {{path/to/file.js}}"
+    },
+    {
+      "description": "Evaluate JavaScript code by passing it as an argument:",
+      "syntax": "just eval &quot;{{code}}&quot;"
+    },
+    {
+      "description": "Initialize a new project in a directory of the same name:",
+      "syntax": "just init {{project_name}}"
+    },
+    {
+      "description": "Build a JavaScript application into an executable:",
+      "syntax": "just build {{path/to/file.js}} --static"
+    }
+  ]
+}

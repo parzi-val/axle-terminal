@@ -1,0 +1,18 @@
+{
+  "command": "diff-pdf",
+  "description": "Compare two PDFs. More information: https://github.com/vslavik/diff-pdf.",
+  "useCases": [
+    {
+      "description": "Compare PDFs, indicating changes using return codes (0 = no difference, 1 = PDFs differ):",
+      "syntax": "diff-pdf {{path/to/a.pdf}} {{path/to/b.pdf}}"
+    },
+    {
+      "description": "Compare PDFs, outputting a PDF with visually highlighted differences:",
+      "syntax": "diff-pdf --output-diff={{path/to/diff.pdf}} {{path/to/a.pdf}} {{path/to/b.pdf}}"
+    },
+    {
+      "description": "Compare PDFs, viewing differences in a simple GUI:",
+      "syntax": "diff-pdf --view {{path/to/a.pdf}} {{path/to/b.pdf}}"
+    }
+  ]
+}

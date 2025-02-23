@@ -1,0 +1,26 @@
+{
+  "command": "btrbk",
+  "description": "Create snapshots and remote backups of btrfs subvolumes. More information: https://digint.ch/btrbk/doc/readme.html.",
+  "useCases": [
+    {
+      "description": "Print statistics about configured subvolumes and snapshots:",
+      "syntax": "sudo btrbk stats"
+    },
+    {
+      "description": "List configured subvolumes and snapshots:",
+      "syntax": "sudo btrbk list"
+    },
+    {
+      "description": "Print what would happen in a run without making the displayed changes:",
+      "syntax": "sudo btrbk --verbose dryrun"
+    },
+    {
+      "description": "Run backup routines verbosely, show progress bar:",
+      "syntax": "sudo btrbk --progress --verbose run"
+    },
+    {
+      "description": "Only create snapshots for configured subvolumes:",
+      "syntax": "sudo btrbk snapshot"
+    }
+  ]
+}

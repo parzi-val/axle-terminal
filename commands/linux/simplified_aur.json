@@ -1,0 +1,26 @@
+{
+  "command": "aur",
+  "description": "Build packages from the AUR and manage local repositories. Note: A local repository needs to be defined in /etc/pacman.conf and vifm needs to be installed for this to fully function. More information: https://github.com/aurutils/aurutils.",
+  "useCases": [
+    {
+      "description": "Search the AUR database for a package:",
+      "syntax": "aur search {{keyword}}"
+    },
+    {
+      "description": "Download a package and its dependencies from AUR, build them and add them to a local repository:",
+      "syntax": "aur sync {{package}}"
+    },
+    {
+      "description": "[l]ist packages available in your local repository:",
+      "syntax": "aur repo --list"
+    },
+    {
+      "description": "[u]pgrade local repository packages:",
+      "syntax": "aur sync --upgrades"
+    },
+    {
+      "description": "Install a package without viewing changes in Vim and do not confirm dependency installation:",
+      "syntax": "aur sync --noview --noconfirm {{package}}"
+    }
+  ]
+}

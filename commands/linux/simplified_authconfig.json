@@ -1,0 +1,38 @@
+{
+  "command": "authconfig",
+  "description": "Configure system authentication resources. More information: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system-level_authentication_guide/authconfig-install.",
+  "useCases": [
+    {
+      "description": "Display the current configuration (or dry run):",
+      "syntax": "authconfig --test"
+    },
+    {
+      "description": "Configure the server to use a different password hashing algorithm:",
+      "syntax": "authconfig --update --passalgo={{algorithm}}"
+    },
+    {
+      "description": "Enable LDAP authentication:",
+      "syntax": "authconfig --update --enableldapauth"
+    },
+    {
+      "description": "Disable LDAP authentication:",
+      "syntax": "authconfig --update --disableldapauth"
+    },
+    {
+      "description": "Enable Network Information Service (NIS):",
+      "syntax": "authconfig --update --enablenis"
+    },
+    {
+      "description": "Enable Kerberos:",
+      "syntax": "authconfig --update --enablekrb5"
+    },
+    {
+      "description": "Enable Winbind (Active Directory) authentication:",
+      "syntax": "authconfig --update --enablewinbindauth"
+    },
+    {
+      "description": "Enable local authorization:",
+      "syntax": "authconfig --update --enablelocauthorize"
+    }
+  ]
+}

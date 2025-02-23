@@ -1,0 +1,38 @@
+{
+  "command": "incus",
+  "description": "Modern, secure and powerful system container and virtual machine manager. More information: https://linuxcontainers.org/incus/docs/main.",
+  "useCases": [
+    {
+      "description": "List all containers and virtual machines (both running and stopped):",
+      "syntax": "incus list"
+    },
+    {
+      "description": "Create a container from an image, with a custom name:",
+      "syntax": "incus create {{image}} {{container_name}}"
+    },
+    {
+      "description": "Start or stop an existing container:",
+      "syntax": "incus {{start|stop}} {{container_name}}"
+    },
+    {
+      "description": "Open a shell inside an already running container:",
+      "syntax": "incus shell {{container_name}}"
+    },
+    {
+      "description": "Remove a stopped container:",
+      "syntax": "incus delete {{container_name}}"
+    },
+    {
+      "description": "Pull an image from an image repository (remote) to local:",
+      "syntax": "incus copy {{remote}}:{{image}} local:{{custom_image_name}}"
+    },
+    {
+      "description": "List all available images in the official images: remote:",
+      "syntax": "incus image list images:"
+    },
+    {
+      "description": "List all images already downloaded to the local: remote:",
+      "syntax": "incus image list local:"
+    }
+  ]
+}

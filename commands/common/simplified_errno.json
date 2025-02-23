@@ -1,0 +1,22 @@
+{
+  "command": "errno",
+  "description": "Look up errno names and descriptions. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Lookup errno description by name or code:",
+      "syntax": "errno {{name|code}}"
+    },
+    {
+      "description": "List all errno names, codes, and descriptions:",
+      "syntax": "errno --list"
+    },
+    {
+      "description": "Search for code whose description contains all of the given text:",
+      "syntax": "errno --search {{text}}"
+    },
+    {
+      "description": "Search for code whose description contains all of the given text (all locales):",
+      "syntax": "errno --search-all-locales {{text}}"
+    }
+  ]
+}

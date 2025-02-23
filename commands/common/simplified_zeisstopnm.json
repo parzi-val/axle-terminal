@@ -1,0 +1,14 @@
+{
+  "command": "zeisstopnm",
+  "description": "Convert a Zeiss confocal file to Netbpm format. More information: https://manned.org/zeisstopnm.1.",
+  "useCases": [
+    {
+      "description": "Convert a Zeiss cofocal file into either .pgm or .ppm format:",
+      "syntax": "zeisstopnm {{path/to/file}}"
+    },
+    {
+      "description": "Convert a Zeiss cofocal file to Netbpm format while explicitly specifying the target file type:",
+      "syntax": "zeisstopnm -{{pgm|ppm}} {{path/to/file}}"
+    }
+  ]
+}

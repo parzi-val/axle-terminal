@@ -1,0 +1,10 @@
+{
+  "command": "tlmgr recreate-tlpdb",
+  "description": "Recreate the TeX Live package database. This command has a lack of documentation and should be used with caution. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Recreate the texlive.tlpdb database file and dump it to stdout:",
+      "syntax": "sudo tlmgr recreate-tlpdb"
+    }
+  ]
+}

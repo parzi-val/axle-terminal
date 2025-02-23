@@ -1,0 +1,14 @@
+{
+  "command": "nix edit",
+  "description": "Open the Nix expression of a Nix package in $EDITOR. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-edit.html.",
+  "useCases": [
+    {
+      "description": "Open the source of the Nix expression of a package from nixpkgs in your $EDITOR:",
+      "syntax": "nix edit {{nixpkgs#pkg}}"
+    },
+    {
+      "description": "Dump the source of a package to stdout:",
+      "syntax": "EDITOR=cat nix edit {{nixpkgs#pkg}}"
+    }
+  ]
+}

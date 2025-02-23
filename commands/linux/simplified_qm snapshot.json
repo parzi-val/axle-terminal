@@ -1,0 +1,18 @@
+{
+  "command": "qm snapshot",
+  "description": "Create virtual machine snapshots. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Create a snapshot of a specific virtual machine:",
+      "syntax": "qm snapshot {{vm_id}} {{snapshot_name}}"
+    },
+    {
+      "description": "Create a snapshot with a specific description:",
+      "syntax": "qm snapshot {{vm_id}} {{snapshot_name}} --description {{description}}"
+    },
+    {
+      "description": "Create a snapshot including the vmstate:",
+      "syntax": "qm snapshot {{vm_id}} {{snapshot_name}} --description {{description}} --vmstate 1"
+    }
+  ]
+}

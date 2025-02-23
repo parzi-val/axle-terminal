@@ -1,0 +1,18 @@
+{
+  "command": "eglinfo",
+  "description": "Display platform EGL information. More information: https://github.com/dv1/eglinfo.",
+  "useCases": [
+    {
+      "description": "Display full platform information:",
+      "syntax": "eglinfo"
+    },
+    {
+      "description": "Display a brief version of platform information:",
+      "syntax": "eglinfo -B"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "eglinfo -h"
+    }
+  ]
+}

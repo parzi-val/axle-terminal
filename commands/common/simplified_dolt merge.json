@@ -1,0 +1,26 @@
+{
+  "command": "dolt merge",
+  "description": "Join two or more development histories together. More information: https://docs.dolthub.com/cli-reference/cli#dolt-merge.",
+  "useCases": [
+    {
+      "description": "Incorporate changes from the named commits into the current branch:",
+      "syntax": "dolt merge {{branch_name}}"
+    },
+    {
+      "description": "Incorporate changes from the named commits into the current branch without updating the commit history:",
+      "syntax": "dolt merge --squash {{branch_name}}"
+    },
+    {
+      "description": "Merge a branch and create a merge commit even when the merge resolves as a fast-forward:",
+      "syntax": "dolt merge --no-ff {{branch_name}}"
+    },
+    {
+      "description": "Merge a branch and create a merge commit with a specific commit message:",
+      "syntax": "dolt merge --no-ff -m &quot;{{message}}&quot; {{branch_name}}"
+    },
+    {
+      "description": "Abort the current conflict resolution process:",
+      "syntax": "dolt merge --abort"
+    }
+  ]
+}

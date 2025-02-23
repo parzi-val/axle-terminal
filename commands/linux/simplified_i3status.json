@@ -1,0 +1,18 @@
+{
+  "command": "i3status",
+  "description": "Status line for the i3 window manager. This command is usually called from the i3 configuration file. More information: https://i3wm.org/i3status/manpage.html.",
+  "useCases": [
+    {
+      "description": "Print the status line to stdout periodically, using the default configuration:",
+      "syntax": "i3status"
+    },
+    {
+      "description": "Print the status line to stdout periodically, using a specific configuration:",
+      "syntax": "i3status -c {{path/to/i3status.conf}}"
+    },
+    {
+      "description": "Display help and version:",
+      "syntax": "i3status -h"
+    }
+  ]
+}

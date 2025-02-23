@@ -1,0 +1,18 @@
+{
+  "command": "doctl kubernetes options",
+  "description": "Get values available for use with doctl's Kubernetes commands. More information: https://docs.digitalocean.com/reference/doctl/reference/kubernetes/options/.",
+  "useCases": [
+    {
+      "description": "List regions that support Kubernetes clusters:",
+      "syntax": "doctl kubernetes options regions"
+    },
+    {
+      "description": "List machine sizes that can be used in a Kubernetes cluster:",
+      "syntax": "doctl kubernetes options sizes"
+    },
+    {
+      "description": "List Kubernetes versions that can be used with DigitalOcean clusters:",
+      "syntax": "doctl kubernetes options versions"
+    }
+  ]
+}

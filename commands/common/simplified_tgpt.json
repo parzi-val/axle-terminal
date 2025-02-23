@@ -1,0 +1,38 @@
+{
+  "command": "tgpt",
+  "description": "Talk to an AI chatbot without the need for API keys. Available providers: openai, opengpts, koboldai, phind, llama2, blackboxai. More information: https://github.com/aandrew-me/tgpt.",
+  "useCases": [
+    {
+      "description": "Chat with the default provider (GPT-3.5-turbo):",
+      "syntax": "tgpt &quot;{{prompt}}&quot;"
+    },
+    {
+      "description": "Start [m]ulti-line interactive mode:",
+      "syntax": "tgpt --multiline"
+    },
+    {
+      "description": "Generate [i]mages and save them to the current directory:",
+      "syntax": "tgpt --image &quot;{{prompt}}&quot;"
+    },
+    {
+      "description": "Generate [c]ode with the default provider (GPT-3.5-turbo):",
+      "syntax": "tgpt --code &quot;{{prompt}}&quot;"
+    },
+    {
+      "description": "Chat with a specific provider [q]uietly (without animations):",
+      "syntax": "tgpt --provider {{openai|opengpts|koboldai|phind|llama2|blackboxai}} --quiet --whole &quot;{{prompt}}&quot;"
+    },
+    {
+      "description": "Generate and execute [s]hell commands using a specific provider (with a confirmation prompt):",
+      "syntax": "tgpt --provider {{llama2}} --shell &quot;{{prompt}}&quot;"
+    },
+    {
+      "description": "Prompt with an API key, model, max response length, temperature, and top_p (required when using openai provider):",
+      "syntax": "tgpt --provider openai --key &quot;{{api_key}}&quot; --model &quot;{{gpt-3.5-turbo}}&quot; --max-length {{10}} --temperature {{0.7}} --top_p {{0.9}} &quot;{{prompt}}&quot;"
+    },
+    {
+      "description": "Feed a file as additional pre-prompt input:",
+      "syntax": "tgpt --provider {{blackboxai}} &quot;{{prompt}}&quot; &lt; {{path/to/file}}"
+    }
+  ]
+}

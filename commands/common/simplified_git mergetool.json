@@ -1,0 +1,30 @@
+{
+  "command": "git mergetool",
+  "description": "Run merge conflict resolution tools to resolve merge conflicts. More information: https://git-scm.com/docs/git-mergetool.",
+  "useCases": [
+    {
+      "description": "Launch the default merge tool to resolve conflicts:",
+      "syntax": "git mergetool"
+    },
+    {
+      "description": "List valid merge tools:",
+      "syntax": "git mergetool --tool-help"
+    },
+    {
+      "description": "Launch the merge tool identified by a name:",
+      "syntax": "git mergetool --tool {{tool_name}}"
+    },
+    {
+      "description": "Don't prompt before each invocation of the merge tool:",
+      "syntax": "git mergetool --no-prompt"
+    },
+    {
+      "description": "Explicitly use the GUI merge tool (see the merge.guitool configuration variable):",
+      "syntax": "git mergetool --gui"
+    },
+    {
+      "description": "Explicitly use the regular merge tool (see the merge.tool configuration variable):",
+      "syntax": "git mergetool --no-gui"
+    }
+  ]
+}

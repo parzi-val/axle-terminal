@@ -1,0 +1,22 @@
+{
+  "command": "verilator",
+  "description": "Convert Verilog and SystemVerilog hardware description language (HDL) design into a C++ or SystemC model to be executed after compiling. More information: https://veripool.org/guide/latest/.",
+  "useCases": [
+    {
+      "description": "Build a specific C project in the current directory:",
+      "syntax": "verilator --binary --build-jobs 0 -Wall {{path/to/source.v}}"
+    },
+    {
+      "description": "Create a C++ executable in a specific folder:",
+      "syntax": "verilator --cc --exe --build --build-jobs 0 -Wall {{path/to/source.cpp}} {{path/to/output.v}}"
+    },
+    {
+      "description": "Perform linting over a code in the current directory:",
+      "syntax": "verilator --lint-only -Wall"
+    },
+    {
+      "description": "Create XML output about the design (files, modules, instance hierarchy, logic and data types) to feed into other tools:",
+      "syntax": "verilator --xml-output -Wall {{path/to/output.xml}}"
+    }
+  ]
+}

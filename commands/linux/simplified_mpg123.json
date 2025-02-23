@@ -1,0 +1,34 @@
+{
+  "command": "mpg123",
+  "description": "Console MPEG audio player. More information: https://manned.org/mpg123.",
+  "useCases": [
+    {
+      "description": "Play the specified mp3 files:",
+      "syntax": "mpg123 {{path/to/file1.mp3 path/to/file2.mp3 ...}}"
+    },
+    {
+      "description": "Play the mp3 from stdin:",
+      "syntax": "cat {{file.mp3}} | mpg123 -"
+    },
+    {
+      "description": "Jump forward to the next song:",
+      "syntax": "f"
+    },
+    {
+      "description": "Jump back to the beginning for the song:",
+      "syntax": "b"
+    },
+    {
+      "description": "Stop or replay the current file:",
+      "syntax": "s"
+    },
+    {
+      "description": "Fast forward:",
+      "syntax": "."
+    },
+    {
+      "description": "Quit:",
+      "syntax": "q"
+    }
+  ]
+}

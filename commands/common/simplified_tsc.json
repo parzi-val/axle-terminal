@@ -1,0 +1,34 @@
+{
+  "command": "tsc",
+  "description": "TypeScript compiler. More information: https://www.typescriptlang.org/docs/handbook/compiler-options.html.",
+  "useCases": [
+    {
+      "description": "Compile a TypeScript file foobar.ts into a JavaScript file foobar.js:",
+      "syntax": "tsc {{foobar.ts}}"
+    },
+    {
+      "description": "Compile a TypeScript file into JavaScript using a specific target syntax (default is ES3):",
+      "syntax": "tsc --target {{ES5|ES2015|ES2016|ES2017|ES2018|ESNEXT}} {{foobar.ts}}"
+    },
+    {
+      "description": "Compile a TypeScript file into a JavaScript file with a custom name:",
+      "syntax": "tsc --outFile {{output.js}} {{input.ts}}"
+    },
+    {
+      "description": "Compile all .ts files of a TypeScript project defined in a tsconfig.json file:",
+      "syntax": "tsc --build {{tsconfig.json}}"
+    },
+    {
+      "description": "Run the compiler using command-line options and arguments fetched from a text file:",
+      "syntax": "tsc @{{args.txt}}"
+    },
+    {
+      "description": "Type-check multiple JavaScript files, and output only the errors:",
+      "syntax": "tsc --allowJs --checkJs --noEmit {{src/**/*.js}}"
+    },
+    {
+      "description": "Run the compiler in watch mode, which automatically recompiles code when it changes:",
+      "syntax": "tsc --watch"
+    }
+  ]
+}

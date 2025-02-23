@@ -1,0 +1,22 @@
+{
+  "command": "iwconfig",
+  "description": "Configure and show the parameters of a wireless network interface. More information: https://manned.org/iwconfig.",
+  "useCases": [
+    {
+      "description": "Show the parameters and statistics of all the interfaces:",
+      "syntax": "iwconfig"
+    },
+    {
+      "description": "Show the parameters and statistics of the specified interface:",
+      "syntax": "iwconfig {{interface}}"
+    },
+    {
+      "description": "Set the ESSID (network name) of the specified interface (e.g. eth0 or wlp2s0):",
+      "syntax": "iwconfig {{interface}} {{new_network_name}}"
+    },
+    {
+      "description": "Set the operating mode of the specified interface:",
+      "syntax": "iwconfig {{interface}} mode {{Ad-Hoc|Managed|Master|Repeater|Secondary|Monitor|Auto}}"
+    }
+  ]
+}

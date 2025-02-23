@@ -1,0 +1,22 @@
+{
+  "command": "nxcdb",
+  "description": "Interact with the NetExec database. More information: https://www.netexec.wiki/getting-started/database-general-usage.",
+  "useCases": [
+    {
+      "description": "Enter an interactive database session:",
+      "syntax": "nxcdb"
+    },
+    {
+      "description": "Display the currently active workspace:",
+      "syntax": "nxcdb --get-workspace"
+    },
+    {
+      "description": "Create a new workspace:",
+      "syntax": "nxcdb --create-workspace {{workspace_name}}"
+    },
+    {
+      "description": "Activate the specified workspace:",
+      "syntax": "nxcdb --set-workspace {{workspace_name}}"
+    }
+  ]
+}

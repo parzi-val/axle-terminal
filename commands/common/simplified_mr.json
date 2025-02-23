@@ -1,0 +1,22 @@
+{
+  "command": "mr",
+  "description": "Manage all of your version control repositories at once. More information: https://myrepos.branchable.com.",
+  "useCases": [
+    {
+      "description": "Register a repository:",
+      "syntax": "mr register"
+    },
+    {
+      "description": "Update repositories in 5 concurrent jobs:",
+      "syntax": "mr -j{{5}} update"
+    },
+    {
+      "description": "Print the status of all repositories:",
+      "syntax": "mr status"
+    },
+    {
+      "description": "Checkout all repositories to the latest version:",
+      "syntax": "mr checkout"
+    }
+  ]
+}

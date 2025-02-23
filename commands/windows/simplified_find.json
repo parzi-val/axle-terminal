@@ -1,0 +1,22 @@
+{
+  "command": "find",
+  "description": "Find a specified string in files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/find.",
+  "useCases": [
+    {
+      "description": "Find lines that contain a specified string:",
+      "syntax": "find &quot;{{string}}&quot; {{path\\to\\file_or_directory}}"
+    },
+    {
+      "description": "Display lines that do not contain the specified string:",
+      "syntax": "find &quot;{{string}}&quot; {{path\\to\\file_or_directory}} /v"
+    },
+    {
+      "description": "Display the count of lines that contain the specified string:",
+      "syntax": "find &quot;{{string}}&quot; {{path\\to\\file_or_directory}} /c"
+    },
+    {
+      "description": "Display line numbers with the list of lines:",
+      "syntax": "find &quot;{{string}}&quot; {{path\\to\\file_or_directory}} /n"
+    }
+  ]
+}

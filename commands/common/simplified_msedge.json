@@ -1,0 +1,14 @@
+{
+  "command": "msedge",
+  "description": "The Microsoft Edge command-line utility is available as msedge on Windows and microsoft-edge for other platforms. More information: https://microsoft.com/edge.",
+  "useCases": [
+    {
+      "description": "View the documentation for Microsoft Edge for Windows:",
+      "syntax": "tldr -p windows msedge"
+    },
+    {
+      "description": "View the documentation for Microsoft Edge for other platforms:",
+      "syntax": "tldr -p common microsoft-edge"
+    }
+  ]
+}

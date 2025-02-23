@@ -1,0 +1,38 @@
+{
+  "command": "gh browse",
+  "description": "Open a GitHub repository in the browser or print the URL. More information: https://cli.github.com/manual/gh_browse.",
+  "useCases": [
+    {
+      "description": "Open the homepage of the current repository in the default web browser:",
+      "syntax": "gh browse"
+    },
+    {
+      "description": "Open the homepage of a specific repository in the default web browser:",
+      "syntax": "gh browse {{owner}}/{{repository}}"
+    },
+    {
+      "description": "Open the settings page of the current repository in the default web browser:",
+      "syntax": "gh browse --settings"
+    },
+    {
+      "description": "Open the wiki of the current repository in the default web browser:",
+      "syntax": "gh browse --wiki"
+    },
+    {
+      "description": "Open a specific issue or pull request in the web browser:",
+      "syntax": "gh browse {{issue_number|pull_request_number}}"
+    },
+    {
+      "description": "Open a specific branch in the web browser:",
+      "syntax": "gh browse --branch {{branch_name}}"
+    },
+    {
+      "description": "Open a specific file or directory of the current repository in the web browser:",
+      "syntax": "gh browse {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Print the destination URL without open the web browser:",
+      "syntax": "gh browse --no-browser"
+    }
+  ]
+}

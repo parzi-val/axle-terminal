@@ -1,0 +1,22 @@
+{
+  "command": "dunstify",
+  "description": "A notification tool that is an extension of notify-send, but has more features based around dunst. Accepts all options of notify-send. More information: https://github.com/dunst-project/dunst/wiki/Guides.",
+  "useCases": [
+    {
+      "description": "Show a notification with a given title and message:",
+      "syntax": "dunstify &quot;{{Title}}&quot; &quot;{{Message}}&quot;"
+    },
+    {
+      "description": "Show a notification with specified urgency:",
+      "syntax": "dunstify &quot;{{Title}}&quot; &quot;{{Message}}&quot; -u {{low|normal|critical}}"
+    },
+    {
+      "description": "Specify a message ID (overwrites any previous messages with the same ID):",
+      "syntax": "dunstify &quot;{{Title}}&quot; &quot;{{Message}}&quot; -r {{123}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dunstify --help"
+    }
+  ]
+}

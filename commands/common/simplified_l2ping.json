@@ -1,0 +1,34 @@
+{
+  "command": "l2ping",
+  "description": "Send an L2CAP echo request and receive an answer. More information: https://manned.org/l2ping.",
+  "useCases": [
+    {
+      "description": "Ping a Bluetooth device:",
+      "syntax": "sudo l2ping {{mac_address}}"
+    },
+    {
+      "description": "Reverse ping a Bluetooth device:",
+      "syntax": "sudo l2ping -r {{mac_address}}"
+    },
+    {
+      "description": "Ping a Bluetooth device from a specified interface:",
+      "syntax": "sudo l2ping -i {{hci0}} {{mac_address}}"
+    },
+    {
+      "description": "Ping Bluetooth device with a specified sized data package:",
+      "syntax": "sudo l2ping -s {{byte_count}} {{mac_address}}"
+    },
+    {
+      "description": "Ping flood a Bluetooth device:",
+      "syntax": "sudo l2ping -f {{mac_address}}"
+    },
+    {
+      "description": "Ping a Bluetooth device a specified amount of times:",
+      "syntax": "sudo l2ping -c {{amount}} {{mac_address}}"
+    },
+    {
+      "description": "Ping a Bluetooth device with a specified delay between requests:",
+      "syntax": "sudo l2ping -d {{seconds}} {{mac_address}}"
+    }
+  ]
+}

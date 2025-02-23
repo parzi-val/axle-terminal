@@ -1,0 +1,18 @@
+{
+  "command": "git stripspace",
+  "description": "Read text (e.g. commit messages, notes, tags, and branch descriptions) from stdin and clean it into the manner used by Git. More information: https://git-scm.com/docs/git-stripspace.",
+  "useCases": [
+    {
+      "description": "Trim whitespace from a file:",
+      "syntax": "cat {{path/to/file}} | git stripspace"
+    },
+    {
+      "description": "Trim whitespace and Git comments from a file:",
+      "syntax": "cat {{path/to/file}} | git stripspace --strip-comments"
+    },
+    {
+      "description": "Convert all lines in a file into Git comments:",
+      "syntax": "git stripspace --comment-lines &lt; {{path/to/file}}"
+    }
+  ]
+}

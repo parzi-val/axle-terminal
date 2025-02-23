@@ -1,0 +1,30 @@
+{
+  "command": "iperf",
+  "description": "Measure network bandwidth between computers. More information: https://iperf.fr.",
+  "useCases": [
+    {
+      "description": "Run on server:",
+      "syntax": "iperf -s"
+    },
+    {
+      "description": "Run on server using UDP mode and set server port to listen on 5001:",
+      "syntax": "iperf -u -s -p {{5001}}"
+    },
+    {
+      "description": "Run on client:",
+      "syntax": "iperf -c {{server_address}}"
+    },
+    {
+      "description": "Run on client every 2 seconds:",
+      "syntax": "iperf -c {{server_address}} -i {{2}}"
+    },
+    {
+      "description": "Run on client with 5 parallel threads:",
+      "syntax": "iperf -c {{server_address}} -P {{5}}"
+    },
+    {
+      "description": "Run on client using UDP mode:",
+      "syntax": "iperf -u -c {{server_address}} -p {{5001}}"
+    }
+  ]
+}

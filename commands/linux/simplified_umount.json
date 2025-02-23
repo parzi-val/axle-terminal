@@ -1,0 +1,10 @@
+{
+  "command": "umount",
+  "description": "The correct command is umount (u-mount). More information: https://manned.org/umount.8.",
+  "useCases": [
+    {
+      "description": "View documentation for the correct command:",
+      "syntax": "tldr umount"
+    }
+  ]
+}

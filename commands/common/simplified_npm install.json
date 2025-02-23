@@ -1,0 +1,22 @@
+{
+  "command": "npm install",
+  "description": "Install Node packages. More information: https://docs.npmjs.com/cli/commands/npm-install.",
+  "useCases": [
+    {
+      "description": "Install dependencies listed in package.json:",
+      "syntax": "npm install"
+    },
+    {
+      "description": "Download a specific version of a package and add it to the list of dependencies in package.json:",
+      "syntax": "npm install {{package_name}}@{{version}}"
+    },
+    {
+      "description": "Download the latest version of a package and add it to the list of dev dependencies in package.json:",
+      "syntax": "npm install {{package_name}} {{-D|--save-dev}}"
+    },
+    {
+      "description": "Download the latest version of a package and install it globally:",
+      "syntax": "npm install {{-g|--global}} {{package_name}}"
+    }
+  ]
+}

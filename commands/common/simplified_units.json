@@ -1,0 +1,34 @@
+{
+  "command": "units",
+  "description": "Convert between two units of measure. More information: https://www.gnu.org/software/units/.",
+  "useCases": [
+    {
+      "description": "Run in interactive mode:",
+      "syntax": "units"
+    },
+    {
+      "description": "List all units containing a specific string in interactive mode:",
+      "syntax": "search {{string}}"
+    },
+    {
+      "description": "Show the conversion between two simple units:",
+      "syntax": "units {{quarts}} {{tablespoons}}"
+    },
+    {
+      "description": "Convert between units with quantities:",
+      "syntax": "units &quot;{{15 pounds}}&quot; {{kilograms}}"
+    },
+    {
+      "description": "Show the conversion between two compound units:",
+      "syntax": "units &quot;{{meters / second}}&quot; &quot;{{inches / hour}}&quot;"
+    },
+    {
+      "description": "Show the conversion between units with different dimensions:",
+      "syntax": "units &quot;{{acres}}&quot; &quot;{{ft^2}}&quot;"
+    },
+    {
+      "description": "Show the conversion of byte multipliers:",
+      "syntax": "units &quot;{{15 megabytes}}&quot; {{bytes}}"
+    }
+  ]
+}

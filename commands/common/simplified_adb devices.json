@@ -1,0 +1,14 @@
+{
+  "command": "adb devices",
+  "description": "List connected Android devices. More information: https://manned.org/adb.",
+  "useCases": [
+    {
+      "description": "List devices:",
+      "syntax": "adb devices"
+    },
+    {
+      "description": "List devices and their system info:",
+      "syntax": "adb devices -l"
+    }
+  ]
+}

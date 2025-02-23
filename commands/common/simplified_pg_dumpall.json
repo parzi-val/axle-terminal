@@ -1,0 +1,26 @@
+{
+  "command": "pg_dumpall",
+  "description": "Extract a PostgreSQL database cluster into a script file or other archive file. More information: https://www.postgresql.org/docs/current/app-pg-dumpall.html.",
+  "useCases": [
+    {
+      "description": "Dump all databases:",
+      "syntax": "pg_dumpall &gt; {{path/to/file.sql}}"
+    },
+    {
+      "description": "Dump all databases using a specific username:",
+      "syntax": "pg_dumpall {{-U|--username}} {{username}} &gt; {{path/to/file.sql}}"
+    },
+    {
+      "description": "Same as above, customize host and port:",
+      "syntax": "pg_dumpall -h {{host}} -p {{port}} &gt; {{output_file.sql}}"
+    },
+    {
+      "description": "Dump only database data into an SQL-script file:",
+      "syntax": "pg_dumpall {{-a|--data-only}} &gt; {{path/to/file.sql}}"
+    },
+    {
+      "description": "Dump only schema (data definitions) into an SQL-script file:",
+      "syntax": "pg_dumpall -s &gt; {{output_file.sql}}"
+    }
+  ]
+}

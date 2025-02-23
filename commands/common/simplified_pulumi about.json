@@ -1,0 +1,22 @@
+{
+  "command": "pulumi about",
+  "description": "Print information about the Pulumi environment. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_about/.",
+  "useCases": [
+    {
+      "description": "Print information about the Pulumi environment:",
+      "syntax": "pulumi about"
+    },
+    {
+      "description": "Print information about the Pulumi environment in JSON format:",
+      "syntax": "pulumi about --json"
+    },
+    {
+      "description": "Print information about the Pulumi environment of a specific stack:",
+      "syntax": "pulumi about --stack {{stack_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pulumi about --help"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "snap",
+  "description": "Manage the \"snap\" self-contained software packages. Similar to what apt is for .deb. More information: https://manned.org/snap.",
+  "useCases": [
+    {
+      "description": "Search for a package:",
+      "syntax": "snap find {{query}}"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "snap install {{package}}"
+    },
+    {
+      "description": "Update a package:",
+      "syntax": "snap refresh {{package}}"
+    },
+    {
+      "description": "Update a package to another channel (track, risk, or branch):",
+      "syntax": "snap refresh {{package}} --channel={{channel}}"
+    },
+    {
+      "description": "Update all packages:",
+      "syntax": "snap refresh"
+    },
+    {
+      "description": "Display basic information about installed snap software:",
+      "syntax": "snap list"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "snap remove {{package}}"
+    },
+    {
+      "description": "Check for recent snap changes in the system:",
+      "syntax": "snap changes"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "npm name",
+  "description": "Check whether a package or organization name is available on npm. More information: https://github.com/sindresorhus/npm-name-cli.",
+  "useCases": [
+    {
+      "description": "Check if a specific package name is available in the npm registry:",
+      "syntax": "npm-name {{package}}"
+    },
+    {
+      "description": "Find similar package names in the npm registry:",
+      "syntax": "npm-name --similar {{package}}"
+    }
+  ]
+}

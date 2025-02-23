@@ -1,0 +1,22 @@
+{
+  "command": "cmatrix",
+  "description": "Shows a scrolling Matrix like screen in the terminal. More information: https://github.com/abishekvashok/cmatrix.",
+  "useCases": [
+    {
+      "description": "Enable [a]synchronous scrolling:",
+      "syntax": "cmatrix -a"
+    },
+    {
+      "description": "Change the text [C]olor (green by default):",
+      "syntax": "cmatrix -C {{red}}"
+    },
+    {
+      "description": "Enable [r]ainbow mode:",
+      "syntax": "cmatrix -r"
+    },
+    {
+      "description": "Use a screen [u]pdate delay of 100 centiseconds (1 second):",
+      "syntax": "cmatrix -u 100"
+    }
+  ]
+}

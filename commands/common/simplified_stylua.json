@@ -1,0 +1,26 @@
+{
+  "command": "stylua",
+  "description": "An opinionated Lua code formatter. More information: https://github.com/JohnnyMorganz/StyLua.",
+  "useCases": [
+    {
+      "description": "Auto-format a file or an entire directory:",
+      "syntax": "stylua {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Check if a specific file has been formatted:",
+      "syntax": "stylua --check {{path/to/file}}"
+    },
+    {
+      "description": "Run with a specific configuration file:",
+      "syntax": "stylua --config-path {{path/to/config_file}} {{path/to/file}}"
+    },
+    {
+      "description": "Format code from stdin and output to stdout:",
+      "syntax": "stylua - &lt; {{path/to/file.lua}}"
+    },
+    {
+      "description": "Format a file or directory using spaces and preferring single quotes:",
+      "syntax": "stylua --indent-type {{Spaces}} --quote-style {{AutoPreferSingle}} {{path/to/file_or_directory}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "swaybg",
+  "description": "Wallpaper tool for Wayland compositors. More information: https://github.com/swaywm/swaybg/blob/master/swaybg.1.scd.",
+  "useCases": [
+    {
+      "description": "Set the wallpaper to an [i]mage:",
+      "syntax": "swaybg --image {{path/to/image}}"
+    },
+    {
+      "description": "Set the wallpaper [m]ode:",
+      "syntax": "swaybg --image {{path/to/image}} --mode {{stretch|fit|fill|center|tile|solid_color}}"
+    },
+    {
+      "description": "Set the wallpaper to a static [c]olor:",
+      "syntax": "swaybg --color &quot;{{#rrggbb}}&quot;"
+    }
+  ]
+}

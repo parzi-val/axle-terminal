@@ -1,0 +1,18 @@
+{
+  "command": "fold",
+  "description": "Folds long lines for fixed-width output devices. More information: https://www.gnu.org/software/coreutils/manual/html_node/fold-invocation.html.",
+  "useCases": [
+    {
+      "description": "Fold lines in a fixed width:",
+      "syntax": "fold --width {{width}} {{path/to/file}}"
+    },
+    {
+      "description": "Count width in bytes (the default is to count in columns):",
+      "syntax": "fold --bytes --width {{width_in_bytes}} {{path/to/file}}"
+    },
+    {
+      "description": "Break the line after the rightmost blank within the width limit:",
+      "syntax": "fold --spaces --width {{width}} {{path/to/file}}"
+    }
+  ]
+}

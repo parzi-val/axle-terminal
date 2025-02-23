@@ -1,0 +1,26 @@
+{
+  "command": "nrm",
+  "description": "npm registry manager. Helps to easily switch between different npm registries. More information: https://github.com/Pana/nrm.",
+  "useCases": [
+    {
+      "description": "List all registries:",
+      "syntax": "nrm ls"
+    },
+    {
+      "description": "Change to a particular registry:",
+      "syntax": "nrm use {{registry}}"
+    },
+    {
+      "description": "Show the response time for all registries:",
+      "syntax": "nrm test"
+    },
+    {
+      "description": "Add a custom registry:",
+      "syntax": "nrm add {{registry}} {{url}}"
+    },
+    {
+      "description": "Delete a registry:",
+      "syntax": "nrm del {{registry}}"
+    }
+  ]
+}

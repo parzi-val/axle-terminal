@@ -1,0 +1,38 @@
+{
+  "command": "net",
+  "description": "System utility to view and modify network-related settings. More information: https://learn.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/gg651155(v=ws.11).",
+  "useCases": [
+    {
+      "description": "Start or stop a Windows service synchronously:",
+      "syntax": "net {{start|stop}} {{service}}"
+    },
+    {
+      "description": "Make sure an SMB share is available in the current console:",
+      "syntax": "net use {{\\\\smb_shared_folder}} /USER:{{username}}"
+    },
+    {
+      "description": "Show the folders currently shared over SMB:",
+      "syntax": "net share"
+    },
+    {
+      "description": "Show who is using your SMB shares (run in elevated console):",
+      "syntax": "net session"
+    },
+    {
+      "description": "Show users in a local security group:",
+      "syntax": "net localgroup &quot;{{Administrators}}&quot;"
+    },
+    {
+      "description": "Add a user to the local security group (run in elevated console):",
+      "syntax": "net localgroup &quot;{{Administrators}}&quot; {{username}} /add"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "net help {{subcommand}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "net help"
+    }
+  ]
+}

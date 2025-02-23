@@ -1,0 +1,22 @@
+{
+  "command": "pdfimages",
+  "description": "Utility for extracting images from PDFs. More information: https://manned.org/pdfimages.",
+  "useCases": [
+    {
+      "description": "Extract all images from a PDF file and save them as PNGs:",
+      "syntax": "pdfimages -png {{path/to/file.pdf}} {{filename_prefix}}"
+    },
+    {
+      "description": "Extract images from pages 3 to 5:",
+      "syntax": "pdfimages -f {{3}} -l {{5}} {{path/to/file.pdf}} {{filename_prefix}}"
+    },
+    {
+      "description": "Extract images from a PDF file and include the page number in the output filenames:",
+      "syntax": "pdfimages -p {{path/to/file.pdf}} {{filename_prefix}}"
+    },
+    {
+      "description": "List information about all the images in a PDF file:",
+      "syntax": "pdfimages -list {{path/to/file.pdf}}"
+    }
+  ]
+}

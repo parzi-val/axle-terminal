@@ -1,0 +1,30 @@
+{
+  "command": "cloudflared",
+  "description": "Create a persistent connection to the Cloudflare network. More information: https://developers.cloudflare.com/argo-tunnel/.",
+  "useCases": [
+    {
+      "description": "Authenticate and associate the connection to a domain in the Cloudflare account:",
+      "syntax": "cloudflared tunnel login"
+    },
+    {
+      "description": "Create a tunnel with a specific name:",
+      "syntax": "cloudflared tunnel create {{name}}"
+    },
+    {
+      "description": "Establish a tunnel to a host in Cloudflare from the local server:",
+      "syntax": "cloudflared tunnel --hostname {{hostname}} localhost:{{port_number}}"
+    },
+    {
+      "description": "Establish a tunnel to a host in Cloudflare from the local server, without verifying the local server's certificate:",
+      "syntax": "cloudflared tunnel --hostname {{hostname}} localhost:{{port_number}} --no-tls-verify"
+    },
+    {
+      "description": "Save logs to a file:",
+      "syntax": "cloudflared tunnel --hostname {{hostname}} http://localhost:{{port_number}} --loglevel {{panic|fatal|error|warn|info|debug}} --logfile {{path/to/file}}"
+    },
+    {
+      "description": "Install cloudflared as a system service:",
+      "syntax": "cloudflared service install"
+    }
+  ]
+}

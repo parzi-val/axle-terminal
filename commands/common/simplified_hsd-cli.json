@@ -1,0 +1,38 @@
+{
+  "command": "hsd-cli",
+  "description": "The command-line REST tool for the Handshake blockchain. More information: https://handshake.org.",
+  "useCases": [
+    {
+      "description": "Retrieve information about the current server:",
+      "syntax": "hsd-cli info"
+    },
+    {
+      "description": "Broadcast a local transaction:",
+      "syntax": "hsd-cli broadcast {{transaction_hex}}"
+    },
+    {
+      "description": "Retrieve a mempool snapshot:",
+      "syntax": "hsd-cli mempool"
+    },
+    {
+      "description": "View a transaction by address or hash:",
+      "syntax": "hsd-cli tx {{address_or_hash}}"
+    },
+    {
+      "description": "View a coin by its hash index or address:",
+      "syntax": "hsd-cli coin {{hash_index_or_address}}"
+    },
+    {
+      "description": "View a block by height or hash:",
+      "syntax": "hsd-cli block {{height_or_hash}}"
+    },
+    {
+      "description": "Reset the chain to the specified block:",
+      "syntax": "hsd-cli reset {{height_or_hash}}"
+    },
+    {
+      "description": "Execute an RPC command:",
+      "syntax": "hsd-cli rpc {{command}} {{args}}"
+    }
+  ]
+}

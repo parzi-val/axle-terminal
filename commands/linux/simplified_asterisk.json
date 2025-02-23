@@ -1,0 +1,34 @@
+{
+  "command": "asterisk",
+  "description": "Run and manage telephone and exchange (phone) server instances. More information: https://docs.asterisk.org.",
+  "useCases": [
+    {
+      "description": "[R]econnect to a running server, and turn on logging 3 levels of [v]erbosity:",
+      "syntax": "asterisk -r -vvv"
+    },
+    {
+      "description": "[R]econnect to a running server, run a single command, and return:",
+      "syntax": "asterisk -r -x &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Show chan_SIP clients (phones):",
+      "syntax": "asterisk -r -x &quot;sip show peers&quot;"
+    },
+    {
+      "description": "Show active calls and channels:",
+      "syntax": "asterisk -r -x &quot;core show channels&quot;"
+    },
+    {
+      "description": "Show voicemail mailboxes:",
+      "syntax": "asterisk -r -x &quot;voicemail show users&quot;"
+    },
+    {
+      "description": "Terminate a channel:",
+      "syntax": "asterisk -r -x &quot;hangup request {{channel_ID}}&quot;"
+    },
+    {
+      "description": "Reload chan_SIP configuration:",
+      "syntax": "asterisk -r -x &quot;sip reload&quot;"
+    }
+  ]
+}

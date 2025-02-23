@@ -1,0 +1,34 @@
+{
+  "command": "conda install",
+  "description": "Install packages into an existing conda environment. More information: https://docs.conda.io/projects/conda/en/latest/commands/install.html.",
+  "useCases": [
+    {
+      "description": "Install one or more package into the currently active conda environment:",
+      "syntax": "conda install {{package1 package2 ...}}"
+    },
+    {
+      "description": "Install a single package into the currently active conda environment using channel conda-forge:",
+      "syntax": "conda install -c conda-forge {{package}}"
+    },
+    {
+      "description": "Install a single package into the currently active conda environment using channel conda-forge and ignoring other channels:",
+      "syntax": "conda install -c conda-forge --override-channels {{package}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "conda install {{package}}={{version}}"
+    },
+    {
+      "description": "Install a package into a specific environment:",
+      "syntax": "conda install --name {{environment}} {{package}}"
+    },
+    {
+      "description": "Update a package in the current environment:",
+      "syntax": "conda install --upgrade {{package}}"
+    },
+    {
+      "description": "Install a package and agree to the transactions without prompting:",
+      "syntax": "conda install --yes {{package}}"
+    }
+  ]
+}

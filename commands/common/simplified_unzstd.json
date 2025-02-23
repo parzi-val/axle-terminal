@@ -1,0 +1,10 @@
+{
+  "command": "unzstd",
+  "description": "This command is an alias of zstd --decompress.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr zstd"
+    }
+  ]
+}

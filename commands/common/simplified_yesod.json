@@ -1,0 +1,26 @@
+{
+  "command": "yesod",
+  "description": "Helper tool for Yesod, a Haskell-based web framework. All Yesod commands are invoked through the stack project manager. More information: https://github.com/yesodweb/yesod.",
+  "useCases": [
+    {
+      "description": "Create a new scaffolded site, with SQLite as backend, in the my-project directory:",
+      "syntax": "stack new {{my-project}} {{yesod-sqlite}}"
+    },
+    {
+      "description": "Install the Yesod CLI tool within a Yesod scaffolded site:",
+      "syntax": "stack build yesod-bin cabal-install --install-ghc"
+    },
+    {
+      "description": "Start development server:",
+      "syntax": "stack exec -- yesod devel"
+    },
+    {
+      "description": "Touch files with altered Template Haskell dependencies:",
+      "syntax": "stack exec -- yesod touch"
+    },
+    {
+      "description": "Deploy application using Keter (Yesod's deployment manager):",
+      "syntax": "stack exec -- yesod keter"
+    }
+  ]
+}

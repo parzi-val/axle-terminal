@@ -1,0 +1,30 @@
+{
+  "command": "cradle sql",
+  "description": "Manage Cradle SQL databases. More information: https://cradlephp.github.io/docs/3.B.-Reference-Command-Line-Tools.html#sql.",
+  "useCases": [
+    {
+      "description": "Rebuild the database schema:",
+      "syntax": "cradle sql build"
+    },
+    {
+      "description": "Rebuild the database schema for a specific package:",
+      "syntax": "cradle sql build {{package}}"
+    },
+    {
+      "description": "Empty the entire database:",
+      "syntax": "cradle sql flush"
+    },
+    {
+      "description": "Empty the database tables for a specific package:",
+      "syntax": "cradle sql flush {{package}}"
+    },
+    {
+      "description": "Populate the tables for all packages:",
+      "syntax": "cradle sql populate"
+    },
+    {
+      "description": "Populate the tables for a specific package:",
+      "syntax": "cradle sql populate {{package}}"
+    }
+  ]
+}

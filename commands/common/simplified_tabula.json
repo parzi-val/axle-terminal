@@ -1,0 +1,30 @@
+{
+  "command": "tabula",
+  "description": "Extract tables from PDF files. More information: https://tabula.technology.",
+  "useCases": [
+    {
+      "description": "Extract all tables from a PDF to a CSV file:",
+      "syntax": "tabula -o {{file.csv}} {{file.pdf}}"
+    },
+    {
+      "description": "Extract all tables from a PDF to a JSON file:",
+      "syntax": "tabula --format JSON -o {{file.json}} {{file.pdf}}"
+    },
+    {
+      "description": "Extract tables from pages 1, 2, 3, and 6 of a PDF:",
+      "syntax": "tabula --pages {{1-3,6}} {{file.pdf}}"
+    },
+    {
+      "description": "Extract tables from page 1 of a PDF, guessing which portion of the page to examine:",
+      "syntax": "tabula --guess --pages {{1}} {{file.pdf}}"
+    },
+    {
+      "description": "Extract all tables from a PDF, using ruling lines to determine cell boundaries:",
+      "syntax": "tabula --spreadsheet {{file.pdf}}"
+    },
+    {
+      "description": "Extract all tables from a PDF, using blank space to determine cell boundaries:",
+      "syntax": "tabula --no-spreadsheet {{file.pdf}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "noti",
+  "description": "Monitor a process and trigger a banner notification. More information: https://github.com/variadico/noti.",
+  "useCases": [
+    {
+      "description": "Display a notification when tar finishes compressing files:",
+      "syntax": "noti {{tar -cjf example.tar.bz2 example/}}"
+    },
+    {
+      "description": "Display a notification even when you put it after the command to watch:",
+      "syntax": "{{command_to_watch}}; noti"
+    },
+    {
+      "description": "Monitor a process by PID and trigger a notification when the PID disappears:",
+      "syntax": "noti -w {{process_id}}"
+    }
+  ]
+}

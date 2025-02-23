@@ -1,0 +1,18 @@
+{
+  "command": "sestatus",
+  "description": "Print the current SELinux status. More information: https://manned.org/sestatus.",
+  "useCases": [
+    {
+      "description": "Print the current status:",
+      "syntax": "sestatus"
+    },
+    {
+      "description": "Print the current states of all policy booleans:",
+      "syntax": "sestatus -b"
+    },
+    {
+      "description": "Print the current file and process contexts:",
+      "syntax": "sestatus -v"
+    }
+  ]
+}

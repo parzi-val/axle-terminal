@@ -1,0 +1,14 @@
+{
+  "command": "xxhsum",
+  "description": "Print or verify checksums using fast non-cryptographic algorithm xxHash. More information: https://github.com/Cyan4973/xxHash.",
+  "useCases": [
+    {
+      "description": "Calculate the checksum for a file using a specific algorithm:",
+      "syntax": "xxhsum -H{{0|32|64|128}} {{path/to/file}}"
+    },
+    {
+      "description": "Run benchmark:",
+      "syntax": "xxhsum -b"
+    }
+  ]
+}

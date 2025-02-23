@@ -1,0 +1,26 @@
+{
+  "command": "pixi project",
+  "description": "Modify the project configuration file. More information: https://pixi.sh/latest/reference/cli/#project.",
+  "useCases": [
+    {
+      "description": "Manage project channels:",
+      "syntax": "pixi project channel {{command}}"
+    },
+    {
+      "description": "Manage project description:",
+      "syntax": "pixi project description {{command}}"
+    },
+    {
+      "description": "Manage project platform:",
+      "syntax": "pixi project platform {{command}}"
+    },
+    {
+      "description": "Manage project version:",
+      "syntax": "pixi project version {{command}}"
+    },
+    {
+      "description": "Manage project environment:",
+      "syntax": "pixi project environment {{command}}"
+    }
+  ]
+}

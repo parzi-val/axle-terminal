@@ -1,0 +1,26 @@
+{
+  "command": "httpflow",
+  "description": "A command-line utility to capture and dump HTTP streams. More information: https://github.com/six-ddc/httpflow.",
+  "useCases": [
+    {
+      "description": "Capture traffic on all interfaces:",
+      "syntax": "httpflow -i {{any}}"
+    },
+    {
+      "description": "Use a bpf-style capture to filter the results:",
+      "syntax": "httpflow {{host httpbin.org or host baidu.com}}"
+    },
+    {
+      "description": "Use a regular expression to filter requests by URLs:",
+      "syntax": "httpflow -u '{{regular_expression}}'"
+    },
+    {
+      "description": "Read packets from PCAP format binary file:",
+      "syntax": "httpflow -r {{out.cap}}"
+    },
+    {
+      "description": "Write the output to a directory:",
+      "syntax": "httpflow -w {{path/to/directory}}"
+    }
+  ]
+}

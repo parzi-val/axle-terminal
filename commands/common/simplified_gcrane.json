@@ -1,0 +1,30 @@
+{
+  "command": "gcrane",
+  "description": "Container images managing tool. This tool implements a superset of the crane commands, with additional commands that are specific to gcr.io. Some subcommands such as append, auth, copy, etc. have their own usage documentation which can be found under crane. Some subcommands such as completion, gc, help are specific to gcrane and have their own usage documentation. More information: https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.md.",
+  "useCases": [
+    {
+      "description": "Execute a gcrane subcommand:",
+      "syntax": "gcrane {{subcommand}}"
+    },
+    {
+      "description": "Allow pushing non-distributable (foreign) layers:",
+      "syntax": "gcrane --allow-nondistributable-artifacts {{subcommand}}"
+    },
+    {
+      "description": "Allow image references to be fetched without TLS:",
+      "syntax": "gcrane --insecure {{subcommand}}"
+    },
+    {
+      "description": "Specify the platform in the form os/arch{{/variant}}{{:osversion}} (e.g. linux/amd64). (default all):",
+      "syntax": "gcrane --platform {{platform}} {{subcommand}}"
+    },
+    {
+      "description": "Enable debug logs:",
+      "syntax": "gcrane {{-v|--verbose}} {{subcommand}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gcrane {{-h|--help}}"
+    }
+  ]
+}

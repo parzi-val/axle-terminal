@@ -1,0 +1,26 @@
+{
+  "command": "tlmgr remove",
+  "description": "Uninstall TeX Live packages. By default, removed packages will be backed up to ./tlpkg/backups under the TL installation directory. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Uninstall a TeX Live package:",
+      "syntax": "sudo tlmgr remove {{package}}"
+    },
+    {
+      "description": "Simulate uninstalling a package without making any changes:",
+      "syntax": "tlmgr remove --dry-run {{package}}"
+    },
+    {
+      "description": "Uninstall a package without its dependencies:",
+      "syntax": "sudo tlmgr remove --no-depends {{package}}"
+    },
+    {
+      "description": "Uninstall a package and back it up to a specific directory:",
+      "syntax": "sudo tlmgr remove --backupdir {{path/to/directory}} {{package}}"
+    },
+    {
+      "description": "Uninstall all of TeX Live, asking for confirmation:",
+      "syntax": "sudo tlmgr remove --all"
+    }
+  ]
+}

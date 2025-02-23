@@ -1,0 +1,30 @@
+{
+  "command": "pacman --files",
+  "description": "Arch Linux package manager utility. See also: pacman, pkgfile. More information: https://manned.org/pacman.8.",
+  "useCases": [
+    {
+      "description": "Update the package database:",
+      "syntax": "sudo pacman -Fy"
+    },
+    {
+      "description": "Find the package that owns a specific [F]ile:",
+      "syntax": "pacman -F {{filename}}"
+    },
+    {
+      "description": "Find the package that owns a specific [F]ile, using a regular e[x]pression:",
+      "syntax": "pacman -Fx '{{regular_expression}}'"
+    },
+    {
+      "description": "List only the package names:",
+      "syntax": "pacman -Fq {{filename}}"
+    },
+    {
+      "description": "[l]ist the [F]iles owned by a specific package:",
+      "syntax": "pacman -Fl {{package}}"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "pacman -Fh"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "showfigfonts",
+  "description": "Display available figlet fonts. See also figlet. More information: https://manned.org/showfigfonts.",
+  "useCases": [
+    {
+      "description": "Display available fonts:",
+      "syntax": "showfigfonts"
+    },
+    {
+      "description": "Display available fonts using a specific text:",
+      "syntax": "showfigfonts {{input_text}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "strip-nondeterminism",
+  "description": "Remove non-deterministic information (e.g. timestamps) from files. More information: https://salsa.debian.org/reproducible-builds/strip-nondeterminism.",
+  "useCases": [
+    {
+      "description": "Strip nondeterministic information from a file:",
+      "syntax": "strip-nondeterminism {{path/to/file}}"
+    },
+    {
+      "description": "Strip nondeterministic information from a file manually specifying the filetype:",
+      "syntax": "strip-nondeterminism --type {{filetype}} {{path/to/file}}"
+    },
+    {
+      "description": "Strip nondeterministic information from a file; instead of removing timestamps set them to the specified UNIX timestamp:",
+      "syntax": "strip-nondeterminism --timestamp {{unix_timestamp}} {{path/to/file}}"
+    }
+  ]
+}

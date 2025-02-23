@@ -1,0 +1,14 @@
+{
+  "command": "mkfs.cramfs",
+  "description": "Create a ROM filesystem inside a partition. More information: https://manned.org/mkfs.cramfs.",
+  "useCases": [
+    {
+      "description": "Create a ROM filesystem inside partition 1 on device b (sdb1):",
+      "syntax": "mkfs.cramfs {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create a ROM filesystem with a volume-name:",
+      "syntax": "mkfs.cramfs -n {{volume_name}} {{/dev/sdb1}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "lorem",
+  "description": "Create some random Latin looking placeholder text. More information: https://manned.org/lorem.",
+  "useCases": [
+    {
+      "description": "Print the specified number of words:",
+      "syntax": "lorem -n {{20}}"
+    },
+    {
+      "description": "Print 10 lines of Goethe's Faust:",
+      "syntax": "lorem -l {{10}} --faust"
+    },
+    {
+      "description": "Print 5 sentences of Poe's Raven:",
+      "syntax": "lorem -s {{5}} --raven"
+    },
+    {
+      "description": "Print 40 random characters from Boccaccio's Decameron:",
+      "syntax": "lorem --randomize -c {{40}} --decamerone"
+    }
+  ]
+}

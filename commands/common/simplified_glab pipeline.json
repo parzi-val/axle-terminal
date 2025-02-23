@@ -1,0 +1,26 @@
+{
+  "command": "glab pipeline",
+  "description": "List, view, and run GitLab CI/CD pipelines. More information: https://glab.readthedocs.io/en/latest/pipeline.",
+  "useCases": [
+    {
+      "description": "View a running pipeline on the current branch:",
+      "syntax": "glab pipeline status"
+    },
+    {
+      "description": "View a running pipeline on a specific branch:",
+      "syntax": "glab pipeline status --branch {{branch_name}}"
+    },
+    {
+      "description": "Get the list of pipelines:",
+      "syntax": "glab pipeline list"
+    },
+    {
+      "description": "Run a manual pipeline on the current branch:",
+      "syntax": "glab pipeline run"
+    },
+    {
+      "description": "Run a manual pipeline on a specific branch:",
+      "syntax": "glab pipeline run --branch {{branch_name}}"
+    }
+  ]
+}

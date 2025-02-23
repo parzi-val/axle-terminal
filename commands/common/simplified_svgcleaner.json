@@ -1,0 +1,14 @@
+{
+  "command": "svgcleaner",
+  "description": "SVG optimizing utility. More information: https://github.com/RazrFalcon/svgcleaner.",
+  "useCases": [
+    {
+      "description": "Optimize an SVG:",
+      "syntax": "svgcleaner {{input.svg}} {{output.svg}}"
+    },
+    {
+      "description": "Optimize an SVG multiple times:",
+      "syntax": "svgcleaner --multipass {{input.svg}} {{output.svg}}"
+    }
+  ]
+}

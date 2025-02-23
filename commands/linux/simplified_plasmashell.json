@@ -1,0 +1,22 @@
+{
+  "command": "plasmashell",
+  "description": "Start and restart Plasma Desktop. More information: https://invent.kde.org/plasma/plasma-desktop.",
+  "useCases": [
+    {
+      "description": "Restart plasmashell:",
+      "syntax": "systemctl restart --user plasma-plasmashell"
+    },
+    {
+      "description": "Restart plasmashell without systemd:",
+      "syntax": "plasmashell --replace &amp; disown"
+    },
+    {
+      "description": "Display [h]elp on command-line options:",
+      "syntax": "plasmashell --help"
+    },
+    {
+      "description": "Display help, including Qt options:",
+      "syntax": "plasmashell --help-all"
+    }
+  ]
+}

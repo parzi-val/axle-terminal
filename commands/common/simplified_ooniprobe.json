@@ -1,0 +1,34 @@
+{
+  "command": "ooniprobe",
+  "description": "Open Observatory of Network Interference (OONI). Test the blocking of websites and apps. Measure the speed and performance of your network. More information: https://ooni.org/support/ooni-probe-cli/.",
+  "useCases": [
+    {
+      "description": "List all tests performed:",
+      "syntax": "ooniprobe list"
+    },
+    {
+      "description": "Show information about a specific test:",
+      "syntax": "ooniprobe list {{7}}"
+    },
+    {
+      "description": "Run all available tests:",
+      "syntax": "ooniprobe run all"
+    },
+    {
+      "description": "Perform a specific test:",
+      "syntax": "ooniprobe run {{performance}}"
+    },
+    {
+      "description": "Check the availability of a specific website:",
+      "syntax": "ooniprobe run websites --input {{https://ooni.org/}}"
+    },
+    {
+      "description": "Check the availability of all websites listed in a file:",
+      "syntax": "ooniprobe run websites --input-file {{path/to/my-websites.txt}}"
+    },
+    {
+      "description": "Display detailed information about a test in JSON format:",
+      "syntax": "ooniprobe show {{9}}"
+    }
+  ]
+}

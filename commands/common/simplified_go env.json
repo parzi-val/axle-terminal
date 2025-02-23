@@ -1,0 +1,22 @@
+{
+  "command": "go env",
+  "description": "Manage environment variables used by the Go toolchain. More information: https://golang.org/cmd/go/#hdr-Print_Go_environment_information.",
+  "useCases": [
+    {
+      "description": "Show all environment variables:",
+      "syntax": "go env"
+    },
+    {
+      "description": "Show a specific environment variable:",
+      "syntax": "go env {{GOPATH}}"
+    },
+    {
+      "description": "Set an environment variable to a value:",
+      "syntax": "go env -w {{GOBIN}}={{path/to/directory}}"
+    },
+    {
+      "description": "Reset an environment variable's value:",
+      "syntax": "go env -u {{GOBIN}}"
+    }
+  ]
+}

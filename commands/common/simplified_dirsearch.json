@@ -1,0 +1,30 @@
+{
+  "command": "dirsearch",
+  "description": "Web path scanner. More information: https://github.com/maurosoria/dirsearch.",
+  "useCases": [
+    {
+      "description": "Scan a web server for common paths with common extensions:",
+      "syntax": "dirsearch --url {{url}} --extensions-list"
+    },
+    {
+      "description": "Scan a list of web servers for common paths with the .php extension:",
+      "syntax": "dirsearch --url-list {{path/to/url-list.txt}} --extensions {{php}}"
+    },
+    {
+      "description": "Scan a web server for user-defined paths with common extensions:",
+      "syntax": "dirsearch --url {{url}} --extensions-list --wordlist {{path/to/url-paths.txt}}"
+    },
+    {
+      "description": "Scan a web server using a cookie:",
+      "syntax": "dirsearch --url {{url}} --extensions {{php}} --cookie {{cookie}}"
+    },
+    {
+      "description": "Scan a web server using the HEAD HTTP method:",
+      "syntax": "dirsearch --url {{url}} --extensions {{php}} --http-method {{HEAD}}"
+    },
+    {
+      "description": "Scan a web server, saving the results to a .json file:",
+      "syntax": "dirsearch --url {{url}} --extensions {{php}} --json-report {{path/to/report.json}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "wasm-opt",
+  "description": "Optimize WebAssembly binary files. More information: https://github.com/webassembly/binaryen.",
+  "useCases": [
+    {
+      "description": "Apply default optimizations and write to a given file:",
+      "syntax": "wasm-opt -O {{input.wasm}} -o {{output.wasm}}"
+    },
+    {
+      "description": "Apply all optimizations and write to a given file (takes more time, but generates optimal code):",
+      "syntax": "wasm-opt -O4 {{input.wasm}} -o {{output.wasm}}"
+    },
+    {
+      "description": "Optimize a file for size:",
+      "syntax": "wasm-opt -Oz {{input.wasm}} -o {{output.wasm}}"
+    },
+    {
+      "description": "Print the textual representation of the binary to console:",
+      "syntax": "wasm-opt {{input.wasm}} --print"
+    }
+  ]
+}

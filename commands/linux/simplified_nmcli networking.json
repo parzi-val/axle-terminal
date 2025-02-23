@@ -1,0 +1,22 @@
+{
+  "command": "nmcli networking",
+  "description": "Manage the networking status of NetworkManager. This subcommand can also be called with nmcli n. More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmcli.html.",
+  "useCases": [
+    {
+      "description": "Show the networking status of NetworkManager:",
+      "syntax": "nmcli networking"
+    },
+    {
+      "description": "Enable or disable networking and all interfaces managed by NetworkManager:",
+      "syntax": "nmcli networking {{on|off}}"
+    },
+    {
+      "description": "Show the last known connectivity state:",
+      "syntax": "nmcli networking connectivity"
+    },
+    {
+      "description": "Show the current connectivity state:",
+      "syntax": "nmcli networking connectivity check"
+    }
+  ]
+}

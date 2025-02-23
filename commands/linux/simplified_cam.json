@@ -1,0 +1,22 @@
+{
+  "command": "cam",
+  "description": "Frontend tool for libcamera. More information: https://libcamera.org/docs.html.",
+  "useCases": [
+    {
+      "description": "List available cameras:",
+      "syntax": "cam --list"
+    },
+    {
+      "description": "List controls of a camera:",
+      "syntax": "cam --camera {{camera_index}} --list-controls"
+    },
+    {
+      "description": "Write frames to a folder:",
+      "syntax": "cam --camera {{camera_index}} --capture={{frames_to_capture}} --file"
+    },
+    {
+      "description": "Display camera feed in a window:",
+      "syntax": "cam --camera {{camera_index}} --capture --sdl"
+    }
+  ]
+}

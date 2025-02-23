@@ -1,0 +1,22 @@
+{
+  "command": "ppmcie",
+  "description": "Draw a CIE color chart as a PPM image. More information: https://netpbm.sourceforge.net/doc/ppmcie.html.",
+  "useCases": [
+    {
+      "description": "Draw a CIE color chart using the REC709 color system as a PPM image:",
+      "syntax": "ppmcie &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Specify the color system to be used:",
+      "syntax": "ppmcie -{{cie|ebu|hdtv|ntsc|smpte}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Specify the location of the individual illuminants:",
+      "syntax": "ppmcie -{{red|green|blue}} {{xpos ypos}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Do not dim the area outside the Maxwell triangle:",
+      "syntax": "ppmcie -full &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

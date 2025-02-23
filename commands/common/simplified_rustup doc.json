@@ -1,0 +1,26 @@
+{
+  "command": "rustup doc",
+  "description": "Open the offline Rust documentation for the current toolchain. There are a lot more documentation pages not mentioned here. See rustup help doc for more information. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Open the main page:",
+      "syntax": "rustup doc"
+    },
+    {
+      "description": "Open the documentation for a specific topic (a module in the standard library, a type, a keyword, etc.):",
+      "syntax": "rustup doc {{std::fs|usize|fn|...}}"
+    },
+    {
+      "description": "Open the Rust Programming Language book:",
+      "syntax": "rustup doc --book"
+    },
+    {
+      "description": "Open the Cargo book:",
+      "syntax": "rustup doc --cargo"
+    },
+    {
+      "description": "Open the Rust Reference:",
+      "syntax": "rustup doc --reference"
+    }
+  ]
+}

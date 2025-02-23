@@ -1,0 +1,22 @@
+{
+  "command": "archwiki-rs",
+  "description": "Read, search and download pages from the ArchWiki. More information: https://gitlab.com/lucifayr/archwiki-rs.",
+  "useCases": [
+    {
+      "description": "Read a page from the ArchWiki:",
+      "syntax": "archwiki-rs read-page {{page_title}}"
+    },
+    {
+      "description": "Read a page from the ArchWiki in the specified format:",
+      "syntax": "archwiki-rs read-page {{page_title}} --format {{plain-text|markdown|html}}"
+    },
+    {
+      "description": "Search the ArchWiki for pages containing the provided text:",
+      "syntax": "archwiki-rs search &quot;{{search_text}}&quot; --text-search"
+    },
+    {
+      "description": "Download a local copy of all ArchWiki pages into a specific directory:",
+      "syntax": "archwiki-rs local-wiki {{/path/to/local_wiki}} --format {{plain-text|markdown|html}}"
+    }
+  ]
+}

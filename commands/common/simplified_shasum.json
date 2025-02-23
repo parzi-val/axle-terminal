@@ -1,0 +1,38 @@
+{
+  "command": "shasum",
+  "description": "Calculate SHA cryptographic checksums. More information: https://manned.org/shasum.",
+  "useCases": [
+    {
+      "description": "Calculate the SHA1 checksum for one or more files:",
+      "syntax": "shasum {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Calculate the SHA checksum for one or more files with the specified algorithm:",
+      "syntax": "shasum --algorithm {{1|224|256|384|512|512224|512256}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Calculate a SHA1 checksum from stdin:",
+      "syntax": "{{command}} | shasum"
+    },
+    {
+      "description": "Calculate and save the list of SHA256 checksums to a file:",
+      "syntax": "shasum --algorithm 256 {{path/to/file1 path/to/file2 ...}} &gt; {{path/to/file.sha256}}"
+    },
+    {
+      "description": "Read a file of SHA checksums and filenames and verify all files have matching checksums (the algorithm will be automatically detected):",
+      "syntax": "shasum --check {{path/to/file}}"
+    },
+    {
+      "description": "Only show a message for missing files or when verification fails:",
+      "syntax": "shasum --check --quiet {{path/to/file}}"
+    },
+    {
+      "description": "Only show a message when verification fails, ignoring missing files:",
+      "syntax": "shasum --ignore-missing --check --quiet {{path/to/file}}"
+    },
+    {
+      "description": "Check a known SHA checksum of a file:",
+      "syntax": "echo {{known_sha_checksum_of_the_file}} {{path/to/file}} | shasum --check"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "sslscan",
+  "description": "Check SSL/TLS protocols and ciphers supported by a server. More information: https://github.com/rbsec/sslscan.",
+  "useCases": [
+    {
+      "description": "Test a server on port 443:",
+      "syntax": "sslscan {{example.com}}"
+    },
+    {
+      "description": "Test a specified port:",
+      "syntax": "sslscan {{example.com}}:{{465}}"
+    },
+    {
+      "description": "Show certificate information:",
+      "syntax": "testssl --show-certificate {{example.com}}"
+    }
+  ]
+}

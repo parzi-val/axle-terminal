@@ -1,0 +1,26 @@
+{
+  "command": "psql",
+  "description": "PostgreSQL command-line client. More information: https://www.postgresql.org/docs/current/app-psql.html.",
+  "useCases": [
+    {
+      "description": "Connect to the database. By default, it connects to the local socket using port 5432 with the currently logged in user:",
+      "syntax": "psql {{database}}"
+    },
+    {
+      "description": "Connect to the database on given server host running on given port with given username, without a password prompt:",
+      "syntax": "psql -h {{host}} -p {{port}} -U {{username}} {{database}}"
+    },
+    {
+      "description": "Connect to the database; user will be prompted for password:",
+      "syntax": "psql -h {{host}} -p {{port}} -U {{username}} -W {{database}}"
+    },
+    {
+      "description": "Execute a single SQL query or PostgreSQL command on the given database (useful in shell scripts):",
+      "syntax": "psql -c '{{query}}' {{database}}"
+    },
+    {
+      "description": "Execute commands from a file on the given database:",
+      "syntax": "psql {{database}} -f {{file.sql}}"
+    }
+  ]
+}

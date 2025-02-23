@@ -1,0 +1,38 @@
+{
+  "command": "ipcs",
+  "description": "Show information about the usage of System V IPC facilities: shared memory segments, message queues, and semaphore arrays. See also: lsipc for a more flexible tool, ipcmk for creating IPC facilities, and ipcrm for deleting them. More information: https://manned.org/ipcs.",
+  "useCases": [
+    {
+      "description": "Show information about all active IPC facilities:",
+      "syntax": "ipcs"
+    },
+    {
+      "description": "Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets:",
+      "syntax": "ipcs {{--shmems|--queues|--semaphores}}"
+    },
+    {
+      "description": "Show full details on the resource with a specific [i]D:",
+      "syntax": "ipcs {{--shmems|--queues|--semaphores}} --id {{resource_id}}"
+    },
+    {
+      "description": "Show [l]imits in [b]ytes or in a human-readable format:",
+      "syntax": "ipcs --limits {{--bytes|--human}}"
+    },
+    {
+      "description": "Show s[u]mmary about current usage:",
+      "syntax": "ipcs --summary"
+    },
+    {
+      "description": "Show [c]reator's and owner's UIDs and PIDs for all IPC facilities:",
+      "syntax": "ipcs --creator"
+    },
+    {
+      "description": "Show the [p]ID of the last operators for all IPC facilities:",
+      "syntax": "ipcs --pid"
+    },
+    {
+      "description": "Show last access [t]imes for all IPC facilities:",
+      "syntax": "ipcs --time"
+    }
+  ]
+}

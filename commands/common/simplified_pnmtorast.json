@@ -1,0 +1,14 @@
+{
+  "command": "pnmtorast",
+  "description": "Convert a PNM file to a Sun rasterfile. More information: https://netpbm.sourceforge.net/doc/pnmtorast.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a RAST image:",
+      "syntax": "pnmtorast {{path/to/input.pnm}} &gt; {{path/to/output.rast}}"
+    },
+    {
+      "description": "Force either RT_STANDARD or RT_BYTE_ENCODED form for the output:",
+      "syntax": "pnmtorast -{{standard|rle}} {{path/to/input.pnm}} &gt; {{path/to/output.rast}}"
+    }
+  ]
+}

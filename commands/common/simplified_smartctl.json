@@ -1,0 +1,26 @@
+{
+  "command": "smartctl",
+  "description": "Monitor disk health including SMART data. More information: https://www.smartmontools.org.",
+  "useCases": [
+    {
+      "description": "Display SMART health summary:",
+      "syntax": "sudo smartctl --health {{/dev/sdX}}"
+    },
+    {
+      "description": "Display device information:",
+      "syntax": "sudo smartctl --info {{/dev/sdX}}"
+    },
+    {
+      "description": "Start a short self-test in the background:",
+      "syntax": "sudo smartctl --test short {{/dev/sdX}}"
+    },
+    {
+      "description": "Display current/last self-test status and other SMART capabilities:",
+      "syntax": "sudo smartctl --capabilities {{/dev/sdX}}"
+    },
+    {
+      "description": "Display exhaustive SMART data:",
+      "syntax": "sudo smartctl --all {{/dev/sdX}}"
+    }
+  ]
+}

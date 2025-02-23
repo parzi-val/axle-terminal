@@ -1,0 +1,30 @@
+{
+  "command": "aws quicksight",
+  "description": "Create, delete, list, search and update AWS QuickSight entities. More information: https://docs.aws.amazon.com/cli/latest/reference/quicksight/.",
+  "useCases": [
+    {
+      "description": "List datasets:",
+      "syntax": "aws quicksight list-data-sets --aws-account-id {{aws_account_id}}"
+    },
+    {
+      "description": "List users:",
+      "syntax": "aws quicksight list-users --aws-account-id {{aws_account_id}} --namespace default"
+    },
+    {
+      "description": "List groups:",
+      "syntax": "aws quicksight list-groups --aws-account-id {{aws_account_id}} --namespace default"
+    },
+    {
+      "description": "List dashboards:",
+      "syntax": "aws quicksight list-dashboards --aws-account-id {{aws_account_id}}"
+    },
+    {
+      "description": "Display detailed information about a dataset:",
+      "syntax": "aws quicksight describe-data-set --aws-account-id {{aws_account_id}} --data-set-id {{data_set_id}}"
+    },
+    {
+      "description": "Display who has access to the dataset and what kind of actions they can perform on the dataset:",
+      "syntax": "aws quicksight describe-data-set-permissions --aws-account-id {{aws_account_id}} --data-set-id {{data_set_id}}"
+    }
+  ]
+}

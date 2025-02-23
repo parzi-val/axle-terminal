@@ -1,0 +1,18 @@
+{
+  "command": "detox",
+  "description": "Renames files to make them easier to work with. It removes spaces and other such annoyances like duplicate underline characters. More information: https://github.com/dharple/detox.",
+  "useCases": [
+    {
+      "description": "Remove spaces and other undesirable characters from a file's name:",
+      "syntax": "detox {{path/to/file}}"
+    },
+    {
+      "description": "Show how detox would rename all the files in a directory tree:",
+      "syntax": "detox --dry-run -r {{path/to/directory}}"
+    },
+    {
+      "description": "Remove spaces and other undesirable characters from all files in a directory tree:",
+      "syntax": "detox -r {{path/to/directory}}"
+    }
+  ]
+}

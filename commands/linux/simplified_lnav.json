@@ -1,0 +1,18 @@
+{
+  "command": "lnav",
+  "description": "Advanced log file viewer to analyze logs with little to no setup. More information: https://docs.lnav.org/en/latest/cli.html.",
+  "useCases": [
+    {
+      "description": "View logs of a program, specifying log files, directories or URLs:",
+      "syntax": "lnav {{path/to/log_or_directory|url}}"
+    },
+    {
+      "description": "View logs of a specific remote host (SSH passwordless login required):",
+      "syntax": "lnav {{ssh}} {{user}}@{{host1.example.com}}:{{/var/log/syslog.log}}"
+    },
+    {
+      "description": "Validate the format of log files against the configuration and report any errors:",
+      "syntax": "lnav -C {{path/to/log_directory}}"
+    }
+  ]
+}

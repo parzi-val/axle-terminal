@@ -1,0 +1,10 @@
+{
+  "command": "sunicontopnm",
+  "description": "Convert a Sun icon into a Netpbm image. More information: https://netpbm.sourceforge.net/doc/sunicontopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a Sun icon into a Netpbm image:",
+      "syntax": "sunicontopnm {{path/to/input.ico}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

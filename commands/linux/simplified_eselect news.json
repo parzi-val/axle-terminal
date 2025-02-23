@@ -1,0 +1,30 @@
+{
+  "command": "eselect news",
+  "description": "An eselect module for reading Gentoo news items. Note: Portage will print a notice when a repository is synchronized and there are unread news items. More information: https://wiki.gentoo.org/wiki/Eselect#News.",
+  "useCases": [
+    {
+      "description": "List available news items with their numbers (all by default):",
+      "syntax": "eselect news list {{all|new}}"
+    },
+    {
+      "description": "Print the specified news items:",
+      "syntax": "eselect news read {{number1 number2 ...}}"
+    },
+    {
+      "description": "Print all unread news items:",
+      "syntax": "eselect news read"
+    },
+    {
+      "description": "Mark the specified news items as unread:",
+      "syntax": "eselect news unread {{number1 number2 ...}}"
+    },
+    {
+      "description": "Delete all read news items:",
+      "syntax": "eselect news purge"
+    },
+    {
+      "description": "Print the number of available news items (new by default):",
+      "syntax": "eselect news count {{all|new}}"
+    }
+  ]
+}

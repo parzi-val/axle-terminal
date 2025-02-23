@@ -1,0 +1,22 @@
+{
+  "command": "upnpc",
+  "description": "Configure port forwarding rules on your router via the UPnP protocol. More information: https://manned.org/upnpc.",
+  "useCases": [
+    {
+      "description": "Forward the external TCP port 80 to port 8080 on a local machine:",
+      "syntax": "upnpc -a {{192.168.0.1}} 8080 80 tcp"
+    },
+    {
+      "description": "Delete any port redirection for external TCP port 80:",
+      "syntax": "upnpc -d 80 tcp"
+    },
+    {
+      "description": "Get information about UPnP devices on your network:",
+      "syntax": "upnpc -s"
+    },
+    {
+      "description": "List existing redirections:",
+      "syntax": "upnpc -l"
+    }
+  ]
+}

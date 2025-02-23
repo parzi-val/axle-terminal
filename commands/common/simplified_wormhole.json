@@ -1,0 +1,18 @@
+{
+  "command": "wormhole",
+  "description": "Get things from one computer to another, safely. More information: https://magic-wormhole.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Send a file:",
+      "syntax": "wormhole send {{path/to/file}}"
+    },
+    {
+      "description": "Receive a file:",
+      "syntax": "wormhole receive {{wormhole_code}}"
+    },
+    {
+      "description": "Send raw text:",
+      "syntax": "wormhole send"
+    }
+  ]
+}

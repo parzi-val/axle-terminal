@@ -1,0 +1,38 @@
+{
+  "command": "web-ext",
+  "description": "A command-line tool for managing web extension development. More information: https://github.com/mozilla/web-ext.",
+  "useCases": [
+    {
+      "description": "Run the web extension in the current directory in Firefox:",
+      "syntax": "web-ext run"
+    },
+    {
+      "description": "Run a web extension from a specific directory in Firefox:",
+      "syntax": "web-ext run --source-dir {{path/to/directory}}"
+    },
+    {
+      "description": "Display verbose execution output:",
+      "syntax": "web-ext run --verbose"
+    },
+    {
+      "description": "Run a web extension in Firefox Android:",
+      "syntax": "web-ext run --target firefox-android"
+    },
+    {
+      "description": "Lint the manifest and source files for errors:",
+      "syntax": "web-ext lint"
+    },
+    {
+      "description": "Build and package the extension:",
+      "syntax": "web-ext build"
+    },
+    {
+      "description": "Display verbose build output:",
+      "syntax": "web-ext build --verbose"
+    },
+    {
+      "description": "Sign a package for self-hosting:",
+      "syntax": "web-ext sign --api-key {{api_key}} --api-secret {{api_secret}}"
+    }
+  ]
+}

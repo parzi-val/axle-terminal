@@ -1,0 +1,34 @@
+{
+  "command": "aws eks",
+  "description": "Manage Amazon Elastic Kubernetes Service (EKS) addons, clusters, and node groups. Amazon EKS is a service for easily running Kubernetes on AWS. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/index.html.",
+  "useCases": [
+    {
+      "description": "Create an EKS Cluster:",
+      "syntax": "aws eks create-cluster --name {{cluster_name}} --role-arn {{eks_service_role_arn}} --resources-vpc-config {{subnetIds={{subnet_ids}},securityGroupIds={{security_group_ids}}}}"
+    },
+    {
+      "description": "Update kubeconfig to connect to the EKS Cluster:",
+      "syntax": "aws eks update-kubeconfig --name {{cluster_name}}"
+    },
+    {
+      "description": "List available EKS clusters:",
+      "syntax": "aws eks list-clusters"
+    },
+    {
+      "description": "Describe EKS cluster details:",
+      "syntax": "aws eks describe-cluster --name {{cluster_name}}"
+    },
+    {
+      "description": "Delete an EKS Cluster:",
+      "syntax": "aws eks delete-cluster --name {{cluster_name}}"
+    },
+    {
+      "description": "List nodegroups in an EKS cluster:",
+      "syntax": "aws eks list-nodegroups --cluster-name {{cluster_name}}"
+    },
+    {
+      "description": "Describe nodegroup details:",
+      "syntax": "aws eks describe-nodegroup --cluster-name {{cluster_name}} --nodegroup-name {{nodegroup_name}}"
+    }
+  ]
+}

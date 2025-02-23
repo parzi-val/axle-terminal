@@ -1,0 +1,30 @@
+{
+  "command": "wal",
+  "description": "Create color schemes based on the dominant colors of a wallpaper. More information: https://github.com/dylanaraps/pywal.",
+  "useCases": [
+    {
+      "description": "Preview color scheme:",
+      "syntax": "wal --preview {{image.png}}"
+    },
+    {
+      "description": "Create color scheme:",
+      "syntax": "wal -i {{image.png}}"
+    },
+    {
+      "description": "Create a light color scheme:",
+      "syntax": "wal -i {{image.png}} -l"
+    },
+    {
+      "description": "Skip setting the desktop wallpaper:",
+      "syntax": "wal -i {{image.png}} -n"
+    },
+    {
+      "description": "Skip setting the terminal colors:",
+      "syntax": "wal -i {{image.png}} -s"
+    },
+    {
+      "description": "Restore the previously generated color scheme and wallpaper:",
+      "syntax": "wal -R"
+    }
+  ]
+}

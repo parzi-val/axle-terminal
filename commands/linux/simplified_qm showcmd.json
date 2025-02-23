@@ -1,0 +1,18 @@
+{
+  "command": "qm showcmd",
+  "description": "Show command-line which is used to start the VM (debug info). More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Show command-line for a specific virtual machine:",
+      "syntax": "qm showcmd {{vm_id}}"
+    },
+    {
+      "description": "Put each option on a new line to enhance human readability:",
+      "syntax": "qm showcmd --pretty {{true}} {{vm_id}}"
+    },
+    {
+      "description": "Fetch configuration values from a specific snapshot:",
+      "syntax": "qm showcmd --snapshot {{string}} {{vm_id}}"
+    }
+  ]
+}

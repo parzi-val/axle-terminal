@@ -1,0 +1,30 @@
+{
+  "command": "expose",
+  "description": "An open source tunnel application for sharing websites. More information: https://beyondco.de/docs/expose.",
+  "useCases": [
+    {
+      "description": "Register your authentication token:",
+      "syntax": "expose token {{token}}"
+    },
+    {
+      "description": "Share the current working directory:",
+      "syntax": "expose"
+    },
+    {
+      "description": "Share the current working directory with a specific subdomain:",
+      "syntax": "expose --subdomain={{subdomain}}"
+    },
+    {
+      "description": "Share a local URL:",
+      "syntax": "expose share {{url}}"
+    },
+    {
+      "description": "Run the Expose server:",
+      "syntax": "expose serve"
+    },
+    {
+      "description": "Run the Expose server with a specific hostname:",
+      "syntax": "expose serve {{hostname}}"
+    }
+  ]
+}

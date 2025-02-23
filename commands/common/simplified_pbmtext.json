@@ -1,0 +1,22 @@
+{
+  "command": "pbmtext",
+  "description": "Render text as a PBM image. See also: pbmtextps. More information: https://netpbm.sourceforge.net/doc/pbmtext.html.",
+  "useCases": [
+    {
+      "description": "Render a single line of text as a PBM image:",
+      "syntax": "pbmtext &quot;{{Hello World!}}&quot; &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Render multiple lines of text as a PBM image:",
+      "syntax": "echo &quot;{{Hello\\nWorld!}}&quot; | pbmtext &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Render text using a custom font supplied as a PBM file:",
+      "syntax": "pbmtext -font {{path/to/font.pbm}} &quot;{{Hello World!}}&quot; &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Specify the number of pixels between characters and lines:",
+      "syntax": "echo &quot;{{Hello\\nWorld!}}&quot; | pbmtext -space {{3}} -lspace {{10}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "mapfile",
+  "description": "This command is an alias of readarray.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr readarray"
+    }
+  ]
+}

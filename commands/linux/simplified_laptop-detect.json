@@ -1,0 +1,18 @@
+{
+  "command": "laptop-detect",
+  "description": "Attempt to determine if the script is running on a laptop or desktop. More information: https://gitlab.com/debiants/laptop-detect.",
+  "useCases": [
+    {
+      "description": "Return an exit status of 0 if the current device is likely a laptop, else returns 1:",
+      "syntax": "laptop-detect"
+    },
+    {
+      "description": "Print the type of device that the current system is detected as:",
+      "syntax": "laptop-detect --verbose"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "laptop-detect --version"
+    }
+  ]
+}

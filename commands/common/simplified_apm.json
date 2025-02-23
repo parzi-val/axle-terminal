@@ -1,0 +1,18 @@
+{
+  "command": "apm",
+  "description": "Atom editor Package Manager. See also: atom. More information: https://github.com/atom/apm.",
+  "useCases": [
+    {
+      "description": "Install a package from http://atom.io/packages or a theme from http://atom.io/themes:",
+      "syntax": "apm install {{package}}"
+    },
+    {
+      "description": "Remove a package/theme:",
+      "syntax": "apm remove {{package}}"
+    },
+    {
+      "description": "Upgrade a package/theme:",
+      "syntax": "apm upgrade {{package}}"
+    }
+  ]
+}

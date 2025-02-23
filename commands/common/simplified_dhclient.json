@@ -1,0 +1,14 @@
+{
+  "command": "dhclient",
+  "description": "DHCP client. More information: https://manned.org/dhclient.",
+  "useCases": [
+    {
+      "description": "Get an IP address for the eth0 interface:",
+      "syntax": "sudo dhclient {{eth0}}"
+    },
+    {
+      "description": "Release an IP address for the eth0 interface:",
+      "syntax": "sudo dhclient -r {{eth0}}"
+    }
+  ]
+}

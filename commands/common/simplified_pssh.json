@@ -1,0 +1,30 @@
+{
+  "command": "pssh",
+  "description": "Parallel SSH program. More information: https://manned.org/pssh.",
+  "useCases": [
+    {
+      "description": "Run a command on two hosts, and print its output on each server inline:",
+      "syntax": "pssh -i -H &quot;{{host1}} {{host2}}&quot; {{hostname -i}}"
+    },
+    {
+      "description": "Run a command and save the output to separate files:",
+      "syntax": "pssh -H {{host1}} -H {{host2}} -o {{path/to/output_dir}} {{hostname -i}}"
+    },
+    {
+      "description": "Run a command on multiple hosts, specified in a new-line separated file:",
+      "syntax": "pssh -i -h {{path/to/hosts_file}} {{hostname -i}}"
+    },
+    {
+      "description": "Run a command as root (this asks for the root password):",
+      "syntax": "pssh -i -h {{path/to/hosts_file}} -A -l {{root_username}} {{hostname -i}}"
+    },
+    {
+      "description": "Run a command with extra SSH arguments:",
+      "syntax": "pssh -i -h {{path/to/hosts_file}} -x &quot;{{-O VisualHostKey=yes}}&quot; {{hostname -i}}"
+    },
+    {
+      "description": "Run a command limiting the number of parallel connections to 10:",
+      "syntax": "pssh -i -h {{path/to/hosts_file}} -p {{10}} '{{cd dir; ./script.sh; exit}}'"
+    }
+  ]
+}

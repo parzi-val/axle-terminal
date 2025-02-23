@@ -1,0 +1,18 @@
+{
+  "command": "ansiweather",
+  "description": "Display the current weather conditions in your terminal. More information: https://github.com/fcambus/ansiweather.",
+  "useCases": [
+    {
+      "description": "Display a [f]orecast using metric [u]nits for the next seven days for a specific [l]ocation:",
+      "syntax": "ansiweather -u metric -f 7 -l {{Rzeszow,PL}}"
+    },
+    {
+      "description": "Display a [F]orecast for the next five days showing [s]ymbols and [d]aylight data for your current location:",
+      "syntax": "ansiweather -F -s true -d true"
+    },
+    {
+      "description": "Display today's [w]ind and [h]umidity data for your current location:",
+      "syntax": "ansiweather -w true -h true"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "quotacheck",
+  "description": "Scan a filesystem for disk usage; create, check and repair quota files. It is best to run quota check with quotas turned off to prevent damage or loss to quota files. More information: https://manned.org/quotacheck.",
+  "useCases": [
+    {
+      "description": "Check quotas on all mounted non-NFS filesystems:",
+      "syntax": "sudo quotacheck --all"
+    },
+    {
+      "description": "Force check even if quotas are enabled (this can cause damage or loss to quota files):",
+      "syntax": "sudo quotacheck --force {{mountpoint}}"
+    },
+    {
+      "description": "Check quotas on a given filesystem in debug mode:",
+      "syntax": "sudo quotacheck --debug {{mountpoint}}"
+    },
+    {
+      "description": "Check quotas on a given filesystem, displaying the progress:",
+      "syntax": "sudo quotacheck --verbose {{mountpoint}}"
+    },
+    {
+      "description": "Check user quotas:",
+      "syntax": "sudo quotacheck --user {{user}} {{mountpoint}}"
+    },
+    {
+      "description": "Check group quotas:",
+      "syntax": "sudo quotacheck --group {{group}} {{mountpoint}}"
+    }
+  ]
+}

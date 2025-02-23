@@ -1,0 +1,22 @@
+{
+  "command": "odps func",
+  "description": "Manage functions in ODPS (Open Data Processing Service). See also odps. More information: https://www.alibabacloud.com/help/doc-detail/27971.htm.",
+  "useCases": [
+    {
+      "description": "Show functions in the current project:",
+      "syntax": "list functions;"
+    },
+    {
+      "description": "Create a Java function using a .jar resource:",
+      "syntax": "create function {{func_name}} as {{path.to.package.Func}} using '{{package.jar}}';"
+    },
+    {
+      "description": "Create a Python function using a .py resource:",
+      "syntax": "create function {{func_name}} as {{script.Func}} using '{{script.py}}';"
+    },
+    {
+      "description": "Delete a function:",
+      "syntax": "drop function {{func_name}};"
+    }
+  ]
+}

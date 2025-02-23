@@ -1,0 +1,14 @@
+{
+  "command": "cargo fetch",
+  "description": "Fetch dependencies of a package from the network. More information: https://doc.rust-lang.org/cargo/commands/cargo-fetch.html.",
+  "useCases": [
+    {
+      "description": "Fetch dependencies specified in Cargo.lock (for all targets):",
+      "syntax": "cargo fetch"
+    },
+    {
+      "description": "Fetch dependencies for the specified target:",
+      "syntax": "cargo fetch --target {{target_triple}}"
+    }
+  ]
+}

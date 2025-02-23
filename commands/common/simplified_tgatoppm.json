@@ -1,0 +1,22 @@
+{
+  "command": "tgatoppm",
+  "description": "Convert a TrueVision Targa file to a Netpbm image. More information: https://netpbm.sourceforge.net/doc/tgatoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a TrueVision Targa file to a PPM image:",
+      "syntax": "tgatoppm {{path/to/file.tga}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Dump information from the TGA header to stdout:",
+      "syntax": "tgatoppm --headerdump {{path/to/file.tga}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Write the transparency channel values of the input image to the specified file:",
+      "syntax": "tgatoppm --alphaout {{path/to/transparency_file.pgm}} {{path/to/file.tga}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "tgatoppm -version"
+    }
+  ]
+}

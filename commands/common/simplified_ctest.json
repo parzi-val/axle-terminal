@@ -1,0 +1,18 @@
+{
+  "command": "ctest",
+  "description": "CMake test driver program. More information: https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest.",
+  "useCases": [
+    {
+      "description": "Run all tests defined in the CMake project, executing 4 jobs at a time in parallel:",
+      "syntax": "ctest -j{{4}} --output-on-failure"
+    },
+    {
+      "description": "List available tests:",
+      "syntax": "ctest -N"
+    },
+    {
+      "description": "Run a single test based on its name, or filter on a regular expression:",
+      "syntax": "ctest --output-on-failure -R '^{{test_name}}$'"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ocamlc",
+  "description": "The OCaml bytecode compiler. Produces executables runnable by the OCaml interpreter. More information: https://ocaml.org.",
+  "useCases": [
+    {
+      "description": "Create a binary from a source file:",
+      "syntax": "ocamlc {{path/to/source_file.ml}}"
+    },
+    {
+      "description": "Create a named binary from a source file:",
+      "syntax": "ocamlc -o {{path/to/binary}} {{path/to/source_file.ml}}"
+    },
+    {
+      "description": "Automatically generate a module signature (interface) file:",
+      "syntax": "ocamlc -i {{path/to/source_file.ml}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "lolcat",
+  "description": "Put a rainbow in everything you cat to the console. More information: https://github.com/busyloop/lolcat.",
+  "useCases": [
+    {
+      "description": "Print a file to the console in rainbow colors:",
+      "syntax": "lolcat {{path/to/file}}"
+    },
+    {
+      "description": "Print the result of a text-producing command in rainbow colors:",
+      "syntax": "{{fortune}} | lolcat"
+    },
+    {
+      "description": "Print a file to the console with animated rainbow colors:",
+      "syntax": "lolcat -a {{path/to/file}}"
+    },
+    {
+      "description": "Print a file to the console with 24-bit (truecolor) rainbow colors:",
+      "syntax": "lolcat -t {{path/to/file}}"
+    }
+  ]
+}

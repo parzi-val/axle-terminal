@@ -1,0 +1,22 @@
+{
+  "command": "git diff-files",
+  "description": "Compare files using their sha1 hashes and modes. More information: https://git-scm.com/docs/git-diff-files.",
+  "useCases": [
+    {
+      "description": "Compare all changed files:",
+      "syntax": "git diff-files"
+    },
+    {
+      "description": "Compare only specified files:",
+      "syntax": "git diff-files {{path/to/file}}"
+    },
+    {
+      "description": "Show only the names of changed files:",
+      "syntax": "git diff-files --name-only"
+    },
+    {
+      "description": "Output a summary of extended header information:",
+      "syntax": "git diff-files --summary"
+    }
+  ]
+}

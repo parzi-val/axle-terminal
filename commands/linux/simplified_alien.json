@@ -1,0 +1,22 @@
+{
+  "command": "alien",
+  "description": "Convert different installation packages to other formats. See also: debtap, for .deb conversion on Arch Linux. More information: https://manned.org/alien.",
+  "useCases": [
+    {
+      "description": "Convert a specific installation file to Debian format (.deb extension):",
+      "syntax": "sudo alien --to-deb {{path/to/file}}"
+    },
+    {
+      "description": "Convert a specific installation file to Red Hat format (.rpm extension):",
+      "syntax": "sudo alien --to-rpm {{path/to/file}}"
+    },
+    {
+      "description": "Convert a specific installation file to a Slackware installation file (.tgz extension):",
+      "syntax": "sudo alien --to-tgz {{path/to/file}}"
+    },
+    {
+      "description": "Convert a specific installation file to Debian format and install on the system:",
+      "syntax": "sudo alien --to-deb --install {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "rmdir",
+  "description": "Remove a directory and its contents. In PowerShell, this command is an alias of Remove-Item. This documentation is based on the Command Prompt (cmd) version of rmdir. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/rmdir.",
+  "useCases": [
+    {
+      "description": "View the documentation of the equivalent PowerShell command:",
+      "syntax": "tldr remove-item"
+    },
+    {
+      "description": "Remove an empty directory:",
+      "syntax": "rmdir {{path\\to\\directory}}"
+    },
+    {
+      "description": "Remove a directory and its contents recursively:",
+      "syntax": "rmdir {{path\\to\\directory}} /s"
+    },
+    {
+      "description": "Remove a directory and its contents recursively without prompting:",
+      "syntax": "rmdir {{path\\to\\directory}} /s /q"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "ni",
+  "description": "In PowerShell, this command is an alias of New-Item.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr new-item"
+    }
+  ]
+}

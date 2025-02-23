@@ -1,0 +1,14 @@
+{
+  "command": "hub create",
+  "description": "Create a new repository on GitHub. More information: https://hub.github.com/hub-create.1.html.",
+  "useCases": [
+    {
+      "description": "Upload the current (local-only) repository to your GitHub account as public:",
+      "syntax": "hub create"
+    },
+    {
+      "description": "Create a private repository and open the new repository in a web browser:",
+      "syntax": "hub create --private --browse"
+    }
+  ]
+}

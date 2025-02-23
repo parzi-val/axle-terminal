@@ -1,0 +1,22 @@
+{
+  "command": "pkgctl diff",
+  "description": "Compare package files using different modes. See also: pkgctl. More information: https://manned.org/pkgctl-diff.1.",
+  "useCases": [
+    {
+      "description": "Compare package files in tar content [l]ist different mode (default):",
+      "syntax": "pkgctl diff --list {{path/to/file|pkgname}}"
+    },
+    {
+      "description": "Compare package files in [d]iffoscope different mode:",
+      "syntax": "pkgctl diff --diffoscope {{path/to/file|pkgname}}"
+    },
+    {
+      "description": "Compare package files in .PKGINFO different mode:",
+      "syntax": "pkgctl diff --pkginfo {{path/to/file|pkgname}}"
+    },
+    {
+      "description": "Compare package files in .BUILDINFO different mode:",
+      "syntax": "pkgctl diff --buildinfo {{path/to/file|pkgname}}"
+    }
+  ]
+}

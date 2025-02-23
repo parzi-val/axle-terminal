@@ -1,0 +1,18 @@
+{
+  "command": "debman",
+  "description": "Read man pages from uninstalled packages. More information: https://manned.org/debman.1.",
+  "useCases": [
+    {
+      "description": "Read a man page for a command that is provided by a specified package:",
+      "syntax": "debman -p {{package}} {{command}}"
+    },
+    {
+      "description": "Specify a package version to download:",
+      "syntax": "debman -p {{package}}={{version}} {{command}}"
+    },
+    {
+      "description": "Read a man page in a .deb file:",
+      "syntax": "debman -f {{path/to/filename.deb}} {{command}}"
+    }
+  ]
+}

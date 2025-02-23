@@ -1,0 +1,34 @@
+{
+  "command": "sui move",
+  "description": "Work with Move source code. More information: https://docs.sui.io/references/cli/move.",
+  "useCases": [
+    {
+      "description": "Create a new Move project in the given folder:",
+      "syntax": "sui move new {{project_name}}"
+    },
+    {
+      "description": "Test the Move project in the current directory:",
+      "syntax": "sui move test"
+    },
+    {
+      "description": "Test with coverage and get a summary:",
+      "syntax": "sui move test --coverage; sui move coverage summary"
+    },
+    {
+      "description": "Find which parts of your code are covered from tests (i.e. explain coverage results):",
+      "syntax": "sui move coverage source --module {{module_name}}"
+    },
+    {
+      "description": "Build the Move project in the current directory:",
+      "syntax": "sui move build"
+    },
+    {
+      "description": "Build the Move project from the given path:",
+      "syntax": "sui move build --path {{path}}"
+    },
+    {
+      "description": "Migrate to Move 2024 for the package at the provided path:",
+      "syntax": "sui move migrate {{path}}"
+    }
+  ]
+}

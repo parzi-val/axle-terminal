@@ -1,0 +1,34 @@
+{
+  "command": "ag",
+  "description": "The Silver Searcher. Like ack, but aims to be faster. More information: https://github.com/ggreer/the_silver_searcher.",
+  "useCases": [
+    {
+      "description": "Find files containing \"foo\", and print the line matches in context:",
+      "syntax": "ag {{foo}}"
+    },
+    {
+      "description": "Find files containing \"foo\" in a specific directory:",
+      "syntax": "ag {{foo}} {{path/to/directory}}"
+    },
+    {
+      "description": "Find files containing \"foo\", but only [l]ist the filenames:",
+      "syntax": "ag -l {{foo}}"
+    },
+    {
+      "description": "Find files containing \"FOO\" case-[i]nsensitively, and print [o]nly the match, rather than the whole line:",
+      "syntax": "ag -i -o {{FOO}}"
+    },
+    {
+      "description": "Find \"foo\" in files with a name matching \"bar\":",
+      "syntax": "ag {{foo}} -G {{bar}}"
+    },
+    {
+      "description": "Find files whose contents match a regular expression:",
+      "syntax": "ag '{{^ba(r|z)$}}'"
+    },
+    {
+      "description": "Find files with a name matching \"foo\":",
+      "syntax": "ag -g {{foo}}"
+    }
+  ]
+}

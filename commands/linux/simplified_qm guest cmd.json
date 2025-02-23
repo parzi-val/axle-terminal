@@ -1,0 +1,10 @@
+{
+  "command": "qm guest cmd",
+  "description": "Execute QEMU Guest Agent commands. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Execute a specific QEMU Guest Agent command:",
+      "syntax": "qm guest cmd {{virtual_machine_id}} {{fsfreeze-freeze|fsfreeze-status|fsfreeze-thaw|fstrim|get-fsinfo|...}}"
+    }
+  ]
+}

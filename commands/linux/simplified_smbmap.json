@@ -1,0 +1,38 @@
+{
+  "command": "smbmap",
+  "description": "SMB enumeration tool. More information: https://github.com/ShawnDEvans/smbmap.",
+  "useCases": [
+    {
+      "description": "Display SMB shares and permissions on a host, prompting for user's password or NTLM hash:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}}"
+    },
+    {
+      "description": "Display SMB shares and permissions on a host, specifying the domain and passing the password NTLM hash:",
+      "syntax": "smbmap -u {{username}} --prompt -d {{domain}} -H {{ip}}"
+    },
+    {
+      "description": "Display SMB shares and list a single level of directories and files:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}} -r"
+    },
+    {
+      "description": "Display SMB shares and recursively list a defined number of levels of directories and files:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}} -R --depth {{3}}"
+    },
+    {
+      "description": "Display SMB shares and recursively list directories and files, downloading the files matching a regular expression:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}} -R -A {{pattern}}"
+    },
+    {
+      "description": "Display SMB shares and recursively list directories and files, searching for file content matching a regular expression:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}} -R -F {{pattern}}"
+    },
+    {
+      "description": "Execute a shell command on a remote system:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}} -x {{command}}"
+    },
+    {
+      "description": "Upload a file to a remote system:",
+      "syntax": "smbmap -u {{username}} --prompt -H {{ip}} --upload {{source}} {{destination}}"
+    }
+  ]
+}

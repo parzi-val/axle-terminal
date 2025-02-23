@@ -1,0 +1,38 @@
+{
+  "command": "nix-env",
+  "description": "Manipulate or query Nix user environments. More information: https://nixos.org/manual/nix/stable/#sec-nix-env.",
+  "useCases": [
+    {
+      "description": "List all installed packages:",
+      "syntax": "nix-env -q"
+    },
+    {
+      "description": "Query installed packages:",
+      "syntax": "nix-env -q {{search_term}}"
+    },
+    {
+      "description": "Query available packages:",
+      "syntax": "nix-env -qa {{search_term}}"
+    },
+    {
+      "description": "Install package:",
+      "syntax": "nix-env -iA nixpkgs.{{pkg_name}}"
+    },
+    {
+      "description": "Install a package from a URL:",
+      "syntax": "nix-env -i {{pkg_name}} --file {{example.com}}"
+    },
+    {
+      "description": "Uninstall package:",
+      "syntax": "nix-env -e {{pkg_name}}"
+    },
+    {
+      "description": "Upgrade one package:",
+      "syntax": "nix-env -u {{pkg_name}}"
+    },
+    {
+      "description": "Upgrade all packages:",
+      "syntax": "nix-env -u"
+    }
+  ]
+}

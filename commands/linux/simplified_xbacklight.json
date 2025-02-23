@@ -1,0 +1,26 @@
+{
+  "command": "xbacklight",
+  "description": "Utility to adjust backlight brightness using the RandR extension. More information: https://gitlab.freedesktop.org/xorg/app/xbacklight.",
+  "useCases": [
+    {
+      "description": "Get the current screen brightness as a percentage:",
+      "syntax": "xbacklight"
+    },
+    {
+      "description": "Set the screen brightness to 40%:",
+      "syntax": "xbacklight -set {{40}}"
+    },
+    {
+      "description": "Increase current brightness by 25%:",
+      "syntax": "xbacklight -inc {{25}}"
+    },
+    {
+      "description": "Decrease current brightness by 75%:",
+      "syntax": "xbacklight -dec {{75}}"
+    },
+    {
+      "description": "Increase backlight to 100%, over 60 seconds (value given in ms), using 60 steps:",
+      "syntax": "xbacklight -set {{100}} -time {{60000}} -steps {{60}}"
+    }
+  ]
+}

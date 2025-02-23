@@ -1,0 +1,10 @@
+{
+  "command": "raspi-config",
+  "description": "An ncurses terminal GUI to config a Raspberry Pi. More information: https://www.raspberrypi.com/documentation/computers/configuration.html.",
+  "useCases": [
+    {
+      "description": "Start raspi-config:",
+      "syntax": "sudo raspi-config"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "postcss",
+  "description": "Transform styles with JS plugins. More information: https://postcss.org.",
+  "useCases": [
+    {
+      "description": "Parse and transform a CSS file:",
+      "syntax": "postcss {{path/to/file}}"
+    },
+    {
+      "description": "Parse and transform a CSS file and output to a specific file:",
+      "syntax": "postcss {{path/to/file}} --output {{path/to/file}}"
+    },
+    {
+      "description": "Parse and transform a CSS file and output to a specific directory:",
+      "syntax": "postcss {{path/to/file}} --dir {{path/to/directory}}"
+    },
+    {
+      "description": "Parse and transform a CSS file in-place:",
+      "syntax": "postcss {{path/to/file}} --replace"
+    },
+    {
+      "description": "Specify a custom PostCSS parser:",
+      "syntax": "postcss {{path/to/file}} --parser {{parser}}"
+    },
+    {
+      "description": "Specify a custom PostCSS syntax:",
+      "syntax": "postcss {{path/to/file}} --syntax {{syntax}}"
+    },
+    {
+      "description": "Watch for changes to a CSS file:",
+      "syntax": "postcss {{path/to/file}} --watch"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "postcss --help"
+    }
+  ]
+}

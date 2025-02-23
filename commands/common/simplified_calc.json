@@ -1,0 +1,38 @@
+{
+  "command": "calc",
+  "description": "An interactive arbitrary-precision calculator in the terminal. More information: https://github.com/lcn2/calc.",
+  "useCases": [
+    {
+      "description": "Start calc in interactive mode:",
+      "syntax": "calc"
+    },
+    {
+      "description": "Perform a calculation in non-interactive mode:",
+      "syntax": "calc '{{85 * (36 / 4)}}'"
+    },
+    {
+      "description": "Don't format the output (for use with [p]ipes):",
+      "syntax": "calc -p '{{4/3 * pi() * 5^3}}'"
+    },
+    {
+      "description": "Perform a calculation and then switch to [i]nteractive mode:",
+      "syntax": "calc -i '{{sqrt(2)}}'"
+    },
+    {
+      "description": "Start calc in a specific permission [m]ode (0 to 7, defaults to 7):",
+      "syntax": "calc -m {{mode}}"
+    },
+    {
+      "description": "View an introduction to calc:",
+      "syntax": "calc help intro"
+    },
+    {
+      "description": "View an overview of calc:",
+      "syntax": "calc help overview"
+    },
+    {
+      "description": "Open the calc manual:",
+      "syntax": "calc help"
+    }
+  ]
+}

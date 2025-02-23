@@ -1,0 +1,14 @@
+{
+  "command": "pbmtomacp",
+  "description": "Convert a PBM image to a MacPaint file. See also: macptopbm. More information: https://netpbm.sourceforge.net/doc/pbmtomacp.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to a MACP file:",
+      "syntax": "pbmtomacp {{path/to/image.pbm}} &gt; {{path/to/output.macp}}"
+    },
+    {
+      "description": "Do not compress the output file:",
+      "syntax": "pbmtomacp -norle {{path/to/image.pbm}} &gt; {{path/to/output.macp}}"
+    }
+  ]
+}

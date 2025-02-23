@@ -1,0 +1,22 @@
+{
+  "command": "fscrypt",
+  "description": "Go tool for managing Linux filesystem encryption. More information: https://github.com/google/fscrypt.",
+  "useCases": [
+    {
+      "description": "Prepare the root filesystem for use with fscrypt:",
+      "syntax": "fscrypt setup"
+    },
+    {
+      "description": "Enable filesystem encryption for a directory:",
+      "syntax": "fscrypt encrypt {{path/to/directory}}"
+    },
+    {
+      "description": "Unlock an encrypted directory:",
+      "syntax": "fscrypt unlock {{path/to/encrypted_directory}}"
+    },
+    {
+      "description": "Lock an encrypted directory:",
+      "syntax": "fscrypt lock {{path/to/encrypted_directory}}"
+    }
+  ]
+}

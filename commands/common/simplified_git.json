@@ -1,0 +1,30 @@
+{
+  "command": "git",
+  "description": "Distributed version control system. Some subcommands such as commit, add, branch, checkout, push, etc. have their own usage documentation. More information: https://git-scm.com/.",
+  "useCases": [
+    {
+      "description": "Execute a Git subcommand:",
+      "syntax": "git {{subcommand}}"
+    },
+    {
+      "description": "Execute a Git subcommand on a custom repository root path:",
+      "syntax": "git -C {{path/to/repo}} {{subcommand}}"
+    },
+    {
+      "description": "Execute a Git subcommand with a given configuration set:",
+      "syntax": "git -c '{{config.key}}={{value}}' {{subcommand}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "git --help"
+    },
+    {
+      "description": "Display help for a specific subcommand (like clone, add, push, log, etc.):",
+      "syntax": "git help {{subcommand}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "git --version"
+    }
+  ]
+}

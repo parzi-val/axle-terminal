@@ -1,0 +1,14 @@
+{
+  "command": "fatlabel",
+  "description": "Get or set the label of a FAT32 partition. More information: https://manned.org/fatlabel.",
+  "useCases": [
+    {
+      "description": "Get the label of a FAT32 partition:",
+      "syntax": "fatlabel {{/dev/sda1}}"
+    },
+    {
+      "description": "Set the label of a FAT32 partition:",
+      "syntax": "fatlabel {{/dev/sdc3}} &quot;{{new_label}}&quot;"
+    }
+  ]
+}

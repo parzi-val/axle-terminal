@@ -1,0 +1,26 @@
+{
+  "command": "base64",
+  "description": "Encode or decode file or stdin to/from base64, to stdout. More information: https://manned.org/base64.",
+  "useCases": [
+    {
+      "description": "Encode a file:",
+      "syntax": "base64 {{path/to/file}}"
+    },
+    {
+      "description": "Wrap encoded output at a specific width (0 disables wrapping):",
+      "syntax": "base64 {{-w|--wrap}} {{0|76|...}} {{path/to/file}}"
+    },
+    {
+      "description": "Decode a file:",
+      "syntax": "base64 {{-d|--decode}} {{path/to/file}}"
+    },
+    {
+      "description": "Encode from stdin:",
+      "syntax": "{{command}} | base64"
+    },
+    {
+      "description": "Decode from stdin:",
+      "syntax": "{{command}} | base64 {{-d|--decode}}"
+    }
+  ]
+}

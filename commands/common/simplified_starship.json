@@ -1,0 +1,38 @@
+{
+  "command": "starship",
+  "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell. Some subcommands such as init have their own usage documentation. More information: https://starship.rs.",
+  "useCases": [
+    {
+      "description": "Print the starship integration code for the specified shell:",
+      "syntax": "starship init {{bash|elvish|fish|ion|powershell|tcsh|zsh|nu|xonsh|cmd}}"
+    },
+    {
+      "description": "Explain each part of the current prompt and show the time taken to render them:",
+      "syntax": "starship explain"
+    },
+    {
+      "description": "Print the computed starship configuration (use --default to print default configuration instead):",
+      "syntax": "starship print-config"
+    },
+    {
+      "description": "List supported modules:",
+      "syntax": "starship module --list"
+    },
+    {
+      "description": "Edit the starship configuration in the default editor:",
+      "syntax": "starship configure"
+    },
+    {
+      "description": "Create a bug report GitHub issue pre-populated with information about the system and starship configuration:",
+      "syntax": "starship bug-report"
+    },
+    {
+      "description": "Print the completion script for the specified shell:",
+      "syntax": "starship completions {{bash|elvish|fish|powershell|zsh}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "starship {{subcommand}} --help"
+    }
+  ]
+}

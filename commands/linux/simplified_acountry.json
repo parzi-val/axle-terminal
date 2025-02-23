@@ -1,0 +1,18 @@
+{
+  "command": "acountry",
+  "description": "Print the country where an IPv4 address or hostname is located. More information: https://manned.org/acountry.",
+  "useCases": [
+    {
+      "description": "Print a country where an IPv4 address or host is located:",
+      "syntax": "acountry {{example.com}}"
+    },
+    {
+      "description": "Print extra [d]ebugging output:",
+      "syntax": "acountry -d {{example.com}}"
+    },
+    {
+      "description": "Print more [v]erbose information:",
+      "syntax": "acountry -v {{example.com}}"
+    }
+  ]
+}

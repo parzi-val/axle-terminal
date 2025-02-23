@@ -1,0 +1,22 @@
+{
+  "command": "numlockx",
+  "description": "Control the number lock key status in X11 sessions. More information: https://www.mike-devlin.com/linux/README-numlockx.htm.",
+  "useCases": [
+    {
+      "description": "Show the current number lock status:",
+      "syntax": "numlockx status"
+    },
+    {
+      "description": "Turn the number lock on:",
+      "syntax": "numlockx on"
+    },
+    {
+      "description": "Turn the number lock off:",
+      "syntax": "numlockx off"
+    },
+    {
+      "description": "Toggle the current state:",
+      "syntax": "numlockx toggle"
+    }
+  ]
+}

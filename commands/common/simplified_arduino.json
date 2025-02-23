@@ -1,0 +1,38 @@
+{
+  "command": "arduino",
+  "description": "Arduino Studio - Integrated Development Environment for the Arduino platform. More information: https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc.",
+  "useCases": [
+    {
+      "description": "Build a sketch:",
+      "syntax": "arduino --verify {{path/to/file.ino}}"
+    },
+    {
+      "description": "Build and upload a sketch:",
+      "syntax": "arduino --upload {{path/to/file.ino}}"
+    },
+    {
+      "description": "Build and upload a sketch to an Arduino Nano with an Atmega328p CPU, connected on port /dev/ttyACM0:",
+      "syntax": "arduino --board {{arduino:avr:nano:cpu=atmega328p}} --port {{/dev/ttyACM0}} --upload {{path/to/file.ino}}"
+    },
+    {
+      "description": "Set the preference name to a given value:",
+      "syntax": "arduino --pref {{name}}={{value}}"
+    },
+    {
+      "description": "Build a sketch, put the build results in the build directory, and reuse any previous build results in that directory:",
+      "syntax": "arduino --pref build.path={{path/to/build_directory}} --verify {{path/to/file.ino}}"
+    },
+    {
+      "description": "Save any (changed) preferences to preferences.txt:",
+      "syntax": "arduino --save-prefs"
+    },
+    {
+      "description": "Install the latest SAM board:",
+      "syntax": "arduino --install-boards &quot;{{arduino:sam}}&quot;"
+    },
+    {
+      "description": "Install Bridge and Servo libraries:",
+      "syntax": "arduino --install-library &quot;{{Bridge:1.0.0,Servo:1.2.0}}&quot;"
+    }
+  ]
+}

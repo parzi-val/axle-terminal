@@ -1,0 +1,34 @@
+{
+  "command": "whatwaf",
+  "description": "Detect and bypass web application firewalls and protection systems. More information: https://github.com/Ekultek/WhatWaf.",
+  "useCases": [
+    {
+      "description": "Detect protection on a single [u]RL, optionally use verbose output:",
+      "syntax": "whatwaf --url {{https://example.com}} --verbose"
+    },
+    {
+      "description": "Detect protection on a [l]ist of URLs in parallel from a file (one URL per line):",
+      "syntax": "whatwaf --threads {{number}} --list {{path/to/file}}"
+    },
+    {
+      "description": "Send requests through a proxy and use custom payload list from a file (one payload per line):",
+      "syntax": "whatwaf --proxy {{http://127.0.0.1:8080}} --pl {{path/to/file}} -u {{https://example.com}}"
+    },
+    {
+      "description": "Send requests through Tor (Tor must be installed) using custom [p]ayloads (comma-separated):",
+      "syntax": "whatwaf --tor --payloads '{{payload1,payload2,...}}' -u {{https://example.com}}"
+    },
+    {
+      "description": "Use a random user-agent, set throttling and timeout, send a [P]OST request, and force HTTPS connection:",
+      "syntax": "whatwaf --ra --throttle {{seconds}} --timeout {{seconds}} --post --force-ssl -u {{http://example.com}}"
+    },
+    {
+      "description": "List all WAFs that can be detected:",
+      "syntax": "whatwaf --wafs"
+    },
+    {
+      "description": "List all available tamper scripts:",
+      "syntax": "whatwaf --tampers"
+    }
+  ]
+}

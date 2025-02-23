@@ -1,0 +1,22 @@
+{
+  "command": "bitwise",
+  "description": "Multi base interactive calculator supporting dynamic base conversion and bit manipulation. More information: https://github.com/mellowcandle/bitwise.",
+  "useCases": [
+    {
+      "description": "Run using interactive mode:",
+      "syntax": "bitwise"
+    },
+    {
+      "description": "Convert from decimal:",
+      "syntax": "bitwise {{12345}}"
+    },
+    {
+      "description": "Convert from hexadecimal:",
+      "syntax": "bitwise {{0x563d}}"
+    },
+    {
+      "description": "Convert a C-style calculation:",
+      "syntax": "bitwise &quot;{{0x123 + 0x20 - 30 / 50}}&quot;"
+    }
+  ]
+}

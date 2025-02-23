@@ -1,0 +1,18 @@
+{
+  "command": "idevicecrashreport",
+  "description": "Retrieve crash reports from an iOS device. More information: https://manned.org/idevicecrashreport.",
+  "useCases": [
+    {
+      "description": "Retrieve crash reports and move them to a specified directory:",
+      "syntax": "idevicecrashreport {{path/to/directory}}"
+    },
+    {
+      "description": "Retrieve crash reports without removing them from the device:",
+      "syntax": "idevicecrashreport --keep {{path/to/directory}}"
+    },
+    {
+      "description": "Extract crash reports into separate .crash files:",
+      "syntax": "idevicecrashreport --extract {{path/to/directory}}"
+    }
+  ]
+}

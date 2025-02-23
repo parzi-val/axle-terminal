@@ -1,0 +1,26 @@
+{
+  "command": "iverilog",
+  "description": "Preprocesses and compiles Verilog HDL (IEEE-1364) code into executable programs for simulation. More information: https://github.com/steveicarus/iverilog.",
+  "useCases": [
+    {
+      "description": "Compile a source file into an executable:",
+      "syntax": "iverilog {{path/to/source.v}} -o {{path/to/executable}}"
+    },
+    {
+      "description": "Compile a source file into an executable while displaying all warnings:",
+      "syntax": "iverilog {{path/to/source.v}} -Wall -o {{path/to/executable}}"
+    },
+    {
+      "description": "Compile and run explicitly using the VVP runtime:",
+      "syntax": "iverilog -o {{path/to/executable}} -tvvp {{path/to/source.v}}"
+    },
+    {
+      "description": "Compile using Verilog library files from a different path:",
+      "syntax": "iverilog {{path/to/source.v}} -o {{path/to/executable}} -I{{path/to/library_directory}}"
+    },
+    {
+      "description": "Preprocess Verilog code without compiling:",
+      "syntax": "iverilog -E {{path/to/source.v}}"
+    }
+  ]
+}

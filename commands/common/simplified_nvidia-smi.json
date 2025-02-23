@@ -1,0 +1,18 @@
+{
+  "command": "nvidia-smi",
+  "description": "Aid the management and monitoring of NVIDIA GPU devices. More information: https://developer.nvidia.com/nvidia-system-management-interface.",
+  "useCases": [
+    {
+      "description": "Display information on all available GPUs and processes using them:",
+      "syntax": "nvidia-smi"
+    },
+    {
+      "description": "Display more detailed GPU information:",
+      "syntax": "nvidia-smi --query"
+    },
+    {
+      "description": "Monitor overall GPU usage with 1-second update interval:",
+      "syntax": "nvidia-smi dmon"
+    }
+  ]
+}

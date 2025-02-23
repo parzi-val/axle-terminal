@@ -1,0 +1,22 @@
+{
+  "command": "cmctl",
+  "description": "Manage cert-manager resources inside your cluster. Check cert signing status, approve/deny requests, and issue new certificate requests. More information: https://cert-manager.io/docs/usage/cmctl/.",
+  "useCases": [
+    {
+      "description": "Check if the cert-manager API is ready:",
+      "syntax": "cmctl check api"
+    },
+    {
+      "description": "Check the status of a certificate:",
+      "syntax": "cmctl status certificate {{cert_name}}"
+    },
+    {
+      "description": "Create a new certificate request based on an existing certificate:",
+      "syntax": "cmctl create certificaterequest my-cr --from-certificate-file {{cert.yaml}}"
+    },
+    {
+      "description": "Create a new certificate request, fetch the signed certificate, and set a maximum wait time:",
+      "syntax": "cmctl create certificaterequest my-cr --from-certificate-file {{cert.yaml}} --fetch-certificate --timeout {{20m}}"
+    }
+  ]
+}

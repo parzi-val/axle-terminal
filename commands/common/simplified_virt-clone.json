@@ -1,0 +1,14 @@
+{
+  "command": "virt-clone",
+  "description": "Clone a libvirt virtual machine. More information: https://manned.org/virt-clone.",
+  "useCases": [
+    {
+      "description": "Clone a virtual machine and automatically generate a new name, storage path, and MAC address:",
+      "syntax": "virt-clone --original {{vm_name}} --auto-clone"
+    },
+    {
+      "description": "Clone a virtual machine and specify the new name, storage path, and MAC address:",
+      "syntax": "virt-clone --original {{vm_name}} --name {{new_vm_name}} --file {{path/to/new_storage}} --mac {{ff:ff:ff:ff:ff:ff|RANDOM}}"
+    }
+  ]
+}

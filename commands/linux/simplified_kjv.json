@@ -1,0 +1,38 @@
+{
+  "command": "kjv",
+  "description": "The word of God available right on your desktop. More information: https://github.com/bontibon/kjv.",
+  "useCases": [
+    {
+      "description": "Display books:",
+      "syntax": "kjv -l"
+    },
+    {
+      "description": "Open a specific book:",
+      "syntax": "kjv {{Genesis}}"
+    },
+    {
+      "description": "Open a specific chapter of a book:",
+      "syntax": "kjv {{Genesis}} {{2}}"
+    },
+    {
+      "description": "Open a specific verse of a specific chapter of a book:",
+      "syntax": "kjv {{John}} {{3}}:{{16}}"
+    },
+    {
+      "description": "Open a specific range of verses of a book's chapter:",
+      "syntax": "kjv {{Proverbs}} {{3}}:{{1-6}}"
+    },
+    {
+      "description": "Display a specific range of verses of a book from different chapters:",
+      "syntax": "kjv {{Matthew}} {{1}}:{{7}}-{{2}}:{{6}}"
+    },
+    {
+      "description": "Display all verses that match a pattern:",
+      "syntax": "kjv /{{Plagues}}"
+    },
+    {
+      "description": "Display all verses that match a pattern in a specific book:",
+      "syntax": "kjv {{1Jn}}/{{antichrist}}"
+    }
+  ]
+}

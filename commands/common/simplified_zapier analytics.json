@@ -1,0 +1,18 @@
+{
+  "command": "zapier analytics",
+  "description": "Show the status of the analytics that are collected. It is also used to change what is collected. More information: https://platform.zapier.com/reference/cli#analytics.",
+  "useCases": [
+    {
+      "description": "Show the status of collected analytics:",
+      "syntax": "zapier analytics"
+    },
+    {
+      "description": "Change how much information is collected:",
+      "syntax": "zapier analytics {{-m|--mode}} {{enabled|anonymous|disabled}}"
+    },
+    {
+      "description": "Show extra debugging output:",
+      "syntax": "zapier analytics {{-m|--mode}} {{enabled|anonymous|disabled}} {{-d|--debug}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "tmsu",
+  "description": "Simple command-line tool for tagging files. More information: https://tmsu.org.",
+  "useCases": [
+    {
+      "description": "Tag a specific file with multiple tags:",
+      "syntax": "tmsu tag {{path/to/file.mp3}} {{music}} {{big-jazz}} {{mp3}}"
+    },
+    {
+      "description": "Tag multiple files:",
+      "syntax": "tmsu tag --tags &quot;{{music mp3}}&quot; {{*.mp3}}"
+    },
+    {
+      "description": "List tags of specified file(s):",
+      "syntax": "tmsu tags {{*.mp3}}"
+    },
+    {
+      "description": "List files with specified tag(s):",
+      "syntax": "tmsu files {{big-jazz}} {{music}}"
+    },
+    {
+      "description": "List files with tags matching boolean expression:",
+      "syntax": "tmsu files &quot;{{(year &gt;= 1990 and year &lt;= 2000)}} and {{grunge}}&quot;"
+    },
+    {
+      "description": "Mount tmsu virtual filesystem to an existing directory:",
+      "syntax": "tmsu mount {{path/to/directory}}"
+    }
+  ]
+}

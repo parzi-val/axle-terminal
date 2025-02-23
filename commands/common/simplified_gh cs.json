@@ -1,0 +1,10 @@
+{
+  "command": "gh cs",
+  "description": "This command is an alias of gh codespace.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr gh codespace"
+    }
+  ]
+}

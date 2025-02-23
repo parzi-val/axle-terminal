@@ -1,0 +1,14 @@
+{
+  "command": "ruget",
+  "description": "Alternative to wget written in Rust. More information: https://github.com/ksk001100/ruget.",
+  "useCases": [
+    {
+      "description": "Download the contents of a URL to a file:",
+      "syntax": "ruget {{https://example.com/file}}"
+    },
+    {
+      "description": "Download the contents of a URL to a specified [o]utput file:",
+      "syntax": "ruget --output {{file_name}} {{https://example.com/file}}"
+    }
+  ]
+}

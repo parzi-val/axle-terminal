@@ -1,0 +1,14 @@
+{
+  "command": "cargo help",
+  "description": "Display help on cargo and its subcommands. More information: https://doc.rust-lang.org/cargo/commands/cargo-help.html.",
+  "useCases": [
+    {
+      "description": "Display general help:",
+      "syntax": "cargo help"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "cargo help {{subcommand}}"
+    }
+  ]
+}

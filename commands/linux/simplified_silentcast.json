@@ -1,0 +1,14 @@
+{
+  "command": "silentcast",
+  "description": "Silent screencast creator. Saves in .mkv and animated GIF formats. More information: https://github.com/colinkeenan/silentcast.",
+  "useCases": [
+    {
+      "description": "Launch silentcast:",
+      "syntax": "silentcast"
+    },
+    {
+      "description": "Launch silentcast on a specific display:",
+      "syntax": "silentcast --display={{display}}"
+    }
+  ]
+}

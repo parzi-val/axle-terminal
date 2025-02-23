@@ -1,0 +1,14 @@
+{
+  "command": "open",
+  "description": "open can refer to multiple commands with the same name.",
+  "useCases": [
+    {
+      "description": "View documentation for the command available in macOS:",
+      "syntax": "tldr open -p osx"
+    },
+    {
+      "description": "View documentation for the command available through fish:",
+      "syntax": "tldr open.fish"
+    }
+  ]
+}

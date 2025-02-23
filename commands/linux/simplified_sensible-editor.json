@@ -1,0 +1,22 @@
+{
+  "command": "sensible-editor",
+  "description": "Open the default editor. More information: https://manned.org/sensible-editor.",
+  "useCases": [
+    {
+      "description": "Open a file in the default editor:",
+      "syntax": "sensible-editor {{path/to/file}}"
+    },
+    {
+      "description": "Open a file in the default editor, with the cursor at the end of the file:",
+      "syntax": "sensible-editor + {{path/to/file}}"
+    },
+    {
+      "description": "Open a file in the default editor, with the cursor at the beginning of line 10:",
+      "syntax": "sensible-editor +10 {{path/to/file}}"
+    },
+    {
+      "description": "Open 3 files in vertically split editor windows at the same time:",
+      "syntax": "sensible-editor -O3 {{path/to/file1 path/to/file2 path/to/file3}}"
+    }
+  ]
+}

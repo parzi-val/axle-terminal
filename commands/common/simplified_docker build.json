@@ -1,0 +1,34 @@
+{
+  "command": "docker build",
+  "description": "Build an image from a Dockerfile. More information: https://docs.docker.com/reference/cli/docker/buildx/build/.",
+  "useCases": [
+    {
+      "description": "Build a Docker image using the Dockerfile in the current directory:",
+      "syntax": "docker build ."
+    },
+    {
+      "description": "Build a Docker image from a Dockerfile at a specified URL:",
+      "syntax": "docker build {{github.com/creack/docker-firefox}}"
+    },
+    {
+      "description": "Build a Docker image and tag it:",
+      "syntax": "docker build --tag {{name:tag}} ."
+    },
+    {
+      "description": "Build a Docker image with no build context:",
+      "syntax": "docker build --tag {{name:tag}} - &lt; {{Dockerfile}}"
+    },
+    {
+      "description": "Do not use the cache when building the image:",
+      "syntax": "docker build --no-cache --tag {{name:tag}} ."
+    },
+    {
+      "description": "Build a Docker image using a specific Dockerfile:",
+      "syntax": "docker build --file {{Dockerfile}} ."
+    },
+    {
+      "description": "Build with custom build-time variables:",
+      "syntax": "docker build --build-arg {{HTTP_PROXY=http://10.20.30.2:1234}} --build-arg {{FTP_PROXY=http://40.50.60.5:4567}} ."
+    }
+  ]
+}

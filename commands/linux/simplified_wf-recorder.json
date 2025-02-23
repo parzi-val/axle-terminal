@@ -1,0 +1,18 @@
+{
+  "command": "wf-recorder",
+  "description": "Screencast for Wayland optionally with audio. By default you need to end the process with Ctrl-C. More information: https://github.com/ammen99/wf-recorder.",
+  "useCases": [
+    {
+      "description": "Record storing to an MP4 file:",
+      "syntax": "wf-recorder --file={{output.mp4}}"
+    },
+    {
+      "description": "Record including audio, both with mic and system sounds:",
+      "syntax": "wf-recorder --audio --file={{/path/to/file_with_audio.webm}}"
+    },
+    {
+      "description": "Select and record a portion of the screen using slurp, outputting to default recording.mp4:",
+      "syntax": "wf-recorder -g &quot;$(slurp)&quot;"
+    }
+  ]
+}

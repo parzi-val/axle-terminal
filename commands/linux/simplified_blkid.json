@@ -1,0 +1,14 @@
+{
+  "command": "blkid",
+  "description": "Lists all recognized partitions and their Universally Unique Identifier (UUID). More information: https://manned.org/blkid.",
+  "useCases": [
+    {
+      "description": "List all partitions:",
+      "syntax": "sudo blkid"
+    },
+    {
+      "description": "List all partitions in a table, including current mountpoints:",
+      "syntax": "sudo blkid -o list"
+    }
+  ]
+}

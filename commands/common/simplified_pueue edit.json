@@ -1,0 +1,18 @@
+{
+  "command": "pueue edit",
+  "description": "Edit the command or path of a stashed or queued task. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Edit a task, see pueue status to get the task ID:",
+      "syntax": "pueue edit {{task_id}}"
+    },
+    {
+      "description": "Edit the path from which a task is executed:",
+      "syntax": "pueue edit {{task_id}} --path"
+    },
+    {
+      "description": "Edit a command with the specified editor:",
+      "syntax": "EDITOR={{nano}} pueue edit {{task_id}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "az logout",
+  "description": "Log out from an Azure subscription. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/reference-index#az-logout.",
+  "useCases": [
+    {
+      "description": "Log out from the active account:",
+      "syntax": "az logout"
+    },
+    {
+      "description": "Log out a specific username:",
+      "syntax": "az logout --username {{alias@somedomain.com}}"
+    }
+  ]
+}

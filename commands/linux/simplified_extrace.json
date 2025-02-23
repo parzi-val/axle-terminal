@@ -1,0 +1,26 @@
+{
+  "command": "extrace",
+  "description": "Trace exec() calls. More information: https://github.com/chneukirchen/extrace.",
+  "useCases": [
+    {
+      "description": "Trace all program executions occurring on the system:",
+      "syntax": "sudo extrace"
+    },
+    {
+      "description": "Run a command and only trace descendants of this command:",
+      "syntax": "sudo extrace {{command}}"
+    },
+    {
+      "description": "Print the current working directory of each process:",
+      "syntax": "sudo extrace -d"
+    },
+    {
+      "description": "Resolve the full path of each executable:",
+      "syntax": "sudo extrace -l"
+    },
+    {
+      "description": "Display the user running each process:",
+      "syntax": "sudo extrace -u"
+    }
+  ]
+}

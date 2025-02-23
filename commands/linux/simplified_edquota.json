@@ -1,0 +1,30 @@
+{
+  "command": "edquota",
+  "description": "Edit quotas for a user or group. By default it operates on all filesystems with quotas. Quota information is stored permanently in the quota.user and quota.group files in the root of the filesystem. More information: https://manned.org/edquota.",
+  "useCases": [
+    {
+      "description": "Edit quota of the current user:",
+      "syntax": "edquota --user $(whoami)"
+    },
+    {
+      "description": "Edit quota of a specific user:",
+      "syntax": "sudo edquota --user {{username}}"
+    },
+    {
+      "description": "Edit quota for a group:",
+      "syntax": "sudo edquota --group {{group}}"
+    },
+    {
+      "description": "Restrict operations to a given filesystem (by default edquota operates on all filesystems with quotas):",
+      "syntax": "sudo edquota --file-system {{filesystem}}"
+    },
+    {
+      "description": "Edit the default grace period:",
+      "syntax": "sudo edquota -t"
+    },
+    {
+      "description": "Duplicate a quota to other users:",
+      "syntax": "sudo edquota -p {{reference_user}} {{destination_user1}} {{destination_user2}}"
+    }
+  ]
+}

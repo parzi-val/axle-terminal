@@ -1,0 +1,34 @@
+{
+  "command": "gitleaks",
+  "description": "Detect secrets and API keys leaked in Git repositories. More information: https://github.com/gitleaks/gitleaks.",
+  "useCases": [
+    {
+      "description": "Scan a remote repository:",
+      "syntax": "gitleaks detect --repo-url {{https://github.com/username/repository.git}}"
+    },
+    {
+      "description": "Scan a local directory:",
+      "syntax": "gitleaks detect --source {{path/to/repository}}"
+    },
+    {
+      "description": "Output scan results to a JSON file:",
+      "syntax": "gitleaks detect --source {{path/to/repository}} --report {{path/to/report.json}}"
+    },
+    {
+      "description": "Use a custom rules file:",
+      "syntax": "gitleaks detect --source {{path/to/repository}} --config-path {{path/to/config.toml}}"
+    },
+    {
+      "description": "Start scanning from a specific commit:",
+      "syntax": "gitleaks detect --source {{path/to/repository}} --log-opts {{--since=commit_id}}"
+    },
+    {
+      "description": "Scan uncommitted changes before a commit:",
+      "syntax": "gitleaks protect --staged"
+    },
+    {
+      "description": "Display verbose output indicating which parts were identified as leaks during the scan:",
+      "syntax": "gitleaks protect --staged --verbose"
+    }
+  ]
+}

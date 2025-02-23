@@ -1,0 +1,14 @@
+{
+  "command": "xbps-install",
+  "description": "XBPS utility to (re)install and update packages. See also: xbps. More information: https://manned.org/xbps-install.1.",
+  "useCases": [
+    {
+      "description": "Install a new package:",
+      "syntax": "xbps-install {{package}}"
+    },
+    {
+      "description": "Synchronize and update all packages:",
+      "syntax": "xbps-install --sync --update"
+    }
+  ]
+}

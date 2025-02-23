@@ -1,0 +1,18 @@
+{
+  "command": "dtrx",
+  "description": "\"Do The Right eXtraction\" - extract any archive into new directory by guessing the tool from extension. More information: https://github.com/dtrx-py/dtrx.",
+  "useCases": [
+    {
+      "description": "Extract archive, guessing the extraction tool from extension:",
+      "syntax": "dtrx {{path/to/file}}"
+    },
+    {
+      "description": "Extract archive, overwrite any existing target output:",
+      "syntax": "dtrx --overwrite {{path/to/file}}"
+    },
+    {
+      "description": "Extract archive, put everything into current directory:",
+      "syntax": "dtrx --flat {{path/to/file}}"
+    }
+  ]
+}

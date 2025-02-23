@@ -1,0 +1,26 @@
+{
+  "command": "mktemp",
+  "description": "Create a temporary file or directory. More information: https://man.openbsd.org/mktemp.1.",
+  "useCases": [
+    {
+      "description": "Create an empty temporary file and print its absolute path:",
+      "syntax": "mktemp"
+    },
+    {
+      "description": "Use a custom directory if $TMPDIR is not set (the default is platform-dependent, but usually /tmp):",
+      "syntax": "mktemp -p {{/path/to/tempdir}}"
+    },
+    {
+      "description": "Use a custom path template (Xs are replaced with random alphanumeric characters):",
+      "syntax": "mktemp {{/tmp/example.XXXXXXXX}}"
+    },
+    {
+      "description": "Use a custom file name template:",
+      "syntax": "mktemp -t {{example.XXXXXXXX}}"
+    },
+    {
+      "description": "Create an empty temporary directory and print its absolute path:",
+      "syntax": "mktemp -d"
+    }
+  ]
+}

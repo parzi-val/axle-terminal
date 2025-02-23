@@ -1,0 +1,34 @@
+{
+  "command": "sqsc",
+  "description": "A command-line AWS Simple Queue Service client. More information: https://github.com/yongfei25/sqsc.",
+  "useCases": [
+    {
+      "description": "List all queues:",
+      "syntax": "sqsc lq {{queue_prefix}}"
+    },
+    {
+      "description": "List all messages in a queue:",
+      "syntax": "sqsc ls {{queue_name}}"
+    },
+    {
+      "description": "Copy all messages from one queue to another:",
+      "syntax": "sqsc cp {{source_queue}} {{destination_queue}}"
+    },
+    {
+      "description": "Move all messages from one queue to another:",
+      "syntax": "sqsc mv {{source_queue}} {{destination_queue}}"
+    },
+    {
+      "description": "Describe a queue:",
+      "syntax": "sqsc describe {{queue_name}}"
+    },
+    {
+      "description": "Query a queue with SQL syntax:",
+      "syntax": "sqsc query &quot;SELECT body FROM {{queue_name}} WHERE body LIKE '%user%'&quot;"
+    },
+    {
+      "description": "Pull all messages from a queue into a local SQLite database in your present working directory:",
+      "syntax": "sqsc pull {{queue_name}}"
+    }
+  ]
+}

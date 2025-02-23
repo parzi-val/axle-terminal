@@ -1,0 +1,18 @@
+{
+  "command": "hipstopgm",
+  "description": "Read a HIPS file as input and return a PGM image as output. If the HIPS file contains more than one frame in sequence, hipstopgm will concatenate all the frames vertically. More information: https://netpbm.sourceforge.net/doc/hipstopgm.html.",
+  "useCases": [
+    {
+      "description": "Convert a HIPS file into a PGM image:",
+      "syntax": "hipstopgm {{path/to/file.hips}}"
+    },
+    {
+      "description": "Suppress all informational messages:",
+      "syntax": "hipstopgm -quiet"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "hipstopgm -version"
+    }
+  ]
+}

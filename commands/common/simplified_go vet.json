@@ -1,0 +1,30 @@
+{
+  "command": "go vet",
+  "description": "Check Go source code and report suspicious constructs (e.g. lint your Go source files). Go vet returns a non-zero exit code if problems are found; returns a zero exit code if no problems are found. More information: https://pkg.go.dev/cmd/vet.",
+  "useCases": [
+    {
+      "description": "Check the Go package in the current directory:",
+      "syntax": "go vet"
+    },
+    {
+      "description": "Check the Go package in the specified path:",
+      "syntax": "go vet {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "List available checks that can be run with go vet:",
+      "syntax": "go tool vet help"
+    },
+    {
+      "description": "View details and flags for a particular check:",
+      "syntax": "go tool vet help {{check_name}}"
+    },
+    {
+      "description": "Display offending lines plus N lines of surrounding context:",
+      "syntax": "go vet -c={{N}}"
+    },
+    {
+      "description": "Output analysis and errors in JSON format:",
+      "syntax": "go vet -json"
+    }
+  ]
+}

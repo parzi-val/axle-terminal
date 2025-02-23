@@ -1,0 +1,38 @@
+{
+  "command": "wfuzz",
+  "description": "A web application bruteforcer. More information: https://wfuzz.readthedocs.io/en/latest/user/basicusage.html.",
+  "useCases": [
+    {
+      "description": "Directory and file bruteforce using the specified [w]ordlist and also [p]roxying the traffic:",
+      "syntax": "wfuzz -w {{path/to/file}} -p {{127.0.0.1:8080:HTTP}} {{http://example.com/FUZZ}}"
+    },
+    {
+      "description": "Save the results to a [f]ile:",
+      "syntax": "wfuzz -w {{path/to/file}} -f {{filename}} {{http://example.com/FUZZ}}"
+    },
+    {
+      "description": "Show [c]olorized output while only showing the declared response codes in the output:",
+      "syntax": "wfuzz -c -w {{path/to/file}} --sc {{200,301,302}} {{http://example.com/FUZZ}}"
+    },
+    {
+      "description": "Use a custom [H]eader to fuzz subdomains while [h]iding specific response [c]odes and word counts. Increase the [t]hreads to 100 and include the target ip/domain:",
+      "syntax": "wfuzz -w {{path/to/file}} -H &quot;{{Host: FUZZ.example.com}}&quot; --hc {{301}} --hw {{222}} -t {{100}} {{example.com}}"
+    },
+    {
+      "description": "Brute force Basic Authentication using a list of usernames and passwords from files for each FUZ[z] keyword, [h]iding response [c]odes of unsuccessful attempts:",
+      "syntax": "wfuzz -c --hc {{401}} -s {{delay_between_requests_in_seconds}} -z file,{{path/to/usernames}} -z file,{{path/to/passwords}} --basic 'FUZZ:FUZ2Z' {{https://example.com}}"
+    },
+    {
+      "description": "Provide wordlist directly from the command-line and use POST request for fuzzing:",
+      "syntax": "wfuzz -z list,{{word1-word2-...}} {{https://api.example.com}} -d &quot;{{id=FUZZ&amp;showwallet=true}}&quot;"
+    },
+    {
+      "description": "Provide wordlists from a file applying base64 and md5 encoding on them (wfuzz -e encoders lists all available encoders):",
+      "syntax": "wfuzz -z file,{{path/to/file}},none-base64-md5 {{https://example.com/FUZZ}}"
+    },
+    {
+      "description": "List available encoders/payloads/iterators/printers/scripts:",
+      "syntax": "wfuzz -e {{encoders|payloads|iterators|printers|scripts}}"
+    }
+  ]
+}

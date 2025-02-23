@@ -1,0 +1,34 @@
+{
+  "command": "kubeadm",
+  "description": "Command-line interface for creating and managing Kubernetes clusters. More information: https://kubernetes.io/docs/reference/setup-tools/kubeadm.",
+  "useCases": [
+    {
+      "description": "Create a Kubernetes control plane:",
+      "syntax": "kubeadm init"
+    },
+    {
+      "description": "Bootstrap a Kubernetes worker node and join it to a cluster:",
+      "syntax": "kubeadm join --token {{token}}"
+    },
+    {
+      "description": "Create a new bootstrap token with a TTL of 12 hours:",
+      "syntax": "kubeadm token create --ttl {{12h0m0s}}"
+    },
+    {
+      "description": "Check if the Kubernetes cluster is upgradeable and which versions are available:",
+      "syntax": "kubeadm upgrade plan"
+    },
+    {
+      "description": "Upgrade Kubernetes cluster to a specified version:",
+      "syntax": "kubeadm upgrade apply {{version}}"
+    },
+    {
+      "description": "View the kubeadm ConfigMap containing the cluster's configuration:",
+      "syntax": "kubeadm config view"
+    },
+    {
+      "description": "Revert changes made to the host by 'kubeadm init' or 'kubeadm join':",
+      "syntax": "kubeadm reset"
+    }
+  ]
+}

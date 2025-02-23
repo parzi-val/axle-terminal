@@ -1,0 +1,22 @@
+{
+  "command": "arthas",
+  "description": "Java diagnostic tool. See also: arthas-watch, arthas-trace. More information: https://arthas.aliyun.com/en/.",
+  "useCases": [
+    {
+      "description": "Start Arthas:",
+      "syntax": "java -jar {{path/to/arthas-boot.jar}}"
+    },
+    {
+      "description": "Reconnect Arthas (default port used by Arthas is 3658):",
+      "syntax": "telnet localhost {{port_number}}"
+    },
+    {
+      "description": "Exit the current Arthas client without affecting other clients. equals exit、logout、q command:",
+      "syntax": "exit|quit|logout|q"
+    },
+    {
+      "description": "Terminate the Arthas server, all the Arthas clients connecting to this server will be disconnected:",
+      "syntax": "stop"
+    }
+  ]
+}

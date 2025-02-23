@@ -1,0 +1,26 @@
+{
+  "command": "zellij",
+  "description": "Terminal multiplexer with batteries included. See also tmux and screen. More information: https://zellij.dev/documentation/.",
+  "useCases": [
+    {
+      "description": "Start a new named session:",
+      "syntax": "zellij --session {{name}}"
+    },
+    {
+      "description": "List existing sessions:",
+      "syntax": "zellij list-sessions"
+    },
+    {
+      "description": "Attach to the most recently used session:",
+      "syntax": "zellij attach"
+    },
+    {
+      "description": "Open a new pane (inside a zellij session):",
+      "syntax": "&lt;Alt&gt; + N"
+    },
+    {
+      "description": "Detach from the current session (inside a zellij session):",
+      "syntax": "&lt;Ctrl&gt; + O, D"
+    }
+  ]
+}

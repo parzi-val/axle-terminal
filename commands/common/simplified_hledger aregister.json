@@ -1,0 +1,22 @@
+{
+  "command": "hledger aregister",
+  "description": "Show the transactions and running balances in one account, with each transaction on one line. More information: https://hledger.org/hledger.html#aregister.",
+  "useCases": [
+    {
+      "description": "Show transactions and running balance in the assets:bank:checking account:",
+      "syntax": "hledger aregister assets:bank:checking"
+    },
+    {
+      "description": "Show transactions and running balance in the first account named *savings*:",
+      "syntax": "hledger aregister savings"
+    },
+    {
+      "description": "Show the checking account's cleared transactions, with a specified width:",
+      "syntax": "hledger aregister checking --cleared --width {{120}}"
+    },
+    {
+      "description": "Show the checking register, including transactions from forecast rules:",
+      "syntax": "hledger aregister checking --forecast"
+    }
+  ]
+}

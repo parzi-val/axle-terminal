@@ -1,0 +1,22 @@
+{
+  "command": "cppclean",
+  "description": "Find unused code in C++ projects. More information: https://github.com/myint/cppclean.",
+  "useCases": [
+    {
+      "description": "Run in a project's directory:",
+      "syntax": "cppclean {{path/to/project}}"
+    },
+    {
+      "description": "Run on a project where the headers are in the inc1/ and inc2/ directories:",
+      "syntax": "cppclean {{path/to/project}} --include-path {{inc1}} --include-path {{inc2}}"
+    },
+    {
+      "description": "Run on a specific file main.cpp:",
+      "syntax": "cppclean {{main.cpp}}"
+    },
+    {
+      "description": "Run on the current directory, excluding the \"build\" directory:",
+      "syntax": "cppclean {{.}} --exclude {{build}}"
+    }
+  ]
+}

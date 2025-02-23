@@ -1,0 +1,38 @@
+{
+  "command": "clifm",
+  "description": "The command-line file manager. See also: vifm, ranger, mc, nautilus. More information: https://github.com/leo-arch/clifm.",
+  "useCases": [
+    {
+      "description": "Start CliFM:",
+      "syntax": "clifm"
+    },
+    {
+      "description": "Open the file or directory whose ELN (entry list number) is 12:",
+      "syntax": "12"
+    },
+    {
+      "description": "Create a new file and a new directory:",
+      "syntax": "n file dir/"
+    },
+    {
+      "description": "Search for PDF files in the current directory:",
+      "syntax": "/*.pdf"
+    },
+    {
+      "description": "Select all PNG files in the current directory:",
+      "syntax": "s *.png"
+    },
+    {
+      "description": "Remove the previously selected files (use t to send the files to the recycle bin instead):",
+      "syntax": "r sel"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "?"
+    },
+    {
+      "description": "Exit CliFM:",
+      "syntax": "q"
+    }
+  ]
+}

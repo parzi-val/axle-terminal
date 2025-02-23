@@ -1,0 +1,30 @@
+{
+  "command": "gdb",
+  "description": "The GNU Debugger. More information: https://www.gnu.org/software/gdb.",
+  "useCases": [
+    {
+      "description": "Debug an executable:",
+      "syntax": "gdb {{executable}}"
+    },
+    {
+      "description": "Attach a process to gdb:",
+      "syntax": "gdb -p {{procID}}"
+    },
+    {
+      "description": "Debug with a core file:",
+      "syntax": "gdb -c {{core}} {{executable}}"
+    },
+    {
+      "description": "Execute given GDB commands upon start:",
+      "syntax": "gdb -ex &quot;{{commands}}&quot; {{executable}}"
+    },
+    {
+      "description": "Start gdb and pass arguments to the executable:",
+      "syntax": "gdb --args {{executable}} {{argument1}} {{argument2}}"
+    },
+    {
+      "description": "Skip debuginfod and pagination prompts and then print the backtrace:",
+      "syntax": "gdb -c {{core}} {{executable}} -iex 'set debuginfod enabled on' -iex 'set pagination off' -ex bt"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "lpinfo",
+  "description": "List connected printers and installed drivers for the CUPS print server. More information: https://openprinting.github.io/cups/doc/man-lpinfo.html.",
+  "useCases": [
+    {
+      "description": "List all the currently connected printers:",
+      "syntax": "lpinfo -v"
+    },
+    {
+      "description": "List all the currently installed printer drivers:",
+      "syntax": "lpinfo -m"
+    },
+    {
+      "description": "Search installed printer drivers by make and model:",
+      "syntax": "lpinfo --make-and-model &quot;{{printer_model}}&quot; -m"
+    }
+  ]
+}

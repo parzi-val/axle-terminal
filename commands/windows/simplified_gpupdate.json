@@ -1,0 +1,22 @@
+{
+  "command": "gpupdate",
+  "description": "Check and apply Windows Group Policy settings. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/gpupdate.",
+  "useCases": [
+    {
+      "description": "Check and apply updated Group Policy settings:",
+      "syntax": "gpupdate"
+    },
+    {
+      "description": "Specify the target Group Policy settings to check for update:",
+      "syntax": "gpupdate /target:{{computer|user}}"
+    },
+    {
+      "description": "Force all Group Policy settings to be reapplied:",
+      "syntax": "gpupdate /force"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "gpupdate /?"
+    }
+  ]
+}

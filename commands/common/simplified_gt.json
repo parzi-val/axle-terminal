@@ -1,0 +1,38 @@
+{
+  "command": "gt",
+  "description": "Create and manage sequences of dependent code changes (stacks) for Git and GitHub. More information: https://graphite.dev/docs/get-started.",
+  "useCases": [
+    {
+      "description": "Initialise gt for the repository in the current directory:",
+      "syntax": "gt init"
+    },
+    {
+      "description": "Create a new branch stacked on top of the current branch and commit staged changes:",
+      "syntax": "gt create {{branch_name}}"
+    },
+    {
+      "description": "Create a new commit and fix upstack branches:",
+      "syntax": "gt modify -cam {{commit_message}}"
+    },
+    {
+      "description": "Force push all branches in the current stack to GitHub and create or update PRs:",
+      "syntax": "gt stack submit"
+    },
+    {
+      "description": "Checkout different branch (prompts interactive mode when branch name is omitted):",
+      "syntax": "gt co {{branch_name}}"
+    },
+    {
+      "description": "Sync stack with remote version (also deletes merged branches):",
+      "syntax": "gt sync"
+    },
+    {
+      "description": "Log all tracked stacks:",
+      "syntax": "gt log short"
+    },
+    {
+      "description": "Display help for a specified subcommand:",
+      "syntax": "gt {{subcommand}} --help"
+    }
+  ]
+}

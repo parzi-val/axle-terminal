@@ -1,0 +1,14 @@
+{
+  "command": "virsh-domblklist",
+  "description": "List information about block devices associated with a virtual machine. See also: virsh. More information: https://manned.org/virsh.",
+  "useCases": [
+    {
+      "description": "List the target name and source path of the block devices:",
+      "syntax": "virsh domblklist --domain {{vm_name}}"
+    },
+    {
+      "description": "List the disk type and device value as well as the target name and source path:",
+      "syntax": "virsh domblklist --domain {{vm_name}} --details"
+    }
+  ]
+}

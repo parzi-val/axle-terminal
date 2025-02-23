@@ -1,0 +1,34 @@
+{
+  "command": "dvc config",
+  "description": "Low level command to manage custom configuration options for dvc repositories. These configurations can be on project, local, global, or system level. More information: https://dvc.org/doc/command-reference/config.",
+  "useCases": [
+    {
+      "description": "Get the name of the default remote:",
+      "syntax": "dvc config core.remote"
+    },
+    {
+      "description": "Set the project's default remote:",
+      "syntax": "dvc config core.remote {{remote_name}}"
+    },
+    {
+      "description": "Unset the project's default remote:",
+      "syntax": "dvc config --unset core.remote"
+    },
+    {
+      "description": "Get the configuration value for a specified key for the current project:",
+      "syntax": "dvc config {{key}}"
+    },
+    {
+      "description": "Set the configuration value for a key on a project level:",
+      "syntax": "dvc config {{key}} {{value}}"
+    },
+    {
+      "description": "Unset a project level configuration value for a given key:",
+      "syntax": "dvc config --unset {{key}}"
+    },
+    {
+      "description": "Set a local, global, or system level configuration value:",
+      "syntax": "dvc config --{{local|global|system}} {{key}} {{value}}"
+    }
+  ]
+}

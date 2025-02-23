@@ -1,0 +1,26 @@
+{
+  "command": "pfetch",
+  "description": "Display system information. More information: https://github.com/dylanaraps/pfetch.",
+  "useCases": [
+    {
+      "description": "Display the ASCII art and default fields:",
+      "syntax": "pfetch"
+    },
+    {
+      "description": "Display only the ASCII art and color palette fields:",
+      "syntax": "PF_INFO=&quot;{{ascii palette}}&quot; pfetch"
+    },
+    {
+      "description": "Display all possible fields:",
+      "syntax": "PF_INFO=&quot;{{ascii title os host kernel uptime pkgs memory shell editor wm de palette}}&quot; pfetch"
+    },
+    {
+      "description": "Display a different username and hostname:",
+      "syntax": "USER=&quot;{{user}}&quot; HOSTNAME=&quot;{{hostname}}&quot; pfetch"
+    },
+    {
+      "description": "Display without colors:",
+      "syntax": "PF_COLOR={{0}} pfetch"
+    }
+  ]
+}

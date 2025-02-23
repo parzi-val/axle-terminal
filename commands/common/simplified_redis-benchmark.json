@@ -1,0 +1,34 @@
+{
+  "command": "redis-benchmark",
+  "description": "Benchmark a Redis server. More information: https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/benchmarks/.",
+  "useCases": [
+    {
+      "description": "Run full benchmark:",
+      "syntax": "redis-benchmark"
+    },
+    {
+      "description": "Run benchmark on a specific Redis server:",
+      "syntax": "redis-benchmark -h {{host}} -p {{port}} -a {{password}}"
+    },
+    {
+      "description": "Run a subset of tests with default 100000 requests:",
+      "syntax": "redis-benchmark -h {{host}} -p {{port}} -t {{set,lpush}} -n {{100000}}"
+    },
+    {
+      "description": "Run with a specific script:",
+      "syntax": "redis-benchmark -n {{100000}} script load &quot;{{redis.call('set', 'foo', 'bar')}}&quot;"
+    },
+    {
+      "description": "Run benchmark by using 100000 [r]andom keys:",
+      "syntax": "redis-benchmark -t {{set}} -r {{100000}}"
+    },
+    {
+      "description": "Run benchmark by using a [P]ipelining of 16 commands:",
+      "syntax": "redis-benchmark -n {{1000000}} -t {{set,get}} -P {{16}}"
+    },
+    {
+      "description": "Run benchmark [q]uietly and only show query per seconds result:",
+      "syntax": "redis-benchmark -q"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "obs",
+  "description": "Open Broadcaster Software. Video recording and livestreaming program. More information: https://obsproject.com/.",
+  "useCases": [
+    {
+      "description": "Launch OBS:",
+      "syntax": "obs"
+    },
+    {
+      "description": "Launch OBS in portable mode:",
+      "syntax": "obs --portable"
+    },
+    {
+      "description": "Automatically start recording a video on launch:",
+      "syntax": "obs --startrecording"
+    },
+    {
+      "description": "Automatically start the replay buffer on launch:",
+      "syntax": "obs --startreplaybuffer"
+    },
+    {
+      "description": "Automatically start streaming on launch:",
+      "syntax": "obs --startstreaming"
+    },
+    {
+      "description": "Minimise to the system tray on launch:",
+      "syntax": "obs --minimize-to-tray"
+    },
+    {
+      "description": "Make the log more verbose (for debugging):",
+      "syntax": "obs --verbose"
+    }
+  ]
+}

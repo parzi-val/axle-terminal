@@ -1,0 +1,34 @@
+{
+  "command": "nsxiv",
+  "description": "Neo Simple X Image Viewer. More information: https://nsxiv.codeberg.page/man.",
+  "useCases": [
+    {
+      "description": "Open images:",
+      "syntax": "nsxiv {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open images from directories in image mode:",
+      "syntax": "nsxiv {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Search directories recursively for images to view:",
+      "syntax": "nsxiv -r {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Quit nsxiv:",
+      "syntax": "q"
+    },
+    {
+      "description": "Switch to thumbnail mode or open selected image in image mode:",
+      "syntax": "&lt;Return&gt;"
+    },
+    {
+      "description": "Count images forward in image mode:",
+      "syntax": "n"
+    },
+    {
+      "description": "Count images backward in image mode:",
+      "syntax": "p"
+    }
+  ]
+}

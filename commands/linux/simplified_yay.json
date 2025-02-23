@@ -1,0 +1,38 @@
+{
+  "command": "yay",
+  "description": "Yet Another Yogurt: build and install packages from the Arch User Repository. Also see pacman. More information: https://github.com/Jguer/yay.",
+  "useCases": [
+    {
+      "description": "Interactively search and install packages from the repos and AUR:",
+      "syntax": "yay {{package_name|search_term}}"
+    },
+    {
+      "description": "Synchronize and update all packages from the repos and AUR:",
+      "syntax": "yay"
+    },
+    {
+      "description": "Synchronize and update only AUR packages:",
+      "syntax": "yay -Sua"
+    },
+    {
+      "description": "Install a new package from the repos and AUR:",
+      "syntax": "yay -S {{package}}"
+    },
+    {
+      "description": "Remove an installed package and both its dependencies and configuration files:",
+      "syntax": "yay -Rns {{package}}"
+    },
+    {
+      "description": "Search the package database for a keyword from the repos and AUR:",
+      "syntax": "yay -Ss {{keyword}}"
+    },
+    {
+      "description": "Remove orphaned packages (installed as dependencies but not required by any package):",
+      "syntax": "yay -Yc"
+    },
+    {
+      "description": "Show statistics for installed packages and system health:",
+      "syntax": "yay -Ps"
+    }
+  ]
+}

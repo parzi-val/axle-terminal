@@ -1,0 +1,14 @@
+{
+  "command": "nix why-depends",
+  "description": "Show why a package depends on another package. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-why-depends.html.",
+  "useCases": [
+    {
+      "description": "Show why the currently running NixOS system requires a certain store path:",
+      "syntax": "nix why-depends {{/run/current-system}} {{/nix/store/...}}"
+    },
+    {
+      "description": "Show why a package from nixpkgs requires another package as a build-time dependency:",
+      "syntax": "nix why-depends --derivation {{nixpkgs#dependent}} {{nixpkgs#dependency}}"
+    }
+  ]
+}

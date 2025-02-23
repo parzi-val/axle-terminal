@@ -1,0 +1,30 @@
+{
+  "command": "cabal",
+  "description": "Command-line interface to the Haskell package infrastructure (Cabal). Manage Haskell projects and Cabal packages from the Hackage package repository. More information: https://cabal.readthedocs.io/en/latest/getting-started.html.",
+  "useCases": [
+    {
+      "description": "Search and list packages from Hackage:",
+      "syntax": "cabal list {{search_string}}"
+    },
+    {
+      "description": "Show information about a package:",
+      "syntax": "cabal info {{package}}"
+    },
+    {
+      "description": "Download and install a package:",
+      "syntax": "cabal install {{package}}"
+    },
+    {
+      "description": "Create a new Haskell project in the current directory:",
+      "syntax": "cabal init"
+    },
+    {
+      "description": "Build the project in the current directory:",
+      "syntax": "cabal build"
+    },
+    {
+      "description": "Run tests of the project in the current directory:",
+      "syntax": "cabal test"
+    }
+  ]
+}

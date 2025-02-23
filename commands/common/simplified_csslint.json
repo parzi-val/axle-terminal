@@ -1,0 +1,30 @@
+{
+  "command": "csslint",
+  "description": "Lint CSS code. More information: https://github.com/CSSLint/csslint/wiki/Command-line-interface.",
+  "useCases": [
+    {
+      "description": "Lint a single CSS file:",
+      "syntax": "csslint {{file.css}}"
+    },
+    {
+      "description": "Lint multiple CSS files:",
+      "syntax": "csslint {{file1.css file2.css ...}}"
+    },
+    {
+      "description": "List all possible style rules:",
+      "syntax": "csslint --list-rules"
+    },
+    {
+      "description": "Treat certain rules as errors (which results in a non-zero exit code):",
+      "syntax": "csslint --errors={{errors,universal-selector,imports}} {{file.css}}"
+    },
+    {
+      "description": "Treat certain rules as warnings:",
+      "syntax": "csslint --warnings={{box-sizing,selector-max,floats}} {{file.css}}"
+    },
+    {
+      "description": "Ignore specific rules:",
+      "syntax": "csslint --ignore={{ids,rules-count,shorthand}} {{file.css}}"
+    }
+  ]
+}

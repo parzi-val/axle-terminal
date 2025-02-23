@@ -1,0 +1,10 @@
+{
+  "command": "pngtopnm",
+  "description": "This command has been superseded by pngtopam. More information: https://netpbm.sourceforge.net/doc/pngtopnm.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pngtopam"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "uname",
+  "description": "Uname prints information about the machine and operating system it is run on. More information: https://www.gnu.org/software/coreutils/manual/html_node/uname-invocation.html.",
+  "useCases": [
+    {
+      "description": "Print all information:",
+      "syntax": "uname --all"
+    },
+    {
+      "description": "Print the current kernel name:",
+      "syntax": "uname --kernel-name"
+    },
+    {
+      "description": "Print the current network node host name:",
+      "syntax": "uname --nodename"
+    },
+    {
+      "description": "Print the current kernel release:",
+      "syntax": "uname --kernel-release"
+    },
+    {
+      "description": "Print the current kernel version:",
+      "syntax": "uname --kernel-version"
+    },
+    {
+      "description": "Print the current machine hardware name:",
+      "syntax": "uname --machine"
+    },
+    {
+      "description": "Print the current processor type:",
+      "syntax": "uname --processor"
+    },
+    {
+      "description": "Print the current operating system name:",
+      "syntax": "uname --operating-system"
+    }
+  ]
+}

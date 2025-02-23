@@ -1,0 +1,18 @@
+{
+  "command": "ln",
+  "description": "Create links to files and directories. More information: https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html.",
+  "useCases": [
+    {
+      "description": "Create a symbolic link to a file or directory:",
+      "syntax": "ln -s {{/path/to/file_or_directory}} {{path/to/symlink}}"
+    },
+    {
+      "description": "Overwrite an existing symbolic link to point to a different file:",
+      "syntax": "ln -sf {{/path/to/new_file}} {{path/to/symlink}}"
+    },
+    {
+      "description": "Create a hard link to a file:",
+      "syntax": "ln {{/path/to/file}} {{path/to/hardlink}}"
+    }
+  ]
+}

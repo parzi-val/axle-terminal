@@ -1,0 +1,10 @@
+{
+  "command": "ppmmix",
+  "description": "Blend together two PPM images. More information: https://netpbm.sourceforge.net/doc/ppmmix.html.",
+  "useCases": [
+    {
+      "description": "Blend the specified PPM images using fadefactor to control the weight of each image:",
+      "syntax": "ppmmix {{fadefactor}} {{path/to/input_file1.ppm}} {{path/to/input_file2.ppm}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

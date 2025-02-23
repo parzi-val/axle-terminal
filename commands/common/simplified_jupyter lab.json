@@ -1,0 +1,22 @@
+{
+  "command": "jupyter lab",
+  "description": "Interactive development environment for Jupyter notebooks. More information: https://jupyterlab.readthedocs.io/en/stable/.",
+  "useCases": [
+    {
+      "description": "Start JupyterLab:",
+      "syntax": "jupyter lab"
+    },
+    {
+      "description": "Open a specific notebook:",
+      "syntax": "jupyter lab {{path/to/notebook.ipynb}}"
+    },
+    {
+      "description": "Start JupyterLab in a specific directory:",
+      "syntax": "jupyter lab --notebook-dir {{path/to/directory}}"
+    },
+    {
+      "description": "Start JupyterLab in debug mode:",
+      "syntax": "jupyter lab --debug"
+    }
+  ]
+}

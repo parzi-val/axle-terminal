@@ -1,0 +1,38 @@
+{
+  "command": "duplicacy",
+  "description": "A lock-free deduplication cloud backup tool. More information: https://github.com/gilbertchen/duplicacy/wiki.",
+  "useCases": [
+    {
+      "description": "Use current directory as the repository, initialize a SFTP storage and encrypt the storage with a password:",
+      "syntax": "duplicacy init -e {{snapshot_id}} {{sftp://user@192.168.2.100/path/to/storage/}}"
+    },
+    {
+      "description": "Save a snapshot of the repository to the default storage:",
+      "syntax": "duplicacy backup"
+    },
+    {
+      "description": "List snapshots of current repository:",
+      "syntax": "duplicacy list"
+    },
+    {
+      "description": "Restore the repository to a previously saved snapshot:",
+      "syntax": "duplicacy restore -r {{revision}}"
+    },
+    {
+      "description": "Check the integrity of snapshots:",
+      "syntax": "duplicacy check"
+    },
+    {
+      "description": "Add another storage to be used for the existing repository:",
+      "syntax": "duplicacy add {{storage_name}} {{snapshot_id}} {{storage_url}}"
+    },
+    {
+      "description": "Prune a specific revision of snapshot:",
+      "syntax": "duplicacy prune -r {{revision}}"
+    },
+    {
+      "description": "Prune revisions, keeping one revision every n days for all revisions older than m days:",
+      "syntax": "duplicacy prune -keep {{n:m}}"
+    }
+  ]
+}

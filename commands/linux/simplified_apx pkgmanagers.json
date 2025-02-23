@@ -1,0 +1,22 @@
+{
+  "command": "apx pkgmanagers",
+  "description": "Manage package managers in apx. Note: user-created package manager configurations are stored in ~/.local/share/apx/pkgmanagers. More information: https://github.com/Vanilla-OS/apx.",
+  "useCases": [
+    {
+      "description": "Interactively create a new package manager configuration:",
+      "syntax": "apx pkgmanagers create"
+    },
+    {
+      "description": "List all available package manager confirgurations:",
+      "syntax": "apx pkgmanagers list"
+    },
+    {
+      "description": "Remove a package manager configuration:",
+      "syntax": "apx pkgmanagers rm --name {{string}}"
+    },
+    {
+      "description": "Display information about a specific package manager:",
+      "syntax": "apx pkgmanagers show {{name}}"
+    }
+  ]
+}

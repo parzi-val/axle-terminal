@@ -1,0 +1,26 @@
+{
+  "command": "fc-list",
+  "description": "List available fonts installed on the system. More information: https://manned.org/fc-list.",
+  "useCases": [
+    {
+      "description": "Return a list of installed fonts in your system:",
+      "syntax": "fc-list"
+    },
+    {
+      "description": "Return a list of installed fonts with given name:",
+      "syntax": "fc-list | grep '{{DejaVu Serif}}'"
+    },
+    {
+      "description": "Return the number of installed fonts in your system:",
+      "syntax": "fc-list | wc -l"
+    },
+    {
+      "description": "Return a list of installed fonts that support the language based on its locale code:",
+      "syntax": "fc-list :lang={{jp}}"
+    },
+    {
+      "description": "Return a list of installed fonts that contain the glyph specified by its Unicode code-point:",
+      "syntax": "fc-list :charset={{f303}}"
+    }
+  ]
+}

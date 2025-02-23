@@ -1,0 +1,34 @@
+{
+  "command": "gau",
+  "description": "Get All URLs: fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl for any domains. More information: https://github.com/lc/gau.",
+  "useCases": [
+    {
+      "description": "Fetch all URLs of a domain from AlienVault's Open Threat Exchange, the Wayback Machine, Common Crawl, and URLScan:",
+      "syntax": "gau {{example.com}}"
+    },
+    {
+      "description": "Fetch URLs of multiple domains:",
+      "syntax": "gau {{domain1 domain2 ...}}"
+    },
+    {
+      "description": "Fetch all URLs of several domains from an input file, running multiple threads:",
+      "syntax": "gau --threads {{4}} &lt; {{path/to/domains.txt}}"
+    },
+    {
+      "description": "Write [o]utput results to a file:",
+      "syntax": "gau {{example.com}} --o {{path/to/found_urls.txt}}"
+    },
+    {
+      "description": "Search for URLs from only one specific provider:",
+      "syntax": "gau --providers {{wayback|commoncrawl|otx|urlscan}} {{example.com}}"
+    },
+    {
+      "description": "Search for URLs from multiple providers:",
+      "syntax": "gau --providers {{wayback,otx,...}} {{example.com}}"
+    },
+    {
+      "description": "Search for URLs within specific date range:",
+      "syntax": "gau --from {{YYYYMM}} --to {{YYYYMM}} {{example.com}}"
+    }
+  ]
+}

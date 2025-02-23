@@ -1,0 +1,18 @@
+{
+  "command": "who",
+  "description": "Display who is logged in and related data (processes, boot time). See also: whoami. More information: https://www.gnu.org/software/coreutils/manual/html_node/who-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display the username, line, and time of all currently logged-in sessions:",
+      "syntax": "who"
+    },
+    {
+      "description": "Display all available information:",
+      "syntax": "who -a"
+    },
+    {
+      "description": "Display all available information with table headers:",
+      "syntax": "who -a -H"
+    }
+  ]
+}

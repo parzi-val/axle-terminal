@@ -1,0 +1,30 @@
+{
+  "command": "hg serve",
+  "description": "Start a standalone Mercurial web server for browsing repositories. More information: https://www.mercurial-scm.org/doc/hg.1.html#serve.",
+  "useCases": [
+    {
+      "description": "Start a web server instance:",
+      "syntax": "hg serve"
+    },
+    {
+      "description": "Start a web server instance on the specified port:",
+      "syntax": "hg serve --port {{port}}"
+    },
+    {
+      "description": "Start a web server instance on the specified listening address:",
+      "syntax": "hg serve --address {{address}}"
+    },
+    {
+      "description": "Start a web server instance with a specific identifier:",
+      "syntax": "hg serve --name {{name}}"
+    },
+    {
+      "description": "Start a web server instance using the specified theme (see the templates directory):",
+      "syntax": "hg serve --style {{style}}"
+    },
+    {
+      "description": "Start a web server instance using the specified SSL certificate bundle:",
+      "syntax": "hg serve --certificate {{path/to/certificate}}"
+    }
+  ]
+}

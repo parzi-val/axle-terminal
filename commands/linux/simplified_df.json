@@ -1,0 +1,30 @@
+{
+  "command": "df",
+  "description": "Display an overview of the filesystem disk space usage. More information: https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display all filesystems and their disk usage:",
+      "syntax": "df"
+    },
+    {
+      "description": "Display all filesystems and their disk usage in human-readable form:",
+      "syntax": "df {{-h|--human-readable}}"
+    },
+    {
+      "description": "Display the filesystem and its disk usage containing the given file or directory:",
+      "syntax": "df {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Include statistics on the number of free inodes:",
+      "syntax": "df {{-i|--inodes}}"
+    },
+    {
+      "description": "Display filesystems but exclude the specified types:",
+      "syntax": "df {{-x|--exclude-type}} {{squashfs}} {{-x|--exclude-type}} {{tmpfs}}"
+    },
+    {
+      "description": "Display filesystem types:",
+      "syntax": "df {{-T|--print-type}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "kscreen-console",
+  "description": "Command-line tool to query KScreen's status. More information: https://manned.org/kscreen-console.",
+  "useCases": [
+    {
+      "description": "Show all outputs and configuration files to attach to a bug report:",
+      "syntax": "kscreen-console bug"
+    },
+    {
+      "description": "Show paths to KScreen configuration files:",
+      "syntax": "kscreen-console config"
+    },
+    {
+      "description": "Show KScreen output information and configuration:",
+      "syntax": "kscreen-console outputs"
+    },
+    {
+      "description": "Monitor for changes:",
+      "syntax": "kscreen-console monitor"
+    },
+    {
+      "description": "Show the current KScreen configuration as JSON:",
+      "syntax": "kscreen-console json"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "kscreen-console --help"
+    },
+    {
+      "description": "Display help including Qt specific command-line options:",
+      "syntax": "kscreen-console --help-all"
+    }
+  ]
+}

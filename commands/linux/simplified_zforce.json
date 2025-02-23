@@ -1,0 +1,10 @@
+{
+  "command": "zforce",
+  "description": "Add a .gz extension to files compressed using gzip. More information: https://manned.org/zforce.",
+  "useCases": [
+    {
+      "description": "Add a .gz extension to the supplied Gzip files (Note: other files are ignored):",
+      "syntax": "zforce {{path/to/file1 path/to/file2 ...}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "electrum",
+  "description": "Ergonomic Bitcoin wallet and private key management. More information: https://electrum.org.",
+  "useCases": [
+    {
+      "description": "Create a new wallet:",
+      "syntax": "electrum -w {{new_wallet.dat}} create"
+    },
+    {
+      "description": "Restore an existing wallet from seed offline:",
+      "syntax": "electrum -w {{recovery_wallet.dat}} restore -o"
+    },
+    {
+      "description": "Create a signed transaction offline:",
+      "syntax": "electrum mktx {{recipient}} {{amount}} -f 0.0000001 -F {{from}} -o"
+    },
+    {
+      "description": "Display all wallet receiving addresses:",
+      "syntax": "electrum listaddresses -a"
+    },
+    {
+      "description": "Sign a message:",
+      "syntax": "electrum signmessage {{address}} {{message}}"
+    },
+    {
+      "description": "Verify a message:",
+      "syntax": "electrum verifymessage {{address}} {{signature}} {{message}}"
+    },
+    {
+      "description": "Connect only to a specific electrum-server instance:",
+      "syntax": "electrum -p socks5:{{127.0.0.1}}:9050 -s {{56ckl5obj37gypcu.onion}}:50001:t -1"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "upt",
+  "description": "Unified interface for managing packages across various operating systems, like Windows, many Linux distributions, macOS, FreeBSD and even Haiku. It requires the native OS package manager to be installed. See also: flatpak, brew, scoop, apt, dnf. More information: https://github.com/sigoden/upt.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages:",
+      "syntax": "upt update"
+    },
+    {
+      "description": "Search for a given package:",
+      "syntax": "upt search {{search_term}}"
+    },
+    {
+      "description": "Show information for a package:",
+      "syntax": "upt info {{package}}"
+    },
+    {
+      "description": "Install a given package:",
+      "syntax": "upt install {{package}}"
+    },
+    {
+      "description": "Remove a given package:",
+      "syntax": "upt {{remove|uninstall}} {{package}}"
+    },
+    {
+      "description": "Upgrade all installed packages:",
+      "syntax": "upt upgrade"
+    },
+    {
+      "description": "Upgrade a given package:",
+      "syntax": "upt upgrade {{package}}"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "upt list"
+    }
+  ]
+}

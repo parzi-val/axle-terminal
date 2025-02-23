@@ -1,0 +1,14 @@
+{
+  "command": "pamtouil",
+  "description": "Convert a PNM or PAM file into a Motif UIL icon file. More information: https://netpbm.sourceforge.net/doc/pamtouil.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM or PAM file into a Motif UIL icon file:",
+      "syntax": "pamtouil {{path/to/input.pnm|pam}} &gt; {{path/to/output.uil}}"
+    },
+    {
+      "description": "Specify a prefix string to be printed in the output UIL file:",
+      "syntax": "pamtouil -name {{uilname}} {{path/to/input.pnm|pam}} &gt; {{path/to/output.uil}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "pygmentize",
+  "description": "Python-based syntax highlighter. More information: https://pygments.org/docs/cmdline/.",
+  "useCases": [
+    {
+      "description": "Highlight file syntax and print to stdout (language is inferred from the file extension):",
+      "syntax": "pygmentize {{file.py}}"
+    },
+    {
+      "description": "Explicitly set the language for syntax highlighting:",
+      "syntax": "pygmentize -l {{javascript}} {{input_file}}"
+    },
+    {
+      "description": "List available lexers (processors for input languages):",
+      "syntax": "pygmentize -L lexers"
+    },
+    {
+      "description": "Save output to a file in HTML format:",
+      "syntax": "pygmentize -f html -o {{output_file.html}} {{input_file.py}}"
+    },
+    {
+      "description": "List available output formats:",
+      "syntax": "pygmentize -L formatters"
+    },
+    {
+      "description": "Output an HTML file, with additional formatter options (full page, with line numbers):",
+      "syntax": "pygmentize -f html -O &quot;full,linenos=True&quot; -o {{output_file.html}} {{input_file}}"
+    }
+  ]
+}

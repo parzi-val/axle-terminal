@@ -1,0 +1,22 @@
+{
+  "command": "phpquery",
+  "description": "PHP extension manager for Debian-based OSes. More information: https://helpmanual.io/help/phpquery/.",
+  "useCases": [
+    {
+      "description": "List available PHP versions:",
+      "syntax": "sudo phpquery -V"
+    },
+    {
+      "description": "List available SAPIs for PHP 7.3:",
+      "syntax": "sudo phpquery -v {{7.3}} -S"
+    },
+    {
+      "description": "List enabled extensions for PHP 7.3 with the cli SAPI:",
+      "syntax": "sudo phpquery -v {{7.3}} -s {{cli}} -M"
+    },
+    {
+      "description": "Check if the JSON extension is enabled for PHP 7.3 with the apache2 SAPI:",
+      "syntax": "sudo phpquery -v {{7.3}} -s {{apache2}} -m {{json}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "ip route get",
+  "description": "Get a single route to a destination and print its contents exactly as the kernel sees it. More information: https://manned.org/ip-route.",
+  "useCases": [
+    {
+      "description": "Print route to a destination:",
+      "syntax": "ip route get {{1.1.1.1}}"
+    },
+    {
+      "description": "Print route to a destination from a specific source address:",
+      "syntax": "ip route get {{destination}} from {{source}}"
+    },
+    {
+      "description": "Print route to a destination for packets arriving on a specific interface:",
+      "syntax": "ip route get {{destination}} iif {{eth0}}"
+    },
+    {
+      "description": "Print route to a destination, forcing output through a specific interface:",
+      "syntax": "ip route get {{destination}} oif {{eth1}}"
+    },
+    {
+      "description": "Print route to a destination with a specified Type of Service (ToS):",
+      "syntax": "ip route get {{destination}} tos {{0x10}}"
+    },
+    {
+      "description": "Print route to a destination using a specific VRF (Virtual Routing and Forwarding) instance:",
+      "syntax": "ip route get {{destination}} vrf {{myvrf}}"
+    }
+  ]
+}

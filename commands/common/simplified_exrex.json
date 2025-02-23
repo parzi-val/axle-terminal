@@ -1,0 +1,38 @@
+{
+  "command": "exrex",
+  "description": "Generate all/random matching strings for a regular expression. It can also simplify regular expressions. More information: https://github.com/asciimoo/exrex.",
+  "useCases": [
+    {
+      "description": "Generate all possible strings that match a regular expression:",
+      "syntax": "exrex '{{regular_expression}}'"
+    },
+    {
+      "description": "Generate a random string that matches a regular expression:",
+      "syntax": "exrex --random '{{regular_expression}}'"
+    },
+    {
+      "description": "Generate at most 100 strings that match a regular expression:",
+      "syntax": "exrex --max-number {{100}} '{{regular_expression}}'"
+    },
+    {
+      "description": "Generate all possible strings that match a regular expression, joined by a custom delimiter string:",
+      "syntax": "exrex --delimiter &quot;{{, }}&quot; '{{regular_expression}}'"
+    },
+    {
+      "description": "Print count of all possible strings that match a regular expression:",
+      "syntax": "exrex --count '{{regular_expression}}'"
+    },
+    {
+      "description": "Simplify a regular expression:",
+      "syntax": "exrex --simplify '{{ab|ac}}'"
+    },
+    {
+      "description": "Print eyes:",
+      "syntax": "exrex '{{[oO0](_)[oO0]}}'"
+    },
+    {
+      "description": "Print a boat:",
+      "syntax": "exrex '{{( {20}(\\| *\\\\|-{22}|\\|)|\\.={50}| ( ){0,5}\\\\\\.| {12}~{39})}}'"
+    }
+  ]
+}

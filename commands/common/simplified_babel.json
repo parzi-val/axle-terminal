@@ -1,0 +1,38 @@
+{
+  "command": "babel",
+  "description": "A transpiler which converts code from JavaScript ES6/ES7 syntax to ES5 syntax. More information: https://babeljs.io/.",
+  "useCases": [
+    {
+      "description": "Transpile a specified input file and output to stdout:",
+      "syntax": "babel {{path/to/file}}"
+    },
+    {
+      "description": "Transpile a specified input file and output to a specific file:",
+      "syntax": "babel {{path/to/input_file}} --out-file {{path/to/output_file}}"
+    },
+    {
+      "description": "Transpile the input file every time it is changed:",
+      "syntax": "babel {{path/to/input_file}} --watch"
+    },
+    {
+      "description": "Transpile a whole directory of files:",
+      "syntax": "babel {{path/to/input_directory}}"
+    },
+    {
+      "description": "Ignore specified comma-separated files in a directory:",
+      "syntax": "babel {{path/to/input_directory}} --ignore {{ignored_file1,ignored_file2,...}}"
+    },
+    {
+      "description": "Transpile and output as minified JavaScript:",
+      "syntax": "babel {{path/to/input_file}} --minified"
+    },
+    {
+      "description": "Choose a set of presets for output formatting:",
+      "syntax": "babel {{path/to/input_file}} --presets {{preset1,preset2,...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "babel --help"
+    }
+  ]
+}

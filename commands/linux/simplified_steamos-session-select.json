@@ -1,0 +1,26 @@
+{
+  "command": "steamos-session-select",
+  "description": "Manipulate which session is currently in use. More information: https://gitlab.com/users/evlaV/projects.",
+  "useCases": [
+    {
+      "description": "Change to desktop mode:",
+      "syntax": "steamos-session-select plasma"
+    },
+    {
+      "description": "Change to gamemode (sets the system to boot into gamemode if -persistent options were selected previously):",
+      "syntax": "steamos-session-select"
+    },
+    {
+      "description": "Change to Wayland desktop mode:",
+      "syntax": "steamos-session-select plasma-wayland"
+    },
+    {
+      "description": "Change to Wayland desktop mode and have the device boot to desktop:",
+      "syntax": "steamos-session-select plasma-wayland-persistent"
+    },
+    {
+      "description": "Change to X11 desktop mode and have the device boot to desktop:",
+      "syntax": "steamos-session-select plasma-x11-persistent"
+    }
+  ]
+}

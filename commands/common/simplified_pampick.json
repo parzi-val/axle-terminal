@@ -1,0 +1,10 @@
+{
+  "command": "pampick",
+  "description": "Pick images out of a multi-image Netpbm stream. See also: pamfile, pamsplit. More information: https://netpbm.sourceforge.net/doc/pampick.html.",
+  "useCases": [
+    {
+      "description": "Execute a shell command on each image in a Netpbm file:",
+      "syntax": "pampick {{image_number1 image_number2 ...}} &lt; {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

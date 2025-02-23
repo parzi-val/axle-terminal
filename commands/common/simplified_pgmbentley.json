@@ -1,0 +1,10 @@
+{
+  "command": "pgmbentley",
+  "description": "Bentleyize a PGM image. More information: https://netpbm.sourceforge.net/doc/pgmbentley.html.",
+  "useCases": [
+    {
+      "description": "Apply the Bentley Effect on a PGM image:",
+      "syntax": "pgmbentley {{path/to/input_file.pgm}} &gt; {{path/to/output_file.pgm}}"
+    }
+  ]
+}

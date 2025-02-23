@@ -1,0 +1,34 @@
+{
+  "command": "bower",
+  "description": "A package manager optimized for front-end web development. A package can be a GitHub user/repo shorthand, a Git endpoint, a URL or a registered package. More information: https://bower.io/.",
+  "useCases": [
+    {
+      "description": "Install a project's dependencies, listed in its bower.json:",
+      "syntax": "bower install"
+    },
+    {
+      "description": "Install one or more packages to the bower_components directory:",
+      "syntax": "bower install {{package}} {{package}}"
+    },
+    {
+      "description": "Uninstall packages locally from the bower_components directory:",
+      "syntax": "bower uninstall {{package}} {{package}}"
+    },
+    {
+      "description": "List local packages and possible updates:",
+      "syntax": "bower list"
+    },
+    {
+      "description": "Create a bower.json file for your package:",
+      "syntax": "bower init"
+    },
+    {
+      "description": "Install a specific dependency version, and add it to bower.json:",
+      "syntax": "bower install {{local_name}}={{package}}#{{version}} --save"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "bower help {{command}}"
+    }
+  ]
+}

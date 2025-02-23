@@ -1,0 +1,26 @@
+{
+  "command": "ksh",
+  "description": "Korn Shell, a Bash-compatible command-line interpreter. See also: histexpand. More information: http://kornshell.com.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "ksh"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "ksh -c &quot;{{echo 'ksh is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "ksh {{path/to/script.ksh}}"
+    },
+    {
+      "description": "Check a specific script for syntax errors without executing it:",
+      "syntax": "ksh -n {{path/to/script.ksh}}"
+    },
+    {
+      "description": "Execute a specific script, printing each command in the script before executing it:",
+      "syntax": "ksh -x {{path/to/script.ksh}}"
+    }
+  ]
+}

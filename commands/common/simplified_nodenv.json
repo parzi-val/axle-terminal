@@ -1,0 +1,30 @@
+{
+  "command": "nodenv",
+  "description": "Manage Node.js versions. More information: https://github.com/nodenv/nodenv.",
+  "useCases": [
+    {
+      "description": "Install a specific version of Node.js:",
+      "syntax": "nodenv install {{version}}"
+    },
+    {
+      "description": "Display a list of available versions:",
+      "syntax": "nodenv install --list"
+    },
+    {
+      "description": "Use a specific version of Node.js across the whole system:",
+      "syntax": "nodenv global {{version}}"
+    },
+    {
+      "description": "Use a specific version of Node.js with a directory:",
+      "syntax": "nodenv local {{version}}"
+    },
+    {
+      "description": "Display the Node.js version for the current directory:",
+      "syntax": "nodenv version"
+    },
+    {
+      "description": "Display the location of a Node.js installed command (e.g. npm):",
+      "syntax": "nodenv which {{command}}"
+    }
+  ]
+}

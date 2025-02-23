@@ -1,0 +1,22 @@
+{
+  "command": "eslint",
+  "description": "A pluggable linting utility for JavaScript and JSX. More information: https://eslint.org.",
+  "useCases": [
+    {
+      "description": "Create the ESLint configuration file:",
+      "syntax": "eslint --init"
+    },
+    {
+      "description": "Lint one or more files:",
+      "syntax": "eslint {{path/to/file1.js path/to/file2.js ...}}"
+    },
+    {
+      "description": "Fix lint issues:",
+      "syntax": "eslint --fix"
+    },
+    {
+      "description": "Lint using the specified configuration file:",
+      "syntax": "eslint -c {{path/to/config_file}} {{path/to/file1.js path/to/file2.js}}"
+    }
+  ]
+}

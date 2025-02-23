@@ -1,0 +1,30 @@
+{
+  "command": "paru",
+  "description": "An AUR helper and pacman wrapper. More information: https://github.com/Morganamilo/paru.",
+  "useCases": [
+    {
+      "description": "Interactively search for and install a package:",
+      "syntax": "paru {{package_name_or_search_term}}"
+    },
+    {
+      "description": "Synchronize and update all packages:",
+      "syntax": "paru"
+    },
+    {
+      "description": "Upgrade AUR packages:",
+      "syntax": "paru -Sua"
+    },
+    {
+      "description": "Get information about a package:",
+      "syntax": "paru -Si {{package}}"
+    },
+    {
+      "description": "Download PKGBUILD and other package source files from the AUR or ABS:",
+      "syntax": "paru --getpkgbuild {{package}}"
+    },
+    {
+      "description": "Display the PKGBUILD file of a package:",
+      "syntax": "paru --getpkgbuild --print {{package}}"
+    }
+  ]
+}

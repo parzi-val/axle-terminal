@@ -1,0 +1,26 @@
+{
+  "command": "pipes.sh",
+  "description": "A Bash script which draws randomly pathed pipes over the terminal. More information: https://github.com/pipeseroni/pipes.sh.",
+  "useCases": [
+    {
+      "description": "Change the pa[t]tern of the pipes:",
+      "syntax": "pipes.sh -t {{0..9}}"
+    },
+    {
+      "description": "Change the [c]olor of the pipes:",
+      "syntax": "pipes.sh -c {{0..7}}"
+    },
+    {
+      "description": "Change the [f]ramerate of the pipes:",
+      "syntax": "pipes.sh -f {{20..100}}"
+    },
+    {
+      "description": "Disable [C]olors:",
+      "syntax": "pipes.sh -C"
+    },
+    {
+      "description": "Display [v]ersion:",
+      "syntax": "pipes.sh -v"
+    }
+  ]
+}

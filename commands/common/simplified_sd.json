@@ -1,0 +1,22 @@
+{
+  "command": "sd",
+  "description": "Intuitive find and replace. More information: https://github.com/chmln/sd.",
+  "useCases": [
+    {
+      "description": "Trim some whitespace using a regular expression (output stream: stdout):",
+      "syntax": "{{echo 'lorem ipsum 23   '}} | sd '\\s+$' ''"
+    },
+    {
+      "description": "Replace words using capture groups (output stream: stdout):",
+      "syntax": "{{echo 'cargo +nightly watch'}} | sd '(\\w+)\\s+\\+(\\w+)\\s+(\\w+)' 'cmd: $1, channel: $2, subcmd: $3'"
+    },
+    {
+      "description": "Find and replace in a specific file (output stream: stdout):",
+      "syntax": "sd -p {{'window.fetch'}} {{'fetch'}} {{path/to/file.js}}"
+    },
+    {
+      "description": "Find and replace in all files in the current project (output stream: stdout):",
+      "syntax": "sd {{'from &quot;react&quot;'}} {{'from &quot;preact&quot;'}} &quot;$(find . -type f)&quot;"
+    }
+  ]
+}

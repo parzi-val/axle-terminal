@@ -1,0 +1,10 @@
+{
+  "command": "mispipe",
+  "description": "Pipe two commands and return the exit status of the first command. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Pipe two commands and return the exit status of the first command:",
+      "syntax": "mispipe {{command1}} {{command2}}"
+    }
+  ]
+}

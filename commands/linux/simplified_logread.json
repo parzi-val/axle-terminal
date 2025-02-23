@@ -1,0 +1,22 @@
+{
+  "command": "logread",
+  "description": "Read the logd ring buffer log. More information: https://openwrt.org/docs/guide-user/base-system/log.essentials.",
+  "useCases": [
+    {
+      "description": "Print the log:",
+      "syntax": "logread"
+    },
+    {
+      "description": "Print a specified number of messages:",
+      "syntax": "logread -l {{N}}"
+    },
+    {
+      "description": "Filter messages by (Keyword/Regular Expression):",
+      "syntax": "logread -e {{pattern}}"
+    },
+    {
+      "description": "Print log messages as they happen:",
+      "syntax": "logread -f"
+    }
+  ]
+}

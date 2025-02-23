@@ -1,0 +1,30 @@
+{
+  "command": "dnstracer",
+  "description": "The dnstracer command determines where a DNS gets its information from. More information: https://manned.org/dnstracer.",
+  "useCases": [
+    {
+      "description": "Find out where your local DNS got the information on www.example.com:",
+      "syntax": "dnstracer {{www.example.com}}"
+    },
+    {
+      "description": "Start with a [s]pecific DNS that you already know:",
+      "syntax": "dnstracer -s {{dns.example.org}} {{www.example.com}}"
+    },
+    {
+      "description": "Only query IPv4 servers:",
+      "syntax": "dnstracer -4 {{www.example.com}}"
+    },
+    {
+      "description": "Retry each request 5 times on failure:",
+      "syntax": "dnstracer -r {{5}} {{www.example.com}}"
+    },
+    {
+      "description": "Display all steps during execution:",
+      "syntax": "dnstracer -v {{www.example.com}}"
+    },
+    {
+      "description": "Display an [o]verview of all received answers after execution:",
+      "syntax": "dnstracer -o {{www.example.com}}"
+    }
+  ]
+}

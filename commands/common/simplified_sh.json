@@ -1,0 +1,22 @@
+{
+  "command": "sh",
+  "description": "Bourne shell, the standard command language interpreter. See also histexpand for history expansion. More information: https://manned.org/sh.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "sh"
+    },
+    {
+      "description": "Execute a command and then exit:",
+      "syntax": "sh -c &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Execute a script:",
+      "syntax": "sh {{path/to/script.sh}}"
+    },
+    {
+      "description": "Read and execute commands from stdin:",
+      "syntax": "sh -s"
+    }
+  ]
+}

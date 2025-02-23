@@ -1,0 +1,22 @@
+{
+  "command": "ppmtoicr",
+  "description": "Convert a PPM image to NCSA ICR format. More information: https://netpbm.sourceforge.net/doc/ppmtoicr.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a ICR file:",
+      "syntax": "ppmtoicr {{path/to/file.ppm}} &gt; {{path/to/file.icr}}"
+    },
+    {
+      "description": "Display the output in name:",
+      "syntax": "ppmtoicr -windowname {{name}} {{path/to/file.ppm}} &gt; {{path/to/file.icr}}"
+    },
+    {
+      "description": "Expand the image by the specified factor:",
+      "syntax": "ppmtoicr -expand {{factor}} {{path/to/file.ppm}} &gt; {{path/to/file.icr}}"
+    },
+    {
+      "description": "Display the output on the screen with the specified number:",
+      "syntax": "ppmtoicr -display {{number}} {{path/to/file.ppm}} &gt; {{path/to/file.icr}}"
+    }
+  ]
+}

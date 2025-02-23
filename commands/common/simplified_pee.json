@@ -1,0 +1,18 @@
+{
+  "command": "pee",
+  "description": "Tee stdin to pipes. See also: tee. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Run each command, providing each one with a distinct copy of stdin:",
+      "syntax": "pee {{command1 command2 ...}}"
+    },
+    {
+      "description": "Write a copy of stdin to stdout (like tee):",
+      "syntax": "pee cat {{command1 command2 ...}}"
+    },
+    {
+      "description": "Immediately terminate upon SIGPIPEs and write errors:",
+      "syntax": "pee --no-ignore-sigpipe --no-ignore-write-errors {{command1 command2 ...}}"
+    }
+  ]
+}

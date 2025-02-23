@@ -1,0 +1,18 @@
+{
+  "command": "pueue reset",
+  "description": "Kill everything and reset. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Kill all tasks and remove everything (logs, status, groups, task IDs):",
+      "syntax": "pueue reset"
+    },
+    {
+      "description": "Kill all tasks, terminate their children, and reset everything:",
+      "syntax": "pueue reset --children"
+    },
+    {
+      "description": "Reset without asking for confirmation:",
+      "syntax": "pueue reset --force"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "zstd",
+  "description": "Compress or decompress files with Zstandard compression. More information: https://github.com/facebook/zstd.",
+  "useCases": [
+    {
+      "description": "Compress a file into a new file with the .zst suffix:",
+      "syntax": "zstd {{path/to/file}}"
+    },
+    {
+      "description": "Decompress a file:",
+      "syntax": "zstd --decompress {{path/to/file.zst}}"
+    },
+    {
+      "description": "Decompress to stdout:",
+      "syntax": "zstd --decompress --stdout {{path/to/file.zst}}"
+    },
+    {
+      "description": "Compress a file specifying the compression level, where 1=fastest, 19=slowest and 3=default:",
+      "syntax": "zstd -{{level}} {{path/to/file}}"
+    },
+    {
+      "description": "Unlock higher compression levels (up to 22) using more memory (both for compression and decompression):",
+      "syntax": "zstd --ultra -{{level}} {{path/to/file}}"
+    }
+  ]
+}

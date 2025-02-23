@@ -1,0 +1,18 @@
+{
+  "command": "mkfile",
+  "description": "Create empty files of any size. More information: https://manned.org/mkfile.",
+  "useCases": [
+    {
+      "description": "Create an empty file of 15 kilobytes:",
+      "syntax": "mkfile -n {{15k}} {{path/to/file}}"
+    },
+    {
+      "description": "Create a file of a given size and unit (bytes, KB, MB, GB):",
+      "syntax": "mkfile -n {{size}}{{b|k|m|g}} {{path/to/file}}"
+    },
+    {
+      "description": "Create two files of 4 megabytes each:",
+      "syntax": "mkfile -n {{4m}} {{first_filename}} {{second_filename}}"
+    }
+  ]
+}

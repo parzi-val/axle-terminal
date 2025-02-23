@@ -1,0 +1,30 @@
+{
+  "command": "slurmrestd",
+  "description": "Interface to Slurm via REST API. It can be used in two modes: Inetd Mode & Listen Mode. More information: https://slurm.schedmd.com/slurmrestd.html.",
+  "useCases": [
+    {
+      "description": "Change the group ID (and drop supplemental groups) before processing client requests:",
+      "syntax": "slurmrestd --g {{group_id}} {{[host]:port | unix:/path/to/socket}}"
+    },
+    {
+      "description": "Comma-delimited list of authentication plugins to load:",
+      "syntax": "slurmrestd -a {{authentication_plugins}} {{[host]:port | unix:/path/to/socket}}"
+    },
+    {
+      "description": "Read Slurm configuration from the specified file:",
+      "syntax": "slurmrestd -f {{path/to/file}}"
+    },
+    {
+      "description": "Change user ID before processing client request:",
+      "syntax": "slurmrestd -u {{user_id}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "slurmrestd -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "slurmrestd -V"
+    }
+  ]
+}

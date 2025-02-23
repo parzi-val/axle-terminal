@@ -1,0 +1,38 @@
+{
+  "command": "helm",
+  "description": "A package manager for Kubernetes. Some subcommands such as install have their own usage documentation. More information: https://helm.sh/.",
+  "useCases": [
+    {
+      "description": "Create a helm chart:",
+      "syntax": "helm create {{chart_name}}"
+    },
+    {
+      "description": "Add a new helm repository:",
+      "syntax": "helm repo add {{repository_name}}"
+    },
+    {
+      "description": "List helm repositories:",
+      "syntax": "helm repo list"
+    },
+    {
+      "description": "Update helm repositories:",
+      "syntax": "helm repo update"
+    },
+    {
+      "description": "Delete a helm repository:",
+      "syntax": "helm repo remove {{repository_name}}"
+    },
+    {
+      "description": "Install a helm chart:",
+      "syntax": "helm install {{name}} {{repository_name}}/{{chart_name}}"
+    },
+    {
+      "description": "Download helm chart as a tar archive:",
+      "syntax": "helm get {{chart_release_name}}"
+    },
+    {
+      "description": "Update helm dependencies:",
+      "syntax": "helm dependency update"
+    }
+  ]
+}

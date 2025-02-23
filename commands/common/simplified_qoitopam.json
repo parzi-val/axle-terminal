@@ -1,0 +1,10 @@
+{
+  "command": "qoitopam",
+  "description": "Convert a QOI image (Quite OK Image format) to Netpbm. More information: https://netpbm.sourceforge.net/doc/qoitopam.html.",
+  "useCases": [
+    {
+      "description": "Convert a QOI image to Netpbm:",
+      "syntax": "qoitopam {{path/to/image.qoi}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

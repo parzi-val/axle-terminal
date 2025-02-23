@@ -1,0 +1,22 @@
+{
+  "command": "adb forward",
+  "description": "Connect to an Android device wirelessly. More information: https://developer.android.com/tools/adb.",
+  "useCases": [
+    {
+      "description": "Forward a TCP port:",
+      "syntax": "adb forward tcp:{{local_port}} tcp:{{remote_port}}"
+    },
+    {
+      "description": "List all forwardings:",
+      "syntax": "adb forward --list"
+    },
+    {
+      "description": "Remove a forwarding rule:",
+      "syntax": "adb forward --remove tcp:{{local_port}}"
+    },
+    {
+      "description": "Remove all forwarding rules:",
+      "syntax": "adb forward --remove-all"
+    }
+  ]
+}

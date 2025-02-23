@@ -1,0 +1,18 @@
+{
+  "command": "csvgrep",
+  "description": "Filter CSV rows with string and pattern matching. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/csvgrep.html.",
+  "useCases": [
+    {
+      "description": "Find rows that have a certain string in column 1:",
+      "syntax": "csvgrep -c {{1}} -m {{string_to_match}} {{data.csv}}"
+    },
+    {
+      "description": "Find rows in which columns 3 or 4 match a certain regular expression:",
+      "syntax": "csvgrep -c {{3,4}} -r {{regular_expression}} {{data.csv}}"
+    },
+    {
+      "description": "Find rows in which the \"name\" column does NOT include the string \"John Doe\":",
+      "syntax": "csvgrep -i -c {{name}} -m &quot;{{John Doe}}&quot; {{data.csv}}"
+    }
+  ]
+}

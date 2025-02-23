@@ -1,0 +1,14 @@
+{
+  "command": "yadm-upgrade",
+  "description": "Upgrade yadm to the latest version. Upgrading will attempt to de-initialize and re-initialize your submodules. More information: https://github.com/TheLocehiliosan/yadm/blob/master/yadm.md#commands.",
+  "useCases": [
+    {
+      "description": "Upgrade yadm to the latest version:",
+      "syntax": "yadm upgrade"
+    },
+    {
+      "description": "Force the upgrade regardless of changes:",
+      "syntax": "yadm upgrade -f"
+    }
+  ]
+}

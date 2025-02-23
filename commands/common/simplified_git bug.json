@@ -1,0 +1,34 @@
+{
+  "command": "git bug",
+  "description": "A distributed bug tracker that uses Git's internal storage, so no files are added in your project. You may submit your problems to the same Git remote you use to interact with others, much like commits and branches. More information: https://github.com/MichaelMure/git-bug/blob/master/doc/md/git-bug.md.",
+  "useCases": [
+    {
+      "description": "Create a new identity:",
+      "syntax": "git bug user create"
+    },
+    {
+      "description": "Create a new bug:",
+      "syntax": "git bug add"
+    },
+    {
+      "description": "Push a new bug entry to a remote:",
+      "syntax": "git bug push"
+    },
+    {
+      "description": "Pull for updates:",
+      "syntax": "git bug pull"
+    },
+    {
+      "description": "List existing bugs:",
+      "syntax": "git bug ls"
+    },
+    {
+      "description": "Filter and sort bugs using a query:",
+      "syntax": "git bug ls &quot;{{status}}:{{open}} {{sort}}:{{edit}}&quot;"
+    },
+    {
+      "description": "Search for bugs by text content:",
+      "syntax": "git bug ls &quot;{{search_query}}&quot; baz"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "joe",
+  "description": "Joe's own text editor. More information: https://joe-editor.sourceforge.io.",
+  "useCases": [
+    {
+      "description": "Open a new file in JOE:",
+      "syntax": "joe"
+    },
+    {
+      "description": "Open a specific file:",
+      "syntax": "joe {{path/to/file}}"
+    },
+    {
+      "description": "Open a specific file, positioning the cursor at the specified line:",
+      "syntax": "joe +{{line}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a specific file in read-only mode:",
+      "syntax": "joe -rdonly {{path/to/file}}"
+    }
+  ]
+}

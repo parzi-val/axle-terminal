@@ -1,0 +1,34 @@
+{
+  "command": "pipx",
+  "description": "Install and run Python applications in isolated environments. More information: https://github.com/pypa/pipx.",
+  "useCases": [
+    {
+      "description": "Run an app in a temporary virtual environment:",
+      "syntax": "pipx run {{pycowsay}} {{moo}}"
+    },
+    {
+      "description": "Install a package in a virtual environment and add entry points to path:",
+      "syntax": "pipx install {{package}}"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "pipx list"
+    },
+    {
+      "description": "Run an app in a temporary virtual environment with a package name different from the executable:",
+      "syntax": "pipx run --spec {{httpx-cli}} {{httpx}} {{http://www.github.com}}"
+    },
+    {
+      "description": "Inject dependencies into an existing virtual environment:",
+      "syntax": "pipx inject {{package}} {{dependency1 dependency2 ...}}"
+    },
+    {
+      "description": "Install a package in a virtual environment with pip arguments:",
+      "syntax": "pipx install --pip-args='{{pip-args}}' {{package}}"
+    },
+    {
+      "description": "Upgrade/reinstall/uninstall all installed packages:",
+      "syntax": "pipx {{upgrade-all|uninstall-all|reinstall-all}}"
+    }
+  ]
+}

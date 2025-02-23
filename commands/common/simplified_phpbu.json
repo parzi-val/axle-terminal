@@ -1,0 +1,22 @@
+{
+  "command": "phpbu",
+  "description": "A backup utility framework for PHP. More information: https://phpbu.de.",
+  "useCases": [
+    {
+      "description": "Run backups using the default phpbu.xml configuration file:",
+      "syntax": "phpbu"
+    },
+    {
+      "description": "Run backups using a specific configuration file:",
+      "syntax": "phpbu --configuration={{path/to/configuration_file.xml}}"
+    },
+    {
+      "description": "Only run the specified backups:",
+      "syntax": "phpbu --limit={{backup_task_name}}"
+    },
+    {
+      "description": "Simulate the actions that would have been performed:",
+      "syntax": "phpbu --simulate"
+    }
+  ]
+}

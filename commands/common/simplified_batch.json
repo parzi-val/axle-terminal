@@ -1,0 +1,18 @@
+{
+  "command": "batch",
+  "description": "Execute commands at a later time when the system load levels permit. Results will be sent to the user's mail. See also: at, atq, atrm mail. More information: https://manned.org/batch.",
+  "useCases": [
+    {
+      "description": "Start the atd daemon:",
+      "syntax": "systemctl start atd"
+    },
+    {
+      "description": "Execute commands from stdin (press Ctrl + D when done):",
+      "syntax": "batch"
+    },
+    {
+      "description": "Execute a command from stdin:",
+      "syntax": "echo &quot;{{./make_db_backup.sh}}&quot; | batch"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "compress",
+  "description": "Compress files using the Unix compress command. More information: https://manned.org/compress.1.",
+  "useCases": [
+    {
+      "description": "Compress specific files:",
+      "syntax": "compress {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Compress specific files, ignore non-existent ones:",
+      "syntax": "compress -f {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Specify the maximum compression bits (9-16 bits):",
+      "syntax": "compress -b {{bits}}"
+    },
+    {
+      "description": "Write to stdout (no files are changed):",
+      "syntax": "compress -c {{path/to/file}}"
+    },
+    {
+      "description": "Decompress files (functions like uncompress):",
+      "syntax": "compress -d {{path/to/file}}"
+    },
+    {
+      "description": "Display compression percentage:",
+      "syntax": "compress -v {{path/to/file}}"
+    }
+  ]
+}

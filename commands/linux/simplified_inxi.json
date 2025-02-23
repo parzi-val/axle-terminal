@@ -1,0 +1,38 @@
+{
+  "command": "inxi",
+  "description": "Print a summary of system information and resources for debugging purposes. More information: https://manned.org/inxi.",
+  "useCases": [
+    {
+      "description": "Print a summary of CPU, memory, hard drive and kernel information:",
+      "syntax": "inxi"
+    },
+    {
+      "description": "Print a full description of CPU, memory, disk, network, and process information and filter sensitive information:",
+      "syntax": "inxi --expanded --filter"
+    },
+    {
+      "description": "Print a summary of CPU information:",
+      "syntax": "inxi --cpu"
+    },
+    {
+      "description": "Print a summary of graphics information:",
+      "syntax": "inxi --graphics"
+    },
+    {
+      "description": "Print a summary of system RAM:",
+      "syntax": "inxi --memory"
+    },
+    {
+      "description": "Print a summary of system audio:",
+      "syntax": "inxi --audio"
+    },
+    {
+      "description": "Print available sensor data:",
+      "syntax": "inxi --sensors"
+    },
+    {
+      "description": "Print information about the distribution's repositories:",
+      "syntax": "inxi --repos"
+    }
+  ]
+}

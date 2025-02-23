@@ -1,0 +1,10 @@
+{
+  "command": "git rename-remote",
+  "description": "Change remote for pulling and pushing. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-rename-remote.",
+  "useCases": [
+    {
+      "description": "Change the upstream remote to origin:",
+      "syntax": "git rename-remote {{upstream}} {{origin}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "pamshadedrelief",
+  "description": "Generate a shaded relief from an elevation map. See also: pamcrater, ppmrelief. More information: https://netpbm.sourceforge.net/doc/pamshadedrelief.html.",
+  "useCases": [
+    {
+      "description": "Generate a shaded relief image with the input image interpreted as an elevation map:",
+      "syntax": "pamshadedrelief &lt; {{path/to/input.pam}} &gt; {{path/to/output.pam}}"
+    },
+    {
+      "description": "Gamma adjust the image by the specified factor:",
+      "syntax": "pamshadedrelief -gamma {{factor}} &lt; {{path/to/input.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

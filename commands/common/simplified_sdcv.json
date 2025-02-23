@@ -1,0 +1,34 @@
+{
+  "command": "sdcv",
+  "description": "StarDict, a command-line dictionary client. Dictionaries are provided separately from the client. More information: https://manned.org/sdcv.",
+  "useCases": [
+    {
+      "description": "Start sdcv interactively:",
+      "syntax": "sdcv"
+    },
+    {
+      "description": "List installed dictionaries:",
+      "syntax": "sdcv --list-dicts"
+    },
+    {
+      "description": "Display a definition from a specific dictionary:",
+      "syntax": "sdcv --use-dict {{dictionary_name}} {{search_term}}"
+    },
+    {
+      "description": "Look up a definition with a fuzzy search:",
+      "syntax": "sdcv {{search_term}}"
+    },
+    {
+      "description": "Look up a definition with an exact search:",
+      "syntax": "sdcv --exact-search {{search_term}}"
+    },
+    {
+      "description": "Look up a definition and format the output as JSON:",
+      "syntax": "sdcv --json {{search_term}}"
+    },
+    {
+      "description": "Search for dictionaries in a specific directory:",
+      "syntax": "sdcv --data-dir {{path/to/directory}} {{search_term}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "pake",
+  "description": "Turn any webpage into a desktop app with Rust/Tauri. More information: https://github.com/tw93/Pake.",
+  "useCases": [
+    {
+      "description": "Package a web page:",
+      "syntax": "pake {{https://www.google.com/}}"
+    },
+    {
+      "description": "Package a web page with a specific window size:",
+      "syntax": "pake --width {{800}} --height {{600}} {{https://www.google.com/}}"
+    },
+    {
+      "description": "Package a web page with a custom application name and icon:",
+      "syntax": "pake --name {{Google}} --icon {{path/to/icon.ico}} {{https://www.google.com/}}"
+    },
+    {
+      "description": "Package a web page with a non-resizable window:",
+      "syntax": "pake --no-resizable {{https://www.google.com/}}"
+    },
+    {
+      "description": "Package a web page with fullscreen mode:",
+      "syntax": "pake --fullscreen {{https://www.google.com/}}"
+    },
+    {
+      "description": "Package a web page with a transparent title bar:",
+      "syntax": "pake --transparent {{https://www.google.com/}}"
+    }
+  ]
+}

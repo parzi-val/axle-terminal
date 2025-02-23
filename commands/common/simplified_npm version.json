@@ -1,0 +1,26 @@
+{
+  "command": "npm version",
+  "description": "Bump a node package version. More information: https://docs.npmjs.com/cli/commands/npm-version.",
+  "useCases": [
+    {
+      "description": "Check current version:",
+      "syntax": "npm version"
+    },
+    {
+      "description": "Bump the minor version:",
+      "syntax": "npm version minor"
+    },
+    {
+      "description": "Set a specific version:",
+      "syntax": "npm version {{version}}"
+    },
+    {
+      "description": "Bump the patch version without creating a Git tag:",
+      "syntax": "npm version patch --no-git-tag-version"
+    },
+    {
+      "description": "Bump the major version with a custom commit message:",
+      "syntax": "npm version major -m &quot;{{Upgrade to %s for reasons}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "airodump-ng",
+  "description": "Capture packets and display information about wireless networks. Part of aircrack-ng. More information: https://www.aircrack-ng.org/doku.php?id=airodump-ng.",
+  "useCases": [
+    {
+      "description": "Capture packets and display information about wireless network(s) on the 2.4GHz band:",
+      "syntax": "sudo airodump-ng {{interface}}"
+    },
+    {
+      "description": "Capture packets and display information about wireless network(s) on the 5GHz band:",
+      "syntax": "sudo airodump-ng {{interface}} --band a"
+    },
+    {
+      "description": "Capture packets and display information about wireless network(s) on both 2.4GHz and 5GHz bands:",
+      "syntax": "sudo airodump-ng {{interface}} --band abg"
+    },
+    {
+      "description": "Capture packets and display information about a wireless network given the MAC address and channel, and save the output to a file:",
+      "syntax": "sudo airodump-ng --channel {{channel}} --write {{path/to/file}} --bssid {{mac}} {{interface}}"
+    }
+  ]
+}

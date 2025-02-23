@@ -1,0 +1,22 @@
+{
+  "command": "tree",
+  "description": "Display a graphical tree of the directory structure for a path. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/tree.",
+  "useCases": [
+    {
+      "description": "Display the tree for the current directory:",
+      "syntax": "tree"
+    },
+    {
+      "description": "Display the tree for a specific directory:",
+      "syntax": "tree {{path\\to\\directory}}"
+    },
+    {
+      "description": "Display the tree for a directory including [f]iles:",
+      "syntax": "tree {{path\\to\\directory}} /f"
+    },
+    {
+      "description": "Display the tree using [a]SCII characters instead of extended characters:",
+      "syntax": "tree {{path\\to\\directory}} /a"
+    }
+  ]
+}

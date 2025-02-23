@@ -1,0 +1,26 @@
+{
+  "command": "x11docker",
+  "description": "Securely run GUI applications and desktop UIs in Docker containers. See also xephyr. More information: https://github.com/mviereck/x11docker.",
+  "useCases": [
+    {
+      "description": "Launch VLC in a container:",
+      "syntax": "x11docker --pulseaudio --share={{$HOME/Videos}} {{jess/vlc}}"
+    },
+    {
+      "description": "Launch Xfce in a window:",
+      "syntax": "x11docker --desktop {{x11docker/xfce}}"
+    },
+    {
+      "description": "Launch GNOME in a window:",
+      "syntax": "x11docker --desktop --gpu --init={{systemd}} {{x11docker/gnome}}"
+    },
+    {
+      "description": "Launch KDE Plasma in a window:",
+      "syntax": "x11docker --desktop --gpu --init={{systemd}} {{x11docker/kde-plasma}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "x11docker --help"
+    }
+  ]
+}

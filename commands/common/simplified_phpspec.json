@@ -1,0 +1,34 @@
+{
+  "command": "phpspec",
+  "description": "A Behaviour Driven Development tool for PHP. More information: https://phpspec.net.",
+  "useCases": [
+    {
+      "description": "Create a specification for a class:",
+      "syntax": "phpspec describe {{class_name}}"
+    },
+    {
+      "description": "Run all specifications in the \"spec\" directory:",
+      "syntax": "phpspec run"
+    },
+    {
+      "description": "Run a single specification:",
+      "syntax": "phpspec run {{path/to/class_specification_file}}"
+    },
+    {
+      "description": "Run specifications using a specific configuration file:",
+      "syntax": "phpspec run -c {{path/to/configuration_file}}"
+    },
+    {
+      "description": "Run specifications using a specific bootstrap file:",
+      "syntax": "phpspec run -b {{path/to/bootstrap_file}}"
+    },
+    {
+      "description": "Disable code generation prompts:",
+      "syntax": "phpspec run --no-code-generation"
+    },
+    {
+      "description": "Enable fake return values:",
+      "syntax": "phpspec run --fake"
+    }
+  ]
+}

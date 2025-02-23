@@ -1,0 +1,22 @@
+{
+  "command": "roave-backward-compatibility-check",
+  "description": "Verify backward compatibility breaks between two versions of a PHP library. More information: https://github.com/Roave/BackwardCompatibilityCheck.",
+  "useCases": [
+    {
+      "description": "Check for breaking changes since the last tag:",
+      "syntax": "roave-backward-compatibility-check"
+    },
+    {
+      "description": "Check for breaking changes since a specific tag:",
+      "syntax": "roave-backward-compatibility-check --from={{git_reference}}"
+    },
+    {
+      "description": "Check for breaking changes between the last tag and a specific reference:",
+      "syntax": "roave-backward-compatibility-check --to={{git_reference}}"
+    },
+    {
+      "description": "Check for breaking changes and output to Markdown:",
+      "syntax": "roave-backward-compatibility-check --format=markdown &gt; {{results.md}}"
+    }
+  ]
+}

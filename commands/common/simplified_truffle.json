@@ -1,0 +1,26 @@
+{
+  "command": "truffle",
+  "description": "Develop smart contracts for running services on the Ethereum blockchain. More information: https://www.trufflesuite.com/docs/truffle/reference/truffle-commands.",
+  "useCases": [
+    {
+      "description": "Download a pre-built Truffle project (Truffle Box):",
+      "syntax": "truffle unbox {{box_name}}"
+    },
+    {
+      "description": "Compile contract source files in the current directory:",
+      "syntax": "truffle compile"
+    },
+    {
+      "description": "Run JavaScript and Solidity tests:",
+      "syntax": "truffle test"
+    },
+    {
+      "description": "Run migrations to deploy contracts:",
+      "syntax": "truffle migrate"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "truffle help {{subcommand}}"
+    }
+  ]
+}

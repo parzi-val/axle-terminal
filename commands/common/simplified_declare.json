@@ -1,0 +1,34 @@
+{
+  "command": "declare",
+  "description": "Declare variables and give them attributes. More information: https://www.gnu.org/software/bash/manual/bash.html#index-declare.",
+  "useCases": [
+    {
+      "description": "Declare a string variable with the specified value:",
+      "syntax": "declare {{variable}}=&quot;{{value}}&quot;"
+    },
+    {
+      "description": "Declare an integer variable with the specified value:",
+      "syntax": "declare -i {{variable}}=&quot;{{value}}&quot;"
+    },
+    {
+      "description": "Declare an array variable with the specified value:",
+      "syntax": "declare -a {{variable}}=({{item_a item_b item_c}})"
+    },
+    {
+      "description": "Declare an associative array variable with the specified value:",
+      "syntax": "declare -A {{variable}}=({{[key_a]=item_a [key_b]=item_b [key_c]=item_c}})"
+    },
+    {
+      "description": "Declare a readonly string variable with the specified value:",
+      "syntax": "declare -r {{variable}}=&quot;{{value}}&quot;"
+    },
+    {
+      "description": "Declare a global variable within a function with the specified value:",
+      "syntax": "declare -g {{variable}}=&quot;{{value}}&quot;"
+    },
+    {
+      "description": "Print a function definition:",
+      "syntax": "declare -f {{function_name}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "ppmtowinicon",
+  "description": "This command has been superseded by pamtowinicon. More information: https://netpbm.sourceforge.net/doc/ppmtowinicon.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamtowinicon"
+    }
+  ]
+}

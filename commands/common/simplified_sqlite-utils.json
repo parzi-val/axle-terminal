@@ -1,0 +1,38 @@
+{
+  "command": "sqlite-utils",
+  "description": "Command-line tool used to manipulate SQLite databases in a number of different ways. More information: https://sqlite-utils.datasette.io/en/stable/cli.html.",
+  "useCases": [
+    {
+      "description": "Create a database:",
+      "syntax": "sqlite-utils create-database {{path/to/database.db}}"
+    },
+    {
+      "description": "Create a table:",
+      "syntax": "sqlite-utils create-table {{path/to/database.db}} {{table_name}} {{id integer name text height float photo blob --pk id}}"
+    },
+    {
+      "description": "List tables:",
+      "syntax": "sqlite-utils tables {{path/to/database.db}}"
+    },
+    {
+      "description": "Upsert a record:",
+      "syntax": "{{echo '[ {&quot;id&quot;: 1, &quot;name&quot;: &quot;Linus Torvalds&quot;}, {&quot;id&quot;: 2, &quot;name&quot;: &quot;Steve Wozniak&quot;}, {&quot;id&quot;: 3, &quot;name&quot;: &quot;Tony Hoare&quot;} ]'}} | sqlite-utils upsert {{path/to/database.db}} {{table_name}} - {{--pk id}}"
+    },
+    {
+      "description": "Select records:",
+      "syntax": "sqlite-utils rows {{path/to/database.db}} {{table_name}}"
+    },
+    {
+      "description": "Delete a record:",
+      "syntax": "sqlite-utils query {{path/to/database.db}} &quot;{{delete from table_name where name = 'Tony Hoare'}}&quot;"
+    },
+    {
+      "description": "Drop a table:",
+      "syntax": "sqlite-utils drop-table {{path/to/database.db}} {{table_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sqlite-utils -h"
+    }
+  ]
+}

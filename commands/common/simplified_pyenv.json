@@ -1,0 +1,34 @@
+{
+  "command": "pyenv",
+  "description": "Switch between multiple versions of Python easily. See also: asdf. More information: https://github.com/pyenv/pyenv.",
+  "useCases": [
+    {
+      "description": "List all available commands:",
+      "syntax": "pyenv commands"
+    },
+    {
+      "description": "List all Python versions under the ${PYENV_ROOT}/versions directory:",
+      "syntax": "pyenv versions"
+    },
+    {
+      "description": "List all Python versions that can be installed from upstream:",
+      "syntax": "pyenv install --list"
+    },
+    {
+      "description": "Install a Python version under the ${PYENV_ROOT}/versions directory:",
+      "syntax": "pyenv install {{2.7.10}}"
+    },
+    {
+      "description": "Uninstall a Python version under the ${PYENV_ROOT}/versions directory:",
+      "syntax": "pyenv uninstall {{2.7.10}}"
+    },
+    {
+      "description": "Set Python version to be used globally in the current machine:",
+      "syntax": "pyenv global {{2.7.10}}"
+    },
+    {
+      "description": "Set Python version to be used in the current directory and all directories below it:",
+      "syntax": "pyenv local {{2.7.10}}"
+    }
+  ]
+}

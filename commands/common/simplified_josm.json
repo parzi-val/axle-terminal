@@ -1,0 +1,34 @@
+{
+  "command": "josm",
+  "description": "Extensible OpenStreetMap editor for Java 8+. More information: https://josm.openstreetmap.de/.",
+  "useCases": [
+    {
+      "description": "Launch JOSM:",
+      "syntax": "josm"
+    },
+    {
+      "description": "Launch JOSM in maximized mode:",
+      "syntax": "josm --maximize"
+    },
+    {
+      "description": "Launch JOSM and set a specific language:",
+      "syntax": "josm --language {{de}}"
+    },
+    {
+      "description": "Launch JOSM and reset all preferences to their default values:",
+      "syntax": "josm --reset-preferences"
+    },
+    {
+      "description": "Launch JOSM and download a specific bounding box:",
+      "syntax": "josm --download {{minlat,minlon,maxlat,maxlon}}"
+    },
+    {
+      "description": "Launch JOSM and download a specific bounding box as raw GPS:",
+      "syntax": "josm --downloadgps {{minlat,minlon,maxlat,maxlon}}"
+    },
+    {
+      "description": "Launch JOSM without plugins:",
+      "syntax": "josm --skip-plugins"
+    }
+  ]
+}

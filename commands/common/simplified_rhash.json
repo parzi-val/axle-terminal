@@ -1,0 +1,30 @@
+{
+  "command": "rhash",
+  "description": "Calculate or check common message digests. More information: https://rhash.sourceforge.net/manpage.php.",
+  "useCases": [
+    {
+      "description": "Calculate default CRC32 digests of a file:",
+      "syntax": "rhash {{path/to/file}}"
+    },
+    {
+      "description": "Recursively process a directory to generate an SFV file using SHA1:",
+      "syntax": "rhash --sha1 --recursive {{path/to/folder}} &gt; {{path/to/output.sfv}}"
+    },
+    {
+      "description": "Verify the integrity of files based on an SFV file:",
+      "syntax": "rhash --check {{path/to/file.sfv}}"
+    },
+    {
+      "description": "Calculate the SHA3 digest of a text message:",
+      "syntax": "rhash --sha3-256 --message '{{message}}'"
+    },
+    {
+      "description": "Calculate CRC32 digest of a file and output digest encoded in base64 using BSD format:",
+      "syntax": "rhash --base64 --bsd {{path/to/file}}"
+    },
+    {
+      "description": "Use custom output template:",
+      "syntax": "rhash --printf '{{%p\\t%s\\t%{mtime}\\t%m\\n}}' {{path/to/file}}"
+    }
+  ]
+}

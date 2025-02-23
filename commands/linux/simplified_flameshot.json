@@ -1,0 +1,38 @@
+{
+  "command": "flameshot",
+  "description": "Screenshot utility with a GUI. Supports basic image editing, such as text, shapes, colors, and imgur. More information: https://flameshot.org.",
+  "useCases": [
+    {
+      "description": "Create a fullscreen screenshot:",
+      "syntax": "flameshot full"
+    },
+    {
+      "description": "Create a screenshot interactively:",
+      "syntax": "flameshot gui"
+    },
+    {
+      "description": "Create a screenshot and save it to a specific path:",
+      "syntax": "flameshot gui --path {{path/to/directory}}"
+    },
+    {
+      "description": "Create a screenshot interactively in a simplified mode:",
+      "syntax": "flameshot launcher"
+    },
+    {
+      "description": "Create a screenshot from a specific monitor:",
+      "syntax": "flameshot screen --number {{2}}"
+    },
+    {
+      "description": "Create a screenshot and print it to stdout:",
+      "syntax": "flameshot gui --raw"
+    },
+    {
+      "description": "Create a screenshot and copy it to the clipboard:",
+      "syntax": "flameshot gui --clipboard"
+    },
+    {
+      "description": "Create a screenshot with a specific delay in milliseconds:",
+      "syntax": "flameshot full --delay {{5000}}"
+    }
+  ]
+}

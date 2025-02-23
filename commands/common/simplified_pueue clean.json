@@ -1,0 +1,14 @@
+{
+  "command": "pueue clean",
+  "description": "Remove all finished tasks from the list and clear logs. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Remove finished tasks and clear logs:",
+      "syntax": "pueue clean"
+    },
+    {
+      "description": "Only clean commands that finished successfully:",
+      "syntax": "pueue clean --successful-only"
+    }
+  ]
+}

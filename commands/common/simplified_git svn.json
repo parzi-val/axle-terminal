@@ -1,0 +1,26 @@
+{
+  "command": "git svn",
+  "description": "Bidirectional operation between a Subversion repository and Git. More information: https://git-scm.com/docs/git-svn.",
+  "useCases": [
+    {
+      "description": "Clone an SVN repository:",
+      "syntax": "git svn clone {{https://example.com/subversion_repo}} {{local_dir}}"
+    },
+    {
+      "description": "Clone an SVN repository starting at a given revision number:",
+      "syntax": "git svn clone {{-r|--revision}} {{1234}}:HEAD {{https://svn.example.net/subversion/repo}} {{local_dir}}"
+    },
+    {
+      "description": "Update local clone from the remote SVN repository:",
+      "syntax": "git svn rebase"
+    },
+    {
+      "description": "Fetch updates from the remote SVN repository without changing the Git HEAD:",
+      "syntax": "git svn fetch"
+    },
+    {
+      "description": "Commit back to the SVN repository:",
+      "syntax": "git svn commit"
+    }
+  ]
+}

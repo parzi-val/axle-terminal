@@ -1,0 +1,18 @@
+{
+  "command": "git mailinfo",
+  "description": "Extract patch and authorship information from a single email message. More information: https://git-scm.com/docs/git-mailinfo.",
+  "useCases": [
+    {
+      "description": "Extract the patch and author data from an email message:",
+      "syntax": "git mailinfo {{message|patch}}"
+    },
+    {
+      "description": "Extract but remove leading and trailing whitespace:",
+      "syntax": "git mailinfo -k {{message|patch}}"
+    },
+    {
+      "description": "Remove everything from the body before a scissors line (e.g. \"-->* --\") and retrieve the message or patch:",
+      "syntax": "git mailinfo --scissors {{message|patch}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "dpkg-deb",
+  "description": "Pack, unpack and provide information about Debian archives. More information: https://manned.org/dpkg-deb.",
+  "useCases": [
+    {
+      "description": "Display information about a package:",
+      "syntax": "dpkg-deb --info {{path/to/file.deb}}"
+    },
+    {
+      "description": "Display the package's name and version on one line:",
+      "syntax": "dpkg-deb --show {{path/to/file.deb}}"
+    },
+    {
+      "description": "List the package's contents:",
+      "syntax": "dpkg-deb --contents {{path/to/file.deb}}"
+    },
+    {
+      "description": "Extract package's contents into a directory:",
+      "syntax": "dpkg-deb --extract {{path/to/file.deb}} {{path/to/directory}}"
+    },
+    {
+      "description": "Create a package from a specified directory:",
+      "syntax": "dpkg-deb --build {{path/to/directory}}"
+    }
+  ]
+}

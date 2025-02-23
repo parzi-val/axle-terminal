@@ -1,0 +1,10 @@
+{
+  "command": "gh environment",
+  "description": "Display help about environment variables for the GitHub CLI command. More information: https://cli.github.com/manual/gh_help_environment.",
+  "useCases": [
+    {
+      "description": "Display help about environment variables that can be used with gh:",
+      "syntax": "gh environment"
+    }
+  ]
+}

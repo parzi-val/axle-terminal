@@ -1,0 +1,26 @@
+{
+  "command": "virtualenv",
+  "description": "Create virtual isolated Python environments. More information: https://virtualenv.pypa.io/.",
+  "useCases": [
+    {
+      "description": "Create a new environment:",
+      "syntax": "virtualenv {{path/to/venv}}"
+    },
+    {
+      "description": "Customize the prompt prefix:",
+      "syntax": "virtualenv --prompt={{prompt_prefix}} {{path/to/venv}}"
+    },
+    {
+      "description": "Use a different version of Python with virtualenv:",
+      "syntax": "virtualenv --python={{path/to/pythonbin}} {{path/to/venv}}"
+    },
+    {
+      "description": "Start (select) the environment:",
+      "syntax": "source {{path/to/venv}}/bin/activate"
+    },
+    {
+      "description": "Stop the environment:",
+      "syntax": "deactivate"
+    }
+  ]
+}

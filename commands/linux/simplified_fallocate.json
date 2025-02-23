@@ -1,0 +1,18 @@
+{
+  "command": "fallocate",
+  "description": "Reserve or deallocate disk space to files. The utility allocates space without zeroing. More information: https://manned.org/fallocate.",
+  "useCases": [
+    {
+      "description": "Reserve a file taking up 700 MiB of disk space:",
+      "syntax": "fallocate --length {{700M}} {{path/to/file}}"
+    },
+    {
+      "description": "Shrink an already allocated file by 200 MiB:",
+      "syntax": "fallocate --collapse-range --length {{200M}} {{path/to/file}}"
+    },
+    {
+      "description": "Shrink 20 MB of space after 100 MiB in a file:",
+      "syntax": "fallocate --collapse-range --offset {{100M}} --length {{20M}} {{path/to/file}}"
+    }
+  ]
+}

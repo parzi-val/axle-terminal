@@ -1,0 +1,18 @@
+{
+  "command": "git column",
+  "description": "Display data in columns. More information: https://git-scm.com/docs/git-column.",
+  "useCases": [
+    {
+      "description": "Format stdin as multiple columns:",
+      "syntax": "ls | git column --mode={{column}}"
+    },
+    {
+      "description": "Format stdin as multiple columns with a maximum width of 100:",
+      "syntax": "ls | git column --mode=column --width={{100}}"
+    },
+    {
+      "description": "Format stdin as multiple columns with a maximum padding of 30:",
+      "syntax": "ls | git column --mode=column --padding={{30}}"
+    }
+  ]
+}

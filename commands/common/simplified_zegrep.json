@@ -1,0 +1,30 @@
+{
+  "command": "zegrep",
+  "description": "Find extended regular expression patterns in compressed files using egrep. More information: https://www.unix.com/man-page/freebsd/1/zegrep/.",
+  "useCases": [
+    {
+      "description": "Search for extended regular expressions (supporting ?, +, {}, () and |) in a compressed file (case-sensitive):",
+      "syntax": "zegrep &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for extended regular expressions (supporting ?, +, {}, () and |) in a compressed file (case-insensitive):",
+      "syntax": "zegrep --ignore-case &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines that do not match a pattern:",
+      "syntax": "zegrep --invert-match &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print file name and line number for each match:",
+      "syntax": "zegrep --with-filename --line-number &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines matching a pattern, printing only the matched text:",
+      "syntax": "zegrep --only-matching &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Recursively search files in a compressed file for a pattern:",
+      "syntax": "zegrep --recursive &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    }
+  ]
+}

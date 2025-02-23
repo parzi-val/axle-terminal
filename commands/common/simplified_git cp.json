@@ -1,0 +1,14 @@
+{
+  "command": "git cp",
+  "description": "Copy an existing file to a new location, preserving history. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-cp.",
+  "useCases": [
+    {
+      "description": "Copy an existing file in a Git repo, staying in the same directory:",
+      "syntax": "git cp {{file}} {{new_file}}"
+    },
+    {
+      "description": "Copy an existing file in a Git repo and place it elsewhere:",
+      "syntax": "git cp {{path/to/file}} {{path/to/new_file}}"
+    }
+  ]
+}

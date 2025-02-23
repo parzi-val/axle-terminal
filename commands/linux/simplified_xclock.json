@@ -1,0 +1,26 @@
+{
+  "command": "xclock",
+  "description": "Display the time in analog or digital form. More information: https://manned.org/xclock.",
+  "useCases": [
+    {
+      "description": "Display an analog clock:",
+      "syntax": "xclock"
+    },
+    {
+      "description": "Display a 24-hour digital clock with the hour and minute fields only:",
+      "syntax": "xclock -digital -brief"
+    },
+    {
+      "description": "Display a digital clock using an strftime format string (see strftime(3)):",
+      "syntax": "xclock -digital -strftime {{format}}"
+    },
+    {
+      "description": "Display a 24-hour digital clock with the hour, minute and second fields that updates every second:",
+      "syntax": "xclock -digital -strftime '%H:%M:%S' -update 1"
+    },
+    {
+      "description": "Display a 12-hour digital clock with the hour and minute fields only:",
+      "syntax": "xclock -digital -twelve -brief"
+    }
+  ]
+}

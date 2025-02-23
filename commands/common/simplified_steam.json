@@ -1,0 +1,30 @@
+{
+  "command": "steam",
+  "description": "Video game platform by Valve. More information: https://developer.valvesoftware.com/wiki/Command_Line_Options.",
+  "useCases": [
+    {
+      "description": "Launch Steam, printing debug messages to stdout:",
+      "syntax": "steam"
+    },
+    {
+      "description": "Launch Steam and enable its in-app debug console tab:",
+      "syntax": "steam -console"
+    },
+    {
+      "description": "Enable and open the Steam console tab in a running Steam instance:",
+      "syntax": "steam steam://open/console"
+    },
+    {
+      "description": "Log into Steam with the specified credentials:",
+      "syntax": "steam -login {{username}} {{password}}"
+    },
+    {
+      "description": "Launch Steam in Big Picture Mode:",
+      "syntax": "steam -tenfoot"
+    },
+    {
+      "description": "Exit Steam:",
+      "syntax": "steam -shutdown"
+    }
+  ]
+}

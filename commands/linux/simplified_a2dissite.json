@@ -1,0 +1,14 @@
+{
+  "command": "a2dissite",
+  "description": "Disable an Apache virtual host on Debian-based OSes. More information: https://manned.org/a2dissite.8.",
+  "useCases": [
+    {
+      "description": "Disable a virtual host:",
+      "syntax": "sudo a2dissite {{virtual_host}}"
+    },
+    {
+      "description": "Don't show informative messages:",
+      "syntax": "sudo a2dissite --quiet {{virtual_host}}"
+    }
+  ]
+}

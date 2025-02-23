@@ -1,0 +1,30 @@
+{
+  "command": "npm team",
+  "description": "Manage teams in an organization on the npm registry. More information: https://docs.npmjs.com/cli/commands/npm-team.",
+  "useCases": [
+    {
+      "description": "Add a user to a team in an organization:",
+      "syntax": "npm team add {{organization:team}} {{username}}"
+    },
+    {
+      "description": "Remove a user from a team:",
+      "syntax": "npm team rm {{organization:team}} {{username}}"
+    },
+    {
+      "description": "Create a new team in an organization:",
+      "syntax": "npm team create {{organization:team}}"
+    },
+    {
+      "description": "Delete a team from an organization:",
+      "syntax": "npm team destroy {{organization:team}}"
+    },
+    {
+      "description": "List all teams in an organization:",
+      "syntax": "npm team ls {{organization}}"
+    },
+    {
+      "description": "List all users in a specific team:",
+      "syntax": "npm team ls {{organization:team}}"
+    }
+  ]
+}

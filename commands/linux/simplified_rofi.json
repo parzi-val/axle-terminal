@@ -1,0 +1,22 @@
+{
+  "command": "rofi",
+  "description": "An application launcher and window switcher. More information: https://github.com/davatorium/rofi.",
+  "useCases": [
+    {
+      "description": "Show the list of apps:",
+      "syntax": "rofi -show drun"
+    },
+    {
+      "description": "Show the list of all commands:",
+      "syntax": "rofi -show run"
+    },
+    {
+      "description": "Switch between windows:",
+      "syntax": "rofi -show window"
+    },
+    {
+      "description": "Pipe a list of items to stdin and print the selected item to stdout:",
+      "syntax": "printf &quot;{{Choice1\\nChoice2\\nChoice3}}&quot; | rofi -dmenu"
+    }
+  ]
+}

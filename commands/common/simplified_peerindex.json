@@ -1,0 +1,14 @@
+{
+  "command": "peerindex",
+  "description": "Inspect MRT TABLE_DUMPV2 Peer Index Table. Can read files compressed with gzip, bzip2 and xz. More information: https://codeberg.org/1414codeforge/ubgpsuite.",
+  "useCases": [
+    {
+      "description": "List all peers:",
+      "syntax": "peerindex {{master6.mrt}}"
+    },
+    {
+      "description": "Display all peers that have provided routing information:",
+      "syntax": "peerindex -r {{master6.mrt}}"
+    }
+  ]
+}

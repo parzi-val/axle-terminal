@@ -1,0 +1,14 @@
+{
+  "command": "virt-xml-validate",
+  "description": "Validate libvirt XML files against a schema. If a schema is not specified, the schema is determined by the root element in the XML file. More information: https://libvirt.org/manpages/virt-xml-validate.html.",
+  "useCases": [
+    {
+      "description": "Validate an XML file against a specific schema:",
+      "syntax": "virt-xml-validate {{path/to/file.xml}} {{schema}}"
+    },
+    {
+      "description": "Validate the domain XML against the domain schema:",
+      "syntax": "virt-xml-validate {{path/to/domain.xml}} domain"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "dict",
+  "description": "Command line dictionary using the DICT protocol. More information: https://github.com/cheusov/dictd.",
+  "useCases": [
+    {
+      "description": "List available databases:",
+      "syntax": "dict -D"
+    },
+    {
+      "description": "Get information about a database:",
+      "syntax": "dict -i {{database_name}}"
+    },
+    {
+      "description": "Look up a word in a specific database:",
+      "syntax": "dict -d {{database_name}} {{word}}"
+    },
+    {
+      "description": "Look up a word in all available databases:",
+      "syntax": "dict {{word}}"
+    },
+    {
+      "description": "Show information about the DICT server:",
+      "syntax": "dict -I"
+    }
+  ]
+}

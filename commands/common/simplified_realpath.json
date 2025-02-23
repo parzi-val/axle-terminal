@@ -1,0 +1,26 @@
+{
+  "command": "realpath",
+  "description": "Display the resolved absolute path for a file or directory. More information: https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display the absolute path for a file or directory:",
+      "syntax": "realpath {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Require all path components to exist:",
+      "syntax": "realpath --canonicalize-existing {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Resolve \"..\" components before symlinks:",
+      "syntax": "realpath --logical {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Disable symlink expansion:",
+      "syntax": "realpath --no-symlinks {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Suppress error messages:",
+      "syntax": "realpath --quiet {{path/to/file_or_directory}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "pt",
+  "description": "Platinum Searcher. A code search tool similar to ag. More information: https://github.com/monochromegane/the_platinum_searcher.",
+  "useCases": [
+    {
+      "description": "Find files containing \"foo\" and print the files with highlighted matches:",
+      "syntax": "pt {{foo}}"
+    },
+    {
+      "description": "Find files containing \"foo\" and display count of matches in each file:",
+      "syntax": "pt -c {{foo}}"
+    },
+    {
+      "description": "Find files containing \"foo\" as a whole word and ignore its case:",
+      "syntax": "pt -wi {{foo}}"
+    },
+    {
+      "description": "Find \"foo\" in files with a given extension using a regular expression:",
+      "syntax": "pt -G='{{\\.bar$}}' {{foo}}"
+    },
+    {
+      "description": "Find files whose contents match the regular expression, up to 2 directories deep:",
+      "syntax": "pt --depth={{2}} -e '{{^ba[rz]*$}}'"
+    }
+  ]
+}

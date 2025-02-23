@@ -1,0 +1,18 @@
+{
+  "command": "cargo fmt",
+  "description": "Run rustfmt on all source files in a Rust project. More information: https://github.com/rust-lang/rustfmt.",
+  "useCases": [
+    {
+      "description": "Format all source files:",
+      "syntax": "cargo fmt"
+    },
+    {
+      "description": "Check for formatting errors without writing to the files:",
+      "syntax": "cargo fmt --check"
+    },
+    {
+      "description": "Pass arguments to each rustfmt call:",
+      "syntax": "cargo fmt -- {{rustfmt_args}}"
+    }
+  ]
+}

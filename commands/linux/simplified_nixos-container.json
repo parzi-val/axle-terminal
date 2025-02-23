@@ -1,0 +1,30 @@
+{
+  "command": "nixos-container",
+  "description": "Starts NixOS containers using Linux containers. More information: https://nixos.org/manual/nixos/stable/#ch-containers.",
+  "useCases": [
+    {
+      "description": "List running containers:",
+      "syntax": "sudo nixos-container list"
+    },
+    {
+      "description": "Create a NixOS container with a specific configuration file:",
+      "syntax": "sudo nixos-container create {{container_name}} --config-file {{nix_config_file_path}}"
+    },
+    {
+      "description": "Start, stop, terminate, or destroy a specific container:",
+      "syntax": "sudo nixos-container {{start|stop|terminate|destroy|status}} {{container_name}}"
+    },
+    {
+      "description": "Run a command in a running container:",
+      "syntax": "sudo nixos-container run {{container_name}} -- {{command}} {{command_arguments}}"
+    },
+    {
+      "description": "Update a container configuration:",
+      "syntax": "sudo $EDITOR /var/lib/container/{{container_name}}/etc/nixos/configuration.nix &amp;&amp; sudo nixos-container update {{container_name}}"
+    },
+    {
+      "description": "Enter an interactive shell session on an already-running container:",
+      "syntax": "sudo nixos-container root-login {{container_name}}"
+    }
+  ]
+}

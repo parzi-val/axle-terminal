@@ -1,0 +1,14 @@
+{
+  "command": "ideviceinfo",
+  "description": "Show information about the first connected iOS device. More information: https://manned.org/ideviceinfo.",
+  "useCases": [
+    {
+      "description": "Display detailed information about the connected device:",
+      "syntax": "ideviceinfo"
+    },
+    {
+      "description": "Show information about a specific device by UDID:",
+      "syntax": "ideviceinfo --udid {{device_udid}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "grubby",
+  "description": "Tool for configuring grub and zipl bootloaders. More information: https://manned.org/grubby.8.",
+  "useCases": [
+    {
+      "description": "Add kernel boot arguments to all kernel menu entries:",
+      "syntax": "sudo grubby --update-kernel=ALL --args '{{quiet console=ttyS0}}'"
+    },
+    {
+      "description": "Remove existing arguments from the entry for the default kernel:",
+      "syntax": "sudo grubby --update-kernel=DEFAULT --remove-args {{quiet}}"
+    },
+    {
+      "description": "List all kernel menu entries:",
+      "syntax": "sudo grubby --info=ALL"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "cmdkey",
+  "description": "Create, show, and delete stored user names and passwords. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/cmdkey.",
+  "useCases": [
+    {
+      "description": "List all user credentials:",
+      "syntax": "cmdkey /list"
+    },
+    {
+      "description": "Store credentials for a user that accesses a server:",
+      "syntax": "cmdkey /add:{{server_name}} /user:{{user_name}}"
+    },
+    {
+      "description": "Delete credentials for a specific target:",
+      "syntax": "cmdkey /delete {{target_name}}"
+    }
+  ]
+}

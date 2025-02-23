@@ -1,0 +1,18 @@
+{
+  "command": "pamtowinicon",
+  "description": "Convert a PAM image to a Windows ICO file. More information: https://netpbm.sourceforge.net/doc/pamtowinicon.html.",
+  "useCases": [
+    {
+      "description": "Convert a PAM image file to an ICO file:",
+      "syntax": "pamtowinicon {{path/to/input_file.pam}} &gt; {{path/to/output.ico}}"
+    },
+    {
+      "description": "Encode images with resolutions smaller than t in the BMP format and all other images in the PNG format:",
+      "syntax": "pamtowinicon -pngthreshold {{t}} {{path/to/input_file.pam}} &gt; {{path/to/output.ico}}"
+    },
+    {
+      "description": "Make all pixels outside the non-opaque area black:",
+      "syntax": "pamtowinicon -truetransparent {{path/to/input_file.pam}} &gt; {{path/to/output.ico}}"
+    }
+  ]
+}

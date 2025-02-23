@@ -1,0 +1,22 @@
+{
+  "command": "xbps-remove",
+  "description": "XBPS utility to remove packages. See also: xbps. More information: https://manned.org/xbps-remove.1.",
+  "useCases": [
+    {
+      "description": "Remove a package:",
+      "syntax": "xbps-remove {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies:",
+      "syntax": "xbps-remove --recursive {{package}}"
+    },
+    {
+      "description": "Remove orphan packages (installed as dependencies but no longer required by any package):",
+      "syntax": "xbps-remove --remove-orphans"
+    },
+    {
+      "description": "Remove obsolete packages from the cache:",
+      "syntax": "xbps-remove --clean-cache"
+    }
+  ]
+}

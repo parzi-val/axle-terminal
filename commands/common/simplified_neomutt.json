@@ -1,0 +1,26 @@
+{
+  "command": "neomutt",
+  "description": "NeoMutt command-line email client. More information: https://neomutt.org.",
+  "useCases": [
+    {
+      "description": "Open the specified mailbox:",
+      "syntax": "neomutt -f {{path/to/mailbox}}"
+    },
+    {
+      "description": "Start writing an email and specify a subject and a cc recipient:",
+      "syntax": "neomutt -s &quot;{{subject}}&quot; -c {{cc@example.com}} {{recipient@example.com}}"
+    },
+    {
+      "description": "Send an email with files attached:",
+      "syntax": "neomutt -a {{path/to/file1 path/to/file2 ...}} -- {{recipient@example.com}}"
+    },
+    {
+      "description": "Specify a file to include as the message body:",
+      "syntax": "neomutt -i {{path/to/file}} {{recipient@example.com}}"
+    },
+    {
+      "description": "Specify a draft file containing the header and the body of the message, in RFC 5322 format:",
+      "syntax": "neomutt -H {{path/to/file}} {{recipient@example.com}}"
+    }
+  ]
+}

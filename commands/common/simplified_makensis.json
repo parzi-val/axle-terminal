@@ -1,0 +1,18 @@
+{
+  "command": "makensis",
+  "description": "Cross-platform compiler for NSIS installers. It compiles a NSIS script into a Windows installer executable. More information: https://nsis.sourceforge.io/Docs/Chapter3.html.",
+  "useCases": [
+    {
+      "description": "Compile a NSIS script:",
+      "syntax": "makensis {{path/to/file.nsi}}"
+    },
+    {
+      "description": "Compile a NSIS script in strict mode (treat warnings as errors):",
+      "syntax": "makensis -WX {{path/to/file.nsi}}"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "makensis -CMDHELP {{command}}"
+    }
+  ]
+}

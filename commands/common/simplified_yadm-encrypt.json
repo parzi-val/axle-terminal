@@ -1,0 +1,14 @@
+{
+  "command": "yadm-encrypt",
+  "description": "Encrypt files listed in the designated encrypt file. After the files are encrypted they will be save in the designated archive folder. More information: https://yadm.io/docs/encryption.",
+  "useCases": [
+    {
+      "description": "Encrypt files listed in the designated encrypt file:",
+      "syntax": "yadm encrypt"
+    },
+    {
+      "description": "Create the necessary files and folders for encryption:",
+      "syntax": "touch {{path/to/encrypt_file}} &amp;&amp; mkdir {{path/to/archive_folder}}"
+    }
+  ]
+}

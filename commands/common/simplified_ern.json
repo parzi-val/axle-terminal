@@ -1,0 +1,34 @@
+{
+  "command": "ern",
+  "description": "Electrode Native platform command-line client. More information: https://native.electrode.io/reference/index-6.",
+  "useCases": [
+    {
+      "description": "Create a new ern application (MiniApp):",
+      "syntax": "ern create-miniapp {{application_name}}"
+    },
+    {
+      "description": "Run one or more MiniApps in the iOS/Android Runner application:",
+      "syntax": "ern run-{{ios|android}}"
+    },
+    {
+      "description": "Create an Electrode Native container:",
+      "syntax": "ern create-container --miniapps {{/path/to/miniapp_directory}} --platform {{ios|android}}"
+    },
+    {
+      "description": "Publish an Electrode Native container to a local Maven repository:",
+      "syntax": "ern publish-container --publisher {{maven}} --platform {{android}} --extra {{'{&quot;groupId&quot;:&quot;com.walmart.ern&quot;,&quot;artifactId&quot;:&quot;quickstart&quot;}'}}"
+    },
+    {
+      "description": "Transform an iOS container into a pre-compiled binary framework:",
+      "syntax": "ern transform-container --platform {{ios}} --transformer {{xcframework}}"
+    },
+    {
+      "description": "List all installed versions of Electrode Native:",
+      "syntax": "ern platform versions"
+    },
+    {
+      "description": "Set a logging level:",
+      "syntax": "ern platform config set logLevel {{trace|debug}}"
+    }
+  ]
+}

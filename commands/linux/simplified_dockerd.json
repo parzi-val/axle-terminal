@@ -1,0 +1,26 @@
+{
+  "command": "dockerd",
+  "description": "A persistent process to start and manage Docker containers. More information: https://docs.docker.com/reference/cli/dockerd/.",
+  "useCases": [
+    {
+      "description": "Run Docker daemon:",
+      "syntax": "dockerd"
+    },
+    {
+      "description": "Run Docker daemon and configure it to listen to specific sockets (UNIX and TCP):",
+      "syntax": "dockerd --host unix://{{path/to/tmp.sock}} --host tcp://{{ip}}"
+    },
+    {
+      "description": "Run with specific daemon PID file:",
+      "syntax": "dockerd --pidfile {{path/to/pid_file}}"
+    },
+    {
+      "description": "Run in debug mode:",
+      "syntax": "dockerd --debug"
+    },
+    {
+      "description": "Run and set a specific log level:",
+      "syntax": "dockerd --log-level {{debug|info|warn|error|fatal}}"
+    }
+  ]
+}

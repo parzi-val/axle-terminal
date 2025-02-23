@@ -1,0 +1,34 @@
+{
+  "command": "atop",
+  "description": "Linux system and process monitor. More information: https://manned.org/atop.",
+  "useCases": [
+    {
+      "description": "Start:",
+      "syntax": "atop"
+    },
+    {
+      "description": "Start and display memory consumption for each process:",
+      "syntax": "atop -m"
+    },
+    {
+      "description": "Start and display disk information:",
+      "syntax": "atop -d"
+    },
+    {
+      "description": "Start and display background process information:",
+      "syntax": "atop -c"
+    },
+    {
+      "description": "Start and display thread-specific resource utilization information:",
+      "syntax": "atop -y"
+    },
+    {
+      "description": "Start and display the number of processes for each user:",
+      "syntax": "atop -au"
+    },
+    {
+      "description": "Display help about interactive commands:",
+      "syntax": "?"
+    }
+  ]
+}

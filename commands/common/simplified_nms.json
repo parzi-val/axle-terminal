@@ -1,0 +1,22 @@
+{
+  "command": "nms",
+  "description": "Command-line tool that recreates the famous data decryption effect seen in the 1992 movie Sneakers from stdin. More information: https://github.com/bartobri/no-more-secrets.",
+  "useCases": [
+    {
+      "description": "Decrypt text after a keystroke:",
+      "syntax": "echo &quot;{{Hello, World!}}&quot; | nms"
+    },
+    {
+      "description": "Decrypt output immediately, without waiting for a keystroke:",
+      "syntax": "{{ls -la}} | nms -a"
+    },
+    {
+      "description": "Decrypt the content of a file, with a custom output color:",
+      "syntax": "cat {{path/to/file}} | nms -a -f {{blue|white|yellow|black|magenta|green|red}}"
+    },
+    {
+      "description": "Clear the screen before decrypting:",
+      "syntax": "{{command}} | nms -a -c"
+    }
+  ]
+}

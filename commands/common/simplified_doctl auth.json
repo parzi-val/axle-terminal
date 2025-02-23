@@ -1,0 +1,26 @@
+{
+  "command": "doctl auth",
+  "description": "Authenticate doctl with API tokens. More information: https://docs.digitalocean.com/reference/doctl/reference/auth/.",
+  "useCases": [
+    {
+      "description": "Open a prompt to enter an API token and label its context:",
+      "syntax": "doctl auth init --context {{token_label}}"
+    },
+    {
+      "description": "List authentication contexts (API tokens):",
+      "syntax": "doctl auth list"
+    },
+    {
+      "description": "Switch contexts (API tokens):",
+      "syntax": "doctl auth switch --context {{token_label}}"
+    },
+    {
+      "description": "Remove a stored authentication context (API token):",
+      "syntax": "doctl auth remove --context {{token_label}}"
+    },
+    {
+      "description": "Show available commands:",
+      "syntax": "doctl auth --help"
+    }
+  ]
+}

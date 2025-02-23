@@ -1,0 +1,14 @@
+{
+  "command": "git undo",
+  "description": "Undo recent commits. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-undo.",
+  "useCases": [
+    {
+      "description": "Remove the most recent commit:",
+      "syntax": "git undo"
+    },
+    {
+      "description": "Remove a specific number of the most recent commits:",
+      "syntax": "git undo {{3}}"
+    }
+  ]
+}

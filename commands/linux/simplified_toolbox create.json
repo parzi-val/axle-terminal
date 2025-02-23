@@ -1,0 +1,26 @@
+{
+  "command": "toolbox create",
+  "description": "Create a new toolbox container. More information: https://manned.org/toolbox-create.1.",
+  "useCases": [
+    {
+      "description": "Create a toolbox container for a specific distribution:",
+      "syntax": "toolbox create --distro {{distribution}}"
+    },
+    {
+      "description": "Create a toolbox container for a specific release of the current distribution:",
+      "syntax": "toolbox create --release {{release}}"
+    },
+    {
+      "description": "Create a toolbox container with a custom image:",
+      "syntax": "toolbox create --image {{name}}"
+    },
+    {
+      "description": "Create a toolbox container from a custom Fedora image:",
+      "syntax": "toolbox create --image {{registry.fedoraproject.org/fedora-toolbox:39}}"
+    },
+    {
+      "description": "Create a toolbox container using the default image for Fedora 39:",
+      "syntax": "toolbox create --distro {{fedora}} --release {{f39}}"
+    }
+  ]
+}

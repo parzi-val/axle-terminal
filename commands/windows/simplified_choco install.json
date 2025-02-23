@@ -1,0 +1,38 @@
+{
+  "command": "choco install",
+  "description": "Install one or more packages with Chocolatey. More information: https://chocolatey.org/docs/commands-install.",
+  "useCases": [
+    {
+      "description": "Install one or more packages:",
+      "syntax": "choco install {{package1 package2 ...}}"
+    },
+    {
+      "description": "Install packages from a custom configuration file:",
+      "syntax": "choco install {{path\\to\\packages_file.config}}"
+    },
+    {
+      "description": "Install a specific nuspec or nupkg file:",
+      "syntax": "choco install {{path\\to\\file}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "choco install {{package}} --version {{version}}"
+    },
+    {
+      "description": "Allow installing multiple versions of a package:",
+      "syntax": "choco install {{package}} --allow-multiple"
+    },
+    {
+      "description": "Confirm all prompts automatically:",
+      "syntax": "choco install {{package}} --yes"
+    },
+    {
+      "description": "Specify a custom source to receive packages from:",
+      "syntax": "choco install {{package}} --source {{source_url|alias}}"
+    },
+    {
+      "description": "Provide a username and password for authentication:",
+      "syntax": "choco install {{package}} --user {{username}} --password {{password}}"
+    }
+  ]
+}

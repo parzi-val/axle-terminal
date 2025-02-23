@@ -1,0 +1,26 @@
+{
+  "command": "slurmd",
+  "description": "Monitors all tasks running on the compute node, accepts tasks, launches tasks, and kills running tasks upon request. More information: https://slurm.schedmd.com/slurmd.html.",
+  "useCases": [
+    {
+      "description": "Report node rebooted when daemon restarted (Used for testing purposes):",
+      "syntax": "slurmd -b"
+    },
+    {
+      "description": "Run the daemon with the given nodename:",
+      "syntax": "slurmd -N {{nodename}}"
+    },
+    {
+      "description": "Write log messages to the specified file:",
+      "syntax": "slurmd -L {{path/to/output_file}}"
+    },
+    {
+      "description": "Read configuration from the specified file:",
+      "syntax": "slurmd -f {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "slurmd -h"
+    }
+  ]
+}

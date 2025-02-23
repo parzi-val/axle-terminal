@@ -1,0 +1,38 @@
+{
+  "command": "kdesrc-build",
+  "description": "Easily build KDE components from its source repositories. More information: https://docs.kde.org/trunk5/en/kdesrc-build/kdesrc-build/index.html.",
+  "useCases": [
+    {
+      "description": "Initialize kdesrc-build:",
+      "syntax": "kdesrc-build --initial-setup"
+    },
+    {
+      "description": "Compile a KDE component and its dependencies from source:",
+      "syntax": "kdesrc-build {{component_name}}"
+    },
+    {
+      "description": "Compile a component without updating its local code and without compiling its dependencies:",
+      "syntax": "kdesrc-build --no-src --no-include-dependencies {{component_name}}"
+    },
+    {
+      "description": "Refresh the build directories before compiling:",
+      "syntax": "kdesrc-build --refresh-build {{component_name}}"
+    },
+    {
+      "description": "Resume compilation from a specific dependency:",
+      "syntax": "kdesrc-build --resume-from={{dependency_component}} {{component_name}}"
+    },
+    {
+      "description": "Run a component with a specified executable name:",
+      "syntax": "kdesrc-build --run --exec {{executable_name}} {{component_name}}"
+    },
+    {
+      "description": "Build all configured components:",
+      "syntax": "kdesrc-build"
+    },
+    {
+      "description": "Use system libraries in place of a component if it fails to build:",
+      "syntax": "kdesrc-build --no-stop-on-failure {{component_name}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ical",
+  "description": "View Hirji/Islamic and Gregorian calendars and convert their dates. More information: https://manned.org/ical.",
+  "useCases": [
+    {
+      "description": "Display the current month's calendar:",
+      "syntax": "ical"
+    },
+    {
+      "description": "Convert a Gregorian date to a Hijri date:",
+      "syntax": "ical --gregorian {{yyyymmdd}}"
+    },
+    {
+      "description": "Convert a Hirji date to a Gregorian date:",
+      "syntax": "ical --hijri {{yyyymmdd}}"
+    }
+  ]
+}

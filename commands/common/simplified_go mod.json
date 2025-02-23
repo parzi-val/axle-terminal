@@ -1,0 +1,26 @@
+{
+  "command": "go mod",
+  "description": "Module maintenance. More information: https://golang.org/cmd/go/#hdr-Module_maintenance.",
+  "useCases": [
+    {
+      "description": "Initialize new module in current directory:",
+      "syntax": "go mod init {{moduleName}}"
+    },
+    {
+      "description": "Download modules to local cache:",
+      "syntax": "go mod download"
+    },
+    {
+      "description": "Add missing and remove unused modules:",
+      "syntax": "go mod tidy"
+    },
+    {
+      "description": "Verify dependencies have expected content:",
+      "syntax": "go mod verify"
+    },
+    {
+      "description": "Copy sources of all dependencies into the vendor directory:",
+      "syntax": "go mod vendor"
+    }
+  ]
+}

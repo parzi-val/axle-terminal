@@ -1,0 +1,18 @@
+{
+  "command": "auditd",
+  "description": "This responds to requests from the audit utility and notifications from the kernel. It should not be invoked manually. More information: https://manned.org/auditd.",
+  "useCases": [
+    {
+      "description": "Start the daemon:",
+      "syntax": "auditd"
+    },
+    {
+      "description": "Start the daemon in debug mode:",
+      "syntax": "auditd -d"
+    },
+    {
+      "description": "Start the daemon on-demand from launchd:",
+      "syntax": "auditd -l"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "tomb",
+  "description": "Manage encrypted storage directories that can be safely transported and hidden in a filesystem. More information: https://www.dyne.org/software/tomb/.",
+  "useCases": [
+    {
+      "description": "Create a new tomb with an initial size of 100 MB:",
+      "syntax": "tomb dig -s {{100}} {{encrypted_directory.tomb}}"
+    },
+    {
+      "description": "Create a new key file that can be used to lock a tomb; user will be prompted for a password for the key:",
+      "syntax": "tomb forge {{encrypted_directory.tomb.key}}"
+    },
+    {
+      "description": "Forcefully create a new key, even if the tomb isn't allowing key forging (due to swap):",
+      "syntax": "tomb forge {{encrypted_directory.tomb.key}} -f"
+    },
+    {
+      "description": "Initialize and lock an empty tomb using a key made with forge:",
+      "syntax": "tomb lock {{encrypted_directory.tomb}} -k {{encrypted_directory.tomb.key}}"
+    },
+    {
+      "description": "Mount a tomb (by default in /media) using its key, making it usable as a regular filesystem directory:",
+      "syntax": "tomb open {{encrypted_directory.tomb}} -k {{encrypted_directory.tomb.key}}"
+    },
+    {
+      "description": "Close a tomb (fails if the tomb is being used by a process):",
+      "syntax": "tomb close {{encrypted_directory.tomb}}"
+    },
+    {
+      "description": "Forcefully close all open tombs, killing any applications using them:",
+      "syntax": "tomb slam all"
+    },
+    {
+      "description": "List all open tombs:",
+      "syntax": "tomb list"
+    }
+  ]
+}

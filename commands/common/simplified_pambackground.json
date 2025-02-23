@@ -1,0 +1,10 @@
+{
+  "command": "pambackground",
+  "description": "Create a mask of the background in a PAM image. See also: pbmmask. More information: https://netpbm.sourceforge.net/doc/pambackground.html.",
+  "useCases": [
+    {
+      "description": "Create a mask of the background in a PAM image:",
+      "syntax": "pambackground {{path/to/image.pam}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

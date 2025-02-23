@@ -1,0 +1,18 @@
+{
+  "command": "hcloud",
+  "description": "Show how to use the CLI for Hetzner Cloud. More information: https://github.com/hetznercloud/cli.",
+  "useCases": [
+    {
+      "description": "Show available commands and flags:",
+      "syntax": "hcloud"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "hcloud -h"
+    },
+    {
+      "description": "Show available commands and flags for hcloud contexts:",
+      "syntax": "hcloud context"
+    }
+  ]
+}

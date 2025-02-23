@@ -1,0 +1,38 @@
+{
+  "command": "chromium",
+  "description": "Open-source web browser principally developed and maintained by Google. Note: You may need to replace the chromium command with your desired web browser, such as brave, google-chrome, opera, or vivaldi. More information: https://www.chromium.org/developers/how-tos/run-chromium-with-flags/.",
+  "useCases": [
+    {
+      "description": "Open a specific URL or file:",
+      "syntax": "chromium {{https://example.com|path/to/file.html}}"
+    },
+    {
+      "description": "Open in incognito mode:",
+      "syntax": "chromium --incognito {{example.com}}"
+    },
+    {
+      "description": "Open in a new window:",
+      "syntax": "chromium --new-window {{example.com}}"
+    },
+    {
+      "description": "Open in application mode (without toolbars, URL bar, buttons, etc.):",
+      "syntax": "chromium --app={{https://example.com}}"
+    },
+    {
+      "description": "Use a proxy server:",
+      "syntax": "chromium --proxy-server=&quot;{{socks5://hostname:66}}&quot; {{example.com}}"
+    },
+    {
+      "description": "Open with a custom profile directory:",
+      "syntax": "chromium --user-data-dir={{path/to/directory}}"
+    },
+    {
+      "description": "Open without CORS validation (useful to test an API):",
+      "syntax": "chromium --user-data-dir={{path/to/directory}} --disable-web-security"
+    },
+    {
+      "description": "Open with a DevTools window for each tab opened:",
+      "syntax": "chromium --auto-open-devtools-for-tabs"
+    }
+  ]
+}

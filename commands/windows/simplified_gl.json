@@ -1,0 +1,10 @@
+{
+  "command": "gl",
+  "description": "In PowerShell, this command is an alias of Get-Location.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr get-location"
+    }
+  ]
+}

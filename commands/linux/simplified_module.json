@@ -1,0 +1,34 @@
+{
+  "command": "module",
+  "description": "Modify a users' environment using the module command. More information: https://lmod.readthedocs.io/en/latest/010_user.html.",
+  "useCases": [
+    {
+      "description": "Display available modules:",
+      "syntax": "module avail"
+    },
+    {
+      "description": "Search for a module by name:",
+      "syntax": "module avail {{module_name}}"
+    },
+    {
+      "description": "Load a module:",
+      "syntax": "module load {{module_name}}"
+    },
+    {
+      "description": "Display loaded modules:",
+      "syntax": "module list"
+    },
+    {
+      "description": "Unload a specific loaded module:",
+      "syntax": "module unload {{module_name}}"
+    },
+    {
+      "description": "Unload all loaded modules:",
+      "syntax": "module purge"
+    },
+    {
+      "description": "Specify user-created modules:",
+      "syntax": "module use {{path/to/module_file1 path/to/module_file2 ...}}"
+    }
+  ]
+}

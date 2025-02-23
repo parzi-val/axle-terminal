@@ -1,0 +1,26 @@
+{
+  "command": "cryptcat",
+  "description": "Cryptcat is netcat with encryption capabilities. More information: https://cryptcat.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "[l]isten on a specified [p]ort and print any data received:",
+      "syntax": "cryptcat -k {{password}} -l -p {{port}}"
+    },
+    {
+      "description": "Connect to a certain port:",
+      "syntax": "cryptcat -k {{password}} {{ip_address}} {{port}}"
+    },
+    {
+      "description": "Specify the timeout ([w]):",
+      "syntax": "cryptcat -k {{password}} -w {{timeout_in_seconds}} {{ip_address}} {{port}}"
+    },
+    {
+      "description": "Scan ([z]) the open ports of a specified host:",
+      "syntax": "cryptcat -v -z {{ip_address}} {{port}}"
+    },
+    {
+      "description": "Act as proxy and forward data from a local TCP port to the given remote host:",
+      "syntax": "cryptcat -k {{password}} -l -p {{local_port}} | cryptcat -k {{password}} {{hostname}} {{remote_port}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ykinfo",
+  "description": "Get basic information from a YubiKey. More information: https://developers.yubico.com/yubikey-personalization/Manuals/ykinfo.1.html.",
+  "useCases": [
+    {
+      "description": "Display all information from YubiKey:",
+      "syntax": "ykinfo -a"
+    },
+    {
+      "description": "Get only serial in decimal from YubiKey:",
+      "syntax": "ykinfo -s -q"
+    },
+    {
+      "description": "Get capabilities from YubiKey:",
+      "syntax": "ykinfo -c"
+    }
+  ]
+}

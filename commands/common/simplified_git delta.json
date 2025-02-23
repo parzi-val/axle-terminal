@@ -1,0 +1,14 @@
+{
+  "command": "git delta",
+  "description": "List files that differ from another branch. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-delta.",
+  "useCases": [
+    {
+      "description": "List files from the current checked out branch that differ from the main branch:",
+      "syntax": "git delta {{main}}"
+    },
+    {
+      "description": "List files from a specific branch that differ from another specific branch:",
+      "syntax": "git delta {{branch_1}} {{branch_2}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "ppmtoxpm",
+  "description": "Convert a PPM image to an X11 version 3 pixmap. More information: https://netpbm.sourceforge.net/doc/ppmtoxpm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a XPM image:",
+      "syntax": "ppmtoxpm {{path/to/input_file.ppm}} &gt; {{path/to/output_file.xpm}}"
+    },
+    {
+      "description": "Specify the prefix string in the output XPM image:",
+      "syntax": "ppmtoxpm -name {{prefix_string}} {{path/to/input_file.ppm}} &gt; {{path/to/output_file.xpm}}"
+    },
+    {
+      "description": "In the output XPM file, specify colors by their hexadecimal code instead of their name:",
+      "syntax": "ppmtoxpm -hexonly {{path/to/input_file.ppm}} &gt; {{path/to/output_file.xpm}}"
+    },
+    {
+      "description": "Use the specified PGM file as a transparency mask:",
+      "syntax": "ppmtoxpm -alphamask {{path/to/alpha_file.pgm}} {{path/to/input_file.ppm}} &gt; {{path/to/output_file.xpm}}"
+    }
+  ]
+}

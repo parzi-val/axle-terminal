@@ -1,0 +1,38 @@
+{
+  "command": "op",
+  "description": "Official CLI for 1Password's desktop app. More information: https://developer.1password.com/docs/cli/reference.",
+  "useCases": [
+    {
+      "description": "Sign in to a 1Password account:",
+      "syntax": "op signin"
+    },
+    {
+      "description": "List all vaults:",
+      "syntax": "op vault list"
+    },
+    {
+      "description": "Print item details in JSON format:",
+      "syntax": "op item get {{item_name}} --format json"
+    },
+    {
+      "description": "Create a new item with a category in the default vault:",
+      "syntax": "op item create --category {{category_name}}"
+    },
+    {
+      "description": "Print a referenced secret to stdout:",
+      "syntax": "op read {{secret_reference}}"
+    },
+    {
+      "description": "Pass secret references from exported environment variables to a command:",
+      "syntax": "op run -- {{command}}"
+    },
+    {
+      "description": "Pass secret references from an environment file to a command:",
+      "syntax": "op run --env-file {{path/to/env_file.env}} -- {{command}}"
+    },
+    {
+      "description": "Read secret references from a file and save plaintext secrets to a file:",
+      "syntax": "op inject --in-file {{path/to/input_file}} --out-file {{path/to/output_file}}"
+    }
+  ]
+}

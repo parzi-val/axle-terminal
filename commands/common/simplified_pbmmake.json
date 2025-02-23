@@ -1,0 +1,14 @@
+{
+  "command": "pbmmake",
+  "description": "Create a blank bitmap. More information: https://netpbm.sourceforge.net/doc/pbmmake.html.",
+  "useCases": [
+    {
+      "description": "Create a blank bitmap of the specified dimensions:",
+      "syntax": "pbmmake {{width}} {{height}} &gt; {{path/to/output_file.pbm}}"
+    },
+    {
+      "description": "Specify the color of the created bitmap:",
+      "syntax": "pbmmake -{{white|black|grey}} {{width}} {{height}} &gt; {{path/to/output_file.pbm}}"
+    }
+  ]
+}

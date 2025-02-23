@@ -1,0 +1,18 @@
+{
+  "command": "fondue",
+  "description": "Install optional Windows features. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/fondue.",
+  "useCases": [
+    {
+      "description": "Enable a specific Windows feature:",
+      "syntax": "fondue /enable-feature:{{feature}}"
+    },
+    {
+      "description": "Hide all output messages to the user:",
+      "syntax": "fondue /enable-feature:{{feature}} /hide-ux:all"
+    },
+    {
+      "description": "Specify a caller process name for error reporting:",
+      "syntax": "fondue /enable-feature:{{feature}} /caller-name:{{name}}"
+    }
+  ]
+}

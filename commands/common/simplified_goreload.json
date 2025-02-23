@@ -1,0 +1,18 @@
+{
+  "command": "goreload",
+  "description": "Live reload utility for Go programs. More information: https://github.com/acoshift/goreload.",
+  "useCases": [
+    {
+      "description": "Watch a binary file (defaults to .goreload):",
+      "syntax": "goreload -b {{path/to/binary}} {{path/to/file.go}}"
+    },
+    {
+      "description": "Set a custom log prefix (defaults to goreload):",
+      "syntax": "goreload --logPrefix {{prefix}} {{path/to/file.go}}"
+    },
+    {
+      "description": "Reload whenever any file changes:",
+      "syntax": "goreload --all"
+    }
+  ]
+}

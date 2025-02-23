@@ -1,0 +1,10 @@
+{
+  "command": "sputoppm",
+  "description": "Convert an Atari uncompressed Spectrum image to a PPM image. More information: https://netpbm.sourceforge.net/doc/sputoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an SPU file to a PPM image:",
+      "syntax": "sputoppm {{path/to/input.spu}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

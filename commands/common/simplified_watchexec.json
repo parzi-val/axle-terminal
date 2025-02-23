@@ -1,0 +1,22 @@
+{
+  "command": "watchexec",
+  "description": "Run arbitrary commands when files change. More information: https://github.com/watchexec/watchexec.",
+  "useCases": [
+    {
+      "description": "Call ls -la when any file in the current directory changes:",
+      "syntax": "watchexec {{ls -la}}"
+    },
+    {
+      "description": "Run make when any JavaScript, CSS and HTML file in the current directory changes:",
+      "syntax": "watchexec --exts {{js,css,html}} make"
+    },
+    {
+      "description": "Run make when any file in the lib or src directory changes:",
+      "syntax": "watchexec --watch {{lib}} --watch {{src}} {{make}}"
+    },
+    {
+      "description": "Call/restart my_server when any file in the current directory changes, sending SIGKILL to stop the child process:",
+      "syntax": "watchexec --restart --stop-signal {{SIGKILL}} {{my_server}}"
+    }
+  ]
+}

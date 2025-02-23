@@ -1,0 +1,34 @@
+{
+  "command": "standard",
+  "description": "The JavaScript Standard Style tool for linting and fixing JavaScript code. More information: https://standardjs.com.",
+  "useCases": [
+    {
+      "description": "Lint all JavaScript source files in the current directory:",
+      "syntax": "standard"
+    },
+    {
+      "description": "Lint specific JavaScript file(s):",
+      "syntax": "standard {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Apply automatic fixes during linting:",
+      "syntax": "standard --fix"
+    },
+    {
+      "description": "Declare any available global variables:",
+      "syntax": "standard --global {{variable}}"
+    },
+    {
+      "description": "Use a custom ESLint plugin when linting:",
+      "syntax": "standard --plugin {{plugin}}"
+    },
+    {
+      "description": "Use a custom JS parser when linting:",
+      "syntax": "standard --parser {{parser}}"
+    },
+    {
+      "description": "Use a custom ESLint environment when linting:",
+      "syntax": "standard --env {{environment}}"
+    }
+  ]
+}

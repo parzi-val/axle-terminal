@@ -1,0 +1,18 @@
+{
+  "command": "cgclassify",
+  "description": "Move running tasks to cgroups. More information: https://manned.org/cgclassify.",
+  "useCases": [
+    {
+      "description": "Move the process with a specific PID to the control group student in the CPU hierarchy:",
+      "syntax": "cgclassify -g {{cpu:student}} {{1234}}"
+    },
+    {
+      "description": "Move the process with a specific PID to control groups based on the /etc/cgrules.conf configuration file:",
+      "syntax": "cgclassify {{1234}}"
+    },
+    {
+      "description": "Move the process with a specific PID to the control group student in the CPU hierarchy. Note: The daemon of the service cgred does not change cgroups of the specific PID and its children (based on /etc/cgrules.conf):",
+      "syntax": "cgclassify --sticky -g {{cpu:/student}} {{1234}}"
+    }
+  ]
+}

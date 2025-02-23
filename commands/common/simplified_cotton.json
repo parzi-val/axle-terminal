@@ -1,0 +1,18 @@
+{
+  "command": "cotton",
+  "description": "Markdown test specification runner. More information: https://github.com/chonla/cotton.",
+  "useCases": [
+    {
+      "description": "Use a specific base URL:",
+      "syntax": "cotton -u {{base_url}} {{path/to/file.md}}"
+    },
+    {
+      "description": "Disable certificate verification (insecure mode):",
+      "syntax": "cotton -u {{base_url}} -i {{path/to/file.md}}"
+    },
+    {
+      "description": "Stop running when a test fails:",
+      "syntax": "cotton -u {{base_url}} -s {{path/to/file.md}}"
+    }
+  ]
+}

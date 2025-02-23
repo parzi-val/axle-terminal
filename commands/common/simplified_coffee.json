@@ -1,0 +1,26 @@
+{
+  "command": "coffee",
+  "description": "Execute CoffeeScript scripts or compiles them into JavaScript. More information: https://coffeescript.org#cli.",
+  "useCases": [
+    {
+      "description": "Run a script:",
+      "syntax": "coffee {{path/to/file.coffee}}"
+    },
+    {
+      "description": "Compile to JavaScript and save to a file with the same name:",
+      "syntax": "coffee --compile {{path/to/file.coffee}}"
+    },
+    {
+      "description": "Compile to JavaScript and save to a given output file:",
+      "syntax": "coffee --compile {{path/to/file.coffee}} --output {{path/to/file.js}}"
+    },
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "coffee --interactive"
+    },
+    {
+      "description": "Watch script for changes and re-run script:",
+      "syntax": "coffee --watch {{path/to/file.coffee}}"
+    }
+  ]
+}

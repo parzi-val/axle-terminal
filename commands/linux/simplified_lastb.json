@@ -1,0 +1,26 @@
+{
+  "command": "lastb",
+  "description": "List last logged in users. More information: https://manned.org/lastb.",
+  "useCases": [
+    {
+      "description": "List last logged in users:",
+      "syntax": "sudo lastb"
+    },
+    {
+      "description": "List all last logged in users since a given time:",
+      "syntax": "sudo lastb --since {{YYYY-MM-DD}}"
+    },
+    {
+      "description": "List all last logged in users until a given time:",
+      "syntax": "sudo lastb --until {{YYYY-MM-DD}}"
+    },
+    {
+      "description": "List all logged in users at a specific time:",
+      "syntax": "sudo lastb --present {{hh:mm}}"
+    },
+    {
+      "description": "List all last logged in users and translate the IP into a hostname:",
+      "syntax": "sudo lastb --dns"
+    }
+  ]
+}

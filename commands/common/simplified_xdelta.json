@@ -1,0 +1,14 @@
+{
+  "command": "xdelta",
+  "description": "Delta encoding utility. Often used for applying patches to binary files. More information: https://github.com/jmacd/xdelta.",
+  "useCases": [
+    {
+      "description": "Apply a patch:",
+      "syntax": "xdelta -d -s {{path/to/input_file}} {{path/to/delta_file.xdelta}} {{path/to/output_file}}"
+    },
+    {
+      "description": "Create a patch:",
+      "syntax": "xdelta -e -s {{path/to/old_file}} {{path/to/new_file}} {{path/to/output_file.xdelta}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "ansible",
+  "description": "Manage groups of computers remotely over SSH. (use the /etc/ansible/hosts file to add new groups/hosts). Some subcommands such as galaxy have their own usage documentation. More information: https://www.ansible.com/.",
+  "useCases": [
+    {
+      "description": "List hosts belonging to a group:",
+      "syntax": "ansible {{group}} --list-hosts"
+    },
+    {
+      "description": "Ping a group of hosts by invoking the ping [m]odule:",
+      "syntax": "ansible {{group}} -m ping"
+    },
+    {
+      "description": "Display facts about a group of hosts by invoking the setup [m]odule:",
+      "syntax": "ansible {{group}} -m setup"
+    },
+    {
+      "description": "Execute a command on a group of hosts by invoking command module with arguments:",
+      "syntax": "ansible {{group}} -m command -a '{{my_command}}'"
+    },
+    {
+      "description": "Execute a command with administrative privileges:",
+      "syntax": "ansible {{group}} --become --ask-become-pass -m command -a '{{my_command}}'"
+    },
+    {
+      "description": "Execute a command using a custom inventory file:",
+      "syntax": "ansible {{group}} -i {{inventory_file}} -m command -a '{{my_command}}'"
+    },
+    {
+      "description": "List the groups in an inventory:",
+      "syntax": "ansible localhost -m debug -a '{{var=groups.keys()}}'"
+    }
+  ]
+}

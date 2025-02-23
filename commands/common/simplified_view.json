@@ -1,0 +1,10 @@
+{
+  "command": "view",
+  "description": "A read-only version of vim. This is equivalent to vim -R. More information: https://www.vim.org.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "view {{path/to/file}}"
+    }
+  ]
+}

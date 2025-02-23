@@ -1,0 +1,18 @@
+{
+  "command": "crane export",
+  "description": "Export filesystem of a container image as a tarball. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_digest.md.",
+  "useCases": [
+    {
+      "description": "Write tarball to stdout:",
+      "syntax": "crane export {{image_name}} -"
+    },
+    {
+      "description": "Write tarball to file:",
+      "syntax": "crane export {{image_name}} {{path/to/tarball}}"
+    },
+    {
+      "description": "Read image from stdin:",
+      "syntax": "crane export - {{path/to/filename}}"
+    }
+  ]
+}

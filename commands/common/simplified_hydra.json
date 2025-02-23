@@ -1,0 +1,38 @@
+{
+  "command": "hydra",
+  "description": "Online password guessing tool. Protocols supported include FTP, HTTP(S), SMTP, SNMP, XMPP, SSH, and more. More information: https://github.com/vanhauser-thc/thc-hydra.",
+  "useCases": [
+    {
+      "description": "Start Hydra's wizard:",
+      "syntax": "hydra-wizard"
+    },
+    {
+      "description": "Guess SSH credentials using a given username and a list of passwords:",
+      "syntax": "hydra -l {{username}} -P {{path/to/wordlist.txt}} {{host_ip}} {{ssh}}"
+    },
+    {
+      "description": "Guess HTTPS webform credentials using two specific lists of usernames and passwords (\"https_post_request\" can be like \"username=^USER^&password=^PASS^\"):",
+      "syntax": "hydra -L {{path/to/usernames.txt}} -P {{path/to/wordlist.txt}} {{host_ip}} {{https-post-form}} &quot;{{url_without_host}}:{{https_post_request}}:{{login_failed_string}}&quot;"
+    },
+    {
+      "description": "Guess FTP credentials using usernames and passwords lists, specifying the number of threads:",
+      "syntax": "hydra -L {{path/to/usernames.txt}} -P {{path/to/wordlist.txt}} -t {{n_tasks}} {{host_ip}} {{ftp}}"
+    },
+    {
+      "description": "Guess MySQL credentials using a username and a passwords list, exiting when a username/password pair is found:",
+      "syntax": "hydra -l {{username}} -P {{path/to/wordlist.txt}} -f {{host_ip}} {{mysql}}"
+    },
+    {
+      "description": "Guess RDP credentials using a username and a passwords list, showing each attempt:",
+      "syntax": "hydra -l {{username}} -P {{path/to/wordlist.txt}} -V {{rdp://host_ip}}"
+    },
+    {
+      "description": "Guess IMAP credentials on a range of hosts using a list of colon-separated username/password pairs:",
+      "syntax": "hydra -C {{path/to/username_password_pairs.txt}} {{imap://[host_range_cidr]}}"
+    },
+    {
+      "description": "Guess POP3 credentials on a list of hosts using usernames and passwords lists, exiting when a username/password pair is found:",
+      "syntax": "hydra -L {{path/to/usernames.txt}} -P {{path/to/wordlist.txt}} -M {{path/to/hosts.txt}} -F {{pop3}}"
+    }
+  ]
+}

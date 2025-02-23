@@ -1,0 +1,14 @@
+{
+  "command": "vimtutor",
+  "description": "Vim tutor, teaching the basic vim commands. See also: vim, vimdiff, nvim. More information: https://manned.org/vimtutor.",
+  "useCases": [
+    {
+      "description": "Launch the vim tutor using the given language (en, fr, de, ...):",
+      "syntax": "vimtutor {{language}}"
+    },
+    {
+      "description": "Exit the tutor:",
+      "syntax": "&lt;Esc&gt; :q &lt;Enter&gt;"
+    }
+  ]
+}

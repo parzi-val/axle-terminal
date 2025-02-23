@@ -1,0 +1,22 @@
+{
+  "command": "shnsplit",
+  "description": "Splits audio files according to a .cue file. More information: http://shnutils.freeshell.org/shntool/.",
+  "useCases": [
+    {
+      "description": "Split a .wav + .cue file into multiple files:",
+      "syntax": "shnsplit -f {{path/to/file.cue}} {{path/to/file.wav}}"
+    },
+    {
+      "description": "Show supported formats:",
+      "syntax": "shnsplit -a"
+    },
+    {
+      "description": "Split a .flac file into multiple files:",
+      "syntax": "shnsplit -f {{path/to/file.cue}} -o flac {{path/to/file.flac}}"
+    },
+    {
+      "description": "Split a .wav file into files of the form \"track-number - album - title\":",
+      "syntax": "shnsplit -f {{path/to/file.cue}} {{path/to/file.wav}} -t &quot;%n - %a - %t&quot;"
+    }
+  ]
+}

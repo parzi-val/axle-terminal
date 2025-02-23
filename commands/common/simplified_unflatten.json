@@ -1,0 +1,18 @@
+{
+  "command": "unflatten",
+  "description": "Adjust directed graphs to improve the layout aspect ratio. Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten. More information: https://www.graphviz.org/pdf/unflatten.1.pdf.",
+  "useCases": [
+    {
+      "description": "Adjust one or more directed graphs to improve the layout aspect ratio:",
+      "syntax": "unflatten {{path/to/input1.gv}} {{path/to/input2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Use unflatten as a preprocessor for dot layout to improve aspect ratio:",
+      "syntax": "unflatten {{path/to/input.gv}} | dot -T {{png}} {{path/to/output.png}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "unflatten -?"
+    }
+  ]
+}

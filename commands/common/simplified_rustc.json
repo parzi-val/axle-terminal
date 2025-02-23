@@ -1,0 +1,34 @@
+{
+  "command": "rustc",
+  "description": "The Rust compiler. Rust projects usually use cargo instead of invoking rustc directly. More information: https://doc.rust-lang.org/rustc.",
+  "useCases": [
+    {
+      "description": "Compile a binary crate:",
+      "syntax": "rustc {{path/to/main.rs}}"
+    },
+    {
+      "description": "Compile with optimizations (s means optimize for binary size; z is the same with even more optimizations):",
+      "syntax": "rustc -C lto -C opt-level={{0|1|2|3|s|z}} {{path/to/main.rs}}"
+    },
+    {
+      "description": "Compile with debugging information:",
+      "syntax": "rustc -g {{path/to/main.rs}}"
+    },
+    {
+      "description": "Explain an error message:",
+      "syntax": "rustc --explain {{error_code}}"
+    },
+    {
+      "description": "Compile with architecture-specific optimizations for the current CPU:",
+      "syntax": "rustc -C target-cpu={{native}} {{path/to/main.rs}}"
+    },
+    {
+      "description": "Display the target list (Note: you have to add a target using rustup first to be able to compile for it):",
+      "syntax": "rustc --print target-list"
+    },
+    {
+      "description": "Compile for a specific target:",
+      "syntax": "rustc --target {{target_triple}} {{path/to/main.rs}}"
+    }
+  ]
+}

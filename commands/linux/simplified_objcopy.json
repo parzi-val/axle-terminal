@@ -1,0 +1,26 @@
+{
+  "command": "objcopy",
+  "description": "Copy the contents of an object file to another file. More information: https://manned.org/objcopy.",
+  "useCases": [
+    {
+      "description": "Copy data to another file:",
+      "syntax": "objcopy {{path/to/source_file}} {{path/to/target_file}}"
+    },
+    {
+      "description": "Translate object files from one format to another:",
+      "syntax": "objcopy --input-target={{input_format}} --output-target {{output_format}} {{path/to/source_file}} {{path/to/target_file}}"
+    },
+    {
+      "description": "Strip all symbol information from the file:",
+      "syntax": "objcopy --strip-all {{path/to/source_file}} {{path/to/target_file}}"
+    },
+    {
+      "description": "Strip debugging information from the file:",
+      "syntax": "objcopy --strip-debug {{path/to/source_file}} {{path/to/target_file}}"
+    },
+    {
+      "description": "Copy a specific section from the source file to the destination file:",
+      "syntax": "objcopy --only-section {{section}} {{path/to/source_file}} {{path/to/target_file}}"
+    }
+  ]
+}

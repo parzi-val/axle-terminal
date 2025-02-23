@@ -1,0 +1,18 @@
+{
+  "command": "git cherry",
+  "description": "Find commits that have yet to be applied upstream. More information: https://git-scm.com/docs/git-cherry.",
+  "useCases": [
+    {
+      "description": "Show commits (and their messages) with equivalent commits upstream:",
+      "syntax": "git cherry {{-v|--verbose}}"
+    },
+    {
+      "description": "Specify a different upstream and topic branch:",
+      "syntax": "git cherry {{origin}} {{topic}}"
+    },
+    {
+      "description": "Limit commits to those within a given limit:",
+      "syntax": "git cherry {{origin}} {{topic}} {{base}}"
+    }
+  ]
+}

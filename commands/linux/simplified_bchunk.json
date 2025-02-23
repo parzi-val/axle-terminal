@@ -1,0 +1,18 @@
+{
+  "command": "bchunk",
+  "description": "Convert CD images to a set of .iso and .cdr tracks. More information: http://he.fi/bchunk.",
+  "useCases": [
+    {
+      "description": "Convert binary CD into a standard iso9960 image file:",
+      "syntax": "bchunk {{path/to/image.bin}} {{path/to/image.cue}} {{path/to/output}}"
+    },
+    {
+      "description": "Convert with verbose mode:",
+      "syntax": "bchunk -v {{path/to/image.bin}} {{path/to/image.cue}} {{path/to/output}}"
+    },
+    {
+      "description": "Output audio files in WAV format:",
+      "syntax": "bchunk -w {{path/to/image.bin}} {{path/to/image.cue}} {{path/to/output}}"
+    }
+  ]
+}

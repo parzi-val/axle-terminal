@@ -1,0 +1,14 @@
+{
+  "command": "pveversion",
+  "description": "Proxmox VE version info. More information: https://pve.proxmox.com/wiki/Command_Line_Tools#Software_version_check.",
+  "useCases": [
+    {
+      "description": "Print system version:",
+      "syntax": "pveversion"
+    },
+    {
+      "description": "Print Proxmox subpackage versions:",
+      "syntax": "pveversion {{-v|--verbose}}"
+    }
+  ]
+}

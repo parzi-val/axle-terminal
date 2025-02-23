@@ -1,0 +1,26 @@
+{
+  "command": "buku",
+  "description": "Command-line browser-independent bookmark manager. More information: https://github.com/jarun/Buku.",
+  "useCases": [
+    {
+      "description": "Display all bookmarks matching \"keyword\" and with \"privacy\" tag:",
+      "syntax": "buku {{keyword}} --stag {{privacy}}"
+    },
+    {
+      "description": "Add bookmark with tags \"search engine\" and \"privacy\":",
+      "syntax": "buku --add {{https://example.com}} {{search engine}}, {{privacy}}"
+    },
+    {
+      "description": "Delete a bookmark:",
+      "syntax": "buku --delete {{bookmark_id}}"
+    },
+    {
+      "description": "Open editor to edit a bookmark:",
+      "syntax": "buku --write {{bookmark_id}}"
+    },
+    {
+      "description": "Remove \"search engine\" tag from a bookmark:",
+      "syntax": "buku --update {{bookmark_id}} --tag {{-}} {{search engine}}"
+    }
+  ]
+}

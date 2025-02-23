@@ -1,0 +1,18 @@
+{
+  "command": "consul-kv",
+  "description": "Distributed key-value store with health checking and service discovery. More information: https://learn.hashicorp.com/consul/getting-started/kv.",
+  "useCases": [
+    {
+      "description": "Read a value from the key-value store:",
+      "syntax": "consul kv get {{key}}"
+    },
+    {
+      "description": "Store a new key-value pair:",
+      "syntax": "consul kv put {{key}} {{value}}"
+    },
+    {
+      "description": "Delete a key-value pair:",
+      "syntax": "consul kv delete {{key}}"
+    }
+  ]
+}

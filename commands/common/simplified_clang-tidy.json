@@ -1,0 +1,22 @@
+{
+  "command": "clang-tidy",
+  "description": "An LLVM-based C/C++ linter to find style violations, bugs and security flaws through static analysis. More information: https://clang.llvm.org/extra/clang-tidy/.",
+  "useCases": [
+    {
+      "description": "Run default checks on a source file:",
+      "syntax": "clang-tidy {{path/to/file.cpp}}"
+    },
+    {
+      "description": "Don't run any checks other than the cppcoreguidelines checks on a file:",
+      "syntax": "clang-tidy {{path/to/file.cpp}} -checks={{-*,cppcoreguidelines-*}}"
+    },
+    {
+      "description": "List all available checks:",
+      "syntax": "clang-tidy -checks={{*}} -list-checks"
+    },
+    {
+      "description": "Specify defines and includes as compilation options (after --):",
+      "syntax": "clang-tidy {{path/to/file.cpp}} -- -I{{my_project/include}} -D{{definitions}}"
+    }
+  ]
+}

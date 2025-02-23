@@ -1,0 +1,38 @@
+{
+  "command": "lynx",
+  "description": "Command-line web browser. More information: https://lynx.browser.org.",
+  "useCases": [
+    {
+      "description": "Visit a website:",
+      "syntax": "lynx {{example.com}}"
+    },
+    {
+      "description": "Apply restrictions for anonymous account:",
+      "syntax": "lynx -anonymous {{example.com}}"
+    },
+    {
+      "description": "Turn on mouse support, if available:",
+      "syntax": "lynx -use_mouse {{example.com}}"
+    },
+    {
+      "description": "Force color mode on, if available:",
+      "syntax": "lynx -color {{example.com}}"
+    },
+    {
+      "description": "Open a link, using a specific file to read and write cookies:",
+      "syntax": "lynx -cookie_file={{path/to/file}} {{example.com}}"
+    },
+    {
+      "description": "Navigate forwards and backwards through the links on a page:",
+      "syntax": "{{Up arrow key|Down arrow key}}"
+    },
+    {
+      "description": "Go back to the previously displayed page:",
+      "syntax": "{{Left arrow key|u}}"
+    },
+    {
+      "description": "Exit:",
+      "syntax": "q + y"
+    }
+  ]
+}

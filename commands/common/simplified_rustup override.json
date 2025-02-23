@@ -1,0 +1,22 @@
+{
+  "command": "rustup override",
+  "description": "Modify directory toolchain overrides. See rustup help toolchain for more information about toolchains. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "List directiory toolchain overrides:",
+      "syntax": "rustup override list"
+    },
+    {
+      "description": "Set the override toolchain for the current directory (i.e. tell rustup to run cargo, rustc, etc. from a specific toolchain when in that directory):",
+      "syntax": "rustup override set {{toolchain}}"
+    },
+    {
+      "description": "Remove the toolchain override for the current directory:",
+      "syntax": "rustup override unset"
+    },
+    {
+      "description": "Remove all toolchain overrides for directories that no longer exist:",
+      "syntax": "rustup override unset --nonexistent"
+    }
+  ]
+}

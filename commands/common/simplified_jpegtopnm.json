@@ -1,0 +1,14 @@
+{
+  "command": "jpegtopnm",
+  "description": "Convert a JPEG/JFIF file to the PPM or PGM format. More information: https://netpbm.sourceforge.net/doc/jpegtopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert JPEG/JFIF image to a PPM or PGM image:",
+      "syntax": "jpegtopnm {{path/to/file.jpg}} &gt; {{path/to/file.pnm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "jpegtopnm -version"
+    }
+  ]
+}

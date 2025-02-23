@@ -1,0 +1,18 @@
+{
+  "command": "pnmhisteq",
+  "description": "Histogram-equalize a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmhisteq.html.",
+  "useCases": [
+    {
+      "description": "Increase the contrast of a PNM image using histogram equalization:",
+      "syntax": "pnmhisteq {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Only modify grey pixels:",
+      "syntax": "pnmhisteq -grey {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Do not include black or white pixels in the histogram equalization:",
+      "syntax": "pnmhisteq -no{{black|white}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

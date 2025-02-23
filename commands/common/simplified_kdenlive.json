@@ -1,0 +1,30 @@
+{
+  "command": "kdenlive",
+  "description": "KDE's non-linear video editor. More information: https://manned.org/kdenlive.",
+  "useCases": [
+    {
+      "description": "Start the video editor:",
+      "syntax": "kdenlive"
+    },
+    {
+      "description": "Open a specific file:",
+      "syntax": "kdenlive {{path/to/file.kdenlive}}"
+    },
+    {
+      "description": "Use a specific path for an MLT environment:",
+      "syntax": "kdenlive --mlt-path {{path/to/directory}}"
+    },
+    {
+      "description": "Use a specific log level for an MLT environment:",
+      "syntax": "kdenlive --mlt-log {{verbose|debug}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "kdenlive --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "kdenlive --version"
+    }
+  ]
+}

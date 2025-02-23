@@ -1,0 +1,38 @@
+{
+  "command": "find",
+  "description": "Find files or directories under a directory tree, recursively. More information: https://manned.org/find.",
+  "useCases": [
+    {
+      "description": "Find files by extension:",
+      "syntax": "find {{root_path}} -name '{{*.ext}}'"
+    },
+    {
+      "description": "Find files matching multiple path/name patterns:",
+      "syntax": "find {{root_path}} -path '{{*/path/*/*.ext}}' -or -name '{{*pattern*}}'"
+    },
+    {
+      "description": "Find directories matching a given name, in case-insensitive mode:",
+      "syntax": "find {{root_path}} -type d -iname '{{*lib*}}'"
+    },
+    {
+      "description": "Find files matching a given pattern, excluding specific paths:",
+      "syntax": "find {{root_path}} -name '{{*.py}}' -not -path '{{*/site-packages/*}}'"
+    },
+    {
+      "description": "Find files matching a given size range, limiting the recursive depth to \"1\":",
+      "syntax": "find {{root_path}} -maxdepth 1 -size {{+500k}} -size {{-10M}}"
+    },
+    {
+      "description": "Run a command for each file (use {} within the command to access the filename):",
+      "syntax": "find {{root_path}} -name '{{*.ext}}' -exec {{wc -l}} {} \\;"
+    },
+    {
+      "description": "Find all files modified today and pass the results to a single command as arguments:",
+      "syntax": "find {{root_path}} -daystart -mtime {{-1}} -exec {{tar -cvf archive.tar}} {} \\+"
+    },
+    {
+      "description": "Search for either empty files or directories and delete them verbosely:",
+      "syntax": "find {{root_path}} -type {{f|d}} -empty -delete -print"
+    }
+  ]
+}

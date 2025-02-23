@@ -1,0 +1,22 @@
+{
+  "command": "ulimit",
+  "description": "Get and set user limits. More information: https://manned.org/ulimit.",
+  "useCases": [
+    {
+      "description": "Get the properties of all the user limits:",
+      "syntax": "ulimit -a"
+    },
+    {
+      "description": "Get hard limit for the number of simultaneously opened files:",
+      "syntax": "ulimit -H -n"
+    },
+    {
+      "description": "Get soft limit for the number of simultaneously opened files:",
+      "syntax": "ulimit -S -n"
+    },
+    {
+      "description": "Set max per-user process limit:",
+      "syntax": "ulimit -u 30"
+    }
+  ]
+}

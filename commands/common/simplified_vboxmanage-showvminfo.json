@@ -1,0 +1,30 @@
+{
+  "command": "vboxmanage-showvminfo",
+  "description": "Show information about registered virtual machine. More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-showvminfo.",
+  "useCases": [
+    {
+      "description": "Show information about a particular virtual machine:",
+      "syntax": "VBoxManage showvminfo {{vm_name|uuid}}"
+    },
+    {
+      "description": "Show more detailed information about a particular virtual machine:",
+      "syntax": "VBoxManage showvminfo --details {{vm_name|uuid}}"
+    },
+    {
+      "description": "Show information in a machine readable format:",
+      "syntax": "VBoxManage showvminfo --machinereadable {{vm_name|uuid}}"
+    },
+    {
+      "description": "Specify password ID if the virtual machine is encrypted:",
+      "syntax": "VBoxManage showvminfo --password-id {{password_id}} {{vm_name|uuid}}"
+    },
+    {
+      "description": "Specify the password file if the virtual machine is encrypted:",
+      "syntax": "VBoxManage showvminfo --password {{path/to/password_file}} {{vm_name|uuid}}"
+    },
+    {
+      "description": "Show the logs of a specific virtual machine:",
+      "syntax": "VBoxManage showvminfo --log {{vm_name|uuid}}"
+    }
+  ]
+}

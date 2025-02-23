@@ -1,0 +1,22 @@
+{
+  "command": "in2csv",
+  "description": "Convert various tabular data formats to CSV. Included in csvkit. More information: https://csvkit.readthedocs.io/en/latest/scripts/in2csv.html.",
+  "useCases": [
+    {
+      "description": "Convert an XLS file to CSV:",
+      "syntax": "in2csv {{data.xls}}"
+    },
+    {
+      "description": "Convert a DBF file to a CSV file:",
+      "syntax": "in2csv {{data.dbf}} &gt; {{data.csv}}"
+    },
+    {
+      "description": "Convert a specific sheet from an XLSX file to CSV:",
+      "syntax": "in2csv --sheet={{sheet_name}} {{data.xlsx}}"
+    },
+    {
+      "description": "Pipe a JSON file to in2csv:",
+      "syntax": "cat {{data.json}} | in2csv -f json &gt; {{data.csv}}"
+    }
+  ]
+}

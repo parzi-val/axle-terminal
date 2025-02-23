@@ -1,0 +1,22 @@
+{
+  "command": "git diff-index",
+  "description": "Compare the working directory with a commit or tree object. More information: https://git-scm.com/docs/git-diff-index.",
+  "useCases": [
+    {
+      "description": "Compare the working directory with a specific commit:",
+      "syntax": "git diff-index {{commit}}"
+    },
+    {
+      "description": "Compare a specific file or directory in working directory with a commit:",
+      "syntax": "git diff-index {{commit}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Compare the working directory with the index (staging area) to check for staged changes:",
+      "syntax": "git diff-index --cached {{commit}}"
+    },
+    {
+      "description": "Suppress output and return an exit status to check for differences:",
+      "syntax": "git diff-index --quiet {{commit}}"
+    }
+  ]
+}

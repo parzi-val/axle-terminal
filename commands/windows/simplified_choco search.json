@@ -1,0 +1,30 @@
+{
+  "command": "choco search",
+  "description": "Search for a local or remote package with Chocolatey. More information: https://chocolatey.org/docs/commands-search.",
+  "useCases": [
+    {
+      "description": "Search for a package:",
+      "syntax": "choco search {{query}}"
+    },
+    {
+      "description": "Search for a package locally:",
+      "syntax": "choco search {{query}} --local-only"
+    },
+    {
+      "description": "Only include exact matches in the results:",
+      "syntax": "choco search {{query}} --exact"
+    },
+    {
+      "description": "Confirm all prompts automatically:",
+      "syntax": "choco search {{query}} --yes"
+    },
+    {
+      "description": "Specify a custom source to search for packages in:",
+      "syntax": "choco search {{query}} --source {{source_url|alias}}"
+    },
+    {
+      "description": "Provide a username and password for authentication:",
+      "syntax": "choco search {{query}} --user {{username}} --password {{password}}"
+    }
+  ]
+}

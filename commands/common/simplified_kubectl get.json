@@ -1,0 +1,34 @@
+{
+  "command": "kubectl get",
+  "description": "Get Kubernetes objects and resources. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get.",
+  "useCases": [
+    {
+      "description": "Get all namespaces in the current cluster:",
+      "syntax": "kubectl get namespaces"
+    },
+    {
+      "description": "Get nodes in a specified [n]amespace:",
+      "syntax": "kubectl get nodes --namespace {{namespace}}"
+    },
+    {
+      "description": "Get pods in a specified [n]amespace:",
+      "syntax": "kubectl get pods --namespace {{namespace}}"
+    },
+    {
+      "description": "Get deployments in a specified [n]amespace:",
+      "syntax": "kubectl get deployments --namespace {{namespace}}"
+    },
+    {
+      "description": "Get services in a specified [n]amespace:",
+      "syntax": "kubectl get services --namespace {{namespace}}"
+    },
+    {
+      "description": "Get all resources in a specified [n]amespace:",
+      "syntax": "kubectl get all --namespace {{namespace}}"
+    },
+    {
+      "description": "Get Kubernetes objects defined in a YAML manifest [f]ile:",
+      "syntax": "kubectl get --file {{path/to/manifest.yaml}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "partprobe",
+  "description": "Notify the operating system kernel of partition table changes. More information: https://manned.org/partprobe.",
+  "useCases": [
+    {
+      "description": "Notify the operating system kernel of partition table changes:",
+      "syntax": "sudo partprobe"
+    },
+    {
+      "description": "Notify the kernel of partition table changes and show a summary of devices and their partitions:",
+      "syntax": "sudo partprobe --summary"
+    },
+    {
+      "description": "Show a summary of devices and their partitions but don't notify the kernel:",
+      "syntax": "sudo partprobe --summary --dry-run"
+    }
+  ]
+}

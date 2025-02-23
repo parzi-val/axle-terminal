@@ -1,0 +1,30 @@
+{
+  "command": "for",
+  "description": "Perform a command several times. More information: https://www.gnu.org/software/bash/manual/bash.html#Looping-Constructs.",
+  "useCases": [
+    {
+      "description": "Iterate through command line arguments:",
+      "syntax": "for {{variable}}; do {{echo $variable}}; done"
+    },
+    {
+      "description": "Execute the given commands for each of the specified items:",
+      "syntax": "for {{variable}} in {{item1 item2 ...}}; do {{echo &quot;Loop is executed&quot;}}; done"
+    },
+    {
+      "description": "Iterate over a given range of numbers:",
+      "syntax": "for {{variable}} in {{{from}}..{{to}}..{{step}}}; do {{echo &quot;Loop is executed&quot;}}; done"
+    },
+    {
+      "description": "Iterate over a given list of files:",
+      "syntax": "for {{variable}} in {{path/to/file1 path/to/file2 ...}}; do {{echo &quot;Loop is executed&quot;}}; done"
+    },
+    {
+      "description": "Iterate over a given list of directories:",
+      "syntax": "for {{variable}} in {{path/to/directory1/ path/to/directory2/ ...}}; do {{echo &quot;Loop is executed&quot;}}; done"
+    },
+    {
+      "description": "Perform a given command in every directory:",
+      "syntax": "for {{variable}} in */; do (cd &quot;${{variable}}&quot; || continue; {{echo &quot;Loop is executed&quot;}}) done"
+    }
+  ]
+}

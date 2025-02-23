@@ -1,0 +1,30 @@
+{
+  "command": "stern",
+  "description": "Tail multiple pods and containers from Kubernetes. More information: https://github.com/stern/stern.",
+  "useCases": [
+    {
+      "description": "Tail all pods within a current namespace:",
+      "syntax": "stern ."
+    },
+    {
+      "description": "Tail all pods with a specific status:",
+      "syntax": "stern . --container-state {{running|waiting|terminated}}"
+    },
+    {
+      "description": "Tail all pods that matches a given regular expression:",
+      "syntax": "stern {{pod_query}}"
+    },
+    {
+      "description": "Tail matched pods from all namespaces:",
+      "syntax": "stern {{pod_query}} --all-namespaces"
+    },
+    {
+      "description": "Tail matched pods from 15 minutes ago:",
+      "syntax": "stern {{pod_query}} --since {{15m}}"
+    },
+    {
+      "description": "Tail matched pods with a specific label:",
+      "syntax": "stern {{pod_query}} --selector {{release=canary}}"
+    }
+  ]
+}

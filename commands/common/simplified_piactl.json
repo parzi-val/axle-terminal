@@ -1,0 +1,38 @@
+{
+  "command": "piactl",
+  "description": "The command-line tool for Private Internet Access, a commercial VPN provider. More information: https://helpdesk.privateinternetaccess.com/kb/articles/pia-desktop-command-line-interface-part-1.",
+  "useCases": [
+    {
+      "description": "Log in to Private Internet Access:",
+      "syntax": "piactl login {{path/to/login_file}}"
+    },
+    {
+      "description": "Connect to Private Internet Access:",
+      "syntax": "piactl connect"
+    },
+    {
+      "description": "Disconnect from Private Internet Access:",
+      "syntax": "piactl disconnect"
+    },
+    {
+      "description": "Enable or disable the Private Internet Access daemon in the background:",
+      "syntax": "piactl background {{enable|disable}}"
+    },
+    {
+      "description": "List all available VPN regions:",
+      "syntax": "piactl get regions"
+    },
+    {
+      "description": "Display the current VPN region:",
+      "syntax": "piactl get region"
+    },
+    {
+      "description": "Set your VPN region:",
+      "syntax": "piactl set region {{region}}"
+    },
+    {
+      "description": "Log out of Private Internet Access:",
+      "syntax": "piactl logout"
+    }
+  ]
+}

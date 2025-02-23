@@ -1,0 +1,14 @@
+{
+  "command": "just",
+  "description": "just can refer to multiple commands with the same name.",
+  "useCases": [
+    {
+      "description": "View documentation for the command runner:",
+      "syntax": "tldr just.1"
+    },
+    {
+      "description": "View documentation for the V8 JavaScript runtime:",
+      "syntax": "tldr just.js"
+    }
+  ]
+}

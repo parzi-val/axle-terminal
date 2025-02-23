@@ -1,0 +1,26 @@
+{
+  "command": "spark",
+  "description": "The Laravel Spark command-line tool. More information: https://spark.laravel.com.",
+  "useCases": [
+    {
+      "description": "Register your API token:",
+      "syntax": "spark register {{token}}"
+    },
+    {
+      "description": "Display the currently registered API token:",
+      "syntax": "spark token"
+    },
+    {
+      "description": "Create a new Spark project:",
+      "syntax": "spark new {{project_name}}"
+    },
+    {
+      "description": "Create a new Spark project with Braintree stubs:",
+      "syntax": "spark new {{project_name}} --braintree"
+    },
+    {
+      "description": "Create a new Spark project with team-based billing stubs:",
+      "syntax": "spark new {{project_name}} --team-billing"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "more",
+  "description": "Display paginated output from stdin or a file. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/more.",
+  "useCases": [
+    {
+      "description": "Display paginated output from stdin:",
+      "syntax": "{{echo test}} | more"
+    },
+    {
+      "description": "Display paginated output from one or more files:",
+      "syntax": "more {{path\\to\\file}}"
+    },
+    {
+      "description": "Convert tabs to the specified number of spaces:",
+      "syntax": "more {{path\\to\\file}} /t{{spaces}}"
+    },
+    {
+      "description": "Clear the screen before displaying the page:",
+      "syntax": "more {{path\\to\\file}} /c"
+    },
+    {
+      "description": "Display the output starting at line 5:",
+      "syntax": "more {{path\\to\\file}} +{{5}}"
+    },
+    {
+      "description": "Enable extended interactive mode (see help for usage):",
+      "syntax": "more {{path\\to\\file}} /e"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "more /?"
+    }
+  ]
+}

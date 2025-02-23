@@ -1,0 +1,34 @@
+{
+  "command": "glab",
+  "description": "Work seamlessly with GitLab. Some subcommands such as config have their own usage documentation. More information: https://github.com/profclems/glab.",
+  "useCases": [
+    {
+      "description": "Clone a GitLab repository locally:",
+      "syntax": "glab repo clone {{owner}}/{{repository}}"
+    },
+    {
+      "description": "Create a new issue:",
+      "syntax": "glab issue create"
+    },
+    {
+      "description": "View and filter the open issues of the current repository:",
+      "syntax": "glab issue list"
+    },
+    {
+      "description": "View an issue in the default browser:",
+      "syntax": "glab issue view --web {{issue_number}}"
+    },
+    {
+      "description": "Create a merge request:",
+      "syntax": "glab mr create"
+    },
+    {
+      "description": "View a pull request in the default web browser:",
+      "syntax": "glab mr view --web {{pr_number}}"
+    },
+    {
+      "description": "Check out a specific pull request locally:",
+      "syntax": "glab mr checkout {{pr_number}}"
+    }
+  ]
+}

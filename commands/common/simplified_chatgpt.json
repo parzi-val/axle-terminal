@@ -1,0 +1,30 @@
+{
+  "command": "chatgpt",
+  "description": "Shell script to use OpenAI's ChatGPT and DALL-E from the terminal. More information: https://github.com/0xacx/chatGPT-shell-cli.",
+  "useCases": [
+    {
+      "description": "Start in chat mode:",
+      "syntax": "chatgpt"
+    },
+    {
+      "description": "Give a [p]rompt to answer to:",
+      "syntax": "chatgpt --prompt &quot;{{What is the regex to match an email address?}}&quot;"
+    },
+    {
+      "description": "Start in chat mode using a specific [m]odel (default is gpt-3.5-turbo):",
+      "syntax": "chatgpt --model {{gpt-4}}"
+    },
+    {
+      "description": "Start in chat mode with an [i]nitial prompt:",
+      "syntax": "chatgpt --init-prompt &quot;{{You are Rick, from Rick and Morty. Respond to questions using his mannerism and include insulting jokes.}}&quot;"
+    },
+    {
+      "description": "Pipe the result of a command to chatgpt as a prompt:",
+      "syntax": "echo &quot;{{How to view running processes on Ubuntu?}}&quot; | chatgpt"
+    },
+    {
+      "description": "Generate an image using DALL-E:",
+      "syntax": "chatgpt --prompt &quot;{{image: A white cat}}&quot;"
+    }
+  ]
+}

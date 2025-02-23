@@ -1,0 +1,18 @@
+{
+  "command": "acyclic",
+  "description": "Make a directed graph acyclic by reversing some edges. Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten. More information: https://graphviz.org/pdf/acyclic.1.pdf.",
+  "useCases": [
+    {
+      "description": "Make a directed graph acyclic by reversing some edges:",
+      "syntax": "acyclic {{path/to/input.gv}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Print if a graph is acyclic, has a cycle, or is undirected, producing no output graph:",
+      "syntax": "acyclic -v -n {{path/to/input.gv}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "acyclic -?"
+    }
+  ]
+}

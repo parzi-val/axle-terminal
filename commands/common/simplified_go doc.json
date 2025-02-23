@@ -1,0 +1,26 @@
+{
+  "command": "go doc",
+  "description": "View documentation for a package or symbol. More information: https://golang.org/cmd/go/#hdr-Show_documentation_for_package_or_symbol.",
+  "useCases": [
+    {
+      "description": "View documentation for the current package:",
+      "syntax": "go doc"
+    },
+    {
+      "description": "Show package documentation and exported symbols:",
+      "syntax": "go doc {{encoding/json}}"
+    },
+    {
+      "description": "Show also documentation of symbols:",
+      "syntax": "go doc -all {{encoding/json}}"
+    },
+    {
+      "description": "Show also sources:",
+      "syntax": "go doc -all -src {{encoding/json}}"
+    },
+    {
+      "description": "Show a specific symbol:",
+      "syntax": "go doc -all -src {{encoding/json.Number}}"
+    }
+  ]
+}

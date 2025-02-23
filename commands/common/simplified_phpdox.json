@@ -1,0 +1,26 @@
+{
+  "command": "phpdox",
+  "description": "A PHP documentation generator. More information: https://phpdox.net.",
+  "useCases": [
+    {
+      "description": "Display an annotated skeleton configuration XML file:",
+      "syntax": "phpdox --skel"
+    },
+    {
+      "description": "Generate documentation for the current working directory:",
+      "syntax": "phpdox"
+    },
+    {
+      "description": "Generate documentation using a specific configuration file:",
+      "syntax": "phpdox --file {{path/to/phpdox.xml}}"
+    },
+    {
+      "description": "Only run the metadata collection process:",
+      "syntax": "phpdox --collector"
+    },
+    {
+      "description": "Only run the documentation generator process:",
+      "syntax": "phpdox --generator"
+    }
+  ]
+}

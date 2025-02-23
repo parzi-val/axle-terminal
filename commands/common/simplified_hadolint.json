@@ -1,0 +1,26 @@
+{
+  "command": "hadolint",
+  "description": "Dockerfile linter. More information: https://github.com/hadolint/hadolint.",
+  "useCases": [
+    {
+      "description": "Lint a Dockerfile:",
+      "syntax": "hadolint {{path/to/Dockerfile}}"
+    },
+    {
+      "description": "Lint a Dockerfile, displaying the output in JSON format:",
+      "syntax": "hadolint --format {{json}} {{path/to/Dockerfile}}"
+    },
+    {
+      "description": "Lint a Dockerfile, displaying the output in a specific format:",
+      "syntax": "hadolint --format {{tty|json|checkstyle|codeclimate|codacy}} {{path/to/Dockerfile}}"
+    },
+    {
+      "description": "Lint a Dockerfile ignoring specific rules:",
+      "syntax": "hadolint --ignore {{DL3006}} --ignore {{DL3008}} {{path/to/Dockerfile}}"
+    },
+    {
+      "description": "Lint multiple Dockerfiles using specific trusted registries:",
+      "syntax": "hadolint --trusted-registry {{docker.io}} --trusted-registry {{example.com}}:{{5000}} {{path/to/Dockerfile1 path/to/Dockerfile2 ...}}"
+    }
+  ]
+}

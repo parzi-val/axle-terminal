@@ -1,0 +1,30 @@
+{
+  "command": "swc",
+  "description": "JavaScript and TypeScript compiler written in Rust. More information: https://swc.rs.",
+  "useCases": [
+    {
+      "description": "Transpile a specified input file and output to stdout:",
+      "syntax": "swc {{path/to/file}}"
+    },
+    {
+      "description": "Transpile the input file every time it is changed:",
+      "syntax": "swc {{path/to/file}} --watch"
+    },
+    {
+      "description": "Transpile a specified input file and output to a specific file:",
+      "syntax": "swc {{path/to/input_file}} --out-file {{path/to/output_file}}"
+    },
+    {
+      "description": "Transpile a specified input directory and output to a specific directory:",
+      "syntax": "swc {{path/to/input_directory}} --out-dir {{path/to/output_directory}}"
+    },
+    {
+      "description": "Transpile a specified input directory using a specific configuration file:",
+      "syntax": "swc {{path/to/input_directory}} --config-file {{path/to/.swcrc}}"
+    },
+    {
+      "description": "Ignore files in a directory specified using glob path:",
+      "syntax": "swc {{path/to/input_directory}} --ignore {{path/to/ignored_file1 path/to/ignored_file2 ...}}"
+    }
+  ]
+}

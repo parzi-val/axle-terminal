@@ -1,0 +1,34 @@
+{
+  "command": "dbt",
+  "description": "A tool to model transformations in data warehouses. More information: https://github.com/dbt-labs/dbt-core.",
+  "useCases": [
+    {
+      "description": "Debug the dbt project and the connection to the database:",
+      "syntax": "dbt debug"
+    },
+    {
+      "description": "Run all models of the project:",
+      "syntax": "dbt run"
+    },
+    {
+      "description": "Run all tests of example_model:",
+      "syntax": "dbt test --select example_model"
+    },
+    {
+      "description": "Build (load seeds, run models, snapshots, and tests associated with) example_model and its downstream dependents:",
+      "syntax": "dbt build --select example_model+"
+    },
+    {
+      "description": "Build all models, except the ones with the tag not_now:",
+      "syntax": "dbt build --exclude &quot;tag:not_now&quot;"
+    },
+    {
+      "description": "Build all models with tags one and two:",
+      "syntax": "dbt build --select &quot;tag:one,tag:two&quot;"
+    },
+    {
+      "description": "Build all models with tags one or two:",
+      "syntax": "dbt build --select &quot;tag:one tag:two&quot;"
+    }
+  ]
+}

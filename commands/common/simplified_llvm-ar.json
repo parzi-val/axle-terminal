@@ -1,0 +1,10 @@
+{
+  "command": "llvm-ar",
+  "description": "This command is an alias of ar.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr ar"
+    }
+  ]
+}

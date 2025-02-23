@@ -1,0 +1,38 @@
+{
+  "command": "atoum",
+  "description": "A simple, modern and intuitive unit testing framework for PHP. More information: https://atoum.org.",
+  "useCases": [
+    {
+      "description": "Initialize a configuration file:",
+      "syntax": "atoum --init"
+    },
+    {
+      "description": "Run all tests:",
+      "syntax": "atoum"
+    },
+    {
+      "description": "Run tests using the specified [c]onfiguration file:",
+      "syntax": "atoum -c {{path/to/file}}"
+    },
+    {
+      "description": "Run a specific test [f]ile:",
+      "syntax": "atoum -f {{path/to/file}}"
+    },
+    {
+      "description": "Run a specific [d]irectory of tests:",
+      "syntax": "atoum -d {{path/to/directory}}"
+    },
+    {
+      "description": "Run all tests under a specific name[s]pace:",
+      "syntax": "atoum -ns {{namespace}}"
+    },
+    {
+      "description": "Run all tests with a specific [t]ag:",
+      "syntax": "atoum -t {{tag}}"
+    },
+    {
+      "description": "Load a custom bootstrap file before running tests:",
+      "syntax": "atoum --bootstrap-file {{path/to/file}}"
+    }
+  ]
+}

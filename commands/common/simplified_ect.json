@@ -1,0 +1,26 @@
+{
+  "command": "ect",
+  "description": "Efficient Compression Tool. File optimizer written in C++. It supports PNG, JPEG, gzip and Zip files. More information: https://github.com/fhanau/Efficient-Compression-Tool.",
+  "useCases": [
+    {
+      "description": "Compress a file:",
+      "syntax": "ect {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a file with specified compression level and multithreading (1=Fastest (Worst), 9=Slowest (Best), default is 3):",
+      "syntax": "ect -{{9}} --mt-deflate {{path/to/file.zip}}"
+    },
+    {
+      "description": "Compress all files in a directory recursively:",
+      "syntax": "ect -recurse {{path/to/directory}}"
+    },
+    {
+      "description": "Compress a file, keeping the original modification time:",
+      "syntax": "ect -keep {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a file, stripping metadata:",
+      "syntax": "ect -strip {{path/to/file.png}}"
+    }
+  ]
+}

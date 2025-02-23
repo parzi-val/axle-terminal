@@ -1,0 +1,34 @@
+{
+  "command": "jpegtran",
+  "description": "Perform lossless transformation of JPEG files. More information: https://manned.org/jpegtran.",
+  "useCases": [
+    {
+      "description": "Mirror an image horizontally or vertically:",
+      "syntax": "jpegtran -flip {{horizontal|vertical}} {{path/to/image.jpg}} &gt; {{path/to/output.jpg}}"
+    },
+    {
+      "description": "Rotate an image 90, 180 or 270 degrees clockwise:",
+      "syntax": "jpegtran -rotate {{90|180|270}} {{path/to/image.jpg}} &gt; {{path/to/output.jpg}}"
+    },
+    {
+      "description": "Transpose the image across the upper-left to lower right axis:",
+      "syntax": "jpegtran -transpose {{path/to/image.jpg}} &gt; {{path/to/output.jpg}}"
+    },
+    {
+      "description": "Transverse the image across the upper right to lower left axis:",
+      "syntax": "jpegtran -transverse {{path/to/image.jpg}} &gt; {{path/to/output.jpg}}"
+    },
+    {
+      "description": "Convert the image to grayscale:",
+      "syntax": "jpegtran -grayscale {{path/to/image.jpg}} &gt; {{path/to/output.jpg}}"
+    },
+    {
+      "description": "Crop the image to a rectangular region of width W and height H from the upper-left corner, saving the output to a specific file:",
+      "syntax": "jpegtran -crop {{W}}x{{H}} -outfile {{path/to/output.jpg}} {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Crop the image to a rectangular region of width W and height H, starting at point X and Y from the upper-left corner:",
+      "syntax": "jpegtran -crop {{W}}x{{H}}+{{X}}+{{Y}} {{path/to/image.jpg}} &gt; {{path/to/output.jpg}}"
+    }
+  ]
+}

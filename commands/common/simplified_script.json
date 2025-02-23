@@ -1,0 +1,26 @@
+{
+  "command": "script",
+  "description": "Make a typescript file of a terminal session. More information: https://manned.org/script.",
+  "useCases": [
+    {
+      "description": "Start recording in file named \"typescript\":",
+      "syntax": "script"
+    },
+    {
+      "description": "Stop recording:",
+      "syntax": "exit"
+    },
+    {
+      "description": "Start recording in a given file:",
+      "syntax": "script {{logfile.log}}"
+    },
+    {
+      "description": "Append to an existing file:",
+      "syntax": "script -a {{logfile.log}}"
+    },
+    {
+      "description": "Execute quietly without start and done messages:",
+      "syntax": "script -q {{logfile.log}}"
+    }
+  ]
+}

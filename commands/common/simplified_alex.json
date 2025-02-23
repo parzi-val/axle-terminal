@@ -1,0 +1,22 @@
+{
+  "command": "alex",
+  "description": "Catch insensitive, inconsiderate writing. It helps you find gender favouring, polarising, race related, religion inconsiderate, or other unequal phrasing in text. More information: https://github.com/get-alex/alex.",
+  "useCases": [
+    {
+      "description": "Analyze text from stdin:",
+      "syntax": "echo {{His network looks good}} | alex --stdin"
+    },
+    {
+      "description": "Analyze all files in the current directory:",
+      "syntax": "alex"
+    },
+    {
+      "description": "Analyze a specific file:",
+      "syntax": "alex {{path/to/file.md}}"
+    },
+    {
+      "description": "Analyze all Markdown files except example.md:",
+      "syntax": "alex *.md !{{example.md}}"
+    }
+  ]
+}

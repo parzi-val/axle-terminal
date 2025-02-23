@@ -1,0 +1,34 @@
+{
+  "command": "z",
+  "description": "Tracks the most used (by frequency) directories and enables quickly navigating to them using string patterns or regular expressions. More information: https://github.com/rupa/z.",
+  "useCases": [
+    {
+      "description": "Go to a directory that contains \"foo\" in the name:",
+      "syntax": "z {{foo}}"
+    },
+    {
+      "description": "Go to a directory that contains \"foo\" and then \"bar\":",
+      "syntax": "z {{foo}} {{bar}}"
+    },
+    {
+      "description": "Go to the highest-ranked directory matching \"foo\":",
+      "syntax": "z -r {{foo}}"
+    },
+    {
+      "description": "Go to the most recently accessed directory matching \"foo\":",
+      "syntax": "z -t {{foo}}"
+    },
+    {
+      "description": "List all directories in z's database matching \"foo\":",
+      "syntax": "z -l {{foo}}"
+    },
+    {
+      "description": "Remove the current directory from z's database:",
+      "syntax": "z -x"
+    },
+    {
+      "description": "Restrict matches to subdirectories of the current directory:",
+      "syntax": "z -c {{foo}}"
+    }
+  ]
+}

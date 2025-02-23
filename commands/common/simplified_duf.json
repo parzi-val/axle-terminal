@@ -1,0 +1,34 @@
+{
+  "command": "duf",
+  "description": "Disk Usage/Free Utility. More information: https://github.com/muesli/duf.",
+  "useCases": [
+    {
+      "description": "List accessible devices:",
+      "syntax": "duf"
+    },
+    {
+      "description": "List everything (such as pseudo, duplicate or inaccessible file systems):",
+      "syntax": "duf --all"
+    },
+    {
+      "description": "Only show specified devices or mount points:",
+      "syntax": "duf {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Sort the output by a specified criteria:",
+      "syntax": "duf --sort {{size|used|avail|usage}}"
+    },
+    {
+      "description": "Show or hide specific filesystems:",
+      "syntax": "duf --{{only-fs|hide-fs}} {{tmpfs|vfat|ext4|xfs}}"
+    },
+    {
+      "description": "Sort the output by key:",
+      "syntax": "duf --sort {{mountpoint|size|used|avail|usage|inodes|inodes_used|inodes_avail|inodes_usage|type|filesystem}}"
+    },
+    {
+      "description": "Change the theme (if duf fails to use the right theme):",
+      "syntax": "duf --theme {{dark|light}}"
+    }
+  ]
+}

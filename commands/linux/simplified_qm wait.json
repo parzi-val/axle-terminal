@@ -1,0 +1,18 @@
+{
+  "command": "qm wait",
+  "description": "Wait until the virtual machine is stopped. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Wait until the virtual machine is stopped:",
+      "syntax": "qm wait {{vm_id}}"
+    },
+    {
+      "description": "Wait until the virtual machine is stopped with a 10 second timeout:",
+      "syntax": "qm wait --timeout {{10}} {{vm_id}}"
+    },
+    {
+      "description": "Send a shutdown request, then wait until the virtual machine is stopped with a 10 second timeout:",
+      "syntax": "qm shutdown {{vm_id}} &amp;&amp; qm wait --timeout {{10}} {{vm_id}}"
+    }
+  ]
+}

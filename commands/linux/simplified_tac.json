@@ -1,0 +1,26 @@
+{
+  "command": "tac",
+  "description": "Display and concatenate files with lines in reversed order. See also: cat. More information: https://www.gnu.org/software/coreutils/manual/html_node/tac-invocation.html.",
+  "useCases": [
+    {
+      "description": "Concatenate specific files in reversed order:",
+      "syntax": "tac {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Display stdin in reversed order:",
+      "syntax": "{{cat path/to/file}} | tac"
+    },
+    {
+      "description": "Use a specific separator:",
+      "syntax": "tac --separator {{,}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Use a specific regex as a separator:",
+      "syntax": "tac --regex --separator {{[,;]}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Use a separator before each file:",
+      "syntax": "tac --before {{path/to/file1 path/to/file2 ...}}"
+    }
+  ]
+}

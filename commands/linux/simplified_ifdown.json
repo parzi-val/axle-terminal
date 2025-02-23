@@ -1,0 +1,14 @@
+{
+  "command": "ifdown",
+  "description": "Disable network interfaces. More information: https://manned.org/ifdown.",
+  "useCases": [
+    {
+      "description": "Disable interface eth0:",
+      "syntax": "ifdown {{eth0}}"
+    },
+    {
+      "description": "Disable all interfaces which are enabled:",
+      "syntax": "ifdown -a"
+    }
+  ]
+}

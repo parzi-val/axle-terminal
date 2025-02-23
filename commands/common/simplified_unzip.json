@@ -1,0 +1,30 @@
+{
+  "command": "unzip",
+  "description": "Extract files/directories from Zip archives. See also: zip. More information: https://manned.org/unzip.",
+  "useCases": [
+    {
+      "description": "Extract all files/directories from specific archives into the current directory:",
+      "syntax": "unzip {{path/to/archive1.zip path/to/archive2.zip ...}}"
+    },
+    {
+      "description": "Extract files/directories from archives to a specific path:",
+      "syntax": "unzip {{path/to/archive1.zip path/to/archive2.zip ...}} -d {{path/to/output}}"
+    },
+    {
+      "description": "Extract files/directories from archives to stdout alongside the extracted file names:",
+      "syntax": "unzip -c {{path/to/archive1.zip path/to/archive2.zip ...}}"
+    },
+    {
+      "description": "Extract an archive created on Windows, containing files with non-ASCII (e.g. Chinese or Japanese characters) filenames:",
+      "syntax": "unzip -O {{gbk}} {{path/to/archive1.zip path/to/archive2.zip ...}}"
+    },
+    {
+      "description": "List the contents of a specific archive without extracting them:",
+      "syntax": "unzip -l {{path/to/archive.zip}}"
+    },
+    {
+      "description": "Extract a specific file from an archive:",
+      "syntax": "unzip -j {{path/to/archive.zip}} {{path/to/file1_in_archive path/to/file2_in_archive ...}}"
+    }
+  ]
+}

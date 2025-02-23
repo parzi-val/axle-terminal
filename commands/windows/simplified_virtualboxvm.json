@@ -1,0 +1,26 @@
+{
+  "command": "virtualboxvm",
+  "description": "Manage VirtualBox virtual machines. More information: https://www.virtualbox.org.",
+  "useCases": [
+    {
+      "description": "Start a virtual machine:",
+      "syntax": "virtualboxvm --startvm {{name|uuid}}"
+    },
+    {
+      "description": "Start a virtual machine in fullscreen mode:",
+      "syntax": "virtualboxvm --startvm {{name|uuid}} --fullscreen"
+    },
+    {
+      "description": "Mount the specified DVD image file:",
+      "syntax": "virtualboxvm --startvm {{name|uuid}} --dvd {{path\\to\\image_file}}"
+    },
+    {
+      "description": "Display a command-line window with debug information:",
+      "syntax": "virtualboxvm --startvm {{name|uuid}} --debug-command-line"
+    },
+    {
+      "description": "Start a virtual machine in a paused state:",
+      "syntax": "virtualboxvm --startvm {{name|uuid}} --start-paused"
+    }
+  ]
+}

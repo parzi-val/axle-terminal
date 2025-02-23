@@ -1,0 +1,26 @@
+{
+  "command": "velero",
+  "description": "Backup and migrate Kubernetes applications and their persistent volumes. More information: https://github.com/heptio/velero.",
+  "useCases": [
+    {
+      "description": "Create a backup containing all resources:",
+      "syntax": "velero backup create {{backup_name}}"
+    },
+    {
+      "description": "List all backups:",
+      "syntax": "velero backup get"
+    },
+    {
+      "description": "Delete a backup:",
+      "syntax": "velero backup delete {{backup_name}}"
+    },
+    {
+      "description": "Create a weekly backup, each living for 90 days (2160 hours):",
+      "syntax": "velero schedule create {{schedule_name}} --schedules=&quot;{{@every 7d}}&quot; --ttl {{2160h0m0s}}"
+    },
+    {
+      "description": "Create a restore from the latest successful backup triggered by specific schedule:",
+      "syntax": "velero restore create --from-schedule {{schedule_name}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "let",
+  "description": "Evaluate arithmetic expressions in shell. Supports variables, operators, and conditional expressions. More information: https://manned.org/let.",
+  "useCases": [
+    {
+      "description": "Evaluate a simple arithmetic expression:",
+      "syntax": "let &quot;{{result = a + b}}&quot;"
+    },
+    {
+      "description": "Use post-increment and assignment in an expression:",
+      "syntax": "let &quot;{{x++}}&quot;"
+    },
+    {
+      "description": "Use conditional operator in an expression:",
+      "syntax": "let &quot;{{result = (x &gt; 10) ? x : 0}}&quot;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "let --help"
+    }
+  ]
+}

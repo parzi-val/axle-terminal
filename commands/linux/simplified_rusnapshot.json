@@ -1,0 +1,30 @@
+{
+  "command": "rusnapshot",
+  "description": "BTRFS snapshotting utility written in Rust. More information: https://github.com/Edu4rdSHL/rusnapshot.",
+  "useCases": [
+    {
+      "description": "Create a snapshot using a configuration file:",
+      "syntax": "sudo rusnapshot --config {{path/to/config.toml}} --cr"
+    },
+    {
+      "description": "List created snapshots:",
+      "syntax": "sudo rusnapshot -c {{path/to/config.toml}} --list"
+    },
+    {
+      "description": "Delete a snapshot by ID or the name of the snapshot:",
+      "syntax": "sudo rusnapshot -c {{path/to/config.toml}} --del --id {{snapshot_id}}"
+    },
+    {
+      "description": "Delete all hourly snapshots:",
+      "syntax": "sudo rusnapshot -c {{path/to/config.toml}} --list --keep {{0}} --clean --kind {{hourly}}"
+    },
+    {
+      "description": "Create a read-write snapshot:",
+      "syntax": "sudo rusnapshot -c {{path/to/config.toml}} --cr --rw"
+    },
+    {
+      "description": "Restore a snapshot:",
+      "syntax": "sudo rusnapshot -c {{path/to/config.toml}} --id {{snapshot_id}} --restore"
+    }
+  ]
+}

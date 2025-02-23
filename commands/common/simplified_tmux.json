@@ -1,0 +1,38 @@
+{
+  "command": "tmux",
+  "description": "Terminal multiplexer. It allows multiple sessions with windows, panes, and more. See also: zellij, screen. More information: https://github.com/tmux/tmux.",
+  "useCases": [
+    {
+      "description": "Start a new session:",
+      "syntax": "tmux"
+    },
+    {
+      "description": "Start a new named session:",
+      "syntax": "tmux new -s {{name}}"
+    },
+    {
+      "description": "List existing sessions:",
+      "syntax": "tmux ls"
+    },
+    {
+      "description": "Attach to the most recently used session:",
+      "syntax": "tmux attach"
+    },
+    {
+      "description": "Detach from the current session (inside a tmux session):",
+      "syntax": "&lt;Ctrl&gt;-B d"
+    },
+    {
+      "description": "Create a new window (inside a tmux session):",
+      "syntax": "&lt;Ctrl&gt;-B c"
+    },
+    {
+      "description": "Switch between sessions and windows (inside a tmux session):",
+      "syntax": "&lt;Ctrl&gt;-B w"
+    },
+    {
+      "description": "Kill a session by name:",
+      "syntax": "tmux kill-session -t {{name}}"
+    }
+  ]
+}

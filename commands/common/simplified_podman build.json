@@ -1,0 +1,26 @@
+{
+  "command": "podman build",
+  "description": "Daemonless tool for building container images. Podman provides a Docker-CLI comparable command-line. Simply put: alias docker=podman. More information: https://docs.podman.io/en/latest/markdown/podman-build.1.html.",
+  "useCases": [
+    {
+      "description": "Create an image using a Dockerfile or Containerfile in the specified directory:",
+      "syntax": "podman build {{path/to/directory}}"
+    },
+    {
+      "description": "Create an image with a specified tag:",
+      "syntax": "podman build --tag {{image_name:version}} {{path/to/directory}}"
+    },
+    {
+      "description": "Create an image from a non-standard file:",
+      "syntax": "podman build --file {{Containerfile.different}} ."
+    },
+    {
+      "description": "Create an image without using any previously cached images:",
+      "syntax": "podman build --no-cache {{path/to/directory}}"
+    },
+    {
+      "description": "Create an image suppressing all output:",
+      "syntax": "podman build --quiet {{path/to/directory}}"
+    }
+  ]
+}

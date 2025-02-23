@@ -1,0 +1,14 @@
+{
+  "command": "pstoedit",
+  "description": "Convert PDF files into various image formats. More information: http://www.pstoedit.net.",
+  "useCases": [
+    {
+      "description": "Convert a PDF page to PNG or JPEG format:",
+      "syntax": "pstoedit -page {{page_number}} -f magick {{path/to/file.pdf}} {{page.png|page.jpg]}}"
+    },
+    {
+      "description": "Convert multiple PDF pages to numbered images:",
+      "syntax": "pstoedit -f magick {{path/to/file}} {{page%d.png|page%d.jpg}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "vladimyr",
+  "description": "Dario Vladović's personal CLI. More information: https://github.com/vladimyr/vladimyr-cli.",
+  "useCases": [
+    {
+      "description": "Start Dario's interactive CLI:",
+      "syntax": "vladimyr"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "upower",
+  "description": "System utility to provide power and battery information and statistics. More information: https://upower.freedesktop.org/docs/upower.1.html.",
+  "useCases": [
+    {
+      "description": "Display power and battery information:",
+      "syntax": "upower --dump"
+    },
+    {
+      "description": "List all power devices:",
+      "syntax": "upower --enumerate"
+    },
+    {
+      "description": "Watch for and print power status changes:",
+      "syntax": "upower --monitor"
+    },
+    {
+      "description": "Watch for and print detailed power status changes:",
+      "syntax": "upower --monitor-detail"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "upower --version"
+    }
+  ]
+}

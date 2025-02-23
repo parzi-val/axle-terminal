@@ -1,0 +1,38 @@
+{
+  "command": "pngquant",
+  "description": "PNG converter and lossy image compressor. More information: https://pngquant.org/.",
+  "useCases": [
+    {
+      "description": "Compress a specific PNG as much as possible and write result to a new file:",
+      "syntax": "pngquant {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a specific PNG and override original:",
+      "syntax": "pngquant --ext .png --force {{path/to/file.png}}"
+    },
+    {
+      "description": "Try to compress a specific PNG with custom quality (skip if below the min value):",
+      "syntax": "pngquant --quality {{0-100}} {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a specific PNG with the number of colors reduced to 64:",
+      "syntax": "pngquant {{64}} {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a specific PNG and skip if the file is larger than the original:",
+      "syntax": "pngquant --skip-if-larger {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a specific PNG and remove metadata:",
+      "syntax": "pngquant --strip {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a specific PNG and save it to the given path:",
+      "syntax": "pngquant {{path/to/file.png}} --output {{path/to/file.png}}"
+    },
+    {
+      "description": "Compress a specific PNG and show progress:",
+      "syntax": "pngquant --verbose {{path/to/file.png}}"
+    }
+  ]
+}

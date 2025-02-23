@@ -1,0 +1,26 @@
+{
+  "command": "modprobe",
+  "description": "Add or remove modules from the Linux kernel. See also: kmod, for other module management commands. More information: https://manned.org/modprobe.",
+  "useCases": [
+    {
+      "description": "Pretend to load a module into the kernel, but don't actually do it:",
+      "syntax": "sudo modprobe --dry-run {{module_name}}"
+    },
+    {
+      "description": "Load a module into the kernel:",
+      "syntax": "sudo modprobe {{module_name}}"
+    },
+    {
+      "description": "Remove a module from the kernel:",
+      "syntax": "sudo modprobe --remove {{module_name}}"
+    },
+    {
+      "description": "Remove a module and those that depend on it from the kernel:",
+      "syntax": "sudo modprobe --remove-dependencies {{module_name}}"
+    },
+    {
+      "description": "Show a kernel module's dependencies:",
+      "syntax": "sudo modprobe --show-depends {{module_name}}"
+    }
+  ]
+}

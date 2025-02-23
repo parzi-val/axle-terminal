@@ -1,0 +1,38 @@
+{
+  "command": "mpv",
+  "description": "A audio/video player based on MPlayer. See also: mplayer, vlc. More information: https://mpv.io.",
+  "useCases": [
+    {
+      "description": "Play a video or audio from a URL or file:",
+      "syntax": "mpv {{url|path/to/file}}"
+    },
+    {
+      "description": "Jump backward/forward 5 seconds:",
+      "syntax": "LEFT &lt;or&gt; RIGHT"
+    },
+    {
+      "description": "Jump backward/forward 1 minute:",
+      "syntax": "DOWN &lt;or&gt; UP"
+    },
+    {
+      "description": "Decrease or increase playback speed by 10%:",
+      "syntax": "[ &lt;or&gt; ]"
+    },
+    {
+      "description": "Take a screenshot of the current frame (saved to ./mpv-shotNNNN.jpg by default):",
+      "syntax": "s"
+    },
+    {
+      "description": "Play a file at a specified speed (1 by default):",
+      "syntax": "mpv --speed {{0.01..100}} {{path/to/file}}"
+    },
+    {
+      "description": "Play a file using a profile defined in the mpv.conf file:",
+      "syntax": "mpv --profile {{profile_name}} {{path/to/file}}"
+    },
+    {
+      "description": "Display the output of webcam or other video input device:",
+      "syntax": "mpv {{/dev/video0}}"
+    }
+  ]
+}

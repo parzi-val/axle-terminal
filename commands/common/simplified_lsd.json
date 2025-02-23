@@ -1,0 +1,38 @@
+{
+  "command": "lsd",
+  "description": "List directory contents. The next generation ls command, written in Rust. More information: https://github.com/Peltoche/lsd.",
+  "useCases": [
+    {
+      "description": "List files and directories, one per line:",
+      "syntax": "lsd -1"
+    },
+    {
+      "description": "List all files and directories, including hidden ones, in the current directory:",
+      "syntax": "lsd -a"
+    },
+    {
+      "description": "List files and directories with trailing / added to directory names:",
+      "syntax": "lsd -F"
+    },
+    {
+      "description": "List all files and directories in long format (permissions, ownership, size in human-readable format, and modification date):",
+      "syntax": "lsd -lha"
+    },
+    {
+      "description": "List files and directories in long format, sorted by size (descending):",
+      "syntax": "lsd -lS"
+    },
+    {
+      "description": "List files and directories in long format, sorted by modification date (oldest first):",
+      "syntax": "lsd -ltr"
+    },
+    {
+      "description": "Only list directories:",
+      "syntax": "lsd -d {{*/}}"
+    },
+    {
+      "description": "Recursively list all directories in a tree format:",
+      "syntax": "lsd --tree -d"
+    }
+  ]
+}

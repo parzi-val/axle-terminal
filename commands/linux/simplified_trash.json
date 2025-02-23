@@ -1,0 +1,34 @@
+{
+  "command": "trash",
+  "description": "Manage the trashcan/recycling bin. More information: https://github.com/andreafrancia/trash-cli.",
+  "useCases": [
+    {
+      "description": "Send a file to the trash:",
+      "syntax": "trash {{path/to/file}}"
+    },
+    {
+      "description": "List all files in the trash:",
+      "syntax": "trash-list"
+    },
+    {
+      "description": "Interactively restore a file from the trash:",
+      "syntax": "trash-restore"
+    },
+    {
+      "description": "Empty the trash:",
+      "syntax": "trash-empty"
+    },
+    {
+      "description": "Permanently delete all files in the trash which are older than 10 days:",
+      "syntax": "trash-empty 10"
+    },
+    {
+      "description": "Remove all files in the trash, which match a specific blob pattern:",
+      "syntax": "trash-rm &quot;{{*.o}}&quot;"
+    },
+    {
+      "description": "Remove all files with a specific original location:",
+      "syntax": "trash-rm {{/path/to/file_or_directory}}"
+    }
+  ]
+}

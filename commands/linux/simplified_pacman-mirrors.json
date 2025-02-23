@@ -1,0 +1,26 @@
+{
+  "command": "pacman-mirrors",
+  "description": "Generate a pacman mirrorlist for Manjaro Linux. Every run of pacman-mirrors requires you to synchronize your database and update your system using sudo pacman -Syyu. See also: pacman. More information: https://wiki.manjaro.org/index.php?title=Pacman-mirrors.",
+  "useCases": [
+    {
+      "description": "Generate a mirrorlist using the default settings:",
+      "syntax": "sudo pacman-mirrors --fasttrack"
+    },
+    {
+      "description": "Get the status of the current mirrors:",
+      "syntax": "pacman-mirrors --status"
+    },
+    {
+      "description": "Display the current branch:",
+      "syntax": "pacman-mirrors --get-branch"
+    },
+    {
+      "description": "Switch to a different branch:",
+      "syntax": "sudo pacman-mirrors --api --set-branch {{stable|unstable|testing}}"
+    },
+    {
+      "description": "Generate a mirrorlist, only using mirrors in your country:",
+      "syntax": "sudo pacman-mirrors --geoip"
+    }
+  ]
+}

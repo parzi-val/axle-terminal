@@ -1,0 +1,10 @@
+{
+  "command": "lsmod",
+  "description": "Show the status of Linux kernel modules. See also: kmod, for other module management commands. More information: https://manned.org/lsmod.",
+  "useCases": [
+    {
+      "description": "List all currently loaded kernel modules:",
+      "syntax": "lsmod"
+    }
+  ]
+}

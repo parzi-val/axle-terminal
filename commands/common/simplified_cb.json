@@ -1,0 +1,38 @@
+{
+  "command": "cb",
+  "description": "Cut, copy, and paste anything in the terminal. More information: https://github.com/Slackadays/Clipboard.",
+  "useCases": [
+    {
+      "description": "Show all clipboards:",
+      "syntax": "cb"
+    },
+    {
+      "description": "Copy a file to the clipboard:",
+      "syntax": "cb copy {{path/to/file}}"
+    },
+    {
+      "description": "Copy some text to the clipboard:",
+      "syntax": "cb copy &quot;{{Some example text}}&quot;"
+    },
+    {
+      "description": "Copy piped data to the clipboard:",
+      "syntax": "echo &quot;{{Some example text}}&quot; | cb"
+    },
+    {
+      "description": "Paste clipboard content:",
+      "syntax": "cb paste"
+    },
+    {
+      "description": "Pipe out clipboard content:",
+      "syntax": "cb | cat"
+    },
+    {
+      "description": "Show clipboard history:",
+      "syntax": "cb history"
+    },
+    {
+      "description": "Show clipboard information:",
+      "syntax": "cb info"
+    }
+  ]
+}

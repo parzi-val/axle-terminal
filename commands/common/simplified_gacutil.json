@@ -1,0 +1,18 @@
+{
+  "command": "gacutil",
+  "description": "Global Assembly Cache (CAG) management utility. More information: https://manned.org/gacutil.",
+  "useCases": [
+    {
+      "description": "Install the specified assembly into GAC:",
+      "syntax": "gacutil -i {{path/to/assembly.dll}}"
+    },
+    {
+      "description": "Uninstall the specified assembly from GAC:",
+      "syntax": "gacutil -i {{assembly_display_name}}"
+    },
+    {
+      "description": "Print the content of GAC:",
+      "syntax": "gacutil -l"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "standard-version",
+  "description": "Automate versioning and changelog generation, with SemVer and Conventional Commits. More information: https://github.com/conventional-changelog/standard-version.",
+  "useCases": [
+    {
+      "description": "Update the changelog file and tag a release:",
+      "syntax": "standard-version"
+    },
+    {
+      "description": "Tag a release without bumping the version:",
+      "syntax": "standard-version --first-release"
+    },
+    {
+      "description": "Update the changelog and tag an alpha release:",
+      "syntax": "standard-version --prerelease alpha"
+    },
+    {
+      "description": "Update the changelog and tag a specific release type:",
+      "syntax": "standard-version --release-as {{major|minor|patch}}"
+    },
+    {
+      "description": "Tag a release, preventing hooks from being verified during the commit step:",
+      "syntax": "standard-version --no-verify"
+    },
+    {
+      "description": "Tag a release committing all staged changes, not just files affected by standard-version:",
+      "syntax": "standard-version --commit-all"
+    },
+    {
+      "description": "Update a specific changelog file and tag a release:",
+      "syntax": "standard-version --infile {{path/to/file.md}}"
+    },
+    {
+      "description": "Display the release that would be performed without performing them:",
+      "syntax": "standard-version --dry-run"
+    }
+  ]
+}

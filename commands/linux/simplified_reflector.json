@@ -1,0 +1,22 @@
+{
+  "command": "reflector",
+  "description": "Arch script to fetch and sort mirrorlists. More information: https://manned.org/reflector.",
+  "useCases": [
+    {
+      "description": "Get all mirrors, sort for download speed and save them:",
+      "syntax": "sudo reflector --sort {{rate}} --save {{/etc/pacman.d/mirrorlist}}"
+    },
+    {
+      "description": "Only get German HTTPS mirrors:",
+      "syntax": "reflector --country {{Germany}} --protocol {{https}}"
+    },
+    {
+      "description": "Only get the 10 recently sync'd mirrors:",
+      "syntax": "reflector --latest {{10}}"
+    },
+    {
+      "description": "Use a configuration file to fetch mirrors:",
+      "syntax": "sudo reflector @{{/etc/xdg/reflector/reflector.conf}}"
+    }
+  ]
+}

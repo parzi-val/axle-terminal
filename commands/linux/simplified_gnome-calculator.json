@@ -1,0 +1,18 @@
+{
+  "command": "gnome-calculator",
+  "description": "The official calculator for the GNOME desktop environment. More information: https://wiki.gnome.org/Apps/Calculator.",
+  "useCases": [
+    {
+      "description": "Launch the GNOME Calculator GUI:",
+      "syntax": "gnome-calculator"
+    },
+    {
+      "description": "Solve the specified equation without launching the desktop application:",
+      "syntax": "gnome-calculator --solve {{2^5 * 2 + 5}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "gnome-calculator --version"
+    }
+  ]
+}

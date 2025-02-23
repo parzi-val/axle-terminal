@@ -1,0 +1,18 @@
+{
+  "command": "pixiecore",
+  "description": "Manage the network booting of machines. More information: https://github.com/danderson/netboot/tree/master/pixiecore.",
+  "useCases": [
+    {
+      "description": "Start a PXE boot server which provides a netboot.xyz boot image:",
+      "syntax": "pixiecore {{quick}} xyz --dhcp-no-bind"
+    },
+    {
+      "description": "Start a new PXE boot server which provides an Ubuntu boot image:",
+      "syntax": "pixiecore {{quick}} ubuntu --dhcp-no-bind"
+    },
+    {
+      "description": "List all available boot images for quick mode:",
+      "syntax": "pixiecore quick --help"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ppmtolj",
+  "description": "Convert a PPM file to an HP LaserJet PCL 5 Color file. More information: https://netpbm.sourceforge.net/doc/ppmtolj.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM file to an HP LaserJet PCL 5 Color file:",
+      "syntax": "ppmtolj {{path/to/input.ppm}} &gt; {{path/to/output.lj}}"
+    },
+    {
+      "description": "Apply a gamma correction using the specified gamma value:",
+      "syntax": "ppmtolj -gamma {{gamma}} {{path/to/input.ppm}} &gt; {{path/to/output.lj}}"
+    },
+    {
+      "description": "Specify the required resolution:",
+      "syntax": "ppmtolj -resolution {{75|100|150|300|600}} {{path/to/input.ppm}} &gt; {{path/to/output.lj}}"
+    }
+  ]
+}

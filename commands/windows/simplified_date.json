@@ -1,0 +1,18 @@
+{
+  "command": "date",
+  "description": "Display or set the system date. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/date.",
+  "useCases": [
+    {
+      "description": "Display the current system date and prompt to enter a new date (leave empty to keep unchanged):",
+      "syntax": "date"
+    },
+    {
+      "description": "Display the current system date without prompting for a new date:",
+      "syntax": "date /t"
+    },
+    {
+      "description": "Change the current system date to a specific date:",
+      "syntax": "date {{month}}-{{day}}-{{year}}"
+    }
+  ]
+}

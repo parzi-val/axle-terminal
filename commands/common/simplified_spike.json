@@ -1,0 +1,22 @@
+{
+  "command": "spike",
+  "description": "A fully featured static website generator written in JavaScript. More information: https://spike.js.org.",
+  "useCases": [
+    {
+      "description": "Create a new project using the default template:",
+      "syntax": "spike new {{project_name}}"
+    },
+    {
+      "description": "Compile your project, watch for changes, and auto-reload the browser:",
+      "syntax": "spike watch"
+    },
+    {
+      "description": "Compile your project once to the \"public\" directory:",
+      "syntax": "spike compile"
+    },
+    {
+      "description": "Remove the output directory:",
+      "syntax": "spike clean"
+    }
+  ]
+}

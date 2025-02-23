@@ -1,0 +1,26 @@
+{
+  "command": "euse",
+  "description": "Enable, disable, and obtain information about Gentoo USE flags. More information: https://wiki.gentoo.org/wiki/Euse.",
+  "useCases": [
+    {
+      "description": "List active global USE flags:",
+      "syntax": "euse --active --global"
+    },
+    {
+      "description": "List active local USE flags:",
+      "syntax": "euse --active --local"
+    },
+    {
+      "description": "Enable a global USE flag:",
+      "syntax": "sudo euse --enable {{use_flag}}"
+    },
+    {
+      "description": "Disable a global USE flag (put a '-' sign in front of the USE flag):",
+      "syntax": "sudo euse --disable {{use_flag}}"
+    },
+    {
+      "description": "Remove a global USE flag:",
+      "syntax": "sudo euse --prune {{use_flag}}"
+    }
+  ]
+}

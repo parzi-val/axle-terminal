@@ -1,0 +1,18 @@
+{
+  "command": "d8",
+  "description": "Developer shell for the V8 JavaScript engine. More information: https://v8.dev/docs/d8.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "d8"
+    },
+    {
+      "description": "Run a JavaScript file:",
+      "syntax": "d8 {{path/to/file.js}}"
+    },
+    {
+      "description": "Evaluate a JavaScript expression:",
+      "syntax": "d8 -e &quot;{{code}}"
+    }
+  ]
+}

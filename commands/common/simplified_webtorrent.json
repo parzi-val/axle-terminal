@@ -1,0 +1,38 @@
+{
+  "command": "webtorrent",
+  "description": "The command-line interface for WebTorrent. Supports magnets, URLs, info hashes and .torrent files. More information: https://github.com/webtorrent/webtorrent-cli.",
+  "useCases": [
+    {
+      "description": "Download a torrent:",
+      "syntax": "webtorrent download &quot;{{torrent_id}}&quot;"
+    },
+    {
+      "description": "Stream a torrent to VLC media player:",
+      "syntax": "webtorrent download &quot;{{torrent_id}}&quot; --vlc"
+    },
+    {
+      "description": "Stream a torrent to a Digital Living Network Alliance (DLNA) device:",
+      "syntax": "webtorrent download &quot;{{torrent_id}}&quot; --dlna"
+    },
+    {
+      "description": "Display a list of files for a specific torrent:",
+      "syntax": "webtorrent download &quot;{{torrent_id}}&quot; --select"
+    },
+    {
+      "description": "Specify a file index from the torrent to download:",
+      "syntax": "webtorrent download &quot;{{torrent_id}}&quot; --select {{index}}"
+    },
+    {
+      "description": "Seed a specific file or directory:",
+      "syntax": "webtorrent seed {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a new torrent file for the specified file path:",
+      "syntax": "webtorrent create {{path/to/file}}"
+    },
+    {
+      "description": "Display information for a magnet URI or .torrent file:",
+      "syntax": "webtorrent info {{path/to/file_or_magnet}}"
+    }
+  ]
+}

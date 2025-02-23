@@ -1,0 +1,38 @@
+{
+  "command": "aws configure",
+  "description": "Manage configuration for the AWS CLI. More information: https://docs.aws.amazon.com/cli/latest/reference/configure/.",
+  "useCases": [
+    {
+      "description": "Configure AWS CLI interactively (creates a new configuration or updates the default):",
+      "syntax": "aws configure"
+    },
+    {
+      "description": "Configure a named profile for AWS CLI interactively (creates a new profile or updates an existing one):",
+      "syntax": "aws configure --profile {{profile_name}}"
+    },
+    {
+      "description": "Display the value from a specific configuration variable:",
+      "syntax": "aws configure get {{name}}"
+    },
+    {
+      "description": "Display the value for a configuration variable in a specific profile:",
+      "syntax": "aws configure get {{name}} --profile {{profile_name}}"
+    },
+    {
+      "description": "Set the value of a specific configuration variable:",
+      "syntax": "aws configure set {{name}} {{value}}"
+    },
+    {
+      "description": "Set the value of a configuration variable in a specific profile:",
+      "syntax": "aws configure set {{name}} {{value}} --profile {{profile_name}}"
+    },
+    {
+      "description": "List the configuration entries:",
+      "syntax": "aws configure list"
+    },
+    {
+      "description": "List the configuration entries for a specific profile:",
+      "syntax": "aws configure list --profile {{profile_name}}"
+    }
+  ]
+}

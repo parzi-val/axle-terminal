@@ -1,0 +1,34 @@
+{
+  "command": "puppet agent",
+  "description": "Retrieves the client configuration from a Puppet server and applies it to the local host. More information: https://puppet.com/docs/puppet/7/man/agent.html.",
+  "useCases": [
+    {
+      "description": "Register a node at a Puppet server and apply the received catalog:",
+      "syntax": "puppet agent --test --server {{puppetserver_fqdn}} --serverport {{port}} --waitforcert {{poll_time}}"
+    },
+    {
+      "description": "Run the agent in the background (uses settings from puppet.conf):",
+      "syntax": "puppet agent"
+    },
+    {
+      "description": "Run the agent once in the foreground, then exit:",
+      "syntax": "puppet agent --test"
+    },
+    {
+      "description": "Run the agent in dry-mode:",
+      "syntax": "puppet agent --test --noop"
+    },
+    {
+      "description": "Log every resource being evaluated (even if nothing is being changed):",
+      "syntax": "puppet agent --test --evaltrace"
+    },
+    {
+      "description": "Disable the agent:",
+      "syntax": "puppet agent --disable &quot;{{message}}&quot;"
+    },
+    {
+      "description": "Enable the agent:",
+      "syntax": "puppet agent --enable"
+    }
+  ]
+}

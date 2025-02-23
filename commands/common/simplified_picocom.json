@@ -1,0 +1,14 @@
+{
+  "command": "picocom",
+  "description": "Minimal program to emulate serial consoles. More information: https://manned.org/picocom.",
+  "useCases": [
+    {
+      "description": "Connect to a serial console with a specified baud rate:",
+      "syntax": "picocom {{/dev/ttyXYZ}} --baud {{baud_rate}}"
+    },
+    {
+      "description": "Map special characters (e.g. LF to CRLF):",
+      "syntax": "picocom {{/dev/ttyXYZ}} --imap {{lfcrlf}}"
+    }
+  ]
+}

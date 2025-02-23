@@ -1,0 +1,10 @@
+{
+  "command": "pgmslice",
+  "description": "This command has been superseded by pamslice. More information: https://netpbm.sourceforge.net/doc/pgmslice.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamslice"
+    }
+  ]
+}

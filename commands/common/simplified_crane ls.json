@@ -1,0 +1,22 @@
+{
+  "command": "crane ls",
+  "description": "List the tags in a repository. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_ls.md.",
+  "useCases": [
+    {
+      "description": "List the tags:",
+      "syntax": "crane ls {{repository}}"
+    },
+    {
+      "description": "Print the full image reference:",
+      "syntax": "crane ls {{repository}} --full-ref"
+    },
+    {
+      "description": "Omit digest tags:",
+      "syntax": "crane ls {{-o|--omit-digest-tags}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane ls {{-h|--help}}"
+    }
+  ]
+}

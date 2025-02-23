@@ -1,0 +1,22 @@
+{
+  "command": "git diff-tree",
+  "description": "Compares the content and mode of blobs found via two tree objects. More information: https://git-scm.com/docs/git-diff-tree.",
+  "useCases": [
+    {
+      "description": "Compare two tree objects:",
+      "syntax": "git diff-tree {{tree-ish1}} {{tree-ish2}}"
+    },
+    {
+      "description": "Show changes between two specific commits:",
+      "syntax": "git diff-tree -r {{commit1}} {{commit2}}"
+    },
+    {
+      "description": "Display changes in patch format:",
+      "syntax": "git diff-tree {{-p|--patch}} {{tree-ish1}} {{tree-ish2}}"
+    },
+    {
+      "description": "Filter changes by a specific path:",
+      "syntax": "git diff-tree {{tree-ish1}} {{tree-ish2}} -- {{path/to/file_or_directory}}"
+    }
+  ]
+}

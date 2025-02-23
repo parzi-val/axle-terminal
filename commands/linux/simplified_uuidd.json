@@ -1,0 +1,18 @@
+{
+  "command": "uuidd",
+  "description": "Daemon for generating UUIDs. More information: https://manned.org/uuidd.",
+  "useCases": [
+    {
+      "description": "Generate a random UUID:",
+      "syntax": "uuidd --random"
+    },
+    {
+      "description": "Generate a bulk number of random UUIDs:",
+      "syntax": "uuidd --random --uuids {{number_of_uuids}}"
+    },
+    {
+      "description": "Generate a time-based UUID, based on the current time and MAC address of the system:",
+      "syntax": "uuidd --time"
+    }
+  ]
+}

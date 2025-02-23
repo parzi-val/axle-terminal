@@ -1,0 +1,22 @@
+{
+  "command": "slurmdbd",
+  "description": "A secure enterprise-wide interface to a database for Slurm. More information: https://slurm.schedmd.com/slurmdbd.html.",
+  "useCases": [
+    {
+      "description": "Set the daemon's nice value to the specified value, typically a negative number:",
+      "syntax": "slurmdbd -n {{value}}"
+    },
+    {
+      "description": "Change the working directory of slurmdbd to the LogFile path or to /var/tmp:",
+      "syntax": "slurmdbd -s"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "slurmdbd -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "slurmdbd -V"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "linux32",
+  "description": "This command is an alias of setarch linux32.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr setarch"
+    }
+  ]
+}

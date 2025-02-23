@@ -1,0 +1,38 @@
+{
+  "command": "rails db",
+  "description": "Various database-related subcommands for Ruby on Rails. More information: https://guides.rubyonrails.org/active_record_migrations.html.",
+  "useCases": [
+    {
+      "description": "Create databases, load the schema, and initialize with seed data:",
+      "syntax": "rails db:setup"
+    },
+    {
+      "description": "Access the database console:",
+      "syntax": "rails db"
+    },
+    {
+      "description": "Create the databases defined in the current environment:",
+      "syntax": "rails db:create"
+    },
+    {
+      "description": "Destroy the databases defined in the current environment:",
+      "syntax": "rails db:drop"
+    },
+    {
+      "description": "Run pending migrations:",
+      "syntax": "rails db:migrate"
+    },
+    {
+      "description": "View the status of each migration file:",
+      "syntax": "rails db:migrate:status"
+    },
+    {
+      "description": "Rollback the last migration:",
+      "syntax": "rails db:rollback"
+    },
+    {
+      "description": "Fill the current database with data defined in db/seeds.rb:",
+      "syntax": "rails db:seed"
+    }
+  ]
+}

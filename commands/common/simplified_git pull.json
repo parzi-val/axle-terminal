@@ -1,0 +1,18 @@
+{
+  "command": "git pull",
+  "description": "Fetch branch from a remote repository and merge it to local repository. More information: https://git-scm.com/docs/git-pull.",
+  "useCases": [
+    {
+      "description": "Download changes from default remote repository and merge it:",
+      "syntax": "git pull"
+    },
+    {
+      "description": "Download changes from default remote repository and use fast-forward:",
+      "syntax": "git pull --rebase"
+    },
+    {
+      "description": "Download changes from given remote repository and branch, then merge them into HEAD:",
+      "syntax": "git pull {{remote_name}} {{branch}}"
+    }
+  ]
+}

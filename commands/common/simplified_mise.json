@@ -1,0 +1,34 @@
+{
+  "command": "mise",
+  "description": "Manage versions of different packages. More information: https://mise.jdx.dev.",
+  "useCases": [
+    {
+      "description": "List all available plugins:",
+      "syntax": "mise plugins list-all"
+    },
+    {
+      "description": "Install a plugin:",
+      "syntax": "mise plugins add {{name}}"
+    },
+    {
+      "description": "List runtime versions available for install:",
+      "syntax": "mise ls-remote {{name}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "mise install {{name}}@{{version}}"
+    },
+    {
+      "description": "Set global version for a package:",
+      "syntax": "mise use --global {{name}}@{{version}}"
+    },
+    {
+      "description": "Set local version for a package:",
+      "syntax": "mise use {{name}}@{{version}}"
+    },
+    {
+      "description": "Set environment variable in configuration:",
+      "syntax": "mise set {{variable}}={{value}}"
+    }
+  ]
+}

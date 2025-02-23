@@ -1,0 +1,14 @@
+{
+  "command": "Vertical bar",
+  "description": "Pipe data between programs. More information: https://gnu.org/software/bash/manual/bash.html#Pipelines.",
+  "useCases": [
+    {
+      "description": "Pipe stdout to stdin:",
+      "syntax": "{{command}} | {{command}}"
+    },
+    {
+      "description": "Pipe both stdout and stderr to stdin:",
+      "syntax": "{{command}} |&amp; {{command}}"
+    }
+  ]
+}

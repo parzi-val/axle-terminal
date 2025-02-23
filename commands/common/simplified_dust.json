@@ -1,0 +1,34 @@
+{
+  "command": "dust",
+  "description": "Dust gives an instant overview of which directories are using disk space. More information: https://github.com/bootandy/dust.",
+  "useCases": [
+    {
+      "description": "Display information for the current directory:",
+      "syntax": "dust"
+    },
+    {
+      "description": "Display information about one or more directories:",
+      "syntax": "dust {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Display 30 directories (defaults to 21):",
+      "syntax": "dust --number-of-lines 30"
+    },
+    {
+      "description": "Display information for the current directory, up to 3 levels deep:",
+      "syntax": "dust --depth 3"
+    },
+    {
+      "description": "Display the biggest directories at the top in descending order:",
+      "syntax": "dust --reverse"
+    },
+    {
+      "description": "Ignore all files and directories with a specific name:",
+      "syntax": "dust --ignore-directory {{file_or_directory_name}}"
+    },
+    {
+      "description": "Do not display percent bars and percentages:",
+      "syntax": "dust --no-percent-bars"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "phpenmod",
+  "description": "Enable PHP extensions on Debian-based OSes. More information: https://salsa.debian.org/php-team/php-defaults.",
+  "useCases": [
+    {
+      "description": "Enable the JSON extension for every SAPI of every PHP version:",
+      "syntax": "sudo phpenmod {{json}}"
+    },
+    {
+      "description": "Enable the JSON extension for PHP 7.3 with the cli SAPI:",
+      "syntax": "sudo phpenmod -v {{7.3}} -s {{cli}} {{json}}"
+    }
+  ]
+}

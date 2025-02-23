@@ -1,0 +1,34 @@
+{
+  "command": "emerge",
+  "description": "Gentoo Linux package manager utility. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://wiki.gentoo.org/wiki/Portage#emerge.",
+  "useCases": [
+    {
+      "description": "Synchronize all packages:",
+      "syntax": "sudo emerge --sync"
+    },
+    {
+      "description": "Update all packages, including dependencies:",
+      "syntax": "sudo emerge {{-avuDN|--ask --verbose --update --deep --newuse}} @world"
+    },
+    {
+      "description": "Resume a failed updated, skipping the failing package:",
+      "syntax": "sudo emerge --resume --skipfirst"
+    },
+    {
+      "description": "Install a new package, with confirmation:",
+      "syntax": "sudo emerge {{-av|--ask --verbose}} {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies with confirmation:",
+      "syntax": "sudo emerge {{-avc|--ask --verbose --depclean}} {{package}}"
+    },
+    {
+      "description": "Remove orphaned packages (installed as dependencies but no longer required by any package):",
+      "syntax": "sudo emerge {{-avc|--ask --verbose --depclean}}"
+    },
+    {
+      "description": "Search the package database for a keyword:",
+      "syntax": "emerge {{-S|--searchdesc}} {{keyword}}"
+    }
+  ]
+}

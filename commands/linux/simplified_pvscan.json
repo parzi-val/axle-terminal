@@ -1,0 +1,22 @@
+{
+  "command": "pvscan",
+  "description": "List all physical volumes and manage their online status. More information: https://manned.org/pvscan.",
+  "useCases": [
+    {
+      "description": "List all physical volumes:",
+      "syntax": "pvscan"
+    },
+    {
+      "description": "Show the volume group that uses a specific physical volume:",
+      "syntax": "pvscan --cache --listvg {{/dev/sdX}}"
+    },
+    {
+      "description": "Show logical volumes that use a specific physical volume:",
+      "syntax": "pvscan --cache --listlvs {{/dev/sdX}}"
+    },
+    {
+      "description": "Display detailed information in JSON format:",
+      "syntax": "pvscan --reportformat json"
+    }
+  ]
+}

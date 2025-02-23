@@ -1,0 +1,22 @@
+{
+  "command": "xml canonic",
+  "description": "Make XML documents canonical. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Make an XML document canonical, preserving comments:",
+      "syntax": "xml canonic {{path/to/input.xml|URI}} &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Make an XML document canonical, removing comments:",
+      "syntax": "xml canonic --without-comments {{path/to/input.xml|URI}} &gt; {{path/to/output.xml}}"
+    },
+    {
+      "description": "Make XML exclusively canonical, using an XPATH from a file, preserving comments:",
+      "syntax": "xml canonic --exc-with-comments {{path/to/input.xml|URI}} {{path/to/c14n.xpath}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml canonic --help"
+    }
+  ]
+}

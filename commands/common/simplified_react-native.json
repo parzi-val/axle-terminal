@@ -1,0 +1,38 @@
+{
+  "command": "react-native",
+  "description": "A framework for building native apps with React. More information: https://reactnative.dev.",
+  "useCases": [
+    {
+      "description": "Initialize a new React Native project in a directory of the same name:",
+      "syntax": "react-native init {{project_name}}"
+    },
+    {
+      "description": "Start the metro bundler:",
+      "syntax": "react-native start"
+    },
+    {
+      "description": "Start the metro bundler with a clean cache:",
+      "syntax": "react-native start --reset-cache"
+    },
+    {
+      "description": "Build the current application and start it on a connected Android device or emulator:",
+      "syntax": "react-native run-android"
+    },
+    {
+      "description": "Build the current application and start it on an iOS simulator:",
+      "syntax": "react-native run-ios"
+    },
+    {
+      "description": "Build the current application in release mode and start it on a connected Android device or emulator:",
+      "syntax": "react-native run-android --variant={{release}}"
+    },
+    {
+      "description": "Start logkitty and print logs to stdout:",
+      "syntax": "react-native log-android"
+    },
+    {
+      "description": "Start tail system.log for an iOS simulator and print logs to stdout:",
+      "syntax": "react-native log-ios"
+    }
+  ]
+}

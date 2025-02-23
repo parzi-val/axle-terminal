@@ -1,0 +1,22 @@
+{
+  "command": "ledctl",
+  "description": "Intel(R) Enclosure LED Control Application. More information: https://manned.org/ledctl.",
+  "useCases": [
+    {
+      "description": "Turn on the \"Locate\" LED for specified device(s):",
+      "syntax": "sudo ledctl locate={{/dev/sda,/dev/sdb,...}}"
+    },
+    {
+      "description": "Turn off the \"Locate\" LED for specified device(s):",
+      "syntax": "sudo ledctl locate_off={{/dev/sda,/dev/sdb,...}}"
+    },
+    {
+      "description": "Turn off the \"Status\" LED and \"Failure\" LED for specified device(s):",
+      "syntax": "sudo ledctl off={{/dev/sda,/dev/sdb,...}}"
+    },
+    {
+      "description": "Turn off the \"Status\" LED, \"Failure\" LED and \"Locate\" LED for specified device(s):",
+      "syntax": "sudo ledctl normal={{/dev/sda,/dev/sdb,...}}"
+    }
+  ]
+}

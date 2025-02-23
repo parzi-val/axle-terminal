@@ -1,0 +1,26 @@
+{
+  "command": "stl2gts",
+  "description": "Convert STL files into the GTS (GNU triangulated surface library) file format. More information: https://manned.org/stl2gts.",
+  "useCases": [
+    {
+      "description": "Convert an STL file to a GTS file:",
+      "syntax": "stl2gts &lt; {{path/to/file.stl}} &gt; {{path/to/file.gts}}"
+    },
+    {
+      "description": "Convert an STL file to a GTS file and revert face normals:",
+      "syntax": "stl2gts --revert &lt; {{path/to/file.stl}} &gt; {{path/to/file.gts}}"
+    },
+    {
+      "description": "Convert an STL file to a GTS file and do not merge vertices:",
+      "syntax": "stl2gts --nomerge &lt; {{path/to/file.stl}} &gt; {{path/to/file.gts}}"
+    },
+    {
+      "description": "Convert an STL file to a GTS file and display surface statistics:",
+      "syntax": "stl2gts --verbose &lt; {{path/to/file.stl}} &gt; {{path/to/file.gts}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "stl2gts --help"
+    }
+  ]
+}

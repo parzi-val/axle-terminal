@@ -1,0 +1,18 @@
+{
+  "command": "basename",
+  "description": "Remove leading directory portions from a path. More information: https://www.gnu.org/software/coreutils/manual/html_node/basename-invocation.html.",
+  "useCases": [
+    {
+      "description": "Show only the file name from a path:",
+      "syntax": "basename {{path/to/file}}"
+    },
+    {
+      "description": "Show only the rightmost directory name from a path:",
+      "syntax": "basename {{path/to/directory}}"
+    },
+    {
+      "description": "Show only the file name from a path, with a suffix removed:",
+      "syntax": "basename {{path/to/file}} {{suffix}}"
+    }
+  ]
+}

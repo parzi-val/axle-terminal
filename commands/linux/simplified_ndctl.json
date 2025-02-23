@@ -1,0 +1,34 @@
+{
+  "command": "ndctl",
+  "description": "Utility for managing Non-Volatile DIMMs. More information: https://manned.org/ndctl.",
+  "useCases": [
+    {
+      "description": "Create an 'fsdax' mode namespace:",
+      "syntax": "ndctl create-namespace --mode={{fsdax}}"
+    },
+    {
+      "description": "Change the mode of a namespace to 'raw':",
+      "syntax": "ndctl create-namespace --reconfigure={{namespaceX.Y}} --mode={{raw}}"
+    },
+    {
+      "description": "Check a sector mode namespace for consistency, and repair if needed:",
+      "syntax": "ndctl check-namespace --repair {{namespaceX.Y}}"
+    },
+    {
+      "description": "List all namespaces, regions, and buses (including disabled ones):",
+      "syntax": "ndctl list --namespaces --regions --buses --idle"
+    },
+    {
+      "description": "List a specific namespace and include lots of additional information:",
+      "syntax": "ndctl list -vvv --namespace={{namespaceX.Y}}"
+    },
+    {
+      "description": "Run a monitor to watch for SMART health events for NVDIMMs on the 'ACPI.NFIT' bus:",
+      "syntax": "ndctl monitor --bus={{ACPI.NFIT}}"
+    },
+    {
+      "description": "Remove a namespace (when applicable) or reset it to an initial state:",
+      "syntax": "ndctl destroy-namespace --force {{namespaceX.Y}}"
+    }
+  ]
+}

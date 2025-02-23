@@ -1,0 +1,22 @@
+{
+  "command": "cmark",
+  "description": "Convert CommonMark Markdown formatted text to other formats. More information: https://github.com/commonmark/cmark.",
+  "useCases": [
+    {
+      "description": "Render a CommonMark Markdown file to HTML:",
+      "syntax": "cmark --to html {{filename.md}}"
+    },
+    {
+      "description": "Convert data from stdin to LaTeX:",
+      "syntax": "cmark --to latex"
+    },
+    {
+      "description": "Convert straight quotes to smart quotes:",
+      "syntax": "cmark --smart --to html {{filename.md}}"
+    },
+    {
+      "description": "Validate UTF-8 characters:",
+      "syntax": "cmark --validate-utf8 {{filename.md}}"
+    }
+  ]
+}

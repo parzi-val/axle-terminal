@@ -1,0 +1,22 @@
+{
+  "command": "sdiag",
+  "description": "Show information about the execution of slurmctld. More information: https://slurm.schedmd.com/sdiag.html.",
+  "useCases": [
+    {
+      "description": "Show all performance counters related to the execution of slurmctld:",
+      "syntax": "sdiag --all"
+    },
+    {
+      "description": "Reset performance counters related to the execution of slurmctld:",
+      "syntax": "sdiag --reset"
+    },
+    {
+      "description": "Specify the output format:",
+      "syntax": "sdiag --all --{{json|yaml}}"
+    },
+    {
+      "description": "Specify the cluster to send commands to:",
+      "syntax": "sdiag --all --cluster={{cluster_name}}"
+    }
+  ]
+}

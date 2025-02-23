@@ -1,0 +1,26 @@
+{
+  "command": "terminator",
+  "description": "Arrange multiple GNOME terminals in one window. More information: https://gnome-terminator.org/.",
+  "useCases": [
+    {
+      "description": "Start terminator window:",
+      "syntax": "terminator"
+    },
+    {
+      "description": "Start with a fullscreen window:",
+      "syntax": "terminator -f"
+    },
+    {
+      "description": "Split terminals horizontally:",
+      "syntax": "&lt;Ctrl&gt; + &lt;Shift&gt; + O"
+    },
+    {
+      "description": "Split terminals vertically:",
+      "syntax": "&lt;Ctrl&gt; + &lt;Shift&gt; + E"
+    },
+    {
+      "description": "Open new tab:",
+      "syntax": "&lt;Ctrl&gt; + &lt;Shift&gt; + T"
+    }
+  ]
+}

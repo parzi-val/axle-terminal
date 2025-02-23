@@ -1,0 +1,30 @@
+{
+  "command": "rss2email",
+  "description": "Deliver news from RSS feeds to an email program. More information: https://github.com/rss2email/rss2email.",
+  "useCases": [
+    {
+      "description": "List all feeds:",
+      "syntax": "r2e list"
+    },
+    {
+      "description": "Convert RSS entries to email:",
+      "syntax": "r2e run"
+    },
+    {
+      "description": "Add a feed:",
+      "syntax": "r2e add {{feed_address}}"
+    },
+    {
+      "description": "Add a feed with a specific email address:",
+      "syntax": "r2e add {{feed_address}} {{new_email@example.com}}"
+    },
+    {
+      "description": "Delete a specific feed:",
+      "syntax": "r2e delete {{number_of_feed_in_list}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "r2e -h"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "git reset",
+  "description": "Undo commits or unstage changes, by resetting the current Git HEAD to the specified state. If a path is passed, it works as \"unstage\"; if a commit hash or branch is passed, it works as \"uncommit\". More information: https://git-scm.com/docs/git-reset.",
+  "useCases": [
+    {
+      "description": "Unstage everything:",
+      "syntax": "git reset"
+    },
+    {
+      "description": "Unstage specific file(s):",
+      "syntax": "git reset {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Interactively unstage portions of a file:",
+      "syntax": "git reset --patch {{path/to/file}}"
+    },
+    {
+      "description": "Undo the last commit, keeping its changes (and any further uncommitted changes) in the filesystem:",
+      "syntax": "git reset HEAD~"
+    },
+    {
+      "description": "Undo the last two commits, adding their changes to the index, i.e. staged for commit:",
+      "syntax": "git reset --soft HEAD~2"
+    },
+    {
+      "description": "Discard any uncommitted changes, staged or not (for only unstaged changes, use git checkout):",
+      "syntax": "git reset --hard"
+    },
+    {
+      "description": "Reset the repository to a given commit, discarding committed, staged and uncommitted changes since then:",
+      "syntax": "git reset --hard {{commit}}"
+    }
+  ]
+}

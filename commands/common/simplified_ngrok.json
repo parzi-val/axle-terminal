@@ -1,0 +1,26 @@
+{
+  "command": "ngrok",
+  "description": "Reverse proxy that creates a secure tunnel from a public endpoint to a locally running web service. More information: https://ngrok.com.",
+  "useCases": [
+    {
+      "description": "Expose a local HTTP service on a given port:",
+      "syntax": "ngrok http {{80}}"
+    },
+    {
+      "description": "Expose a local HTTP service on a specific host:",
+      "syntax": "ngrok http {{foo.dev}}:{{80}}"
+    },
+    {
+      "description": "Expose a local HTTPS server:",
+      "syntax": "ngrok http https://localhost"
+    },
+    {
+      "description": "Expose TCP traffic on a given port:",
+      "syntax": "ngrok tcp {{22}}"
+    },
+    {
+      "description": "Expose TLS traffic for a specific host and port:",
+      "syntax": "ngrok tls -hostname={{foo.com}} {{443}}"
+    }
+  ]
+}

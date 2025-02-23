@@ -1,0 +1,14 @@
+{
+  "command": "genisoimage",
+  "description": "Pre-mastering program to generate ISO9660/Joliet/HFS hybrid filesystems. More information: https://manned.org/genisoimage.1.",
+  "useCases": [
+    {
+      "description": "Create an ISO image from the given source directory:",
+      "syntax": "genisoimage -o {{myimage.iso}} {{path/to/source_directory}}"
+    },
+    {
+      "description": "Create an ISO image with files larger than 2GiB by reporting a smaller apparent size for ISO9660 filesystems:",
+      "syntax": "genisoimage -o -allow-limited-size {{myimage.iso}} {{path/to/source_directory}}"
+    }
+  ]
+}

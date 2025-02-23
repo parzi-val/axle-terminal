@@ -1,0 +1,10 @@
+{
+  "command": "mount.smb3",
+  "description": "This command is an alias of mount.cifs. Note: for SMB versions before 3 you have to use mount.cifs instead.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr mount.cifs"
+    }
+  ]
+}

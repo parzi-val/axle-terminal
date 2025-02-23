@@ -1,0 +1,34 @@
+{
+  "command": "bzip3",
+  "description": "An efficient statistical file compressor. More information: https://github.com/kspalaiologos/bzip3.",
+  "useCases": [
+    {
+      "description": "Compress a file:",
+      "syntax": "bzip3 {{path/to/file_to_compress}}"
+    },
+    {
+      "description": "[d]ecompress a file:",
+      "syntax": "bzip3 -d {{path/to/compressed_file.bz3}}"
+    },
+    {
+      "description": "Decompress a file to stdout ([c]):",
+      "syntax": "bzip3 -dc {{path/to/compressed_file.bz3}}"
+    },
+    {
+      "description": "Test the integrity of each file inside the archive file:",
+      "syntax": "bzip3 --test {{path/to/compressed_file.bz3}}"
+    },
+    {
+      "description": "Show the compression ratio for each file processed with detailed information:",
+      "syntax": "bzip3 --verbose {{path/to/compressed_files.bz3}}"
+    },
+    {
+      "description": "Decompress a file overwriting existing files:",
+      "syntax": "bzip3 -d --force {{path/to/compressed_file.bz3}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "bzip3 -h"
+    }
+  ]
+}

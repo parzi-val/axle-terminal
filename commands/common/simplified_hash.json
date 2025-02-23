@@ -1,0 +1,22 @@
+{
+  "command": "hash",
+  "description": "View cached executable locations. More information: https://www.gnu.org/software/bash/manual/bash.html#index-hash.",
+  "useCases": [
+    {
+      "description": "View cached command locations for the current shell:",
+      "syntax": "hash"
+    },
+    {
+      "description": "Clear the hash table:",
+      "syntax": "hash -r"
+    },
+    {
+      "description": "Delete a specific command from the hash table:",
+      "syntax": "hash -d {{command}}"
+    },
+    {
+      "description": "Print the full path of command:",
+      "syntax": "hash -t {{command}}"
+    }
+  ]
+}

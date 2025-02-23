@@ -1,0 +1,26 @@
+{
+  "command": "brittany",
+  "description": "Pretty-print Haskell source files. More information: https://github.com/lspitzner/brittany#readme.",
+  "useCases": [
+    {
+      "description": "Format a Haskell source file and print the result to stdout:",
+      "syntax": "brittany {{path/to/file.hs}}"
+    },
+    {
+      "description": "Format all Haskell source files in the current directory in-place:",
+      "syntax": "brittany --write-mode=inplace {{*.hs}}"
+    },
+    {
+      "description": "Check whether a Haskell source file needs changes and indicate the result through the programme's exit code:",
+      "syntax": "brittany --check-mode {{path/to/file.hs}}"
+    },
+    {
+      "description": "Format a Haskell source file using the specified amount of spaces per indentation level and line length:",
+      "syntax": "brittany --indent {{4}} --columns {{100}} {{path/to/file.hs}}"
+    },
+    {
+      "description": "Format a Haskell source file according to the style defined in the specified configuration file:",
+      "syntax": "brittany --config-file {{path/to/config.yaml}} {{path/to/file.hs}}"
+    }
+  ]
+}

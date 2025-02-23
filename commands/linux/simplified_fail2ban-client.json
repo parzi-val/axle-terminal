@@ -1,0 +1,18 @@
+{
+  "command": "fail2ban-client",
+  "description": "Configure and control fail2ban server. More information: https://github.com/fail2ban/fail2ban.",
+  "useCases": [
+    {
+      "description": "Retrieve current status of the jail service:",
+      "syntax": "fail2ban-client status {{jail}}"
+    },
+    {
+      "description": "Remove the specified IP from the jail service's ban list:",
+      "syntax": "fail2ban-client set {{jail}} unbanip {{ip}}"
+    },
+    {
+      "description": "Verify fail2ban server is alive:",
+      "syntax": "fail2ban-client ping"
+    }
+  ]
+}

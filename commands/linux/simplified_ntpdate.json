@@ -1,0 +1,22 @@
+{
+  "command": "ntpdate",
+  "description": "Synchronize and set the date and time via NTP. More information: https://manned.org/ntpdate.",
+  "useCases": [
+    {
+      "description": "Synchronize and set date and time:",
+      "syntax": "sudo ntpdate {{host}}"
+    },
+    {
+      "description": "Query the host without setting the time:",
+      "syntax": "ntpdate -q {{host}}"
+    },
+    {
+      "description": "Use an unprivileged port in case a firewall is blocking privileged ports:",
+      "syntax": "sudo ntpdate -u {{host}}"
+    },
+    {
+      "description": "Force time to be stepped using settimeofday instead of slewed:",
+      "syntax": "sudo ntpdate -b {{host}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "vagrant box",
+  "description": "Manage Vagrant boxes (virtual machine images). See also: vagrant. More information: https://developer.hashicorp.com/vagrant/docs/cli/box.",
+  "useCases": [
+    {
+      "description": "List all installed boxes:",
+      "syntax": "vagrant box list"
+    },
+    {
+      "description": "Add a new box:",
+      "syntax": "vagrant box add {{hashicorp/bionic64}}"
+    },
+    {
+      "description": "Add a box from a custom URL:",
+      "syntax": "vagrant box add {{my-box}} {{https://example.com/my-box.box}}"
+    },
+    {
+      "description": "Remove an installed box:",
+      "syntax": "vagrant box remove {{hashicorp/bionic64}}"
+    },
+    {
+      "description": "Update all boxes that are in use in the current Vagrant environment:",
+      "syntax": "vagrant box update"
+    },
+    {
+      "description": "Update a specific box:",
+      "syntax": "vagrant box update --box {{bento/debian-12}}"
+    },
+    {
+      "description": "Check if there is a new version available for the box that you are using:",
+      "syntax": "vagrant box outdated"
+    },
+    {
+      "description": "Clean up old versions of installed boxes:",
+      "syntax": "vagrant box prune"
+    }
+  ]
+}

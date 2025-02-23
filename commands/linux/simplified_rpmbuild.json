@@ -1,0 +1,18 @@
+{
+  "command": "rpmbuild",
+  "description": "RPM Package Build tool. More information: https://manned.org/rpmbuild.",
+  "useCases": [
+    {
+      "description": "Build binary and source packages:",
+      "syntax": "rpmbuild -ba {{path/to/spec_file}}"
+    },
+    {
+      "description": "Build a binary package without source package:",
+      "syntax": "rpmbuild -bb {{path/to/spec_file}}"
+    },
+    {
+      "description": "Specify additional variables when building a package:",
+      "syntax": "rpmbuild -bb {{path/to/spec_file}} --define &quot;{{variable1}} {{value1}}&quot; --define &quot;{{variable2}} {{value2}}&quot;"
+    }
+  ]
+}

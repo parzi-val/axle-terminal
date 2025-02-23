@@ -1,0 +1,34 @@
+{
+  "command": "moro",
+  "description": "Track work time. More information: https://moro.js.org.",
+  "useCases": [
+    {
+      "description": "Invoke moro without parameters, to set the current time as the start of the working day:",
+      "syntax": "moro"
+    },
+    {
+      "description": "Specify a custom time for the start of the working day:",
+      "syntax": "moro hi {{09:30}}"
+    },
+    {
+      "description": "Invoke moro without parameters a second time, to set the current time at the end of the working day:",
+      "syntax": "moro"
+    },
+    {
+      "description": "Specify a custom time for the end of the working day:",
+      "syntax": "moro bye {{17:30}}"
+    },
+    {
+      "description": "Add a note on the current working day:",
+      "syntax": "moro note {{3 hours on project Foo}}"
+    },
+    {
+      "description": "Show a report of time logs and notes for the current working day:",
+      "syntax": "moro report"
+    },
+    {
+      "description": "Show a report of time logs and notes for all working days on record:",
+      "syntax": "moro report --all"
+    }
+  ]
+}

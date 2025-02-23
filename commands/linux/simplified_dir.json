@@ -1,0 +1,26 @@
+{
+  "command": "dir",
+  "description": "List directory contents using one line per file, special characters are represented by backslash escape sequences. Works as ls -C --escape. More information: https://manned.org/dir.",
+  "useCases": [
+    {
+      "description": "List all files, including hidden files:",
+      "syntax": "dir --all"
+    },
+    {
+      "description": "List files including their author (-l is required):",
+      "syntax": "dir -l --author"
+    },
+    {
+      "description": "List files excluding those that match a specified blob pattern:",
+      "syntax": "dir --hide={{pattern}}"
+    },
+    {
+      "description": "List subdirectories recursively:",
+      "syntax": "dir --recursive"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dir --help"
+    }
+  ]
+}

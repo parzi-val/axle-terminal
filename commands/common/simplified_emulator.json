@@ -1,0 +1,38 @@
+{
+  "command": "emulator",
+  "description": "Manage Android emulators. More information: https://developer.android.com/studio/run/emulator-commandline.",
+  "useCases": [
+    {
+      "description": "Start an Android emulator device:",
+      "syntax": "emulator -avd {{name}}"
+    },
+    {
+      "description": "Display the webcams on your development computer that are available for emulation:",
+      "syntax": "emulator -avd {{name}} -webcam-list"
+    },
+    {
+      "description": "Start an emulator overriding the facing back camera setting (use -camera-front for front camera):",
+      "syntax": "emulator -avd {{name}} -camera-back {{none|emulated|webcamN}}"
+    },
+    {
+      "description": "Start an emulator, with a maximum network speed:",
+      "syntax": "emulator -avd {{name}} -netspeed {{gsm|hscsd|gprs|edge|hsdpa|lte|evdo|full}}"
+    },
+    {
+      "description": "Start an emulator with network latency:",
+      "syntax": "emulator -avd {{name}} -netdelay {{gsm|hscsd|gprs|edge|hsdpa|lte|evdo|none}}"
+    },
+    {
+      "description": "Start an emulator, making all TCP connections through a specified HTTP/HTTPS proxy (port number is required):",
+      "syntax": "emulator -avd {{name}} -http-proxy {{http://example.com:80}}"
+    },
+    {
+      "description": "Start an emulator with a given SD card partition image file:",
+      "syntax": "emulator -avd {{name}} -sdcard {{path/to/sdcard.img}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "emulator -help"
+    }
+  ]
+}

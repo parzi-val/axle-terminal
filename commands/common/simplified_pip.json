@@ -1,0 +1,34 @@
+{
+  "command": "pip",
+  "description": "Python package manager. Some subcommands such as install have their own usage documentation. More information: https://pip.pypa.io.",
+  "useCases": [
+    {
+      "description": "Install a package (see pip install for more install examples):",
+      "syntax": "pip install {{package}}"
+    },
+    {
+      "description": "Install a package to the user's directory instead of the system-wide default location:",
+      "syntax": "pip install --user {{package}}"
+    },
+    {
+      "description": "Upgrade a package:",
+      "syntax": "pip install --upgrade {{package}}"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "pip uninstall {{package}}"
+    },
+    {
+      "description": "Save installed packages to file:",
+      "syntax": "pip freeze &gt; {{requirements.txt}}"
+    },
+    {
+      "description": "Show installed package info:",
+      "syntax": "pip show {{package}}"
+    },
+    {
+      "description": "Install packages from a file:",
+      "syntax": "pip install --requirement {{requirements.txt}}"
+    }
+  ]
+}

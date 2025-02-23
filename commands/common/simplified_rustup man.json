@@ -1,0 +1,14 @@
+{
+  "command": "rustup man",
+  "description": "View the man page for a command managed by rustup. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "View the man page for a given command from the default toolchain:",
+      "syntax": "rustup man {{command}}"
+    },
+    {
+      "description": "View the man page for a given command from the specified toolchain:",
+      "syntax": "rustup man --toolchain {{command}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "wall",
+  "description": "Write a message on the terminals of users currently logged in. More information: https://manned.org/wall.",
+  "useCases": [
+    {
+      "description": "Send a message:",
+      "syntax": "wall {{message}}"
+    },
+    {
+      "description": "Send a message to users that belong to a specific group:",
+      "syntax": "wall --group {{group_name}} {{message}}"
+    },
+    {
+      "description": "Send a message from a file:",
+      "syntax": "wall {{file}}"
+    },
+    {
+      "description": "Send a message with timeout (default 300):",
+      "syntax": "wall --timeout {{seconds}} {{file}}"
+    }
+  ]
+}

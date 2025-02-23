@@ -1,0 +1,38 @@
+{
+  "command": "clido",
+  "description": "Save-state TODO app for the terminal. More information: https://codeberg.org/Oglo12/clido/wiki.",
+  "useCases": [
+    {
+      "description": "Create a list:",
+      "syntax": "clido --new {{name}}"
+    },
+    {
+      "description": "Load a list:",
+      "syntax": "clido --load {{name}}"
+    },
+    {
+      "description": "Delete a list:",
+      "syntax": "clido --remove {{name}}"
+    },
+    {
+      "description": "List all lists:",
+      "syntax": "clido --lists"
+    },
+    {
+      "description": "Toggle autowrite:",
+      "syntax": "clido toggle-autowrite"
+    },
+    {
+      "description": "Open a list in a text editor:",
+      "syntax": "clido edit {{text_editor}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "clido -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "clido -v"
+    }
+  ]
+}

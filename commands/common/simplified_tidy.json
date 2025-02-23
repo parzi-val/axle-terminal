@@ -1,0 +1,18 @@
+{
+  "command": "tidy",
+  "description": "Clean up and pretty print HTML, XHTML and XML files. Note: tidy cannot preserve original indentation. More information: https://api.html-tidy.org/tidy/tidylib_api_5.2.0/tidy_cmd.html.",
+  "useCases": [
+    {
+      "description": "Pretty print an HTML file:",
+      "syntax": "tidy {{path/to/file.html}}"
+    },
+    {
+      "description": "Enable [i]ndentation, [w]rapping lines in 100, saving to output.html:",
+      "syntax": "tidy --indent y --wrap 100 -output {{path/to/output.html}} {{path/to/file.html}}"
+    },
+    {
+      "description": "Modify an HTML file in-place using a configuration file:",
+      "syntax": "tidy -config {{path/to/configuration}} -modify {{path/to/file.html}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "cockpit-bridge",
+  "description": "Relay messages and commands between the front end and server in the cockpit suite. More information: https://cockpit-project.org/guide/latest/cockpit-bridge.1.html.",
+  "useCases": [
+    {
+      "description": "List all cockpit packages:",
+      "syntax": "cockpit-bridge --packages"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cockpit-bridge --help"
+    }
+  ]
+}

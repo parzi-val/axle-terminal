@@ -1,0 +1,26 @@
+{
+  "command": "pio debug",
+  "description": "Debug PlatformIO projects. More information: https://docs.platformio.org/en/latest/core/userguide/cmd_debug.html.",
+  "useCases": [
+    {
+      "description": "Debug the PlatformIO project in the current directory:",
+      "syntax": "pio debug"
+    },
+    {
+      "description": "Debug a specific PlatformIO project:",
+      "syntax": "pio debug --project-dir {{path/to/platformio_project}}"
+    },
+    {
+      "description": "Debug a specific environment:",
+      "syntax": "pio debug --environment {{environment}}"
+    },
+    {
+      "description": "Debug a PlatformIO project using a specific configuration file:",
+      "syntax": "pio debug --project-conf {{path/to/platformio.ini}}"
+    },
+    {
+      "description": "Debug a PlatformIO project using the gdb debugger:",
+      "syntax": "pio debug --interface={{gdb}} {{gdb_options}}"
+    }
+  ]
+}

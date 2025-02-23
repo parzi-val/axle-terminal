@@ -1,0 +1,22 @@
+{
+  "command": "e2fsck",
+  "description": "Check a Linux ext2/ext3/ext4 filesystem. The partition should be unmounted. More information: https://manned.org/e2fsck.",
+  "useCases": [
+    {
+      "description": "Check filesystem, reporting any damaged blocks:",
+      "syntax": "sudo e2fsck {{/dev/sdXN}}"
+    },
+    {
+      "description": "Check filesystem and automatically repair any damaged blocks:",
+      "syntax": "sudo e2fsck -p {{/dev/sdXN}}"
+    },
+    {
+      "description": "Check filesystem in read only mode:",
+      "syntax": "sudo e2fsck -c {{/dev/sdXN}}"
+    },
+    {
+      "description": "Perform an exhaustive, non-destructive read-write test for bad blocks and blacklist them:",
+      "syntax": "sudo e2fsck -fccky {{/dev/sdXN}}"
+    }
+  ]
+}

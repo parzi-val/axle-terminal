@@ -1,0 +1,26 @@
+{
+  "command": "mumble",
+  "description": "Low-latency, high quality voice chat software. More information: https://www.mumble.info.",
+  "useCases": [
+    {
+      "description": "Open Mumble:",
+      "syntax": "mumble"
+    },
+    {
+      "description": "Open Mumble and immediately connect to a server:",
+      "syntax": "mumble mumble://{{username}}@{{example.com}}"
+    },
+    {
+      "description": "Open Mumble and immediately connect to a password protected server:",
+      "syntax": "mumble mumble://{{username}}:{{password}}@{{example.com}}"
+    },
+    {
+      "description": "Mute/unmute the microphone in a running Mumble instance:",
+      "syntax": "mumble rpc {{mute|unmute}}"
+    },
+    {
+      "description": "Mute/unmute the microphone and the audio output of Mumble:",
+      "syntax": "mumble rpc {{deaf|undeaf}}"
+    }
+  ]
+}

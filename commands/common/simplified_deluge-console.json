@@ -1,0 +1,38 @@
+{
+  "command": "deluge-console",
+  "description": "An interactive interface for the Deluge BitTorrent client. More information: https://deluge-torrent.org.",
+  "useCases": [
+    {
+      "description": "Start the interactive console interface:",
+      "syntax": "deluge-console"
+    },
+    {
+      "description": "Connect to a Deluge daemon instance:",
+      "syntax": "connect {{hostname}}:{{port}}"
+    },
+    {
+      "description": "Add a torrent to the daemon:",
+      "syntax": "add {{url|magnet|path/to/file}}"
+    },
+    {
+      "description": "Display information about all torrents:",
+      "syntax": "info"
+    },
+    {
+      "description": "Display information about a specific torrent:",
+      "syntax": "info {{torrent_id}}"
+    },
+    {
+      "description": "Pause a torrent:",
+      "syntax": "pause {{torrent_id}}"
+    },
+    {
+      "description": "Resume a torrent:",
+      "syntax": "resume {{torrent_id}}"
+    },
+    {
+      "description": "Remove a torrent from the daemon:",
+      "syntax": "rm {{torrent_id}}"
+    }
+  ]
+}

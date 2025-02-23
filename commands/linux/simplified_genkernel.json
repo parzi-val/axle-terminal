@@ -1,0 +1,26 @@
+{
+  "command": "genkernel",
+  "description": "Gentoo Linux utility to compile and install kernels. More information: https://wiki.gentoo.org/wiki/Genkernel.",
+  "useCases": [
+    {
+      "description": "Automatically compile and install a generic kernel:",
+      "syntax": "sudo genkernel all"
+    },
+    {
+      "description": "Build and install the bzImage|initramfs|kernel|ramdisk only:",
+      "syntax": "sudo genkernel {{bzImage|initramfs|kernel|ramdisk}}"
+    },
+    {
+      "description": "Apply changes to the kernel configuration before compiling and installing:",
+      "syntax": "sudo genkernel --menuconfig all"
+    },
+    {
+      "description": "Generate a kernel with a custom name:",
+      "syntax": "sudo genkernel --kernname={{custom_name}} all"
+    },
+    {
+      "description": "Use a kernel source outside the default directory /usr/src/linux:",
+      "syntax": "sudo genkernel --kerneldir={{path/to/directory}} all"
+    }
+  ]
+}

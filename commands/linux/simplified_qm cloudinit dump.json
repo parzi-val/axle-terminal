@@ -1,0 +1,10 @@
+{
+  "command": "qm cloudinit dump",
+  "description": "Generate cloudinit configuration files. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Generate a cloudinit file for a specific configuration type:",
+      "syntax": "qm cloudinit dump {{virtual_machine_id}} {{meta|network|user}}"
+    }
+  ]
+}

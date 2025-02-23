@@ -1,0 +1,14 @@
+{
+  "command": "elixir",
+  "description": "Elixir programming language interpreter. More information: https://elixir-lang.org.",
+  "useCases": [
+    {
+      "description": "Run an Elixir file:",
+      "syntax": "elixir {{path/to/file}}"
+    },
+    {
+      "description": "Evaluate Elixir code by passing it as an argument:",
+      "syntax": "elixir -e &quot;{{code}}&quot;"
+    }
+  ]
+}

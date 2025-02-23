@@ -1,0 +1,10 @@
+{
+  "command": "pbmtowbmp",
+  "description": "Convert a PBM image to a wireless bitmap file. More information: https://netpbm.sourceforge.net/doc/pbmtowbmp.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to a WBMP file:",
+      "syntax": "pbmtowbmp {{path/to/input_file.pbm}} &gt; {{path/to/output_file.wbmp}}"
+    }
+  ]
+}

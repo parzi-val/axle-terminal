@@ -1,0 +1,34 @@
+{
+  "command": "sfc",
+  "description": "Scans the integrity of Windows system files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/sfc.",
+  "useCases": [
+    {
+      "description": "Display information about the usage of the command:",
+      "syntax": "sfc"
+    },
+    {
+      "description": "Scan all system files and, if possible, repair any problems:",
+      "syntax": "sfc /scannow"
+    },
+    {
+      "description": "Scan all system files without attempting to repair any:",
+      "syntax": "sfc /verifyonly"
+    },
+    {
+      "description": "Scan a specific file and, if possible, repair any problems:",
+      "syntax": "sfc /scanfile={{path\\to\\file}}"
+    },
+    {
+      "description": "Scan a specific file without attempting to repair it:",
+      "syntax": "sfc /verifyfile={{path\\to\\file}}"
+    },
+    {
+      "description": "When repairing offline, specify the boot directory:",
+      "syntax": "sfc /offbootdir={{path\\to\\directory}}"
+    },
+    {
+      "description": "When repairing offline, specify the Windows directory:",
+      "syntax": "sfc /offwindir={{path\\to\\directory}}"
+    }
+  ]
+}

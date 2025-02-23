@@ -1,0 +1,18 @@
+{
+  "command": "pbmclean",
+  "description": "Clean up a PBM image by erasing isolated black and white pixels. More information: https://netpbm.sourceforge.net/doc/pbmclean.html.",
+  "useCases": [
+    {
+      "description": "Clean up a PBM image by erasing isolated black and white pixels:",
+      "syntax": "pbmclean {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Clean up only black/white pixels:",
+      "syntax": "pbmclean -{{black|white}} {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Specify the minimum number of neighbouring pixels of the same color in order for a pixel not to be considered isolated:",
+      "syntax": "pbmclean -minneighbours {{3}} {{path/to/image.pbm}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

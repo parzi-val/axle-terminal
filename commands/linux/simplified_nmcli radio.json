@@ -1,0 +1,30 @@
+{
+  "command": "nmcli radio",
+  "description": "Show the status of radio switches or enable/disable them using NetworkManager. This subcommand can also be called with nmcli r. More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmcli.html.",
+  "useCases": [
+    {
+      "description": "Show status of Wi-Fi:",
+      "syntax": "nmcli radio wifi"
+    },
+    {
+      "description": "Turn Wi-Fi on or off:",
+      "syntax": "nmcli radio wifi {{on|off}}"
+    },
+    {
+      "description": "Show status of WWAN:",
+      "syntax": "nmcli radio wwan"
+    },
+    {
+      "description": "Turn WWAN on or off:",
+      "syntax": "nmcli radio wwan {{on|off}}"
+    },
+    {
+      "description": "Show status of both switches:",
+      "syntax": "nmcli radio all"
+    },
+    {
+      "description": "Turn both switches on or off:",
+      "syntax": "nmcli radio all {{on|off}}"
+    }
+  ]
+}

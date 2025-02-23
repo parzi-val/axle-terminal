@@ -1,0 +1,22 @@
+{
+  "command": "fluxctl",
+  "description": "Command-line tool for Flux v1. More information: https://fluxcd.io/legacy/flux/references/fluxctl.",
+  "useCases": [
+    {
+      "description": "List workloads currently running in the cluster on specific namespace:",
+      "syntax": "fluxctl --k8s-fwd-ns={{namespace}} list-workloads"
+    },
+    {
+      "description": "Show deployed and available images:",
+      "syntax": "fluxctl list-images"
+    },
+    {
+      "description": "Synchronize the cluster with the Git repository:",
+      "syntax": "fluxctl sync"
+    },
+    {
+      "description": "Turn on automatic deployment for a workload:",
+      "syntax": "fluxctl automate"
+    }
+  ]
+}

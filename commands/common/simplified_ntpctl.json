@@ -1,0 +1,22 @@
+{
+  "command": "ntpctl",
+  "description": "Display information about the running instance of OpenNTPD. More information: https://man.openbsd.org/ntpctl.",
+  "useCases": [
+    {
+      "description": "Show all data:",
+      "syntax": "ntpctl -s {{a|all}}"
+    },
+    {
+      "description": "Show information about each peer:",
+      "syntax": "ntpctl -s {{p|peers}}"
+    },
+    {
+      "description": "Show the status of peers and sensors, and whether the system clock is synced:",
+      "syntax": "ntpctl -s {{s|status}}"
+    },
+    {
+      "description": "Show information about each sensor:",
+      "syntax": "ntpctl -s {{S|Sensors}}"
+    }
+  ]
+}

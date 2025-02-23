@@ -1,0 +1,26 @@
+{
+  "command": "inkmake",
+  "description": "GNU Makefile-style SVG exporting using Inkscape's backend. More information: https://github.com/wader/inkmake.",
+  "useCases": [
+    {
+      "description": "Export an SVG file executing the specified Inkfile:",
+      "syntax": "inkmake {{path/to/Inkfile}}"
+    },
+    {
+      "description": "Execute an Inkfile and show detailed information:",
+      "syntax": "inkmake --verbose {{path/to/Inkfile}}"
+    },
+    {
+      "description": "Execute an Inkfile, specifying SVG input file(s) and an output file:",
+      "syntax": "inkmake --svg {{path/to/file.svg}} --out {{path/to/output_image}} {{path/to/Inkfile}}"
+    },
+    {
+      "description": "Use a custom Inkscape binary as the backend:",
+      "syntax": "inkmake --inkscape {{/Applications/Inkscape.app/Contents/Resources/bin/inkscape}} {{path/to/Inkfile}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "inkmake --help"
+    }
+  ]
+}

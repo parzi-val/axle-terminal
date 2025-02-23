@@ -1,0 +1,22 @@
+{
+  "command": "c99",
+  "description": "Compile C programs according to the ISO C standard. More information: https://manned.org/c99.",
+  "useCases": [
+    {
+      "description": "Compile source file(s) and create an executable:",
+      "syntax": "c99 {{file.c}}"
+    },
+    {
+      "description": "Compile source file(s) and specify the executable [o]utput filename:",
+      "syntax": "c99 -o {{executable_name}} {{file.c}}"
+    },
+    {
+      "description": "Compile source file(s) and create object file(s):",
+      "syntax": "c99 -c {{file.c}}"
+    },
+    {
+      "description": "Compile source file(s), link with object file(s), and create an executable:",
+      "syntax": "c99 {{file.c}} {{file.o}}"
+    }
+  ]
+}

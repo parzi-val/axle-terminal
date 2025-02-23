@@ -1,0 +1,26 @@
+{
+  "command": "dokku",
+  "description": "Docker powered mini-Heroku (PaaS). Easily deploy multiple apps to your server in different languages using a single git-push command. More information: https://github.com/dokku/dokku.",
+  "useCases": [
+    {
+      "description": "List running apps:",
+      "syntax": "dokku apps"
+    },
+    {
+      "description": "Create an app:",
+      "syntax": "dokku apps:create {{app_name}}"
+    },
+    {
+      "description": "Remove an app:",
+      "syntax": "dokku apps:destroy {{app_name}}"
+    },
+    {
+      "description": "Install plugin:",
+      "syntax": "dokku plugin:install {{full_repo_url}}"
+    },
+    {
+      "description": "Link database to an app:",
+      "syntax": "dokku {{db}}:link {{db_name}} {{app_name}}"
+    }
+  ]
+}

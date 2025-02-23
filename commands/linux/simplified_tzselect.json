@@ -1,0 +1,14 @@
+{
+  "command": "tzselect",
+  "description": "Interactively select timezone. Note: this program doesn't actually set the timezone. More information: https://manned.org/tzselect.",
+  "useCases": [
+    {
+      "description": "Open the interactive menu for timezone selection and print the selected timezone to stdout:",
+      "syntax": "tzselect"
+    },
+    {
+      "description": "Ask for nearest timezone to coordinates in ISO 6709 notation:",
+      "syntax": "tzselect -c {{coordinates}}"
+    }
+  ]
+}

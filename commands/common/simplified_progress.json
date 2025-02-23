@@ -1,0 +1,22 @@
+{
+  "command": "progress",
+  "description": "Display/Monitor the progress of running coreutils. More information: https://github.com/Xfennec/progress.",
+  "useCases": [
+    {
+      "description": "Show the progress of running coreutils:",
+      "syntax": "progress"
+    },
+    {
+      "description": "Show the progress of running coreutils in quiet mode:",
+      "syntax": "progress -q"
+    },
+    {
+      "description": "Launch and monitor a single long-running command:",
+      "syntax": "{{command}} &amp; progress --monitor --pid $!"
+    },
+    {
+      "description": "Include an estimate of time remaining for completion:",
+      "syntax": "progress --wait --command {{firefox}}"
+    }
+  ]
+}

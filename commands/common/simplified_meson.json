@@ -1,0 +1,30 @@
+{
+  "command": "meson",
+  "description": "SCons-like build system that uses Python as a front-end language and Ninja as a building backend. More information: https://mesonbuild.com.",
+  "useCases": [
+    {
+      "description": "Generate a C project with a given name and version:",
+      "syntax": "meson init --language={{c}} --name={{myproject}} --version={{0.1}}"
+    },
+    {
+      "description": "Configure the builddir with default values:",
+      "syntax": "meson setup {{build_dir}}"
+    },
+    {
+      "description": "Build the project:",
+      "syntax": "meson compile -C {{path/to/build_dir}}"
+    },
+    {
+      "description": "Run all tests in the project:",
+      "syntax": "meson test"
+    },
+    {
+      "description": "Show the help:",
+      "syntax": "meson --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "meson --version"
+    }
+  ]
+}

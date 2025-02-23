@@ -1,0 +1,18 @@
+{
+  "command": "virsh-undefine",
+  "description": "Delete a virtual machine. More information: https://manned.org/virsh.",
+  "useCases": [
+    {
+      "description": "Delete only the virtual machine configuration file:",
+      "syntax": "virsh undefine --domain {{vm_name}}"
+    },
+    {
+      "description": "Delete the configuration file and all associated storage volumes:",
+      "syntax": "virsh undefine --domain {{vm_name}} --remove-all-storage"
+    },
+    {
+      "description": "Delete the configuration file and the specified storage volumes using the target name or the source name (as obtained from the virsh domblklist command):",
+      "syntax": "virsh undefine --domain {{vm_name}} --storage {{sda,path/to/source}}"
+    }
+  ]
+}

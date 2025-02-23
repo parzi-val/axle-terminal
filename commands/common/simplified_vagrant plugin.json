@@ -1,0 +1,30 @@
+{
+  "command": "vagrant plugin",
+  "description": "Manage Vagrant plugins. See also: vagrant. More information: https://developer.hashicorp.com/vagrant/docs/cli/plugin.",
+  "useCases": [
+    {
+      "description": "List all the plugins currently installed:",
+      "syntax": "vagrant plugin list"
+    },
+    {
+      "description": "Install a plugin from remote repositories, usually RubyGems:",
+      "syntax": "vagrant plugin install {{vagrant_vbguest}}"
+    },
+    {
+      "description": "Install a plugin from a local file source:",
+      "syntax": "vagrant plugin install {{path/to/my_plugin.gem}}"
+    },
+    {
+      "description": "Update all installed plugins to their latest version:",
+      "syntax": "vagrant plugin update"
+    },
+    {
+      "description": "Update a plugin to the latest version:",
+      "syntax": "vagrant plugin update {{vagrant_vbguest}}"
+    },
+    {
+      "description": "Uninstall a specific plugin:",
+      "syntax": "vagrant plugin uninstall {{vagrant_vbguest}}"
+    }
+  ]
+}

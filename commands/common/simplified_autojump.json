@@ -1,0 +1,26 @@
+{
+  "command": "autojump",
+  "description": "Quickly jump among the directories you visit the most. Aliases like j or jc are provided for even less typing. More information: https://github.com/wting/autojump.",
+  "useCases": [
+    {
+      "description": "Jump to a directory that contains the given pattern:",
+      "syntax": "j {{pattern}}"
+    },
+    {
+      "description": "Jump to a sub-directory (child) of the current directory that contains the given pattern:",
+      "syntax": "jc {{pattern}}"
+    },
+    {
+      "description": "Open a directory that contains the given pattern in the operating system file manager:",
+      "syntax": "jo {{pattern}}"
+    },
+    {
+      "description": "Remove non-existing directories from the autojump database:",
+      "syntax": "j --purge"
+    },
+    {
+      "description": "Show the entries in the autojump database:",
+      "syntax": "j -s"
+    }
+  ]
+}

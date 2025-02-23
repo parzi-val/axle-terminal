@@ -1,0 +1,14 @@
+{
+  "command": "shift",
+  "description": "Move positional parameters. More information: https://manned.org/shift.1posix.",
+  "useCases": [
+    {
+      "description": "Remove the first positional parameter:",
+      "syntax": "shift"
+    },
+    {
+      "description": "Remove the first N positional parameters:",
+      "syntax": "shift {{N}}"
+    }
+  ]
+}

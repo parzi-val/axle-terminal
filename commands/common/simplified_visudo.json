@@ -1,0 +1,22 @@
+{
+  "command": "visudo",
+  "description": "Safely edit the sudoers file. More information: https://www.sudo.ws/docs/man/visudo.man.",
+  "useCases": [
+    {
+      "description": "Edit the sudoers file:",
+      "syntax": "sudo visudo"
+    },
+    {
+      "description": "Check the sudoers file for errors:",
+      "syntax": "sudo visudo -c"
+    },
+    {
+      "description": "Edit the sudoers file using a specific editor:",
+      "syntax": "sudo EDITOR={{editor}} visudo"
+    },
+    {
+      "description": "Display version information:",
+      "syntax": "visudo --version"
+    }
+  ]
+}

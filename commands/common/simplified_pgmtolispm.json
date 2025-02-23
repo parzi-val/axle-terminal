@@ -1,0 +1,10 @@
+{
+  "command": "pgmtolispm",
+  "description": "Convert a PGM image to Lisp Machine format. See also: lispmtopgm. More information: https://netpbm.sourceforge.net/doc/pgmtolispm.html.",
+  "useCases": [
+    {
+      "description": "Convert the specified PGM image to Lisp Machine format:",
+      "syntax": "pgmtolispm {{path/to/input.pgm}} &gt; {{path/to/output.lispm}}"
+    }
+  ]
+}

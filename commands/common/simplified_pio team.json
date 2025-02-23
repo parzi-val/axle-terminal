@@ -1,0 +1,38 @@
+{
+  "command": "pio team",
+  "description": "Manage PlatformIO teams. More information: https://docs.platformio.org/en/latest/core/userguide/team/.",
+  "useCases": [
+    {
+      "description": "Create a new team with the specified description:",
+      "syntax": "pio team create --description {{description}} {{organization_name}}:{{team_name}}"
+    },
+    {
+      "description": "Delete a team:",
+      "syntax": "pio team destroy {{organization_name}}:{{team_name}}"
+    },
+    {
+      "description": "Add a new user to a team:",
+      "syntax": "pio team add {{organization_name}}:{{team_name}} {{username}}"
+    },
+    {
+      "description": "Remove a user from a team:",
+      "syntax": "pio team remove {{organization_name}}:{{team_name}} {{username}}"
+    },
+    {
+      "description": "List all teams that the user is part of and their members:",
+      "syntax": "pio team list"
+    },
+    {
+      "description": "List all teams in an organization:",
+      "syntax": "pio team list {{organization_name}}"
+    },
+    {
+      "description": "Rename a team:",
+      "syntax": "pio team update --name {{new_team_name}} {{organization_name}}:{{team_name}}"
+    },
+    {
+      "description": "Change the description of a team:",
+      "syntax": "pio team update --description {{new_description}} {{organization_name}}:{{team_name}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "setsid",
+  "description": "Run a program in a new session if the calling process is not a process group leader. The created session is by default not controlled by the current terminal. More information: https://manned.org/setsid.",
+  "useCases": [
+    {
+      "description": "Run a program in a new session:",
+      "syntax": "setsid {{program}}"
+    },
+    {
+      "description": "Run a program in a new session discarding the resulting output and error:",
+      "syntax": "setsid {{program}} &gt; /dev/null 2&gt;&amp;1"
+    },
+    {
+      "description": "Run a program creating a new process:",
+      "syntax": "setsid --fork {{program}}"
+    },
+    {
+      "description": "Return the exit code of a program as the exit code of setsid when the program exits:",
+      "syntax": "setsid --wait {{program}}"
+    },
+    {
+      "description": "Run a program in a new session setting the current terminal as the controlling terminal:",
+      "syntax": "setsid --ctty {{program}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "snakefmt",
+  "description": "Format Snakemake files. More information: https://github.com/snakemake/snakefmt.",
+  "useCases": [
+    {
+      "description": "Format a specific Snakefile:",
+      "syntax": "snakefmt {{path/to/snakefile}}"
+    },
+    {
+      "description": "Format all Snakefiles recursively in a specific directory:",
+      "syntax": "snakefmt {{path/to/directory}}"
+    },
+    {
+      "description": "Format a file using a specific configuration file:",
+      "syntax": "snakefmt --config {{path/to/config.toml}} {{path/to/snakefile}}"
+    },
+    {
+      "description": "Format a file using a specific maximum line length:",
+      "syntax": "snakefmt --line-length {{100}} {{path/to/snakefile}}"
+    },
+    {
+      "description": "Display the changes that would be performed without performing them (dry-run):",
+      "syntax": "snakefmt --diff {{path/to/snakefile}}"
+    }
+  ]
+}

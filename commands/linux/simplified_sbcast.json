@@ -1,0 +1,14 @@
+{
+  "command": "sbcast",
+  "description": "Send a file to a job's allocated nodes. This command should only be used from within a Slurm batch job. More information: https://slurm.schedmd.com/sbcast.html.",
+  "useCases": [
+    {
+      "description": "Send a file to all nodes allocated to the current job:",
+      "syntax": "sbcast {{path/to/file}} {{path/to/destination}}"
+    },
+    {
+      "description": "Autodetect shared libraries the transmitted file depends upon and transmit them as well:",
+      "syntax": "sbcast --send-libs={{yes}} {{path/to/executable}} {{path/to/destination}}"
+    }
+  ]
+}

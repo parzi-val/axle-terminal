@@ -1,0 +1,10 @@
+{
+  "command": "pw-record",
+  "description": "This command is an alias of pw-cat --record.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr pw-cat"
+    }
+  ]
+}

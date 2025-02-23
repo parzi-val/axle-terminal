@@ -1,0 +1,26 @@
+{
+  "command": "prompt",
+  "description": "Change the default DOS style prompt in a command window. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/prompt.",
+  "useCases": [
+    {
+      "description": "Reset the prompt to the default setting:",
+      "syntax": "prompt"
+    },
+    {
+      "description": "Set a specific prompt:",
+      "syntax": "prompt {{prompt}}"
+    },
+    {
+      "description": "Change the prompt to show the current date first:",
+      "syntax": "prompt $D $P$G"
+    },
+    {
+      "description": "Change the prompt to show the current time first:",
+      "syntax": "prompt $T $P$G"
+    },
+    {
+      "description": "Change the prompt by adding a specific text first:",
+      "syntax": "prompt {{text}} $P$G"
+    }
+  ]
+}

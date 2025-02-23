@@ -1,0 +1,38 @@
+{
+  "command": "light-arionum-cli",
+  "description": "The PHP light wallet for the Arionum cryptocurrency. More information: https://github.com/arionum/lightWalletCLI.",
+  "useCases": [
+    {
+      "description": "Generate a new public/private key pair:",
+      "syntax": "light-arionum-cli"
+    },
+    {
+      "description": "Display the balance of the current address:",
+      "syntax": "light-arionum-cli balance"
+    },
+    {
+      "description": "Display the balance of the specified address:",
+      "syntax": "light-arionum-cli balance {{address}}"
+    },
+    {
+      "description": "Send a transaction with an optional message:",
+      "syntax": "light-arionum-cli send {{address}} {{value}} {{optional_message}}"
+    },
+    {
+      "description": "Export the current wallet information:",
+      "syntax": "light-arionum-cli export"
+    },
+    {
+      "description": "Display information about the current block:",
+      "syntax": "light-arionum-cli block"
+    },
+    {
+      "description": "Display information about the current address' transactions:",
+      "syntax": "light-arionum-cli transactions"
+    },
+    {
+      "description": "Display information about a specific transaction:",
+      "syntax": "light-arionum-cli transaction {{transaction_id}}"
+    }
+  ]
+}

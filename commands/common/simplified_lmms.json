@@ -1,0 +1,38 @@
+{
+  "command": "lmms",
+  "description": "Free, open source, cross-platform digital audio workstation. Render a .mmp or .mmpz project file, dump a .mmpz as XML, or start the GUI. See also: mixxx. More information: https://lmms.io.",
+  "useCases": [
+    {
+      "description": "Start the GUI:",
+      "syntax": "lmms"
+    },
+    {
+      "description": "Start the GUI and load external config:",
+      "syntax": "lmms --config {{path/to/config.xml}}"
+    },
+    {
+      "description": "Start the GUI and import MIDI or Hydrogen file:",
+      "syntax": "lmms --import {{path/to/midi/or/hydrogen/file}}"
+    },
+    {
+      "description": "Start the GUI with a specified window size:",
+      "syntax": "lmms --geometry {{x_size}}x{{y_size}}+{{x_offset}}+{{y_offset}}"
+    },
+    {
+      "description": "Dump a .mmpz file:",
+      "syntax": "lmms dump {{path/to/mmpz/file.mmpz}}"
+    },
+    {
+      "description": "Render a project file:",
+      "syntax": "lmms render {{path/to/mmpz_or_mmp/file}}"
+    },
+    {
+      "description": "Render the individual tracks of a project file:",
+      "syntax": "lmms rendertracks {{path/to/mmpz_or_mmp/file}} {{path/to/dump/directory}}"
+    },
+    {
+      "description": "Render with custom samplerate, format, and as a loop:",
+      "syntax": "lmms render --samplerate {{88200}} --format {{ogg}} --loop --output {{path/to/output/file.ogg}}"
+    }
+  ]
+}

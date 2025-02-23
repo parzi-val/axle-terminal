@@ -1,0 +1,30 @@
+{
+  "command": "fzf",
+  "description": "Command-line fuzzy finder. Similar to sk. More information: https://github.com/junegunn/fzf.",
+  "useCases": [
+    {
+      "description": "Start fzf on all files in the specified directory:",
+      "syntax": "find {{path/to/directory}} -type f | fzf"
+    },
+    {
+      "description": "Start fzf for running processes:",
+      "syntax": "ps aux | fzf"
+    },
+    {
+      "description": "Select multiple files with Shift + Tab and write to a file:",
+      "syntax": "find {{path/to/directory}} -type f | fzf --multi &gt; {{path/to/file}}"
+    },
+    {
+      "description": "Start fzf with a specified query:",
+      "syntax": "fzf --query &quot;{{query}}&quot;"
+    },
+    {
+      "description": "Start fzf on entries that start with core and end with either go, rb, or py:",
+      "syntax": "fzf --query &quot;^core go$ | rb$ | py$&quot;"
+    },
+    {
+      "description": "Start fzf on entries that not match pyc and match exactly travis:",
+      "syntax": "fzf --query &quot;!pyc 'travis&quot;"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "pluma",
+  "description": "Edit files in MATE desktop environment. More information: https://manned.org/pluma.",
+  "useCases": [
+    {
+      "description": "Start the editor:",
+      "syntax": "pluma"
+    },
+    {
+      "description": "Open specific documents:",
+      "syntax": "pluma {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open documents using a specific encoding:",
+      "syntax": "pluma --encoding {{WINDOWS-1252}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Print all supported encodings:",
+      "syntax": "pluma --list-encodings"
+    },
+    {
+      "description": "Open document and go to a specific line:",
+      "syntax": "pluma +{{10}} {{path/to/file}}"
+    }
+  ]
+}

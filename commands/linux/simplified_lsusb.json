@@ -1,0 +1,26 @@
+{
+  "command": "lsusb",
+  "description": "Display information about USB buses and devices connected to them. More information: https://manned.org/lsusb.",
+  "useCases": [
+    {
+      "description": "List all the USB devices available:",
+      "syntax": "lsusb"
+    },
+    {
+      "description": "List the USB hierarchy as a tree:",
+      "syntax": "lsusb -t"
+    },
+    {
+      "description": "List verbose information about USB devices:",
+      "syntax": "lsusb --verbose"
+    },
+    {
+      "description": "List detailed information about a USB device:",
+      "syntax": "lsusb --verbose -s {{bus}}:{{device number}}"
+    },
+    {
+      "description": "List devices with a specified vendor and product ID only:",
+      "syntax": "lsusb -d {{vendor}}:{{product}}"
+    }
+  ]
+}

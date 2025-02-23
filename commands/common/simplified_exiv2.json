@@ -1,0 +1,30 @@
+{
+  "command": "exiv2",
+  "description": "Image metadata manipulation tool. More information: https://www.exiv2.org/manpage.html.",
+  "useCases": [
+    {
+      "description": "Print a summary of the image Exif metadata:",
+      "syntax": "exiv2 {{path/to/file}}"
+    },
+    {
+      "description": "Print all metadata (Exif, IPTC, XMP) with interpreted values:",
+      "syntax": "exiv2 -P kt {{path/to/file}}"
+    },
+    {
+      "description": "Print all metadata with raw values:",
+      "syntax": "exiv2 -P kv {{path/to/file}}"
+    },
+    {
+      "description": "Delete all metadata from an image:",
+      "syntax": "exiv2 -d a {{path/to/file}}"
+    },
+    {
+      "description": "Delete all metadata, preserving the file timestamp:",
+      "syntax": "exiv2 -d a -k {{path/to/file}}"
+    },
+    {
+      "description": "Rename the file, prepending the date and time from metadata (not from the file timestamp):",
+      "syntax": "exiv2 -r {{'%Y%m%d_%H%M%S_:basename:'}} {{path/to/file}}"
+    }
+  ]
+}

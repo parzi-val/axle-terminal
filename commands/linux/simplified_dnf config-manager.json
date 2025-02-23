@@ -1,0 +1,30 @@
+{
+  "command": "dnf config-manager",
+  "description": "Manage DNF configuration options and repositories on Fedora-based systems. More information: https://manned.org/dnf-config-manager.",
+  "useCases": [
+    {
+      "description": "Add (and enable) a repository from a URL:",
+      "syntax": "dnf config-manager --add-repo={{repository_url}}"
+    },
+    {
+      "description": "Print current configuration values:",
+      "syntax": "dnf config-manager --dump"
+    },
+    {
+      "description": "Enable a specific repository:",
+      "syntax": "dnf config-manager --set-enabled {{repository_id}}"
+    },
+    {
+      "description": "Disable specified repositories:",
+      "syntax": "dnf config-manager --set-disabled {{repository_id1 repository_id2 ...}}"
+    },
+    {
+      "description": "Set a configuration option for a repository:",
+      "syntax": "dnf config-manager --setopt={{option}}={{value}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "dnf config-manager --help-cmd"
+    }
+  ]
+}

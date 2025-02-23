@@ -1,0 +1,22 @@
+{
+  "command": "flutter pub",
+  "description": "Flutter's package manager. Note: Packages are available on https://pub.dev. See also: flutter. More information: https://docs.flutter.dev/packages-and-plugins/using-packages.",
+  "useCases": [
+    {
+      "description": "Download/Update all packages specified in pubspec.yaml:",
+      "syntax": "flutter pub get"
+    },
+    {
+      "description": "Add a package dependency to an app:",
+      "syntax": "flutter pub add {{package1 package2 ...}}"
+    },
+    {
+      "description": "Remove a package dependency from an app:",
+      "syntax": "flutter pub remove {{package1 package2 ...}}"
+    },
+    {
+      "description": "Upgrade to the highest version of a package that is allowed by pubspec.yaml:",
+      "syntax": "flutter pub upgrade {{package}}"
+    }
+  ]
+}

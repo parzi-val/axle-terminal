@@ -1,0 +1,26 @@
+{
+  "command": "ifconfig",
+  "description": "Network Interface Configurator. More information: https://net-tools.sourceforge.io/man/ifconfig.8.html.",
+  "useCases": [
+    {
+      "description": "View network settings of an interface:",
+      "syntax": "ifconfig {{interface_name}}"
+    },
+    {
+      "description": "Display details of all interfaces, including disabled interfaces:",
+      "syntax": "ifconfig -a"
+    },
+    {
+      "description": "Disable an interface:",
+      "syntax": "ifconfig {{interface_name}} down"
+    },
+    {
+      "description": "Enable an interface:",
+      "syntax": "ifconfig {{interface_name}} up"
+    },
+    {
+      "description": "Assign an IP address to an interface:",
+      "syntax": "ifconfig {{interface_name}} {{ip_address}}"
+    }
+  ]
+}

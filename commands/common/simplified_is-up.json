@@ -1,0 +1,10 @@
+{
+  "command": "is-up",
+  "description": "Check whether a website is up or down. More information: https://github.com/sindresorhus/is-up-cli.",
+  "useCases": [
+    {
+      "description": "Check the status of the specified website:",
+      "syntax": "is-up {{example.com}}"
+    }
+  ]
+}

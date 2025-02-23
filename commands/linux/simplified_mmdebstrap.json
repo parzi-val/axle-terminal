@@ -1,0 +1,18 @@
+{
+  "command": "mmdebstrap",
+  "description": "Create a Debian chroot. Alternative to debootstrap. More information: https://gitlab.mister-muffin.de/josch/mmdebstrap/.",
+  "useCases": [
+    {
+      "description": "Create a Debian Stable directory chroot:",
+      "syntax": "sudo mmdebstrap stable {{path/to/debian-root/}}"
+    },
+    {
+      "description": "Create a Debian Bookworm tarball chroot using a mirror:",
+      "syntax": "mmdebstrap bookworm {{path/to/debian-bookworm.tar}} {{http://mirror.example.org/debian}}"
+    },
+    {
+      "description": "Create a Debian Sid tarball chroot with additional packages:",
+      "syntax": "mmdebstrap sid {{path/to/debian-sid.tar}} --include={{pkg1,pkg2}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "bcachefs device",
+  "description": "Manage devices within a running bcachefs filesystem. More information: https://bcachefs-docs.readthedocs.io/en/latest/mgmt-devicemanagement.html.",
+  "useCases": [
+    {
+      "description": "Format and add a new device to an existing filesystem.:",
+      "syntax": "sudo bcachefs device add --label={{group}}.{{name}} {{path/to/mountpoint}} {{path/to/device}}"
+    },
+    {
+      "description": "Migrate data off a device to prepare for removal:",
+      "syntax": "bcachefs device evacuate {{path/to/device}}"
+    },
+    {
+      "description": "Permanently remove a device from a filesystem:",
+      "syntax": "bcachefs device remove {{path/to/device}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "adb reboot",
+  "description": "Reboot a connected Android device or emulator. More information: https://manned.org/adb.",
+  "useCases": [
+    {
+      "description": "Reboot the device normally:",
+      "syntax": "adb reboot"
+    },
+    {
+      "description": "Reboot the device into bootloader mode:",
+      "syntax": "adb reboot bootloader"
+    },
+    {
+      "description": "Reboot the device into recovery mode:",
+      "syntax": "adb reboot recovery"
+    },
+    {
+      "description": "Reboot the device into fastboot mode:",
+      "syntax": "adb reboot fastboot"
+    }
+  ]
+}

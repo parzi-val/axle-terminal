@@ -1,0 +1,26 @@
+{
+  "command": "tasklist",
+  "description": "Display a list of currently running processes on a local or remote machine. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/tasklist.",
+  "useCases": [
+    {
+      "description": "Display currently running processes:",
+      "syntax": "tasklist"
+    },
+    {
+      "description": "Display running processes in a specified output format:",
+      "syntax": "tasklist /fo {{table|list|csv}}"
+    },
+    {
+      "description": "Display running processes using the specified .exe or .dll file name:",
+      "syntax": "tasklist /m {{module_pattern}}"
+    },
+    {
+      "description": "Display processes running on a remote machine:",
+      "syntax": "tasklist /s {{remote_name}} /u {{username}} /p {{password}}"
+    },
+    {
+      "description": "Display services using each process:",
+      "syntax": "tasklist /svc"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "venv",
+  "description": "Create lightweight virtual environments in python. More information: https://docs.python.org/3/library/venv.html.",
+  "useCases": [
+    {
+      "description": "Create a Python virtual environment:",
+      "syntax": "python -m venv {{path/to/virtual_environment}}"
+    },
+    {
+      "description": "Activate the virtual environment (Linux and macOS):",
+      "syntax": "source {{path/to/virtual_environment}}/bin/activate"
+    },
+    {
+      "description": "Activate the virtual environment (Windows):",
+      "syntax": "{{path\\to\\virtual_environment}}\\Scripts\\activate.bat"
+    },
+    {
+      "description": "Deactivate the virtual environment:",
+      "syntax": "deactivate"
+    }
+  ]
+}

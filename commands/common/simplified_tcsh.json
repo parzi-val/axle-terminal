@@ -1,0 +1,30 @@
+{
+  "command": "tcsh",
+  "description": "C shell with file name completion and command-line editing. See also: csh. More information: https://manned.org/tcsh.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "tcsh"
+    },
+    {
+      "description": "Start an interactive shell session without loading startup configs:",
+      "syntax": "tcsh -f"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "tcsh -c &quot;{{echo 'tcsh is executed'}}&quot;"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "tcsh {{path/to/script.tcsh}}"
+    },
+    {
+      "description": "Check a specific script for syntax errors:",
+      "syntax": "tcsh -n {{path/to/script.tcsh}}"
+    },
+    {
+      "description": "Execute specific commands from stdin:",
+      "syntax": "{{echo &quot;echo 'tcsh is executed'&quot;}} | tcsh"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "llvd",
+  "description": "Linkedin Learning Video Downloader. More information: https://github.com/knowbee/llvd.",
+  "useCases": [
+    {
+      "description": "Download a [c]ourse using cookie-based authentication:",
+      "syntax": "llvd -c {{course-slug}} --cookies"
+    },
+    {
+      "description": "Download a course at a specific [r]esolution:",
+      "syntax": "llvd -c {{course-slug}} -r 720"
+    },
+    {
+      "description": "Download a course with [ca]ptions (subtitles):",
+      "syntax": "llvd -c {{course-slug}} --caption"
+    },
+    {
+      "description": "Download a course [p]ath with [t]hrottling between 10 to 30 seconds:",
+      "syntax": "llvd -p {{path-slug}} -t {{10,30}} --cookies"
+    }
+  ]
+}

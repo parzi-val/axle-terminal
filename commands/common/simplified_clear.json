@@ -1,0 +1,22 @@
+{
+  "command": "clear",
+  "description": "Clears the screen of the terminal. More information: https://manned.org/clear.",
+  "useCases": [
+    {
+      "description": "Clear the screen:",
+      "syntax": "clear"
+    },
+    {
+      "description": "Clear the screen but keep the terminal's scrollback buffer (equivalent to pressing Ctrl + L in Bash):",
+      "syntax": "clear -x"
+    },
+    {
+      "description": "Indicate the type of terminal to clean (defaults to the value of the environment variable TERM):",
+      "syntax": "clear -T {{type_of_terminal}}"
+    },
+    {
+      "description": "Display the version of ncurses used by clear:",
+      "syntax": "clear -V"
+    }
+  ]
+}

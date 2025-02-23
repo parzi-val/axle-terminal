@@ -1,0 +1,22 @@
+{
+  "command": "feroxbuster",
+  "description": "Simple, fast, recursive content discovery tool written in Rust. Used to brute-force hidden paths on web servers and more. More information: https://epi052.github.io/feroxbuster-docs/docs/.",
+  "useCases": [
+    {
+      "description": "Discover specific directories and files that match in the wordlist with extensions and 100 threads and a random user-agent:",
+      "syntax": "feroxbuster --url &quot;{{https://example.com}}&quot; --wordlist {{path/to/file}} --threads {{100}} --extensions &quot;{{php,txt}}&quot; --random-agent"
+    },
+    {
+      "description": "Enumerate directories without recursion through a specific proxy:",
+      "syntax": "feroxbuster --url &quot;{{https://example.com}}&quot; --wordlist {{path/to/file}} --no-recursion --proxy &quot;{{http://127.0.0.1:8080}}&quot;"
+    },
+    {
+      "description": "Find links in webpages:",
+      "syntax": "feroxbuster --url &quot;{{https://example.com}}&quot; --extract-links"
+    },
+    {
+      "description": "Filter by a specific status code and a number of chars:",
+      "syntax": "feroxbuster --url &quot;{{https://example.com}}&quot; --filter-status {{301}} --filter-size {{4092}}"
+    }
+  ]
+}

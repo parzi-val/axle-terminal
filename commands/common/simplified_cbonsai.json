@@ -1,0 +1,26 @@
+{
+  "command": "cbonsai",
+  "description": "A beautifully random bonsai tree generator. More information: https://gitlab.com/jallbrit/cbonsai.",
+  "useCases": [
+    {
+      "description": "Generate a bonsai in live mode:",
+      "syntax": "cbonsai -l"
+    },
+    {
+      "description": "Generate a bonsai in infinite mode:",
+      "syntax": "cbonsai -i"
+    },
+    {
+      "description": "Append a message to the bonsai:",
+      "syntax": "cbonsai -m &quot;{{message}}&quot;"
+    },
+    {
+      "description": "Display extra information about the bonsai:",
+      "syntax": "cbonsai -v"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cbonsai -h"
+    }
+  ]
+}

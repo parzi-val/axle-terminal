@@ -1,0 +1,26 @@
+{
+  "command": "flarectl",
+  "description": "Official CLI for Cloudflare. More information: https://github.com/cloudflare/cloudflare-go/blob/master/cmd/flarectl/README.md.",
+  "useCases": [
+    {
+      "description": "Block a specific IP:",
+      "syntax": "flarectl firewall rules create --zone=&quot;{{example.com}}&quot; --value=&quot;{{8.8.8.8}}&quot; --mode=&quot;{{block}}&quot; --notes=&quot;{{Block bad actor}}&quot;"
+    },
+    {
+      "description": "Add a DNS record:",
+      "syntax": "flarectl dns create --zone=&quot;{{example.com}}&quot; --name=&quot;{{app}}&quot; --type=&quot;{{CNAME}}&quot; --content=&quot;{{myapp.herokuapp.com}}&quot; --proxy"
+    },
+    {
+      "description": "List all Cloudflare IPv4/IPv6 ranges:",
+      "syntax": "flarectl ips --ip-type {{ipv4|ipv6|all}}"
+    },
+    {
+      "description": "Create many new Cloudflare zones automatically with names from domains.txt:",
+      "syntax": "for domain in $(cat {{domains.txt}}); do flarectl zone info --zone=$domain; done"
+    },
+    {
+      "description": "List all firewall rules:",
+      "syntax": "flarectl firewall rules list"
+    }
+  ]
+}

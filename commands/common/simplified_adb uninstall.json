@@ -1,0 +1,14 @@
+{
+  "command": "adb uninstall",
+  "description": "Uninstall a package. More information: https://manned.org/adb.",
+  "useCases": [
+    {
+      "description": "Uninstall a package:",
+      "syntax": "adb uninstall {{com.example.app}}"
+    },
+    {
+      "description": "Uninstall a package, but keep user data:",
+      "syntax": "adb uninstall -k {{com.example.app}}"
+    }
+  ]
+}

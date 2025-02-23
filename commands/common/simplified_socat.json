@@ -1,0 +1,30 @@
+{
+  "command": "socat",
+  "description": "Multipurpose relay (SOcket CAT). More information: http://www.dest-unreach.org/socat/.",
+  "useCases": [
+    {
+      "description": "Listen to a port, wait for an incoming connection and transfer data to STDIO:",
+      "syntax": "sudo socat - TCP-LISTEN:8080,fork"
+    },
+    {
+      "description": "Listen on a port using SSL and print to STDOUT:",
+      "syntax": "sudo socat OPENSSL-LISTEN:4433,reuseaddr,cert=./cert.pem,cafile=./ca.cert.pem,key=./key.pem,verify=0 STDOUT"
+    },
+    {
+      "description": "Create a connection to a host and port, transfer data in STDIO to connected host:",
+      "syntax": "sudo socat - TCP4:www.example.com:80"
+    },
+    {
+      "description": "Forward incoming data of a local port to another host and port:",
+      "syntax": "sudo socat TCP-LISTEN:80,fork TCP4:www.example.com:80"
+    },
+    {
+      "description": "Send data with multicast routing scheme:",
+      "syntax": "{{echo &quot;Hello Multicast&quot;}} | socat - UDP4-DATAGRAM:{{224.0.0.1}}:{{5000}}"
+    },
+    {
+      "description": "Receive data from a multicast:",
+      "syntax": "socat - UDP4-RECVFROM:{{5000}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "terragrunt",
+  "description": "Keep your Terraform CLI arguments DRY. More information: https://terragrunt.gruntwork.io.",
+  "useCases": [
+    {
+      "description": "Generate and show an execution plan:",
+      "syntax": "terragrunt plan"
+    },
+    {
+      "description": "Build or change infrastructure:",
+      "syntax": "terragrunt apply"
+    },
+    {
+      "description": "Show current deployment (from state):",
+      "syntax": "terragrunt show"
+    },
+    {
+      "description": "Show module output values:",
+      "syntax": "terragrunt output"
+    },
+    {
+      "description": "Destroy Terraform-managed infrastructure:",
+      "syntax": "terragrunt destroy"
+    },
+    {
+      "description": "Build or change infrastructure from a tree of Terragrunt modules (stack):",
+      "syntax": "terragrunt run-all apply"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "certutil",
+  "description": "A tool to manage and configure certificate information. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/certutil.",
+  "useCases": [
+    {
+      "description": "Dump the configuration information or files:",
+      "syntax": "certutil {{filename}}"
+    },
+    {
+      "description": "Encode a file in hexadecimal:",
+      "syntax": "certutil -encodehex {{path\\to\\input_file}} {{path\\to\\output_file}}"
+    },
+    {
+      "description": "Encode a file to Base64:",
+      "syntax": "certutil -encode {{path\\to\\input_file}} {{path\\to\\output_file}}"
+    },
+    {
+      "description": "Decode a Base64-encoded file:",
+      "syntax": "certutil -decode {{path\\to\\input_file}} {{path\\to\\output_file}}"
+    },
+    {
+      "description": "Generate and display a cryptographic hash over a file:",
+      "syntax": "certutil -hashfile {{path\\to\\input_file}} {{md2|md4|md5|sha1|sha256|sha384|sha512}}"
+    }
+  ]
+}

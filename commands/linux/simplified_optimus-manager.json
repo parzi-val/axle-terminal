@@ -1,0 +1,14 @@
+{
+  "command": "optimus-manager",
+  "description": "GPU switching utility for Nvidia Optimus laptops. More information: https://github.com/Askannz/optimus-manager.",
+  "useCases": [
+    {
+      "description": "Switch between different GPU modes:",
+      "syntax": "optimus-manager --switch {{nvidia|integrated|hybrid}}"
+    },
+    {
+      "description": "Clean up:",
+      "syntax": "optimus-manager --cleanup"
+    }
+  ]
+}

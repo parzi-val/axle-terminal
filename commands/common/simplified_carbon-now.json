@@ -1,0 +1,38 @@
+{
+  "command": "carbon-now",
+  "description": "Create beautiful images of code. More information: https://github.com/mixn/carbon-now-cli.",
+  "useCases": [
+    {
+      "description": "Create an image from a file using default settings:",
+      "syntax": "carbon-now {{path/to/file}}"
+    },
+    {
+      "description": "Create an image from a text in clipboard using default settings:",
+      "syntax": "carbon-now --from-clipboard"
+    },
+    {
+      "description": "Create an image from stdin using default settings and copy to the clipboard:",
+      "syntax": "{{input}} | carbon-now --to-clipboard"
+    },
+    {
+      "description": "Create images [i]nteractively for custom settings and optionally save a preset:",
+      "syntax": "carbon-now -i {{path/to/file}}"
+    },
+    {
+      "description": "Create images from a previously saved [p]reset:",
+      "syntax": "carbon-now -p {{preset}} {{path/to/file}}"
+    },
+    {
+      "description": "[s]tart at a specified line of text:",
+      "syntax": "carbon-now -s {{line}} {{path/to/file}}"
+    },
+    {
+      "description": "[e]nd at a specific line of text:",
+      "syntax": "carbon-now -e {{line}} {{path/to/file}}"
+    },
+    {
+      "description": "Open image in a browser instead of saving:",
+      "syntax": "carbon-now --open {{path/to/file}}"
+    }
+  ]
+}

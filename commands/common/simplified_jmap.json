@@ -1,0 +1,26 @@
+{
+  "command": "jmap",
+  "description": "Java memory map tool. More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/jmap.html.",
+  "useCases": [
+    {
+      "description": "Print shared object mappings for a Java process (output like pmap):",
+      "syntax": "jmap {{java_pid}}"
+    },
+    {
+      "description": "Print heap summary information:",
+      "syntax": "jmap -heap {{filename.jar}} {{java_pid}}"
+    },
+    {
+      "description": "Print histogram of heap usage by type:",
+      "syntax": "jmap -histo {{java_pid}}"
+    },
+    {
+      "description": "Dump contents of the heap into a binary file for analysis with jhat:",
+      "syntax": "jmap -dump:format=b,file={{path/to/file}} {{java_pid}}"
+    },
+    {
+      "description": "Dump live objects of the heap into a binary file for analysis with jhat:",
+      "syntax": "jmap -dump:live,format=b,file={{path/to/file}} {{java_pid}}"
+    }
+  ]
+}

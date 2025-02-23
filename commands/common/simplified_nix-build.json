@@ -1,0 +1,14 @@
+{
+  "command": "nix-build",
+  "description": "Build a Nix expression. See also: nix3 build. More information: https://nixos.org/manual/nix/stable/command-ref/nix-build.html.",
+  "useCases": [
+    {
+      "description": "Build a Nix expression:",
+      "syntax": "nix-build '&lt;nixpkgs&gt;' --attr {{firefox}}"
+    },
+    {
+      "description": "Build a sandboxed Nix expression (on non-NixOS):",
+      "syntax": "nix-build '&lt;nixpkgs&gt;' --attr {{firefox}} --option sandbox true"
+    }
+  ]
+}

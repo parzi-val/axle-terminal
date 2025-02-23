@@ -1,0 +1,30 @@
+{
+  "command": "rdesktop",
+  "description": "Remote Desktop Protocol client. It can be used to connect the remote computer using the RDP protocol. More information: https://manned.org/rdesktop.",
+  "useCases": [
+    {
+      "description": "Connect to a remote computer (default port is 3389):",
+      "syntax": "rdesktop -u {{username}} -p {{password}} {{host:port}}"
+    },
+    {
+      "description": "Simple Examples:",
+      "syntax": "rdesktop -u Administrator -p passwd123 192.168.1.111:3389"
+    },
+    {
+      "description": "Connect to a remote computer with full screen (press Ctrl + Alt + Enter to exist):",
+      "syntax": "rdesktop -u {{username}} -p {{password}} -f {{host:port}}"
+    },
+    {
+      "description": "Use the customed resolution (use the letter 'x' between the number):",
+      "syntax": "rdesktop -u {{username}} -p {{password}} -g 1366x768 {{host:port}}"
+    },
+    {
+      "description": "Connect to a remote computer using domain user:",
+      "syntax": "rdesktop -u {{username}} -p {{password}} -d {{domainname}} {{host:port}}"
+    },
+    {
+      "description": "Use the 16-bit color (speed up):",
+      "syntax": "rdesktop -u {{username}} -p {{password}} -a 16 {{host:port}}"
+    }
+  ]
+}

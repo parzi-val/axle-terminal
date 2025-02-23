@@ -1,0 +1,14 @@
+{
+  "command": "Get-WUSettings",
+  "description": "Get the current Windows Update Agent configuration. Part of external PSWindowsUpdate module. This command can only be run under PowerShell. More information: https://github.com/mgajda83/PSWindowsUpdate.",
+  "useCases": [
+    {
+      "description": "Get the current Windows Update Agent configuration:",
+      "syntax": "Get-WUSettings"
+    },
+    {
+      "description": "Send the current configuration data via email (SMTP):",
+      "syntax": "Get-WUSettings -SendReport -PSWUSettings @{SmtpServer=&quot;{{smtp_server}}&quot;; Port={{smtp_port}} From=&quot;{{sender_email}}&quot; To=&quot;{{receiver_email}}&quot;}"
+    }
+  ]
+}

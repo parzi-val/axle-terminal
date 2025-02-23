@@ -1,0 +1,10 @@
+{
+  "command": "zbarimg",
+  "description": "Scan and decode bar codes from image file(s). More information: https://zbar.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Process an image file:",
+      "syntax": "zbarimg {{image_file}}"
+    }
+  ]
+}

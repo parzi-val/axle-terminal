@@ -1,0 +1,38 @@
+{
+  "command": "exa",
+  "description": "A modern replacement for ls (List directory contents). More information: https://github.com/ogham/exa.",
+  "useCases": [
+    {
+      "description": "List files one per line:",
+      "syntax": "exa --oneline"
+    },
+    {
+      "description": "List all files, including hidden files:",
+      "syntax": "exa --all"
+    },
+    {
+      "description": "Long format list (permissions, ownership, size and modification date) of all files:",
+      "syntax": "exa --long --all"
+    },
+    {
+      "description": "List files with the largest at the top:",
+      "syntax": "exa --reverse --sort={{size}}"
+    },
+    {
+      "description": "Display a tree of files, three levels deep:",
+      "syntax": "exa --long --tree --level={{3}}"
+    },
+    {
+      "description": "List files sorted by modification date (oldest first):",
+      "syntax": "exa --long --sort={{modified}}"
+    },
+    {
+      "description": "List files with their headers, icons, and Git statuses:",
+      "syntax": "exa --long --header --icons --git"
+    },
+    {
+      "description": "Don't list files mentioned in .gitignore:",
+      "syntax": "exa --git-ignore"
+    }
+  ]
+}

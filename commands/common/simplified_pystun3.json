@@ -1,0 +1,18 @@
+{
+  "command": "pystun3",
+  "description": "Classic STUN client written in Python. More information: https://github.com/talkiq/pystun3.",
+  "useCases": [
+    {
+      "description": "Make a STUN request:",
+      "syntax": "pystun3"
+    },
+    {
+      "description": "Make a STUN request and specify the stun server:",
+      "syntax": "pystun3 --stun-host {{stun.1und1.de}}"
+    },
+    {
+      "description": "Make a STUN request and specify the source port:",
+      "syntax": "pystun3 --source-port {{7932}}"
+    }
+  ]
+}

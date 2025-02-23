@@ -1,0 +1,26 @@
+{
+  "command": "e2image",
+  "description": "Save critical ext2/ext3/ext4 filesystem metadata to a file. More information: https://manned.org/e2image.",
+  "useCases": [
+    {
+      "description": "Write metadata located on device to a specific file:",
+      "syntax": "e2image {{/dev/sdXN}} {{path/to/image_file}}"
+    },
+    {
+      "description": "Print metadata located on device to stdout:",
+      "syntax": "e2image {{/dev/sdXN}} -"
+    },
+    {
+      "description": "Restore the filesystem metadata back to the device:",
+      "syntax": "e2image -I {{/dev/sdXN}} {{path/to/image_file}}"
+    },
+    {
+      "description": "Create a large raw sparse file with metadata at proper offsets:",
+      "syntax": "e2image -r {{/dev/sdXN}} {{path/to/image_file}}"
+    },
+    {
+      "description": "Create a QCOW2 image file instead of a normal or raw image file:",
+      "syntax": "e2image -Q {{/dev/sdXN}} {{path/to/image_file}}"
+    }
+  ]
+}

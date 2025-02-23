@@ -1,0 +1,14 @@
+{
+  "command": "aws s3 rb",
+  "description": "Delete an empty S3 bucket. More information: https://docs.aws.amazon.com/cli/latest/reference/s3/rb.html.",
+  "useCases": [
+    {
+      "description": "Delete an empty S3 bucket:",
+      "syntax": "aws s3 rb s3://{{bucket_name}}"
+    },
+    {
+      "description": "Force delete an S3 bucket and its non-versioned objects (will crash if versioned objects are present):",
+      "syntax": "aws s3 rb s3://{{bucket_name}} --force"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "git fetch",
+  "description": "Download objects and refs from a remote repository. More information: https://git-scm.com/docs/git-fetch.",
+  "useCases": [
+    {
+      "description": "Fetch the latest changes from the default remote upstream repository (if set):",
+      "syntax": "git fetch"
+    },
+    {
+      "description": "Fetch new branches from a specific remote upstream repository:",
+      "syntax": "git fetch {{remote_name}}"
+    },
+    {
+      "description": "Fetch the latest changes from all remote upstream repositories:",
+      "syntax": "git fetch --all"
+    },
+    {
+      "description": "Also fetch tags from the remote upstream repository:",
+      "syntax": "git fetch --tags"
+    },
+    {
+      "description": "Delete local references to remote branches that have been deleted upstream:",
+      "syntax": "git fetch --prune"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "pypy",
+  "description": "Fast and compliant alternative implementation of the Python language. More information: https://doc.pypy.org.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "pypy"
+    },
+    {
+      "description": "Execute script in a given Python file:",
+      "syntax": "pypy {{path/to/file.py}}"
+    },
+    {
+      "description": "Execute script as part of an interactive shell:",
+      "syntax": "pypy -i {{path/to/file.py}}"
+    },
+    {
+      "description": "Execute a Python expression:",
+      "syntax": "pypy -c &quot;{{expression}}&quot;"
+    },
+    {
+      "description": "Run library module as a script (terminates option list):",
+      "syntax": "pypy -m {{module}} {{arguments}}"
+    },
+    {
+      "description": "Install a package using pip:",
+      "syntax": "pypy -m pip install {{package}}"
+    },
+    {
+      "description": "Interactively debug a Python script:",
+      "syntax": "pypy -m pdb {{path/to/file.py}}"
+    }
+  ]
+}

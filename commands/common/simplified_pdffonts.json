@@ -1,0 +1,26 @@
+{
+  "command": "pdffonts",
+  "description": "Portable Document Format (PDF) file fonts information viewer. More information: https://www.xpdfreader.com/pdffonts-man.html.",
+  "useCases": [
+    {
+      "description": "Print PDF file fonts information:",
+      "syntax": "pdffonts {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Specify user password for PDF file to bypass security restrictions:",
+      "syntax": "pdffonts -upw {{password}} {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Specify owner password for PDF file to bypass security restrictions:",
+      "syntax": "pdffonts -opw {{password}} {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Print additional information on location of the font that will be used when the PDF file is rasterized:",
+      "syntax": "pdffonts -loc {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Print additional information on location of the font that will be used when the PDF file is converted to PostScript:",
+      "syntax": "pdffonts -locPS {{path/to/file.pdf}}"
+    }
+  ]
+}

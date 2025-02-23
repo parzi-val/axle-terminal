@@ -1,0 +1,26 @@
+{
+  "command": "gatsby",
+  "description": "Static site generator for React. More information: https://gatsbyjs.com.",
+  "useCases": [
+    {
+      "description": "Create a new site:",
+      "syntax": "gatsby new {{site_name}}"
+    },
+    {
+      "description": "Create a new site with a Gatsby 'starter':",
+      "syntax": "gatsby new {{site_name}} {{url_of_starter_github_repo}}"
+    },
+    {
+      "description": "Start a live-reloading local development server:",
+      "syntax": "gatsby develop"
+    },
+    {
+      "description": "Perform a production build and generate static HTML:",
+      "syntax": "gatsby build"
+    },
+    {
+      "description": "Start a local server which serves the production build:",
+      "syntax": "gatsby serve"
+    }
+  ]
+}

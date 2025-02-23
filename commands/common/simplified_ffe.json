@@ -1,0 +1,30 @@
+{
+  "command": "ffe",
+  "description": "Extract fields from a flat database file and write to another format. A configuration file is required to interpret the input and format the output. More information: https://ff-extractor.sourceforge.net/ffe.html.",
+  "useCases": [
+    {
+      "description": "Display all input data using the specified data configuration:",
+      "syntax": "ffe --configuration={{path/to/config.ffe}} {{path/to/input}}"
+    },
+    {
+      "description": "Convert an input file to an output file in a new format:",
+      "syntax": "ffe --output={{path/to/output}} -c {{path/to/config.ffe}} {{path/to/input}}"
+    },
+    {
+      "description": "Select input structure and print format from definitions in ~/.fferc configuration file:",
+      "syntax": "ffe --structure={{structure}} --print={{format}} {{path/to/input}}"
+    },
+    {
+      "description": "Write only the selected fields:",
+      "syntax": "ffe --field-list=&quot;{{FirstName,LastName,Age}}&quot; -c {{path/to/config.ffe}} {{path/to/input}}"
+    },
+    {
+      "description": "Write only the records that match an expression:",
+      "syntax": "ffe -e &quot;{{LastName=Smith}}&quot; -c {{path/to/config.ffe}} {{path/to/input}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ffe --help"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "npm why",
+  "description": "Identifies why an npm package is installed. More information: https://github.com/amio/npm-why.",
+  "useCases": [
+    {
+      "description": "Show why an npm package is installed:",
+      "syntax": "npm-why {{package}}"
+    }
+  ]
+}

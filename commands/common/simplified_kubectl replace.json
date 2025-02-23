@@ -1,0 +1,18 @@
+{
+  "command": "kubectl replace",
+  "description": "Replace a resource by file or stdin. More information: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#replace.",
+  "useCases": [
+    {
+      "description": "Replace the resource using the resource definition file:",
+      "syntax": "kubectl replace -f {{path/to/file.yml}}"
+    },
+    {
+      "description": "Replace the resource using the input passed into stdin:",
+      "syntax": "kubectl replace -f -"
+    },
+    {
+      "description": "Force replace, delete and then re-create the resource:",
+      "syntax": "kubectl replace --force -f {{path/to/file.yml}}"
+    }
+  ]
+}

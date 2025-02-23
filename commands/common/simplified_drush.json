@@ -1,0 +1,22 @@
+{
+  "command": "drush",
+  "description": "A command-line shell and scripting interface for Drupal. More information: https://www.drush.org.",
+  "useCases": [
+    {
+      "description": "Enable module \"foo\":",
+      "syntax": "drush en {{foo}}"
+    },
+    {
+      "description": "Uninstall module \"foo\":",
+      "syntax": "drush pmu {{foo}}"
+    },
+    {
+      "description": "Clear all caches:",
+      "syntax": "drush cr"
+    },
+    {
+      "description": "Clear CSS and JavaScript caches:",
+      "syntax": "drush cc css-js"
+    }
+  ]
+}

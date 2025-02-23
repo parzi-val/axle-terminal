@@ -1,0 +1,38 @@
+{
+  "command": "loadkeys",
+  "description": "Load the kernel keymap for the console. More information: https://manned.org/loadkeys.",
+  "useCases": [
+    {
+      "description": "Load a default keymap:",
+      "syntax": "loadkeys --default"
+    },
+    {
+      "description": "Load default keymap when an unusual keymap is loaded and - sign cannot be found:",
+      "syntax": "loadkeys defmap"
+    },
+    {
+      "description": "Create a kernel source table:",
+      "syntax": "loadkeys --mktable"
+    },
+    {
+      "description": "Create a binary keymap:",
+      "syntax": "loadkeys --bkeymap"
+    },
+    {
+      "description": "Search and parse keymap without action:",
+      "syntax": "loadkeys --parse"
+    },
+    {
+      "description": "Load the keymap suppressing all output:",
+      "syntax": "loadkeys --quiet"
+    },
+    {
+      "description": "Load a keymap from the specified file for the console:",
+      "syntax": "loadkeys --console {{/dev/ttyN}} {{/path/to/file}}"
+    },
+    {
+      "description": "Use standard names for keymaps of different locales:",
+      "syntax": "loadkeys --console {{/dev/ttyN}} {{uk}}"
+    }
+  ]
+}

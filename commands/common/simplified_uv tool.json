@@ -1,0 +1,26 @@
+{
+  "command": "uv tool",
+  "description": "Install and run commands provided by Python packages. More information: https://docs.astral.sh/uv/reference/cli/#uv-tool.",
+  "useCases": [
+    {
+      "description": "Run a command from a package, without installing it:",
+      "syntax": "uv tool run {{command}}"
+    },
+    {
+      "description": "Install a Python package system-wide:",
+      "syntax": "uv tool install {{package}}"
+    },
+    {
+      "description": "Upgrade an installed Python package:",
+      "syntax": "uv tool upgrade {{package}}"
+    },
+    {
+      "description": "Uninstall a Python package:",
+      "syntax": "uv tool uninstall {{package}}"
+    },
+    {
+      "description": "List Python packages installed system-wide:",
+      "syntax": "uv tool list"
+    }
+  ]
+}

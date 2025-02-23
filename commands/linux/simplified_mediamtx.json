@@ -1,0 +1,18 @@
+{
+  "command": "mediamtx",
+  "description": "Real-time media server and proxy. More information: https://github.com/bluenviron/mediamtx.",
+  "useCases": [
+    {
+      "description": "Run MediaMTX:",
+      "syntax": "mediamtx"
+    },
+    {
+      "description": "Run MediaMTX with a custom configuration location:",
+      "syntax": "mediamtx {{path/to/config.yml}}"
+    },
+    {
+      "description": "Start MediaMTX as a daemon:",
+      "syntax": "systemctl start mediamtx"
+    }
+  ]
+}

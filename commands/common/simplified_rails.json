@@ -1,0 +1,38 @@
+{
+  "command": "rails",
+  "description": "A server-side MVC framework written in Ruby. Some subcommands such as generate have their own usage documentation. More information: https://guides.rubyonrails.org/command_line.html.",
+  "useCases": [
+    {
+      "description": "Create a new rails project:",
+      "syntax": "rails new &quot;{{project_name}}&quot;"
+    },
+    {
+      "description": "Generate a scaffold for a model named Post, predefining the attributes title and body:",
+      "syntax": "rails generate scaffold Post title:string body:text"
+    },
+    {
+      "description": "Run migrations:",
+      "syntax": "rails db:migrate"
+    },
+    {
+      "description": "List all routes:",
+      "syntax": "rails routes"
+    },
+    {
+      "description": "Start local server for current project on port 3000:",
+      "syntax": "rails server"
+    },
+    {
+      "description": "Start local server for current project on a specified port:",
+      "syntax": "rails server -p &quot;{{port}}&quot;"
+    },
+    {
+      "description": "Open console to interact with application from command-line:",
+      "syntax": "rails console"
+    },
+    {
+      "description": "Check current version of rails:",
+      "syntax": "rails --version"
+    }
+  ]
+}

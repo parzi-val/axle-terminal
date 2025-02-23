@@ -1,0 +1,18 @@
+{
+  "command": "fls",
+  "description": "List files and directories in an image file or device. More information: https://wiki.sleuthkit.org/index.php?title=Fls.",
+  "useCases": [
+    {
+      "description": "Build a recursive fls list over a device, output paths will start with C:",
+      "syntax": "fls -r -m {{C:}} {{/dev/loop1p1}}"
+    },
+    {
+      "description": "Analyze a single partition, providing the sector offset at which the filesystem starts in the image:",
+      "syntax": "fls -r -m {{C:}} -o {{sector}} {{path/to/image_file}}"
+    },
+    {
+      "description": "Analyze a single partition, providing the timezone of the original system:",
+      "syntax": "fls -r -m {{C:}} -z {{timezone}} {{/dev/loop1p1}}"
+    }
+  ]
+}

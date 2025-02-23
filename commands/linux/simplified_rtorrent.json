@@ -1,0 +1,22 @@
+{
+  "command": "rtorrent",
+  "description": "Download torrents. More information: https://github.com/rakshasa/rtorrent.",
+  "useCases": [
+    {
+      "description": "Add a torrent file or magnet to be downloaded:",
+      "syntax": "rtorrent {{torrent_or_magnet}}"
+    },
+    {
+      "description": "Start the download:",
+      "syntax": "&lt;Ctrl&gt;S"
+    },
+    {
+      "description": "View details about downloading torrent:",
+      "syntax": "-&gt;"
+    },
+    {
+      "description": "Close rtorrent safely:",
+      "syntax": "&lt;Ctrl&gt;Q"
+    }
+  ]
+}

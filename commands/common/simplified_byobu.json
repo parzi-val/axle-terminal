@@ -1,0 +1,26 @@
+{
+  "command": "byobu",
+  "description": "Window manager and terminal multiplexer. See also: tmux and screen. More information: https://www.byobu.org/documentation.",
+  "useCases": [
+    {
+      "description": "Start a new session:",
+      "syntax": "byobu"
+    },
+    {
+      "description": "Configuration and help:",
+      "syntax": "byobu-config"
+    },
+    {
+      "description": "Select tmux (default) or screen backend:",
+      "syntax": "byobu-select-backend"
+    },
+    {
+      "description": "Enable automatic startup after login into text console:",
+      "syntax": "byobu-enable"
+    },
+    {
+      "description": "Disable automatic startup after login into text console:",
+      "syntax": "byobu-disable"
+    }
+  ]
+}

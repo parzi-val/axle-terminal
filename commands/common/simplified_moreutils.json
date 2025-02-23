@@ -1,0 +1,14 @@
+{
+  "command": "moreutils",
+  "description": "A collection of UNIX tools. Note: moreutils isn't a command, but a set of commands. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "View documentation for pages related to standard streams:",
+      "syntax": "tldr {{ifne|mispipe|pee|sponge|vipe|vidir}}"
+    },
+    {
+      "description": "View documentation for other pages:",
+      "syntax": "tldr {{combine|errno|ifdata|isutt8|lckdo|parallel|zrun}}"
+    }
+  ]
+}

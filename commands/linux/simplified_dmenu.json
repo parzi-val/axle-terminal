@@ -1,0 +1,26 @@
+{
+  "command": "dmenu",
+  "description": "Dynamic menu. Create a menu from a text input with each item on a new line. More information: https://manned.org/dmenu.",
+  "useCases": [
+    {
+      "description": "Display a menu of the output of the ls command:",
+      "syntax": "{{ls}} | dmenu"
+    },
+    {
+      "description": "Display a menu with custom items separated by a new line (\\n):",
+      "syntax": "echo -e &quot;{{red}}\\n{{green}}\\n{{blue}}&quot; | dmenu"
+    },
+    {
+      "description": "Let the user choose between multiple items and save the selected one to a file:",
+      "syntax": "echo -e &quot;{{red}}\\n{{green}}\\n{{blue}}&quot; | dmenu &gt; {{color.txt}}"
+    },
+    {
+      "description": "Launch dmenu on a specific monitor:",
+      "syntax": "ls | dmenu -m {{1}}"
+    },
+    {
+      "description": "Display dmenu at the bottom of the screen:",
+      "syntax": "ls | dmenu -b"
+    }
+  ]
+}

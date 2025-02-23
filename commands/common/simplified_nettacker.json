@@ -1,0 +1,22 @@
+{
+  "command": "nettacker",
+  "description": "Automate information gathering, vulnerability scanning and eventually generate a report. More information: https://nettacker.readthedocs.io/en/latest/Home/.",
+  "useCases": [
+    {
+      "description": "List all available modules:",
+      "syntax": "nettacker --show-all-modules"
+    },
+    {
+      "description": "Run a port scan on targets:",
+      "syntax": "nettacker {{-m|--modules}} port_scan {{-i|--targets}} {{192.168.0.1/24,owasp.org,scanme.org,...}}"
+    },
+    {
+      "description": "Run a port scan on specific ports and targets listed in a file (newline separated):",
+      "syntax": "nettacker {{-m|--modules}} port_scan {{-g|--ports}} {{22,80,443,...}} {{-l|--targets-list}} {{path/to/targets.txt}}"
+    },
+    {
+      "description": "Run ping test before scan and then run multiple scan types on target:",
+      "syntax": "nettacker --ping-before-scan {{-m|--modules}} {{port_scan,subdomain_scan,waf_scan,...}} {{-g|--ports}} {{80,443}} {{-i|--targets}} {{owasp.org}}"
+    }
+  ]
+}

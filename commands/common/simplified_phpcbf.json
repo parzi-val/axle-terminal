@@ -1,0 +1,30 @@
+{
+  "command": "phpcbf",
+  "description": "Fix violations detected by phpcs. More information: https://github.com/squizlabs/PHP_CodeSniffer.",
+  "useCases": [
+    {
+      "description": "Fix issues in the specified directory (defaults to the PEAR standard):",
+      "syntax": "phpcbf {{path/to/directory}}"
+    },
+    {
+      "description": "Display a list of installed coding standards:",
+      "syntax": "phpcbf -i"
+    },
+    {
+      "description": "Specify a coding standard to validate against:",
+      "syntax": "phpcbf {{path/to/directory}} --standard {{standard}}"
+    },
+    {
+      "description": "Specify comma-separated file extensions to include when sniffing:",
+      "syntax": "phpcbf {{path/to/directory}} --extensions {{file_extension1,file_extension2,...}}"
+    },
+    {
+      "description": "A comma-separated list of files to load before processing:",
+      "syntax": "phpcbf {{path/to/directory}} --bootstrap {{path/to/file1,path/to/file2,...)}}"
+    },
+    {
+      "description": "Don't recurse into subdirectories:",
+      "syntax": "phpcbf {{path/to/directory}} -l"
+    }
+  ]
+}

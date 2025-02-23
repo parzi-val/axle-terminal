@@ -1,0 +1,38 @@
+{
+  "command": "xclip",
+  "description": "X11 clipboard manipulation tool, similar to xsel. Handles the X primary and secondary selections, plus the system clipboard (Ctrl + C/Ctrl + V). See also: wl-copy. More information: https://manned.org/xclip.",
+  "useCases": [
+    {
+      "description": "Copy the output from a command to the X11 primary selection area (clipboard):",
+      "syntax": "echo 123 | xclip"
+    },
+    {
+      "description": "Copy the output from a command to a given X11 selection area:",
+      "syntax": "echo 123 | xclip -selection {{primary|secondary|clipboard}}"
+    },
+    {
+      "description": "Copy the output from a command to the system clipboard, using short notation:",
+      "syntax": "echo 123 | xclip -sel clip"
+    },
+    {
+      "description": "Copy the contents of a file into the system clipboard:",
+      "syntax": "xclip -sel clip {{input_file.txt}}"
+    },
+    {
+      "description": "Copy the contents of a PNG into the system clipboard (can be pasted in other programs correctly):",
+      "syntax": "xclip -sel clip -t image/png {{input_file.png}}"
+    },
+    {
+      "description": "Copy the user input in the console into the system clipboard:",
+      "syntax": "xclip -i"
+    },
+    {
+      "description": "Paste the contents of the X11 primary selection area to the console:",
+      "syntax": "xclip -o"
+    },
+    {
+      "description": "Paste the contents of the system clipboard to the console:",
+      "syntax": "xclip -o -sel clip"
+    }
+  ]
+}

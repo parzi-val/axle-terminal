@@ -1,0 +1,26 @@
+{
+  "command": "git ls-remote",
+  "description": "Git command for listing references in a remote repository based on name or URL. If no name or URL are given, then the configured upstream branch will be used, or remote origin if the former is not configured. More information: https://git-scm.com/docs/git-ls-remote.",
+  "useCases": [
+    {
+      "description": "Show all references in the default remote repository:",
+      "syntax": "git ls-remote"
+    },
+    {
+      "description": "Show only heads references in the default remote repository:",
+      "syntax": "git ls-remote --heads"
+    },
+    {
+      "description": "Show only tags references in the default remote repository:",
+      "syntax": "git ls-remote --tags"
+    },
+    {
+      "description": "Show all references from a remote repository based on name or URL:",
+      "syntax": "git ls-remote {{repository_url}}"
+    },
+    {
+      "description": "Show references from a remote repository filtered by a pattern:",
+      "syntax": "git ls-remote {{repository_name}} &quot;{{pattern}}&quot;"
+    }
+  ]
+}

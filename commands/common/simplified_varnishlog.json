@@ -1,0 +1,26 @@
+{
+  "command": "varnishlog",
+  "description": "Display Varnish logs. More information: https://varnish-cache.org/docs/trunk/reference/varnishlog.html.",
+  "useCases": [
+    {
+      "description": "Display logs in real time:",
+      "syntax": "varnishlog"
+    },
+    {
+      "description": "Only display requests to a specific domain:",
+      "syntax": "varnishlog -q 'ReqHeader eq &quot;Host: {{example.com}}&quot;'"
+    },
+    {
+      "description": "Only display POST requests:",
+      "syntax": "varnishlog -q 'ReqMethod eq &quot;{{POST}}&quot;'"
+    },
+    {
+      "description": "Only display requests to a specific path:",
+      "syntax": "varnishlog -q 'ReqURL eq &quot;{{/path}}&quot;'"
+    },
+    {
+      "description": "Only display requests to paths matching a regular expression:",
+      "syntax": "varnishlog -q 'ReqURL ~ &quot;{{regex}}&quot;'"
+    }
+  ]
+}

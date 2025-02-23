@@ -1,0 +1,26 @@
+{
+  "command": "keychain",
+  "description": "Re-use ssh-agent and/or gpg-agent between logins. More information: https://funtoo.org/Keychain.",
+  "useCases": [
+    {
+      "description": "Check for a running ssh-agent, and start one if needed:",
+      "syntax": "keychain"
+    },
+    {
+      "description": "Also check for gpg-agent:",
+      "syntax": "keychain --agents &quot;{{gpg,ssh}}&quot;"
+    },
+    {
+      "description": "List signatures of all active keys:",
+      "syntax": "keychain --list"
+    },
+    {
+      "description": "List fingerprints of all active keys:",
+      "syntax": "keychain --list-fp"
+    },
+    {
+      "description": "Add a timeout for identities added to the agent, in minutes:",
+      "syntax": "keychain --timeout {{minutes}}"
+    }
+  ]
+}

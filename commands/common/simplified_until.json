@@ -1,0 +1,14 @@
+{
+  "command": "until",
+  "description": "Simple shell loop that repeats until it receives zero as return value. More information: https://www.gnu.org/software/bash/manual/bash.html#index-until.",
+  "useCases": [
+    {
+      "description": "Execute a command until it succeeds:",
+      "syntax": "until {{command}}; do :; done"
+    },
+    {
+      "description": "Wait for a systemd service to be active:",
+      "syntax": "until systemctl is-active --quiet {{nginx}}; do {{echo &quot;Waiting...&quot;}}; sleep 1; done; {{echo &quot;Launched!&quot;}}"
+    }
+  ]
+}

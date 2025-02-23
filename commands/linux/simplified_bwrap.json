@@ -1,0 +1,14 @@
+{
+  "command": "bwrap",
+  "description": "Run programs in a lightweight sandbox. More information: https://manned.org/bwrap.",
+  "useCases": [
+    {
+      "description": "Run a program in a read-only environment:",
+      "syntax": "bwrap --ro-bind / / {{/bin/bash}}"
+    },
+    {
+      "description": "Give the environment access to devices, process information and create a tmpfs for it:",
+      "syntax": "bwrap --dev-bind /dev /dev --proc /proc --ro-bind / / --tmpfs /tmp {{/bin/bash}}"
+    }
+  ]
+}

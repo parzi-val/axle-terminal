@@ -1,0 +1,22 @@
+{
+  "command": "where",
+  "description": "Display the location of files that match the search pattern. Defaults to current work directory and paths in the PATH environment variable. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/where.",
+  "useCases": [
+    {
+      "description": "Display the location of file pattern:",
+      "syntax": "where {{file_pattern}}"
+    },
+    {
+      "description": "Display the location of file pattern including file size and date:",
+      "syntax": "where /T {{file_pattern}}"
+    },
+    {
+      "description": "Recursively search for file pattern at specified path:",
+      "syntax": "where /R {{path\\to\\directory}} {{file_pattern}}"
+    },
+    {
+      "description": "Silently return the error code for the location of the file pattern:",
+      "syntax": "where /Q {{file_pattern}}"
+    }
+  ]
+}

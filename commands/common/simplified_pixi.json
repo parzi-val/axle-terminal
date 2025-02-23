@@ -1,0 +1,34 @@
+{
+  "command": "pixi",
+  "description": "Developer Workflow and Environment Management for projects. More information: https://pixi.sh.",
+  "useCases": [
+    {
+      "description": "Initialize a new project:",
+      "syntax": "pixi init {{path/to/project}}"
+    },
+    {
+      "description": "Add project dependencies:",
+      "syntax": "pixi add {{dependency1 dependency2 ...}}"
+    },
+    {
+      "description": "Start a pixi shell in the project environment:",
+      "syntax": "pixi shell"
+    },
+    {
+      "description": "Run a task in the project environment:",
+      "syntax": "pixi run {{task}}"
+    },
+    {
+      "description": "Manage tasks in the project environment:",
+      "syntax": "pixi task {{command}}"
+    },
+    {
+      "description": "Print the help message:",
+      "syntax": "pixi {{command}} --help"
+    },
+    {
+      "description": "Clean environment and task cache:",
+      "syntax": "pixi clean"
+    }
+  ]
+}

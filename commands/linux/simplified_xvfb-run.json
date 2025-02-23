@@ -1,0 +1,18 @@
+{
+  "command": "xvfb-run",
+  "description": "Run a command in a virtual X server environment. More information: https://www.x.org/wiki/.",
+  "useCases": [
+    {
+      "description": "Run the specified command in a virtual X server:",
+      "syntax": "xvfb-run {{command}}"
+    },
+    {
+      "description": "Try to get a free server number, if the default (99) is not available:",
+      "syntax": "xvfb-run --auto-servernum {{command}}"
+    },
+    {
+      "description": "Pass arguments to the Xvfb server:",
+      "syntax": "xvfb-run --server-args &quot;{{-screen 0 1024x768x24}}&quot; {{command}}"
+    }
+  ]
+}

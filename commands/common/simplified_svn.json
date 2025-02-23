@@ -1,0 +1,30 @@
+{
+  "command": "svn",
+  "description": "Subversion command-line client tool. More information: https://subversion.apache.org.",
+  "useCases": [
+    {
+      "description": "Check out a working copy from a repository:",
+      "syntax": "svn co {{url/to/repository}}"
+    },
+    {
+      "description": "Bring changes from the repository into the working copy:",
+      "syntax": "svn up"
+    },
+    {
+      "description": "Put files and directories under version control, scheduling them for addition to repository. They will be added in next commit:",
+      "syntax": "svn add {{PATH}}"
+    },
+    {
+      "description": "Send changes from your working copy to the repository:",
+      "syntax": "svn ci -m {{commit_log_message}} [{{PATH}}]"
+    },
+    {
+      "description": "Display changes from the last 10 revisions, showing modified files for each revision:",
+      "syntax": "svn log -vl {{10}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "svn help"
+    }
+  ]
+}

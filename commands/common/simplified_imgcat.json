@@ -1,0 +1,10 @@
+{
+  "command": "imgcat",
+  "description": "Display images on the command-line. Requires a compatible terminal such as iTerm2. More information: https://github.com/danielgatis/imgcat.",
+  "useCases": [
+    {
+      "description": "Display an image on the command-line:",
+      "syntax": "imgcat {{path/to/file}}"
+    }
+  ]
+}

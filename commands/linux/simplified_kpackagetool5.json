@@ -1,0 +1,26 @@
+{
+  "command": "kpackagetool5",
+  "description": "KPackage Manager: install, list, remove Plasma packages. More information: https://manned.org/kpackagetool5.",
+  "useCases": [
+    {
+      "description": "List all known package types that can be installed:",
+      "syntax": "kpackagetool5 --list-types"
+    },
+    {
+      "description": "Install the package from a directory:",
+      "syntax": "kpackagetool5 --type {{package_type}} --install {{path/to/directory}}"
+    },
+    {
+      "description": "Update installed package from a directory:",
+      "syntax": "kpackagetool5 --type {{package_type}} --upgrade {{path/to/directory}}"
+    },
+    {
+      "description": "List installed plasmoids (--global for all users):",
+      "syntax": "kpackagetool5 --type Plasma/Applet --list --global"
+    },
+    {
+      "description": "Remove a plasmoid by name:",
+      "syntax": "kpackagetool5 --type Plasma/Applet --remove &quot;{{name}}&quot;"
+    }
+  ]
+}

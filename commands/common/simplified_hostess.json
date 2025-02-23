@@ -1,0 +1,22 @@
+{
+  "command": "hostess",
+  "description": "Manage the /etc/hosts file. More information: https://github.com/cbednarski/hostess.",
+  "useCases": [
+    {
+      "description": "List domains, target IP addresses and on/off status:",
+      "syntax": "hostess list"
+    },
+    {
+      "description": "Add a domain pointing to your machine to your hosts file:",
+      "syntax": "hostess add {{local.example.com}} {{127.0.0.1}}"
+    },
+    {
+      "description": "Remove a domain from your hosts file:",
+      "syntax": "hostess del {{local.example.com}}"
+    },
+    {
+      "description": "Disable a domain (but don't remove it):",
+      "syntax": "hostess off {{local.example.com}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "jbang",
+  "description": "Easily create, edit and run self-contained source-only Java programs. See also: java. More information: https://www.jbang.dev/documentation/guide/latest/cli/jbang.html.",
+  "useCases": [
+    {
+      "description": "Initialize a simple Java class:",
+      "syntax": "jbang init {{path/to/file.java}}"
+    },
+    {
+      "description": "Initialize a Java class (useful for scripting):",
+      "syntax": "jbang init --template={{cli}} {{path/to/file.java}}"
+    },
+    {
+      "description": "Use jshell to explore and use a script and any dependencies in a REPL editor:",
+      "syntax": "jbang run --interactive"
+    },
+    {
+      "description": "Setup a temporary project to edit a script in an IDE:",
+      "syntax": "jbang edit --open={{codium|code|eclipse|idea|netbeans|gitpod}} {{path/to/script.java}}"
+    },
+    {
+      "description": "Run a Java code snippet (Java 9 and later):",
+      "syntax": "{{echo 'Files.list(Paths.get(&quot;/etc&quot;)).forEach(System.out::println);'}} | jbang -"
+    },
+    {
+      "description": "Run command-line application:",
+      "syntax": "jbang {{path/to/file.java}} {{command}} {{arg1 arg2 ...}}"
+    },
+    {
+      "description": "Install a script on the user's $PATH:",
+      "syntax": "jbang app install --name {{command_name}} {{path/to/script.java}}"
+    },
+    {
+      "description": "Install a specific version of JDK to be used with jbang:",
+      "syntax": "jbang jdk install {{version}}"
+    }
+  ]
+}

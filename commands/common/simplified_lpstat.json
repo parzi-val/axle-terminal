@@ -1,0 +1,22 @@
+{
+  "command": "lpstat",
+  "description": "Show status information about printers. More information: https://manned.org/lpstat.",
+  "useCases": [
+    {
+      "description": "List printers present on the machine and whether they are enabled for printing:",
+      "syntax": "lpstat -p"
+    },
+    {
+      "description": "Show the default printer:",
+      "syntax": "lpstat -d"
+    },
+    {
+      "description": "Display all available status information:",
+      "syntax": "lpstat -t"
+    },
+    {
+      "description": "List print jobs queued by a specific user:",
+      "syntax": "lpstat -u {{user}}"
+    }
+  ]
+}

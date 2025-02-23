@@ -1,0 +1,22 @@
+{
+  "command": "pamslice",
+  "description": "Extract one line of values out of a PAM image. More information: https://netpbm.sourceforge.net/doc/pamslice.html.",
+  "useCases": [
+    {
+      "description": "Print the values of the pixels in the n'th row in a table:",
+      "syntax": "pamslice -row {{n}} {{path/to/image.pam}}"
+    },
+    {
+      "description": "Print the values of the pixels in the n'th column in a table:",
+      "syntax": "pamslice -column {{n}} {{path/to/image.pam}}"
+    },
+    {
+      "description": "Consider the m'th plane of the input image only:",
+      "syntax": "pamslice -row {{n}} -plane {{m}} {{path/to/image.pam}}"
+    },
+    {
+      "description": "Produce output in a format suitable for input to an xmgr for visualisation:",
+      "syntax": "pamslice -row {{n}} -xmgr {{path/to/image.pam}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "eval",
+  "description": "Execute arguments as a single command in the current shell and return its result. More information: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#eval.",
+  "useCases": [
+    {
+      "description": "Call echo with the \"foo\" argument:",
+      "syntax": "eval &quot;{{echo foo}}&quot;"
+    },
+    {
+      "description": "Set a variable in the current shell:",
+      "syntax": "eval &quot;{{foo=bar}}&quot;"
+    }
+  ]
+}

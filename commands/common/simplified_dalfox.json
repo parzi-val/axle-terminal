@@ -1,0 +1,18 @@
+{
+  "command": "dalfox",
+  "description": "A powerful open-source XSS scanner focused on automation. More information: https://dalfox.hahwul.com/docs/usage.",
+  "useCases": [
+    {
+      "description": "Scan a single URL for XSS vulnerabilities:",
+      "syntax": "dalfox url {{http://example.com}}"
+    },
+    {
+      "description": "Scan a URL using a header for authentication:",
+      "syntax": "dalfox url {{http://example.com}} -H {{'X-My-Header: 123'}}"
+    },
+    {
+      "description": "Scan a list of URLs from a file:",
+      "syntax": "dalfox file {{path/to/file}}"
+    }
+  ]
+}

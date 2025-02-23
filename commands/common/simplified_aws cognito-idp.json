@@ -1,0 +1,30 @@
+{
+  "command": "aws cognito-idp",
+  "description": "Configure an Amazon Cognito user pool and its users and groups and authenticate them. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-idp/index.html.",
+  "useCases": [
+    {
+      "description": "Create a new Cognito user pool:",
+      "syntax": "aws cognito-idp create-user-pool --pool-name {{name}}"
+    },
+    {
+      "description": "List all user pools:",
+      "syntax": "aws cognito-idp list-user-pools --max-results {{10}}"
+    },
+    {
+      "description": "Delete a specific user pool:",
+      "syntax": "aws cognito-idp delete-user-pool --user-pool-id {{user_pool_id}}"
+    },
+    {
+      "description": "Create a user in a specific pool:",
+      "syntax": "aws cognito-idp admin-create-user --username {{username}} --user-pool-id {{user_pool_id}}"
+    },
+    {
+      "description": "List the users of a specific pool:",
+      "syntax": "aws cognito-idp list-users --user-pool-id {{user_pool_id}}"
+    },
+    {
+      "description": "Delete a user from a specific pool:",
+      "syntax": "aws cognito-idp admin-delete-user --username {{username}} --user-pool-id {{user_pool_id}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "a2query",
+  "description": "Retrieve runtime configuration from Apache on Debian-based OSes. More information: https://manned.org/a2query.",
+  "useCases": [
+    {
+      "description": "List enabled Apache modules:",
+      "syntax": "sudo a2query -m"
+    },
+    {
+      "description": "Check if a specific module is installed:",
+      "syntax": "sudo a2query -m {{module_name}}"
+    },
+    {
+      "description": "List enabled virtual hosts:",
+      "syntax": "sudo a2query -s"
+    },
+    {
+      "description": "Display the currently enabled Multi Processing Module:",
+      "syntax": "sudo a2query -M"
+    },
+    {
+      "description": "Display Apache version:",
+      "syntax": "sudo a2query -v"
+    }
+  ]
+}

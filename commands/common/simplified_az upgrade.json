@@ -1,0 +1,18 @@
+{
+  "command": "az upgrade",
+  "description": "Upgrade Azure CLI and Extensions. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/reference-index?view=azure-cli-latest#az-upgrade.",
+  "useCases": [
+    {
+      "description": "Upgrade Azure CLI:",
+      "syntax": "az upgrade"
+    },
+    {
+      "description": "Upgrade Azure CLI and Extensions:",
+      "syntax": "az upgrade --all"
+    },
+    {
+      "description": "Upgrade Azure CLI and Extensions without prompting for confirmation:",
+      "syntax": "az version --all --yes"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "fping",
+  "description": "A more powerful ping which can ping multiple hosts. More information: https://fping.org.",
+  "useCases": [
+    {
+      "description": "List the status of all hosts within a range:",
+      "syntax": "fping {{192.168.1.{1..254}}}"
+    },
+    {
+      "description": "List alive hosts within a subnet generated from a netmask:",
+      "syntax": "fping {{-a|--alive}} {{-g|--generate}} {{192.168.1.0/24}}"
+    },
+    {
+      "description": "List alive hosts within a subnet generated from an IP range and prune per-probe results:",
+      "syntax": "fping {{-q|--quiet}} {{-a|--alive}} {{-g|--generate}} {{192.168.1.1}} {{192.168.1.254}}"
+    },
+    {
+      "description": "List unreachable hosts within a subnet generated from a netmask:",
+      "syntax": "fping {{-u|--unreach}} {{-g|--generate}} {{192.168.1.0/24}}"
+    }
+  ]
+}

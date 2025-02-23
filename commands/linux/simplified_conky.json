@@ -1,0 +1,30 @@
+{
+  "command": "conky",
+  "description": "Light-weight system monitor for X. More information: https://github.com/brndnmtthws/conky.",
+  "useCases": [
+    {
+      "description": "Launch with default, built-in config:",
+      "syntax": "conky"
+    },
+    {
+      "description": "Create a new default config:",
+      "syntax": "conky -C &gt; ~/.conkyrc"
+    },
+    {
+      "description": "Launch Conky with a given configuration file:",
+      "syntax": "conky -c {{path/to/config}}"
+    },
+    {
+      "description": "Start in the background (daemonize):",
+      "syntax": "conky -d"
+    },
+    {
+      "description": "Align Conky on the desktop:",
+      "syntax": "conky -a {{top|bottom|middle}}_{{left|right|middle}}"
+    },
+    {
+      "description": "Pause for 5 seconds at startup before launching:",
+      "syntax": "conky -p {{5}}"
+    }
+  ]
+}

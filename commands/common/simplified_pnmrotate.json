@@ -1,0 +1,18 @@
+{
+  "command": "pnmrotate",
+  "description": "Rotate a PNM image. More information: https://netpbm.sourceforge.net/doc/pnmrotate.html.",
+  "useCases": [
+    {
+      "description": "Rotate a PNM image by some angle (measured in degrees, counter-clockwise):",
+      "syntax": "pnmrotate {{angle}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the background color exposed by rotating the input image:",
+      "syntax": "pnmrotate -background {{color}} {{angle}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Disable anti-aliasing, improving performance but decreasing quality:",
+      "syntax": "pnmrotate -noantialias {{angle}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

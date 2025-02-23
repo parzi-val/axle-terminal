@@ -1,0 +1,30 @@
+{
+  "command": "radare2",
+  "description": "A set of reverse engineering tools. More information: https://www.radare.org/r/docs.html.",
+  "useCases": [
+    {
+      "description": "Open a file in write mode without parsing the file format headers:",
+      "syntax": "radare2 -nw {{path/to/binary}}"
+    },
+    {
+      "description": "Debug a program:",
+      "syntax": "radare2 -d {{path/to/binary}}"
+    },
+    {
+      "description": "Run a script before entering the interactive CLI:",
+      "syntax": "radare2 -i {{path/to/script.r2}} {{path/to/binary}}"
+    },
+    {
+      "description": "Display help text for any command in the interactive CLI:",
+      "syntax": "&gt; {{radare2_command}}?"
+    },
+    {
+      "description": "Run a shell command from the interactive CLI:",
+      "syntax": "&gt; !{{shell_command}}"
+    },
+    {
+      "description": "Dump raw bytes of current block to a file:",
+      "syntax": "&gt; pr &gt; {{path/to/file.bin}}"
+    }
+  ]
+}

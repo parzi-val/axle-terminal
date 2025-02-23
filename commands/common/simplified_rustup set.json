@@ -1,0 +1,18 @@
+{
+  "command": "rustup set",
+  "description": "Alter rustup settings. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Set the default host triple:",
+      "syntax": "rustup set default-host {{host_triple}}"
+    },
+    {
+      "description": "Set the default profile (minimal includes only rustc, rust-std and cargo, whereas default adds rust-docs, rustfmt and clippy):",
+      "syntax": "rustup set profile {{minimal|default}}"
+    },
+    {
+      "description": "Set whether rustup should update itself when running rustup update:",
+      "syntax": "rustup set auto-self-update {{enable|disable|check-only}}"
+    }
+  ]
+}

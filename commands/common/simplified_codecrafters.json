@@ -1,0 +1,18 @@
+{
+  "command": "codecrafters",
+  "description": "Practice writing complex software. More information: https://codecrafters.io/.",
+  "useCases": [
+    {
+      "description": "Run tests without committing changes:",
+      "syntax": "codecrafters test"
+    },
+    {
+      "description": "Run tests for all previous stages and the current stage without committing changes:",
+      "syntax": "codecrafters test --previous"
+    },
+    {
+      "description": "Commit changes and submit, to move to the next stage:",
+      "syntax": "codecrafters submit"
+    }
+  ]
+}

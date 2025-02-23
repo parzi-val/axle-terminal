@@ -1,0 +1,10 @@
+{
+  "command": "pgmoil",
+  "description": "This command has been superseded by pamoil. More information: https://netpbm.sourceforge.net/doc/pgmoil.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pamoil"
+    }
+  ]
+}

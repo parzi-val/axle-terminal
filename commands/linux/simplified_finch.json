@@ -1,0 +1,34 @@
+{
+  "command": "finch",
+  "description": "Console-based modular messaging client. More information: https://developer.pidgin.im/wiki/Using%20Finch.",
+  "useCases": [
+    {
+      "description": "Launch finch:",
+      "syntax": "finch"
+    },
+    {
+      "description": "Quit:",
+      "syntax": "&lt;Alt&gt; + q OR &lt;Ctrl&gt; + c"
+    },
+    {
+      "description": "Show actions menu:",
+      "syntax": "&lt;Alt&gt; + a"
+    },
+    {
+      "description": "Jump to n-th window:",
+      "syntax": "&lt;Alt&gt; + {{number_key}}"
+    },
+    {
+      "description": "Close current window:",
+      "syntax": "&lt;Alt&gt; + c"
+    },
+    {
+      "description": "Start moving a window, use arrow keys to move, press escape when done:",
+      "syntax": "&lt;Alt&gt; + m"
+    },
+    {
+      "description": "Start resizing a window, use arrow keys to resize, press escape when done:",
+      "syntax": "&lt;Alt&gt; + r"
+    }
+  ]
+}

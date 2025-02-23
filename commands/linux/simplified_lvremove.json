@@ -1,0 +1,14 @@
+{
+  "command": "lvremove",
+  "description": "Remove logical volumes. See also: lvm. More information: https://manned.org/lvremove.",
+  "useCases": [
+    {
+      "description": "Remove a logical volume in a volume group:",
+      "syntax": "sudo lvremove {{volume_group}}/{{logical_volume}}"
+    },
+    {
+      "description": "Remove all logical volumes in a volume group:",
+      "syntax": "sudo lvremove {{volume_group}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "logsave",
+  "description": "Save the output of a command in a logfile. More information: https://manned.org/logsave.",
+  "useCases": [
+    {
+      "description": "Execute command with specified argument(s) and save its output to log file:",
+      "syntax": "logsave {{path/to/logfile}} {{command}}"
+    },
+    {
+      "description": "Take input from stdin and save it in a log file:",
+      "syntax": "logsave {{logfile}} -"
+    },
+    {
+      "description": "Append the output to a log file, instead of replacing its current contents:",
+      "syntax": "logsave -a {{logfile}} {{command}}"
+    },
+    {
+      "description": "Show verbose output:",
+      "syntax": "logsave -v {{logfile}} {{command}}"
+    }
+  ]
+}

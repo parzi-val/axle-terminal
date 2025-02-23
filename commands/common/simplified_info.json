@@ -1,0 +1,18 @@
+{
+  "command": "info",
+  "description": "Reads documentation stored in the info format. More information: https://en.wikipedia.org/wiki/Info_(Unix).",
+  "useCases": [
+    {
+      "description": "Start reading top-level directory menu:",
+      "syntax": "info"
+    },
+    {
+      "description": "Start reading at given menu item node from top-level directory:",
+      "syntax": "info {{menu_item}}"
+    },
+    {
+      "description": "Start reading at second menu item within first menu item manual:",
+      "syntax": "info {{first_menu_item}} {{second_menu_item}}"
+    }
+  ]
+}

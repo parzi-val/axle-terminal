@@ -1,0 +1,26 @@
+{
+  "command": "uprecords",
+  "description": "Display a summary of historical uptime records. More information: https://manned.org/uprecords.",
+  "useCases": [
+    {
+      "description": "Display a summary of the top 10 historical uptime records:",
+      "syntax": "uprecords"
+    },
+    {
+      "description": "Display the top 25 records:",
+      "syntax": "uprecords -m {{25}}"
+    },
+    {
+      "description": "Display the downtime between reboots instead of the kernel version:",
+      "syntax": "uprecords -d"
+    },
+    {
+      "description": "Show the most recent reboots:",
+      "syntax": "uprecords -B"
+    },
+    {
+      "description": "Don't truncate information:",
+      "syntax": "uprecords -w"
+    }
+  ]
+}

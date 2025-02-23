@@ -1,0 +1,34 @@
+{
+  "command": "pio account",
+  "description": "Manage your PlatformIO account in the command-line. More information: https://docs.platformio.org/en/latest/core/userguide/account/.",
+  "useCases": [
+    {
+      "description": "Register a new PlatformIO account:",
+      "syntax": "pio account register --username {{username}} --email {{email}} --password {{password}} --firstname {{firstname}} --lastname {{lastname}}"
+    },
+    {
+      "description": "Permanently delete your PlatformIO account and related data:",
+      "syntax": "pio account destroy"
+    },
+    {
+      "description": "Log in to your PlatformIO account:",
+      "syntax": "pio account login --username {{username}} --password {{password}}"
+    },
+    {
+      "description": "Log out of your PlatformIO account:",
+      "syntax": "pio account logout"
+    },
+    {
+      "description": "Update your PlatformIO profile:",
+      "syntax": "pio account update --username {{username}} --email {{email}} --firstname {{firstname}} --lastname {{lastname}} --current-password {{password}}"
+    },
+    {
+      "description": "Show detailed information about your PlatformIO account:",
+      "syntax": "pio account show"
+    },
+    {
+      "description": "Reset your password using your username or email:",
+      "syntax": "pio account forgot --username {{username_or_email}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "az webapp",
+  "description": "Manage Web Applications hosted in Azure Cloud Services. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/webapp.",
+  "useCases": [
+    {
+      "description": "List available runtimes for a web application:",
+      "syntax": "az webapp list-runtimes --os-type {{windows|linux}}"
+    },
+    {
+      "description": "Create a web application:",
+      "syntax": "az webapp up --name {{name}} --location {{location}} --runtime {{runtime}}"
+    },
+    {
+      "description": "List all web applications:",
+      "syntax": "az webapp list"
+    },
+    {
+      "description": "Delete a specific web application:",
+      "syntax": "az webapp delete --name {{name}} --resource-group {{resource_group}}"
+    }
+  ]
+}

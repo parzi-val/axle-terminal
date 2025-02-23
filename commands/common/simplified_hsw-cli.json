@@ -1,0 +1,38 @@
+{
+  "command": "hsw-cli",
+  "description": "The command-line REST tool for the Handshake wallet. More information: https://github.com/handshake-org/hs-client.",
+  "useCases": [
+    {
+      "description": "Unlock the current wallet (timeout in seconds):",
+      "syntax": "hsw-cli unlock {{passphrase}} {{timeout}}"
+    },
+    {
+      "description": "Lock the current wallet:",
+      "syntax": "hsw-cli lock"
+    },
+    {
+      "description": "View the current wallet's details:",
+      "syntax": "hsw-cli get"
+    },
+    {
+      "description": "View the current wallet's balance:",
+      "syntax": "hsw-cli balance"
+    },
+    {
+      "description": "View the current wallet's transaction history:",
+      "syntax": "hsw-cli history"
+    },
+    {
+      "description": "Send a transaction with the specified coin amount to an address:",
+      "syntax": "hsw-cli send {{address}} {{1.05}}"
+    },
+    {
+      "description": "View the current wallet's pending transactions:",
+      "syntax": "hsw-cli pending"
+    },
+    {
+      "description": "View details about a transaction:",
+      "syntax": "hsw-cli tx {{transaction_hash}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "lsof",
+  "description": "Lists open files and the corresponding processes. Note: Root privileges (or sudo) is required to list files opened by others. More information: https://manned.org/lsof.",
+  "useCases": [
+    {
+      "description": "Find the processes that have a given file open:",
+      "syntax": "lsof {{path/to/file}}"
+    },
+    {
+      "description": "Find the process that opened a local internet port:",
+      "syntax": "lsof -i :{{port}}"
+    },
+    {
+      "description": "Only output the process ID (PID):",
+      "syntax": "lsof -t {{path/to/file}}"
+    },
+    {
+      "description": "List files opened by the given user:",
+      "syntax": "lsof -u {{username}}"
+    },
+    {
+      "description": "List files opened by the given command or process:",
+      "syntax": "lsof -c {{process_or_command_name}}"
+    },
+    {
+      "description": "List files opened by a specific process, given its PID:",
+      "syntax": "lsof -p {{PID}}"
+    },
+    {
+      "description": "List open files in a directory:",
+      "syntax": "lsof +D {{path/to/directory}}"
+    },
+    {
+      "description": "Find the process that is listening on a local IPv6 TCP port and don't convert network or port numbers:",
+      "syntax": "lsof -i6TCP:{{port}} -sTCP:LISTEN -n -P"
+    }
+  ]
+}

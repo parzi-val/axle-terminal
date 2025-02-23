@@ -1,0 +1,34 @@
+{
+  "command": "minikube",
+  "description": "Run Kubernetes locally. More information: https://minikube.sigs.k8s.io/docs/.",
+  "useCases": [
+    {
+      "description": "Start the cluster:",
+      "syntax": "minikube start"
+    },
+    {
+      "description": "Get the IP address of the cluster:",
+      "syntax": "minikube ip"
+    },
+    {
+      "description": "Access a service named my_service exposed via a node port and get the URL:",
+      "syntax": "minikube service {{my_service}} --url"
+    },
+    {
+      "description": "Open the Kubernetes dashboard in a browser:",
+      "syntax": "minikube dashboard"
+    },
+    {
+      "description": "Stop the running cluster:",
+      "syntax": "minikube stop"
+    },
+    {
+      "description": "Delete the cluster:",
+      "syntax": "minikube delete"
+    },
+    {
+      "description": "Connect to LoadBalancer services:",
+      "syntax": "minikube tunnel"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "wsl-open",
+  "description": "Open a file or URL from within Windows Subsystem for Linux in the user's default Windows GUI application. More information: https://gitlab.com/4U6U57/wsl-open.",
+  "useCases": [
+    {
+      "description": "Open the current directory in Windows Explorer:",
+      "syntax": "wsl-open {{.}}"
+    },
+    {
+      "description": "Open a URL in the user's default web browser in Windows:",
+      "syntax": "wsl-open {{https://example.com}}"
+    },
+    {
+      "description": "Open a specific file in the user's default application in Windows:",
+      "syntax": "wsl-open {{path\\to\\file}}"
+    },
+    {
+      "description": "Set wsl-open as the shell's web browser (open links with wsl-open):",
+      "syntax": "wsl-open -w"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "wsl-open -h"
+    }
+  ]
+}

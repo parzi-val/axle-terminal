@@ -1,0 +1,34 @@
+{
+  "command": "hyprpm",
+  "description": "Control plugins for the Hyprland Wayland compositor. More information: https://wiki.hyprland.org/Plugins/Using-Plugins/#hyprpm.",
+  "useCases": [
+    {
+      "description": "Add a plugin:",
+      "syntax": "hyprpm add {{git_url}}"
+    },
+    {
+      "description": "Remove a plugin:",
+      "syntax": "hyprpm remove {{git_url|plugin_name}}"
+    },
+    {
+      "description": "Enable a plugin:",
+      "syntax": "hyprpm enable {{plugin_name}}"
+    },
+    {
+      "description": "Disable a plugin:",
+      "syntax": "hyprpm disable {{plugin_name}}"
+    },
+    {
+      "description": "Update and check all plugins:",
+      "syntax": "hyprpm update"
+    },
+    {
+      "description": "Force an operation:",
+      "syntax": "hyprpm {{-f|--force}} {{operation}}"
+    },
+    {
+      "description": "List all installed plugins:",
+      "syntax": "hyprpm list"
+    }
+  ]
+}

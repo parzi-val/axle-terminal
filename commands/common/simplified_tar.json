@@ -1,0 +1,38 @@
+{
+  "command": "tar",
+  "description": "Archiving utility. Often combined with a compression method, such as gzip or bzip2. More information: https://www.gnu.org/software/tar.",
+  "useCases": [
+    {
+      "description": "[c]reate an archive and write it to a [f]ile:",
+      "syntax": "tar cf {{path/to/target.tar}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "[c]reate a g[z]ipped archive and write it to a [f]ile:",
+      "syntax": "tar czf {{path/to/target.tar.gz}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "[c]reate a g[z]ipped (compressed) archive from a directory using relative paths:",
+      "syntax": "tar czf {{path/to/target.tar.gz}} --directory={{path/to/directory}} ."
+    },
+    {
+      "description": "E[x]tract a (compressed) archive [f]ile into the current directory [v]erbosely:",
+      "syntax": "tar xvf {{path/to/source.tar[.gz|.bz2|.xz]}}"
+    },
+    {
+      "description": "E[x]tract a (compressed) archive [f]ile into the target directory:",
+      "syntax": "tar xf {{path/to/source.tar[.gz|.bz2|.xz]}} --directory={{path/to/directory}}"
+    },
+    {
+      "description": "[c]reate a compressed archive and write it to a [f]ile, using the file extension to [a]utomatically determine the compression program:",
+      "syntax": "tar caf {{path/to/target.tar.xz}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Lis[t] the contents of a tar [f]ile [v]erbosely:",
+      "syntax": "tar tvf {{path/to/source.tar}}"
+    },
+    {
+      "description": "E[x]tract files matching a pattern from an archive [f]ile:",
+      "syntax": "tar xf {{path/to/source.tar}} --wildcards &quot;{{*.html}}&quot;"
+    }
+  ]
+}

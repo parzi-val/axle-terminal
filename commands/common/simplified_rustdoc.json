@@ -1,0 +1,22 @@
+{
+  "command": "rustdoc",
+  "description": "Generate documentation for a Rust crate. More information: https://doc.rust-lang.org/stable/rustdoc.",
+  "useCases": [
+    {
+      "description": "Generate documentation from the crate's root:",
+      "syntax": "rustdoc {{src/lib.rs}}"
+    },
+    {
+      "description": "Pass a name for the project:",
+      "syntax": "rustdoc {{src/lib.rs}} --crate-name {{name}}"
+    },
+    {
+      "description": "Generate documentation from Markdown files:",
+      "syntax": "rustdoc {{path/to/file.md}}"
+    },
+    {
+      "description": "Specify the output directory:",
+      "syntax": "rustdoc {{src/lib.rs}} --out-dir {{path/to/output_directory}}"
+    }
+  ]
+}

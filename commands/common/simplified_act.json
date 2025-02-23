@@ -1,0 +1,34 @@
+{
+  "command": "act",
+  "description": "Execute GitHub Actions locally using Docker. More information: https://github.com/nektos/act.",
+  "useCases": [
+    {
+      "description": "[l]ist the available jobs:",
+      "syntax": "act -l"
+    },
+    {
+      "description": "Run the default event:",
+      "syntax": "act"
+    },
+    {
+      "description": "Run a specific event:",
+      "syntax": "act {{event_type}}"
+    },
+    {
+      "description": "Run a specific [j]ob:",
+      "syntax": "act -j {{job_id}}"
+    },
+    {
+      "description": "Do [n]ot actually run the actions (i.e. a dry run):",
+      "syntax": "act -n"
+    },
+    {
+      "description": "Show [v]erbose logs:",
+      "syntax": "act -v"
+    },
+    {
+      "description": "Run a specific [W]orkflow with the push event:",
+      "syntax": "act push -W {{path/to/workflow}}"
+    }
+  ]
+}

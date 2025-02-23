@@ -1,0 +1,34 @@
+{
+  "command": "grunt",
+  "description": "A JavaScript task runner for automating processes. More information: https://github.com/gruntjs/grunt-cli.",
+  "useCases": [
+    {
+      "description": "Run the default task process:",
+      "syntax": "grunt"
+    },
+    {
+      "description": "Run one or more tasks:",
+      "syntax": "grunt {{task1 task2 ...}}"
+    },
+    {
+      "description": "Specify an alternative configuration file:",
+      "syntax": "grunt --gruntfile {{path/to/file}}"
+    },
+    {
+      "description": "Specify an alternative base path for relative files:",
+      "syntax": "grunt --base {{path/to/directory}}"
+    },
+    {
+      "description": "Specify an additional directory to scan for tasks in:",
+      "syntax": "grunt --tasks {{path/to/directory}}"
+    },
+    {
+      "description": "Perform a dry-run without writing any files:",
+      "syntax": "grunt --no-write"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "grunt --help"
+    }
+  ]
+}

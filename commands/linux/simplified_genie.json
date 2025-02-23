@@ -1,0 +1,18 @@
+{
+  "command": "genie",
+  "description": "Set up and use a \"bottle\" namespace to run systemd under WSL (Windows Subsystem for Linux). To run these from Windows rather than an already-running distribution, precede them with wsl. More information: https://github.com/arkane-systems/genie.",
+  "useCases": [
+    {
+      "description": "Initialize the bottle (run once, at start):",
+      "syntax": "genie -i"
+    },
+    {
+      "description": "Run a login shell inside the bottle:",
+      "syntax": "genie -s"
+    },
+    {
+      "description": "Run a specified command inside the bottle:",
+      "syntax": "genie -c {{command}}"
+    }
+  ]
+}

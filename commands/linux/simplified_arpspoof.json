@@ -1,0 +1,18 @@
+{
+  "command": "arpspoof",
+  "description": "Forge ARP replies to intercept packets. More information: https://monkey.org/~dugsong/dsniff.",
+  "useCases": [
+    {
+      "description": "Poison all hosts to intercept packets on [i]nterface for the host:",
+      "syntax": "sudo arpspoof -i {{wlan0}} {{host_ip}}"
+    },
+    {
+      "description": "Poison [t]arget to intercept packets on [i]nterface for the host:",
+      "syntax": "sudo arpspoof -i {{wlan0}} -t {{target_ip}} {{host_ip}}"
+    },
+    {
+      "description": "Poison both [t]arget and host to intercept packets on [i]nterface for the host:",
+      "syntax": "sudo arpspoof -i {{wlan0}} -r -t {{target_ip}} {{host_ip}}"
+    }
+  ]
+}

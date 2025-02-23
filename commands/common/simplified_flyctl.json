@@ -1,0 +1,38 @@
+{
+  "command": "flyctl",
+  "description": "Command-line tool for flyctl.io. More information: https://github.com/superfly/flyctl.",
+  "useCases": [
+    {
+      "description": "Sign into a Fly account:",
+      "syntax": "flyctl auth login"
+    },
+    {
+      "description": "Launch an application from a specific Dockerfile (the default path is the current working directory):",
+      "syntax": "flyctl launch --dockerfile {{path/to/dockerfile}}"
+    },
+    {
+      "description": "Open the current deployed application in the default web browser:",
+      "syntax": "flyctl open"
+    },
+    {
+      "description": "Deploy the Fly applications from a specific Dockerfile:",
+      "syntax": "flyctl deploy --dockerfile {{path/to/dockerfile}}"
+    },
+    {
+      "description": "Open the Fly Web UI for the current application in a web browser:",
+      "syntax": "flyctl dashboard"
+    },
+    {
+      "description": "List all applications in the logged-in Fly account:",
+      "syntax": "flyctl apps list"
+    },
+    {
+      "description": "View the status of a specific running application:",
+      "syntax": "flyctl status --app {{app_name}}"
+    },
+    {
+      "description": "Display version information:",
+      "syntax": "flyctl version"
+    }
+  ]
+}

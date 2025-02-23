@@ -1,0 +1,22 @@
+{
+  "command": "Add-AppxPackage",
+  "description": "A PowerShell utility to add a signed app package (.appx, .msix, .appxbundle and .msixbundle) to a user account. More information: https://learn.microsoft.com/powershell/module/appx/Add-AppxPackage.",
+  "useCases": [
+    {
+      "description": "Add an app package:",
+      "syntax": "Add-AppxPackage -Path {{path\\to\\package.msix}}"
+    },
+    {
+      "description": "Add an app package with dependencies:",
+      "syntax": "Add-AppxPackage -Path {{path\\to\\package.msix}} -DependencyPath {{path\\to\\dependencies.msix}}"
+    },
+    {
+      "description": "Install an app using the app installer file:",
+      "syntax": "Add-AppxPackage -AppInstallerFile {{path\\to\\app.appinstaller}}"
+    },
+    {
+      "description": "Add an unsigned package:",
+      "syntax": "Add-AppxPackage -Path {{path\\to\\package.msix}} -DependencyPath {{path\\to\\dependencies.msix}} -AllowUnsigned"
+    }
+  ]
+}

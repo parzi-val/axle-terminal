@@ -1,0 +1,22 @@
+{
+  "command": "yadm-config",
+  "description": "Pass options to yadm's config file. Change the .config of the repository managed by yadm. More information: https://github.com/TheLocehiliosan/yadm/blob/master/yadm.md#configuration.",
+  "useCases": [
+    {
+      "description": "Set or update a yadm's Git configuration:",
+      "syntax": "yadm config {{key.inner-key}} {{value}}"
+    },
+    {
+      "description": "Get a value from yadm's Git configuration:",
+      "syntax": "yadm config --get {{key}}"
+    },
+    {
+      "description": "Unset a value in yadm's Git configuration:",
+      "syntax": "yadm config --unset {{key}}"
+    },
+    {
+      "description": "List all values in yadm's Git configuration:",
+      "syntax": "yadm config --list"
+    }
+  ]
+}

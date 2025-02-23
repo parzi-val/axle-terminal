@@ -1,0 +1,30 @@
+{
+  "command": "aws glue",
+  "description": "CLI for AWS Glue. Define the public endpoint for the AWS Glue service. More information: https://docs.aws.amazon.com/cli/latest/reference/glue/.",
+  "useCases": [
+    {
+      "description": "List jobs:",
+      "syntax": "aws glue list-jobs"
+    },
+    {
+      "description": "Start a job:",
+      "syntax": "aws glue start-job-run --job-name {{job_name}}"
+    },
+    {
+      "description": "Start running a workflow:",
+      "syntax": "aws glue start-workflow-run --name {{workflow_name}}"
+    },
+    {
+      "description": "List triggers:",
+      "syntax": "aws glue list-triggers"
+    },
+    {
+      "description": "Start a trigger:",
+      "syntax": "aws glue start-trigger --name {{trigger_name}}"
+    },
+    {
+      "description": "Create a dev endpoint:",
+      "syntax": "aws glue create-dev-endpoint --endpoint-name {{name}} --role-arn {{role_arn_used_by_endpoint}}"
+    }
+  ]
+}

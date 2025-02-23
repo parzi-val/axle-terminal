@@ -1,0 +1,14 @@
+{
+  "command": "pamsplit",
+  "description": "Split a multi-image Netpbm file into multiple single-image Netpbm files. See also: pamfile, pampick, pamexec. More information: https://netpbm.sourceforge.net/doc/pamsplit.html.",
+  "useCases": [
+    {
+      "description": "Split a multi-image Netpbm file into multiple single-image Netpbm files:",
+      "syntax": "pamsplit {{path/to/image.pam}}"
+    },
+    {
+      "description": "Specify a pattern for naming output files:",
+      "syntax": "pamsplit {{path/to/image.pam}} {{file_%d.pam}}"
+    }
+  ]
+}

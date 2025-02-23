@@ -1,0 +1,18 @@
+{
+  "command": "pdfinfo",
+  "description": "Portable Document Format (PDF) file information viewer. More information: https://www.xpdfreader.com/pdfinfo-man.html.",
+  "useCases": [
+    {
+      "description": "Print PDF file information:",
+      "syntax": "pdfinfo {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Specify user password for PDF file to bypass security restrictions:",
+      "syntax": "pdfinfo -upw {{password}} {{path/to/file.pdf}}"
+    },
+    {
+      "description": "Specify owner password for PDF file to bypass security restrictions:",
+      "syntax": "pdfinfo -opw {{password}} {{path/to/file.pdf}}"
+    }
+  ]
+}

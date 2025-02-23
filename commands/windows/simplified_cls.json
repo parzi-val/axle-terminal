@@ -1,0 +1,14 @@
+{
+  "command": "cls",
+  "description": "Clears the screen. In PowerShell, this command is an alias of Clear-Host. This documentation is based on the Command Prompt (cmd) version of cls. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/cls.",
+  "useCases": [
+    {
+      "description": "View the documentation of the equivalent PowerShell command:",
+      "syntax": "tldr clear-host"
+    },
+    {
+      "description": "Clear the screen:",
+      "syntax": "cls"
+    }
+  ]
+}

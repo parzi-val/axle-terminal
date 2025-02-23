@@ -1,0 +1,14 @@
+{
+  "command": "ppmquant",
+  "description": "This command has been replaced by pnmquant and pnmremap. More information: https://netpbm.sourceforge.net/doc/ppmquant.html.",
+  "useCases": [
+    {
+      "description": "View documentation for pnmquant:",
+      "syntax": "tldr pnmquant"
+    },
+    {
+      "description": "View documentation for pnmremap:",
+      "syntax": "tldr pnmremap"
+    }
+  ]
+}

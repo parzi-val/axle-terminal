@@ -1,0 +1,10 @@
+{
+  "command": "caffeine-indicator",
+  "description": "Manually inhibit desktop idleness with a toggle. More information: https://manned.org/caffeine-indicator.",
+  "useCases": [
+    {
+      "description": "Manually inhibit desktop idleness with a toggle:",
+      "syntax": "caffeine-indicator"
+    }
+  ]
+}

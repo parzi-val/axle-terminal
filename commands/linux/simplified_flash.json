@@ -1,0 +1,26 @@
+{
+  "command": "flash",
+  "description": "Flash cards in the terminal. More information: https://github.com/tallguyjenks/fla.sh.",
+  "useCases": [
+    {
+      "description": "Open a menu of available flashcard decks for selection:",
+      "syntax": "flash"
+    },
+    {
+      "description": "Display information about the flashcard system:",
+      "syntax": "flash -i"
+    },
+    {
+      "description": "Change the previewer from default bat to cat:",
+      "syntax": "flash -p {{cat}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "flash -h"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "flash -v"
+    }
+  ]
+}

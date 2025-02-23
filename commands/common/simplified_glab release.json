@@ -1,0 +1,30 @@
+{
+  "command": "glab release",
+  "description": "Manage GitLab releases. More information: https://glab.readthedocs.io/en/latest/release.",
+  "useCases": [
+    {
+      "description": "List releases in a Gitlab repository, limited to 30 items:",
+      "syntax": "glab release list"
+    },
+    {
+      "description": "Display information about a specific release:",
+      "syntax": "glab release view {{tag}}"
+    },
+    {
+      "description": "Create a new release:",
+      "syntax": "glab release create {{tag}}"
+    },
+    {
+      "description": "Delete a specific release:",
+      "syntax": "glab release delete {{tag}}"
+    },
+    {
+      "description": "Download assets from a specific release:",
+      "syntax": "glab release download {{tag}}"
+    },
+    {
+      "description": "Upload assets to a specific release:",
+      "syntax": "glab release upload {{tag}} {{path/to/file1 path/to/file2 ...}}"
+    }
+  ]
+}

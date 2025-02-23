@@ -1,0 +1,22 @@
+{
+  "command": "eselect kernel",
+  "description": "An eselect module for managing the /usr/src/linux symlink. More information: https://wiki.gentoo.org/wiki/Eselect#Kernel.",
+  "useCases": [
+    {
+      "description": "List available kernel symlink targets with their numbers:",
+      "syntax": "eselect kernel list"
+    },
+    {
+      "description": "Set the /usr/src/linux symlink by name or number from the list command:",
+      "syntax": "eselect kernel set {{name|number}}"
+    },
+    {
+      "description": "Show what the current kernel symlink points to:",
+      "syntax": "eselect kernel show"
+    },
+    {
+      "description": "Set the kernel symlink to the currently running kernel:",
+      "syntax": "eselect kernel update"
+    }
+  ]
+}

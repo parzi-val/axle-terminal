@@ -1,0 +1,34 @@
+{
+  "command": "gnome-extensions",
+  "description": "Manage gnome extensions from the terminal. More information: https://wiki.gnome.org/Projects/GnomeShell/Extensions.",
+  "useCases": [
+    {
+      "description": "List all the installed extensions:",
+      "syntax": "gnome-extensions list"
+    },
+    {
+      "description": "Display information about a specific extension:",
+      "syntax": "gnome-extensions info &quot;{{extension_id}}&quot;"
+    },
+    {
+      "description": "Enable a specific extension:",
+      "syntax": "gnome-extensions enable &quot;{{extension_id}}&quot;"
+    },
+    {
+      "description": "Disable a specific extension:",
+      "syntax": "gnome-extension disable &quot;{{extension_id}}&quot;"
+    },
+    {
+      "description": "Uninstall a specific extension:",
+      "syntax": "gnome-extension uninstall &quot;{{extension_id}}&quot;"
+    },
+    {
+      "description": "Display help for a specific subcommand (like list):",
+      "syntax": "gnome-extensions help {{subcommand}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "gnome-extensions version"
+    }
+  ]
+}

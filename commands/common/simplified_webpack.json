@@ -1,0 +1,22 @@
+{
+  "command": "webpack",
+  "description": "Bundle a web project's js files and other assets into a single output file. More information: https://webpack.js.org.",
+  "useCases": [
+    {
+      "description": "Create a single output file from an entry point file:",
+      "syntax": "webpack {{app.js}} {{bundle.js}}"
+    },
+    {
+      "description": "Load CSS files too from the JavaScript file (this uses the CSS loader for CSS files):",
+      "syntax": "webpack {{app.js}} {{bundle.js}} --module-bind '{{css=css}}'"
+    },
+    {
+      "description": "Pass a configuration file (with e.g. the entry script and the output filename) and show compilation progress:",
+      "syntax": "webpack --config {{webpack.config.js}} --progress"
+    },
+    {
+      "description": "Automatically recompile on changes to project files:",
+      "syntax": "webpack --watch {{app.js}} {{bundle.js}}"
+    }
+  ]
+}

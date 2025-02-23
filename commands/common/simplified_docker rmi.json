@@ -1,0 +1,22 @@
+{
+  "command": "docker rmi",
+  "description": "Remove Docker images. More information: https://docs.docker.com/reference/cli/docker/image/rm/.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "docker rmi"
+    },
+    {
+      "description": "Remove one or more images given their names:",
+      "syntax": "docker rmi {{image1 image2 ...}}"
+    },
+    {
+      "description": "Force remove an image:",
+      "syntax": "docker rmi --force {{image}}"
+    },
+    {
+      "description": "Remove an image without deleting untagged parents:",
+      "syntax": "docker rmi --no-prune {{image}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "aws ec2",
+  "description": "Manage AWS EC2 instances and volumes. AWS EC2 provides secure and resizable computing capacity in the AWS cloud for faster development and deployment of applications. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/index.html.",
+  "useCases": [
+    {
+      "description": "Display information about a specific instance:",
+      "syntax": "aws ec2 describe-instances --instance-ids {{instance_id}}"
+    },
+    {
+      "description": "Display information about all instances:",
+      "syntax": "aws ec2 describe-instances"
+    },
+    {
+      "description": "Display information about all EC2 volumes:",
+      "syntax": "aws ec2 describe-volumes"
+    },
+    {
+      "description": "Delete an EC2 volume:",
+      "syntax": "aws ec2 delete-volume --volume-id {{volume_id}}"
+    },
+    {
+      "description": "Create a snapshot from an EC2 volume:",
+      "syntax": "aws ec2 create-snapshot --volume-id {{volume_id}}"
+    },
+    {
+      "description": "List available AMIs (Amazon Machine Images):",
+      "syntax": "aws ec2 describe-images"
+    },
+    {
+      "description": "Show list of all available EC2 commands:",
+      "syntax": "aws ec2 help"
+    },
+    {
+      "description": "Display help for specific EC2 subcommand:",
+      "syntax": "aws ec2 {{subcommand}} help"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "vim",
+  "description": "Vim (Vi IMproved), a command-line text editor, provides several modes for different kinds of text manipulation. Pressing i in normal mode enters insert mode. Pressing &lt;Esc&gt; goes back to normal mode, which enables the use of Vim commands. See also: vimdiff, vimtutor, nvim. More information: https://www.vim.org.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "vim {{path/to/file}}"
+    },
+    {
+      "description": "Open a file at a specified line number:",
+      "syntax": "vim +{{line_number}} {{path/to/file}}"
+    },
+    {
+      "description": "View Vim's help manual:",
+      "syntax": ":help&lt;Enter&gt;"
+    },
+    {
+      "description": "Save and quit the current buffer:",
+      "syntax": "{{&lt;Esc&gt;ZZ|&lt;Esc&gt;:x&lt;Enter&gt;|&lt;Esc&gt;:wq&lt;Enter&gt;}}"
+    },
+    {
+      "description": "Enter normal mode and undo the last operation:",
+      "syntax": "&lt;Esc&gt;u"
+    },
+    {
+      "description": "Search for a pattern in the file (press n/N to go to next/previous match):",
+      "syntax": "/{{search_pattern}}&lt;Enter&gt;"
+    },
+    {
+      "description": "Perform a regular expression substitution in the whole file:",
+      "syntax": ":%s/{{regular_expression}}/{{replacement}}/g&lt;Enter&gt;"
+    },
+    {
+      "description": "Display the line numbers:",
+      "syntax": ":set nu&lt;Enter&gt;"
+    }
+  ]
+}

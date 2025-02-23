@@ -1,0 +1,26 @@
+{
+  "command": "az storage entity",
+  "description": "Manage Azure Table storage entities. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/storage/entity.",
+  "useCases": [
+    {
+      "description": "Insert an entity into a table:",
+      "syntax": "az storage entity insert --entity {{space_separated_key_value_pairs}} --table-name {{table_name}} --account-name {{storage_account_name}} --account-key {{storage_account_key}}"
+    },
+    {
+      "description": "Delete an existing entity from a table:",
+      "syntax": "az storage entity delete --partition-key {{partition_key}} --row-key {{row_key}} --table-name {{table_name}} --account-name {{storage_account_name}} --account-key {{storage_account_key}}"
+    },
+    {
+      "description": "Update an existing entity by merging its properties:",
+      "syntax": "az storage entity merge --entity {{space_separated_key_value_pairs}} --table-name {{table_name}} --account-name {{storage_account_name}} --account-key {{storage_account_key}}"
+    },
+    {
+      "description": "List entities which satisfy a query:",
+      "syntax": "az storage entity query --filter {{query_filter}} --table-name {{table_name}} --account-name {{storage_account_name}} --account-key {{storage_account_key}}"
+    },
+    {
+      "description": "Get an entity from the specified table:",
+      "syntax": "az storage entity show --partition-key {{partition_key}} --row-key {{row_key}} --table-name {{table_name}} --account-name {{storage_account_name}} --account-key {{storage_account_key}}"
+    }
+  ]
+}

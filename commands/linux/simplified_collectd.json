@@ -1,0 +1,34 @@
+{
+  "command": "collectd",
+  "description": "System statistics collection daemon. More information: https://collectd.org/.",
+  "useCases": [
+    {
+      "description": "Test the configuration file and then exit:",
+      "syntax": "collectd -t"
+    },
+    {
+      "description": "Test plugin data collection functionality and then exit:",
+      "syntax": "collectd -T"
+    },
+    {
+      "description": "Start collectd:",
+      "syntax": "collectd"
+    },
+    {
+      "description": "Specify a custom configuration file location:",
+      "syntax": "collectd -C {{path/to/file}}"
+    },
+    {
+      "description": "Specify a custom PID file location:",
+      "syntax": "collectd -P {{path/to/file}}"
+    },
+    {
+      "description": "Don't fork into the background:",
+      "syntax": "collectd -f"
+    },
+    {
+      "description": "Display help and version:",
+      "syntax": "collectd -h"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "flatpak-builder",
+  "description": "Help build application dependencies. More information: https://docs.flatpak.org/en/latest/flatpak-builder-command-reference.html.",
+  "useCases": [
+    {
+      "description": "Build a Flatpak and export it to a new repository:",
+      "syntax": "flatpak-builder {{path/to/build_directory}} {{path/to/manifest}}"
+    },
+    {
+      "description": "Build a Flatpak and export it to the specified repository:",
+      "syntax": "flatpak-builder --repo={{repository_name}} {{path/to/build_directory}} {{path/to/manifest}}"
+    },
+    {
+      "description": "Build a Flatpak and install it locally:",
+      "syntax": "flatpak-builder --install {{path/to/build_directory}} {{path/to/manifest}}"
+    },
+    {
+      "description": "Build and sign a Flatpak and export it to the specified repository:",
+      "syntax": "flatpak-builder --gpg-sign={{key_id}} --repo={{repository_name}} {{path/to/manifest}}"
+    },
+    {
+      "description": "Run a shell inside of an application sandbox without installing it:",
+      "syntax": "flatpak-builder --run {{path/to/build_directory}} {{path/to/manifest}} {{sh}}"
+    }
+  ]
+}

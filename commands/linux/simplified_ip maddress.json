@@ -1,0 +1,22 @@
+{
+  "command": "ip maddress",
+  "description": "Manage multicast addresses. More information: https://manned.org/ip-maddress.",
+  "useCases": [
+    {
+      "description": "List multicast addresses and how many programs are subscribed to them:",
+      "syntax": "ip maddress"
+    },
+    {
+      "description": "List device specific addresses:",
+      "syntax": "ip maddress show dev {{eth0}}"
+    },
+    {
+      "description": "Join a multicast group statically:",
+      "syntax": "sudo ip maddress add {{33:33:00:00:00:02}} dev {{eth0}}"
+    },
+    {
+      "description": "Leave a static multicast group:",
+      "syntax": "sudo ip maddress delete {{33:33:00:00:00:02}} dev {{eth0}}"
+    }
+  ]
+}

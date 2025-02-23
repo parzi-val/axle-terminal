@@ -1,0 +1,30 @@
+{
+  "command": "nmcli general",
+  "description": "Manage general settings of NetworkManager. This subcommand can also be called with nmcli g. More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmcli.html.",
+  "useCases": [
+    {
+      "description": "Show the general status of NetworkManager:",
+      "syntax": "nmcli general"
+    },
+    {
+      "description": "Show the hostname of the current device:",
+      "syntax": "nmcli general hostname"
+    },
+    {
+      "description": "Change the hostname of the current device:",
+      "syntax": "sudo nmcli general hostname {{new_hostname}}"
+    },
+    {
+      "description": "Show the permissions of NetworkManager:",
+      "syntax": "nmcli general permissions"
+    },
+    {
+      "description": "Show the current logging level and domains:",
+      "syntax": "nmcli general logging"
+    },
+    {
+      "description": "Set the logging level and/or domains (see man NetworkManager.conf for all available domains):",
+      "syntax": "nmcli general logging level {{INFO|OFF|ERR|WARN|DEBUG|TRACE}} domain {{domain_1,domain_2,...}}"
+    }
+  ]
+}

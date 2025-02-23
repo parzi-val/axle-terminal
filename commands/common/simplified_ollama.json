@@ -1,0 +1,38 @@
+{
+  "command": "ollama",
+  "description": "A large language model runner. For a list of available models, see https://ollama.com/library. More information: https://github.com/ollama/ollama.",
+  "useCases": [
+    {
+      "description": "Start the daemon required to run other commands:",
+      "syntax": "ollama serve"
+    },
+    {
+      "description": "Run a model and chat with it:",
+      "syntax": "ollama run {{model}}"
+    },
+    {
+      "description": "Run a model with a single prompt:",
+      "syntax": "ollama run {{model}} {{prompt}}"
+    },
+    {
+      "description": "List downloaded models:",
+      "syntax": "ollama list"
+    },
+    {
+      "description": "Pull/Update a specific model:",
+      "syntax": "ollama pull {{model}}"
+    },
+    {
+      "description": "List running models:",
+      "syntax": "ollama ps"
+    },
+    {
+      "description": "Delete a model:",
+      "syntax": "ollama rm {{model}}"
+    },
+    {
+      "description": "Create a model from a Modelfile ([f]):",
+      "syntax": "ollama create {{new_model_name}} -f {{path/to/Modelfile}}"
+    }
+  ]
+}

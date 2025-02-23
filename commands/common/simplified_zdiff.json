@@ -1,0 +1,14 @@
+{
+  "command": "zdiff",
+  "description": "Invoke diff on gzip archives. More information: https://manned.org/zdiff.",
+  "useCases": [
+    {
+      "description": "Compare two files, uncompressing them if necessary:",
+      "syntax": "zdiff {{path/to/file1.gz}} {{path/to/file2.gz}}"
+    },
+    {
+      "description": "Compare a file to a gzip archive with the same name:",
+      "syntax": "zdiff {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "geth",
+  "description": "The go-ethereum command-line interface. More information: https://geth.ethereum.org.",
+  "useCases": [
+    {
+      "description": "Connect to the main Ethereum network and automatically download the full node:",
+      "syntax": "geth"
+    },
+    {
+      "description": "Connect to the Ropsten test network:",
+      "syntax": "geth --testnet"
+    },
+    {
+      "description": "Create a new account:",
+      "syntax": "geth account new"
+    },
+    {
+      "description": "Enable mining:",
+      "syntax": "geth --mine"
+    }
+  ]
+}

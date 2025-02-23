@@ -1,0 +1,22 @@
+{
+  "command": "urpmi.update",
+  "description": "Update the list of packages from a package repository in Mageia. Note: Mageia documentation uses medium and repository as synonymous. See also: urpmi, urpme, urpmi.addmedia, urpmi.removemedia, urpmf, urpmq. More information: https://wiki.mageia.org/en/URPMI#urpmi.update.",
+  "useCases": [
+    {
+      "description": "Update all enabled media:",
+      "syntax": "urpmi.update -a"
+    },
+    {
+      "description": "Update specific media (including disabled media):",
+      "syntax": "urpmi.update {{medium1 medium2 ...}}"
+    },
+    {
+      "description": "Update all media that contain a specific keyword:",
+      "syntax": "urpmi.update {{keyword}}"
+    },
+    {
+      "description": "Update all configured media:",
+      "syntax": "urpmi.update e"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "gh config",
+  "description": "Change configuration for GitHub cli. More information: https://cli.github.com/manual/gh_config.",
+  "useCases": [
+    {
+      "description": "Display what Git protocol is being used:",
+      "syntax": "gh config get git_protocol"
+    },
+    {
+      "description": "Set protocol to SSH:",
+      "syntax": "gh config set git_protocol {{ssh}}"
+    },
+    {
+      "description": "Use delta in side-by-side mode as the default pager for all gh commands:",
+      "syntax": "gh config set pager '{{delta --side-by-side}}'"
+    },
+    {
+      "description": "Set text editor to Vim:",
+      "syntax": "gh config set editor {{vim}}"
+    },
+    {
+      "description": "Reset to default text editor:",
+      "syntax": "gh config set editor &quot;&quot;"
+    },
+    {
+      "description": "Disable interactive prompts:",
+      "syntax": "gh config set prompt {{disabled}}"
+    },
+    {
+      "description": "Set a specific configuration value:",
+      "syntax": "gh config set {{key}} {{value}}"
+    }
+  ]
+}

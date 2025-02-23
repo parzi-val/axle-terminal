@@ -1,0 +1,34 @@
+{
+  "command": "cd",
+  "description": "Display the current working directory or move to a different directory. In PowerShell, this command is an alias of Set-Location. This documentation is based on the Command Prompt (cmd) version of cd. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/cd.",
+  "useCases": [
+    {
+      "description": "View documentation of the equivalent PowerShell command:",
+      "syntax": "tldr set-location"
+    },
+    {
+      "description": "Display the path of the current directory:",
+      "syntax": "cd"
+    },
+    {
+      "description": "Go to a specific directory in the same drive:",
+      "syntax": "cd {{path\\to\\directory}}"
+    },
+    {
+      "description": "Go to a specific directory in a different [d]rive:",
+      "syntax": "cd /d {{C}}:{{path\\to\\directory}}"
+    },
+    {
+      "description": "Go up to the parent of the current directory:",
+      "syntax": "cd .."
+    },
+    {
+      "description": "Go to the home directory of the current user:",
+      "syntax": "cd %userprofile%"
+    },
+    {
+      "description": "Go to root of current drive:",
+      "syntax": "cd \\"
+    }
+  ]
+}

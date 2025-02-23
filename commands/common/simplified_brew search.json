@@ -1,0 +1,26 @@
+{
+  "command": "brew search",
+  "description": "Search for casks and formulae. More information: https://docs.brew.sh/Manpage#search--s-options-textregex-.",
+  "useCases": [
+    {
+      "description": "Search for casks and formulae using a keyword:",
+      "syntax": "brew search {{keyword}}"
+    },
+    {
+      "description": "Search for casks and formulae using a regular expression:",
+      "syntax": "brew search /{{regular_expression}}/"
+    },
+    {
+      "description": "Enable searching through descriptions:",
+      "syntax": "brew search --desc {{keyword}}"
+    },
+    {
+      "description": "Only search for formulae:",
+      "syntax": "brew search --formula {{keyword}}"
+    },
+    {
+      "description": "Only search for casks:",
+      "syntax": "brew search --cask {{keyword}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "nload",
+  "description": "Visualize network usage in the terminal. More information: https://github.com/rolandriegel/nload.",
+  "useCases": [
+    {
+      "description": "View all network traffic (use the arrow keys to switch interfaces):",
+      "syntax": "nload"
+    },
+    {
+      "description": "View network traffic on specific interfaces (use the arrow keys to switch interfaces):",
+      "syntax": "nload devices {{interface_one}} {{interface_two}}"
+    }
+  ]
+}

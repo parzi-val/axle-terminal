@@ -1,0 +1,18 @@
+{
+  "command": "gnucash",
+  "description": "Personal and small-business financial-accounting software. More information: https://gnucash.org.",
+  "useCases": [
+    {
+      "description": "Launch GnuCash and load the previously opened file:",
+      "syntax": "gnucash"
+    },
+    {
+      "description": "Launch GnuCash and load the specified file:",
+      "syntax": "gnucash {{path/to/file.gnucash}}"
+    },
+    {
+      "description": "Launch GnuCash and load an empty file:",
+      "syntax": "gnucash --nofile"
+    }
+  ]
+}

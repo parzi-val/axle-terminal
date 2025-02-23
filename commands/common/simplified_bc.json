@@ -1,0 +1,34 @@
+{
+  "command": "bc",
+  "description": "An arbitrary precision calculator language. See also: dc, qalc. More information: https://manned.org/bc.",
+  "useCases": [
+    {
+      "description": "Start an interactive session:",
+      "syntax": "bc"
+    },
+    {
+      "description": "Start an [i]nteractive session with the standard math [l]ibrary enabled:",
+      "syntax": "bc --interactive --mathlib"
+    },
+    {
+      "description": "Calculate an expression:",
+      "syntax": "echo '{{5 / 3}}' | bc"
+    },
+    {
+      "description": "Execute a script:",
+      "syntax": "bc {{path/to/script.bc}}"
+    },
+    {
+      "description": "Calculate an expression with the specified scale:",
+      "syntax": "echo 'scale = {{10}}; {{5 / 3}}' | bc"
+    },
+    {
+      "description": "Calculate a sine/cosine/arctangent/natural logarithm/exponential function using mathlib:",
+      "syntax": "echo '{{s|c|a|l|e}}({{1}})' | bc --mathlib"
+    },
+    {
+      "description": "Execute an inline factorial script:",
+      "syntax": "echo &quot;define factorial(n) { if (n &lt;= 1) return 1; return n*factorial(n-1); }; factorial({{10}})&quot; | bc"
+    }
+  ]
+}

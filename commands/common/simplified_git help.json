@@ -1,0 +1,26 @@
+{
+  "command": "git help",
+  "description": "Display help information about Git. More information: https://git-scm.com/docs/git-help.",
+  "useCases": [
+    {
+      "description": "Display help about a specific Git subcommand:",
+      "syntax": "git help {{subcommand}}"
+    },
+    {
+      "description": "Display help about a specific Git subcommand in a web browser:",
+      "syntax": "git help --web {{subcommand}}"
+    },
+    {
+      "description": "Display a list of all available Git subcommands:",
+      "syntax": "git help --all"
+    },
+    {
+      "description": "List the available guides:",
+      "syntax": "git help --guide"
+    },
+    {
+      "description": "List all possible configuration variables:",
+      "syntax": "git help --config"
+    }
+  ]
+}

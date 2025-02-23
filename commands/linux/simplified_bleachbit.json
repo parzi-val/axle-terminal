@@ -1,0 +1,26 @@
+{
+  "command": "bleachbit",
+  "description": "Clean junk files on the filesystem. More information: https://docs.bleachbit.org/doc/command-line-interface.html.",
+  "useCases": [
+    {
+      "description": "Start the graphical user interface (GUI) version of Bleachbit:",
+      "syntax": "bleachbit --gui"
+    },
+    {
+      "description": "Shred a file:",
+      "syntax": "bleachbit --shred {{path/to/file}}"
+    },
+    {
+      "description": "List available cleaner options:",
+      "syntax": "bleachbit --list-cleaners"
+    },
+    {
+      "description": "Preview the files that will be deleted and other changes that will be made before actually performing the clean-up operation:",
+      "syntax": "bleachbit --preview {{--preset|cleaner1.option1 cleaner2.* ...}}"
+    },
+    {
+      "description": "Perform the clean-up operation and delete files:",
+      "syntax": "bleachbit --clean {{--preset|cleaner1.option1 cleaner2.* ...}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "az disk",
+  "description": "Manage Azure Managed Disks. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/disk.",
+  "useCases": [
+    {
+      "description": "Create a managed disk:",
+      "syntax": "az disk create --resource-group {{resource_group}} --name {{disk_name}} --size-gb {{size_in_gb}}"
+    },
+    {
+      "description": "List managed disks in a resource group:",
+      "syntax": "az disk list --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Delete a managed disk:",
+      "syntax": "az disk delete --resource-group {{resource_group}} --name {{disk_name}}"
+    },
+    {
+      "description": "Grant read or write access to a managed disk (for export):",
+      "syntax": "az disk grant-access --resource-group {{resource_group}} --name {{disk_name}} --access-level {{Read|Write}} --duration-in-seconds {{seconds}}"
+    },
+    {
+      "description": "Update disk size:",
+      "syntax": "az disk update --resource-group {{resource_group}} --name {{disk_name}} --size-gb {{new_size_in_gb}}"
+    }
+  ]
+}

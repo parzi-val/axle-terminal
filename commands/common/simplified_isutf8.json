@@ -1,0 +1,26 @@
+{
+  "command": "isutf8",
+  "description": "Check whether text files contain valid UTF-8. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Check whether the specified files contain valid UTF-8:",
+      "syntax": "isutf8 {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Print errors using multiple lines:",
+      "syntax": "isutf8 --verbose {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Do not print anything to stdout, indicate the result merely with the exit code:",
+      "syntax": "isutf8 --quiet {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Only print the names of the files containing invalid UTF-8:",
+      "syntax": "isutf8 --list {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Same as --list but inverted, i.e., only print the names of the files containing valid UTF-8:",
+      "syntax": "isutf8 --invert {{path/to/file1 path/to/file2 ...}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "qm stop",
+  "description": "Stop a virtual machine. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Stop a virtual machine immediately:",
+      "syntax": "qm stop {{VM_ID}}"
+    },
+    {
+      "description": "Stop a virtual machine and wait for at most 10 seconds:",
+      "syntax": "qm stop --timeout {{10}} {{VM_ID}}"
+    },
+    {
+      "description": "Stop a virtual machine and skip lock (only root can use this option):",
+      "syntax": "qm stop --skiplock {{true}} {{VM_ID}}"
+    },
+    {
+      "description": "Stop a virtual machine and don't deactivate storage volumes:",
+      "syntax": "qm stop --keepActive {{true}} {{VM_ID}}"
+    }
+  ]
+}

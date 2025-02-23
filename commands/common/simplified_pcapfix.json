@@ -1,0 +1,26 @@
+{
+  "command": "pcapfix",
+  "description": "Repair damaged or corrupted PCAP and PcapNG files. More information: https://f00l.de/pcapfix/.",
+  "useCases": [
+    {
+      "description": "Repair a PCAP/PCapNG file (Note: for PCAP files, only the first 262144 bytes of each packet are scanned):",
+      "syntax": "pcapfix {{path/to/file.pcapng}}"
+    },
+    {
+      "description": "Repair an entire PCAP file:",
+      "syntax": "pcapfix --deep-scan {{path/to/file.pcap}}"
+    },
+    {
+      "description": "Repair a PCAP/PcapNG file and write the repaired file to the specified location:",
+      "syntax": "pcapfix --outfile {{path/to/repaired.pcap}} {{path/to/file.pcap}}"
+    },
+    {
+      "description": "Treat the specified file as a PcapNG file, ignoring automatic recognition:",
+      "syntax": "pcapfix --pcapng {{path/to/file.pcapng}}"
+    },
+    {
+      "description": "Repair a file and show the process in detail:",
+      "syntax": "pcapfix --verbose {{path/to/file.pcap}}"
+    }
+  ]
+}

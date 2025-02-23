@@ -1,0 +1,22 @@
+{
+  "command": "case",
+  "description": "Bash builtin construct for creating multi-choice conditional statements. More information: https://www.gnu.org/software/bash/manual/bash.html#index-case.",
+  "useCases": [
+    {
+      "description": "Match a variable against string literals to decide which command to run:",
+      "syntax": "case {{$COUNTRULE}} in {{words}}) {{wc -w README}} ;; {{lines}}) {{wc -l README}} ;; esac"
+    },
+    {
+      "description": "Combine patterns with |, use * as a fallback pattern:",
+      "syntax": "case {{$COUNTRULE}} in {{[wW]|words}}) {{wc -w README}} ;; {{[lL]|lines}}) {{wc -l README}} ;; *) {{echo &quot;what?&quot;}} ;; esac"
+    },
+    {
+      "description": "Allow matching multiple patterns:",
+      "syntax": "case {{$ANIMAL}} in {{cat}}) echo &quot;It's a cat&quot; ;;&amp; {{cat|dog}}) echo &quot;It's a cat or a dog&quot; ;;&amp; *) echo &quot;Fallback&quot; ;; esac"
+    },
+    {
+      "description": "Continue to the next pattern's commands without checking the pattern:",
+      "syntax": "case {{$ANIMAL}} in {{cat}}) echo &quot;It's a cat&quot; ;&amp; {{dog}}) echo &quot;It's either a dog or cat fell through&quot; ;&amp; *) echo &quot;Fallback&quot; ;; esac"
+    }
+  ]
+}

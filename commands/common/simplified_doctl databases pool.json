@@ -1,0 +1,26 @@
+{
+  "command": "doctl databases pool",
+  "description": "Manage connection pools for your database cluster. More information: https://docs.digitalocean.com/reference/doctl/reference/databases/pool/.",
+  "useCases": [
+    {
+      "description": "Run a doctl databases pool command with an access token:",
+      "syntax": "doctl databases pool {{command}} --access-token {{access_token}}"
+    },
+    {
+      "description": "Retrieve information about a database connection pool:",
+      "syntax": "doctl databases pool get {{database_id}} {{pool_name}}"
+    },
+    {
+      "description": "List connection pools for a database cluster:",
+      "syntax": "doctl databases pool list {{database_id}}"
+    },
+    {
+      "description": "Create a connection pool for a database:",
+      "syntax": "doctl databases pool create {{database_id}} {{pool_name}} --db {{new_pool_name}} --size {{pool_size}}"
+    },
+    {
+      "description": "Delete a connection pool for a database:",
+      "syntax": "doctl databases pool create {{database_id}} {{pool_name}}"
+    }
+  ]
+}

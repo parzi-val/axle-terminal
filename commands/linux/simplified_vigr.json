@@ -1,0 +1,14 @@
+{
+  "command": "vigr",
+  "description": "Edit the group file. More information: https://manned.org/vigr.",
+  "useCases": [
+    {
+      "description": "Edit the group file:",
+      "syntax": "vigr"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "vigr --version"
+    }
+  ]
+}

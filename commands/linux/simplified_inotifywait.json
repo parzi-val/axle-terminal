@@ -1,0 +1,38 @@
+{
+  "command": "inotifywait",
+  "description": "Waits for changes to files. More information: https://manned.org/inotifywait.",
+  "useCases": [
+    {
+      "description": "Watch a specific file for events, exiting after the first one:",
+      "syntax": "inotifywait {{path/to/file}}"
+    },
+    {
+      "description": "Continuously watch a specific file for events without exiting:",
+      "syntax": "inotifywait --monitor {{path/to/file}}"
+    },
+    {
+      "description": "Watch a directory recursively for events:",
+      "syntax": "inotifywait --monitor --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Watch a directory for changes, excluding files, whose names match a regular expression:",
+      "syntax": "inotifywait --monitor --recursive --exclude &quot;{{regular_expression}}&quot; {{path/to/directory}}"
+    },
+    {
+      "description": "Watch a file for changes, exiting when no event occurs for 30 seconds:",
+      "syntax": "inotifywait --monitor --timeout {{30}} {{path/to/file}}"
+    },
+    {
+      "description": "Only watch a file for file modification events:",
+      "syntax": "inotifywait --event {{modify}} {{path/to/file}}"
+    },
+    {
+      "description": "Watch a file printing only events, and no status messages:",
+      "syntax": "inotifywait --quiet {{path/to/file}}"
+    },
+    {
+      "description": "Run a command when a file is accessed:",
+      "syntax": "inotifywait --event {{access}} {{path/to/file}} &amp;&amp; {{command}}"
+    }
+  ]
+}

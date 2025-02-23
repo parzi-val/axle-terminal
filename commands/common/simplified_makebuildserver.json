@@ -1,0 +1,14 @@
+{
+  "command": "makebuildserver",
+  "description": "Create an F-Droid build server virtual machine. More information: https://f-droid.org/en/docs/Build_Server_Setup/.",
+  "useCases": [
+    {
+      "description": "Create a new virtual machine or update an existing one (if available):",
+      "syntax": "makebuildserver"
+    },
+    {
+      "description": "Force creating a fresh virtual machine:",
+      "syntax": "makebuildserver --clean"
+    }
+  ]
+}

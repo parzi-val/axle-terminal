@@ -1,0 +1,38 @@
+{
+  "command": "PHP-CS-Fixer",
+  "description": "Automatic coding style fixer for PHP. More information: https://github.com/FriendsOfPHP/PHP-CS-Fixer.",
+  "useCases": [
+    {
+      "description": "Execute code style fixing in the current directory:",
+      "syntax": "php-cs-fixer fix"
+    },
+    {
+      "description": "Execute code style fixing for a specific directory:",
+      "syntax": "php-cs-fixer fix {{path/to/directory}}"
+    },
+    {
+      "description": "Execute code style linting without applying changes:",
+      "syntax": "php-cs-fixer fix --dry-run"
+    },
+    {
+      "description": "Execute code style fixes using specific rules:",
+      "syntax": "php-cs-fixer fix --rules={{rules}}"
+    },
+    {
+      "description": "Display the rules that have been applied:",
+      "syntax": "php-cs-fixer fix --verbose"
+    },
+    {
+      "description": "Output the results in a different format:",
+      "syntax": "php-cs-fixer fix --format={{txt|json|xml|checkstyle|junit|gitlab}}"
+    },
+    {
+      "description": "Display files that require fixing:",
+      "syntax": "php-cs-fixer list-files"
+    },
+    {
+      "description": "Describe a rule or ruleset:",
+      "syntax": "php-cs-fixer describe {{rule}}"
+    }
+  ]
+}

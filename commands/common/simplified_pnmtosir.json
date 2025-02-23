@@ -1,0 +1,10 @@
+{
+  "command": "pnmtosir",
+  "description": "Convert a PNM file to a Solitaire Image Recorder file. More information: https://netpbm.sourceforge.net/doc/pnmtosir.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a SIR image:",
+      "syntax": "pnmtosir {{path/to/input.pnm}} &gt; {{path/to/output.sir}}"
+    }
+  ]
+}

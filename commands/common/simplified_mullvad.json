@@ -1,0 +1,22 @@
+{
+  "command": "mullvad",
+  "description": "CLI client for Mullvad VPN. See also: fastd, ivpn, mozillavpn, warp-cli. More information: https://mullvad.net/.",
+  "useCases": [
+    {
+      "description": "Link your Mullvad account with the specified account number:",
+      "syntax": "mullvad account set {{account_number}}"
+    },
+    {
+      "description": "Enable LAN access while VPN is on:",
+      "syntax": "mullvad lan set allow"
+    },
+    {
+      "description": "Establish the VPN tunnel:",
+      "syntax": "mullvad connect"
+    },
+    {
+      "description": "Check status of VPN tunnel:",
+      "syntax": "mullvad status"
+    }
+  ]
+}

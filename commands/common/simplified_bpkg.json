@@ -1,0 +1,30 @@
+{
+  "command": "bpkg",
+  "description": "A package manager for Bash scripts. More information: https://github.com/bpkg/bpkg.",
+  "useCases": [
+    {
+      "description": "Update the local index:",
+      "syntax": "bpkg update"
+    },
+    {
+      "description": "Install a package globally:",
+      "syntax": "bpkg install --global {{package}}"
+    },
+    {
+      "description": "Install a package in a subdirectory of the current directory:",
+      "syntax": "bpkg install {{package}}"
+    },
+    {
+      "description": "Install a specific version of a package globally:",
+      "syntax": "bpkg install {{package}}@{{version}} -g"
+    },
+    {
+      "description": "Show details about a specific package:",
+      "syntax": "bpkg show {{package}}"
+    },
+    {
+      "description": "Run a command, optionally specifying its arguments:",
+      "syntax": "bpkg run {{command}} {{argument1 argument2 ...}}"
+    }
+  ]
+}

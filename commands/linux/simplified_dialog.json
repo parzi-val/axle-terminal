@@ -1,0 +1,18 @@
+{
+  "command": "dialog",
+  "description": "Display dialog boxes on the terminal. More information: https://manned.org/dialog.",
+  "useCases": [
+    {
+      "description": "Display a message:",
+      "syntax": "dialog --msgbox &quot;{{Message}}&quot; {{height}} {{width}}"
+    },
+    {
+      "description": "Prompt the user for text:",
+      "syntax": "dialog --inputbox &quot;{{Enter text:}}&quot; {{8}} {{40}} 2&gt;{{output.txt}}"
+    },
+    {
+      "description": "Prompt the user for a yes/no question:",
+      "syntax": "dialog --yesno &quot;{{Continue?}}&quot; {{7}} {{40}}"
+    }
+  ]
+}

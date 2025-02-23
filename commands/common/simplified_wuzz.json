@@ -1,0 +1,26 @@
+{
+  "command": "wuzz",
+  "description": "Interactively inspect HTTP requests and responses. More information: https://github.com/asciimoo/wuzz.",
+  "useCases": [
+    {
+      "description": "Start wuzz:",
+      "syntax": "wuzz"
+    },
+    {
+      "description": "Send an HTTP request:",
+      "syntax": "&lt;Ctrl&gt; + R"
+    },
+    {
+      "description": "Switch to the next view:",
+      "syntax": "&lt;Ctrl&gt; + J, &lt;Tab&gt;"
+    },
+    {
+      "description": "Switch to the previous view:",
+      "syntax": "&lt;Ctrl&gt; + K, &lt;Shift&gt; + &lt;Tab&gt;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "F1"
+    }
+  ]
+}

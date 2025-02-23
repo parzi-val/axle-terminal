@@ -1,0 +1,18 @@
+{
+  "command": "cargo remove",
+  "description": "Remove dependencies from a Rust project's Cargo.toml manifest. More information: https://doc.rust-lang.org/cargo/commands/cargo-remove.html.",
+  "useCases": [
+    {
+      "description": "Remove a dependency from the current project:",
+      "syntax": "cargo remove {{dependency}}"
+    },
+    {
+      "description": "Remove a development or build dependency:",
+      "syntax": "cargo remove --{{dev|build}} {{dependency}}"
+    },
+    {
+      "description": "Remove a dependency of the given target platform:",
+      "syntax": "cargo remove --target {{target}} {{dependency}}"
+    }
+  ]
+}

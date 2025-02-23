@@ -1,0 +1,22 @@
+{
+  "command": "Get-Alias",
+  "description": "List and get command aliases in the current PowerShell session. This command can only be run under PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-alias.",
+  "useCases": [
+    {
+      "description": "List all aliases in the current session:",
+      "syntax": "Get-Alias"
+    },
+    {
+      "description": "Get the aliased command name:",
+      "syntax": "Get-Alias {{command_alias}}"
+    },
+    {
+      "description": "List all aliases assigned to a specific command:",
+      "syntax": "Get-Alias -Definition {{command}}"
+    },
+    {
+      "description": "List aliases that begins with abc, excluding those which ends at def:",
+      "syntax": "Get-Alias {{abc}}* -Exclude *{{def}}"
+    }
+  ]
+}

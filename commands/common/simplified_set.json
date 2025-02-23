@@ -1,0 +1,38 @@
+{
+  "command": "set",
+  "description": "Toggle shell options or set the values of positional parameters. More information: https://manned.org/set.1posix.",
+  "useCases": [
+    {
+      "description": "Display the names and values of shell variables:",
+      "syntax": "set"
+    },
+    {
+      "description": "Export newly initialized variables to child processes:",
+      "syntax": "set -a"
+    },
+    {
+      "description": "Write formatted messages to stderr when jobs finish:",
+      "syntax": "set -b"
+    },
+    {
+      "description": "Write and edit text in the command-line with vi-like keybindings (e.g. yy):",
+      "syntax": "set -o {{vi}}"
+    },
+    {
+      "description": "Return to default mode:",
+      "syntax": "set -o {{emacs}}"
+    },
+    {
+      "description": "List all modes:",
+      "syntax": "set -o"
+    },
+    {
+      "description": "Exit the shell when (some) commands fail:",
+      "syntax": "set -e"
+    },
+    {
+      "description": "Reset all shell parameters and assign new ones:",
+      "syntax": "set -- {{argument1 argument2...}}"
+    }
+  ]
+}

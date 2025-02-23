@@ -1,0 +1,34 @@
+{
+  "command": "cpufreq-info",
+  "description": "Show CPU frequency information. More information: https://manned.org/cpufreq-info.",
+  "useCases": [
+    {
+      "description": "Show CPU frequency information for all CPUs:",
+      "syntax": "cpufreq-info"
+    },
+    {
+      "description": "Show CPU frequency information for the specified CPU:",
+      "syntax": "cpufreq-info -c {{cpu_number}}"
+    },
+    {
+      "description": "Show the allowed minimum and maximum CPU frequency:",
+      "syntax": "cpufreq-info -l"
+    },
+    {
+      "description": "Show the current minimum and maximum CPU frequency and policy in table format:",
+      "syntax": "cpufreq-info -o"
+    },
+    {
+      "description": "Show available CPU frequency policies:",
+      "syntax": "cpufreq-info -g"
+    },
+    {
+      "description": "Show current CPU work frequency in a human-readable format, according to the cpufreq kernel module:",
+      "syntax": "cpufreq-info -f -m"
+    },
+    {
+      "description": "Show current CPU work frequency in a human-readable format, by reading it from hardware (only available to root):",
+      "syntax": "sudo cpufreq-info -w -m"
+    }
+  ]
+}

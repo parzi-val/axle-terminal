@@ -1,0 +1,38 @@
+{
+  "command": "minifab",
+  "description": "Automate the setup and deployment of Hyperledger Fabric networks. More information: https://github.com/hyperledger-labs/minifabric.",
+  "useCases": [
+    {
+      "description": "Bring up the default Hyperledger Fabric network:",
+      "syntax": "minifab up -i {{minifab_version}}"
+    },
+    {
+      "description": "Bring down the Hyperledger Fabric network:",
+      "syntax": "minifab down"
+    },
+    {
+      "description": "Install chaincode onto a specified channel:",
+      "syntax": "minifab install -n {{chaincode_name}}"
+    },
+    {
+      "description": "Install a specific chaincode version onto a channel:",
+      "syntax": "minifab install -n {{chaincode_name}} -v {{chaincode_version}}"
+    },
+    {
+      "description": "Initialize the chaincode after installation/upgrade:",
+      "syntax": "minifab approve,commit,initialize,discover"
+    },
+    {
+      "description": "Invoke a chaincode method with the specified arguments:",
+      "syntax": "minifab invoke -n {{chaincode_name}} -p '&quot;{{method_name}}&quot;, &quot;{{argument1}}&quot;, &quot;{{argument2}}&quot;, ...'"
+    },
+    {
+      "description": "Make a query on the ledger:",
+      "syntax": "minifab blockquery {{block_number}}"
+    },
+    {
+      "description": "Quickly run an application:",
+      "syntax": "minifab apprun -l {{app_programming_language}}"
+    }
+  ]
+}

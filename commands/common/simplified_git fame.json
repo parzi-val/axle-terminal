@@ -1,0 +1,38 @@
+{
+  "command": "git fame",
+  "description": "Pretty-print Git repository contributions. More information: https://github.com/casperdcl/git-fame.",
+  "useCases": [
+    {
+      "description": "Calculate contributions for the current Git repository:",
+      "syntax": "git fame"
+    },
+    {
+      "description": "Exclude files/directories that match the specified regular expression:",
+      "syntax": "git fame --excl &quot;{{regular_expression}}&quot;"
+    },
+    {
+      "description": "Calculate contributions made after the specified date:",
+      "syntax": "git fame --since &quot;{{3 weeks ago|2021-05-13}}&quot;"
+    },
+    {
+      "description": "Display contributions in the specified format:",
+      "syntax": "git fame --format {{pipe|yaml|json|csv|tsv}}"
+    },
+    {
+      "description": "Display contributions per file extension:",
+      "syntax": "git fame --bytype"
+    },
+    {
+      "description": "Ignore whitespace changes:",
+      "syntax": "git fame --ignore-whitespace"
+    },
+    {
+      "description": "Detect inter-file line moves and copies:",
+      "syntax": "git fame -C"
+    },
+    {
+      "description": "Detect intra-file line moves and copies:",
+      "syntax": "git fame -M"
+    }
+  ]
+}

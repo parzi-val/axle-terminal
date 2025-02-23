@@ -1,0 +1,34 @@
+{
+  "command": "doskey",
+  "description": "Manage macros, windows commands and command-lines. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/doskey.",
+  "useCases": [
+    {
+      "description": "List available macros:",
+      "syntax": "doskey /macros"
+    },
+    {
+      "description": "Create a new macro:",
+      "syntax": "doskey {{name}} = &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Create a new macro for a specific executable:",
+      "syntax": "doskey /exename={{executable}} {{name}} = &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Remove a macro:",
+      "syntax": "doskey {{name}} ="
+    },
+    {
+      "description": "Display all commands that are stored in memory:",
+      "syntax": "doskey /history"
+    },
+    {
+      "description": "Save macros to a file for portability:",
+      "syntax": "doskey /macros &gt; {{path\\to\\macinit_file}}"
+    },
+    {
+      "description": "Load macros from a file:",
+      "syntax": "doskey /macrofile = {{path\\to\\macinit_file}}"
+    }
+  ]
+}

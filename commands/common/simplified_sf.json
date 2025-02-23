@@ -1,0 +1,38 @@
+{
+  "command": "sf",
+  "description": "A powerful command-line interface that simplifies development and build automation when working with your Salesforce org. More information: https://developer.salesforce.com/tools/salesforcecli.",
+  "useCases": [
+    {
+      "description": "Authorize a Salesforce Organization:",
+      "syntax": "sf force:auth:web:login --setalias {{organization}} --instanceurl {{organization_url}}"
+    },
+    {
+      "description": "List all authorized organizations:",
+      "syntax": "sf force:org:list"
+    },
+    {
+      "description": "Open a specific organization in the default web browser:",
+      "syntax": "sf force:org:open --targetusername {{organization}}"
+    },
+    {
+      "description": "Display information about a specific organization:",
+      "syntax": "sf force:org:display --targetusername {{organization}}"
+    },
+    {
+      "description": "Push source metadata to an Organization:",
+      "syntax": "sf force:source:push --targetusername {{organization}}"
+    },
+    {
+      "description": "Pull source metadata from an Organization:",
+      "syntax": "sf force:source:pull --targetusername {{organization}}"
+    },
+    {
+      "description": "Generate a password for the organization's logged-in user:",
+      "syntax": "sf force:user:password:generate --targetusername {{organization}}"
+    },
+    {
+      "description": "Assign a permission set for the organization's logged-in user:",
+      "syntax": "sf force:user:permset:assign --permsetname {{permission_set_name}} --targetusername {{organization}}"
+    }
+  ]
+}

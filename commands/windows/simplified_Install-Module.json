@@ -1,0 +1,38 @@
+{
+  "command": "Install-Module",
+  "description": "Install PowerShell modules from PowerShell Gallery, NuGet, and other repositories. More information: https://learn.microsoft.com/powershell/module/powershellget/install-module.",
+  "useCases": [
+    {
+      "description": "Install a module, or update it to the latest available version:",
+      "syntax": "Install-Module {{module}}"
+    },
+    {
+      "description": "Install a module with a specific version:",
+      "syntax": "Install-Module {{module}} -RequiredVersion {{version}}"
+    },
+    {
+      "description": "Install a module no earlier than a specific version:",
+      "syntax": "Install-Module {{module}} -MinimumVersion {{version}}"
+    },
+    {
+      "description": "Specify a range of supported versions (inclusive) of the required module:",
+      "syntax": "Install-Module {{module}} -MinimumVersion {{minimum_version}} -MaximumVersion {{maximum_version}}"
+    },
+    {
+      "description": "Install module from a specific repository:",
+      "syntax": "Install-Module {{module}} -Repository {{repository}}"
+    },
+    {
+      "description": "Install module from specific repositories:",
+      "syntax": "Install-Module {{module}} -Repository {{repository1 , repository2 , ...}}"
+    },
+    {
+      "description": "Install the module for all/current user:",
+      "syntax": "Install-Module {{module}} -Scope {{AllUsers|CurrentUser}}"
+    },
+    {
+      "description": "Perform a dry run to determine which modules will be installed, upgraded, or removed through Install-Module:",
+      "syntax": "Install-Module {{module}} -WhatIf"
+    }
+  ]
+}

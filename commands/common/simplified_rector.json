@@ -1,0 +1,26 @@
+{
+  "command": "rector",
+  "description": "An automated tool for updating and refactoring PHP 5.3+ code. More information: https://github.com/rectorphp/rector.",
+  "useCases": [
+    {
+      "description": "Process a specific directory:",
+      "syntax": "rector process {{path/to/directory}}"
+    },
+    {
+      "description": "Process a directory without applying changes (dry run):",
+      "syntax": "rector process {{path/to/directory}} --dry-run"
+    },
+    {
+      "description": "Process a directory and apply coding standards:",
+      "syntax": "rector process {{path/to/directory}} --with-style"
+    },
+    {
+      "description": "Display a list of available levels:",
+      "syntax": "rector levels"
+    },
+    {
+      "description": "Process a directory with a specific level:",
+      "syntax": "rector process {{path/to/directory}} --level {{level_name}}"
+    }
+  ]
+}

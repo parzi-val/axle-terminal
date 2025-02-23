@@ -1,0 +1,18 @@
+{
+  "command": "ocaml",
+  "description": "The OCaml repl (read-evaluate-print-loop). Interprets Ocaml commands. More information: https://ocaml.org.",
+  "useCases": [
+    {
+      "description": "Read OCaml commands from the user and execute them:",
+      "syntax": "ocaml"
+    },
+    {
+      "description": "Read OCaml commands from a file and execute them:",
+      "syntax": "ocaml {{path/to/file.ml}}"
+    },
+    {
+      "description": "Run OCaml script with modules:",
+      "syntax": "ocaml {{module1}} {{module2}} {{path/to/file.ml}}"
+    }
+  ]
+}

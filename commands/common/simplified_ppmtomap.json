@@ -1,0 +1,10 @@
+{
+  "command": "ppmtomap",
+  "description": "This command has been superseded by pnmcolormap. More information: https://netpbm.sourceforge.net/doc/ppmtomap.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pnmcolormap"
+    }
+  ]
+}

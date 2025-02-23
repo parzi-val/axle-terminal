@@ -1,0 +1,30 @@
+{
+  "command": "pro",
+  "description": "Manage Ubuntu Pro services. More information: https://manned.org/ubuntu-advantage.1.",
+  "useCases": [
+    {
+      "description": "Connect your system to the Ubuntu Pro support contract:",
+      "syntax": "sudo pro attach"
+    },
+    {
+      "description": "Display the status of Ubuntu Pro services:",
+      "syntax": "pro status"
+    },
+    {
+      "description": "Check if the system is affected by a specific vulnerability (and apply a fix if possible):",
+      "syntax": "pro fix {{CVE-number}}"
+    },
+    {
+      "description": "Display the number of unsupported packages:",
+      "syntax": "pro security-status"
+    },
+    {
+      "description": "List packages that are no longer available for download:",
+      "syntax": "pro security-status --unavailable"
+    },
+    {
+      "description": "List third-party packages:",
+      "syntax": "pro security-status --thirdparty"
+    }
+  ]
+}

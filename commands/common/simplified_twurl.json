@@ -1,0 +1,30 @@
+{
+  "command": "twurl",
+  "description": "Curl-like command but tailored specifically for the Twitter API. More information: https://github.com/twitter/twurl.",
+  "useCases": [
+    {
+      "description": "Authorize twurl to access a Twitter account:",
+      "syntax": "twurl authorize --consumer-key {{twitter_api_key}} --consumer-secret {{twitter_api_secret}}"
+    },
+    {
+      "description": "Make a GET request to an API endpoint:",
+      "syntax": "twurl -X GET {{twitter_api_endpoint}}"
+    },
+    {
+      "description": "Make a POST request to an API endpoint:",
+      "syntax": "twurl -X POST -d '{{endpoint_params}}' {{twitter_api_endpoint}}"
+    },
+    {
+      "description": "Upload media to Twitter:",
+      "syntax": "twurl -H &quot;{{twitter_upload_url}}&quot; -X POST &quot;{{twitter_upload_endpoint}}&quot; --file &quot;{{path/to/media.jpg}}&quot; --file-field &quot;media&quot;"
+    },
+    {
+      "description": "Access a different Twitter API host:",
+      "syntax": "twurl -H {{twitter_api_url}} -X GET {{twitter_api_endpoint}}"
+    },
+    {
+      "description": "Create an alias for a requested resource:",
+      "syntax": "twurl alias {{alias_name}} {{resource}}"
+    }
+  ]
+}

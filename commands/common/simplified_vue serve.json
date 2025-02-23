@@ -1,0 +1,10 @@
+{
+  "command": "vue serve",
+  "description": "A subcommand provided by @vue/cli and @vue/cli-service-global that enables quick prototyping. More information: https://cli.vuejs.org/guide/prototyping.html.",
+  "useCases": [
+    {
+      "description": "Serve a .js or .vue file in development mode with zero config:",
+      "syntax": "vue serve {{filename}}"
+    }
+  ]
+}

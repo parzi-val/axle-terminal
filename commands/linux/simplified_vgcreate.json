@@ -1,0 +1,14 @@
+{
+  "command": "vgcreate",
+  "description": "Create volume groups combining multiple mass-storage devices. See also: lvm. More information: https://manned.org/vgcreate.",
+  "useCases": [
+    {
+      "description": "Create a new volume group called vg1 using the /dev/sda1 device:",
+      "syntax": "vgcreate {{vg1}} {{/dev/sda1}}"
+    },
+    {
+      "description": "Create a new volume group called vg1 using multiple devices:",
+      "syntax": "vgcreate {{vg1}} {{/dev/sda1}} {{/dev/sdb1}} {{/dev/sdc1}}"
+    }
+  ]
+}

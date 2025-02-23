@@ -1,0 +1,18 @@
+{
+  "command": "fuck",
+  "description": "Corrects your previous console command. More information: https://github.com/nvbn/thefuck.",
+  "useCases": [
+    {
+      "description": "Set the fuck alias to thefuck tool:",
+      "syntax": "eval &quot;$(thefuck --alias)&quot;"
+    },
+    {
+      "description": "Try to match a rule for the previous command:",
+      "syntax": "fuck"
+    },
+    {
+      "description": "Confirm the first choice immediately (correct argument depends on level of annoyance):",
+      "syntax": "fuck --{{yes|yeah|hard}}"
+    }
+  ]
+}

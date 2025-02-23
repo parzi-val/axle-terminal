@@ -1,0 +1,14 @@
+{
+  "command": "pbmtobbnbg",
+  "description": "Convert a PBM image to a BitGraph graphic. More information: https://netpbm.sourceforge.net/doc/pbmtobbnbg.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to a BitGraph terminal Display Pixel Data sequence:",
+      "syntax": "pbmtobbnbg &lt; {{path/to/image.pbm}} &gt; {{path/to/output.dpd}}"
+    },
+    {
+      "description": "Specify the rasterop:",
+      "syntax": "pbmtobbnbg {{3}} &lt; {{path/to/image.pbm}} &gt; {{path/to/output.dpd}}"
+    }
+  ]
+}

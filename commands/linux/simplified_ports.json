@@ -1,0 +1,18 @@
+{
+  "command": "ports",
+  "description": "Update/list the ports tree on a CRUX system. More information: https://manned.org/ports.",
+  "useCases": [
+    {
+      "description": "Update the ports tree:",
+      "syntax": "ports -u"
+    },
+    {
+      "description": "List the ports in the current tree:",
+      "syntax": "ports -l"
+    },
+    {
+      "description": "Check the differences between installed packages and the ports tree:",
+      "syntax": "ports -d"
+    }
+  ]
+}

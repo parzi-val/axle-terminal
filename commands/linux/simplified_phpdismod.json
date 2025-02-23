@@ -1,0 +1,14 @@
+{
+  "command": "phpdismod",
+  "description": "Disable PHP extensions on Debian-based OSes. More information: https://salsa.debian.org/php-team/php-defaults.",
+  "useCases": [
+    {
+      "description": "Disable the JSON extension for every SAPI of every PHP version:",
+      "syntax": "sudo phpdismod {{json}}"
+    },
+    {
+      "description": "Disable the JSON extension for PHP 7.3 with the cli SAPI:",
+      "syntax": "sudo phpdismod -v {{7.3}} -s {{cli}} {{json}}"
+    }
+  ]
+}

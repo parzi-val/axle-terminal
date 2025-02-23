@@ -1,0 +1,18 @@
+{
+  "command": "brew outdated",
+  "description": "List outdated casks and formulae. To upgrade everything, use brew upgrade. More information: https://docs.brew.sh/Manpage#outdated-options-formulacask-.",
+  "useCases": [
+    {
+      "description": "List all outdated casks and formulae:",
+      "syntax": "brew outdated"
+    },
+    {
+      "description": "List only outdated formulae:",
+      "syntax": "brew outdated --formula"
+    },
+    {
+      "description": "List only outdated casks:",
+      "syntax": "brew outdated --cask"
+    }
+  ]
+}

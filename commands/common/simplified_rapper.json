@@ -1,0 +1,14 @@
+{
+  "command": "rapper",
+  "description": "The Raptor RDF parsing utility. Part of the Raptor RDF Syntax Library. More information: https://librdf.org/raptor/rapper.html.",
+  "useCases": [
+    {
+      "description": "Convert an RDF/XML document to Turtle:",
+      "syntax": "rapper -i rdfxml -o turtle {{path/to/file}}"
+    },
+    {
+      "description": "Count the number of triples in a Turtle file:",
+      "syntax": "rapper -i turtle -c {{path/to/file}}"
+    }
+  ]
+}

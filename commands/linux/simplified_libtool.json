@@ -1,0 +1,34 @@
+{
+  "command": "libtool",
+  "description": "A generic library support script that hides the complexity of using shared libraries behind a consistent, portable interface. More information: https://www.gnu.org/software/libtool/manual/libtool.html#Invoking-libtool.",
+  "useCases": [
+    {
+      "description": "Compile a source file into a libtool object:",
+      "syntax": "libtool --mode=compile gcc -c {{path/to/source.c}} -o {{path/to/source.lo}}"
+    },
+    {
+      "description": "Create a library or an executable:",
+      "syntax": "libtool --mode=link gcc -o {{path/to/library.lo}} {{path/to/source.lo}}"
+    },
+    {
+      "description": "Automatically set the library path so that another program can use uninstalled libtool generated programs or libraries:",
+      "syntax": "libtool --mode=execute gdb {{path/to/program}}"
+    },
+    {
+      "description": "Install a shared library:",
+      "syntax": "libtool --mode=install cp {{path/to/library.la}} {{path/to/installation_directory}}"
+    },
+    {
+      "description": "Complete the installation of libtool libraries on the system:",
+      "syntax": "libtool --mode=finish {{path/to/installation_dir}}"
+    },
+    {
+      "description": "Delete installed libraries or executables:",
+      "syntax": "libtool --mode=uninstall {{path/to/installed_library.la}}"
+    },
+    {
+      "description": "Delete uninstalled libraries or executables:",
+      "syntax": "libtool --mode=clean rm {{path/to/source.lo}} {{path/to/library.la}}"
+    }
+  ]
+}

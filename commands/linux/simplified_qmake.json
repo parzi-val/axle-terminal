@@ -1,0 +1,26 @@
+{
+  "command": "qmake",
+  "description": "Generate Makefiles from Qt project files. More information: https://doc.qt.io/qt-6/qmake-manual.html.",
+  "useCases": [
+    {
+      "description": "Generate a Makefile from a project file in the current directory:",
+      "syntax": "qmake"
+    },
+    {
+      "description": "Specify Makefile and project file locations:",
+      "syntax": "qmake -o {{path/to/Makefile}} {{path/to/project_file.pro}}"
+    },
+    {
+      "description": "Generate a default project file:",
+      "syntax": "qmake -project"
+    },
+    {
+      "description": "Compile a project:",
+      "syntax": "qmake &amp;&amp; make"
+    },
+    {
+      "description": "Enable debug mode:",
+      "syntax": "qmake -d"
+    }
+  ]
+}

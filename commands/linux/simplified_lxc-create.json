@@ -1,0 +1,18 @@
+{
+  "command": "lxc-create",
+  "description": "Create linux containers. More information: https://linuxcontainers.org/lxc/getting-started.",
+  "useCases": [
+    {
+      "description": "Create a container interactively in /var/lib/lxc/:",
+      "syntax": "lxc-create --name {{container}} --template download"
+    },
+    {
+      "description": "Create a container in a target directory:",
+      "syntax": "lxc-create --lxcpath {{/path/to/directory/}} --name {{container}} --template download"
+    },
+    {
+      "description": "Create a container passing options to a template:",
+      "syntax": "lxc-create --name {{name}} --template download -- --dist {{distro-name}} --release {{release-version}} --arch {{arch}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "lsar",
+  "description": "List an archive file's contents. See also: unar, ar. More information: https://manned.org/lsar.",
+  "useCases": [
+    {
+      "description": "List an archive file's contents:",
+      "syntax": "lsar {{path/to/archive}}"
+    },
+    {
+      "description": "List a password protected archive file's contents:",
+      "syntax": "lsar {{path/to/archive}} --password {{password}}"
+    },
+    {
+      "description": "Print al[L] available information about each file in the archive (it's very long):",
+      "syntax": "lsar {{-L|--verylong}} {{path/to/archive}}"
+    },
+    {
+      "description": "Test the integrity of the files in the archive (if possible):",
+      "syntax": "lsar --test {{path/to/archive}}"
+    },
+    {
+      "description": "List the archive file's contents in JSON format:",
+      "syntax": "lsar --json {{path/to/archive}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "lsar --help"
+    }
+  ]
+}

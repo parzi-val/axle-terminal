@@ -1,0 +1,10 @@
+{
+  "command": "pgmdeshadow",
+  "description": "Deshadow a PGM image. More information: https://netpbm.sourceforge.net/doc/pgmdeshadow.html.",
+  "useCases": [
+    {
+      "description": "Remove grey shadows from a PGM image:",
+      "syntax": "pgmdeshadow {{path/to/input_file.pgm}} &gt; {{path/to/output_file.pgm}}"
+    }
+  ]
+}

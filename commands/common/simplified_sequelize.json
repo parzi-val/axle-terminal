@@ -1,0 +1,26 @@
+{
+  "command": "sequelize",
+  "description": "Promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. More information: https://sequelize.org/.",
+  "useCases": [
+    {
+      "description": "Create a model with 3 fields and a migration file:",
+      "syntax": "sequelize model:generate --name {{table_name}} --attributes {{field1:integer,field2:string,field3:boolean}}"
+    },
+    {
+      "description": "Run the migration file:",
+      "syntax": "sequelize db:migrate"
+    },
+    {
+      "description": "Revert all migrations:",
+      "syntax": "sequelize db:migrate:undo:all"
+    },
+    {
+      "description": "Create a seed file with the specified name to populate the database:",
+      "syntax": "sequelize seed:generate --name {{seed_filename}}"
+    },
+    {
+      "description": "Populate database using all seed files:",
+      "syntax": "sequelize db:seed:all"
+    }
+  ]
+}

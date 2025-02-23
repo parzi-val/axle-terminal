@@ -1,0 +1,18 @@
+{
+  "command": "gpgv",
+  "description": "Verify OpenPGP signatures. More information: https://www.gnupg.org/documentation/manuals/gnupg/gpgv.html.",
+  "useCases": [
+    {
+      "description": "Verify a signed file:",
+      "syntax": "gpgv {{path/to/file}}"
+    },
+    {
+      "description": "Verify a signed file using a detached signature:",
+      "syntax": "gpgv {{path/to/signature}} {{path/to/file}}"
+    },
+    {
+      "description": "Add a file to the list of keyrings (a single exported key also counts as a keyring):",
+      "syntax": "gpgv --keyring {{./alice.keyring}} {{path/to/signature}} {{path/to/file}}"
+    }
+  ]
+}

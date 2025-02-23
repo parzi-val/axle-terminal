@@ -1,0 +1,30 @@
+{
+  "command": "hg commit",
+  "description": "Commit all staged or specified files to the repository. More information: https://www.mercurial-scm.org/doc/hg.1.html#commit.",
+  "useCases": [
+    {
+      "description": "Commit staged files to the repository:",
+      "syntax": "hg commit"
+    },
+    {
+      "description": "Commit a specific file or directory:",
+      "syntax": "hg commit {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Commit with a specific message:",
+      "syntax": "hg commit --message {{message}}"
+    },
+    {
+      "description": "Commit all files matching a specified pattern:",
+      "syntax": "hg commit --include {{pattern}}"
+    },
+    {
+      "description": "Commit all files, excluding those that match a specified pattern:",
+      "syntax": "hg commit --exclude {{pattern}}"
+    },
+    {
+      "description": "Commit using the interactive mode:",
+      "syntax": "hg commit --interactive"
+    }
+  ]
+}

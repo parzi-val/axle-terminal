@@ -1,0 +1,18 @@
+{
+  "command": "aplay",
+  "description": "Sound player for ALSA soundcard driver. More information: https://manned.org/aplay.",
+  "useCases": [
+    {
+      "description": "Play a specific file (sampling rate, bit depth, etc. will be automatically determined for the file format):",
+      "syntax": "aplay {{path/to/file}}"
+    },
+    {
+      "description": "Play the first 10 seconds of a specific file at 2500 Hz:",
+      "syntax": "aplay --duration={{10}} --rate={{2500}} {{path/to/file}}"
+    },
+    {
+      "description": "Play the raw file as a 22050 Hz, mono, 8-bit, Mu-Law .au file:",
+      "syntax": "aplay --channels={{1}} --file-type {{raw}} --rate={{22050}} --format={{mu_law}} {{path/to/file}}"
+    }
+  ]
+}

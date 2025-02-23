@@ -1,0 +1,26 @@
+{
+  "command": "pandoc",
+  "description": "Convert documents between various formats. More information: https://pandoc.org/MANUAL.html.",
+  "useCases": [
+    {
+      "description": "Convert file to PDF (the output format is determined by file extension):",
+      "syntax": "pandoc {{path/to/input.md}} {{-o|--output}} {{path/to/output.pdf}}"
+    },
+    {
+      "description": "Convert to a standalone file with the appropriate headers/footers (for LaTeX, HTML, etc.):",
+      "syntax": "pandoc {{path/to/input.md}} {{-s|--standalone}} {{-o|--output}} {{path/to/output.html}}"
+    },
+    {
+      "description": "Manually specify format detection and conversion (overriding automatic format detection using filename extension or when filename extension is missing altogether):",
+      "syntax": "pandoc {{-f|-r|--from|--read}} {{docx|...}} {{path/to/input}} {{-t|-w|--to|--write}} {{pdf|...}} {{-o|--output}} {{path/to/output}}"
+    },
+    {
+      "description": "List all supported input formats:",
+      "syntax": "pandoc --list-input-formats"
+    },
+    {
+      "description": "List all supported output formats:",
+      "syntax": "pandoc --list-output-formats"
+    }
+  ]
+}

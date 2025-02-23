@@ -1,0 +1,30 @@
+{
+  "command": "trust",
+  "description": "Operate on the trust policy store. More information: https://manned.org/trust.",
+  "useCases": [
+    {
+      "description": "List trust policy store items:",
+      "syntax": "trust list"
+    },
+    {
+      "description": "List information about specific items in the trust policy store:",
+      "syntax": "trust list --filter={{blocklist|ca-anchors|certificates|trust-policy}}"
+    },
+    {
+      "description": "Store a specific trust anchor in the trust policy store:",
+      "syntax": "trust anchor {{path/to/certificate.crt}}"
+    },
+    {
+      "description": "Remove a specific anchor from the trust policy store:",
+      "syntax": "trust anchor --remove {{path/to/certificate.crt}}"
+    },
+    {
+      "description": "Extract trust policy from the shared trust policy store:",
+      "syntax": "trust extract --format=x509-directory --filter=ca-anchors {{path/to/directory}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "trust {{subcommand}} --help"
+    }
+  ]
+}

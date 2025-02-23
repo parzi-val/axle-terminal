@@ -1,0 +1,14 @@
+{
+  "command": "hub branch",
+  "description": "Create a branch or show current branch. See also git branch.",
+  "useCases": [
+    {
+      "description": "Show the name of the currently active branch:",
+      "syntax": "hub branch"
+    },
+    {
+      "description": "Create a new branch:",
+      "syntax": "hub branch {{branch_name}}"
+    }
+  ]
+}

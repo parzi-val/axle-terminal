@@ -1,0 +1,14 @@
+{
+  "command": "a2ensite",
+  "description": "Enable an Apache virtual host on Debian-based OSes. More information: https://manned.org/a2ensite.8.",
+  "useCases": [
+    {
+      "description": "Enable a virtual host:",
+      "syntax": "sudo a2ensite {{virtual_host}}"
+    },
+    {
+      "description": "Don't show informative messages:",
+      "syntax": "sudo a2ensite --quiet {{virtual_host}}"
+    }
+  ]
+}

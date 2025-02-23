@@ -1,0 +1,22 @@
+{
+  "command": "nohup",
+  "description": "Allows for a process to live when the terminal gets killed. More information: https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html.",
+  "useCases": [
+    {
+      "description": "Run a process that can live beyond the terminal:",
+      "syntax": "nohup {{command}} {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Launch nohup in background mode:",
+      "syntax": "nohup {{command}} {{argument1 argument2 ...}} &amp;"
+    },
+    {
+      "description": "Run a shell script that can live beyond the terminal:",
+      "syntax": "nohup {{path/to/script.sh}} &amp;"
+    },
+    {
+      "description": "Run a process and write the output to a specific file:",
+      "syntax": "nohup {{command}} {{argument1 argument2 ...}} &gt; {{path/to/output_file}} &amp;"
+    }
+  ]
+}

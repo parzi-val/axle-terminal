@@ -1,0 +1,26 @@
+{
+  "command": "fiascotopnm",
+  "description": "Convert a compressed FIASCO file to a PNM image. More information: https://netpbm.sourceforge.net/doc/fiascotopnm.html.",
+  "useCases": [
+    {
+      "description": "Convert a compressed FIASCO file to a PNM file or in the case of video streams multiple PNM files:",
+      "syntax": "fiascotopnm {{path/to/file.fiasco}} -o {{output_file_basename}}"
+    },
+    {
+      "description": "Use fast decompression, resulting in a slightly decreased quality of the output file(s):",
+      "syntax": "fiascotopnm --fast {{path/to/file.fiasco}} -o {{output_file_basename}}"
+    },
+    {
+      "description": "Load the options to be used from the specified configuration file:",
+      "syntax": "fiascotopnm --config {{path/to/fiascorc}} {{path/to/file.fiasco}} -o {{output_file_basename}}"
+    },
+    {
+      "description": "Magnify the decompressed image(s) by a factor of 2^n:",
+      "syntax": "fiascotopnm --magnify {{n}} {{path/to/file.fiasco}} -o {{output_file_basename}}"
+    },
+    {
+      "description": "Smooth the decompressed image by the specified amount:",
+      "syntax": "fiascotopnm --smooth {{n}} {{path/to/file.fiasco}} -o {{output_file_basename}}"
+    }
+  ]
+}

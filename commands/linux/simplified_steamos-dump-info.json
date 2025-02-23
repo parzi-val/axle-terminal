@@ -1,0 +1,10 @@
+{
+  "command": "steamos-dump-info",
+  "description": "View SteamOS system information. More information: https://gitlab.com/users/evlaV/projects.",
+  "useCases": [
+    {
+      "description": "View SteamOS system information:",
+      "syntax": "sudo steamos-dump-info"
+    }
+  ]
+}

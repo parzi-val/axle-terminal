@@ -1,0 +1,26 @@
+{
+  "command": "trap",
+  "description": "Execute a command upon an event. More information: https://www.gnu.org/software/bash/manual/bash.html#index-trap.",
+  "useCases": [
+    {
+      "description": "List the available event names (e.g. SIGWINCH):",
+      "syntax": "trap -l"
+    },
+    {
+      "description": "List the commands and the names of the expected events:",
+      "syntax": "trap"
+    },
+    {
+      "description": "Execute a command when a signal is received:",
+      "syntax": "trap 'echo &quot;Caught signal {{SIGHUP}}&quot;' {{SIGHUP}}"
+    },
+    {
+      "description": "Remove commands:",
+      "syntax": "trap - {{SIGHUP}} {{SIGINT}}"
+    },
+    {
+      "description": "Ignore a signal:",
+      "syntax": "trap '' {{SIGINT}}"
+    }
+  ]
+}

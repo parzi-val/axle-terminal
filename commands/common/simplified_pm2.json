@@ -1,0 +1,34 @@
+{
+  "command": "pm2",
+  "description": "Process manager for Node.js. Used for log management, monitoring and configuring processes. More information: https://pm2.keymetrics.io.",
+  "useCases": [
+    {
+      "description": "Start a process with a name that can be used for later operations:",
+      "syntax": "pm2 start {{app.js}} --name {{application_name}}"
+    },
+    {
+      "description": "List processes:",
+      "syntax": "pm2 list"
+    },
+    {
+      "description": "Monitor all processes:",
+      "syntax": "pm2 monit"
+    },
+    {
+      "description": "Stop a process:",
+      "syntax": "pm2 stop {{application_name}}"
+    },
+    {
+      "description": "Restart a process:",
+      "syntax": "pm2 restart {{application_name}}"
+    },
+    {
+      "description": "Dump all processes for resurrecting them later:",
+      "syntax": "pm2 save"
+    },
+    {
+      "description": "Resurrect previously dumped processes:",
+      "syntax": "pm2 resurrect"
+    }
+  ]
+}

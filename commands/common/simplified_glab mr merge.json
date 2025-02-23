@@ -1,0 +1,26 @@
+{
+  "command": "glab mr merge",
+  "description": "Merge GitLab merge requests. More information: https://glab.readthedocs.io/en/latest/mr/merge.html.",
+  "useCases": [
+    {
+      "description": "Merge the merge request associated with the current branch interactively:",
+      "syntax": "glab mr merge"
+    },
+    {
+      "description": "Merge the specified merge request, interactively:",
+      "syntax": "glab mr merge {{mr_number}}"
+    },
+    {
+      "description": "Merge the merge request, removing the branch on both the local and the remote:",
+      "syntax": "glab mr merge --remove-source-branch"
+    },
+    {
+      "description": "Squash the current merge request into one commit with the message body and merge:",
+      "syntax": "glab mr merge --squash --message=&quot;{{commit_message_body}}&quot;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "glab mr merge --help"
+    }
+  ]
+}

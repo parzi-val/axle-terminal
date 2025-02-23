@@ -1,0 +1,18 @@
+{
+  "command": "aws cur",
+  "description": "Create, query, and delete AWS usage report definitions. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cur/index.html.",
+  "useCases": [
+    {
+      "description": "Create an AWS cost and usage report definition from a JSON file:",
+      "syntax": "aws cur put-report-definition --report-definition file://{{path/to/report_definition.json}}"
+    },
+    {
+      "description": "List usage report definitions defined for the logged in account:",
+      "syntax": "aws cur describe-report-definitions"
+    },
+    {
+      "description": "Delete a usage report definition:",
+      "syntax": "aws cur --region {{aws_region}} delete-report-definition --report-name {{report}}"
+    }
+  ]
+}

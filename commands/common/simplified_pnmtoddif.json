@@ -1,0 +1,14 @@
+{
+  "command": "pnmtoddif",
+  "description": "Convert a PNM image to a DDIF image file. More information: https://netpbm.sourceforge.net/doc/pnmtoddif.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a DDIF image file:",
+      "syntax": "pnmtoddif {{path/to/image.pnm}} &gt; {{path/to/image.ddif}}"
+    },
+    {
+      "description": "Explicitly specify the horizontal and vertical resolution of the output image:",
+      "syntax": "pnmtoddif -resolution {{horizontal_dpi}} {{vertical_dpi}} {{path/to/image.pnm}} &gt; {{path/to/image.ddif}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "exit",
+  "description": "Exit the shell. More information: https://manned.org/exit.1posix.",
+  "useCases": [
+    {
+      "description": "Exit with the exit status of the most recently executed command:",
+      "syntax": "exit"
+    },
+    {
+      "description": "Exit with a specific exit status:",
+      "syntax": "exit {{exit_code}}"
+    }
+  ]
+}

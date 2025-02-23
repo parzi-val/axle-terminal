@@ -1,0 +1,18 @@
+{
+  "command": "git check-ref-format",
+  "description": "Check if a reference name is acceptable, and exit with a non-zero status if it is not. More information: https://git-scm.com/docs/git-check-ref-format.",
+  "useCases": [
+    {
+      "description": "Check the format of the specified reference name:",
+      "syntax": "git check-ref-format {{refs/head/refname}}"
+    },
+    {
+      "description": "Print the name of the last branch checked out:",
+      "syntax": "git check-ref-format --branch @{-1}"
+    },
+    {
+      "description": "Normalize a refname:",
+      "syntax": "git check-ref-format --normalize {{refs/head/refname}}"
+    }
+  ]
+}

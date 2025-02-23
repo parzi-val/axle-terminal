@@ -1,0 +1,30 @@
+{
+  "command": "timedatectl",
+  "description": "Control the system time and date. More information: https://manned.org/timedatectl.",
+  "useCases": [
+    {
+      "description": "Check the current system clock time:",
+      "syntax": "timedatectl"
+    },
+    {
+      "description": "Set the local time of the system clock directly:",
+      "syntax": "timedatectl set-time &quot;{{yyyy-MM-dd hh:mm:ss}}&quot;"
+    },
+    {
+      "description": "List available timezones:",
+      "syntax": "timedatectl list-timezones"
+    },
+    {
+      "description": "Set the system timezone:",
+      "syntax": "timedatectl set-timezone {{timezone}}"
+    },
+    {
+      "description": "Enable Network Time Protocol (NTP) synchronization:",
+      "syntax": "timedatectl set-ntp on"
+    },
+    {
+      "description": "Change the hardware clock time standard to localtime:",
+      "syntax": "timedatectl set-local-rtc 1"
+    }
+  ]
+}

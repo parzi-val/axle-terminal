@@ -1,0 +1,26 @@
+{
+  "command": "lspci",
+  "description": "List all PCI devices. More information: https://manned.org/lspci.",
+  "useCases": [
+    {
+      "description": "Show a brief list of devices:",
+      "syntax": "lspci"
+    },
+    {
+      "description": "Display additional info:",
+      "syntax": "lspci -v"
+    },
+    {
+      "description": "Display drivers and modules handling each device:",
+      "syntax": "lspci -k"
+    },
+    {
+      "description": "Show a specific device:",
+      "syntax": "lspci -s {{00:18.3}}"
+    },
+    {
+      "description": "Dump info in a readable form:",
+      "syntax": "lspci -vm"
+    }
+  ]
+}

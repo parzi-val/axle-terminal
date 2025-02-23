@@ -1,0 +1,22 @@
+{
+  "command": "sublist3r",
+  "description": "Fast subdomains enumeration tool for penetration testers. More information: https://github.com/aboul3la/Sublist3r.",
+  "useCases": [
+    {
+      "description": "Find subdomains for a domain:",
+      "syntax": "sublist3r --domain {{domain_name}}"
+    },
+    {
+      "description": "Find subdomains for a domain, also enabling brute force search:",
+      "syntax": "sublist3r --domain {{domain_name}} --bruteforce"
+    },
+    {
+      "description": "Save the found subdomains to a text file:",
+      "syntax": "sublist3r --domain {{domain_name}} --output {{path/to/output_file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sublist3r --help"
+    }
+  ]
+}

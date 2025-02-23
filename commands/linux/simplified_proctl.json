@@ -1,0 +1,38 @@
+{
+  "command": "proctl",
+  "description": "Manage projects licenses and languages, switch between templated licenses. More information: https://github.com/HeCodes2Much/proctl.",
+  "useCases": [
+    {
+      "description": "List available licenses:",
+      "syntax": "proctl {{-ll|-list-licenses}}"
+    },
+    {
+      "description": "List available languages:",
+      "syntax": "proctl {{-lL|-list-languages}}"
+    },
+    {
+      "description": "Pick a license in a FZF menu:",
+      "syntax": "proctl {{-pl|-pick-license}}"
+    },
+    {
+      "description": "Pick a language in a FZF menu:",
+      "syntax": "proctl {{-pL|-pick-language}}"
+    },
+    {
+      "description": "Remove all licenses from the current project:",
+      "syntax": "proctl {{-r|-remove-license}}"
+    },
+    {
+      "description": "Create a new license template:",
+      "syntax": "proctl {{-t|-new-template}}"
+    },
+    {
+      "description": "Delete a license from templates:",
+      "syntax": "proctl {{-R|-delete-license}} {{@license_name1 @license_name2 ...}}"
+    },
+    {
+      "description": "Show this helpful list of commands:",
+      "syntax": "proctl {{-h|-help}}"
+    }
+  ]
+}

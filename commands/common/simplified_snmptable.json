@@ -1,0 +1,10 @@
+{
+  "command": "snmptable",
+  "description": "Fetch data in tabular format. More information: https://manned.org/snmptable.",
+  "useCases": [
+    {
+      "description": "Fetch data:",
+      "syntax": "snmpget -v {{version}} -c {{community}} {{ip}} {{oid}}"
+    }
+  ]
+}

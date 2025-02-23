@@ -1,0 +1,14 @@
+{
+  "command": "mono",
+  "description": "Runtime for the .NET Framework. More information: https://www.mono-project.com/docs/.",
+  "useCases": [
+    {
+      "description": "Run a .NET assembly in debug mode:",
+      "syntax": "mono --debug {{path/to/program.exe}}"
+    },
+    {
+      "description": "Run a .NET assembly:",
+      "syntax": "mono {{path/to/program.exe}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "balena",
+  "description": "Interact with the balenaCloud, openBalena and the balena API. More information: https://www.balena.io/docs/reference/cli/.",
+  "useCases": [
+    {
+      "description": "Log in to the balenaCloud account:",
+      "syntax": "balena login"
+    },
+    {
+      "description": "Create a balenaCloud or openBalena application:",
+      "syntax": "balena app create {{app_name}}"
+    },
+    {
+      "description": "List all balenaCloud or openBalena applications within the account:",
+      "syntax": "balena apps"
+    },
+    {
+      "description": "List all devices associated with the balenaCloud or openBalena account:",
+      "syntax": "balena devices"
+    },
+    {
+      "description": "Flash a balenaOS image to a local drive:",
+      "syntax": "balena local flash {{path/to/balenaos.img}} --drive {{drive_location}}"
+    }
+  ]
+}

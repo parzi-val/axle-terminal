@@ -1,0 +1,14 @@
+{
+  "command": "dolt sql",
+  "description": "Run an SQL query. Multiple SQL statements must be separated by semicolons. More information: https://docs.dolthub.com/cli-reference/cli#dolt-sql.",
+  "useCases": [
+    {
+      "description": "Run a single query:",
+      "syntax": "dolt sql --query &quot;{{INSERT INTO t values (1, 3);}}&quot;"
+    },
+    {
+      "description": "List all saved queries:",
+      "syntax": "dolt sql --list-saved"
+    }
+  ]
+}

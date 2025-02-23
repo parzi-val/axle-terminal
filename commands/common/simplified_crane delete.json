@@ -1,0 +1,14 @@
+{
+  "command": "crane delete",
+  "description": "Delete an image reference from its registry. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_delete.md.",
+  "useCases": [
+    {
+      "description": "Delete an image reference from its registry:",
+      "syntax": "crane delete {{image_name}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane delete {{-h|--help}}"
+    }
+  ]
+}

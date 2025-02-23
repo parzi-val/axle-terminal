@@ -1,0 +1,38 @@
+{
+  "command": "gh help",
+  "description": "Display help about the GitHub CLI command. More information: https://cli.github.com/manual/gh_help.",
+  "useCases": [
+    {
+      "description": "Display general help:",
+      "syntax": "gh help"
+    },
+    {
+      "description": "Display help for the gh help subcommand:",
+      "syntax": "gh help --help"
+    },
+    {
+      "description": "Display help about environment variables that can be used with gh:",
+      "syntax": "gh help environment"
+    },
+    {
+      "description": "Display a markdown reference of all gh commands:",
+      "syntax": "gh help reference"
+    },
+    {
+      "description": "Display help about formatting JSON output from gh using jq:",
+      "syntax": "gh help formatting"
+    },
+    {
+      "description": "Display help about using gh with MinTTY:",
+      "syntax": "gh help mintty"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "gh help {{subcommand}}"
+    },
+    {
+      "description": "Display help for a subcommand action:",
+      "syntax": "gh help {{pr}} {{create}}"
+    }
+  ]
+}

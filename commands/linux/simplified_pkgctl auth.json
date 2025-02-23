@@ -1,0 +1,14 @@
+{
+  "command": "pkgctl auth",
+  "description": "Authenticate pkgctl with services like GitLab. More information: https://manned.org/pkgctl-auth.1.",
+  "useCases": [
+    {
+      "description": "Authenticate pkgctl with the GitLab instance:",
+      "syntax": "pkgctl auth login"
+    },
+    {
+      "description": "View authentication status:",
+      "syntax": "pkgctl auth status"
+    }
+  ]
+}

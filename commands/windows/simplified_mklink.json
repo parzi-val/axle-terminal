@@ -1,0 +1,22 @@
+{
+  "command": "mklink",
+  "description": "Create symbolic links. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/mklink.",
+  "useCases": [
+    {
+      "description": "Create a symbolic link to a file:",
+      "syntax": "mklink {{path\\to\\link_file}} {{path\\to\\source_file}}"
+    },
+    {
+      "description": "Create a symbolic link to a directory:",
+      "syntax": "mklink /d {{path\\to\\link_file}} {{path\\to\\source_directory}}"
+    },
+    {
+      "description": "Create a hard link to a file:",
+      "syntax": "mklink /h {{path\\to\\link_file}} {{path\\to\\source_file}}"
+    },
+    {
+      "description": "Create a directory junction:",
+      "syntax": "mklink /j {{path\\to\\link_file}} {{path\\to\\source_file}}"
+    }
+  ]
+}

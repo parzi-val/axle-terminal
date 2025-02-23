@@ -1,0 +1,22 @@
+{
+  "command": "hostnamectl",
+  "description": "Get or set the hostname of the computer. More information: https://manned.org/hostnamectl.",
+  "useCases": [
+    {
+      "description": "Get the hostname of the computer:",
+      "syntax": "hostnamectl"
+    },
+    {
+      "description": "Set the hostname of the computer:",
+      "syntax": "sudo hostnamectl set-hostname &quot;{{hostname}}&quot;"
+    },
+    {
+      "description": "Set a pretty hostname for the computer:",
+      "syntax": "sudo hostnamectl set-hostname --static &quot;{{hostname.example.com}}&quot; &amp;&amp; sudo hostnamectl set-hostname --pretty &quot;{{hostname}}&quot;"
+    },
+    {
+      "description": "Reset hostname to its default value:",
+      "syntax": "sudo hostnamectl set-hostname --pretty &quot;&quot;"
+    }
+  ]
+}

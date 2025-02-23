@@ -1,0 +1,26 @@
+{
+  "command": "gh screensaver",
+  "description": "Extension for GitHub CLI that runs animated terminal screensavers. See also: gh extension. More information: https://github.com/vilmibm/gh-screensaver.",
+  "useCases": [
+    {
+      "description": "Run a random screensaver:",
+      "syntax": "gh screensaver"
+    },
+    {
+      "description": "Run a specific screensaver:",
+      "syntax": "gh screensaver --saver {{fireworks|life|marquee|pipes|pollock|starfield}}"
+    },
+    {
+      "description": "Run the \"marquee\" screensaver with a specific text and font:",
+      "syntax": "gh screensaver --saver {{marquee}} -- --message=&quot;{{message}}&quot; --font={{font_name}}"
+    },
+    {
+      "description": "Run the \"starfield\" screensaver with a specific density and speed:",
+      "syntax": "gh screensaver --saver {{starfield}} -- --density {{500}} --speed {{10}}"
+    },
+    {
+      "description": "List available screensavers:",
+      "syntax": "gh screensaver --list"
+    }
+  ]
+}

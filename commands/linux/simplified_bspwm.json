@@ -1,0 +1,10 @@
+{
+  "command": "bspwm",
+  "description": "A tiling window manager based on binary space partitioning. See also: bspc, for controlling it. More information: https://github.com/baskerville/bspwm.",
+  "useCases": [
+    {
+      "description": "Start bspwm (note that a pre-existing window manager must not be open when this command is run):",
+      "syntax": "bspwm -c {{path/to/config}}"
+    }
+  ]
+}

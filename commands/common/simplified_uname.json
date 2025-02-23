@@ -1,0 +1,26 @@
+{
+  "command": "uname",
+  "description": "Print details about the current machine and the operating system running on it. See also lsb_release. More information: https://www.gnu.org/software/coreutils/manual/html_node/uname-invocation.html.",
+  "useCases": [
+    {
+      "description": "Print kernel name:",
+      "syntax": "uname"
+    },
+    {
+      "description": "Print system architecture and processor information:",
+      "syntax": "uname --machine --processor"
+    },
+    {
+      "description": "Print kernel name, kernel release and kernel version:",
+      "syntax": "uname --kernel-name --kernel-release --kernel-version"
+    },
+    {
+      "description": "Print system hostname:",
+      "syntax": "uname --nodename"
+    },
+    {
+      "description": "Print all available system information:",
+      "syntax": "uname --all"
+    }
+  ]
+}

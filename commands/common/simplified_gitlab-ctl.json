@@ -1,0 +1,30 @@
+{
+  "command": "gitlab-ctl",
+  "description": "Manage the GitLab omnibus. More information: https://docs.gitlab.com/omnibus/maintenance/.",
+  "useCases": [
+    {
+      "description": "Display the status of every service:",
+      "syntax": "sudo gitlab-ctl status"
+    },
+    {
+      "description": "Display the status of a specific service:",
+      "syntax": "sudo gitlab-ctl status {{nginx}}"
+    },
+    {
+      "description": "Restart every service:",
+      "syntax": "sudo gitlab-ctl restart"
+    },
+    {
+      "description": "Restart a specific service:",
+      "syntax": "sudo gitlab-ctl restart {{nginx}}"
+    },
+    {
+      "description": "Display the logs of every service and keep reading until Ctrl + C is pressed:",
+      "syntax": "sudo gitlab-ctl tail"
+    },
+    {
+      "description": "Display the logs of a specific service:",
+      "syntax": "sudo gitlab-ctl tail {{nginx}}"
+    }
+  ]
+}

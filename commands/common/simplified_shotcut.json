@@ -1,0 +1,26 @@
+{
+  "command": "shotcut",
+  "description": "A program for video editing. More information: https://shotcut.org/notes/command-line-options/.",
+  "useCases": [
+    {
+      "description": "Start Shotcut:",
+      "syntax": "shotcut"
+    },
+    {
+      "description": "Open audio/video files:",
+      "syntax": "shotcut {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Start with a specific audio driver:",
+      "syntax": "shotcut --SDL_AUDIODRIVER &quot;{{pulseaudio}}&quot;"
+    },
+    {
+      "description": "Start in fullscreen:",
+      "syntax": "shotcut --fullscreen"
+    },
+    {
+      "description": "Start with GPU processing:",
+      "syntax": "shotcut --gpu"
+    }
+  ]
+}

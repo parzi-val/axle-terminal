@@ -1,0 +1,34 @@
+{
+  "command": "vault",
+  "description": "Interact with HashiCorp Vault. More information: https://www.vaultproject.io/docs/commands.",
+  "useCases": [
+    {
+      "description": "Connect to a Vault server and initialize a new encrypted data store:",
+      "syntax": "vault init"
+    },
+    {
+      "description": "Unseal (unlock) the vault, by providing one of the key shares needed to access the encrypted data store:",
+      "syntax": "vault unseal {{key-share-x}}"
+    },
+    {
+      "description": "Authenticate the CLI client against the Vault server, using an authentication token:",
+      "syntax": "vault auth {{authentication_token}}"
+    },
+    {
+      "description": "Store a new secret in the vault, using the generic back-end called \"secret\":",
+      "syntax": "vault write secret/{{hello}} value={{world}}"
+    },
+    {
+      "description": "Read a value from the vault, using the generic back-end called \"secret\":",
+      "syntax": "vault read secret/{{hello}}"
+    },
+    {
+      "description": "Read a specific field from the value:",
+      "syntax": "vault read -field={{field_name}} secret/{{hello}}"
+    },
+    {
+      "description": "Seal (lock) the Vault server, by removing the encryption key of the data store from memory:",
+      "syntax": "vault seal"
+    }
+  ]
+}

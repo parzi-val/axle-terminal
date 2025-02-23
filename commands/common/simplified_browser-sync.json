@@ -1,0 +1,22 @@
+{
+  "command": "browser-sync",
+  "description": "A local web server that updates browser on file changes. More information: https://browsersync.io/docs/command-line.",
+  "useCases": [
+    {
+      "description": "Start a server from a specific directory:",
+      "syntax": "browser-sync start --server {{path/to/directory}} --files {{path/to/directory}}"
+    },
+    {
+      "description": "Start a server from local directory, watching all CSS files in a directory:",
+      "syntax": "browser-sync start --server --files '{{path/to/directory/*.css}}'"
+    },
+    {
+      "description": "Create configuration file:",
+      "syntax": "browser-sync init"
+    },
+    {
+      "description": "Start Browsersync from configuration file:",
+      "syntax": "browser-sync start --config {{config_file}}"
+    }
+  ]
+}

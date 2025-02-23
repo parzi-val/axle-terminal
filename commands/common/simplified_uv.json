@@ -1,0 +1,38 @@
+{
+  "command": "uv",
+  "description": "A fast Python package and project manager. Some subcommands such as tool and python have their own usage documentation. More information: https://docs.astral.sh/uv/reference/cli.",
+  "useCases": [
+    {
+      "description": "Create a new Python project in the current directory:",
+      "syntax": "uv init"
+    },
+    {
+      "description": "Create a new Python project at the specified path:",
+      "syntax": "uv init {{path/to/directory}}"
+    },
+    {
+      "description": "Add a new dependency to the project:",
+      "syntax": "uv add {{package}}"
+    },
+    {
+      "description": "Remove a dependency from the project:",
+      "syntax": "uv remove {{package}}"
+    },
+    {
+      "description": "Run a script in the project's environment:",
+      "syntax": "uv run {{path/to/script.py}}"
+    },
+    {
+      "description": "Run a command in the project's environment:",
+      "syntax": "uv run {{command}}"
+    },
+    {
+      "description": "Update a project's environment from pyproject.toml:",
+      "syntax": "uv sync"
+    },
+    {
+      "description": "Create a lock file for the project's dependencies:",
+      "syntax": "uv lock"
+    }
+  ]
+}

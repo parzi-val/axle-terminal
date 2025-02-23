@@ -1,0 +1,30 @@
+{
+  "command": "wine",
+  "description": "Run Windows executables on Unix-based systems. More information: https://wiki.winehq.org/.",
+  "useCases": [
+    {
+      "description": "Run a specific program inside the wine environment:",
+      "syntax": "wine {{command}}"
+    },
+    {
+      "description": "Run a specific program in background:",
+      "syntax": "wine start {{command}}"
+    },
+    {
+      "description": "Install/uninstall an MSI package:",
+      "syntax": "wine msiexec /{{i|x}} {{path/to/package.msi}}"
+    },
+    {
+      "description": "Run File Explorer, Notepad, or WordPad:",
+      "syntax": "wine {{explorer|notepad|write}}"
+    },
+    {
+      "description": "Run Registry Editor, Control Panel, or Task Manager:",
+      "syntax": "wine {{regedit|control|taskmgr}}"
+    },
+    {
+      "description": "Run the configuration tool:",
+      "syntax": "wine winecfg"
+    }
+  ]
+}

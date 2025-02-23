@@ -1,0 +1,14 @@
+{
+  "command": "nologin",
+  "description": "Alternative shell that prevents a user from logging in. More information: https://manned.org/nologin.5.",
+  "useCases": [
+    {
+      "description": "Set a user's login shell to nologin to prevent the user from logging in:",
+      "syntax": "chsh -s {{user}} nologin"
+    },
+    {
+      "description": "Customize message for users with the login shell of nologin:",
+      "syntax": "echo &quot;{{declined_login_message}}&quot; &gt; /etc/nologin.txt"
+    }
+  ]
+}

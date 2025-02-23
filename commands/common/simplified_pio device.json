@@ -1,0 +1,34 @@
+{
+  "command": "pio device",
+  "description": "Manage and monitor PlatformIO devices. More information: https://docs.platformio.org/en/latest/core/userguide/device/.",
+  "useCases": [
+    {
+      "description": "List all available serial ports:",
+      "syntax": "pio device list"
+    },
+    {
+      "description": "List all available logical devices:",
+      "syntax": "pio device list --logical"
+    },
+    {
+      "description": "Start an interactive device monitor:",
+      "syntax": "pio device monitor"
+    },
+    {
+      "description": "Start an interactive device monitor and listen to a specific port:",
+      "syntax": "pio device monitor --port {{/dev/ttyUSBX}}"
+    },
+    {
+      "description": "Start an interactive device monitor and set a specific baud rate (defaults to 9600):",
+      "syntax": "pio device monitor --baud {{57600}}"
+    },
+    {
+      "description": "Start an interactive device monitor and set a specific EOL character (defaults to CRLF):",
+      "syntax": "pio device monitor --eol {{CRLF|CR|LF}}"
+    },
+    {
+      "description": "Go to the menu of the interactive device monitor:",
+      "syntax": "&lt;Ctrl&gt; + T"
+    }
+  ]
+}

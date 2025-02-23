@@ -1,0 +1,14 @@
+{
+  "command": "steamos-readonly",
+  "description": "Set the readonly status of the filesystem. More information: https://gitlab.com/users/evlaV/projects.",
+  "useCases": [
+    {
+      "description": "Set the filesystem to be mutable:",
+      "syntax": "sudo steamos-readonly disable"
+    },
+    {
+      "description": "Set the filesystem to be read only:",
+      "syntax": "sudo steamos-readonly enable"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "asciinema",
+  "description": "Record and replay terminal sessions, and optionally share them on https://asciinema.org. See also: terminalizer. More information: https://docs.asciinema.org/manual/cli/usage.",
+  "useCases": [
+    {
+      "description": "Associate the local install of asciinema with an asciinema.org account:",
+      "syntax": "asciinema auth"
+    },
+    {
+      "description": "Make a new recording (finish it with Ctrl+D or type exit, and then choose to upload it or save it locally):",
+      "syntax": "asciinema rec"
+    },
+    {
+      "description": "Make a new recording and save it to a local file:",
+      "syntax": "asciinema rec {{path/to/recording.cast}}"
+    },
+    {
+      "description": "Replay a terminal recording from a local file:",
+      "syntax": "asciinema play {{path/to/recording.cast}}"
+    },
+    {
+      "description": "Replay a terminal recording hosted on https://asciinema.org:",
+      "syntax": "asciinema play https://asciinema.org/a/{{cast_id}}"
+    },
+    {
+      "description": "Make a new recording, limiting any idle time to at most 2.5 seconds:",
+      "syntax": "asciinema rec {{-i|--idle-time-limit}} 2.5"
+    },
+    {
+      "description": "Print the full output of a locally saved recording:",
+      "syntax": "asciinema cat {{path/to/recording.cast}}"
+    },
+    {
+      "description": "Upload a locally saved terminal session to asciinema.org:",
+      "syntax": "asciinema upload {{path/to/recording.cast}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "patool",
+  "description": "Archive file manager. Various archive formats can be created, extracted, tested, listed, searched, repacked, and compared. More information: https://github.com/wummel/patool.",
+  "useCases": [
+    {
+      "description": "Extract an archive:",
+      "syntax": "patool extract {{path/to/archive}}"
+    },
+    {
+      "description": "List contents of an archive:",
+      "syntax": "patool list {{path/to/archive}}"
+    },
+    {
+      "description": "Compare the contents of two archives and display the differences in the standard output:",
+      "syntax": "patool diff {{path/to/archive1}} {{path/to/archive2}}"
+    },
+    {
+      "description": "Search for a string inside the contents of an archive:",
+      "syntax": "patool search {{path/to/archive}}"
+    }
+  ]
+}

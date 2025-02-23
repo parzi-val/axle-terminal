@@ -1,0 +1,14 @@
+{
+  "command": "ppmspread",
+  "description": "Displace the pixels in a PPM image by a randomized amount. More information: https://netpbm.sourceforge.net/doc/ppmspread.html.",
+  "useCases": [
+    {
+      "description": "Displace the pixels in a PPM image by a randomized amount that is at most a:",
+      "syntax": "ppmspread {{a}} {{path/to/input_file.ppm}} &gt; {{path/to/output_file.ppm}}"
+    },
+    {
+      "description": "Specify a seed to a the pseudo-random number generator:",
+      "syntax": "ppmspread {{a}} {{path/to/input_file.ppm}} -randomseed {{seed}} &gt; {{path/to/output_file.ppm}}"
+    }
+  ]
+}

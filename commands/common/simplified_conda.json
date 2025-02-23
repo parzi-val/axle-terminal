@@ -1,0 +1,38 @@
+{
+  "command": "conda",
+  "description": "Package, dependency and environment management for any programming language. Some subcommands such as create have their own usage documentation. More information: https://github.com/conda/conda.",
+  "useCases": [
+    {
+      "description": "Create a new environment, installing named packages into it:",
+      "syntax": "conda create --name {{environment_name}} {{python=3.9 matplotlib}}"
+    },
+    {
+      "description": "List all environments:",
+      "syntax": "conda info --envs"
+    },
+    {
+      "description": "Load an environment:",
+      "syntax": "conda activate {{environment_name}}"
+    },
+    {
+      "description": "Unload an environment:",
+      "syntax": "conda deactivate"
+    },
+    {
+      "description": "Delete an environment (remove all packages):",
+      "syntax": "conda remove --name {{environment_name}} --all"
+    },
+    {
+      "description": "Install packages into the current environment:",
+      "syntax": "conda install {{python=3.4 numpy}}"
+    },
+    {
+      "description": "List currently installed packages in current environment:",
+      "syntax": "conda list"
+    },
+    {
+      "description": "Delete unused packages and caches:",
+      "syntax": "conda clean --all"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "gh gist",
+  "description": "Work with GitHub Gists. More information: https://cli.github.com/manual/gh_gist.",
+  "useCases": [
+    {
+      "description": "Create a new Gist from one or more files:",
+      "syntax": "gh gist create {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Create a new Gist with a specific [desc]ription:",
+      "syntax": "gh gist create {{path/to/file1 path/to/file2 ...}} --desc &quot;{{description}}&quot;"
+    },
+    {
+      "description": "Edit a Gist:",
+      "syntax": "gh gist edit {{id|url}}"
+    },
+    {
+      "description": "List up to 42 Gists owned by the currently logged in user:",
+      "syntax": "gh gist list --limit {{42}}"
+    },
+    {
+      "description": "View a Gist in the default browser without rendering Markdown:",
+      "syntax": "gh gist view {{id|url}} --web --raw"
+    }
+  ]
+}

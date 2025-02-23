@@ -1,0 +1,22 @@
+{
+  "command": "cdecl",
+  "description": "Compose and decode C and C++ type declarations. More information: https://github.com/paul-j-lucas/cdecl.",
+  "useCases": [
+    {
+      "description": "Compose English phrase into C declaration, and create [c]ompilable output (include ; and {}):",
+      "syntax": "cdecl -c {{phrase}}"
+    },
+    {
+      "description": "Explain C declaration in English:",
+      "syntax": "cdecl explain {{C_declaration}}"
+    },
+    {
+      "description": "Cast a variable to another type:",
+      "syntax": "cdecl cast {{variable_name}} to {{type}}"
+    },
+    {
+      "description": "Run in [i]nteractive mode:",
+      "syntax": "cdecl -i"
+    }
+  ]
+}

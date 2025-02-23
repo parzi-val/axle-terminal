@@ -1,0 +1,26 @@
+{
+  "command": "pkill",
+  "description": "Signal process by name. Mostly used for stopping processes. More information: https://www.manned.org/pkill.",
+  "useCases": [
+    {
+      "description": "Kill all processes which match:",
+      "syntax": "pkill &quot;{{process_name}}&quot;"
+    },
+    {
+      "description": "Kill all processes which match their full command instead of just the process name:",
+      "syntax": "pkill -f &quot;{{command_name}}&quot;"
+    },
+    {
+      "description": "Force kill matching processes (can't be blocked):",
+      "syntax": "pkill -9 &quot;{{process_name}}&quot;"
+    },
+    {
+      "description": "Send SIGUSR1 signal to processes which match:",
+      "syntax": "pkill -USR1 &quot;{{process_name}}&quot;"
+    },
+    {
+      "description": "Kill the main firefox process to close the browser:",
+      "syntax": "pkill --oldest &quot;{{firefox}}&quot;"
+    }
+  ]
+}

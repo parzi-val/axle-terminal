@@ -1,0 +1,34 @@
+{
+  "command": "phan",
+  "description": "A static analysis tool for PHP. More information: https://github.com/phan/phan.",
+  "useCases": [
+    {
+      "description": "Generate a .phan/config.php in the current directory:",
+      "syntax": "phan --init"
+    },
+    {
+      "description": "Generate a Phan configuration file using a specific level (1 being strictest to 5 being the least strict):",
+      "syntax": "phan --init --init-level {{level}}"
+    },
+    {
+      "description": "Analyze the current directory:",
+      "syntax": "phan"
+    },
+    {
+      "description": "Analyze one or more directories:",
+      "syntax": "phan --directory {{path/to/directory}} --directory {{path/to/another_directory}}"
+    },
+    {
+      "description": "Specify a configuration file (defaults to .phan/config.php):",
+      "syntax": "phan --config-file {{path/to/config.php}}"
+    },
+    {
+      "description": "Specify the output mode:",
+      "syntax": "phan --output-mode {{text|verbose|json|csv|codeclimate|checkstyle|pylint|html}}"
+    },
+    {
+      "description": "Specify the number of parallel processes:",
+      "syntax": "phan --processes {{number_of_processes}}"
+    }
+  ]
+}

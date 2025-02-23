@@ -1,0 +1,26 @@
+{
+  "command": "scala",
+  "description": "Scala application launcher and interactive interpreter. More information: https://scala-lang.org.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "scala"
+    },
+    {
+      "description": "Start the interpreter with a dependency in the classpath:",
+      "syntax": "scala -classpath {{filename.jar}} {{command}}"
+    },
+    {
+      "description": "Execute a Scala script:",
+      "syntax": "scala {{script.scala}}"
+    },
+    {
+      "description": "Execute a .jar program:",
+      "syntax": "scala {{filename.jar}}"
+    },
+    {
+      "description": "Execute a single Scala command in the command-line:",
+      "syntax": "scala -e {{command}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "ebook-convert",
+  "description": "Can be used to convert e-books between common formats, e.g. PDF, EPUB and MOBI. Part of the Calibre e-book library tool. More information: https://manual.calibre-ebook.com/generated/en/ebook-convert.html.",
+  "useCases": [
+    {
+      "description": "Convert an e-book into another format:",
+      "syntax": "ebook-convert {{path/to/input_file}} {{output_file}}"
+    },
+    {
+      "description": "Convert Markdown or HTML to e-book with TOC, title and author:",
+      "syntax": "ebook-convert {{path/to/input_file}} {{output_file}} --level1-toc=&quot;//h:h1&quot; --level2-toc=&quot;//h:h2&quot; --level3-toc=&quot;//h:h3&quot; --title={{title}} --authors={{author}}"
+    }
+  ]
+}

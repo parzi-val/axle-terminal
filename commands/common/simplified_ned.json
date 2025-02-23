@@ -1,0 +1,38 @@
+{
+  "command": "ned",
+  "description": "Like grep but with powerful replace capabilities. Unlike sed, as it isn't restricted to line oriented editing. More information: https://github.com/nevdelap/ned.",
+  "useCases": [
+    {
+      "description": "Recursively search starting in the current directory, ignoring case:",
+      "syntax": "ned --ignore-case --recursive '{{^[dl]og}}' {{.}}"
+    },
+    {
+      "description": "Search always showing colored output:",
+      "syntax": "ned --colors '{{^[dl]og}}' {{.}}"
+    },
+    {
+      "description": "Search never showing colored output:",
+      "syntax": "ned --colors=never '{{^[dl]og}}' {{.}}"
+    },
+    {
+      "description": "Search ignoring certain files:",
+      "syntax": "ned --recursive --exclude '{{*.htm}}' '{{^[dl]og}}' {{.}}"
+    },
+    {
+      "description": "Simple replace:",
+      "syntax": "ned '{{dog}}' --replace '{{cat}}' {{.}}"
+    },
+    {
+      "description": "Replace using numbered group references:",
+      "syntax": "ned '{{the ([a-z]+) dog and the ([a-z]+) dog}}' --replace '{{the $2 dog and the $1 dog}}' {{.}}"
+    },
+    {
+      "description": "Replace changing case:",
+      "syntax": "ned '{{([a-z]+) dog}}' --case-replacements --replace '{{\\U$1\\E! dog}}' --stdout {{.}}"
+    },
+    {
+      "description": "Preview results of a find and replace without updating the target files:",
+      "syntax": "ned '{{^[sb]ad}}' --replace '{{happy}}' --stdout {{.}}"
+    }
+  ]
+}

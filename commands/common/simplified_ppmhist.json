@@ -1,0 +1,18 @@
+{
+  "command": "ppmhist",
+  "description": "Print a histogram of the colors present in a PPM image. See also: pgmhist. More information: https://netpbm.sourceforge.net/doc/ppmhist.html.",
+  "useCases": [
+    {
+      "description": "Generate the histogram for human reading:",
+      "syntax": "ppmhist -nomap {{path/to/image.ppm}}"
+    },
+    {
+      "description": "Generate a PPM file of the colormap for the image, with the color histogram as comments:",
+      "syntax": "ppmhist -map {{path/to/image.ppm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ppmhist -version"
+    }
+  ]
+}

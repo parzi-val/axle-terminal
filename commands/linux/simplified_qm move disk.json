@@ -1,0 +1,10 @@
+{
+  "command": "qm move disk",
+  "description": "This command is an alias of qm disk move.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr qm disk move"
+    }
+  ]
+}

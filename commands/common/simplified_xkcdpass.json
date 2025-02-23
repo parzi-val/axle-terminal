@@ -1,0 +1,18 @@
+{
+  "command": "xkcdpass",
+  "description": "A flexible and scriptable password generator which generates strong passphrases. Inspired by XKCD 936. More information: https://github.com/redacted/XKCD-password-generator.",
+  "useCases": [
+    {
+      "description": "Generate one passphrase with the default options:",
+      "syntax": "xkcdpass"
+    },
+    {
+      "description": "Generate one passphrase whose first letters of each word match the provided argument:",
+      "syntax": "xkcdpass -a {{acrostic}}"
+    },
+    {
+      "description": "Generate passwords interactively:",
+      "syntax": "xkcdpass -i"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "unset",
+  "description": "Remove shell variables or functions. More information: https://manned.org/unset.",
+  "useCases": [
+    {
+      "description": "Remove the variable foo, or if the variable doesn't exist, remove the function foo:",
+      "syntax": "unset {{foo}}"
+    },
+    {
+      "description": "Remove the variables foo and bar:",
+      "syntax": "unset -v {{foo}} {{bar}}"
+    },
+    {
+      "description": "Remove the function my_func:",
+      "syntax": "unset -f {{my_func}}"
+    }
+  ]
+}

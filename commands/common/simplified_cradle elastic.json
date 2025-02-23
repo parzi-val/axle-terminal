@@ -1,0 +1,30 @@
+{
+  "command": "cradle elastic",
+  "description": "Manage the Elasticsearch instances for a Cradle instance. More information: https://cradlephp.github.io/docs/3.B.-Reference-Command-Line-Tools.html#elastic.",
+  "useCases": [
+    {
+      "description": "Truncate the Elasticsearch index:",
+      "syntax": "cradle elastic flush"
+    },
+    {
+      "description": "Truncate the Elasticsearch index for a specific package:",
+      "syntax": "cradle elastic flush {{package}}"
+    },
+    {
+      "description": "Submit the Elasticsearch schema:",
+      "syntax": "cradle elastic map"
+    },
+    {
+      "description": "Submit the Elasticsearch schema for a specific package:",
+      "syntax": "cradle elastic map {{package}}"
+    },
+    {
+      "description": "Populate the Elasticsearch indices for all packages:",
+      "syntax": "cradle elastic populate"
+    },
+    {
+      "description": "Populate the Elasticsearch indices for a specific package:",
+      "syntax": "cradle elastic populate {{package}}"
+    }
+  ]
+}

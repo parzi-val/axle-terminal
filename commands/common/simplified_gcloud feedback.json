@@ -1,0 +1,14 @@
+{
+  "command": "gcloud feedback",
+  "description": "Provide feedback to the Google Cloud team. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/feedback.",
+  "useCases": [
+    {
+      "description": "Provide feedback to the gcloud team:",
+      "syntax": "gcloud feedback"
+    },
+    {
+      "description": "Provide feedback to the gcloud team and attach a log file:",
+      "syntax": "gcloud feedback --log-file {{log_file}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "tailscale",
+  "description": "A private WireGuard network service. Some subcommands such as up have their own usage documentation. More information: https://tailscale.com.",
+  "useCases": [
+    {
+      "description": "Connect to Tailscale:",
+      "syntax": "sudo tailscale up"
+    },
+    {
+      "description": "Disconnect from Tailscale:",
+      "syntax": "sudo tailscale down"
+    },
+    {
+      "description": "Display the current Tailscale IP addresses:",
+      "syntax": "tailscale ip"
+    },
+    {
+      "description": "Ping a peer node at the Tailscale layer and display which route it took for each response:",
+      "syntax": "tailscale ping {{ip|hostname}}"
+    },
+    {
+      "description": "Analyze the local network conditions and display the result:",
+      "syntax": "tailscale netcheck"
+    },
+    {
+      "description": "Start a web server for controlling Tailscale:",
+      "syntax": "tailscale web"
+    },
+    {
+      "description": "Display a shareable identifier to help diagnose issues:",
+      "syntax": "tailscale bugreport"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "tailscale {{subcommand}} --help"
+    }
+  ]
+}

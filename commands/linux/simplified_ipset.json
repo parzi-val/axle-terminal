@@ -1,0 +1,26 @@
+{
+  "command": "ipset",
+  "description": "Create IP sets for firewall rules. More information: https://manned.org/ipset.",
+  "useCases": [
+    {
+      "description": "Create an empty IP set which will contain IP addresses:",
+      "syntax": "ipset create {{set_name}} hash:ip"
+    },
+    {
+      "description": "Destroy a specific IP set:",
+      "syntax": "ipset destroy {{set_name}}"
+    },
+    {
+      "description": "Add an IP address to a specific set:",
+      "syntax": "ipset add {{set_name}} {{192.168.1.25}}"
+    },
+    {
+      "description": "Delete a specific IP address from a set:",
+      "syntax": "ipset del {{set_name}} {{192.168.1.25}}"
+    },
+    {
+      "description": "Save an IP set:",
+      "syntax": "ipset save {{set_name}} &gt; {{path/to/ip_set}}"
+    }
+  ]
+}

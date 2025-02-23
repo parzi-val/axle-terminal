@@ -1,0 +1,34 @@
+{
+  "command": "xinput",
+  "description": "List available input devices, query information about a device and change input device settings. More information: https://manned.org/xinput.",
+  "useCases": [
+    {
+      "description": "List all input devices:",
+      "syntax": "xinput list"
+    },
+    {
+      "description": "Disable an input:",
+      "syntax": "xinput disable {{id}}"
+    },
+    {
+      "description": "Enable an input:",
+      "syntax": "xinput enable {{id}}"
+    },
+    {
+      "description": "Disconnect an input from its master:",
+      "syntax": "xinput float {{id}}"
+    },
+    {
+      "description": "Reattach an input as slave to a master:",
+      "syntax": "xinput reattach {{id}} {{master_id}}"
+    },
+    {
+      "description": "List settings of an input device:",
+      "syntax": "xinput list-props {{id}}"
+    },
+    {
+      "description": "Change a setting of an input device:",
+      "syntax": "xinput set-prop {{id}} {{setting_id}} {{value}}"
+    }
+  ]
+}

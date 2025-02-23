@@ -1,0 +1,30 @@
+{
+  "command": "fuser",
+  "description": "Display process IDs currently using files or sockets. More information: https://manned.org/fuser.",
+  "useCases": [
+    {
+      "description": "Find which processes are accessing a file or directory:",
+      "syntax": "fuser {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Show more fields (USER, PID, ACCESS and COMMAND):",
+      "syntax": "fuser --verbose {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Identify processes using a TCP socket:",
+      "syntax": "fuser --namespace tcp {{port}}"
+    },
+    {
+      "description": "Kill all processes accessing a file or directory (sends the SIGKILL signal):",
+      "syntax": "fuser --kill {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Find which processes are accessing the filesystem containing a specific file or directory:",
+      "syntax": "fuser --mount {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Kill all processes with a TCP connection on a specific port:",
+      "syntax": "fuser --kill {{port}}/tcp"
+    }
+  ]
+}

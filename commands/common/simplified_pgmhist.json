@@ -1,0 +1,26 @@
+{
+  "command": "pgmhist",
+  "description": "Print a histogram of the values present in a PGM image. See also: ppmhist. More information: https://netpbm.sourceforge.net/doc/pgmhist.html.",
+  "useCases": [
+    {
+      "description": "Display the histogram for human reading:",
+      "syntax": "pgmhist {{path/to/image.pgm}}"
+    },
+    {
+      "description": "Display the median grey value:",
+      "syntax": "pgmhist -median {{path/to/image.pgm}}"
+    },
+    {
+      "description": "Display four quartile grey value:",
+      "syntax": "pgmhist -quartile {{path/to/image.pgm}}"
+    },
+    {
+      "description": "Report the existence of invalid grey values:",
+      "syntax": "pgmhist -forensic {{path/to/image.pgm}}"
+    },
+    {
+      "description": "Display machine-readable output:",
+      "syntax": "pgmhist -machine {{path/to/image.pgm}}"
+    }
+  ]
+}

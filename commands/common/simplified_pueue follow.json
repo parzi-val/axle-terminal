@@ -1,0 +1,14 @@
+{
+  "command": "pueue follow",
+  "description": "Follow the output of a currently running task. See also: pueue log. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Follow the output of a task (stdout + stderr):",
+      "syntax": "pueue follow {{task_id}}"
+    },
+    {
+      "description": "Follow stderr of a task:",
+      "syntax": "pueue follow --err {{task_id}}"
+    }
+  ]
+}

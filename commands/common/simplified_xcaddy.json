@@ -1,0 +1,30 @@
+{
+  "command": "xcaddy",
+  "description": "The custom build tool for the Caddy Web Server. More information: https://github.com/caddyserver/xcaddy.",
+  "useCases": [
+    {
+      "description": "Build Caddy server from source:",
+      "syntax": "xcaddy build"
+    },
+    {
+      "description": "Build Caddy server with a specific version (defaults to latest):",
+      "syntax": "xcaddy build {{version}}"
+    },
+    {
+      "description": "Build Caddy with a specific module:",
+      "syntax": "xcaddy build --with {{module_name}}"
+    },
+    {
+      "description": "Build Caddy and output to a specific file:",
+      "syntax": "xcaddy build --output {{path/to/file}}"
+    },
+    {
+      "description": "Build and run Caddy for a development plugin in the current directory:",
+      "syntax": "xcaddy run"
+    },
+    {
+      "description": "Build and run Caddy for a development plugin using a specific Caddy config:",
+      "syntax": "xcaddy run --config {{path/to/file}}"
+    }
+  ]
+}

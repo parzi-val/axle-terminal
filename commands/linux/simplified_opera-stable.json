@@ -1,0 +1,10 @@
+{
+  "command": "opera-stable",
+  "description": "This command is an alias of chromium. More information: https://opera.com.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr chromium"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "pwn",
+  "description": "Exploit Development Library designed for rapid prototyping. More information: https://docs.pwntools.com/en/stable/commandline.html.",
+  "useCases": [
+    {
+      "description": "Convert the given assembly code to bytes:",
+      "syntax": "pwn asm &quot;{{xor edi, edi}}&quot;"
+    },
+    {
+      "description": "Create a cyclic pattern of the specific number of characters:",
+      "syntax": "pwn cyclic {{number}}"
+    },
+    {
+      "description": "Encode the given data into the hexadecimal system:",
+      "syntax": "pwn hex {{deafbeef}}"
+    },
+    {
+      "description": "Decode the given data from hexadecimal:",
+      "syntax": "pwn unhex {{6c4f7645}}"
+    },
+    {
+      "description": "Print a x64 Linux shellcode for running a shell:",
+      "syntax": "pwn shellcraft {{amd64.linux.sh}}"
+    },
+    {
+      "description": "Check the binary security settings for the given ELF file:",
+      "syntax": "pwn checksec {{path/to/file}}"
+    },
+    {
+      "description": "Check for Pwntools updates:",
+      "syntax": "pwn update"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pwn version"
+    }
+  ]
+}

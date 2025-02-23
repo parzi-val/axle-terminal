@@ -1,0 +1,18 @@
+{
+  "command": "picttoppm",
+  "description": "Convert a Macintosh PICT file to a PPM image. More information: https://netpbm.sourceforge.net/doc/picttoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PICT file to a PPM image:",
+      "syntax": "picttoppm {{path/to/file.pict}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Force any images in the PICT file to be output at full resolution:",
+      "syntax": "picttoppm -fullres {{path/to/file.pict}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Do not assume that the input file contains a PICT header and execute quickdraw operations only:",
+      "syntax": "picttoppm -noheader -quickdraw {{path/to/file.pict}} &gt; {{path/to/file.ppm}}"
+    }
+  ]
+}

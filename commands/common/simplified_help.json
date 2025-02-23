@@ -1,0 +1,30 @@
+{
+  "command": "help",
+  "description": "Display information about Bash builtin commands. More information: https://www.gnu.org/software/bash/manual/bash.html#index-help.",
+  "useCases": [
+    {
+      "description": "Display the full list of builtin commands:",
+      "syntax": "help"
+    },
+    {
+      "description": "Print instructions on how to use the while loop construct:",
+      "syntax": "help while"
+    },
+    {
+      "description": "Print instructions on how to use the for loop construct:",
+      "syntax": "help for"
+    },
+    {
+      "description": "Print instructions on how to use [[ ]] for conditional commands:",
+      "syntax": "help [[ ]]"
+    },
+    {
+      "description": "Print instruction on how to use (( )) to evaluate arithmetic expressions:",
+      "syntax": "help \\( \\)"
+    },
+    {
+      "description": "Print instructions on how to use the cd command:",
+      "syntax": "help cd"
+    }
+  ]
+}

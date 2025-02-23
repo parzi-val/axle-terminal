@@ -1,0 +1,38 @@
+{
+  "command": "ghost",
+  "description": "A blogging platform and headless CMS. More information: https://ghost.org.",
+  "useCases": [
+    {
+      "description": "Install Ghost in the current directory:",
+      "syntax": "ghost install"
+    },
+    {
+      "description": "Start an instance of Ghost:",
+      "syntax": "ghost start"
+    },
+    {
+      "description": "Restart the Ghost instance:",
+      "syntax": "ghost restart"
+    },
+    {
+      "description": "Check the system for any potential hiccups while installing or updating Ghost:",
+      "syntax": "ghost doctor"
+    },
+    {
+      "description": "View the logs of a Ghost instance:",
+      "syntax": "ghost log {{name}}"
+    },
+    {
+      "description": "Run a Ghost instance directly (used by process managers and for debugging):",
+      "syntax": "ghost run"
+    },
+    {
+      "description": "View running Ghost processes:",
+      "syntax": "ghost ls"
+    },
+    {
+      "description": "View or edit Ghost configuration:",
+      "syntax": "ghost config {{key}} {{value}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "systemd-creds",
+  "description": "List, show, encrypt and decrypt service credentials. More information: https://www.freedesktop.org/software/systemd/man/systemd-creds.html.",
+  "useCases": [
+    {
+      "description": "Encrypt a file and set a specific name:",
+      "syntax": "systemd-creds encrypt --name={{name}} {{path/to/input_file}} {{path/to/output}}"
+    },
+    {
+      "description": "Decrypt the file again:",
+      "syntax": "systemd-creds decrypt {{path/to/input_file}} {{path/to/output_file}}"
+    },
+    {
+      "description": "Encrypt text from stdin:",
+      "syntax": "echo -n {{text}} | systemd-creds encrypt --name={{name}} - {{path/to/output}}"
+    },
+    {
+      "description": "Encrypt the text and append it to the service file (the credentials will be available in $CREDENTIALS_DIRECTORY):",
+      "syntax": "echo -n {{text}} | systemd-creds encrypt --name={{name}} --pretty - - &gt;&gt; {{service}}"
+    },
+    {
+      "description": "Create a credential that is only valid until the given timestamp:",
+      "syntax": "systemd-creds encrypt --not-after=&quot;{{timestamp}}&quot; {{path/to/input_file}} {{path/to/output_file}}"
+    }
+  ]
+}

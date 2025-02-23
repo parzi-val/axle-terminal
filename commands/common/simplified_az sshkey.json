@@ -1,0 +1,22 @@
+{
+  "command": "az sshkey",
+  "description": "Manage SSH public keys with virtual machines. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/sshkey.",
+  "useCases": [
+    {
+      "description": "Create a new SSH key:",
+      "syntax": "az sshkey create --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Upload an existing SSH key:",
+      "syntax": "az sshkey create --name {{name}} --resource-group {{resource_group}} --public-key &quot;{{@path/to/key.pub}}&quot;"
+    },
+    {
+      "description": "List all SSH public keys:",
+      "syntax": "az sshkey list"
+    },
+    {
+      "description": "Show information about an SSH public key:",
+      "syntax": "az sshkey show --name {{name}} --resource-group {{resource_group}}"
+    }
+  ]
+}

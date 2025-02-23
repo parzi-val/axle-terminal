@@ -1,0 +1,30 @@
+{
+  "command": "jenv",
+  "description": "Manage the \"JAVA_HOME\" environment variable. More information: https://www.jenv.be/.",
+  "useCases": [
+    {
+      "description": "Add a Java version to jEnv:",
+      "syntax": "jenv add {{path/to/jdk_home}}"
+    },
+    {
+      "description": "Display the current JDK version used:",
+      "syntax": "jenv version"
+    },
+    {
+      "description": "Display all managed JDKs:",
+      "syntax": "jenv versions"
+    },
+    {
+      "description": "Set the global JDK version:",
+      "syntax": "jenv global {{java_version}}"
+    },
+    {
+      "description": "Set the JDK version for the current shell session:",
+      "syntax": "jenv shell {{java_version}}"
+    },
+    {
+      "description": "Enable a jEnv plugin:",
+      "syntax": "jenv enable-plugin {{plugin_name}}"
+    }
+  ]
+}

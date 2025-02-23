@@ -1,0 +1,38 @@
+{
+  "command": "code",
+  "description": "Cross platform and extensible code editor. More information: https://github.com/microsoft/vscode.",
+  "useCases": [
+    {
+      "description": "Start Visual Studio Code:",
+      "syntax": "code"
+    },
+    {
+      "description": "Open specific files/directories:",
+      "syntax": "code {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Compare two specific files:",
+      "syntax": "code --diff {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Open specific files/directories in a new window:",
+      "syntax": "code --new-window {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}"
+    },
+    {
+      "description": "Install/uninstall a specific extension:",
+      "syntax": "code --{{install|uninstall}}-extension {{publisher.extension}}"
+    },
+    {
+      "description": "Print installed extensions:",
+      "syntax": "code --list-extensions"
+    },
+    {
+      "description": "Print installed extensions with their versions:",
+      "syntax": "code --list-extensions --show-versions"
+    },
+    {
+      "description": "Start the editor as a superuser (root) while storing user data in a specific directory:",
+      "syntax": "sudo code --user-data-dir {{path/to/directory}}"
+    }
+  ]
+}

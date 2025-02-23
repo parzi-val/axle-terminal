@@ -1,0 +1,26 @@
+{
+  "command": "expand",
+  "description": "Uncompress Windows Cabinet files. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/expand.",
+  "useCases": [
+    {
+      "description": "Uncompress a single-file Cabinet file to the specified directory:",
+      "syntax": "expand {{path\\to\\file.cab}} {{path\\to\\directory}}"
+    },
+    {
+      "description": "Display the list of files in a source Cabinet file:",
+      "syntax": "expand {{path\\to\\file.cab}} {{path\\to\\directory}} -d"
+    },
+    {
+      "description": "Uncompress all files from the Cabinet file:",
+      "syntax": "expand {{path\\to\\file.cab}} {{path\\to\\directory}} -f:*"
+    },
+    {
+      "description": "Uncompress a specific file from a Cabinet file:",
+      "syntax": "expand {{path\\to\\file.cab}} {{path\\to\\directory}} -f:{{path\\to\\file}}"
+    },
+    {
+      "description": "Ignore the directory structure when uncompressing, and add them to a single directory:",
+      "syntax": "expand {{path\\to\\file.cab}} {{path\\to\\directory}} -i"
+    }
+  ]
+}

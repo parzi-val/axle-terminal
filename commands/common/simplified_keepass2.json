@@ -1,0 +1,18 @@
+{
+  "command": "keepass2",
+  "description": "A light-weight password manager. More information: https://keepass.info.",
+  "useCases": [
+    {
+      "description": "Start KeePass 2, opening the most recently opened password database:",
+      "syntax": "keepass2"
+    },
+    {
+      "description": "Start KeePass 2, opening a specific password database:",
+      "syntax": "keepass2 {{path/to/database.kbdx}}"
+    },
+    {
+      "description": "Use a specific key file to open a password database:",
+      "syntax": "keepass2 {{path/to/database.kbdx}} -keyfile:{{path/to/key/file.key}}"
+    }
+  ]
+}

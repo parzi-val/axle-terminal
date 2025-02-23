@@ -1,0 +1,26 @@
+{
+  "command": "go tool",
+  "description": "Run a Go tool or command. Execute a Go command as a stand-alone binary, typically for debugging. More information: https://pkg.go.dev/cmd/go#hdr-Run_specified_go_tool.",
+  "useCases": [
+    {
+      "description": "List available tools:",
+      "syntax": "go tool"
+    },
+    {
+      "description": "Run the go link tool:",
+      "syntax": "go tool link {{path/to/main.o}}"
+    },
+    {
+      "description": "Print the command that would be executed, but do not execute it (similar to whereis):",
+      "syntax": "go tool -n {{command}} {{arguments}}"
+    },
+    {
+      "description": "View documentation for a specified tool:",
+      "syntax": "go tool {{command}} --help"
+    },
+    {
+      "description": "List all available cross-compilation targets:",
+      "syntax": "go tool dist list"
+    }
+  ]
+}

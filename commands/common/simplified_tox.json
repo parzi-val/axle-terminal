@@ -1,0 +1,26 @@
+{
+  "command": "tox",
+  "description": "Automate Python testing across multiple Python versions. Use tox.ini to configure environments and test command. More information: https://github.com/tox-dev/tox.",
+  "useCases": [
+    {
+      "description": "Run tests on all test environments:",
+      "syntax": "tox"
+    },
+    {
+      "description": "Create a tox.ini configuration:",
+      "syntax": "tox-quickstart"
+    },
+    {
+      "description": "List the available environments:",
+      "syntax": "tox --listenvs-all"
+    },
+    {
+      "description": "Run tests on a specific environment (e.g. Python 3.6):",
+      "syntax": "tox -e {{py36}}"
+    },
+    {
+      "description": "Force the virtual environment to be recreated:",
+      "syntax": "tox --recreate -e {{py27}}"
+    }
+  ]
+}

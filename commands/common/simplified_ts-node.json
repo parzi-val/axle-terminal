@@ -1,0 +1,30 @@
+{
+  "command": "ts-node",
+  "description": "Run TypeScript code directly, without any compiling. More information: https://typestrong.org/ts-node.",
+  "useCases": [
+    {
+      "description": "Execute a TypeScript file without compiling (node + tsc):",
+      "syntax": "ts-node {{path/to/file.ts}}"
+    },
+    {
+      "description": "Execute a TypeScript file without loading tsconfig.json:",
+      "syntax": "ts-node --skip-project {{path/to/file.ts}}"
+    },
+    {
+      "description": "Evaluate TypeScript code passed as a literal:",
+      "syntax": "ts-node --eval '{{console.log(&quot;Hello World&quot;)}}'"
+    },
+    {
+      "description": "Execute a TypeScript file in script mode:",
+      "syntax": "ts-node --script-mode {{path/to/file.ts}}"
+    },
+    {
+      "description": "Transpile a TypeScript file to JavaScript without executing it:",
+      "syntax": "ts-node --transpile-only {{path/to/file.ts}}"
+    },
+    {
+      "description": "Display TS-Node help:",
+      "syntax": "ts-node --help"
+    }
+  ]
+}

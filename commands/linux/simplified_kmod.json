@@ -1,0 +1,14 @@
+{
+  "command": "kmod",
+  "description": "Manage Linux kernel modules. This program is usually called via its symlinks: lsmod, rmmod, insmod, modinfo, modprobe, and depmod. See their respective pages for more information. More information: https://manned.org/kmod.",
+  "useCases": [
+    {
+      "description": "List currently loaded kernel modules:",
+      "syntax": "kmod list"
+    },
+    {
+      "description": "Display the static device nodes information provided by the modules of the currently running kernel:",
+      "syntax": "kmod static-nodes"
+    }
+  ]
+}

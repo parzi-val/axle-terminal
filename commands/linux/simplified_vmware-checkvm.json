@@ -1,0 +1,14 @@
+{
+  "command": "vmware-checkvm",
+  "description": "Check if the current host is a VMware VM or not. More information: https://manned.org/vmware-checkvm.",
+  "useCases": [
+    {
+      "description": "Return the current VMware software version (exit status determines whether the system is a VM or not):",
+      "syntax": "vmware-checkvm"
+    },
+    {
+      "description": "Return the VMware hardware version:",
+      "syntax": "vmware-checkvm -h"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "mt",
+  "description": "Control magnetic tape drive operation (commonly LTO tape). More information: https://manned.org/mt.",
+  "useCases": [
+    {
+      "description": "Check the status of a tape drive:",
+      "syntax": "mt -f {{/dev/nstX}} status"
+    },
+    {
+      "description": "Rewind the tape to beginning:",
+      "syntax": "mt -f {{/dev/nstX}} rewind"
+    },
+    {
+      "description": "Move forward a given files, then position the tape on first block of next file:",
+      "syntax": "mt -f {{/dev/nstX}} fsf {{count}}"
+    },
+    {
+      "description": "Rewind the tape, then position the tape at beginning of the given file:",
+      "syntax": "mt -f {{/dev/nstX}} asf {{count}}"
+    },
+    {
+      "description": "Position the tape at the end of valid data:",
+      "syntax": "mt -f {{/dev/nstX}} eod"
+    },
+    {
+      "description": "Rewind the tape and unload/eject it:",
+      "syntax": "mt -f {{/dev/nstX}} eject"
+    },
+    {
+      "description": "Write EOF (End-of-file) mark at the current position:",
+      "syntax": "mt -f {{/dev/nstX}} eof"
+    }
+  ]
+}

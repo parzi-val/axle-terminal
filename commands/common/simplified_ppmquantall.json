@@ -1,0 +1,10 @@
+{
+  "command": "ppmquantall",
+  "description": "This command has been superseded by pnmquantall. More information: https://netpbm.sourceforge.net/doc/ppmquantall.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pnmquantall"
+    }
+  ]
+}

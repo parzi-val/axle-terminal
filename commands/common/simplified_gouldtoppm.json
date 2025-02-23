@@ -1,0 +1,10 @@
+{
+  "command": "gouldtoppm",
+  "description": "Convert a Gould scanner file to a PPM image. More information: https://netpbm.sourceforge.net/doc/gouldtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert a Gould scanner file to a PPM image:",
+      "syntax": "gouldtoppm {{path/to/file.gould}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

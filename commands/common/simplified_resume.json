@@ -1,0 +1,22 @@
+{
+  "command": "resume",
+  "description": "Easily setup a new resume. More information: https://github.com/jsonresume/resume-cli.",
+  "useCases": [
+    {
+      "description": "Create a new resume.json file in the current working directory:",
+      "syntax": "resume init"
+    },
+    {
+      "description": "Validate a resume.json against schema tests to ensure it complies with the standard:",
+      "syntax": "resume validate"
+    },
+    {
+      "description": "Export a resume locally in a stylized HTML or PDF format:",
+      "syntax": "resume export {{path/to/html_or_pdf}}"
+    },
+    {
+      "description": "Start a web server that serves a local resume.json:",
+      "syntax": "resume serve"
+    }
+  ]
+}

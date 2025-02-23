@@ -1,0 +1,18 @@
+{
+  "command": "sccmap",
+  "description": "Extract strongly connected components of directed graphs. Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten. More information: https://www.graphviz.org/pdf/sccmap.1.pdf.",
+  "useCases": [
+    {
+      "description": "Extract strongly connected components of one or more directed graphs:",
+      "syntax": "sccmap -S {{path/to/input1.gv}} {{path/to/input2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Print statistics about a graph, producing no output graph:",
+      "syntax": "sccmap -v -s {{path/to/input1.gv}} {{path/to/input2.gv ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "sccmap -?"
+    }
+  ]
+}

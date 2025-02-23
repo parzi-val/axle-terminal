@@ -1,0 +1,26 @@
+{
+  "command": "sxiv",
+  "description": "Simple X Image Viewer. More information: https://github.com/muennich/sxiv.",
+  "useCases": [
+    {
+      "description": "Open an image:",
+      "syntax": "sxiv {{path/to/image}}"
+    },
+    {
+      "description": "Open an image in fullscreen mode:",
+      "syntax": "sxiv -f {{path/to/file}}"
+    },
+    {
+      "description": "Open a newline-separated list of images, reading filenames from stdin:",
+      "syntax": "echo {{path/to/file}} | sxiv -i"
+    },
+    {
+      "description": "Open one or more images as a slideshow:",
+      "syntax": "sxiv -S {{seconds}} {{path/to/image1 path/to/image2}}"
+    },
+    {
+      "description": "Open one or more images in thumbnail mode:",
+      "syntax": "sxiv -t {{path/to/image1 path/to/image2}}"
+    }
+  ]
+}

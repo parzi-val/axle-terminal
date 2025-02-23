@@ -1,0 +1,18 @@
+{
+  "command": "tzutil",
+  "description": "A tool for displaying or configuring the system time zone. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/tzutil.",
+  "useCases": [
+    {
+      "description": "Get the current time zone:",
+      "syntax": "tzutil /g"
+    },
+    {
+      "description": "Display a list of available time zones:",
+      "syntax": "tzutil /l"
+    },
+    {
+      "description": "Set the system time zone to the specific value:",
+      "syntax": "tzutil /s {{timezone_id}}"
+    }
+  ]
+}

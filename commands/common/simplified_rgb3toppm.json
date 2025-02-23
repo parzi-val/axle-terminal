@@ -1,0 +1,10 @@
+{
+  "command": "rgb3toppm",
+  "description": "Combine three PGM images into one PPM image. See also: ppmtorgb3. More information: https://netpbm.sourceforge.net/doc/rgb3toppm.html.",
+  "useCases": [
+    {
+      "description": "Combine three PGM images (representing red, green and blue color components) into one PPM image:",
+      "syntax": "rgb3toppm {{path/to/red_file.ppm}} {{path/to/green_file.ppm}} {{path/to/blue_file.ppm}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

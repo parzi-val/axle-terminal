@@ -1,0 +1,34 @@
+{
+  "command": "cradle package",
+  "description": "Manage packages for a Cradle instance. More information: https://cradlephp.github.io/docs/3.B.-Reference-Command-Line-Tools.html#package.",
+  "useCases": [
+    {
+      "description": "Display a list of available packages:",
+      "syntax": "cradle package list"
+    },
+    {
+      "description": "Search for a package:",
+      "syntax": "cradle package search {{package}}"
+    },
+    {
+      "description": "Install a package from Packagist:",
+      "syntax": "cradle package install {{package}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "cradle package install {{package}} {{version}}"
+    },
+    {
+      "description": "Update a package:",
+      "syntax": "cradle package update {{package}}"
+    },
+    {
+      "description": "Update a package to a specific version:",
+      "syntax": "cradle package update {{package}} {{version}}"
+    },
+    {
+      "description": "Remove a specific package:",
+      "syntax": "cradle package remove {{package}}"
+    }
+  ]
+}

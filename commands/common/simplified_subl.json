@@ -1,0 +1,26 @@
+{
+  "command": "subl",
+  "description": "Sublime Text editor. More information: https://www.sublimetext.com.",
+  "useCases": [
+    {
+      "description": "Open the current directory in Sublime Text:",
+      "syntax": "subl {{.}}"
+    },
+    {
+      "description": "Open a file or directory in Sublime Text:",
+      "syntax": "subl {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Open a file and jump to a specific line number:",
+      "syntax": "subl {{path/to/file}}:{{line_number}}"
+    },
+    {
+      "description": "Open a file or directory in the currently open window:",
+      "syntax": "subl -a {{path/to/file}}"
+    },
+    {
+      "description": "Open a file or directory in a new window:",
+      "syntax": "subl -n {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "aws sns",
+  "description": "Create topics and subscriptions, send and receive messages, and monitor events and logs for the Amazon Simple Notification Service. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/index.html.",
+  "useCases": [
+    {
+      "description": "List all objects of a specific type:",
+      "syntax": "aws sns list-{{origination-numbers|phone-numbers-opted-out|platform-applications|sms-sandbox-phone-numbers|subscriptions|topics}}"
+    },
+    {
+      "description": "Create a topic with a specific name and show its Amazon Resource Name (ARN):",
+      "syntax": "aws sns create-topic --name {{name}}"
+    },
+    {
+      "description": "Subscribe an email address to the topic with a specific ARN and show the subscription ARN:",
+      "syntax": "aws sns subscribe --topic-arn {{topic_ARN}} --protocol email --notification-endpoint {{email}}"
+    },
+    {
+      "description": "Publish a message to a specific topic or phone number and show the message ID:",
+      "syntax": "aws sns publish {{--topic-arn &quot;arn:aws:sns:us-west-2:123456789012:topic-name&quot;||--phone-number +1-555-555-0100}} --message file://{{path/to/file}}"
+    },
+    {
+      "description": "Delete the subscription with a specific ARN from its topic:",
+      "syntax": "aws sns unsubscribe --subscription-arn {{subscription_ARN}}"
+    },
+    {
+      "description": "Create a platform endpoint:",
+      "syntax": "aws sns create-platform-endpoint --platform-application-arn {{platform_application_ARN}} --token {{token}}"
+    },
+    {
+      "description": "Add a statement to a topic's access control policy:",
+      "syntax": "aws sns add-permission --topic-arn {{topic_ARN}} --label {{topic_label}} --aws-account-id {{account_id}} --action-name {{AddPermission|CreatePlatformApplication|DeleteEndpoint|GetDataProtectionPolicy|GetEndpointAttributes|Subscribe|...}}"
+    },
+    {
+      "description": "Add a tag to the topic with a specific ARN:",
+      "syntax": "aws sns tag-resource --resource-arn {{topic_ARN}} --tags {{Key=tag1_key Key=tag2_key,Value=tag2_value ...}}"
+    }
+  ]
+}

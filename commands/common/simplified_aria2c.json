@@ -1,0 +1,38 @@
+{
+  "command": "aria2c",
+  "description": "Fast download utility. Supports HTTP(S), FTP, SFTP, BitTorrent, and Metalink. More information: https://aria2.github.io.",
+  "useCases": [
+    {
+      "description": "Download a specific URI to a file:",
+      "syntax": "aria2c &quot;{{url}}&quot;"
+    },
+    {
+      "description": "Download a file from a URI with a specific output name:",
+      "syntax": "aria2c --out {{path/to/file}} &quot;{{url}}&quot;"
+    },
+    {
+      "description": "Download multiple different files in parallel:",
+      "syntax": "aria2c --force-sequential {{false}} &quot;{{url1 url2 ...}}&quot;"
+    },
+    {
+      "description": "Download the same file from different mirrors and verify the checksum of the downloaded file:",
+      "syntax": "aria2c --checksum {{sha-256}}={{hash}} &quot;{{url1}}&quot; &quot;{{url2}}&quot; &quot;{{urlN}}&quot;"
+    },
+    {
+      "description": "Download the URIs listed in a file with a specific number of parallel downloads:",
+      "syntax": "aria2c --input-file {{path/to/file}} --max-concurrent-downloads {{number_of_downloads}}"
+    },
+    {
+      "description": "Download with multiple connections:",
+      "syntax": "aria2c --split {{number_of_connections}} &quot;{{url}}&quot;"
+    },
+    {
+      "description": "FTP download with username and password:",
+      "syntax": "aria2c --ftp-user {{username}} --ftp-passwd {{password}} &quot;{{url}}&quot;"
+    },
+    {
+      "description": "Limit download speed in bytes/s:",
+      "syntax": "aria2c --max-download-limit {{speed}} &quot;{{url}}&quot;"
+    }
+  ]
+}

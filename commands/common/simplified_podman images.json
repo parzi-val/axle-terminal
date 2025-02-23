@@ -1,0 +1,26 @@
+{
+  "command": "podman images",
+  "description": "Manage Podman images. More information: https://docs.podman.io/en/latest/markdown/podman-images.1.html.",
+  "useCases": [
+    {
+      "description": "List all Podman images:",
+      "syntax": "podman images"
+    },
+    {
+      "description": "List all Podman images including intermediates:",
+      "syntax": "podman images --all"
+    },
+    {
+      "description": "List the output in quiet mode (only numeric IDs):",
+      "syntax": "podman images --quiet"
+    },
+    {
+      "description": "List all Podman images not used by any container:",
+      "syntax": "podman images --filter dangling=true"
+    },
+    {
+      "description": "List images that contain a substring in their name:",
+      "syntax": "podman images &quot;{{*image|image*}}&quot;"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "qm help",
+  "description": "Display help for a command. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "qm help {{command}}"
+    },
+    {
+      "description": "Display help for a specific command with detailed information:",
+      "syntax": "qm help {{command}} --verbose {{true|false}}"
+    }
+  ]
+}

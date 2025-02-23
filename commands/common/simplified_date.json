@@ -1,0 +1,38 @@
+{
+  "command": "date",
+  "description": "Set or display the system date. More information: https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display the current date using the default locale's format:",
+      "syntax": "date +%c"
+    },
+    {
+      "description": "Display the current date in UTC, using the ISO 8601 format:",
+      "syntax": "date -u +%Y-%m-%dT%H:%M:%S%Z"
+    },
+    {
+      "description": "Display the current date as a Unix timestamp (seconds since the Unix epoch):",
+      "syntax": "date +%s"
+    },
+    {
+      "description": "Convert a date specified as a Unix timestamp to the default format:",
+      "syntax": "date -d @{{1473305798}}"
+    },
+    {
+      "description": "Convert a given date to the Unix timestamp format:",
+      "syntax": "date -d &quot;{{2018-09-01 00:00}}&quot; +%s --utc"
+    },
+    {
+      "description": "Display the current date using the RFC-3339 format (YYYY-MM-DD hh:mm:ss TZ):",
+      "syntax": "date --rfc-3339 s"
+    },
+    {
+      "description": "Set the current date using the format MMDDhhmmYYYY.ss (YYYY and .ss are optional):",
+      "syntax": "date {{093023592021.59}}"
+    },
+    {
+      "description": "Display the current ISO week number:",
+      "syntax": "date +%V"
+    }
+  ]
+}

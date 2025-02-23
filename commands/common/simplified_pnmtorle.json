@@ -1,0 +1,18 @@
+{
+  "command": "pnmtorle",
+  "description": "Convert a PNM file to an Utah Raster Tools RLE image file. More information: https://netpbm.sourceforge.net/doc/pnmtorle.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to an RLE image:",
+      "syntax": "pnmtorle {{path/to/input.pnm}} &gt; {{path/to/output.rle}}"
+    },
+    {
+      "description": "Print PNM header information to stdout:",
+      "syntax": "pnmtorle -verbose {{path/to/input.pnm}} &gt; {{path/to/output.rle}}"
+    },
+    {
+      "description": "Include a transparency channel in the output image in which every black pixel is set to fully transparent and every other pixel is set to fully opaque:",
+      "syntax": "pnmtorle -alpha {{path/to/input.pnm}} &gt; {{path/to/output.rle}}"
+    }
+  ]
+}

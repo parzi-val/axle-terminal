@@ -1,0 +1,26 @@
+{
+  "command": "xed",
+  "description": "Edit files in Cinnamon desktop environment. More information: https://github.com/linuxmint/xed.",
+  "useCases": [
+    {
+      "description": "Start the editor:",
+      "syntax": "xed"
+    },
+    {
+      "description": "Open specific files:",
+      "syntax": "xed {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Open files using a specific encoding:",
+      "syntax": "xed --encoding {{WINDOWS-1252}} {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Print all supported encodings:",
+      "syntax": "xed --list-encodings"
+    },
+    {
+      "description": "Open a file and go to a specific line:",
+      "syntax": "xed +{{10}} {{path/to/file}}"
+    }
+  ]
+}

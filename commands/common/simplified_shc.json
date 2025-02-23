@@ -1,0 +1,22 @@
+{
+  "command": "shc",
+  "description": "Generic shell script compiler. More information: https://manned.org/shc.",
+  "useCases": [
+    {
+      "description": "Compile a shell script:",
+      "syntax": "shc -f {{script}}"
+    },
+    {
+      "description": "Compile a shell script and specify an output binary file:",
+      "syntax": "shc -f {{script}} -o {{binary}}"
+    },
+    {
+      "description": "Compile a shell script and set an expiration date for the executable:",
+      "syntax": "shc -f {{script}} -e {{dd/mm/yyyy}}"
+    },
+    {
+      "description": "Compile a shell script and set a message to display upon expiration:",
+      "syntax": "shc -f {{script}} -e {{dd/mm/yyyy}} -m &quot;{{Please contact your provider}}&quot;"
+    }
+  ]
+}

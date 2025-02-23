@@ -1,0 +1,30 @@
+{
+  "command": "ruby",
+  "description": "Ruby programming language interpreter. See also: gem, bundler, rake, irb. More information: https://www.ruby-lang.org.",
+  "useCases": [
+    {
+      "description": "Execute a Ruby script:",
+      "syntax": "ruby {{script.rb}}"
+    },
+    {
+      "description": "Execute a single Ruby command in the command-line:",
+      "syntax": "ruby -e {{command}}"
+    },
+    {
+      "description": "Check for syntax errors on a given Ruby script:",
+      "syntax": "ruby -c {{script.rb}}"
+    },
+    {
+      "description": "Start the built-in HTTP server on port 8080 in the current directory:",
+      "syntax": "ruby -run -e httpd"
+    },
+    {
+      "description": "Locally execute a Ruby binary without installing the required library it depends on:",
+      "syntax": "ruby -I {{path/to/library_folder}} -r {{library_require_name}} {{path/to/bin_folder/bin_name}}"
+    },
+    {
+      "description": "Display Ruby version:",
+      "syntax": "ruby -v"
+    }
+  ]
+}

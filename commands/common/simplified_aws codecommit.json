@@ -1,0 +1,14 @@
+{
+  "command": "aws codecommit",
+  "description": "A managed source control service that hosts private Git repositories. More information: https://docs.aws.amazon.com/cli/latest/reference/codecommit/.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "aws codecommit help"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "aws codecommit {{command}} help"
+    }
+  ]
+}

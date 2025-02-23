@@ -1,0 +1,14 @@
+{
+  "command": "sldtoppm",
+  "description": "Convert an AutoCAD slide file to a PPM image. More information: https://netpbm.sourceforge.net/doc/sldtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an SLD file to a PPM image:",
+      "syntax": "sldtoppm {{path/to/input.sld}} &gt; {{path/to/output.ppm}}"
+    },
+    {
+      "description": "Compensate for non-square pixels by scaling the width of the image:",
+      "syntax": "sldtoppm -adjust {{path/to/input.sld}} &gt; {{path/to/output.ppm}}"
+    }
+  ]
+}

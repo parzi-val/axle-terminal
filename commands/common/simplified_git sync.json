@@ -1,0 +1,18 @@
+{
+  "command": "git sync",
+  "description": "Sync local branches with remote branches. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-sync.",
+  "useCases": [
+    {
+      "description": "Sync the current local branch with its remote branch:",
+      "syntax": "git sync"
+    },
+    {
+      "description": "Sync the current local branch with the remote main branch:",
+      "syntax": "git sync origin main"
+    },
+    {
+      "description": "Sync without cleaning untracked files:",
+      "syntax": "git sync -s {{remote_name}} {{branch_name}}"
+    }
+  ]
+}

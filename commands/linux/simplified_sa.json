@@ -1,0 +1,18 @@
+{
+  "command": "sa",
+  "description": "Summarize accounting information about commands called by users, including basic information on CPU time spent processing and I/O rates. Part of the acct package. More information: https://manned.org/sa.8.",
+  "useCases": [
+    {
+      "description": "Display executable invocations per user (username not displayed):",
+      "syntax": "sudo sa"
+    },
+    {
+      "description": "Display executable invocations per user, showing responsible usernames:",
+      "syntax": "sudo sa --print-users"
+    },
+    {
+      "description": "List resources used recently per user:",
+      "syntax": "sudo sa --user-summary"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "brew autoremove",
+  "description": "Remove unused formulae previously installed as dependencies. More information: https://docs.brew.sh/Manpage#autoremove---dry-run.",
+  "useCases": [
+    {
+      "description": "Remove all unused formulae:",
+      "syntax": "brew autoremove"
+    },
+    {
+      "description": "Print what would be removed, but don't actually remove anything:",
+      "syntax": "brew autoremove --dry-run"
+    }
+  ]
+}

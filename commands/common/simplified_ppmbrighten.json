@@ -1,0 +1,10 @@
+{
+  "command": "ppmbrighten",
+  "description": "This command has been superseded by pambrighten. More information: https://netpbm.sourceforge.net/doc/ppmbrighten.html.",
+  "useCases": [
+    {
+      "description": "View documentation for the current command:",
+      "syntax": "tldr pambrighten"
+    }
+  ]
+}

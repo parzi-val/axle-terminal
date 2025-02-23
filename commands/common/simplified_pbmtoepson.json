@@ -1,0 +1,18 @@
+{
+  "command": "pbmtoepson",
+  "description": "Convert a PBM image to an Epson printer graphic. See also: pbmtoescp2. More information: https://netpbm.sourceforge.net/doc/pbmtoepson.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to an Epson printer graphic:",
+      "syntax": "pbmtoepson {{path/to/image.pbm}} &gt; {{path/to/output.epson}}"
+    },
+    {
+      "description": "Specify the printer protocol of the output:",
+      "syntax": "pbmtoepson -protocol {{escp9|escp}} {{path/to/image.pbm}} &gt; {{path/to/output.epson}}"
+    },
+    {
+      "description": "Specify the horizontal DPI of the output:",
+      "syntax": "pbmtoepson -dpi {{60|72|80|90|120|144|240}} {{path/to/image.pbm}} &gt; {{path/to/output.epson}}"
+    }
+  ]
+}

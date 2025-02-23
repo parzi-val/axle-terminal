@@ -1,0 +1,10 @@
+{
+  "command": "mate-about",
+  "description": "Show information about MATE desktop environment. More information: https://manned.org/mate-about.",
+  "useCases": [
+    {
+      "description": "Display MATE version:",
+      "syntax": "mate-about --version"
+    }
+  ]
+}

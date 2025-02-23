@@ -1,0 +1,18 @@
+{
+  "command": "banner",
+  "description": "Print the argument as a large ASCII art. More information: https://manned.org/banner.",
+  "useCases": [
+    {
+      "description": "Print the text message as a large banner (quotes are optional):",
+      "syntax": "banner &quot;{{Hello World}}&quot;"
+    },
+    {
+      "description": "Use a banner [w]idth of 50 characters:",
+      "syntax": "banner -w 50 &quot;{{Hello World}}&quot;"
+    },
+    {
+      "description": "Read text from stdin:",
+      "syntax": "banner"
+    }
+  ]
+}

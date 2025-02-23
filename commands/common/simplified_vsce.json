@@ -1,0 +1,26 @@
+{
+  "command": "vsce",
+  "description": "Extension manager for Visual Studio Code. More information: https://github.com/microsoft/vscode-vsce.",
+  "useCases": [
+    {
+      "description": "List all the extensions created by a publisher:",
+      "syntax": "vsce list {{publisher}}"
+    },
+    {
+      "description": "Publish an extension as major, minor or patch version:",
+      "syntax": "vsce publish {{major|minor|patch}}"
+    },
+    {
+      "description": "Unpublish an extension:",
+      "syntax": "vsce unpublish {{extension_id}}"
+    },
+    {
+      "description": "Package the current working directory as a .vsix file:",
+      "syntax": "vsce package"
+    },
+    {
+      "description": "Show the metadata associated with an extension:",
+      "syntax": "vsce show {{extension_id}}"
+    }
+  ]
+}

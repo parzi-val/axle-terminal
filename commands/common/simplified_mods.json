@@ -1,0 +1,34 @@
+{
+  "command": "mods",
+  "description": "AI for the command-line, built for pipelines. More information: https://github.com/charmbracelet/mods.",
+  "useCases": [
+    {
+      "description": "Ask a generic question:",
+      "syntax": "mods &quot;{{write me a poem about platypuses}}&quot;"
+    },
+    {
+      "description": "Open settings in your $EDITOR:",
+      "syntax": "mods --settings"
+    },
+    {
+      "description": "Ask for comments on your code, in markdown format:",
+      "syntax": "mods --format &quot;{{what are your thoughts on improving this code?}}&quot; &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Ask for help with your documentation, in markdown format:",
+      "syntax": "mods --format &quot;{{write a new section to this readme for a feature that sends you a free rabbit if you hit r}}&quot; &lt; {{README.md}}"
+    },
+    {
+      "description": "Organize your videos, in markdown format:",
+      "syntax": "ls {{path/to/videos}} | mods --format &quot;{{organize these by decade and summarize}}&quot;"
+    },
+    {
+      "description": "Read through raw HTML and summarize the contents, in markdown format:",
+      "syntax": "curl &quot;{{https://api.open-meteo.com/v1/forecast?latitude=29.00&amp;longitude=-90.00&amp;current_weather=true&amp;hourly=temperature_2m,relativehumidity_2m,windspeed_10m}}&quot; | mods --format &quot;{{summarize this weather data for a human}}&quot;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mods --help"
+    }
+  ]
+}

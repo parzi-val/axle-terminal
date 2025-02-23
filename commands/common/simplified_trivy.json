@@ -1,0 +1,38 @@
+{
+  "command": "trivy",
+  "description": "Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues. More information: https://aquasecurity.github.io/trivy.",
+  "useCases": [
+    {
+      "description": "Scan a Docker image for vulnerabilities and exposed secrets:",
+      "syntax": "trivy image {{image:tag}}"
+    },
+    {
+      "description": "Scan a Docker image filtering the output by severity:",
+      "syntax": "trivy image --severity {{HIGH,CRITICAL}} {{alpine:3.15}}"
+    },
+    {
+      "description": "Scan a Docker image ignoring any unfixed/unpatched vulnerabilities:",
+      "syntax": "trivy image --ignore-unfixed {{alpine:3.15}}"
+    },
+    {
+      "description": "Scan the filesystem for vulnerabilities and misconfigurations:",
+      "syntax": "trivy fs --security-checks {{vuln,config}} {{path/to/project_directory}}"
+    },
+    {
+      "description": "Scan a IaC (Terraform, CloudFormation, ARM, Helm and Dockerfile) directory for misconfigurations:",
+      "syntax": "trivy config {{path/to/iac_directory}}"
+    },
+    {
+      "description": "Scan a local or remote Git repository for vulnerabilities:",
+      "syntax": "trivy repo {{path/to/local_repository_directory|remote_repository_URL}}"
+    },
+    {
+      "description": "Scan a Git repository up to a specific commit hash:",
+      "syntax": "trivy repo --commit {{commit_hash}} {{repository}}"
+    },
+    {
+      "description": "Generate output with a SARIF template:",
+      "syntax": "trivy image --format {{template}} --template &quot;{{@sarif.tpl}}&quot; -o {{path/to/report.sarif}} {{image:tag}}"
+    }
+  ]
+}

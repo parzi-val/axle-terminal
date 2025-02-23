@@ -1,0 +1,22 @@
+{
+  "command": "xmodmap",
+  "description": "Utility for modifying keymaps and pointer button mappings in X. More information: https://manned.org/xmodmap.",
+  "useCases": [
+    {
+      "description": "Swap left-click and right-click on the pointer:",
+      "syntax": "xmodmap -e 'pointer = 3 2 1'"
+    },
+    {
+      "description": "Reassign a key on the keyboard to another key:",
+      "syntax": "xmodmap -e 'keycode {{keycode}} = {{keyname}}'"
+    },
+    {
+      "description": "Disable a key on the keyboard:",
+      "syntax": "xmodmap -e 'keycode {{keycode}} ='"
+    },
+    {
+      "description": "Execute all xmodmap expressions in the specified file:",
+      "syntax": "xmodmap {{path/to/file}}"
+    }
+  ]
+}

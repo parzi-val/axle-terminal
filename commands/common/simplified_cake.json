@@ -1,0 +1,38 @@
+{
+  "command": "cake",
+  "description": "The command-line processor for the CakePHP framework. More information: https://cakephp.org.",
+  "useCases": [
+    {
+      "description": "Display basic information about the current app and available commands:",
+      "syntax": "cake"
+    },
+    {
+      "description": "List available routes:",
+      "syntax": "cake routes"
+    },
+    {
+      "description": "Clear configuration caches:",
+      "syntax": "cake cache clear_all"
+    },
+    {
+      "description": "Build the metadata cache:",
+      "syntax": "cake schema_cache build --connection {{connection}}"
+    },
+    {
+      "description": "Clear the metadata cache:",
+      "syntax": "cake schema_cache clear"
+    },
+    {
+      "description": "Clear a single cache table:",
+      "syntax": "cake schema_cache clear {{table_name}}"
+    },
+    {
+      "description": "Start a development web server (defaults to port 8765):",
+      "syntax": "cake server"
+    },
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "cake console"
+    }
+  ]
+}

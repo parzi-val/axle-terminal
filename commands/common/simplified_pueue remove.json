@@ -1,0 +1,14 @@
+{
+  "command": "pueue remove",
+  "description": "Remove tasks from the list. Running or paused tasks need to be killed first. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Remove a killed or finished task:",
+      "syntax": "pueue remove {{task_id}}"
+    },
+    {
+      "description": "Remove multiple tasks at once:",
+      "syntax": "pueue remove {{task_id}} {{task_id}}"
+    }
+  ]
+}

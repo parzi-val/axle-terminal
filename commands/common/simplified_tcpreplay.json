@@ -1,0 +1,30 @@
+{
+  "command": "tcpreplay",
+  "description": "Replay network traffic stored in a pcap file. More information: https://tcpreplay.appneta.com/.",
+  "useCases": [
+    {
+      "description": "List available network interfaces:",
+      "syntax": "tcpreplay --listnics"
+    },
+    {
+      "description": "Replay traffic to interface:",
+      "syntax": "tcpreplay -i {{eth0}} {{traffic.pcap}}"
+    },
+    {
+      "description": "Replay traffic to interface and stdout:",
+      "syntax": "tcpreplay -i {{eth0}} --verbose {{traffic.pcap}}"
+    },
+    {
+      "description": "Replay traffic to interface as fast as possible:",
+      "syntax": "tcpreplay -i {{eth0}} --topspeed {{traffic.pcap}}"
+    },
+    {
+      "description": "Replay traffic to interface at given Mbps:",
+      "syntax": "tcpreplay -i {{eth0}} -M {{10}} {{traffic.pcap}}"
+    },
+    {
+      "description": "Replay traffic to interface several times:",
+      "syntax": "tcpreplay -i {{eth0}} --loop={{num_times}} {{traffic.pcap}}"
+    }
+  ]
+}

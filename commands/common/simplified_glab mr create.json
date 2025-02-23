@@ -1,0 +1,26 @@
+{
+  "command": "glab mr create",
+  "description": "Manage GitLab merge requests. More information: https://glab.readthedocs.io/en/latest/mr/create.html.",
+  "useCases": [
+    {
+      "description": "Interactively create a merge request:",
+      "syntax": "glab mr create"
+    },
+    {
+      "description": "Create a merge request, determining the title and description from the commit messages of the current branch:",
+      "syntax": "glab mr create --fill"
+    },
+    {
+      "description": "Create a draft merge request:",
+      "syntax": "glab mr create --draft"
+    },
+    {
+      "description": "Create a merge request specifying the target branch, title, and description:",
+      "syntax": "glab mr create --target-branch {{target_branch}} --title &quot;{{title}}&quot; --description &quot;{{description}}&quot;"
+    },
+    {
+      "description": "Start opening a merge request in the default web browser:",
+      "syntax": "glab mr create --web"
+    }
+  ]
+}

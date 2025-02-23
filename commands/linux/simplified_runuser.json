@@ -1,0 +1,26 @@
+{
+  "command": "runuser",
+  "description": "Run commands as a user and group without asking for password (needs root privileges). More information: https://manned.org/runuser.",
+  "useCases": [
+    {
+      "description": "Run command as a different user:",
+      "syntax": "runuser {{user}} -c '{{command}}'"
+    },
+    {
+      "description": "Run command as a different user and group:",
+      "syntax": "runuser {{user}} -g {{group}} -c '{{command}}'"
+    },
+    {
+      "description": "Start a login shell as a specific user:",
+      "syntax": "runuser {{user}} -l"
+    },
+    {
+      "description": "Specify a shell for running instead of the default shell (also works for login):",
+      "syntax": "runuser {{user}} -s {{/bin/sh}}"
+    },
+    {
+      "description": "Preserve the entire environment of root (only if --login is not specified):",
+      "syntax": "runuser {{user}} --preserve-environment -c '{{command}}'"
+    }
+  ]
+}

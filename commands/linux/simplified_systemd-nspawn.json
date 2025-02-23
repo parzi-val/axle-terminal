@@ -1,0 +1,22 @@
+{
+  "command": "systemd-nspawn",
+  "description": "Spawn a command or OS in a lightweight container. More information: https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html.",
+  "useCases": [
+    {
+      "description": "Run a command in a container:",
+      "syntax": "systemd-nspawn --directory {{path/to/container_root}}"
+    },
+    {
+      "description": "Run a full Linux-based OS in a container:",
+      "syntax": "systemd-nspawn --boot --directory {{path/to/container_root}}"
+    },
+    {
+      "description": "Run the specified command as PID 2 in the container (as opposed to PID 1) using a stub init process:",
+      "syntax": "systemd-nspawn --directory {{path/to/container_root}} --as-pid2"
+    },
+    {
+      "description": "Specify the machine name and hostname:",
+      "syntax": "systemd-nspawn --machine={{container_name}} --hostname={{container_host}} --directory {{path/to/container_root}}"
+    }
+  ]
+}

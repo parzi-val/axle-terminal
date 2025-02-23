@@ -1,0 +1,38 @@
+{
+  "command": "npm find-dupes",
+  "description": "Identify duplicate dependencies in node_modules. More information: https://docs.npmjs.com/cli/commands/npm-find-dupes.",
+  "useCases": [
+    {
+      "description": "List all duplicate packages within node_modules:",
+      "syntax": "npm find-dupes"
+    },
+    {
+      "description": "Include devDependencies in duplicate detection:",
+      "syntax": "npm find-dupes --include=dev"
+    },
+    {
+      "description": "List all duplicate instances of a specific package in node-modules:",
+      "syntax": "npm find-dupes {{package_name}}"
+    },
+    {
+      "description": "Exclude optional dependencies from duplicate detection:",
+      "syntax": "npm find-dupes --omit=optional"
+    },
+    {
+      "description": "Set the logging level for output:",
+      "syntax": "npm find-dupes --loglevel={{silent|error|warn|info|verbose}}"
+    },
+    {
+      "description": "Output duplicate information in JSON format:",
+      "syntax": "npm find-dupes --json"
+    },
+    {
+      "description": "Limit duplicate search to specific scopes:",
+      "syntax": "npm find-dupes --scope={{@scope1,@scope2}}"
+    },
+    {
+      "description": "Exclude specific scopes from duplicate detection:",
+      "syntax": "npm find-dupes --omit-scope={{@scope1,@scope2}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "git diff",
+  "description": "Show changes to tracked files. More information: https://git-scm.com/docs/git-diff.",
+  "useCases": [
+    {
+      "description": "Show unstaged changes:",
+      "syntax": "git diff"
+    },
+    {
+      "description": "Show all uncommitted changes (including staged ones):",
+      "syntax": "git diff HEAD"
+    },
+    {
+      "description": "Show only staged (added, but not yet committed) changes:",
+      "syntax": "git diff --staged"
+    },
+    {
+      "description": "Show changes from all commits since a given date/time (a date expression, e.g. \"1 week 2 days\" or an ISO date):",
+      "syntax": "git diff 'HEAD@{3 months|weeks|days|hours|seconds ago}'"
+    },
+    {
+      "description": "Show diff statistics, like files changed, histogram, and total line insertions/deletions:",
+      "syntax": "git diff --stat {{commit}}"
+    },
+    {
+      "description": "Output a summary of file creations, renames and mode changes since a given commit:",
+      "syntax": "git diff --summary {{commit}}"
+    },
+    {
+      "description": "Compare a single file between two branches or commits:",
+      "syntax": "git diff {{branch_1}}..{{branch_2}} [--] {{path/to/file}}"
+    },
+    {
+      "description": "Compare different files from the current branch to other branch:",
+      "syntax": "git diff {{branch}}:{{path/to/file2}} {{path/to/file}}"
+    }
+  ]
+}

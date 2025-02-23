@@ -1,0 +1,30 @@
+{
+  "command": "testssl",
+  "description": "Check SSL/TLS protocols and ciphers supported by a server. More information: https://testssl.sh/.",
+  "useCases": [
+    {
+      "description": "Test a server (run every check) on port 443:",
+      "syntax": "testssl {{example.com}}"
+    },
+    {
+      "description": "Test a different port:",
+      "syntax": "testssl {{example.com:465}}"
+    },
+    {
+      "description": "Only check available protocols:",
+      "syntax": "testssl --protocols {{example.com}}"
+    },
+    {
+      "description": "Only check vulnerabilities:",
+      "syntax": "testssl --vulnerable {{example.com}}"
+    },
+    {
+      "description": "Only check HTTP security headers:",
+      "syntax": "testssl --headers {{example.com}}"
+    },
+    {
+      "description": "Test other STARTTLS enabled protocols:",
+      "syntax": "testssl --starttls {{ftp|smtp|pop3|imap|xmpp|sieve|xmpp-server|telnet|ldap|irc|lmtp|nntp|postgres|mysql}} {{example.com}}:{{port}}"
+    }
+  ]
+}

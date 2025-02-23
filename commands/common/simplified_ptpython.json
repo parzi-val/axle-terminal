@@ -1,0 +1,34 @@
+{
+  "command": "ptpython",
+  "description": "A better Python REPL. More information: https://github.com/prompt-toolkit/ptpython.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "ptpython"
+    },
+    {
+      "description": "Execute a specific Python file:",
+      "syntax": "ptpython {{path/to/file.py}}"
+    },
+    {
+      "description": "Execute a specific Python file and start a REPL:",
+      "syntax": "ptpython -i {{path/to/file.py}}"
+    },
+    {
+      "description": "Open the menu:",
+      "syntax": "F2"
+    },
+    {
+      "description": "Open the history page:",
+      "syntax": "F3"
+    },
+    {
+      "description": "Toggle paste mode:",
+      "syntax": "F6"
+    },
+    {
+      "description": "Quit:",
+      "syntax": "&lt;Ctrl&gt; + D"
+    }
+  ]
+}

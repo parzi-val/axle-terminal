@@ -1,0 +1,26 @@
+{
+  "command": "unzipsfx",
+  "description": "Create a self-extracting compressed binary file by prepending self-extracting stubs on a Zip file. More information: https://manned.org/unzipsfx.",
+  "useCases": [
+    {
+      "description": "Create a self-extracting binary file of a Zip archive:",
+      "syntax": "cat unzipsfx {{path/to/archive.zip}} &gt; {{filename}} &amp;&amp; chmod 755 {{filename}}"
+    },
+    {
+      "description": "Extract a self-extracting binary in the current directory:",
+      "syntax": "{{./path/to/binary)}}"
+    },
+    {
+      "description": "Test a self-extracting binary for errors:",
+      "syntax": "{{./path/to/binary)}} -t"
+    },
+    {
+      "description": "Print content of a file in the self-extracting binary without extraction:",
+      "syntax": "{{./path/to/binary)}} -c {{path/to/filename}}"
+    },
+    {
+      "description": "Print comments on Zip archive in the self-extracting binary:",
+      "syntax": "{{./path/to/binary)}} -z"
+    }
+  ]
+}

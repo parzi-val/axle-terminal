@@ -1,0 +1,38 @@
+{
+  "command": "duckdb",
+  "description": "Command-line client for DuckDB, an in-process analytical SQL engine. More information: https://duckdb.org.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell with a transient in-memory database:",
+      "syntax": "duckdb"
+    },
+    {
+      "description": "Start an interactive shell on a database file. If the file does not exist, a new database is created:",
+      "syntax": "duckdb {{path/to/dbfile}}"
+    },
+    {
+      "description": "Directly query a CSV, JSON, or Parquet file:",
+      "syntax": "duckdb -c &quot;{{SELECT * FROM 'data_source.[csv|csv.gz|json|json.gz|parquet]'}}&quot;"
+    },
+    {
+      "description": "Run an SQL script:",
+      "syntax": "duckdb -f {{path/to/script.sql}}"
+    },
+    {
+      "description": "Run query on database file and keep the interactive shell open:",
+      "syntax": "duckdb {{path/to/dbfile}} -cmd &quot;{{SELECT DISTINCT * FROM tbl}}&quot;"
+    },
+    {
+      "description": "Run SQL queries in file on database and keep the interactive shell open:",
+      "syntax": "duckdb {{path/to/dbfile}} -init {{path/to/script.sql}}"
+    },
+    {
+      "description": "Read CSV from stdin and write CSV to stdout:",
+      "syntax": "cat {{path/to/source.csv}} | duckdb -c &quot;{{COPY (FROM read_csv('/dev/stdin')) TO '/dev/stdout' WITH (FORMAT CSV, HEADER)}}&quot;"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "duckdb -help"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "archinstall",
+  "description": "Guided Arch Linux installer with a twist. More information: https://archinstall.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Start the interactive installer:",
+      "syntax": "archinstall"
+    },
+    {
+      "description": "Start a preset installer:",
+      "syntax": "archinstall {{minimal|unattended}}"
+    }
+  ]
+}

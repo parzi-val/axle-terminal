@@ -1,0 +1,22 @@
+{
+  "command": "docker context",
+  "description": "Switch between contexts to manage multiple Docker environments. More information: https://docs.docker.com/reference/cli/docker/context/.",
+  "useCases": [
+    {
+      "description": "Create a context using a specific Docker endpoint:",
+      "syntax": "docker context create {{my_context}} --docker &quot;host={{tcp://remote-host:2375}}&quot;"
+    },
+    {
+      "description": "Create a context based on the DOCKER_HOST environment variable:",
+      "syntax": "docker context create {{my_context}}"
+    },
+    {
+      "description": "Switch to a context:",
+      "syntax": "docker context use {{my_context}}"
+    },
+    {
+      "description": "List all contexts:",
+      "syntax": "docker context ls"
+    }
+  ]
+}

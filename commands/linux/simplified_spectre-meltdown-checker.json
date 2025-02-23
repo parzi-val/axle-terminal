@@ -1,0 +1,30 @@
+{
+  "command": "spectre-meltdown-checker",
+  "description": "Spectre and Meltdown mitigation detection tool. More information: https://manned.org/spectre-meltdown-checker.",
+  "useCases": [
+    {
+      "description": "Check the currently running kernel for Spectre or Meltdown:",
+      "syntax": "sudo spectre-meltdown-checker"
+    },
+    {
+      "description": "Check the currently running kernel and show an explanation of the actions to take to mitigate a vulnerability:",
+      "syntax": "sudo spectre-meltdown-checker --explain"
+    },
+    {
+      "description": "Check for specific variants (defaults to all):",
+      "syntax": "sudo spectre-meltdown-checker --variant {{1|2|3|3a|4|l1tf|msbds|mfbds|mlpds|mdsum|taa|mcespc|srbds}}"
+    },
+    {
+      "description": "Display output using a specific output format:",
+      "syntax": "sudo spectre-meltdown-checker --batch {{text|json|nrpe|prometheus|short}}"
+    },
+    {
+      "description": "Don't use the /sys interface even if present:",
+      "syntax": "sudo spectre-meltdown-checker --no-sysfs"
+    },
+    {
+      "description": "Check a non-running kernel:",
+      "syntax": "sudo spectre-meltdown-checker --kernel {{path/to/kernel_file}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "git merge-base",
+  "description": "Find a common ancestor of two commits. More information: https://git-scm.com/docs/git-merge-base.",
+  "useCases": [
+    {
+      "description": "Print the best common ancestor of two commits:",
+      "syntax": "git merge-base {{commit_1}} {{commit_2}}"
+    },
+    {
+      "description": "Print all best common ancestors of two commits:",
+      "syntax": "git merge-base --all {{commit_1}} {{commit_2}}"
+    },
+    {
+      "description": "Check if a commit is an ancestor of a specific commit:",
+      "syntax": "git merge-base --is-ancestor {{ancestor_commit}} {{commit}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "aws amplify",
+  "description": "Development platform for building secure, scalable mobile and web applications. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/amplify/index.html.",
+  "useCases": [
+    {
+      "description": "Create a new Amplify app:",
+      "syntax": "aws amplify create-app --name {{app_name}} --description {{description}} --repository {{repo_url}} --platform {{platform}} --environment-variables {{env_vars}} --tags {{tags}}"
+    },
+    {
+      "description": "Delete an existing Amplify app:",
+      "syntax": "aws amplify delete-app --app-id {{app_id}}"
+    },
+    {
+      "description": "Get details of a specific Amplify app:",
+      "syntax": "aws amplify get-app --app-id {{app_id}}"
+    },
+    {
+      "description": "List all Amplify apps:",
+      "syntax": "aws amplify list-apps"
+    },
+    {
+      "description": "Update settings of an Amplify app:",
+      "syntax": "aws amplify update-app --app-id {{app_id}} --name {{new_name}} --description {{new_description}} --repository {{new_repo_url}} --environment-variables {{new_env_vars}} --tags {{new_tags}}"
+    },
+    {
+      "description": "Add a new backend environment to an Amplify app:",
+      "syntax": "aws amplify create-backend-environment --app-id {{app_id}} --environment-name {{env_name}} --deployment-artifacts {{artifacts}}"
+    },
+    {
+      "description": "Remove a backend environment from an Amplify app:",
+      "syntax": "aws amplify delete-backend-environment --app-id {{app_id}} --environment-name {{env_name}}"
+    },
+    {
+      "description": "List all backend environments in an Amplify app:",
+      "syntax": "aws amplify list-backend-environments --app-id {{app_id}}"
+    }
+  ]
+}

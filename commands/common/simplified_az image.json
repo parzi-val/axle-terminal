@@ -1,0 +1,26 @@
+{
+  "command": "az image",
+  "description": "Manage custom Virtual Machine Images in Azure. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/image.",
+  "useCases": [
+    {
+      "description": "List the custom images under a resource group:",
+      "syntax": "az image list --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Create a custom image from managed disks or snapshots:",
+      "syntax": "az image create --resource-group {{resource_group}} --name {{name}} --os-type {{windows|linux}} --source {{os_disk_source}}"
+    },
+    {
+      "description": "Delete a custom image:",
+      "syntax": "az image delete --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Show details of a custom image:",
+      "syntax": "az image show --name {{name}} --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Update custom images:",
+      "syntax": "az image update --name {{name}} --resource-group {{resource_group}} --set {{property=value}}"
+    }
+  ]
+}

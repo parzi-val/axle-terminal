@@ -1,0 +1,14 @@
+{
+  "command": "wtf",
+  "description": "Show the expansions of acronyms. More information: https://manned.org/wtf.6.",
+  "useCases": [
+    {
+      "description": "Expand a given acronym:",
+      "syntax": "wtf {{IMO}}"
+    },
+    {
+      "description": "Specify a computer related search type:",
+      "syntax": "wtf -t {{comp}} {{WWW}}"
+    }
+  ]
+}

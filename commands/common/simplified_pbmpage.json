@@ -1,0 +1,18 @@
+{
+  "command": "pbmpage",
+  "description": "Generate a test pattern for printing. More information: https://netpbm.sourceforge.net/doc/pbmpage.html.",
+  "useCases": [
+    {
+      "description": "Generate a test pattern for printing onto US standard paper:",
+      "syntax": "pbmpage &gt; {{path/to/file.pbm}}"
+    },
+    {
+      "description": "Generate a test pattern for printing onto A4 paper:",
+      "syntax": "pbmpage -a4 &gt; {{path/to/file.pbm}}"
+    },
+    {
+      "description": "Specify the pattern to use:",
+      "syntax": "pbmpage {{1|2|3}} &gt; {{path/to/file.pbm}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "nix repl",
+  "description": "Start an interactive environment for evaluating Nix expressions. See https://nixos.org/manual/nix/stable/language/index.html for a description of the Nix expression language. More information: https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-repl.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive environment for evaluating Nix expressions:",
+      "syntax": "nix repl"
+    },
+    {
+      "description": "Load all packages from a flake (e.g. nixpkgs) into scope:",
+      "syntax": ":lf {{nixpkgs}}"
+    },
+    {
+      "description": "Build a package from an expression:",
+      "syntax": ":b {{expression}}"
+    },
+    {
+      "description": "Start a shell with package from the expression available:",
+      "syntax": ":u {{expression}}"
+    },
+    {
+      "description": "Start a shell with dependencies of the package from the expression available:",
+      "syntax": ":s {{expression}}"
+    }
+  ]
+}

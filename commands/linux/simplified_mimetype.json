@@ -1,0 +1,34 @@
+{
+  "command": "mimetype",
+  "description": "Automatically determine the MIME type of a file. More information: https://manned.org/mimetype.",
+  "useCases": [
+    {
+      "description": "Print the MIME type of a given file:",
+      "syntax": "mimetype {{path/to/file}}"
+    },
+    {
+      "description": "Display only the MIME type, and not the filename:",
+      "syntax": "mimetype --brief {{path/to/file}}"
+    },
+    {
+      "description": "Display a description of the MIME type:",
+      "syntax": "mimetype --describe {{path/to/file}}"
+    },
+    {
+      "description": "Determine the MIME type of stdin (does not check a filename):",
+      "syntax": "{{command}} | mimetype --stdin"
+    },
+    {
+      "description": "Display debug information about how the MIME type was determined:",
+      "syntax": "mimetype --debug {{path/to/file}}"
+    },
+    {
+      "description": "Display all the possible MIME types of a given file in confidence order:",
+      "syntax": "mimetype --all {{path/to/file}}"
+    },
+    {
+      "description": "Explicitly specify the 2-letter language code of the output:",
+      "syntax": "mimetype --language {{path/to/file}}"
+    }
+  ]
+}

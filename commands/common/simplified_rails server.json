@@ -1,0 +1,26 @@
+{
+  "command": "rails server",
+  "description": "Serve the Rails app in the current directory using the Puma web server, which comes bundled with Rails. More information: https://guides.rubyonrails.org/command_line.html#bin-rails-server.",
+  "useCases": [
+    {
+      "description": "Run the web server:",
+      "syntax": "rails server"
+    },
+    {
+      "description": "Run the web server on a specified port:",
+      "syntax": "rails server --port {{port_number}}"
+    },
+    {
+      "description": "Run the web server on a specified IP address:",
+      "syntax": "rails server --binding {{ip_address}}"
+    },
+    {
+      "description": "Run the web server on a specified environment:",
+      "syntax": "rails server --environment {{environment}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rails server --help"
+    }
+  ]
+}

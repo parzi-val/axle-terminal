@@ -1,0 +1,22 @@
+{
+  "command": "ilbmtoppm",
+  "description": "Convert an ILBM file to a PPM image. More information: https://netpbm.sourceforge.net/doc/ilbmtoppm.html.",
+  "useCases": [
+    {
+      "description": "Convert an ILBM file to a PPM image:",
+      "syntax": "ilbmtoppm {{path/to/file.ilbm}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Use the specified color to \"show through\" where the image is transparent:",
+      "syntax": "ilbmtoppm -transparent {{color}} {{path/to/file.ilbm}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Ignore the chunk with the specified chunk ID:",
+      "syntax": "ilbmtoppm -ignore {{chunkID}} {{path/to/file.ilbm}} &gt; {{path/to/file.ppm}}"
+    },
+    {
+      "description": "Store the input's transparency information to the specified PBM file:",
+      "syntax": "ilbmtoppm -maskfile {{path/to/maskfile.pbm}} {{path/to/file.ilbm}} &gt; {{path/to/file.ppm}}"
+    }
+  ]
+}

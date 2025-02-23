@@ -1,0 +1,18 @@
+{
+  "command": "pretty-bytes",
+  "description": "Convert bytes to a human-readable string. More information: https://github.com/sindresorhus/pretty-bytes-cli.",
+  "useCases": [
+    {
+      "description": "Convert numeric bytes value to a human-readable string:",
+      "syntax": "pretty-bytes {{1337}}"
+    },
+    {
+      "description": "Convert numeric bytes value from stdin to a human-readable string:",
+      "syntax": "echo {{1337}} | pretty-bytes"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pretty-bytes --help"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "chronyc",
+  "description": "Query the Chrony NTP daemon. More information: https://chrony-project.org/doc/4.6.1/chronyc.html.",
+  "useCases": [
+    {
+      "description": "Start chronyc in interactive mode:",
+      "syntax": "chronyc"
+    },
+    {
+      "description": "Display tracking stats for the Chrony daemon:",
+      "syntax": "chronyc tracking"
+    },
+    {
+      "description": "Print the time sources that Chrony is currently using:",
+      "syntax": "chronyc sources"
+    },
+    {
+      "description": "Display stats for sources currently used by chrony daemon as a time source:",
+      "syntax": "chronyc sourcestats"
+    },
+    {
+      "description": "Step the system clock immediately, bypassing any slewing:",
+      "syntax": "chronyc makestep"
+    },
+    {
+      "description": "Display verbose information about each NTP source:",
+      "syntax": "chronyc ntpdata"
+    }
+  ]
+}

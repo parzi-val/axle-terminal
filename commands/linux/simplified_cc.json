@@ -1,0 +1,10 @@
+{
+  "command": "cc",
+  "description": "This command is an alias of gcc.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr gcc"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "tlmgr install",
+  "description": "Install TeX Live packages. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Install a package and its dependencies:",
+      "syntax": "sudo tlmgr install {{package}}"
+    },
+    {
+      "description": "Reinstall a package:",
+      "syntax": "sudo tlmgr install --reinstall {{package}}"
+    },
+    {
+      "description": "Simulate installing a package without making any changes:",
+      "syntax": "tlmgr install --dry-run {{package}}"
+    },
+    {
+      "description": "Install a package without its dependencies:",
+      "syntax": "sudo tlmgr install --no-depends {{package}}"
+    },
+    {
+      "description": "Install a package from a specific file:",
+      "syntax": "sudo tlmgr install --file {{path/to/package}}"
+    }
+  ]
+}

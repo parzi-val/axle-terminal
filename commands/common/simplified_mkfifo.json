@@ -1,0 +1,22 @@
+{
+  "command": "mkfifo",
+  "description": "Make FIFOs (named pipes). More information: https://www.gnu.org/software/coreutils/manual/html_node/mkfifo-invocation.html.",
+  "useCases": [
+    {
+      "description": "Create a named pipe at a given path:",
+      "syntax": "mkfifo {{path/to/pipe}}"
+    },
+    {
+      "description": "Send data through a named pipe and send the command to the background:",
+      "syntax": "echo &quot;{{Hello World}}&quot; &gt; {{path/to/pipe}} &amp;"
+    },
+    {
+      "description": "Receive data through a named pipe:",
+      "syntax": "cat {{path/to/pipe}}"
+    },
+    {
+      "description": "Share your terminal session in real-time:",
+      "syntax": "mkfifo {{path/to/pipe}}; script -f {{path/to/pipe}}"
+    }
+  ]
+}

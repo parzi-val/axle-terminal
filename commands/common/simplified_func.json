@@ -1,0 +1,30 @@
+{
+  "command": "func",
+  "description": "Azure Functions Core Tools: develop and test Azure Functions locally. Local functions can connect to live Azure services, and can deploy a function app to an Azure subscription. More information: https://learn.microsoft.com/azure/azure-functions/functions-run-local.",
+  "useCases": [
+    {
+      "description": "Create a new functions project:",
+      "syntax": "func init {{project}}"
+    },
+    {
+      "description": "Create a new function:",
+      "syntax": "func new"
+    },
+    {
+      "description": "Run functions locally:",
+      "syntax": "func start"
+    },
+    {
+      "description": "Publish your code to a function app in Azure:",
+      "syntax": "func azure functionapp publish {{function}}"
+    },
+    {
+      "description": "Download all settings from an existing function app:",
+      "syntax": "func azure functionapp fetch-app-settings {{function}}"
+    },
+    {
+      "description": "Get the connection string for a specific storage account:",
+      "syntax": "func azure storage fetch-connection-string {{storage_account}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "rustup component",
+  "description": "Modify a toolchain's installed components. Without the --toolchain option rustup will use the default toolchain. See rustup help toolchain for more information about toolchains. More information: https://rust-lang.github.io/rustup.",
+  "useCases": [
+    {
+      "description": "Add a component to a toolchain:",
+      "syntax": "rustup component add --toolchain {{toolchain}} {{component}}"
+    },
+    {
+      "description": "Remove a component from a toolchain:",
+      "syntax": "rustup component remove --toolchain {{toolchain}} {{component}}"
+    },
+    {
+      "description": "List installed and available components for a toolchain:",
+      "syntax": "rustup component list --toolchain {{toolchain}}"
+    },
+    {
+      "description": "List installed components for a toolchain:",
+      "syntax": "rustup component list --toolchain {{toolchain}} --installed"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "ocamlopt",
+  "description": "The OCaml native code compiler. Produces native executables, e.g. ELF on Linux. More information: https://ocaml.org.",
+  "useCases": [
+    {
+      "description": "Compile a source file:",
+      "syntax": "ocamlopt -o {{path/to/binary}} {{path/to/source_file.ml}}"
+    },
+    {
+      "description": "Compile with debugging enabled:",
+      "syntax": "ocamlopt -g -o {{path/to/binary}} {{path/to/source_file.ml}}"
+    }
+  ]
+}

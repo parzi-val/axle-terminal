@@ -1,0 +1,34 @@
+{
+  "command": "notmuch",
+  "description": "Command-line based program for indexing, searching, reading, and tagging large collections of email messages. More information: https://notmuchmail.org/manpages/.",
+  "useCases": [
+    {
+      "description": "Configure for first use:",
+      "syntax": "notmuch setup"
+    },
+    {
+      "description": "Add a tag for all messages matching a search term:",
+      "syntax": "notmuch tag +{{custom_tag}} &quot;{{search_term}}&quot;"
+    },
+    {
+      "description": "Remove a tag for all messages matching a search term:",
+      "syntax": "notmuch tag -{{custom_tag}} &quot;{{search_term}}&quot;"
+    },
+    {
+      "description": "Count messages matching the given search term:",
+      "syntax": "notmuch count --output={{messages|threads}} &quot;{{search_term}}&quot;"
+    },
+    {
+      "description": "Search for messages matching the given search term:",
+      "syntax": "notmuch search --format={{json|text}} --output={{summary|threads|messages|files|tags}} &quot;{{search_term}}&quot;"
+    },
+    {
+      "description": "Limit the number of search results to X:",
+      "syntax": "notmuch search --format={{json|text}} --output={{summary|threads|messages|files|tags}} --limit={{X}} &quot;{{search_term}}&quot;"
+    },
+    {
+      "description": "Create a reply template for a set of messages:",
+      "syntax": "notmuch reply --format={{default|headers-only}} --reply-to={{sender|all}} &quot;{{search_term}}&quot;"
+    }
+  ]
+}

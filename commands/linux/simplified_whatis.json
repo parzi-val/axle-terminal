@@ -1,0 +1,26 @@
+{
+  "command": "whatis",
+  "description": "Display one-line descriptions from manual pages. More information: https://manned.org/whatis.",
+  "useCases": [
+    {
+      "description": "Display a description from a man page:",
+      "syntax": "whatis {{command}}"
+    },
+    {
+      "description": "Don't cut the description off at the end of the line:",
+      "syntax": "whatis --long {{command}}"
+    },
+    {
+      "description": "Display descriptions for all commands matching a glob:",
+      "syntax": "whatis --wildcard {{net*}}"
+    },
+    {
+      "description": "Search man page descriptions with a regular expression:",
+      "syntax": "whatis --regex '{{wish[0-9]\\.[0-9]}}'"
+    },
+    {
+      "description": "Display descriptions in a specific language:",
+      "syntax": "whatis --locale={{en}} {{command}}"
+    }
+  ]
+}

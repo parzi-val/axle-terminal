@@ -1,0 +1,26 @@
+{
+  "command": "sv",
+  "description": "Control a running runsv service. More information: https://manned.org/sv.8.",
+  "useCases": [
+    {
+      "description": "Start a service:",
+      "syntax": "sudo sv up {{path/to/service}}"
+    },
+    {
+      "description": "Stop a service:",
+      "syntax": "sudo sv down {{path/to/service}}"
+    },
+    {
+      "description": "Get service status:",
+      "syntax": "sudo sv status {{path/to/service}}"
+    },
+    {
+      "description": "Reload a service:",
+      "syntax": "sudo sv reload {{path/to/service}}"
+    },
+    {
+      "description": "Start a service, but only if it's not running and don't restart it if it stops:",
+      "syntax": "sudo sv once {{path/to/service}}"
+    }
+  ]
+}

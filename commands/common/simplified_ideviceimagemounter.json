@@ -1,0 +1,14 @@
+{
+  "command": "ideviceimagemounter",
+  "description": "Mount disk images on an iOS device. More information: https://manned.org/ideviceimagemounter.",
+  "useCases": [
+    {
+      "description": "Mount a disk image on the connected device:",
+      "syntax": "ideviceimagemounter {{path/to/image_file}} {{path/to/signature_file}}"
+    },
+    {
+      "description": "List currently mounted disk images:",
+      "syntax": "ideviceimagemounter --list"
+    }
+  ]
+}

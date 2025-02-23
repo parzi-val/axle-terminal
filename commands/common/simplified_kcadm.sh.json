@@ -1,0 +1,22 @@
+{
+  "command": "kcadm.sh",
+  "description": "Perform administration tasks. More information: https://www.keycloak.org/docs/latest/server_admin/#admin-cli.",
+  "useCases": [
+    {
+      "description": "Start an authenticated session:",
+      "syntax": "kcadm.sh config credentials --server {{host}} --realm {{realm_name}} --user {{username}} --password {{password}}"
+    },
+    {
+      "description": "Create a user:",
+      "syntax": "kcadm.sh create users -s username={{username}} -r {{realm_name}}"
+    },
+    {
+      "description": "List all realms:",
+      "syntax": "kcadm.sh get realms"
+    },
+    {
+      "description": "Update a realm with JSON config:",
+      "syntax": "kcadm.sh update realms/{{realm_name}} -f {{path/to/file.json}}"
+    }
+  ]
+}

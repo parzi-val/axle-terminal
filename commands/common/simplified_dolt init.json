@@ -1,0 +1,14 @@
+{
+  "command": "dolt init",
+  "description": "Create an empty Dolt data repository. More information: https://docs.dolthub.com/cli-reference/cli#dolt-init.",
+  "useCases": [
+    {
+      "description": "Initialize a new Dolt data repository in the current directory:",
+      "syntax": "dolt init"
+    },
+    {
+      "description": "Initialize a new Dolt data repository creating a commit with the specified metadata:",
+      "syntax": "dolt init --name &quot;{{name}}&quot; --email &quot;{{email}}&quot; --date &quot;{{2021-12-31T00:00:00}}&quot; -b &quot;{{branch_name}}&quot;"
+    }
+  ]
+}

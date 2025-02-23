@@ -1,0 +1,18 @@
+{
+  "command": "latex",
+  "description": "Compile a DVI document from LaTeX source files. More information: https://www.latex-project.org.",
+  "useCases": [
+    {
+      "description": "Compile a DVI document:",
+      "syntax": "latex {{source.tex}}"
+    },
+    {
+      "description": "Compile a DVI document, specifying an output directory:",
+      "syntax": "latex -output-directory={{path/to/directory}} {{source.tex}}"
+    },
+    {
+      "description": "Compile a DVI document, exiting on each error:",
+      "syntax": "latex -halt-on-error {{source.tex}}"
+    }
+  ]
+}

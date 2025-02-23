@@ -1,0 +1,18 @@
+{
+  "command": "pg_isready",
+  "description": "Check the connection status of a PostgreSQL server. More information: https://www.postgresql.org/docs/current/app-pg-isready.html.",
+  "useCases": [
+    {
+      "description": "Check connection:",
+      "syntax": "pg_isready"
+    },
+    {
+      "description": "Check connection with a specific hostname and port:",
+      "syntax": "pg_isready --host={{hostname}} --port={{port}}"
+    },
+    {
+      "description": "Check connection displaying a message only when the connection fails:",
+      "syntax": "pg_isready --quiet"
+    }
+  ]
+}

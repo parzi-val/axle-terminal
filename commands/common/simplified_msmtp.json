@@ -1,0 +1,18 @@
+{
+  "command": "msmtp",
+  "description": "An SMTP client. It reads text from stdin and sends it to an SMTP server. More information: https://marlam.de/msmtp.",
+  "useCases": [
+    {
+      "description": "Send an email using the default account configured in ~/.msmtprc:",
+      "syntax": "echo &quot;{{Hello world}}&quot; | msmtp {{to@example.org}}"
+    },
+    {
+      "description": "Send an email using a specific account configured in ~/.msmtprc:",
+      "syntax": "echo &quot;{{Hello world}}&quot; | msmtp --account={{account_name}} {{to@example.org}}"
+    },
+    {
+      "description": "Send an email without a configured account. The password should be specified in the ~/.msmtprc file:",
+      "syntax": "echo &quot;{{Hello world}}&quot; | msmtp --host={{localhost}} --port={{999}} --from={{from@example.org}} {{to@example.org}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "pageres",
+  "description": "Capture screenshots of websites in various resolutions. More information: https://github.com/sindresorhus/pageres-cli.",
+  "useCases": [
+    {
+      "description": "Take multiple screenshots of multiple URLs at different resolutions:",
+      "syntax": "pageres {{https://example.com/}} {{https://example2.com/}} {{1366x768}} {{1600x900}}"
+    },
+    {
+      "description": "Provide specific options for a URL, overriding global options:",
+      "syntax": "pageres [{{https://example.com/}} {{1366x768}} --no-crop] [{{https://example2.com/}} {{1024x768}}] --crop"
+    },
+    {
+      "description": "Provide a custom filename template:",
+      "syntax": "pageres {{https://example.com/}} {{1024x768}} --filename={{'&lt;%= date %&gt; - &lt;%= url %&gt;'}}"
+    },
+    {
+      "description": "Capture a specific element on a page:",
+      "syntax": "pageres {{https://example.com/}} {{1366x768}} --selector='{{.page-header}}'"
+    },
+    {
+      "description": "Hide a specific element:",
+      "syntax": "pageres {{https://example.com/}} {{1366x768}} --hide='{{.page-header}}'"
+    },
+    {
+      "description": "Capture a screenshot of a local file:",
+      "syntax": "pageres {{local_file_path.html}} {{1366x768}}"
+    }
+  ]
+}

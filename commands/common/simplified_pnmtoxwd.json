@@ -1,0 +1,18 @@
+{
+  "command": "pnmtoxwd",
+  "description": "Convert a PNM file into an X11 window dump file. More information: https://netpbm.sourceforge.net/doc/pnmtoxwd.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image file to XWD:",
+      "syntax": "pnmtoxwd {{path/to/input_file.pnm}} &gt; {{path/to/output_file.xwd}}"
+    },
+    {
+      "description": "Produce the output in the DirectColor format:",
+      "syntax": "pnmtoxwd -directcolor {{path/to/input_file.pnm}} &gt; {{path/to/output_file.xwd}}"
+    },
+    {
+      "description": "Set the color depth of the output to b bits:",
+      "syntax": "pnmtoxwd -pseudodepth {{b}} {{path/to/input_file.pnm}} &gt; {{path/to/output_file.xwd}}"
+    }
+  ]
+}

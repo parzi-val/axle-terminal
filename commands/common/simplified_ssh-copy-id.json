@@ -1,0 +1,18 @@
+{
+  "command": "ssh-copy-id",
+  "description": "Install your public key in a remote machine's authorized_keys. More information: https://manned.org/ssh-copy-id.",
+  "useCases": [
+    {
+      "description": "Copy your keys to the remote machine:",
+      "syntax": "ssh-copy-id {{username}}@{{remote_host}}"
+    },
+    {
+      "description": "Copy the given public key to the remote:",
+      "syntax": "ssh-copy-id -i {{path/to/certificate}} {{username}}@{{remote_host}}"
+    },
+    {
+      "description": "Copy the given public key to the remote with specific port:",
+      "syntax": "ssh-copy-id -i {{path/to/certificate}} -p {{port}} {{username}}@{{remote_host}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "go build",
+  "description": "Compile Go sources. More information: https://golang.org/cmd/go/#hdr-Compile_packages_and_dependencies.",
+  "useCases": [
+    {
+      "description": "Compile a 'package main' file (output will be the filename without extension):",
+      "syntax": "go build {{path/to/main.go}}"
+    },
+    {
+      "description": "Compile, specifying the output filename:",
+      "syntax": "go build -o {{path/to/binary}} {{path/to/source.go}}"
+    },
+    {
+      "description": "Compile a package:",
+      "syntax": "go build -o {{path/to/binary}} {{path/to/package}}"
+    },
+    {
+      "description": "Compile a main package into an executable, enabling data race detection:",
+      "syntax": "go build -race -o {{path/to/executable}} {{path/to/main/package}}"
+    }
+  ]
+}

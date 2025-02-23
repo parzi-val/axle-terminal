@@ -1,0 +1,14 @@
+{
+  "command": "grafana-cli",
+  "description": "A small executable that is bundled with Grafana serve. More information: https://grafana.com/docs/grafana/latest/cli/.",
+  "useCases": [
+    {
+      "description": "Install, update, or remove specific plugins:",
+      "syntax": "grafana-cli plugins {{install|update|remove}} {{plugin_id1 plugin_id2 ...}}"
+    },
+    {
+      "description": "List all installed plugins:",
+      "syntax": "grafana-cli plugins ls"
+    }
+  ]
+}

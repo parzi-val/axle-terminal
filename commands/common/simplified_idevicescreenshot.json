@@ -1,0 +1,14 @@
+{
+  "command": "idevicescreenshot",
+  "description": "Get a screenshot from the connected iOS device. More information: https://manned.org/idevicescreenshot.",
+  "useCases": [
+    {
+      "description": "Save a screenshot with the default file name as a TIFF image:",
+      "syntax": "idevicescreenshot"
+    },
+    {
+      "description": "Save a screenshot with a specific file name:",
+      "syntax": "idevicescreenshot {{path/to/file.tiff}}"
+    }
+  ]
+}

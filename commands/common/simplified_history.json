@@ -1,0 +1,30 @@
+{
+  "command": "history",
+  "description": "Command-line history. More information: https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html.",
+  "useCases": [
+    {
+      "description": "Display the commands history list with line numbers:",
+      "syntax": "history"
+    },
+    {
+      "description": "Display the last 20 commands (in Zsh it displays all commands starting from the 20th):",
+      "syntax": "history {{20}}"
+    },
+    {
+      "description": "Display history with timestamps in different formats (only available in Zsh):",
+      "syntax": "history -{{d|f|i|E}}"
+    },
+    {
+      "description": "[c]lear the commands history list (only for current Bash shell):",
+      "syntax": "history -c"
+    },
+    {
+      "description": "Over[w]rite history file with history of current Bash shell (often combined with history -c to purge history):",
+      "syntax": "history -w"
+    },
+    {
+      "description": "[d]elete the history entry at the specified offset:",
+      "syntax": "history -d {{offset}}"
+    }
+  ]
+}

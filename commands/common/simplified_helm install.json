@@ -1,0 +1,34 @@
+{
+  "command": "helm install",
+  "description": "Install a helm chart. More information: https://helm.sh/docs/intro/using_helm/#helm-install-installing-a-package.",
+  "useCases": [
+    {
+      "description": "Install a helm chart:",
+      "syntax": "helm install {{name}} {{repository_name}}/{{chart_name}}"
+    },
+    {
+      "description": "Install a helm chart from an unpacked chart directory:",
+      "syntax": "helm install {{name}} {{path/to/source_directory}}"
+    },
+    {
+      "description": "Install a helm chart from a URL:",
+      "syntax": "helm install {{package_name}} {{https://example.com/charts/packagename-1.2.3.tgz}}"
+    },
+    {
+      "description": "Install a helm chart and generate a name:",
+      "syntax": "helm install {{repository_name}}/{{chart_name}} --generate-name"
+    },
+    {
+      "description": "Perform a dry run:",
+      "syntax": "helm install {{name}} {{repository_name}}/{{chart_name}} --dry-run"
+    },
+    {
+      "description": "Install a helm chart with custom values:",
+      "syntax": "helm install {{name}} {{repository_name}}/{{chart_name}} --set {{parameter1}}={{value1}},{{parameter2}}={{value2}}"
+    },
+    {
+      "description": "Install a helm chart passing a custom values file:",
+      "syntax": "helm install {{name}} {{repository_name}}/{{chart_name}} --values {{path/to/values.yaml}}"
+    }
+  ]
+}

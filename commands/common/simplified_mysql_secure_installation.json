@@ -1,0 +1,18 @@
+{
+  "command": "mysql_secure_installation",
+  "description": "Set up MySQL to have better security. More information: https://dev.mysql.com/doc/refman/en/mysql-secure-installation.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive setup:",
+      "syntax": "mysql_secure_installation"
+    },
+    {
+      "description": "Use specific host and port:",
+      "syntax": "mysql_secure_installation --host={{host}} --port={{port}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mysql_secure_installation --help"
+    }
+  ]
+}

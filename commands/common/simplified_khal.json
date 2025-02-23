@@ -1,0 +1,26 @@
+{
+  "command": "khal",
+  "description": "A text-based calendar and scheduling application for the command-line. More information: https://lostpackets.de/khal.",
+  "useCases": [
+    {
+      "description": "Start Khal on interactive mode:",
+      "syntax": "ikhal"
+    },
+    {
+      "description": "Print all events scheduled in personal calendar for the next seven days:",
+      "syntax": "khal list -a {{personal}} {{today}} {{7d}}"
+    },
+    {
+      "description": "Print all events scheduled not in personal calendar for tomorrow at 10:00:",
+      "syntax": "khal at -d {{personal}} {{tomorrow}} {{10:00}}"
+    },
+    {
+      "description": "Print a calendar with a list of events for the next three months:",
+      "syntax": "khal calendar"
+    },
+    {
+      "description": "Add new event to personal calendar:",
+      "syntax": "khal new -a {{personal}} {{2020-09-08}} {{18:00}} {{18:30}} &quot;{{Dentist appointment}}&quot;"
+    }
+  ]
+}

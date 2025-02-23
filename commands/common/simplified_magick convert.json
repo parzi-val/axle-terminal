@@ -1,0 +1,38 @@
+{
+  "command": "magick convert",
+  "description": "Convert between image formats, scale, join, and create images, and much more. Note: this tool (previously convert) has been replaced by magick in ImageMagick 7+. More information: https://imagemagick.org/script/convert.php.",
+  "useCases": [
+    {
+      "description": "Convert an image from JPEG to PNG:",
+      "syntax": "magick convert {{path/to/input_image.jpg}} {{path/to/output_image.png}}"
+    },
+    {
+      "description": "Scale an image to 50% of its original size:",
+      "syntax": "magick convert {{path/to/input_image.png}} -resize 50% {{path/to/output_image.png}}"
+    },
+    {
+      "description": "Scale an image keeping the original aspect ratio to a maximum dimension of 640x480:",
+      "syntax": "magick convert {{path/to/input_image.png}} -resize 640x480 {{path/to/output_image.png}}"
+    },
+    {
+      "description": "Scale an image to have a specified file size:",
+      "syntax": "magick convert {{path/to/input_image.png}} -define jpeg:extent=512kb {{path/to/output_image.jpg}}"
+    },
+    {
+      "description": "Vertically/horizontally append images:",
+      "syntax": "magick convert {{path/to/image1.png path/to/image2.png ...}} {{-append|+append}} {{path/to/output_image.png}}"
+    },
+    {
+      "description": "Create a GIF from a series of images with 100ms delay between them:",
+      "syntax": "magick convert {{path/to/image1.png path/to/image2.png ...}} -delay {{10}} {{path/to/animation.gif}}"
+    },
+    {
+      "description": "Create an image with nothing but a solid red background:",
+      "syntax": "magick convert -size {{800x600}} &quot;xc:{{#ff0000}}&quot; {{path/to/image.png}}"
+    },
+    {
+      "description": "Create a favicon from several images of different sizes:",
+      "syntax": "magick convert {{path/to/image1.png path/to/image2.png ...}} {{path/to/favicon.ico}}"
+    }
+  ]
+}

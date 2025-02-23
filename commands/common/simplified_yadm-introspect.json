@@ -1,0 +1,22 @@
+{
+  "command": "yadm-introspect",
+  "description": "Look at data that is managed by yadm. The purpose of introspection is to support command line completion. More information: https://github.com/TheLocehiliosan/yadm/blob/master/yadm.md#commands.",
+  "useCases": [
+    {
+      "description": "Output commands:",
+      "syntax": "yadm introspect commands"
+    },
+    {
+      "description": "Output configs:",
+      "syntax": "yadm introspect configs"
+    },
+    {
+      "description": "Output switches for the main yadm command:",
+      "syntax": "yadm introspect switches"
+    },
+    {
+      "description": "Output repo:",
+      "syntax": "yadm introspect repo"
+    }
+  ]
+}

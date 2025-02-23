@@ -1,0 +1,22 @@
+{
+  "command": "ico",
+  "description": "Display an animation of a polyhedron. More information: https://manned.org/ico.1.",
+  "useCases": [
+    {
+      "description": "Display the wireframe of an icosahedron that changes its position every 0.1 seconds:",
+      "syntax": "ico -sleep {{0.1}}"
+    },
+    {
+      "description": "Display a solid icosahedron with red faces on a blue background:",
+      "syntax": "ico -faces -noedges -colors {{red}} -bg {{blue}}"
+    },
+    {
+      "description": "Display the wireframe of a cube with size 100x100 that moves by +1+2 per frame:",
+      "syntax": "ico -obj {{cube}} -size {{100x100}} -delta {{+1+2}}"
+    },
+    {
+      "description": "Display the inverted wireframe of an icosahedron with line width 10 using 5 threads:",
+      "syntax": "ico -i -lw {{10}} -threads {{5}}"
+    }
+  ]
+}

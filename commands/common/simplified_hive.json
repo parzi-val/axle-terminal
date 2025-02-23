@@ -1,0 +1,22 @@
+{
+  "command": "hive",
+  "description": "CLI tool for Apache Hive. More information: https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Cli.",
+  "useCases": [
+    {
+      "description": "Start a Hive interactive shell:",
+      "syntax": "hive"
+    },
+    {
+      "description": "Run HiveQL:",
+      "syntax": "hive -e &quot;{{hiveql_query}}&quot;"
+    },
+    {
+      "description": "Run a HiveQL file with a variable substitution:",
+      "syntax": "hive --define {{key}}={{value}} -f {{path/to/file.sql}}"
+    },
+    {
+      "description": "Run a HiveQL with HiveConfig (e.g. mapred.reduce.tasks=32):",
+      "syntax": "hive --hiveconf {{conf_name}}={{conf_value}}"
+    }
+  ]
+}

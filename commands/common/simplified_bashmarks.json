@@ -1,0 +1,26 @@
+{
+  "command": "bashmarks",
+  "description": "Save and jump to commonly used directories using 1 character commands. More information: https://github.com/huyng/bashmarks.",
+  "useCases": [
+    {
+      "description": "List available bookmarks:",
+      "syntax": "l"
+    },
+    {
+      "description": "Save the current directory as \"bookmark_name\":",
+      "syntax": "s {{bookmark_name}}"
+    },
+    {
+      "description": "Go to a bookmarked directory:",
+      "syntax": "g {{bookmark_name}}"
+    },
+    {
+      "description": "Print a bookmarked directory's contents:",
+      "syntax": "p {{bookmark_name}}"
+    },
+    {
+      "description": "Delete a bookmark:",
+      "syntax": "d {{bookmark_name}}"
+    }
+  ]
+}

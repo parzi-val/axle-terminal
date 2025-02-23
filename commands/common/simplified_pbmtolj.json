@@ -1,0 +1,18 @@
+{
+  "command": "pbmtolj",
+  "description": "Convert a PBM file to an HP LaserJet file. More information: https://netpbm.sourceforge.net/doc/pbmtolj.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM file to an HP LaserJet file:",
+      "syntax": "pbmtolj {{path/to/input.pbm}} &gt; {{path/to/output.lj}}"
+    },
+    {
+      "description": "Compress the output file using the specified method:",
+      "syntax": "pbmtolj -{{packbits|delta|compress}} {{path/to/input.pbm}} &gt; {{path/to/output.lj}}"
+    },
+    {
+      "description": "Specify the required resolution:",
+      "syntax": "pbmtolj -resolution {{75|100|150|300|600}} {{path/to/input.pbm}} &gt; {{path/to/output.lj}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "carp",
+  "description": "REPL and build tool for Carp. More information: https://carp-lang.github.io/carp-docs/Manual.html.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "carp"
+    },
+    {
+      "description": "Start a REPL with a custom prompt:",
+      "syntax": "carp --prompt &quot;{{&gt; }}&quot;"
+    },
+    {
+      "description": "Build a carp file:",
+      "syntax": "carp -b {{path/to/file.carp}}"
+    },
+    {
+      "description": "Build and run a file:",
+      "syntax": "carp -x {{path/to/file.carp}}"
+    },
+    {
+      "description": "Build a file with optimizations enabled:",
+      "syntax": "carp -b --optimize {{path/to/file.carp}}"
+    },
+    {
+      "description": "Transpile a file to C code:",
+      "syntax": "carp --generate-only {{path/to/file.carp}}"
+    }
+  ]
+}

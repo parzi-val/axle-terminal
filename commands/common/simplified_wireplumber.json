@@ -1,0 +1,26 @@
+{
+  "command": "wireplumber",
+  "description": "A modular session/policy manager for PipeWire and a GObject-based high-level library that wraps PipeWire’s API. See also: wpctl, pipewire. More information: https://pipewire.pages.freedesktop.org/wireplumber/.",
+  "useCases": [
+    {
+      "description": "Make WirePlumber start with the user session immediately (for systemd systems):",
+      "syntax": "systemctl --user --now enable wireplumber"
+    },
+    {
+      "description": "Run WirePlumber, after pipewire is started (for non-systemd systems):",
+      "syntax": "wireplumber"
+    },
+    {
+      "description": "Specify a different context configuration file:",
+      "syntax": "wireplumber --config-file {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "wireplumber --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "wireplumber --version"
+    }
+  ]
+}

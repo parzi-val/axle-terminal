@@ -1,0 +1,18 @@
+{
+  "command": "wifi-menu",
+  "description": "Interactively connect to a wireless network. More information: https://manned.org/wifi-menu.",
+  "useCases": [
+    {
+      "description": "Set up a wireless connection interactively:",
+      "syntax": "wifi-menu"
+    },
+    {
+      "description": "Interactively set up a connection to a network and obscure the password:",
+      "syntax": "wifi-menu --obscure"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "wifi-menu --help"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "magento",
+  "description": "Manage the Magento PHP framework. More information: https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises.",
+  "useCases": [
+    {
+      "description": "Enable one or more modules:",
+      "syntax": "magento module:enable {{module1 module2 ...}}"
+    },
+    {
+      "description": "Disable one or more modules:",
+      "syntax": "magento module:disable {{module1 module2 ...}}"
+    },
+    {
+      "description": "Update the database after enabling modules:",
+      "syntax": "magento setup:upgrade"
+    },
+    {
+      "description": "Update code and dependency injection configuration:",
+      "syntax": "magento setup:di:compile"
+    },
+    {
+      "description": "Deploy static assets:",
+      "syntax": "magento setup:static-content:deploy"
+    },
+    {
+      "description": "Enable maintenance mode:",
+      "syntax": "magento maintenance:enable"
+    },
+    {
+      "description": "Disable maintenance mode:",
+      "syntax": "magento maintenance:disable"
+    },
+    {
+      "description": "List all available commands:",
+      "syntax": "magento list"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "pkgctl",
+  "description": "Unified command-line frontend for Arch Linux devtools. More information: https://manned.org/pkgctl.1.",
+  "useCases": [
+    {
+      "description": "View documentation for authenticating pkgctl with services like GitLab:",
+      "syntax": "tldr pkgctl auth"
+    },
+    {
+      "description": "View documentation for building packages inside a clean chroot:",
+      "syntax": "tldr pkgctl build"
+    },
+    {
+      "description": "View documentation for updating the binary repository as final release step:",
+      "syntax": "tldr pkgctl db update"
+    },
+    {
+      "description": "View documentation for comparing package files using different modes:",
+      "syntax": "tldr pkgctl diff"
+    },
+    {
+      "description": "View documentation for releasing build artifacts:",
+      "syntax": "tldr pkgctl release"
+    },
+    {
+      "description": "View documentation for managing Git packaging repositories and their configuration:",
+      "syntax": "tldr pkgctl repo"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "pkgctl version"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "betterdiscordctl",
+  "description": "Manage BetterDiscord on Linux. More information: https://github.com/bb010g/betterdiscordctl#manual.",
+  "useCases": [
+    {
+      "description": "Install BetterDiscord on Discord Stable:",
+      "syntax": "sudo betterdiscordctl install"
+    },
+    {
+      "description": "Install BetterDiscord on Discord Canary:",
+      "syntax": "sudo betterdiscordctl --d-flavors canary install"
+    },
+    {
+      "description": "Install BetterDiscord on Discord PTB:",
+      "syntax": "sudo betterdiscordctl --d-flavors ptb install"
+    },
+    {
+      "description": "Install BetterDiscord on Discord installed with Flatpak:",
+      "syntax": "sudo betterdiscordctl --d-install flatpak install"
+    },
+    {
+      "description": "Install BetterDiscord on Discord installed with Snap:",
+      "syntax": "sudo betterdiscordctl --d-install snap install"
+    }
+  ]
+}

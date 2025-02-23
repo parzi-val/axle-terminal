@@ -1,0 +1,30 @@
+{
+  "command": "dwebp",
+  "description": "dwebp decompresses WebP files into PNG, PAM, PPM or PGM images. Animated WebP files are not supported. More information: https://developers.google.com/speed/webp/docs/dwebp/.",
+  "useCases": [
+    {
+      "description": "Convert a WebP file into a PNG file:",
+      "syntax": "dwebp {{path/to/input.webp}} -o {{path/to/output.png}}"
+    },
+    {
+      "description": "Convert a WebP file into a specific filetype:",
+      "syntax": "dwebp {{path/to/input.webp}} -bmp|-tiff|-pam|-ppm|-pgm|-yuv -o {{path/to/output}}"
+    },
+    {
+      "description": "Convert a WebP file, using multi-threading if possible:",
+      "syntax": "dwebp {{path/to/input.webp}} -o {{path/to/output.png}} -mt"
+    },
+    {
+      "description": "Convert a WebP file, but also crop and scale at the same time:",
+      "syntax": "dwebp {{input.webp}} -o {{output.png}} -crop {{x_pos}} {{y_pos}} {{width}} {{height}} -scale {{width}} {{height}}"
+    },
+    {
+      "description": "Convert a WebP file and flip the output:",
+      "syntax": "dwebp {{path/to/input.webp}} -o {{path/to/output.png}} -flip"
+    },
+    {
+      "description": "Convert a WebP file and don't use in-loop filtering to speed up the decoding process:",
+      "syntax": "dwebp {{path/to/input.webp}} -o {{path/to/output.png}} -nofilter"
+    }
+  ]
+}

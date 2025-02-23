@@ -1,0 +1,26 @@
+{
+  "command": "archlinux-java",
+  "description": "Switch between installed Java environments. More information: https://wiki.archlinux.org/title/Java#Switching_between_JVM.",
+  "useCases": [
+    {
+      "description": "List installed Java environments:",
+      "syntax": "archlinux-java status"
+    },
+    {
+      "description": "Return the short name of the current default Java environment:",
+      "syntax": "archlinux-java get"
+    },
+    {
+      "description": "Set the default Java environment:",
+      "syntax": "archlinux-java set {{java_environment}}"
+    },
+    {
+      "description": "Unset the default Java environment:",
+      "syntax": "archlinux-java unset"
+    },
+    {
+      "description": "Fix an invalid/broken default Java environment configuration:",
+      "syntax": "archlinux-java fix"
+    }
+  ]
+}

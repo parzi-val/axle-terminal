@@ -1,0 +1,38 @@
+{
+  "command": "pw-dot",
+  "description": "Create .dot files of the PipeWire graph. See also: dot, for rendering graph. More information: https://docs.pipewire.org/page_man_pw-dot_1.html.",
+  "useCases": [
+    {
+      "description": "Generate a graph to pw.dot file:",
+      "syntax": "pw-dot"
+    },
+    {
+      "description": "Read objects from pw-dump JSON file:",
+      "syntax": "pw-dot {{-j|--json}} {{path/to/file.json}}"
+    },
+    {
+      "description": "Specify an [o]utput file, showing all object types:",
+      "syntax": "pw-dot --output {{path/to/file.dot}} {{-a|--all}}"
+    },
+    {
+      "description": "Print .dot graph to stdout, showing all object properties:",
+      "syntax": "pw-dot --output - {{-d|--detail}}"
+    },
+    {
+      "description": "Generate a graph from a [r]emote instance, showing only linked objects:",
+      "syntax": "pw-dot --remote {{remote_name}} {{-s|--smart}}"
+    },
+    {
+      "description": "Lay the graph from left to right, instead of dot's default top to bottom:",
+      "syntax": "pw-dot {{-L|--lr}}"
+    },
+    {
+      "description": "Lay the graph using 90-degree angles in edges:",
+      "syntax": "pw-dot {{-9|--90}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pw-dot --help"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "smem",
+  "description": "Print memory usage for programs. More information: https://manned.org/smem.",
+  "useCases": [
+    {
+      "description": "Print memory usage for current processes:",
+      "syntax": "smem"
+    },
+    {
+      "description": "Print memory usage for current processes for a every user on a system:",
+      "syntax": "smem --users"
+    },
+    {
+      "description": "Print memory usage for current processes for a specified user:",
+      "syntax": "smem --userfilter {{username}}"
+    },
+    {
+      "description": "Print system memory information:",
+      "syntax": "smem --system"
+    }
+  ]
+}

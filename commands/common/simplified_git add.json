@@ -1,0 +1,38 @@
+{
+  "command": "git add",
+  "description": "Adds changed files to the index. More information: https://git-scm.com/docs/git-add.",
+  "useCases": [
+    {
+      "description": "Add a file to the index:",
+      "syntax": "git add {{path/to/file}}"
+    },
+    {
+      "description": "Add all files (tracked and untracked):",
+      "syntax": "git add {{-A|--all}}"
+    },
+    {
+      "description": "Add all files in the current folder:",
+      "syntax": "git add ."
+    },
+    {
+      "description": "Only add already tracked files:",
+      "syntax": "git add {{-u|--update}}"
+    },
+    {
+      "description": "Also add ignored files:",
+      "syntax": "git add {{-f|--force}}"
+    },
+    {
+      "description": "Interactively stage parts of files:",
+      "syntax": "git add {{-p|--patch}}"
+    },
+    {
+      "description": "Interactively stage parts of a given file:",
+      "syntax": "git add {{-p|--patch}} {{path/to/file}}"
+    },
+    {
+      "description": "Interactively stage a file:",
+      "syntax": "git add {{-i|--interactive}}"
+    }
+  ]
+}

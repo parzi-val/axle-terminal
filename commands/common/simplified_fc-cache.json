@@ -1,0 +1,18 @@
+{
+  "command": "fc-cache",
+  "description": "Scan font directories to build font cache files. More information: https://manned.org/fc-cache.",
+  "useCases": [
+    {
+      "description": "Generate font cache files:",
+      "syntax": "fc-cache"
+    },
+    {
+      "description": "Force a rebuild of all font cache files, without checking if cache is up-to-date:",
+      "syntax": "fc-cache -f"
+    },
+    {
+      "description": "Erase font cache files, then generate new font cache files:",
+      "syntax": "fc-cache -r"
+    }
+  ]
+}

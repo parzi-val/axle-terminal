@@ -1,0 +1,34 @@
+{
+  "command": "pamixer",
+  "description": "A simple command-line mixer for PulseAudio. More information: https://github.com/cdemoulins/pamixer.",
+  "useCases": [
+    {
+      "description": "List all sinks and sources with their corresponding IDs:",
+      "syntax": "pamixer --list-sinks --list-sources"
+    },
+    {
+      "description": "Set the volume to 75% on the default sink:",
+      "syntax": "pamixer --set-volume {{75}}"
+    },
+    {
+      "description": "Toggle mute on a sink other than the default:",
+      "syntax": "pamixer --toggle-mute --sink {{ID}}"
+    },
+    {
+      "description": "Increase the volume on default sink by 5%:",
+      "syntax": "pamixer --increase {{5}}"
+    },
+    {
+      "description": "Decrease the volume on a source by 5%:",
+      "syntax": "pamixer --decrease {{5}} --source {{ID}}"
+    },
+    {
+      "description": "Use the allow boost option to increase, decrease, or set the volume above 100%:",
+      "syntax": "pamixer --set-volume {{105}} --allow-boost"
+    },
+    {
+      "description": "Mute the default sink (use --unmute instead to unmute):",
+      "syntax": "pamixer --mute"
+    }
+  ]
+}

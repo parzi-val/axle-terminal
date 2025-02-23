@@ -1,0 +1,22 @@
+{
+  "command": "jobs",
+  "description": "Display status of jobs in the current session. More information: https://manned.org/jobs.",
+  "useCases": [
+    {
+      "description": "Show status of all jobs:",
+      "syntax": "jobs"
+    },
+    {
+      "description": "Show status of a particular job:",
+      "syntax": "jobs %{{job_id}}"
+    },
+    {
+      "description": "Show status and process IDs of all jobs:",
+      "syntax": "jobs -l"
+    },
+    {
+      "description": "Show process IDs of all jobs:",
+      "syntax": "jobs -p"
+    }
+  ]
+}

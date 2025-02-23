@@ -1,0 +1,18 @@
+{
+  "command": "mkfs.btrfs",
+  "description": "Create a BTRFS filesystem. Defaults to raid1, which specifies 2 copies of a data block spread across 2 different devices. More information: https://btrfs.readthedocs.io/en/latest/mkfs.btrfs.html.",
+  "useCases": [
+    {
+      "description": "Create a btrfs filesystem on a single device:",
+      "syntax": "sudo mkfs.btrfs --metadata single --data single {{/dev/sda}}"
+    },
+    {
+      "description": "Create a btrfs filesystem on multiple devices with raid1:",
+      "syntax": "sudo mkfs.btrfs --metadata raid1 --data raid1 {{/dev/sda}} {{/dev/sdb}} {{/dev/sdN}}"
+    },
+    {
+      "description": "Set a label for the filesystem:",
+      "syntax": "sudo mkfs.btrfs --label &quot;{{label}}&quot; {{/dev/sda}} [{{/dev/sdN}}]"
+    }
+  ]
+}

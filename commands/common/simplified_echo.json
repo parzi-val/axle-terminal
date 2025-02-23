@@ -1,0 +1,30 @@
+{
+  "command": "echo",
+  "description": "Print given arguments. More information: https://www.gnu.org/software/coreutils/manual/html_node/echo-invocation.html.",
+  "useCases": [
+    {
+      "description": "Print a text message. Note: quotes are optional:",
+      "syntax": "echo &quot;{{Hello World}}&quot;"
+    },
+    {
+      "description": "Print a message with environment variables:",
+      "syntax": "echo &quot;{{My path is $PATH}}&quot;"
+    },
+    {
+      "description": "Print a message without the trailing newline:",
+      "syntax": "echo -n &quot;{{Hello World}}&quot;"
+    },
+    {
+      "description": "Append a message to the file:",
+      "syntax": "echo &quot;{{Hello World}}&quot; &gt;&gt; {{file.txt}}"
+    },
+    {
+      "description": "Enable interpretation of backslash escapes (special characters):",
+      "syntax": "echo -e &quot;{{Column 1\\tColumn 2}}&quot;"
+    },
+    {
+      "description": "Print the exit status of the last executed command (Note: In Windows Command Prompt and PowerShell the equivalent commands are echo %errorlevel% and $lastexitcode respectively):",
+      "syntax": "echo $?"
+    }
+  ]
+}

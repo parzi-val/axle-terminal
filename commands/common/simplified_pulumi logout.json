@@ -1,0 +1,22 @@
+{
+  "command": "pulumi logout",
+  "description": "Log out of the Pulumi cloud. More information: https://www.pulumi.com/docs/iac/cli/commands/pulumi_logout/.",
+  "useCases": [
+    {
+      "description": "Log out of a specific cloud backend:",
+      "syntax": "pulumi logout {{url}}"
+    },
+    {
+      "description": "Log out of all backends simultaneously:",
+      "syntax": "pulumi logout --all"
+    },
+    {
+      "description": "Log out of using local mode:",
+      "syntax": "pulumi logout {{-l|--local}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pulumi logout {{-h|--help}}"
+    }
+  ]
+}

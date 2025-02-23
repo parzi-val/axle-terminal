@@ -1,0 +1,30 @@
+{
+  "command": "tune.exfat",
+  "description": "Adjust tunable filesystem parameters on an exFAT filesystem. More information: https://manned.org/tune.exfat.",
+  "useCases": [
+    {
+      "description": "Print the volume label of a filesystem:",
+      "syntax": "tune.exfat {{-l|--print-label}} {{/dev/sdXY}}"
+    },
+    {
+      "description": "Set the volume label of a filesystem:",
+      "syntax": "tune.exfat {{-L|--set-label}} {{new_label}} {{/dev/sdXY}}"
+    },
+    {
+      "description": "Print the volume GUID of a filesystem:",
+      "syntax": "tune.exfat {{-u|--print-guid}} {{/dev/sdXY}}"
+    },
+    {
+      "description": "Set the volume GUID of a filesystem:",
+      "syntax": "tune.exfat {{-U|--set-guid}} {{new_guid}} {{/dev/sdXY}}"
+    },
+    {
+      "description": "Print the volume serial of a filesystem:",
+      "syntax": "tune.exfat {{-i|--print-serial}} {{/dev/sdXY}}"
+    },
+    {
+      "description": "Set the volume serial of a filesystem:",
+      "syntax": "tune.exfat {{-I|--set-serial}} {{new_serial}} {{/dev/sdXY}}"
+    }
+  ]
+}

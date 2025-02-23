@@ -1,0 +1,26 @@
+{
+  "command": "toipe",
+  "description": "Yet another typing test, but crab flavoured. A trusty terminal typing tester. More information: https://github.com/Samyak2/toipe.",
+  "useCases": [
+    {
+      "description": "Start the typing test with the default wordlist:",
+      "syntax": "toipe"
+    },
+    {
+      "description": "Use a specific wordlist:",
+      "syntax": "toipe {{-w|--wordlist}} {{wordlist_name}}"
+    },
+    {
+      "description": "Use a custom wordlist:",
+      "syntax": "toipe {{-f|--file}} {{path/to/file}}"
+    },
+    {
+      "description": "Specify the number of words on each test:",
+      "syntax": "toipe {{-n|--num}} {{number_of_words}}"
+    },
+    {
+      "description": "Include punctuation:",
+      "syntax": "toipe {{-p|--punctuation}}"
+    }
+  ]
+}

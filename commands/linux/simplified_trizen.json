@@ -1,0 +1,30 @@
+{
+  "command": "trizen",
+  "description": "Arch Linux utility for building packages from the Arch User Repository (AUR). More information: https://github.com/trizen/trizen.",
+  "useCases": [
+    {
+      "description": "Synchronize and update all AUR packages:",
+      "syntax": "trizen -Syua"
+    },
+    {
+      "description": "Install a new package:",
+      "syntax": "trizen -S {{package}}"
+    },
+    {
+      "description": "Remove a package and its dependencies:",
+      "syntax": "trizen -Rs {{package}}"
+    },
+    {
+      "description": "Search the package database for a keyword:",
+      "syntax": "trizen -Ss {{keyword}}"
+    },
+    {
+      "description": "Show information about a package:",
+      "syntax": "trizen -Si {{package}}"
+    },
+    {
+      "description": "List installed packages and versions:",
+      "syntax": "trizen -Qe"
+    }
+  ]
+}

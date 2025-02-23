@@ -1,0 +1,18 @@
+{
+  "command": "check-language-support",
+  "description": "Display a list of missing language packages on Ubuntu. More information: https://manned.org/check-language-support.",
+  "useCases": [
+    {
+      "description": "Display a list of missing language packages based on installed software and enabled locales:",
+      "syntax": "check-language-support"
+    },
+    {
+      "description": "List packages for a specific locale:",
+      "syntax": "check-language-support --language {{en}}"
+    },
+    {
+      "description": "Display installed packages as well as missing ones:",
+      "syntax": "check-language-support --show-installed"
+    }
+  ]
+}

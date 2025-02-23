@@ -1,0 +1,22 @@
+{
+  "command": "lxc-ls",
+  "description": "List Linux containers. More information: https://linuxcontainers.org/lxc/manpages/man1/lxc-ls.1.html.",
+  "useCases": [
+    {
+      "description": "List active containers (including frozen and running):",
+      "syntax": "lxc-ls --active"
+    },
+    {
+      "description": "List only frozen containers:",
+      "syntax": "lxc-ls --frozen"
+    },
+    {
+      "description": "List only stopped containers:",
+      "syntax": "lxc-ls --stopped"
+    },
+    {
+      "description": "List containers in a fancy, column-based output:",
+      "syntax": "lxc-ls --fancy"
+    }
+  ]
+}

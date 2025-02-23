@@ -1,0 +1,18 @@
+{
+  "command": "colrm",
+  "description": "Remove columns from stdin. More information: https://manned.org/colrm.",
+  "useCases": [
+    {
+      "description": "Remove first column of stdin:",
+      "syntax": "colrm {{1 1}}"
+    },
+    {
+      "description": "Remove from 3rd column till the end of each line:",
+      "syntax": "colrm {{3}}"
+    },
+    {
+      "description": "Remove from the 3rd column till the 5th column of each line:",
+      "syntax": "colrm {{3 5}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "exiqgrep",
+  "description": "Perl script offering possibilities to grep in the Exim queue output. More information: https://www.exim.org/exim-html-current/doc/html/spec_html/ch-exim_utilities.html.",
+  "useCases": [
+    {
+      "description": "Match the sender address using a case-insensitive search:",
+      "syntax": "exiqgrep -f '&lt;{{email@somedomain.com}}&gt;'"
+    },
+    {
+      "description": "Match the sender address and display message IDs only:",
+      "syntax": "exiqgrep -i -f '&lt;{{email@somedomain.com}}&gt;'"
+    },
+    {
+      "description": "Match the recipient address:",
+      "syntax": "exiqgrep -r '{{email@somedomain.com}}'"
+    },
+    {
+      "description": "Remove all messages matching the sender address from the queue:",
+      "syntax": "exiqgrep -i -f '&lt;{{email@somedomain.com}}&gt;' | xargs exim -Mrm"
+    },
+    {
+      "description": "Test for bounced messages:",
+      "syntax": "exiqgrep -f '^&lt;&gt;$'"
+    },
+    {
+      "description": "Display the count of bounced messages:",
+      "syntax": "exiqgrep -c -f '^&lt;&gt;$'"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "choco upgrade",
+  "description": "Upgrade one or more packages with Chocolatey. More information: https://chocolatey.org/docs/commands-upgrade.",
+  "useCases": [
+    {
+      "description": "Upgrade one or more packages:",
+      "syntax": "choco upgrade {{package1 package2 ...}}"
+    },
+    {
+      "description": "Upgrade to a specific version of a package:",
+      "syntax": "choco upgrade {{package}} --version {{version}}"
+    },
+    {
+      "description": "Upgrade all packages:",
+      "syntax": "choco upgrade all"
+    },
+    {
+      "description": "Upgrade all except specified comma-separated packages:",
+      "syntax": "choco upgrade all --except &quot;{{package1,package2,...}}&quot;"
+    },
+    {
+      "description": "Confirm all prompts automatically:",
+      "syntax": "choco upgrade {{package}} --yes"
+    },
+    {
+      "description": "Specify a custom source to receive packages from:",
+      "syntax": "choco upgrade {{package}} --source {{source_url|alias}}"
+    },
+    {
+      "description": "Provide a username and password for authentication:",
+      "syntax": "choco upgrade {{package}} --user {{username}} --password {{password}}"
+    }
+  ]
+}

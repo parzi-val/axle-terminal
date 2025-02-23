@@ -1,0 +1,18 @@
+{
+  "command": "doxygen",
+  "description": "A documentation system for various programming languages. More information: https://www.doxygen.nl.",
+  "useCases": [
+    {
+      "description": "Generate a default template configuration file Doxyfile:",
+      "syntax": "doxygen -g"
+    },
+    {
+      "description": "Generate a template configuration file:",
+      "syntax": "doxygen -g {{path/to/config_file}}"
+    },
+    {
+      "description": "Generate documentation using an existing configuration file:",
+      "syntax": "doxygen {{path/to/config_file}}"
+    }
+  ]
+}

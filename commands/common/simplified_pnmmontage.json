@@ -1,0 +1,22 @@
+{
+  "command": "pnmmontage",
+  "description": "Create a montage from multiple PNM images. More information: https://netpbm.sourceforge.net/doc/pnmmontage.html.",
+  "useCases": [
+    {
+      "description": "Produce a packing of the specified images:",
+      "syntax": "pnmmontage {{path/to/image1.pnm path/to/image2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Specify the quality of the packing (Note: larger values produce smaller packings but take longer to compute.):",
+      "syntax": "pnmmontage -{{0..9}} {{path/to/image1.pnm path/to/image2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Produce a packing that is not larger than p percent of the optimal packing:",
+      "syntax": "pnmmontage -quality {{p}} {{path/to/image1.pnm path/to/image2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    },
+    {
+      "description": "Write the positions of the input files within the packed image to a machine-readable file:",
+      "syntax": "pnmmontage -data {{path/to/datafile}} {{path/to/image1.pnm path/to/image2.pnm ...}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

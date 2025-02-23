@@ -1,0 +1,38 @@
+{
+  "command": "tre",
+  "description": "Show the contents of the current directory as a tree. Respects the .gitignore settings by default. More information: https://github.com/dduan/tre.",
+  "useCases": [
+    {
+      "description": "Print directories only:",
+      "syntax": "tre --directories"
+    },
+    {
+      "description": "Print JSON containing files in the tree hierarchy instead of the normal tree diagram:",
+      "syntax": "tre --json"
+    },
+    {
+      "description": "Print files and directories up to the specified depth limit (where 1 means the current directory):",
+      "syntax": "tre --limit {{depth}}"
+    },
+    {
+      "description": "Print all hidden files and directories using the specified colorization mode:",
+      "syntax": "tre --all --color {{automatic|always|never}}"
+    },
+    {
+      "description": "Print files within the tree hierarchy, assigning a shell alias to each file that, when called, will open the associated file using the provided command (or in $EDITOR by default):",
+      "syntax": "tre --editor {{command}}"
+    },
+    {
+      "description": "Print files within the tree hierarchy, excluding all paths that match the provided regular expression:",
+      "syntax": "tre --exclude {{regular_expression}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "tre --version"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "tre --help"
+    }
+  ]
+}

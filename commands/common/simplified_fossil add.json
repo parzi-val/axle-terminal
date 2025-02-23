@@ -1,0 +1,14 @@
+{
+  "command": "fossil add",
+  "description": "Put files or directories under Fossil version control. More information: https://fossil-scm.org/home/help/add.",
+  "useCases": [
+    {
+      "description": "Put a file or directory under version control, so it will be in the current checkout:",
+      "syntax": "fossil add {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Remove all added files from the current checkout:",
+      "syntax": "fossil add --reset"
+    }
+  ]
+}

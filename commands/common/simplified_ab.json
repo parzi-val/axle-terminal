@@ -1,0 +1,30 @@
+{
+  "command": "ab",
+  "description": "Apache HTTP server benchmarking tool. More information: https://httpd.apache.org/docs/current/programs/ab.html.",
+  "useCases": [
+    {
+      "description": "Execute 100 HTTP GET requests to a given URL:",
+      "syntax": "ab -n 100 {{url}}"
+    },
+    {
+      "description": "Execute 100 HTTP GET requests, in concurrent batches of 10, to a URL:",
+      "syntax": "ab -n 100 -c 10 {{url}}"
+    },
+    {
+      "description": "Execute 100 HTTP POST requests to a URL, using a JSON payload from a file:",
+      "syntax": "ab -n 100 -T {{application/json}} -p {{path/to/file.json}} {{url}}"
+    },
+    {
+      "description": "Use HTTP [k]eep-Alive, i.e. perform multiple requests within one HTTP session:",
+      "syntax": "ab -k {{url}}"
+    },
+    {
+      "description": "Set the maximum number of seconds ([t]imeout) to spend for benchmarking (30 by default):",
+      "syntax": "ab -t {{60}} {{url}}"
+    },
+    {
+      "description": "Write the results to a CSV file:",
+      "syntax": "ab -e {{path/to/file.csv}}"
+    }
+  ]
+}

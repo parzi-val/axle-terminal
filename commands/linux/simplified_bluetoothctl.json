@@ -1,0 +1,38 @@
+{
+  "command": "bluetoothctl",
+  "description": "Manage Bluetooth devices. More information: https://bitbucket.org/serkanp/bluetoothctl.",
+  "useCases": [
+    {
+      "description": "Enter the bluetoothctl shell:",
+      "syntax": "bluetoothctl"
+    },
+    {
+      "description": "List all known devices:",
+      "syntax": "bluetoothctl devices"
+    },
+    {
+      "description": "Power the Bluetooth controller on or off:",
+      "syntax": "bluetoothctl power {{on|off}}"
+    },
+    {
+      "description": "Pair with a device:",
+      "syntax": "bluetoothctl pair {{mac_address}}"
+    },
+    {
+      "description": "Remove a device:",
+      "syntax": "bluetoothctl remove {{mac_address}}"
+    },
+    {
+      "description": "Connect to a paired device:",
+      "syntax": "bluetoothctl connect {{mac_address}}"
+    },
+    {
+      "description": "Disconnect from a paired device:",
+      "syntax": "bluetoothctl disconnect {{mac_address}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "bluetoothctl help"
+    }
+  ]
+}

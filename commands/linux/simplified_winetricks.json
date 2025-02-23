@@ -1,0 +1,18 @@
+{
+  "command": "winetricks",
+  "description": "Manage Wine virtual Windows environments. More information: https://wiki.winehq.org/Winetricks.",
+  "useCases": [
+    {
+      "description": "Start a graphical setup at the default Wine location:",
+      "syntax": "winetricks"
+    },
+    {
+      "description": "Specify a custom Wine directory to run Winetricks in:",
+      "syntax": "WINEPREFIX={{path/to/wine_directory}} winetricks"
+    },
+    {
+      "description": "Install a Windows DLL or component to the default Wine directory:",
+      "syntax": "winetricks {{package}}"
+    }
+  ]
+}

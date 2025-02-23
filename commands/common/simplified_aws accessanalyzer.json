@@ -1,0 +1,38 @@
+{
+  "command": "aws accessanalyzer",
+  "description": "Analyze and review resource policies to identify potential security risks. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/index.html.",
+  "useCases": [
+    {
+      "description": "Create a new Access Analyzer:",
+      "syntax": "aws accessanalyzer create-analyzer --analyzer-name {{analyzer_name}} --type {{type}} --tags {{tags}}"
+    },
+    {
+      "description": "Delete an existing Access Analyzer:",
+      "syntax": "aws accessanalyzer delete-analyzer --analyzer-arn {{analyzer_arn}}"
+    },
+    {
+      "description": "Get details of a specific Access Analyzer:",
+      "syntax": "aws accessanalyzer get-analyzer --analyzer-arn {{analyzer_arn}}"
+    },
+    {
+      "description": "List all Access Analyzers:",
+      "syntax": "aws accessanalyzer list-analyzers"
+    },
+    {
+      "description": "Update settings of an Access Analyzer:",
+      "syntax": "aws accessanalyzer update-analyzer --analyzer-arn {{analyzer_arn}} --tags {{new_tags}}"
+    },
+    {
+      "description": "Create a new Access Analyzer archive rule:",
+      "syntax": "aws accessanalyzer create-archive-rule --analyzer-arn {{analyzer_arn}} --rule-name {{rule_name}} --filter {{filter}}"
+    },
+    {
+      "description": "Delete an Access Analyzer archive rule:",
+      "syntax": "aws accessanalyzer delete-archive-rule --analyzer-arn {{analyzer_arn}} --rule-name {{rule_name}}"
+    },
+    {
+      "description": "List all Access Analyzer archive rules:",
+      "syntax": "aws accessanalyzer list-archive-rules --analyzer-arn {{analyzer_arn}}"
+    }
+  ]
+}

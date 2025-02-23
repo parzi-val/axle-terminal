@@ -1,0 +1,22 @@
+{
+  "command": "umask",
+  "description": "Manage the read/write/execute permissions that are masked out (i.e. restricted) for newly created files by the user. More information: https://manned.org/umask.",
+  "useCases": [
+    {
+      "description": "Display the current mask in octal notation:",
+      "syntax": "umask"
+    },
+    {
+      "description": "Display the current mask in symbolic (human-readable) mode:",
+      "syntax": "umask -S"
+    },
+    {
+      "description": "Change the mask symbolically to allow read permission for all users (the rest of the mask bits are unchanged):",
+      "syntax": "umask {{a+r}}"
+    },
+    {
+      "description": "Set the mask (using octal) to restrict no permissions for the file's owner, and restrict all permissions for everyone else:",
+      "syntax": "umask {{077}}"
+    }
+  ]
+}

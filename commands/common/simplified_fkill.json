@@ -1,0 +1,14 @@
+{
+  "command": "fkill",
+  "description": "Fabulously kill processes. Cross-platform. More information: https://github.com/sindresorhus/fkill.",
+  "useCases": [
+    {
+      "description": "Run without arguments to use the interactive interface:",
+      "syntax": "fkill"
+    },
+    {
+      "description": "Kill the process by PID, name or port:",
+      "syntax": "fkill {{pid|name|:port}}"
+    }
+  ]
+}

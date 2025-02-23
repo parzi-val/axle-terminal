@@ -1,0 +1,38 @@
+{
+  "command": "docker volume",
+  "description": "Manage Docker volumes. More information: https://docs.docker.com/reference/cli/docker/volume/.",
+  "useCases": [
+    {
+      "description": "Create a volume:",
+      "syntax": "docker volume create {{volume_name}}"
+    },
+    {
+      "description": "Create a volume with a specific label:",
+      "syntax": "docker volume create --label {{label}} {{volume_name}}"
+    },
+    {
+      "description": "Create a tmpfs volume a size of 100 MiB and an uid of 1000:",
+      "syntax": "docker volume create --opt {{type}}={{tmpfs}} --opt {{device}}={{tmpfs}} --opt {{o}}={{size=100m,uid=1000}} {{volume_name}}"
+    },
+    {
+      "description": "List all volumes:",
+      "syntax": "docker volume ls"
+    },
+    {
+      "description": "Remove a volume:",
+      "syntax": "docker volume rm {{volume_name}}"
+    },
+    {
+      "description": "Display information about a volume:",
+      "syntax": "docker volume inspect {{volume_name}}"
+    },
+    {
+      "description": "Remove all unused local volumes:",
+      "syntax": "docker volume prune"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "docker volume {{subcommand}} --help"
+    }
+  ]
+}

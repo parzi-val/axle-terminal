@@ -1,0 +1,22 @@
+{
+  "command": "virsh-connect",
+  "description": "Connect to a virtual machine hypervisor. See also: virsh. More information: https://manned.org/virsh.",
+  "useCases": [
+    {
+      "description": "Connect to the default hypervisor:",
+      "syntax": "virsh connect"
+    },
+    {
+      "description": "Connect as root to the local QEMU/KVM hypervisor:",
+      "syntax": "virsh connect qemu:///system"
+    },
+    {
+      "description": "Launch a new instance of the hypervisor and connect to it as the local user:",
+      "syntax": "virsh connect qemu:///session"
+    },
+    {
+      "description": "Connect as root to a remote hypervisor using SSH:",
+      "syntax": "virsh connect qemu+ssh://{{user_name@host_name}}/system"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "informant",
+  "description": "Read Arch Linux package news. More information: https://github.com/bradford-smith94/informant.",
+  "useCases": [
+    {
+      "description": "Read all unread news:",
+      "syntax": "sudo informant read"
+    },
+    {
+      "description": "Check for news:",
+      "syntax": "informant check"
+    },
+    {
+      "description": "List latest news:",
+      "syntax": "informant list"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "informant --help"
+    }
+  ]
+}

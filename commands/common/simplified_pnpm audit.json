@@ -1,0 +1,38 @@
+{
+  "command": "pnpm audit",
+  "description": "Scan project dependencies. Check for known security issues with the installed packages. More information: https://pnpm.io/cli/audit.",
+  "useCases": [
+    {
+      "description": "Identify vulnerabilities in the project:",
+      "syntax": "pnpm audit"
+    },
+    {
+      "description": "Automatically fix vulnerabilities:",
+      "syntax": "pnpm audit fix"
+    },
+    {
+      "description": "Generate a security report in JSON format:",
+      "syntax": "pnpm audit --json &gt; {{path/to/audit-report.json}}"
+    },
+    {
+      "description": "Audit only [D]ev dependencies:",
+      "syntax": "pnpm audit --dev"
+    },
+    {
+      "description": "Audit only [P]roduction dependencies:",
+      "syntax": "pnpm audit --prod"
+    },
+    {
+      "description": "Exclude optional dependencies from the audit:",
+      "syntax": "pnpm audit --no-optional"
+    },
+    {
+      "description": "Ignore registry errors during the audit process:",
+      "syntax": "pnpm audit --ignore-registry-errors"
+    },
+    {
+      "description": "Filter advisories by severity (low, moderate, high, critical):",
+      "syntax": "pnpm audit --audit-level {{severity}}"
+    }
+  ]
+}

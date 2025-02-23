@@ -1,0 +1,26 @@
+{
+  "command": "qutebrowser",
+  "description": "A keyboard-driven, vim-like browser based on PyQt5. More information: https://qutebrowser.org/.",
+  "useCases": [
+    {
+      "description": "Open qutebrowser with a specified storage directory:",
+      "syntax": "qutebrowser --basedir {{path/to/directory}}"
+    },
+    {
+      "description": "Open a qutebrowser instance with temporary settings:",
+      "syntax": "qutebrowser --set {{content.geolocation}} {{true|false}}"
+    },
+    {
+      "description": "Restore a named session of a qutebrowser instance:",
+      "syntax": "qutebrowser --restore {{session_name}}"
+    },
+    {
+      "description": "Launch qutebrowser, opening all URLs using the specified method:",
+      "syntax": "qutebrowser --target {{auto|tab|tab-bg|tab-silent|tab-bg-silent|window|private-window}}"
+    },
+    {
+      "description": "Open qutebrowser with a temporary base directory and print logs to stdout as JSON:",
+      "syntax": "qutebrowser --temp-basedir --json-logging"
+    }
+  ]
+}

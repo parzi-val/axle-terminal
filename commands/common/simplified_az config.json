@@ -1,0 +1,22 @@
+{
+  "command": "az config",
+  "description": "Manage Azure CLI configuration. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/config.",
+  "useCases": [
+    {
+      "description": "Print all configurations:",
+      "syntax": "az config get"
+    },
+    {
+      "description": "Print configurations for a specific section:",
+      "syntax": "az config get {{section_name}}"
+    },
+    {
+      "description": "Set a configuration:",
+      "syntax": "az config set {{configuration_name}}={{value}}"
+    },
+    {
+      "description": "Unset a configuration:",
+      "syntax": "az config unset {{configuration_name}}"
+    }
+  ]
+}

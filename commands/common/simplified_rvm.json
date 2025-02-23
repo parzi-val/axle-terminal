@@ -1,0 +1,38 @@
+{
+  "command": "rvm",
+  "description": "Easily installing, managing, and working with multiple ruby environments. More information: https://rvm.io.",
+  "useCases": [
+    {
+      "description": "Install one or more versions of Ruby:",
+      "syntax": "rvm install {{version1 version2 ...}}"
+    },
+    {
+      "description": "Display a list of installed versions:",
+      "syntax": "rvm list"
+    },
+    {
+      "description": "Use a specific version of Ruby:",
+      "syntax": "rvm use {{version}}"
+    },
+    {
+      "description": "Set the default Ruby version:",
+      "syntax": "rvm --default use {{version}}"
+    },
+    {
+      "description": "Upgrade a version of Ruby to a new version:",
+      "syntax": "rvm upgrade {{current_version}} {{new_version}}"
+    },
+    {
+      "description": "Uninstall a version of Ruby and keep its sources:",
+      "syntax": "rvm uninstall {{version}}"
+    },
+    {
+      "description": "Remove a version of Ruby and its sources:",
+      "syntax": "rvm remove {{version}}"
+    },
+    {
+      "description": "Show specific dependencies for your OS:",
+      "syntax": "rvm requirements"
+    }
+  ]
+}

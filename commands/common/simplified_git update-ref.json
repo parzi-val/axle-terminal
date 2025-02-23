@@ -1,0 +1,14 @@
+{
+  "command": "git update-ref",
+  "description": "Git command for creating, updating, and deleting Git refs. More information: https://git-scm.com/docs/git-update-ref.",
+  "useCases": [
+    {
+      "description": "Delete a ref, useful for soft resetting the first commit:",
+      "syntax": "git update-ref -d {{HEAD}}"
+    },
+    {
+      "description": "Update ref with a message:",
+      "syntax": "git update-ref -m {{message}} {{HEAD}} {{4e95e05}}"
+    }
+  ]
+}

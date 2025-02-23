@@ -1,0 +1,18 @@
+{
+  "command": "debuild",
+  "description": "Build a Debian package from source. More information: https://manned.org/debuild.1.",
+  "useCases": [
+    {
+      "description": "Build the package in the current directory:",
+      "syntax": "debuild"
+    },
+    {
+      "description": "Build a binary package only:",
+      "syntax": "debuild -b"
+    },
+    {
+      "description": "Do not run lintian after building the package:",
+      "syntax": "debuild --no-lintian"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "pg",
+  "description": "View files one page at a time. More information: https://manned.org/pg.",
+  "useCases": [
+    {
+      "description": "View a file:",
+      "syntax": "pg {{path/to/file}}"
+    }
+  ]
+}

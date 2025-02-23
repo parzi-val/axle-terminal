@@ -1,0 +1,22 @@
+{
+  "command": "mytop",
+  "description": "Display MySQL server performance info like top. More information: https://jeremy.zawodny.com/mysql/mytop/mytop.html.",
+  "useCases": [
+    {
+      "description": "Start mytop:",
+      "syntax": "mytop"
+    },
+    {
+      "description": "Connect with a specified username and password:",
+      "syntax": "mytop -u {{user}} -p {{password}}"
+    },
+    {
+      "description": "Connect with a specified username (the user will be prompted for a password):",
+      "syntax": "mytop -u {{user}} --prompt"
+    },
+    {
+      "description": "Do not show any idle (sleeping) threads:",
+      "syntax": "mytop -u {{user}} -p {{password}} --noidle"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "julia",
+  "description": "A high-level, high-performance dynamic programming language for technical computing. More information: https://docs.julialang.org/en/v1/manual/getting-started/.",
+  "useCases": [
+    {
+      "description": "Start a REPL (interactive shell):",
+      "syntax": "julia"
+    },
+    {
+      "description": "Execute a Julia program and exit:",
+      "syntax": "julia {{program.jl}}"
+    },
+    {
+      "description": "Execute a Julia program that takes arguments:",
+      "syntax": "julia {{program.jl}} {{arguments}}"
+    },
+    {
+      "description": "Evaluate a string containing Julia code:",
+      "syntax": "julia -e '{{julia_code}}'"
+    },
+    {
+      "description": "Evaluate a string of Julia code, passing arguments to it:",
+      "syntax": "julia -e '{{for x in ARGS; println(x); end}}' {{arguments}}"
+    },
+    {
+      "description": "Evaluate an expression and print the result:",
+      "syntax": "julia -E '{{(1 - cos(pi/4))/2}}'"
+    },
+    {
+      "description": "Start Julia in multithreaded mode, using N threads:",
+      "syntax": "julia -t {{N}}"
+    }
+  ]
+}

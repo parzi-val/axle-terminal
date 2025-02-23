@@ -1,0 +1,38 @@
+{
+  "command": "firefox",
+  "description": "A free and open source web browser. More information: https://developer.mozilla.org/en-US/docs/Mozilla/Command_Line_Options.",
+  "useCases": [
+    {
+      "description": "Launch Firefox and open a web page:",
+      "syntax": "firefox {{https://www.duckduckgo.com}}"
+    },
+    {
+      "description": "Open a new window:",
+      "syntax": "firefox --new-window {{https://www.duckduckgo.com}}"
+    },
+    {
+      "description": "Open a private (incognito) window:",
+      "syntax": "firefox --private-window"
+    },
+    {
+      "description": "Search for \"wikipedia\" using the default search engine:",
+      "syntax": "firefox --search &quot;{{wikipedia}}&quot;"
+    },
+    {
+      "description": "Launch Firefox in safe mode, with all extensions disabled:",
+      "syntax": "firefox --safe-mode"
+    },
+    {
+      "description": "Take a screenshot of a web page in headless mode:",
+      "syntax": "firefox --headless --screenshot {{path/to/output_file.png}} {{https://example.com/}}"
+    },
+    {
+      "description": "Use a specific profile to allow multiple separate instances of Firefox to run at once:",
+      "syntax": "firefox --profile {{path/to/directory}} {{https://example.com/}}"
+    },
+    {
+      "description": "Set Firefox as the default browser:",
+      "syntax": "firefox --setDefaultBrowser"
+    }
+  ]
+}

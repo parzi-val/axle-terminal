@@ -1,0 +1,14 @@
+{
+  "command": "aurpublish",
+  "description": "Publish Arch User Repository packages. More information: https://github.com/eli-schwartz/aurpublish.",
+  "useCases": [
+    {
+      "description": "Verify PKGBUILD integrity, generate .SRCINFO, create a commit message template, and publish the package to the AUR:",
+      "syntax": "aurpublish {{package_name}}"
+    },
+    {
+      "description": "Add githooks to the current repository:",
+      "syntax": "aurpublish setup"
+    }
+  ]
+}

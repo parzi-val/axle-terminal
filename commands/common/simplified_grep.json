@@ -1,0 +1,38 @@
+{
+  "command": "grep",
+  "description": "Find patterns in files using regular expressions. More information: https://www.gnu.org/software/grep/manual/grep.html.",
+  "useCases": [
+    {
+      "description": "Search for a pattern within a file:",
+      "syntax": "grep &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for an exact string (disables regular expressions):",
+      "syntax": "grep {{-F|--fixed-strings}} &quot;{{exact_string}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for a pattern in all files recursively in a directory, showing line numbers of matches, ignoring binary files:",
+      "syntax": "grep {{-r|--recursive}} {{-n|--line-number}} --binary-files {{without-match}} &quot;{{search_pattern}}&quot; {{path/to/directory}}"
+    },
+    {
+      "description": "Use extended regular expressions (supports ?, +, {}, (), and |), in case-insensitive mode:",
+      "syntax": "grep {{-E|--extended-regexp}} {{-i|--ignore-case}} &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print 3 lines of context around, before, or after each match:",
+      "syntax": "grep --{{context|before-context|after-context}} 3 &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Print file name and line number for each match with color output:",
+      "syntax": "grep {{-H|--with-filename}} {{-n|--line-number}} --color=always &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search for lines matching a pattern, printing only the matched text:",
+      "syntax": "grep {{-o|--only-matching}} &quot;{{search_pattern}}&quot; {{path/to/file}}"
+    },
+    {
+      "description": "Search stdin for lines that do not match a pattern:",
+      "syntax": "cat {{path/to/file}} | grep {{-v|--invert-match}} &quot;{{search_pattern}}&quot;"
+    }
+  ]
+}

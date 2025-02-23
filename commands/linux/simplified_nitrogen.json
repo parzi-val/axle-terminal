@@ -1,0 +1,18 @@
+{
+  "command": "nitrogen",
+  "description": "Desktop background browser and setter for X Window. More information: https://github.com/l3ib/nitrogen.",
+  "useCases": [
+    {
+      "description": "View and set the wallpapers from a specific directory:",
+      "syntax": "nitrogen {{path/to/directory}}"
+    },
+    {
+      "description": "Set the wallpaper with automatic size settings:",
+      "syntax": "nitrogen --set-auto {{path/to/file}}"
+    },
+    {
+      "description": "Restore the previous wallpaper:",
+      "syntax": "nitrogen --restore"
+    }
+  ]
+}

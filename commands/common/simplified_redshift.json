@@ -1,0 +1,26 @@
+{
+  "command": "redshift",
+  "description": "Adjust the color temperature of your screen according to your surroundings. More information: http://jonls.dk/redshift.",
+  "useCases": [
+    {
+      "description": "Turn on Redshift with a specific [t]emperature during day (e.g., 5700K) and at night (e.g., 3600K):",
+      "syntax": "redshift -t {{5700}}:{{3600}}"
+    },
+    {
+      "description": "Turn on Redshift with a manually specified custom [l]ocation:",
+      "syntax": "redshift -l {{latitude}}:{{longitude}}"
+    },
+    {
+      "description": "Turn on Redshift with a specific screen [b]rightness during the day (e.g, 70%) and at night (e.g., 40%):",
+      "syntax": "redshift -b {{0.7}}:{{0.4}}"
+    },
+    {
+      "description": "Turn on Redshift with custom [g]amma levels (between 0 and 1):",
+      "syntax": "redshift -g {{red}}:{{green}}:{{blue}}"
+    },
+    {
+      "description": "[P]urge existing temperature changes and set a constant unchanging color temperature in [O]ne-shot mode:",
+      "syntax": "redshift -PO {{temperature}}"
+    }
+  ]
+}

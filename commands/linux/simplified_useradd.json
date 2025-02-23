@@ -1,0 +1,34 @@
+{
+  "command": "useradd",
+  "description": "Create a new user. See also: users, userdel, usermod. More information: https://manned.org/useradd.",
+  "useCases": [
+    {
+      "description": "Create a new user:",
+      "syntax": "sudo useradd {{username}}"
+    },
+    {
+      "description": "Create a new user with the specified user ID:",
+      "syntax": "sudo useradd {{-u|--uid}} {{id}} {{username}}"
+    },
+    {
+      "description": "Create a new user with the specified shell:",
+      "syntax": "sudo useradd {{-s|--shell}} {{path/to/shell}} {{username}}"
+    },
+    {
+      "description": "Create a new user belonging to additional groups (mind the lack of whitespace):",
+      "syntax": "sudo useradd {{-G|--groups}} {{group1,group2,...}} {{username}}"
+    },
+    {
+      "description": "Create a new user with the default home directory:",
+      "syntax": "sudo useradd {{-m|--create-home}} {{username}}"
+    },
+    {
+      "description": "Create a new user with the home directory filled by template directory files:",
+      "syntax": "sudo useradd {{-k|--skel}} {{path/to/template_directory}} {{-m|--create-home}} {{username}}"
+    },
+    {
+      "description": "Create a new system user without the home directory:",
+      "syntax": "sudo useradd {{-r|--system}} {{username}}"
+    }
+  ]
+}

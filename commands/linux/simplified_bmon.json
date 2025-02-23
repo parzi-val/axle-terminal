@@ -1,0 +1,22 @@
+{
+  "command": "bmon",
+  "description": "Monitor bandwidth and capture network related statistics. More information: https://github.com/tgraf/bmon.",
+  "useCases": [
+    {
+      "description": "Display the list of all the interfaces:",
+      "syntax": "bmon -a"
+    },
+    {
+      "description": "Display data transfer rates in bits per second:",
+      "syntax": "bmon -b"
+    },
+    {
+      "description": "Specify the policy to define which network interface(s) is/are displayed:",
+      "syntax": "bmon -p {{interface_1,interface_2,interface_3}}"
+    },
+    {
+      "description": "Specify the interval (in seconds) in which rate per counter is calculated:",
+      "syntax": "bmon -R {{2.0}}"
+    }
+  ]
+}

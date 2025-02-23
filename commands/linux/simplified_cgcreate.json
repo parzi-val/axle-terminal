@@ -1,0 +1,18 @@
+{
+  "command": "cgcreate",
+  "description": "Create cgroups, used to limit, measure, and control resources used by processes. cgroups types can be memory, cpu, net_cls, etc. More information: https://manned.org/cgcreate.",
+  "useCases": [
+    {
+      "description": "Create a new group:",
+      "syntax": "cgcreate -g {{group_type}}:{{group_name}}"
+    },
+    {
+      "description": "Create a new group with multiple cgroup types:",
+      "syntax": "cgcreate -g {{group_type1}},{{group_type2}}:{{group_name}}"
+    },
+    {
+      "description": "Create a subgroup:",
+      "syntax": "mkdir /sys/fs/cgroup/{{group_type}}/{{group_name}}/{{subgroup_name}}"
+    }
+  ]
+}

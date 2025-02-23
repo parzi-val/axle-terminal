@@ -1,0 +1,26 @@
+{
+  "command": "doctum",
+  "description": "Generate documentation for a PHP API. More information: https://github.com/code-lts/doctum.",
+  "useCases": [
+    {
+      "description": "Parse a project:",
+      "syntax": "doctum parse"
+    },
+    {
+      "description": "Render a project:",
+      "syntax": "doctum render"
+    },
+    {
+      "description": "Parse then render a project:",
+      "syntax": "doctum update"
+    },
+    {
+      "description": "Parse and render only a specific version of a project:",
+      "syntax": "doctum update --only-version={{version}}"
+    },
+    {
+      "description": "Parse and render a project using a specific configuration:",
+      "syntax": "doctum update {{path/to/config.php}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "pngcheck",
+  "description": "Print detailed information about and verify PNG, JNG, and MNG files. More information: http://www.libpng.org/pub/png/apps/pngcheck.html.",
+  "useCases": [
+    {
+      "description": "Print a summary for an image (width, height, and color depth):",
+      "syntax": "pngcheck {{path/to/image.png}}"
+    },
+    {
+      "description": "Print information for an image with [c]olorized output:",
+      "syntax": "pngcheck -c {{path/to/image.png}}"
+    },
+    {
+      "description": "Print [v]erbose information for an image:",
+      "syntax": "pngcheck -cvt {{path/to/image.png}}"
+    },
+    {
+      "description": "Receive an image from stdin and display detailed information:",
+      "syntax": "cat {{path/to/image.png}} | pngcheck -cvt"
+    },
+    {
+      "description": "[s]earch for PNGs within a specific file and display information about them:",
+      "syntax": "pngcheck -s {{path/to/image.png}}"
+    },
+    {
+      "description": "Search for PNGs within another file and e[x]tract them:",
+      "syntax": "pngcheck -x {{path/to/image.png}}"
+    }
+  ]
+}

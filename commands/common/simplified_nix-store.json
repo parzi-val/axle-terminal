@@ -1,0 +1,30 @@
+{
+  "command": "nix-store",
+  "description": "Manipulate or query the Nix store. See also: nix3 store. More information: https://nixos.org/manual/nix/stable/command-ref/nix-store.html.",
+  "useCases": [
+    {
+      "description": "Collect garbage, such as removing unused paths:",
+      "syntax": "nix-store --gc"
+    },
+    {
+      "description": "Hard-link identical files together to reduce space usage:",
+      "syntax": "nix-store --optimise"
+    },
+    {
+      "description": "Delete a specific store path (must be unused):",
+      "syntax": "nix-store --delete {{/nix/store/...}}"
+    },
+    {
+      "description": "Show all dependencies of a store path (package), in a tree format:",
+      "syntax": "nix-store --query --tree {{/nix/store/...}}"
+    },
+    {
+      "description": "Calculate the total size of a certain store path with all the dependencies:",
+      "syntax": "du -cLsh $(nix-store --query --references {{/nix/store/...}})"
+    },
+    {
+      "description": "Show all dependents of a particular store path:",
+      "syntax": "nix-store --query --referrers {{/nix/store/...}}"
+    }
+  ]
+}

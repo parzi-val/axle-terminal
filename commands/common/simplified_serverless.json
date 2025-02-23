@@ -1,0 +1,30 @@
+{
+  "command": "serverless",
+  "description": "Toolkit for deploying and operating serverless architectures on AWS, Google Cloud, Azure and IBM OpenWhisk. Commands can be run either using the serverless command or its alias, sls. More information: https://serverless.com/.",
+  "useCases": [
+    {
+      "description": "Create a serverless project:",
+      "syntax": "serverless create"
+    },
+    {
+      "description": "Create a serverless project from a template:",
+      "syntax": "serverless create --template {{template_name}}"
+    },
+    {
+      "description": "Deploy to a cloud provider:",
+      "syntax": "serverless deploy"
+    },
+    {
+      "description": "Display information about a serverless project:",
+      "syntax": "serverless info"
+    },
+    {
+      "description": "Invoke a deployed function:",
+      "syntax": "serverless invoke -f {{function_name}}"
+    },
+    {
+      "description": "Follow the logs for a project:",
+      "syntax": "serverless logs -t"
+    }
+  ]
+}

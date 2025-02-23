@@ -1,0 +1,26 @@
+{
+  "command": "pio access",
+  "description": "Set the access level on published resources (packages) in the registry. More information: https://docs.platformio.org/en/latest/core/userguide/access/.",
+  "useCases": [
+    {
+      "description": "Grant a user access to a resource:",
+      "syntax": "pio access grant {{guest|maintainer|admin}} {{username}} {{resource_urn}}"
+    },
+    {
+      "description": "Remove a user's access to a resource:",
+      "syntax": "pio access revoke {{username}} {{resource_urn}}"
+    },
+    {
+      "description": "Show all resources that a user or team has access to and the access level:",
+      "syntax": "pio access list {{username}}"
+    },
+    {
+      "description": "Restrict access to a resource to specific users or team members:",
+      "syntax": "pio access private {{resource_urn}}"
+    },
+    {
+      "description": "Allow all users access to a resource:",
+      "syntax": "pio access public {{resource_urn}}"
+    }
+  ]
+}

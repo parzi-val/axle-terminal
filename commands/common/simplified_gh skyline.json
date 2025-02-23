@@ -1,0 +1,38 @@
+{
+  "command": "gh skyline",
+  "description": "Generate a 3D model of your GitHub contribution history. By default, it will create a {username}-{year}-github-skyline.stl file in the current directory. More information: https://github.com/github/gh-skyline.",
+  "useCases": [
+    {
+      "description": "Generate a skyline STL file for the current year and authenticated user:",
+      "syntax": "gh skyline"
+    },
+    {
+      "description": "Generate a skyline for a specific [u]ser and [y]ear:",
+      "syntax": "gh skyline --user {{username}} --year {{year}}"
+    },
+    {
+      "description": "Generate a skyline for a range of [y]ears:",
+      "syntax": "gh skyline --user {{username}} --year {{first_year}}-{{last_year}}"
+    },
+    {
+      "description": "Generate a [f]ull skyline (from the user's join year to the current year):",
+      "syntax": "gh skyline --user {{username}} --full"
+    },
+    {
+      "description": "Enable [d]ebug logging:",
+      "syntax": "gh skyline --debug"
+    },
+    {
+      "description": "Generate a skyline and specify the [o]utput file path:",
+      "syntax": "gh skyline --output {{path/to/output_file.stl}}"
+    },
+    {
+      "description": "Open the GitHub profile for a specific [u]ser:",
+      "syntax": "gh skyline --user {{username}} --web"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "gh skyline --help"
+    }
+  ]
+}

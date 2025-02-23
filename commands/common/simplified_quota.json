@@ -1,0 +1,26 @@
+{
+  "command": "quota",
+  "description": "Display users' disk space usage and allocated limits. More information: https://manned.org/quota.",
+  "useCases": [
+    {
+      "description": "Show disk quotas in human-readable units for the current user:",
+      "syntax": "quota -s"
+    },
+    {
+      "description": "Verbose output (also display quotas on filesystems where no storage is allocated):",
+      "syntax": "quota -v"
+    },
+    {
+      "description": "Quiet output (only display quotas on filesystems where usage is over quota):",
+      "syntax": "quota -q"
+    },
+    {
+      "description": "Print quotas for the groups of which the current user is a member:",
+      "syntax": "quota -g"
+    },
+    {
+      "description": "Show disk quotas for another user:",
+      "syntax": "sudo quota -u {{username}}"
+    }
+  ]
+}

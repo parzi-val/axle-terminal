@@ -1,0 +1,14 @@
+{
+  "command": "grub-reboot",
+  "description": "Set the default boot entry for GRUB, for the next boot only. More information: https://manned.org/grub-reboot.",
+  "useCases": [
+    {
+      "description": "Set the default boot entry to an entry number, name or identifier for the next boot:",
+      "syntax": "sudo grub-reboot {{entry_number}}"
+    },
+    {
+      "description": "Set the default boot entry to an entry number, name or identifier for an alternative boot directory for the next boot:",
+      "syntax": "sudo grub-reboot --boot-directory {{/path/to/boot_directory}} {{entry_number}}"
+    }
+  ]
+}

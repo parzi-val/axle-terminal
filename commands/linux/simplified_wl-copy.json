@@ -1,0 +1,26 @@
+{
+  "command": "wl-copy",
+  "description": "Clear and copy to Wayland clipboard. See also: wl-paste, xclip. More information: https://github.com/bugaevc/wl-clipboard.",
+  "useCases": [
+    {
+      "description": "Copy the text to the clipboard:",
+      "syntax": "wl-copy &quot;{{text}}&quot;"
+    },
+    {
+      "description": "Pipe the command (ls) output to the clipboard:",
+      "syntax": "{{ls}} | wl-copy"
+    },
+    {
+      "description": "Copy for only one paste and then clear it:",
+      "syntax": "wl-copy --paste-once &quot;{{text}}&quot;"
+    },
+    {
+      "description": "Copy an image:",
+      "syntax": "wl-copy &lt; {{path/to/image}}"
+    },
+    {
+      "description": "Clear the clipboard:",
+      "syntax": "wl-copy --clear"
+    }
+  ]
+}

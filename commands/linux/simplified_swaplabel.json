@@ -1,0 +1,18 @@
+{
+  "command": "swaplabel",
+  "description": "Print or change the label or UUID of a swap area. Note: path/to/file can either point to a regular file or a swap partition. More information: https://manned.org/swaplabel.",
+  "useCases": [
+    {
+      "description": "Display the current label and UUID of a swap area:",
+      "syntax": "swaplabel {{path/to/file}}"
+    },
+    {
+      "description": "Set the label of a swap area:",
+      "syntax": "swaplabel --label {{new_label}} {{path/to/file}}"
+    },
+    {
+      "description": "Set the UUID of a swap area (you can generate a UUID using uuidgen):",
+      "syntax": "swaplabel --uuid {{new_uuid}} {{path/to/file}}"
+    }
+  ]
+}

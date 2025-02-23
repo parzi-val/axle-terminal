@@ -1,0 +1,22 @@
+{
+  "command": "git filter-repo",
+  "description": "A versatile tool for rewriting Git history. See also: bfg. More information: https://github.com/newren/git-filter-repo.",
+  "useCases": [
+    {
+      "description": "Replace a sensitive string in all files:",
+      "syntax": "git filter-repo --replace-text &lt;(echo '{{find}}==&gt;{{replacement}}')"
+    },
+    {
+      "description": "Extract a single folder, keeping history:",
+      "syntax": "git filter-repo --path {{path/to/folder}}"
+    },
+    {
+      "description": "Remove a single folder, keeping history:",
+      "syntax": "git filter-repo --path {{path/to/folder}} --invert-paths"
+    },
+    {
+      "description": "Move everything from sub-folder one level up:",
+      "syntax": "git filter-repo --path-rename {{path/to/folder/:}}"
+    }
+  ]
+}

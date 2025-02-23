@@ -1,0 +1,30 @@
+{
+  "command": "transmission",
+  "description": "A simple torrent client. Transmission isn't a command, but a set of commands. See the pages below. More information: https://transmissionbt.com/.",
+  "useCases": [
+    {
+      "description": "View documentation for running Transmission's daemon:",
+      "syntax": "tldr transmission-daemon"
+    },
+    {
+      "description": "View documentation for interacting with the daemon:",
+      "syntax": "tldr transmission-remote"
+    },
+    {
+      "description": "View documentation for creating torrent files:",
+      "syntax": "tldr transmission-create"
+    },
+    {
+      "description": "View documentation for modifying torrent files:",
+      "syntax": "tldr transmission-edit"
+    },
+    {
+      "description": "View documentation for getting info about torrent files:",
+      "syntax": "tldr transmission-show"
+    },
+    {
+      "description": "View documentation for the deprecated method for interacting with the daemon:",
+      "syntax": "tldr transmission-cli"
+    }
+  ]
+}

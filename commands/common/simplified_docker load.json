@@ -1,0 +1,18 @@
+{
+  "command": "docker load",
+  "description": "Load Docker images from files or stdin. More information: https://docs.docker.com/reference/cli/docker/image/load/.",
+  "useCases": [
+    {
+      "description": "Load a Docker image from stdin:",
+      "syntax": "docker load &lt; {{path/to/image_file.tar}}"
+    },
+    {
+      "description": "Load a Docker image from a specific file:",
+      "syntax": "docker load --input {{path/to/image_file.tar}}"
+    },
+    {
+      "description": "Load a Docker image from a specific file in quiet mode:",
+      "syntax": "docker load --quiet --input {{path/to/image_file.tar}}"
+    }
+  ]
+}

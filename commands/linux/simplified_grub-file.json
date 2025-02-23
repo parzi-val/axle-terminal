@@ -1,0 +1,30 @@
+{
+  "command": "grub-file",
+  "description": "Check if a file is of a bootable image type. More information: https://manned.org/grub-file.",
+  "useCases": [
+    {
+      "description": "Check if a file is an ARM EFI image:",
+      "syntax": "grub-file --is-arm-efi {{path/to/file}}"
+    },
+    {
+      "description": "Check if a file is an i386 EFI image:",
+      "syntax": "grub-file --is-i386-efi {{path/to/file}}"
+    },
+    {
+      "description": "Check if a file is an x86_64 EFI image:",
+      "syntax": "grub-file --is-x86_64-efi {{path/to/file}}"
+    },
+    {
+      "description": "Check if a file is an ARM image (Linux kernel):",
+      "syntax": "grub-file --is-arm-linux {{path/to/file}}"
+    },
+    {
+      "description": "Check if a file is an x86 image (Linux kernel):",
+      "syntax": "grub-file --is-x86-linux {{path/to/file}}"
+    },
+    {
+      "description": "Check if a file is an x86_64 XNU image (macOS kernel):",
+      "syntax": "grub-file --is-x86_64-xnu {{path/to/file}}"
+    }
+  ]
+}

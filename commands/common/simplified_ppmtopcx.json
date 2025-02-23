@@ -1,0 +1,14 @@
+{
+  "command": "ppmtopcx",
+  "description": "Convert a PPM image to a PCX file. More information: https://netpbm.sourceforge.net/doc/ppmtopcx.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a PCX file:",
+      "syntax": "ppmtopcx {{path/to/file.ppm}} &gt; {{path/to/file.pcx}}"
+    },
+    {
+      "description": "Produce a PCX file with the specified color depth:",
+      "syntax": "ppmtopcx -{{8bit|24bit}} {{path/to/file.ppm}} &gt; {{path/to/file.pcx}}"
+    }
+  ]
+}

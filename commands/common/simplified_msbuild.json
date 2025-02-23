@@ -1,0 +1,34 @@
+{
+  "command": "msbuild",
+  "description": "The Microsoft build tool for Visual Studio project solutions. More information: https://learn.microsoft.com/visualstudio/msbuild.",
+  "useCases": [
+    {
+      "description": "Build the first project file in the current directory:",
+      "syntax": "msbuild"
+    },
+    {
+      "description": "Build a specific project file:",
+      "syntax": "msbuild {{path/to/project_file}}"
+    },
+    {
+      "description": "Specify one or more semicolon-separated targets to build:",
+      "syntax": "msbuild {{path/to/project_file}} /target:{{targets}}"
+    },
+    {
+      "description": "Specify one or more semicolon-separated properties:",
+      "syntax": "msbuild {{path/to/project_file}} /property:{{name=value}}"
+    },
+    {
+      "description": "Specify the build tools version to use:",
+      "syntax": "msbuild {{path/to/project_file}} /toolsversion:{{version}}"
+    },
+    {
+      "description": "Display detailed information at the end of the log about how the project was configured:",
+      "syntax": "msbuild {{path/to/project_file}} /detailedsummary"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "msbuild /help"
+    }
+  ]
+}

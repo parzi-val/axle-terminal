@@ -1,0 +1,26 @@
+{
+  "command": "weechat",
+  "description": "Command-line internet relay chat client with various features. More information: https://weechat.org/doc.",
+  "useCases": [
+    {
+      "description": "Start WeeChat:",
+      "syntax": "weechat"
+    },
+    {
+      "description": "Do not load any plugin(s) on startup:",
+      "syntax": "weechat --no-plugin"
+    },
+    {
+      "description": "Do not load any script(s) on startup:",
+      "syntax": "weechat --no-script"
+    },
+    {
+      "description": "Do not connect to servers automatically:",
+      "syntax": "weechat --no-connect"
+    },
+    {
+      "description": "Write default terminal colors to stdout:",
+      "syntax": "weechat --colors"
+    }
+  ]
+}

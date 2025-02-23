@@ -1,0 +1,30 @@
+{
+  "command": "bats",
+  "description": "Bash Automated Testing System: a TAP (https://testanything.org/) compliant testing framework for Bash. More information: https://bats-core.readthedocs.io/en/stable/usage.html.",
+  "useCases": [
+    {
+      "description": "Run a BATS test script and output results in the [t]AP (Test Anything Protocol) format:",
+      "syntax": "bats --tap {{path/to/test.bats}}"
+    },
+    {
+      "description": "[c]ount test cases of a test script without running any tests:",
+      "syntax": "bats --count {{path/to/test.bats}}"
+    },
+    {
+      "description": "Run BATS test cases [r]ecursively (files with a .bats extension):",
+      "syntax": "bats --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Output results in a specific [F]ormat:",
+      "syntax": "bats --formatter {{pretty|tap|tap13|junit}} {{path/to/test.bats}}"
+    },
+    {
+      "description": "Add [T]iming information to tests:",
+      "syntax": "bats --timing {{path/to/test.bats}}"
+    },
+    {
+      "description": "Run specific number of [j]obs in parallel (requires GNU parallel to be installed):",
+      "syntax": "bats --jobs {{number}} {{path/to/test.bats}}"
+    }
+  ]
+}

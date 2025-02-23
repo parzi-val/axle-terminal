@@ -1,0 +1,18 @@
+{
+  "command": "urpme",
+  "description": "Uninstall packages in Mageia. See also: urpmi, urpmi.update, urpmi.addmedia, urpmi.removemedia, urpmf, urpmq. More information: https://wiki.mageia.org/en/URPMI#urpme.",
+  "useCases": [
+    {
+      "description": "Uninstall a package:",
+      "syntax": "sudo urpme {{package}}"
+    },
+    {
+      "description": "Uninstall orphan packages (Note: use it with caution as it might unintentionally remove important packages):",
+      "syntax": "sudo urpme --auto-orphans"
+    },
+    {
+      "description": "Uninstall a package and its dependencies:",
+      "syntax": "sudo urpme --auto-orphans {{package}}"
+    }
+  ]
+}

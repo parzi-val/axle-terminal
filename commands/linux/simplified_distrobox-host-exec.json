@@ -1,0 +1,14 @@
+{
+  "command": "distrobox-host-exec",
+  "description": "Execute a command on the host from inside a Distrobox container. See also: tldr distrobox. More information: https://distrobox.it/usage/distrobox-host-exec.",
+  "useCases": [
+    {
+      "description": "Execute command on the host system from inside the Distrobox container:",
+      "syntax": "distrobox-host-exec &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Execute the ls command on the host system from inside the container:",
+      "syntax": "distrobox-host-exec ls"
+    }
+  ]
+}

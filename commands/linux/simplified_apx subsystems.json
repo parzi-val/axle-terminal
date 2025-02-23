@@ -1,0 +1,30 @@
+{
+  "command": "apx subsystems",
+  "description": "Manage subsystems in apx. Subsystems are containers that can be created based on pre-existing stacks. More information: https://github.com/Vanilla-OS/apx.",
+  "useCases": [
+    {
+      "description": "Interactively create a new subsystem:",
+      "syntax": "apx subsystems new"
+    },
+    {
+      "description": "List all available subsystems:",
+      "syntax": "apx subsystems list"
+    },
+    {
+      "description": "Reset a specific subsystem to its initial state:",
+      "syntax": "apx subsystems reset --name {{string}}"
+    },
+    {
+      "description": "[f]orce reset a specific subsystem:",
+      "syntax": "apx subsystems reset --name {{string}} --force"
+    },
+    {
+      "description": "Remove a specific subsystem:",
+      "syntax": "apx subsystems rm --name {{string}}"
+    },
+    {
+      "description": "[f]orce remove a specific subsystem:",
+      "syntax": "apx subsystems rm --name {{string}} --force"
+    }
+  ]
+}

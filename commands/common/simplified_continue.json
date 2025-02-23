@@ -1,0 +1,14 @@
+{
+  "command": "continue",
+  "description": "Skip to the next iteration of a for, while, until or select loop. More information: https://www.gnu.org/software/bash/manual/bash.html#index-continue.",
+  "useCases": [
+    {
+      "description": "Skip to the next iteration:",
+      "syntax": "while :; do continue; echo &quot;This will never be reached&quot;; done"
+    },
+    {
+      "description": "Skip to the next iteration from within a nested loop:",
+      "syntax": "for i in {1..3}; do while :; do continue 2; done; done"
+    }
+  ]
+}

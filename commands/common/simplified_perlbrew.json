@@ -1,0 +1,38 @@
+{
+  "command": "perlbrew",
+  "description": "Manage Perl installations in the home directory. See also: asdf. More information: https://github.com/gugod/App-perlbrew.",
+  "useCases": [
+    {
+      "description": "Initialize a perlbrew environment:",
+      "syntax": "perlbrew init"
+    },
+    {
+      "description": "List available Perl versions:",
+      "syntax": "perlbrew available"
+    },
+    {
+      "description": "Install/uninstall a Perl version:",
+      "syntax": "perlbrew {{install|uninstall}} {{version}}"
+    },
+    {
+      "description": "List perl installations:",
+      "syntax": "perlbrew list"
+    },
+    {
+      "description": "Switch to an installation and set it as default:",
+      "syntax": "perlbrew switch perl-{{version}}"
+    },
+    {
+      "description": "Use the system Perl again:",
+      "syntax": "perlbrew off"
+    },
+    {
+      "description": "List installed CPAN modules for the installation in use:",
+      "syntax": "perlbrew list-modules"
+    },
+    {
+      "description": "Clone CPAN modules from one installation to another:",
+      "syntax": "perlbrew clone-modules {{source_installation}} {{destination_installation}}"
+    }
+  ]
+}

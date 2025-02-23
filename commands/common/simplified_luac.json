@@ -1,0 +1,14 @@
+{
+  "command": "luac",
+  "description": "Lua bytecode compiler. More information: https://www.lua.org.",
+  "useCases": [
+    {
+      "description": "Compile a Lua source file to Lua bytecode:",
+      "syntax": "luac -o {{byte_code.luac}} {{source.lua}}"
+    },
+    {
+      "description": "Do not include debug symbols in the output:",
+      "syntax": "luac -s -o {{byte_code.luac}} {{source.lua}}"
+    }
+  ]
+}

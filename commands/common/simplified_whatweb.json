@@ -1,0 +1,34 @@
+{
+  "command": "whatweb",
+  "description": "Next-generation web scanner. More information: https://morningstarsecurity.com/research/whatweb.",
+  "useCases": [
+    {
+      "description": "Scan websites/targets for web technologies:",
+      "syntax": "whatweb {{website1 website2 ...}}"
+    },
+    {
+      "description": "Read targets/websites from a file:",
+      "syntax": "whatweb -i {{targets_file}}"
+    },
+    {
+      "description": "Scan a website/target in verbose mode:",
+      "syntax": "whatweb -v {{example.com}}"
+    },
+    {
+      "description": "Run an aggressive scan on a website:",
+      "syntax": "whatweb -a 3 {{example.com}}"
+    },
+    {
+      "description": "Scan a network and suppress errors:",
+      "syntax": "whatweb --no-errors {{192.168.0.0/24}}"
+    },
+    {
+      "description": "List plugins:",
+      "syntax": "whatweb -l"
+    },
+    {
+      "description": "List plugin details:",
+      "syntax": "whatweb -I {{plugin_name}}"
+    }
+  ]
+}

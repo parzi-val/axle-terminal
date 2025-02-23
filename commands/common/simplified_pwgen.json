@@ -1,0 +1,18 @@
+{
+  "command": "pwgen",
+  "description": "Generate pronounceable passwords. More information: https://github.com/tytso/pwgen.",
+  "useCases": [
+    {
+      "description": "Generate random password with s[y]mbols:",
+      "syntax": "pwgen -y {{length}}"
+    },
+    {
+      "description": "Generate secure, hard-to-memorize passwords:",
+      "syntax": "pwgen -s {{length}}"
+    },
+    {
+      "description": "Generate password with at least one capital letter in them:",
+      "syntax": "pwgen -c {{length}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "tldrl",
+  "description": "This command is an alias of tldr-lint.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr tldr-lint"
+    }
+  ]
+}

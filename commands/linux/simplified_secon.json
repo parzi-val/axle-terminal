@@ -1,0 +1,26 @@
+{
+  "command": "secon",
+  "description": "Get the SELinux security context of a file, pid, current execution context, or a context specification. See also: semanage, runcon, chcon. More information: https://manned.org/secon.",
+  "useCases": [
+    {
+      "description": "Get the security context of the current execution context:",
+      "syntax": "secon"
+    },
+    {
+      "description": "Get the current security context of a process:",
+      "syntax": "secon --pid {{1}}"
+    },
+    {
+      "description": "Get the current security context of a file, resolving all intermediate symlinks:",
+      "syntax": "secon --file {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Get the current security context of a symlink itself (i.e. do not resolve):",
+      "syntax": "secon --link {{path/to/symlink}}"
+    },
+    {
+      "description": "Parse and explain a context specification:",
+      "syntax": "secon {{system_u:system_r:container_t:s0:c899,c900}}"
+    }
+  ]
+}

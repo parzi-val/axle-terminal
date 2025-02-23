@@ -1,0 +1,22 @@
+{
+  "command": "npm adduser",
+  "description": "Add a registry user account. More information: https://docs.npmjs.com/cli/npm-adduser.",
+  "useCases": [
+    {
+      "description": "Create a new user in the specified registry and save credentials to .npmrc:",
+      "syntax": "npm adduser --registry={{registry_url}}"
+    },
+    {
+      "description": "Log in to a private registry with a specific scope:",
+      "syntax": "npm login --scope={{@mycorp}} --registry={{https://registry.mycorp.com}}"
+    },
+    {
+      "description": "Log out from a specific scope and remove the auth token:",
+      "syntax": "npm logout --scope={{@mycorp}}"
+    },
+    {
+      "description": "Create a scoped package during initialization:",
+      "syntax": "npm init --scope={{@foo}} {{--yes}}"
+    }
+  ]
+}

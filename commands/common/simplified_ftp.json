@@ -1,0 +1,38 @@
+{
+  "command": "ftp",
+  "description": "Tools to interact with a server via File Transfer Protocol. More information: https://manned.org/ftp.",
+  "useCases": [
+    {
+      "description": "Connect to an FTP server:",
+      "syntax": "ftp {{ftp.example.com}}"
+    },
+    {
+      "description": "Connect to an FTP server specifying its IP address and port:",
+      "syntax": "ftp {{ip_address}} {{port}}"
+    },
+    {
+      "description": "Switch to binary transfer mode (graphics, compressed files, etc):",
+      "syntax": "binary"
+    },
+    {
+      "description": "Transfer multiple files without prompting for confirmation on every file:",
+      "syntax": "prompt off"
+    },
+    {
+      "description": "Download multiple files (glob expression):",
+      "syntax": "mget {{*.png}}"
+    },
+    {
+      "description": "Upload multiple files (glob expression):",
+      "syntax": "mput {{*.zip}}"
+    },
+    {
+      "description": "Delete multiple files on the remote server:",
+      "syntax": "mdelete {{*.txt}}"
+    },
+    {
+      "description": "Rename a file on the remote server:",
+      "syntax": "rename {{original_filename}} {{new_filename}}"
+    }
+  ]
+}

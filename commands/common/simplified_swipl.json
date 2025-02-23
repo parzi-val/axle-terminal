@@ -1,0 +1,26 @@
+{
+  "command": "swipl",
+  "description": "SWI-Prolog - A comprehensive free Prolog environment. More information: https://www.swi-prolog.org/.",
+  "useCases": [
+    {
+      "description": "Start an interactive session:",
+      "syntax": "swipl"
+    },
+    {
+      "description": "Execute a command without showing any output:",
+      "syntax": "swipl --quiet -t &quot;{{command}}&quot;"
+    },
+    {
+      "description": "Execute a script:",
+      "syntax": "swipl {{path/to/file.pl}}"
+    },
+    {
+      "description": "Print all shell configuration variables:",
+      "syntax": "swipl --dump-runtime-variables"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "swipl --version"
+    }
+  ]
+}

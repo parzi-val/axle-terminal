@@ -1,0 +1,26 @@
+{
+  "command": "pvremove",
+  "description": "Remove LVM labels from physical volume(s). More information: https://manned.org/pvremove.",
+  "useCases": [
+    {
+      "description": "Remove a LVM label from a physical volume:",
+      "syntax": "sudo pvremove {{/dev/sdXY}}"
+    },
+    {
+      "description": "Display detailed output during the operation:",
+      "syntax": "sudo pvremove --verbose {{/dev/sdXY}}"
+    },
+    {
+      "description": "Remove a LVM label without asking for confirmation:",
+      "syntax": "sudo pvremove --yes {{/dev/sdXY}}"
+    },
+    {
+      "description": "Forcefully remove a LVM label:",
+      "syntax": "sudo pvremove --force {{/dev/sdXY}}"
+    },
+    {
+      "description": "Display output in JSON format:",
+      "syntax": "sudo pvremove --reportformat json {{/dev/sdXY}}"
+    }
+  ]
+}

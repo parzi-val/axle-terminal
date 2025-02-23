@@ -1,0 +1,26 @@
+{
+  "command": "wikiman",
+  "description": "Offline search engine for documentation. Supports manual pages, Arch Wiki, Gentoo Wiki, FreeBSD documentation, and tldr-pages. More information: https://github.com/filiparag/wikiman.",
+  "useCases": [
+    {
+      "description": "Search for a specific topic in all installed sources:",
+      "syntax": "wikiman {{search_term}}"
+    },
+    {
+      "description": "Search for a topic in a specific [s]ource:",
+      "syntax": "wikiman -s {{source}} {{search_term}}"
+    },
+    {
+      "description": "Search for a topic in two or more specific [s]ources:",
+      "syntax": "wikiman -s {{source1,source2,...}} {{search_term}}"
+    },
+    {
+      "description": "List existing [S]ources:",
+      "syntax": "wikiman -S"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "wikiman -h"
+    }
+  ]
+}

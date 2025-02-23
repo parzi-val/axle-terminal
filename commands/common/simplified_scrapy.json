@@ -1,0 +1,34 @@
+{
+  "command": "scrapy",
+  "description": "Web-crawling framework. More information: https://scrapy.org.",
+  "useCases": [
+    {
+      "description": "Create a project:",
+      "syntax": "scrapy startproject {{project_name}}"
+    },
+    {
+      "description": "Create a spider (in project directory):",
+      "syntax": "scrapy genspider {{spider_name}} {{website_domain}}"
+    },
+    {
+      "description": "Edit spider (in project directory):",
+      "syntax": "scrapy edit {{spider_name}}"
+    },
+    {
+      "description": "Run spider (in project directory):",
+      "syntax": "scrapy crawl {{spider_name}}"
+    },
+    {
+      "description": "Fetch a webpage as Scrapy sees it and print the source to stdout:",
+      "syntax": "scrapy fetch {{url}}"
+    },
+    {
+      "description": "Open a webpage in the default browser as Scrapy sees it (disable JavaScript for extra fidelity):",
+      "syntax": "scrapy view {{url}}"
+    },
+    {
+      "description": "Open Scrapy shell for URL, which allows interaction with the page source in a Python shell (or IPython if available):",
+      "syntax": "scrapy shell {{url}}"
+    }
+  ]
+}

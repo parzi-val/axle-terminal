@@ -1,0 +1,14 @@
+{
+  "command": "hg branch",
+  "description": "Create or show a branch name. More information: https://www.mercurial-scm.org/doc/hg.1.html#branch.",
+  "useCases": [
+    {
+      "description": "Show the name of the currently active branch:",
+      "syntax": "hg branch"
+    },
+    {
+      "description": "Create a new branch for the next commit:",
+      "syntax": "hg branch {{branch_name}}"
+    }
+  ]
+}

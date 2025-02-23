@@ -1,0 +1,34 @@
+{
+  "command": "go",
+  "description": "Manage Go source code. Some subcommands such as build have their own usage documentation. More information: https://golang.org.",
+  "useCases": [
+    {
+      "description": "Download and install a package, specified by its import path:",
+      "syntax": "go get {{package_path}}"
+    },
+    {
+      "description": "Compile and run a source file (it has to contain a main package):",
+      "syntax": "go run {{file}}.go"
+    },
+    {
+      "description": "Compile a source file into a named executable:",
+      "syntax": "go build -o {{executable}} {{file}}.go"
+    },
+    {
+      "description": "Compile the package present in the current directory:",
+      "syntax": "go build"
+    },
+    {
+      "description": "Execute all test cases of the current package (files have to end with _test.go):",
+      "syntax": "go test"
+    },
+    {
+      "description": "Compile and install the current package:",
+      "syntax": "go install"
+    },
+    {
+      "description": "Initialize a new module in the current directory:",
+      "syntax": "go mod init {{module_name}}"
+    }
+  ]
+}

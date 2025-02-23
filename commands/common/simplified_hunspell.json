@@ -1,0 +1,18 @@
+{
+  "command": "hunspell",
+  "description": "Check spelling. More information: https://github.com/hunspell/hunspell.",
+  "useCases": [
+    {
+      "description": "Check the spelling of a file:",
+      "syntax": "hunspell {{path/to/file}}"
+    },
+    {
+      "description": "Check the spelling of a file with the en_US dictionary:",
+      "syntax": "hunspell -d {{en_US}} {{path/to/file}}"
+    },
+    {
+      "description": "List misspelled words in a file:",
+      "syntax": "hunspell -l {{path/to/file}}"
+    }
+  ]
+}

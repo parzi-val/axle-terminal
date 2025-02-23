@@ -1,0 +1,30 @@
+{
+  "command": "gcloud container",
+  "description": "Manage containerized applications on Kubernetes and clusters. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/container.",
+  "useCases": [
+    {
+      "description": "Register gcloud as a Docker credential helper:",
+      "syntax": "gcloud auth configure-docker"
+    },
+    {
+      "description": "Create a cluster to run GKE containers:",
+      "syntax": "gcloud container clusters create {{cluster_name}}"
+    },
+    {
+      "description": "List clusters for running GKE containers:",
+      "syntax": "gcloud container clusters list"
+    },
+    {
+      "description": "Update kubeconfig to get kubectl to use a GKE cluster:",
+      "syntax": "gcloud container clusters get-credentials {{cluster_name}}"
+    },
+    {
+      "description": "List tag and digest metadata for a container image:",
+      "syntax": "gcloud container images list-tags {{image}}"
+    },
+    {
+      "description": "Describe an existing cluster for running containers:",
+      "syntax": "gcloud container clusters describe {{cluster_name}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "ldconfig",
+  "description": "Configure symlinks and cache for shared library dependencies. More information: https://manned.org/ldconfig.",
+  "useCases": [
+    {
+      "description": "Update symlinks and rebuild the cache (usually run when a new library is installed):",
+      "syntax": "sudo ldconfig"
+    },
+    {
+      "description": "Update the symlinks for a given directory:",
+      "syntax": "sudo ldconfig -n {{path/to/directory}}"
+    },
+    {
+      "description": "Print the libraries in the cache and check whether a given library is present:",
+      "syntax": "ldconfig -p | grep {{library_name}}"
+    }
+  ]
+}

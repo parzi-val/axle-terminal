@@ -1,0 +1,30 @@
+{
+  "command": "install-tl",
+  "description": "TeX Live cross-platform installer. More information: https://tug.org/texlive/.",
+  "useCases": [
+    {
+      "description": "Start the text-based installer (default on Unix systems):",
+      "syntax": "install-tl -no-gui"
+    },
+    {
+      "description": "Start the GUI installer (default on macOS and Windows, requires Tcl/Tk):",
+      "syntax": "install-tl -gui"
+    },
+    {
+      "description": "Install TeX Live as defined in a specific profile file:",
+      "syntax": "install-tl -profile {{path/to/texlive.profile}}"
+    },
+    {
+      "description": "Start the installer with the settings from a specific profile file:",
+      "syntax": "install-tl -init-from-file {{path/to/texlive.profile}}"
+    },
+    {
+      "description": "Start the installer for installation on a portable device, like a USB stick:",
+      "syntax": "install-tl -portable"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "install-tl -help"
+    }
+  ]
+}

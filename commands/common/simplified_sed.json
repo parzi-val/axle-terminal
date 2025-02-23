@@ -1,0 +1,18 @@
+{
+  "command": "sed",
+  "description": "Edit text in a scriptable manner. See also: awk, ed. More information: https://manned.org/sed.1posix.",
+  "useCases": [
+    {
+      "description": "Replace all apple (basic regex) occurrences with mango (basic regex) in all input lines and print the result to stdout:",
+      "syntax": "{{command}} | sed 's/apple/mango/g'"
+    },
+    {
+      "description": "Execute a specific script [f]ile and print the result to stdout:",
+      "syntax": "{{command}} | sed -f {{path/to/script.sed}}"
+    },
+    {
+      "description": "Print just a first line to stdout:",
+      "syntax": "{{command}} | sed -n '1p'"
+    }
+  ]
+}

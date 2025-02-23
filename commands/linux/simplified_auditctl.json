@@ -1,0 +1,34 @@
+{
+  "command": "auditctl",
+  "description": "Utility to control the behavior, get status and manage rules of the Linux Auditing System. More information: https://manned.org/auditctl.",
+  "useCases": [
+    {
+      "description": "Display the [s]tatus of the audit system:",
+      "syntax": "sudo auditctl -s"
+    },
+    {
+      "description": "[l]ist all currently loaded audit rules:",
+      "syntax": "sudo auditctl -l"
+    },
+    {
+      "description": "[D]elete all audit rules:",
+      "syntax": "sudo auditctl -D"
+    },
+    {
+      "description": "[e]nable/disable the audit system:",
+      "syntax": "sudo auditctl -e {{1|0}}"
+    },
+    {
+      "description": "Watch a file for changes:",
+      "syntax": "sudo auditctl -a always,exit -F arch=b64 -F path={{/path/to/file}} -F perm=wa"
+    },
+    {
+      "description": "Recursively watch a directory for changes:",
+      "syntax": "sudo auditctl -a always,exit -F arch=b64 -F dir={{/path/to/directory/}} -F perm=wa"
+    },
+    {
+      "description": "Display [h]elp:",
+      "syntax": "auditctl -h"
+    }
+  ]
+}

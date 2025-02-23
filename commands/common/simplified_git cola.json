@@ -1,0 +1,26 @@
+{
+  "command": "git cola",
+  "description": "A powerful Git GUI with a slick and intuitive user interface. More information: https://git-cola.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Start the GUI:",
+      "syntax": "git cola"
+    },
+    {
+      "description": "Start the GUI in amend mode:",
+      "syntax": "git cola --amend"
+    },
+    {
+      "description": "Prompt for a Git repository. Defaults to the current directory:",
+      "syntax": "git cola --prompt"
+    },
+    {
+      "description": "Open the Git repository at mentioned path:",
+      "syntax": "git cola --repo {{path/to/git-repository}}"
+    },
+    {
+      "description": "Apply the path filter to the status widget:",
+      "syntax": "git cola --status-filter {{filter}}"
+    }
+  ]
+}

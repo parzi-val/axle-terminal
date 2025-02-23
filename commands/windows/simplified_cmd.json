@@ -1,0 +1,38 @@
+{
+  "command": "cmd",
+  "description": "The Windows command interpreter. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/cmd.",
+  "useCases": [
+    {
+      "description": "Start an interactive shell session:",
+      "syntax": "cmd"
+    },
+    {
+      "description": "Execute specific [c]ommands:",
+      "syntax": "cmd /c {{echo Hello world}}"
+    },
+    {
+      "description": "Execute a specific script:",
+      "syntax": "cmd {{path\\to\\script.bat}}"
+    },
+    {
+      "description": "Execute specific commands and then enter an interactive shell:",
+      "syntax": "cmd /k {{echo Hello world}}"
+    },
+    {
+      "description": "Start an interactive shell session where echo is disabled in command output:",
+      "syntax": "cmd /q"
+    },
+    {
+      "description": "Start an interactive shell session with delayed [v]ariable expansion enabled or disabled:",
+      "syntax": "cmd /v:{{on|off}}"
+    },
+    {
+      "description": "Start an interactive shell session with command [e]xtensions enabled or disabled:",
+      "syntax": "cmd /e:{{on|off}}"
+    },
+    {
+      "description": "Start an interactive shell session with used [u]nicode encoding:",
+      "syntax": "cmd /u"
+    }
+  ]
+}

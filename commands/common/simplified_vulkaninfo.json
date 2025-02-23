@@ -1,0 +1,18 @@
+{
+  "command": "vulkaninfo",
+  "description": "Print system Vulkan information. More information: https://vulkan.lunarg.com/doc/view/latest/linux/vulkaninfo.html.",
+  "useCases": [
+    {
+      "description": "Print full Vulkan information:",
+      "syntax": "vulkaninfo"
+    },
+    {
+      "description": "Print a summary:",
+      "syntax": "vulkaninfo --summary"
+    },
+    {
+      "description": "Make a HTML document of the full Vulkan information:",
+      "syntax": "vulkaninfo --html"
+    }
+  ]
+}

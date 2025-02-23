@@ -1,0 +1,34 @@
+{
+  "command": "cargo run",
+  "description": "Run the current Cargo package. Note: the working directory of the executed binary will be set to the current working directory. More information: https://doc.rust-lang.org/cargo/commands/cargo-run.html.",
+  "useCases": [
+    {
+      "description": "Run the default binary target:",
+      "syntax": "cargo run"
+    },
+    {
+      "description": "Run the specified binary:",
+      "syntax": "cargo run --bin {{name}}"
+    },
+    {
+      "description": "Run the specified example:",
+      "syntax": "cargo run --example {{name}}"
+    },
+    {
+      "description": "Activate a space or comma separated list of features:",
+      "syntax": "cargo run --features {{feature1 feature2 ...}}"
+    },
+    {
+      "description": "Disable the default features:",
+      "syntax": "cargo run --no-default-features"
+    },
+    {
+      "description": "Activate all available features:",
+      "syntax": "cargo run --all-features"
+    },
+    {
+      "description": "Run with the given profile:",
+      "syntax": "cargo run --profile {{name}}"
+    }
+  ]
+}

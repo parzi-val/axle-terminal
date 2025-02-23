@@ -1,0 +1,22 @@
+{
+  "command": "select",
+  "description": "Bash builtin construct for creating menus. More information: https://www.gnu.org/software/bash/manual/bash.html#index-select.",
+  "useCases": [
+    {
+      "description": "Create a menu out of individual words:",
+      "syntax": "select {{word}} in {{apple orange pear banana}}; do echo ${{word}}; done"
+    },
+    {
+      "description": "Create a menu from the output of another command:",
+      "syntax": "select {{line}} in $({{command}}); do echo ${{line}}; done"
+    },
+    {
+      "description": "Specify the prompt string for select and create a menu for picking a file or folder from the current directory:",
+      "syntax": "PS3=&quot;{{Select a file: }}&quot;; select {{file}} in *; do echo ${{file}}; done"
+    },
+    {
+      "description": "Create a menu from a Bash array:",
+      "syntax": "{{fruits}}=({{apple orange pear banana}}); select {{word}} in ${{{fruits[@]}}}; do echo ${{word}}; done"
+    }
+  ]
+}

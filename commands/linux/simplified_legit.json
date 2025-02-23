@@ -1,0 +1,30 @@
+{
+  "command": "legit",
+  "description": "Complementary command-line interface for Git. More information: https://frostming.github.io/legit.",
+  "useCases": [
+    {
+      "description": "Switch to a specified branch, stashing and restoring unstaged changes:",
+      "syntax": "git switch {{target_branch}}"
+    },
+    {
+      "description": "Synchronize current branch, automatically merging or rebasing, and stashing and unstashing:",
+      "syntax": "git sync"
+    },
+    {
+      "description": "Publish a specified branch to the remote server:",
+      "syntax": "git publish {{branch_name}}"
+    },
+    {
+      "description": "Remove a branch from the remote server:",
+      "syntax": "git unpublish {{branch_name}}"
+    },
+    {
+      "description": "List all branches and their publication status:",
+      "syntax": "git branches {{glob_pattern}}"
+    },
+    {
+      "description": "Remove the last commit from the history:",
+      "syntax": "git undo {{--hard}}"
+    }
+  ]
+}

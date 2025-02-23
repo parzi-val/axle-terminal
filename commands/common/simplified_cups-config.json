@@ -1,0 +1,26 @@
+{
+  "command": "cups-config",
+  "description": "Show technical information about your CUPS print server installation. More information: https://openprinting.github.io/cups/doc/man-cups-config.html.",
+  "useCases": [
+    {
+      "description": "Show where CUPS is currently installed:",
+      "syntax": "cups-config --serverbin"
+    },
+    {
+      "description": "Show the location of CUPS' configuration directory:",
+      "syntax": "cups-config --serverroot"
+    },
+    {
+      "description": "Show the location of CUPS' data directory:",
+      "syntax": "cups-config --datadir"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cups-config --help"
+    },
+    {
+      "description": "Display CUPS version:",
+      "syntax": "cups-config --version"
+    }
+  ]
+}

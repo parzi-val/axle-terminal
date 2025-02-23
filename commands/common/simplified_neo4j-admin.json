@@ -1,0 +1,34 @@
+{
+  "command": "neo4j-admin",
+  "description": "Manage and administer a Neo4j DBMS (Database Management System). See also: cypher-shell, mysqld. More information: https://neo4j.com/docs/operations-manual/current/tools/neo4j-admin/.",
+  "useCases": [
+    {
+      "description": "Start the DBMS:",
+      "syntax": "neo4j-admin server start"
+    },
+    {
+      "description": "Stop the DBMS:",
+      "syntax": "neo4j-admin server stop"
+    },
+    {
+      "description": "Set the initial password of the default neo4j user (prerequisite for the first start of the DBMS):",
+      "syntax": "neo4j-admin dbms set-initial-password {{database_name}}"
+    },
+    {
+      "description": "Create an archive (dump) of an offline database to a file named database_name.dump:",
+      "syntax": "neo4j-admin database dump --to-path={{path/to/directory}} {{database_name}}"
+    },
+    {
+      "description": "Load a database from an archive named database_name.dump:",
+      "syntax": "neo4j-admin database load --from-path={{path/to/directory}} {{database_name}} --overwrite-destination=true"
+    },
+    {
+      "description": "Load a database from a specified archive file through stdin:",
+      "syntax": "neo4j-admin database load --from-stdin {{database_name}} --overwrite-destination=true &lt; {{path/to/filename.dump}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "neo4j-admin --help"
+    }
+  ]
+}

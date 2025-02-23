@@ -1,0 +1,22 @@
+{
+  "command": "git submodule",
+  "description": "Inspects, updates and manages submodules. More information: https://git-scm.com/docs/git-submodule.",
+  "useCases": [
+    {
+      "description": "Install a repository's specified submodules:",
+      "syntax": "git submodule update --init --recursive"
+    },
+    {
+      "description": "Add a Git repository as a submodule:",
+      "syntax": "git submodule add {{repository_url}}"
+    },
+    {
+      "description": "Add a Git repository as a submodule at the specified directory:",
+      "syntax": "git submodule add {{repository_url}} {{path/to/directory}}"
+    },
+    {
+      "description": "Update every submodule to its latest commit:",
+      "syntax": "git submodule foreach git pull"
+    }
+  ]
+}

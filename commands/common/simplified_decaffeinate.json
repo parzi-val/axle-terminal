@@ -1,0 +1,22 @@
+{
+  "command": "decaffeinate",
+  "description": "Move your CoffeeScript source to modern JavaScript. More information: https://decaffeinate-project.org.",
+  "useCases": [
+    {
+      "description": "Convert a CoffeeScript file to JavaScript:",
+      "syntax": "decaffeinate {{path/to/file.coffee}}"
+    },
+    {
+      "description": "Convert a CoffeeScript v2 file to JavaScript:",
+      "syntax": "decaffeinate --use-cs2 {{path/to/file.coffee}}"
+    },
+    {
+      "description": "Convert require and module.exports to import and export:",
+      "syntax": "decaffeinate --use-js-modules {{path/to/file.coffee}}"
+    },
+    {
+      "description": "Convert a CoffeeScript, allowing named exports:",
+      "syntax": "decaffeinate --loose-js-modules {{path/to/file.coffee}}"
+    }
+  ]
+}

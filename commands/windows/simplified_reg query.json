@@ -1,0 +1,38 @@
+{
+  "command": "reg query",
+  "description": "Display the values of keys and subkeys in the registry. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/reg-query.",
+  "useCases": [
+    {
+      "description": "Display all values of a key:",
+      "syntax": "reg query {{key_name}}"
+    },
+    {
+      "description": "Display a specific [v]alue of a key:",
+      "syntax": "reg query {{key_name}} /v {{value}}"
+    },
+    {
+      "description": "Display all values of a key and its [s]ubkeys:",
+      "syntax": "reg query {{key_name}} /s"
+    },
+    {
+      "description": "Search [f]or keys and values matching a specific pattern:",
+      "syntax": "reg query {{key_name}} /f &quot;{{query_pattern}}&quot;"
+    },
+    {
+      "description": "Display a value of a key matching a specified data [t]ype:",
+      "syntax": "reg query {{key_name}} /t REG_{{SZ|MULTI_SZ|EXPAND_SZ|DWORD|BINARY|NONE}}"
+    },
+    {
+      "description": "Only search in [d]ata:",
+      "syntax": "reg query {{key_name}} /d"
+    },
+    {
+      "description": "Only search in [k]ey names:",
+      "syntax": "reg query {{key_name}} /f &quot;{{query_pattern}}&quot; /k"
+    },
+    {
+      "description": "[c]ase-sensitively search for an [e]xact match:",
+      "syntax": "reg query {{key_name}} /c /e"
+    }
+  ]
+}

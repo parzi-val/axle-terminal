@@ -1,0 +1,22 @@
+{
+  "command": "ajson",
+  "description": "Execute JSONPath on JSON objects. More information: https://github.com/spyzhov/ajson.",
+  "useCases": [
+    {
+      "description": "Read JSON from a file and execute a specified JSONPath expression:",
+      "syntax": "ajson '{{$..json[?(@.path)]}}' {{path/to/file.json}}"
+    },
+    {
+      "description": "Read JSON from stdin and execute a specified JSONPath expression:",
+      "syntax": "cat {{path/to/file.json}} | ajson '{{$..json[?(@.path)]}}'"
+    },
+    {
+      "description": "Read JSON from a URL and evaluate a specified JSONPath expression:",
+      "syntax": "ajson '{{avg($..price)}}' '{{https://example.com/api/}}'"
+    },
+    {
+      "description": "Read some simple JSON and calculate a value:",
+      "syntax": "echo '{{3}}' | ajson '{{2 * pi * $}}'"
+    }
+  ]
+}

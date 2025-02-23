@@ -1,0 +1,22 @@
+{
+  "command": "peludna-prognoza",
+  "description": "Fetch pollen measurement data for Croatian cities from your terminal using Pliva's allergies data API. More information: https://github.com/vladimyr/peludna-prognoza.",
+  "useCases": [
+    {
+      "description": "Start an interactive search for a city and fetch data for it:",
+      "syntax": "peludna-prognoza"
+    },
+    {
+      "description": "Fetch data for a city:",
+      "syntax": "peludna-prognoza &quot;{{city}}&quot;"
+    },
+    {
+      "description": "Display data in a machine-readable format:",
+      "syntax": "peludna-prognoza &quot;{{city}}&quot; --{{json|xml}}"
+    },
+    {
+      "description": "Display the pollen measurement page for a city at https://plivazdravlje.hr in the default web browser:",
+      "syntax": "peludna-prognoza &quot;{{city}}&quot; --web"
+    }
+  ]
+}

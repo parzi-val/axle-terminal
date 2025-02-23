@@ -1,0 +1,18 @@
+{
+  "command": "jarsigner",
+  "description": "Sign and verify Java archive (JAR) files. More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/jarsigner.html.",
+  "useCases": [
+    {
+      "description": "Sign a JAR file:",
+      "syntax": "jarsigner {{path/to/file.jar}} {{keystore_alias}}"
+    },
+    {
+      "description": "Sign a JAR file with a specific algorithm:",
+      "syntax": "jarsigner -sigalg {{algorithm}} {{path/to/file.jar}} {{keystore_alias}}"
+    },
+    {
+      "description": "Verify the signature of a JAR file:",
+      "syntax": "jarsigner -verify {{path/to/file.jar}}"
+    }
+  ]
+}

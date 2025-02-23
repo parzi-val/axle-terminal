@@ -1,0 +1,18 @@
+{
+  "command": "vela",
+  "description": "Command-line tools for the Vela pipeline. More information: https://go-vela.github.io/docs/reference/cli/.",
+  "useCases": [
+    {
+      "description": "Trigger a pipeline to run from a Git branch, commit or tag:",
+      "syntax": "vela add deployment --org {{organization}} --repo {{repository_name}} --target {{environment}} --ref {{branch|commit|refs/tags/git_tag}} --description &quot;{{deploy_description}}&quot;"
+    },
+    {
+      "description": "List deployments for a repository:",
+      "syntax": "vela get deployment --org {{organization}} --repo {{repository_name}}"
+    },
+    {
+      "description": "Inspect a specific deployment:",
+      "syntax": "vela view deployment --org {{organization}} --repo {{repository_name}} --deployment {{deployment_number}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "hwinfo",
+  "description": "Probe for the hardware present in the system. More information: https://manpages.opensuse.org/hwinfo/hwinfo.8.en.html.",
+  "useCases": [
+    {
+      "description": "Get graphics card information:",
+      "syntax": "hwinfo --gfxcard"
+    },
+    {
+      "description": "Get network device information:",
+      "syntax": "hwinfo --network"
+    },
+    {
+      "description": "List disks and CD-ROM drives, abbreviating the output:",
+      "syntax": "hwinfo --short --disk --cdrom"
+    },
+    {
+      "description": "Write all hardware information to a file:",
+      "syntax": "hwinfo --all --log {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "hwinfo --help"
+    }
+  ]
+}

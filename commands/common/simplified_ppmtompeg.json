@@ -1,0 +1,22 @@
+{
+  "command": "ppmtompeg",
+  "description": "Encode an MPEG-1 stream. More information: https://netpbm.sourceforge.net/doc/ppmtompeg.html.",
+  "useCases": [
+    {
+      "description": "Produce an MPEG-1 stream using the parameter file to specify inputs and outputs:",
+      "syntax": "ppmtompeg {{path/to/parameter_file}}"
+    },
+    {
+      "description": "Encode the GOP with the specified number only:",
+      "syntax": "ppmtompeg -gop {{gop_num}} {{path/to/parameter_file}}"
+    },
+    {
+      "description": "Specify the first and last frame to encode:",
+      "syntax": "ppmtompeg -frames {{first_frame}} {{last_frame}} {{path/to/parameter_file}}"
+    },
+    {
+      "description": "Combine multiple MPEG frames into a single MPEG-1 stream:",
+      "syntax": "ppmtompeg -combine_frames {{path/to/parameter_file}}"
+    }
+  ]
+}

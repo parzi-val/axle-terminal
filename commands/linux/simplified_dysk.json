@@ -1,0 +1,26 @@
+{
+  "command": "dysk",
+  "description": "Display filesystem information in a table. More information: https://dystroy.org/dysk.",
+  "useCases": [
+    {
+      "description": "Get a standard overview of your usual disks:",
+      "syntax": "dysk"
+    },
+    {
+      "description": "Sort by free size:",
+      "syntax": "dysk --sort free"
+    },
+    {
+      "description": "Include only HDD disks:",
+      "syntax": "dysk --filter 'disk = HDD'"
+    },
+    {
+      "description": "Exclude SSD disks:",
+      "syntax": "dysk --filter 'disk &lt;&gt; SSD'"
+    },
+    {
+      "description": "Display disks with high utilization or low free space:",
+      "syntax": "dysk --filter 'use &gt; 65% | free &lt; 50G'"
+    }
+  ]
+}

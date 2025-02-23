@@ -1,0 +1,38 @@
+{
+  "command": "pacman --query",
+  "description": "Arch Linux package manager utility. See also: pacman. More information: https://manned.org/pacman.8.",
+  "useCases": [
+    {
+      "description": "[Q]uery the local package database and list installed packages and versions:",
+      "syntax": "pacman -Q"
+    },
+    {
+      "description": "List only packages and versions that were [e]xplicitly installed:",
+      "syntax": "pacman -Qe"
+    },
+    {
+      "description": "Find which package [o]wns a file:",
+      "syntax": "pacman -Qo {{filename}}"
+    },
+    {
+      "description": "Display information about an [i]nstalled package:",
+      "syntax": "pacman -Qi {{package}}"
+    },
+    {
+      "description": "Display the [l]ist of files owned by a specific package:",
+      "syntax": "pacman -Ql {{package}}"
+    },
+    {
+      "description": "List orphan packages (installed as [d]ependencies but unrequired ([t]) by any package and print in [q]uiet mode (only package name is displayed)):",
+      "syntax": "pacman -Qdtq"
+    },
+    {
+      "description": "List installed packages foreign ([m]) to the repository database:",
+      "syntax": "pacman -Qm"
+    },
+    {
+      "description": "List packages that can be [u]pgraded:",
+      "syntax": "pacman -Qu"
+    }
+  ]
+}

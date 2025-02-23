@@ -1,0 +1,10 @@
+{
+  "command": "pveperf",
+  "description": "A benchmarking tool in Proxmox Server. Gather CPU and hard disk performance data for the hard disk. More information: https://pve.proxmox.com/pve-docs/pveperf.1.html.",
+  "useCases": [
+    {
+      "description": "Show CPU and hard disk performance data for the hard disk mounted at /:",
+      "syntax": "pveperf"
+    }
+  ]
+}

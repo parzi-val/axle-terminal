@@ -1,0 +1,22 @@
+{
+  "command": "yank",
+  "description": "Read input from stdin and display a selection interface that allows a field to be selected and copied to the clipboard. More information: https://manned.org/yank.",
+  "useCases": [
+    {
+      "description": "Yank using the default delimiters (\\f, \\n, \\r, \\s, \\t):",
+      "syntax": "{{sudo dmesg}} | yank"
+    },
+    {
+      "description": "Yank an entire line:",
+      "syntax": "{{sudo dmesg}} | yank -l"
+    },
+    {
+      "description": "Yank using a specific delimiter:",
+      "syntax": "{{echo hello=world}} | yank -d {{=}}"
+    },
+    {
+      "description": "Only yank fields matching a specific pattern:",
+      "syntax": "{{ps ux}} | yank -g &quot;{{[0-9]+}}&quot;"
+    }
+  ]
+}

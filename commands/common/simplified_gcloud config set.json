@@ -1,0 +1,34 @@
+{
+  "command": "gcloud config set",
+  "description": "Set a property in the Google Cloud CLI configuration. Properties control various aspects of Google Cloud CLI behavior. More information: https://cloud.google.com/sdk/gcloud/reference/config/set.",
+  "useCases": [
+    {
+      "description": "Set the project property in the core section:",
+      "syntax": "gcloud config set project {{project_id}}"
+    },
+    {
+      "description": "Set the compute zone for future operations:",
+      "syntax": "gcloud config set compute/zone {{zone_name}}"
+    },
+    {
+      "description": "Disable prompting to make gcloud suitable for scripting:",
+      "syntax": "gcloud config set disable_prompts true"
+    },
+    {
+      "description": "View the list of properties currently in use:",
+      "syntax": "gcloud config list"
+    },
+    {
+      "description": "Unset a previously set property:",
+      "syntax": "gcloud config unset {{property_name}}"
+    },
+    {
+      "description": "Create a new configuration profile:",
+      "syntax": "gcloud config configurations create {{configuration_name}}"
+    },
+    {
+      "description": "Switch between different configuration profiles:",
+      "syntax": "gcloud config configurations activate {{configuration_name}}"
+    }
+  ]
+}

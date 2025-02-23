@@ -1,0 +1,10 @@
+{
+  "command": "pi3topbm",
+  "description": "Convert an Atari Degas PI3 image to PBM image. See also: pbmtopi3. More information: https://netpbm.sourceforge.net/doc/pi3topbm.html.",
+  "useCases": [
+    {
+      "description": "Convert an Atari Degas PI3 image to PBM image:",
+      "syntax": "pi1topbm {{path/to/atari_image.pi3}} &gt; {{path/to/output_image.pbm}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "az aks",
+  "description": "Manage Azure Kubernetes Service (AKS) clusters. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/aks.",
+  "useCases": [
+    {
+      "description": "List AKS clusters:",
+      "syntax": "az aks list --resource-group {{resource_group}}"
+    },
+    {
+      "description": "Create a new AKS cluster:",
+      "syntax": "az aks create --resource-group {{resource_group}} --name {{name}} --node-count {{count}} --node-vm-size {{size}}"
+    },
+    {
+      "description": "Delete an AKS cluster:",
+      "syntax": "az aks delete --resource-group {{resource_group}} --name {{name}}"
+    },
+    {
+      "description": "Get the access credentials for an AKS cluster:",
+      "syntax": "az aks get-credentials --resource-group {{resource_group}} --name {{name}}"
+    },
+    {
+      "description": "Get the upgrade versions available for an AKS cluster:",
+      "syntax": "az aks get-upgrades --resource-group {{resource_group}} --name {{name}}"
+    }
+  ]
+}

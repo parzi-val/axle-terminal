@@ -1,0 +1,26 @@
+{
+  "command": "wg",
+  "description": "Manage the configuration of WireGuard interfaces. More information: https://www.wireguard.com/quickstart/.",
+  "useCases": [
+    {
+      "description": "Check status of currently active interfaces:",
+      "syntax": "sudo wg"
+    },
+    {
+      "description": "Generate a new private key:",
+      "syntax": "wg genkey"
+    },
+    {
+      "description": "Generate a public key from a private key:",
+      "syntax": "wg pubkey &lt; {{path/to/private_key}} &gt; {{path/to/public_key}}"
+    },
+    {
+      "description": "Generate a public and private key:",
+      "syntax": "wg genkey | tee {{path/to/private_key}} | wg pubkey &gt; {{path/to/public_key}}"
+    },
+    {
+      "description": "Show the current configuration of a wireguard interface:",
+      "syntax": "sudo wg showconf {{wg0}}"
+    }
+  ]
+}

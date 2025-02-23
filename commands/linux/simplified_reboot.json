@@ -1,0 +1,26 @@
+{
+  "command": "reboot",
+  "description": "Reboot the system. More information: https://manned.org/reboot.8.",
+  "useCases": [
+    {
+      "description": "Reboot the system:",
+      "syntax": "reboot"
+    },
+    {
+      "description": "Power off the system (same as poweroff):",
+      "syntax": "reboot --poweroff"
+    },
+    {
+      "description": "Halt (terminates all processes and shuts down the CPU) the system (same as halt):",
+      "syntax": "reboot --halt"
+    },
+    {
+      "description": "Reboot immediately without contacting the system manager:",
+      "syntax": "reboot --force"
+    },
+    {
+      "description": "Write the wtmp shutdown entry without rebooting the system:",
+      "syntax": "reboot --wtmp-only"
+    }
+  ]
+}

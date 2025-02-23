@@ -1,0 +1,34 @@
+{
+  "command": "box",
+  "description": "A PHP application for building and managing Phars. More information: https://github.com/box-project/box.",
+  "useCases": [
+    {
+      "description": "Compile a new Phar file:",
+      "syntax": "box compile"
+    },
+    {
+      "description": "Compile a new Phar file using a specific [c]onfiguration file:",
+      "syntax": "box compile -c {{path/to/config}}"
+    },
+    {
+      "description": "Display information about the PHAR PHP extension:",
+      "syntax": "box info"
+    },
+    {
+      "description": "Display information about a specific Phar file:",
+      "syntax": "box info {{path/to/phar_file}}"
+    },
+    {
+      "description": "Validate the first found configuration file in the working directory:",
+      "syntax": "box validate"
+    },
+    {
+      "description": "Verify the signature of a specific Phar file:",
+      "syntax": "box verify {{path/to/phar_file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "box help"
+    }
+  ]
+}

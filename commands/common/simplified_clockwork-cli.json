@@ -1,0 +1,18 @@
+{
+  "command": "clockwork-cli",
+  "description": "A command-line interface for the Clockwork PHP debugging framework. More information: https://github.com/ptrofimov/clockwork-cli.",
+  "useCases": [
+    {
+      "description": "Monitor Clockwork logs for the current project:",
+      "syntax": "clockwork-cli"
+    },
+    {
+      "description": "Monitor Clockwork logs for a specific project:",
+      "syntax": "clockwork-cli {{path/to/directory}}"
+    },
+    {
+      "description": "Monitor Clockwork logs for multiple projects:",
+      "syntax": "clockwork-cli {{path/to/directory1 path/to/directory2 ...}}"
+    }
+  ]
+}

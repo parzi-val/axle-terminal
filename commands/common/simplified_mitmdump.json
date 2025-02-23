@@ -1,0 +1,18 @@
+{
+  "command": "mitmdump",
+  "description": "View, record, and programmatically transform HTTP traffic. The command-line counterpart to mitmproxy. More information: https://docs.mitmproxy.org/stable/#mitmdump.",
+  "useCases": [
+    {
+      "description": "Start a proxy and save all output to a file:",
+      "syntax": "mitmdump -w {{path/to/file}}"
+    },
+    {
+      "description": "Filter a saved traffic file to just POST requests:",
+      "syntax": "mitmdump -nr {{input_filename}} -w {{output_filename}} &quot;{{~m post}}&quot;"
+    },
+    {
+      "description": "Replay a saved traffic file:",
+      "syntax": "mitmdump -nc {{path/to/file}}"
+    }
+  ]
+}

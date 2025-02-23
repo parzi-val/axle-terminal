@@ -1,0 +1,10 @@
+{
+  "command": "fprintd",
+  "description": "Fingerprint management daemon. More information: https://fprint.freedesktop.org/.",
+  "useCases": [
+    {
+      "description": "Display the man page for fprintd:",
+      "syntax": "man fprintd"
+    }
+  ]
+}

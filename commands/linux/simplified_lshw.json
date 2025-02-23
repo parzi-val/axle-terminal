@@ -1,0 +1,22 @@
+{
+  "command": "lshw",
+  "description": "List detailed information about hardware configurations as root user. More information: https://manned.org/lshw.",
+  "useCases": [
+    {
+      "description": "Launch the GUI:",
+      "syntax": "sudo lshw -X"
+    },
+    {
+      "description": "List all hardware in tabular format:",
+      "syntax": "sudo lshw -short"
+    },
+    {
+      "description": "List all disks and storage controllers in tabular format:",
+      "syntax": "sudo lshw -class disk -class storage -short"
+    },
+    {
+      "description": "Save all network interfaces to an HTML file:",
+      "syntax": "sudo lshw -class network -html &gt; {{interfaces.html}}"
+    }
+  ]
+}

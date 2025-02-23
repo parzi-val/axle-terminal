@@ -1,0 +1,14 @@
+{
+  "command": "rc",
+  "description": "A modern simplistic port listener & reverse shell. Similar to nc. More information: https://github.com/robiot/rustcat/wiki/Basic-Usage.",
+  "useCases": [
+    {
+      "description": "Start listening on a specific port:",
+      "syntax": "rc -lp {{port}}"
+    },
+    {
+      "description": "Start a reverse shell:",
+      "syntax": "rc {{host}} {{port}} -r {{shell}}"
+    }
+  ]
+}

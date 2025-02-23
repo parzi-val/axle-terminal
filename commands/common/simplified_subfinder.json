@@ -1,0 +1,26 @@
+{
+  "command": "subfinder",
+  "description": "Discover valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing. More information: https://github.com/projectdiscovery/subfinder.",
+  "useCases": [
+    {
+      "description": "Find subdomains for a specific [d]omain:",
+      "syntax": "subfinder -d {{example.com}}"
+    },
+    {
+      "description": "Show only the subdomains found:",
+      "syntax": "subfinder -silent -d {{example.com}}"
+    },
+    {
+      "description": "Show only active subdomains:",
+      "syntax": "subfinder -nW -d {{example.com}}"
+    },
+    {
+      "description": "Use all sources for enumeration:",
+      "syntax": "subfinder -all -d {{example.com}}"
+    },
+    {
+      "description": "Use a given comma-separated list of [r]esolvers:",
+      "syntax": "subfinder -r {{8.8.8.8,1.1.1.1,...}} -d {{example.com}}"
+    }
+  ]
+}

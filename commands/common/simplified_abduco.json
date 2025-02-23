@@ -1,0 +1,26 @@
+{
+  "command": "abduco",
+  "description": "Terminal session manager. More information: https://www.brain-dump.org/projects/abduco/.",
+  "useCases": [
+    {
+      "description": "List sessions:",
+      "syntax": "abduco"
+    },
+    {
+      "description": "[A]ttach to a session, creating it if it doesn't exist:",
+      "syntax": "abduco -A {{name}} {{bash}}"
+    },
+    {
+      "description": "[A]ttach to a session with dvtm, creating it if it doesn't exist:",
+      "syntax": "abduco -A {{name}}"
+    },
+    {
+      "description": "Detach from a session:",
+      "syntax": "&lt;Ctrl&gt; + \\"
+    },
+    {
+      "description": "[A]ttach to a session in [r]ead-only mode:",
+      "syntax": "abduco -Ar {{name}}"
+    }
+  ]
+}

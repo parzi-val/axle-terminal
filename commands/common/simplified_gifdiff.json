@@ -1,0 +1,14 @@
+{
+  "command": "gifdiff",
+  "description": "Compare two GIFs for identical visual appearance. See also: gifsicle. More information: https://www.lcdf.org/gifsicle.",
+  "useCases": [
+    {
+      "description": "Check how GIFs differ:",
+      "syntax": "gifdiff {{path/to/first.gif}} {{path/to/second.gif}}"
+    },
+    {
+      "description": "Check if GIFs differ:",
+      "syntax": "gifdiff --brief {{path/to/first.gif}} {{path/to/second.gif}}"
+    }
+  ]
+}

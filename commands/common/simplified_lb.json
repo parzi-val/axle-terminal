@@ -1,0 +1,30 @@
+{
+  "command": "lb",
+  "description": "Manage a blog contained in the current directory. Drafts and posts to operate on are selected interactively when running the commands. More information: https://github.com/LukeSmithxyz/lb.",
+  "useCases": [
+    {
+      "description": "Make a new draft:",
+      "syntax": "lb new"
+    },
+    {
+      "description": "Edit a draft:",
+      "syntax": "lb edit"
+    },
+    {
+      "description": "Delete a draft:",
+      "syntax": "lb trash"
+    },
+    {
+      "description": "Publish a draft:",
+      "syntax": "lb publish"
+    },
+    {
+      "description": "Delete a published post:",
+      "syntax": "lb delete"
+    },
+    {
+      "description": "Unpublish a published post to edit it as a draft again:",
+      "syntax": "lb revise"
+    }
+  ]
+}

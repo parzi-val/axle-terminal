@@ -1,0 +1,30 @@
+{
+  "command": "hg push",
+  "description": "Push changes from the local repository to a specified destination. More information: https://www.mercurial-scm.org/doc/hg.1.html#push.",
+  "useCases": [
+    {
+      "description": "Push changes to the \"default\" remote path:",
+      "syntax": "hg push"
+    },
+    {
+      "description": "Push changes to a specified remote repository:",
+      "syntax": "hg push {{path/to/destination_repository}}"
+    },
+    {
+      "description": "Push a new branch if it does not exist (disabled by default):",
+      "syntax": "hg push --new-branch"
+    },
+    {
+      "description": "Specify a specific revision changeset to push:",
+      "syntax": "hg push --rev {{revision}}"
+    },
+    {
+      "description": "Specify a specific branch to push:",
+      "syntax": "hg push --branch {{branch}}"
+    },
+    {
+      "description": "Specify a specific bookmark to push:",
+      "syntax": "hg push --bookmark {{bookmark}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "nemo",
+  "description": "Manage files and directories in Cinnamon desktop environment. More information: https://manned.org/nemo.",
+  "useCases": [
+    {
+      "description": "Open the current user home directory:",
+      "syntax": "nemo"
+    },
+    {
+      "description": "Open specific directories in separate windows:",
+      "syntax": "nemo {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Open specific directories in tabs:",
+      "syntax": "nemo --tabs {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Open a directory with a specific window size:",
+      "syntax": "nemo --geometry={{600}}x{{400}} {{path/to/directory}}"
+    },
+    {
+      "description": "Close all windows:",
+      "syntax": "nemo --quit"
+    }
+  ]
+}

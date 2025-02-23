@@ -1,0 +1,18 @@
+{
+  "command": "eopkg",
+  "description": "Package manager for Solus. More information: https://help.getsol.us/docs/user/package-management/basics.",
+  "useCases": [
+    {
+      "description": "Install a specific package:",
+      "syntax": "sudo eopkg install {{package}}"
+    },
+    {
+      "description": "Update all packages:",
+      "syntax": "sudo eopkg upgrade"
+    },
+    {
+      "description": "Search for packages:",
+      "syntax": "sudo eopkg search {{search_term}}"
+    }
+  ]
+}

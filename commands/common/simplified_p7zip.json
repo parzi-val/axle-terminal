@@ -1,0 +1,26 @@
+{
+  "command": "p7zip",
+  "description": "Wrapper of 7-Zip file archiver with high compression ratio. Internally executes either 7za or 7zr command. More information: https://p7zip.sourceforge.net.",
+  "useCases": [
+    {
+      "description": "Archive a file, replacing it with a 7zipped compressed version:",
+      "syntax": "p7zip {{path/to/file}}"
+    },
+    {
+      "description": "Archive a file keeping the input file:",
+      "syntax": "p7zip -k {{path/to/file}}"
+    },
+    {
+      "description": "Decompress a file, replacing it with the original uncompressed version:",
+      "syntax": "p7zip -d {{compressed.ext}}.7z"
+    },
+    {
+      "description": "Decompress a file keeping the input file:",
+      "syntax": "p7zip -d -k {{compressed.ext}}.7z"
+    },
+    {
+      "description": "Skip some checks and force compression or decompression:",
+      "syntax": "p7zip -f {{path/to/file}}"
+    }
+  ]
+}

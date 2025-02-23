@@ -1,0 +1,26 @@
+{
+  "command": "nginx",
+  "description": "Nginx web server. More information: https://nginx.org/en/.",
+  "useCases": [
+    {
+      "description": "Start server with the default configuration file:",
+      "syntax": "nginx"
+    },
+    {
+      "description": "Start server with a custom configuration file:",
+      "syntax": "nginx -c {{configuration_file}}"
+    },
+    {
+      "description": "Start server with a prefix for all relative paths in the configuration file:",
+      "syntax": "nginx -c {{configuration_file}} -p {{prefix/for/relative/paths}}"
+    },
+    {
+      "description": "Test the configuration without affecting the running server:",
+      "syntax": "nginx -t"
+    },
+    {
+      "description": "Reload the configuration by sending a signal with no downtime:",
+      "syntax": "nginx -s reload"
+    }
+  ]
+}

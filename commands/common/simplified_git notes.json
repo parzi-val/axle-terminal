@@ -1,0 +1,38 @@
+{
+  "command": "git notes",
+  "description": "Add or inspect object notes. More information: https://git-scm.com/docs/git-notes.",
+  "useCases": [
+    {
+      "description": "List all notes and the objects they are attached to:",
+      "syntax": "git notes list"
+    },
+    {
+      "description": "List all notes attached to a given object (defaults to HEAD):",
+      "syntax": "git notes list [{{object}}]"
+    },
+    {
+      "description": "Show the notes attached to a given object (defaults to HEAD):",
+      "syntax": "git notes show [{{object}}]"
+    },
+    {
+      "description": "Append a note to a specified object (opens the default text editor):",
+      "syntax": "git notes append {{object}}"
+    },
+    {
+      "description": "Append a note to a specified object, specifying the message:",
+      "syntax": "git notes append --message=&quot;{{message_text}}&quot;"
+    },
+    {
+      "description": "Edit an existing note (defaults to HEAD):",
+      "syntax": "git notes edit [{{object}}]"
+    },
+    {
+      "description": "Copy a note from one object to another:",
+      "syntax": "git notes copy {{source_object}} {{target_object}}"
+    },
+    {
+      "description": "Remove all the notes added to a specified object:",
+      "syntax": "git notes remove {{object}}"
+    }
+  ]
+}

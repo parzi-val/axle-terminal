@@ -1,0 +1,26 @@
+{
+  "command": "cloud-init",
+  "description": "Command line tool for managing cloud instance initialization. More information: https://cloudinit.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "Display the status of the most recent cloud-init run:",
+      "syntax": "cloud-init status"
+    },
+    {
+      "description": "Wait for cloud-init to finish running and then report status:",
+      "syntax": "cloud-init status --wait"
+    },
+    {
+      "description": "List available top-level metadata keys to query:",
+      "syntax": "cloud-init query --list-keys"
+    },
+    {
+      "description": "Query cached instance metadata for data:",
+      "syntax": "cloud-init query {{dot_delimited_variable_path}}"
+    },
+    {
+      "description": "Clean logs and artifacts to allow cloud-init to rerun:",
+      "syntax": "cloud-init clean"
+    }
+  ]
+}

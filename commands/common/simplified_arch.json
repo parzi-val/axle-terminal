@@ -1,0 +1,10 @@
+{
+  "command": "arch",
+  "description": "Display the name of the system architecture. See also uname. More information: https://www.gnu.org/software/coreutils/manual/html_node/arch-invocation.html.",
+  "useCases": [
+    {
+      "description": "Display the system's architecture:",
+      "syntax": "arch"
+    }
+  ]
+}

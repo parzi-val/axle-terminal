@@ -1,0 +1,10 @@
+{
+  "command": "qm pending",
+  "description": "Get the virtual machine configuration with both current and pending values. More information: https://pve.proxmox.com/pve-docs/qm.1.html.",
+  "useCases": [
+    {
+      "description": "Get the virtual machine configuration of a specific virtual machine:",
+      "syntax": "qm pending {{vm_id}}"
+    }
+  ]
+}

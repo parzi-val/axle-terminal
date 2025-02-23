@@ -1,0 +1,18 @@
+{
+  "command": "pueue group",
+  "description": "Display, add or remove groups. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Show all groups with their statuses and number of parallel jobs:",
+      "syntax": "pueue group"
+    },
+    {
+      "description": "Add a custom group:",
+      "syntax": "pueue group --add &quot;{{group_name}}&quot;"
+    },
+    {
+      "description": "Remove a group and move its tasks to the default group:",
+      "syntax": "pueue group --remove &quot;{{group_name}}&quot;"
+    }
+  ]
+}

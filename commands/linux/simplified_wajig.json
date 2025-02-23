@@ -1,0 +1,38 @@
+{
+  "command": "wajig",
+  "description": "Simplified all-in-one-place system support tool for Debian-based systems. More information: https://wajig.togaware.com.",
+  "useCases": [
+    {
+      "description": "Update the list of available packages and versions:",
+      "syntax": "wajig update"
+    },
+    {
+      "description": "Install a package, or update it to the latest available version:",
+      "syntax": "wajig install {{package}}"
+    },
+    {
+      "description": "Remove a package and its configuration files:",
+      "syntax": "wajig purge {{package}}"
+    },
+    {
+      "description": "Perform an update and then a dist-upgrade:",
+      "syntax": "wajig daily-upgrade"
+    },
+    {
+      "description": "Display the sizes of installed packages:",
+      "syntax": "wajig sizes"
+    },
+    {
+      "description": "List the version and distribution for all installed packages:",
+      "syntax": "wajig versions"
+    },
+    {
+      "description": "List versions of upgradable packages:",
+      "syntax": "wajig toupgrade"
+    },
+    {
+      "description": "Display packages which have some form of dependency on the given package:",
+      "syntax": "wajig dependents {{package}}"
+    }
+  ]
+}

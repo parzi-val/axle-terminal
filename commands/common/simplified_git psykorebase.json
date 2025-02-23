@@ -1,0 +1,18 @@
+{
+  "command": "git psykorebase",
+  "description": "Rebase a branch on top of another using a merge commit and only one conflict handling. Part of git-extras. More information: https://github.com/tj/git-extras/blob/master/Commands.md#git-psykorebase.",
+  "useCases": [
+    {
+      "description": "Rebase the current branch on top of another using a merge commit and only one conflict handling:",
+      "syntax": "git psykorebase {{upstream_branch}}"
+    },
+    {
+      "description": "Continue after conflicts have been handled:",
+      "syntax": "git psykorebase --continue"
+    },
+    {
+      "description": "Specify the branch to rebase:",
+      "syntax": "git psykorebase {{upstream_branch}} {{target_branch}}"
+    }
+  ]
+}

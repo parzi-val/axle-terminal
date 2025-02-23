@@ -1,0 +1,18 @@
+{
+  "command": "crane index",
+  "description": "Modify an image index. The subcommands append and filter have their own usage documentation. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_index.md.",
+  "useCases": [
+    {
+      "description": "Modify an image index:",
+      "syntax": "crane index"
+    },
+    {
+      "description": "Modify an image index with subcommand:",
+      "syntax": "crane index {{subcommand}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane index {{-h|--help}}"
+    }
+  ]
+}

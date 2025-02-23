@@ -1,0 +1,26 @@
+{
+  "command": "ifdata",
+  "description": "Display information about a network interface. More information: https://joeyh.name/code/moreutils/.",
+  "useCases": [
+    {
+      "description": "Display the whole configuration of the specified interface:",
+      "syntax": "ifdata -p {{eth0}}"
+    },
+    {
+      "description": "Indicate the [e]xistence of the specified interface via the exit code:",
+      "syntax": "ifdata -e {{eth0}}"
+    },
+    {
+      "description": "Display the IPv4 [a]dress and the [n]etmask of the specified interface:",
+      "syntax": "ifdata -pa -pn {{eth0}}"
+    },
+    {
+      "description": "Display the [N]etwork adress, the [b]roadcast adress, and the MTU of the specified interface:",
+      "syntax": "ifdata -pN -pb -pm {{eth0}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ifdata"
+    }
+  ]
+}

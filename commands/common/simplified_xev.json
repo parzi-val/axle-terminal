@@ -1,0 +1,22 @@
+{
+  "command": "xev",
+  "description": "Print contents of X events. More information: https://gitlab.freedesktop.org/xorg/app/xev.",
+  "useCases": [
+    {
+      "description": "Monitor all occurring X events:",
+      "syntax": "xev"
+    },
+    {
+      "description": "Monitor all X events of the root window instead of creating a new one:",
+      "syntax": "xev -root"
+    },
+    {
+      "description": "Monitor all X events of a particular window:",
+      "syntax": "xev -id {{window_id}}"
+    },
+    {
+      "description": "Monitor X events from a given category (can be specified multiple times):",
+      "syntax": "xev -event {{event_category}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "lastcomm",
+  "description": "Show last commands executed. More information: https://manpages.debian.org/latest/acct/lastcomm.1.en.html.",
+  "useCases": [
+    {
+      "description": "Print information about all the commands in the acct (record file):",
+      "syntax": "lastcomm"
+    },
+    {
+      "description": "Display commands executed by a given user:",
+      "syntax": "lastcomm --user {{user}}"
+    },
+    {
+      "description": "Display information about a given command executed on the system:",
+      "syntax": "lastcomm --command {{command}}"
+    },
+    {
+      "description": "Display information about commands executed on a given terminal:",
+      "syntax": "lastcomm --tty {{terminal_name}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "perl",
+  "description": "The Perl 5 language interpreter. More information: https://www.perl.org.",
+  "useCases": [
+    {
+      "description": "Print lines from stdin [m/] matching regex1 and case insensitive [/i] regex2:",
+      "syntax": "perl -n -e 'print if m/{{regex1}}/ and m/{{regex2}}/i'"
+    },
+    {
+      "description": "Say [-E] first match group, using a regexp, ignoring space in regex [/x]:",
+      "syntax": "perl -n -E 'say $1 if m/{{before}} (  {{group_regex}}  ) {{after}}/x'"
+    },
+    {
+      "description": "[-i]n-place, with backup, [s/] substitute all occurrence [/g] of regex with replacement:",
+      "syntax": "perl -i'.bak' -p -e 's/{{regex}}/{{replacement}}/g' {{path/to/files}}"
+    },
+    {
+      "description": "Use perl's inline documentation, some pages also available via manual pages on Linux:",
+      "syntax": "perldoc perlrun ; perldoc module ; perldoc -f splice; perldoc -q perlfaq1"
+    }
+  ]
+}

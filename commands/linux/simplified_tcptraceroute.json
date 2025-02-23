@@ -1,0 +1,30 @@
+{
+  "command": "tcptraceroute",
+  "description": "A traceroute implementation using TCP packets. More information: https://github.com/mct/tcptraceroute.",
+  "useCases": [
+    {
+      "description": "Trace the route to a host:",
+      "syntax": "tcptraceroute {{host}}"
+    },
+    {
+      "description": "Specify the destination port and packet length in bytes:",
+      "syntax": "tcptraceroute {{host}} {{destination_port}} {{packet_length}}"
+    },
+    {
+      "description": "Specify the local source port and source address:",
+      "syntax": "tcptraceroute {{host}} -p {{source_port}} -s {{source_address}}"
+    },
+    {
+      "description": "Set the first and maximum TTL:",
+      "syntax": "tcptraceroute {{host}} -f {{first_ttl}} -m {{max_ttl}}"
+    },
+    {
+      "description": "Specify the wait time and number of queries per hop:",
+      "syntax": "tcptraceroute {{host}} -w {{wait_time}} -q {{number_of_queries}}"
+    },
+    {
+      "description": "Specify the interface:",
+      "syntax": "tcptraceroute {{host}} -i {{interface}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "openttd",
+  "description": "Open source clone of the Microprose game \"Transport Tycoon Deluxe\". More information: https://www.openttd.org.",
+  "useCases": [
+    {
+      "description": "Start a new game:",
+      "syntax": "openttd -g"
+    },
+    {
+      "description": "Load save game at start:",
+      "syntax": "openttd -g {{path/to/file}}"
+    },
+    {
+      "description": "Start with the specified window resolution:",
+      "syntax": "openttd -r {{1920x1080}}"
+    },
+    {
+      "description": "Start with a custom configuration file:",
+      "syntax": "openttd -c {{path/to/file}}"
+    },
+    {
+      "description": "Start with selected video, sound, and music drivers:",
+      "syntax": "openttd -v {{video_driver}} -s {{sound_driver}} -m {{music_driver}}"
+    },
+    {
+      "description": "Start a dedicated server, forked in the background:",
+      "syntax": "openttd -f -D {{host}}:{{port}}"
+    },
+    {
+      "description": "Join a server with a password:",
+      "syntax": "openttd -n {{host}}:{{port}}#{{player_name}} -p {{password}}"
+    }
+  ]
+}

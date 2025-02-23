@@ -1,0 +1,30 @@
+{
+  "command": "immich-cli",
+  "description": "Immich has a command-line interface (CLI) that allows you to perform certain actions from the command-line. See also: immich-go. More information: https://immich.app/docs/features/command-line-interface/.",
+  "useCases": [
+    {
+      "description": "Authenticate to Immich server:",
+      "syntax": "immich login {{server_url/api}} {{server_key}}"
+    },
+    {
+      "description": "Upload some image files:",
+      "syntax": "immich upload {{file1.jpg file2.jpg}}"
+    },
+    {
+      "description": "Upload a directory including subdirectories:",
+      "syntax": "immich upload --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Create an album based on a directory:",
+      "syntax": "immich upload --album-name &quot;{{My summer holiday}}&quot; --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Skip assets matching a glob pattern:",
+      "syntax": "immich upload --ignore {{**/Raw/** **/*.tif}} --recursive {{path/to/directory}}"
+    },
+    {
+      "description": "Include hidden files:",
+      "syntax": "immich upload --include-hidden --recursive {{path/to/directory}}"
+    }
+  ]
+}

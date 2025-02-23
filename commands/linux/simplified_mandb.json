@@ -1,0 +1,30 @@
+{
+  "command": "mandb",
+  "description": "Manage the pre-formatted manual page database. More information: https://manned.org/mandb.",
+  "useCases": [
+    {
+      "description": "Purge and process manual pages:",
+      "syntax": "mandb"
+    },
+    {
+      "description": "Update a single entry:",
+      "syntax": "mandb --filename {{path/to/file}}"
+    },
+    {
+      "description": "Create entries from scratch instead of updating:",
+      "syntax": "mandb --create"
+    },
+    {
+      "description": "Only process user databases:",
+      "syntax": "mandb --user-db"
+    },
+    {
+      "description": "Do not purge obsolete entries:",
+      "syntax": "mandb --no-purge"
+    },
+    {
+      "description": "Check the validity of manual pages:",
+      "syntax": "mandb --test"
+    }
+  ]
+}

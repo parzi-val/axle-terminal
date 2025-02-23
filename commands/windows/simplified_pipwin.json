@@ -1,0 +1,30 @@
+{
+  "command": "pipwin",
+  "description": "A tool to install unofficial Python package binaries on Windows. More information: https://github.com/lepisma/pipwin.",
+  "useCases": [
+    {
+      "description": "List all available packages for download:",
+      "syntax": "pipwin list"
+    },
+    {
+      "description": "Search packages:",
+      "syntax": "pipwin search {{partial_name|name}}"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "pipwin install {{package}}"
+    },
+    {
+      "description": "Uninstall a package:",
+      "syntax": "pipwin uninstall {{package}}"
+    },
+    {
+      "description": "Download a package to a specific directory:",
+      "syntax": "pipwin download --dest {{path\\to\\directory}} {{package}}"
+    },
+    {
+      "description": "Install packages according to requirements.txt:",
+      "syntax": "pipwin install --file {{path\\to\\requirements.txt}}"
+    }
+  ]
+}

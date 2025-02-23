@@ -1,0 +1,38 @@
+{
+  "command": "etcdctl",
+  "description": "Interact with etcd, a highly-available key-value pair store. More information: https://etcd.io/docs/latest/dev-guide/interacting_v3/.",
+  "useCases": [
+    {
+      "description": "Display the value associated with a specified key:",
+      "syntax": "etcdctl get {{my/key}}"
+    },
+    {
+      "description": "Store a key-value pair:",
+      "syntax": "etcdctl put {{my/key}} {{my_value}}"
+    },
+    {
+      "description": "Delete a key-value pair:",
+      "syntax": "etcdctl del {{my/key}}"
+    },
+    {
+      "description": "Store a key-value pair, reading the value from a file:",
+      "syntax": "etcdctl put {{my/file}} &lt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Save a snapshot of the etcd keystore:",
+      "syntax": "etcdctl snapshot save {{path/to/snapshot.db}}"
+    },
+    {
+      "description": "Restore a snapshot of an etcd keystore (restart the etcd server afterwards):",
+      "syntax": "etcdctl snapshot restore {{path/to/snapshot.db}}"
+    },
+    {
+      "description": "Add a user:",
+      "syntax": "etcdctl user add {{my_user}}"
+    },
+    {
+      "description": "Watch a key for changes:",
+      "syntax": "etcdctl watch {{my/key}}"
+    }
+  ]
+}

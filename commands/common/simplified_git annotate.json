@@ -1,0 +1,18 @@
+{
+  "command": "git annotate",
+  "description": "Show commit hash and last author on each line of a file. See git blame, which is preferred over git annotate. git annotate is provided for those familiar with other version control systems. More information: https://git-scm.com/docs/git-annotate.",
+  "useCases": [
+    {
+      "description": "Print a file with the author name and commit hash prepended to each line:",
+      "syntax": "git annotate {{path/to/file}}"
+    },
+    {
+      "description": "Print a file with the author email and commit hash prepended to each line:",
+      "syntax": "git annotate {{-e|--show-email}} {{path/to/file}}"
+    },
+    {
+      "description": "Print only rows that match a regular expression:",
+      "syntax": "git annotate -L :{{regexp}} {{path/to/file}}"
+    }
+  ]
+}

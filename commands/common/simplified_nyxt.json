@@ -1,0 +1,22 @@
+{
+  "command": "nyxt",
+  "description": "A keyboard-driven web browser for power users. More information: https://nyxt.atlas.engineer.",
+  "useCases": [
+    {
+      "description": "List all profiles:",
+      "syntax": "nyxt --list-data-profiles"
+    },
+    {
+      "description": "Set the init.lisp file path:",
+      "syntax": "nyxt --init {{path/to/file}}"
+    },
+    {
+      "description": "Change the path to the auto-config file:",
+      "syntax": "nyxt --auto-config {{path/to/file}}"
+    },
+    {
+      "description": "Print system information:",
+      "syntax": "nyxt --system-information"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "tracepath",
+  "description": "Trace the path to a network host discovering MTU along this path. More information: https://manned.org/tracepath.",
+  "useCases": [
+    {
+      "description": "A preferred way to trace the path to a host:",
+      "syntax": "tracepath -p {{33434}} {{host}}"
+    },
+    {
+      "description": "Specify the initial destination port, useful with non-standard firewall settings:",
+      "syntax": "tracepath -p {{destination_port}} {{host}}"
+    },
+    {
+      "description": "Print both hostnames and numerical IP addresses:",
+      "syntax": "tracepath -b {{host}}"
+    },
+    {
+      "description": "Specify a maximum TTL (number of hops):",
+      "syntax": "tracepath -m {{max_hops}} {{host}}"
+    },
+    {
+      "description": "Specify the initial packet length (defaults to 65535 for IPv4 and 128000 for IPv6):",
+      "syntax": "tracepath -l {{packet_length}} {{host}}"
+    },
+    {
+      "description": "Use only IPv6 addresses:",
+      "syntax": "tracepath -6 {{host}}"
+    }
+  ]
+}

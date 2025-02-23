@@ -1,0 +1,22 @@
+{
+  "command": "docker save",
+  "description": "Export Docker images to archive. More information: https://docs.docker.com/reference/cli/docker/image/save/.",
+  "useCases": [
+    {
+      "description": "Save an image by redirecting stdout to a tar archive:",
+      "syntax": "docker save {{image}}:{{tag}} &gt; {{path/to/file.tar}}"
+    },
+    {
+      "description": "Save an image to a tar archive:",
+      "syntax": "docker save --output {{path/to/file.tar}} {{image}}:{{tag}}"
+    },
+    {
+      "description": "Save all tags of the image:",
+      "syntax": "docker save --output {{path/to/file.tar}} {{image_name}}"
+    },
+    {
+      "description": "Cherry-pick particular tags of an image to save:",
+      "syntax": "docker save --output {{path/to/file.tar}} {{image_name:tag1 image_name:tag2 ...}}"
+    }
+  ]
+}

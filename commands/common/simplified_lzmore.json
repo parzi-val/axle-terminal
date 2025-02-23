@@ -1,0 +1,10 @@
+{
+  "command": "lzmore",
+  "description": "This command is an alias of xzmore.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr xzmore"
+    }
+  ]
+}

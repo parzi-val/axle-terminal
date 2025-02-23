@@ -1,0 +1,30 @@
+{
+  "command": "bazel",
+  "description": "Open-source build and test tool similar to Make, Maven, and Gradle. More information: https://bazel.build/reference/command-line-reference.",
+  "useCases": [
+    {
+      "description": "Build the specified target in the workspace:",
+      "syntax": "bazel build {{target}}"
+    },
+    {
+      "description": "Remove output files and stop the server if running:",
+      "syntax": "bazel clean"
+    },
+    {
+      "description": "Stop the bazel server:",
+      "syntax": "bazel shutdown"
+    },
+    {
+      "description": "Display runtime info about the bazel server:",
+      "syntax": "bazel info"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "bazel help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "bazel version"
+    }
+  ]
+}

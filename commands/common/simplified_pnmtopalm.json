@@ -1,0 +1,26 @@
+{
+  "command": "pnmtopalm",
+  "description": "Convert a PNM image to a Palm bitmap. More information: https://netpbm.sourceforge.net/doc/pnmtopalm.html.",
+  "useCases": [
+    {
+      "description": "Convert a PNM image to a Palm bitmap:",
+      "syntax": "pnmtopalm {{path/to/file.pnm}} &gt; {{path/to/file.palm}}"
+    },
+    {
+      "description": "Specify the color depth of the resulting bitmap:",
+      "syntax": "pnmtopalm -depth {{1|2|4|8|16}} {{path/to/file.pnm}} &gt; {{path/to/file.palm}}"
+    },
+    {
+      "description": "Choose a compression method for the resulting bitmap:",
+      "syntax": "pnmtopalm -{{scanline_compression|rle_compression|packbits_compression}} {{path/to/file.pnm}} &gt; {{path/to/file.palm}}"
+    },
+    {
+      "description": "Build a custom colormap and include it in the resulting bitmap:",
+      "syntax": "pnmtopalm -colormap {{path/to/file.pnm}} &gt; {{path/to/file.palm}}"
+    },
+    {
+      "description": "Specify the bitmap's density:",
+      "syntax": "pnmtopalm -density {{72|108|144|216|288}} {{path/to/file.pnm}} &gt; {{path/to/file.palm}}"
+    }
+  ]
+}

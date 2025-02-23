@@ -1,0 +1,26 @@
+{
+  "command": "vboxmanage-extpack",
+  "description": "Manage extension packs for Oracle VirtualBox. More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-extpack.",
+  "useCases": [
+    {
+      "description": "Install extension packs to VirtualBox (Note: you need to remove the existing version of the extension pack before installing a new version.):",
+      "syntax": "VBoxManage extpack install {{path/to/file.vbox-extpack}}"
+    },
+    {
+      "description": "Remove the existing version of the VirtualBox extension pack:",
+      "syntax": "VBoxManage extpack install --replace"
+    },
+    {
+      "description": "Uninstall extension packs from VirtualBox:",
+      "syntax": "VBoxManage extpack uninstall {{extension_pack_name}}"
+    },
+    {
+      "description": "Uninstall extension packs and skip most uninstallation refusals:",
+      "syntax": "VBoxManage extpack uninstall --force {{extension_pack_name}}"
+    },
+    {
+      "description": "Clean up temporary files and directories left by extension packs:",
+      "syntax": "VBoxManage extpack cleanup"
+    }
+  ]
+}

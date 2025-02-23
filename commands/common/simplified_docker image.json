@@ -1,0 +1,26 @@
+{
+  "command": "docker image",
+  "description": "Manage Docker images. See also: docker build, docker import, and docker pull. More information: https://docs.docker.com/reference/cli/docker/image/.",
+  "useCases": [
+    {
+      "description": "List local Docker images:",
+      "syntax": "docker image ls"
+    },
+    {
+      "description": "Delete unused local Docker images:",
+      "syntax": "docker image prune"
+    },
+    {
+      "description": "Delete all unused images (not just those without a tag):",
+      "syntax": "docker image prune --all"
+    },
+    {
+      "description": "Show the history of a local Docker image:",
+      "syntax": "docker image history {{image}}"
+    },
+    {
+      "description": "View documentation for docker image rm:",
+      "syntax": "tldr docker rmi"
+    }
+  ]
+}

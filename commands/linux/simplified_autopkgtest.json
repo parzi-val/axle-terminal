@@ -1,0 +1,26 @@
+{
+  "command": "autopkgtest",
+  "description": "Run tests on Debian packages. More information: https://wiki.debian.org/ContinuousIntegration/autopkgtest.",
+  "useCases": [
+    {
+      "description": "Build the package in the current directory and run all tests directly on the system:",
+      "syntax": "autopkgtest -- {{null}}"
+    },
+    {
+      "description": "Run a specific test for the package in the current directory:",
+      "syntax": "autopkgtest --test-name={{test_name}} -- {{null}}"
+    },
+    {
+      "description": "Download and build a specific package with apt-get, then run all tests:",
+      "syntax": "autopkgtest {{package}} -- {{null}}"
+    },
+    {
+      "description": "Test the package in the current directory using a new root directory:",
+      "syntax": "autopkgtest -- {{chroot}} {{path/to/new/root}}"
+    },
+    {
+      "description": "Test the package in the current directory without rebuilding it:",
+      "syntax": "autopkgtest --no-built-binaries -- {{null}}"
+    }
+  ]
+}

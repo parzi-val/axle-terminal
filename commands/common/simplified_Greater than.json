@@ -1,0 +1,26 @@
+{
+  "command": "Greater than",
+  "description": "Redirect output to a file. More information: https://gnu.org/software/bash/manual/bash.html#Redirecting-Output.",
+  "useCases": [
+    {
+      "description": "Redirect stdout to a file:",
+      "syntax": "{{command}} &gt; {{path/to/file}}"
+    },
+    {
+      "description": "Append to a file:",
+      "syntax": "{{command}} &gt;&gt; {{path/to/file}}"
+    },
+    {
+      "description": "Redirect both stdout and stderr to a file:",
+      "syntax": "{{command}} &amp;&gt; {{path/to/file}}"
+    },
+    {
+      "description": "Redirect stderr to /dev/null to keep the terminal output clean:",
+      "syntax": "{{command}} 2&gt; /dev/null"
+    },
+    {
+      "description": "Clear the file contents or create a new empty file:",
+      "syntax": "&gt; {{path/to/file}}"
+    }
+  ]
+}

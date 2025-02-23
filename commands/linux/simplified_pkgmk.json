@@ -1,0 +1,30 @@
+{
+  "command": "pkgmk",
+  "description": "Make a binary package for use with pkgadd on CRUX. More information: https://docs.oracle.com/cd/E88353_01/html/E37839/pkgmk-1.html.",
+  "useCases": [
+    {
+      "description": "Make and download a package:",
+      "syntax": "pkgmk -d"
+    },
+    {
+      "description": "Install the package after making it:",
+      "syntax": "pkgmk -d -i"
+    },
+    {
+      "description": "Upgrade the package after making it:",
+      "syntax": "pkgmk -d -u"
+    },
+    {
+      "description": "Ignore the footprint when making a package:",
+      "syntax": "pkgmk -d -if"
+    },
+    {
+      "description": "Ignore the MD5 sum when making a package:",
+      "syntax": "pkgmk -d -im"
+    },
+    {
+      "description": "Update the package's footprint:",
+      "syntax": "pkgmk -uf"
+    }
+  ]
+}

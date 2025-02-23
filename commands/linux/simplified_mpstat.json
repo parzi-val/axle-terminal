@@ -1,0 +1,18 @@
+{
+  "command": "mpstat",
+  "description": "Report CPU statistics. More information: https://manned.org/mpstat.",
+  "useCases": [
+    {
+      "description": "Display CPU statistics every 2 seconds:",
+      "syntax": "mpstat {{2}}"
+    },
+    {
+      "description": "Display 5 reports, one by one, at 2 second intervals:",
+      "syntax": "mpstat {{2}} {{5}}"
+    },
+    {
+      "description": "Display 5 reports, one by one, from a given processor, at 2 second intervals:",
+      "syntax": "mpstat -P {{0}} {{2}} {{5}}"
+    }
+  ]
+}

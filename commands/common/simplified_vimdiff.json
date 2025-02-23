@@ -1,0 +1,38 @@
+{
+  "command": "vimdiff",
+  "description": "Open up two or more files in vim and show the differences between them. See also: vim, vimtutor, nvim. More information: https://www.vim.org.",
+  "useCases": [
+    {
+      "description": "Open two files and show the differences:",
+      "syntax": "vimdiff {{path/to/file1}} {{path/to/file2}}"
+    },
+    {
+      "description": "Move the cursor to the window on the left|right:",
+      "syntax": "&lt;Ctrl&gt; + w {{h|l}}"
+    },
+    {
+      "description": "Jump to the previous difference:",
+      "syntax": "[c"
+    },
+    {
+      "description": "Jump to the next difference:",
+      "syntax": "]c"
+    },
+    {
+      "description": "Copy the highlighted difference from the other window to the current window:",
+      "syntax": "do"
+    },
+    {
+      "description": "Copy the highlighted difference from the current window to the other window:",
+      "syntax": "dp"
+    },
+    {
+      "description": "Update all highlights and folds:",
+      "syntax": ":diffupdate"
+    },
+    {
+      "description": "Toggle the highlighted code fold:",
+      "syntax": "za"
+    }
+  ]
+}

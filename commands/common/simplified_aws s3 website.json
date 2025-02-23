@@ -1,0 +1,14 @@
+{
+  "command": "aws s3 website",
+  "description": "Set the website configuration for a bucket. See also: aws s3. More information: https://docs.aws.amazon.com/cli/latest/reference/s3/website.html.",
+  "useCases": [
+    {
+      "description": "Configure a bucket as a static website:",
+      "syntax": "aws s3 website {{s3://bucket-name}} --index-document {{index.html}}"
+    },
+    {
+      "description": "Configure an error page for the website:",
+      "syntax": "aws s3 website {{s3://bucket-name}} --index-document {{index.html}} --error-document {{error.html}}"
+    }
+  ]
+}

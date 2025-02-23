@@ -1,0 +1,26 @@
+{
+  "command": "localectl",
+  "description": "Control the system locale and keyboard layout settings. More information: https://www.freedesktop.org/software/systemd/man/localectl.html.",
+  "useCases": [
+    {
+      "description": "Show the current settings of the system locale and keyboard mapping:",
+      "syntax": "localectl"
+    },
+    {
+      "description": "List available locales:",
+      "syntax": "localectl list-locales"
+    },
+    {
+      "description": "Set a system locale variable:",
+      "syntax": "localectl set-locale {{LANG}}={{en_US.UTF-8}}"
+    },
+    {
+      "description": "List available keymaps:",
+      "syntax": "localectl list-keymaps"
+    },
+    {
+      "description": "Set the system keyboard mapping for the console and X11:",
+      "syntax": "localectl set-keymap {{us}}"
+    }
+  ]
+}

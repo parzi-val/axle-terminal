@@ -1,0 +1,18 @@
+{
+  "command": "agate",
+  "description": "A simple server for the Gemini network protocol. More information: https://github.com/mbrubeck/agate.",
+  "useCases": [
+    {
+      "description": "Run and generate a private key and certificate:",
+      "syntax": "agate --content {{path/to/content/}} --addr {{[::]:1965}} --addr {{0.0.0.0:1965}} --hostname {{example.com}} --lang {{en-US}}"
+    },
+    {
+      "description": "Run server:",
+      "syntax": "agate {{path/to/file}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "agate -h"
+    }
+  ]
+}

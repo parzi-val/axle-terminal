@@ -1,0 +1,22 @@
+{
+  "command": "choco info",
+  "description": "Display detailed information about a package with Chocolatey. More information: https://chocolatey.org/docs/commands-info.",
+  "useCases": [
+    {
+      "description": "Display information on a specific package:",
+      "syntax": "choco info {{package}}"
+    },
+    {
+      "description": "Display information for a local package only:",
+      "syntax": "choco info {{package}} --local-only"
+    },
+    {
+      "description": "Specify a custom source to receive packages information from:",
+      "syntax": "choco info {{package}} --source {{source_url|alias}}"
+    },
+    {
+      "description": "Provide a username and password for authentication:",
+      "syntax": "choco info {{package}} --user {{username}} --password {{password}}"
+    }
+  ]
+}

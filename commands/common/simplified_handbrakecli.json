@@ -1,0 +1,30 @@
+{
+  "command": "handbrakecli",
+  "description": "Command-line interface to the HandBrake video conversion and DVD ripping tool. More information: https://handbrake.fr/.",
+  "useCases": [
+    {
+      "description": "Convert a video file to MKV (AAC 160kbit audio and x264 CRF20 video):",
+      "syntax": "handbrakecli --input {{input.avi}} --output {{output.mkv}} --encoder x264 --quality 20 --ab 160"
+    },
+    {
+      "description": "Resize a video file to 320x240:",
+      "syntax": "handbrakecli --input {{input.mp4}} --output {{output.mp4}} --width 320 --height 240"
+    },
+    {
+      "description": "List available presets:",
+      "syntax": "handbrakecli --preset-list"
+    },
+    {
+      "description": "Convert an AVI video to MP4 using the Android preset:",
+      "syntax": "handbrakecli --preset=&quot;Android&quot; --input {{input.ext}} --output {{output.mp4}}"
+    },
+    {
+      "description": "Print the content of a DVD, getting the CSS keys in the process:",
+      "syntax": "handbrakecli --input {{/dev/sr0}} --title 0"
+    },
+    {
+      "description": "Rip the first track of a DVD in the specified device. Audiotracks and subtitle languages are specified as lists:",
+      "syntax": "handbrakecli --input {{/dev/sr0}} --title 1 --output {{out.mkv}} --format av_mkv --encoder x264 --subtitle {{1,4,5}} --audio {{1,2}} --aencoder copy --quality {{23}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "last",
+  "description": "List information of last user logins. See also: lastb, login. More information: https://manned.org/last.1.",
+  "useCases": [
+    {
+      "description": "List login information (e.g., username, terminal, boot time, kernel) of all users:",
+      "syntax": "last"
+    },
+    {
+      "description": "List login information of a specific user:",
+      "syntax": "last {{username}}"
+    },
+    {
+      "description": "List information of a specific TTY:",
+      "syntax": "last {{tty1}}"
+    },
+    {
+      "description": "List most recent information (by default, the newest are at the top):",
+      "syntax": "last | tac"
+    },
+    {
+      "description": "List information of system boots:",
+      "syntax": "last &quot;{{system boot}}&quot;"
+    },
+    {
+      "description": "List information with a specific [t]imestamp format:",
+      "syntax": "last --time-format {{notime|full|iso}}"
+    },
+    {
+      "description": "List information [s]ince a specific time and date:",
+      "syntax": "last --since {{-7days}}"
+    },
+    {
+      "description": "List information (i.e., hostname and IP) of remote hosts:",
+      "syntax": "last --dns"
+    }
+  ]
+}

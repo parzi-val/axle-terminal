@@ -1,0 +1,38 @@
+{
+  "command": "waydroid",
+  "description": "A container-based approach to boot a full Android system on a regular Linux system like Ubuntu. More information: https://docs.waydro.id.",
+  "useCases": [
+    {
+      "description": "Start Waydroid:",
+      "syntax": "waydroid"
+    },
+    {
+      "description": "Initialize Waydroid (required on first run or after reinstalling Android):",
+      "syntax": "sudo waydroid init"
+    },
+    {
+      "description": "Install a new Android app from a file:",
+      "syntax": "waydroid app install {{path/to/file.apk}}"
+    },
+    {
+      "description": "Launch an Android app by its package name:",
+      "syntax": "waydroid app launch {{com.example.app}}"
+    },
+    {
+      "description": "Start or stop the Waydroid session:",
+      "syntax": "waydroid session {{start|stop}}"
+    },
+    {
+      "description": "Manage the Waydroid container:",
+      "syntax": "sudo waydroid container {{start|stop|restart|freeze|unfreeze}}"
+    },
+    {
+      "description": "Open Waydroid shell:",
+      "syntax": "sudo waydroid shell"
+    },
+    {
+      "description": "Adjust Waydroid window dimensions:",
+      "syntax": "waydroid prop set persist.waydroid.{{width|height}} {{number}}"
+    }
+  ]
+}

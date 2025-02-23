@@ -1,0 +1,14 @@
+{
+  "command": "vgscan",
+  "description": "Scan for volume groups on all supported Logical Volume Manager (LVM) block devices. See also: lvm and vgchange. More information: https://manned.org/vgscan.",
+  "useCases": [
+    {
+      "description": "Scan for volume groups and print information about each group found:",
+      "syntax": "sudo vgscan"
+    },
+    {
+      "description": "Scan for volume groups and add the special files in /dev, if they don't already exist, needed to access the logical volumes in the found groups:",
+      "syntax": "sudo vgscan --mknodes"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "dpkg-query",
+  "description": "Display information about installed packages. More information: https://manned.org/dpkg-query.1.",
+  "useCases": [
+    {
+      "description": "List all installed packages:",
+      "syntax": "dpkg-query --list"
+    },
+    {
+      "description": "List installed packages matching a pattern:",
+      "syntax": "dpkg-query --list '{{libc6*}}'"
+    },
+    {
+      "description": "List all files installed by a package:",
+      "syntax": "dpkg-query --listfiles {{libc6}}"
+    },
+    {
+      "description": "Show information about a package:",
+      "syntax": "dpkg-query --status {{libc6}}"
+    },
+    {
+      "description": "Search for packages that own files matching a pattern:",
+      "syntax": "dpkg-query --search {{/etc/ld.so.conf.d}}"
+    }
+  ]
+}

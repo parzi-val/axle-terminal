@@ -1,0 +1,26 @@
+{
+  "command": "sqlmap",
+  "description": "Detect and exploit SQL injection flaws. More information: https://sqlmap.org.",
+  "useCases": [
+    {
+      "description": "Run sqlmap against a single target URL:",
+      "syntax": "python sqlmap.py -u &quot;{{http://www.target.com/vuln.php?id=1}}&quot;"
+    },
+    {
+      "description": "Send data in a POST request (--data implies POST request):",
+      "syntax": "python sqlmap.py -u &quot;{{http://www.target.com/vuln.php}}&quot; --data=&quot;{{id=1}}&quot;"
+    },
+    {
+      "description": "Change the parameter delimiter (& is the default):",
+      "syntax": "python sqlmap.py -u &quot;{{http://www.target.com/vuln.php}}&quot; --data=&quot;{{query=foobar;id=1}}&quot; --param-del=&quot;{{;}}&quot;"
+    },
+    {
+      "description": "Select a random User-Agent from ./txt/user-agents.txt and use it:",
+      "syntax": "python sqlmap.py -u &quot;{{http://www.target.com/vuln.php}}&quot; --random-agent"
+    },
+    {
+      "description": "Provide user credentials for HTTP protocol authentication:",
+      "syntax": "python sqlmap.py -u &quot;{{http://www.target.com/vuln.php}}&quot; --auth-type {{Basic}} --auth-cred &quot;{{testuser:testpass}}&quot;"
+    }
+  ]
+}

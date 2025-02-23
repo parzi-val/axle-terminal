@@ -1,0 +1,30 @@
+{
+  "command": "docker service",
+  "description": "Manage the services on a Docker daemon. More information: https://docs.docker.com/reference/cli/docker/service/.",
+  "useCases": [
+    {
+      "description": "List the services on a Docker daemon:",
+      "syntax": "docker service ls"
+    },
+    {
+      "description": "Create a new service:",
+      "syntax": "docker service create --name {{service_name}} {{image}}:{{tag}}"
+    },
+    {
+      "description": "Display detailed information about one or more services:",
+      "syntax": "docker service inspect {{service_name_or_ID1 service_name_or_ID2}}"
+    },
+    {
+      "description": "List the tasks of one or more services:",
+      "syntax": "docker service ps {{service_name_or_ID1 service_name_or_ID2 ...}}"
+    },
+    {
+      "description": "Scale to a specific number of replicas for a space-separated list of services:",
+      "syntax": "docker service scale {{service_name}}={{count_of_replicas}}"
+    },
+    {
+      "description": "Remove one or more services:",
+      "syntax": "docker service rm {{service_name_or_ID1 service_name_or_ID2}}"
+    }
+  ]
+}

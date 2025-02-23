@@ -1,0 +1,10 @@
+{
+  "command": "xfs_repair",
+  "description": "Repair an XFS filesystem. More information: https://manned.org/xfs_repair.",
+  "useCases": [
+    {
+      "description": "Repair a partition:",
+      "syntax": "sudo xfs_repair {{path/to/partition}}"
+    }
+  ]
+}

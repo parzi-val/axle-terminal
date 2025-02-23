@@ -1,0 +1,10 @@
+{
+  "command": "sc_wartsfix",
+  "description": "Truncate damaged warts files. More information: https://www.caida.org/catalog/software/scamper/.",
+  "useCases": [
+    {
+      "description": "Save all records (in a separate file) up to the last intact one:",
+      "syntax": "sc_wartsfix {{path/to/file1.warts path/to/file2.warts ...}}"
+    }
+  ]
+}

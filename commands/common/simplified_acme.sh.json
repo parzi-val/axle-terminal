@@ -1,0 +1,34 @@
+{
+  "command": "acme.sh",
+  "description": "Shell script implementing ACME client protocol, an alternative to certbot. See also acme.sh dns. More information: https://github.com/acmesh-official/acme.sh.",
+  "useCases": [
+    {
+      "description": "Issue a certificate using webroot mode:",
+      "syntax": "acme.sh --issue --domain {{example.com}} --webroot {{/path/to/webroot}}"
+    },
+    {
+      "description": "Issue a certificate for multiple domains using standalone mode using port 80:",
+      "syntax": "acme.sh --issue --standalone --domain {{example.com}} --domain {{www.example.com}}"
+    },
+    {
+      "description": "Issue a certificate using standalone TLS mode using port 443:",
+      "syntax": "acme.sh --issue --alpn --domain {{example.com}}"
+    },
+    {
+      "description": "Issue a certificate using a working Nginx configuration:",
+      "syntax": "acme.sh --issue --nginx --domain {{example.com}}"
+    },
+    {
+      "description": "Issue a certificate using a working Apache configuration:",
+      "syntax": "acme.sh --issue --apache --domain {{example.com}}"
+    },
+    {
+      "description": "Issue a wildcard (*) certificate using an automatic DNS API mode:",
+      "syntax": "acme.sh --issue --dns {{dns_cf}} --domain {{*.example.com}}"
+    },
+    {
+      "description": "Install certificate files into the specified locations (useful for automatic certificate renewal):",
+      "syntax": "acme.sh --install-cert -d {{example.com}} --key-file {{/path/to/example.com.key}} --fullchain-file {{/path/to/example.com.cer}} --reloadcmd &quot;{{systemctl force-reload nginx}}&quot;"
+    }
+  ]
+}

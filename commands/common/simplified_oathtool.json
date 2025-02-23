@@ -1,0 +1,18 @@
+{
+  "command": "oathtool",
+  "description": "OATH one-time password tool. More information: https://www.nongnu.org/oath-toolkit/oathtool.1.html.",
+  "useCases": [
+    {
+      "description": "Generate TOTP token (behaves like Google Authenticator):",
+      "syntax": "oathtool --totp --base32 &quot;{{secret}}&quot;"
+    },
+    {
+      "description": "Generate a TOTP token for a specific time:",
+      "syntax": "oathtool --totp --now &quot;{{2004-02-29 16:21:42}}&quot; --base32 &quot;{{secret}}&quot;"
+    },
+    {
+      "description": "Validate a TOTP token:",
+      "syntax": "oathtool --totp --base32 &quot;{{secret}}&quot; &quot;{{token}}&quot;"
+    }
+  ]
+}

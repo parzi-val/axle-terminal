@@ -1,0 +1,22 @@
+{
+  "command": "rails console",
+  "description": "Interact with a Rails application. More information: https://guides.rubyonrails.org/command_line.html#bin-rails-console.",
+  "useCases": [
+    {
+      "description": "Start the Rails console:",
+      "syntax": "rails console"
+    },
+    {
+      "description": "Start the Rails console and roll back all data modifications on exit:",
+      "syntax": "rails console --sandbox"
+    },
+    {
+      "description": "Start the Rails console on a specified environment:",
+      "syntax": "rails console --environment {{dev|test|production|...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "rails console --help"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "ppmtopict",
+  "description": "Convert a PPM image to a Macintosh PICT file. More information: https://netpbm.sourceforge.net/doc/ppmtopict.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to a PICT file:",
+      "syntax": "ppmtopict {{path/to/file.ppm}} &gt; {{path/to/file.pict}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "less",
+  "description": "Open a file for interactive reading, allowing scrolling and search. More information: https://greenwoodsoftware.com/less/.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "less {{source_file}}"
+    },
+    {
+      "description": "Page down/up:",
+      "syntax": "&lt;Space&gt; (down), b (up)"
+    },
+    {
+      "description": "Go to end/start of file:",
+      "syntax": "G (end), g (start)"
+    },
+    {
+      "description": "Forward search for a string (press n/N to go to next/previous match):",
+      "syntax": "/{{something}}"
+    },
+    {
+      "description": "Backward search for a string (press n/N to go to next/previous match):",
+      "syntax": "?{{something}}"
+    },
+    {
+      "description": "Follow the output of the currently opened file:",
+      "syntax": "F"
+    },
+    {
+      "description": "Open the current file in an editor:",
+      "syntax": "v"
+    },
+    {
+      "description": "Exit:",
+      "syntax": "q"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "gpg-zip",
+  "description": "Encrypt files and directories in an archive using GPG. More information: https://www.gnupg.org/documentation/manuals/gnupg/gpg_002dzip.html.",
+  "useCases": [
+    {
+      "description": "Encrypt a directory into archive.gpg using a passphrase:",
+      "syntax": "gpg-zip --symmetric --output {{archive.gpg}} {{path/to/directory}}"
+    },
+    {
+      "description": "Decrypt archive.gpg into a directory of the same name:",
+      "syntax": "gpg-zip --decrypt {{path/to/archive.gpg}}"
+    },
+    {
+      "description": "List the contents of the encrypted archive.gpg:",
+      "syntax": "gpg-zip --list-archive {{path/to/archive.gpg}}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "debuginfod-find",
+  "description": "Request debuginfo-related data. More information: https://manned.org/debuginfod-find.",
+  "useCases": [
+    {
+      "description": "Request data based on the build_id:",
+      "syntax": "debuginfod-find -vv debuginfo {{build_id}}"
+    }
+  ]
+}

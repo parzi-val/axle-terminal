@@ -1,0 +1,38 @@
+{
+  "command": "balooctl",
+  "description": "File indexing and searching framework for KDE Plasma. More information: https://wiki.archlinux.org/index.php/Baloo.",
+  "useCases": [
+    {
+      "description": "Display the status of the indexer:",
+      "syntax": "balooctl status"
+    },
+    {
+      "description": "Enable/Disable the file indexer:",
+      "syntax": "balooctl {{enable|disable}}"
+    },
+    {
+      "description": "Clean the index database:",
+      "syntax": "balooctl purge"
+    },
+    {
+      "description": "Suspend the file indexer:",
+      "syntax": "balooctl suspend"
+    },
+    {
+      "description": "Resume the file indexer:",
+      "syntax": "balooctl resume"
+    },
+    {
+      "description": "Display the disk space used by Baloo:",
+      "syntax": "balooctl indexSize"
+    },
+    {
+      "description": "Check for any unindexed files and index them:",
+      "syntax": "balooctl check"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "balooctl --help"
+    }
+  ]
+}

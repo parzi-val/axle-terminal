@@ -1,0 +1,22 @@
+{
+  "command": "tt",
+  "description": "A terminal based typing test. More information: https://github.com/lemnos/tt.",
+  "useCases": [
+    {
+      "description": "Start quote mode with the builtin quote list in English:",
+      "syntax": "tt -quotes {{en}}"
+    },
+    {
+      "description": "Produce a test consisting of 50 randomly drawn words in 5 groups of 10 words each:",
+      "syntax": "tt -n {{10}} -g {{5}}"
+    },
+    {
+      "description": "Start a timed test lasting 10 seconds:",
+      "syntax": "tt -t {{10}}"
+    },
+    {
+      "description": "Start tt with no theming and showing your WPM as you type:",
+      "syntax": "tt -showwpm -notheme"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "stdbuf",
+  "description": "Run a command with modified buffering operations for its standard streams. More information: https://www.gnu.org/software/coreutils/manual/html_node/stdbuf-invocation.html.",
+  "useCases": [
+    {
+      "description": "Change stdin buffer size to 512 KiB:",
+      "syntax": "stdbuf --input=512K {{command}}"
+    },
+    {
+      "description": "Change stdout buffer to line-buffered:",
+      "syntax": "stdbuf --output=L {{command}}"
+    },
+    {
+      "description": "Change stderr buffer to unbuffered:",
+      "syntax": "stdbuf --error=0 {{command}}"
+    }
+  ]
+}

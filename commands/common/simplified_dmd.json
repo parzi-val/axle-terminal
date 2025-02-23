@@ -1,0 +1,26 @@
+{
+  "command": "dmd",
+  "description": "Official D compiler. More information: https://dlang.org/dmd.html.",
+  "useCases": [
+    {
+      "description": "Build a D source file:",
+      "syntax": "dmd {{path/to/source.d}}"
+    },
+    {
+      "description": "Generate code for all template instantiations:",
+      "syntax": "dmd -allinst"
+    },
+    {
+      "description": "Control bounds checking:",
+      "syntax": "dmd -boundscheck={{on|safeonly|off}}"
+    },
+    {
+      "description": "List information on all available checks:",
+      "syntax": "dmd -check={{h|help|?}}"
+    },
+    {
+      "description": "Turn on colored console output:",
+      "syntax": "dmd -color"
+    }
+  ]
+}

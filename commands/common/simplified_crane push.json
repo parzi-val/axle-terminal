@@ -1,0 +1,22 @@
+{
+  "command": "crane push",
+  "description": "Push local image contents to a remote registry. More information: https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_push.md.",
+  "useCases": [
+    {
+      "description": "Push local image to remote registry:",
+      "syntax": "crane push {{path/to/tarball}} {{image_name}}"
+    },
+    {
+      "description": "Path to file with list of published image references:",
+      "syntax": "crane push {{path/to/tarball}} {{image_name}} --image-refs {{path/to/filename}}"
+    },
+    {
+      "description": "Push a collection of images as a single index (required if path has multiple images):",
+      "syntax": "crane push {{path/to/tarball}} {{image_name}} --index"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "crane push {{-h|--help}}"
+    }
+  ]
+}

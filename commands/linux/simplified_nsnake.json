@@ -1,0 +1,26 @@
+{
+  "command": "nsnake",
+  "description": "Snake game in the terminal. More information: https://github.com/alexdantas/nsnake/.",
+  "useCases": [
+    {
+      "description": "Start a snake game:",
+      "syntax": "nsnake"
+    },
+    {
+      "description": "Navigate the snake:",
+      "syntax": "{{Up|Down|Left|Right arrow key}}"
+    },
+    {
+      "description": "Pause/unpause the game:",
+      "syntax": "p"
+    },
+    {
+      "description": "Quit the game:",
+      "syntax": "q"
+    },
+    {
+      "description": "Display help during the game:",
+      "syntax": "h"
+    }
+  ]
+}

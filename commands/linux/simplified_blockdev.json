@@ -1,0 +1,38 @@
+{
+  "command": "blockdev",
+  "description": "Manage, query, and manipulate block devices. More information: https://manned.org/blockdev.",
+  "useCases": [
+    {
+      "description": "Print a report for all devices:",
+      "syntax": "sudo blockdev --report"
+    },
+    {
+      "description": "Print a report for a specific device:",
+      "syntax": "sudo blockdev --report {{/dev/sdXY}}"
+    },
+    {
+      "description": "Get the size of a device in 512-byte sectors:",
+      "syntax": "sudo blockdev --getsz {{/dev/sdXY}}"
+    },
+    {
+      "description": "Set read-only:",
+      "syntax": "sudo blockdev --setro {{/dev/sdXY}}"
+    },
+    {
+      "description": "Set read-write:",
+      "syntax": "sudo blockdev --setrw {{/dev/sdXY}}"
+    },
+    {
+      "description": "Flush buffers:",
+      "syntax": "sudo blockdev --flushbufs {{/dev/sdXY}}"
+    },
+    {
+      "description": "Get the physical block size:",
+      "syntax": "sudo blockdev --getpbsz {{/dev/sdXY}}"
+    },
+    {
+      "description": "Set the read-ahead value to 128 sectors:",
+      "syntax": "sudo blockdev --setra 128 {{/dev/sdXY}}"
+    }
+  ]
+}

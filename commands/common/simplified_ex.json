@@ -1,0 +1,34 @@
+{
+  "command": "ex",
+  "description": "Command-line text editor. See also: vim. More information: https://www.vim.org.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "ex {{path/to/file}}"
+    },
+    {
+      "description": "Save and Quit:",
+      "syntax": "wq&lt;Enter&gt;"
+    },
+    {
+      "description": "Undo the last operation:",
+      "syntax": "undo&lt;Enter&gt;"
+    },
+    {
+      "description": "Search for a pattern in the file:",
+      "syntax": "/{{search_pattern}}&lt;Enter&gt;"
+    },
+    {
+      "description": "Perform a regular expression substitution in the whole file:",
+      "syntax": "%s/{{regular_expression}}/{{replacement}}/g&lt;Enter&gt;"
+    },
+    {
+      "description": "Insert text:",
+      "syntax": "i&lt;Enter&gt;{{text}}&lt;C-c&gt;"
+    },
+    {
+      "description": "Switch to Vim:",
+      "syntax": "visual&lt;Enter&gt;"
+    }
+  ]
+}

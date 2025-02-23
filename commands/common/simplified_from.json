@@ -1,0 +1,22 @@
+{
+  "command": "from",
+  "description": "Print mail header lines from the current user's mailbox. More information: https://mailutils.org/manual/html_chapter/Programs.html#frm-and-from.",
+  "useCases": [
+    {
+      "description": "List mail:",
+      "syntax": "from"
+    },
+    {
+      "description": "Display the number of messages stored:",
+      "syntax": "from --count"
+    },
+    {
+      "description": "List mail in the specified mailbox directory:",
+      "syntax": "MAIL={{path/to/mailbox}} from"
+    },
+    {
+      "description": "Print the mail from the specified address:",
+      "syntax": "from --sender={{me@example.com}}"
+    }
+  ]
+}

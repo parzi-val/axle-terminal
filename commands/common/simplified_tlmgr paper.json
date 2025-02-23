@@ -1,0 +1,30 @@
+{
+  "command": "tlmgr paper",
+  "description": "Manage paper size options of an TeX Live installation. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Show the default paper size used by all TeX Live programs:",
+      "syntax": "tlmgr paper"
+    },
+    {
+      "description": "Set the default paper size for all TeX Live programs to A4:",
+      "syntax": "sudo tlmgr paper {{a4}}"
+    },
+    {
+      "description": "Show the default paper size used by a specific TeX Live program:",
+      "syntax": "tlmgr {{pdftex}} paper"
+    },
+    {
+      "description": "Set the default paper size for a specific TeX Live program to A4:",
+      "syntax": "sudo tlmgr {{pdftex}} paper {{a4}}"
+    },
+    {
+      "description": "List all available paper sizes for a specific TeX Live program:",
+      "syntax": "tlmgr {{pdftex}} paper --list"
+    },
+    {
+      "description": "Dump the default paper size used by all TeX Live programs in JSON format:",
+      "syntax": "tlmgr paper --json"
+    }
+  ]
+}

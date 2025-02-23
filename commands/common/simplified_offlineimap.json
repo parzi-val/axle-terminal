@@ -1,0 +1,18 @@
+{
+  "command": "offlineimap",
+  "description": "Synchronize a remote IMAP server with local Maildir folders. More information: https://www.offlineimap.org.",
+  "useCases": [
+    {
+      "description": "Synchronize once, without enabling autorefresh:",
+      "syntax": "offlineimap -o"
+    },
+    {
+      "description": "Synchronize a specific account:",
+      "syntax": "offlineimap -a {{account}}"
+    },
+    {
+      "description": "Synchronize a specific folder:",
+      "syntax": "offlineimap -f {{folder}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "a2enmod",
+  "description": "Enable an Apache module on Debian-based OSes. More information: https://manned.org/a2enmod.8.",
+  "useCases": [
+    {
+      "description": "Enable a module:",
+      "syntax": "sudo a2enmod {{module}}"
+    },
+    {
+      "description": "Don't show informative messages:",
+      "syntax": "sudo a2enmod --quiet {{module}}"
+    }
+  ]
+}

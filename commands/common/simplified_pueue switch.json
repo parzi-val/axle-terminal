@@ -1,0 +1,10 @@
+{
+  "command": "pueue switch",
+  "description": "Switches the queue position of two enqueued or stashed commands. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Switch the priority of two tasks:",
+      "syntax": "pueue switch {{task_id1}} {{task_id2}}"
+    }
+  ]
+}

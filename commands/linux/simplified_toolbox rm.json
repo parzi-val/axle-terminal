@@ -1,0 +1,18 @@
+{
+  "command": "toolbox rm",
+  "description": "Remove one or more toolbox containers. See also: toolbox rmi. More information: https://manned.org/toolbox-rm.1.",
+  "useCases": [
+    {
+      "description": "Remove a toolbox container:",
+      "syntax": "toolbox rm {{container_name}}"
+    },
+    {
+      "description": "Remove all toolbox containers:",
+      "syntax": "toolbox rm --all"
+    },
+    {
+      "description": "Force the removal of a currently active toolbox container:",
+      "syntax": "toolbox rm --force {{container_name}}"
+    }
+  ]
+}

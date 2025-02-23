@@ -1,0 +1,22 @@
+{
+  "command": "colorls",
+  "description": "Beautify ls command output, with color and font-awesome icons. Available as a Ruby gem. More information: https://github.com/athityakumar/colorls.",
+  "useCases": [
+    {
+      "description": "List files one per line:",
+      "syntax": "colorls -1"
+    },
+    {
+      "description": "List all files, including hidden files:",
+      "syntax": "colorls --all"
+    },
+    {
+      "description": "Long format list (permissions, ownership, size, and modification date) of all files:",
+      "syntax": "colorls --long --all"
+    },
+    {
+      "description": "Only list directories:",
+      "syntax": "colorls --dirs"
+    }
+  ]
+}

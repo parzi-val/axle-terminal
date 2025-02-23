@@ -1,0 +1,26 @@
+{
+  "command": "logger",
+  "description": "Add messages to syslog (/var/log/syslog). More information: https://manned.org/logger.",
+  "useCases": [
+    {
+      "description": "Log a message to syslog:",
+      "syntax": "logger {{message}}"
+    },
+    {
+      "description": "Take input from stdin and log to syslog:",
+      "syntax": "echo {{log_entry}} | logger"
+    },
+    {
+      "description": "Send the output to a remote syslog server running at a given port. Default port is 514:",
+      "syntax": "echo {{log_entry}} | logger --server {{hostname}} --port {{port}}"
+    },
+    {
+      "description": "Use a specific tag for every line logged. Default is the name of logged in user:",
+      "syntax": "echo {{log_entry}} | logger --tag {{tag}}"
+    },
+    {
+      "description": "Log messages with a given priority. Default is user.notice. See man logger for all priority options:",
+      "syntax": "echo {{log_entry}} | logger --priority {{user.warning}}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "mmdc",
+  "description": "CLI for mermaid, a diagram generation tool with a domain-specific language. A mermaid definition file is taken as input and a SVG, PNG, or PDF file is generated as output. More information: https://mermaid-js.github.io/mermaid/.",
+  "useCases": [
+    {
+      "description": "Convert a file to the specified format (automatically determined from the file extension):",
+      "syntax": "mmdc --input {{input.mmd}} --output {{output.svg}}"
+    },
+    {
+      "description": "Specify the theme of the chart:",
+      "syntax": "mmdc --input {{input.mmd}} --output {{output.svg}} --theme {{forest|dark|neutral|default}}"
+    },
+    {
+      "description": "Specify the background color of the chart (e.g. lime, &quot;#D8064F&quot;, or transparent):",
+      "syntax": "mmdc --input {{input.mmd}} --output {{output.svg}} --backgroundColor {{color}}"
+    }
+  ]
+}

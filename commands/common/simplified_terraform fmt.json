@@ -1,0 +1,22 @@
+{
+  "command": "terraform fmt",
+  "description": "Format configuration according to Terraform language style conventions. More information: https://developer.hashicorp.com/terraform/cli/commands/fmt.",
+  "useCases": [
+    {
+      "description": "Format the configuration in the current directory:",
+      "syntax": "terraform fmt"
+    },
+    {
+      "description": "Format the configuration in the current directory and subdirectories:",
+      "syntax": "terraform fmt -recursive"
+    },
+    {
+      "description": "Display diffs of formatting changes:",
+      "syntax": "terraform fmt -diff"
+    },
+    {
+      "description": "Do not list files that were formatted to stdout:",
+      "syntax": "terraform fmt -list=false"
+    }
+  ]
+}

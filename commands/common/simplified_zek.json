@@ -1,0 +1,18 @@
+{
+  "command": "zek",
+  "description": "Generate a Go struct from XML. More information: https://github.com/miku/zek.",
+  "useCases": [
+    {
+      "description": "Generate a Go struct from a given XML from stdin and display output on stdout:",
+      "syntax": "cat {{path/to/input.xml}} | zek"
+    },
+    {
+      "description": "Generate a Go struct from a given XML from stdin and send output to a file:",
+      "syntax": "curl -s {{https://url/to/xml}} | zek -o {{path/to/output.go}}"
+    },
+    {
+      "description": "Generate an example Go program from a given XML from stdin and send output to a file:",
+      "syntax": "cat {{path/to/input.xml}} | zek -p -o {{path/to/output.go}}"
+    }
+  ]
+}

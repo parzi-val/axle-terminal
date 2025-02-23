@@ -1,0 +1,10 @@
+{
+  "command": "rlatopam",
+  "description": "Convert Alias/Wavefront RLA and RPF image files to Netpbm format. More information: https://netpbm.sourceforge.net/doc/rlatopam.html.",
+  "useCases": [
+    {
+      "description": "Convert the specified SPOT image to PGM format:",
+      "syntax": "rlatopam {{path/to/file}} &gt; {{path/to/output.pam}}"
+    }
+  ]
+}

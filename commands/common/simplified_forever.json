@@ -1,0 +1,18 @@
+{
+  "command": "forever",
+  "description": "Server-side JavaScript application that makes sure Node.js applications run indefinitely (restarts after exit). More information: https://github.com/foreversd/forever.",
+  "useCases": [
+    {
+      "description": "Start running a file forever (as a daemon):",
+      "syntax": "forever {{script}}"
+    },
+    {
+      "description": "List running \"forever\" processes (along with IDs and other details of \"forever\" processes):",
+      "syntax": "forever list"
+    },
+    {
+      "description": "Stop a running \"forever\" process:",
+      "syntax": "forever stop {{ID|pid|script}}"
+    }
+  ]
+}

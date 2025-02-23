@@ -1,0 +1,38 @@
+{
+  "command": "kopia",
+  "description": "Fast, secure open-source backup tool. Supports encryption, compression, deduplication, and incremental snapshots. More information: https://kopia.io/docs/reference/command-line/.",
+  "useCases": [
+    {
+      "description": "Create a repository in the local filesystem:",
+      "syntax": "kopia repository create filesystem --path {{path/to/local_repository}}"
+    },
+    {
+      "description": "Create a repository on Amazon S3:",
+      "syntax": "kopia repository create s3 --bucket {{bucket_name}} --access-key {{AWS_access_key_id}} --secret-access-key {{AWS_secret_access_key}}"
+    },
+    {
+      "description": "Connect to a repository:",
+      "syntax": "kopia repository connect {{repository_type}} --path {{path/to/repository}}"
+    },
+    {
+      "description": "Create a snapshot of a directory:",
+      "syntax": "kopia snapshot create {{path/to/directory}}"
+    },
+    {
+      "description": "List snapshots:",
+      "syntax": "kopia snapshot list"
+    },
+    {
+      "description": "Restore a snapshot to a specific directory:",
+      "syntax": "kopia snapshot restore {{snapshot_id}} {{path/to/target_directory}}"
+    },
+    {
+      "description": "Create a new policy:",
+      "syntax": "kopia policy set --global --keep-latest {{number_of_snapshots_to_keep}} --compression {{compression_algorithm}}"
+    },
+    {
+      "description": "Ignore a specific file or folder from backups:",
+      "syntax": "kopia policy set --global --add-ignore {{path/to/file_or_folder}}"
+    }
+  ]
+}

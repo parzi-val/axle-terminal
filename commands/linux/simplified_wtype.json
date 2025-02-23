@@ -1,0 +1,30 @@
+{
+  "command": "wtype",
+  "description": "Simulate keyboard input on Wayland, similar to xdotool type for X11. See also: ydotool. More information: https://github.com/atx/wtype.",
+  "useCases": [
+    {
+      "description": "Simulate typing text:",
+      "syntax": "wtype &quot;{{Hello World}}&quot;"
+    },
+    {
+      "description": "Type a specific key:",
+      "syntax": "wtype -k {{Left}}"
+    },
+    {
+      "description": "Press a modifier:",
+      "syntax": "wtype -M {{shift|ctrl|...}}"
+    },
+    {
+      "description": "Release a modifier:",
+      "syntax": "wtype -m {{ctrl}}"
+    },
+    {
+      "description": "Wait between keystrokes (in milliseconds):",
+      "syntax": "wtype -d {{500}} -- &quot;{{text}}&quot;"
+    },
+    {
+      "description": "Read text from stdin:",
+      "syntax": "echo &quot;{{text}}&quot; | wtype -"
+    }
+  ]
+}

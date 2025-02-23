@@ -1,0 +1,18 @@
+{
+  "command": "spotdl",
+  "description": "Download Spotify playlists and songs along with metadata. More information: https://github.com/spotDL/spotify-downloader.",
+  "useCases": [
+    {
+      "description": "Download songs from the provided URLs and embed metadata:",
+      "syntax": "spotdl {{open.spotify.com/playlist/playlistId open.spotify.com/track/trackId ...}}"
+    },
+    {
+      "description": "Start a web interface to download individual songs:",
+      "syntax": "spotdl web"
+    },
+    {
+      "description": "Save only the metadata without downloading anything:",
+      "syntax": "spotdl save {{open.spotify.com/playlist/playlistId ...}} --save-file {{path/to/save_file.spotdl}}"
+    }
+  ]
+}

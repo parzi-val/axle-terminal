@@ -1,0 +1,18 @@
+{
+  "command": "robo",
+  "description": "PHP task runner. More information: https://robo.li/.",
+  "useCases": [
+    {
+      "description": "List available commands:",
+      "syntax": "robo list"
+    },
+    {
+      "description": "Run a specific command:",
+      "syntax": "robo {{foo}}"
+    },
+    {
+      "description": "Simulate running a specific command:",
+      "syntax": "robo --simulate {{foo}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "git clean",
+  "description": "Remove files not tracked by Git from the working tree. More information: https://git-scm.com/docs/git-clean.",
+  "useCases": [
+    {
+      "description": "Delete untracked files:",
+      "syntax": "git clean"
+    },
+    {
+      "description": "Interactively delete untracked files:",
+      "syntax": "git clean {{-i|--interactive}}"
+    },
+    {
+      "description": "Show which files would be deleted without actually deleting them:",
+      "syntax": "git clean --dry-run"
+    },
+    {
+      "description": "Forcefully delete untracked files:",
+      "syntax": "git clean {{-f|--force}}"
+    },
+    {
+      "description": "Forcefully delete untracked [d]irectories:",
+      "syntax": "git clean {{-f|--force}} -d"
+    },
+    {
+      "description": "Delete untracked files, including e[x]cluded files (files ignored in .gitignore and .git/info/exclude):",
+      "syntax": "git clean -x"
+    }
+  ]
+}

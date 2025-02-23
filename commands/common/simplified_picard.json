@@ -1,0 +1,18 @@
+{
+  "command": "picard",
+  "description": "Next generation MusicBrainz tagging application. More information: https://picard.musicbrainz.org/.",
+  "useCases": [
+    {
+      "description": "Start Picard:",
+      "syntax": "picard"
+    },
+    {
+      "description": "Open a set of files:",
+      "syntax": "picard {{path/to/file1.mp3}} {{path/to/file2.mp3}}"
+    },
+    {
+      "description": "Display the version of Picard installed:",
+      "syntax": "picard --long-version"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": "spottopgm",
+  "description": "Convert a SPOT satellite image to PGM format. More information: https://netpbm.sourceforge.net/doc/spottopgm.html.",
+  "useCases": [
+    {
+      "description": "Convert the specified SPOT image to PGM format:",
+      "syntax": "spottopgm {{path/to/file.spot}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Extract the specified color channel:",
+      "syntax": "spottopgm -{{1|2|3}} {{path/to/file.spot}} &gt; {{path/to/output.pgm}}"
+    },
+    {
+      "description": "Extract the specified rectangle from the input image:",
+      "syntax": "spottopgm {{first_col first_row last_col last_row}} {{path/to/file.spot}} &gt; {{path/to/output.pgm}}"
+    }
+  ]
+}

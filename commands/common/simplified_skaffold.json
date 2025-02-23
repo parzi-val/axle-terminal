@@ -1,0 +1,26 @@
+{
+  "command": "skaffold",
+  "description": "Facilitate continuous development for Kubernetes applications. More information: https://skaffold.dev.",
+  "useCases": [
+    {
+      "description": "Build the artifacts:",
+      "syntax": "skaffold build -f {{skaffold.yaml}}"
+    },
+    {
+      "description": "Build and deploy your app every time your code changes:",
+      "syntax": "skaffold dev -f {{skaffold.yaml}}"
+    },
+    {
+      "description": "Run a pipeline file:",
+      "syntax": "skaffold run -f {{skaffold.yaml}}"
+    },
+    {
+      "description": "Run a diagnostic on Skaffold:",
+      "syntax": "skaffold diagnose -f {{skaffold.yaml}}"
+    },
+    {
+      "description": "Deploy the artifacts:",
+      "syntax": "skaffold deploy -f {{skaffold.yaml}}"
+    }
+  ]
+}

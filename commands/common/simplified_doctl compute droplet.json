@@ -1,0 +1,18 @@
+{
+  "command": "doctl compute droplet",
+  "description": "List, create, and delete virtual machines which are called droplets. More information: https://docs.digitalocean.com/reference/doctl/reference/compute/droplet/.",
+  "useCases": [
+    {
+      "description": "Create a droplet:",
+      "syntax": "doctl compute droplet create --region {{region}} --image {{os_image}} --size {{vps_type}} {{droplet_name}}"
+    },
+    {
+      "description": "Delete a droplet:",
+      "syntax": "doctl compute droplet delete {{droplet_id|droplet_name}}"
+    },
+    {
+      "description": "List droplets:",
+      "syntax": "doctl compute droplet list"
+    }
+  ]
+}

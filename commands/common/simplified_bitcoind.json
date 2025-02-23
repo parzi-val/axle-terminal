@@ -1,0 +1,22 @@
+{
+  "command": "bitcoind",
+  "description": "Bitcoin Core daemon. Uses the configuration defined in bitcoin.conf. More information: https://manned.org/bitcoind.",
+  "useCases": [
+    {
+      "description": "Start the Bitcoin Core daemon (in the foreground):",
+      "syntax": "bitcoind"
+    },
+    {
+      "description": "Start the Bitcoin Core daemon in the background (use bitcoin-cli stop to stop):",
+      "syntax": "bitcoind -daemon"
+    },
+    {
+      "description": "Start the Bitcoin Core daemon on a specific network:",
+      "syntax": "bitcoind -chain={{main|test|signet|regtest}}"
+    },
+    {
+      "description": "Start the Bitcoin Core daemon using specific config file and data directory:",
+      "syntax": "bitcoind -conf={{path/to/bitcoin.conf}} -datadir={{path/to/directory}}"
+    }
+  ]
+}

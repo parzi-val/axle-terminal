@@ -1,0 +1,26 @@
+{
+  "command": "cpupower",
+  "description": "Tools regarding CPU power and tuning options. More information: https://manned.org/cpupower.",
+  "useCases": [
+    {
+      "description": "List CPUs:",
+      "syntax": "sudo cpupower --cpu {{all}} info"
+    },
+    {
+      "description": "Print information about all cores:",
+      "syntax": "sudo cpupower --cpu {{all}} info"
+    },
+    {
+      "description": "Set all CPUs to a power-saving frequency governor:",
+      "syntax": "sudo cpupower --cpu {{all}} frequency-set --governor {{powersave}}"
+    },
+    {
+      "description": "Print CPU 0's available frequency [g]overnors:",
+      "syntax": "sudo cpupower --cpu {{0}} frequency-info g | grep &quot;analyzing\\|governors&quot;"
+    },
+    {
+      "description": "Print CPU 4's frequency from the hardware, in a human-readable format:",
+      "syntax": "sudo cpupower --cpu {{4}} frequency-info --hwfreq --human"
+    }
+  ]
+}

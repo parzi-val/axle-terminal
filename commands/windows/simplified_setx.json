@@ -1,0 +1,22 @@
+{
+  "command": "setx",
+  "description": "Set persistent environment variables. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/setx.",
+  "useCases": [
+    {
+      "description": "Set an environment variable for the current user:",
+      "syntax": "setx {{variable}} {{value}}"
+    },
+    {
+      "description": "Set an environment variable for the current machine:",
+      "syntax": "setx {{variable}} {{value}} /M"
+    },
+    {
+      "description": "Set an environment variable for a user on a remote machine:",
+      "syntax": "setx /s {{hostname}} /u {{username}} /p {{password}} {{variable}} {{value}}"
+    },
+    {
+      "description": "Set an environment variable from a registry key value:",
+      "syntax": "setx {{variable}} /k {{registry\\key\\path}}"
+    }
+  ]
+}

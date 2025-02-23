@@ -1,0 +1,38 @@
+{
+  "command": "helix",
+  "description": "Helix, A post-modern text editor, provides several modes for different kinds of text manipulation. Pressing i enters insert mode. &lt;Esc&gt; enters normal mode, which enables the use of Helix commands. More information: https://helix-editor.com.",
+  "useCases": [
+    {
+      "description": "Open a file:",
+      "syntax": "helix {{path/to/file}}"
+    },
+    {
+      "description": "Open files and show them one next each other:",
+      "syntax": "helix --vsplit {{path/to/file1 path/to/file2}}"
+    },
+    {
+      "description": "Show the tutorial to learn Helix (or access it within Helix by pressing &lt;Esc&gt; and typing :tutor):",
+      "syntax": "helix --tutor"
+    },
+    {
+      "description": "Change the Helix theme:",
+      "syntax": ":theme {{theme_name}}"
+    },
+    {
+      "description": "Save and Quit:",
+      "syntax": ":wq&lt;Enter&gt;"
+    },
+    {
+      "description": "Force-quit without saving:",
+      "syntax": ":q!&lt;Enter&gt;"
+    },
+    {
+      "description": "Undo the last operation:",
+      "syntax": "u"
+    },
+    {
+      "description": "Search for a pattern in the file (press n/N to go to next/previous match):",
+      "syntax": "/{{search_pattern}}&lt;Enter&gt;"
+    }
+  ]
+}

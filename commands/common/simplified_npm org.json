@@ -1,0 +1,30 @@
+{
+  "command": "npm org",
+  "description": "Manage organizations. More information: https://docs.npmjs.com/cli/commands/npm-org.",
+  "useCases": [
+    {
+      "description": "Add a new user to an organization:",
+      "syntax": "npm org set {{organization_name}} {{username}}"
+    },
+    {
+      "description": "Change a user's role in an organization:",
+      "syntax": "npm org set {{organization_name}} {{username}} {{developer|admin|owner}}"
+    },
+    {
+      "description": "Remove a user from an organization:",
+      "syntax": "npm org rm {{organization_name}} {{username}}"
+    },
+    {
+      "description": "List all users in an organization:",
+      "syntax": "npm org ls {{organization_name}}"
+    },
+    {
+      "description": "List all users in an organization, output in JSON format:",
+      "syntax": "npm org ls {{organization_name}} --json"
+    },
+    {
+      "description": "Display a user's role in an organization:",
+      "syntax": "npm org ls {{organization_name}} {{username}}"
+    }
+  ]
+}

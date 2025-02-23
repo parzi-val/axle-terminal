@@ -1,0 +1,26 @@
+{
+  "command": "nxc ftp",
+  "description": "Pentest and exploit FTP servers. More information: https://www.netexec.wiki/ftp-protocol.",
+  "useCases": [
+    {
+      "description": "Search for valid credentials by trying out every combination in the specified lists of [u]sernames and [p]asswords:",
+      "syntax": "nxc ftp {{192.168.178.2}} -u {{path/to/usernames.txt}} -p {{path/to/passwords.txt}}"
+    },
+    {
+      "description": "Continue searching for valid credentials even after valid credentials have been found:",
+      "syntax": "nxc ftp {{192.168.178.2}} -u {{path/to/usernames.txt}} -p {{path/to/passwords.txt}} --continue-on-success"
+    },
+    {
+      "description": "Perform directory listings on each FTP server the supplied credentials are valid on:",
+      "syntax": "nxc ftp {{192.168.178.0/24}} -u {{username}} -p {{password}} --ls"
+    },
+    {
+      "description": "Download the specified file from the target server:",
+      "syntax": "nxc ftp {{192.168.178.2}} -u {{username}} -p {{password}} --get {{path/to/file}}"
+    },
+    {
+      "description": "Upload the specified file to the target server at the specified location:",
+      "syntax": "nxc ftp {{192.168.178.2}} -u {{username}} -p {{password}} --put {{path/to/local_file}} {{path/to/remote_location}}"
+    }
+  ]
+}

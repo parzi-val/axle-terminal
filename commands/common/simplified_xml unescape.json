@@ -1,0 +1,18 @@
+{
+  "command": "xml unescape",
+  "description": "Unescape special XML characters, e.g. &amp;lt;a1&amp;gt; → &lt;a1&gt;. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Unescape special XML characters from a string:",
+      "syntax": "xml unescape &quot;{{&amp;lt;a1&amp;gt;}}&quot;"
+    },
+    {
+      "description": "Unescape special XML characters from stdin:",
+      "syntax": "echo &quot;{{&amp;lt;a1&amp;gt;}}&quot; | xml unescape"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml escape --help"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": "pushd",
+  "description": "Place a directory on a stack so it can be accessed later. See also popd to switch back to original directory. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/pushd.",
+  "useCases": [
+    {
+      "description": "Switch to directory and push it on the stack:",
+      "syntax": "pushd {{path\\to\\directory}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "gofmt",
+  "description": "Format Go source code. More information: https://golang.org/cmd/gofmt/.",
+  "useCases": [
+    {
+      "description": "Format a file and display the result to the console:",
+      "syntax": "gofmt {{source.go}}"
+    },
+    {
+      "description": "Format a file, overwriting the original file in-place:",
+      "syntax": "gofmt -w {{source.go}}"
+    },
+    {
+      "description": "Format a file, and then simplify the code, overwriting the original file:",
+      "syntax": "gofmt -s -w {{source.go}}"
+    },
+    {
+      "description": "Print all (including spurious) errors:",
+      "syntax": "gofmt -e {{source.go}}"
+    }
+  ]
+}

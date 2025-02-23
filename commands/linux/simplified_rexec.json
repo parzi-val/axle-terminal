@@ -1,0 +1,22 @@
+{
+  "command": "rexec",
+  "description": "Execute a command on a remote host. Note: Use rexec with caution, as it transmits data in plain text. Consider secure alternatives like SSH for encrypted communication. More information: https://www.gnu.org/software/inetutils/manual/html_node/rexec-invocation.html.",
+  "useCases": [
+    {
+      "description": "Execute a command on a remote [h]ost:",
+      "syntax": "rexec -h={{remote_host}} {{ls -l}}"
+    },
+    {
+      "description": "Specify the remote [u]sername on a remote [h]ost:",
+      "syntax": "rexec -username={{username}} -h={{remote_host}} {{ps aux}}"
+    },
+    {
+      "description": "Redirect stdin from /dev/null on a remote [h]ost:",
+      "syntax": "rexec --no-err -h={{remote_host}} {{ls -l}}"
+    },
+    {
+      "description": "Specify the remote [P]ort on a remote [h]ost:",
+      "syntax": "rexec -P={{1234}} -h={{remote_host}} {{ls -l}}"
+    }
+  ]
+}

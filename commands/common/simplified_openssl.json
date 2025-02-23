@@ -1,0 +1,18 @@
+{
+  "command": "openssl",
+  "description": "OpenSSL cryptographic toolkit. Some subcommands such as req have their own usage documentation. More information: https://www.openssl.org.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "openssl help"
+    },
+    {
+      "description": "Display help for a specific subcommand:",
+      "syntax": "openssl help {{x509}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "openssl version"
+    }
+  ]
+}

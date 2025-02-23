@@ -1,0 +1,14 @@
+{
+  "command": "export",
+  "description": "Export shell variables to child processes. More information: https://manned.org/export.1posix.",
+  "useCases": [
+    {
+      "description": "Set an environment variable:",
+      "syntax": "export {{VARIABLE}}={{value}}"
+    },
+    {
+      "description": "Append a pathname to the environment variable PATH:",
+      "syntax": "export PATH=$PATH:{{path/to/append}}"
+    }
+  ]
+}

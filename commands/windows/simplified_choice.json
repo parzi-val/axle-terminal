@@ -1,0 +1,30 @@
+{
+  "command": "choice",
+  "description": "Prompt user to select a choice and return the selected choice index. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/choice.",
+  "useCases": [
+    {
+      "description": "Prompt the current user to select a Y or N choice:",
+      "syntax": "choice"
+    },
+    {
+      "description": "Prompt the current user to select a [c]hoice from a specific set:",
+      "syntax": "choice /c {{AB}}"
+    },
+    {
+      "description": "Prompt the current user to select a choice with a specific [m]essage:",
+      "syntax": "choice /m &quot;{{message}}&quot;"
+    },
+    {
+      "description": "Prompt the current user to select a [c]ase-[s]ensitive [c]hoice from a specific set:",
+      "syntax": "choice /cs /c {{Ab}}"
+    },
+    {
+      "description": "Prompt the current user to select a choice and prefer the [d]efault choice in a specific [t]ime:",
+      "syntax": "choice /t {{5}} /d {{N}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "choice /?"
+    }
+  ]
+}

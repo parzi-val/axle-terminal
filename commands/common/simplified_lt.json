@@ -1,0 +1,26 @@
+{
+  "command": "lt",
+  "description": "Localtunnel exposes your localhost to the world for easy testing and sharing. More information: https://github.com/localtunnel/localtunnel.",
+  "useCases": [
+    {
+      "description": "Start tunnel from a specific port:",
+      "syntax": "lt --port {{8000}}"
+    },
+    {
+      "description": "Specify the upstream server doing the forwarding:",
+      "syntax": "lt --port {{8000}} --host {{host}}"
+    },
+    {
+      "description": "Request a specific subdomain:",
+      "syntax": "lt --port {{8000}} --subdomain {{subdomain}}"
+    },
+    {
+      "description": "Print basic request info:",
+      "syntax": "lt --port {{8000}} --print-requests"
+    },
+    {
+      "description": "Open the tunnel URL in the default web browser:",
+      "syntax": "lt --port {{8000}} --open"
+    }
+  ]
+}

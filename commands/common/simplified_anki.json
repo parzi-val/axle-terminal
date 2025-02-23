@@ -1,0 +1,22 @@
+{
+  "command": "anki",
+  "description": "Powerful, intelligent flashcard program. More information: https://docs.ankiweb.net.",
+  "useCases": [
+    {
+      "description": "Launch the GUI:",
+      "syntax": "anki"
+    },
+    {
+      "description": "Use a specific [p]rofile:",
+      "syntax": "anki -p {{profile_name}}"
+    },
+    {
+      "description": "Use a specific [l]anguage:",
+      "syntax": "anki -l {{language}}"
+    },
+    {
+      "description": "Use a non-default directory (~/Anki for default):",
+      "syntax": "anki -b {{path/to/directory}}"
+    }
+  ]
+}

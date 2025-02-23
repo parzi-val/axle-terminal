@@ -1,0 +1,26 @@
+{
+  "command": "gcloud projects",
+  "description": "Manage project access policies in Google Cloud. See also: gcloud. More information: https://cloud.google.com/sdk/gcloud/reference/projects.",
+  "useCases": [
+    {
+      "description": "Create a new project:",
+      "syntax": "gcloud projects create {{project_id|project_number}}"
+    },
+    {
+      "description": "List all active projects:",
+      "syntax": "gcloud projects list"
+    },
+    {
+      "description": "Display metadata for a project:",
+      "syntax": "gcloud projects describe {{project_id}}"
+    },
+    {
+      "description": "Delete a project:",
+      "syntax": "gcloud projects delete {{project_id|project_number}}"
+    },
+    {
+      "description": "Add an IAM policy binding to a specified project:",
+      "syntax": "gcloud projects add-iam-policy-binding {{project_id}} --member {{principal}} --role {{role}}"
+    }
+  ]
+}

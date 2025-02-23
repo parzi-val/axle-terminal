@@ -1,0 +1,26 @@
+{
+  "command": "fsutil",
+  "description": "Display information about file system volumes. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/fsutil.",
+  "useCases": [
+    {
+      "description": "Display a list of volumes:",
+      "syntax": "fsutil volume list"
+    },
+    {
+      "description": "Display information about a volume's file system:",
+      "syntax": "fsutil fsInfo volumeInfo {{drive_letter|volume_path}}"
+    },
+    {
+      "description": "Display the current state of the file system auto-repair for all volumes:",
+      "syntax": "fsutil repair state"
+    },
+    {
+      "description": "Display the dirty bit state of all volumes:",
+      "syntax": "fsutil dirty query"
+    },
+    {
+      "description": "Set the dirty bit state of a volume:",
+      "syntax": "fsutil dirty set {{drive_letter|volume_path}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "foreman",
+  "description": "Manage Procfile-based applications. More information: https://manned.org/foreman.",
+  "useCases": [
+    {
+      "description": "Start an application with the Procfile in the current directory:",
+      "syntax": "foreman start"
+    },
+    {
+      "description": "Start an application with a specified Procfile:",
+      "syntax": "foreman start -f {{Procfile}}"
+    },
+    {
+      "description": "Start a specific application:",
+      "syntax": "foreman start {{process}}"
+    },
+    {
+      "description": "Validate Procfile format:",
+      "syntax": "foreman check"
+    },
+    {
+      "description": "Run one-off commands with the process's environment:",
+      "syntax": "foreman run {{command}}"
+    },
+    {
+      "description": "Start all processes except the one named \"worker\":",
+      "syntax": "foreman start -m all=1,{{worker}}=0"
+    }
+  ]
+}

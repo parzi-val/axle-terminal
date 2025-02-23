@@ -1,0 +1,22 @@
+{
+  "command": "ppmfade",
+  "description": "Generate a transition between two PPM images. More information: https://netpbm.sourceforge.net/doc/ppmfade.html.",
+  "useCases": [
+    {
+      "description": "Generate a transition between two PPM images ([f]irst and [l]ast) using the specified effect:",
+      "syntax": "ppmfade -f {{path/to/image1.ppm}} -l {{path/to/image2.ppm}} -{{mix|spread|shift|relief|oil|...}}"
+    },
+    {
+      "description": "Generate a transition starting with the specified image and ending in a solid black image:",
+      "syntax": "ppmfade -f {{path/to/image.ppm}} -{{mix|spread|shift|relief|oil|...}}"
+    },
+    {
+      "description": "Generate a transition starting with a solid black image and ending with the specified image:",
+      "syntax": "ppmfade -l {{path/to/image.ppm}} -{{mix|spread|shift|relief|oil|...}}"
+    },
+    {
+      "description": "Store the resulting images in files named base.NNNN.ppm where NNNN is a increasing number:",
+      "syntax": "ppmfade -f {{path/to/image1.ppm}} -l {{path/to/image2.ppm}} -{{mix|spread|shift|relief|oil|...}} -base {{base}}"
+    }
+  ]
+}

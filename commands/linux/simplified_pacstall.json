@@ -1,0 +1,38 @@
+{
+  "command": "pacstall",
+  "description": "An AUR package manager for Ubuntu. More information: https://github.com/pacstall/pacstall.",
+  "useCases": [
+    {
+      "description": "Search the package database for a package name:",
+      "syntax": "pacstall --search {{query}}"
+    },
+    {
+      "description": "Install a package:",
+      "syntax": "pacstall --install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "pacstall --remove {{package}}"
+    },
+    {
+      "description": "Add a repository to the database (only GitHub and GitLab are supported):",
+      "syntax": "pacstall --add-repo {{remote_repository_location}}"
+    },
+    {
+      "description": "Update pacstall's scripts:",
+      "syntax": "pacstall --update"
+    },
+    {
+      "description": "Update all packages:",
+      "syntax": "pacstall --upgrade"
+    },
+    {
+      "description": "Display information about a package:",
+      "syntax": "pacstall --cache-info {{package}}"
+    },
+    {
+      "description": "List all installed packages:",
+      "syntax": "pacstall --list"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "ping6",
+  "description": "Send ICMP ECHO_REQUEST packets to network hosts via IPv6 address. More information: https://manned.org/ping6.",
+  "useCases": [
+    {
+      "description": "Ping a host:",
+      "syntax": "ping6 {{host}}"
+    },
+    {
+      "description": "Ping a host only a specific number of times:",
+      "syntax": "ping6 -c {{count}} {{host}}"
+    },
+    {
+      "description": "Ping a host, specifying the interval in seconds between requests (default is 1 second):",
+      "syntax": "ping6 -i {{seconds}} {{host}}"
+    },
+    {
+      "description": "Ping a host without trying to lookup symbolic names for addresses:",
+      "syntax": "ping6 -n {{host}}"
+    },
+    {
+      "description": "Ping a host and ring the bell when a packet is received (if your terminal supports it):",
+      "syntax": "ping6 -a {{host}}"
+    }
+  ]
+}

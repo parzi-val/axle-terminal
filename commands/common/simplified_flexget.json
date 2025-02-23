@@ -1,0 +1,22 @@
+{
+  "command": "flexget",
+  "description": "A multipurpose automation tool for content like torrents, nzbs, podcasts, comics, series, movies, etc. More information: https://flexget.com/en/CLI.",
+  "useCases": [
+    {
+      "description": "Run all Flexget tasks now:",
+      "syntax": "flexget execute --now"
+    },
+    {
+      "description": "Start the Flexget daemon and daemonize its process:",
+      "syntax": "flexget daemon start --daemonize"
+    },
+    {
+      "description": "List all series recorded in Flexget:",
+      "syntax": "flexget series list"
+    },
+    {
+      "description": "Run a task from a config file:",
+      "syntax": "flexget -c {{path/to/config.yml}} execute --task {{task_name}}"
+    }
+  ]
+}

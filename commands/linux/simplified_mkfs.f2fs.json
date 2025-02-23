@@ -1,0 +1,14 @@
+{
+  "command": "mkfs.f2fs",
+  "description": "Create an F2FS filesystem inside a partition. More information: https://manned.org/mkfs.f2fs.",
+  "useCases": [
+    {
+      "description": "Create an F2FS filesystem inside partition 1 on device b (sdb1):",
+      "syntax": "sudo mkfs.f2fs {{/dev/sdb1}}"
+    },
+    {
+      "description": "Create an F2FS filesystem with a volume label:",
+      "syntax": "sudo mkfs.f2fs -l {{volume_label}} {{/dev/sdb1}}"
+    }
+  ]
+}

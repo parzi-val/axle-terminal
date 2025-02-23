@@ -1,0 +1,22 @@
+{
+  "command": "bb",
+  "description": "Native Clojure interpreter for scripting. More information: https://book.babashka.org/#usage.",
+  "useCases": [
+    {
+      "description": "[e]valuate an expression:",
+      "syntax": "bb -e &quot;(+ 1 2 3)&quot;"
+    },
+    {
+      "description": "Evaluate a script [f]ile:",
+      "syntax": "bb -f {{path/to/script.clj}}"
+    },
+    {
+      "description": "Bind [i]nput to a sequence of lines from stdin:",
+      "syntax": "printf &quot;first\\nsecond&quot; | bb -i &quot;(map clojure.string/capitalize *input*)&quot;"
+    },
+    {
+      "description": "Bind [I]nput to a sequence of EDN (Extensible Data Notation) values from stdin:",
+      "syntax": "echo &quot;{:key 'val}&quot; | bb -I &quot;(:key (first *input*))&quot;"
+    }
+  ]
+}

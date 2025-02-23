@@ -1,0 +1,30 @@
+{
+  "command": "getmac",
+  "description": "Display the MAC addresses of a system. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/getmac.",
+  "useCases": [
+    {
+      "description": "Display the MAC addresses for the current system:",
+      "syntax": "getmac"
+    },
+    {
+      "description": "Display the details in a specific format:",
+      "syntax": "getmac /fo {{table|list|csv}}"
+    },
+    {
+      "description": "Exclude the header in the output list:",
+      "syntax": "getmac /nh"
+    },
+    {
+      "description": "Display the MAC addresses for a remote machine:",
+      "syntax": "getmac /s {{hostname}} /u {{username}} /p {{password}}"
+    },
+    {
+      "description": "Display the MAC addresses with verbose information:",
+      "syntax": "getmac /v"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "getmac /?"
+    }
+  ]
+}

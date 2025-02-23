@@ -1,0 +1,26 @@
+{
+  "command": "btrfs rescue",
+  "description": "Try to recover a damaged btrfs filesystem. More information: https://btrfs.readthedocs.io/en/latest/btrfs-rescue.html.",
+  "useCases": [
+    {
+      "description": "Rebuild the filesystem metadata tree (very slow):",
+      "syntax": "sudo btrfs rescue chunk-recover {{path/to/partition}}"
+    },
+    {
+      "description": "Fix device size alignment related problems (e.g. unable to mount the filesystem with super total bytes mismatch):",
+      "syntax": "sudo btrfs rescue fix-device-size {{path/to/partition}}"
+    },
+    {
+      "description": "Recover a corrupted superblock from correct copies (recover the root of filesystem tree):",
+      "syntax": "sudo btrfs rescue super-recover {{path/to/partition}}"
+    },
+    {
+      "description": "Recover from an interrupted transactions (fixes log replay problems):",
+      "syntax": "sudo btrfs rescue zero-log {{path/to/partition}}"
+    },
+    {
+      "description": "Create a /dev/btrfs-control control device when mknod is not installed:",
+      "syntax": "sudo btrfs rescue create-control-device"
+    }
+  ]
+}

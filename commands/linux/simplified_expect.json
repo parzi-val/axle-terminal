@@ -1,0 +1,18 @@
+{
+  "command": "expect",
+  "description": "Script executor that interacts with other programs that require user input. More information: https://manned.org/expect.",
+  "useCases": [
+    {
+      "description": "Execute an expect script from a file:",
+      "syntax": "expect {{path/to/file}}"
+    },
+    {
+      "description": "Execute a specified expect script:",
+      "syntax": "expect -c &quot;{{commands}}&quot;"
+    },
+    {
+      "description": "Enter an interactive REPL (use exit or Ctrl + D to exit):",
+      "syntax": "expect -i"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "lsfd",
+  "description": "List open files and the corresponding processes in Linux. More information: https://manned.org/lsfd.",
+  "useCases": [
+    {
+      "description": "List all open file descriptors:",
+      "syntax": "lsfd"
+    },
+    {
+      "description": "List all files kept open by a specific program:",
+      "syntax": "lsfd {{-Q|--filter}} 'PID == {{process_ID}}'"
+    },
+    {
+      "description": "Check what program has a specific file open:",
+      "syntax": "lsfd {{-Q|--filter}} &quot;NAME == '{{/path/to/file}}'&quot;"
+    },
+    {
+      "description": "List open IPv4 or IPv6 sockets:",
+      "syntax": "lsfd -i{{4|6}}"
+    }
+  ]
+}

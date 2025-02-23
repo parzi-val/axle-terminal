@@ -1,0 +1,38 @@
+{
+  "command": "php",
+  "description": "PHP command-line interface. More information: https://php.net.",
+  "useCases": [
+    {
+      "description": "Parse and execute a PHP script:",
+      "syntax": "php {{path/to/file}}"
+    },
+    {
+      "description": "Check syntax on (i.e. lint) a PHP script:",
+      "syntax": "php -l {{path/to/file}}"
+    },
+    {
+      "description": "Run PHP interactively:",
+      "syntax": "php -a"
+    },
+    {
+      "description": "Run PHP code (Notes: Don't use  tags; escape double quotes with backslash):",
+      "syntax": "php -r &quot;{{code}}&quot;"
+    },
+    {
+      "description": "Start a PHP built-in web server in the current directory:",
+      "syntax": "php -S {{host:port}}"
+    },
+    {
+      "description": "List installed PHP extensions:",
+      "syntax": "php -m"
+    },
+    {
+      "description": "Display information about the current PHP configuration:",
+      "syntax": "php -i"
+    },
+    {
+      "description": "Display information about a specific function:",
+      "syntax": "php --rf {{function_name}}"
+    }
+  ]
+}

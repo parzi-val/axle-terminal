@@ -1,0 +1,30 @@
+{
+  "command": "aws batch",
+  "description": "Run batch computing workloads through the AWS Batch service. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/index.html.",
+  "useCases": [
+    {
+      "description": "List running batch jobs:",
+      "syntax": "aws batch list-jobs --job-queue {{queue_name}}"
+    },
+    {
+      "description": "Create compute environment:",
+      "syntax": "aws batch create-compute-environment --compute-environment-name {{compute_environment_name}} --type {{type}}"
+    },
+    {
+      "description": "Create batch job queue:",
+      "syntax": "aws batch create-job-queue --job-queue-name {{queue_name}} --priority {{priority}} --compute-environment-order {{compute_environment}}"
+    },
+    {
+      "description": "Submit job:",
+      "syntax": "aws batch submit-job --job-name {{job_name}} --job-queue {{job_queue}} --job-definition {{job_definition}}"
+    },
+    {
+      "description": "Describe the list of batch jobs:",
+      "syntax": "aws batch describe-jobs --jobs {{jobs}}"
+    },
+    {
+      "description": "Cancel job:",
+      "syntax": "aws batch cancel-job --job-id {{job_id}} --reason {{reason}}"
+    }
+  ]
+}

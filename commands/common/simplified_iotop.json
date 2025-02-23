@@ -1,0 +1,34 @@
+{
+  "command": "iotop",
+  "description": "Display a table of current I/O usage by processes or threads. More information: https://manned.org/iotop.",
+  "useCases": [
+    {
+      "description": "Start top-like I/O monitor:",
+      "syntax": "sudo iotop"
+    },
+    {
+      "description": "Show only processes or threads actually doing I/O:",
+      "syntax": "sudo iotop --only"
+    },
+    {
+      "description": "Show I/O usage in non-interactive mode:",
+      "syntax": "sudo iotop --batch"
+    },
+    {
+      "description": "Show only I/O usage of processes (default is to show all threads):",
+      "syntax": "sudo iotop --processes"
+    },
+    {
+      "description": "Show I/O usage of given PID(s):",
+      "syntax": "sudo iotop --pid={{PID}}"
+    },
+    {
+      "description": "Show I/O usage of a given user:",
+      "syntax": "sudo iotop --user={{user}}"
+    },
+    {
+      "description": "Show accumulated I/O instead of bandwidth:",
+      "syntax": "sudo iotop --accumulated"
+    }
+  ]
+}

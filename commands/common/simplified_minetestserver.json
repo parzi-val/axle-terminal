@@ -1,0 +1,38 @@
+{
+  "command": "minetestserver",
+  "description": "Multiplayer infinite-world block sandbox server. See also minetest, the graphical client. More information: https://wiki.minetest.org/Setting_up_a_server.",
+  "useCases": [
+    {
+      "description": "Start the server:",
+      "syntax": "minetestserver"
+    },
+    {
+      "description": "List available worlds:",
+      "syntax": "minetestserver --world list"
+    },
+    {
+      "description": "Load the specified world:",
+      "syntax": "minetestserver --world {{world_name}}"
+    },
+    {
+      "description": "List the available game IDs:",
+      "syntax": "minetestserver --gameid list"
+    },
+    {
+      "description": "Use the specified game:",
+      "syntax": "minetestserver --gameid {{game_id}}"
+    },
+    {
+      "description": "Listen on a specific port:",
+      "syntax": "minetestserver --port {{34567}}"
+    },
+    {
+      "description": "Migrate to a different data backend:",
+      "syntax": "minetestserver --migrate {{sqlite3|leveldb|redis}}"
+    },
+    {
+      "description": "Start an interactive terminal after starting the server:",
+      "syntax": "minetestserver --terminal"
+    }
+  ]
+}

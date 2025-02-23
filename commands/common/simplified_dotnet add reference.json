@@ -1,0 +1,22 @@
+{
+  "command": "dotnet add reference",
+  "description": "Add .NET project-to-project references. More information: https://learn.microsoft.com/dotnet/core/tools/dotnet-add-reference.",
+  "useCases": [
+    {
+      "description": "Add a reference to the project in the current directory:",
+      "syntax": "dotnet add reference {{path/to/reference.csproj}}"
+    },
+    {
+      "description": "Add multiple references to the project in the current directory:",
+      "syntax": "dotnet add reference {{path/to/reference1.csproj path/to/reference2.csproj ...}}"
+    },
+    {
+      "description": "Add a reference to the specific project:",
+      "syntax": "dotnet add {{path/to/project.csproj}} reference {{path/to/reference.csproj}}"
+    },
+    {
+      "description": "Add multiple references to the specific project:",
+      "syntax": "dotnet add {{path/to/project.csproj}} reference {{path/to/reference1.csproj path/to/reference2.csproj ...}}"
+    }
+  ]
+}

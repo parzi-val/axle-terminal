@@ -1,0 +1,18 @@
+{
+  "command": "kernel-install",
+  "description": "Add and remove kernel and initrd images to and from /boot. More information: https://manned.org/kernel-install.8.",
+  "useCases": [
+    {
+      "description": "Add kernel and initramfs images to bootloader partition:",
+      "syntax": "sudo kernel-install add {{kernel-version}} {{kernel-image}} {{path/to/initrd-file ...}}"
+    },
+    {
+      "description": "Remove kernel from the bootloader partition:",
+      "syntax": "sudo kernel-install remove {{kernel-version}}"
+    },
+    {
+      "description": "Show various paths and parameters that have been configured or auto-detected:",
+      "syntax": "sudo kernel-install inspect {{kernel-image}}"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "adb logcat",
+  "description": "Dump a log of system messages. More information: https://developer.android.com/tools/logcat.",
+  "useCases": [
+    {
+      "description": "Display system logs:",
+      "syntax": "adb logcat"
+    },
+    {
+      "description": "Display lines that match a regular [e]xpression:",
+      "syntax": "adb logcat -e {{regular_expression}}"
+    },
+    {
+      "description": "Display logs for a tag in a specific mode ([V]erbose, [D]ebug, [I]nfo, [W]arning, [E]rror, [F]atal, [S]ilent), filtering other tags:",
+      "syntax": "adb logcat {{tag}}:{{mode}} *:S"
+    },
+    {
+      "description": "Display logs for React Native applications in [V]erbose mode [S]ilencing other tags:",
+      "syntax": "adb logcat ReactNative:V ReactNativeJS:V *:S"
+    },
+    {
+      "description": "Display logs for all tags with priority level [W]arning and higher:",
+      "syntax": "adb logcat *:W"
+    },
+    {
+      "description": "Display logs for a specific PID:",
+      "syntax": "adb logcat --pid {{pid}}"
+    },
+    {
+      "description": "Display logs for the process of a specific package:",
+      "syntax": "adb logcat --pid $(adb shell pidof -s {{package}})"
+    },
+    {
+      "description": "Color the log (usually use with filters):",
+      "syntax": "adb logcat -v color"
+    }
+  ]
+}

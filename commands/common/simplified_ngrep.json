@@ -1,0 +1,26 @@
+{
+  "command": "ngrep",
+  "description": "Filter network traffic packets using regular expressions. More information: https://github.com/jpr5/ngrep.",
+  "useCases": [
+    {
+      "description": "Capture traffic of all interfaces:",
+      "syntax": "ngrep -d any"
+    },
+    {
+      "description": "Capture traffic of a specific interface:",
+      "syntax": "ngrep -d {{eth0}}"
+    },
+    {
+      "description": "Capture traffic crossing port 22 of interface eth0:",
+      "syntax": "ngrep -d {{eth0}} port {{22}}"
+    },
+    {
+      "description": "Capture traffic from or to a host:",
+      "syntax": "ngrep host {{www.example.com}}"
+    },
+    {
+      "description": "Filter keyword 'User-Agent:' of interface eth0:",
+      "syntax": "ngrep -d {{eth0}} '{{User-Agent:}}'"
+    }
+  ]
+}

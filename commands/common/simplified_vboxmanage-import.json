@@ -1,0 +1,38 @@
+{
+  "command": "vboxmanage-import",
+  "description": "Import a previously exported virtual machine (VM). More information: https://www.virtualbox.org/manual/ch08.html#vboxmanage-import.",
+  "useCases": [
+    {
+      "description": "Import a VM from an OVF or OVA file:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}}"
+    },
+    {
+      "description": "Set the name of the imported VM:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --name {{vm_name}}"
+    },
+    {
+      "description": "Indicate the folder where the configuration of the imported VM will be stored:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --basefolder {{path/to/directory}}"
+    },
+    {
+      "description": "Register the imported VM in VirtualBox:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --register"
+    },
+    {
+      "description": "Perform a dry run to check the import without actually importing:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --dry-run"
+    },
+    {
+      "description": "Set the guest OS type (one of VBoxManage list ostypes) for the imported VM:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --ostype={{ostype}}"
+    },
+    {
+      "description": "Set the memory (in megabytes) for the imported VM:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --memory={{1}}"
+    },
+    {
+      "description": "Set the number of CPUs for the imported VM:",
+      "syntax": "VBoxManage import {{path/to/file.ovf}} --cpus={{1}}"
+    }
+  ]
+}

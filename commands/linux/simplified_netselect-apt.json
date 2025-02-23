@@ -1,0 +1,22 @@
+{
+  "command": "netselect-apt",
+  "description": "Create a sources.list file for a Debian mirror with the lowest latency. More information: https://manned.org/netselect-apt.",
+  "useCases": [
+    {
+      "description": "Create sources.list using the lowest latency server:",
+      "syntax": "sudo netselect-apt"
+    },
+    {
+      "description": "Specify Debian branch, stable is used by default:",
+      "syntax": "sudo netselect-apt {{testing}}"
+    },
+    {
+      "description": "Include non-free section:",
+      "syntax": "sudo netselect-apt --non-free"
+    },
+    {
+      "description": "Specify a country for the mirror list lookup:",
+      "syntax": "sudo netselect-apt -c {{India}}"
+    }
+  ]
+}

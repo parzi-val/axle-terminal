@@ -1,0 +1,18 @@
+{
+  "command": "git sizer",
+  "description": "Computes various Git repository size metrics and alerts you to any that might cause problems or inconvenience. More information: https://github.com/github/git-sizer.",
+  "useCases": [
+    {
+      "description": "Report only statistics that have a level of concern greater than 0:",
+      "syntax": "git sizer"
+    },
+    {
+      "description": "Report all statistics:",
+      "syntax": "git sizer -v"
+    },
+    {
+      "description": "See additional options:",
+      "syntax": "git sizer -h"
+    }
+  ]
+}

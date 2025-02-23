@@ -1,0 +1,34 @@
+{
+  "command": "ipfs",
+  "description": "Inter Planetary File System. A peer-to-peer hypermedia protocol. Aims to make the web more open. More information: https://ipfs.io.",
+  "useCases": [
+    {
+      "description": "Add a file from local to the filesystem, pin it and print the relative hash:",
+      "syntax": "ipfs add {{path/to/file}}"
+    },
+    {
+      "description": "Add a directory and its files recursively from local to the filesystem and print the relative hash:",
+      "syntax": "ipfs add -r {{path/to/directory}}"
+    },
+    {
+      "description": "Save a remote file and give it a name but not pin it:",
+      "syntax": "ipfs get {{hash}} -o {{path/to/file}}"
+    },
+    {
+      "description": "Pin a remote file locally:",
+      "syntax": "ipfs pin add {{hash}}"
+    },
+    {
+      "description": "Display pinned files:",
+      "syntax": "ipfs pin ls"
+    },
+    {
+      "description": "Unpin a file from the local storage:",
+      "syntax": "ipfs pin rm {{hash}}"
+    },
+    {
+      "description": "Remove unpinned files from local storage:",
+      "syntax": "ipfs repo gc"
+    }
+  ]
+}

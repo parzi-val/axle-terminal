@@ -1,0 +1,22 @@
+{
+  "command": "dfc",
+  "description": "Get an overview of the filesystem disk space usage with colors and graphs. More information: https://github.com/Rolinh/dfc.",
+  "useCases": [
+    {
+      "description": "Display filesystems and their disk usage in human-readable form with colors and graphs:",
+      "syntax": "dfc"
+    },
+    {
+      "description": "Display all filesystems including pseudo, duplicate and inaccessible filesystems:",
+      "syntax": "dfc -a"
+    },
+    {
+      "description": "Display filesystems without color:",
+      "syntax": "dfc -c never"
+    },
+    {
+      "description": "Display filesystems containing \"ext\" in the filesystem type:",
+      "syntax": "dfc -t ext"
+    }
+  ]
+}

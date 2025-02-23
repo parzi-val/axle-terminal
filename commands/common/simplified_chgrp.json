@@ -1,0 +1,22 @@
+{
+  "command": "chgrp",
+  "description": "Change group ownership of files and directories. More information: https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html.",
+  "useCases": [
+    {
+      "description": "Change the owner group of a file/directory:",
+      "syntax": "chgrp {{group}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Recursively change the owner group of a directory and its contents:",
+      "syntax": "chgrp -R {{group}} {{path/to/directory}}"
+    },
+    {
+      "description": "Change the owner group of a symbolic link:",
+      "syntax": "chgrp -h {{group}} {{path/to/symlink}}"
+    },
+    {
+      "description": "Change the owner group of a file/directory to match a reference file:",
+      "syntax": "chgrp --reference {{path/to/reference_file}} {{path/to/file_or_directory}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "vmtouch",
+  "description": "Manage the filesystem cache. More information: https://manned.org/vmtouch.",
+  "useCases": [
+    {
+      "description": "Print the cache status of a file:",
+      "syntax": "vmtouch {{path/to/file}}"
+    },
+    {
+      "description": "Load a file into cache:",
+      "syntax": "vmtouch -t {{path/to/file}}"
+    },
+    {
+      "description": "Evict a file from cache:",
+      "syntax": "vmtouch -e {{path/to/file}}"
+    },
+    {
+      "description": "Lock a file in cache to prevent eviction from memory:",
+      "syntax": "vmtouch -l {{path/to/file}}"
+    },
+    {
+      "description": "Lock a file and daemonize the program:",
+      "syntax": "vmtouch -ld {{path/to/file}}"
+    }
+  ]
+}

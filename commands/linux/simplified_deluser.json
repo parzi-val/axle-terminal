@@ -1,0 +1,22 @@
+{
+  "command": "deluser",
+  "description": "Delete a user from the system. More information: https://manned.org/deluser.",
+  "useCases": [
+    {
+      "description": "Remove a user:",
+      "syntax": "sudo deluser {{username}}"
+    },
+    {
+      "description": "Remove a user and their home directory:",
+      "syntax": "sudo deluser --remove-home {{username}}"
+    },
+    {
+      "description": "Remove a user and their home, but backup their files into a .tar.gz file in the specified directory:",
+      "syntax": "sudo deluser --backup-to {{path/to/backup_directory}} --remove-home {{username}}"
+    },
+    {
+      "description": "Remove a user, and all files owned by them:",
+      "syntax": "sudo deluser --remove-all-files {{username}}"
+    }
+  ]
+}

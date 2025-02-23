@@ -1,0 +1,26 @@
+{
+  "command": "terminalizer",
+  "description": "Record the terminal, generate animated GIFs and a web player, and optionally upload to https://terminalizer.com. See also: asciinema. More information: https://terminalizer.com.",
+  "useCases": [
+    {
+      "description": "Create the global configuration directory:",
+      "syntax": "terminalizer init"
+    },
+    {
+      "description": "Record the terminal and create a recording file:",
+      "syntax": "terminalizer record {{path/to/recording.gif}}"
+    },
+    {
+      "description": "Play a recorded file on the terminal:",
+      "syntax": "terminalizer play {{path/to/recording.gif}}"
+    },
+    {
+      "description": "Render a recording file as an animated GIF image:",
+      "syntax": "terminalizer render {{path/to/recording.gif}}"
+    },
+    {
+      "description": "Upload a video to https://terminalizer.com:",
+      "syntax": "terminalizer share {{path/to/recording.gif}}"
+    }
+  ]
+}

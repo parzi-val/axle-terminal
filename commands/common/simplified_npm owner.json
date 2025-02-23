@@ -1,0 +1,18 @@
+{
+  "command": "npm owner",
+  "description": "Manage ownership of published packages. More information: https://docs.npmjs.com/cli/commands/npm-owner.",
+  "useCases": [
+    {
+      "description": "Add a new user as a maintainer of a package:",
+      "syntax": "npm owner add {{username}} {{package_name}}"
+    },
+    {
+      "description": "Remove a user from a package's owner list:",
+      "syntax": "npm owner rm {{username}} {{package_name}}"
+    },
+    {
+      "description": "List all owners of a package:",
+      "syntax": "npm owner ls {{package_name}}"
+    }
+  ]
+}

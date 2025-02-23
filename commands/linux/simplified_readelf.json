@@ -1,0 +1,26 @@
+{
+  "command": "readelf",
+  "description": "Display information about ELF files. More information: https://manned.org/readelf.1.",
+  "useCases": [
+    {
+      "description": "Display all information about the ELF file:",
+      "syntax": "readelf -all {{path/to/binary}}"
+    },
+    {
+      "description": "Display all the headers present in the ELF file:",
+      "syntax": "readelf --headers {{path/to/binary}}"
+    },
+    {
+      "description": "Display the entries in symbol table section of the ELF file, if it has one:",
+      "syntax": "readelf --symbols {{path/to/binary}}"
+    },
+    {
+      "description": "Display ELF header information:",
+      "syntax": "readelf --file-header {{path/to/binary}}"
+    },
+    {
+      "description": "Display ELF section header information:",
+      "syntax": "readelf --section-headers {{path/to/binary}}"
+    }
+  ]
+}

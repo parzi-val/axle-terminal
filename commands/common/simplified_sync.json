@@ -1,0 +1,14 @@
+{
+  "command": "sync",
+  "description": "Flushes all pending write operations to the appropriate disks. More information: https://www.gnu.org/software/coreutils/manual/html_node/sync-invocation.html.",
+  "useCases": [
+    {
+      "description": "Flush all pending write operations on all disks:",
+      "syntax": "sync"
+    },
+    {
+      "description": "Flush all pending write operations on a single file to disk:",
+      "syntax": "sync {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "wmctrl",
+  "description": "CLI for X Window Manager. More information: https://manned.org/wmctrl.",
+  "useCases": [
+    {
+      "description": "List all windows, managed by the window manager:",
+      "syntax": "wmctrl -l"
+    },
+    {
+      "description": "Switch to the first window whose (partial) title matches:",
+      "syntax": "wmctrl -a {{window_title}}"
+    },
+    {
+      "description": "Move a window to the current workspace, raise it and give it focus:",
+      "syntax": "wmctrl -R {{window_title}}"
+    },
+    {
+      "description": "Switch to a workspace:",
+      "syntax": "wmctrl -s {{workspace_number}}"
+    },
+    {
+      "description": "Select a window and toggle fullscreen:",
+      "syntax": "wmctrl -r {{window_title}} -b toggle,fullscreen"
+    },
+    {
+      "description": "Select a window and move it to a workspace:",
+      "syntax": "wmctrl -r {{window_title}} -t {{workspace_number}}"
+    }
+  ]
+}

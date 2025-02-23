@@ -1,0 +1,26 @@
+{
+  "command": "systemd-hwdb",
+  "description": "Hardware database management tool. More information: https://www.freedesktop.org/software/systemd/man/systemd-hwdb.html.",
+  "useCases": [
+    {
+      "description": "Update the binary hardware database in /etc/udev:",
+      "syntax": "systemd-hwdb update"
+    },
+    {
+      "description": "Query the hardware database and print the result for a specific modalias:",
+      "syntax": "systemd-hwdb query {{modalias}}"
+    },
+    {
+      "description": "Update the binary hardware database, returning a non-zero exit value on any parsing error:",
+      "syntax": "systemd-hwdb --strict update"
+    },
+    {
+      "description": "Update the binary hardware database in /usr/lib/udev:",
+      "syntax": "systemd-hwdb --usr update"
+    },
+    {
+      "description": "Update the binary hardware database in the specified root path:",
+      "syntax": "systemd-hwdb --root={{path/to/root}} update"
+    }
+  ]
+}

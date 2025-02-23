@@ -1,0 +1,26 @@
+{
+  "command": "git-maintenance",
+  "description": "Run tasks to optimize Git repository data. More information: https://git-scm.com/docs/git-maintenance.",
+  "useCases": [
+    {
+      "description": "Register the current repository in the user's list of repositories to daily have maintenance run:",
+      "syntax": "git maintenance register"
+    },
+    {
+      "description": "Schedule maintenance tasks on the current repository every hour:",
+      "syntax": "git maintenance start"
+    },
+    {
+      "description": "Halt the background maintenance schedule for the current repository:",
+      "syntax": "git maintenance stop"
+    },
+    {
+      "description": "Remove the current repository from the user's maintenance repository list:",
+      "syntax": "git maintenance unregister"
+    },
+    {
+      "description": "Run a specific maintenance task on the current repository:",
+      "syntax": "git maintenance run --task={{commit-graph|gc|incremental-repack|loose-objects|pack-refs|prefetch}}"
+    }
+  ]
+}

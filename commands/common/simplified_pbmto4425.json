@@ -1,0 +1,10 @@
+{
+  "command": "pbmto4425",
+  "description": "Display a PBM image on an AT&T 4425 terminal. See also: ppmtoterm, pbmtoascii. More information: https://netpbm.sourceforge.net/doc/pbmto4425.html.",
+  "useCases": [
+    {
+      "description": "Display a PBM image on an AT&T 4425 terminal using the terminal's mosaic graphics character set:",
+      "syntax": "pbmto4425 {{path/to/image.pbm}}"
+    }
+  ]
+}

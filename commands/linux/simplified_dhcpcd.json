@@ -1,0 +1,14 @@
+{
+  "command": "dhcpcd",
+  "description": "DHCP client. More information: https://roy.marples.name/projects/dhcpcd.",
+  "useCases": [
+    {
+      "description": "Release all address leases:",
+      "syntax": "sudo dhcpcd --release"
+    },
+    {
+      "description": "Request the DHCP server for new leases:",
+      "syntax": "sudo dhcpcd --rebind"
+    }
+  ]
+}

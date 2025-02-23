@@ -1,0 +1,14 @@
+{
+  "command": "tlmgr path",
+  "description": "Add or remove symlinks for TeX Live executables, man pages and info pages. This command has to be re-run for files added in the future. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "Add symlinks to TeX Live files:",
+      "syntax": "sudo tlmgr path add"
+    },
+    {
+      "description": "Remove symlinks to TeX Live files:",
+      "syntax": "sudo tlmgr path remove"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "pacstrap",
+  "description": "Arch Linux install script to install packages to the specified new root directory. More information: https://manned.org/pacstrap.8.",
+  "useCases": [
+    {
+      "description": "Install the base package, Linux kernel and firmware for common hardware:",
+      "syntax": "pacstrap {{path/to/new/root}} {{base}} {{linux}} {{linux-firmware}}"
+    },
+    {
+      "description": "Install the base package, Linux LTS kernel and base-devel build tools:",
+      "syntax": "pacstrap {{path/to/new/root}} {{base}} {{base-devel}} {{linux-lts}}"
+    },
+    {
+      "description": "Install packages without copy the host's mirrorlist to the target:",
+      "syntax": "pacstrap -M {{path/to/new/root}} {{packages}}"
+    },
+    {
+      "description": "Use an alternate configuration file for Pacman:",
+      "syntax": "pacstrap -C {{path/to/pacman.conf}} {{path/to/new/root}} {{packages}}"
+    },
+    {
+      "description": "Install packages using the package cache on the host instead of on the target:",
+      "syntax": "pacstrap -c {{path/to/new/root}} {{packages}}"
+    },
+    {
+      "description": "Initialize an empty pacman keyring in the target without copying it from the host:",
+      "syntax": "pacstrap -K {{path/to/new/root}} {{packages}}"
+    },
+    {
+      "description": "Install packages in interactive mode (prompts for confirmation):",
+      "syntax": "pacstrap -i {{path/to/new/root}} {{packages}}"
+    },
+    {
+      "description": "Install packages using package files:",
+      "syntax": "pacstrap -U {{path/to/new/root}} {{path/to/package1}} {{path/to/package2}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "strings",
+  "description": "Find printable strings in an object file or binary. More information: https://manned.org/strings.",
+  "useCases": [
+    {
+      "description": "Print all strings in a binary:",
+      "syntax": "strings {{path/to/file}}"
+    },
+    {
+      "description": "Limit results to strings at least n characters long:",
+      "syntax": "strings -n {{n}} {{path/to/file}}"
+    },
+    {
+      "description": "Prefix each result with its offset within the file:",
+      "syntax": "strings -t d {{path/to/file}}"
+    },
+    {
+      "description": "Prefix each result with its offset within the file in hexadecimal:",
+      "syntax": "strings -t x {{path/to/file}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "bzip2",
+  "description": "A block-sorting file compressor. More information: https://manned.org/bzip2.",
+  "useCases": [
+    {
+      "description": "Compress a file:",
+      "syntax": "bzip2 {{path/to/file_to_compress}}"
+    },
+    {
+      "description": "[d]ecompress a file:",
+      "syntax": "bzip2 -d {{path/to/compressed_file.bz2}}"
+    },
+    {
+      "description": "[d]ecompress a file to stdout:",
+      "syntax": "bzip2 -dc {{path/to/compressed_file.bz2}}"
+    },
+    {
+      "description": "Test the integrity of each file inside the archive file:",
+      "syntax": "bzip2 --test {{path/to/compressed_file.bz2}}"
+    },
+    {
+      "description": "Show the compression ratio for each file processed with detailed information:",
+      "syntax": "bzip2 --verbose {{path/to/compressed_files.bz2}}"
+    },
+    {
+      "description": "Decompress a file overwriting existing files:",
+      "syntax": "bzip2 --force {{path/to/compressed_file.bz2}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "bzip2 -h"
+    }
+  ]
+}

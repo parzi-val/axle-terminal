@@ -1,0 +1,30 @@
+{
+  "command": "nova",
+  "description": "The OpenStack project that provides a way to provision compute instances. More information: https://docs.openstack.org/nova/latest/.",
+  "useCases": [
+    {
+      "description": "List VMs on current tenant:",
+      "syntax": "nova list"
+    },
+    {
+      "description": "List VMs of all tenants (admin user only):",
+      "syntax": "nova list --all-tenants"
+    },
+    {
+      "description": "Boot a VM on a specific host:",
+      "syntax": "nova boot --nic net-id={{net_id}} --image {{image_id}} --flavor {{flavor}} --availability-zone nova:{{host_name}} {{vm_name}}"
+    },
+    {
+      "description": "Start a server:",
+      "syntax": "nova start {{server}}"
+    },
+    {
+      "description": "Stop a server:",
+      "syntax": "nova stop {{server}}"
+    },
+    {
+      "description": "Attach a network interface to a specific VM:",
+      "syntax": "nova interface-attach --net-id {{net_id}} {{server}}"
+    }
+  ]
+}

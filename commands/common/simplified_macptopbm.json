@@ -1,0 +1,22 @@
+{
+  "command": "macptopbm",
+  "description": "Read a MacPaint file as input and produce a PBM image as output. See also: pbmtomacp. More information: https://netpbm.sourceforge.net/doc/macptopbm.html.",
+  "useCases": [
+    {
+      "description": "Convert a MacPaint file into a PGM image:",
+      "syntax": "macptopbm {{path/to/file.macp}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Skip over a specified number of bytes when reading the file:",
+      "syntax": "macptopbm -extraskip {{N}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Suppress all informational messages:",
+      "syntax": "macptopbm -quiet &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "macptopbm -version"
+    }
+  ]
+}

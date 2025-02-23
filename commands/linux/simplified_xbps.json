@@ -1,0 +1,18 @@
+{
+  "command": "xbps",
+  "description": "The X Binary Package System is the package manager used by Void Linux. For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta. More information: https://docs.voidlinux.org/xbps/index.html.",
+  "useCases": [
+    {
+      "description": "View documentation for installing and updating packages:",
+      "syntax": "tldr xbps-install"
+    },
+    {
+      "description": "View documentation for removing packages:",
+      "syntax": "tldr xbps-remove"
+    },
+    {
+      "description": "View documentation for querying for package and repository information:",
+      "syntax": "tldr xbps-query"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "tor",
+  "description": "Enable anonymous communication through the Tor network. More information: https://manned.org/tor.",
+  "useCases": [
+    {
+      "description": "Connect to the Tor network:",
+      "syntax": "tor"
+    },
+    {
+      "description": "View Tor configuration:",
+      "syntax": "tor --config"
+    },
+    {
+      "description": "Check Tor status:",
+      "syntax": "tor --status"
+    },
+    {
+      "description": "Run as client only:",
+      "syntax": "tor --client"
+    },
+    {
+      "description": "Run as relay:",
+      "syntax": "tor --relay"
+    },
+    {
+      "description": "Run as bridge:",
+      "syntax": "tor --bridge"
+    },
+    {
+      "description": "Run as a hidden service:",
+      "syntax": "tor --hidden-service"
+    }
+  ]
+}

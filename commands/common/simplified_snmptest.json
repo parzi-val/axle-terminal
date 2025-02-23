@@ -1,0 +1,10 @@
+{
+  "command": "snmptest",
+  "description": "Start an interactive SNMP prompt. More information: https://manned.org/snmptest.",
+  "useCases": [
+    {
+      "description": "Start the prompt:",
+      "syntax": "snmpget -v {{version}} -c {{community}} {{ip}}"
+    }
+  ]
+}

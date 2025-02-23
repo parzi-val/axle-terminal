@@ -1,0 +1,30 @@
+{
+  "command": "uwfmgr",
+  "description": "Unified Write Filter (UWF). Protect drives by redirecting any writes to the drive to a virtual overlay. Writes are discarded upon reboot unless committed by default. More information: https://learn.microsoft.com/windows/iot/iot-enterprise/customize/unified-write-filter.",
+  "useCases": [
+    {
+      "description": "Get the current status:",
+      "syntax": "uwfmgr get-config"
+    },
+    {
+      "description": "Set a drive as protected:",
+      "syntax": "uwfmgr volume protect {{drive_letter}}:"
+    },
+    {
+      "description": "Remove a drive from protection list:",
+      "syntax": "uwfmgr volume unprotect {{drive_letter}}:"
+    },
+    {
+      "description": "Enable or disable protection (Applies after reboot):",
+      "syntax": "uwfmgr filter {{enable|disable}}"
+    },
+    {
+      "description": "Commit changes of a file on protected drive:",
+      "syntax": "uwfmgr file commit {{drive_letter:\\path\\to\\file}}"
+    },
+    {
+      "description": "Commit deletion of a file on protected drive:",
+      "syntax": "uwfmgr file commit-delete {{drive_letter:\\path\\to\\file}}"
+    }
+  ]
+}

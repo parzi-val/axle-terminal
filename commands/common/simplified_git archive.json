@@ -1,0 +1,30 @@
+{
+  "command": "git archive",
+  "description": "Create an archive of files from a tree. More information: https://git-scm.com/docs/git-archive.",
+  "useCases": [
+    {
+      "description": "Create a tar archive from the contents of the current HEAD and print it to stdout:",
+      "syntax": "git archive {{-v|--verbose}} HEAD"
+    },
+    {
+      "description": "Use the Zip format and report progress verbosely:",
+      "syntax": "git archive {{-v|--verbose}} --format zip HEAD"
+    },
+    {
+      "description": "Output the Zip archive to a specific file:",
+      "syntax": "git archive {{-v|--verbose}} {{-o|--output}} {{path/to/file.zip}} HEAD"
+    },
+    {
+      "description": "Create a tar archive from the contents of the latest commit of a specific branch:",
+      "syntax": "git archive {{-o|--output}} {{path/to/file.tar}} {{branch_name}}"
+    },
+    {
+      "description": "Use the contents of a specific directory:",
+      "syntax": "git archive {{-o|--output}} {{path/to/file.tar}} HEAD:{{path/to/directory}}"
+    },
+    {
+      "description": "Prepend a path to each file to archive it inside a specific directory:",
+      "syntax": "git archive {{-o|--output}} {{path/to/file.tar}} --prefix {{path/to/prepend}}/ HEAD"
+    }
+  ]
+}

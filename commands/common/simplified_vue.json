@@ -1,0 +1,14 @@
+{
+  "command": "vue",
+  "description": "Multi-purpose CLI for Vue.js. Some subcommands such as build have their own usage documentation. More information: https://cli.vuejs.org.",
+  "useCases": [
+    {
+      "description": "Create a new Vue project interactively:",
+      "syntax": "vue create {{project_name}}"
+    },
+    {
+      "description": "Create a new project with web UI:",
+      "syntax": "vue ui"
+    }
+  ]
+}

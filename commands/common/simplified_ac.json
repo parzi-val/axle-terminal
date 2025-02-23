@@ -1,0 +1,22 @@
+{
+  "command": "ac",
+  "description": "Print statistics on how long users have been connected. More information: https://man.openbsd.org/ac.",
+  "useCases": [
+    {
+      "description": "Print how long the current user has been connected in hours:",
+      "syntax": "ac"
+    },
+    {
+      "description": "Print how long users have been connected in hours:",
+      "syntax": "ac -p"
+    },
+    {
+      "description": "Print how long a particular user has been connected in hours:",
+      "syntax": "ac -p {{username}}"
+    },
+    {
+      "description": "Print how long a particular user has been connected in hours per [d]ay (with total):",
+      "syntax": "ac -dp {{username}}"
+    }
+  ]
+}

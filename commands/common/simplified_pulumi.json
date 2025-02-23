@@ -1,0 +1,34 @@
+{
+  "command": "pulumi",
+  "description": "Define infrastructure on any cloud using familiar programming languages. Some subcommands such as up have their own usage documentation. More information: https://www.pulumi.com/docs/iac/cli/.",
+  "useCases": [
+    {
+      "description": "Create a new project using a template:",
+      "syntax": "pulumi new"
+    },
+    {
+      "description": "Create a new stack using an isolated deployment target:",
+      "syntax": "pulumi stack init"
+    },
+    {
+      "description": "Configure variables (e.g. keys, regions, etc.) interactively:",
+      "syntax": "pulumi config"
+    },
+    {
+      "description": "Preview and deploy changes to a program and/or infrastructure:",
+      "syntax": "pulumi up"
+    },
+    {
+      "description": "Preview deployment changes without performing them (dry-run):",
+      "syntax": "pulumi preview"
+    },
+    {
+      "description": "Destroy a program and its infrastructure:",
+      "syntax": "pulumi destroy"
+    },
+    {
+      "description": "Use Pulumi locally, independent of a Pulumi Cloud:",
+      "syntax": "pulumi login {{-l|--local}}"
+    }
+  ]
+}

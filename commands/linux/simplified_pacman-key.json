@@ -1,0 +1,38 @@
+{
+  "command": "pacman-key",
+  "description": "Wrapper script for GnuPG used to manage pacman's keyring. See also: pacman. More information: https://manned.org/pacman-key.",
+  "useCases": [
+    {
+      "description": "Initialize the pacman keyring:",
+      "syntax": "sudo pacman-key --init"
+    },
+    {
+      "description": "Add the default Arch Linux keys:",
+      "syntax": "sudo pacman-key --populate {{archlinux}}"
+    },
+    {
+      "description": "List keys from the public keyring:",
+      "syntax": "pacman-key --list-keys"
+    },
+    {
+      "description": "Add the specified keys:",
+      "syntax": "sudo pacman-key --add {{path/to/keyfile.gpg}}"
+    },
+    {
+      "description": "Receive a key from a key server:",
+      "syntax": "sudo pacman-key --recv-keys &quot;{{uid|name|email}}&quot;"
+    },
+    {
+      "description": "Print the fingerprint of a specific key:",
+      "syntax": "pacman-key --finger &quot;{{uid|name|email}}&quot;"
+    },
+    {
+      "description": "Sign an imported key locally:",
+      "syntax": "sudo pacman-key --lsign-key &quot;{{uid|name|email}}&quot;"
+    },
+    {
+      "description": "Remove a specific key:",
+      "syntax": "sudo pacman-key --delete &quot;{{uid|name|email}}&quot;"
+    }
+  ]
+}

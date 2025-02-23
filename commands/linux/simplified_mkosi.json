@@ -1,0 +1,26 @@
+{
+  "command": "mkosi",
+  "description": "Build modern, legacy-free Linux images. Part of systemd. More information: https://manned.org/mkosi.",
+  "useCases": [
+    {
+      "description": "Show current build configuration to verify what would be built:",
+      "syntax": "mkosi summary"
+    },
+    {
+      "description": "Build an image with default settings (if no distribution is selected, the distribution of the host system is used):",
+      "syntax": "mkosi build --distribution {{fedora|debian|ubuntu|arch|opensuse|...}}"
+    },
+    {
+      "description": "Build an image and run an interactive shell in a systemd-nspawn container of the image:",
+      "syntax": "mkosi shell"
+    },
+    {
+      "description": "Boot an image in a virtual machine using QEMU (only supported for disk images or CPIO images when a kernel is provided):",
+      "syntax": "mkosi qemu"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "mkosi help"
+    }
+  ]
+}

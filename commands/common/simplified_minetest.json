@@ -1,0 +1,22 @@
+{
+  "command": "minetest",
+  "description": "Multiplayer infinite-world block sandbox. See also minetestserver, the server-only binary. More information: https://wiki.minetest.org/Minetest.",
+  "useCases": [
+    {
+      "description": "Start Minetest in client mode:",
+      "syntax": "minetest"
+    },
+    {
+      "description": "Start Minetest in server mode by hosting a specific world:",
+      "syntax": "minetest --server --world {{name}}"
+    },
+    {
+      "description": "Write logs to a specific file:",
+      "syntax": "minetest --logfile {{path/to/file}}"
+    },
+    {
+      "description": "Only write errors to the console:",
+      "syntax": "minetest --quiet"
+    }
+  ]
+}

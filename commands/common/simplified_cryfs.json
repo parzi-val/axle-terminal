@@ -1,0 +1,22 @@
+{
+  "command": "cryfs",
+  "description": "A cryptographic filesystem for the cloud. More information: https://www.cryfs.org/.",
+  "useCases": [
+    {
+      "description": "Mount an encrypted filesystem. The initialization wizard will be started on the first execution:",
+      "syntax": "cryfs {{path/to/cipher_dir}} {{path/to/mount_point}}"
+    },
+    {
+      "description": "Unmount an encrypted filesystem:",
+      "syntax": "cryfs-unmount {{path/to/mount_point}}"
+    },
+    {
+      "description": "Automatically unmount after ten minutes of inactivity:",
+      "syntax": "cryfs --unmount-idle {{10}} {{path/to/cipher_dir}} {{path/to/mount_point}}"
+    },
+    {
+      "description": "List supported ciphers:",
+      "syntax": "cryfs --show-ciphers"
+    }
+  ]
+}

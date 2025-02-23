@@ -1,0 +1,22 @@
+{
+  "command": "cargo metadata",
+  "description": "Output the workspace members and resolved dependencies of current package as JSON. Note: The output format is subject to change in future versions of Cargo. More information: https://doc.rust-lang.org/cargo/commands/cargo-metadata.html.",
+  "useCases": [
+    {
+      "description": "Print the workspace members and resolved dependencies of the current package:",
+      "syntax": "cargo metadata"
+    },
+    {
+      "description": "Print only the workspace members and do not fetch dependencies:",
+      "syntax": "cargo metadata --no-deps"
+    },
+    {
+      "description": "Print metadata in a specific format based on the specified version:",
+      "syntax": "cargo metadata --format-version {{version}}"
+    },
+    {
+      "description": "Print metadata with the resolve field including dependencies only for the given target triple (Note: the packages array will still include the dependencies for all targets):",
+      "syntax": "cargo metadata --filter-platform {{target_triple}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "robocopy",
+  "description": "Robust File and Folder Copy. By default files will only be copied if the source and destination have different time stamps or different file sizes. More information: https://learn.microsoft.com/windows-server/administration/windows-commands/robocopy.",
+  "useCases": [
+    {
+      "description": "Copy all .jpg and .bmp files from one directory to another:",
+      "syntax": "robocopy {{path\\to\\source_directory}} {{path\\to\\destination_directory}} {{*.jpg}} {{*.bmp}}"
+    },
+    {
+      "description": "Copy all files and subdirectories, including empty ones:",
+      "syntax": "robocopy {{path\\to\\source_directory}} {{path\\to\\destination_directory}} /E"
+    },
+    {
+      "description": "Mirror/Sync a directory, deleting anything not in source and include all attributes and permissions:",
+      "syntax": "robocopy {{path\\to\\source_directory}} {{path\\to\\destination_directory}} /MIR /COPYALL"
+    },
+    {
+      "description": "Copy all files and subdirectories, excluding source files that are older than destination files:",
+      "syntax": "robocopy {{path\\to\\source_directory}} {{path\\to\\destination_directory}} /E /XO"
+    },
+    {
+      "description": "List all files 50 MB or larger instead of copying them:",
+      "syntax": "robocopy {{path\\to\\source_directory}} {{path\\to\\destination_directory}} /MIN:{{52428800}} /L"
+    },
+    {
+      "description": "Allow resuming if network connection is lost and limit retries to 5 and wait time to 15 sec:",
+      "syntax": "robocopy {{path\\to\\source_directory}} {{path\\to\\destination_directory}} /Z /R:5 /W:15"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "robocopy /?"
+    }
+  ]
+}

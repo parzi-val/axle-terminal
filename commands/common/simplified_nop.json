@@ -1,0 +1,18 @@
+{
+  "command": "nop",
+  "description": "Check validity and pretty-print graphs in canonical format. Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten. More information: https://www.graphviz.org/pdf/nop.1.pdf.",
+  "useCases": [
+    {
+      "description": "Pretty-print one or more graphs in canonical format:",
+      "syntax": "nop {{path/to/input1.gv}} {{path/to/input2.gv ...}} &gt; {{path/to/output.gv}}"
+    },
+    {
+      "description": "Check one or more graphs for validity, producing no output graph:",
+      "syntax": "nop -p {{path/to/input1.gv}} {{path/to/input2.gv ...}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "nop -?"
+    }
+  ]
+}

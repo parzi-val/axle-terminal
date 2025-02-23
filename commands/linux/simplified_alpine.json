@@ -1,0 +1,18 @@
+{
+  "command": "alpine",
+  "description": "An email client and Usenet newsgroup program with a pico/nano-inspired interface. Supports most modern email services through IMAP. More information: https://manned.org/alpine.",
+  "useCases": [
+    {
+      "description": "Open alpine normally:",
+      "syntax": "alpine"
+    },
+    {
+      "description": "Open alpine directly to the message composition screen to send an email to a given email address:",
+      "syntax": "alpine {{email@example.net}}"
+    },
+    {
+      "description": "Quit alpine:",
+      "syntax": "q + y"
+    }
+  ]
+}

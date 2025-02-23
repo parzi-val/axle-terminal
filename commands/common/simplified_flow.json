@@ -1,0 +1,22 @@
+{
+  "command": "flow",
+  "description": "A static type checker for JavaScript. More information: https://flow.org.",
+  "useCases": [
+    {
+      "description": "Run a flow check:",
+      "syntax": "flow"
+    },
+    {
+      "description": "Check which files are being checked by flow:",
+      "syntax": "flow ls"
+    },
+    {
+      "description": "Run a type coverage check on all files in a directory:",
+      "syntax": "flow batch-coverage --show-all --strip-root {{path/to/directory}}"
+    },
+    {
+      "description": "Display line-by-line type coverage stats:",
+      "syntax": "flow coverage --color {{path/to/file.jsx}}"
+    }
+  ]
+}

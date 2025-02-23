@@ -1,0 +1,18 @@
+{
+  "command": "llvm-dis",
+  "description": "Convert LLVM bitcode files into human-readable LLVM Intermediate Representation (IR). More information: https://www.llvm.org/docs/CommandGuide/llvm-dis.html.",
+  "useCases": [
+    {
+      "description": "Convert a bitcode file as LLVM IR and write the result to stdout:",
+      "syntax": "llvm-dis {{path/to/input.bc}} -o -"
+    },
+    {
+      "description": "Convert a bitcode file to an LLVM IR file with the same filename:",
+      "syntax": "llvm-dis {{path/to/file.bc}}"
+    },
+    {
+      "description": "Convert a bitcode file to LLVM IR, writing the result to the specified file:",
+      "syntax": "llvm-dis {{path/to/input.bc}} -o {{path/to/output.ll}}"
+    }
+  ]
+}

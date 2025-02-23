@@ -1,0 +1,34 @@
+{
+  "command": "hdparm",
+  "description": "Get and set SATA and IDE hard drive parameters. More information: https://manned.org/hdparm.",
+  "useCases": [
+    {
+      "description": "Request the identification info of a given device:",
+      "syntax": "sudo hdparm -I {{/dev/device}}"
+    },
+    {
+      "description": "Get the Advanced Power Management level:",
+      "syntax": "sudo hdparm -B {{/dev/device}}"
+    },
+    {
+      "description": "Set the Advanced Power Management value (values 1-127 permit spin-down, and values 128-254 do not):",
+      "syntax": "sudo hdparm -B {{1}} {{/dev/device}}"
+    },
+    {
+      "description": "Display the device's current power mode status:",
+      "syntax": "sudo hdparm -C {{/dev/device}}"
+    },
+    {
+      "description": "Force a drive to immediately enter standby mode (usually causes a drive to spin down):",
+      "syntax": "sudo hdparm -y {{/dev/device}}"
+    },
+    {
+      "description": "Put the drive into idle (low-power) mode, also setting its standby timeout:",
+      "syntax": "sudo hdparm -S {{standby_timeout}} {{device}}"
+    },
+    {
+      "description": "Test the read speed of a specific device:",
+      "syntax": "sudo hdparm -tT {{device}}"
+    }
+  ]
+}

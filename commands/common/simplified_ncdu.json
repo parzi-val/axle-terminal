@@ -1,0 +1,26 @@
+{
+  "command": "ncdu",
+  "description": "Disk usage analyzer with an ncurses interface. More information: https://manned.org/ncdu.",
+  "useCases": [
+    {
+      "description": "Analyze the current working directory:",
+      "syntax": "ncdu"
+    },
+    {
+      "description": "Colorize output:",
+      "syntax": "ncdu --color {{dark|off}}"
+    },
+    {
+      "description": "Analyze a given directory:",
+      "syntax": "ncdu {{path/to/directory}}"
+    },
+    {
+      "description": "Save results to a file:",
+      "syntax": "ncdu -o {{path/to/file}}"
+    },
+    {
+      "description": "Exclude files that match a pattern, argument can be given multiple times to add more patterns:",
+      "syntax": "ncdu --exclude '{{*.txt}}'"
+    }
+  ]
+}

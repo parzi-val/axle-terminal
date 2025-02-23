@@ -1,0 +1,22 @@
+{
+  "command": "kahlan",
+  "description": "A unit and Behaviour Driven Development test framework for PHP. More information: https://kahlan.github.io.",
+  "useCases": [
+    {
+      "description": "Run all specifications in the \"spec\" directory:",
+      "syntax": "kahlan"
+    },
+    {
+      "description": "Run specifications using a specific configuration file:",
+      "syntax": "kahlan --config={{path/to/configuration_file}}"
+    },
+    {
+      "description": "Run specifications and output using a reporter:",
+      "syntax": "kahlan --reporter={{dot|bar|json|tap|verbose}}"
+    },
+    {
+      "description": "Run specifications with code coverage (detail can be between 0 and 4):",
+      "syntax": "kahlan --coverage={{detail_level}}"
+    }
+  ]
+}

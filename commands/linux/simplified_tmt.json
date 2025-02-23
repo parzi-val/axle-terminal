@@ -1,0 +1,38 @@
+{
+  "command": "tmt",
+  "description": "Test Management Tool for creating, running, and debugging tests. Some subcommands such as run, try, etc. have their own usage documentation. More information: https://tmt.readthedocs.io.",
+  "useCases": [
+    {
+      "description": "List available tests, plans, and stories:",
+      "syntax": "tmt"
+    },
+    {
+      "description": "Initialize tmt files/project structure:",
+      "syntax": "tmt init"
+    },
+    {
+      "description": "Create a new test with a template and a link:",
+      "syntax": "tmt test create --template {{beakerlib}} --link {{verifies:issue#1234}}"
+    },
+    {
+      "description": "List available tests, plans, or stories:",
+      "syntax": "tmt {{test|plan|story}} ls {{pattern}}"
+    },
+    {
+      "description": "Show detailed test metadata in the given context:",
+      "syntax": "tmt --context {{arch=aarch64}} test show"
+    },
+    {
+      "description": "Validate tmt files against the specification:",
+      "syntax": "tmt lint"
+    },
+    {
+      "description": "Use filter:",
+      "syntax": "tmt tests ls --filter {{tag:foo}} --filter {{tier:0}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "tmt --help"
+    }
+  ]
+}

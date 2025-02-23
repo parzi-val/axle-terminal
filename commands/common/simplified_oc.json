@@ -1,0 +1,34 @@
+{
+  "command": "oc",
+  "description": "The OpenShift Container Platform CLI. Allows for application and container management. More information: https://docs.openshift.com/container-platform/3.11/cli_reference/get_started_cli.html.",
+  "useCases": [
+    {
+      "description": "Log in to the OpenShift Container Platform server:",
+      "syntax": "oc login"
+    },
+    {
+      "description": "Create a new project:",
+      "syntax": "oc new-project {{project_name}}"
+    },
+    {
+      "description": "Switch to an existing project:",
+      "syntax": "oc project {{project_name}}"
+    },
+    {
+      "description": "Add a new application to a project:",
+      "syntax": "oc new-app {{repo_url}} --name {{application}}"
+    },
+    {
+      "description": "Open a remote shell session to a container:",
+      "syntax": "oc rsh {{pod_name}}"
+    },
+    {
+      "description": "List pods in a project:",
+      "syntax": "oc get pods"
+    },
+    {
+      "description": "Log out from the current session:",
+      "syntax": "oc logout"
+    }
+  ]
+}

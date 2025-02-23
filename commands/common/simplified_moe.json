@@ -1,0 +1,26 @@
+{
+  "command": "moe",
+  "description": "A WYSIWYG text editor for ISO-8859-15 encoded text. More information: https://www.gnu.org/software/moe/moe.html.",
+  "useCases": [
+    {
+      "description": "Open moe and create a backup file (file~) when saving edits:",
+      "syntax": "moe {{path/to/file}}"
+    },
+    {
+      "description": "Open a file as read-only:",
+      "syntax": "moe --read-only {{path/to/file}}"
+    },
+    {
+      "description": "Edit a file without creating backups:",
+      "syntax": "moe --no-backup {{path/to/file}}"
+    },
+    {
+      "description": "Edit a file ignoring case in searches:",
+      "syntax": "moe --ignore-case {{path/to/file}}"
+    },
+    {
+      "description": "Save and Quit:",
+      "syntax": "&lt;Ctrl&gt; + X"
+    }
+  ]
+}

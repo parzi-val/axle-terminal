@@ -1,0 +1,18 @@
+{
+  "command": "ipaggmanip",
+  "description": "Manipulate aggregate statistics produced by ipaggcreate. More information: https://manned.org/ipaggmanip.",
+  "useCases": [
+    {
+      "description": "Combine labels equal in their high-order bits:",
+      "syntax": "ipaggmanip --prefix {{16}} {{path/to/file}}"
+    },
+    {
+      "description": "Remove labels with a count smaller than a given number of bytes and output a random sample of such labels:",
+      "syntax": "ipaggmanip --cut-smaller {{100}} --cull-labels {{5}} {{path/to/file}}"
+    },
+    {
+      "description": "Replace each label's count with 1 if it is non-zero:",
+      "syntax": "ipaggmanip --posterize {{path/to/file}}"
+    }
+  ]
+}

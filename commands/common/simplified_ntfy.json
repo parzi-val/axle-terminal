@@ -1,0 +1,30 @@
+{
+  "command": "ntfy",
+  "description": "Send and receive HTTP POST notifications. More information: https://github.com/binwiederhier/ntfy.",
+  "useCases": [
+    {
+      "description": "Send a message to the security topic:",
+      "syntax": "ntfy pub security &quot;{{Front door has been opened.}}&quot;"
+    },
+    {
+      "description": "Send with a title, priority and tags:",
+      "syntax": "ntfy publish --title=&quot;{{Someone bought your item}}&quot; --priority={{high}} --tags={{duck}} {{ebay}} &quot;{{Someone just bought your item: Platypus Sculpture}}&quot;"
+    },
+    {
+      "description": "Send at 8:30am:",
+      "syntax": "ntfy pub --at=8:30am {{delayed_topic}} &quot;{{Time for school, sleepyhead...}}&quot;"
+    },
+    {
+      "description": "Trigger a webhook:",
+      "syntax": "ntfy trigger {{my_webhook}}"
+    },
+    {
+      "description": "Subscribe to a topic (Ctrl-C to stop listening):",
+      "syntax": "ntfy sub {{home_automation}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ntfy --help"
+    }
+  ]
+}

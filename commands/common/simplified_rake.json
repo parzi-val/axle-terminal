@@ -1,0 +1,26 @@
+{
+  "command": "rake",
+  "description": "A Make-like program for Ruby. Tasks for rake are specified in a Rakefile. More information: https://ruby.github.io/rake.",
+  "useCases": [
+    {
+      "description": "Run the default Rakefile task:",
+      "syntax": "rake"
+    },
+    {
+      "description": "Run a specific task:",
+      "syntax": "rake {{task}}"
+    },
+    {
+      "description": "Execute n jobs at a time in parallel (number of CPU cores + 4 by default):",
+      "syntax": "rake --jobs {{n}}"
+    },
+    {
+      "description": "Use a specific Rakefile:",
+      "syntax": "rake --rakefile {{path/to/Rakefile}}"
+    },
+    {
+      "description": "Execute rake from another directory:",
+      "syntax": "rake --directory {{path/to/directory}}"
+    }
+  ]
+}

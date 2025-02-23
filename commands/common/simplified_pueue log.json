@@ -1,0 +1,22 @@
+{
+  "command": "pueue log",
+  "description": "Display the log output of 1 or more tasks. See also: pueue status. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Show the last few lines of output from all tasks:",
+      "syntax": "pueue log"
+    },
+    {
+      "description": "Show the full output of a task:",
+      "syntax": "pueue log {{task_id}}"
+    },
+    {
+      "description": "Show the last few lines of output from several tasks:",
+      "syntax": "pueue log {{task_id}} {{task_id}}"
+    },
+    {
+      "description": "Print a specific number of lines from the tail of output:",
+      "syntax": "pueue log --lines {{number_of_lines}} {{task_id}}"
+    }
+  ]
+}

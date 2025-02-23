@@ -1,0 +1,22 @@
+{
+  "command": "vncviewer",
+  "description": "Launches a VNC (Virtual Network Computing) client. More information: https://manned.org/vncviewer.",
+  "useCases": [
+    {
+      "description": "Launch a VNC client which connects to a host on a given display:",
+      "syntax": "vncviewer {{host}}:{{display_number}}"
+    },
+    {
+      "description": "Launch in full-screen mode:",
+      "syntax": "vncviewer -FullScreen {{host}}:{{display_number}}"
+    },
+    {
+      "description": "Launch a VNC client with a specific screen geometry:",
+      "syntax": "vncviewer --geometry {{width}}x{{height}} {{host}}:{{display_number}}"
+    },
+    {
+      "description": "Launch a VNC client which connects to a host on a given port:",
+      "syntax": "vncviewer {{host}}::{{port}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "hatch",
+  "description": "Modern, extensible Python project manager. See also: poetry. More information: https://hatch.pypa.io/latest/cli/reference/.",
+  "useCases": [
+    {
+      "description": "Create a new Hatch project:",
+      "syntax": "hatch new {{project_name}}"
+    },
+    {
+      "description": "Initialize Hatch for an existing project:",
+      "syntax": "hatch new --init"
+    },
+    {
+      "description": "Build a Hatch project:",
+      "syntax": "hatch build"
+    },
+    {
+      "description": "Remove build artifacts:",
+      "syntax": "hatch clean"
+    },
+    {
+      "description": "Create a default environment with dependencies defined in the pyproject.toml file:",
+      "syntax": "hatch env create"
+    },
+    {
+      "description": "Show environment dependencies as a table:",
+      "syntax": "hatch dep show table"
+    }
+  ]
+}

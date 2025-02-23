@@ -1,0 +1,18 @@
+{
+  "command": "git verify-pack",
+  "description": "Verify packed Git archive files. More information: https://git-scm.com/docs/git-verify-pack.",
+  "useCases": [
+    {
+      "description": "Verify a packed Git archive file:",
+      "syntax": "git verify-pack {{path/to/pack-file}}"
+    },
+    {
+      "description": "Verify a packed Git archive file and show verbose details:",
+      "syntax": "git verify-pack --verbose {{path/to/pack-file}}"
+    },
+    {
+      "description": "Verify a packed Git archive file and only display the statistics:",
+      "syntax": "git verify-pack --stat-only {{path/to/pack-file}}"
+    }
+  ]
+}

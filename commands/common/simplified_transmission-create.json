@@ -1,0 +1,26 @@
+{
+  "command": "transmission-create",
+  "description": "Create BitTorrent .torrent files. See also: transmission. More information: https://manned.org/transmission-create.",
+  "useCases": [
+    {
+      "description": "Create a torrent with 2048 KB as the piece size:",
+      "syntax": "transmission-create -o {{path/to/example.torrent}} --tracker {{tracker_announce_url}} --piecesize {{2048}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a private torrent with a 2048 KB piece size:",
+      "syntax": "transmission-create -p -o {{path/to/example.torrent}} --tracker {{tracker_announce_url}} --piecesize {{2048}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a torrent with a comment:",
+      "syntax": "transmission-create -o {{path/to/example.torrent}} --tracker {{tracker_url1}} -c {{comment}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Create a torrent with multiple trackers:",
+      "syntax": "transmission-create -o {{path/to/example.torrent}} --tracker {{tracker_url1}} --tracker {{tracker_url2}} {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Display help page:",
+      "syntax": "transmission-create --help"
+    }
+  ]
+}

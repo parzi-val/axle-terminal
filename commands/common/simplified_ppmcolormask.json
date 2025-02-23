@@ -1,0 +1,10 @@
+{
+  "command": "ppmcolormask",
+  "description": "Produce a mask of areas of a certain color in a PPM image. More information: https://netpbm.sourceforge.net/doc/ppmcolormask.html.",
+  "useCases": [
+    {
+      "description": "Produce a mask of areas of a certain color in the specified PPM image:",
+      "syntax": "ppmcolormask -color {{red,blue}} {{path/to/input.ppm}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "todo.sh",
+  "description": "Simple and extensible shell script for managing your todo.txt file. More information: https://github.com/todotxt/todo.txt-cli.",
+  "useCases": [
+    {
+      "description": "List every item:",
+      "syntax": "todo.sh ls"
+    },
+    {
+      "description": "Add an item with project and context tags:",
+      "syntax": "todo.sh add '{{description}} +{{project}} @{{context}}'"
+    },
+    {
+      "description": "Mark an item as [do]ne:",
+      "syntax": "todo.sh do {{item_no}}"
+    },
+    {
+      "description": "Remove an item:",
+      "syntax": "todo.sh rm {{item_no}}"
+    },
+    {
+      "description": "Set an item's [pri]ority (A-Z):",
+      "syntax": "todo.sh pri {{item_no}} {{priority}}"
+    },
+    {
+      "description": "Replace an item:",
+      "syntax": "todo.sh replace {{item_no}} '{{new_description}}'"
+    }
+  ]
+}

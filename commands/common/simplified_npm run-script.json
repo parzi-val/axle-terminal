@@ -1,0 +1,10 @@
+{
+  "command": "npm run-script",
+  "description": "This command is an alias of npm run.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr npm run"
+    }
+  ]
+}

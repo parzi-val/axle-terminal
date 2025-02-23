@@ -1,0 +1,38 @@
+{
+  "command": "blackfire",
+  "description": "Monitor, profile and test a PHP application. More information: https://blackfire.io.",
+  "useCases": [
+    {
+      "description": "Initialize and configure the Blackfire client:",
+      "syntax": "blackfire config"
+    },
+    {
+      "description": "Launch the Blackfire agent:",
+      "syntax": "blackfire agent"
+    },
+    {
+      "description": "Launch the Blackfire agent on a specific socket:",
+      "syntax": "blackfire agent --socket=&quot;{{tcp://127.0.0.1:8307}}&quot;"
+    },
+    {
+      "description": "Run the profiler on a specific program:",
+      "syntax": "blackfire run {{php path/to/file.php}}"
+    },
+    {
+      "description": "Run the profiler and collect 10 samples:",
+      "syntax": "blackfire --samples 10 run {{php path/to/file.php}}"
+    },
+    {
+      "description": "Run the profiler and output results as JSON:",
+      "syntax": "blackfire --json run {{php path/to/file.php}}"
+    },
+    {
+      "description": "Upload a profiler file to the Blackfire web service:",
+      "syntax": "blackfire upload {{path/to/file}}"
+    },
+    {
+      "description": "View the status of profiles on the Blackfire web service:",
+      "syntax": "blackfire status"
+    }
+  ]
+}

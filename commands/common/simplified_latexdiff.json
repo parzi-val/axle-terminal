@@ -1,0 +1,18 @@
+{
+  "command": "latexdiff",
+  "description": "Determine differences between two LaTeX files. More information: https://ctan.org/pkg/latexdiff.",
+  "useCases": [
+    {
+      "description": "Determine changes between different versions of a LaTeX file (the resulting LaTeX file can be compiled to show differences underlined):",
+      "syntax": "latexdiff {{old.tex}} {{new.tex}} &gt; {{diff.tex}}"
+    },
+    {
+      "description": "Determine changes between different versions of a LaTeX file by highlighting differences in boldface:",
+      "syntax": "latexdiff --type=BOLD {{old.tex}} {{new.tex}} &gt; {{diff.tex}}"
+    },
+    {
+      "description": "Determine changes between different versions of a LaTeX file, and display minor changes in equations with both added and deleted graphics:",
+      "syntax": "latexdiff --math-markup=fine --graphics-markup=both {{old.tex}} {{new.tex}} &gt; {{diff.tex}}"
+    }
+  ]
+}

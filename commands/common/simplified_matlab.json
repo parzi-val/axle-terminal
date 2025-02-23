@@ -1,0 +1,18 @@
+{
+  "command": "matlab",
+  "description": "Numerical computation environment by MathWorks. More information: https://uk.mathworks.com/help/matlab/.",
+  "useCases": [
+    {
+      "description": "Run without splash screen during startup:",
+      "syntax": "matlab -nosplash"
+    },
+    {
+      "description": "Execute a MATLAB statement:",
+      "syntax": "matlab -r &quot;{{matlab_statement}}&quot;"
+    },
+    {
+      "description": "Run a MATLAB script:",
+      "syntax": "matlab -r &quot;run({{path/to/script.m}})&quot;"
+    }
+  ]
+}

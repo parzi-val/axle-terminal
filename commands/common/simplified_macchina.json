@@ -1,0 +1,26 @@
+{
+  "command": "macchina",
+  "description": "Display information about your computer. More information: https://github.com/Macchina-CLI/macchina.",
+  "useCases": [
+    {
+      "description": "List out system information, with either default settings or those specified in your configuration file:",
+      "syntax": "macchina"
+    },
+    {
+      "description": "Specify a custom configuration file path:",
+      "syntax": "macchina --config {{path/to/configuration_file}}"
+    },
+    {
+      "description": "List system information, but lengthen uptime, shell and kernel output:",
+      "syntax": "macchina --long-uptime --long-shell --long-kernel"
+    },
+    {
+      "description": "Check for any errors/system failures encountered when trying to fetch system information:",
+      "syntax": "macchina --doctor"
+    },
+    {
+      "description": "List original artists of all the ASCII art:",
+      "syntax": "macchina --ascii-artists"
+    }
+  ]
+}

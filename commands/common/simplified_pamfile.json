@@ -1,0 +1,18 @@
+{
+  "command": "pamfile",
+  "description": "Describe Netpbm (PAM or PNM) files. More information: https://netpbm.sourceforge.net/doc/pamfile.html.",
+  "useCases": [
+    {
+      "description": "Describe the specified Netpbm files:",
+      "syntax": "pamfile {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Describe every image in each input file (as opposed to only the first image in each file) in a machine-readable format:",
+      "syntax": "pamfile -allimages -machine {{path/to/file}}"
+    },
+    {
+      "description": "Display a count on how many images the input files contain:",
+      "syntax": "pamfile -count {{path/to/file}}"
+    }
+  ]
+}

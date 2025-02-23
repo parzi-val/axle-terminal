@@ -1,0 +1,26 @@
+{
+  "command": "aws sso",
+  "description": "Manage access to AWS resources using Single Sign-On (SSO) credentials. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/index.html.",
+  "useCases": [
+    {
+      "description": "Start SSO session and refresh access tokens. Requires setup using aws configure sso:",
+      "syntax": "aws sso login"
+    },
+    {
+      "description": "End SSO session and clear cached access tokens:",
+      "syntax": "aws sso logout"
+    },
+    {
+      "description": "List all AWS accounts accessible to the user:",
+      "syntax": "aws sso list-accounts"
+    },
+    {
+      "description": "List all roles accessible to the user for a given AWS account:",
+      "syntax": "aws sso list-account-roles --account-id {{account}} --access-token {{token}}"
+    },
+    {
+      "description": "Retrieve short-term credentials for a specific account:",
+      "syntax": "aws get-role-credentials --account-id {{account}} --role-name {{role}} --access-token {{token}}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "command": "mysqlcheck",
+  "description": "Check and repair MySQL tables. More information: https://dev.mysql.com/doc/refman/8.0/en/mysqlcheck.html.",
+  "useCases": [
+    {
+      "description": "Check a table:",
+      "syntax": "mysqlcheck --check {{table}}"
+    },
+    {
+      "description": "Check a table and provide credentials to access it:",
+      "syntax": "mysqlcheck --check {{table}} --user {{username}} --password {{password}}"
+    },
+    {
+      "description": "Repair a table:",
+      "syntax": "mysqlcheck --repair {{table}}"
+    },
+    {
+      "description": "Optimize a table:",
+      "syntax": "mysqlcheck --optimize {{table}}"
+    }
+  ]
+}

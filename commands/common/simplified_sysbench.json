@@ -1,0 +1,26 @@
+{
+  "command": "sysbench",
+  "description": "Benchmark a System's CPU, IO and memory. More information: https://github.com/akopytov/sysbench/.",
+  "useCases": [
+    {
+      "description": "Run a CPU benchmark with 1 thread for 10 seconds:",
+      "syntax": "sysbench cpu run"
+    },
+    {
+      "description": "Run a CPU benchmark with multiple threads for a specified time:",
+      "syntax": "sysbench --threads={{number_of_threads}} --time={{seconds}}"
+    },
+    {
+      "description": "Run a memory benchmark with 1 thread for 10 seconds:",
+      "syntax": "sysbench memory run"
+    },
+    {
+      "description": "Prepare a filesystem-level read benchmark:",
+      "syntax": "sysbench fileio prepare"
+    },
+    {
+      "description": "Run a filesystem-level benchmark:",
+      "syntax": "sysbench --file-test-mode={{rndrd|rndrw|rndwr|seqrd|seqrewr|seqwr}} fileio run"
+    }
+  ]
+}

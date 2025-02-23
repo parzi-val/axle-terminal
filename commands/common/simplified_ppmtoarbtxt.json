@@ -1,0 +1,22 @@
+{
+  "command": "ppmtoarbtxt",
+  "description": "Convert a PPM image to an arbitrary text format according to a template. More information: https://netpbm.sourceforge.net/doc/ppmtoarbtxt.html.",
+  "useCases": [
+    {
+      "description": "Convert a PPM image to text as specified by the given template:",
+      "syntax": "ppmtoarbtxt {{path/to/template}} {{path/to/image.ppm}} &gt; {{path/to/output_file.txt}}"
+    },
+    {
+      "description": "Convert a PPM image to text as specified by the given template, prepend the contents of the specified head template:",
+      "syntax": "ppmtoarbtxt {{path/to/template}} -hd {{path/to/head_template}} {{path/to/image.ppm}} &gt; {{path/to/output_file.txt}}"
+    },
+    {
+      "description": "Convert a PPM image to text as specified by the given template, append the contents of the specified tail template:",
+      "syntax": "ppmtoarbtxt {{path/to/template}} -hd {{path/to/tail_template}} {{path/to/image.ppm}} &gt; {{path/to/output_file.txt}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ppmtoarbtxt -version"
+    }
+  ]
+}

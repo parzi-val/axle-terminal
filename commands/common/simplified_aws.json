@@ -1,0 +1,38 @@
+{
+  "command": "aws",
+  "description": "The official CLI tool for Amazon Web Services. Some subcommands such as s3 have their own usage documentation. More information: https://aws.amazon.com/cli.",
+  "useCases": [
+    {
+      "description": "Configure the AWS Command-line:",
+      "syntax": "aws configure wizard"
+    },
+    {
+      "description": "Configure the AWS Command-line using SSO:",
+      "syntax": "aws configure sso"
+    },
+    {
+      "description": "Get the caller identity (used to troubleshoot permissions):",
+      "syntax": "aws sts get-caller-identity"
+    },
+    {
+      "description": "List AWS resources in a region and output in YAML:",
+      "syntax": "aws dynamodb list-tables --region {{us-east-1}} --output yaml"
+    },
+    {
+      "description": "Use auto prompt to help with a command:",
+      "syntax": "aws iam create-user --cli-auto-prompt"
+    },
+    {
+      "description": "Get an interactive wizard for an AWS resource:",
+      "syntax": "aws dynamodb wizard {{new_table}}"
+    },
+    {
+      "description": "Generate a JSON CLI Skeleton (useful for infrastructure as code):",
+      "syntax": "aws dynamodb update-table --generate-cli-skeleton"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "aws {{command}} help"
+    }
+  ]
+}

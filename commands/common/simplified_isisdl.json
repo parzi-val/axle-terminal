@@ -1,0 +1,30 @@
+{
+  "command": "isisdl",
+  "description": "A downloading utility for ISIS of TU-Berlin. Download all your files and videos from ISIS. More information: https://github.com/Emily3403/isisdl.",
+  "useCases": [
+    {
+      "description": "Start the synchronization process:",
+      "syntax": "isisdl"
+    },
+    {
+      "description": "Limit the download rate to 20 MiB/s and download with 5 threads:",
+      "syntax": "isisdl --download-rate {{20}} --max-num-threads {{5}}"
+    },
+    {
+      "description": "Run the initialization configuration wizard:",
+      "syntax": "isisdl --init"
+    },
+    {
+      "description": "Run the additional configuration wizard:",
+      "syntax": "isisdl --config"
+    },
+    {
+      "description": "Initiate a full synchronization of the database and compute the checksum of every file:",
+      "syntax": "isisdl --sync"
+    },
+    {
+      "description": "Start ffmpeg to compress downloaded videos:",
+      "syntax": "isisdl --compress"
+    }
+  ]
+}

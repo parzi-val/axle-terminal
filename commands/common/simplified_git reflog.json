@@ -1,0 +1,18 @@
+{
+  "command": "git reflog",
+  "description": "Show a log of changes to local references like HEAD, branches or tags. More information: https://git-scm.com/docs/git-reflog.",
+  "useCases": [
+    {
+      "description": "Show the reflog for HEAD:",
+      "syntax": "git reflog"
+    },
+    {
+      "description": "Show the reflog for a given branch:",
+      "syntax": "git reflog {{branch_name}}"
+    },
+    {
+      "description": "Show only the 5 latest entries in the reflog:",
+      "syntax": "git reflog {{-n|--max-count}} 5"
+    }
+  ]
+}

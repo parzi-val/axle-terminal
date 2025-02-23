@@ -1,0 +1,30 @@
+{
+  "command": "brew list",
+  "description": "List installed formulae/casks or their files. More information: https://docs.brew.sh/Manpage#list-ls-options-installed_formulainstalled_cask-.",
+  "useCases": [
+    {
+      "description": "List all installed formulae and casks:",
+      "syntax": "brew list"
+    },
+    {
+      "description": "List files belonging to an installed formula:",
+      "syntax": "brew list {{formula}}"
+    },
+    {
+      "description": "List artifacts of a cask:",
+      "syntax": "brew list {{cask}}"
+    },
+    {
+      "description": "List only formulae:",
+      "syntax": "brew list --formula"
+    },
+    {
+      "description": "List only casks:",
+      "syntax": "brew list --cask"
+    },
+    {
+      "description": "List only pinned formulae:",
+      "syntax": "brew list --pinned"
+    }
+  ]
+}

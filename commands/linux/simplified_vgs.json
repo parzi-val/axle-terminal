@@ -1,0 +1,34 @@
+{
+  "command": "vgs",
+  "description": "Display information about volume groups. See also: lvm. More information: https://manned.org/vgs.",
+  "useCases": [
+    {
+      "description": "Display information about volume groups:",
+      "syntax": "vgs"
+    },
+    {
+      "description": "Display all volume groups:",
+      "syntax": "vgs -a"
+    },
+    {
+      "description": "Change default display to show more details:",
+      "syntax": "vgs -v"
+    },
+    {
+      "description": "Display only specific fields:",
+      "syntax": "vgs -o {{field_name_1}},{{field_name_2}}"
+    },
+    {
+      "description": "Append field to default display:",
+      "syntax": "vgs -o +{{field_name}}"
+    },
+    {
+      "description": "Suppress heading line:",
+      "syntax": "vgs --noheadings"
+    },
+    {
+      "description": "Use separator to separate fields:",
+      "syntax": "vgs --separator ="
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "speedtest-cli",
+  "description": "Test internet bandwidth using https://speedtest.net. See also: speedtest for the official CLI. More information: https://github.com/sivel/speedtest-cli.",
+  "useCases": [
+    {
+      "description": "Run a speed test:",
+      "syntax": "speedtest-cli"
+    },
+    {
+      "description": "Run a speed test and display values in bytes, instead of bits:",
+      "syntax": "speedtest-cli --bytes"
+    },
+    {
+      "description": "Run a speed test using HTTPS, instead of HTTP:",
+      "syntax": "speedtest-cli --secure"
+    },
+    {
+      "description": "Run a speed test without performing download tests:",
+      "syntax": "speedtest-cli --no-download"
+    },
+    {
+      "description": "Run a speed test and generate an image of the results:",
+      "syntax": "speedtest-cli --share"
+    },
+    {
+      "description": "List all speedtest.net servers, sorted by distance:",
+      "syntax": "speedtest-cli --list"
+    },
+    {
+      "description": "Run a speed test to a specific speedtest.net server:",
+      "syntax": "speedtest-cli --server {{server_id}}"
+    },
+    {
+      "description": "Run a speed test and display the results as JSON (suppresses progress information):",
+      "syntax": "speedtest-cli --json"
+    }
+  ]
+}

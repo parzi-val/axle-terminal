@@ -1,0 +1,30 @@
+{
+  "command": "pueue enqueue",
+  "description": "Enqueue stashed tasks. See also: pueue stash. More information: https://github.com/Nukesor/pueue.",
+  "useCases": [
+    {
+      "description": "Enqueue multiple stashed tasks at once:",
+      "syntax": "pueue enqueue {{task_id}} {{task_id}}"
+    },
+    {
+      "description": "Enqueue a stashed task after 60 seconds:",
+      "syntax": "pueue enqueue --delay {{60}} {{task_id}}"
+    },
+    {
+      "description": "Enqueue a stashed task next Wednesday:",
+      "syntax": "pueue enqueue --delay {{wednesday}} {{task_id}}"
+    },
+    {
+      "description": "Enqueue a stashed task after four months:",
+      "syntax": "pueue enqueue --delay &quot;4 months&quot; {{task_id}}"
+    },
+    {
+      "description": "Enqueue a stashed task on 2021-02-19:",
+      "syntax": "pueue enqueue --delay {{2021-02-19}} {{task_id}}"
+    },
+    {
+      "description": "List all available date/time formats:",
+      "syntax": "pueue enqueue --help"
+    }
+  ]
+}

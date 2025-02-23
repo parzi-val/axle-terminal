@@ -1,0 +1,34 @@
+{
+  "command": "chat",
+  "description": "Automate conversations with a modem or serial device. Commonly used to establish PPP (Point-to-Point Protocol) connections. More information: https://manned.org/chat.8.",
+  "useCases": [
+    {
+      "description": "Execute a chat script directly from the command line:",
+      "syntax": "chat '{{expect_send_pairs}}'"
+    },
+    {
+      "description": "Execute a chat script from a file:",
+      "syntax": "chat -f '{{path/to/chat_script}}'"
+    },
+    {
+      "description": "Set a custom timeout (in seconds) for expecting a response:",
+      "syntax": "chat -t {{timeout_in_seconds}} '{{expect_send_pairs}}'"
+    },
+    {
+      "description": "Enable verbose output to log the conversation to syslog:",
+      "syntax": "chat -v '{{expect_send_pairs}}'"
+    },
+    {
+      "description": "Use a report file to log specific strings received during the conversation:",
+      "syntax": "chat -r {{path/to/report_file}} '{{expect_send_pairs}}'"
+    },
+    {
+      "description": "Dial a phone number using a variable, substituting \\T in the script:",
+      "syntax": "chat -T '{{phone_number}}' '{{&quot;ATDT\\\\T CONNECT&quot;}}'"
+    },
+    {
+      "description": "Include an abort condition if a specific string is received:",
+      "syntax": "chat 'ABORT &quot;{{error_string}}&quot; {{expect_send_pairs}}'"
+    }
+  ]
+}

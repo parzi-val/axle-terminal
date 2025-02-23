@@ -1,0 +1,18 @@
+{
+  "command": "guetzli",
+  "description": "JPEG image compression utility. More information: https://github.com/google/guetzli.",
+  "useCases": [
+    {
+      "description": "Compress a JPEG image:",
+      "syntax": "guetzli {{input.jpg}} {{output.jpg}}"
+    },
+    {
+      "description": "Create a compressed JPEG from a PNG:",
+      "syntax": "guetzli {{input.png}} {{output.jpg}}"
+    },
+    {
+      "description": "Compress a JPEG with the desired visual quality (84-100):",
+      "syntax": "guetzli --quality {{quality_value}} {{input.jpg}} {{output.jpg}}"
+    }
+  ]
+}

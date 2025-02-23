@@ -1,0 +1,30 @@
+{
+  "command": "mailx",
+  "description": "Send and receive mail. More information: https://manned.org/mailx.",
+  "useCases": [
+    {
+      "description": "Send mail (the content should be typed after the command, and ended with Ctrl+D):",
+      "syntax": "mailx -s &quot;{{subject}}&quot; {{to_addr}}"
+    },
+    {
+      "description": "Send mail with content passed from another command:",
+      "syntax": "echo &quot;{{content}}&quot; | mailx -s &quot;{{subject}}&quot; {{to_addr}}"
+    },
+    {
+      "description": "Send mail with content read from a file:",
+      "syntax": "mailx -s &quot;{{subject}}&quot; {{to_addr}} &lt; {{content.txt}}"
+    },
+    {
+      "description": "Send mail to a recipient and CC to another address:",
+      "syntax": "mailx -s &quot;{{subject}}&quot; -c {{cc_addr}} {{to_addr}}"
+    },
+    {
+      "description": "Send mail specifying the sender address:",
+      "syntax": "mailx -s &quot;{{subject}}&quot; -r {{from_addr}} {{to_addr}}"
+    },
+    {
+      "description": "Send mail with an attachment:",
+      "syntax": "mailx -a {{path/to/file}} -s &quot;{{subject}}&quot; {{to_addr}}"
+    }
+  ]
+}

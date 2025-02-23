@@ -1,0 +1,18 @@
+{
+  "command": "explorer",
+  "description": "The Windows File Explorer. More information: https://ss64.com/nt/explorer.html.",
+  "useCases": [
+    {
+      "description": "Open Windows Explorer:",
+      "syntax": "explorer"
+    },
+    {
+      "description": "Open Windows Explorer in the current directory:",
+      "syntax": "explorer ."
+    },
+    {
+      "description": "Open Windows Explorer in a specific directory:",
+      "syntax": "explorer {{path\\to\\directory}}"
+    }
+  ]
+}

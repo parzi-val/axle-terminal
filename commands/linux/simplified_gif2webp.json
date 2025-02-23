@@ -1,0 +1,10 @@
+{
+  "command": "gif2webp",
+  "description": "Convert a GIF image to WebP. More information: https://developers.google.com/speed/webp/docs/gif2webp.",
+  "useCases": [
+    {
+      "description": "Convert a GIF image to WebP:",
+      "syntax": "gif2webp {{path/to/image.gif}} -o {{path/to/image.webp}}"
+    }
+  ]
+}

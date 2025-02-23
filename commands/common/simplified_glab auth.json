@@ -1,0 +1,22 @@
+{
+  "command": "glab auth",
+  "description": "Authenticate with a GitLab host. More information: https://glab.readthedocs.io/en/latest/auth.",
+  "useCases": [
+    {
+      "description": "Log in with interactive prompt:",
+      "syntax": "glab auth login"
+    },
+    {
+      "description": "Log in with a token:",
+      "syntax": "glab auth login --token {{token}}"
+    },
+    {
+      "description": "Check authentication status:",
+      "syntax": "glab auth status"
+    },
+    {
+      "description": "Log in to a specific GitLab instance:",
+      "syntax": "glab auth login --hostname {{gitlab.example.com}}"
+    }
+  ]
+}

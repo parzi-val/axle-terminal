@@ -1,0 +1,22 @@
+{
+  "command": "lambo",
+  "description": "A super-powered laravel new for Laravel and Valet. See also lambo new for additional command flags. More information: https://github.com/tighten/lambo.",
+  "useCases": [
+    {
+      "description": "Create a new Laravel application:",
+      "syntax": "lambo new {{app_name}}"
+    },
+    {
+      "description": "Open the configuration in your default editor:",
+      "syntax": "lambo edit-config"
+    },
+    {
+      "description": "Open the configuration in a specific editor:",
+      "syntax": "lambo edit-config --editor=&quot;{{path/to/editor}}&quot;"
+    },
+    {
+      "description": "Open the configuration file that is run after new applications have been scaffolded:",
+      "syntax": "lambo edit-after"
+    }
+  ]
+}

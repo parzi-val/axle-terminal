@@ -1,0 +1,18 @@
+{
+  "command": "plasma-apply-wallpaperimage",
+  "description": "Switch Plasma wallpaper. More information: https://invent.kde.org/plasma/plasma-workspace.",
+  "useCases": [
+    {
+      "description": "Apply a wallpaper:",
+      "syntax": "plasma-apply-wallpaperimage {{/path/to/image}}"
+    },
+    {
+      "description": "Apply a wallpaper with a fill mode:",
+      "syntax": "plasma-apply-wallpaperimage --fill-mode {{stretch|preserveAspectFit|preserveAspectCrop|tile|tileVertically|tileHorizontally|pad}} {{/path/to/image}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "plasma-apply-wallpaperimage --help"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "command": "jdupes",
+  "description": "A powerful duplicate file finder and an enhanced fork of fdupes. More information: https://codeberg.org/jbruchon/jdupes.",
+  "useCases": [
+    {
+      "description": "Search a single directory:",
+      "syntax": "jdupes {{path/to/directory}}"
+    },
+    {
+      "description": "Search multiple directories:",
+      "syntax": "jdupes {{directory1}} {{directory2}}"
+    },
+    {
+      "description": "Search all directories recursively:",
+      "syntax": "jdupes --recurse {{path/to/directory}}"
+    },
+    {
+      "description": "Search directory recursively and let user choose files to preserve:",
+      "syntax": "jdupes --delete --recurse {{path/to/directory}}"
+    },
+    {
+      "description": "Search multiple directories and follow subdirectores under directory2, not directory1:",
+      "syntax": "jdupes {{directory1}} --recurse: {{directory2}}"
+    },
+    {
+      "description": "Search multiple directories and keep the directory order in result:",
+      "syntax": "jdupes -O {{directory1}} {{directory2}} {{directory3}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "nordvpn",
+  "description": "Command-line interface for NordVPN. More information: https://nordvpn.com/download/linux/.",
+  "useCases": [
+    {
+      "description": "Interactively log into a NordVPN account:",
+      "syntax": "nordvpn login"
+    },
+    {
+      "description": "Display the connection status:",
+      "syntax": "nordvpn status"
+    },
+    {
+      "description": "Connect to the nearest NordVPN server:",
+      "syntax": "nordvpn connect"
+    },
+    {
+      "description": "List all available countries:",
+      "syntax": "nordvpn countries"
+    },
+    {
+      "description": "Connect to a NordVPN server in a specific country:",
+      "syntax": "nordvpn connect {{Germany}}"
+    },
+    {
+      "description": "Connect to a NordVPN server in a specific country and city:",
+      "syntax": "nordvpn connect {{Germany}} {{Berlin}}"
+    },
+    {
+      "description": "Set autoconnect option:",
+      "syntax": "nordvpn set autoconnect on"
+    }
+  ]
+}

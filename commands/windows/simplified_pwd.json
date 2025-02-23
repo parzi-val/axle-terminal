@@ -1,0 +1,14 @@
+{
+  "command": "pwd",
+  "description": "In PowerShell, this command is an alias of Get-Location. However, this command is not available on the Command Prompt (cmd). Use cd instead for similar functionality.",
+  "useCases": [
+    {
+      "description": "View documentation for the equivalent Command Prompt command:",
+      "syntax": "tldr cd"
+    },
+    {
+      "description": "View documentation for the original PowerShell command:",
+      "syntax": "tldr get-location"
+    }
+  ]
+}

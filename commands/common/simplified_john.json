@@ -1,0 +1,38 @@
+{
+  "command": "john",
+  "description": "Password cracker. More information: https://www.openwall.com/john/.",
+  "useCases": [
+    {
+      "description": "Crack password hashes:",
+      "syntax": "john {{path/to/hashes.txt}}"
+    },
+    {
+      "description": "Show passwords cracked:",
+      "syntax": "john --show {{path/to/hashes.txt}}"
+    },
+    {
+      "description": "Display users' cracked passwords by user identifier from multiple files:",
+      "syntax": "john --show --users={{user_ids}} {{path/to/hashes1.txt path/to/hashes2.txt ...}}"
+    },
+    {
+      "description": "Crack password hashes, using a custom wordlist:",
+      "syntax": "john --wordlist={{path/to/wordlist.txt}} {{path/to/hashes.txt}}"
+    },
+    {
+      "description": "List available hash formats:",
+      "syntax": "john --list=formats"
+    },
+    {
+      "description": "Crack password hashes, using a specific hash format:",
+      "syntax": "john --format={{md5crypt}} {{path/to/hashes.txt}}"
+    },
+    {
+      "description": "Crack password hashes, enabling word mangling rules:",
+      "syntax": "john --rules {{path/to/hashes.txt}}"
+    },
+    {
+      "description": "Restore an interrupted cracking session from a state file, e.g. mycrack.rec:",
+      "syntax": "john --restore={{path/to/mycrack.rec}}"
+    }
+  ]
+}

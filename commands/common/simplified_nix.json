@@ -1,0 +1,34 @@
+{
+  "command": "nix",
+  "description": "A powerful package manager that makes package management reliable, reproducible, and declarative. nix is experimental and requires enabling experimental features. For a classic, stable interface, see tldr nix classic. Some subcommands such as build, develop, flake, registry, profile, search, repl, store, edit, why-depends, etc. have their own usage documentation. More information: https://nixos.org/manual/nix.",
+  "useCases": [
+    {
+      "description": "Enable the nix command:",
+      "syntax": "mkdir -p ~/.config/nix; echo 'experimental-features = nix-command flakes' &gt; ~/.config/nix/nix.conf"
+    },
+    {
+      "description": "Search for a package in nixpkgs via its name or description:",
+      "syntax": "nix search nixpkgs {{search_term}}"
+    },
+    {
+      "description": "Start a shell with the specified packages from nixpkgs available:",
+      "syntax": "nix shell {{nixpkgs#pkg1 nixpkgs#pkg2 nixpkgs#pkg3 ...}}"
+    },
+    {
+      "description": "Install some packages from nixpkgs permanently:",
+      "syntax": "nix profile install {{nixpkgs#pkg1 nixpkgs#pkg2 nixpkgs#pkg3 ...}}"
+    },
+    {
+      "description": "Remove unused paths from Nix store to free up space:",
+      "syntax": "nix store gc"
+    },
+    {
+      "description": "Start an interactive environment for evaluating Nix expressions:",
+      "syntax": "nix repl"
+    },
+    {
+      "description": "Display help for a specific subcommand:",
+      "syntax": "nix help {{subcommand}}"
+    }
+  ]
+}

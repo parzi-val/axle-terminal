@@ -1,0 +1,34 @@
+{
+  "command": "jhead",
+  "description": "Image timestamp and EXIF data manipulation. More information: https://www.sentex.net/~mwandel/jhead/usage.html.",
+  "useCases": [
+    {
+      "description": "Show all EXIF data:",
+      "syntax": "jhead {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Set the file's date and time to the EXIF create date (file creation date will be changed):",
+      "syntax": "jhead -ft {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Set the EXIF time to the file's date and time (EXIF data will be changed):",
+      "syntax": "jhead -dsft {{path/to/image.jpg}}"
+    },
+    {
+      "description": "Rename all JPEG files based on the EXIF create date to YYYY_MM_DD-HH_MM_SS.jpg:",
+      "syntax": "jhead -n%Y_%m_%d-%H_%M_%S *.jpg"
+    },
+    {
+      "description": "Rotate losslessly all JPEG images by 90, 180 or 270 based on the EXIF orientation tag:",
+      "syntax": "jhead -autorot *.jpg"
+    },
+    {
+      "description": "Update all EXIF timestamps (Format: +- hour:minute:seconds) (example: forgot to change the camera's time zone - removing 1 hour from timestamps):",
+      "syntax": "jhead -ta-1:00:00 *.jpg"
+    },
+    {
+      "description": "Remove all EXIF data (including thumbnails):",
+      "syntax": "jhead -purejpg {{path/to/image.jpg}}"
+    }
+  ]
+}

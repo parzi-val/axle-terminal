@@ -1,0 +1,30 @@
+{
+  "command": "todoist",
+  "description": "Access https://todoist.com from the command-line. More information: https://github.com/sachaos/todoist.",
+  "useCases": [
+    {
+      "description": "Add a task:",
+      "syntax": "todoist add &quot;{{task_name}}&quot;"
+    },
+    {
+      "description": "Add a high priority task with a label, project, and due date:",
+      "syntax": "todoist add &quot;{{task_name}}&quot; --priority {{1}} --label-ids &quot;{{label_id}}&quot; --project-name &quot;{{project_name}}&quot; --date &quot;{{tmr 9am}}&quot;"
+    },
+    {
+      "description": "Add a high priority task with a label, project, and due date in quick mode:",
+      "syntax": "todoist quick '#{{project_name}} &quot;{{tmr 9am}}&quot; p{{1}} {{task_name}} @{{label_name}}'"
+    },
+    {
+      "description": "List all tasks with a header and color:",
+      "syntax": "todoist --header --color list"
+    },
+    {
+      "description": "List all high priority tasks:",
+      "syntax": "todoist list --filter p{{1}}"
+    },
+    {
+      "description": "List today's tasks with high priority that have the specified label:",
+      "syntax": "todoist list --filter '(@{{label_name}} | {{today}}) &amp; p{{1}}'"
+    }
+  ]
+}

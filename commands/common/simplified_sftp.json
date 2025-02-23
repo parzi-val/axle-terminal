@@ -1,0 +1,38 @@
+{
+  "command": "sftp",
+  "description": "Secure File Transfer Program. Interactive program to copy files between hosts over SSH. For non-interactive file transfers, see scp or rsync. More information: https://manned.org/sftp.",
+  "useCases": [
+    {
+      "description": "Connect to a remote server and enter an interactive command mode:",
+      "syntax": "sftp {{remote_user}}@{{remote_host}}"
+    },
+    {
+      "description": "Connect using an alternate port:",
+      "syntax": "sftp -P {{remote_port}} {{remote_user}}@{{remote_host}}"
+    },
+    {
+      "description": "Connect using a predefined host (in ~/.ssh/config):",
+      "syntax": "sftp {{host}}"
+    },
+    {
+      "description": "Transfer remote file to the local system:",
+      "syntax": "get {{/path/remote_file}}"
+    },
+    {
+      "description": "Transfer local file to the remote system:",
+      "syntax": "put {{/path/local_file}}"
+    },
+    {
+      "description": "Transfer remote directory to the local system recursively (works with put too):",
+      "syntax": "get -R {{/path/remote_directory}}"
+    },
+    {
+      "description": "Get list of files on local machine:",
+      "syntax": "lls"
+    },
+    {
+      "description": "Get list of files on remote machine:",
+      "syntax": "ls"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "command": "distrobox",
+  "description": "Use any Linux distribution inside your terminal in a container. Install & use packages inside it while tightly integrating with the host OS, sharing storage (home directory) and hardware. Note: It uses Podman or Docker to create your containers. More information: https://github.com/89luca89/distrobox.",
+  "useCases": [
+    {
+      "description": "View documentation for creating containers:",
+      "syntax": "tldr distrobox-create"
+    },
+    {
+      "description": "View documentation for listing container's information:",
+      "syntax": "tldr distrobox-list"
+    },
+    {
+      "description": "View documentation for entering the container:",
+      "syntax": "tldr distrobox-enter"
+    },
+    {
+      "description": "View documentation for executing a command on the host from inside a container:",
+      "syntax": "tldr distrobox-host-exec"
+    },
+    {
+      "description": "View documentation for exporting app/service/binary from the container to the host:",
+      "syntax": "tldr distrobox-export"
+    },
+    {
+      "description": "View documentation for upgrading containers:",
+      "syntax": "tldr distrobox-upgrade"
+    },
+    {
+      "description": "View documentation for stopping the containers:",
+      "syntax": "tldr distrobox-stop"
+    },
+    {
+      "description": "View documentation for removing the containers:",
+      "syntax": "tldr distrobox-rm"
+    }
+  ]
+}

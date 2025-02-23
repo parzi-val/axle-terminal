@@ -1,0 +1,18 @@
+{
+  "command": "dget",
+  "description": "Download Debian packages. More information: https://manned.org/dget.1.",
+  "useCases": [
+    {
+      "description": "Download a binary package:",
+      "syntax": "dget {{package}}"
+    },
+    {
+      "description": "Download and extract a package source from its .dsc file:",
+      "syntax": "dget {{http://deb.debian.org/debian/pool/main/h/haskell-tldr/haskell-tldr_0.4.0-2.dsc}}"
+    },
+    {
+      "description": "Download a package source tarball from its .dsc file but don't extract it:",
+      "syntax": "dget -d {{http://deb.debian.org/debian/pool/main/h/haskell-tldr/haskell-tldr_0.4.0-2.dsc}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "traceroute",
+  "description": "Print the route packets trace to network host. More information: https://manned.org/traceroute.",
+  "useCases": [
+    {
+      "description": "Traceroute to a host:",
+      "syntax": "traceroute {{example.com}}"
+    },
+    {
+      "description": "Disable IP address and host name mapping:",
+      "syntax": "traceroute -n {{example.com}}"
+    },
+    {
+      "description": "Specify wait time in seconds for response:",
+      "syntax": "traceroute --wait={{0.5}} {{example.com}}"
+    },
+    {
+      "description": "Specify number of queries per hop:",
+      "syntax": "traceroute --queries={{5}} {{example.com}}"
+    },
+    {
+      "description": "Specify size in bytes of probing packet:",
+      "syntax": "traceroute {{example.com}} {{42}}"
+    },
+    {
+      "description": "Determine the MTU to the destination:",
+      "syntax": "traceroute --mtu {{example.com}}"
+    },
+    {
+      "description": "Use ICMP instead of UDP for tracerouting:",
+      "syntax": "traceroute --icmp {{example.com}}"
+    }
+  ]
+}

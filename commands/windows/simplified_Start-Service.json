@@ -1,0 +1,18 @@
+{
+  "command": "Start-Service",
+  "description": "Starts stopped services. Note: This command can only be used through PowerShell. More information: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/start-service.",
+  "useCases": [
+    {
+      "description": "Start a service by using its name:",
+      "syntax": "Start-Service -Name {{service_name}}"
+    },
+    {
+      "description": "Display information without starting a service:",
+      "syntax": "Start-Service -DisplayName *{{name}}* -WhatIf"
+    },
+    {
+      "description": "Start a disabled service:",
+      "syntax": "Set-Service {{service_name}} -StartupType {{manual}}; Start-Service {{service_name}}"
+    }
+  ]
+}

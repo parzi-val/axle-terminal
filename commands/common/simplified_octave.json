@@ -1,0 +1,30 @@
+{
+  "command": "octave",
+  "description": "A programming language for scientific computing. More information: https://docs.octave.org/latest/Invoking-Octave-from-the-Command-Line.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive session:",
+      "syntax": "octave"
+    },
+    {
+      "description": "Execute a specific script file:",
+      "syntax": "octave {{path/to/script.m}}"
+    },
+    {
+      "description": "Execute a script file with specific arguments:",
+      "syntax": "octave {{path/to/script.m}} {{argument1 argument2 ...}}"
+    },
+    {
+      "description": "Start an interactive session with a GUI:",
+      "syntax": "octave --gui"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "octave --help"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "octave --version"
+    }
+  ]
+}

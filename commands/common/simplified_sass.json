@@ -1,0 +1,22 @@
+{
+  "command": "sass",
+  "description": "Convert SCSS or Sass files to CSS. More information: https://sass-lang.com/documentation/cli/dart-sass.",
+  "useCases": [
+    {
+      "description": "Convert a SCSS or Sass file to CSS and print out the result:",
+      "syntax": "sass {{inputfile.scss|inputfile.sass}}"
+    },
+    {
+      "description": "Convert a SCSS or Sass file to CSS and save the result to a file:",
+      "syntax": "sass {{inputfile.scss|inputfile.sass}} {{outputfile.css}}"
+    },
+    {
+      "description": "Watch a SCSS or Sass file for changes and output or update the CSS file with same filename:",
+      "syntax": "sass --watch {{inputfile.scss|inputfile.sass}}"
+    },
+    {
+      "description": "Watch a SCSS or Sass file for changes and output or update the CSS file with the given filename:",
+      "syntax": "sass --watch {{inputfile.scss|inputfile.sass}}:{{outputfile.css}}"
+    }
+  ]
+}

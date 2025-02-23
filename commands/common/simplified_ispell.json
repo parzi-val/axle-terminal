@@ -1,0 +1,18 @@
+{
+  "command": "ispell",
+  "description": "Interactive spell checking. More information: https://www.cs.hmc.edu/~geoff/ispell-man.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive session:",
+      "syntax": "ispell"
+    },
+    {
+      "description": "Check for typos in the specified file and interactively apply suggestions:",
+      "syntax": "ispell {{path/to/file}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "ispell -v"
+    }
+  ]
+}

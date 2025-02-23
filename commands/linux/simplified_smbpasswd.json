@@ -1,0 +1,22 @@
+{
+  "command": "smbpasswd",
+  "description": "Add/remove a Samba user or change its password. Samba users must have an existing local Unix account. More information: https://manned.org/smbpasswd.8.",
+  "useCases": [
+    {
+      "description": "Change the current user's SMB password:",
+      "syntax": "smbpasswd"
+    },
+    {
+      "description": "Add a specified user to Samba and set password (user should already exist in system):",
+      "syntax": "sudo smbpasswd -a {{username}}"
+    },
+    {
+      "description": "Modify an existing Samba user's password:",
+      "syntax": "sudo smbpasswd {{username}}"
+    },
+    {
+      "description": "Delete a Samba user (use pdbedit instead if the Unix account has been deleted):",
+      "syntax": "sudo smbpasswd -x {{username}}"
+    }
+  ]
+}

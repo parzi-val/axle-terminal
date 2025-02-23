@@ -1,0 +1,34 @@
+{
+  "command": "blender",
+  "description": "Command-line interface to the Blender 3D computer graphics application. Arguments are executed in the order they are given. More information: https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html.",
+  "useCases": [
+    {
+      "description": "Render all frames of an animation in the background, without loading the UI (output is saved to /tmp):",
+      "syntax": "blender --background {{path/to/file.blend}} --render-anim"
+    },
+    {
+      "description": "Render an animation using a specific image naming pattern, in a path relative (//) to the .blend file:",
+      "syntax": "blender --background {{path/to/file.blend}} --render-output //{{render/frame_###.png}} --render-anim"
+    },
+    {
+      "description": "Render the 10th frame of an animation as a single image, saved to an existing directory (absolute path):",
+      "syntax": "blender --background {{path/to/file.blend}} --render-output {{/path/to/output_directory}} --render-frame {{10}}"
+    },
+    {
+      "description": "Render the second last frame in an animation as a JPEG image, saved to an existing directory (relative path):",
+      "syntax": "blender --background {{path/to/file.blend}} --render-output //{{output_directory}} --render-frame {{JPEG}} --render-frame {{-2}}"
+    },
+    {
+      "description": "Render the animation of a specific scene, starting at frame 10 and ending at frame 500:",
+      "syntax": "blender --background {{path/to/file.blend}} --scene {{scene_name}} --frame-start {{10}} --frame-end {{500}} --render-anim"
+    },
+    {
+      "description": "Render an animation at a specific resolution, by passing a Python expression:",
+      "syntax": "blender --background {{path/to/file.blend}} --python-expr '{{import bpy; bpy.data.scenes[0].render.resolution_percentage = 25}}' --render-anim"
+    },
+    {
+      "description": "Start an interactive Blender session in the terminal with a Python console (do import bpy after starting):",
+      "syntax": "blender --background --python-console"
+    }
+  ]
+}

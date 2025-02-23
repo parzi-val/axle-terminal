@@ -1,0 +1,22 @@
+{
+  "command": "mpd",
+  "description": "Music Player Daemon. See also: mpc, ncmpcpp. More information: https://www.musicpd.org/.",
+  "useCases": [
+    {
+      "description": "Start MPD:",
+      "syntax": "mpd"
+    },
+    {
+      "description": "Start MPD but don't read from the configuration file:",
+      "syntax": "mpd --no-config"
+    },
+    {
+      "description": "Start MPD and don't detach it from the console:",
+      "syntax": "mpd --no-daemon"
+    },
+    {
+      "description": "Kill the currently running MPD session:",
+      "syntax": "mpd --kill"
+    }
+  ]
+}

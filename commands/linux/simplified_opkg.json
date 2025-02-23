@@ -1,0 +1,38 @@
+{
+  "command": "opkg",
+  "description": "A lightweight package manager used to install OpenWrt packages. More information: https://openwrt.org/docs/guide-user/additional-software/opkg.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "opkg install {{package}}"
+    },
+    {
+      "description": "Remove a package:",
+      "syntax": "opkg remove {{package}}"
+    },
+    {
+      "description": "Update the list of available packages:",
+      "syntax": "opkg update"
+    },
+    {
+      "description": "Upgrade one or more specific package(s):",
+      "syntax": "opkg upgrade {{package(s)}}"
+    },
+    {
+      "description": "Display information for a specific package:",
+      "syntax": "opkg info {{package}}"
+    },
+    {
+      "description": "List all the available packages:",
+      "syntax": "opkg list"
+    },
+    {
+      "description": "Find out which package owns a file:",
+      "syntax": "opkg search {{/path/to/file}}"
+    },
+    {
+      "description": "List all files belonging to a package:",
+      "syntax": "opkg files {{package}}"
+    }
+  ]
+}

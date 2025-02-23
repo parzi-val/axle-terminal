@@ -1,0 +1,22 @@
+{
+  "command": "wasm-objdump",
+  "description": "Display information from WebAssembly binaries. More information: https://github.com/WebAssembly/wabt.",
+  "useCases": [
+    {
+      "description": "Display the section headers of a given binary:",
+      "syntax": "wasm-objdump -h {{file.wasm}}"
+    },
+    {
+      "description": "Display the entire disassembled output of a given binary:",
+      "syntax": "wasm-objdump -d {{file.wasm}}"
+    },
+    {
+      "description": "Display the details of each section:",
+      "syntax": "wasm-objdump --details {{file.wasm}}"
+    },
+    {
+      "description": "Display the details of a given section:",
+      "syntax": "wasm-objdump --section '{{import}}' --details {{file.wasm}}"
+    }
+  ]
+}

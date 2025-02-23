@@ -1,0 +1,30 @@
+{
+  "command": "ncat",
+  "description": "Read, write, redirect, and encrypt data across a network. An alternative implementation of a similar utility called netcat/nc. More information: https://nmap.org/ncat/guide/index.html.",
+  "useCases": [
+    {
+      "description": "Listen for input on the specified port and write it to the specified file:",
+      "syntax": "ncat -l {{port}} &gt; {{path/to/file}}"
+    },
+    {
+      "description": "Accept multiple connections and keep ncat open after they have been closed:",
+      "syntax": "ncat -lk {{port}}"
+    },
+    {
+      "description": "Write output of specified file to the specified host on the specified port:",
+      "syntax": "ncat {{address}} {{port}} &lt; {{path/to/file}}"
+    },
+    {
+      "description": "Accept multiple incoming connections on an encrypted channel evading detection of traffic content:",
+      "syntax": "ncat --ssl -k -l {{port}}"
+    },
+    {
+      "description": "Connect to an open ncat connection over SSL:",
+      "syntax": "ncat --ssl {{host}} {{port}}"
+    },
+    {
+      "description": "Check connectivity to a remote host on a particular port with timeout:",
+      "syntax": "ncat -w {{seconds}} -vz {{host}} {{port}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "interdiff",
+  "description": "Show differences between two diff files. More information: https://freshmeat.sourceforge.net/projects/patchutils.",
+  "useCases": [
+    {
+      "description": "Compare diff files:",
+      "syntax": "interdiff {{old_file}} {{new_file}}"
+    },
+    {
+      "description": "Compare diff files, ignoring whitespace:",
+      "syntax": "interdiff -w {{old_file}} {{new_file}}"
+    }
+  ]
+}

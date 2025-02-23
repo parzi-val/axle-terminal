@@ -1,0 +1,26 @@
+{
+  "command": "lsinitrd",
+  "description": "Show the contents of an initramfs image. See also: dracut. More information: https://github.com/dracutdevs/dracut/blob/master/man/lsinitrd.1.asc.",
+  "useCases": [
+    {
+      "description": "Show the contents of the initramfs image for the current kernel:",
+      "syntax": "lsinitrd"
+    },
+    {
+      "description": "Show the contents of the initramfs image for the specified kernel:",
+      "syntax": "lsinitrd --kver {{kernel_version}}"
+    },
+    {
+      "description": "Show the contents of the specified initramfs image:",
+      "syntax": "lsinitrd {{path/to/initramfs.img}}"
+    },
+    {
+      "description": "List modules included in the initramfs image:",
+      "syntax": "lsinitrd --mod"
+    },
+    {
+      "description": "Unpack the initramfs to the current directory:",
+      "syntax": "lsinitrd --unpack"
+    }
+  ]
+}

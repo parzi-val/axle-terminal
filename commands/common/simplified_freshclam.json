@@ -1,0 +1,10 @@
+{
+  "command": "freshclam",
+  "description": "Update virus definitions for ClamAV antivirus program. More information: https://www.clamav.net.",
+  "useCases": [
+    {
+      "description": "Update virus definitions:",
+      "syntax": "freshclam"
+    }
+  ]
+}

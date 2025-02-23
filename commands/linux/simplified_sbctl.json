@@ -1,0 +1,34 @@
+{
+  "command": "sbctl",
+  "description": "A user-friendly secure boot key manager. Note: not enrolling Microsoft's certificates can brick your system. See https://github.com/Foxboron/sbctl/wiki/FAQ#option-rom. More information: https://github.com/Foxboron/sbctl#usage.",
+  "useCases": [
+    {
+      "description": "Show the current secure boot status:",
+      "syntax": "sbctl status"
+    },
+    {
+      "description": "Create custom secure boot keys (by default, everything is stored in /var/lib/sbctl):",
+      "syntax": "sbctl create-keys"
+    },
+    {
+      "description": "Enroll the custom secure boot keys and Microsoft's UEFI vendor certificates:",
+      "syntax": "sbctl enroll-keys --microsoft"
+    },
+    {
+      "description": "Automatically run create-keys and enroll-keys based on the settings in /etc/sbctl/sbctl.conf:",
+      "syntax": "sbctl setup --setup"
+    },
+    {
+      "description": "Sign an EFI binary with the created key and save the file to the database:",
+      "syntax": "sbctl sign {{-s|--save}} {{path/to/efi_binary}}"
+    },
+    {
+      "description": "Re-sign all the saved files:",
+      "syntax": "sbctl sign-all"
+    },
+    {
+      "description": "Verify that all EFI executables on the EFI system partition have been signed:",
+      "syntax": "sbctl verify"
+    }
+  ]
+}

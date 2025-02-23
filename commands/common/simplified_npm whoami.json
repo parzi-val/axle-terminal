@@ -1,0 +1,14 @@
+{
+  "command": "npm whoami",
+  "description": "Display npm username. More information: https://docs.npmjs.com/cli/whoami.",
+  "useCases": [
+    {
+      "description": "Display username of the currently logged-in user:",
+      "syntax": "npm whoami"
+    },
+    {
+      "description": "Display username of the current user in the specific registry:",
+      "syntax": "npm whoami --registry={{registry_url}}"
+    }
+  ]
+}

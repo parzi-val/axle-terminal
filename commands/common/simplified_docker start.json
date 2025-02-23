@@ -1,0 +1,22 @@
+{
+  "command": "docker start",
+  "description": "Start stopped containers. More information: https://docs.docker.com/reference/cli/docker/container/start/.",
+  "useCases": [
+    {
+      "description": "Display help:",
+      "syntax": "docker start"
+    },
+    {
+      "description": "Start a Docker container:",
+      "syntax": "docker start {{container}}"
+    },
+    {
+      "description": "Start a container, attaching stdout and stderr and forwarding signals:",
+      "syntax": "docker start --attach {{container}}"
+    },
+    {
+      "description": "Start one or more containers:",
+      "syntax": "docker start {{container1 container2 ...}}"
+    }
+  ]
+}

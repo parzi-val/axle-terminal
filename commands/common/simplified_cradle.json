@@ -1,0 +1,22 @@
+{
+  "command": "cradle",
+  "description": "The Cradle PHP framework. Some subcommands such as install have their own usage documentation. More information: https://cradlephp.github.io.",
+  "useCases": [
+    {
+      "description": "Connect to a server:",
+      "syntax": "cradle connect {{server_name}}"
+    },
+    {
+      "description": "Execute a Cradle command:",
+      "syntax": "cradle {{command}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "cradle help"
+    },
+    {
+      "description": "Display help for a specific command:",
+      "syntax": "cradle {{command}} help"
+    }
+  ]
+}

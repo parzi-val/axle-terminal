@@ -1,0 +1,10 @@
+{
+  "command": "ip6tables-save",
+  "description": "This command is an alias of iptables-save for the IPv6 firewall.",
+  "useCases": [
+    {
+      "description": "View documentation for the original command:",
+      "syntax": "tldr iptables-save"
+    }
+  ]
+}

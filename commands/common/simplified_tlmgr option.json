@@ -1,0 +1,30 @@
+{
+  "command": "tlmgr option",
+  "description": "TeX Live settings manager. More information: https://www.tug.org/texlive/tlmgr.html.",
+  "useCases": [
+    {
+      "description": "List all TeX Live settings:",
+      "syntax": "tlmgr option showall"
+    },
+    {
+      "description": "List all currently set Tex Live settings:",
+      "syntax": "tlmgr option show"
+    },
+    {
+      "description": "Print all TeX Live settings in JSON format:",
+      "syntax": "tlmgr option showall --json"
+    },
+    {
+      "description": "Show the value of a specific TeX Live setting:",
+      "syntax": "tlmgr option {{setting}}"
+    },
+    {
+      "description": "Modify the value of a specific TeX Live setting:",
+      "syntax": "tlmgr option {{setting}} {{value}}"
+    },
+    {
+      "description": "Set TeX Live to get future updates from the internet after installing from DVD:",
+      "syntax": "tlmgr option {{repository}} {{https://mirror.ctan.org/systems/texlive/tlnet}}"
+    }
+  ]
+}

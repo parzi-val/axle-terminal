@@ -1,0 +1,38 @@
+{
+  "command": "msedge",
+  "description": "Modern web browser developed by Microsoft based on the Chromium web browser developed by Google. This command is available instead as microsoft-edge for other platforms. Note: Additional command arguments from chromium may also be usable to control Microsoft Edge. More information: https://microsoft.com/edge.",
+  "useCases": [
+    {
+      "description": "Open a specific URL or file:",
+      "syntax": "msedge {{https://example.com|path/to/file.html}}"
+    },
+    {
+      "description": "Open in InPrivate mode:",
+      "syntax": "msedge --inprivate {{example.com}}"
+    },
+    {
+      "description": "Open in a new window:",
+      "syntax": "msedge --new-window {{example.com}}"
+    },
+    {
+      "description": "Open in application mode (without toolbars, URL bar, buttons, etc.):",
+      "syntax": "msedge --app={{https://example.com}}"
+    },
+    {
+      "description": "Use a proxy server:",
+      "syntax": "msedge --proxy-server=&quot;{{socks5://hostname:66}}&quot; {{example.com}}"
+    },
+    {
+      "description": "Open with a custom profile directory:",
+      "syntax": "msedge --user-data-dir={{path/to/directory}}"
+    },
+    {
+      "description": "Open without CORS validation (useful to test an API):",
+      "syntax": "msedge --user-data-dir={{path/to/directory}} --disable-web-security"
+    },
+    {
+      "description": "Open with a DevTools window for each tab opened:",
+      "syntax": "msedge --auto-open-devtools-for-tabs"
+    }
+  ]
+}

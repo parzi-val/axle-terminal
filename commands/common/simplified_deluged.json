@@ -1,0 +1,22 @@
+{
+  "command": "deluged",
+  "description": "A daemon process for the Deluge BitTorrent client. More information: https://deluge-torrent.org.",
+  "useCases": [
+    {
+      "description": "Start the Deluge daemon:",
+      "syntax": "deluged"
+    },
+    {
+      "description": "Start the Deluge daemon on a specific port:",
+      "syntax": "deluged -p {{port}}"
+    },
+    {
+      "description": "Start the Deluge daemon using a specific configuration file:",
+      "syntax": "deluged -c {{path/to/configuration_file}}"
+    },
+    {
+      "description": "Start the Deluge daemon and output the log to a file:",
+      "syntax": "deluged -l {{path/to/log_file}}"
+    }
+  ]
+}

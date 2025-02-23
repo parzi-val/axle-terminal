@@ -1,0 +1,34 @@
+{
+  "command": "dex",
+  "description": "DesktopEntry Execution is a program to generate and execute DesktopEntry files of the Application type. More information: https://github.com/jceb/dex.",
+  "useCases": [
+    {
+      "description": "Execute all programs in the autostart folders:",
+      "syntax": "dex --autostart"
+    },
+    {
+      "description": "Execute all programs in the specified folders:",
+      "syntax": "dex --autostart --search-paths {{path/to/directory1}}:{{path/to/directory2}}:{{path/to/directory3}}:"
+    },
+    {
+      "description": "Preview the programs would be executed in a GNOME specific autostart:",
+      "syntax": "dex --autostart --environment {{GNOME}}"
+    },
+    {
+      "description": "Preview the programs would be executed in a regular autostart:",
+      "syntax": "dex --autostart --dry-run"
+    },
+    {
+      "description": "Preview the value of the DesktopEntry property Name:",
+      "syntax": "dex --property {{Name}} {{path/to/file.desktop}}"
+    },
+    {
+      "description": "Create a DesktopEntry for a program in the current directory:",
+      "syntax": "dex --create {{path/to/file.desktop}}"
+    },
+    {
+      "description": "Execute a single program (with Terminal=true in the desktop file) in the given terminal:",
+      "syntax": "dex --term {{terminal}} {{path/to/file.desktop}}"
+    }
+  ]
+}

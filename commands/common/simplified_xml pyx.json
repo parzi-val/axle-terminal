@@ -1,0 +1,18 @@
+{
+  "command": "xml pyx",
+  "description": "Convert an XML document to PYX (ESIS - ISO 8879) format. More information: https://xmlstar.sourceforge.net/docs.php.",
+  "useCases": [
+    {
+      "description": "Convert an XML document to PYX format:",
+      "syntax": "xml pyx {{path/to/input.xml|URI}} &gt; {{path/to/output.pyx}}"
+    },
+    {
+      "description": "Convert an XML document from stdin to PYX format:",
+      "syntax": "cat {{path/to/input.xml}} | xml pyx &gt; {{path/to/output.pyx}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "xml pyx --help"
+    }
+  ]
+}

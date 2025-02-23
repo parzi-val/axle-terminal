@@ -1,0 +1,14 @@
+{
+  "command": "Test-NetConnection",
+  "description": "Display diagnostic information for a connection. Note: This command can only be used through PowerShell. More information: https://learn.microsoft.com/powershell/module/nettcpip/test-netconnection.",
+  "useCases": [
+    {
+      "description": "Test a connection and display detailed results:",
+      "syntax": "Test-NetConnection -InformationLevel Detailed"
+    },
+    {
+      "description": "Test a connection to a remote host using the specified port number:",
+      "syntax": "Test-NetConnection -ComputerName {{ip_or_hostname}} -Port {{port_number}}"
+    }
+  ]
+}

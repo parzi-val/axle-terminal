@@ -1,0 +1,34 @@
+{
+  "command": "mupdf",
+  "description": "A lightweight PDF, XPS, and E-book viewer. More information: https://www.mupdf.com.",
+  "useCases": [
+    {
+      "description": "Open a PDF on the first page:",
+      "syntax": "mupdf {{path/to/file}}"
+    },
+    {
+      "description": "Open a PDF on page 3:",
+      "syntax": "mupdf {{path/to/file}} {{3}}"
+    },
+    {
+      "description": "Open a password secured PDF:",
+      "syntax": "mupdf -p {{password}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a PDF with an initial zoom level, specified as DPI, of 72:",
+      "syntax": "mupdf -r {{72}} {{path/to/file}}"
+    },
+    {
+      "description": "Open a PDF with inverted color:",
+      "syntax": "mupdf -I {{path/to/file}}"
+    },
+    {
+      "description": "Open a PDF tinted red #FF0000 (hexadecimal color syntax RRGGBB):",
+      "syntax": "mupdf -C {{FF0000}}"
+    },
+    {
+      "description": "Open a PDF without anti-aliasing (0 = off, 8 = best):",
+      "syntax": "mupdf -A {{0}}"
+    }
+  ]
+}

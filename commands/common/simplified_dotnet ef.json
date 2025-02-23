@@ -1,0 +1,38 @@
+{
+  "command": "dotnet ef",
+  "description": "Perform design-time development tasks for Entity Framework Core. More information: https://learn.microsoft.com/ef/core/cli/dotnet.",
+  "useCases": [
+    {
+      "description": "Update the database to a specified migration:",
+      "syntax": "dotnet ef database update {{migration}}"
+    },
+    {
+      "description": "Drop the database:",
+      "syntax": "dotnet ef database drop"
+    },
+    {
+      "description": "List available DbContext types:",
+      "syntax": "dotnet ef dbcontext list"
+    },
+    {
+      "description": "Generate code for a DbContext and entity types for a database:",
+      "syntax": "dotnet ef dbcontext scaffold {{connection_string}} {{provider}}"
+    },
+    {
+      "description": "Add a new migration:",
+      "syntax": "dotnet ef migrations add {{name}}"
+    },
+    {
+      "description": "Remove the last migration, rolling back the code changes that were done for the latest migration:",
+      "syntax": "dotnet ef migrations remove"
+    },
+    {
+      "description": "List available migrations:",
+      "syntax": "dotnet ef migrations list"
+    },
+    {
+      "description": "Generate an SQL script from migrations range:",
+      "syntax": "dotnet ef migrations script {{from_migration}} {{to_migration}}"
+    }
+  ]
+}

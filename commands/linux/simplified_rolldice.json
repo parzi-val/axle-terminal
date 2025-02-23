@@ -1,0 +1,22 @@
+{
+  "command": "rolldice",
+  "description": "Roll virtual dice. More information: https://manned.org/rolldice.",
+  "useCases": [
+    {
+      "description": "Roll a single 20 sided dice:",
+      "syntax": "rolldice d{{20}}"
+    },
+    {
+      "description": "Roll two six sided dice and drop the lowest roll:",
+      "syntax": "rolldice {{2}}d{{6}}s{{1}}"
+    },
+    {
+      "description": "Roll two 20 sided dice and add a modifier value:",
+      "syntax": "rolldice {{2}}d{{20}}{{+5}}"
+    },
+    {
+      "description": "Roll a 20 sided dice two times:",
+      "syntax": "rolldice {{2}}xd{{20}}"
+    }
+  ]
+}

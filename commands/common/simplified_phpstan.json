@@ -1,0 +1,30 @@
+{
+  "command": "phpstan",
+  "description": "A PHP static analysis tool to discover bugs in code. More information: https://github.com/phpstan/phpstan.",
+  "useCases": [
+    {
+      "description": "Analyze one or more directories:",
+      "syntax": "phpstan analyse {{path/to/directory1 path/to/directory2 ...}}"
+    },
+    {
+      "description": "Analyze a directory using a configuration file:",
+      "syntax": "phpstan analyse {{path/to/directory}} --configuration {{path/to/config}}"
+    },
+    {
+      "description": "Analyze using a specific rule level (0-7, higher is stricter):",
+      "syntax": "phpstan analyse {{path/to/directory}} --level {{level}}"
+    },
+    {
+      "description": "Specify an autoload file to load before analyzing:",
+      "syntax": "phpstan analyse {{path/to/directory}} --autoload-file {{path/to/autoload_file}}"
+    },
+    {
+      "description": "Specify a memory limit during analysis:",
+      "syntax": "phpstan analyse {{path/to/directory}} --memory-limit {{memory_limit}}"
+    },
+    {
+      "description": "Display available options for analysis:",
+      "syntax": "phpstan analyse --help"
+    }
+  ]
+}

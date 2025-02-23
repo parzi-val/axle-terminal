@@ -1,0 +1,26 @@
+{
+  "command": "pip install",
+  "description": "Install Python packages. More information: https://pip.pypa.io.",
+  "useCases": [
+    {
+      "description": "Install a package:",
+      "syntax": "pip install {{package}}"
+    },
+    {
+      "description": "Install a specific version of a package:",
+      "syntax": "pip install {{package}}=={{version}}"
+    },
+    {
+      "description": "Install packages listed in a file:",
+      "syntax": "pip install -r {{path/to/requirements.txt}}"
+    },
+    {
+      "description": "Install packages from an URL or local file archive (.tar.gz | .whl):",
+      "syntax": "pip install --find-links {{url|path/to/file}}"
+    },
+    {
+      "description": "Install the local package in the current directory in develop (editable) mode:",
+      "syntax": "pip install --editable {{.}}"
+    }
+  ]
+}

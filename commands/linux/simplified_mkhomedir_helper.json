@@ -1,0 +1,18 @@
+{
+  "command": "mkhomedir_helper",
+  "description": "Create the user's home directory after creating the user. More information: https://manned.org/mkhomedir_helper.",
+  "useCases": [
+    {
+      "description": "Create a home directory for a user based on /etc/skel with umask 022:",
+      "syntax": "sudo mkhomedir_helper {{username}}"
+    },
+    {
+      "description": "Create a home directory for a user based on /etc/skel with all permissions for owner (0) and read permission for group (3):",
+      "syntax": "sudo mkhomedir_helper {{username}} {{037}}"
+    },
+    {
+      "description": "Create a home directory for a user based on a custom skeleton:",
+      "syntax": "sudo mkhomedir_helper {{username}} {{umask}} {{path/to/skeleton_directory}}"
+    }
+  ]
+}

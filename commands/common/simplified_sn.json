@@ -1,0 +1,22 @@
+{
+  "command": "sn",
+  "description": "Mono StrongName utility for signing and verifying IL assemblies. More information: https://manned.org/sn.",
+  "useCases": [
+    {
+      "description": "Generate a new StrongNaming key:",
+      "syntax": "sn -k {{path/to/key.snk}}"
+    },
+    {
+      "description": "Re-sign an assembly with the specified private key:",
+      "syntax": "sn -R {{path/to/assembly.dll}} {{path/to/key_pair.snk}}"
+    },
+    {
+      "description": "Show the public key of the private key that was used to sign an assembly:",
+      "syntax": "sn -T {{path/to/assembly.exe}}"
+    },
+    {
+      "description": "Extract the public key to a file:",
+      "syntax": "sn -e {{path/to/assembly.dll}} {{path/to/output.pub}}"
+    }
+  ]
+}

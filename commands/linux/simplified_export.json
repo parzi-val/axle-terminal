@@ -1,0 +1,26 @@
+{
+  "command": "export",
+  "description": "Export shell variables to child processes. More information: https://www.gnu.org/software/bash/manual/bash.html#index-export.",
+  "useCases": [
+    {
+      "description": "Set an environment variable:",
+      "syntax": "export {{VARIABLE}}={{value}}"
+    },
+    {
+      "description": "Unset an environment variable:",
+      "syntax": "export -n {{VARIABLE}}"
+    },
+    {
+      "description": "Export a function to child processes:",
+      "syntax": "export -f {{FUNCTION_NAME}}"
+    },
+    {
+      "description": "Append a pathname to the environment variable PATH:",
+      "syntax": "export PATH=$PATH:{{path/to/append}}"
+    },
+    {
+      "description": "Display a list of active exported variables in shell command form:",
+      "syntax": "export -p"
+    }
+  ]
+}

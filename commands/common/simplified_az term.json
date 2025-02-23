@@ -1,0 +1,14 @@
+{
+  "command": "az term",
+  "description": "Manage marketplace agreement with marketplaceordering. Part of azure-cli (also known as az). More information: https://learn.microsoft.com/cli/azure/term.",
+  "useCases": [
+    {
+      "description": "Print marketplace terms:",
+      "syntax": "az term show --product &quot;{{product_identifier}}&quot; --plan &quot;{{plan_identifier}}&quot; --publisher &quot;{{publisher_identifier}}&quot;"
+    },
+    {
+      "description": "Accept marketplace terms:",
+      "syntax": "az term accept --product &quot;{{product_identifier}}&quot; --plan &quot;{{plan_identifier}}&quot; --publisher &quot;{{publisher_identifier}}&quot;"
+    }
+  ]
+}

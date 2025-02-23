@@ -1,0 +1,22 @@
+{
+  "command": "bvnc",
+  "description": "A GUI tool for browsing for SSH/VNC servers on the local network. See also: bssh and bshell. More information: https://manned.org/bvnc.",
+  "useCases": [
+    {
+      "description": "Browse for VNC servers:",
+      "syntax": "bvnc"
+    },
+    {
+      "description": "Browse for SSH servers:",
+      "syntax": "bvnc --ssh"
+    },
+    {
+      "description": "Browse for both VNC and SSH servers:",
+      "syntax": "bvnc --shell"
+    },
+    {
+      "description": "Browse for VNC servers in a specified domain:",
+      "syntax": "bvnc --domain {{domain}}"
+    }
+  ]
+}

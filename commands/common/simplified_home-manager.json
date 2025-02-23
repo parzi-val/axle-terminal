@@ -1,0 +1,26 @@
+{
+  "command": "home-manager",
+  "description": "Manage a per-user environment using Nix, allowing declarative configuration of the user’s home. More information: https://github.com/nix-community/home-manager.",
+  "useCases": [
+    {
+      "description": "Build the configuration defined in ~/.config/nixpkgs/home.nix without applying it:",
+      "syntax": "home-manager build"
+    },
+    {
+      "description": "Build and apply (switch to) the new configuration:",
+      "syntax": "home-manager switch"
+    },
+    {
+      "description": "Build the configuration for testing without applying it:",
+      "syntax": "home-manager test"
+    },
+    {
+      "description": "Roll back to a previous configuration generation:",
+      "syntax": "home-manager rollback"
+    },
+    {
+      "description": "List all existing configuration generations:",
+      "syntax": "home-manager generations"
+    }
+  ]
+}

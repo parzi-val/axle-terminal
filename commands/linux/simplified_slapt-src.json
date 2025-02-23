@@ -1,0 +1,26 @@
+{
+  "command": "slapt-src",
+  "description": "A utility to automate building of slackbuilds. SlackBuild sources need to be configured in the slapt-srcrc file. More information: https://github.com/jaos/slapt-src.",
+  "useCases": [
+    {
+      "description": "Update the list of available slackbuilds and versions:",
+      "syntax": "slapt-src --update"
+    },
+    {
+      "description": "List all available slackbuilds:",
+      "syntax": "slapt-src --list"
+    },
+    {
+      "description": "Fetch, build and install the specified slackbuild(s):",
+      "syntax": "slapt-src --install {{slackbuild_name}}"
+    },
+    {
+      "description": "Locate slackbuilds by their name or description:",
+      "syntax": "slapt-src --search {{search_term}}"
+    },
+    {
+      "description": "Display information about a slackbuild:",
+      "syntax": "slapt-src --show {{slackbuild_name}}"
+    }
+  ]
+}

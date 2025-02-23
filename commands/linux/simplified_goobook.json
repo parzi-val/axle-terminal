@@ -1,0 +1,14 @@
+{
+  "command": "goobook",
+  "description": "Access Google contacts from mutt or the command-line. More information: https://manned.org/goobook.",
+  "useCases": [
+    {
+      "description": "Allow goobook to access Google contacts using OAuth2:",
+      "syntax": "goobook authenticate"
+    },
+    {
+      "description": "Dump all contacts to XML (stdout):",
+      "syntax": "goobook dump_contacts"
+    }
+  ]
+}

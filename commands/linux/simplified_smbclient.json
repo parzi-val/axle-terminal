@@ -1,0 +1,34 @@
+{
+  "command": "smbclient",
+  "description": "FTP-like client to access SMB/CIFS resources on servers. More information: https://manned.org/smbclient.",
+  "useCases": [
+    {
+      "description": "Connect to a share (user will be prompted for password; exit to quit the session):",
+      "syntax": "smbclient {{//server/share}}"
+    },
+    {
+      "description": "Connect with a different username:",
+      "syntax": "smbclient {{//server/share}} --user {{username}}"
+    },
+    {
+      "description": "Connect with a different workgroup:",
+      "syntax": "smbclient {{//server/share}} --workgroup {{domain}} --user {{username}}"
+    },
+    {
+      "description": "Connect with a username and password:",
+      "syntax": "smbclient {{//server/share}} --user {{username%password}}"
+    },
+    {
+      "description": "Download a file from the server:",
+      "syntax": "smbclient {{//server/share}} --directory {{path/to/directory}} --command &quot;get {{file.txt}}&quot;"
+    },
+    {
+      "description": "Upload a file to the server:",
+      "syntax": "smbclient {{//server/share}} --directory {{path/to/directory}} --command &quot;put {{file.txt}}&quot;"
+    },
+    {
+      "description": "List the shares from a server anonymously:",
+      "syntax": "smbclient --list={{server}} --no-pass"
+    }
+  ]
+}

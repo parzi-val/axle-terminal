@@ -1,0 +1,30 @@
+{
+  "command": "frpc",
+  "description": "Connect to a frps server to start proxying connections on the current host. Part of frp. More information: https://github.com/fatedier/frp.",
+  "useCases": [
+    {
+      "description": "Start the service, using the default configuration file (assumed to be frps.ini in the current directory):",
+      "syntax": "frpc"
+    },
+    {
+      "description": "Start the service, using the newer TOML configuration file (frps.toml instead of frps.ini) in the current directory:",
+      "syntax": "frpc {{-c|--config}} ./frps.toml"
+    },
+    {
+      "description": "Start the service, using a specific configuration file:",
+      "syntax": "frpc {{-c|--config}} {{path/to/file}}"
+    },
+    {
+      "description": "Check if the configuration file is valid:",
+      "syntax": "frpc verify {{-c|--config}} {{path/to/file}}"
+    },
+    {
+      "description": "Print autocompletion setup script for Bash, fish, PowerShell, or Zsh:",
+      "syntax": "frpc completion {{bash|fish|powershell|zsh}}"
+    },
+    {
+      "description": "Display version:",
+      "syntax": "frpc {{-v|--version}}"
+    }
+  ]
+}

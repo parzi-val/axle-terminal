@@ -1,0 +1,18 @@
+{
+  "command": "isosize",
+  "description": "Display the size of an ISO file. More information: https://manned.org/isosize.",
+  "useCases": [
+    {
+      "description": "Display the size of an ISO file:",
+      "syntax": "isosize {{path/to/file.iso}}"
+    },
+    {
+      "description": "Display the block count and block size of an ISO file:",
+      "syntax": "isosize --sectors {{path/to/file.iso}}"
+    },
+    {
+      "description": "Display the size of an ISO file divided by a given number (only usable when --sectors is not given):",
+      "syntax": "isosize --divisor={{number}} {{path/to/file.iso}}"
+    }
+  ]
+}

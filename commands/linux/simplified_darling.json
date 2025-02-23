@@ -1,0 +1,22 @@
+{
+  "command": "darling",
+  "description": "Run macOS software on Linux. More information: https://darlinghq.org.",
+  "useCases": [
+    {
+      "description": "Run a builtin command:",
+      "syntax": "darling shell {{uname}}"
+    },
+    {
+      "description": "Run a specific program in the current path with arguments:",
+      "syntax": "darling shell {{./program}} {{program_argument_1 program_argument_2 ...}}"
+    },
+    {
+      "description": "Open a macOS shell:",
+      "syntax": "darling shell"
+    },
+    {
+      "description": "Shutdown the service:",
+      "syntax": "darling shutdown"
+    }
+  ]
+}

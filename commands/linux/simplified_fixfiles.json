@@ -1,0 +1,38 @@
+{
+  "command": "fixfiles",
+  "description": "Fix file SELinux security contexts. More information: https://manned.org/fixfiles.",
+  "useCases": [
+    {
+      "description": "If specified with onboot, this fixfiles will record the current date in the /.autorelabel file, so that it can be used later to speed up labeling. If used with restore, the restore will only affect files that were modified today:",
+      "syntax": "fixfiles -B"
+    },
+    {
+      "description": "[F]orce reset of context to match file_context for customizable files:",
+      "syntax": "fixfiles -F"
+    },
+    {
+      "description": "Clear /tmp directory without confirmation:",
+      "syntax": "fixfiles -f"
+    },
+    {
+      "description": "Use the [R]pm database to discover all files within specific packages and restore the file contexts:",
+      "syntax": "fixfiles -R {{rpm_package1,rpm_package2 ...}}"
+    },
+    {
+      "description": "Run a diff on the PREVIOUS_FILECONTEXT file to the [C]urrently installed one, and restore the context of all affected files:",
+      "syntax": "fixfiles -C PREVIOUS_FILECONTEXT"
+    },
+    {
+      "description": "Only act on files created after a specific date which will be passed to find --newermt command:",
+      "syntax": "fixfiles -N {{YYYY-MM-DD HH:MM}}"
+    },
+    {
+      "description": "Bind [M]ount filesystems before relabeling them, this allows fixing the context of files or directories that have been mounted over:",
+      "syntax": "fixfiles -M"
+    },
+    {
+      "description": "Modify [v]erbosity from progress to verbose and run restorecon with -v instead of -p:",
+      "syntax": "fixfiles -v"
+    }
+  ]
+}

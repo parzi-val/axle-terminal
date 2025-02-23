@@ -1,0 +1,30 @@
+{
+  "command": "pamac",
+  "description": "A command-line utility for the GUI package manager pamac. If you can't see the AUR packages, enable it in /etc/pamac.conf or in the GUI. More information: https://wiki.manjaro.org/index.php/Pamac.",
+  "useCases": [
+    {
+      "description": "Install a new package:",
+      "syntax": "pamac install {{package_name}}"
+    },
+    {
+      "description": "Remove a package and its no longer required dependencies (orphans):",
+      "syntax": "pamac remove --orphans {{package_name}}"
+    },
+    {
+      "description": "Search the package database for a package:",
+      "syntax": "pamac search {{package_name}}"
+    },
+    {
+      "description": "List installed packages:",
+      "syntax": "pamac list --installed"
+    },
+    {
+      "description": "Check for package updates:",
+      "syntax": "pamac checkupdates"
+    },
+    {
+      "description": "Upgrade all packages:",
+      "syntax": "pamac upgrade"
+    }
+  ]
+}

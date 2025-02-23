@@ -1,0 +1,22 @@
+{
+  "command": "mg",
+  "description": "A small, fast, and portable text editor based on emacs. More information: https://github.com/hboetes/mg.",
+  "useCases": [
+    {
+      "description": "Open a file for editing:",
+      "syntax": "mg {{path/to/file}}"
+    },
+    {
+      "description": "Open a file at a specified line number:",
+      "syntax": "mg +{{line_number}} {{path/to/file}}"
+    },
+    {
+      "description": "Open files in a read-only mode:",
+      "syntax": "mg -R {{path/to/file1 path/to/file2 ...}}"
+    },
+    {
+      "description": "Disable ~ backup files while editing:",
+      "syntax": "mg -n {{path/to/file}}"
+    }
+  ]
+}

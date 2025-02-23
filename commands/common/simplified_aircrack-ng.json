@@ -1,0 +1,18 @@
+{
+  "command": "aircrack-ng",
+  "description": "Crack WEP and WPA/WPA2 keys from handshake in captured packets. Part of Aircrack-ng network software suite. More information: https://www.aircrack-ng.org/doku.php?id=aircrack-ng.",
+  "useCases": [
+    {
+      "description": "Crack key from capture file using [w]ordlist:",
+      "syntax": "aircrack-ng -w {{path/to/wordlist.txt}} {{path/to/capture.cap}}"
+    },
+    {
+      "description": "Crack key from capture file using [w]ordlist and the access point's [e]ssid:",
+      "syntax": "aircrack-ng -w {{path/to/wordlist.txt}} -e {{essid}} {{path/to/capture.cap}}"
+    },
+    {
+      "description": "Crack key from capture file using [w]ordlist and the access point's MAC address:",
+      "syntax": "aircrack-ng -w {{path/to/wordlist.txt}} --bssid {{mac}} {{path/to/capture.cap}}"
+    }
+  ]
+}

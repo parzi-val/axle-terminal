@@ -1,0 +1,34 @@
+{
+  "command": "mtr",
+  "description": "Matt's Traceroute: combined traceroute and ping tool. More information: https://www.bitwizard.nl/mtr/.",
+  "useCases": [
+    {
+      "description": "Traceroute to a host and continuously ping all intermediary hops:",
+      "syntax": "mtr {{example.com}}"
+    },
+    {
+      "description": "Disable IP address and host name mapping:",
+      "syntax": "mtr --no-dns {{example.com}}"
+    },
+    {
+      "description": "Generate output after pinging each hop 10 times:",
+      "syntax": "mtr --report-wide {{example.com}}"
+    },
+    {
+      "description": "Force IP IPv4 or IPV6:",
+      "syntax": "mtr -4 {{example.com}}"
+    },
+    {
+      "description": "Wait for a given time (in seconds) before sending another packet to the same hop:",
+      "syntax": "mtr --interval {{10}} {{example.com}}"
+    },
+    {
+      "description": "Display the Autonomous System Number (ASN) for each hop:",
+      "syntax": "mtr --aslookup {{example.com}}"
+    },
+    {
+      "description": "Display both IP address and reverse DNS name:",
+      "syntax": "mtr --show-ips {{example.com}}"
+    }
+  ]
+}

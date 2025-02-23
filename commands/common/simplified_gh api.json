@@ -1,0 +1,38 @@
+{
+  "command": "gh api",
+  "description": "Make authenticated HTTP requests to the GitHub API and print the response. More information: https://cli.github.com/manual/gh_api.",
+  "useCases": [
+    {
+      "description": "Display the releases for the current repository in JSON format:",
+      "syntax": "gh api repos/:owner/:repo/releases"
+    },
+    {
+      "description": "Create a reaction for a specific issue:",
+      "syntax": "gh api --header {{Accept:application/vnd.github.squirrel-girl-preview+json}} --raw-field '{{content=+1}}' {{repos/:owner/:repo/issues/123/reactions}}"
+    },
+    {
+      "description": "Display the result of a GraphQL query in JSON format:",
+      "syntax": "gh api graphql --field {{name=':repo'}} --raw-field '{{query}}'"
+    },
+    {
+      "description": "Send a request using a custom HTTP method:",
+      "syntax": "gh api --method {{POST}} {{endpoint}}"
+    },
+    {
+      "description": "Include the HTTP response headers in the output:",
+      "syntax": "gh api --include {{endpoint}}"
+    },
+    {
+      "description": "Do not print the response body:",
+      "syntax": "gh api --silent {{endpoint}}"
+    },
+    {
+      "description": "Send a request to a specific GitHub Enterprise Server:",
+      "syntax": "gh api --hostname {{github.example.com}} {{endpoint}}"
+    },
+    {
+      "description": "Display the subcommand help:",
+      "syntax": "gh api --help"
+    }
+  ]
+}

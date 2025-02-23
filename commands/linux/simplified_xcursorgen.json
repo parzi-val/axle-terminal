@@ -1,0 +1,18 @@
+{
+  "command": "xcursorgen",
+  "description": "Create an X cursor file from a collection of PNGs. If --prefix is omitted, the image files must be located in the current working directory. More information: https://manned.org/xcursorgen.",
+  "useCases": [
+    {
+      "description": "Create an X cursor file using a configuration file:",
+      "syntax": "xcursorgen {{path/to/config.cursor}} {{path/to/output_file}}"
+    },
+    {
+      "description": "Create an X cursor file using a configuration file and specify the path to the image files:",
+      "syntax": "xcursorgen --prefix {{path/to/image_directory/}} {{path/to/config.cursor}} {{path/to/output_file}}"
+    },
+    {
+      "description": "Create an X cursor file using a configuration file and write the output to stdout:",
+      "syntax": "xcursorgen {{path/to/config.cursor}}"
+    }
+  ]
+}

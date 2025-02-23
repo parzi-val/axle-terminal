@@ -1,0 +1,38 @@
+{
+  "command": "needrestart",
+  "description": "Check which daemons need to be restarted after library upgrades. More information: https://github.com/liske/needrestart.",
+  "useCases": [
+    {
+      "description": "List outdated processes:",
+      "syntax": "needrestart"
+    },
+    {
+      "description": "Interactively restart services:",
+      "syntax": "sudo needrestart"
+    },
+    {
+      "description": "List outdated processes in [v]erbose or [q]uiet mode:",
+      "syntax": "needrestart -{{v|q}}"
+    },
+    {
+      "description": "Check if the [k]ernel is outdated:",
+      "syntax": "needrestart -k"
+    },
+    {
+      "description": "Check if the CPU microcode is outdated:",
+      "syntax": "needrestart -w"
+    },
+    {
+      "description": "List outdated processes in [b]atch mode:",
+      "syntax": "needrestart -b"
+    },
+    {
+      "description": "List outdated processed using a specific [c]onfiguration file:",
+      "syntax": "needrestart -c {{path/to/config}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "needrestart --help"
+    }
+  ]
+}

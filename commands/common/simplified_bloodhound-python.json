@@ -1,0 +1,26 @@
+{
+  "command": "bloodhound-python",
+  "description": "A Python ingestor for BloodHound, used to enumerate Active Directory relationships. More information: https://github.com/dirkjanm/BloodHound.py.",
+  "useCases": [
+    {
+      "description": "Collect all data using default collection methods (includes groups, sessions, and trusts):",
+      "syntax": "bloodhound-python --username {{username}} --password {{password}} --domain {{domain}}"
+    },
+    {
+      "description": "Collect data using Kerberos authentication without requiring a plaintext password:",
+      "syntax": "bloodhound-python --collectionmethod {{All}} --kerberos --domain {{domain}}"
+    },
+    {
+      "description": "Authenticate using NTLM hashes instead of a password:",
+      "syntax": "bloodhound-python --collectionmethod {{All}} --username {{username}} --hashes {{LM:NTLM}} --domain {{domain}}"
+    },
+    {
+      "description": "Specify a custom name server for DNS queries:",
+      "syntax": "bloodhound-python --collectionmethod {{All}} --username {{username}} --password {{password}} --domain {{domain}} --nameserver {{nameserver}}"
+    },
+    {
+      "description": "Save the output files as a compressed ZIP archive:",
+      "syntax": "bloodhound-python --collectionmethod {{All}} --username {{username}} --password {{password}} --domain {{domain}} --zip"
+    }
+  ]
+}

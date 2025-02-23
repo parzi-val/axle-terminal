@@ -1,0 +1,30 @@
+{
+  "command": "xsv",
+  "description": "A CSV command-line toolkit written in Rust. More information: https://github.com/BurntSushi/xsv.",
+  "useCases": [
+    {
+      "description": "Inspect the headers of a file:",
+      "syntax": "xsv headers {{path/to/file.csv}}"
+    },
+    {
+      "description": "Count the number of entries:",
+      "syntax": "xsv count {{path/to/file.csv}}"
+    },
+    {
+      "description": "Get an overview of the shape of entries:",
+      "syntax": "xsv stats {{path/to/file.csv}} | xsv table"
+    },
+    {
+      "description": "Select a few columns:",
+      "syntax": "xsv select {{column1,column2}} {{path/to/file.csv}}"
+    },
+    {
+      "description": "Show 10 random entries:",
+      "syntax": "xsv sample {{10}} {{path/to/file.csv}}"
+    },
+    {
+      "description": "Join a column from one file to another:",
+      "syntax": "xsv join --no-case {{column1}} {{path/to/file1.csv}} {{column2}} {{path/to/file2.csv}} | xsv table"
+    }
+  ]
+}

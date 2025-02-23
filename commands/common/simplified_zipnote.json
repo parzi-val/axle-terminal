@@ -1,0 +1,18 @@
+{
+  "command": "zipnote",
+  "description": "View, add, or edit a Zip archive's comments. Files can also be renamed in the Zip archive. More information: https://manned.org/zipnote.",
+  "useCases": [
+    {
+      "description": "View the comments on a Zip archive:",
+      "syntax": "zipnote {{path/to/file.zip}}"
+    },
+    {
+      "description": "Extract the comments on a Zip archive to a file:",
+      "syntax": "zipnote {{path/to/file.zip}} &gt; {{path/to/file.txt}}"
+    },
+    {
+      "description": "Add/Update comments in a Zip archive from a file:",
+      "syntax": "zipnote -w {{path/to/file.zip}} &lt; {{path/to/file.txt}}"
+    }
+  ]
+}

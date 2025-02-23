@@ -1,0 +1,26 @@
+{
+  "command": "rpm-ostree",
+  "description": "A hybrid image/package system. Manage ostree deployments, package layers, filesystem overlays, and boot configuration. More information: https://coreos.github.io/rpm-ostree/administrator-handbook/.",
+  "useCases": [
+    {
+      "description": "Show rpm-ostree deployments in the order they will appear in the bootloader:",
+      "syntax": "rpm-ostree status"
+    },
+    {
+      "description": "Show packages which are outdated and can be updated:",
+      "syntax": "rpm-ostree upgrade --preview"
+    },
+    {
+      "description": "Prepare a new ostree deployment with upgraded packages and reboot into it:",
+      "syntax": "rpm-ostree upgrade --reboot"
+    },
+    {
+      "description": "Reboot into the previous ostree deployment:",
+      "syntax": "rpm-ostree rollback --reboot"
+    },
+    {
+      "description": "Install a package into a new ostree deployment and reboot into it:",
+      "syntax": "rpm-ostree install {{package}} --reboot"
+    }
+  ]
+}

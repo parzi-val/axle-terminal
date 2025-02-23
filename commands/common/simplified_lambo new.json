@@ -1,0 +1,38 @@
+{
+  "command": "lambo new",
+  "description": "A super-powered laravel new for Laravel and Valet. More information: https://github.com/tighten/lambo.",
+  "useCases": [
+    {
+      "description": "Create a new Laravel application:",
+      "syntax": "lambo new {{app_name}}"
+    },
+    {
+      "description": "Install the application in a specific path:",
+      "syntax": "lambo new --path={{path/to/directory}} {{app_name}}"
+    },
+    {
+      "description": "Include authentication scaffolding:",
+      "syntax": "lambo new --auth {{app_name}}"
+    },
+    {
+      "description": "Include a specific frontend:",
+      "syntax": "lambo new --{{vue|bootstrap|react}} {{app_name}}"
+    },
+    {
+      "description": "Install npm dependencies after the project has been created:",
+      "syntax": "lambo new --node {{app_name}}"
+    },
+    {
+      "description": "Create a Valet site after the project has been created:",
+      "syntax": "lambo new --link {{app_name}}"
+    },
+    {
+      "description": "Create a new MySQL database with the same name as the project:",
+      "syntax": "lambo new --create-db --dbuser={{user}} --dbpassword={{password}} {{app_name}}"
+    },
+    {
+      "description": "Open a specific editor after the project has been created:",
+      "syntax": "lambo new --editor=&quot;{{editor}}&quot; {{app_name}}"
+    }
+  ]
+}

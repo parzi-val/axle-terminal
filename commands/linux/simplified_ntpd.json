@@ -1,0 +1,18 @@
+{
+  "command": "ntpd",
+  "description": "The official NTP (Network Time Protocol) daemon to synchronize the system clock to remote time servers or local reference clocks. More information: https://manned.org/ntpd.",
+  "useCases": [
+    {
+      "description": "Start the daemon:",
+      "syntax": "sudo ntpd"
+    },
+    {
+      "description": "Synchronize system time with remote servers a single time (quit after synchronizing):",
+      "syntax": "sudo ntpd --quit"
+    },
+    {
+      "description": "Synchronize a single time allowing \"Big\" adjustments:",
+      "syntax": "sudo ntpd --panicgate --quit"
+    }
+  ]
+}

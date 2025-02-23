@@ -1,0 +1,26 @@
+{
+  "command": "aws s3 cp",
+  "description": "Copy local files or S3 objects to another location locally or in S3. More information: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/cp.html.",
+  "useCases": [
+    {
+      "description": "Copy a file from local to a specific bucket:",
+      "syntax": "aws s3 cp {{path/to/file}} s3://{{bucket_name}}/{{path/to/remote_file}}"
+    },
+    {
+      "description": "Copy a specific S3 object into another bucket:",
+      "syntax": "aws s3 cp s3://{{bucket_name1}}/{{path/to/file}} s3://{{bucket_name2}}/{{path/to/target}}"
+    },
+    {
+      "description": "Copy a specific S3 object into another bucket keeping the original name:",
+      "syntax": "aws s3 cp s3://{{bucket_name1}}/{{path/to/file}} s3://{{bucket_name2}}"
+    },
+    {
+      "description": "Copy S3 objects to a local directory recursively:",
+      "syntax": "aws s3 cp s3://{{bucket_name}} . --recursive"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "aws s3 cp help"
+    }
+  ]
+}

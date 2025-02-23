@@ -1,0 +1,30 @@
+{
+  "command": "vale",
+  "description": "Extensible style checker that supports multiple markup formats, such as Markdown and AsciiDoc. More information: https://vale.sh.",
+  "useCases": [
+    {
+      "description": "Check the style of a file:",
+      "syntax": "vale {{path/to/file}}"
+    },
+    {
+      "description": "Check the style of a file with a specified configuration:",
+      "syntax": "vale --config='{{path/to/.vale.ini}}' {{path/to/file}}"
+    },
+    {
+      "description": "Output the results in JSON format:",
+      "syntax": "vale --output=JSON {{path/to/file}}"
+    },
+    {
+      "description": "Check style issues at the specific severity and higher:",
+      "syntax": "vale --minAlertLevel={{suggestion|warning|error}} {{path/to/file}}"
+    },
+    {
+      "description": "Check the style from stdin, specifying markup format:",
+      "syntax": "cat {{file.md}} | vale --ext=.md"
+    },
+    {
+      "description": "List the current configuration:",
+      "syntax": "vale ls-config"
+    }
+  ]
+}

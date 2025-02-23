@@ -1,0 +1,26 @@
+{
+  "command": "tuckr",
+  "description": "Dotfile manager written in Rust. See also: chezmoi, vcsh, homeshick, stow. More information: https://github.com/RaphGL/Tuckr.",
+  "useCases": [
+    {
+      "description": "Check dotfile status:",
+      "syntax": "tuckr status"
+    },
+    {
+      "description": "Add all dotfiles to system:",
+      "syntax": "tuckr add \\*"
+    },
+    {
+      "description": "Add all dotfiles except specified programs:",
+      "syntax": "tuckr add \\* -e {{program1}},{{program2}}"
+    },
+    {
+      "description": "Remove all dotfiles from the system:",
+      "syntax": "tuckr rm \\*"
+    },
+    {
+      "description": "Add a program dotfile and run its setup script:",
+      "syntax": "tuckr set {{program}}"
+    }
+  ]
+}

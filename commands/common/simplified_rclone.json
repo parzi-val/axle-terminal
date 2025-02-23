@@ -1,0 +1,38 @@
+{
+  "command": "rclone",
+  "description": "Copy, synchronize or move files and directories to and from many cloud services. More information: https://rclone.org.",
+  "useCases": [
+    {
+      "description": "Launch an interactive menu to setup rclone:",
+      "syntax": "rclone config"
+    },
+    {
+      "description": "List contents of a directory on an rclone remote:",
+      "syntax": "rclone lsf {{remote_name}}:{{path/to/directory}}"
+    },
+    {
+      "description": "Copy a file or directory from the local machine to the remote destination:",
+      "syntax": "rclone copy {{path/to/source_file_or_directory}} {{remote_name}}:{{path/to/directory}}"
+    },
+    {
+      "description": "Copy files changed within the past 24 hours to a remote from the local machine, asking the user to confirm each file:",
+      "syntax": "rclone copy --interactive --max-age 24h {{remote_name}}:{{path/to/directory}} {{path/to/local_directory}}"
+    },
+    {
+      "description": "Mirror a specific file or directory (Note: Unlike copy, sync removes files from the remote if it does not exist locally):",
+      "syntax": "rclone sync {{path/to/file_or_directory}} {{remote_name}}:{{path/to/directory}}"
+    },
+    {
+      "description": "Delete a remote file or directory (Note: --dry-run means test, remove it from the command to actually delete):",
+      "syntax": "rclone --dry-run delete {{remote_name}}:{{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Mount rclone remote (experimental):",
+      "syntax": "rclone mount {{remote_name}}:{{path/to/directory}} {{path/to/mount_point}}"
+    },
+    {
+      "description": "Unmount rclone remote if CTRL-C fails (experimental):",
+      "syntax": "fusermount -u {{path/to/mount_point}}"
+    }
+  ]
+}

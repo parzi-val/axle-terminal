@@ -1,0 +1,34 @@
+{
+  "command": "npm view",
+  "description": "View registry information about a package. More information: https://docs.npmjs.com/cli/commands/npm-view.",
+  "useCases": [
+    {
+      "description": "View information about the latest version of a package:",
+      "syntax": "npm view {{package}}"
+    },
+    {
+      "description": "View information about a specific version of a package:",
+      "syntax": "npm view {{package}}@{{version}}"
+    },
+    {
+      "description": "View all available versions of a package:",
+      "syntax": "npm view {{package}} versions"
+    },
+    {
+      "description": "View the description of a package:",
+      "syntax": "npm view {{package}} description"
+    },
+    {
+      "description": "View the dependencies of the latest version of a package:",
+      "syntax": "npm view {{package}} dependencies"
+    },
+    {
+      "description": "View the repository URL of a package:",
+      "syntax": "npm view {{package}} repository"
+    },
+    {
+      "description": "View the maintainers of a package:",
+      "syntax": "npm view {{package}} maintainers"
+    }
+  ]
+}

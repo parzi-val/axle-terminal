@@ -1,0 +1,38 @@
+{
+  "command": "ykman oath",
+  "description": "Manage the OATH YubiKey application. A keyword can be a part of the name or the issuer. More information: https://docs.yubico.com/software/yubikey/tools/ykman/OATH_Commands.html.",
+  "useCases": [
+    {
+      "description": "Display general information about the OATH application:",
+      "syntax": "ykman oath info"
+    },
+    {
+      "description": "Change the password used to protect OATH accounts (add --clear to remove it):",
+      "syntax": "ykman oath access change"
+    },
+    {
+      "description": "Add a new account (--issuer is optional):",
+      "syntax": "ykman oath accounts add --issuer {{issuer}} {{name}}"
+    },
+    {
+      "description": "List all accounts (with their issuers):",
+      "syntax": "ykman oath accounts list"
+    },
+    {
+      "description": "List all accounts with their current TOTP/HOTP codes (optionally filtering the list with a keyword):",
+      "syntax": "ykman oath accounts code {{keyword}}"
+    },
+    {
+      "description": "Rename an account:",
+      "syntax": "ykman oath accounts rename {{keyword}} {{issuer:name|name}}"
+    },
+    {
+      "description": "Delete an account:",
+      "syntax": "ykman oath accounts delete {{keyword}}"
+    },
+    {
+      "description": "Delete all accounts and restore factory settings:",
+      "syntax": "ykman oath reset"
+    }
+  ]
+}

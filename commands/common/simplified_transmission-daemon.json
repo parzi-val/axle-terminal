@@ -1,0 +1,22 @@
+{
+  "command": "transmission-daemon",
+  "description": "Daemon controlled with transmission-remote or its web interface. See also: transmission. More information: https://manned.org/transmission-daemon.",
+  "useCases": [
+    {
+      "description": "Start a headless transmission session:",
+      "syntax": "transmission-daemon"
+    },
+    {
+      "description": "Start and watch a specific directory for new torrents:",
+      "syntax": "transmission-daemon --watch-dir {{path/to/directory}}"
+    },
+    {
+      "description": "Dump daemon settings in JSON format:",
+      "syntax": "transmission-daemon --dump-settings &gt; {{path/to/file.json}}"
+    },
+    {
+      "description": "Start with specific settings for the web interface:",
+      "syntax": "transmission-daemon --auth --username {{username}} --password {{password}} --port {{9091}} --allowed {{127.0.0.1}}"
+    }
+  ]
+}

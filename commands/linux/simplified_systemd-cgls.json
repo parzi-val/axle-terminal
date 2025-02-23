@@ -1,0 +1,18 @@
+{
+  "command": "systemd-cgls",
+  "description": "Show the contents of the selected Linux control group hierarchy in a tree. More information: https://www.freedesktop.org/software/systemd/man/systemd-cgls.html.",
+  "useCases": [
+    {
+      "description": "Display the whole control group hierarchy on your system:",
+      "syntax": "systemd-cgls"
+    },
+    {
+      "description": "Display a control group tree of a specific resource controller:",
+      "syntax": "systemd-cgls {{cpu|memory|io}}"
+    },
+    {
+      "description": "Display the control group hierarchy of one or more systemd units:",
+      "syntax": "systemd-cgls --unit {{unit1 unit2 ...}}"
+    }
+  ]
+}

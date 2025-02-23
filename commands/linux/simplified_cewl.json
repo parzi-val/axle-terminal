@@ -1,0 +1,26 @@
+{
+  "command": "cewl",
+  "description": "URL spidering tool for making a cracking wordlist from web content. More information: https://digi.ninja/projects/cewl.php.",
+  "useCases": [
+    {
+      "description": "Create a wordlist file from the given URL up to 2 links depth:",
+      "syntax": "cewl --depth {{2}} --write {{path/to/wordlist.txt}} {{url}}"
+    },
+    {
+      "description": "Output an alphanumeric wordlist from the given URL with words of minimum 5 characters:",
+      "syntax": "cewl --with-numbers --min_word_length {{5}} {{url}}"
+    },
+    {
+      "description": "Output a wordlist from the given URL in debug mode including email addresses:",
+      "syntax": "cewl --debug --email {{url}}"
+    },
+    {
+      "description": "Output a wordlist from the given URL using HTTP Basic or Digest authentication:",
+      "syntax": "cewl --auth_type {{basic|digest}} --auth_user {{username}} --auth_pass {{password}} {{url}}"
+    },
+    {
+      "description": "Output a wordlist from the given URL through a proxy:",
+      "syntax": "cewl --proxy_host {{host}} --proxy_port {{port}} {{url}}"
+    }
+  ]
+}

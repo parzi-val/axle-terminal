@@ -1,0 +1,26 @@
+{
+  "command": "wrangler",
+  "description": "Cloudflare Workers command-line tool. More information: https://developers.cloudflare.com/workers/.",
+  "useCases": [
+    {
+      "description": "Initialize a project with a skeleton configuration:",
+      "syntax": "wrangler init {{project_name}}"
+    },
+    {
+      "description": "Authenticate with Cloudflare:",
+      "syntax": "wrangler login"
+    },
+    {
+      "description": "Start a local development server:",
+      "syntax": "wrangler dev --host {{hostname}}"
+    },
+    {
+      "description": "Publish the worker script:",
+      "syntax": "wrangler publish"
+    },
+    {
+      "description": "Aggregate logs from the production worker:",
+      "syntax": "wrangler tail"
+    }
+  ]
+}

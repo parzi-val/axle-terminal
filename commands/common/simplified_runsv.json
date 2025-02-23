@@ -1,0 +1,14 @@
+{
+  "command": "runsv",
+  "description": "Start and manage a runit service. More information: https://manned.org/runsv.8.",
+  "useCases": [
+    {
+      "description": "Start a runit service as the current user:",
+      "syntax": "runsv {{path/to/service}}"
+    },
+    {
+      "description": "Start a runit service as root:",
+      "syntax": "sudo runsv {{path/to/service}}"
+    }
+  ]
+}

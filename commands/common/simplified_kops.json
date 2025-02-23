@@ -1,0 +1,30 @@
+{
+  "command": "kops",
+  "description": "Create, destroy, upgrade and maintain Kubernetes clusters. More information: https://github.com/kubernetes/kops/.",
+  "useCases": [
+    {
+      "description": "Create a cluster from the configuration specification:",
+      "syntax": "kops create cluster -f {{cluster_name.yaml}}"
+    },
+    {
+      "description": "Create a new SSH public key:",
+      "syntax": "kops create secret sshpublickey {{key_name}} -i {{~/.ssh/id_rsa.pub}}"
+    },
+    {
+      "description": "Export the cluster configuration to the ~/.kube/config file:",
+      "syntax": "kops export kubecfg {{cluster_name}}"
+    },
+    {
+      "description": "Get the cluster configuration as YAML:",
+      "syntax": "kops get cluster {{cluster_name}} -o yaml"
+    },
+    {
+      "description": "Delete a cluster:",
+      "syntax": "kops delete cluster {{cluster_name}} --yes"
+    },
+    {
+      "description": "Validate a cluster:",
+      "syntax": "kops validate cluster {{cluster_name}} --wait {{wait_time_until_ready}} --count {{num_required_validations}}"
+    }
+  ]
+}

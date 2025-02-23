@@ -1,0 +1,30 @@
+{
+  "command": "iostat",
+  "description": "Report statistics for devices and partitions. More information: https://manned.org/iostat.",
+  "useCases": [
+    {
+      "description": "Display a report of CPU and disk statistics since system startup:",
+      "syntax": "iostat"
+    },
+    {
+      "description": "Display a report of CPU and disk statistics with units converted to megabytes:",
+      "syntax": "iostat -m"
+    },
+    {
+      "description": "Display CPU statistics:",
+      "syntax": "iostat -c"
+    },
+    {
+      "description": "Display disk statistics with disk names (including LVM):",
+      "syntax": "iostat -N"
+    },
+    {
+      "description": "Display extended disk statistics with disk names for device \"sda\":",
+      "syntax": "iostat -xN {{sda}}"
+    },
+    {
+      "description": "Display incremental reports of CPU and disk statistics every 2 seconds:",
+      "syntax": "iostat {{2}}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "command": "ed",
+  "description": "The original Unix text editor. See also: awk, sed. More information: https://www.gnu.org/software/ed/manual/ed_manual.html.",
+  "useCases": [
+    {
+      "description": "Start an interactive editor session with an empty document:",
+      "syntax": "ed"
+    },
+    {
+      "description": "Start an interactive editor session with an empty document and a specific prompt:",
+      "syntax": "ed --prompt='&gt; '"
+    },
+    {
+      "description": "Start an interactive editor session with user-friendly errors:",
+      "syntax": "ed --verbose"
+    },
+    {
+      "description": "Start an interactive editor session with an empty document and without diagnostics, byte counts and '!' prompt:",
+      "syntax": "ed --quiet"
+    },
+    {
+      "description": "Start an interactive editor session without exit status change when command fails:",
+      "syntax": "ed --loose-exit-status"
+    },
+    {
+      "description": "Edit a specific file (this shows the byte count of the loaded file):",
+      "syntax": "ed {{path/to/file}}"
+    },
+    {
+      "description": "Replace a string with a specific replacement for all lines:",
+      "syntax": ",s/{{regular_expression}}/{{replacement}}/g"
+    }
+  ]
+}

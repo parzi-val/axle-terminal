@@ -1,0 +1,22 @@
+{
+  "command": "pipewire",
+  "description": "Start the PipeWire daemon. More information: https://docs.pipewire.org/page_man_pipewire_1.html.",
+  "useCases": [
+    {
+      "description": "Start the PipeWire daemon:",
+      "syntax": "pipewire"
+    },
+    {
+      "description": "Use a different configuration file:",
+      "syntax": "pipewire --config {{path/to/file.conf}}"
+    },
+    {
+      "description": "Set the verbosity level (error, warn, info, debug or trace):",
+      "syntax": "pipewire -{{v|vv|...|vvvvv}}"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "pipewire --help"
+    }
+  ]
+}

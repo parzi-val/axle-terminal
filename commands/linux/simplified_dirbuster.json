@@ -1,0 +1,26 @@
+{
+  "command": "dirbuster",
+  "description": "Brute force directories and filenames on servers. More information: https://www.kali.org/tools/dirbuster/.",
+  "useCases": [
+    {
+      "description": "Start in GUI mode:",
+      "syntax": "dirbuster -u {{http://example.com}}"
+    },
+    {
+      "description": "Start in headless (no GUI) mode:",
+      "syntax": "dirbuster -H -u {{http://example.com}}"
+    },
+    {
+      "description": "Set the file extension list:",
+      "syntax": "dirbuster -e {{txt,html}}"
+    },
+    {
+      "description": "Enable verbose output:",
+      "syntax": "dirbuster -v"
+    },
+    {
+      "description": "Set the report location:",
+      "syntax": "dirbuster -r {{path/to/report.txt}}"
+    }
+  ]
+}

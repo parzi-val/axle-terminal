@@ -1,0 +1,26 @@
+{
+  "command": "systemd-sysext",
+  "description": "Activate or deactivate system extension images. More information: https://www.freedesktop.org/software/systemd/man/systemd-sysext.html.",
+  "useCases": [
+    {
+      "description": "List installed extension images:",
+      "syntax": "systemd-sysext list"
+    },
+    {
+      "description": "Merge system extension images into /usr/ and /opt/:",
+      "syntax": "systemd-sysext merge"
+    },
+    {
+      "description": "Check the current merge status:",
+      "syntax": "systemd-sysext status"
+    },
+    {
+      "description": "Unmerge all currently installed system extension images from /usr/ and /opt/:",
+      "syntax": "systemd-sysext unmerge"
+    },
+    {
+      "description": "Refresh system extension images (a combination of unmerge and merge):",
+      "syntax": "systemd-sysext refresh"
+    }
+  ]
+}

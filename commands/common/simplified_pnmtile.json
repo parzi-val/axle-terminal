@@ -1,0 +1,10 @@
+{
+  "command": "pnmtile",
+  "description": "Replicate an image to fill a specified area. More information: https://netpbm.sourceforge.net/doc/pnmtile.html.",
+  "useCases": [
+    {
+      "description": "Replicate an image to fill an area of the specified dimensions:",
+      "syntax": "pnmtile {{width}} {{height}} {{path/to/input.pnm}} &gt; {{path/to/output.pnm}}"
+    }
+  ]
+}

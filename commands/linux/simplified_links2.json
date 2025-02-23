@@ -1,0 +1,10 @@
+{
+  "command": "links2",
+  "description": "Command-line web browser. See also: links. More information: http://links.twibright.com/.",
+  "useCases": [
+    {
+      "description": "Visit a website in graphics mode:",
+      "syntax": "links2 -g {{https://example.com}}"
+    }
+  ]
+}

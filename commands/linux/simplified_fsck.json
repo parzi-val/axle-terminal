@@ -1,0 +1,18 @@
+{
+  "command": "fsck",
+  "description": "Check the integrity of a filesystem or repair it. The filesystem should be unmounted at the time the command is run. More information: https://manned.org/fsck.",
+  "useCases": [
+    {
+      "description": "Check filesystem /dev/sdXN, reporting any damaged blocks:",
+      "syntax": "sudo fsck {{/dev/sdXN}}"
+    },
+    {
+      "description": "Check filesystem /dev/sdXN, reporting any damaged blocks and interactively letting the user choose to repair each one:",
+      "syntax": "sudo fsck -r {{/dev/sdXN}}"
+    },
+    {
+      "description": "Check filesystem /dev/sdXN, reporting any damaged blocks and automatically repairing them:",
+      "syntax": "sudo fsck -a {{/dev/sdXN}}"
+    }
+  ]
+}

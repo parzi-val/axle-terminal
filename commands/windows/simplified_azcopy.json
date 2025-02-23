@@ -1,0 +1,30 @@
+{
+  "command": "azcopy",
+  "description": "A file transfer tool for uploading to Azure Cloud Storage Accounts. More information: https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10.",
+  "useCases": [
+    {
+      "description": "Log in to an Azure Tenant:",
+      "syntax": "azopy login"
+    },
+    {
+      "description": "Upload a local file:",
+      "syntax": "azcopy copy '{{path\\to\\source_file}}' 'https://{{storage_account_name}}.blob.core.windows.net/{{container_name}}/{{blob_name}}'"
+    },
+    {
+      "description": "Upload files with .txt and .jpg extensions:",
+      "syntax": "azcopy copy '{{path\\to\\source_directory}}' 'https://{{storage_account_name}}.blob.core.windows.net/{{container_name}}' --include-pattern '{{*.txt;*.jpg}}'"
+    },
+    {
+      "description": "Copy a container directly between two Azure storage accounts:",
+      "syntax": "azcopy copy 'https://{{source_storage_account_name}}.blob.core.windows.net/{{container_name}}' 'https://{{destination_storage_account_name}}.blob.core.windows.net/{{container_name}}'"
+    },
+    {
+      "description": "Synchronize a local directory and delete files in the destination if they no longer exist in the source:",
+      "syntax": "azcopy sync '{{path\\to\\source_directory}}' 'https://{{storage_account_name}}.blob.core.windows.net/{{container_name}}' --recursive --delete-destination=true"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "azcopy --help"
+    }
+  ]
+}

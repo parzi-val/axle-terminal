@@ -1,0 +1,18 @@
+{
+  "command": "logstash",
+  "description": "An Elasticsearch ETL (extract, transform and load) tool. Commonly used to load data from various sources (such as databases and log files) into Elasticsearch. More information: https://www.elastic.co/products/logstash.",
+  "useCases": [
+    {
+      "description": "Check validity of a Logstash configuration:",
+      "syntax": "logstash --configtest --config {{logstash_config.conf}}"
+    },
+    {
+      "description": "Run Logstash using configuration:",
+      "syntax": "sudo logstash --config {{logstash_config.conf}}"
+    },
+    {
+      "description": "Run Logstash with the most basic inline configuration string:",
+      "syntax": "sudo logstash -e 'input {} filter {} output {}'"
+    }
+  ]
+}

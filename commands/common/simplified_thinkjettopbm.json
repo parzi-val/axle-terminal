@@ -1,0 +1,14 @@
+{
+  "command": "thinkjettopbm",
+  "description": "Convert a HP ThinkJet printer commands file to a PBM file. More information: https://netpbm.sourceforge.net/doc/thinkjettopbm.html.",
+  "useCases": [
+    {
+      "description": "Convert a HP ThinkJet printer commands file to a PBM file:",
+      "syntax": "thinkjettopbm {{path/to/input}} &gt; {{path/to/output.pbm}}"
+    },
+    {
+      "description": "Print debug information to stderr:",
+      "syntax": "thinkjettopbm -d {{path/to/input}} &gt; {{path/to/output.pbm}}"
+    }
+  ]
+}

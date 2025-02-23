@@ -1,0 +1,18 @@
+{
+  "command": "csv2tsv",
+  "description": "Convert CSV (comma-separated) text to TSV (tab-separated) format. More information: https://github.com/eBay/tsv-utils/blob/master/README.md#csv2tsv.",
+  "useCases": [
+    {
+      "description": "Convert from CSV to TSV:",
+      "syntax": "csv2tsv {{path/to/input_csv1 path/to/input_csv2 ...}} &gt; {{path/to/output_tsv}}"
+    },
+    {
+      "description": "Convert field delimiter separated CSV to TSV:",
+      "syntax": "csv2tsv -c'{{field_delimiter}}' {{path/to/input_csv}}"
+    },
+    {
+      "description": "Convert semicolon separated CSV to TSV:",
+      "syntax": "csv2tsv -c';' {{path/to/input_csv}}"
+    }
+  ]
+}

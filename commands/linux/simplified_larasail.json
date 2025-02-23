@@ -1,0 +1,26 @@
+{
+  "command": "larasail",
+  "description": "Manage Laravel on Digital Ocean servers. More information: https://github.com/thedevdojo/larasail.",
+  "useCases": [
+    {
+      "description": "Set up the server with Laravel dependencies using the default PHP version:",
+      "syntax": "larasail setup"
+    },
+    {
+      "description": "Set up the server with Laravel dependencies using a specific PHP version:",
+      "syntax": "larasail setup {{php71}}"
+    },
+    {
+      "description": "Add a new Laravel site:",
+      "syntax": "larasail host {{domain}} {{path/to/site_directory}}"
+    },
+    {
+      "description": "Retrieve the Larasail user password:",
+      "syntax": "larasail pass"
+    },
+    {
+      "description": "Retrieve the Larasail MySQL password:",
+      "syntax": "larasail mysqlpass"
+    }
+  ]
+}

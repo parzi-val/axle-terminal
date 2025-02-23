@@ -1,0 +1,26 @@
+{
+  "command": "ninja",
+  "description": "A Build system designed to be fast. More information: https://ninja-build.org/manual.html.",
+  "useCases": [
+    {
+      "description": "Build in the current directory:",
+      "syntax": "ninja"
+    },
+    {
+      "description": "Build in the current directory, executing 4 jobs at a time in parallel:",
+      "syntax": "ninja -j {{4}}"
+    },
+    {
+      "description": "Build a program in a given directory:",
+      "syntax": "ninja -C {{path/to/directory}}"
+    },
+    {
+      "description": "Show targets (e.g. install and uninstall):",
+      "syntax": "ninja -t targets"
+    },
+    {
+      "description": "Display help:",
+      "syntax": "ninja -h"
+    }
+  ]
+}

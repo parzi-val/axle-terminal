@@ -1,0 +1,22 @@
+{
+  "command": "pbmtoepsi",
+  "description": "Convert a PBM image to an encapsulated PostScript style preview bitmap. More information: https://netpbm.sourceforge.net/doc/pbmtoepsi.html.",
+  "useCases": [
+    {
+      "description": "Convert a PBM image to an encapsulated PostScript style preview bitmap:",
+      "syntax": "pbmtoepsi {{path/to/image.pbm}} &gt; {{path/to/output.bmp}}"
+    },
+    {
+      "description": "Produce a quadratic output image with the specified resolution:",
+      "syntax": "pbmtoepsi -dpi {{144}} {{path/to/image.pbm}} &gt; {{path/to/output.bmp}}"
+    },
+    {
+      "description": "Produce an output image with the specified horizontal and vertical resolution:",
+      "syntax": "pbmtoepsi -dpi {{72x144}} {{path/to/image.pbm}} &gt; {{path/to/output.bmp}}"
+    },
+    {
+      "description": "Only create a boundary box:",
+      "syntax": "pbmtoepsi -bbonly {{path/to/image.pbm}} &gt; {{path/to/output.bmp}}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "vgdisplay",
+  "description": "Display information about Logical Volume Manager (LVM) volume groups. See also: lvm. More information: https://manned.org/vgdisplay.",
+  "useCases": [
+    {
+      "description": "Display information about all volume groups:",
+      "syntax": "sudo vgdisplay"
+    },
+    {
+      "description": "Display information about volume group vg1:",
+      "syntax": "sudo vgdisplay {{vg1}}"
+    }
+  ]
+}

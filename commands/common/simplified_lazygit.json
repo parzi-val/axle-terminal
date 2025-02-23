@@ -1,0 +1,34 @@
+{
+  "command": "lazygit",
+  "description": "A simple terminal UI for Git commands, providing an intuitive interface for managing repositories. More information: https://github.com/jesseduffield/lazygit.",
+  "useCases": [
+    {
+      "description": "Open Lazygit in the current repository:",
+      "syntax": "lazygit"
+    },
+    {
+      "description": "Open Lazygit for a specific Git repository:",
+      "syntax": "lazygit --path {{path/to/repository}}"
+    },
+    {
+      "description": "Start Lazygit with focus on a specific panel:",
+      "syntax": "lazygit {{status|branch|log|stash|...}}"
+    },
+    {
+      "description": "Print the default Lazygit configuration:",
+      "syntax": "lazygit --config"
+    },
+    {
+      "description": "Tail the Lazygit logs (useful with debug mode in another terminal):",
+      "syntax": "lazygit --logs"
+    },
+    {
+      "description": "Run Lazygit in debug mode:",
+      "syntax": "lazygit --debug"
+    },
+    {
+      "description": "Print the configuration directory:",
+      "syntax": "lazygit --print-config-dir"
+    }
+  ]
+}

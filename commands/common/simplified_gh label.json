@@ -1,0 +1,34 @@
+{
+  "command": "gh label",
+  "description": "Work with GitHub labels. More information: https://cli.github.com/manual/gh_label.",
+  "useCases": [
+    {
+      "description": "List labels for the repository in the current directory:",
+      "syntax": "gh label list"
+    },
+    {
+      "description": "View labels for the repository in the current directory in the default web browser:",
+      "syntax": "gh label list --web"
+    },
+    {
+      "description": "Create a label with a specific name, description and color in hexadecimal format for the repository in the current directory:",
+      "syntax": "gh label create {{name}} --description &quot;{{description}}&quot; --color {{color_hex}}"
+    },
+    {
+      "description": "Delete a label for the repository in the current directory, prompting for confirmation:",
+      "syntax": "gh label delete {{name}}"
+    },
+    {
+      "description": "Update the name and description for a specific label for the repository in the current directory:",
+      "syntax": "gh label edit {{name}} --name {{new_name}} --description &quot;{{description}}&quot;"
+    },
+    {
+      "description": "Clone labels from a specific repository into the repository in the current directory:",
+      "syntax": "gh label clone {{owner}}/{{repository}}"
+    },
+    {
+      "description": "Display help for a subcommand:",
+      "syntax": "gh label {{subcommand}} --help"
+    }
+  ]
+}

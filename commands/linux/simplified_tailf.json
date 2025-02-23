@@ -1,0 +1,10 @@
+{
+  "command": "tailf",
+  "description": "This command has been superseded by tail -f. More information: https://manned.org/tailf.1.",
+  "useCases": [
+    {
+      "description": "View documentation for the recommended replacement:",
+      "syntax": "tldr tail"
+    }
+  ]
+}

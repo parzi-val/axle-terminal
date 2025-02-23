@@ -1,0 +1,34 @@
+{
+  "command": "pvs",
+  "description": "Display information about physical volumes. See also: lvm. More information: https://manned.org/pvs.",
+  "useCases": [
+    {
+      "description": "Display information about physical volumes:",
+      "syntax": "pvs"
+    },
+    {
+      "description": "Display non-physical volumes:",
+      "syntax": "pvs -a"
+    },
+    {
+      "description": "Change default display to show more details:",
+      "syntax": "pvs -v"
+    },
+    {
+      "description": "Display only specific fields:",
+      "syntax": "pvs -o {{field_name_1}},{{field_name_2}}"
+    },
+    {
+      "description": "Append field to default display:",
+      "syntax": "pvs -o +{{field_name}}"
+    },
+    {
+      "description": "Suppress heading line:",
+      "syntax": "pvs --noheadings"
+    },
+    {
+      "description": "Use separator to separate fields:",
+      "syntax": "pvs --separator {{special_character}}"
+    }
+  ]
+}

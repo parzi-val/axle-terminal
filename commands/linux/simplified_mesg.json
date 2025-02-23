@@ -1,0 +1,22 @@
+{
+  "command": "mesg",
+  "description": "Check or set a terminal's ability to receive messages from other users, usually from the write command. See also write, talk. More information: https://manned.org/mesg.1.",
+  "useCases": [
+    {
+      "description": "Check terminal's openness to write messages:",
+      "syntax": "mesg"
+    },
+    {
+      "description": "Disallow receiving messages from other users:",
+      "syntax": "mesg n"
+    },
+    {
+      "description": "Allow receiving messages from other users:",
+      "syntax": "mesg y"
+    },
+    {
+      "description": "Enable [v]erbose mode, printing a warning if the command is not executed from a terminal:",
+      "syntax": "mesg --verbose"
+    }
+  ]
+}
